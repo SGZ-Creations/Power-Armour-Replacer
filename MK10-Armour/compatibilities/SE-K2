@@ -1,0 +1,3 @@
+if mods["Krastorio2"] and mods["space-exploration"] then
+    recipe.ingridients
+end
