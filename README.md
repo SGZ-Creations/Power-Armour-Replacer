@@ -1,4 +1,4 @@
 # MK10-Armours This Factorio mod adds 
-8 Nre Armour Tiers 
-8 now shiealds tiers
-and up to mk5 legs
+8 New Armour Tiers (max mk10)
+8 New Shiealds Tiers (max mk10)
+2-3 new legs (max mk5)
