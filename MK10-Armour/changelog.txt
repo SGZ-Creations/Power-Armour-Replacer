@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: xx.06.2022
+  Features:
+    - 8 New Armour tiers added.
+    - 8 New shiealds added.
+    - Total to mk 5 Legs added.
+    - Settings added to "Configurable-Armour-Suits = 0.2.7"
