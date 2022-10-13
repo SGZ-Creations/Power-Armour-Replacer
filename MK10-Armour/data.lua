@@ -1,0 +1,5 @@
+require("prototypes.armour_recipe")
+require("prototypes.batteries_recipe")
+require("prototypes.fusion_recipe")
+require("prototypes.legs_recipe")
+require("prototypes.shield_recipe")

@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: xx.06.2022
+Date: xx.10.2022
   Features:
     - initial release
-    - 8 New Armour tiers added.
-    - Settings added to "Configurable-Armour-Suits = 0.2.7".
+    - 8 New tiers of: Armour, Shields, Fusion-Reactors & Batteries added.
+    - 4 new Leggings added.
+    - Settings added to "Configurable-Armour-Suits = 0.3.0.
