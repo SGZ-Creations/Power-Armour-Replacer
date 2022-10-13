@@ -4,7 +4,7 @@ local recipes = {
         name = "a_mk1",
         ingredients = {
             {"modular-armor", 1},
-            {"engine-unit", 5}
+            {"engine-unit", 5},
             {"steel-plate", 10}
         },
         result = "a_mk1"
@@ -13,7 +13,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk2",
         ingredients = {
-            {"a_mk1", 1}
+            {"a_mk1", 1},
         },
         result = "a_mk2"
     },
@@ -21,8 +21,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk3",
         ingredients = {
-            {"a_mk1", 1}
-            {"a_mk2", 1}
+            {"a_mk2", 1},
         },
         result = "a_mk3"
     },
@@ -30,7 +29,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk4",
         ingredients = {
-            
+            {"a_mk3", 1},
         },
         result = "a_mk4"
     },
@@ -38,7 +37,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk5",
         ingredients = {
-            
+            {"a_mk4", 1},
         },
         result = "a_mk5"
     },
@@ -46,7 +45,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk6",
         ingredients = {
-            
+            {"a_mk5", 1},
         },
         result = "a_mk6"
     },
@@ -54,7 +53,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk7",
         ingredients = {
-            
+            {"a_mk6", 1},
         },
         result = "a_mk7"
     },
@@ -62,7 +61,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk8",
         ingredients = {
-            
+            {"a_mk7", 1},
         },
         result = "a_mk8"
     },
@@ -70,7 +69,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk9",
         ingredients = {
-            
+            {"a_mk8", 1},
         },
         result = "a_mk9"
     },
@@ -78,7 +77,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk10",
         ingredients = {
-            
+            {"a_mk9", 1},
         },
         result = "a_mk10"
     },
