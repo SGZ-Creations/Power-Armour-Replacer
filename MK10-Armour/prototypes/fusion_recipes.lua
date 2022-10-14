@@ -3,7 +3,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk1",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk1"
     },
@@ -11,7 +15,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk2",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk2"
     },
@@ -19,7 +27,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk3",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk3"
     },
@@ -27,7 +39,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk4",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk4"
     },
@@ -35,7 +51,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk5",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk5"
     },
@@ -43,7 +63,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk6",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk6"
     },
@@ -51,7 +75,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk7",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk7"
     },
@@ -59,7 +87,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk8",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk8"
     },
@@ -67,7 +99,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk9",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk9"
     },
@@ -75,7 +111,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk10",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "f_mk10"
     },

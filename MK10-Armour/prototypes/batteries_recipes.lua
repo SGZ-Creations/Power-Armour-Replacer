@@ -3,7 +3,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk1",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
         
@@ -12,7 +16,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk2",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -20,7 +28,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk3",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -28,7 +40,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk4",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -36,7 +52,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk5",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -44,7 +64,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk6",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -52,7 +76,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk7",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -60,7 +88,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk8",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -68,7 +100,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk9",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },
@@ -76,7 +112,11 @@ local recipes = {
         type = "recipe",
         name = "b_mk10",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = b_mk
     },

@@ -3,7 +3,11 @@ local recipes = {
         type = "recipe",
         name = "l_mk1",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "l_mk1"
     },
@@ -11,7 +15,11 @@ local recipes = {
         type = "recipe",
         name = "l_mk2",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "l_mk2"
     },
@@ -19,7 +27,11 @@ local recipes = {
         type = "recipe",
         name = "l_mk3",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "l_mk3"
     },
@@ -27,7 +39,11 @@ local recipes = {
         type = "recipe",
         name = "l_mk4",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "l_mk4"
     },
@@ -35,7 +51,11 @@ local recipes = {
         type = "recipe",
         name = "l_mk5",
         ingredients = {
-            
+            {""},
+            {""},
+            {""},
+            {""},
+            {""},
         },
         result = "l_mk5"
     },
