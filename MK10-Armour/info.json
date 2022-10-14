@@ -17,11 +17,11 @@
 			"README.md",
 			"To_do.cpp",
 			".gitignore",
-			"prototype/batteries_recipes.lua",
-			"prototype/fusion_recipes.lua",
-			"prototype/shield_recipes.lua",
-			"prototype/technology.lua",
-			"prototype/the-rest_recipes.lua"
+			"prototypes/batteries_recipes.lua",
+			"prototypes/fusion_recipes.lua",
+			"prototypes/shield_recipes.lua",
+			"prototypes/technology.lua",
+			"prototypes/the-rest_recipes.lua"
 		]
 	}
 }	
