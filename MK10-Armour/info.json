@@ -13,7 +13,7 @@
 			"Done.cpp",
 			"control.lua",
 			"prototype/*",
-			"data-update.lua",
+			"data-updates.lua",
 			"README.md",
 			"To_do.cpp",
 			".gitignore",

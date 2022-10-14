@@ -78,8 +78,8 @@ local recipes = {
             {"a_mk6", 1},
             {"nuclear-fuel", 20},
             {"beacon", 10},
-            {""},
-            {""},
+            {"nuclear-reactor", 25},
+            {"f_mk1", 10},
         },
         result = "a_mk7"
     },
@@ -88,10 +88,10 @@ local recipes = {
         name = "a_mk8",
         ingredients = {
             {"a_mk7", 1},
-            {""},
-            {""},
-            {""},
-            {""},
+            {"nuclear-reactor", 25},
+            {"f_mk1", 20},
+            {"assembling-machine-3", 10},
+            {"s_mk8", 5},
         },
         result = "a_mk8"
     },
@@ -100,10 +100,10 @@ local recipes = {
         name = "a_mk9",
         ingredients = {
             {"a_mk8", 1},
-            {""},
-            {""},
-            {""},
-            {""},
+            {"nuclear-reactor", 25},
+            {"f_mk5", 10},
+            {"centrifuge", 15},
+            {"assembling-machine", 10},
         },
         result = "a_mk9"
     },
@@ -112,10 +112,10 @@ local recipes = {
         name = "a_mk10",
         ingredients = {
             {"a_mk9", 1},
-            {""},
-            {""},
-            {""},
-            {""},
+            {"nuclear-reactor", 25},
+            {"f_mk5", 10},
+            {"centrifuge", 15},
+            {"assembling-machine-3", 20},
         },
         result = "a_mk10"
     },
@@ -183,5 +183,25 @@ local items = {
         stack_size = 1
     },
 }
+
+local compat = require("compat")
+
+compat.update_recipe(recipes[1], {
+    ["bobplate"] = {
+        ["old-ingredient1"] = "new-ingredient1",
+        ["old-ingredient2"] = "new-ingredient2",
+        ["old-ingredient3"] = "new-ingredient3",
+    },
+    ["bobequipment"] = {
+        ["old-ingredient4"] = "new-ingredient4",
+        ["old-ingredient5"] = "new-ingredient5",
+        ["old-ingredient6"] = "new-ingredient6",
+    },
+    ["space"] = {
+        ["old-ingredient1"] = "new-ingredient1",
+        ["old-ingredient2"] = "new-ingredient2",
+        ["old-ingredient3"] = "new-ingredient3",
+    },
+})
 
 data:extend(recipes)
