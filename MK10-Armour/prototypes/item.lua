@@ -31,7 +31,7 @@ data:extend({
     order = "c[modular-armor]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "medium-equipment-grid",
     inventory_size_bonus = 10,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
