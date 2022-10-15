@@ -82,23 +82,23 @@ data:extend({
     {
       {
         type = "physical",
-        decrease = 8,
-        percent = 30
+        decrease = 20,
+        percent = 50
       },
       {
         type = "acid",
-        decrease = 0,
-        percent = 60
+        decrease = 10,
+        percent = 80
       },
       {
         type = "explosion",
         decrease = 40,
-        percent = 40
+        percent = 60
       },
       {
         type = "fire",
-        decrease = 0,
-        percent = 60
+        decrease = 10,
+        percent = 80
       }
     },
     subgroup = "armor",
