@@ -67,7 +67,7 @@ local recipes = {
             {"solid-fuel", 300},
             {"rocket-control-unit", 65},
             {"processing-unit", 150},
-            {"rocket-control-unit", 55},
+            {"rocket-fuel", 55},
         },
         result = "a_mk6"
     },
@@ -103,7 +103,7 @@ local recipes = {
             {"nuclear-reactor", 25},
             {"refined-concrete", 10},
             {"centrifuge", 15},
-            {"assembling-machine", 10},
+            {"assembling-machine-3", 10},
         },
         result = "a_mk9"
     },

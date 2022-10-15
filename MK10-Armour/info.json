@@ -22,6 +22,7 @@
 			"prototypes/shield_recipes.lua",
 			"prototypes/legs_recipes.lua",
 			"prototypes/technology.lua",
+			"prototypes/roboport_recipes",
 			"prototypes/the-rest_recipes.lua"
 		]
 	}
