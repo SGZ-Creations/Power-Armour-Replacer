@@ -68,7 +68,7 @@ data:extend({
     order = "d[power-armor]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -105,7 +105,7 @@ data:extend({
     order = "d[power-armor]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -142,7 +142,7 @@ data:extend({
     order = "d[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -179,7 +179,7 @@ data:extend({
     order = "d[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -216,7 +216,7 @@ data:extend({
     order = "d[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -253,7 +253,7 @@ data:extend({
     order = "d[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -290,7 +290,7 @@ data:extend({
     order = "d[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -327,7 +327,7 @@ data:extend({
     order = "d[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
@@ -364,7 +364,7 @@ data:extend({
     order = "d[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
-    equipment_grid = "larg-equipment-grid",
+    equipment_grid = "large-equipment-grid",
     inventory_size_bonus = 20,
     open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
