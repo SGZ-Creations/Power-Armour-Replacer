@@ -79,7 +79,7 @@ local recipes = {
             {"nuclear-fuel", 20},
             {"beacon", 10},
             {"nuclear-reactor", 25},
-            {"f_mk1", 10},
+            {"concrete", 10},
         },
         result = "a_mk7"
     },
@@ -89,7 +89,7 @@ local recipes = {
         ingredients = {
             {"a_mk7", 1},
             {"nuclear-reactor", 25},
-            {"f_mk1", 20},
+            {"concrete", 20},
             {"assembling-machine-3", 10},
             {"s_mk8", 5},
         },
@@ -101,7 +101,7 @@ local recipes = {
         ingredients = {
             {"a_mk8", 1},
             {"nuclear-reactor", 25},
-            {"f_mk5", 10},
+            {"refined-concrete", 10},
             {"centrifuge", 15},
             {"assembling-machine", 10},
         },
@@ -113,7 +113,7 @@ local recipes = {
         ingredients = {
             {"a_mk9", 1},
             {"nuclear-reactor", 25},
-            {"f_mk5", 10},
+            {"refined-concrete", 10},
             {"centrifuge", 15},
             {"assembling-machine-3", 20},
         },
