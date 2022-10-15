@@ -17,7 +17,6 @@
 			"README.md",
 			"To_do.cpp",
 			".gitignore",
-			"data.lua",
 			"prototypes/batteries_recipes.lua",
 			"prototypes/fusion_recipes.lua",
 			"prototypes/shield_recipes.lua",
