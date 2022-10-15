@@ -1,7 +1,8 @@
-    - 8 New shiealds added.
-    - 8 New tiers batteries.
-    - 9 new tiers of fusion reacator
-    - 4 New tiers legs added.
+    - 10 New armours added
+    - 10 New shiealds added.
+    - 10 New tiers batteries.
+    - 10 New tiers of fusion reacator
+    - 5 New tiers legs added.
 
     Copatibility list
 
