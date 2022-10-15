@@ -3,11 +3,10 @@ local recipes = {
         type = "recipe",
         name = "a_mk1",
         ingredients = {
-            {"modular-armor", 1},
-            {"battery", 100},
-            {"engine-unit", 50},
+            {"heavy-armor", 1},
+            {"engine-unit", 100},
             {"steel-plate", 100},
-            {"advanced-circuit", 75}
+            {"electronic-circuit", 50}
         },
         result = "a_mk1"
     },
@@ -17,8 +16,8 @@ local recipes = {
         ingredients = {
             {"a_mk1", 1},
             {"battery", 100},
+            {"engine-unit", 50},
             {"steel-plate", 150},
-            {"engine-unit", 75},
             {"advanced-circuit", 100},
         },
         result = "a_mk2"
@@ -28,10 +27,10 @@ local recipes = {
         name = "a_mk3",
         ingredients = {
             {"a_mk2", 1},
+            {"solid-fuel", 50},
             {"steel-plate", 175},
             {"engine-unit", 100},
             {"advanced-circuit", 150},
-            {"processing-unit", 50},
         },
         result = "a_mk3"
     },
@@ -41,7 +40,6 @@ local recipes = {
         ingredients = {
             {"a_mk3", 1},
             {"solid-fuel", 100},
-            {"processing-unit", 150},
             {"low-density-structure", 55},
             {"uranium-235", 250},
         },
@@ -54,7 +52,7 @@ local recipes = {
             {"a_mk4", 1},
             {"solid-fuel", 200},
             {"processing-unit", 200},
-            {"rocket-control-unit", 45},
+            {"advanced-circuit", 150},
             {"uranium-235", 350},
         },
         result = "a_mk5"
@@ -65,7 +63,7 @@ local recipes = {
         ingredients = {
             {"a_mk5", 1},
             {"solid-fuel", 300},
-            {"rocket-control-unit", 65},
+            {"rocket-control-unit", 50},
             {"processing-unit", 150},
             {"rocket-fuel", 55},
         },
@@ -103,7 +101,7 @@ local recipes = {
             {"nuclear-reactor", 25},
             {"refined-concrete", 10},
             {"centrifuge", 15},
-            {"assembling-machine-3", 10},
+            {"rocket-silo", 2},
         },
         result = "a_mk9"
     },
@@ -115,7 +113,7 @@ local recipes = {
             {"nuclear-reactor", 25},
             {"refined-concrete", 10},
             {"centrifuge", 15},
-            {"assembling-machine-3", 20},
+            {"satellite", 10},
         },
         result = "a_mk10"
     },
