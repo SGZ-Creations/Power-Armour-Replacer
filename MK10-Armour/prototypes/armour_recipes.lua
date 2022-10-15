@@ -91,7 +91,7 @@ local recipes = {
             {"nuclear-reactor", 25},
             {"concrete", 20},
             {"assembling-machine-3", 10},
-            {"s_mk8", 5},
+            {"stone-brick", 5},
         },
         result = "a_mk8"
     },
