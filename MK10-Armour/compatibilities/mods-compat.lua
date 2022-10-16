@@ -6,7 +6,11 @@ compat.mods = {
     "bobequipment",
     "bobrevamp",
     "bobequipment",
+    "bobwarfare",
     "space-exploration",
+    "Krastorio2",
+    "angels",
+    "angels",
 }
 
 compat.update_recipe = function(recipe, replacements)

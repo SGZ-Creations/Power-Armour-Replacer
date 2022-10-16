@@ -8,7 +8,9 @@ local recipes = {
             {"steel-plate", 100},
             {"electronic-circuit", 50}
         },
-        result = "a_mk1"
+        result = "a_mk1",
+        allow_decomposition = true,
+        energy = 30.0,
     },
     {
         type = "recipe",
@@ -20,7 +22,9 @@ local recipes = {
             {"steel-plate", 150},
             {"advanced-circuit", 100},
         },
-        result = "a_mk2"
+        result = "a_mk2",
+        allow_decomposition = true,
+        energy = 60.0,
     },
     {
         type = "recipe",
@@ -32,7 +36,9 @@ local recipes = {
             {"engine-unit", 100},
             {"advanced-circuit", 150},
         },
-        result = "a_mk3"
+        result = "a_mk3",
+        allow_decomposition = true,
+        energy = 120.0,
     },
     {
         type = "recipe",
@@ -43,7 +49,9 @@ local recipes = {
             {"low-density-structure", 55},
             {"uranium-235", 250},
         },
-        result = "a_mk4"
+        result = "a_mk4",
+        allow_decomposition = true,
+        energy = 240.0,
     },
     {
         type = "recipe",
@@ -55,7 +63,9 @@ local recipes = {
             {"advanced-circuit", 150},
             {"uranium-235", 350},
         },
-        result = "a_mk5"
+        result = "a_mk5",
+        hidden_from_player_crafting = true,
+        energy = 480.0,
     },
     {
         type = "recipe",
@@ -67,7 +77,10 @@ local recipes = {
             {"processing-unit", 150},
             {"rocket-fuel", 55},
         },
-        result = "a_mk6"
+        result = "a_mk6",
+        hidden_from_player_crafting = true,
+        always_show_products = true,
+        energy = 960.0,
     },
     {
         type = "recipe",
@@ -79,7 +92,10 @@ local recipes = {
             {"nuclear-reactor", 25},
             {"concrete", 10},
         },
-        result = "a_mk7"
+        result = "a_mk7",
+        hidden_from_player_crafting = true,
+        always_show_products = true,
+        energy = 1920.0,
     },
     {
         type = "recipe",
@@ -91,7 +107,10 @@ local recipes = {
             {"assembling-machine-3", 10},
             {"stone-brick", 5},
         },
-        result = "a_mk8"
+        result = "a_mk8",
+        hidden_from_player_crafting = true,
+        always_show_products = true,
+        energy = 3840.0,
     },
     {
         type = "recipe",
@@ -103,7 +122,10 @@ local recipes = {
             {"centrifuge", 15},
             {"rocket-silo", 2},
         },
-        result = "a_mk9"
+        result = "a_mk9",
+        hidden_from_player_crafting = true,
+        always_show_products = true,
+        energy = 7680.0,
     },
     {
         type = "recipe",
@@ -115,7 +137,10 @@ local recipes = {
             {"centrifuge", 15},
             {"satellite", 10},
         },
-        result = "a_mk10"
+        result = "a_mk10",
+        hidden_from_player_crafting = true,
+        always_show_products = true,
+        energy = 15360.0,
     },
 }
 

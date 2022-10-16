@@ -3,122 +3,114 @@ local recipes = {
         type = "recipe",
         name = "b_mk1",
         ingredients = {
-            {"",},
-            {"",},
-            {"",},
-            {"",},
-            {"",},
+            {"lab", 2},
+            {"circuit", 15},
+            {"copper-cable", 50},
         },
-        result = b_mk
+        result = b_mk1
         
     },
     {
         type = "recipe",
         name = "b_mk2",
         ingredients = {
-            {"",},
-            {"",},
-            {"",},
-            {"",},
-            {"",},
+            {"b_mk1",},
+            {"small-lamp", 5},
+            {"steel-chest", 4},
         },
-        result = b_mk
+        result = b_mk2
     },
     {
         type = "recipe",
         name = "b_mk3",
         ingredients = {
-            {"",},
-            {"",},
-            {"",},
-            {"",},
-            {"",},
+            {"b_mk2",},
+            {"constant-combinator", 2},
+            {"steel-chest", 4},
         },
-        result = b_mk
+        result = b_mk3
     },
     {
         type = "recipe",
         name = "b_mk4",
         ingredients = {
-            {"",},
-            {"",},
-            {"",},
-            {"",},
-            {"",},
+            {"b_mk3",},
+            {"small-lamp", 5},
+            {"constant-combinator", 3},
         },
-        result = b_mk
+        result = b_mk4
     },
     {
         type = "recipe",
         name = "b_mk5",
         ingredients = {
-            {"",},
-            {"",},
+            {"b_mk4",},
+            {"advanced-circuit", 20},
             {"",},
             {"",},
             {"",},
         },
-        result = b_mk
+        result = b_mk5
     },
     {
         type = "recipe",
         name = "b_mk6",
         ingredients = {
-            {"",},
+            {"b_mk5",},
             {"",},
             {"",},
             {"",},
             {"",},
         },
-        result = b_mk
+        result = b_mk6
     },
     {
         type = "recipe",
         name = "b_mk7",
         ingredients = {
-            {"",},
+            {"b_mk6",},
             {"",},
             {"",},
             {"",},
             {"",},
         },
-        result = b_mk
+        result = b_mk7
     },
     {
         type = "recipe",
         name = "b_mk8",
         ingredients = {
-            {"",},
+            {"b_mk7",},
             {"",},
             {"",},
             {"",},
             {"",},
         },
-        result = b_mk
+        result = b_mk8
     },
     {
         type = "recipe",
         name = "b_mk9",
         ingredients = {
-            {"",},
+            {"b_mk8",},
             {"",},
             {"",},
             {"",},
             {"",},
         },
-        result = b_mk
+        result = b_mk9
     },
     {
         type = "recipe",
         name = "b_mk10",
         ingredients = {
-            {"",},
+            {"b_mk9",},
             {"",},
             {"",},
             {"",},
             {"",},
         },
-        result = b_mk
+        result = b_mk10
     },
 }
 
