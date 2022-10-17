@@ -193,4 +193,15 @@ data:extend(
         icon_size = 128,
         limited_to_one_game = true,
     },
+    {
+        type = "player-damaged-achievement",
+        name = "the-undying-3",
+        order = "e[exploration]-g[golem]",
+        should_survive = true,
+        minimum_damage = 5000000,
+        steam_stats_name = "surived-damage-in-one-hit",
+        icon = "__base__/graphics/achievement/golem.png",
+        icon_size = 128,
+        limited_to_one_game = true,
+    },
 })

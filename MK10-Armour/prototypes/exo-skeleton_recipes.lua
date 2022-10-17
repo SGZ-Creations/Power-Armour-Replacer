@@ -17,7 +17,7 @@ local recipes = {
         name = "l_mk2",
         energy_required = 10,
         ingredients = {
-            {"f_mk1", 1},
+            {"l_mk1", 1},
             {"",},
             {"",},
             {"",},
@@ -29,8 +29,9 @@ local recipes = {
         type = "recipe",
         name = "l_mk3",
         energy_required = 15,
+        hide_from_player_crafting = true,
         ingredients = {
-            {"f_mk2", 1},
+            {"l_mk2", 1},
             {"",},
             {"",},
             {"",},
@@ -42,8 +43,9 @@ local recipes = {
         type = "recipe",
         name = "l_mk4",
         energy_required = 20,
+        hide_from_player_crafting = true,
         ingredients = {
-            {"f_mk4", 1},
+            {"l_mk4", 1},
             {"",},
             {"",},
             {"",},
@@ -55,8 +57,9 @@ local recipes = {
         type = "recipe",
         name = "l_mk5",
         energy_required = 25,
+        hide_from_player_crafting = true,
         ingredients = {
-            {"f_mk4", 1},
+            {"l_mk4", 1},
             {"",},
             {"",},
             {"",},
@@ -69,31 +72,31 @@ local recipes = {
 local items = {
     {
         type = "item",
-        name = "a_mk1",
+        name = "l_mk1",
         icon = "__base__.graphics.exoskeleton.png",
         stack_size = 1
     },
     {
         type = "item",
-        name = "a_mk2",
+        name = "l_mk2",
         icon = "__base__.graphics.exoskeleton.png",
         stack_size = 1
     },
     {
         type = "item",
-        name = "a_mk3",
+        name = "l_mk3",
         icon = "__base__.graphics.exoskeleton.png",
         stack_size = 1
     },
     {
         type = "item",
-        name = "a_mk4",
+        name = "l_mk4",
         icon = "__base__.graphics.exoskeleton.png",
         stack_size = 1
     },
     {
         type = "item",
-        name = "a_mk5",
+        name = "l_mk5",
         icon = "__base__.graphics.exoskeleton.png",
         stack_size = 1
     },

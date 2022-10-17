@@ -4,11 +4,9 @@ local recipes = {
         name = "f_mk1",
         energy_required = 40,
         ingredients = {
-            {"advanced-circuit", 10},
-            
-            
-            
-            
+            {"electronic-circuit", 10},
+            {"steel-plate", 40},
+            {"copper-plate", 50},
         },
         result = "f_mk1"
     },
@@ -17,11 +15,9 @@ local recipes = {
         name = "f_mk2",
         energy_required = 45,
         ingredients = {
-            {"f_mk1",1},
-            
-            
-            
-            
+            {"f_mk1", 1},
+            {"iron-plate", 95},
+            {"electronic-circuit", 20},
         },
         result = "f_mk2"
     },
@@ -30,11 +26,10 @@ local recipes = {
         name = "f_mk3",
         energy_required = 50,
         ingredients = {
-            {"f_mk2",1},
-            
-            
-            
-            
+            {"f_mk2", 1},
+            {"b_mk1", 3},
+            {"electronic-circuit", 30},
+            {"solid-fuel", 50},
         },
         result = "f_mk3"
     },
@@ -43,11 +38,9 @@ local recipes = {
         name = "f_mk4",
         energy_required = 55,
         ingredients = {
-            {"f_mk3",1},
-            
-            
-            
-            
+            {"f_mk3", 1},
+            {"advanced-circuit", 25},
+            {"engine-unit", 20 },
         },
         result = "f_mk4"
     },
@@ -55,12 +48,12 @@ local recipes = {
         type = "recipe",
         name = "f_mk5",
         energy_required = 60,
+        hide_from_player_crafting = true,
         ingredients = {
-            {"f_mk4",1},
-            
-            
-            
-            
+            {"f_mk4", 1},
+            {"b_mk3", 5},
+            {"advanced-circuit", 45},
+            {"engine-unit", 40},
         },
         result = "f_mk5"
     },
@@ -68,12 +61,12 @@ local recipes = {
         type = "recipe",
         name = "f_mk6",
         energy_required = 65,
+        hide_from_player_crafting = true,
         ingredients = {
-            {"f_mk5",1},
-            
-            
-            
-            
+            {"f_mk5", 1},
+            {"advanced-circuit", 50},
+            {"engine-unit", 60},
+            {"uranium-fuel-cell", 150},
         },
         result = "f_mk6"
     },
@@ -81,12 +74,12 @@ local recipes = {
         type = "recipe",
         name = "f_mk7",
         energy_required = 70,
+        hide_from_player_crafting = true,
         ingredients = {
-            {"f_mk6",1},
-            
-            
-            
-            
+            {"f_mk6", 1},
+            {"electric-engine-unit", 40},
+            {"advanced-circuit", 75},
+            {"pipe", 80},
         },
         result = "f_mk7"
     },
@@ -94,9 +87,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk8",
         energy_required = 75,
+        hide_from_player_crafting = true,
         ingredients = {
-            {"f_mk7",1},
-
+            {"f_mk7", 1},
+            {"a_mk2", 2},
+            {"substation", 10},
         },
         result = "f_mk8"
     },
@@ -104,9 +99,11 @@ local recipes = {
         type = "recipe",
         name = "f_mk9",
         energy_required = 80,
+        hide_from_player_crafting = true,
         ingredients = {
             {"f_mk8", 1},
-
+            {"processing-unit", 65},
+            {"nuclear-fuel", 25},
         },
         result = "f_mk9"
     },
@@ -114,8 +111,12 @@ local recipes = {
         type = "recipe",
         name = "f_mk10",
         energy_required = 85,
+        hide_from_player_crafting = true,
         ingredients = {
             {"f_mk9", 1},
+            {"s_mk5", 5},
+            {"low-density-structure", 50},
+            {"processing-unit", 95},
         },
         result = "f_mk10"
     },

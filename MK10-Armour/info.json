@@ -5,9 +5,9 @@
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "",
-	"dependencies": ["base >= 1.1", "? Configurable-Armour-Suits >= 0.2.7", "(?) bobplate", "(?) bobwarfare >= 1.1.0", "(?) bobequipment", "(?) custom_power_armor_fix >= 5.1.1", "(?) FactorioExtended-Equipment >= 5.0301", "(?) Krastorio2 >= 1.2.25", "(?) PowerAndArmor >= 1.19", "(?) Power Armor MK3 >= 0.4", "(?) RampantArsenal >= 1.1.5" ],
+	"dependencies": ["base >= 1.1", "Configurable-Armour-Suits >= 0.2.7", "(?) bobplate", "(?) bobwarfare >= 1.1.0", "(?) bobequipment", "(?) custom_power_armor_fix >= 5.1.1", "(?) FactorioExtended-Equipment >= 5.0301", "(?) Krastorio2 >= 1.2.25", "(?) PowerAndArmor >= 1.19", "(?) Power Armor MK3 >= 0.4", "(?) RampantArsenal >= 1.1.5" ],
 	"factorio_version": "1.1",
-	"description": "Armour MK10 currently supports\nBob's, Custom_Power_Armor_fix, FE-Equipment, K2, Power&Armor, Power Armor MK3, Rampand Aresensal",
+	"description": "Armour MK10 currently supports:",
 	"package": {
 		"ignore": [
 			"Done.cpp",
@@ -17,7 +17,7 @@
 			"To_do.cpp",
 			".gitignore",
 			"locale/cs/mod-locale.cfg",
-			"prototypes/legs_recipes.lua",
+			"prototypes/exo-skeleton_recipes.lua",
 			"prototypes/technology.lua",
 			"prototypes/roboport_recipes",
 			"prototypes/the-rest_recipes.lua"

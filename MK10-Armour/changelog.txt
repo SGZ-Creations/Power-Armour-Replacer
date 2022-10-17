@@ -1,11 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: xx.13.2022
+Date: 17.10.2022
   Features:
     - initial release
-    - 10 New tiers of: Armour, Shields, Fusion-Reactors & Batteries added.
+    - 10 New tiers of: Armour, Shields, Fusion-Reactors, Personal-Roboports & Batteries added.
     - 5 new Leggings added.
     - Settings added to "Configurable-Armour-Suits = 0.3.0.
+    - Achievements: 2 new damage, 15 new crafting,
+    - Locales: NO,EN,SK, (file of incomplete "SC" found on github)
   Thanks:
     - Honktown for help with code. (Discord)
     - _CodeGreen for help with code. (Discord)

@@ -14,7 +14,6 @@ local recipes = {
         energy_required = 20,
         ingredients = {
             {"r_mk1", 1},
-
         },
         result = "r_mk2"
     },
@@ -24,7 +23,6 @@ local recipes = {
         energy_required = 30,
         ingredients = {
             {"r_mk2", 1},
-
         },
         result = "r_mk3"
     },
@@ -34,7 +32,6 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"r_mk3", 1},
-
         },
         result = "r_mk4"
     },
@@ -44,7 +41,6 @@ local recipes = {
         energy_required = 50,
         ingredients = {
             {"r_mk4", 1},
-
         },
         result = "r_mk5"
     },
@@ -52,9 +48,9 @@ local recipes = {
         type = "recipe",
         name = "r_mk6",
         energy_required = 60,
+        hide_from_player_crafting = true,
         ingredients = {
             {"r_mk5", 1},
-
         },
         result = "r_mk6"
     },
@@ -62,12 +58,9 @@ local recipes = {
         type = "recipe",
         name = "r_mk7",
         energy_required = 70,
+        hide_from_player_crafting = true,
         ingredients = {
             {"r_mk6", 1},
-            
-            
-            
-            
         },
         result = "r_mk7"
     },
@@ -75,11 +68,9 @@ local recipes = {
         type = "recipe",
         name = "r_mk8",
         energy_required = 80,
+        hide_from_player_crafting = true,
         ingredients = {
             {"r_mk7", 1},
-            
-            
-            
         },
         result = "r_mk8"
     },
@@ -87,12 +78,9 @@ local recipes = {
         type = "recipe",
         name = "r_mk9",
         energy_required = 90,
+        hide_from_player_crafting = true,
         ingredients = {
             {"r_mk8", 1},
-            
-            
-            
-            
         },
         result = "r_mk9"
     },
@@ -100,12 +88,9 @@ local recipes = {
         type = "recipe",
         name = "r_mk10",
         energy_required = 100,
+        hide_from_player_crafting = true,
         ingredients = {
             {"r_mk9", 1},
-            
-            
-            
-            
         },
         result = "r_mk10"
     },
