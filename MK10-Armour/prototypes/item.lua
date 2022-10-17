@@ -555,9 +555,9 @@ data:extend(
   local max_s_5 = 1600000
   local max_s_6 = 3200000
   local max_s_7 = 6250000
-  local max_s_8 = 12500000
-  local max_s_9 = 25000000
-  local max_s_10 = 50000000
+  local max_s_8 = 10000000
+  local max_s_9 = 15000000
+  local max_s_10 = 25000000
 
   data:extend({
     {
