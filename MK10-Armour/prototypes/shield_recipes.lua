@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk1",
+        energy_required = 5,
         ingredients = {
             {"iron-plate", 10},
         },
@@ -10,6 +11,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk2",
+        energy_required = 10,
         ingredients = {
             {"s_mk1", 1},
 
@@ -19,6 +21,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk3",
+        energy_required = 15,
         ingredients = {
             {"s_mk2", 1},
 
@@ -28,6 +31,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk4",
+        energy_required = 20,
         ingredients = {
             {"s_mk3", 1},
 
@@ -37,6 +41,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk5",
+        energy_required = 25,
         ingredients = {
             {"s_mk4", 1},
 
@@ -46,6 +51,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk6",
+        energy_required = 30,
         ingredients = {
             {"s_mk5", 1},
 
@@ -55,6 +61,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk7",
+        energy_required = 35,
         ingredients = {
             {"s_mk6", 1},
             
@@ -67,6 +74,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk8",
+        energy_required = 40,
         ingredients = {
             {"s_mk7", 1},
             
@@ -78,6 +86,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk9",
+        energy_required = 45,
         ingredients = {
             {"s_mk8", 1},
             
@@ -90,6 +99,7 @@ local recipes = {
     {
         type = "recipe",
         name = "s_mk10",
+        energy_required = 50,
         ingredients = {
             {"s_mk9", 1},
             

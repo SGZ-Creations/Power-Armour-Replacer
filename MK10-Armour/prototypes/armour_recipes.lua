@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk1",
+        energy_required = 62.0,
         ingredients = {
             {"heavy-armor", 1},
             {"engine-unit", 100},
@@ -10,11 +11,11 @@ local recipes = {
         },
         result = "a_mk1",
         allow_decomposition = true,
-        energy = 30.0,
     },
     {
         type = "recipe",
         name = "a_mk2",
+        energy_required = 64.0,
         ingredients = {
             {"a_mk1", 1},
             {"battery", 100},
@@ -24,11 +25,11 @@ local recipes = {
         },
         result = "a_mk2",
         allow_decomposition = true,
-        energy = 60.0,
     },
     {
         type = "recipe",
         name = "a_mk3",
+        energy_required = 66.0,
         ingredients = {
             {"a_mk2", 1},
             {"solid-fuel", 50},
@@ -38,11 +39,11 @@ local recipes = {
         },
         result = "a_mk3",
         allow_decomposition = true,
-        energy = 120.0,
     },
     {
         type = "recipe",
         name = "a_mk4",
+        energy_required = 68.0,
         ingredients = {
             {"a_mk3", 1},
             {"solid-fuel", 100},
@@ -51,11 +52,12 @@ local recipes = {
         },
         result = "a_mk4",
         allow_decomposition = true,
-        energy = 240.0,
     },
     {
         type = "recipe",
         name = "a_mk5",
+        energy_required = 70.0,
+        hidden_from_player_crafting = true,
         ingredients = {
             {"a_mk4", 1},
             {"solid-fuel", 200},
@@ -64,12 +66,12 @@ local recipes = {
             {"uranium-235", 350},
         },
         result = "a_mk5",
-        hidden_from_player_crafting = true,
-        energy = 480.0,
     },
     {
         type = "recipe",
         name = "a_mk6",
+        energy_required = 72.0,
+        hidden_from_player_crafting = true,
         ingredients = {
             {"a_mk5", 1},
             {"solid-fuel", 300},
@@ -78,13 +80,12 @@ local recipes = {
             {"rocket-fuel", 55},
         },
         result = "a_mk6",
-        hidden_from_player_crafting = true,
-        always_show_products = true,
-        energy = 960.0,
     },
     {
         type = "recipe",
         name = "a_mk7",
+        energy_required = 74.0,
+        hidden_from_player_crafting = true,
         ingredients = {
             {"a_mk6", 1},
             {"nuclear-fuel", 20},
@@ -93,13 +94,12 @@ local recipes = {
             {"concrete", 10},
         },
         result = "a_mk7",
-        hidden_from_player_crafting = true,
-        always_show_products = true,
-        energy = 1920.0,
     },
     {
         type = "recipe",
         name = "a_mk8",
+        energy_required = 76.0,
+        hidden_from_player_crafting = true,
         ingredients = {
             {"a_mk7", 1},
             {"nuclear-reactor", 25},
@@ -108,13 +108,12 @@ local recipes = {
             {"stone-brick", 5},
         },
         result = "a_mk8",
-        hidden_from_player_crafting = true,
-        always_show_products = true,
-        energy = 3840.0,
     },
     {
         type = "recipe",
         name = "a_mk9",
+        energy_required = 78.0,
+        hidden_from_player_crafting = true,
         ingredients = {
             {"a_mk8", 1},
             {"nuclear-reactor", 25},
@@ -123,13 +122,12 @@ local recipes = {
             {"rocket-silo", 2},
         },
         result = "a_mk9",
-        hidden_from_player_crafting = true,
-        always_show_products = true,
-        energy = 7680.0,
     },
     {
         type = "recipe",
         name = "a_mk10",
+        energy_required = 80.0,
+        hidden_from_player_crafting = true,
         ingredients = {
             {"a_mk9", 1},
             {"nuclear-reactor", 25},
@@ -138,9 +136,6 @@ local recipes = {
             {"satellite", 10},
         },
         result = "a_mk10",
-        hidden_from_player_crafting = true,
-        always_show_products = true,
-        energy = 15360.0,
     },
 }
 

@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "bi_mk1",
+        energy_required = 10,
         ingredients = {
             {"lubricant", 200},
             {"electronic-circuit", 10},
@@ -13,6 +14,7 @@ local recipes = {
     {
         type = "recipe",
         name = "bi_mk2",
+        energy_required = 20,
         ingredients = {
             {"bi_mk1", 1},
             {"sulfuric-acid", 150},
@@ -25,6 +27,7 @@ local recipes = {
     {
         type = "recipe",
         name = "nv_mk1",
+        energy_required = 10,
         ingredients = {
             {"lubricant", 200},
             {"",},
@@ -37,6 +40,7 @@ local recipes = {
     {
         type = "recipe",
         name = "nv_mk2",
+        energy_required = 20,
         ingredients = {
             {"nv_mk1", 1},
             {"lubricant", 200},

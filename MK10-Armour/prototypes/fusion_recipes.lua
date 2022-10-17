@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk1",
+        energy_required = 40,
         ingredients = {
             {"advanced-circuit", 10},
             
@@ -14,6 +15,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk2",
+        energy_required = 45,
         ingredients = {
             {"f_mk1",1},
             
@@ -26,6 +28,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk3",
+        energy_required = 50,
         ingredients = {
             {"f_mk2",1},
             
@@ -38,6 +41,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk4",
+        energy_required = 55,
         ingredients = {
             {"f_mk3",1},
             
@@ -50,6 +54,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk5",
+        energy_required = 60,
         ingredients = {
             {"f_mk4",1},
             
@@ -62,6 +67,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk6",
+        energy_required = 65,
         ingredients = {
             {"f_mk5",1},
             
@@ -74,6 +80,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk7",
+        energy_required = 70,
         ingredients = {
             {"f_mk6",1},
             
@@ -86,6 +93,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk8",
+        energy_required = 75,
         ingredients = {
             {"f_mk7",1},
 
@@ -95,6 +103,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk9",
+        energy_required = 80,
         ingredients = {
             {"f_mk8", 1},
 
@@ -104,6 +113,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk10",
+        energy_required = 85,
         ingredients = {
             {"f_mk9", 1},
         },

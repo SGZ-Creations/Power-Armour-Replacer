@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk1",
+        energy_required = 22,
         ingredients = {
             {"lab", 2},
             {"electronic-circuit", 15},
@@ -13,6 +14,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk2",
+        energy_required = 24,
         ingredients = {
             {"b_mk1", 1},
             {"small-lamp", 5},
@@ -23,6 +25,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk3",
+        energy_required = 26,
         ingredients = {
             {"b_mk2", 1},
             {"constant-combinator", 2},
@@ -33,6 +36,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk4",
+        energy_required = 28,
         ingredients = {
             {"b_mk3", 1},
             {"small-lamp", 5},
@@ -43,6 +47,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk5",
+        energy_required = 30,
         ingredients = {
             {"b_mk4", 1},
             {"advanced-circuit", 20},
@@ -55,6 +60,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk6",
+        energy_required = 32,
         ingredients = {
             {"b_mk5", 1},
             
@@ -67,6 +73,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk7",
+        energy_required = 34,
         ingredients = {
             {"b_mk6", 1},
             
@@ -79,6 +86,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk8",
+        energy_required = 36,
         ingredients = {
             {"b_mk7", 1},
             
@@ -91,6 +99,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk9",
+        energy_required = 38,
         ingredients = {
             {"b_mk8", 1},
             
@@ -103,6 +112,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk10",
+        energy_required = 40,
         ingredients = {
             {"b_mk9", 1},
             
