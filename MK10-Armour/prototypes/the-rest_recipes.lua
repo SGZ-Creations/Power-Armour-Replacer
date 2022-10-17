@@ -26,7 +26,7 @@ local recipes = {
         type = "recipe",
         name = "nv_mk1",
         ingredients = {
-            {"",},
+            {"lubricant", 200},
             {"",},
             {"",},
             {"",},
@@ -39,7 +39,7 @@ local recipes = {
         name = "nv_mk2",
         ingredients = {
             {"nv_mk1", 1},
-            {"",},
+            {"lubricant", 200},
             {"",},
             {"",},
             {"",},

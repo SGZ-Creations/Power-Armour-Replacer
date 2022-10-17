@@ -147,64 +147,75 @@ local recipes = {
 local items = {
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk1",
         icon = "__base__.graphics.power-armor.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk2",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk3",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk4",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk5",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk6",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk7",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk8",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk9",
-        icon = "__base__.graphics.power-armor-mk-2.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
         stack_size = 1
     },
     {
         type = "armor",
+        icon_size = 256,
         name = "a_mk10",
-        icon = "__base__.graphics.power-armor-mk-2.png",
-        stack_size = 1
+        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        stack_size = 1,
     },
 }
 
+data:extend(items)
 data:extend(recipes)

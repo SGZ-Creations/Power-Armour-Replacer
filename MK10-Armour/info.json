@@ -17,8 +17,6 @@
 			"To_do.cpp",
 			".gitignore",
 			"locale/cs/mod-locale.cfg",
-			"prototypes/batteries_recipes.lua",
-			"prototypes/fusion_recipes.lua",
 			"prototypes/legs_recipes.lua",
 			"prototypes/technology.lua",
 			"prototypes/roboport_recipes",

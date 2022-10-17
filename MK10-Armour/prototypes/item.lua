@@ -373,7 +373,6 @@ data:extend(
     close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
   },
 })
-
 data:extend(
   {
     {
@@ -449,8 +448,89 @@ data:extend(
   })
 
 -- Batteries's code
+  local i = 1
+  while i < 11 do
+    data:extend({{
+      type = "battery-equipment",
+      name = "b_mk" .. tostring(i),
+      sprite =
+      {
+        filename = "__base__/graphics/equipment/battery-equipment.png",
+        width = 32,
+        height = 64,
+        priority = "medium",
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-battery-equipment.png",
+          width = 64,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 1,
+        height = 2,
+        type = "full"
+      },
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = tostring(i * 10000) .. "MJ",
+        usage_priority = "tertiary"
+      },
+      categories = { "armor" }
+    }})
+
+    i = i + 1
+  end
 
 -- Fusion's code
+  i = 1
+  while i < 11 do
+  data:extend({ {
+    type = "generator-equipment",
+    name = "f_mk" .. tostring(i),
+    sprite =
+    {
+      filename = "__base__/graphics/equipment/fusion-reactor-equipment.png",
+      width = 128,
+      height = 128,
+      priority = "medium",
+      hr_version =
+      {
+        filename = "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+        width = 256,
+        height = 256,
+        priority = "medium",
+        scale = 0.5
+      }
+    },
+    shape =
+    {
+      width = 3,
+      height = 3,
+      --type = "full"
+      -- Can also be defined as manual (a set of points which fall within the width/height - can't be empty)
+      type = "manual",
+      points = {{0, 0},         {2, 0},
+                {0, 1},         {2, 1},
+                {0, 2}, {1, 2}, {2, 2},}
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "primary-output"
+    },
+    power = tostring(i * 10000000) .. "kW",
+    categories = { "armor" }
+  }})
+
+
+    i = i + 1
+  end
+
 
 -- Leggings's code
 
@@ -458,394 +538,403 @@ data:extend(
 
 -- Shields's code
 
-local function shield_to_buf_cap(max)
-  return tostring(max * 1.2)
-end
-local function shield_to_flow_limit(max)
-  return tostring(max * 2.4)
-end
-local function shield_to_per_shield(max)
-  return tostring(max * 0.2)
-end
+  local function shield_to_buf_cap(max)
+    return tostring(max * 1.0)
+  end
+  local function shield_to_flow_limit(max)
+    return tostring(max * 10.0)
+  end
+  local function shield_to_per_shield(max)
+    return tostring(max * 0.001)
+  end
 
+  local max_s_1 = 100000
+  local max_s_2 = 200000
+  local max_s_3 = 400000
+  local max_s_4 = 800000
+  local max_s_5 = 1600000
+  local max_s_6 = 3200000
+  local max_s_7 = 6250000
+  local max_s_8 = 12500000
+  local max_s_9 = 25000000
+  local max_s_10 = 50000000
 
-local max_s_1 = 150
-local max_s_2 = 300
-local max_s_3 = 600
-local max_s_4 = 1200
-local max_s_5 = 2400
-local max_s_6 = 4800
-local max_s_7 = 9600
-local max_s_8 = 19200
-local max_s_9 = 38400
-local max_s_10 = 76800
-
-
-data:extend({
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk1",
-    sprite =
+  data:extend({
     {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk1",
+      sprite =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
         priority = "medium",
-        scale = 0.5
-      }
-    },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_1,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_1) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_1) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_1) .. "kJ",
-    categories = { "armor" }
-  },
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk2",
-    sprite =
-    {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
-        priority = "medium",
-        scale = 0.5
-      }
-    },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_2,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_2) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_2) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_2) .. "kJ",
-    categories = { "armor" }
-  },
-
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk3",
-    sprite =
-    {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_1,
+      energy_source =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
-        priority = "medium",
-        scale = 0.5
-      }
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_1) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_1) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_1) .. "kJ",
+      categories = { "armor" }
     },
-    shape =
     {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_3,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_3) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_3) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_3) .. "kJ",
-    categories = { "armor" }
-  },
-
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk4",
-    sprite =
-    {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk2",
+      sprite =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
         priority = "medium",
-        scale = 0.5
-      }
-    },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_4,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_4) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_4) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_4) .. "kJ",
-    categories = { "armor" }
-  },
-
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk5",
-    sprite =
-    {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
-        priority = "medium",
-        scale = 0.5
-      }
-    },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_5,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_5) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_5) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_5) .. "kJ",
-    categories = { "armor" }
-  },
-
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk6",
-    sprite =
-    {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_2,
+      energy_source =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
-        priority = "medium",
-        scale = 0.5
-      }
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_2) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_2) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_2) .. "kJ",
+      categories = { "armor" }
     },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_6,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_6) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_6) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_6) .. "kJ",
-    categories = { "armor" }
-  },
 
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk7",
-    sprite =
     {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk3",
+      sprite =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
         priority = "medium",
-        scale = 0.5
-      }
-    },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_7,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_7) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_7) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_7) .. "kJ",
-    categories = { "armor" }
-  },
-
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk8",
-    sprite =
-    {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
-        priority = "medium",
-        scale = 0.5
-      }
-    },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_8,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_8) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_8) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_8) .. "kJ",
-    categories = { "armor" }
-  },
-
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk9",
-    sprite =
-    {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_3,
+      energy_source =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
-        priority = "medium",
-        scale = 0.5
-      }
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_3) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_3) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_3) .. "kJ",
+      categories = { "armor" }
     },
-    shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    },
-    max_shield_value = max_s_9,
-    energy_source =
-    {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_9) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_9) .. "kW",
-      usage_priority = "primary-input"
-    },
-    energy_per_shield = shield_to_per_shield(max_s_9) .. "kJ",
-    categories = { "armor" }
-  },
 
-  {
-    type = "energy-shield-equipment",
-    name = "s_mk10",
-    sprite =
     {
-      filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-      width = 64,
-      height = 64,
-      priority = "medium",
-      hr_version =
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk4",
+      sprite =
       {
-        filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-        width = 128,
-        height = 128,
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
         priority = "medium",
-        scale = 0.5
-      }
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_4,
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_4) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_4) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_4) .. "kJ",
+      categories = { "armor" }
     },
-    shape =
+
     {
-      width = 2,
-      height = 2,
-      type = "full"
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk5",
+      sprite =
+      {
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_5,
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_5) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_5) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_5) .. "kJ",
+      categories = { "armor" }
     },
-    max_shield_value = max_s_10,
-    energy_source =
+
     {
-      type = "electric",
-      buffer_capacity = shield_to_buf_cap(max_s_10) .. "kJ",
-      input_flow_limit = shield_to_flow_limit(max_s_10) .. "kW",
-      usage_priority = "primary-input"
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk6",
+      sprite =
+      {
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_6,
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_6) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_6) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_6) .. "kJ",
+      categories = { "armor" }
     },
-    energy_per_shield = shield_to_per_shield(max_s_10) .. "kJ",
-    categories = { "armor" }
-  },
+
+    {
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk7",
+      sprite =
+      {
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_7,
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_7) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_7) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_7) .. "kJ",
+      categories = { "armor" }
+    },
+
+    {
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk8",
+      sprite =
+      {
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_8,
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_8) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_8) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_8) .. "kJ",
+      categories = { "armor" }
+    },
+
+    {
+      subgroup = "equipment",
+      type = "energy-shield-equipment",
+      name = "s_mk9",
+      sprite =
+      {
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_9,
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_9) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_9) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_9) .. "kJ",
+      categories = { "armor" }
+    },
+
+    {
+      type = "energy-shield-equipment",
+      name = "s_mk10",
+      sprite =
+      {
+        filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        hr_version =
+        {
+          filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+          width = 128,
+          height = 128,
+          priority = "medium",
+          scale = 0.5
+        }
+      },
+      shape =
+      {
+        width = 2,
+        height = 2,
+        type = "full"
+      },
+      max_shield_value = max_s_10,
+      energy_source =
+      {
+        type = "electric",
+        buffer_capacity = shield_to_buf_cap(max_s_10) .. "kJ",
+        input_flow_limit = shield_to_flow_limit(max_s_10) .. "kW",
+        usage_priority = "primary-input"
+      },
+      energy_per_shield = shield_to_per_shield(max_s_10) .. "kJ",
+      categories = { "armor" }
+    },
 
 
-})
+  })
 
 
--- The rest's code / Night Vision
+
+
+  -- The rest's code / Night Vision
 
 
 -- The rest's code / belt immunity
