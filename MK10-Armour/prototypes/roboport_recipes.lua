@@ -4,7 +4,10 @@ local recipes = {
         name = "r_mk1",
         energy_required = 10,
         ingredients = {
-            {"iron-plate", 10},
+            {"iron-chest", 5},
+            {"electronic-circuit", 75},
+            {"copper-cable", 150},
+            {"small-lamp", 2},
         },
         result = "r_mk1"
     },
@@ -14,6 +17,9 @@ local recipes = {
         energy_required = 20,
         ingredients = {
             {"r_mk1", 1},
+            {"electronic-circuit", 100},
+            {"iron-gear-wheel", 125},
+            {type="fluid", name="steam", amount=250},
         },
         result = "r_mk2"
     },
@@ -23,6 +29,9 @@ local recipes = {
         energy_required = 30,
         ingredients = {
             {"r_mk2", 1},
+            {"electronic-circuit", 125},
+            {"engine-unit", 80},
+            {"", },
         },
         result = "r_mk3"
     },
@@ -96,6 +105,28 @@ local recipes = {
     },
 }
 
+--[[
+local compat = require("compatibilities/mods-compat")
+
+compat.replace_ingredients(recipes[1], {
+--bobs mods
+    ["bobplate"] = {
+        ["old-ingredient-1"] = {"new-ingredient-1, 5"}, -- the first three are for replacing ingredients in the recipe
+        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
+        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
+        {"new-ingredient-4", count},                    -- these two are for adding new ingredients to the recipe
+        {"new-ingredient-5", count}
+    },
+    ["bobequipment"] = {
+        ["old-ingredient-1"] = {"new-ingredient-1, 5"},
+        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
+        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
+        {"new-ingredient-4", count},
+        {"new-ingredient-5", count}
+    },
+    --space/K2
+})
+]]--
 
 local item = {
     {

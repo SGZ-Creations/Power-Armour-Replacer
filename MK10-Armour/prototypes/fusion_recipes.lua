@@ -104,6 +104,7 @@ local recipes = {
             {"f_mk8", 1},
             {"processing-unit", 65},
             {"nuclear-fuel", 25},
+            {type="fluid", name="petroleum-gas,", amount=200}
         },
         result = "f_mk9"
     },
@@ -122,11 +123,34 @@ local recipes = {
     },
 }
 
+--[[
+local compat = require("compatibilities/mods-compat")
+
+compat.replace_ingredients(recipes[1], {
+--bobs mods
+    ["bobplate"] = {
+        ["old-ingredient-1"] = {"new-ingredient-1, 5"}, -- the first three are for replacing ingredients in the recipe
+        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
+        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
+        {"new-ingredient-4", count},                    -- these two are for adding new ingredients to the recipe
+        {"new-ingredient-5", count}
+    },
+    ["bobequipment"] = {
+        ["old-ingredient-1"] = {"new-ingredient-1, 5"},
+        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
+        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
+        {"new-ingredient-4", count},
+        {"new-ingredient-5", count}
+    },
+    --space/K2
+})
+]]--
+
 local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 
-function string.random(length)
+local function string_random(length)
     if length > 0 then
-        return string.random(length - 1) .. charset:sub(math.random(1, 62), 1)
+        return string_random(length - 1) .. charset:sub(math.random(1, 62), 1)
     else
         return ""
     end
@@ -141,7 +165,7 @@ while i < 11 do
         icon = "__base__/graphics/icons/fusion-reactor-equipment.png",
         icon_size = 64,
         stack_size = 200,
-        order = "[Fusion Reactor]" .. tostring(i - 1) .. string.random(25),
+        order = "[Fusion Reactor]" .. tostring(i - 1) .. string_random(25),
         subgroup = "equipment",
         placed_as_equipment_result = "f_mk" .. tostring(i),
     } })

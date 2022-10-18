@@ -1,12 +1,15 @@
 local util = {}
 
-replacements = {["iron-plate"] = "copper-plate"}
-
-util.replace_ingredients = function(recipe, replacements)
+util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients
-    for _, ingredient in pairs(ingredients) do
-        if replacements[ingredient[1]] then
-            ingredient[1] = replacements[ingredient[1]]
+    for k, ingredient in pairs(ingredients) do
+        if type(k) == "string" then
+            local name = ingredient[1] or ingredient["name"]
+            if replacements[name] then
+                ingredient = replacements[name]
+            end
+        else
+            ingredients[#ingredients+1] = ingredient
         end
     end
 end

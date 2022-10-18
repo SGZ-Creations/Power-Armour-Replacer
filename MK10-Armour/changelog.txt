@@ -8,8 +8,11 @@ Date: 17.10.2022
     - Settings added to "Configurable-Armour-Suits = 0.3.0.
     - Achievements: 2 new damage, 15 new crafting,
     - Locales: NO,EN,SK, (file of incomplete "SC" found on github)
+  Compatibility:
+    - bob's:
+    - angels:
   Thanks:
     - Honktown for help with code. (Discord)
-    - _CodeGreen for help with code. (Discord)
-    - Toby1364 for help with code. (Discord)
+    - _CodeGreen for help with code when i got stuck & the compatibility. (Discord)
+    - Toby1364 for help working on mod in general. (Discord)
     - Chunnyluny for help with testing the pre-alpha. (Discord)

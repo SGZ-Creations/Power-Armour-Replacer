@@ -139,6 +139,29 @@ local recipes = {
     },
 }
 
+--[[
+local compat = require("compatibilities/mods-compat")
+
+compat.replace_ingredients(recipes[1], {
+--bobs mods
+    ["bobplate"] = {
+        ["old-ingredient-1"] = {"new-ingredient-1, 5"}, -- the first three are for replacing ingredients in the recipe
+        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
+        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
+        {"new-ingredient-4", count},                    -- these two are for adding new ingredients to the recipe
+        {"new-ingredient-5", count}
+    },
+    ["bobequipment"] = {
+        ["old-ingredient-1"] = {"new-ingredient-1, 5"},
+        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
+        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
+        {"new-ingredient-4", count},
+        {"new-ingredient-5", count}
+    },
+    --space/K2
+})
+]]--
+
 local items = {
     {
         type = "armor",
@@ -151,63 +174,63 @@ local items = {
         type = "armor",
         icon_size = 256,
         name = "a_mk2",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__base__/graphics/icons/power-armor-mk2.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk3",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk3.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk4",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk4.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk5",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk5.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk6",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk6.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk7",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk7.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk8",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk8.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk9",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk9.png",
         stack_size = 1
     },
     {
         type = "armor",
-        icon_size = 256,
+        icon_size = 64,
         name = "a_mk10",
-        icon = "__base__/graphics/icons/power-armor-mk2.png.png",
+        icon = "__MK10-Armour__/texture/items/power-armor-mk10.png",
         stack_size = 1,
     },
 }

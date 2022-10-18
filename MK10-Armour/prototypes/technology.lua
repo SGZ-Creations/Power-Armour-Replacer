@@ -1,19 +1,92 @@
-local compat = require("compat")
-
-compat.update_recipe(recipes[1], {
-    ["bobplate"] = {
-        ["old-ingredient1"] = "new-ingredient1",
-        ["old-ingredient2"] = "new-ingredient2",
-        ["old-ingredient3"] = "new-ingredient3",
+data:extend(
+{
+    {
+        type = "technology",
+        name = "progression_1",
+        icon_size = 256, icon_mipmaps = 4,
+        icon = "__base__/graphics/technology/heavy-armor.png",
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "a_mk1"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "b_mk1"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "f_mk1"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "s_mk1"
+          },
+--[[
+          {
+            type = "unlock-recipe",
+            recipe = "e_mk1"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "r_mk1"
+          },
+]]--
+        },
+        prerequisites = {""},
+        unit =
+        {
+          count = 30,
+          ingredients = {{"automation-science-pack", 1}},
+          time = 30
+        },
+        order = "g-a-b"
     },
-    ["bobequipment"] = {
-        ["old-ingredient4"] = "new-ingredient4",
-        ["old-ingredient5"] = "new-ingredient5",
-        ["old-ingredient6"] = "new-ingredient6",
-    },
-    ["space"] = {
-        ["old-ingredient1"] = "new-ingredient1",
-        ["old-ingredient2"] = "new-ingredient2",
-        ["old-ingredient3"] = "new-ingredient3",
+    {
+        type = "technology",
+        name = "progression_2",
+        icon_size = 256, icon_mipmaps = 4,
+        icon = "__base__/graphics/technology/heavy-armor.png",
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "a_mk2"
+          },{
+            type = "unlock-recipe",
+            recipe = "b_mk2"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "f_mk2"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "s_mk2"
+          },
+--[[
+          {
+            type = "unlock-recipe",
+            recipe = "e_mk1"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "r_mk1"
+          },
+]]--
+        },
+        prerequisites = {"military", "steel-processing"},
+        unit =
+        {
+          count = 30,
+          ingredients = {{"automation-science-pack", 1}},
+          time = 30
+        },
+        order = "g-a-b"
     },
 })
+-- armour
+-- exolegging
+-- batteries
+-- shields

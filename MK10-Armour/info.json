@@ -18,6 +18,7 @@
 			".gitignore",
 			"locale/cs/mod-locale.cfg",
 			"prototypes/exo-skeleton_recipes.lua",
+			"prototypes/personal_solar_recipes.lua",
 			"prototypes/technology.lua",
 			"prototypes/roboport_recipes",
 			"prototypes/the-rest_recipes.lua"
