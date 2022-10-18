@@ -123,7 +123,6 @@ local recipes = {
     },
 }
 
-
 --[[
 local compat = require("compatibilities/mods-compat")
 
@@ -146,45 +145,4 @@ compat.replace_ingredients(recipes[1], {
     --space/K2
 })
 ]]--
-
-local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-
-local function string_random(length)
-    if length > 0 then
-        return string_random(length - 1) .. charset:sub(math.random(1, 62), 1)
-    else
-        return ""
-    end
-end
-
-data:extend({ {
-    type = "item",
-    name = "b_mk1",
-    icon = "__base__/graphics/icons/battery-equipment.png",
-    icon_size = 64,
-    stack_size = 200,
-    order = "[Battery]" .. "0" .. string_random(25),
-    subgroup = "equipment",
-    placed_as_equipment_result = "b_mk1",
-}})
-
-
-local i = 2
-while i < 11 do
-
-    data:extend({{
-        type = "item",
-        name = "b_mk" .. tostring(i),
-        icon = "__base__/graphics/icons/battery-mk2-equipment.png",
-        icon_size = 64,
-        stack_size = 200,
-        order = "[Battery]" .. tostring(i - 1) .. string_random(25),
-        subgroup = "equipment",
-        placed_as_equipment_result = "b_mk" .. tostring(i),
-    }})
-
-    i = i + 1
-end
-
 data:extend(recipes)
-

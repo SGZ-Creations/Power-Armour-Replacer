@@ -79,7 +79,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk3",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk3.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -116,7 +116,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk4",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk4.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -153,7 +153,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk5",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk5.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -190,7 +190,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk6",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk6.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -227,7 +227,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk7",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk7.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -264,7 +264,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk8",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk8.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -301,7 +301,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk9",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk9.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -338,7 +338,7 @@ data:extend(
   {
     type = "armor",
     name = "a_mk10",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
+    icon = "__MK10-Armour__/texture/items/power-armor-mk10.png",
     icon_size = 64, icon_mipmaps = 4,
     resistances =
     {
@@ -537,6 +537,45 @@ data:extend(
 -- Roboport's code
 
 -- Shields's code
+
+local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+local function string_random(length)
+    if length > 0 then
+        return string_random(length - 1) .. charset:sub(math.random(1, 62), 1)
+    else
+        return ""
+    end
+end
+
+data:extend({ {
+    type = "item",
+    name = "b_mk1",
+    icon = "__base__/graphics/icons/battery-equipment.png",
+    icon_size = 64,
+    stack_size = 200,
+    order = "[Battery]" .. "0" .. string_random(25),
+    subgroup = "equipment",
+    placed_as_equipment_result = "b_mk1",
+}})
+
+
+local i = 2
+while i < 11 do
+
+    data:extend({{
+        type = "item",
+        name = "b_mk" .. tostring(i),
+        icon = "__base__/graphics/icons/battery-mk2-equipment.png",
+        icon_size = 64,
+        stack_size = 200,
+        order = "[Battery]" .. tostring(i - 1) .. string_random(25),
+        subgroup = "equipment",
+        placed_as_equipment_result = "b_mk" .. tostring(i),
+    }})
+
+    i = i + 1
+end
 
   local function shield_to_buf_cap(max)
     return tostring(max * 1.0)

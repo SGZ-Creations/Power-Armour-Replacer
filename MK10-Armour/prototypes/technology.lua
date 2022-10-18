@@ -37,7 +37,7 @@ data:extend(
         prerequisites = {""},
         unit =
         {
-          count = 30,
+          count = 1000,
           ingredients = {{"automation-science-pack", 1}},
           time = 30
         },
@@ -79,7 +79,7 @@ data:extend(
         prerequisites = {"military", "steel-processing"},
         unit =
         {
-          count = 30,
+          count = 2000,
           ingredients = {{"automation-science-pack", 1}},
           time = 30
         },

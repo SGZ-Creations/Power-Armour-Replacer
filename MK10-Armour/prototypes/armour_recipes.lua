@@ -73,6 +73,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk5", 1},
+            --{"p-s_mk3", 5},
             {"solid-fuel", 300},
             {"rocket-control-unit", 50},
             {"processing-unit", 150},
@@ -103,7 +104,7 @@ local recipes = {
         ingredients = {
             {"a_mk7", 1},
             {"f_mk5", 10},
-            {"s_mk2", 15},
+            {"submachine-gun", 15},
             {"nuclear-reactor", 25},
             {"assembling-machine-3", 10},
         },
@@ -118,7 +119,7 @@ local recipes = {
             {"a_mk8", 1},
             {"s_mk5", 5},
             {"centrifuge", 15},
-            {"rocket-silo", 2},
+            {"rocket-control-unit", 10},
             {"nuclear-reactor", 25},
         },
         result = "a_mk9",
@@ -131,9 +132,9 @@ local recipes = {
         ingredients = {
             {"a_mk9", 1},
             {"s_mk8", 5},
-            {"satellite", 5},
+            {"rocket-silo", 5},
             {"centrifuge", 15},
-            {"nuclear-reactor", 25},
+            {"fast-transport-belt", 35},
         },
         result = "a_mk10",
     },
@@ -161,41 +162,36 @@ compat.replace_ingredients(recipes[1], {
     --space/K2
 })
 ]]--
-
+--[[
 local items = {
     {
         type = "armor",
         icon_size = 256,
         name = "a_mk1",
-        icon = "__base__.graphics.power-armor.png",
         stack_size = 1
     },
     {
         type = "armor",
         icon_size = 256,
         name = "a_mk2",
-        icon = "__base__/graphics/icons/power-armor-mk2.png",
         stack_size = 1
     },
     {
         type = "armor",
         icon_size = 64,
         name = "a_mk3",
-        icon = "__MK10-Armour__/texture/items/power-armor-mk3.png",
         stack_size = 1
     },
     {
         type = "armor",
         icon_size = 64,
         name = "a_mk4",
-        icon = "__MK10-Armour__/texture/items/power-armor-mk4.png",
         stack_size = 1
     },
     {
         type = "armor",
         icon_size = 64,
         name = "a_mk5",
-        icon = "__MK10-Armour__/texture/items/power-armor-mk5.png",
         stack_size = 1
     },
     {
@@ -236,4 +232,5 @@ local items = {
 }
 
 data:extend(items)
+]]--
 data:extend(recipes)
