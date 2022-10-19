@@ -35,7 +35,7 @@ local recipes = {
     {
         type = "recipe",
         name = "nv_mk1",
-        enabled = true,
+        enabled = false,
         energy_required = 10,
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
@@ -51,7 +51,7 @@ local recipes = {
     {
         type = "recipe",
         name = "nv_mk2",
-        enabled = true,
+        enabled = false,
         energy_required = 20,
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",

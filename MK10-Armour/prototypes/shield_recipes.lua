@@ -18,7 +18,8 @@ local recipes = {
         energy_required = 10,
         ingredients = {
             {"s_mk1", 1},
-            {"", },
+            {"electronic-circuit", 20},
+            {"engine-unit", 20},
         },
         result = "s_mk2"
     },
@@ -29,6 +30,8 @@ local recipes = {
         energy_required = 15,
         ingredients = {
             {"s_mk2", 1},
+            {"electronic-circuit", 20},
+            {"advanced-circuit", 15},
         },
         result = "s_mk3"
     },
@@ -39,6 +42,8 @@ local recipes = {
         energy_required = 20,
         ingredients = {
             {"s_mk3", 1},
+            {"small-lamp", 10},
+            {"plastic-bar", 50},
         },
         result = "s_mk4"
     },
@@ -49,6 +54,8 @@ local recipes = {
         energy_required = 25,
         ingredients = {
             {"s_mk4", 1},
+            {"electric-egnine-unit", 15},
+            {"advanced-circuit", 30},
         },
         result = "s_mk5"
     },
@@ -60,6 +67,8 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"s_mk5", 1},
+            {"f_mk3", 3},
+            {"uranium-235", 80},
         },
         result = "s_mk6"
     },
@@ -71,6 +80,8 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"s_mk6", 1},
+            {"low-density-structure", 30},
+            {"solid-fuel", 250},
         },
         result = "s_mk7"
     },
@@ -80,8 +91,12 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"s_mk7", 1},
+            {"uranium-235", 120},
+            {"processing-unit", 80},
+            {type="fluid", name="lubricant", amount=350},
         },
         result = "s_mk8"
     },
@@ -91,8 +106,11 @@ local recipes = {
         enabled = false,
         energy_required = 45,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"s_mk8", 1},
+            {"b_mk8", 6},
+            {type="fluid", name="petroleum-gas", amount=350},
         },
         result = "s_mk9"
     },
@@ -102,8 +120,12 @@ local recipes = {
         enabled = false,
         energy_required = 50,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"s_mk9", 1},
+            {"rocket-control-unit", 45},
+            {"processing-unit", 130},
+            {type="fluid", name="sulfuric-acid", amount=350},
         },
         result = "s_mk10"
     },

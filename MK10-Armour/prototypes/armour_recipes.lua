@@ -79,7 +79,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk5", 1},
-            --{"p-s_mk3", 5},
+            --{"ps_mk3", 5},
             {"solid-fuel", 300},
             {"rocket-control-unit", 50},
             {"processing-unit", 150},
@@ -112,9 +112,10 @@ local recipes = {
         ingredients = {
             {"a_mk7", 1},
             {"f_mk5", 10},
+            {"electric-furnace", 10},
             {"submachine-gun", 15},
             {"nuclear-reactor", 25},
-            {"assembling-machine-3", 10},
+            
         },
         result = "a_mk8",
     },
@@ -127,7 +128,7 @@ local recipes = {
         ingredients = {
             {"a_mk8", 1},
             {"s_mk5", 5},
-            {"centrifuge", 15},
+            {"assembling-machine-3", 10},
             {"rocket-control-unit", 10},
             {"nuclear-reactor", 25},
         },
