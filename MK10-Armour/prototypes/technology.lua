@@ -204,7 +204,7 @@ data:extend(
         recipe = "r_mk5"
       },]]
     },
-    prerequisites = {"progression_4", "advanced-electronics-2", "electic-engine"},
+    prerequisites = {"progression_4", "advanced-electronics-2", "electric-engine"},
     unit =
     {
       count = 1000,
@@ -430,7 +430,7 @@ data:extend(
         recipe = "r_mk10"
       },]]
     },
-    prerequisites = {"progression_9", "utility-science-pack", "logistics-3"},
+    prerequisites = {"progression_9", "rocket-silo", "logistics-3"},
     unit =
     {
       count = 1000,
