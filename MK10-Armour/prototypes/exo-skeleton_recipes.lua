@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "e_mk1",
+        enabled = false,
         energy_required = 5,
         ingredients = {
             {"",},
@@ -15,6 +16,7 @@ local recipes = {
     {
         type = "recipe",
         name = "e_mk2",
+        enabled = false,
         energy_required = 10,
         ingredients = {
             {"e_mk1", 1},
@@ -28,6 +30,7 @@ local recipes = {
     {
         type = "recipe",
         name = "e_mk3",
+        enabled = false,
         energy_required = 15,
         hide_from_player_crafting = true,
         ingredients = {
@@ -42,6 +45,7 @@ local recipes = {
     {
         type = "recipe",
         name = "e_mk4",
+        enabled = false,
         energy_required = 20,
         hide_from_player_crafting = true,
         ingredients = {
@@ -56,6 +60,7 @@ local recipes = {
     {
         type = "recipe",
         name = "e_mk5",
+        enabled = false,
         energy_required = 25,
         hide_from_player_crafting = true,
         ingredients = {

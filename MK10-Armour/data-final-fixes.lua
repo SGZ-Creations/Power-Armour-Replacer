@@ -1,2 +1,4 @@
--- data.raw.recipe[name].enabled = false
--- data.raw.technology[name].enabled = false
+data.raw.recipe["power-armor"].enabled = false
+data.raw.technology["power-armor"].enabled = false
+data.raw.recipe["power-armor-mk2"].enabled = false
+data.raw.technology["power-armor-mk2"].enabled = false

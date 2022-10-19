@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk1",
+        enabled = false,
         energy_required = 40,
         ingredients = {
             {"electronic-circuit", 10},
@@ -13,6 +14,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk2",
+        enabled = false,
         energy_required = 45,
         ingredients = {
             {"f_mk1", 1},
@@ -24,6 +26,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk3",
+        enabled = false,
         energy_required = 50,
         ingredients = {
             {"f_mk2", 1},
@@ -36,6 +39,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk4",
+        enabled = false,
         energy_required = 55,
         ingredients = {
             {"f_mk3", 1},
@@ -47,8 +51,8 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk5",
+        enabled = false,
         energy_required = 60,
-        hide_from_player_crafting = true,
         ingredients = {
             {"f_mk4", 1},
             {"b_mk3", 5},
@@ -60,6 +64,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk6",
+        enabled = false,
         energy_required = 65,
         hide_from_player_crafting = true,
         ingredients = {
@@ -73,6 +78,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk7",
+        enabled = false,
         energy_required = 70,
         hide_from_player_crafting = true,
         ingredients = {
@@ -86,6 +92,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk8",
+        enabled = false,
         energy_required = 75,
         hide_from_player_crafting = true,
         ingredients = {
@@ -98,6 +105,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk9",
+        enabled = false,
         energy_required = 80,
         hide_from_player_crafting = true,
         ingredients = {
@@ -111,6 +119,7 @@ local recipes = {
     {
         type = "recipe",
         name = "f_mk10",
+        enabled = false,
         energy_required = 85,
         hide_from_player_crafting = true,
         ingredients = {

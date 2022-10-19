@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk1",
+        enabled = false,
         energy_required = 10,
         ingredients = {
             {"iron-chest", 5},
@@ -14,6 +15,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk2",
+        enabled = false,
         energy_required = 20,
         ingredients = {
             {"r_mk1", 1},
@@ -26,6 +28,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk3",
+        enabled = false,
         energy_required = 30,
         ingredients = {
             {"r_mk2", 1},
@@ -38,6 +41,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk4",
+        enabled = false,
         energy_required = 40,
         ingredients = {
             {"r_mk3", 1},
@@ -47,6 +51,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk5",
+        enabled = false,
         energy_required = 50,
         ingredients = {
             {"r_mk4", 1},
@@ -56,6 +61,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk6",
+        enabled = false,
         energy_required = 60,
         hide_from_player_crafting = true,
         ingredients = {
@@ -66,6 +72,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk7",
+        enabled = false,
         energy_required = 70,
         hide_from_player_crafting = true,
         ingredients = {
@@ -76,6 +83,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk8",
+        enabled = false,
         energy_required = 80,
         hide_from_player_crafting = true,
         ingredients = {
@@ -86,6 +94,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk9",
+        enabled = false,
         energy_required = 90,
         hide_from_player_crafting = true,
         ingredients = {
@@ -96,6 +105,7 @@ local recipes = {
     {
         type = "recipe",
         name = "r_mk10",
+        enabled = false,
         energy_required = 100,
         hide_from_player_crafting = true,
         ingredients = {

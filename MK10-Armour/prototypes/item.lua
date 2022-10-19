@@ -974,7 +974,6 @@ end
 
 
 -- The rest's code / Night Vision
---[[
 data:extend(
 {
   {
@@ -1054,6 +1053,40 @@ data:extend(
     color_lookup = {{0.5, "__core__/graphics/color_luts/nightvision.png"}}
   },
 })
-]]--
 
+local items = {
+
+  --[[
+ {
+     type = "item",
+     name = "a_mk7",
+     icon = "__base__/graphics/belt_immunity_equipment.png",
+     stack_size = 1
+ },
+ {
+     type = "item",
+     name = "a_mk8",
+     icon = "__base__/graphics/belt_immunity_equipment.png",
+     stack_size = 1
+ },
+]]--
+ {
+     type = "item",
+     subgroup = "equipment",
+     name = "nv_mk1",
+     icon = "__base__/graphics/icons/night-vision-equipment.png",
+     icon_size = 64,
+     stack_size = 5
+ },
+ {
+     type = "item",
+     subgroup = "equipment",
+     name = "nv_mk2",
+     icon = "__base__/graphics/icons/night-vision-equipment.png",
+     icon_size = 64,
+     stack_size = 5
+ },
+ 
+}
+data:extend(items)
 -- The rest's code / belt immunity

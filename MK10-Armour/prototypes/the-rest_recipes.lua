@@ -1,8 +1,12 @@
 local recipes = {
+    --[[
     {
         type = "recipe",
         name = "bi_mk1",
+        enabled = false,
         energy_required = 10,
+        hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {type="fluid", name="lubricant", amount=200},
             {"electronic-circuit", 10},
@@ -14,8 +18,10 @@ local recipes = {
     {
         type = "recipe",
         name = "bi_mk2",
+        enabled = false,
         energy_required = 20,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"bi_mk1", 1},
             {type="fluid", name="sulfuric-acid", amount=150},
@@ -25,10 +31,14 @@ local recipes = {
         },
         result = "bi_mk2"
     },
+    ]]--
     {
         type = "recipe",
         name = "nv_mk1",
+        enabled = false,
         energy_required = 10,
+        hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"iron-gear-wheel", 100},
             {"copper-wire", 100},
@@ -41,8 +51,10 @@ local recipes = {
     {
         type = "recipe",
         name = "nv_mk2",
+        enabled = false,
         energy_required = 20,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"nv_mk1", 1},
             {"f_mk5", 2},
@@ -77,29 +89,5 @@ compat.replace_ingredients(recipes[1], {
 })
 ]]--
 
-local items = {
-    {
-        type = "equipment",
-        name = "a_mk7",
-        icon = "__base__.graphics.belt_immunity_equipment.png",
-        stack_size = 1
-    },
-    {
-        type = "equipment",
-        name = "a_mk8",
-        icon = "__base__.graphics.belt_immunity_equipment.png",
-        stack_size = 1
-    },
-    {
-        type = "equipment",
-        name = "nv_mk1",
-        icon = "__base__.graphics.nightvision.png",
-        stack_size = 1
-    },
-    {
-        type = "equipment",
-        name = "nv_mk2",
-        icon = "__base__.graphics.nightvision.png",
-        stack_size = 1
-    },
-}
+
+data:extend(recipes)

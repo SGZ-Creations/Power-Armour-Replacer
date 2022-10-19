@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk1",
+        enabled = false,
         energy_required = 25,
         ingredients = {
             {"lab", 2},
@@ -14,6 +15,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk2",
+        enabled = false,
         energy_required = 30,
         ingredients = {
             {"b_mk1", 1},
@@ -25,6 +27,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk3",
+        enabled = false,
         energy_required = 35,
         ingredients = {
             {"b_mk2", 1},
@@ -36,6 +39,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk4",
+        enabled = false,
         energy_required = 40,
         ingredients = {
             {"b_mk3", 1},
@@ -47,6 +51,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk5",
+        enabled = false,
         energy_required = 45,
         ingredients = {
             {"b_mk4", 1},
@@ -59,6 +64,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk6",
+        enabled = false,
         energy_required = 50,
         hide_from_player_crafting = true,
         ingredients = {
@@ -72,6 +78,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk7",
+        enabled = false,
         energy_required = 55,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
@@ -86,6 +93,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk8",
+        enabled = false,
         energy_required = 60,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
@@ -99,6 +107,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk9",
+        enabled = false,
         energy_required = 65,
         hide_from_player_crafting = true,
         ingredients = {
@@ -111,6 +120,7 @@ local recipes = {
     {
         type = "recipe",
         name = "b_mk10",
+        enabled = false,
         energy_required = 70,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,

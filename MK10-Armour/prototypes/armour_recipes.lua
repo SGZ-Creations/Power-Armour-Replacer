@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk1",
+        enabled = false,
         energy_required = 60.0,
         ingredients = {
             {"heavy-armor", 1},
@@ -15,6 +16,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk2",
+        enabled = false,
         energy_required = 60.0,
         ingredients = {
             {"a_mk1", 1},
@@ -29,6 +31,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk3",
+        enabled = false,
         energy_required = 60.0,
         ingredients = {
             {"a_mk2", 1},
@@ -43,6 +46,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk4",
+        enabled = false,
         energy_required = 60.0,
         ingredients = {
             {"a_mk3", 1},
@@ -56,6 +60,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk5",
+        enabled = false,
         energy_required = 70.0,
         ingredients = {
             {"a_mk4", 1},
@@ -69,6 +74,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk6",
+        enabled = false,
         energy_required = 70.0,
         hide_from_player_crafting = true,
         ingredients = {
@@ -84,6 +90,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk7",
+        enabled = false,
         energy_required = 70.0,
         hide_from_player_crafting = true,
         ingredients = {
@@ -99,6 +106,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk8",
+        enabled = false,
         energy_required = 70.0,
         hide_from_player_crafting = true,
         ingredients = {
@@ -113,6 +121,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk9",
+        enabled = false,
         energy_required = 70.0,
         hide_from_player_crafting = true,
         ingredients = {
@@ -127,6 +136,7 @@ local recipes = {
     {
         type = "recipe",
         name = "a_mk10",
+        enabled = false,
         energy_required = 80.0,
         hide_from_player_crafting = true,
         ingredients = {
