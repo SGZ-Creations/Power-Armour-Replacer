@@ -31,7 +31,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "a[power-armor]",
+    order = "ba[power-armor]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a1-equipment-grid",
@@ -68,7 +68,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "aa[power-armor-mk2]",
+    order = "ba[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a2-equipment-grid",
@@ -105,7 +105,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ab[power-armor-mk2]",
+    order = "bb[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a3-equipment-grid",
@@ -142,7 +142,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ac[power-armor-mk2]",
+    order = "bc[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a4-equipment-grid",
@@ -179,7 +179,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ad[power-armor-mk2]",
+    order = "bd[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a5-equipment-grid",
@@ -216,7 +216,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ae[power-armor-mk2]",
+    order = "be[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a6-equipment-grid",
@@ -253,7 +253,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "af[power-armor-mk2]",
+    order = "bf[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a7-equipment-grid",
@@ -290,7 +290,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ag[power-armor-mk2]",
+    order = "bg[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a8-equipment-grid",
@@ -327,7 +327,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ah[power-armor-mk2]",
+    order = "bh[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a9-equipment-grid",
@@ -364,7 +364,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ai[power-armor-mk2]",
+    order = "bi[power-armor-mk2]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a10-equipment-grid",
