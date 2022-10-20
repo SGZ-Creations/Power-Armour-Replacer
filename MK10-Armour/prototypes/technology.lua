@@ -117,7 +117,7 @@ data:extend(
         recipe = "r_mk3"
       },]]
     },
-    prerequisites = {"progression_2", "engine"},
+    prerequisites = {"progression_2", "advanced-electronics",},
     unit =
     {
       count = 1000,
