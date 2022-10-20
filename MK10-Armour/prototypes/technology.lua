@@ -612,7 +612,7 @@ data:extend(
   name = "no-power-equipment_mk2",
   icon_size = 256, icon_mipmaps = 4,
   icons = util.technology_icon_constant_equipment("__base__/graphics/technology/night-vision-equipment.png"),
-  prerequisites = {"progression_5", "battery", "advanced-electronics-2"},
+  prerequisites = {"progression_7", "battery", "advanced-electronics-2"},
   effects =
   {
     {
