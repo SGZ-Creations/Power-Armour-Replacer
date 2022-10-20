@@ -75,7 +75,7 @@ data:extend(
         recipe = "r_mk2"
       },]]
     },
-    prerequisites = {"progression_1", "advanced-electronics", "battery"},
+    prerequisites = {"progression_1", "plastics"},
     unit =
     {
       count = 1000,
