@@ -5,8 +5,8 @@ data:extend(
     {
     type = "armor",
     name = "a_mk1",
-    icon = "__base__/graphics/icons/power-armor.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon = "__MK10-Armour__/texture/items/power-armor.png",
+    icon_size = 256, icon_mipmaps = 4,
     resistances =
     {
       {
@@ -42,8 +42,8 @@ data:extend(
   {
     type = "armor",
     name = "a_mk2",
-    icon = "__base__/graphics/icons/power-armor-mk2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon = "__MK10-Armour__/texture/items/power-armor-mk2.png",
+    icon_size = 256, icon_mipmaps = 4,
     resistances =
     {
       {
@@ -80,7 +80,7 @@ data:extend(
     type = "armor",
     name = "a_mk3",
     icon = "__MK10-Armour__/texture/items/power-armor-mk3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 256, icon_mipmaps = 4,
     resistances =
     {
       {
@@ -117,7 +117,7 @@ data:extend(
     type = "armor",
     name = "a_mk4",
     icon = "__MK10-Armour__/texture/items/power-armor-mk4.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 256, icon_mipmaps = 4,
     resistances =
     {
       {
