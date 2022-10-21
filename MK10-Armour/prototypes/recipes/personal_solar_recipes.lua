@@ -107,7 +107,7 @@ local recipes = {
         result = "p-s_mk10"
     },
 }
-local compat = require("compatibilities/mods-compat")
+--[[local compat = require("compatibilities/mods-compat")
 
 compat.replace_ingredients(recipes[1], {
 --bobs mods
@@ -127,3 +127,4 @@ compat.replace_ingredients(recipes[1], {
     },
     --space/K2
 })
+]]

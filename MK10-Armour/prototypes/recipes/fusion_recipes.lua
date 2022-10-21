@@ -108,11 +108,12 @@ local recipes = {
         enabled = false,
         energy_required = 80,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"f_mk8", 1},
             {"processing-unit", 65},
             {"nuclear-fuel", 25},
-            {type="fluid", name="petroleum-gas,", amount=200}
+            {type="fluid", name="petroleum-gas", amount=200}
         },
         result = "f_mk9"
     },

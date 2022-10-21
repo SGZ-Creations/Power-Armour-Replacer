@@ -6,7 +6,7 @@ local recipes = {
         energy_required = 25,
         ingredients = {
             {"lab", 2},
-            {"electronic-circuit", 15},
+            {"electronic-circuit", 10},
             {"copper-cable", 50},
         },
         result = "b_mk1"
@@ -19,8 +19,9 @@ local recipes = {
         energy_required = 30,
         ingredients = {
             {"b_mk1", 1},
-            {"small-lamp", 5},
-            {"steel-chest", 4},
+            {"electronic-circuit", 15},
+            {"iron-stick", 15},
+            {"steel-plate", 20},
         },
         result = "b_mk2"
     },
@@ -31,8 +32,8 @@ local recipes = {
         energy_required = 35,
         ingredients = {
             {"b_mk2", 1},
-            {"constant-combinator", 2},
-            {"steel-chest", 4},
+            {"advanced-circuit", 10},
+            {"steel-platete", 4},
         },
         result = "b_mk3"
     },
@@ -43,8 +44,10 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"b_mk3", 1},
-            {"small-lamp", 5},
-            {"constant-combinator", 3},
+            {"electronic-circuit", 15},
+            {"advanced-circuit", 10},
+            {"coal", 20},
+            {"copper-cable", 25},
         },
         result = "b_mk4"
     },

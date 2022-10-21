@@ -612,7 +612,7 @@ data:extend(
   name = "no-power-equipment_mk2",
   icon_size = 256, icon_mipmaps = 4,
   icons = util.technology_icon_constant_equipment("__MK10-Armour__/texture/tech/belt-immunity-night-vision-equipment-1.png"),
-  prerequisites = {"progression_7", "battery", "advanced-electronics-2"},
+  prerequisites = {"progression_7", "battery", "nv-bi_mk1", "advanced-electronics-2"},
   effects =
   {
     {

@@ -39,7 +39,7 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"iron-gear-wheel", 100},
-            {"copper-wire", 100},
+            {"copper-cable", 100},
             {"small-lamp", 10},
             {"electronic-circuit", 35},
             {type="fluid", name="lubricant", amount=200},

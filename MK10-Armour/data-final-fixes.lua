@@ -78,7 +78,7 @@ if mods["RampantArsenal"] then
     data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].hidden = true
 end
 
-if mods ["custom_power_armor_fix"] then
+if mods["custom_power_armor_fix"] then
 --armours
     data.raw.recipe["power-armor-mk3"].enabled = false
     data.raw.technology["power-armor-mk3"].enabled = false
@@ -86,11 +86,80 @@ if mods ["custom_power_armor_fix"] then
     data.raw.technology["power-armor-mk4"].enabled = false
     data.raw.recipe["power-armor-mk5"].enabled = false
     data.raw.technology["power-armor-mk5"].enabled = false
--- armour section 2
+--armour section 2
     data.raw.recipe["power-armor-mk3"].hidden = true
     data.raw.technology["power-armor-mk3"].hidden = true
     data.raw.recipe["power-armor-mk4"].hidden = true
     data.raw.technology["power-armor-mk4"].hidden = true
     data.raw.recipe["power-armor-mk5"].hidden = true
     data.raw.technology["power-armor-mk5"].hidden = true
+--armour.item
+    data.raw.item["power-armor-mk3"].hidden = true
+    data.raw.item["power-armor-mk4"].hidden = true
+    data.raw.item["power-armor-mk5"].hidden = true
+end
+
+if mods["PowerAndArmor"] then
+--technologies
+    data.raw.technology["PaA-armor-upgrades"].enabled = false
+    data.raw.technology["PaA-armor-upgrades"].hidden = true
+    data.raw.technology["PaA-mk3-power-armor"].enabled = false
+    data.raw.technology["PaA-mk3-power-armor"].hidden = true
+    data.raw.technology["PaA-mk4-power-armor"].enabled = false
+    data.raw.technology["PaA-mk4-power-armor"].hidden = true
+    data.raw.technology["PaA-mk2-fusion-reactor-equipment"].enabled = false
+    data.raw.technology["PaA-mk2-fusion-reactor-equipment"].hidden = true
+    data.raw.technology["PaA-mk3-energy-shield-equipment"].enabled = false
+    data.raw.technology["PaA-mk3-energy-shield-equipment"].hidden = true
+    data.raw.technology["PaA-mk2-exoskeleton-equipment"].enabled = false
+    data.raw.technology["PaA-mk2-exoskeleton-equipment"].hidden = true
+    data.raw.technology["PaA-mk2-night-vision-equipment"].enabled = false
+    data.raw.technology["PaA-mk2-night-vision-equipment"].hidden = true
+    data.raw.technology["PaA-mk3-personal-roboport-equipment"].enabled = false
+    data.raw.technology["PaA-mk3-personal-roboport-equipment"].hidden = true
+    data.raw.technology["PaA-mk3-battery-equipment"].enabled = false
+    data.raw.technology["PaA-mk3-battery-equipment"].hidden = true
+    data.raw.technology["PaA-mk2-pesonal-laser-defence-equipment"].enabled = false
+    data.raw.technology["PaA-mk2-pesonal-laser-defence-equipment"].hidden = true
+    data.raw.technology["PaA-mk3-pesonal-laser-defence-equipment"].enabled = false
+    data.raw.technology["PaA-mk3-pesonal-laser-defence-equipment"].hidden = true
+--recipes
+    data.raw.recipe["PaA-mk3-power-armor"].enabled = false
+    data.raw.recipe["PaA-mk3-power-armor"].hidden = true
+    data.raw.recipe["PaA-mk4-power-armor"].enabled = false
+    data.raw.recipe["PaA-mk4-power-armor"].hidden = true
+    data.raw.recipe["PaA-power-armor-mk2-upgrade"].enabled = false
+    data.raw.recipe["PaA-power-armor-mk2-upgrade"].hidden = true
+    data.raw.recipe["PaA-power-armor-mk3-upgrade"].enabled = false
+    data.raw.recipe["PaA-power-armor-mk3-upgrade"].hidden = true
+    data.raw.recipe["PaA-fusion-reactor-mk2-equipment"].enabled = false
+    data.raw.recipe["PaA-fusion-reactor-mk2-equipment"].hidden = true
+    data.raw.recipe["PaA-energy-shield-mk3-equipment"].enabled = false
+    data.raw.recipe["PaA-energy-shield-mk3-equipment"].hidden = true
+    data.raw.recipe["PaA-exoskeleton-mk2-equipment"].enabled = false
+    data.raw.recipe["PaA-exoskeleton-mk2-equipment"].hidden = true
+    data.raw.recipe["PaA-night-vision-mk2-equipment"].enabled = false
+    data.raw.recipe["PaA-night-vision-mk2-equipment"].hidden = true
+    data.raw.recipe["PaA-personal-roboport-mk3-equipment"].enabled = false
+    data.raw.recipe["PaA-personal-roboport-mk3-equipment"].hidden = true
+    data.raw.recipe["PaA-dockingport-mk3-equipment"].enabled = false
+    data.raw.recipe["PaA-dockingport-mk3-equipment"].hidden = true
+    data.raw.recipe["PaA-battery-mk3-equipment"].enabled = false
+    data.raw.recipe["PaA-battery-mk3-equipment"].hidden = true
+    data.raw.recipe["PaA-pesonal-laser-defence-mk2-equipment"].enabled = false
+    data.raw.recipe["PaA-pesonal-laser-defence-mk2-equipment"].hidden = true
+    data.raw.recipe["PaA-pesonal-laser-defence-mk3-equipment"].enabled = false
+    data.raw.recipe["PaA-pesonal-laser-defence-mk3-equipment"].hidden = true
+-- items
+    data.raw.item["PaA-mk3-power-armor"].hidden = true
+    data.raw.item["PaA-mk4-power-armor"].hidden = true
+    data.raw.item["PaA-fusion-reactor-mk2-equipment"].hidden = true
+    data.raw.item["PaA-energy-shield-mk3-equipment"].hidden = true
+    data.raw.item["PaA-exoskeleton-mk2-equipment"].hidden = true
+    data.raw.item["PaA-night-vision-mk2-equipment"].hidden = true
+    data.raw.item["PaA-personal-roboport-mk3-equipment"].hidden = true
+    data.raw.item["PaA-dockingport-mk3-equipment"].hidden = true
+    data.raw.item["PaA-battery-mk3-equipment"].hidden = true
+    data.raw.item["PaA-pesonal-laser-defence-mk2-equipment"].hidden = true
+    data.raw.item["PaA-pesonal-laser-defence-mk3-equipment"].hidden = true
 end
