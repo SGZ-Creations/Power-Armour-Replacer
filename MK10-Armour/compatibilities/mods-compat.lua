@@ -9,4 +9,14 @@ compat.update_ingredients = function(recipe, replacements)
     end
 end
 
+compat.update_technologies = function(replacements)
+    for mod, technologies in pairs(replacements) do
+        if mods[mod] then
+            for technology, prerequisites in pairs(technologies) do
+                util.update_technology(technology, prerequisites)
+            end
+        end
+    end
+end
+
 return compat

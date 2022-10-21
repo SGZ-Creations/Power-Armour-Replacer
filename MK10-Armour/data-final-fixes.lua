@@ -81,16 +81,16 @@ end
 if mods ["custom_power_armor_fix"] then
 --armours
     data.raw.recipe["power-armor-mk3"].enabled = false
-    data.raw.technology["power-armor-3"].enabled = false
+    data.raw.technology["power-armor-mk3"].enabled = false
     data.raw.recipe["power-armor-mk4"].enabled = false
-    data.raw.technology["power-armor-4"].enabled = false
+    data.raw.technology["power-armor-mk4"].enabled = false
     data.raw.recipe["power-armor-mk5"].enabled = false
-    data.raw.technology["power-armor-5"].enabled = false
+    data.raw.technology["power-armor-mk5"].enabled = false
 -- armour section 2
     data.raw.recipe["power-armor-mk3"].hidden = true
-    data.raw.technology["power-armor-3"].hidden = true
+    data.raw.technology["power-armor-mk3"].hidden = true
     data.raw.recipe["power-armor-mk4"].hidden = true
-    data.raw.technology["power-armor-4"].hidden = true
+    data.raw.technology["power-armor-mk4"].hidden = true
     data.raw.recipe["power-armor-mk5"].hidden = true
-    data.raw.technology["power-armor-5"].hidden = true
+    data.raw.technology["power-armor-mk5"].hidden = true
 end

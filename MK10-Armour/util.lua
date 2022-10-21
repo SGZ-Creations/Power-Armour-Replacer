@@ -14,4 +14,18 @@ util.update_ingredients = function(recipe, replacements)
     end
 end
 
+util.update_technology = function(name, replacements)
+    local technology = data.raw.technology[name]
+    if not technology then error("Technology with name \""..name.."\" does not exist") end
+    local prerequisites = technology.prerequisites
+    for i, prerequisite in pairs(prerequisites) do
+        if replacements[prerequisite] then
+            prerequisites[i] = replacements[prerequisite]
+        end
+    end
+    for _, prerequisite in ipairs(replacements) do
+        prerequisites[#prerequisites+1] = prerequisite
+    end
+end
+
 return util
