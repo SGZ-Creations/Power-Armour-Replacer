@@ -94,9 +94,24 @@ if mods["custom_power_armor_fix"] then
     data.raw.recipe["power-armor-mk5"].hidden = true
     data.raw.technology["power-armor-mk5"].hidden = true
 --armour.item
+--[[
     data.raw.item["power-armor-mk3"].hidden = true
     data.raw.item["power-armor-mk4"].hidden = true
-    data.raw.item["power-armor-mk5"].hidden = true
+    data.raw.item["power-armor-mk5"].hidden = true]]
+end
+
+if mods["Power Armor MK3"] then
+    data.raw.recipe["pamk3-pamk3"].hidden = true
+    data.raw.recipe["pamk3-pamk4"].hidden = true
+    data.raw.recipe["pamk3-esmk3"].hidden = true
+    data.raw.recipe["pamk3-se"].hidden = true
+    data.raw.recipe["pamk3-inff"].hidden = true
+    data.raw.recipe["pamk3-esmk3"].hidden = true
+--technology
+    data.raw.technology["pamk3-pamk3"].hidden = true
+    data.raw.technology["pamk3-pamk4"].hidden = true
+    data.raw.technology["pamk3-esmk3"].hidden = true
+    data.raw.technology["pamk3-se"].hidden = true
 end
 
 if mods["PowerAndArmor"] then
@@ -119,15 +134,15 @@ if mods["PowerAndArmor"] then
     data.raw.technology["PaA-mk3-personal-roboport-equipment"].hidden = true
     data.raw.technology["PaA-mk3-battery-equipment"].enabled = false
     data.raw.technology["PaA-mk3-battery-equipment"].hidden = true
-    data.raw.technology["PaA-mk2-pesonal-laser-defence-equipment"].enabled = false
-    data.raw.technology["PaA-mk2-pesonal-laser-defence-equipment"].hidden = true
-    data.raw.technology["PaA-mk3-pesonal-laser-defence-equipment"].enabled = false
-    data.raw.technology["PaA-mk3-pesonal-laser-defence-equipment"].hidden = true
+    data.raw.technology["PaA-mk2-personal-laser-defense-equipment"].enabled = false
+    data.raw.technology["PaA-mk2-personal-laser-defense-equipment"].hidden = true
+    data.raw.technology["PaA-mk3-personal-laser-defense-equipment"].enabled = false
+    data.raw.technology["PaA-mk3-personal-laser-defense-equipment"].hidden = true
 --recipes
-    data.raw.recipe["PaA-mk3-power-armor"].enabled = false
-    data.raw.recipe["PaA-mk3-power-armor"].hidden = true
-    data.raw.recipe["PaA-mk4-power-armor"].enabled = false
-    data.raw.recipe["PaA-mk4-power-armor"].hidden = true
+    data.raw.recipe["PaA-power-armor-mk3"].enabled = false
+    data.raw.recipe["PaA-power-armor-mk3"].hidden = true
+    data.raw.recipe["PaA-power-armor-mk4"].enabled = false
+    data.raw.recipe["PaA-power-armor-mk4"].hidden = true
     data.raw.recipe["PaA-power-armor-mk2-upgrade"].enabled = false
     data.raw.recipe["PaA-power-armor-mk2-upgrade"].hidden = true
     data.raw.recipe["PaA-power-armor-mk3-upgrade"].enabled = false
@@ -142,24 +157,28 @@ if mods["PowerAndArmor"] then
     data.raw.recipe["PaA-night-vision-mk2-equipment"].hidden = true
     data.raw.recipe["PaA-personal-roboport-mk3-equipment"].enabled = false
     data.raw.recipe["PaA-personal-roboport-mk3-equipment"].hidden = true
-    data.raw.recipe["PaA-dockingport-mk3-equipment"].enabled = false
-    data.raw.recipe["PaA-dockingport-mk3-equipment"].hidden = true
+    data.raw.recipe["PaA-personal-dockingport-mk3-equipment"].enabled = false
+    data.raw.recipe["PaA-personal-dockingport-mk3-equipment"].hidden = true
     data.raw.recipe["PaA-battery-mk3-equipment"].enabled = false
     data.raw.recipe["PaA-battery-mk3-equipment"].hidden = true
-    data.raw.recipe["PaA-pesonal-laser-defence-mk2-equipment"].enabled = false
-    data.raw.recipe["PaA-pesonal-laser-defence-mk2-equipment"].hidden = true
-    data.raw.recipe["PaA-pesonal-laser-defence-mk3-equipment"].enabled = false
-    data.raw.recipe["PaA-pesonal-laser-defence-mk3-equipment"].hidden = true
+    data.raw.recipe["PaA-personal-laser-defense-mk2-equipment"].enabled = false
+    data.raw.recipe["PaA-personal-laser-defense-mk2-equipment"].hidden = true
+    data.raw.recipe["PaA-personal-laser-defense-mk3-equipment"].enabled = false
+    data.raw.recipe["PaA-personal-laser-defense-mk3-equipment"].hidden = true
 -- items
-    data.raw.item["PaA-mk3-power-armor"].hidden = true
-    data.raw.item["PaA-mk4-power-armor"].hidden = true
+--[[
+    data.raw.item["PaA-power-armor-mk3"].hidden = true
+    data.raw.item["PaA-power-armor-mk4"].hidden = true
     data.raw.item["PaA-fusion-reactor-mk2-equipment"].hidden = true
     data.raw.item["PaA-energy-shield-mk3-equipment"].hidden = true
     data.raw.item["PaA-exoskeleton-mk2-equipment"].hidden = true
     data.raw.item["PaA-night-vision-mk2-equipment"].hidden = true
     data.raw.item["PaA-personal-roboport-mk3-equipment"].hidden = true
-    data.raw.item["PaA-dockingport-mk3-equipment"].hidden = true
+    data.raw.item["PaA-personal-dockingport-mk3-equipment"].hidden = true
     data.raw.item["PaA-battery-mk3-equipment"].hidden = true
-    data.raw.item["PaA-pesonal-laser-defence-mk2-equipment"].hidden = true
-    data.raw.item["PaA-pesonal-laser-defence-mk3-equipment"].hidden = true
+    data.raw.item["PaA-personal-laser-defense-mk2-equipment"].hidden = true
+    data.raw.item["PaA-personal-laser-defense-mk3-equipment"].hidden = true]]
 end
+--[[
+item.flags = item.flags or {}
+table.insert(item.flags, "hidden")]]
