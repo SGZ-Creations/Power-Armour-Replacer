@@ -971,8 +971,6 @@ end
   })
 
 
-
-
 -- The rest's code / Night Vision
 data:extend(
 {
@@ -1055,21 +1053,6 @@ data:extend(
 })
 
 local items = {
-
-  --[[
- {
-     type = "item",
-     name = "a_mk7",
-     icon = "__base__/graphics/belt_immunity_equipment.png",
-     stack_size = 1
- },
- {
-     type = "item",
-     name = "a_mk8",
-     icon = "__base__/graphics/belt_immunity_equipment.png",
-     stack_size = 1
- },
-]]--
  {
      type = "item",
      subgroup = "equipment",
@@ -1086,7 +1069,85 @@ local items = {
      icon_size = 64,
      stack_size = 5
  },
- 
 }
 data:extend(items)
+
 -- The rest's code / belt immunity
+data:extend({
+  {
+    type = "belt-immunity-equipment",
+    name = "bi_mk1",
+    stack_size = 5,
+    icon = "__base__/graphics/icons/belt-immunity-equipment.png",
+    icon_size = 64,
+    sprite =
+    {
+      filename = "__base__/graphics/equipment/belt-immunity-equipment.png",
+      width = 32,
+      height = 32,
+      priority = "medium",
+      hr_version =
+      {
+        filename = "__base__/graphics/equipment/hr-belt-immunity-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        scale = 0.5
+      }
+    },
+    shape =
+    {
+      width = 1,
+      height = 1,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "100kJ",
+      input_flow_limit = "240kW",
+      usage_priority = "primary-input"
+    },
+    energy_consumption = "200kW",
+    categories = {"armor"},
+    order = "b-i-c"
+  },
+  {
+    type = "belt-immunity-equipment",
+    name = "bi_mk2",
+    stack_size = 5,
+    icon = "__base__/graphics/icons/belt-immunity-equipment.png",
+    icon_size = 64,
+    sprite =
+    {
+      filename = "__base__/graphics/equipment/belt-immunity-equipment.png",
+      width = 32,
+      height = 32,
+      priority = "medium",
+      hr_version =
+      {
+        filename = "__base__/graphics/equipment/hr-belt-immunity-equipment.png",
+        width = 64,
+        height = 64,
+        priority = "medium",
+        scale = 0.5
+      }
+    },
+    shape =
+    {
+      width = 1,
+      height = 1,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "10kJ",
+      input_flow_limit = "10kW",
+      usage_priority = "primary-input"
+    },
+    energy_consumption = "1W",
+    categories = {"armor"},
+    order = "b-i-c"
+  },
+})

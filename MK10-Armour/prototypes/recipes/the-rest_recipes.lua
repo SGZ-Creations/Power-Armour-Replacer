@@ -1,5 +1,4 @@
 local recipes = {
-    --[[
     {
         type = "recipe",
         name = "bi_mk1",
@@ -31,7 +30,6 @@ local recipes = {
         },
         result = "bi_mk2"
     },
-    ]]--
     {
         type = "recipe",
         name = "nv_mk1",

@@ -16,9 +16,9 @@
 			".gitignore",
 			"locale/cs/mod-locale.cfg",
 			"control.lua",
-			"prototypes/exo-skeleton_recipes.lua",
-			"prototypes/personal_solar_recipes.lua",
-			"prototypes/roboport_recipes"
+			"prototypes/recipes/exo-skeleton_recipes.lua",
+			"prototypes/recipes/personal_solar_recipes.lua",
+			"prototypes/recipes/roboport_recipes"
 		]
 	}
 }

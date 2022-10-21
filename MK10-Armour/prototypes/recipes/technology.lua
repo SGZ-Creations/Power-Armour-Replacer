@@ -582,18 +582,18 @@ data:extend(
   type = "technology",
   name = "nv-bi_mk1",
   icon_size = 256, icon_mipmaps = 4,
-  icons = util.technology_icon_constant_equipment("__base__/graphics/technology/night-vision-equipment.png"),
+  icons = util.technology_icon_constant_equipment("__MK10-Armour__/texture/tech/belt-immunity-night-vision-equipment.png"),
   prerequisites = {"progression_3"},
   effects =
   {
     {
       type = "unlock-recipe",
       recipe = "nv_mk1"
-    },--[[
+    },
     {
       type = "unlock-recipe",
       recipe = "bi_mk1"
-    },]]
+    },
   },
   unit =
   {
@@ -611,18 +611,18 @@ data:extend(
   type = "technology",
   name = "no-power-equipment_mk2",
   icon_size = 256, icon_mipmaps = 4,
-  icons = util.technology_icon_constant_equipment("__base__/graphics/technology/night-vision-equipment.png"),
+  icons = util.technology_icon_constant_equipment("__MK10-Armour__/texture/tech/belt-immunity-night-vision-equipment-1.png"),
   prerequisites = {"progression_7", "battery", "advanced-electronics-2"},
   effects =
   {
     {
       type = "unlock-recipe",
       recipe = "nv_mk2"
-    },--[[
+    },
     {
       type = "unlock-recipe",
       recipe = "bi_mk2"
-    },]]
+    },
   },
   unit =
   {
