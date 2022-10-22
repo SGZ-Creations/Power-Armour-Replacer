@@ -151,26 +151,38 @@ local recipes = {
     },
 }
 
---[[
+
 local compat = require("compatibilities/mods-compat")
 
 compat.replace_ingredients(recipes[1], {
 --bobs mods
-    ["bobplate"] = {
-        ["old-ingredient-1"] = {"new-ingredient-1, 5"}, -- the first three are for replacing ingredients in the recipe
-        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
-        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
-        {"new-ingredient-4", count},                    -- these two are for adding new ingredients to the recipe
-        {"new-ingredient-5", count}
+    ["bobelectronics"] = {
+        ["engine-unit"] = {"solder, 100"}, -- the first three are for replacing ingredients in the recipe
+        ["electronic-circuit"] = {"basic-circuit-board, 75"},
+        {"tinned-copper-cable", 55}, -- these two are for adding new ingredients to the recipe
     },
-    ["bobequipment"] = {
-        ["old-ingredient-1"] = {"new-ingredient-1, 5"},
-        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
-        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
-        {"new-ingredient-4", count},
-        {"new-ingredient-5", count}
+    ["bobplates"] = {
+        ["steel-plate"] = {"bronze, 30"},
     },
     --space/K2
 })
-]]--
+--[[
+compat.replace_ingredients(recipes[2], {
+    --bobs mods
+        ["bobelectronics"] = {
+            ["old-ingredient"] = {"item, count"}, 
+            ["old-ingredient"] = {"item, count"},
+            {"new-ingredient", count},
+            {"new-ingredient", count}
+        },
+        ["bobplates"] = {
+            ["old-ingredient"] = {"new-ingredient, count"},
+            ["old-ingredient"] = {"new-ingredient, count"},
+            ["old-ingredient"] = {"new-ingredient, count"},
+            {"new-ingredient", count},
+            {"new-ingredient", count}
+        },
+        --space/K2
+    })
+    ]]
 data:extend(recipes)

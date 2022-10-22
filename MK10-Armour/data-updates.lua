@@ -8,11 +8,16 @@ compat.update_technologies{
         }
     },
     ["bobwarfare"] = {
-        ["progression_2"] = {
+        ["progression_5"] = {
             "bob-armor-making-3"
         },
-        ["progression_3"] = {
+        ["progression_8"] = {
             "bob-armor-making-4"
+        }
+    },
+    ["angelssmelting"]= {
+        ["progression_2"] = {
+            "angels-steel-smelting-1"
         }
     }
 }
