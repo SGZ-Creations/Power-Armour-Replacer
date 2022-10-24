@@ -8,16 +8,16 @@
     return tostring(max * 0.001)
   end
 
-  local max_s_1 = 100000
-  local max_s_2 = 200000
-  local max_s_3 = 400000
-  local max_s_4 = 800000
-  local max_s_5 = 1600000
-  local max_s_6 = 3200000
-  local max_s_7 = 6250000
-  local max_s_8 = 10000000
-  local max_s_9 = 15000000
-  local max_s_10 = 25000000
+  local max_s_1 = 100
+  local max_s_2 = 500
+  local max_s_3 = 1000
+  local max_s_4 = 5000
+  local max_s_5 = 10000
+  local max_s_6 = 500000
+  local max_s_7 = 1000000
+  local max_s_8 = 3000000
+  local max_s_9 = 5000000
+  local max_s_10 = 10000000
 
   data:extend({
     {
