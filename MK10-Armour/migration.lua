@@ -1,0 +1,11 @@
+-- The wiki did not help
+--     {
+--     "entity":
+--     {
+--       ["wall", "stone-wall"]
+--     },
+--     "item":
+--     [
+--       ["wall", "stone-wall"]
+--     ]
+--   }

@@ -1,10 +1,9 @@
-    - 10 New armours added
-    - 10 New shiealds added.
-    - 10 New tiers batteries.
-    - 10 New tiers of fusion reacator
-    - 5 New tiers legs added.
+    - 5 New tiers exo-skeleton added.
+    - 10 personal solar
+    - 10 roboport
+    - 10 personal laser defense
 
-    Copatibility list
+    Compatibility list
 
     Bobs: Warfare, Plates(ores) Circuit, Equipment, 
     K2: K2

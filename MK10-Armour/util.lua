@@ -2,14 +2,24 @@ local util = {}
 
 util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients
-    for k, ingredient in pairs(ingredients) do
-        if type(k) == "string" then
-            local name = ingredient[1] or ingredient["name"]
-            if replacements[name] then
-                ingredient = replacements[name]
+    for _, ingredient in pairs(ingredients) do
+        if ingredient.type then
+            local replacement = replacements[ingredient.name]
+            if replacement then
+                ingredient.name = replacement[1]
+                ingredient.amount = replacement[2]
             end
         else
-            ingredients[#ingredients+1] = ingredient
+            local replacement = replacements[ingredient[1]]
+            if replacement then
+                ingredient[1] = replacement[1]
+                ingredient[2] = replacement[2]
+            end
+        end
+    end
+    for k, new_ingredient in pairs(replacements) do
+        if type(k) ~= "string" then
+            ingredients[#ingredients+1] = new_ingredient
         end
     end
 end

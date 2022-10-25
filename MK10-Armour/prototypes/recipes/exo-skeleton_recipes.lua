@@ -77,7 +77,7 @@ local recipes = {
 --[[
 local compat = require("compatibilities/mods-compat")
 
-compat.replace_ingredients(recipes[1], {
+compat.update_ingredients(recipes[1], {
 --bobs mods
     ["bobplate"] = {
         ["old-ingredient-1"] = {"new-ingredient-1, 5"}, -- the first three are for replacing ingredients in the recipe

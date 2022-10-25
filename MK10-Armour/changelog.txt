@@ -1,18 +1,34 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.0
-Date: 17.10.2022
-  Features:
-    - initial release
-    - 10 New tiers of: Armour, Shields, Fusion-Reactors, Personal-Roboports & Batteries added.
-    - 5 new Leggings added.
-    - Settings added to "Configurable-Armour-Suits = 0.3.0.
-    - Achievements: 2 new damage, 15 new crafting,
-    - Locales: NO,EN,SK, (file of incomplete "SC" found on github)
+Version: 0.1.6
+Date: 25.10.2022
+  Changes:
+    - Recipes for shields, and it's hitpoint values has been altered.
+    - continued compatibility with bob's angels.
+  Thanks:
+    - JanSharp for help when code was broken. (Discord)
   Compatibility:
     - bob's:
     - angels:
+  Fixes:
+    - Compatibility was using lot of ram inf loop 50GB seen. rewriten all of that now.
+  Usage:
+    - Will not remove item currently exsiting only will remove new crafting capabilities.
+  Realeses:
+    - Alpha 6.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 15.10.2022
+  Features:
+    - 10 New tiers of: Armour, Shields, Fusion-Reactors & Batteries added. 
+    - Settings added to "Configurable-Armour-Suits = 0.3.0.
+    - 2 New tiers of NVG's and belt immunity.
+    - Achievements: 3 new damage, 15 new crafting.
+    - Locales: NO,EN,SK, (file of incomplete "SC" found on github)
   Thanks:
     - Honktown for help with code. (Discord)
     - _CodeGreen for help with code when i got stuck & the compatibility. (Discord)
     - Toby1364 for help working on mod in general. (Discord)
-    - Chunnyluny for help with testing the pre-alpha. (Discord)
+    - Chunnyluny for help with testing the alpha. (Discord)
+    - join my discord to participate in the testing or just play with the Alpha/Beta.
+  Realeses:
+    - Alpha 1-5 used same versioning by me not thinking realy.

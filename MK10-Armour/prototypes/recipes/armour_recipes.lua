@@ -154,35 +154,67 @@ local recipes = {
 
 local compat = require("compatibilities/mods-compat")
 
-compat.replace_ingredients(recipes[1], {
---bobs mods
-    ["bobelectronics"] = {
-        ["engine-unit"] = {"solder, 100"}, -- the first three are for replacing ingredients in the recipe
-        ["electronic-circuit"] = {"basic-circuit-board, 75"},
-        {"tinned-copper-cable", 55}, -- these two are for adding new ingredients to the recipe
+compat.update_ingredients(recipes[1], {
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["engine-unit"] = {"solder", 100}, -- the first three are for replacing ingredients in the recipe
+            ["electronic-circuit"] = {"basic-circuit-board", 75},
+            {"tinned-copper-cable", 55} -- these two are for adding new ingredients to the recipe
+        }
     },
-    ["bobplates"] = {
-        ["steel-plate"] = {"bronze, 30"},
-    },
-    --space/K2
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["steel-plate"] = {"bronze-alloy", 50}
+        }
+    }
 })
---[[
-compat.replace_ingredients(recipes[2], {
-    --bobs mods
-        ["bobelectronics"] = {
-            ["old-ingredient"] = {"item, count"}, 
-            ["old-ingredient"] = {"item, count"},
-            {"new-ingredient", count},
-            {"new-ingredient", count}
-        },
-        ["bobplates"] = {
-            ["old-ingredient"] = {"new-ingredient, count"},
-            ["old-ingredient"] = {"new-ingredient, count"},
-            ["old-ingredient"] = {"new-ingredient, count"},
-            {"new-ingredient", count},
-            {"new-ingredient", count}
-        },
-        --space/K2
-    })
-    ]]
+compat.update_ingredients(recipes[2], {
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["electronic-circuit"] = {"basic-circuit-board", 65},
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["plastic-bar"] = {"invar-alloy", 50},
+            ["engine-unit"] = {"silver-plate", 75},
+            {"rubber", 15}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["silver-plate"] = {"clay-brick", 100},
+        }
+    }
+})
+compat.update_ingredients(recipes[3], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["advanced-circuit"] = {"electronic-circuit", 100},
+            {"basic-circuit-board", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["solid-fuel"] = {"zinc-plate", 50},
+            ["steel-plate"] = {"aluminium", 150},
+            ["engine-unit"] = {"cobalt-steel-alloy", 100},
+            {"rubber", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["cobalt-steel-alloy"] = {"lead-plate", 100},
+            ["aluminium"] = {"steel-plate", 175},
+        }
+    }
+})
 data:extend(recipes)

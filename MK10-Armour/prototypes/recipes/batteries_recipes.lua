@@ -136,26 +136,31 @@ local recipes = {
     },
 }
 
---[[
+
 local compat = require("compatibilities/mods-compat")
 
-compat.replace_ingredients(recipes[1], {
---bobs mods
-    ["bobplate"] = {
-        ["old-ingredient-1"] = {"new-ingredient-1, 5"}, -- the first three are for replacing ingredients in the recipe
-        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
-        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
-        {"new-ingredient-4", count},                    -- these two are for adding new ingredients to the recipe
-        {"new-ingredient-5", count}
+--[[
+compat.update_ingredients(recipes[2], {
+    {
+        dependencies =  {"some mods"},
+        replacements = {
+            ["shit"] = {"2 shit", 10},
+            ["poop"] = {"2 poop", 10},
+            {"dildo", 10}
+        }
     },
-    ["bobequipment"] = {
-        ["old-ingredient-1"] = {"new-ingredient-1, 5"},
-        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
-        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
-        {"new-ingredient-4", count},
-        {"new-ingredient-5", count}
+    {
+        dependencies = {""},
+        replacement = {
+            ["nope"] = {"maybe", 10}
+        }
     },
-    --space/K2
+    {
+        dependencies = {"no don't"},
+        replacement = {
+            "item done repete"
+        }
+    }
 })
-]]--
+]]
 data:extend(recipes)

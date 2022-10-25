@@ -21,3 +21,4 @@
 --rest--
     require("prototypes.technology")
     require("prototype.achievements")
+    --require("migration")
