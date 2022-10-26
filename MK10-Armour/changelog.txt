@@ -3,16 +3,16 @@ Version: 0.1.6
 Date: 25.10.2022
   Changes:
     - Recipes for shields, and it's hitpoint values has been altered.
-    - continued compatibility with bob's angels.
+    - Continued compatibility with bob's angels.
   Thanks:
     - JanSharp for help when code was broken. (Discord)
   Compatibility:
-    - bob's:
-    - angels:
+    - Bob's:
+    - Angels:
   Fixes:
     - Compatibility was using lot of ram inf loop 50GB seen. rewriten all of that now.
   Usage:
-    - Will not remove item currently exsiting only will remove new crafting capabilities.
+    - Will not remove item currently existing. Will only remove new crafting capabilities.
   Realeses:
     - Alpha 6.
 ---------------------------------------------------------------------------------------------------

@@ -18,23 +18,26 @@ compat.update_technologies{
         },
         ["progression_3"] = {
             "aluminium-processing",
-            "cobalt-processing"
+            "cobalt-processing",
         },
         ["progression_5"] = {
             "gem-processing-2"
-        }
-
-    },
-    ["angelssmelting"] = {
-        ["progression_2"] = {
-            "angels-steel-smelting-1",
-            "angels-stone-smelting-1"
         }
     },
     ["angelsrefining"] = {
         ["progression_1"] = {
             "angels-bronze-smelting-1"
         },
+    },
+    ["angelssmelting"] = {
+        ["progression_2"] = {
+            "angels-steel-smelting-1",
+            ["zinc-processing"] = "angels-stone-smelting-1"
+        },
+        ["progression_3"] = {
+            "angels-brass-smelting-1",
+            ["cobalt-processing"] = "angels-lead-smelting-2",
+        }
     },
     ["angelspetrochem"] = {
         ["progression_2"] = {

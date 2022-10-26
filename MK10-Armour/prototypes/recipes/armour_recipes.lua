@@ -214,6 +214,7 @@ compat.update_ingredients(recipes[3], {
         replacements = {
             ["cobalt-steel-alloy"] = {"lead-plate", 100},
             ["aluminium"] = {"steel-plate", 175},
+            ["zinc-plate"] = {"brass-alloy", 35},
         }
     }
 })
