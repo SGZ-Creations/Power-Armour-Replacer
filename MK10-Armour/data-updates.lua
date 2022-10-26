@@ -14,7 +14,6 @@ compat.update_technologies{
         ["progression_2"] = {
             "zinc-processing",
             ["plastics"] = "invar-processing",
-            ["plastic-1"] = "invar-processing"
         },
         ["progression_3"] = {
             "aluminium-processing",
@@ -32,16 +31,17 @@ compat.update_technologies{
     ["angelssmelting"] = {
         ["progression_2"] = {
             "angels-steel-smelting-1",
-            ["zinc-processing"] = "angels-stone-smelting-1"
+            ["zinc-processing"] = "angels-stone-smelting-1",
+            ["invar-processing"] = "angels-invar-smelting-1",
         },
         ["progression_3"] = {
             "angels-brass-smelting-1",
             ["cobalt-processing"] = "angels-lead-smelting-2",
+            ["aluminium-processing"] = "angels-aluminium-smelting-1",
         }
     },
-    ["angelspetrochem"] = {
-        ["progression_2"] = {
-            ["plastics"] = "plastic-1",
-        }
-    },
+    -- ["angelspetrochem"] = {
+    --     [""] = {
+    --     }
+    -- },
 }

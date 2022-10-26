@@ -1,6 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 26.10.2022
+  Fixes:
+    - Hotfix: Was not able to unlock MK2 items (Progression_2) as for disabled invar tech using angles.
+    - Hotfix: Was not able to unlock MK3 items (Progression_3) as for disabled aluminium tech using angles.
+    - Typo
+  Changes:
+    - Tweked recipe when angelssmelting are active.
+  Realeses:
+    - Alpha 7 Want access to the Alpha? head to: https://discord.gg/tbxnpsxkDM.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.6
-Date: 25.10.2022
+Date: 26.10.2022
   Changes:
     - Recipes for shields, and it's hitpoint values has been altered.
     - Continued compatibility with bob's angels.
@@ -14,7 +25,7 @@ Date: 25.10.2022
   Usage:
     - Will not remove item currently existing. Will only remove new crafting capabilities.
   Realeses:
-    - Alpha 6.
+    - Alpha 6 Want access to the Alpha? head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 15.10.2022
@@ -32,3 +43,4 @@ Date: 15.10.2022
     - join my discord to participate in the testing or just play with the Alpha/Beta.
   Realeses:
     - Alpha 1-5 used same versioning by me not thinking realy.
+    - Want access to the Alpha? head to: https://discord.gg/tbxnpsxkDM.

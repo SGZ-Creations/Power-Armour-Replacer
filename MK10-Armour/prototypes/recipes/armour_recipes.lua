@@ -204,7 +204,7 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"bobplates"},
         replacements = {
             ["solid-fuel"] = {"zinc-plate", 50},
-            ["steel-plate"] = {"aluminium", 150},
+            ["steel-plate"] = {"aluminium-plate", 150},
             ["engine-unit"] = {"cobalt-steel-alloy", 100},
             {"rubber", 35}
         }
@@ -213,7 +213,6 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["cobalt-steel-alloy"] = {"lead-plate", 100},
-            ["aluminium"] = {"steel-plate", 175},
             ["zinc-plate"] = {"brass-alloy", 35},
         }
     }
