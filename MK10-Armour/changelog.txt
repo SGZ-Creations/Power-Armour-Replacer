@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 26.10.2022
   Fixes:
@@ -8,7 +12,7 @@ Date: 26.10.2022
   Changes:
     - Tweked recipe when angelssmelting are active.
   Realeses:
-    - Alpha 7 Want access to the Alpha? head to: https://discord.gg/tbxnpsxkDM.
+    - Alpha 7 Want access to the Alpha? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 26.10.2022
@@ -25,7 +29,7 @@ Date: 26.10.2022
   Usage:
     - Will not remove item currently existing. Will only remove new crafting capabilities.
   Realeses:
-    - Alpha 6 Want access to the Alpha? head to: https://discord.gg/tbxnpsxkDM.
+    - Alpha 6 Want access to the Alpha? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 15.10.2022
@@ -43,4 +47,4 @@ Date: 15.10.2022
     - join my discord to participate in the testing or just play with the Alpha/Beta.
   Realeses:
     - Alpha 1-5 used same versioning by me not thinking realy.
-    - Want access to the Alpha? head to: https://discord.gg/tbxnpsxkDM.
+    - Want access to the Alpha? Head to: https://discord.gg/tbxnpsxkDM.
