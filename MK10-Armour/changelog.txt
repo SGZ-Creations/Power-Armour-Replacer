@@ -1,7 +1,17 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
-Date: ????
+Date: 28.10.2022 01:xx CET
+  Features:
+    - Added compat to mk4 armour Seablock, Angles & Bobs.
+    - Added compat to mk5 armour Angles & Bobs.
+    - Current tech for Mk1-10 items for Bob's Angels is completed until rework of unlocking the equipment.
   Changes:
+    - Added slight change on angels if 248k is active (mk3 items)
+    - Reworked tech Mk3 items.
+    - Small change with Seablock tech Mk3 items.
+    - Removed rubber from being used in Seablock early on.
+  Fixes:
+    - Possible crash specifing wrong mod with tech (angles bronze smeltin 1)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 26.10.2022

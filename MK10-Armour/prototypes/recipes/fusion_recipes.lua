@@ -134,25 +134,233 @@ local recipes = {
 }
 local compat = require("compatibilities/mods-compat")
 --[[
+compat.update_ingredients(recipes[1], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
 compat.update_ingredients(recipes[2], {
     {
-        dependencies =  {"some mod"},
+        dependencies = {"bobelectronics"},
         replacements = {
-            ["shit"] = {"2 shit", 10},
-            ["poop"] = {"2 poop", 10},
-            {"dildo", 10}
+            [""] = {"", 100},
+            {"", 50}
         }
     },
     {
-        dependencies = {""},
-        replacement = {
-            ["nope"] = {"maybe", 10}
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
         }
     },
     {
-        dependencies = {"no don't"},
-        replacement = {
-            "item done repete"
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[3], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[4], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[5], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[6], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[7], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[8], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[9], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[10], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
         }
     }
 })

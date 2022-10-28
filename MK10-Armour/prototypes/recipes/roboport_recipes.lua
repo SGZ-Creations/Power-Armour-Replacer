@@ -115,58 +115,237 @@ local recipes = {
     },
 }
 
---[[
 local compat = require("compatibilities/mods-compat")
-
-compat.replace_ingredients(recipes[1], {
---bobs mods
-    ["bobplate"] = {
-        ["old-ingredient-1"] = {"new-ingredient-1, 5"}, -- the first three are for replacing ingredients in the recipe
-        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
-        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
-        {"new-ingredient-4", count},                    -- these two are for adding new ingredients to the recipe
-        {"new-ingredient-5", count}
+--[[
+compat.update_ingredients(recipes[1], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
     },
-    ["bobequipment"] = {
-        ["old-ingredient-1"] = {"new-ingredient-1, 5"},
-        ["old-ingredient-2"] = {"new-ingredient-2, 2"},
-        ["old-ingredient-3"] = {"new-ingredient-3, 7"},
-        {"new-ingredient-4", count},
-        {"new-ingredient-5", count}
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
     },
-    --space/K2
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
 })
-]]--
-
-local item = {
+compat.update_ingredients(recipes[2], {
     {
-        type = "item",
-        name = "a_mk1",
-        icon = "__base__.graphics.Personal_roboport.png",
-        stack_size = 1
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
     },
     {
-        type = "item",
-        name = "a_mk2",
-        icon = "__base__.graphics.Personal_roboport_MK2.png",
-        stack_size = 1
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
     },
     {
-        type = "item",
-        name = "a_mk3",
-        icon = "__base__.graphics.Personal_roboport_MK2.png",
-        stack_size = 1
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[3], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
     },
     {
-        type = "item",
-        name = "a_mk4",
-        icon = "__base__.graphics.Personal_roboport_MK2.png",
-        stack_size = 1
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
     },
     {
-        type = "item",
-        name = "a_mk5",
-        icon = "__base__.graphics.Personal_roboport_MK2.png",
-        stack_size = 1
-    }, 
-}
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[4], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[5], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[6], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[7], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[8], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[9], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+compat.update_ingredients(recipes[10], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+})
+]]
+data:extend(recipes)
