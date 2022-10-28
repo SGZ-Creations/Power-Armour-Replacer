@@ -2,6 +2,7 @@
 Version: 0.1.8
 Date: 28.10.2022 01:xx CET
   Features:
+    - Some Clowns-Processing & Atomic_Overhaul Compat
     - Added compat to mk4 armour Seablock, Angles & Bobs.
     - Added compat to mk5 armour Angles & Bobs.
     - Current tech for Mk1-10 items for Bob's Angels is completed until rework of unlocking the equipment.
