@@ -413,7 +413,7 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            ["elctric-furnace"] = {"heat-shield-tile", 200},
+            ["electric-furnace"] = {"heat-shield-tile", 200},
         }
     },
     {
