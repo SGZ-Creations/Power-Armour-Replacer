@@ -1,6 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 29.10.2022
+  Features:
+    - Mod Rename to Power Armour Replacer.
+    - Updated NO, EN/EN-GB locales
+    - Added/completed modded armour recipes.
+    - Cuple recipe compat done for equipment.
+  Changes:
+    - Reworked Tech tree.
+    - Reaserch time reduced from 30 --> 15 acoss all tech might be changed again later.
+  Fixes:
+    - Atomation 3 replaced with atomation 6 in bob's was put on mk 10 when it was used by mk9.
+  Thanks:
+    - Tomatoking for doing the NO translation for me :p
+  Realeses:
+    - Want access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.8
-Date: 28.10.2022 01:xx CET
+Date: 28.10.2022 03:31 CET
   Features:
     - Some Clowns-Processing & Atomic_Overhaul Compat
     - Added compat to mk4 armour Seablock, Angles & Bobs.

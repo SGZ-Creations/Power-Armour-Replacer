@@ -3,120 +3,128 @@ local compat = require("compatibilities.mods-compat")
 
 compat.update_technologies{
     ["bobelectronics"] = {
-        ["progression_5"] = {
+        ["armour_5"] = {
             ["advanced-electronics-2"] = "advanced-electronics"
         },
-        ["progression_7"] = {
+        ["armour_7"] = {
             "advanced-electronics-2"
         },
-        ["progression_9"] = {
+        ["armour_9"] = {
             "advanced-electronics-3"
         },
     },
     ["bobwarfare"] = {
-        ["progression_5"] = {
+        ["armour_5"] = {
             "bob-armor-making-3"
         },
-        ["progression_8"] = {
+        ["armour_8"] = {
             "bob-armor-making-4"
         }
     },
     ["bobrevamp"] = {
-        ["progression_8"] = {
+        ["armour_8"] = {
             "heat-shield",
         }
     },
     ["bobplates"] = {
-        ["progression_2"] = {
+        ["armour_2"] = {
             "zinc-processing",
             ["plastics"] = "invar-processing",
         },
-        ["progression_3"] = {
+        ["armour_3"] = {
             "aluminium-processing",
             "cobalt-processing",
         },
-        ["progression_5"] = {
+        ["armour_5"] = {
             ["electric-engine"] = "gem-processing-2"
         },
-        ["progression_6"] = {
+        ["armour_6"] = {
             ["rocket-fuel"] = "titanium-processing",
             ["advanced-electronics-3"] = "electric-engine",
             ["rocket-control-unit"] = "battery-2",
         },
-        ["progression_7"] = {
+        ["armour_7"] = {
             "tungsten-processing",
             "ceramics"
         },
-        ["progression_8"] = {
+        ["armour_8"] = {
             "battery-3",
         },
-        ["progression_9"] = {
+        ["armour_9"] = {
             "nitinol-processing",
         },
-        ["progression_10"] = {
+        ["armour_10"] = {
             ["rocket-silo"] = "rocket-control-unit",
         },
     },
     ["boblogistics"] = {
-        ["progression_10"] = {
+        ["armour_10"] = {
             ["logistics-3"] = "logistics-5" ,
         },
+        ["armour_1"] = {
+            ["electronics"] = "automation",
+        }
     },
     ["bobassembly"] = {
-        ["progression_10"] = {
-            ["automation-3"] = "automation-6"
+        ["armour_9"] = {
+            ["automation-3"] = "automation-5"
         },
     },
     ["angelssmelting"] = {
-        ["progression_1"] = {
+        ["armour_1"] = {
             "angels-bronze-smelting-1"
         },
-        ["progression_2"] = {
+        ["armour_2"] = {
             "angels-steel-smelting-1",
             ["zinc-processing"] = "angels-stone-smelting-1",
             ["invar-processing"] = "angels-invar-smelting-1",
         },
-        ["progression_3"] = {
+        ["armour_3"] = {
             ["advanced-electronics"] = "angels-brass-smelting-1",
             ["cobalt-processing"] = "angels-lead-smelting-2",
             ["aluminium-processing"] = "angels-aluminium-smelting-1",
         },
-        ["progression_4"] = {
+        ["armour_4"] = {
             ["low-density-structure"] = "angels-silver-smelting-1",
             "plastic-1",
             
         },
-        ["progression_6"] = {
+        ["armour_6"] = {
+            ["rocket-fuel"] = "angels-titanium-smelting-1",
             ["titanium-processing"] = "angels-titanium-smelting-1",
             ["battery-2"] = "angels-glass-smelting-2",
             "angels-gold-smelting-1"
         },
-        ["progression_7"] = {
+        ["armour_7"] = {
            ["tungsten-processing"] = "angels-tungsten-smelting-1",
            "angels-cobalt-smelting-1",
         },
-        ["progression_9"] = {
-            ["nitinol-processing"] = "angels-nitinol-smelting-1"
+        ["armour_9"] = {
+            ["nitinol-processing"] = "angels-nitinol-smelting-1",
+            "angels-stone-smelting-3"
         },
     },
     ["angelspetrochem"] = {
-        ["progression_4"] = {
+        ["armour_4"] = {
             ["uranium-processing"] = "angels-stone-smelting-2",
         },
     },
     ["Atomic_Overhaul"] = {
-        ["progression_7"] = {
+        ["armour_7"] = {
             ["nuclear-power"] = "non-moderated-fuel-processing",
         },
     },
     ["Clowns-Processing"] = {
-        ["progression_10"] = {
+        ["armour_10"] = {
             "advanced-depleted-uranium-smelting-1",
         },
     },
     ["248k"] = {
-        ["progression_3"] = {
+        ["armour_3"] = {
             ["angels-aluminium-smelting-1"] = "el_caster_tech",
         },
+        ["battery_3"] = {
+            "el_lithium_tech"
+        }
     },
 }

@@ -5,7 +5,7 @@ local recipes = {
         enabled = false,
         energy_required = 25,
         ingredients = {
-            {"lab", 2},
+            {"small-electric-pole", 10},
             {"electronic-circuit", 10},
             {"copper-cable", 50},
         },
@@ -33,7 +33,7 @@ local recipes = {
         ingredients = {
             {"b_mk2", 1},
             {"advanced-circuit", 10},
-            {"steel-platete", 4},
+            {"steel-plate", 10},
         },
         result = "b_mk3"
     },
@@ -137,30 +137,22 @@ local recipes = {
 }
 
 local compat = require("compatibilities/mods-compat")
---[[
+
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["electronic-circuit"] = {"basic-circuit-board", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["small-electric-pole"] = {"resin", 25},
         }
     },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
+--[[
 compat.update_ingredients(recipes[2], {
     {
         dependencies = {"bobelectronics"},
@@ -188,7 +180,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
+            ["advanced-circuit"] = {"", 100},
             {"", 50}
         }
     },
@@ -205,7 +197,14 @@ compat.update_ingredients(recipes[3], {
             ["__"] = {"", 100},
             ["--"] = {"", 35},
         }
-    }
+    },
+    {
+        dependencies = {"248k"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["advanced-circuit"] = {"battery", 30},
+        }
+    },
 })
 compat.update_ingredients(recipes[4], {
     {

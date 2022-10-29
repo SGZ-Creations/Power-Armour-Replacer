@@ -168,7 +168,16 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["steel-plate"] = {"bronze-alloy", 50}
         }
-    }
+    },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
 compat.update_ingredients(recipes[2], {
     {
@@ -196,7 +205,16 @@ compat.update_ingredients(recipes[2], {
         replacements = {
             ["rubber"] = {"bronze-alloy", 75},
         }
-    }
+    },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
 compat.update_ingredients(recipes[3], {
     {
@@ -216,7 +234,7 @@ compat.update_ingredients(recipes[3], {
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["cobalt-steel-alloy"] = {"lead-plate", 100},
             ["zinc-plate"] = {"brass-alloy", 35},
@@ -228,7 +246,16 @@ compat.update_ingredients(recipes[3], {
             ["rubber"] = {"clay-brick", 150},
             {"steel-plate", 100}
         }
-    }
+    },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
 compat.update_ingredients(recipes[4], {
     {
@@ -251,13 +278,22 @@ compat.update_ingredients(recipes[4], {
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["low-density-structure"] = {"angels-wire-silver", 55},
             ["cobalt-steel-alloy"] = {"solder", 200},
             ["uranium-235"] = {"concrete-brick", 135},
         }
-    }
+    },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
 
 compat.update_ingredients(recipes[5], {
@@ -281,124 +317,145 @@ compat.update_ingredients(recipes[5], {
             {"ruby-5", 50},
         }
     },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
---[[
+
 compat.update_ingredients(recipes[6], {
+    
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["rocket-control-unit"] = {"advanced-circuit", 200},
+            ["processing-unit"] = {"electronic-circuit", 250}
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
+            ["solid-fuel"] = {"titanium-plate", 200},
             {"sapphire-5", 100},
             {"ruby-5", 100},
 
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            ["rocket-fuel"] = {"plastic-bar", 100},
+            {"gilded-copper-cable", 55},
         }
-    }
+    },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
---[[
+
 compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["nuclear-fuel"] = {"processing-unit", 100},
+            ["f_mk5"] = {"advanced-circuit", 300}
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["beacon"] = {"ceramic-bearing", 200},
+            ["nuclear-reactor"] = {"tungsten-plate", 250},
+            {"sapphire-5", 50},
+            {"ruby-5", 50},
+            {"emerald-5", 50},
+            {"amethyst-5", 50},
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            ["nuclear-reactor"] = {"tungsten-plate", 250},
+            {"glass", 50}
+
         }
-    }
+    },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
---[[
+
 compat.update_ingredients(recipes[8], {
+    
     {
         dependencies = {"bobwarfare"},
         replacements = {
-            {"heavy-armor-3", 1}
+            ["f_mk5"] = {"heavy-armor-3", 1}
+        }
+    },
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            ["elctric-furnace"] = {"heat-shield-tile", 200},
         }
     },
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            {"processing-unit", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["submachine-gun"] = {"silver-zinc-battery", 100},
+            ["nuclear-reactor"] = {"copper-tungsten-alloy", 200},
+            {"sapphire-5", 100},
+            {"ruby-5", 100},
+            {"emerald-5", 100},
+            {"amethyst-5", 100},
         }
     },
+    --[[
     {
-        dependencies = {"angelssmelting"},
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"alien-artifact", 50}
         }
-    }
+    },
+    ]]
 })
---[[
+
 compat.update_ingredients(recipes[9], {
+    
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["rocket-control-unit"] = {"advanced-processing-unit", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
-})
---[[
-compat.update_ingredients(recipes[10], {
-    {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            [""] = {"", 100},
-            {"", 50}
-        }
-    },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["rocket-silo"] = {"rocket-control-unit", 250},
+            ["nuclear-reactor"] = {"tungsten-carbide", 250},
             {"sapphire-5", 50},
             {"ruby-5", 50},
             {"emerald-5", 50},
@@ -408,19 +465,76 @@ compat.update_ingredients(recipes[10], {
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"bobassembly"},
+        replacements = {
+            ["assembling-machine-3"] = {"assembling-machine-5", 10},
+        }
+    },
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            ["nuclear-reactor"] = {"tungsten-carbide", 250},
+            ["assembling-machine-5"] = {"reinforced-concrete-brick", 200},
+        }
+    },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
+})
+compat.update_ingredients(recipes[10], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["centrifuge"] = {"advanced-circuit", 200},
+            {"advanced-processing-unit", 150},
+        }
+    },
+    {
+        dependencies = {"boblogistics"},
+        replacements = {
+            ["fast-transport-belt"] = {"ultimate-transport-belt", 40},
+        }
+    },
+    {
+        dependencies = {"bobplates"},
         replacements = {
             ["rocket-silo"] = {"rocket-control-unit", 250},
-            ["--"] = {"", 35},
+            {"sapphire-5", 100},
+            {"ruby-5", 100},
+            {"emerald-5", 100},
+            {"amethyst-5", 100},
+            {"topaz-5", 100},
+            {"diamond-5", 100},
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["rocket-silo"] = {"rocket-control-unit", 200},
+            ["s_mk8"] = {"cobalt-steeel-alloy", 215},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"clowns-plate-osmium", 500}
-            {"clowns-plate-depleted-uranium", 500}
+            {"clowns-plate-osmium", 500},
+            {"clowns-plate-depleted-uranium", 500},
         }
     },
+    --[[
+    {
+        settings.startup["the-setting"].value
+        dependencies = {"bobenemies"},
+        replacements = {
+            {"alien-artifact", 50}
+        }
+    },
+    ]]
 })
-]]
 data:extend(recipes)
