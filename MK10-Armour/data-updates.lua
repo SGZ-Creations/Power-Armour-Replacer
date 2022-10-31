@@ -61,9 +61,6 @@ compat.update_technologies{
         ["armour_10"] = {
             ["logistics-3"] = "logistics-5" ,
         },
-        ["armour_1"] = {
-            ["electronics"] = "automation",
-        }
     },
     ["bobassembly"] = {
         ["armour_9"] = {

@@ -28,6 +28,8 @@ data.raw.recipe["battery-mk2-equipment"].enabled = false
 data.raw.technology["battery-mk2-equipment"].enabled = false
 data.raw.recipe["belt-immunity-equipment"].enabled = false
 data.raw.technology["belt-immunity-equipment"].enabled = false
+data.raw.recipe["exoskeleton-equipment"].enabled = false
+data.raw.technology["exoskeleton-equipment"].enabled = false
 --equipment section 2
 data.raw.recipe["energy-shield-equipment"].hidden = true
 data.raw.technology["energy-shield-equipment"].hidden = true
@@ -43,6 +45,9 @@ data.raw.recipe["battery-mk2-equipment"].hidden = true
 data.raw.technology["battery-mk2-equipment"].hidden = true
 data.raw.recipe["belt-immunity-equipment"].hidden = true
 data.raw.technology["belt-immunity-equipment"].hidden = true
+data.raw.recipe["exoskeleton-equipment"].hidden = true
+data.raw.technology["exoskeleton-equipment"].hidden = true
+
 
 if mods["Darkstar_utilities_fixed"] then
     data.raw.recipe["terra-tech-power-armor"].enabled = false

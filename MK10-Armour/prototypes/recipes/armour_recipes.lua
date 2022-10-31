@@ -3,6 +3,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk1",
         enabled = false,
+        total_raw = true,
         energy_required = 60.0,
         ingredients = {
             {"heavy-armor", 1},

@@ -1,5 +1,21 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.9
+Version: 0.1.10
+Date: 01.11.2022
+  Features:
+    - Exoskeleton have now been added to the list.
+    - Migrations for vanilla has been started.
+  Changes:
+    - Shield values are more adjustable.
+    - Removed hollow reactors
+    - Slovak locales were disabled.
+  Thanks:
+    - Toby1364 to help continue work on this prject.
+  Fixes:
+    - Missing prerequsite for shield mk1 & 2.
+    - Vanilla equipment where not unlockable as for needing missing/dissabled technology. Teses will be removed at a later state.
+    - Battery Equipment mk2 reqiured 1000 is suppose to have only 200.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.09
 Date: 29.10.2022
   Features:
     - Mod Rename to Power Armour Replacer.
@@ -12,11 +28,11 @@ Date: 29.10.2022
   Fixes:
     - Atomation 3 replaced with atomation 6 in bob's was put on mk 10 when it was used by mk9.
   Thanks:
-    - Tomatoking for doing the NO translation for me :p
+    - Tomatoking for doing the NO translation for me :P
   Realeses:
     - Want access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.8
+Version: 0.1.08
 Date: 28.10.2022 03:31 CET
   Features:
     - Some Clowns-Processing & Atomic_Overhaul Compat
@@ -67,6 +83,7 @@ Date: 15.10.2022
     - 2 New tiers of NVG's and belt immunity.
     - Achievements: 3 new damage, 15 new crafting.
     - Locales: NO,EN,SK, (file of incomplete "SC" found on github)
+    - Hollow personal Reactors added.
   Thanks:
     - Honktown for help with code. (Discord)
     - _CodeGreen for help with code when i got stuck & the compatibility. (Discord)

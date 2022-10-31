@@ -22,12 +22,12 @@ i = 1
     {
       width = 3,
       height = 3,
-      --type = "full"
+      type = "full"
       -- Can also be defined as manual (a set of points which fall within the width/height - can't be empty)
-      type = "manual",
+      --[[type = "manual",
       points = {{0, 0},         {2, 0},
                 {0, 1},         {2, 1},
-                {0, 2}, {1, 2}, {2, 2},}
+                {0, 2}, {1, 2}, {2, 2},}]]
     },
     energy_source =
     {
