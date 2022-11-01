@@ -17,6 +17,7 @@ local recipes = {
         name = "r_mk2",
         enabled = false,
         energy_required = 20,
+        category = "crafting-with-fluid",
         ingredients = {
             {"r_mk1", 1},
             {"electronic-circuit", 100},

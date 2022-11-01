@@ -1,3 +1,10 @@
+-- local function remove(type, name)
+--     data.raw[type][name] = nil
+-- end
+
+-- remove("armor", "modular-armor")
+-- remove("armor", "power-armor")
+
 --armours
 data.raw.recipe["modular-armor"].enabled = false
 data.raw.technology["modular-armor"].enabled = false

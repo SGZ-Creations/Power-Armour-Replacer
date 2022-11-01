@@ -19,6 +19,10 @@ compat.update_technologies{
         },
         ["armour_8"] = {
             "bob-armor-making-4"
+        },
+        ["spidertron"] = {
+            ["fusion-reactor_5"] = "fusion-reactor_1",
+            ["exoskeleton_5"] = "exoskeleton_1",
         }
     },
     ["bobrevamp"] = {
@@ -119,9 +123,11 @@ compat.update_technologies{
     ["248k"] = {
         ["armour_3"] = {
             ["angels-aluminium-smelting-1"] = "el_caster_tech",
+            "el_caster_tech",
         },
-        ["battery_3"] = {
+        ["battery_1"] = {
             "el_lithium_tech"
-        }
+        },
+        
     },
 }

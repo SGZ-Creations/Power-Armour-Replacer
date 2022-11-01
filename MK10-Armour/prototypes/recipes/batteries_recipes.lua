@@ -151,6 +151,12 @@ compat.update_ingredients(recipes[1], {
             ["small-electric-pole"] = {"resin", 25},
         }
     },
+    {
+        dependencies = {"248k"},
+        replacements = {
+            {"battery", 25},
+        }
+    },
 })
 --[[
 compat.update_ingredients(recipes[2], {
@@ -169,12 +175,11 @@ compat.update_ingredients(recipes[2], {
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"248k"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"battery", 50},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[3], {
     {
@@ -201,8 +206,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"248k"},
         replacements = {
-            ["__"] = {"", 100},
-            ["advanced-circuit"] = {"battery", 30},
+            {"lithium-ion-battery", 30},
         }
     },
 })

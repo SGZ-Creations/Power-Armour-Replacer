@@ -248,15 +248,12 @@ compat.update_ingredients(recipes[3], {
             {"steel-plate", 100}
         }
     },
-    --[[
     {
-        settings.startup["the-setting"].value
-        dependencies = {"bobenemies"},
+        dependencies = {"248k"},
         replacements = {
-            {"alien-artifact", 50}
+            ["lead-plate"] = {"-lithium-ion-battery", 25},
         }
     },
-    ]]
 })
 compat.update_ingredients(recipes[4], {
     {
