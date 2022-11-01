@@ -16,6 +16,7 @@
 			".gitignore",
 			"locale/cs/mod-locale.cfg",
 			"locale/sk/mod-locale.cfg",
+			"locale/de/mod-locale.cfg",
 			"control.lua",
 			"prototypes/recipes/exo-skeleton_recipes.lua",
 			"prototypes/recipes/personal_solar_recipes.lua",

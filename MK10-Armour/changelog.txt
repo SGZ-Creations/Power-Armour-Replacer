@@ -3,17 +3,21 @@ Version: 0.1.10
 Date: 01.11.2022
   Features:
     - Exoskeleton have now been added to the list.
-    - Migrations for vanilla has been started.
+    - Migrations was attempted but things need a nil value to be migrated.
   Changes:
-    - Shield values are more adjustable.
+    - Shield values are adjusted more manuly internaly.
     - Removed hollow reactors
-    - Slovak locales were disabled.
+    - DE Locals were disabled. (file of incomplete "DE" can be found on github)
+    - Slovak locales were disabled. (file of incomplete "SK" can be found on github)
   Thanks:
-    - Toby1364 to help continue work on this prject.
+    - Toby1364 for praticipating on this project.
   Fixes:
     - Missing prerequsite for shield mk1 & 2.
     - Vanilla equipment where not unlockable as for needing missing/dissabled technology. Teses will be removed at a later state.
     - Battery Equipment mk2 reqiured 1000 is suppose to have only 200.
+  Known:
+    - Shield stats are not complete
+    - Armour resistances is not complete.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.09
 Date: 29.10.2022
@@ -82,7 +86,7 @@ Date: 15.10.2022
     - Settings added to "Configurable-Armour-Suits = 0.3.0.
     - 2 New tiers of NVG's and belt immunity.
     - Achievements: 3 new damage, 15 new crafting.
-    - Locales: NO,EN,SK, (file of incomplete "SC" found on github)
+    - Locales: NO,EN,SK, (file of incomplete "SC" can be found on github)
     - Hollow personal Reactors added.
   Thanks:
     - Honktown for help with code. (Discord)

@@ -37,7 +37,6 @@ while i < 6 do
                 priority = "medium",
                 hr_version = {
                     filename = graphics[i][2],
-
                     width = 64,
                     height = 128,
                     priority = "medium",
@@ -67,35 +66,45 @@ local items = {
     {
         type = "item",
         name = "e_mk1",
-        icon_size = 128,
+        subgroup = "equipment",
+        order = "aa[exoskeleton]-a[exoskeleton-equipment]",
+        icon_size = 64, icon_mipmaps = 4,
         icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
         stack_size = 1
     },
     {
         type = "item",
         name = "e_mk2",
-        icon_size = 128,
+        subgroup = "equipment",
+        order = "ab[exoskeleton]-a[exoskeleton-equipment]",
+        icon_size = 64, icon_mipmaps = 4,
         icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
         stack_size = 1
     },
     {
         type = "item",
         name = "e_mk3",
-        icon_size = 128,
+        subgroup = "equipment",
+        order = "ac[exoskeleton]-a[exoskeleton-equipment]",
+        icon_size = 64, icon_mipmaps = 4,
         icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
         stack_size = 1
     },
     {
         type = "item",
         name = "e_mk4",
-        icon_size = 128,
+        subgroup = "equipment",
+        order = "ad[exoskeleton]-a[exoskeleton-equipment]",
+        icon_size = 64, icon_mipmaps = 4,
         icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
         stack_size = 1
     },
     {
         type = "item",
         name = "e_mk5",
-        icon_size = 128,
+        subgroup = "equipment",
+        order = "ae[exoskeleton]-a[exoskeleton-equipment]",
+        icon_size = 64, icon_mipmaps = 4,
         icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
         stack_size = 1
     },

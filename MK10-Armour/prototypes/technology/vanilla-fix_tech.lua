@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "technology",
-    name = "spidertron-fix",
+    name = "spidertron",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/spidertron.png",
     effects =
@@ -34,7 +34,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "discharge-defense-equipment-fix",
+    name = "discharge-defense-equipment",
     icon_size = 256, icon_mipmaps = 4,
     icons = util.technology_icon_constant_equipment("__base__/graphics/technology/discharge-defense-equipment.png"),
     prerequisites = {"laser-turret", "military-3", "armour_1", "solar-energy"},
@@ -75,7 +75,7 @@ data:extend({
         recipe = "personal-roboport-equipment"
       }
     },
-    prerequisites = { "construction-robotics", "solar-panel-equipment"},
+    prerequisites = {"construction-robotics", "solar-energy"},
     unit =
     {
       count = 50,
@@ -88,5 +88,53 @@ data:extend({
       time = 30
     },
     order = "c-k-d-zz"
+  },
+  {
+    type = "technology",
+    name = "solar-panel-equipment",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/solar-panel-equipment.png"),
+    prerequisites = {"armour_1", "solar-energy"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "solar-panel-equipment"
+      }
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "g-k"
+  },
+  {
+    type = "technology",
+    name = "personal-laser-defense-equipment",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-laser-defense-equipment.png"),
+    prerequisites = {"laser-turret", "military-3", "low-density-structure", "armour_1", "solar-energy"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "personal-laser-defense-equipment"
+      }
+    },
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "g-m"
   },
 });

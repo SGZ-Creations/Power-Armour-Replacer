@@ -1,17 +1,20 @@
 data:extend({
     {
         type = "recipe",
-        name = "spidertron-fix",
+        name = "spidertron",
         enabled = false,
-        total_raw = true,
-        energy_required = 60.0,
-        ingredients = {
-            {"raw-fish", 1},
-            {"rocket-control-unit", 16},
-            {"low-density-structure", 150},
-            {"effectivity-module-3", },
+        energy_required = 10,
+        ingredients =
+        {
+          {"e_mk5", 1},
+          {"f_mk5", 1},
+          {"rocket-launcher", 4},
+          {"rocket-control-unit", 16},
+          {"low-density-structure", 150},
+          {"radar", 2},
+          {"effectivity-module-3", 2},
+          {"raw-fish", 1}
         },
-        result = "a_mk1",
-        allow_decomposition = true,
+        result = "spidertron"
     }
-});
+})

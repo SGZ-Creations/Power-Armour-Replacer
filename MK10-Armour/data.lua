@@ -7,6 +7,7 @@
     --require("prototypes.recipes.roboport_recipes")
     require("prototypes.recipes.shield_recipes")
     require("prototypes.recipes.the-rest_recipes")
+    require("prototypes.recipes.vanilla-fix_recipes")
 
 --items--
     require("prototypes.items.armour_item")
@@ -23,13 +24,11 @@
     require("prototypes.technology.batteries_tech")
     require("prototypes.technology.exoskeleton_tech")
     require("prototypes.technology.fusion_tech")
-    require("prototypes.technology.personal_solar")
-    require("prototypes.technology.roboport_tech")
+    --require("prototypes.technology.personal_solar")
+    --require("prototypes.technology.roboport_tech")
     require("prototypes.technology.shield_tech")
     require("prototypes.technology.the-rest_tech")
     require("prototypes.technology.vanilla-fix_tech")
 
 --rest--
-    require("prototypes.technology")
     require("prototype.achievements")
-    --require("migration")
