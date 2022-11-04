@@ -11,7 +11,7 @@ data:extend({
         recipe = "r_mk1"
       },
     },
-    prerequisites = {"heavy-armor", "steel-processing", "electronics",},
+    prerequisites = {"armour_1", },
     unit =
     {
       count = 1000,
@@ -24,7 +24,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_2",
+    name = "roboport_2",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -34,7 +34,7 @@ data:extend({
         recipe = "r_mk2"
       },
     },
-    prerequisites = {"progression_1", "plastics"},
+    prerequisites = {"roboport_1", },
     unit =
     {
       count = 1000,
@@ -47,7 +47,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_3",
+    name = "roboport_3",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -57,7 +57,7 @@ data:extend({
         recipe = "r_mk3"
       },
     },
-    prerequisites = {"progression_2", "advanced-electronics",},
+    prerequisites = {"roboport_2", },
     unit =
     {
       count = 1000,
@@ -71,7 +71,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_4",
+    name = "roboport_4",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -81,7 +81,7 @@ data:extend({
         recipe = "r_mk4"
       },
     },
-    prerequisites = {"progression_3", "low-density-structure", "uranium-processing", "military-science-pack"},
+    prerequisites = {"roboport_3", },
     unit =
     {
       count = 1000,
@@ -96,7 +96,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_5",
+    name = "roboport_5",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -106,7 +106,7 @@ data:extend({
         recipe = "r_mk5"
       },
     },
-    prerequisites = {"progression_4", "advanced-electronics-2", "electric-engine"},
+    prerequisites = {"roboport_4", },
     unit =
     {
       count = 1000,
@@ -121,7 +121,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_6",
+    name = "roboport_6",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -131,7 +131,7 @@ data:extend({
         recipe = "r_mk6"
       },
     },
-    prerequisites = {"progression_5", "rocket-fuel", "rocket-control-unit", "chemical-science-pack"},
+    prerequisites = {"roboport_5", },
     unit =
     {
       count = 1000,
@@ -147,7 +147,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_7",
+    name = "roboport_7",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -157,7 +157,7 @@ data:extend({
         recipe = "r_mk7"
       },
     },
-    prerequisites = {"progression_6", "nuclear-power", "effect-transmission"},
+    prerequisites = {"roboport_6", },
     unit =
     {
       count = 1000,
@@ -173,7 +173,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_8",
+    name = "roboport_8",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -183,7 +183,7 @@ data:extend({
         recipe = "r_mk8"
       },
     },
-    prerequisites = {"progression_7", "production-science-pack", "advanced-material-processing-2"},
+    prerequisites = {"roboport_7", },
     unit =
     {
       count = 1000,
@@ -200,7 +200,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_9",
+    name = "roboport_9",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -210,7 +210,7 @@ data:extend({
         recipe = "r_mk9"
       },
     },
-    prerequisites = {"progression_8", "automation-3"},
+    prerequisites = {"roboport_8", },
     unit =
     {
       count = 1000,
@@ -227,7 +227,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "progression_10",
+    name = "roboport_10",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/power-armor-mk2.png",
     effects =
@@ -239,7 +239,7 @@ data:extend({
         recipe = "r_mk10"
       },
     },
-    prerequisites = {"progression_9", "rocket-silo", "logistics-3"},
+    prerequisites = {"roboport_9", },
     unit =
     {
       count = 1000,

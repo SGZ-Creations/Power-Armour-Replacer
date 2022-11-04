@@ -6,6 +6,7 @@ local recipes = {
         energy_required = 25,
         ingredients = {
             {"small-electric-pole", 10},
+            {"steel-plate", 20},
             {"electronic-circuit", 10},
             {"copper-cable", 50},
         },
@@ -20,8 +21,8 @@ local recipes = {
         ingredients = {
             {"b_mk1", 1},
             {"electronic-circuit", 15},
-            {"iron-stick", 15},
-            {"steel-plate", 20},
+            {"copper-plate", 35},
+            {"battery", 20},
         },
         result = "b_mk2"
     },
@@ -32,8 +33,10 @@ local recipes = {
         energy_required = 35,
         ingredients = {
             {"b_mk2", 1},
+            {"electronic-circuit", 5},
             {"advanced-circuit", 10},
-            {"steel-plate", 10},
+            {"battery", 30},
+            {"steel-plate", 20},
         },
         result = "b_mk3"
     },
@@ -45,9 +48,9 @@ local recipes = {
         ingredients = {
             {"b_mk3", 1},
             {"electronic-circuit", 15},
-            {"advanced-circuit", 10},
-            {"coal", 20},
-            {"copper-cable", 25},
+            {"advanced-circuit", 20},
+            {"copper-cable", 150},
+            {"battery", 40},
         },
         result = "b_mk4"
     },
@@ -61,6 +64,7 @@ local recipes = {
             {"advanced-circuit", 20},
             {"iron-stick", 100},
             {"steel-plate", 55},
+            {"battery", 40},
         },
         result = "b_mk5"
     },
@@ -75,6 +79,7 @@ local recipes = {
             {"advanced-circuit", 25},
             {"steel-plate", 20},
             {"plastic-bar", 35},
+            {"battery", 40},
         },
         result = "b_mk6"
     },
@@ -87,9 +92,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"b_mk6", 1},
+            {"battery", 40},
             {"plastic-bar", 65},
-            {type="fluid", name="lubricant", amount=300},
             {"advanced-circuit", 40},
+            {type="fluid", name="lubricant", amount=300},
         },
         result = "b_mk7"
     },
@@ -102,8 +108,9 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"b_mk7", 1},
-            {type="fluid", name="water", amount=500},
+            {"battery", 40},
             {"processing-unit", 25},
+            {type="fluid", name="water", amount=500},
         },
         result = "b_mk8"
     },
@@ -129,7 +136,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"b_mk9", 1},
-            {"rocket-control-unit", 10},
+            {"battery", 40},
             {type="fluid", name="sulfuric-acid", amount=150},
         },
         result = "b_mk10"

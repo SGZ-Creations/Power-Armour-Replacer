@@ -2,8 +2,9 @@
 --     data.raw[type][name] = nil
 -- end
 
--- remove("armor", "modular-armor")
--- remove("armor", "power-armor")
+-- remove("armor", "a_mk1")
+-- remove("armor", "a_mk2")
+-- remove("armor", "a_mk3")
 
 --armours
 data.raw.recipe["modular-armor"].enabled = false
@@ -37,6 +38,7 @@ data.raw.recipe["belt-immunity-equipment"].enabled = false
 data.raw.technology["belt-immunity-equipment"].enabled = false
 data.raw.recipe["exoskeleton-equipment"].enabled = false
 data.raw.technology["exoskeleton-equipment"].enabled = false
+data.raw.recipe["solar-panel-equipment"].enabled = false
 --equipment section 2
 data.raw.recipe["energy-shield-equipment"].hidden = true
 data.raw.technology["energy-shield-equipment"].hidden = true
@@ -54,6 +56,7 @@ data.raw.recipe["belt-immunity-equipment"].hidden = true
 data.raw.technology["belt-immunity-equipment"].hidden = true
 data.raw.recipe["exoskeleton-equipment"].hidden = true
 data.raw.technology["exoskeleton-equipment"].hidden = true
+data.raw.recipe["solar-panel-equipment"].hidden = true
 
 
 if mods["Darkstar_utilities_fixed"] then

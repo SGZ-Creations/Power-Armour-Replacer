@@ -34,7 +34,7 @@ data:extend({
         recipe = "s_mk2"
       },
     },
-    prerequisites = {"armour_2", "shields_1",},
+    prerequisites = {"shields_1",},
     unit =
     {
       count = 500,
@@ -57,7 +57,7 @@ data:extend({
         recipe = "s_mk3"
       },
     },
-    prerequisites = {"armour_3", "shields_2",},
+    prerequisites = {"shields_2",},
     unit =
     {
       count = 500,
@@ -81,7 +81,7 @@ data:extend({
         recipe = "s_mk4"
       },
     },
-    prerequisites = {"armour_4", "shields_3",},
+    prerequisites = {"shields_3",},
     unit =
     {
       count = 500,
@@ -106,7 +106,7 @@ data:extend({
         recipe = "s_mk5"
       },
     },
-    prerequisites = {"armour_5", "shields_4",},
+    prerequisites = {"shields_4",},
     unit =
     {
       count = 500,
@@ -131,7 +131,7 @@ data:extend({
         recipe = "s_mk6"
       },
     },
-    prerequisites = {"armour_6", "shields_5",},
+    prerequisites = {"shields_5",},
     unit =
     {
       count = 500,
@@ -157,7 +157,7 @@ data:extend({
         recipe = "s_mk7"
       },
     },
-    prerequisites = {"armour_7", "shields_6",},
+    prerequisites = {"shields_6",},
     unit =
     {
       count = 500,
@@ -183,7 +183,7 @@ data:extend({
         recipe = "s_mk8"
       },
     },
-    prerequisites = {"armour_8", "shields_7",},
+    prerequisites = {"shields_7",},
     unit =
     {
       count = 500,
@@ -210,7 +210,7 @@ data:extend({
         recipe = "s_mk9"
       },
     },
-    prerequisites = {"armour_9", "shields_8",},
+    prerequisites = {"shields_8",},
     unit =
     {
       count = 500,
@@ -237,7 +237,7 @@ data:extend({
         recipe = "s_mk10"
       },
     },
-    prerequisites = {"armour_10", "shields_9",},
+    prerequisites = {"shields_9",},
     unit =
     {
       count = 500,

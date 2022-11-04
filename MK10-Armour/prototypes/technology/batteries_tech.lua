@@ -11,7 +11,7 @@ data:extend({
         recipe = "b_mk1"
       },
     },
-    prerequisites = {"armour_1",},
+    prerequisites = {"armour_1", "steel-pricessing", },
     unit =
     {
       count = 200,
@@ -34,7 +34,7 @@ data:extend({
         recipe = "b_mk2"
       },
     },
-    prerequisites = {"armour_2", "battery_1",},
+    prerequisites = {"battery_1", "battery,"},
     unit =
     {
       count = 200,
@@ -57,7 +57,7 @@ data:extend({
         recipe = "b_mk3"
       },
     },
-    prerequisites = {"armour_3", "battery_2",},
+    prerequisites = {"battery_2", "advanced-electronics"},
     unit =
     {
       count = 200,
@@ -81,7 +81,7 @@ data:extend({
         recipe = "b_mk4"
       },
     },
-    prerequisites = {"armour_4", "battery_3",},
+    prerequisites = {"battery_3",},
     unit =
     {
       count = 200,
@@ -106,7 +106,7 @@ data:extend({
         recipe = "b_mk5"
       },
     },
-    prerequisites = {"armour_5", "battery_4",},
+    prerequisites = {"battery_4",},
     unit =
     {
       count = 200,
@@ -131,7 +131,7 @@ data:extend({
         recipe = "b_mk6"
       },
     },
-    prerequisites = {"armour_6", "battery_5",},
+    prerequisites = {"battery_5",},
     unit =
     {
       count = 200,
@@ -157,7 +157,7 @@ data:extend({
         recipe = "b_mk7"
       },
     },
-    prerequisites = {"armour_7", "battery_6",},
+    prerequisites = {"battery_6",},
     unit =
     {
       count = 200,
@@ -183,7 +183,7 @@ data:extend({
         recipe = "b_mk8"
       },
     },
-    prerequisites = {"armour_8", "battery_7",},
+    prerequisites = {"battery_7",},
     unit =
     {
       count = 200,
@@ -210,7 +210,7 @@ data:extend({
         recipe = "b_mk9"
       },
     },
-    prerequisites = {"armour_9", "battery_8",},
+    prerequisites = {"battery_8",},
     unit =
     {
       count = 200,
@@ -237,7 +237,7 @@ data:extend({
         recipe = "b_mk10"
       },
     },
-    prerequisites = {"armour_10", "battery_9",},
+    prerequisites = {"battery_9",},
     unit =
     {
       count = 200,

@@ -4,6 +4,9 @@ Date: 02.11.2022
   Changes:
     - Added/Completed vanilla recipe for Exoskeleton.
     - Some Compatibility.
+    - Tech overhaul 2. removed armour from equipment prerequisite.
+  Realeses:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 01.11.2022
@@ -12,7 +15,7 @@ Date: 01.11.2022
     - Migrations was attempted but things need a nil value to be migrated.
   Changes:
     - Shield values are adjusted more manuly internaly.
-    - Removed hollow reactors
+    - Removed hollow reactors.
     - DE Locals were disabled. (file of incomplete "DE" can be found on github)
     - Slovak locales were disabled. (file of incomplete "SK" can be found on github)
   Thanks:

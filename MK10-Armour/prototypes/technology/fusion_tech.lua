@@ -11,7 +11,7 @@ data:extend({
         recipe = "f_mk1"
       },
     },
-    prerequisites = {"armour_1",},
+    prerequisites = {"armour_1", },
     unit =
     {
       count = 500,
@@ -34,7 +34,7 @@ data:extend({
         recipe = "f_mk2"
       },
     },
-    prerequisites = {"armour_2", "fusion-reactor_1"},
+    prerequisites = {"fusion-reactor_1", },
     unit =
     {
       count = 500,
@@ -57,7 +57,7 @@ data:extend({
         recipe = "f_mk3"
       },
     },
-    prerequisites = {"armour_3", "fusion-reactor_2"},
+    prerequisites = {"fusion-reactor_2", },
     unit =
     {
       count = 500,
@@ -81,7 +81,7 @@ data:extend({
         recipe = "f_mk4"
       },
     },
-    prerequisites = {"armour_4", "fusion-reactor_3",},
+    prerequisites = {"fusion-reactor_3",},
     unit =
     {
       count = 500,
@@ -106,7 +106,7 @@ data:extend({
         recipe = "f_mk5"
       },
     },
-    prerequisites = {"armour_5", "fusion-reactor_4",},
+    prerequisites = {"fusion-reactor_4", },
     unit =
     {
       count = 500,
@@ -131,7 +131,7 @@ data:extend({
         recipe = "f_mk6"
       },
     },
-    prerequisites = {"armour_6", "fusion-reactor_5",},
+    prerequisites = {"fusion-reactor_5", },
     unit =
     {
       count = 500,
@@ -157,7 +157,7 @@ data:extend({
         recipe = "f_mk7"
       },
     },
-    prerequisites = {"armour_7", "fusion-reactor_6",},
+    prerequisites = {"fusion-reactor_6", },
     unit =
     {
       count = 500,
@@ -183,7 +183,7 @@ data:extend({
         recipe = "f_mk8"
       },
     },
-    prerequisites = {"armour_8", "fusion-reactor_7",},
+    prerequisites = {"fusion-reactor_7", },
     unit =
     {
       count = 500,
@@ -210,7 +210,7 @@ data:extend({
         recipe = "f_mk9"
       },
     },
-    prerequisites = {"armour_9", "fusion-reactor_8",},
+    prerequisites = {"fusion-reactor_8", },
     unit =
     {
       count = 500,
@@ -237,7 +237,7 @@ data:extend({
         recipe = "f_mk10"
       },
     },
-    prerequisites = {"armour_10", "fusion-reactor_9",},
+    prerequisites = {"fusion-reactor_9", },
     unit =
     {
       count = 500,
