@@ -27,7 +27,7 @@
   local buffer_capacity = {
     "100kW",
     "500kW",
-    "10kW",
+    "1000kW",
     "10kW",
     "10kW",
     "10kW",
@@ -51,16 +51,16 @@
   }
 --
   local energy_per_shield = {
-    "1kW",
     "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
+    "20kW",
+    "30kW",
+    "40kW",
+    "50kW",
+    "60kW",
+    "70kW",
+    "80kW",
+    "90kW",
+    "100kW",
   }
 
   local j = 1
