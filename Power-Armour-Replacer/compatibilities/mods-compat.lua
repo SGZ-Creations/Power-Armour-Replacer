@@ -1,5 +1,5 @@
 local compat = {}
-local util = require("__MK10-Armour__.util")
+local util = require("__Power-Armour-Replacer__.util")
 
 compat.update_ingredients = function(recipe, replacements)
     for _, replacement in pairs(replacements) do
