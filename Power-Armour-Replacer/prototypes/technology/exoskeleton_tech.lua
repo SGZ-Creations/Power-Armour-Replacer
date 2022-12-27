@@ -27,7 +27,7 @@ data:extend({
         name = "exoskeleton_2",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_1", "Battery",},
+        prerequisites = {"exoskeleton_1", "battery"},
         effects =
         {
             {

@@ -2,7 +2,7 @@
 Version: 0.1.12
 Date: 27.12.2022
   Changes:
-    - Internal name change. MK10-Armour to Power Armour Replacer.
+    - Internal name change. MK10-Armour --> Power Armour Replacer.
   Realeses:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------

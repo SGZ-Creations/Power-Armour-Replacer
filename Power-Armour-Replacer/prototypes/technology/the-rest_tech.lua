@@ -3,7 +3,7 @@ data:extend({
         type = "technology",
         name = "nv-bi_mk1",
         icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__MK10-Armour__/texture/tech/belt-immunity-night-vision-equipment.png"),
+        icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/texture/tech/belt-immunity-night-vision-equipment.png"),
         prerequisites = {"armour_3"},
         effects =
         {
@@ -32,7 +32,7 @@ data:extend({
         type = "technology",
         name = "no-power-equipment_mk2",
         icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__MK10-Armour__/texture/tech/belt-immunity-night-vision-equipment-1.png"),
+        icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/texture/tech/belt-immunity-night-vision-equipment-1.png"),
         prerequisites = {"nv-bi_mk1", "fusion-reactor_5", "battery", "advanced-electronics-2", "low-density-structure", },
         effects =
         {
