@@ -6,7 +6,7 @@
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours",
-	"dependencies": ["base >= 1.1", "~ Configurable-Armour-Suits >= 0.3.1", "(?) angelsaddons-mobility", "(?) angelsaddons-storage", "(?) angelsbioprocessing", "(?) angelsexploration", "(?) angelsindustries", "(?) angelspetrochem", "(?) angelsrefining", "(?) angelssmelting", "(?) bobplate", "(?) bobwarfare", "(?) bobequipment", "(?) custom_power_armor_fix", "(?) Darkstar_utilities_fixed", "(?) FactorioExtended-Equipment", "(?) Krastorio2", "(?) PowerAndArmor", "(?) Power Armor MK3", "(?) RampantArsenal", "! IndustrialRevolution3" ],
+	"dependencies": ["base >= 1.1", "~ Configurable-Armour-Suits >= 0.3.3", "(?) angelsaddons-mobility", "(?) angelsaddons-storage", "(?) angelsbioprocessing", "(?) angelsexploration", "(?) angelsindustries", "(?) angelspetrochem", "(?) angelsrefining", "(?) angelssmelting", "(?) bobplate", "(?) bobwarfare", "(?) bobequipment", "(?) custom_power_armor_fix", "(?) Darkstar_utilities_fixed", "(?) FactorioExtended-Equipment", "(?) Krastorio2", "(?) PowerAndArmor", "(?) Power Armor MK3", "(?) RampantArsenal", "! IndustrialRevolution3" ],
 	"description": "Power Armour & Replacer currently supports:",
 	"package": {
 		"ignore": [

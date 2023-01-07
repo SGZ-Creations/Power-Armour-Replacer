@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.13
-Date: xx.01.2023
+Date: 07.01.2023
   Fixes:
     - Finely added dependency without dependency loop.
   Realeses:
