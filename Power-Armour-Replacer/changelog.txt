@@ -1,8 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.14
+Date: xx.xx.2023
+  Changes:
+    - Updated mod Description on what currently added to the mod.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.13
 Date: 07.01.2023
   Fixes:
     - Finely added dependency without dependency loop.
+    - Added incompatibility with IR-3
   Realeses:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------

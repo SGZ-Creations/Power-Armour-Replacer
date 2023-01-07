@@ -1,8 +1,6 @@
-    - 5 New tiers exo-skeleton added.
-    - 10 personal solar
-    - 10 roboport
-    - 10 personal laser defense
-
+    - 10 Personal solar
+    - 10 Roboport
+    - 10 Personal laser defense
     Compatibility list
 
     Bobs: Warfare, Plates(ores) Circuit, Equipment, 
