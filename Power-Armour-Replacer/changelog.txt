@@ -1,23 +1,27 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.14
-Date: xx.xx.2023
+Date: xx.01.2023
+  Features:
+    - Added code for personal laser equipment. more on intenal.
   Changes:
     - Updated mod Description on what currently added to the mod.
+    - Decresed power produced by fusion_reactor drasticly.
+    - Removed realeses spamed in changelogs. Will continue moving the link to the newes verison.
+  Internal:
+    - Marked some files to be left out of the mod till usable. Reducing size of mod slightly. Check info.json should u want more info.
+  Realeses:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.13
 Date: 07.01.2023
   Fixes:
     - Finely added dependency without dependency loop.
-    - Added incompatibility with IR-3
-  Realeses:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+    - Added incompatibility with IR-3.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.12
 Date: 27.12.2022
   Changes:
     - Internal name change. MK10-Armour --> Power Armour Replacer.
-  Realeses:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.11
 Date: 02.11.2022
@@ -25,8 +29,7 @@ Date: 02.11.2022
     - Added/Completed vanilla recipe for Exoskeleton.
     - Some Compatibility.
     - Tech overhaul 2. removed armour from equipment prerequisite.
-  Realeses:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 01.11.2022
@@ -62,8 +65,6 @@ Date: 29.10.2022
     - Atomation 3 replaced with atomation 6 in bob's was put on mk 10 when it was used by mk9.
   Thanks:
     - Tomatoking for doing the NO translation for me :P
-  Realeses:
-    - Want access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.08
 Date: 28.10.2022 03:31 CET
@@ -88,8 +89,6 @@ Date: 26.10.2022
     - Typo
   Changes:
     - Tweked recipe when angelssmelting are active.
-  Realeses:
-    - Alpha 7 Want access to the Alpha? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 26.10.2022
@@ -105,8 +104,6 @@ Date: 26.10.2022
     - Compatibility was using lot of ram inf loop 50GB seen. rewriten all of that now.
   Usage:
     - Will not remove item currently existing. Will only remove new crafting capabilities.
-  Realeses:
-    - Alpha 6 Want access to the Alpha? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 15.10.2022
@@ -125,4 +122,3 @@ Date: 15.10.2022
     - join my discord to participate in the testing or just play with the Alpha/Beta.
   Realeses:
     - Alpha 1-5 used same versioning by me not thinking realy.
-    - Want access to the Alpha? Head to: https://discord.gg/tbxnpsxkDM.

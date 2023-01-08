@@ -1,3 +1,4 @@
+--[[
 local graphics = {
     { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
     { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
@@ -5,7 +6,7 @@ local graphics = {
     { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
     { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
 }
-
+]]
 local speed_bonus = {
     0.5,
     1,
@@ -41,7 +42,7 @@ while i < 6 do
                     height = 128,
                     priority = "medium",
                     scale = 0.5
-                }
+                    }
             },
             shape =
             {

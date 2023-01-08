@@ -34,7 +34,7 @@ i = 1
       type = "electric",
       usage_priority = "primary-output"
     },
-    power = tostring(i * 10000000) .. "kW",
+    power = tostring(i * 50000) .. "kW",
     categories = { "armor" }
   }})
     i = i + 1
@@ -53,7 +53,8 @@ end
 local i = 1
 while i < 11 do
 
-    data:extend({ {
+    data:extend({ 
+      {
         type = "item",
         name = "f_mk" .. tostring(i),
         icon = "__base__/graphics/icons/fusion-reactor-equipment.png",
@@ -62,7 +63,8 @@ while i < 11 do
         order = "[Fusion Reactor]" .. tostring(i - 1) .. string_random(25),
         subgroup = "equipment",
         placed_as_equipment_result = "f_mk" .. tostring(i),
-    } })
+      }
+    })
 
     i = i + 1
 end

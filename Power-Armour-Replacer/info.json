@@ -18,12 +18,15 @@
 			"locale/sk/mod-locale.cfg",
 			"locale/de/mod-locale.cfg",
 			"control.lua",
-			"prototypes/recipes/exo-skeleton_recipes.lua",
 			"prototypes/recipes/personal_solar_recipes.lua",
 			"prototypes/recipes/roboport_recipes.lua",
-			"prototypes/items/exo-skeleton_item.lua",
+			"prototypes/recipes/laser_recipes.lua",
 			"prototypes/items/personal_solar_item.lua",
-			"prototypes/items/roboport_item.lua"
+			"prototypes/items/roboport_item.lua",
+			"prototypes/items/laser_item.lua",
+			"prototypes/technology/laser_tech.lua",
+			"prototypes/technology/roboport_tech.lua",
+			"prototypes/technology/personal_solar_tech.lua"
 		]
 	}
 }
