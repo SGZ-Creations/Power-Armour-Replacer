@@ -20,10 +20,6 @@ compat.update_technologies{
         ["armour_8"] = {
             "bob-armor-making-4"
         },
-        ["spidertron"] = {
-            ["fusion-reactor_5"] = "fusion-reactor_1",
-            ["exoskeleton_5"] = "exoskeleton_1",
-        }
     },
     ["bobrevamp"] = {
         ["armour_8"] = {
@@ -33,7 +29,7 @@ compat.update_technologies{
     ["bobplates"] = {
         ["armour_2"] = {
             "zinc-processing",
-            ["plastics"] = "invar-processing",
+            ["electronics"] = "invar-processing",
         },
         ["armour_3"] = {
             "aluminium-processing",
@@ -49,7 +45,7 @@ compat.update_technologies{
         },
         ["armour_7"] = {
             "tungsten-processing",
-            "ceramics"
+            "ceramics",
         },
         ["armour_8"] = {
             "battery-3",
@@ -68,12 +64,13 @@ compat.update_technologies{
     },
     ["bobassembly"] = {
         ["armour_9"] = {
-            ["automation-3"] = "automation-5"
+            ["automation-3"] = "automation-5",
         },
     },
     ["angelssmelting"] = {
         ["armour_1"] = {
-            "angels-bronze-smelting-1"
+            "angels-bronze-smelting-1",
+            "angels-solder-smelting-1",
         },
         ["armour_2"] = {
             "angels-steel-smelting-1",

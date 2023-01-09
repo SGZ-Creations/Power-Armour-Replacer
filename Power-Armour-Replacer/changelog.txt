@@ -1,14 +1,21 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.14
-Date: xx.01.2023
+Date: 09.01.2023
   Features:
     - Added code for personal laser equipment. more on intenal.
   Changes:
     - Updated mod Description on what currently added to the mod.
     - Decresed power produced by fusion_reactor drasticly.
     - Removed realeses spamed in changelogs. Will continue moving the link to the newes verison.
+    - Armour recipe adjustment 1 done. More to come
+  Known-issues:
+    - Icons for Exoskeleton are a bit weird. Hope to solve this soon but i've tried a lot to no success.
+  WIP:
+    - Recipe compatibility needs adjusting
   Internal:
     - Marked some files to be left out of the mod till usable. Reducing size of mod slightly. Check info.json should u want more info.
+  Thanks:
+    - @RedsTom#4616 for FR (France) Translation, Discord.
   Realeses:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
@@ -42,12 +49,12 @@ Date: 01.11.2022
     - DE Locals were disabled. (file of incomplete "DE" can be found on github)
     - Slovak locales were disabled. (file of incomplete "SK" can be found on github)
   Thanks:
-    - Toby1364 for praticipating on this project.
+    - @Toby1364 for praticipating on this project.
   Fixes:
     - Missing prerequsite for shield mk1 & 2.
     - Vanilla equipment where not unlockable as for needing missing/dissabled technology. Teses will be removed at a later state.
     - Battery Equipment mk2 reqiured 1000 is suppose to have only 200.
-  Known:
+  Known-issues:
     - Shield stats are not complete
     - Armour resistances is not complete.
 ---------------------------------------------------------------------------------------------------
@@ -64,7 +71,7 @@ Date: 29.10.2022
   Fixes:
     - Atomation 3 replaced with atomation 6 in bob's was put on mk 10 when it was used by mk9.
   Thanks:
-    - Tomatoking for doing the NO translation for me :P
+    - @Tomatoking for doing the NO translation for me :P
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.08
 Date: 28.10.2022 03:31 CET
@@ -115,10 +122,10 @@ Date: 15.10.2022
     - Locales: NO,EN,SK, (file of incomplete "SC" can be found on github)
     - Hollow personal Reactors added.
   Thanks:
-    - Honktown for help with code. (Discord)
-    - _CodeGreen for help with code when i got stuck & the compatibility. (Discord)
-    - Toby1364 for help working on mod in general. (Discord)
-    - Chunnyluny for help with testing the alpha. (Discord)
+    - @Honktown for help with code. (Discord)
+    - @_CodeGreen for help with code when i got stuck & the compatibility. (Discord)
+    - @Toby1364 for help working on mod in general. (Discord)
+    - @Chunnyluny for help with testing the alpha. (Discord)
     - join my discord to participate in the testing or just play with the Alpha/Beta.
   Realeses:
     - Alpha 1-5 used same versioning by me not thinking realy.

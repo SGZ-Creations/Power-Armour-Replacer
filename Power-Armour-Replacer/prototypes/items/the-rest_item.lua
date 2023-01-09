@@ -69,7 +69,7 @@ data:extend(
       input_flow_limit = "10kW",
       usage_priority = "primary-input"
     },
-    energy_input = "10kW",
+    energy_input = "1W",
     categories = {"armor"},
     activate_sound = { filename = "__base__/sound/nightvision-on.ogg", volume = 0.5 },
     deactivate_sound = { filename = "__base__/sound/nightvision-off.ogg", volume = 0.5 },

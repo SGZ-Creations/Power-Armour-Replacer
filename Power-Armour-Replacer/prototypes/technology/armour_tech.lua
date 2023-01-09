@@ -11,7 +11,7 @@ data:extend({
         recipe = "a_mk1"
       },
     },
-    prerequisites = {"heavy-armor", "steel-processing", "automation",},
+    prerequisites = {"heavy-armor", "automation",},
     unit =
     {
       count = 1000,
@@ -34,7 +34,7 @@ data:extend({
         recipe = "a_mk2"
       },
     },
-    prerequisites = {"armour_1", "plastics"},
+    prerequisites = {"armour_1", "electronics"},
     unit =
     {
       count = 1000,
@@ -57,7 +57,7 @@ data:extend({
         recipe = "a_mk3"
       },
     },
-    prerequisites = {"armour_2", "advanced-electronics",},
+    prerequisites = {"armour_2", "advanced-electronics", "plastics", "engine"},
     unit =
     {
       count = 1000,
@@ -81,7 +81,7 @@ data:extend({
         recipe = "a_mk4"
       },
     },
-    prerequisites = {"armour_3", "low-density-structure", "uranium-processing", "military-science-pack"},
+    prerequisites = {"armour_3", "military-science-pack"},
     unit =
     {
       count = 1000,
@@ -106,7 +106,7 @@ data:extend({
         recipe = "a_mk5"
       },
     },
-    prerequisites = {"armour_4", "advanced-electronics-2", "electric-engine"},
+    prerequisites = {"armour_4", "advanced-electronics-2", "electric-engine", "uranium-processing"},
     unit =
     {
       count = 1000,
@@ -131,7 +131,7 @@ data:extend({
         recipe = "a_mk6"
       },
     },
-    prerequisites = {"armour_5", "rocket-fuel", "rocket-control-unit", "chemical-science-pack"},
+    prerequisites = {"armour_5", "circuit-network"},
     unit =
     {
       count = 1000,
@@ -157,7 +157,7 @@ data:extend({
         recipe = "a_mk7"
       },
     },
-    prerequisites = {"armour_6", "nuclear-power", "effect-transmission"},
+    prerequisites = {"armour_6", "low-density-structure", "rocket-control-unit",},
     unit =
     {
       count = 1000,
@@ -183,7 +183,7 @@ data:extend({
         recipe = "a_mk8"
       },
     },
-    prerequisites = {"armour_7", "production-science-pack", "advanced-material-processing-2"},
+    prerequisites = {"armour_7", "production-science-pack"},
     unit =
     {
       count = 1000,
@@ -210,7 +210,7 @@ data:extend({
         recipe = "a_mk9"
       },
     },
-    prerequisites = {"armour_8", "automation-3"},
+    prerequisites = {"armour_8"},
     unit =
     {
       count = 1000,
@@ -237,7 +237,7 @@ data:extend({
         recipe = "a_mk10"
       },
     },
-    prerequisites = {"armour_9", "rocket-silo", "logistics-3"},
+    prerequisites = {"armour_9"},
     unit =
     {
       count = 1000,

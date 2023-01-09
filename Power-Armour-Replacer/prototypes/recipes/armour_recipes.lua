@@ -7,9 +7,9 @@ local recipes = {
         energy_required = 60.0,
         ingredients = {
             {"heavy-armor", 1},
-            {"engine-unit", 100},
+            {"wood", 200},
             {"steel-plate", 100},
-            {"electronic-circuit", 50}
+            {"electronic-circuit", 100}
         },
         result = "a_mk1",
         allow_decomposition = true,
@@ -21,10 +21,10 @@ local recipes = {
         energy_required = 60.0,
         ingredients = {
             {"a_mk1", 1},
-            {"plastic-bar", 100},
-            {"engine-unit", 50},
+            {"copper-plate", 200},
+            {"iron-gear-wheel", 150},
             {"steel-plate", 150},
-            {"electronic-circuit", 100},
+            {"electronic-circuit", 200},
         },
         result = "a_mk2",
         allow_decomposition = true,
@@ -36,7 +36,7 @@ local recipes = {
         energy_required = 60.0,
         ingredients = {
             {"a_mk2", 1},
-            {"solid-fuel", 50},
+            {"plastic-bar", 50},
             {"steel-plate", 175},
             {"engine-unit", 100},
             {"advanced-circuit", 125},
@@ -48,12 +48,14 @@ local recipes = {
         type = "recipe",
         name = "a_mk4",
         enabled = false,
+        
         energy_required = 60.0,
         ingredients = {
             {"a_mk3", 1},
-            {"solid-fuel", 100},
-            {"low-density-structure", 55},
-            {"uranium-235", 250},
+            {"iron-gear-wheel", 150},
+            {"engine-unit", 100},
+            {"plastic-bar", 100},
+            {"advanced-circuit", 125},
         },
         result = "a_mk4",
         allow_decomposition = true,
@@ -65,7 +67,7 @@ local recipes = {
         energy_required = 70.0,
         ingredients = {
             {"a_mk4", 1},
-            {"solid-fuel", 200},
+            {"b_mk3", 15},
             {"processing-unit", 200},
             {"advanced-circuit", 150},
             {"uranium-235", 350},
@@ -77,14 +79,14 @@ local recipes = {
         name = "a_mk6",
         enabled = false,
         energy_required = 70.0,
+        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk5", 1},
             --{"ps_mk3", 5},
-            {"solid-fuel", 300},
-            {"rocket-control-unit", 50},
+            {type="fluid", name="petroleum-gas", amount=350},
             {"processing-unit", 150},
-            {"rocket-fuel", 55},
+            {"red-wire", 100},
         },
         result = "a_mk6",
     },
@@ -93,14 +95,15 @@ local recipes = {
         name = "a_mk7",
         enabled = false,
         energy_required = 70.0,
+        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk6", 1},
             {"f_mk5", 5},
-            --{"l_mk3", 5},
-            {"nuclear-fuel", 20},
-            {"beacon", 10},
-            {"nuclear-reactor", 25},
+            {type="fluid", name="petroleum-gas", amount=700},
+            {"green-wire", 100},
+            {"rocket-control-unit", 50},
+            {"low-density-structure", 75},
         },
         result = "a_mk7",
     },
@@ -109,13 +112,14 @@ local recipes = {
         name = "a_mk8",
         enabled = false,
         energy_required = 70.0,
+        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk7", 1},
             {"f_mk5", 10},
-            {"electric-furnace", 10},
-            {"submachine-gun", 15},
-            {"nuclear-reactor", 25},
+            {"b_mk7", 20},
+            {type="fluid", name="lubricant", amount=350},
+            {"low-density-structure", 125},
             
         },
         result = "a_mk8",
@@ -125,13 +129,14 @@ local recipes = {
         name = "a_mk9",
         enabled = false,
         energy_required = 70.0,
+        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk8", 1},
             {"s_mk5", 5},
-            {"assembling-machine-3", 10},
-            {"rocket-control-unit", 10},
-            {"nuclear-reactor", 25},
+            {type="fluid", name="lubricant", amount=700},
+            {"rocket-control-unit", 100},
+            {"low-density-structure", 175},
         },
         result = "a_mk9",
     },
@@ -144,9 +149,9 @@ local recipes = {
         ingredients = {
             {"a_mk9", 1},
             {"s_mk8", 5},
-            {"rocket-silo", 5},
-            {"centrifuge", 15},
-            {"fast-transport-belt", 35},
+            {"rocket-control-unit", 200},
+            {"processing-unit", 250},
+            {"low-density-structure", 250},
         },
         result = "a_mk10",
     },
@@ -159,7 +164,7 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["engine-unit"] = {"solder", 100}, -- the first three are for replacing ingredients in the recipe
+            ["wood"] = {"solder", 100}, -- the first three are for replacing ingredients in the recipe
             ["electronic-circuit"] = {"basic-circuit-board", 75},
             {"tinned-copper-cable", 55} -- these two are for adding new ingredients to the recipe
         }
@@ -190,8 +195,8 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["plastic-bar"] = {"invar-alloy", 50},
-            ["engine-unit"] = {"silver-plate", 75},
+            ["copper-plate"] = {"invar-alloy", 50},
+            ["iron-gear-wheel"] = {"silver-plate", 75},
             {"rubber", 15}
         }
     },
@@ -249,9 +254,22 @@ compat.update_ingredients(recipes[3], {
         }
     },
     {
-        dependencies = {"248k"},
+        dependencies = {"248k", "bobplates", "angelssmelting"},
         replacements = {
-            ["lead-plate"] = {"-lithium-ion-battery", 25},
+            ["lead-plate"] = {"battery", 30},
+        }
+    },
+    {
+        dependencies = {"248k", "bobplates"},
+        replacements = {
+            ["aluminium-plate"] = {"el_aluminum_item", 150},
+        }
+    },
+    {
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+            ["el_aluminum_item"] = {"aluminium-plate", 150},
+            ["cobalt-steel-alloy"] = {"lithium-ion-battery", 30},
         }
     },
 })

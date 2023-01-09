@@ -15,7 +15,7 @@ data:extend({
         recipe = "spidertron-remote"
       }
     },
-    prerequisites = {"military-4", "exoskeleton_5", "fusion-reactor_5", "rocketry", "rocket-control-unit", "effectivity-module-3" },
+    prerequisites = {"military-4", "exoskeleton_1", "fusion-reactor_1", "rocketry", "rocket-control-unit", "effectivity-module-3" },
     unit =
     {
       ingredients =
