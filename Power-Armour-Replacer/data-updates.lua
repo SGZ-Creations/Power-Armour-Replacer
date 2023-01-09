@@ -15,7 +15,7 @@ compat.update_technologies{
     },
     ["bobwarfare"] = {
         ["armour_5"] = {
-            "bob-armor-making-3"
+            ["uranium-processing"] = "bob-armor-making-3"
         },
         ["armour_8"] = {
             "bob-armor-making-4"
@@ -39,33 +39,24 @@ compat.update_technologies{
             ["electric-engine"] = "gem-processing-2"
         },
         ["armour_6"] = {
-            ["rocket-fuel"] = "titanium-processing",
+            ["circuit-network"] = "titanium-processing",
             ["advanced-electronics-3"] = "electric-engine",
-            ["rocket-control-unit"] = "battery-2",
+            "battery-2",
         },
         ["armour_7"] = {
-            "tungsten-processing",
+            ["rocket-control-unit"] = "tungsten-processing",
             "ceramics",
         },
         ["armour_8"] = {
             "battery-3",
+            "low-density-structure"
         },
         ["armour_9"] = {
             "nitinol-processing",
         },
         ["armour_10"] = {
-            ["rocket-silo"] = "rocket-control-unit",
-        },
-    },
-    ["boblogistics"] = {
-        ["armour_10"] = {
-            ["logistics-3"] = "logistics-5" ,
-        },
-    },
-    ["bobassembly"] = {
-        ["armour_9"] = {
-            ["automation-3"] = "automation-5",
-        },
+            "rocket-control-unit",
+        }
     },
     ["angelssmelting"] = {
         ["armour_1"] = {
@@ -83,7 +74,7 @@ compat.update_technologies{
             ["aluminium-processing"] = "angels-aluminium-smelting-1",
         },
         ["armour_4"] = {
-            ["low-density-structure"] = "angels-silver-smelting-1",
+            "angels-silver-smelting-1",
             "plastic-1",
             
         },
@@ -95,7 +86,7 @@ compat.update_technologies{
         },
         ["armour_7"] = {
            ["tungsten-processing"] = "angels-tungsten-smelting-1",
-           "angels-cobalt-smelting-1",
+           ["low-density-structure"] = "cobalt-processing",
         },
         ["armour_9"] = {
             ["nitinol-processing"] = "angels-nitinol-smelting-1",
@@ -104,12 +95,7 @@ compat.update_technologies{
     },
     ["angelspetrochem"] = {
         ["armour_4"] = {
-            ["uranium-processing"] = "angels-stone-smelting-2",
-        },
-    },
-    ["Atomic_Overhaul"] = {
-        ["armour_7"] = {
-            ["nuclear-power"] = "non-moderated-fuel-processing",
+            "angels-stone-smelting-2",
         },
     },
     ["Clowns-Processing"] = {

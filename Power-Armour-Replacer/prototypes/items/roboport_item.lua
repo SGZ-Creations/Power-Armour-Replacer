@@ -28,5 +28,35 @@ local item = {
         name = "a_mk5",
         icon = "__base__.graphics.Personal_roboport_MK2.png",
         stack_size = 1
-    }, 
+    },
+    {
+        type = "item",
+        name = "a_mk6",
+        icon = "__base__.graphics.Personal_roboport_MK2.png",
+        stack_size = 1
+    },
+    {
+        type = "item",
+        name = "a_mk7",
+        icon = "__base__.graphics.Personal_roboport_MK2.png",
+        stack_size = 1
+    },
+    {
+        type = "item",
+        name = "a_mk8",
+        icon = "__base__.graphics.Personal_roboport_MK2.png",
+        stack_size = 1
+    },
+    {
+        type = "item",
+        name = "a_mk9",
+        icon = "__base__.graphics.Personal_roboport_MK2.png",
+        stack_size = 1
+    },
+    {
+        type = "item",
+        name = "a_mk10",
+        icon = "__base__.graphics.Personal_roboport_MK2.png",
+        stack_size = 1
+    },
 }

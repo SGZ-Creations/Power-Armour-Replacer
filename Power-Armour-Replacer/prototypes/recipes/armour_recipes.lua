@@ -68,8 +68,8 @@ local recipes = {
         ingredients = {
             {"a_mk4", 1},
             {"b_mk3", 15},
-            {"processing-unit", 200},
             {"advanced-circuit", 150},
+            {"processing-unit", 100},
             {"uranium-235", 350},
         },
         result = "a_mk5",
@@ -233,7 +233,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["solid-fuel"] = {"zinc-plate", 50},
+            ["plastic-bar"] = {"zinc-plate", 50},
             ["steel-plate"] = {"aluminium-plate", 150},
             ["engine-unit"] = {"cobalt-steel-alloy", 100},
             {"rubber", 35}
@@ -288,17 +288,11 @@ compat.update_ingredients(recipes[4], {
         }
     },
     {
-        dependencies = {"angelspetrochem"},
-        replacements = {
-            ["solid-fuel"] = {"plastic-bar", 120},
-        }
-    },
-    {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["low-density-structure"] = {"angels-wire-silver", 55},
+            ["iron-gear-wheel"] = {"angels-wire-silver", 55},
             ["cobalt-steel-alloy"] = {"solder", 200},
-            ["uranium-235"] = {"concrete-brick", 135},
+            ["engine-unit"] = {"concrete-brick", 135},
         }
     },
     --[[
@@ -328,7 +322,7 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["solid-fuel"] = {"aluminium-plate", 50},
+            {"aluminium-plate", 50},
             {"sapphire-5", 50},
             {"ruby-5", 50},
         }
@@ -356,7 +350,7 @@ compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["solid-fuel"] = {"titanium-plate", 200},
+            ["red-wire"] = {"titanium-plate", 200},
             {"sapphire-5", 100},
             {"ruby-5", 100},
 
@@ -365,7 +359,7 @@ compat.update_ingredients(recipes[6], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["rocket-fuel"] = {"plastic-bar", 100},
+            ["processing-unit"] = {"plastic-bar", 100},
             {"gilded-copper-cable", 55},
         }
     },
@@ -391,8 +385,9 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["beacon"] = {"ceramic-bearing", 200},
-            ["nuclear-reactor"] = {"tungsten-plate", 250},
+            ["green-wire"] = {"ceramic-bearing", 200},
+            ["rocket-control-unit"] = {"tungsten-plate", 250},
+            ["low-density-structure"] = {"cobalt-steel-bearing", 200},
             {"sapphire-5", 50},
             {"ruby-5", 50},
             {"emerald-5", 50},
@@ -402,7 +397,7 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["nuclear-reactor"] = {"tungsten-plate", 250},
+            ["rocket-control-unit"] = {"tungsten-plate", 250},
             {"glass", 50}
 
         }
@@ -429,7 +424,7 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            ["electric-furnace"] = {"heat-shield-tile", 200},
+            {"heat-shield-tile", 200},
         }
     },
     {
@@ -441,8 +436,8 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["submachine-gun"] = {"silver-zinc-battery", 100},
-            ["nuclear-reactor"] = {"copper-tungsten-alloy", 200},
+            ["b_mk7"] = {"copper-tungsten-alloy", 200},
+            {"silver-zinc-battery", 100},
             {"sapphire-5", 100},
             {"ruby-5", 100},
             {"emerald-5", 100},
@@ -471,7 +466,7 @@ compat.update_ingredients(recipes[9], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["nuclear-reactor"] = {"tungsten-carbide", 250},
+            ["low-density-structure"] = {"tungsten-carbide", 250},
             {"sapphire-5", 50},
             {"ruby-5", 50},
             {"emerald-5", 50},
@@ -481,16 +476,10 @@ compat.update_ingredients(recipes[9], {
         }
     },
     {
-        dependencies = {"bobassembly"},
-        replacements = {
-            ["assembling-machine-3"] = {"assembling-machine-5", 10},
-        }
-    },
-    {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["nuclear-reactor"] = {"tungsten-carbide", 250},
-            ["assembling-machine-5"] = {"reinforced-concrete-brick", 200},
+            ["low-density-structure"] = {"tungsten-carbide", 250},
+            {"reinforced-concrete-brick", 200},
         }
     },
     --[[
@@ -507,20 +496,13 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["centrifuge"] = {"advanced-circuit", 200},
+            ["processing-unit"] = {"advanced-circuit", 200},
             {"advanced-processing-unit", 150},
-        }
-    },
-    {
-        dependencies = {"boblogistics"},
-        replacements = {
-            ["fast-transport-belt"] = {"ultimate-transport-belt", 40},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["rocket-silo"] = {"rocket-control-unit", 250},
             {"sapphire-5", 100},
             {"ruby-5", 100},
             {"emerald-5", 100},
@@ -532,7 +514,6 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["rocket-silo"] = {"rocket-control-unit", 200},
             ["s_mk8"] = {"cobalt-steeel-alloy", 215},
         }
     },
