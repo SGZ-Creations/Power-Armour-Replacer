@@ -1,6 +1,19 @@
 data:extend(
+{
+  --[[
   {
-    {
+    if mods["Krastorio2"] then 
+      add resistances =
+      {
+        {
+          type = "radioactive",
+          decrease = 100,
+          percent = 10
+        }
+      },
+  },
+  ]]
+  {
     type = "armor",
     name = "a_mk1",
     icon = "__Power-Armour-Replacer__/texture/items/power-armor.png",
@@ -29,7 +42,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "ba[power-armor]",
+    order = "aaz[a_mk1]-aa[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a1-equipment-grid",
@@ -66,7 +79,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bb[power-armor-mk2]",
+    order = "abz[a_mk2]-ab[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a2-equipment-grid",
@@ -103,7 +116,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bc[a_mk3]",
+    order = "acz[a_mk3]-ac[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a3-equipment-grid",
@@ -140,7 +153,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bd[a_mk4]",
+    order = "adz[a_mk4]-ad[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a4-equipment-grid",
@@ -177,7 +190,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "be[a_mk5]",
+    order = "aez[a_mk5]-ae[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a5-equipment-grid",
@@ -214,7 +227,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bf[a_mk6]",
+    order = "afz[a_mk6]-af[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a6-equipment-grid",
@@ -251,7 +264,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bg[a_mk7]",
+    order = "agz[a_mk7]-ag[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a7-equipment-grid",
@@ -288,7 +301,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bh[a_mk8]",
+    order = "ahz[a_mk8]-ah[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a8-equipment-grid",
@@ -325,7 +338,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bi[a_mk9]",
+    order = "aiz[a_mk9]-ai[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a9-equipment-grid",
@@ -362,7 +375,7 @@ data:extend(
       }
     },
     subgroup = "armor",
-    order = "bj[a_mk10]",
+    order = "ajz[a_mk10]-aj[armour-replacer]",
     stack_size = 1,
     infinite = true,
     equipment_grid = "sgz-a10-equipment-grid",

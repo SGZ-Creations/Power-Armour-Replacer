@@ -1,12 +1,30 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.16
+Date: xx.01.2023
+  Changes:
+    - Adjusted power produced by fusion_reactor.
+    - Partely progressed on compatibility.
+    - Tweaks in general.
+  Features:
+    - Finished the stats for shields.
+    - Finally Implemented Roboport, Laser, Solar. Items to the mod.
+  Fixes:
+    - Icon size of Exoskeleton. Was using wrong placeholder directory.
+    - Item order in crafting window.
+  Info:
+    - lot of more stuff that I don't know what is. to be adde to this list.
+  Thanks:
+    - Discord @Toby1364 for help working on mod in general. (Discord)
+  Realeses:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.15
 Date: 09.01.2023
   Changes:
     - Armour recipe adjustment 1.1 done.
+    - Some Compatibility removed, Obselete.
   Fixes:
     - Compatibility Recipes & Tech reserch.
-  Realeses:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.14
 Date: 09.01.2023

@@ -35,7 +35,7 @@ local recipes = {
             {"r_mk2", 1},
             {"electronic-circuit", 125},
             {"engine-unit", 80},
-            {"", },
+            {"iron-plate", 100},
         },
         result = "r_mk3"
     },

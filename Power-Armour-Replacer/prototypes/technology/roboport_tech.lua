@@ -3,7 +3,7 @@ data:extend({
     type = "technology",
     name = "roboport_1",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-equipment.png"),
     effects =
     {
       {
@@ -26,7 +26,7 @@ data:extend({
     type = "technology",
     name = "roboport_2",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -49,7 +49,7 @@ data:extend({
     type = "technology",
     name = "roboport_3",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -73,7 +73,7 @@ data:extend({
     type = "technology",
     name = "roboport_4",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -98,7 +98,7 @@ data:extend({
     type = "technology",
     name = "roboport_5",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -123,7 +123,7 @@ data:extend({
     type = "technology",
     name = "roboport_6",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -149,7 +149,7 @@ data:extend({
     type = "technology",
     name = "roboport_7",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -175,7 +175,7 @@ data:extend({
     type = "technology",
     name = "roboport_8",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -202,7 +202,7 @@ data:extend({
     type = "technology",
     name = "roboport_9",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       {
@@ -229,7 +229,7 @@ data:extend({
     type = "technology",
     name = "roboport_10",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
       

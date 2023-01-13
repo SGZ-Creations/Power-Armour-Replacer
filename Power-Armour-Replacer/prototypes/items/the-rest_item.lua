@@ -82,6 +82,7 @@ local items = {
  {
      type = "item",
      subgroup = "equipment",
+     order = "iaz[night-vision]-aa[armour-replacer]",
      name = "nv_mk1",
      icon = "__base__/graphics/icons/night-vision-equipment.png",
      icon_size = 64,
@@ -90,6 +91,7 @@ local items = {
  {
      type = "item",
      subgroup = "equipment",
+     order = "ibz[night-vision]-ab[armour-replacer]",
      name = "nv_mk2",
      icon = "__base__/graphics/icons/night-vision-equipment.png",
      icon_size = 64,
@@ -183,7 +185,7 @@ data:extend({
     icon_size = 64,
     stack_size = 5,
     placed_as_equipment_result = "bi_mk1",
-    order = "aa[energy-shield-mk2]",
+    order = "jaz[belt-immunity]-aa[armour-replacer]",
     subgroup = "equipment",
   },
   {
@@ -193,7 +195,7 @@ data:extend({
     icon_size = 64,
     stack_size = 5,
     placed_as_equipment_result = "bi_mk2",
-    order = "ab[energy-shield-mk2]",
+    order = "jbz[belt-immunity]-ab[armour-replacer]",
     subgroup = "equipment",
   },
 

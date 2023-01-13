@@ -278,7 +278,7 @@ compat.update_ingredients(recipes[4], {
         dependencies = {"bobplates"},
         replacements = {
             {"cobalt-steel-alloy", 150},
-            {"invar", 100},
+            {"invar-alloy", 100},
         }
     },
     {
@@ -422,7 +422,7 @@ compat.update_ingredients(recipes[8], {
         }
     },
     {
-        dependencies = {"bobrevamp"},
+        dependencies = {"bobrevamp", "bobplates"},
         replacements = {
             {"heat-shield-tile", 200},
         }

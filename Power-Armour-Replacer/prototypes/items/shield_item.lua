@@ -23,44 +23,44 @@
     5000000,
     10000000,
   }
---
+-- 
   local buffer_capacity = {
-    "100kW",
-    "500kW",
-    "1000kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
+    "200MJ",
+    "400MJ",
+    "600MJ",
+    "800MJ",
+    "1000MJ",
+    "1200MJ",
+    "1400MJ",
+    "1600MJ",
+    "1800MJ",
+    "2000MJ",
   }
 --Max Consuption
   local input_flow_limit = {
-    "100kW",
-    "300kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
-    "10kW",
+    "2GW",
+    "4GW",
+    "6GW",
+    "8GW",
+    "10GW",
+    "12GW",
+    "14GW",
+    "16GW",
+    "18GW",
+    "20GW",
   }
---
+-- Recharge speed the higer the lower it charges
   local energy_per_shield = {
-    "10kW",
-    "20kW",
-    "30kW",
-    "40kW",
-    "50kW",
-    "60kW",
-    "70kW",
-    "80kW",
-    "90kW",
-    "100kW",
+    "5MJ",
+    "10MJ",
+    "15MJ",
+    "20MJ",
+    "25MJ",
+    "30MJ",
+    "35MJ",
+    "40MJ",
+    "45MJ",
+    "50MJ",
   }
 
   local j = 1
@@ -115,7 +115,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk1",
-        order = "aa[energy-shield-mk2]",
+        order = "haz[energy-shield-mk2]-aa[armour-replacer]",
         subgroup = "equipment",
     },
     {
@@ -125,7 +125,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk2",
-        order = "ab[energy-shield-mk2]",
+        order = "hbz[energy-shield-mk2]-ab[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -136,7 +136,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk3",
-        order = "ac[energy-shield-mk2]",
+        order = "hcz[energy-shield-mk2]-ac[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -147,7 +147,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk4",
-        order = "ad[energy-shield-mk2]",
+        order = "hdz[energy-shield-mk2]-ad[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -158,7 +158,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk5",
-        order = "ae[energy-shield-mk2]",
+        order = "hez[energy-shield-mk2]-ae[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -169,7 +169,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk6",
-        order = "af[energy-shield-mk2]",
+        order = "hfz[energy-shield-mk2]-af[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -180,7 +180,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk7",
-        order = "ag[energy-shield-mk2]",
+        order = "hgz[energy-shield-mk2]-ag[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -191,7 +191,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk8",
-        order = "ah[energy-shield-mk2]",
+        order = "hhz[energy-shield-mk2]-ah[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -202,7 +202,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk9",
-        order = "ai[energy-shield-mk2]",
+        order = "hiz[energy-shield-mk2]-ai[armour-replacer]",
         subgroup = "equipment",
 
     },
@@ -213,7 +213,7 @@ local items = {
         icon_size = 64,
         stack_size = 200,
         placed_as_equipment_result = "s_mk10",
-        order = "aj[energy-shield-mk2]",
+        order = "hjz[energy-shield-mk2]-aj[armour-replacer]",
         subgroup = "equipment",
 
     },

@@ -3,13 +3,13 @@ data:extend({
         type = "technology",
         name = "solar_1",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk1"
+                recipe = "p-s_mk1"
             },
         },
         prerequisites = {"armour_1"},
@@ -27,13 +27,12 @@ data:extend({
         type = "technology",
         name = "solar_2",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
-
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk2"
+                recipe = "p-s_mk2"
             },
         },
         prerequisites = {"solar_1", },
@@ -51,13 +50,13 @@ data:extend({
         type = "technology",
         name = "solar_3",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk3"
+                recipe = "p-s_mk3"
             },
         },
         prerequisites = {"solar_2", },
@@ -76,13 +75,13 @@ data:extend({
         type = "technology",
         name = "solar_4",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk4"
+                recipe = "p-s_mk4"
             },
         },
         prerequisites = {"solar_3", },
@@ -102,13 +101,13 @@ data:extend({
         type = "technology",
         name = "solar_5",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk5"
+                recipe = "p-s_mk5"
             },
         },
         prerequisites = {"solar_4", },
@@ -128,13 +127,13 @@ data:extend({
         type = "technology",
         name = "solar_6",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk6"
+                recipe = "p-s_mk6"
             },
         },
         prerequisites = {"solar_5", },
@@ -155,13 +154,13 @@ data:extend({
         type = "technology",
         name = "solar_7",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk7"
+                recipe = "p-s_mk7"
             },
         },
         prerequisites = {"solar_6", },
@@ -182,13 +181,13 @@ data:extend({
         type = "technology",
         name = "solar_8",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk8"
+                recipe = "p-s_mk8"
             },
         },
         prerequisites = {"solar_7", },
@@ -210,13 +209,13 @@ data:extend({
         type = "technology",
         name = "solar_9",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk9"
+                recipe = "p-s_mk9"
             },
         },
         prerequisites = {"solar_8", },
@@ -238,13 +237,13 @@ data:extend({
         type = "technology",
         name = "solar_10",
         icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/power-armor-mk2.png",
+        icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
 
             {
                 type = "unlock-recipe",
-                recipe = "ps_mk10"
+                recipe = "p-s_mk10"
             },
         },
         prerequisites = {"solar_9", },

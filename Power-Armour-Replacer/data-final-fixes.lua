@@ -39,6 +39,12 @@ data.raw.technology["belt-immunity-equipment"].enabled = false
 data.raw.recipe["exoskeleton-equipment"].enabled = false
 data.raw.technology["exoskeleton-equipment"].enabled = false
 data.raw.recipe["solar-panel-equipment"].enabled = false
+data.raw.technology["personal-roboport-equipment"].enabled = false
+data.raw.recipe["personal-roboport-equipment"].enabled = false
+data.raw.technology["personal-laser-defense-equipment"].enabled = false
+data.raw.recipe["personal-laser-defense-equipment"].enabled = false
+data.raw.technology["personal-roboport-mk2-equipment"].enabled = false
+data.raw.recipe["personal-roboport-mk2-equipment"].enabled = false
 --equipment section 2
 data.raw.recipe["energy-shield-equipment"].hidden = true
 data.raw.technology["energy-shield-equipment"].hidden = true
@@ -57,6 +63,12 @@ data.raw.technology["belt-immunity-equipment"].hidden = true
 data.raw.recipe["exoskeleton-equipment"].hidden = true
 data.raw.technology["exoskeleton-equipment"].hidden = true
 data.raw.recipe["solar-panel-equipment"].hidden = true
+data.raw.technology["personal-roboport-equipment"].hidden = true
+data.raw.recipe["personal-roboport-equipment"].hidden = true
+data.raw.technology["personal-laser-defense-equipment"].hidden = true
+data.raw.recipe["personal-laser-defense-equipment"].hidden = true
+data.raw.technology["personal-roboport-mk2-equipment"].hidden = true
+data.raw.recipe["personal-roboport-mk2-equipment"].hidden = true
 
 
 if mods["Darkstar_utilities_fixed"] then
@@ -92,9 +104,17 @@ if mods["RampantArsenal"] then
 --armours
     data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].enabled = false
     data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].enabled = false
+    data.raw.recipe["mk3-battery-rampant-arsenal"].enabled = false
+    data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].enabled = false
+    data.raw.recipe["mk3-shield-rampant-arsenal"].enabled = false
+    data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].enabled = false
 -- armour section 2
     data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].hidden = true
     data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].hidden = true
+    data.raw.recipe["mk3-battery-rampant-arsenal"].hidden = true
+    data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].hidden = true
+    data.raw.recipe["mk3-shield-rampant-arsenal"].hidden = true
+    data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].hidden = true
 end
 
 if mods["custom_power_armor_fix"] then

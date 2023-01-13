@@ -2,7 +2,7 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "1.1",
-	"version": "0.1.15",
+	"version": "0.1.16",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours",
@@ -18,15 +18,9 @@
 			"locale/sk/mod-locale.cfg",
 			"locale/de/mod-locale.cfg",
 			"control.lua",
-			"prototypes/recipes/personal_solar_recipes.lua",
-			"prototypes/recipes/roboport_recipes.lua",
 			"prototypes/recipes/laser_recipes.lua",
-			"prototypes/items/personal_solar_item.lua",
-			"prototypes/items/roboport_item.lua",
 			"prototypes/items/laser_item.lua",
-			"prototypes/technology/laser_tech.lua",
-			"prototypes/technology/roboport_tech.lua",
-			"prototypes/technology/personal_solar_tech.lua"
+			"prototypes/technology/laser_tech.lua"
 		]
 	}
 }

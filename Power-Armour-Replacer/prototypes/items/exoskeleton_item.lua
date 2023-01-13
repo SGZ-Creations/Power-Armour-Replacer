@@ -23,6 +23,14 @@ local energy_consumption = {
     "800kW",
 }
 
+local orders = {
+    "caz[exoskeleton]-aa[armour-replacer]",
+    "cbz[exoskeleton]-ab[armour-replacer]",
+    "ccz[exoskeleton]-ac[armour-replacer]",
+    "cdz[exoskeleton]-ad[armour-replacer]",
+    "cez[exoskeleton]-ae[armour-replacer]",
+}
+
 local i = 1
 while i < 6 do
     data:extend({
@@ -58,56 +66,16 @@ while i < 6 do
             energy_consumption = energy_consumption[i],
             movement_bonus = speed_bonus[i],
             categories = { "armor" }
+        },
+        {
+            type = "item",
+            name = "e_mk" .. tostring(i),
+            subgroup = "equipment",
+            order = orders[i],
+            icon_size = 64, icon_mipmaps = 4,
+            icon = "__base__/graphics/icons/exoskeleton-equipment.png",
+            stack_size = 1
         }
     })
     i = i + 1
 end
-
-local items = {
-    {
-        type = "item",
-        name = "e_mk1",
-        subgroup = "equipment",
-        order = "aa[exoskeleton]-a[exoskeleton-equipment]",
-        icon_size = 64, icon_mipmaps = 4,
-        icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
-        stack_size = 1
-    },
-    {
-        type = "item",
-        name = "e_mk2",
-        subgroup = "equipment",
-        order = "ab[exoskeleton]-a[exoskeleton-equipment]",
-        icon_size = 64, icon_mipmaps = 4,
-        icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
-        stack_size = 1
-    },
-    {
-        type = "item",
-        name = "e_mk3",
-        subgroup = "equipment",
-        order = "ac[exoskeleton]-a[exoskeleton-equipment]",
-        icon_size = 64, icon_mipmaps = 4,
-        icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
-        stack_size = 1
-    },
-    {
-        type = "item",
-        name = "e_mk4",
-        subgroup = "equipment",
-        order = "ad[exoskeleton]-a[exoskeleton-equipment]",
-        icon_size = 64, icon_mipmaps = 4,
-        icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
-        stack_size = 1
-    },
-    {
-        type = "item",
-        name = "e_mk5",
-        subgroup = "equipment",
-        order = "ae[exoskeleton]-a[exoskeleton-equipment]",
-        icon_size = 64, icon_mipmaps = 4,
-        icon = "__base__/graphics/equipment/exoskeleton-equipment.png",
-        stack_size = 1
-    },
-}
-data:extend(items)
