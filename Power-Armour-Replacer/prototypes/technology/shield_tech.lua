@@ -210,7 +210,7 @@ data:extend({
         recipe = "s_mk9"
       },
     },
-    prerequisites = {"shields_8",},
+    prerequisites = {"shields_8"},
     unit =
     {
       count = 500,

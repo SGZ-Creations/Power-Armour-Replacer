@@ -129,8 +129,8 @@ local recipes = {
         result = "l_mk10"
     },
 }
-local compat = require("compatibilities/mods-compat")
---[[
+--[[local compat = require("compatibilities/mods-compat")
+
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics"},

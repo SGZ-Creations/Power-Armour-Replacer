@@ -11,6 +11,78 @@ local orders = {
     "ejz[active-defense]-aj[armour-replacer]",
 }
 
+local cooldown = {
+    100,
+    85,
+    70,
+    60,
+    50,
+    40,
+    30,
+    20,
+    10,
+    0,
+}
+local range = {
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+}
+local damage_modifier = {
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    24,
+    27,
+}
+local energy_consumption = {
+    "0.05MJ",
+    "0.1MJ",
+    "0.15MJ",
+    "0.2MJ",
+    "0.25MJ",
+    "0.3MJ",
+    "0.35MJ",
+    "0.4MJ",
+    "0.45MJ",
+    "0.5MJ",
+}
+local buffer_capacity = {
+    "0.2MJ",
+    "0.3MJ",
+    "0.4MJ",
+    "0.5MJ",
+    "0.6MJ",
+    "0.7MJ",
+    "0.8MJ",
+    "0.9MJ",
+    "1.0MJ",
+    "1.1MJ",
+}
+local duration = {
+    40,
+    30,
+    20,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+}
+
 local i = 1
 while i < 11 do
     data:extend({
@@ -52,17 +124,15 @@ while i < 11 do
             {
                 type = "electric",
                 usage_priority = "secondary-input",
-                buffer_capacity = "220kJ"
+                buffer_capacity = buffer_capacity[i]
             },
 
             attack_parameters =
             {
                 type = "beam",
-                cooldown = 40,
-                range = 15,
-                --source_direction_count = 64,
-                --source_offset = {0, -3.423489 / 4},
-                damage_modifier = 3,
+                cooldown = cooldown[i],
+                range = range[i],
+                damage_modifier = damage_modifier[i],
                 ammo_type =
                 {
                     category = "laser",
@@ -74,8 +144,8 @@ while i < 11 do
                         {
                             type = "beam",
                             beam = "laser-beam",
-                            max_length = 15,
-                            duration = 40,
+                            max_length = range[i],
+                            duration = duration[i],
                             source_offset = { 0, -1.31439 }
                         }
                     }

@@ -8,13 +8,16 @@ Date: xx.01.2023
   Features:
     - Finished the stats for shields.
     - Finally Implemented Roboport, Laser, Solar. Items to the mod.
+    - More Achievements for the other itrems created.
   Fixes:
     - Icon size of Exoskeleton. Was using wrong placeholder directory.
     - Item order in crafting window.
   Info:
-    - lot of more stuff that I don't know what is. to be adde to this list.
+    - Lot more stuff that I don't know what is to be adde to this list.
+    - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on there side.
   Thanks:
-    - Discord @Toby1364 for help working on mod in general. (Discord)
+    - Discord, @Toby1364 for help working on mod in general. (Discord)
+    - Discord, @_CodeGreen for help crating an advanced setting function.
   Realeses:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
@@ -61,7 +64,6 @@ Date: 02.11.2022
     - Added/Completed vanilla recipe for Exoskeleton.
     - Some Compatibility.
     - Tech overhaul 2. removed armour from equipment prerequisite.
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 01.11.2022
@@ -128,7 +130,7 @@ Date: 26.10.2022
     - Recipes for shields, and it's hitpoint values has been altered.
     - Continued compatibility with bob's angels.
   Thanks:
-    - Discord @JanSharp for help when code was broken. (Discord)
+    - Discord @JanSharp for help when code was broken.
   Compatibility:
     - Bob's:
     - Angels:
@@ -147,10 +149,10 @@ Date: 15.10.2022
     - Locales: NO,EN,SK, (file of incomplete "SC" can be found on github)
     - Hollow personal Reactors added.
   Thanks:
-    - Discord @Honktown for help with code. (Discord)
-    - Discord @_CodeGreen for help with code when i got stuck & the compatibility. (Discord)
-    - Discord @Toby1364 for help working on mod in general. (Discord)
-    - Discord @Chunnyluny for help with testing the alpha. (Discord)
+    - Discord @Honktown for help with code.
+    - Discord @_CodeGreen for help with code when i got stuck & the compatibility.
+    - Discord @Toby1364 for help working on mod in general.
+    - Discord @Chunnyluny for help with testing the alpha.
     - join my discord to participate in the testing or just play with the Alpha/Beta.
   Realeses:
     - Alpha 1-5 used same versioning by me not thinking realy.

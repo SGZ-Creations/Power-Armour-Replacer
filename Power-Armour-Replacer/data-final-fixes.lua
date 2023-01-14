@@ -1,10 +1,8 @@
--- local function remove(type, name)
+--local function remove(type, name)
 --     data.raw[type][name] = nil
--- end
+--end
 
--- remove("armor", "a_mk1")
--- remove("armor", "a_mk2")
--- remove("armor", "a_mk3")
+-- remove("", "")
 
 --armours
 data.raw.recipe["modular-armor"].enabled = false
@@ -72,6 +70,13 @@ data.raw.recipe["personal-roboport-mk2-equipment"].hidden = true
 
 
 if mods["Darkstar_utilities_fixed"] then
+    -- remove("armor", "terra-tech-power-armor")
+    -- remove("armor", "terra-tech-power-armor-mk2")
+    -- remove("technology", "terra-tech-power-armor-mk2-tech")
+    -- remove("technology", "terra-tech-power-armor-tech")
+    -- remove("recipe", "terra-tech-power-armor")
+    -- remove("recipe", "terra-tech-power-armor-mk2")
+    
     data.raw.recipe["terra-tech-power-armor"].enabled = false
     data.raw.technology["terra-tech-power-armor-tech"].enabled = false
     data.raw.recipe["terra-tech-power-armor-mk2"].enabled = false
@@ -85,6 +90,15 @@ end
 
 if mods["bobwarfare"] then
 --armours
+    --remove("recipe", "bob-power-armor-mk3")
+    --remove("recipe", "bob-power-armor-mk4")
+    --remove("recipe", "bob-power-armor-5")
+    --remove("armor", "bob-power-armor-3")
+    --remove("armor", "bob-power-armor-mk4")
+    --remove("armor", "bob-power-armor-5")
+    --remove("technology", "bob-power-armor-mk3")
+    --remove("technology", "bob-power-armor-mk4")
+    --remove("technology", "bob-power-armor-5")
     data.raw.recipe["bob-power-armor-mk3"].enabled = false
     data.raw.technology["bob-power-armor-3"].enabled = false
     data.raw.recipe["bob-power-armor-mk4"].enabled = false

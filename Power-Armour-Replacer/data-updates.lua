@@ -1,6 +1,34 @@
 -- Compatibility files
 local compat = require("compatibilities.mods-compat")
 
+local function recursive_add(name)
+    if not data.raw.technology[name] then return end
+    table.insert(data.raw.technology[name].normal.unit.ingredients, "space-science-pack")
+    local i = name:find("%d")
+    name = name:sub(1, i-1)..tonumber(name:sub(i))+1
+    recursive_add(name)
+end
+
+local function add_space_science(names)
+    for _, name in pairs(names) do
+        recursive_add(name)
+    end
+end
+
+if settings.startup["hard_science_required"].value then
+
+    add_space_science{
+        "armour_6",
+        "battery_6",
+        "fusion-reactor_6",
+        "exoskeleton_5",
+        "laser_6",
+        "solar_6",
+        "roboport_6",
+        "shields_6",
+    }
+end
+
 compat.update_technologies{
     ["bobelectronics"] = {
         ["armour_5"] = {

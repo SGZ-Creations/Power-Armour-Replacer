@@ -1,5 +1,3 @@
-
---local function just_do_it(space_6, space_7, space_8, space_9, space_10)
   data:extend({
     {
       type = "technology",
@@ -255,22 +253,5 @@
       },
       order = "g-a-b"
     },
-  });
---[[end
+  })
 
-local space_6 = { "space-science-pack", 0 }
-local space_7 = { "space-science-pack", 0 }
-local space_8 = { "space-science-pack", 0 }
-local space_9 = { "space-science-pack", 0 }
-local space_10 = { "space-science-pack", 0 }
-
-if game.difficulty_settings.technology_difficulty == 1 then
-  space_6 = { "space-science-pack", 1 }
-  space_7 = { "space-science-pack", 2 }
-  space_8 = { "space-science-pack", 3 }
-  space_9 = { "space-science-pack", 4 }
-  space_10 = { "space-science-pack", 5 }
-end
-
-just_do_it(space_6, space_7, space_8, space_9, space_10)
-]]--
