@@ -1,20 +1,28 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.16
+Version: 1.0.0
 Date: xx.01.2023
-  Changes:
-    - Adjusted power produced by fusion_reactor.
-    - Partely progressed on compatibility.
-    - Tweaks in general.
+  Releases:
+    - Note if u use the 0.1.16 u are using the beta version of 1.0 release.
+    - Main functionality Implemented. This mod is then geting it's 1.0 Release.
+    - Compatibility partially done but useable with what's there. Work continues from there.
   Features:
     - Finished the stats for shields.
     - Finally Implemented Roboport, Laser, Solar. Items to the mod.
     - More Achievements for the other itrems created.
+  Changes:
+    - Adjusted power produced by fusion_reactor.
+    - Partely progressed on compatibility.
+    - Tweaks in general.
+  locales:
+    - Added English templates for CS, DE, SK, locals.
+    - Updated EN, NO locales.
   Fixes:
     - Icon size of Exoskeleton. Was using wrong placeholder directory.
     - Item order in crafting window.
   Info:
     - Lot more stuff that I don't know what is to be adde to this list.
     - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on there side.
+    - This is the changelog for 0.1.16 & 1.0. Tho will be listed as 1.0.0.
   Thanks:
     - Discord, @Toby1364 for help working on mod in general. (Discord)
     - Discord, @_CodeGreen for help crating an advanced setting function.
@@ -85,7 +93,7 @@ Date: 01.11.2022
     - Shield stats are not complete
     - Armour resistances is not complete.
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.09
+Version: 0.1.9
 Date: 29.10.2022
   Features:
     - Mod Rename to Power Armour Replacer.
@@ -100,7 +108,7 @@ Date: 29.10.2022
   Thanks:
     - Discord @Tomatoking for doing the NO translation for me :P
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.08
+Version: 0.1.8
 Date: 28.10.2022 03:31 CET
   Features:
     - Some Clowns-Processing & Atomic_Overhaul Compat

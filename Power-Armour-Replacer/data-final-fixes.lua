@@ -2,8 +2,6 @@ local function remove(type, name)
      data.raw[type][name] = nil
 end
 
--- remove("", "")
-
 --armours
 data.raw.recipe["modular-armor"].enabled = false
 data.raw.technology["modular-armor"].enabled = false
@@ -236,6 +234,3 @@ if mods["PowerAndArmor"] then
     data.raw.item["PaA-personal-laser-defense-mk2-equipment"].hidden = true
     data.raw.item["PaA-personal-laser-defense-mk3-equipment"].hidden = true]]
 end
---[[
-item.flags = item.flags or {}
-table.insert(item.flags, "hidden")]]

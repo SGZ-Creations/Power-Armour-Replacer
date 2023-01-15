@@ -17,6 +17,7 @@
 			"locale/cs/mod-locale.cfg",
 			"locale/sk/mod-locale.cfg",
 			"locale/de/mod-locale.cfg",
+			"local/fr/mod-locale.cfg",
 			"control.lua"
 		]
 	}

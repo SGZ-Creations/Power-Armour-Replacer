@@ -55,6 +55,7 @@ local recipes = {
         name = "l_mk5",
         enabled = false,
         energy_required = 40,
+        hide_from_player_crafting = true,
         ingredients = {
             {"l_mk4", 1},
             {"electronic-circuit", 10},
@@ -68,6 +69,7 @@ local recipes = {
         name = "l_mk6",
         enabled = false,
         energy_required = 40,
+        hide_from_player_crafting = true,
         ingredients = {
             {"l_mk5", 1},
             {"electronic-circuit", 10},
@@ -81,6 +83,7 @@ local recipes = {
         name = "l_mk7",
         enabled = false,
         energy_required = 40,
+        hide_from_player_crafting = true,
         ingredients = {
             {"l_mk6", 1},
             {"electronic-circuit", 10},
@@ -94,6 +97,7 @@ local recipes = {
         name = "l_mk8",
         enabled = false,
         energy_required = 40,
+        hide_from_player_crafting = true,
         ingredients = {
             {"l_mk7", 1},
             {"electronic-circuit", 10},
@@ -107,6 +111,7 @@ local recipes = {
         name = "l_mk9",
         enabled = false,
         energy_required = 40,
+        hide_from_player_crafting = true,
         ingredients = {
             {"l_mk8", 1},
             {"electronic-circuit", 10},
@@ -120,6 +125,7 @@ local recipes = {
         name = "l_mk10",
         enabled = false,
         energy_required = 40,
+        hide_from_player_crafting = true,
         ingredients = {
             {"l_mk9", 1},
             {"electronic-circuit", 10},
