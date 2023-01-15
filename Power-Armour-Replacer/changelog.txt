@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.0
+Version: 0.1.16-4
 Date: xx.01.2023
   Releases:
     - Note if u use the 0.1.16 u are using the beta version of 1.0 release.
@@ -14,15 +14,16 @@ Date: xx.01.2023
     - Partely progressed on compatibility.
     - Tweaks in general.
   locales:
-    - Added English templates for CS, DE, SK, locals.
+    - Added English templates for CS, DE, SK, locals twice.
     - Updated EN, NO locales.
   Fixes:
     - Icon size of Exoskeleton. Was using wrong placeholder directory.
     - Item order in crafting window.
+    - An oversight wehn creating Laser & Solar Equipemnt. In beta 0.1.16-3
   Info:
     - Lot more stuff that I don't know what is to be adde to this list.
     - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on there side.
-    - This is the changelog for 0.1.16 & 1.0. Tho will be listed as 1.0.0.
+    - This is the changelog for 0.1.16 beta & 1.0. Tho will be listed as 0.1.16 for a little while longer.
   Thanks:
     - Discord, @Toby1364 for help working on mod in general. (Discord)
     - Discord, @_CodeGreen for help crating an advanced setting function.

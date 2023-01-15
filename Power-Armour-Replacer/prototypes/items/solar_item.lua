@@ -33,7 +33,7 @@ while i < 11 do
             name = "p-s_mk" .. tostring(i),
             icon = "__base__/graphics/icons/solar-panel-equipment.png",
             icon_size = 64, icon_mipmaps = 4,
-            placed_as_equipment_result = "solar-panel-equipment",
+            placed_as_equipment_result = "p-s_mk" .. tostring(i),
             subgroup = "equipment",
             order = orders[i],
             stack_size = 10

@@ -91,7 +91,7 @@ while i < 11 do
             name = "l_mk" .. tostring(i),
             icon = "__base__/graphics/icons/personal-laser-defense-equipment.png",
             icon_size = 64, icon_mipmaps = 4,
-            placed_as_equipment_result = "personal-laser-defense-equipment",
+            placed_as_equipment_result = "l_mk" .. tostring(i),
             subgroup = "military-equipment",
             order = orders[i],
             default_request_amount = 10,
@@ -136,7 +136,7 @@ while i < 11 do
                 ammo_type =
                 {
                     category = "laser",
-                    energy_consumption = "50kJ",
+                    energy_consumption = energy_consumption[i],
                     action =
                     {
                         type = "direct",
