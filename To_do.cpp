@@ -1,8 +1,7 @@
-    Compatibility list
-    (?)Angels mods
-    (?)Bobs mods 
+    Compatibilites list:
     (?)K2
     (?)SE
+    Incompatible:
     (!)(?)IR3
 
 //Use to copy

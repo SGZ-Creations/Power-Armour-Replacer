@@ -1,4 +1,4 @@
-Also this is where i specify item(s) completed
+Also this is where i specify item(s) completed:
 - 10 New armours added
 - 10 New shields added.
 - 10 New tiers batteries.
@@ -9,3 +9,9 @@ Also this is where i specify item(s) completed
 - 5  Exoskeleton
 - 2  NVG''s
 - 2  Belt-immunity
+
+
+// WIP 
+Compatibilites
+- (?)Angels mods
+- (?)Bobs mods
