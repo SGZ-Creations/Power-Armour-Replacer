@@ -1,6 +1,26 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.16-4
-Date: xx.01.2023
+Version: 0.1.17
+Date: 16.01.2023
+  Features:
+    - Optional Depedencies added.
+  Releases:
+    - Note if u use the 0.1.16 & up u are using the last few beta versions, before 1.0 release.
+    - Main functionality Implemented. This mod is geting it's last few additions and fixes before going 1.0 Release (Soon).
+    - Compatibility partially done but useable with what's there. Work continues from 1.0.
+  Changes:
+    - Changelog.
+    - Exoskeleton Values
+    - Shields Values
+    - Robopoerts Values
+  Fixes:
+    - Exoskeleton was not equipable.
+    - NVG's was not equipable.
+    - Shield's recharge rate was wrong.
+    - Roboport retuned wrong verison.
+    - Locales Tamplate re added.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.16
+Date: 15.01.2023
   Releases:
     - Note if u use the 0.1.16 u are using the beta version of 1.0 release.
     - Main functionality Implemented. This mod is then geting it's 1.0 Release.
@@ -13,7 +33,7 @@ Date: xx.01.2023
     - Adjusted power produced by fusion_reactor.
     - Partely progressed on compatibility.
     - Tweaks in general.
-  locales:
+  Locales:
     - Added English templates for CS, DE, SK, locals twice.
     - Updated EN, NO locales.
   Fixes:
@@ -25,7 +45,7 @@ Date: xx.01.2023
     - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on there side.
     - This is the changelog for 0.1.16 beta & 1.0. Tho will be listed as 0.1.16 for a little while longer.
   Thanks:
-    - Discord, @Toby1364 for help working on mod in general. (Discord)
+    - Discord @Toby1364 for praticipating on this project.
     - Discord, @_CodeGreen for help crating an advanced setting function.
   Realeses:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.

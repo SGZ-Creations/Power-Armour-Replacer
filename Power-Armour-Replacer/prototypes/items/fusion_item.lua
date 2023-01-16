@@ -43,7 +43,7 @@ while i < 11 do
       name = "f_mk" .. tostring(i),
       icon = "__base__/graphics/icons/fusion-reactor-equipment.png",
       icon_size = 64,
-      stack_size = 200,
+      stack_size = 20,
       order = "daz[energy-source]-aa[armour-replacer]" .. tostring(i - 1),
       subgroup = "equipment",
       placed_as_equipment_result = "f_mk" .. tostring(i),

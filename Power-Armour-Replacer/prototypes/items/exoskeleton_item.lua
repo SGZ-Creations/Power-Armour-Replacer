@@ -8,19 +8,19 @@ local graphics = {
 }
 
 local speed_bonus = {
-    0.5,
-    1,
-    1.5,
-    2,
-    2.5,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
 }
 
 local energy_consumption = {
-    "200kW",
-    "350kW",
-    "500kW",
-    "650kW",
-    "800kW",
+    "1.0MW",
+    "2.0MW",
+    "3.0MW",
+    "4.0MW",
+    "5.0MW",
 }
 
 local orders = {
@@ -37,25 +37,24 @@ while i < 6 do
         {
             type = "movement-bonus-equipment",
             name = "e_mk" .. tostring(i),
-            stack_size = 10,
             sprite =
             {
                 filename = graphics[i][1],
-                width = 32,
-                height = 64,
+                width = 64,
+                height = 128,
                 priority = "medium",
                 hr_version = {
                     filename = graphics[i][2],
-                    width = 64,
-                    height = 128,
+                    width = 128,
+                    height = 256,
                     priority = "medium",
                     scale = 0.5
                     }
             },
             shape =
             {
-                width = 3,
-                height = 5,
+                width = 2,
+                height = 4,
                 type = "full"
             },
             energy_source =
@@ -70,11 +69,12 @@ while i < 6 do
         {
             type = "item",
             name = "e_mk" .. tostring(i),
+            placed_as_equipment_result = "e_mk" .. tostring(i),
             subgroup = "equipment",
             order = orders[i],
             icon_size = 64, icon_mipmaps = 4,
             icon = "__base__/graphics/icons/exoskeleton-equipment.png",
-            stack_size = 1
+            stack_size = 20
         }
     })
     i = i + 1

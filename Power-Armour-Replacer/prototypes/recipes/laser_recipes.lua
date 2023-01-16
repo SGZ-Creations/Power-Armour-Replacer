@@ -55,7 +55,6 @@ local recipes = {
         name = "l_mk5",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         ingredients = {
             {"l_mk4", 1},
             {"electronic-circuit", 10},

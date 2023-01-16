@@ -65,11 +65,11 @@ data:extend(
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "5kJ",
+      buffer_capacity = "1kJ",
       input_flow_limit = "10kW",
       usage_priority = "primary-input"
     },
-    energy_input = "1W",
+    energy_input = "0W",
     categories = {"armor"},
     activate_sound = { filename = "__base__/sound/nightvision-on.ogg", volume = 0.5 },
     deactivate_sound = { filename = "__base__/sound/nightvision-off.ogg", volume = 0.5 },
@@ -82,6 +82,7 @@ local items = {
  {
      type = "item",
      subgroup = "equipment",
+     placed_as_equipment_result = "nv_mk1",
      order = "iaz[night-vision]-aa[armour-replacer]",
      name = "nv_mk1",
      icon = "__base__/graphics/icons/night-vision-equipment.png",
@@ -91,6 +92,7 @@ local items = {
  {
      type = "item",
      subgroup = "equipment",
+     placed_as_equipment_result = "nv_mk2",
      order = "ibz[night-vision]-ab[armour-replacer]",
      name = "nv_mk2",
      icon = "__base__/graphics/icons/night-vision-equipment.png",

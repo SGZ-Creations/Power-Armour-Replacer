@@ -20,7 +20,7 @@ while i < 11 do
             name = "b_mk" .. tostring(i),
             icon = icon[i],
             icon_size = 64,
-            stack_size = 200,
+            stack_size = 20,
             order = "baz[battery]-aa[armour-replacer]" .. tostring(i - 1),
             subgroup = "equipment",
             placed_as_equipment_result = "b_mk" .. tostring(i),

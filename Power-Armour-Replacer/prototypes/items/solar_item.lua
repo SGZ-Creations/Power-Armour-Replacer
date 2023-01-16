@@ -36,7 +36,7 @@ while i < 11 do
             placed_as_equipment_result = "p-s_mk" .. tostring(i),
             subgroup = "equipment",
             order = orders[i],
-            stack_size = 10
+            stack_size = 20
         },
         {
             type = "solar-panel-equipment",
