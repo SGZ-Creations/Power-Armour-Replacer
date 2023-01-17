@@ -53,7 +53,7 @@ local recipes = {
         ingredients = {
             {"e_mk4", 1},
             {"battery", 209},
-            {"platic-bar", 190},
+            {"plastic-bar", 190},
             {"steel-plate", 180},
             {"low-density-structure", 115},
         },

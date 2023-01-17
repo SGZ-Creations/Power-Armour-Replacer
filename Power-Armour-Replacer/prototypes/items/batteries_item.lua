@@ -50,18 +50,17 @@ local order = {
     "biz[battery]-aa[armour-replacer]",
     "bjz[battery]-aa[armour-replacer]",
 }
-
 local buffer_capacity = {
-    "0.1TJ",
-    "0.2TJ",
-    "0.3TJ",
-    "0.4TJ",
-    "0.5TJ",
-    "0.6TJ",
-    "0.7TJ",
-    "0.8TJ",
-    "0.9TJ",
     "1TJ",
+    "2TJ",
+    "3TJ",
+    "4TJ",
+    "5TJ",
+    "6TJ",
+    "7TJ",
+    "8TJ",
+    "9TJ",
+    "10TJ",
 }
 
 local i = 1
@@ -105,7 +104,7 @@ while i < 11 do
             energy_source =
             {
                 type = "electric",
-                buffer_capacity = buffer_capacity[0],
+                buffer_capacity = buffer_capacity[i],
                 usage_priority = "tertiary"
             },
             categories = { "armor" }

@@ -104,7 +104,7 @@ local recipes = {
             {"p-s_mk7", 4},
             {"advanced-circuit", 75},
             {"processing-unit", 105},
-            {"low-density-struture", 100},
+            {"low-density-structure", 100},
         },
         result = "f_mk8"
     },
