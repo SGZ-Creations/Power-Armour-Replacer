@@ -15,7 +15,7 @@ data:extend({
         recipe = "spidertron-remote"
       }
     },
-    prerequisites = {"military-4", "exoskeleton_1", "fusion-reactor_1", "rocketry", "rocket-control-unit", "effectivity-module-3" },
+    prerequisites = {"military-4", "exoskeleton_5", "fusion-reactor_5", "rocketry", "rocket-control-unit", "effectivity-module-3" },
     unit =
     {
       ingredients =
@@ -62,79 +62,5 @@ data:extend({
       time = 30
     },
     order = "g-o"
-  },
-  {
-    type = "technology",
-    name = "personal-roboport-equipment",
-    icon_size = 256, icon_mipmaps = 4,
-    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-equipment.png"),
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "personal-roboport-equipment"
-      }
-    },
-    prerequisites = {"construction-robotics", "solar-energy"},
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1}
-      },
-      time = 30
-    },
-    order = "c-k-d-zz"
-  },
-  {
-    type = "technology",
-    name = "solar-panel-equipment",
-    icon_size = 256, icon_mipmaps = 4,
-    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/solar-panel-equipment.png"),
-    prerequisites = {"armour_1", "solar-energy"},
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "solar-panel-equipment"
-      }
-    },
-    unit =
-    {
-      count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "g-k"
-  },
-  {
-    type = "technology",
-    name = "personal-laser-defense-equipment",
-    icon_size = 256, icon_mipmaps = 4,
-    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-laser-defense-equipment.png"),
-    prerequisites = {"laser-turret", "military-3", "low-density-structure", "armour_1", "solar-energy"},
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "personal-laser-defense-equipment"
-      }
-    },
-    unit =
-    {
-      count = 100,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"military-science-pack", 1}
-      },
-      time = 30
-    },
-    order = "g-m"
   },
 });

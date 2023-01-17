@@ -4,7 +4,7 @@ data:extend({
         name = "exoskeleton_1",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"armour_1"},
+        prerequisites = {"armour_2"},
         effects =
         {
             {
@@ -27,7 +27,7 @@ data:extend({
         name = "exoskeleton_2",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_1", "battery"},
+        prerequisites = {"exoskeleton_1", "battery", "armour_4"},
         effects =
         {
             {
@@ -51,7 +51,7 @@ data:extend({
         name = "exoskeleton_3",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_2"},
+        prerequisites = {"exoskeleton_2", "armour_6"},
         effects =
         {
             {
@@ -76,7 +76,7 @@ data:extend({
         name = "exoskeleton_4",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_3"},
+        prerequisites = {"exoskeleton_3", "armour_8"},
         effects =
         {
             {
@@ -102,7 +102,7 @@ data:extend({
         name = "exoskeleton_5",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_4"},
+        prerequisites = {"exoskeleton_4", "armour_10"},
         effects =
         {
             {

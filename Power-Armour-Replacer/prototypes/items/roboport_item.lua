@@ -1,4 +1,29 @@
 
+local graphics = {
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+    "__base__/graphics/equipment/personal-roboport-equipment.png",
+}
+
+local graphics2 = {
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+}
+
 local icons = {
     "__base__/graphics/icons/personal-roboport-equipment.png",
     "__base__/graphics/icons/personal-roboport-mk2-equipment.png",
@@ -118,13 +143,13 @@ while i < 11 do
             take_result = "r_mk" .. tostring(i),
             sprite =
             {
-                filename = "__base__/graphics/equipment/personal-roboport-equipment.png",
+                filename = graphics[i],
                 width = 64,
                 height = 64,
                 priority = "medium",
                 hr_version =
                 {
-                    filename = "__base__/graphics/equipment/hr-personal-roboport-equipment.png",
+                    filename = graphics2[i],
                     width = 128,
                     height = 128,
                     priority = "medium",

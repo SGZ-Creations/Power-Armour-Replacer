@@ -8,8 +8,8 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {type="fluid", name="lubricant", amount=200},
-            {"electronic-circuit", 10},
-            {"plastic-bar", 35},
+            {"advanced-circuit", 50},
+            {"steel-plate", 55},
             {"battery", 5},
         },
         result = "bi_mk1"

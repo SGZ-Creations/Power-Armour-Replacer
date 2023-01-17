@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.18
+Date: xx.01.2023
+  Features:
+    - Completed: Recipes 
+  Changes:
+    - Tweaks to recipe kinda everywhere.
+    - Internal clean up.
+    - Generly increasd & added recipe to items. 
+  Fixes:
+    - Recipes for: Solar(p-s_mk(x)),  Roboport(r_mk(x)), laser(l_mk(x)),
+    - Achievements specifying worng item compared to witch it was showing.
+  Thanks:
+    - Discord @Toby1364 for praticipating on this project. & doing the Internal cleanup.
+    - Discord @Lucif3r for beta testing version 0.1.17. In 248k mod set/pack.
+  Realeses:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.17
 Date: 16.01.2023
   Features:
@@ -47,8 +64,6 @@ Date: 15.01.2023
   Thanks:
     - Discord @Toby1364 for praticipating on this project.
     - Discord, @_CodeGreen for help crating an advanced setting function.
-  Realeses:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.15
 Date: 09.01.2023

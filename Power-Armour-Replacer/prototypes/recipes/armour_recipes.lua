@@ -7,6 +7,7 @@ local recipes = {
         energy_required = 60.0,
         ingredients = {
             {"heavy-armor", 1},
+            {"stone-brick", 50},
             {"wood", 200},
             {"steel-plate", 100},
             {"electronic-circuit", 100}
@@ -83,7 +84,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk5", 1},
-            --{"ps_mk3", 5},
+            {"p-s_mk3", 5},
             {type="fluid", name="petroleum-gas", amount=350},
             {"processing-unit", 150},
             {"red-wire", 100},
@@ -257,6 +258,12 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"248k", "bobplates", "angelssmelting"},
         replacements = {
             ["lead-plate"] = {"battery", 30},
+        }
+    },
+    {
+        dependencies = {"248k"},
+        replacements = {
+            {"el_aluminum_item", 150},
         }
     },
     {

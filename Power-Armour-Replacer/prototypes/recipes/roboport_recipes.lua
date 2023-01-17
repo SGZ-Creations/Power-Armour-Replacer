@@ -8,7 +8,7 @@ local recipes = {
             {"iron-chest", 5},
             {"electronic-circuit", 75},
             {"copper-cable", 150},
-            {"small-lamp", 2},
+            {"small-lamp", 31},
         },
         result = "r_mk1"
     },
@@ -17,12 +17,12 @@ local recipes = {
         name = "r_mk2",
         enabled = false,
         energy_required = 20,
-        category = "crafting-with-fluid",
+        
         ingredients = {
             {"r_mk1", 1},
             {"electronic-circuit", 100},
             {"iron-gear-wheel", 125},
-            {type="fluid", name="steam", amount=250},
+            {"copper-cable", 176},
         },
         result = "r_mk2"
     },
@@ -46,6 +46,10 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"r_mk3", 1},
+            {"engine-unit", 140},
+            {"steel-plate", 167},
+            {"iron-gear-wheel", 173},
+            {"electronic-circuit", 132},
         },
         result = "r_mk4"
     },
@@ -56,6 +60,9 @@ local recipes = {
         energy_required = 50,
         ingredients = {
             {"r_mk4", 1},
+            {"steel-chest", 30},
+            {"flying-robot-frame", 65},
+            {"b_mk3", 3},
         },
         result = "r_mk5"
     },
@@ -65,8 +72,13 @@ local recipes = {
         enabled = false,
         energy_required = 60,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"r_mk5", 1},
+            {"advanced-circuit", 82},
+            {"electric-engine-unit", 128},
+            {"steel-plate", 231},
+            {type="fluid", name="lubricant", amount=300},
         },
         result = "r_mk6"
     },
@@ -78,6 +90,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"r_mk6", 1},
+            {"processing-unit", 117},
+            {"p-s_mk5", 5},
+            {"iron-stick", 272},
+            {"low-density-structure", 57},
         },
         result = "r_mk7"
     },
@@ -89,6 +105,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"r_mk7", 1},
+            {"low-density-structure", 128},
+            {"steel-plate", 268},
+            {"copper-cable", 321},
+            {"urnaium-235", 162},
         },
         result = "r_mk8"
     },
@@ -98,8 +118,13 @@ local recipes = {
         enabled = false,
         energy_required = 90,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"r_mk8", 1},
+            {"rocket-control-unit", 82},
+            {"low-denisity-structure", 143},
+            {"advanced-circuit", 157},
+            {type="fluid", name="lubricant", amount=600},
         },
         result = "r_mk9"
     },
@@ -111,6 +136,9 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"r_mk9", 1},
+            {"low-density-structure", 196},
+            {"rocket-control-unit", 164},
+            {"processing-unit", 171},
         },
         result = "r_mk10"
     },

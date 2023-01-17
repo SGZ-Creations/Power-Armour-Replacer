@@ -5,9 +5,10 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"electronic-circuit", 10},
-            {"steel-plate", 40},
-            {"copper-plate", 50},
+            {"electronic-circuit", 44},
+            {"steel-plate", 140},
+            {"copper-plate", 150},
+            {"p-s_mk1", 2},
         },
         result = "f_mk1"
     },
@@ -19,7 +20,8 @@ local recipes = {
         ingredients = {
             {"f_mk1", 1},
             {"iron-plate", 95},
-            {"electronic-circuit", 20},
+            {"copper-cable", 182},
+            {"electronic-circuit", 66},
         },
         result = "f_mk2"
     },
@@ -31,7 +33,7 @@ local recipes = {
         ingredients = {
             {"f_mk2", 1},
             {"b_mk1", 3},
-            {"electronic-circuit", 30},
+            {"electronic-circuit", 134},
             {"solid-fuel", 50},
         },
         result = "f_mk3"
@@ -43,8 +45,9 @@ local recipes = {
         energy_required = 55,
         ingredients = {
             {"f_mk3", 1},
-            {"advanced-circuit", 25},
-            {"engine-unit", 20 },
+            {"advanced-circuit", 44},
+            {"engine-unit", 51},
+            {"steel-plate", 110}
         },
         result = "f_mk4"
     },
@@ -56,7 +59,7 @@ local recipes = {
         ingredients = {
             {"f_mk4", 1},
             {"b_mk3", 5},
-            {"advanced-circuit", 45},
+            {"advanced-circuit", 88},
             {"engine-unit", 40},
         },
         result = "f_mk5"
@@ -69,9 +72,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"f_mk5", 1},
-            {"advanced-circuit", 50},
-            {"engine-unit", 60},
+            {"advanced-circuit", 182},
+            {"electric-engine-unit", 64},
             {"uranium-fuel-cell", 150},
+            {"plastic-bar", 132},
         },
         result = "f_mk6"
     },
@@ -83,7 +87,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"f_mk6", 1},
-            {"electric-engine-unit", 40},
+            {"electric-engine-unit", 97},
             {"advanced-circuit", 75},
             {"pipe", 80},
         },
@@ -97,8 +101,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"f_mk7", 1},
-            {"a_mk2", 2},
-            {"substation", 10},
+            {"p-s_mk7", 4},
+            {"advanced-circuit", 75},
+            {"processing-unit", 105},
+            {"low-density-struture", 100},
         },
         result = "f_mk8"
     },
@@ -111,8 +117,8 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"f_mk8", 1},
-            {"processing-unit", 65},
-            {"nuclear-fuel", 25},
+            {"processing-unit", 165},
+            {"nuclear-fuel", 55},
             {type="fluid", name="petroleum-gas", amount=200}
         },
         result = "f_mk9"
@@ -126,8 +132,9 @@ local recipes = {
         ingredients = {
             {"f_mk9", 1},
             {"s_mk5", 5},
-            {"low-density-structure", 50},
-            {"processing-unit", 95},
+            {"p-s_mk7", 6},
+            {"processing-unit", 195},
+            {"low-density-structure", 250},
         },
         result = "f_mk10"
     },

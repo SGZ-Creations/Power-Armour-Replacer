@@ -1,3 +1,69 @@
+
+local graphics = {
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/fusion-reactor-equipment.png",
+}
+
+local graphics2 = {
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+  "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+}
+
+local icon = {
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+  "__base__/graphics/icons/fusion-reactor-equipment.png",
+}
+
+local power = {
+  "1TW",
+  "2TW",
+  "3TW",
+  "4TW",
+  "5TW",
+  "6TW",
+  "7TW",
+  "8TW",
+  "9TW",
+  "10TW",
+}
+
+local order = {
+  "daz[energy-source]-aa[armour-replacer]",
+  "dbz[energy-source]-aa[armour-replacer]",
+  "dcz[energy-source]-aa[armour-replacer]",
+  "ddz[energy-source]-aa[armour-replacer]",
+  "dez[energy-source]-aa[armour-replacer]",
+  "dfz[energy-source]-aa[armour-replacer]",
+  "dgz[energy-source]-aa[armour-replacer]",
+  "dhz[energy-source]-aa[armour-replacer]",
+  "diz[energy-source]-aa[armour-replacer]",
+  "djz[energy-source]-aa[armour-replacer]",
+}
+
 local i = 1
 while i < 11 do
   data:extend({ 
@@ -6,13 +72,13 @@ while i < 11 do
       name = "f_mk" .. tostring(i),
       sprite =
       {
-        filename = "__base__/graphics/equipment/fusion-reactor-equipment.png",
+        filename = graphics[i],
         width = 128,
         height = 128,
         priority = "medium",
         hr_version =
         {
-          filename = "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
+          filename = graphics2[i],
           width = 256,
           height = 256,
           priority = "medium",
@@ -35,16 +101,16 @@ while i < 11 do
         type = "electric",
         usage_priority = "primary-output"
       },
-      power = tostring(i * 10000) .. "kW",
+      power = power[i],
       categories = { "armor" }
     },
     {
       type = "item",
       name = "f_mk" .. tostring(i),
-      icon = "__base__/graphics/icons/fusion-reactor-equipment.png",
+      icon = icon[i],
       icon_size = 64,
       stack_size = 20,
-      order = "daz[energy-source]-aa[armour-replacer]" .. tostring(i - 1),
+      order = order[i],
       subgroup = "equipment",
       placed_as_equipment_result = "f_mk" .. tostring(i),
     }

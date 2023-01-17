@@ -1,3 +1,42 @@
+local graphics = {
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+}
+
+local graphics2 = {
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+}
+
+local icon = {
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+}
+
 local orders = {
     "eaz[active-defense]-aa[armour-replacer]",
     "ebz[active-defense]-ab[armour-replacer]",
@@ -24,16 +63,16 @@ local cooldown = {
     0,
 }
 local range = {
-    10,
+    14,
+    16,
+    18,
     20,
+    22,
+    24,
+    26,
+    28,
     30,
-    40,
-    50,
-    60,
-    70,
-    80,
-    90,
-    100,
+    32,
 }
 local damage_modifier = {
     3,
@@ -89,7 +128,7 @@ while i < 11 do
         {
             type = "item",
             name = "l_mk" .. tostring(i),
-            icon = "__base__/graphics/icons/personal-laser-defense-equipment.png",
+            icon = icon[i],
             icon_size = 64, icon_mipmaps = 4,
             placed_as_equipment_result = "l_mk" .. tostring(i),
             subgroup = "military-equipment",
@@ -102,12 +141,12 @@ while i < 11 do
             name = "l_mk" .. tostring(i),
             sprite =
             {
-                filename = "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+                filename = graphics[i],
                 width = 64,
                 height = 64,
                 priority = "medium",
                 hr_version = {
-                    filename = "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+                    filename = graphics2[i],
                     width = 128,
                     height = 128,
                     priority = "medium",

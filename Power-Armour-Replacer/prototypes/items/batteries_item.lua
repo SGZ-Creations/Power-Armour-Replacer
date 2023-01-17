@@ -1,3 +1,30 @@
+
+local graphics = {
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-equipment.png",
+}
+
+local graphics2 = {
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-equipment.png",
+}
+
 local icon = {
     "__base__/graphics/icons/battery-equipment.png",
     "__base__/graphics/icons/battery-mk2-equipment.png",
@@ -11,6 +38,32 @@ local icon = {
     "__base__/graphics/icons/battery-mk2-equipment.png",
 }
 
+local order = {
+    "baz[battery]-aa[armour-replacer]",
+    "bbz[battery]-aa[armour-replacer]",
+    "bcz[battery]-aa[armour-replacer]",
+    "bdz[battery]-aa[armour-replacer]",
+    "bez[battery]-aa[armour-replacer]",
+    "bfz[battery]-aa[armour-replacer]",
+    "bgz[battery]-aa[armour-replacer]",
+    "bhz[battery]-aa[armour-replacer]",
+    "biz[battery]-aa[armour-replacer]",
+    "bjz[battery]-aa[armour-replacer]",
+}
+
+local buffer_capacity = {
+    "0.1TJ",
+    "0.2TJ",
+    "0.3TJ",
+    "0.4TJ",
+    "0.5TJ",
+    "0.6TJ",
+    "0.7TJ",
+    "0.8TJ",
+    "0.9TJ",
+    "1TJ",
+}
+
 local i = 1
 while i < 11 do
 
@@ -21,7 +74,7 @@ while i < 11 do
             icon = icon[i],
             icon_size = 64,
             stack_size = 20,
-            order = "baz[battery]-aa[armour-replacer]" .. tostring(i - 1),
+            order = order[i],
             subgroup = "equipment",
             placed_as_equipment_result = "b_mk" .. tostring(i),
         },
@@ -30,13 +83,13 @@ while i < 11 do
             name = "b_mk" .. tostring(i),
             sprite =
             {
-                filename = "__base__/graphics/equipment/battery-equipment.png",
+                filename = graphics[i],
                 width = 32,
                 height = 64,
                 priority = "medium",
                 hr_version =
                 {
-                    filename = "__base__/graphics/equipment/hr-battery-equipment.png",
+                    filename = graphics2[i],
                     width = 64,
                     height = 128,
                     priority = "medium",
@@ -52,7 +105,7 @@ while i < 11 do
             energy_source =
             {
                 type = "electric",
-                buffer_capacity = tostring(i * 10000) .. "MJ",
+                buffer_capacity = buffer_capacity[0],
                 usage_priority = "tertiary"
             },
             categories = { "armor" }

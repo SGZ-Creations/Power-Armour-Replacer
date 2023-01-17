@@ -5,10 +5,11 @@ local recipes = {
         enabled = false,
         energy_required = 5,
         ingredients = {
-            {"copper-plate", 100},
-            {"electronic-circuit", 25},
-            {"steel-plate", 20},
-            {"iron-stick", 25},
+            {"copper-plate", 120},
+            {"electronic-circuit", 125},
+            {"steel-plate", 120},
+            {"copper-cable", 125},
+            {"iron-gear-wheel", 104},
         },
         result = "e_mk1"
     },
@@ -19,9 +20,10 @@ local recipes = {
         energy_required = 10,
         ingredients = {
             {"e_mk1", 1},
-            {"battery", 20},
-            {"steel-plate", 40},
-            {"iron-stick", 50},
+            {"battery", 120},
+            {"electronic-circuit", 140},
+            {"steel-plate", 140},
+            {"iron-stick", 150},
         },
         result = "e_mk2"
     },
@@ -31,11 +33,14 @@ local recipes = {
         enabled = false,
         energy_required = 15,
         hide_from_player_crafting = true,
+        category = "crafting-with-fluid",
         ingredients = {
             {"e_mk2", 1},
-            {"battery", 30},
-            {"steel-plate", 60},
-            {"iron-stick", 75},
+            {"battery", 166},
+            {"advanced-circuit", 177},
+            {"steel-plate", 169},
+            {"iron-stick", 175},
+            {type="fluid", name="lubricant", amount=450},
         },
         result = "e_mk3"
     },
@@ -47,9 +52,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"e_mk4", 1},
-            {"battery", 40},
-            {"steel-plate", 80},
-            {"iron-stick", 100},
+            {"battery", 209},
+            {"platic-bar", 190},
+            {"steel-plate", 180},
+            {"low-density-structure", 115},
         },
         result = "e_mk4"
     },
@@ -61,9 +67,11 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"e_mk4", 1},
-            {"battery", 50},
-            {"steel-plate", 100},
-            {"iron-stick", 125},
+            {"battery", 250},
+            {"steel-plate", 250},
+            {"processing-unit", 107},
+            {"rocket-control-unit", 150},
+            {"low-density-structure", 150},
         },
         result = "e_mk5"
     },
@@ -74,19 +82,20 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["iron-stick"] = {"solder", 50},
+            ["copper-cable"] = {"solder", 50},
         }
     },
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 30},
+            ["electronic-circuit"] = {"basic-circuit-board", 140},
+            ["steel-plate"] = {"tined-copper-cable", 108},
         }
     },
     {
-        dependencies = {"bobplates"},
+        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
-            ["steel-plate"] = {"tin-plate", 100},
+            {"glass", 113}
         }
     },
 })

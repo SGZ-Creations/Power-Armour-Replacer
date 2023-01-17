@@ -5,9 +5,10 @@ local recipes = {
         enabled = false,
         energy_required = 5,
         ingredients = {
-            {"iron-plate", 10},
-            {"copper-plate", 15},
-            {"electronic-circuit", 20},
+            {"iron-plate", 106},
+            {"stone-brick", 110},
+            {"copper-plate", 150},
+            {"electronic-circuit", 120},
         },
         result = "s_mk1"
     },
@@ -18,8 +19,10 @@ local recipes = {
         energy_required = 10,
         ingredients = {
             {"s_mk1", 5},
-            {"electronic-circuit", 20},
-            {"engine-unit", 20},
+            {"electronic-circuit", 130},
+            {"engine-unit", 60},
+            {"steel-plate", 160},
+            {"iron-plate", 138},
         },
         result = "s_mk2"
     },
@@ -30,8 +33,9 @@ local recipes = {
         energy_required = 15,
         ingredients = {
             {"s_mk2", 2},
-            {"electronic-circuit", 20},
-            {"advanced-circuit", 15},
+            {"electronic-circuit", 160},
+            {"advanced-circuit", 45},
+            {"copper-cable", 225},
         },
         result = "s_mk3"
     },
@@ -42,8 +46,9 @@ local recipes = {
         energy_required = 20,
         ingredients = {
             {"s_mk3", 5},
-            {"small-lamp", 10},
+            {"small-lamp", 93},
             {"plastic-bar", 50},
+            {"advanced-circuit", 65},
         },
         result = "s_mk4"
     },
@@ -54,8 +59,9 @@ local recipes = {
         energy_required = 25,
         ingredients = {
             {"s_mk4", 2},
-            {"electric-engine-unit", 15},
-            {"advanced-circuit", 30},
+            {"electric-engine-unit", 55},
+            {"advanced-circuit", 90},
+            {"electrice-circuit", 150},
         },
         result = "s_mk5"
     },
@@ -68,7 +74,7 @@ local recipes = {
         ingredients = {
             {"s_mk5", 50},
             {"f_mk3", 5},
-            --{"e_mk4, 3"}
+            {"p-s_mk4", 3},
             {"uranium-235", 80},
         },
         result = "s_mk6"
@@ -81,7 +87,9 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"s_mk6", 2},
-            {"low-density-structure", 30},
+            {"copper-plate", 165},
+            {"uranium-238", 120},
+            {"low-density-structure", 105},
             {"solid-fuel", 250},
         },
         result = "s_mk7"
@@ -96,6 +104,7 @@ local recipes = {
         ingredients = {
             {"s_mk7", 3},
             {"uranium-235", 120},
+            {"plastic-bar", 124},
             {"processing-unit", 80},
             {type="fluid", name="lubricant", amount=350},
         },
@@ -111,6 +120,8 @@ local recipes = {
         ingredients = {
             {"s_mk8", 2},
             {"b_mk8", 6},
+            {"low-density-structure", 180},
+            {"uranium-235", 55},
             {type="fluid", name="petroleum-gas", amount=350},
         },
         result = "s_mk9"
@@ -124,8 +135,9 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"s_mk9", 2},
-            {"rocket-control-unit", 45},
+            {"rocket-control-unit", 75},
             {"processing-unit", 130},
+            {"advanced-circuit", 155},
             {type="fluid", name="sulfuric-acid", amount=350},
         },
         result = "s_mk10"

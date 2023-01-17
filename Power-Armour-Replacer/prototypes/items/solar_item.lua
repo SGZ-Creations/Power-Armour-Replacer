@@ -1,3 +1,41 @@
+local graphics = {
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+    "__base__/graphics/equipment/solar-panel-equipment.png",
+}
+
+local graphics2 = {
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+}
+
+local icon = {
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+    "__base__/graphics/icons/solar-panel-equipment.png",
+}
 
 local orders = {
     "faz[energy-source]-aa[armour-replacer]",
@@ -22,7 +60,7 @@ local powers = {
     "70kW",
     "80kW",
     "90kW",
-    "100kW"
+    "100kW",
 }
 
 local i = 1
@@ -31,7 +69,7 @@ while i < 11 do
         {
             type = "item",
             name = "p-s_mk" .. tostring(i),
-            icon = "__base__/graphics/icons/solar-panel-equipment.png",
+            icon = icon[i],
             icon_size = 64, icon_mipmaps = 4,
             placed_as_equipment_result = "p-s_mk" .. tostring(i),
             subgroup = "equipment",
@@ -43,13 +81,13 @@ while i < 11 do
             name = "p-s_mk" .. tostring(i),
             sprite =
             {
-                filename = "__base__/graphics/equipment/solar-panel-equipment.png",
+                filename = graphics[i],
                 width = 32,
                 height = 32,
                 priority = "medium",
                 hr_version =
                 {
-                    filename = "__base__/graphics/equipment/hr-solar-panel-equipment.png",
+                    filename = graphics2[i],
                     width = 64,
                     height = 64,
                     priority = "medium",

@@ -34,13 +34,15 @@ data.raw.recipe["belt-immunity-equipment"].enabled = false
 data.raw.technology["belt-immunity-equipment"].enabled = false
 data.raw.recipe["exoskeleton-equipment"].enabled = false
 data.raw.technology["exoskeleton-equipment"].enabled = false
-data.raw.recipe["solar-panel-equipment"].enabled = false
-data.raw.technology["personal-roboport-equipment"].enabled = false
 data.raw.recipe["personal-roboport-equipment"].enabled = false
-data.raw.technology["personal-laser-defense-equipment"].enabled = false
+data.raw.technology["personal-roboport-equipment"].enabled = false
 data.raw.recipe["personal-laser-defense-equipment"].enabled = false
-data.raw.technology["personal-roboport-mk2-equipment"].enabled = false
+data.raw.technology["personal-laser-defense-equipment"].enabled = false
 data.raw.recipe["personal-roboport-mk2-equipment"].enabled = false
+data.raw.technology["personal-roboport-mk2-equipment"].enabled = false
+data.raw.recipe["solar-panel-equipment"].enabled = false
+data.raw.technology["solar-panel-equipment"].enabled = false
+
 --equipment section 2
 data.raw.recipe["energy-shield-equipment"].hidden = true
 data.raw.technology["energy-shield-equipment"].hidden = true
@@ -59,12 +61,13 @@ data.raw.technology["belt-immunity-equipment"].hidden = true
 data.raw.recipe["exoskeleton-equipment"].hidden = true
 data.raw.technology["exoskeleton-equipment"].hidden = true
 data.raw.recipe["solar-panel-equipment"].hidden = true
-data.raw.technology["personal-roboport-equipment"].hidden = true
+data.raw.technology["solar-panel-equipment"].hidden = true
 data.raw.recipe["personal-roboport-equipment"].hidden = true
-data.raw.technology["personal-laser-defense-equipment"].hidden = true
+data.raw.technology["personal-roboport-equipment"].hidden = true
 data.raw.recipe["personal-laser-defense-equipment"].hidden = true
-data.raw.technology["personal-roboport-mk2-equipment"].hidden = true
+data.raw.technology["personal-laser-defense-equipment"].hidden = true
 data.raw.recipe["personal-roboport-mk2-equipment"].hidden = true
+data.raw.technology["personal-roboport-mk2-equipment"].hidden = true
 
 
 if mods["Darkstar_utilities_fixed"] then

@@ -1,10 +1,32 @@
 
 local graphics = {
-    { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
-    { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
-    { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
-    { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
-    { "__base__/graphics/equipment/exoskeleton-equipment.png", "__base__/graphics/equipment/hr-exoskeleton-equipment.png" },
+    "__base__/graphics/equipment/exoskeleton-equipment.png",
+    "__base__/graphics/equipment/exoskeleton-equipment.png",
+    "__base__/graphics/equipment/exoskeleton-equipment.png",
+    "__base__/graphics/equipment/exoskeleton-equipment.png",
+    "__base__/graphics/equipment/exoskeleton-equipment.png",
+}
+
+local graphics2 = {
+    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
+    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
+    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
+    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
+    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
+}
+
+
+local icon = {
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
+    "__base__/graphics/icons/exoskeleton-equipment.png",
 }
 
 local speed_bonus = {
@@ -39,12 +61,12 @@ while i < 6 do
             name = "e_mk" .. tostring(i),
             sprite =
             {
-                filename = graphics[i][1],
+                filename = graphics[i],
                 width = 64,
                 height = 128,
                 priority = "medium",
                 hr_version = {
-                    filename = graphics[i][2],
+                    filename = graphics2[i],
                     width = 128,
                     height = 256,
                     priority = "medium",
@@ -73,8 +95,8 @@ while i < 6 do
             subgroup = "equipment",
             order = orders[i],
             icon_size = 64, icon_mipmaps = 4,
-            icon = "__base__/graphics/icons/exoskeleton-equipment.png",
-            stack_size = 20
+            icon = icon[i],
+            stack_size = 20,
         }
     })
     i = i + 1
