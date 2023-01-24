@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.18
-Date: xx.01.2023
+Date: 17.01.2023
   Features:
     - Completed: Recipes 
   Changes:
@@ -9,7 +9,7 @@ Date: xx.01.2023
     - Generly increasd & added recipe to items. 
   Fixes:
     - Recipes for: Solar(p-s_mk(x)),  Roboport(r_mk(x)), laser(l_mk(x)),
-    - Achievements specifying worng item compared to witch it was showing.
+    - Achievements specifying wrong item compared to witch it was showing.
   Thanks:
     - Discord @Toby1364 for praticipating on this project. & doing the Internal cleanup.
     - Discord @Lucif3r for beta testing version 0.1.17. In 248k mod set/pack.
@@ -28,13 +28,13 @@ Date: 16.01.2023
     - Changelog.
     - Exoskeleton Values
     - Shields Values
-    - Robopoerts Values
+    - Roboport's Values
   Fixes:
     - Exoskeleton was not equipable.
     - NVG's was not equipable.
     - Shield's recharge rate was wrong.
-    - Roboport retuned wrong verison.
-    - Locales Tamplate re added.
+    - Roboport retuned wrong version.
+    - Locales Tamplate re-added.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.16
 Date: 15.01.2023

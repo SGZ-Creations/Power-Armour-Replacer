@@ -33,6 +33,21 @@ if settings.startup["hard_science_required"].value then
 end
 
 compat.update_technologies{
+
+["boblogistics"] = {
+        ["roboport_1"] = {
+            "bob-robo-modular-1"
+        },
+        ["roboport_2"] = {
+            "bob-robo-modular-2"
+        },
+        ["roboport_3"] = {
+            "bob-robo-modular-3"
+        },
+        ["roboport_4"] = {
+            "bob-robo-modular-4"
+        },
+    },
     ["bobelectronics"] = {
         ["armour_5"] = {
             ["advanced-electronics-2"] = "advanced-electronics"

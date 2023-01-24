@@ -108,7 +108,7 @@ local recipes = {
             {"low-density-structure", 128},
             {"steel-plate", 268},
             {"copper-cable", 321},
-            {"urnaium-235", 162},
+            {"uranium-235", 162},
         },
         result = "r_mk8"
     },
@@ -148,96 +148,46 @@ local compat = require("compatibilities/mods-compat")
 --[[
 compat.update_ingredients(recipes[1], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 10},
+            [""] = {"", 10},
+            [""] = {"", 10},
         }
     },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
 compat.update_ingredients(recipes[2], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 10},
+            [""] = {"", 10},
+            [""] = {"", 10},
         }
-    },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
+    }   }
     }
 })
 compat.update_ingredients(recipes[3], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
-        }
-    },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 10},
+            [""] = {"", 10},
+            [""] = {"", 10},
         }
     }
 })
 compat.update_ingredients(recipes[4], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
-        }
-    },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 10},
+            [""] = {"", 10},
+            [""] = {"", 10},
         }
     }
 })
+--[[
 compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobelectronics"},
