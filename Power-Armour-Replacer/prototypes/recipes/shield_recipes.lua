@@ -61,7 +61,7 @@ local recipes = {
             {"s_mk4", 2},
             {"electric-engine-unit", 55},
             {"advanced-circuit", 90},
-            {"electrice-circuit", 150},
+            {"electronic-circuit", 150},
         },
         result = "s_mk5"
     },

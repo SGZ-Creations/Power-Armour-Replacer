@@ -77,7 +77,7 @@ local recipes = {
             {"l_mk5", 1},
             {"heat-pipe", 152},
             {"sulfur", 163},
-            {"advnaced-circuit", 91},
+            {"advanced-circuit", 91},
             {"battery", 126},
             {"engine-unit", 96},
         },
@@ -94,7 +94,7 @@ local recipes = {
             {"low-density-structure", 66},
             {"advanced-circuit", 179},
             {"electric-engine-unit", 77},
-            {"coper-cable", 111},
+            {"copper-cable", 111},
         },
         result = "l_mk7"
     },

@@ -89,7 +89,6 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"p-s_mk6", 1},
-            {"plastic-bar", 124},
             {"electric-engine-unit", 136},
             {"plastic-bar", 140},
             {"low-density-structure", 175},

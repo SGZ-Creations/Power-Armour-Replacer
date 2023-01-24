@@ -122,7 +122,7 @@ local recipes = {
         ingredients = {
             {"r_mk8", 1},
             {"rocket-control-unit", 82},
-            {"low-denisity-structure", 143},
+            {"low-density-structure", 143},
             {"advanced-circuit", 157},
             {type="fluid", name="lubricant", amount=600},
         },
