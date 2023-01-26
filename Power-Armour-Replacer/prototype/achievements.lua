@@ -308,7 +308,7 @@ data:extend(
     },
     {
         type = "produce-achievement",
-        name = "mass-equipment-1_2-1000solart",
+        name = "mass-equipment-1_2-1000solar",
         order = "PSab[p-s_mk5]",
         item_product = "p-s_mk5",
         amount = 1000,
@@ -330,7 +330,7 @@ data:extend(
     },
     {
         type = "produce-achievement",
-        name = "mass-equipment-2_2-1000solart",
+        name = "mass-equipment-2_2-1000solar",
         order = "PSad[p-s_mk10]",
         item_product = "p-s_mk10",
         amount = 1000,

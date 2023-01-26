@@ -46,10 +46,11 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"r_mk3", 1},
+            {"electronic-circuit", 132},
             {"engine-unit", 140},
             {"steel-plate", 167},
             {"iron-gear-wheel", 173},
-            {"electronic-circuit", 132},
+            
         },
         result = "r_mk4"
     },
@@ -145,186 +146,120 @@ local recipes = {
 }
 
 local compat = require("compatibilities/mods-compat")
---[[
+
 compat.update_ingredients(recipes[1], {
     {
-        dependencies = {"boblogistics"},
+        dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            [""] = {"", 10},
-            [""] = {"", 10},
-            [""] = {"", 10},
+            ["electronic-circuit"] = {"basic-circuit-board", 30},
+            ["iron-chest"] = {"solder", 75},
+            ["small-lamp"] = {"rubber", 50},
+            ["copper-cable"] = {"copper-cable", 100},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
+        replacements = {
+            ["rubber"] = {"tin-plate", 50},
         }
     },
 })
 compat.update_ingredients(recipes[2], {
     {
-        dependencies = {"boblogistics"},
+        dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            [""] = {"", 10},
-            [""] = {"", 10},
-            [""] = {"", 10},
-        }
-    }   }
-    }
+            ["electronic-circuit"] = {"basic-circuit-board", 45},
+            ["iron-gear-wheel"] = {"iron-gear-wheel", 50},
+            ["copper-cable"] = {"tinned-copper-cable", 75},
+      }
+    },
 })
 compat.update_ingredients(recipes[3], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 10},
-            [""] = {"", 10},
-            [""] = {"", 10},
+            ["electronic-circuit"] = {"roboport-antenna-1", 5},
+            ["engine-unit"] = {"roboport-chargepad-1", 5},
+            ["iron-plate"] = {"roboport-door-1", 5},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 10},
-            [""] = {"", 10},
-            [""] = {"", 10},
+            ["electronic-circuit"] = {"roboport-antenna-1", 10},
+            ["engine-unit"] = {"roboport-chargepad-1", 10},
+            ["steel-plate"] = {"roboport-door-1", 10},
+            ["iron-gear-wheel"] = {"", 0},
         }
-    }
+    },
 })
---[[
 compat.update_ingredients(recipes[5], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["steel-chest"] = {"roboport-antenna-2", 5},
+            ["b_mk3"] = {"roboport-chargepad-2", 5},
+            ["flying-robot-frame"] = {"roboport-door-2", 5},
         }
     },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
+
 compat.update_ingredients(recipes[6], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["advanced-circuit"] = {"roboport-antenna-2", 10},
+            ["electric-engine-unit"] = {"roboport-chargepad-2", 10},
+            ["steel-plate"] = {"roboport-door-2", 10},
+            ["lubricant"] = {"", 0},
         }
     },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
+
 compat.update_ingredients(recipes[7], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["processing-unit"] = {"roboport-antenna-3", 5},
+            ["p-s_mk5"] = {"roboport-chargepad-3", 5},
+            ["iron-stick"] = {"roboport-door-3", 5},
+            ["low-density-structure"] = {"", 0},
         }
     },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
 compat.update_ingredients(recipes[8], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["low-density-structure"] = {"roboport-antenna-3", 10},
+            ["steel-plate"] = {"roboport-chargepad-3", 10},
+            ["copper-cable"] = {"roboport-door-3", 10},
+            ["uranium-235"] = {"", 0},
         }
     },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
 compat.update_ingredients(recipes[9], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["rocket-control-unit"] = {"roboport-antenna-4", 5},
+            ["low-density-structure"] = {"roboport-chargepad-4", 5},
+            ["advanced-circuit"] = {"roboport-door-4", 5},
+            ["lubricant"] = {"", 0},
         }
     },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
 compat.update_ingredients(recipes[10], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"boblogistics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["low-density-structure"] = {"roboport-antenna-4", 10},
+            ["rocket-control-unit"] = {"roboport-chargepad-4", 10},
+            ["processing-unit"] = {"roboport-door-4", 10},
         }
     },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
-]]
+
 data:extend(recipes)

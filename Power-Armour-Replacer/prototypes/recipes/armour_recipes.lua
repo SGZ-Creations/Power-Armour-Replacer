@@ -196,7 +196,7 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["copper-plate"] = {"invar-alloy", 50},
+            ["copper-plate"] = {"invar-alloy", 75},
             ["iron-gear-wheel"] = {"silver-plate", 75},
             {"rubber", 15}
         }
@@ -205,6 +205,12 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["silver-plate"] = {"clay-brick", 100},
+        }
+    },
+    {
+        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
+        replacements = {
+            ["invar-alloy"] = {"angels-mono-silicon", 100},
         }
     },
     {

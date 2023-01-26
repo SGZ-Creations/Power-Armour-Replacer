@@ -35,16 +35,16 @@ end
 compat.update_technologies{
 
 ["boblogistics"] = {
-        ["roboport_1"] = {
+        ["roboport_3"] = {
             "bob-robo-modular-1"
         },
-        ["roboport_2"] = {
+        ["roboport_5"] = {
             "bob-robo-modular-2"
         },
-        ["roboport_3"] = {
+        ["roboport_7"] = {
             "bob-robo-modular-3"
         },
-        ["roboport_4"] = {
+        ["roboport_9"] = {
             "bob-robo-modular-4"
         },
     },
@@ -112,7 +112,7 @@ compat.update_technologies{
         ["armour_2"] = {
             "angels-steel-smelting-1",
             ["zinc-processing"] = "angels-stone-smelting-1",
-            ["invar-processing"] = "angels-invar-smelting-1",
+            ["invar-processing"] = "steel-axe",
         },
         ["armour_3"] = {
             ["advanced-electronics"] = "angels-brass-smelting-1",

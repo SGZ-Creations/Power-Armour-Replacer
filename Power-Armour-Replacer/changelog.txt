@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.19
+Date: xx.02.2023
+  Features:
+    - Added some more compatibility.
+  Changes:
+    - Added the last detals to this before 1.0.
+  Fixes:
+    - Solar panel Achivements not showing it's localisation.  
+---------------------------------------------------------------------------------------------------
 Version: 0.1.18
 Date: 17.01.2023
   Features:
