@@ -89,63 +89,61 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 140},
-            ["steel-plate"] = {"tined-copper-cable", 108},
+            ["steel-plate"] = {"tined-copper-cable", 110},
         }
     },
     {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
-            {"glass", 113}
+            {"glass", 115}
         }
     },
 })
---[[
 compat.update_ingredients(recipes[2], {
-    {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            [""] = {"", 100},
-            {"", 50}
-        }
-    },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["iron-stick"] = {"invar-alloy", 150},
+            ["steel-plate"] = {"cobalt-steel-bearing", 125}
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"lithium-ion-battery", 55},
         }
     }
+    --[[
+    {
+        dependencies = {"248k"},
+        replacements = {
+            {"", 55},
+        }
+    }
+    ]]
 })
---[[
 compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["advanced-circuit"] = {"advanced-circuit", 125},
+            ["lubricant"] = {"invar-alloy", 155},
+            ["steel-plate"] = {"gilded-copper-cable", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["iron-stick"] = {"titanium-bearing", 75},
+            {"titanium-plate", 35}
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+           ["battery"] = {"lithium-ion-battery", 55},
         }
-    }
+    },
 })
 --[[
 compat.update_ingredients(recipes[4], {

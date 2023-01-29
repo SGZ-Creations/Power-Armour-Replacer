@@ -173,29 +173,30 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
---[[
+
 compat.update_ingredients(recipes[2], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            {"solder" 120}
+            {"tinned-copper-cable" 140}
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            {"lead-plates", 35},
         }
     },
     {
-        dependencies = {"248k"},
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            {"battery", 50},
+            { "ion-lithium-battery", 50},
         }
     },
 })
+--[[
 compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},

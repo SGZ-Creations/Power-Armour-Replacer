@@ -1,53 +1,53 @@
 local graphics = {
-  "__base__/graphics/equipment/energy-shield-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+  "__base__/graphics/equipment/energy-shield-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
 }
 
 local graphics2 = {
-  "__base__/graphics/equipment/hr-energy-shield-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",
+  "__base__/graphics/equipment/hr-energy-shield-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
 }
 
 local icon = {
-  "__base__/graphics/equipment/energy-shield-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
-  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",
+  "__base__/graphics/equipment/energy-shield-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+  "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
 }
 
 local order = {
-  "haz[energy-shield-mk2]-aa[armour-replacer]",
-  "hbz[energy-shield-mk2]-ab[armour-replacer]",
-  "hcz[energy-shield-mk2]-ac[armour-replacer]",
-  "hdz[energy-shield-mk2]-ad[armour-replacer]",
-  "hez[energy-shield-mk2]-ae[armour-replacer]",
-  "hfz[energy-shield-mk2]-af[armour-replacer]",
-  "hgz[energy-shield-mk2]-ag[armour-replacer]",
-  "hhz[energy-shield-mk2]-ah[armour-replacer]",
-  "hiz[energy-shield-mk2]-ai[armour-replacer]",
-  "hjz[energy-shield-mk2]-aj[armour-replacer]",
+  "haz[energy-shield-mk2]-aa[armour-replacer]",--1
+  "hbz[energy-shield-mk2]-ab[armour-replacer]",--2
+  "hcz[energy-shield-mk2]-ac[armour-replacer]",--3
+  "hdz[energy-shield-mk2]-ad[armour-replacer]",--4
+  "hez[energy-shield-mk2]-ae[armour-replacer]",--5
+  "hfz[energy-shield-mk2]-af[armour-replacer]",--6
+  "hgz[energy-shield-mk2]-ag[armour-replacer]",--7
+  "hhz[energy-shield-mk2]-ah[armour-replacer]",--8
+  "hiz[energy-shield-mk2]-ai[armour-replacer]",--9
+  "hjz[energy-shield-mk2]-aj[armour-replacer]",--10
 }
 
 -- Shield value.

@@ -140,35 +140,27 @@ local recipes = {
     },
 }
 local compat = require("compatibilities/mods-compat")
---[[
+
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["electronic-circuit"] = {"basic-electronic-circuit", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["steel-plate"] = {"steel-bearing", 75},
         }
     },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
+--[[
 compat.update_ingredients(recipes[2], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
+            ["electronic-circuit"] = {"basic-electronic-circuit", 140}
             {"", 50}
         }
     },

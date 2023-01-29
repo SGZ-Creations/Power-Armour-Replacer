@@ -39,16 +39,16 @@ local icon = {
 }
 
 local power = {
-  "1TW",
-  "2TW",
-  "3TW",
-  "4TW",
-  "5TW",
-  "6TW",
-  "7TW",
-  "8TW",
-  "9TW",
-  "10TW",
+  "10GW",
+  "20GW",
+  "30GW",
+  "40GW",
+  "50GW",
+  "60GW",
+  "70GW",
+  "80GW",
+  "90GW",
+  "100GW",
 }
 
 local order = {

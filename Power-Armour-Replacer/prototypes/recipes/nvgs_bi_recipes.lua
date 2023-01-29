@@ -64,12 +64,39 @@ local recipes = {
     },
 }
 local compat = require("compatibilities/mods-compat")
---[[
+
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
+            ["advanced-circuit"] = {"electronic-circuit", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["steel-plate"] = {"steel-bearing", 150},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            ["lubricant"] = {"hydrogen", 250},
+        }
+    }
+    {
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+           ["battery"] = {"lithium-ion-battery", 25},
+        }
+    },
+})
+--[[
+compat.update_ingredients(recipes[2], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["f_mk5"] = {"", 100},
             {"", 50}
         }
     },
@@ -87,26 +114,10 @@ compat.update_ingredients(recipes[1], {
             ["--"] = {"", 35},
         }
     }
-})
-compat.update_ingredients(recipes[2], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"248k"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
-        }
-    },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
+            ["f_mk5"] = {"el_aluminium_item", 100},
             ["--"] = {"", 35},
         }
     }
@@ -130,6 +141,37 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+    
+})
+compat.update_ingredients(recipes[4], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["f_mk5"] = {"", 100},
+            {"", 50}
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["-"] = {"", 50},
+            {"---", 35}
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["__"] = {"", 100},
+            ["--"] = {"", 35},
+        }
+    }
+    {
+        dependencies = {"248k"},
+        replacements = {
+            ["f_mk5"] = {"el_aluminium_item", 100},
             ["--"] = {"", 35},
         }
     }

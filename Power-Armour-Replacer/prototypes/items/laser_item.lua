@@ -75,15 +75,15 @@ local range = {
     32,
 }
 local damage_modifier = {
-    3,
-    6,
-    9,
-    12,
+    5,
+    10,
     15,
-    18,
-    21,
-    24,
-    27,
+    20,
+    25,
+    35,
+    40,
+    45,
+    50,
 }
 local energy_consumption = {
     "0.05MJ",

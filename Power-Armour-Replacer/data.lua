@@ -7,7 +7,7 @@
     require("prototypes.recipes.roboport_recipes")
     require("prototypes.recipes.laser_recipes")
     require("prototypes.recipes.shield_recipes")
-    require("prototypes.recipes.the-rest_recipes")
+    require("prototypes.recipes.nvgs_bi_recipes")
     require("prototypes.recipes.vanilla-fix_recipes")
 
 --items--
@@ -19,7 +19,7 @@
     require("prototypes.items.roboport_item")
     require("prototypes.items.laser_item")
     require("prototypes.items.shield_item")
-    require("prototypes.items.the-rest_item")
+    require("prototypes.items.nvgs_bi_item")
 
 --technology--
     require("prototypes.technology.armour_tech")
@@ -30,8 +30,8 @@
     require("prototypes.technology.roboport_tech")
     require("prototypes.technology.laser_tech")
     require("prototypes.technology.shield_tech")
-    require("prototypes.technology.the-rest_tech")
+    require("prototypes.technology.nvgs_bi_tech")
     require("prototypes.technology.vanilla-fix_tech")
 
---rest--
+--other--
     require("prototype.achievements")
