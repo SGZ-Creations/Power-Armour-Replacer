@@ -1,13 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.19
-Date: xx.02.2023
+Date: 02.02.2023
   Features:
     - Added some more compatibility.
   Changes:
-    - Added the last detals to this before 1.0.
+    - Added the last detals to this before 1.0
+    - Continuing this on 0.1.20
   Fixes:
-    - Solar panel Achivements not showing it's localisation.
-    - Attempted to fix crash for some players. Due to missing graphics.
+    - Solar panel Achivements not showing it's localisation correctly.
+    - Attempted to fix crash for some players. Due to missing graphics.  
+  Realeses:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.18
 Date: 17.01.2023
@@ -23,8 +26,6 @@ Date: 17.01.2023
   Thanks:
     - Discord @Toby1364 for praticipating on this project. & doing the Internal cleanup.
     - Discord @Lucif3r for beta testing version 0.1.17. In 248k mod set/pack.
-  Realeses:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.17
 Date: 16.01.2023
