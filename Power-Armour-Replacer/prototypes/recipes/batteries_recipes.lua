@@ -172,6 +172,13 @@ compat.update_ingredients(recipes[1], {
             {"battery", 25},
         }
     },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"automation-core", 6},
+            ["small-electric-pole"] = {"wood", 50},
+        }
+    },
 })
 
 compat.update_ingredients(recipes[2], {
@@ -179,8 +186,8 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 100},
-            {"solder" 120}
-            {"tinned-copper-cable" 140}
+            {"solder", 120},
+            {"tinned-copper-cable", 140},
         }
     },
     {
@@ -193,6 +200,18 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
             { "ion-lithium-battery", 50},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-beam", 20}
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"automation-core", 10},
         }
     },
 })

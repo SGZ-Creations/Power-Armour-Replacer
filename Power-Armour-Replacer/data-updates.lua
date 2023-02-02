@@ -155,7 +155,10 @@ compat.update_technologies{
             "el_caster_tech",
         },
         ["battery_1"] = {
-            "el_lithium_tech"
+            "el_lithium_tech",
+        },
+        ["nv-bi_mk1"] = {
+            "el_lithium_tech",
         },
         
     },

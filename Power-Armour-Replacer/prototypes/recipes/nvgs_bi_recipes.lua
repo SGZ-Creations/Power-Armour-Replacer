@@ -8,7 +8,7 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {type="fluid", name="lubricant", amount=200},
-            {"advanced-circuit", 50},
+            {"electronic-circuit", 50},
             {"steel-plate", 55},
             {"battery", 5},
         },
@@ -64,14 +64,8 @@ local recipes = {
     },
 }
 local compat = require("compatibilities/mods-compat")
-
+--Compatibility section
 compat.update_ingredients(recipes[1], {
-    {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["advanced-circuit"] = {"electronic-circuit", 50}
-        }
-    },
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -83,11 +77,31 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["lubricant"] = {"hydrogen", 250},
         }
-    }
+    },
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-           ["battery"] = {"lithium-ion-battery", 25},
+        ["battery"] = {"lithium-ion-battery", 35},
+        }
+    },
+    {
+        dependencies = {"248k"},
+        replacements = {
+        ["battery"] = {"el_lithium_battery", 35},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 20},
+            ["lubricant"] = {"mineral-water", 100},
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"automation-core", 10},
+            ["lubricant"] = {"", 0},
         }
     },
 })

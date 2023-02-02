@@ -140,12 +140,12 @@ local recipes = {
     },
 }
 local compat = require("compatibilities/mods-compat")
-
+--Compatibility section
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-electronic-circuit", 100},
+            ["electronic-circuit"] = {"basic-circuit-board", 100},
         }
     },
     {
@@ -154,31 +154,34 @@ compat.update_ingredients(recipes[1], {
             ["steel-plate"] = {"steel-bearing", 75},
         }
     },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-beam", 40},
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"automation-core", 4},
+        }
+    },
 })
---[[
 compat.update_ingredients(recipes[2], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"basic-electronic-circuit", 140}
-            {"", 50}
+            ["electronic-circuit"] = {"iron-beam", 40},
         }
     },
     {
-        dependencies = {"bobplates"},
+        dependencies = {"space-exploration"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["electronic-circuit"] = {"automation-core", 10},
         }
     },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
 })
+--[[
 compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},

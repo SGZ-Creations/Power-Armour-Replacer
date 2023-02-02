@@ -160,7 +160,7 @@ local recipes = {
 
 
 local compat = require("compatibilities/mods-compat")
-
+--Compatibility section
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics", "bobplates"},
@@ -174,6 +174,18 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"bronze-alloy", 50}
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-beam", 50}
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"automation-core", 10},
         }
     },
     --[[
@@ -198,6 +210,7 @@ compat.update_ingredients(recipes[2], {
         replacements = {
             ["copper-plate"] = {"invar-alloy", 75},
             ["iron-gear-wheel"] = {"silver-plate", 75},
+            ["steel-plate"] = {"steel-bearing", 175},
             {"rubber", 15}
         }
     },
@@ -217,6 +230,18 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
         replacements = {
             ["rubber"] = {"bronze-alloy", 75},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-beam", 50}
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"automation-core", 20},
         }
     },
     --[[
@@ -283,6 +308,12 @@ compat.update_ingredients(recipes[3], {
         replacements = {
             ["el_aluminum_item"] = {"aluminium-plate", 150},
             ["cobalt-steel-alloy"] = {"lithium-ion-battery", 30},
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["advanced-circuit"] = {"electronic-components", 55},
         }
     },
 })

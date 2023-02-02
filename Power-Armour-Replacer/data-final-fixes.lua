@@ -155,7 +155,8 @@ if mods["custom_power_armor_fix"] then
 --[[
     data.raw.item["power-armor-mk3"].hidden = true
     data.raw.item["power-armor-mk4"].hidden = true
-    data.raw.item["power-armor-mk5"].hidden = true]]
+    data.raw.item["power-armor-mk5"].hidden = true
+]]
 end
 
 if mods["Power Armor MK3"] then

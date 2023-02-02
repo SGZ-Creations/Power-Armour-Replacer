@@ -8,7 +8,7 @@ local recipes = {
             {"iron-chest", 5},
             {"electronic-circuit", 75},
             {"copper-cable", 150},
-            {"small-lamp", 31},
+            {"small-lamp", 20},
         },
         result = "r_mk1"
     },
@@ -22,7 +22,7 @@ local recipes = {
             {"r_mk1", 1},
             {"electronic-circuit", 100},
             {"iron-gear-wheel", 125},
-            {"copper-cable", 176},
+            {"copper-cable", 175},
         },
         result = "r_mk2"
     },
@@ -146,7 +146,7 @@ local recipes = {
 }
 
 local compat = require("compatibilities/mods-compat")
-
+--Compatibility section
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics", "bobplates"},
@@ -161,6 +161,22 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
         replacements = {
             ["rubber"] = {"tin-plate", 50},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-beam", 20},
+            ["small-lamp"] = {"steel-gear-wheel", 20},
+            ["iron-chest"] = {"glass", 30},
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 20},
+            ["small-lamp"] = {"motor", 10},
+            ["iron-chest"] = {"", 30},
         }
     },
 })

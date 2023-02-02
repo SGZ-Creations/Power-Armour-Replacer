@@ -1,53 +1,53 @@
 local graphics = {
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--1
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--2
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--3
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--4
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--5
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--6
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--7
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--8
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--9
+    "__base__/graphics/equipment/personal-laser-defense-equipment.png",--10
 }
 
 local graphics2 = {
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
-    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--1
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--2
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--3
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--4
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--5
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--6
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--7
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--8
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--9
+    "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png",--10
 }
 
 local icon = {
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
-    "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--1
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--2
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--3
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--4
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--5
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--6
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--7
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--8
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--9
+    "__base__/graphics/icons/personal-laser-defense-equipment.png",--10
 }
 
 local orders = {
-    "eaz[active-defense]-aa[armour-replacer]",
-    "ebz[active-defense]-ab[armour-replacer]",
-    "ecz[active-defense]-ac[armour-replacer]",
-    "edz[active-defense]-ad[armour-replacer]",
-    "eez[active-defense]-ae[armour-replacer]",
-    "efz[active-defense]-af[armour-replacer]",
-    "egz[active-defense]-ag[armour-replacer]",
-    "ehz[active-defense]-ah[armour-replacer]",
-    "eiz[active-defense]-ai[armour-replacer]",
-    "ejz[active-defense]-aj[armour-replacer]",
+    "eaz[active-defense]-aa[armour-replacer]",--1
+    "ebz[active-defense]-ab[armour-replacer]",--2
+    "ecz[active-defense]-ac[armour-replacer]",--3
+    "edz[active-defense]-ad[armour-replacer]",--4
+    "eez[active-defense]-ae[armour-replacer]",--5
+    "efz[active-defense]-af[armour-replacer]",--6
+    "egz[active-defense]-ag[armour-replacer]",--7
+    "ehz[active-defense]-ah[armour-replacer]",--8
+    "eiz[active-defense]-ai[armour-replacer]",--9
+    "ejz[active-defense]-aj[armour-replacer]",--10
 }
 
 local cooldown = {

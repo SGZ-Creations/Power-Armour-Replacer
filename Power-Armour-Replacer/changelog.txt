@@ -6,7 +6,8 @@ Date: xx.02.2023
   Changes:
     - Added the last detals to this before 1.0.
   Fixes:
-    - Solar panel Achivements not showing it's localisation.  
+    - Solar panel Achivements not showing it's localisation.
+    - Attempted to fix crash for some players. Due to missing graphics.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.18
 Date: 17.01.2023

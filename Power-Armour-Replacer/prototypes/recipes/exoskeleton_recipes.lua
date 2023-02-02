@@ -98,6 +98,18 @@ compat.update_ingredients(recipes[1], {
             {"glass", 115}
         }
     },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-beam", 70},
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-gear-wheel", 70},
+        }
+    },
 })
 compat.update_ingredients(recipes[2], {
     {
@@ -127,8 +139,9 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 125},
-            ["lubricant"] = {"invar-alloy", 155},
             ["steel-plate"] = {"gilded-copper-cable", 200},
+            {"invar-alloy", 155},
+            ["lubricant"] = {"", 0},
         }
     },
     {

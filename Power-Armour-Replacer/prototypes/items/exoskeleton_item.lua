@@ -22,11 +22,13 @@ local icon = {
     "__base__/graphics/icons/exoskeleton-equipment.png",
     "__base__/graphics/icons/exoskeleton-equipment.png",
     "__base__/graphics/icons/exoskeleton-equipment.png",
+    --[[
     "__base__/graphics/icons/exoskeleton-equipment.png",
     "__base__/graphics/icons/exoskeleton-equipment.png",
     "__base__/graphics/icons/exoskeleton-equipment.png",
     "__base__/graphics/icons/exoskeleton-equipment.png",
     "__base__/graphics/icons/exoskeleton-equipment.png",
+    ]]
 }
 
 local speed_bonus = {
