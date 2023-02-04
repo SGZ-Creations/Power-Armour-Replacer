@@ -1,6 +1,6 @@
 -- Compatibility files
 local compat = require("compatibilities.mods-compat")
-
+--local remove "remove" tech
 
 local function recursive_add(name, n)
     local tech = data.raw.technology[name]
@@ -34,7 +34,7 @@ end
 
 compat.update_technologies{
 
-["boblogistics"] = {
+    ["boblogistics"] = {
         ["roboport_3"] = {
             "bob-robo-modular-1"
         },
@@ -74,12 +74,15 @@ compat.update_technologies{
     },
     ["bobplates"] = {
         ["armour_2"] = {
-            "zinc-processing",
-            ["electronics"] = "invar-processing",
+            ["electronics"] = "automation",
         },
         ["armour_3"] = {
+            "zinc-processing",
             "aluminium-processing",
             "cobalt-processing",
+        },
+        ["armour_4"] = {
+            "invar-processing"
         },
         ["armour_5"] = {
             ["electric-engine"] = "gem-processing-2"
@@ -111,10 +114,10 @@ compat.update_technologies{
         },
         ["armour_2"] = {
             "angels-steel-smelting-1",
-            ["zinc-processing"] = "angels-stone-smelting-1",
             ["invar-processing"] = "steel-axe",
         },
         ["armour_3"] = {
+            ["zinc-processing"] = "angels-stone-smelting-1",
             ["advanced-electronics"] = "angels-brass-smelting-1",
             ["cobalt-processing"] = "angels-lead-smelting-2",
             ["aluminium-processing"] = "angels-aluminium-smelting-1",

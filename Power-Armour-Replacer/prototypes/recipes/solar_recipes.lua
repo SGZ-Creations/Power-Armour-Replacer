@@ -34,7 +34,7 @@ local recipes = {
             {"p-s_mk2", 1},
             {"battery", 30},
             {"steel-plate", 75},
-            {"copper-plate", 46},
+            {"copper-plate", 40},
         },
         result = "p-s_mk3"
     },
@@ -144,15 +144,15 @@ local recipes = {
     },
 }
 local compat = require("compatibilities/mods-compat")
---[[
+--Compatibility section
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["electronic-circuit"] = {"basic-circuit-board", 40},
         }
     },
+--[[
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -167,15 +167,22 @@ compat.update_ingredients(recipes[1], {
             ["--"] = {"", 35},
         }
     }
+]]
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 10},
+        }
+    },
 })
-compat.update_ingredients(recipes[2], {
+compat.update_ingredients(recipes[2], { 
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["electronic-circuit"] = {"basic-circuit-board", 50},
         }
     },
+--[[
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -190,17 +197,31 @@ compat.update_ingredients(recipes[2], {
             ["--"] = {"", 35},
         }
     }
+]]
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 15},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["b_mk1"] = {"rare-metals", 30},
+            ["steel-plate"] = {"steel-beam", 50},
+        }
+    },
 })
 compat.update_ingredients(recipes[3], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["steel-plate"] = {"steel-bearing", 30},
         }
     },
+--[[
     {
-        dependencies = {"bobplates"},
+        dependencies = {"bobelectronics"},
         replacements = {
             ["-"] = {"", 50},
             {"---", 35}
@@ -213,7 +234,15 @@ compat.update_ingredients(recipes[3], {
             ["--"] = {"", 35},
         }
     }
+]]
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["steel-plate"] = {"steel-beam", 55},
+        }
+    },
 })
+--[[
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},

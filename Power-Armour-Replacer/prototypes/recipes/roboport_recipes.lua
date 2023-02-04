@@ -166,9 +166,8 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 20},
-            ["small-lamp"] = {"steel-gear-wheel", 20},
-            ["iron-chest"] = {"glass", 30},
+            ["iron-chest"] = {"iron-beam", 10},
+            ["copper-cable"] = {"glass", 25},
         }
     },
     {
@@ -176,7 +175,6 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 20},
             ["small-lamp"] = {"motor", 10},
-            ["iron-chest"] = {"", 30},
         }
     },
 })
@@ -188,6 +186,13 @@ compat.update_ingredients(recipes[2], {
             ["iron-gear-wheel"] = {"iron-gear-wheel", 50},
             ["copper-cable"] = {"tinned-copper-cable", 75},
       }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 30},
+            ["copper-cable"] = {"motor", 10},
+        }
     },
 })
 compat.update_ingredients(recipes[3], {

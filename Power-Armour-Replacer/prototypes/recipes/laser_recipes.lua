@@ -34,7 +34,7 @@ local recipes = {
             {"l_mk2", 1},
             {"electronic-circuit", 120},
             {"iron-plate", 125},
-            {"battery", 165},
+            {"battery", 45},
             {"green-wire", 55},
             {"red-wire", 55},
         },
@@ -48,8 +48,8 @@ local recipes = {
         ingredients = {
             {"l_mk3", 1},
             {"pipe", 55},
-            {"electronic-circuit", 145},
-            {"iron-gear-wheel", 170},
+            {"electronic-circuit", 135},
+            {"iron-gear-wheel", 85},
         },
         result = "l_mk4"
     },
@@ -150,7 +150,8 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 25},
+            ["iron-plate"] = {"iron-beam", 25},
+            ["steel-plate"] = {"steel-beam", 25},
         }
     },
     {
@@ -171,6 +172,7 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"space-exploration"},
         replacements = {
             ["electronic-circuit"] = {"automation-core", 4},
+            ["engine-unit"] = {"motor", 20},
         }
     },
 })
@@ -178,14 +180,21 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"WireShortcuts"},
         replacements = {
-            ["red-wire"] = {"iron-gear-wheel", 105},
-            ["green-wire"] = {"steel-plate", 105},
+            ["red-wire"] = {"iron-gear-wheel", 60},
+            ["green-wire"] = {"steel-plate", 50},
         }
     },
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 40},
+            ["electronic-circuit"] = {"", 0},
+            ["battery"] = {"electronic-components", 30},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["iron-plate"] = {"iron-beam", 30},
         }
     },
 })

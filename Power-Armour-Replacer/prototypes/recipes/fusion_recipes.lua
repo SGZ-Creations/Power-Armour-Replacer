@@ -20,8 +20,8 @@ local recipes = {
         ingredients = {
             {"f_mk1", 1},
             {"iron-plate", 95},
-            {"copper-cable", 182},
-            {"electronic-circuit", 66},
+            {"copper-cable", 165},
+            {"electronic-circuit", 60},
         },
         result = "f_mk2"
     },
@@ -33,7 +33,7 @@ local recipes = {
         ingredients = {
             {"f_mk2", 1},
             {"b_mk1", 3},
-            {"electronic-circuit", 134},
+            {"electronic-circuit", 120},
             {"solid-fuel", 50},
         },
         result = "f_mk3"
@@ -45,8 +45,8 @@ local recipes = {
         energy_required = 55,
         ingredients = {
             {"f_mk3", 1},
-            {"advanced-circuit", 44},
-            {"engine-unit", 51},
+            {"advanced-circuit", 40},
+            {"engine-unit", 50},
             {"steel-plate", 110}
         },
         result = "f_mk4"
@@ -59,7 +59,7 @@ local recipes = {
         ingredients = {
             {"f_mk4", 1},
             {"b_mk3", 5},
-            {"advanced-circuit", 88},
+            {"advanced-circuit", 85},
             {"engine-unit", 40},
         },
         result = "f_mk5"
@@ -145,7 +145,7 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            ["electronic-circuit"] = {"basic-circuit-board", 75},
         }
     },
     {
@@ -169,6 +169,27 @@ compat.update_ingredients(recipes[1], {
 })
 compat.update_ingredients(recipes[2], {
     {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            ["copper-cable"] = {"tinned-copper-cable", 120},
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            {"rubber", 60},
+        }
+    },
+    -- SeaBlock-
+    {
+        dependencies = {"SeaBlockMetaPack", "bobplates"},
+        replacements = {
+            ["rubber"] = {"bronze-alloy", 60},
+        }
+    },
+    -- SE K2
+    {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"iron-beam", 40},
@@ -181,8 +202,8 @@ compat.update_ingredients(recipes[2], {
         }
     },
 })
---[[
 compat.update_ingredients(recipes[3], {
+--[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -204,7 +225,22 @@ compat.update_ingredients(recipes[3], {
             ["--"] = {"", 35},
         }
     }
+    ]]
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["b_mk1"] = {"motor", 20},
+            ["electronic-circuit"] = {"automation-core", 30},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["solid-fuel"] = {"rare-metals", 35},
+        }
+    },
 })
+--[[
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},

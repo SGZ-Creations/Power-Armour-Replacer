@@ -4,7 +4,7 @@ local recipes = {
         name = "a_mk1",
         enabled = false,
         total_raw = true,
-        energy_required = 10.0,
+        energy_required = 100.0,
         ingredients = {
             {"heavy-armor", 1},
             {"stone-brick", 50},
@@ -19,7 +19,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk2",
         enabled = false,
-        energy_required = 20.0,
+        energy_required = 100.0,
         ingredients = {
             {"a_mk1", 1},
             {"copper-plate", 200},
@@ -34,7 +34,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk3",
         enabled = false,
-        energy_required = 30.0,
+        energy_required = 100.0,
         ingredients = {
             {"a_mk2", 1},
             {"plastic-bar", 50},
@@ -50,7 +50,7 @@ local recipes = {
         name = "a_mk4",
         enabled = false,
         
-        energy_required = 40.0,
+        energy_required = 100.0,
         ingredients = {
             {"a_mk3", 1},
             {"iron-gear-wheel", 150},
@@ -65,7 +65,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk5",
         enabled = false,
-        energy_required = 50.0,
+        energy_required = 100.0,
         ingredients = {
             {"a_mk4", 1},
             {"b_mk3", 15},
@@ -79,7 +79,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk6",
         enabled = false,
-        energy_required = 60.0,
+        energy_required = 100.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -95,7 +95,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk7",
         enabled = false,
-        energy_required = 70.0,
+        energy_required = 100.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -112,7 +112,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk8",
         enabled = false,
-        energy_required = 80.0,
+        energy_required = 100.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -129,7 +129,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk9",
         enabled = false,
-        energy_required = 90.0,
+        energy_required = 100.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -166,20 +166,30 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["wood"] = {"solder", 100}, -- the first three are for replacing ingredients in the recipe
-            ["electronic-circuit"] = {"basic-circuit-board", 75},
+            ["electronic-circuit"] = {"basic-circuit-board", 55},
+            ["steel-plate"] = {"rubber", 75},
             {"tinned-copper-cable", 55} -- these two are for adding new ingredients to the recipe
         }
     },
     {
-        dependencies = {"bobplates"},
+        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
-            ["steel-plate"] = {"bronze-alloy", 50}
+            {"silicon", 100},
+            {"glass", 100},
         }
     },
+    -- Angels
+    {
+        dependencies = {"SeaBlockMetaPack", "bobplates"},
+        replacements = {
+            ["rubber"] = {"copper-plate", 100},
+        }
+    },
+    --SEK2 as long is it don't mark mod as incompatible for no reason.
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 50}
+            ["steel-plate"] = {"steel-gear-wheel", 45},
         }
     },
     {
@@ -202,15 +212,15 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 65},
+            ["electronic-circuit"] = {"basic-circuit-board", 75},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["copper-plate"] = {"invar-alloy", 75},
+            ["copper-plate"] = {"bronze-alloy", 75},
             ["iron-gear-wheel"] = {"silver-plate", 75},
-            ["steel-plate"] = {"steel-bearing", 175},
+            ["steel-plate"] = {"steel-bearing", 155},
             {"rubber", 15}
         }
     },
@@ -223,25 +233,27 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
-            ["invar-alloy"] = {"angels-mono-silicon", 100},
+            ["bronze-alloy"] = {"angels-mono-silicon", 100},
         }
     },
+    --SeaBlock
     {
         dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
         replacements = {
             ["rubber"] = {"bronze-alloy", 75},
         }
     },
+    --SEK2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 50}
+            ["steel-plate"] = {"steel-gear-wheel", 50}
         }
     },
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 20},
+            ["electronic-circuit"] = {"automation-core", 16},
         }
     },
     --[[
@@ -285,6 +297,7 @@ compat.update_ingredients(recipes[3], {
             {"steel-plate", 100}
         }
     },
+    --248K
     {
         dependencies = {"248k", "bobplates", "angelssmelting"},
         replacements = {
@@ -310,10 +323,17 @@ compat.update_ingredients(recipes[3], {
             ["cobalt-steel-alloy"] = {"lithium-ion-battery", 30},
         }
     },
+    --SEK2
     {
         dependencies = {"space-exploration"},
         replacements = {
             ["advanced-circuit"] = {"electronic-components", 55},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["engine-unit"] = {"rare-metals", 50},
         }
     },
 })
@@ -323,6 +343,7 @@ compat.update_ingredients(recipes[4], {
         replacements = {
             {"cobalt-steel-alloy", 150},
             {"invar-alloy", 100},
+            ["engine-unit"] = {"silicon", 160},
         }
     },
     {
@@ -331,6 +352,7 @@ compat.update_ingredients(recipes[4], {
             {"electronic-circuit", 100},
         }
     },
+    -- Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
@@ -339,12 +361,25 @@ compat.update_ingredients(recipes[4], {
             ["engine-unit"] = {"concrete-brick", 135},
         }
     },
+    -- SE K2
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["advanced-circuit"] = {"electronic-components", 65},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["engine-unit"] = {"rare-metals", 60},
+        }
+    },
     --[[
     {
         settings.startup["the-setting"].value
         dependencies = {"bobenemies"},
         replacements = {
-            {"alien-artifact", 50}
+            {"alien-artifact", 50},
         }
     },
     ]]
@@ -354,7 +389,7 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobwarfare"},
         replacements = {
-            ["uranium-235"] = {"heavy-armor-2", 1}
+            ["uranium-235"] = {"heavy-armor-2", 1},
         }
     },
     {
@@ -376,7 +411,7 @@ compat.update_ingredients(recipes[5], {
         settings.startup["the-setting"].value
         dependencies = {"bobenemies"},
         replacements = {
-            {"alien-artifact", 50}
+            {"alien-artifact", 50},
         }
     },
     ]]
@@ -386,9 +421,8 @@ compat.update_ingredients(recipes[6], {
     
     {
         dependencies = {"bobelectronics"},
-        replacements = {
-            ["rocket-control-unit"] = {"advanced-circuit", 200},
-            ["processing-unit"] = {"electronic-circuit", 250}
+        replacements = { 
+            {"advanced-circuit", 250},
         }
     },
     {
@@ -407,12 +441,18 @@ compat.update_ingredients(recipes[6], {
             {"gilded-copper-cable", 55},
         }
     },
+    {
+        dependencies = {"WireShortcuts"},
+        replacements = {
+            ["red-wire"] = {"steel-plate", 100},
+        }
+    },
     --[[
     {
         settings.startup["the-setting"].value
         dependencies = {"bobenemies"},
         replacements = {
-            {"alien-artifact", 50}
+            {"alien-artifact", 50},
         }
     },
     ]]
@@ -422,8 +462,8 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["nuclear-fuel"] = {"processing-unit", 100},
-            ["f_mk5"] = {"advanced-circuit", 300}
+            ["f_mk5"] = {"advanced-circuit", 300},
+            {"processing-unit", 100},
         }
     },
     {
@@ -442,8 +482,14 @@ compat.update_ingredients(recipes[7], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["rocket-control-unit"] = {"tungsten-plate", 250},
-            {"glass", 50}
+            {"glass", 50},
 
+        }
+    },
+    {
+        dependencies = {"WireShortcuts"},
+        replacements = {
+            ["green-wire"] = {"steel-plate", 100},
         }
     },
     --[[
@@ -504,7 +550,8 @@ compat.update_ingredients(recipes[9], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["rocket-control-unit"] = {"advanced-processing-unit", 100},
+            ["rocket-control-unit"] = {"processing-unit", 100},
+            {"advanced-processing-unit", 150},
         }
     },
     {
@@ -540,13 +587,14 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-circuit", 200},
-            {"advanced-processing-unit", 150},
+            ["processing-unit"] = {"advanced-processing-unit", 200},
+            {"tungsten-plate", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
+            ["s_mk8"] = {"copper-tungsten-alloy", 200},
             {"sapphire-5", 100},
             {"ruby-5", 100},
             {"emerald-5", 100},
@@ -558,7 +606,7 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["s_mk8"] = {"cobalt-steeel-alloy", 215},
+            ["copper-tungsten-alloy"] = {"copper-tungsten-alloy", 200},
         }
     },
     {

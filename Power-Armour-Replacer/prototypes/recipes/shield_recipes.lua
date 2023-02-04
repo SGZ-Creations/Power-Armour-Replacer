@@ -144,8 +144,9 @@ local recipes = {
     },
 }
 local compat = require("compatibilities/mods-compat")
---[[
+--Compatibility section
 compat.update_ingredients(recipes[1], {
+--[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -167,8 +168,16 @@ compat.update_ingredients(recipes[1], {
             ["--"] = {"", 35},
         }
     }
+    ]]
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"auromation-core", 30},
+        }
+    },
 })
 compat.update_ingredients(recipes[2], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -190,8 +199,24 @@ compat.update_ingredients(recipes[2], {
             ["--"] = {"", 35},
         }
     }
+]]  
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["engine-unit"] = {"rare-metals", 40},
+            ["steel-plate"] = {"steel-gear-wheel", 40},
+            ["iron-plate"] = {"iron-beam", 40},
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 20},
+        }
+    },
 })
 compat.update_ingredients(recipes[3], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -213,8 +238,24 @@ compat.update_ingredients(recipes[3], {
             ["--"] = {"", 35},
         }
     }
+]]
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["advanced-circuit"] = {"electronic-components", 30},
+            ["electronic-circuit"] = {"atomation-core", 40},
+        }
+    }, 
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["copper-cable"] = {"rare-metals", 60},
+            {"copper-cable", 70},
+        }
+    },
 })
 compat.update_ingredients(recipes[4], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -236,8 +277,23 @@ compat.update_ingredients(recipes[4], {
             ["--"] = {"", 35},
         }
     }
+]]
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["advanced-circuit"] = {"electronic-components", 30},
+            ["plastic-bar"] = {"electronic-circuit", 50},
+        }
+    }, 
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["small-lamp"] = {"silicon", 65},
+        }
+    },
 })
 compat.update_ingredients(recipes[5], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -259,8 +315,10 @@ compat.update_ingredients(recipes[5], {
             ["--"] = {"", 35},
         }
     }
+]]
 })
 compat.update_ingredients(recipes[6], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -282,8 +340,10 @@ compat.update_ingredients(recipes[6], {
             ["--"] = {"", 35},
         }
     }
+]]
 })
 compat.update_ingredients(recipes[7], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -305,8 +365,10 @@ compat.update_ingredients(recipes[7], {
             ["--"] = {"", 35},
         }
     }
+]]
 })
 compat.update_ingredients(recipes[8], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -328,8 +390,10 @@ compat.update_ingredients(recipes[8], {
             ["--"] = {"", 35},
         }
     }
+]]
 })
 compat.update_ingredients(recipes[9], {
+--[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -351,8 +415,10 @@ compat.update_ingredients(recipes[9], {
             ["--"] = {"", 35},
         }
     }
+]]
 })
 compat.update_ingredients(recipes[10], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -374,6 +440,6 @@ compat.update_ingredients(recipes[10], {
             ["--"] = {"", 35},
         }
     }
-})
 ]]
+})
 data:extend(recipes)

@@ -1,16 +1,26 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.20
+Date: xx.02.2023
+  Compatibilities:
+    - SE Progress.
+    - K2 Progress.
+    - 248k Progress.
+    - Bob's continued.
+  Fixes:
+    - Changelog.
+  Releases:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.19
 Date: 02.02.2023
   Features:
     - Added some more compatibility.
   Changes:
     - Added the last detals to this before 1.0
-    - Continuing this on 0.1.20
+    - Tweaks to some recipe numbers.
   Fixes:
     - Solar panel Achivements not showing it's localisation correctly.
-    - Attempted to fix crash for some players. Due to missing graphics.  
-  Realeses:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+    - Attempted to fix crash for some players. Due to missing graphics.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.18
 Date: 17.01.2023
@@ -24,7 +34,7 @@ Date: 17.01.2023
     - Recipes for: Solar(p-s_mk(x)),  Roboport(r_mk(x)), laser(l_mk(x)),
     - Achievements specifying wrong item compared to witch it was showing.
   Thanks:
-    - Discord @Toby1364 for praticipating on this project. & doing the Internal cleanup.
+    - Discord @Toby1364 for praticipating on this project. & doing an Internal cleanup.
     - Discord @Lucif3r for beta testing version 0.1.17. In 248k mod set/pack.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.17
@@ -37,9 +47,9 @@ Date: 16.01.2023
     - Compatibility partially done but useable with what's there. Work continues from 1.0.
   Changes:
     - Changelog.
-    - Exoskeleton Values
-    - Shields Values
-    - Roboport's Values
+    - Exoskeleton Values.
+    - Shields Values.
+    - Roboport's Values.
   Fixes:
     - Exoskeleton was not equipable.
     - NVG's was not equipable.
@@ -67,11 +77,11 @@ Date: 15.01.2023
   Fixes:
     - Icon size of Exoskeleton. Was using wrong placeholder directory.
     - Item order in crafting window.
-    - An oversight wehn creating Laser & Solar Equipemnt. In beta 0.1.16-3
+    - An oversight when creating Laser & Solar Equipemnt. In beta 0.1.16-3
   Info:
     - Lot more stuff that I don't know what is to be adde to this list.
-    - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on there side.
-    - This is the changelog for 0.1.16 beta & 1.0. Tho will be listed as 0.1.16 for a little while longer.
+    - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on their side.
+    - This is the changelog for 0.1.16 beta & 1.0. Tho will be listed as 0.1.xx for a little while longer.
   Thanks:
     - Discord @Toby1364 for praticipating on this project.
     - Discord, @_CodeGreen for help crating an advanced setting function.
@@ -83,6 +93,8 @@ Date: 09.01.2023
     - Some Compatibility removed, Obselete.
   Fixes:
     - Compatibility Recipes & Tech reserch.
+  Compatibilities:
+    - 248k Progress.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.14
 Date: 09.01.2023
@@ -186,7 +198,7 @@ Date: 26.10.2022
     - Continued compatibility with bob's angels.
   Thanks:
     - Discord @JanSharp for help when code was broken.
-  Compatibility:
+  Compatibilities:
     - Bob's:
     - Angels:
   Fixes:
@@ -209,5 +221,5 @@ Date: 15.10.2022
     - Discord @Toby1364 for help working on mod in general.
     - Discord @Chunnyluny for help with testing the alpha.
     - join my discord to participate in the testing or just play with the Alpha/Beta.
-  Realeses:
+  Releases:
     - Alpha 1-5 used same versioning by me not thinking realy.

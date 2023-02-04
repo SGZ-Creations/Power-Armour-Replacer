@@ -6,7 +6,7 @@ local recipes = {
         energy_required = 5,
         ingredients = {
             {"copper-plate", 120},
-            {"electronic-circuit", 125},
+            {"electronic-circuit", 115},
             {"steel-plate", 120},
             {"copper-cable", 125},
             {"iron-gear-wheel", 104},
@@ -21,7 +21,7 @@ local recipes = {
         ingredients = {
             {"e_mk1", 1},
             {"battery", 120},
-            {"electronic-circuit", 140},
+            {"electronic-circuit", 120},
             {"steel-plate", 140},
             {"iron-stick", 150},
         },
@@ -36,9 +36,9 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"e_mk2", 1},
-            {"battery", 166},
-            {"advanced-circuit", 177},
-            {"steel-plate", 169},
+            {"battery", 165},
+            {"advanced-circuit", 135},
+            {"steel-plate", 170},
             {"iron-stick", 175},
             {type="fluid", name="lubricant", amount=450},
         },
@@ -101,13 +101,13 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 70},
+            ["steel-plate"] = {"steel-gear-wheel", 50},
         }
     },
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"iron-gear-wheel", 70},
+            ["electronic-circuit"] = {"auromation-core", 20},
         }
     },
 })
@@ -151,10 +151,26 @@ compat.update_ingredients(recipes[3], {
             {"titanium-plate", 35}
         }
     },
+    -- 248K
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
            ["battery"] = {"lithium-ion-battery", 55},
+        }
+    },
+    -- SE K2
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["advanced-circuit"] = {"motors", 20},
+            ["lubricant"] = {"", 0},
+        }
+    }, 
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"rare-metals", 20},
+            ["lubricant"] = {"mineral-water", 100},
         }
     },
 })
