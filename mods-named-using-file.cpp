@@ -1,7 +1,7 @@
 "Mods": 
-bobelectronics, bobplates,
+bobelectronics, bobplates, bobwarfare,
 Darkstar_utilities_fixed,
 248k,
-angelssmelting, angelspetrochem
+angelssmelting, angelspetrochem,
 grand-unified-factorio-theory,
-Krastorio2, space-exploration
+Krastorio2, space-exploration,

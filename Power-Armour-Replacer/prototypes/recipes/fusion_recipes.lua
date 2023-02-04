@@ -154,6 +154,7 @@ compat.update_ingredients(recipes[1], {
             ["steel-plate"] = {"steel-bearing", 75},
         }
     },
+    --SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -188,7 +189,7 @@ compat.update_ingredients(recipes[2], {
             ["rubber"] = {"bronze-alloy", 60},
         }
     },
-    -- SE K2
+    -- SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -203,29 +204,28 @@ compat.update_ingredients(recipes[2], {
     },
 })
 compat.update_ingredients(recipes[3], {
---[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["solid-fuel"] = {"insulated-cable", 480},
+            {"solder", 50}
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            
+            ["b_mk1"] = {"brass-alloy", 100},
+            {"invar-alloy", 65}
         }
     },
+    --Anegels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            ["brass-alloy"] = {"angels-silver-wire", 120},
         }
-    }
-    ]]
+    },
     {
         dependencies = {"space-exploration"},
         replacements = {

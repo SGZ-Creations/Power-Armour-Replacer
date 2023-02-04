@@ -8,6 +8,7 @@ Date: xx.02.2023
     - Bob's continued.
   Fixes:
     - Changelog.
+    - bug with MK 10 laser
   Releases:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------

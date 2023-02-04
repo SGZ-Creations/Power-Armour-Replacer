@@ -150,16 +150,17 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 40},
+            ["copper-plate"] = {"tinned-copper-cable", 90}
         }
     },
---[[
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["iron-plate"] = {"glass", 50},
+            {"resin", 35},
         }
     },
+    --[[
     {
         dependencies = {"angelssmelting"},
         replacements = {
@@ -182,14 +183,14 @@ compat.update_ingredients(recipes[2], {
             ["electronic-circuit"] = {"basic-circuit-board", 50},
         }
     },
---[[
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["iron-plate"] = {"glass", 50},
+            ["b_mk1"] = {"insualted-cable", 120},
         }
     },
+    --[[
     {
         dependencies = {"angelssmelting"},
         replacements = {

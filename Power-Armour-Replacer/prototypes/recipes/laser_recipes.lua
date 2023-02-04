@@ -148,6 +148,28 @@ local compat = require("compatibilities/mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["electronic-circuit"] = {"basic-circuit-board", 70},
+            ["copper-plate"] = {"copper-cable", 110},
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["steel-plate"] = {"steel-bearing", 80},
+        }
+    },
+    -- Angels
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["iron-plate"] = {"steel-gear-wheel", 50},
+            {"solder", 100},
+        }
+    },
+    --SE K2
+    {
         dependencies = {"Krastorio2"},
         replacements = {
             ["iron-plate"] = {"iron-beam", 25},
@@ -162,6 +184,15 @@ compat.update_ingredients(recipes[1], {
     },
 })
 compat.update_ingredients(recipes[2], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["electronic-circuit"] = {"basic-circuit-board", 90},
+            ["engine-unit"] = {"insualted-cable", 90},
+            {"tinned-copper-cable", 80},
+        }
+    },
+    --SE K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -178,12 +209,20 @@ compat.update_ingredients(recipes[2], {
 })
 compat.update_ingredients(recipes[3], {
     {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["battery"] = {"basic-circuit-board", 100},
+        }
+    },
+    -- Misc mod
+    {
         dependencies = {"WireShortcuts"},
         replacements = {
             ["red-wire"] = {"iron-gear-wheel", 60},
             ["green-wire"] = {"steel-plate", 50},
         }
     },
+    --SE K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -203,15 +242,13 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
             {"", 50}
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["pipe"] = {"ruby-5", 50},
         }
     },
     {

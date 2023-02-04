@@ -9,7 +9,7 @@ local recipes = {
             {"electronic-circuit", 115},
             {"steel-plate", 120},
             {"copper-cable", 125},
-            {"iron-gear-wheel", 104},
+            {"iron-gear-wheel", 120},
         },
         result = "e_mk1"
     },
@@ -21,9 +21,10 @@ local recipes = {
         ingredients = {
             {"e_mk1", 1},
             {"battery", 120},
+            {"iron-gear-wheel", 60},
             {"electronic-circuit", 120},
             {"steel-plate", 140},
-            {"iron-stick", 150},
+            {"iron-stick", 70},
         },
         result = "e_mk2"
     },
@@ -83,21 +84,30 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-cable"] = {"solder", 50},
+            ["steel-plate"] = {"tined-copper-cable", 110},
         }
     },
     {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 140},
-            ["steel-plate"] = {"tined-copper-cable", 110},
+
         }
     },
+    --Darkstar
     {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
-            {"glass", 115}
+            {"silicon", 115}
         }
     },
+    {
+        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
+        replacements = {
+            ["silicon"] = {"angels-mono-silicon", 90}
+        }
+    },
+    --SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -116,15 +126,38 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"invar-alloy", 150},
-            ["steel-plate"] = {"cobalt-steel-bearing", 125}
+            ["steel-plate"] = {"cobalt-steel-bearing", 75}
         }
+    },
+    -- Angels
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["invar-alloy"] = {"bronze-alloy", 130},
+            ["cobalt-steel-bearing"] = {"brass-gear-wheel", 70},
+        },
     },
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
             {"lithium-ion-battery", 55},
         }
-    }
+    },
+    --SE-K2
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 25},
+            ["battery"] = {"motors", 25},
+        }
+    }, 
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"rare-metals", 20},
+            ["steel-plate"] = {"steel-beam", 45},
+        }
+    },
     --[[
     {
         dependencies = {"248k"},

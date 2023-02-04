@@ -72,6 +72,7 @@ compat.update_ingredients(recipes[1], {
             ["steel-plate"] = {"steel-bearing", 150},
         }
     },
+    -- Angels
     {
         dependencies = {"angelspetrochem"},
         replacements = {
@@ -90,6 +91,7 @@ compat.update_ingredients(recipes[1], {
         ["battery"] = {"el_lithium_battery", 35},
         }
     },
+    --SE K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -136,30 +138,54 @@ compat.update_ingredients(recipes[2], {
         }
     }
 })
+]]
 compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            {"tinned-copper-cable", 50},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["small-lamp"] = {"steel-bearing", 50},
+            ["iron-gear-wheel"] = {"carbon", 35},
         }
     },
+    -- Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            ["copper-cable"] = {"angels-wire-silver", 100},
+            {"silicon-wafers", 45},
         }
-    }
-    
+    },
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            ["lubricant"] = {"hydrogen", 250},
+            ["carbon"] = {"solid-carbon", 150},
+        }
+    },
+    -- SE K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 25},
+            ["small-lamp"] = {"iron-beam", 25},
+            ["lubricant"] = {"mineral-water", 100},
+        }
+    },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["electronic-circuit"] = {"automation-core", 15},
+            ["lubricant"] = {"", 0},
+        }
+    },
 })
+--[[
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
@@ -190,5 +216,5 @@ compat.update_ingredients(recipes[4], {
         }
     }
 })
-]]--
+]]
 data:extend(recipes)
