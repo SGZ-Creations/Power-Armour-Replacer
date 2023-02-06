@@ -18,6 +18,7 @@
 			"locale/sk/mod-locale.cfg",
 			"locale/de/mod-locale.cfg",
 			"local/fr/mod-locale.cfg",
+			"prototypes/recipes/z_mods-fixes_recipes.lua",
 			"control.lua"
 		]
 	}

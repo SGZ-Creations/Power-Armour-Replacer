@@ -5,10 +5,12 @@ Date: xx.02.2023
     - SE Progress.
     - K2 Progress.
     - 248k Progress.
-    - Bob's continued.
+    - Bob's continued: Armour, Exoskeleton, NVG's-Belt Immunity, recipes complet.
+    - Angels continued: Armour, Exoskeleton, NVG's-Belt Immunity, recipes complet.
   Fixes:
     - Changelog.
     - bug with MK 10 laser
+    - Not able to craft Exoskeleton MK4.
   Releases:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------

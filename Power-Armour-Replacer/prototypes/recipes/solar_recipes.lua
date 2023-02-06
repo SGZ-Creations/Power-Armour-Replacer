@@ -157,18 +157,9 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-plate"] = {"glass", 50},
-            {"resin", 35},
+            {"resin", 85},
         }
     },
-    --[[
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
-]]
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -187,18 +178,11 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-plate"] = {"glass", 50},
-            ["b_mk1"] = {"insualted-cable", 120},
+            ["b_mk1"] = {"insulated-cable", 120},
+            {"rubber", 120},
         }
     },
-    --[[
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
-]]
+    --SE-K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -215,27 +199,19 @@ compat.update_ingredients(recipes[2], {
 })
 compat.update_ingredients(recipes[3], {
     {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["copper-plate"] = {"tinned-copper-cable", 50},
+            ["battery"] = {"electronic-circuit", 40},
+            {"insulated-cable", 180},
+        }
+    },
+    {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"steel-bearing", 30},
         }
     },
---[[
-    {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    }
-]]
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -265,7 +241,7 @@ compat.update_ingredients(recipes[4], {
             ["__"] = {"", 100},
             ["--"] = {"", 35},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[5], {
     {
@@ -288,7 +264,7 @@ compat.update_ingredients(recipes[5], {
             ["__"] = {"", 100},
             ["--"] = {"", 35},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[6], {
     {

@@ -1,3 +1,14 @@
+--[[
+    Clean up phase of all mods adding Technolegy Recipes for Armour's & Equipment's.
+    making the game less confiubg on waht to craft and hopefully not have 2-4 recipes.
+    From diffrent mods giving u multiple MK3 armours in game.
+
+    At some point should u have 2-4 mods giving u armours this mod will do a clean up & convert your previous
+    Armour, Equipment to one version. Witch i want to let u modify to your likings in the end. if it ends up being to OP u can adjust it all.
+
+    Only exception with this mod is that i won't be doping anything regarding bob's vehicle Equipment as it has nothing to do with ti
+]]
+
 local function remove(type, name)
      data.raw[type][name] = nil
 end
@@ -83,12 +94,15 @@ if mods["Darkstar_utilities_fixed"] then
     data.raw.technology["terra-tech-power-armor-tech"].enabled = false
     data.raw.recipe["terra-tech-power-armor-mk2"].enabled = false
     data.raw.technology["terra-tech-power-armor-mk2-tech"].enabled = false
+    data.raw.recipe["advanced-exoskeleton-equipment"].enabled = false
+    data.raw.technology["advanced-exoskeleton-equipment"].enabled = false
     --2. section
     data.raw.recipe["terra-tech-power-armor"].hidden = true
     data.raw.technology["terra-tech-power-armor-tech"].hidden = true
     data.raw.recipe["terra-tech-power-armor-mk2"].hidden = true
     data.raw.technology["terra-tech-power-armor-mk2-tech"].hidden = true
-    
+    data.raw.recipe["advanced-exoskeleton-equipment"].hidden = true
+    data.raw.technology["advanced-exoskeleton-equipment"].hidden = true
 end
 
 if mods["bobwarfare"] then
@@ -104,19 +118,38 @@ if mods["bobwarfare"] then
     remove("technology", "bob-power-armor-mk4")
     remove("technology", "bob-power-armor-5")
 ]]
+-- Armours 1 Enabled
     data.raw.recipe["bob-power-armor-mk3"].enabled = false
     data.raw.technology["bob-power-armor-3"].enabled = false
     data.raw.recipe["bob-power-armor-mk4"].enabled = false
     data.raw.technology["bob-power-armor-4"].enabled = false
     data.raw.recipe["bob-power-armor-mk5"].enabled = false
     data.raw.technology["bob-power-armor-5"].enabled = false
--- armour section 2
+-- Armours 2 Hidden
     data.raw.recipe["bob-power-armor-mk3"].hidden = true
     data.raw.technology["bob-power-armor-3"].hidden = true
     data.raw.recipe["bob-power-armor-mk4"].hidden = true
     data.raw.technology["bob-power-armor-4"].hidden = true
     data.raw.recipe["bob-power-armor-mk5"].hidden = true
     data.raw.technology["bob-power-armor-5"].hidden = true
+-- Equipments 1 Enabled
+    data.raw.recipe["exoskeleton-equipment-2"].enabled = false
+    data.raw.technology["exoskeleton-equipment-2"].enabled = false
+    data.raw.recipe["exoskeleton-equipment-3"].enabled = false
+    data.raw.technology["exoskeleton-equipment-3"].enabled = false
+    data.raw.recipe["night-vision-equipment-2"].enabled = false
+    data.raw.technology["night-vision-equipment-2"].enabled = false
+    data.raw.recipe["night-vision-equipment-3"].enabled = false
+    data.raw.technology["night-vision-equipment-3"].enabled = false
+-- Equipments 2 Hidden
+    data.raw.recipe["exoskeleton-equipment-2"].hidden = true
+    data.raw.technology["exoskeleton-equipment-2"].hidden = true
+    data.raw.recipe["exoskeleton-equipment-3"].hidden = true
+    data.raw.technology["exoskeleton-equipment-3"].hidden = true
+    data.raw.recipe["night-vision-equipment-2"].hidden = true
+    data.raw.technology["night-vision-equipment-2"].hidden = true
+    data.raw.recipe["night-vision-equipment-3"].hidden = true
+    data.raw.technology["night-vision-equipment-3"].hidden = true
 end
 
 if mods["RampantArsenal"] then

@@ -1,5 +1,5 @@
 "Mods": 
-bobelectronics, bobplates, bobwarfare,
+bobelectronics, bobplates, bobwarfare, bobrevamp,
 Darkstar_utilities_fixed,
 248k,
 angelssmelting, angelspetrochem,

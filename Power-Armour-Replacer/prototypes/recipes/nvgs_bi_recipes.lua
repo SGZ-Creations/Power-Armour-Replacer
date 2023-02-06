@@ -79,6 +79,7 @@ compat.update_ingredients(recipes[1], {
             ["lubricant"] = {"hydrogen", 250},
         }
     },
+    --248K
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
@@ -91,7 +92,7 @@ compat.update_ingredients(recipes[1], {
         ["battery"] = {"el_lithium_battery", 35},
         }
     },
-    --SE K2
+    --SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -107,38 +108,49 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
---[[
+
 compat.update_ingredients(recipes[2], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["f_mk5"] = {"", 100},
-            {"", 50}
+            ["f_mk5"] = {"processing-unit", 100},
+            {"advanced-processing-unit", 100},
+            {"gilded-copper-cable", 260},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["sulfuric-acid"] = {"dinitrogen-tetroxide", 300},
+            ["sulfur"] = {"tungsten-plate", 200},
+            {"cobalt-steel-alloy", 200},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"angels-plate-chrome", 300},
         }
-    }
+    },
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            ["dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
+            ["sulfuric-acid"] = {"liquid-polyethylene", 300},
+        }
+    },
+    --248K
+    --[[
     {
         dependencies = {"248k"},
         replacements = {
             ["f_mk5"] = {"el_aluminium_item", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
         }
     }
-})
 ]]
+})
+
 compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
@@ -168,7 +180,7 @@ compat.update_ingredients(recipes[3], {
             ["carbon"] = {"solid-carbon", 150},
         }
     },
-    -- SE K2
+    -- SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -185,36 +197,46 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
---[[
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["f_mk5"] = {"", 100},
-            {"", 50}
+            ["processing-unit"] = {"advanced-processing-unit", 100},
+            ["f_mk5"] = {"processing-unit", 100},
+            {"gilded-copper-cable", 260},
+            {"insulated-cable", 240},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["petroleum-gas"] = {"dinitrogen-tetroxide", 300},
+            {"titanium-plate", 200},
         }
     },
+    --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"angels-plate-chrome", 300},
         }
-    }
+    },
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            ["dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
+            ["petroleum-gas"] = {"liquid-polyethylene", 300},
+        }
+    },
+    --248K
+--[[
     {
         dependencies = {"248k"},
         replacements = {
             ["f_mk5"] = {"el_aluminium_item", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
         }
     }
-})
 ]]
+})
 data:extend(recipes)

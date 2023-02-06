@@ -163,6 +163,7 @@ compat.update_ingredients(recipes[1], {
             ["rubber"] = {"tin-plate", 50},
         }
     },
+    --SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -180,13 +181,20 @@ compat.update_ingredients(recipes[1], {
 })
 compat.update_ingredients(recipes[2], {
     {
-        dependencies = {"bobelectronics", "bobplates"},
+        dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 45},
-            ["iron-gear-wheel"] = {"iron-gear-wheel", 50},
             ["copper-cable"] = {"tinned-copper-cable", 75},
+            {"insualted-cable", 60},
       }
     },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            ["iron-gear-wheel"] = {"steel-gear-wheel", 60},
+      }
+    },
+    --SE-K2
     {
         dependencies = {"space-exploration"},
         replacements = {

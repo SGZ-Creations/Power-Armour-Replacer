@@ -52,8 +52,8 @@ local recipes = {
         energy_required = 20,
         hide_from_player_crafting = true,
         ingredients = {
-            {"e_mk4", 1},
-            {"battery", 209},
+            {"e_mk3", 1},
+            {"battery", 205},
             {"plastic-bar", 190},
             {"steel-plate", 180},
             {"low-density-structure", 115},
@@ -70,7 +70,7 @@ local recipes = {
             {"e_mk4", 1},
             {"battery", 250},
             {"steel-plate", 250},
-            {"processing-unit", 107},
+            {"processing-unit", 110},
             {"rocket-control-unit", 150},
             {"low-density-structure", 150},
         },
@@ -98,13 +98,13 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
-            {"silicon", 115}
+            {"silicon", 115},
         }
     },
     {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
-            ["silicon"] = {"angels-mono-silicon", 90}
+            ["silicon"] = {"angels-mono-silicon", 90},
         }
     },
     --SE-K2
@@ -126,7 +126,8 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"invar-alloy", 150},
-            ["steel-plate"] = {"cobalt-steel-bearing", 75}
+            ["steel-plate"] = {"cobalt-steel-bearing", 75},
+            ["iron-gear-wheel"] = {"steel-bearing", 60},
         }
     },
     -- Angels
@@ -137,12 +138,34 @@ compat.update_ingredients(recipes[2], {
             ["cobalt-steel-bearing"] = {"brass-gear-wheel", 70},
         },
     },
+    --Darkstar
+    {
+        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
+        replacements = {
+            {"silicon", 115},
+        }
+    },
+    {
+        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
+        replacements = {
+            ["silicon"] = {"angels-mono-silicon", 90},
+        }
+    },
+    --248K
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            {"lithium-ion-battery", 55},
+            ["battery"] = {"aluminium-plate", 55},
         }
     },
+--[[
+    {
+        dependencies = {"248k"},
+        replacements = {
+            {"", 55},
+        }
+    }
+]]
     --SE-K2
     {
         dependencies = {"space-exploration"},
@@ -158,14 +181,6 @@ compat.update_ingredients(recipes[2], {
             ["steel-plate"] = {"steel-beam", 45},
         }
     },
-    --[[
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"", 55},
-        }
-    }
-    ]]
 })
 compat.update_ingredients(recipes[3], {
     {
@@ -173,7 +188,7 @@ compat.update_ingredients(recipes[3], {
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 125},
             ["steel-plate"] = {"gilded-copper-cable", 200},
-            {"invar-alloy", 155},
+            ["iron-gear-wheel"] = {"invar-alloy", 155},
             ["lubricant"] = {"", 0},
         }
     },
@@ -181,7 +196,20 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"titanium-bearing", 75},
-            {"titanium-plate", 35}
+            {"titanium-plate", 125}
+        }
+    },
+    {
+        dependencies = {"Darkstar_utilities_fixed"},
+        replacements = {
+            {"diamond", 6},
+        }
+    },
+    --Angels
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            {"angels-plate-chrome", 200},
         }
     },
     -- 248K
@@ -191,7 +219,7 @@ compat.update_ingredients(recipes[3], {
            ["battery"] = {"lithium-ion-battery", 55},
         }
     },
-    -- SE K2
+    -- SE-K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -207,53 +235,74 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
---[[
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            {"processing-unit", 120}
+        }
+    },
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            ["steel-plate"] = {"heat-shield-tile", 135},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["plastic-bar"] = {"cobalt-steel-bearing", 120},
+            ["battery"] = {"silver-zinc-battery", 150},
+            {"tungsten-gear-wheel", 115},
         }
     },
+    --Clowns
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-osmium", 300},
+            {"clowns-plate-magnesium", 300},
+        }
+    },
+    --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"angels-plate-chrome", 300},
         }
     }
 })
---[[
 compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["processing-unit"] = {"advanced-processing-unit", 120},
+            {"gilded-copper-cable", 90},
+            {"insulated-cable", 660},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["steel-plate"] = {"copper-tungsten-alloy", 200},
+            ["battery"] = {"tungsten-carbide", 200},
+        }
+            
+    },
+    --Clowns
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-osmium", 500},
+            {"clowns-plate-depleted-uranium", 500},
         }
     },
+    --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"angels-plate-chrome", 500},
         }
-    }
+    },
 })
-]]
 data:extend(recipes)

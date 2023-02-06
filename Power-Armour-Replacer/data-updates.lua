@@ -70,7 +70,10 @@ compat.update_technologies{
     ["bobrevamp"] = {
         ["armour_8"] = {
             "heat-shield",
-        }
+        },
+        ["exoskeleton_4"] = {
+
+        },
     },
     ["bobplates"] = {
         ["armour_2"] = {
@@ -114,7 +117,6 @@ compat.update_technologies{
         },
         ["armour_2"] = {
             "angels-steel-smelting-1",
-            ["invar-processing"] = "steel-axe",
         },
         ["armour_3"] = {
             ["zinc-processing"] = "angels-stone-smelting-1",
@@ -141,14 +143,25 @@ compat.update_technologies{
             ["nitinol-processing"] = "angels-nitinol-smelting-1",
             "angels-stone-smelting-3"
         },
+        ["exoskeleton_3"] = {
+            "angels-chrome-smelting-1"
+        },
     },
     ["angelspetrochem"] = {
         ["armour_4"] = {
             "angels-stone-smelting-2",
         },
     },
+-- Hey if u came here to remove the reserch i have added items from this reserch to craft it.
+-- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove.
     ["Clowns-Processing"] = {
         ["armour_10"] = {
+            "advanced-depleted-uranium-smelting-1",
+        },
+        ["exoskeleton_4"] = {
+            "advanced-osmium-smelting",
+        },
+        ["exoskeleton_5"] = {
             "advanced-depleted-uranium-smelting-1",
         },
     },

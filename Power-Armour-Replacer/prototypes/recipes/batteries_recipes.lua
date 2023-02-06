@@ -218,7 +218,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            {"lithium-ion-battery", 30},
+            ["battery"] = {"lithium-ion-battery", 30},
         }
     },
     {
