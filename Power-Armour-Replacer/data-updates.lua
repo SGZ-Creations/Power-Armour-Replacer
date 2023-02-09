@@ -67,8 +67,8 @@ compat.update_technologies{
         ["armour_3"] = {
             ["advanced-electronics"] = "electronics"
         },
-        ["armour_4"] = {
-            "advanced-electronics"
+        ["armour_5"] = {
+            ["advanced-electronics-2"] = "advanced-electronics"
         },
         ["armour_7"] = {
             "advanced-electronics-2"
@@ -103,7 +103,7 @@ compat.update_technologies{
             "cobalt-processing",
         },
         ["armour_4"] = {
-            "invar-processing"
+            ["advanced-electronics"] = "invar-processing"
         },
         ["armour_5"] = {
             ["electric-engine"] = "gem-processing-2"

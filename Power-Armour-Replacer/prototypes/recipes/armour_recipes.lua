@@ -350,7 +350,7 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"electronic-circuit", 100},
+            ["advanced-circuit"] = {"electronic-circuit", 100},
         }
     },
     -- Angels
@@ -360,6 +360,7 @@ compat.update_ingredients(recipes[4], {
             ["gunmetal-alloy"] = {"angels-wire-silver", 55},
             ["cobalt-steel-alloy"] = {"solder", 200},
             ["engine-unit"] = {"concrete-brick", 135},
+            ["plastic-bar"] = {"insulated-cable", 180},
         }
     },
     -- SE K2
@@ -402,7 +403,7 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            {"aluminium-plate", 50},
+            ["b_mk3"] = {"aluminium-plate", 50},
             {"sapphire-5", 50},
             {"ruby-5", 50},
         }
