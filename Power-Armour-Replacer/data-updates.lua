@@ -49,8 +49,26 @@ compat.update_technologies{
         },
     },
     ["bobelectronics"] = {
-        ["armour_5"] = {
-            ["advanced-electronics-2"] = "advanced-electronics"
+        ["laser_3"] = {
+            ["advanced-electronics"] = "electronics"
+        },
+        ["laser_4"] = {
+            ["advanced-electronics"] = "gem-processing-2"
+        },
+        ["laser_5"] = {
+            "advanced-electronics"
+        },
+        ["battery_3"] = {
+            ["advanced-electronics"] = "electronics"
+        },
+        ["battery_5"] = {
+            "advanced-electronics"
+        },
+        ["armour_3"] = {
+            ["advanced-electronics"] = "electronics"
+        },
+        ["armour_4"] = {
+            "advanced-electronics"
         },
         ["armour_7"] = {
             "advanced-electronics-2"

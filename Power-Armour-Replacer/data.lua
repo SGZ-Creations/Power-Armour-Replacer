@@ -35,3 +35,4 @@
 
 --other--
     require("prototype.achievements")
+    require("prototype.armour_equipment_category")

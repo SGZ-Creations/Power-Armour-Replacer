@@ -196,6 +196,7 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"titanium-bearing", 75},
+            ["battery"] = {"lithium-ion-battery", 90},
             {"titanium-plate", 125}
         }
     },

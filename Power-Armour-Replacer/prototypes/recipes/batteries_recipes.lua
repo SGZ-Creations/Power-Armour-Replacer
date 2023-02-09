@@ -22,7 +22,7 @@ local recipes = {
             {"b_mk1", 1},
             {"electronic-circuit", 15},
             {"copper-plate", 35},
-            {"battery", 20},
+            {"steel-plate", 30},
         },
         result = "b_mk2"
     },
@@ -167,12 +167,6 @@ compat.update_ingredients(recipes[1], {
         }
     },
     {
-        dependencies = {"248k"},
-        replacements = {
-            {"battery", 25},
-        }
-    },
-    {
         dependencies = {"space-exploration"},
         replacements = {
             ["electronic-circuit"] = {"automation-core", 6},
@@ -193,12 +187,6 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobplates"},
         replacements = {
             {"lead-plates", 35},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            { "ion-lithium-battery", 50},
         }
     },
     {

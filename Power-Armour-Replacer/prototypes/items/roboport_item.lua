@@ -112,16 +112,16 @@ local charging_energy =  {
 }
 
 local orders = {
-    "gaz[roboport]-aa[armour-replacer]",--1
-    "gbz[roboport]-aa[armour-replacer]",--2
-    "gcz[roboport]-aa[armour-replacer]",--3
-    "gdz[roboport]-aa[armour-replacer]",--4
-    "gez[roboport]-aa[armour-replacer]",--5
-    "gfz[roboport]-aa[armour-replacer]",--6
-    "ggz[roboport]-aa[armour-replacer]",--7
-    "ghz[roboport]-aa[armour-replacer]",--8
-    "giz[roboport]-aa[armour-replacer]",--9
-    "gjz[roboport]-aa[armour-replacer]",--10
+    "ea[roboport]-aa[armour-replacer]",--1
+    "eb[roboport]-aa[armour-replacer]",--2
+    "ec[roboport]-aa[armour-replacer]",--3
+    "ed[roboport]-aa[armour-replacer]",--4
+    "ee[roboport]-aa[armour-replacer]",--5
+    "ef[roboport]-aa[armour-replacer]",--6
+    "eg[roboport]-aa[armour-replacer]",--7
+    "eh[roboport]-aa[armour-replacer]",--8
+    "ei[roboport]-aa[armour-replacer]",--9
+    "ej[roboport]-aa[armour-replacer]",--10
 }
 
 local i = 1
@@ -135,7 +135,7 @@ while i < 11 do
             stack_size = 20,
             icon_mipmaps = 4,
             order = orders[i],
-            subgroup = "equipment",
+            subgroup = "replacer_item",
             placed_as_equipment_result = "r_mk" .. tostring(i),
         },
         {

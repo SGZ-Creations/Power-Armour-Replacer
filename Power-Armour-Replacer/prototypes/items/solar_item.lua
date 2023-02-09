@@ -38,16 +38,16 @@ local icon = {
 }
 
 local orders = {
-    "faz[energy-source]-aa[armour-replacer]",
-    "fbz[energy-source]-ab[armour-replacer]",
-    "fcz[energy-source]-ac[armour-replacer]",
-    "fdz[energy-source]-ad[armour-replacer]",
-    "fez[energy-source]-ae[armour-replacer]",
-    "ffz[energy-source]-af[armour-replacer]",
-    "fgz[energy-source]-ag[armour-replacer]",
-    "fhz[energy-source]-ah[armour-replacer]",
-    "fiz[energy-source]-ai[armour-replacer]",
-    "fjz[energy-source]-aj[armour-replacer]",
+    "gaz[energy-source]-aa[armour-replacer]",
+    "gbz[energy-source]-ab[armour-replacer]",
+    "gcz[energy-source]-ac[armour-replacer]",
+    "gdz[energy-source]-ad[armour-replacer]",
+    "gez[energy-source]-ae[armour-replacer]",
+    "gfz[energy-source]-af[armour-replacer]",
+    "ggz[energy-source]-ag[armour-replacer]",
+    "ghz[energy-source]-ah[armour-replacer]",
+    "giz[energy-source]-ai[armour-replacer]",
+    "gjz[energy-source]-aj[armour-replacer]",
 }
 
 local powers = {
@@ -72,7 +72,7 @@ while i < 11 do
             icon = icon[i],
             icon_size = 64, icon_mipmaps = 4,
             placed_as_equipment_result = "p-s_mk" .. tostring(i),
-            subgroup = "equipment",
+            subgroup = "replacer_item",
             order = orders[i],
             stack_size = 20
         },
@@ -106,7 +106,7 @@ while i < 11 do
                 usage_priority = "primary-output"
             },
             power = powers[i],
-            categories = { "armor" }
+            categories = {"armor"}
         }
     })
     i = i + 1

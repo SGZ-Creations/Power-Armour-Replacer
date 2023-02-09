@@ -1,459 +1,471 @@
-data:extend(
-{
-  --[[
-  {
-    if mods["Krastorio2"] then 
-      add resistances =
+
+local inventory_bonus = {
+  "50", --0
+  "100", --1
+  "150", --2
+  "200", --3
+  "250", --4
+  "300", --5
+  "350", --6
+  "400", --7
+  "450", --8
+  "500", --9
+}
+local physical_decrease = {
+  "20", --0
+  "40", --1
+  "60", --2
+  "80", --3
+  "100", --4
+  "120", --5
+  "140", --6
+  "160", --7
+  "180", --8
+  "200", --9
+}
+local physical_percent = {
+  "10", --0
+  "20", --1
+  "30", --2
+  "40", --3
+  "50", --4
+  "60", --5
+  "70", --6
+  "80", --7
+  "90", --8
+  "100", --9
+}
+local acid_decrease = {
+  "50", --0
+  "50", --1
+  "50", --2
+  "50", --3
+  "50", --4
+  "50", --5
+  "50", --6
+  "50", --7
+  "50", --8
+  "50", --9
+}
+local acid_percent = {
+  "30", --1
+  "30", --2
+  "30", --3
+  "30", --4
+  "30", --5
+  "30", --6
+  "30", --7
+  "30", --8
+  "30", --9
+  "30", --0
+}
+local explosion_decrease = {
+  "30", --0
+  "30", --1
+  "30", --2
+  "30", --3
+  "30", --4
+  "30", --5
+  "30", --6
+  "30", --7
+  "30", --8
+  "30", --9
+}
+local explosion_percent = {
+  "35", --0
+  "35", --1
+  "35", --2
+  "35", --3
+  "35", --4
+  "35", --5
+  "35", --6
+  "35", --7
+  "35", --8
+  "35", --9
+}
+local fire_decrease = {
+  "0", --0
+  "0", --1
+  "0", --2
+  "0", --3
+  "0", --4
+  "0", --5
+  "0", --6
+  "0", --7
+  "0", --8
+  "0", --9
+}
+local fire_percent = {
+  "40", --0
+  "40", --1
+  "40", --2
+  "40", --3
+  "40", --4
+  "40", --5
+  "40", --6
+  "40", --7
+  "40", --8
+  "40", --9
+}
+local poison_decrease = {
+  "0",--0
+  "0",--1
+  "0",--2
+  "0",--3
+  "0",--4
+  "0",--5
+  "0",--6
+  "0",--7
+  "0",--8
+  "0",--9
+}
+local poison_percent = {
+  "20",--0
+  "20",--1
+  "20",--2
+  "20",--3
+  "20",--4
+  "20",--5
+  "20",--6
+  "20",--7
+  "20",--8
+  "20",--9
+}
+local electric_decrease = {
+  "0",--0
+  "0",--1
+  "0",--2
+  "0",--3
+  "0",--4
+  "0",--5
+  "0",--6
+  "0",--7
+  "0",--8
+  "0",--9
+}
+local electric_percent = {
+  "30",--0
+  "40",--1
+  "50",--2
+  "60",--3
+  "70",--4
+  "80",--5
+  "90",--6
+  "100",--7
+  "110",--8
+  "120",--9
+}
+local impact_decrease = {
+  "0",--0
+  "0",--1
+  "0",--2
+  "0",--3
+  "0",--4
+  "0",--5
+  "0",--6
+  "0",--7
+  "0",--8
+  "0",--9
+}
+local impact_percent = {
+  "20",--0
+  "20",--1
+  "20",--2
+  "20",--3
+  "20",--4
+  "20",--5
+  "20",--6
+  "20",--7
+  "20",--8
+  "20",--9
+}
+local laser_decrease = {
+  "5",--0
+  "5",--1
+  "5",--2
+  "5",--3
+  "5",--4
+  "5",--5
+  "5",--6
+  "5",--7
+  "5",--8
+  "5",--9
+}
+local laser_percent = {
+  "20",--0
+  "20",--1
+  "20",--2
+  "20",--3
+  "20",--4
+  "20",--5
+  "20",--6
+  "20",--7
+  "20",--8
+  "20",--9
+}
+local order = {
+  "aaz[a_mk1]-aa[armour-replacer]",
+  "abz[a_mk2]-ab[armour-replacer]",
+  "acz[a_mk3]-ab[armour-replacer]",
+  "adz[a_mk4]-ab[armour-replacer]",
+  "aez[a_mk5]-ab[armour-replacer]",
+  "afz[a_mk6]-ab[armour-replacer]",
+  "agz[a_mk7]-ab[armour-replacer]",
+  "ahz[a_mk8]-ab[armour-replacer]",
+  "aiz[a_mk9]-ab[armour-replacer]",
+  "ajz[a_mk10]-ab[armour-replacer]", 
+}
+
+local icon = {
+  "__Power-Armour-Replacer__/texture/items/power-armor.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk2.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk3.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk4.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk5.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk6.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk7.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk8.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk9.png",
+  "__Power-Armour-Replacer__/texture/items/power-armor-mk10.png",
+}
+
+local grid_name = {
+  "sgz-a1-equipment-grid",
+  "sgz-a2-equipment-grid",
+  "sgz-a3-equipment-grid",
+  "sgz-a4-equipment-grid",
+  "sgz-a5-equipment-grid",
+  "sgz-a6-equipment-grid",
+  "sgz-a7-equipment-grid",
+  "sgz-a8-equipment-grid",
+  "sgz-a9-equipment-grid",
+  "sgz-a10-equipment-grid",
+}
+
+if mods["bobwarfare"] then
+  local plasma_decrease = {
+    "15",
+    "30",
+    "45",
+    "60",
+    "75",
+    "100",
+    "115",
+    "130",
+    "145",
+    "160",
+  }
+  local plasma_percent = {
+    "50",
+    "55",
+    "60",
+    "65",
+    "70",
+    "75",
+    "80",
+    "85",
+    "90",
+    "95",
+  }
+  local pierce_decrease = {
+    "10",
+    "10",
+    "10",
+    "10",
+    "10",
+    "10",
+    "10",
+    "10",
+    "10",
+    "10",
+  }
+  local pierce_percent = {
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+  }
+
+  local a = 1
+  while a < 11 do
+    data:extend({
       {
-        {
-          type = "radioactive",
-          decrease = 100,
-          percent = 10
-        }
+        type = "armor",
+        name = "a_mk" .. tostring(a),
+        icon = icon[a],
+        icon_size = 256, icon_mipmaps = 4,
+        resistances = {
+          {
+            type = "plasma",
+            decrease = plasma_decrease[a],
+            percent = plasma_percent[a], 
+          },
+          {
+            type = "bob-pierce",
+            decrease = pierce_decrease[a],
+            percent = pierce_percent[a], 
+          }, 
+          {
+            type = "physical",
+            decrease = physical_decrease[a],
+            percent = physical_percent[a],
+          },
+          {
+            type = "acid",
+            decrease = acid_decrease[a],
+            percent = acid_percent[a],
+          },
+          {
+            type = "explosion",
+            decrease = explosion_decrease[a],
+            percent = explosion_percent[a],
+          },
+          {
+            type = "fire",
+            decrease = fire_decrease[a],
+            percent = fire_percent[a], 
+          }, 
+          {
+            type = "electric",
+            decrease = electric_decrease[a],
+            percent = electric_percent[a], 
+          },
+          {
+            type = "impact",
+            decrease = impact_decrease[a],
+            percent = impact_percent[a], 
+          },
+          {
+            type = "laser",
+            decrease = laser_decrease[a],
+            percent = laser_percent[a], 
+          },
+          {
+            type = "poison",
+            decrease = poison_decrease[a],
+            percent = poison_percent[a], 
+          },  
+        },
+        subgroup = "replacer_item",
+        order = order[a],
+        stack_size = 1,
+        infinite = true,
+        equipment_grid = grid_name[a],
+        inventory_size_bonus = inventory_bonus[a],
+        open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
+        close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
       },
-  },
-  ]]
-  {
-    type = "armor",
-    name = "a_mk1",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
+    })
+    a = a + 1 
+  end
+  
+else
+  local a = 1
+  while a < 11 do
+    data:extend({
       {
-        type = "physical",
-        decrease = 6,
-        percent = 30
+        type = "armor",
+        name = "a_mk" .. tostring(a),
+        icon = icon[a],
+        icon_size = 256, icon_mipmaps = 4,
+        resistances = { 
+          {
+            type = "physical",
+            decrease = physical_decrease[a],
+            percent = physical_percent[a],
+          },
+          {
+            type = "acid",
+            decrease = acid_decrease[a],
+            percent = acid_percent[a],
+          },
+          {
+            type = "explosion",
+            decrease = explosion_decrease[a],
+            percent = explosion_percent[a],
+          },
+          {
+            type = "fire",
+            decrease = fire_decrease[a],
+            percent = fire_percent[a], 
+          }, 
+          {
+            type = "electric",
+            decrease = electric_decrease[a],
+            percent = electric_percent[a], 
+          },
+          {
+            type = "impact",
+            decrease = impact_decrease[a],
+            percent = impact_percent[a], 
+          },
+          {
+            type = "laser",
+            decrease = laser_decrease[a],
+            percent = laser_percent[a], 
+          },
+          {
+            type = "poison",
+            decrease = poison_decrease[a],
+            percent = poison_percent[a], 
+          },
+        },
+        subgroup = "replacer_item",
+        order = order[a],
+        stack_size = 1,
+        infinite = true,
+        equipment_grid = grid_name[a],
+        inventory_size_bonus = inventory_bonus[a],
+        open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
+        close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
       },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 50
-      },
-      {
-        type = "explosion",
-        decrease = 30,
-        percent = 35
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 40
-      }
-    },
-    subgroup = "armor",
-    order = "aaz[a_mk1]-aa[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a1-equipment-grid",
-    inventory_size_bonus = 50,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk2",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk2.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "abz[a_mk2]-ab[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a2-equipment-grid",
-    inventory_size_bonus = 100,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk3",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk3.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 20,
-        percent = 50
-      },
-      {
-        type = "acid",
-        decrease = 10,
-        percent = 80
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 60
-      },
-      {
-        type = "fire",
-        decrease = 10,
-        percent = 80
-      }
-    },
-    subgroup = "armor",
-    order = "acz[a_mk3]-ac[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a3-equipment-grid",
-    inventory_size_bonus = 150,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk4",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk4.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "adz[a_mk4]-ad[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a4-equipment-grid",
-    inventory_size_bonus = 200,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk5",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk5.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "aez[a_mk5]-ae[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a5-equipment-grid",
-    inventory_size_bonus = 250,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk6",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk6.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "afz[a_mk6]-af[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a6-equipment-grid",
-    inventory_size_bonus = 300,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk7",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk7.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "agz[a_mk7]-ag[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a7-equipment-grid",
-    inventory_size_bonus = 350,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk8",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk8.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "ahz[a_mk8]-ah[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a8-equipment-grid",
-    inventory_size_bonus = 400,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk9",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk9.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "aiz[a_mk9]-ai[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a9-equipment-grid",
-    inventory_size_bonus = 450,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-  {
-    type = "armor",
-    name = "a_mk10",
-    icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk10.png",
-    icon_size = 256, icon_mipmaps = 4,
-    resistances =
-    {
-      {
-        type = "physical",
-        decrease = 8,
-        percent = 30
-      },
-      {
-        type = "acid",
-        decrease = 0,
-        percent = 60
-      },
-      {
-        type = "explosion",
-        decrease = 40,
-        percent = 40
-      },
-      {
-        type = "fire",
-        decrease = 0,
-        percent = 60
-      }
-    },
-    subgroup = "armor",
-    order = "ajz[a_mk10]-aj[armour-replacer]",
-    stack_size = 1,
-    infinite = true,
-    equipment_grid = "sgz-a10-equipment-grid",
-    inventory_size_bonus = 500,
-    open_sound = {filename =  "__base__/sound/armor-open.ogg", volume = 1},
-    close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
-  },
-})
-data:extend(
-  {
+    })
+    a = a + 1 
+  end
+end
+
+local width = {
+  "10",
+  "20",
+  "30",
+  "40",
+  "50",
+  "60",
+  "70",
+  "80",
+  "90",
+  "100",
+}
+
+local height = {
+  "10",
+  "20",
+  "30",
+  "40",
+  "50",
+  "60",
+  "70",
+  "80",
+  "90",
+  "100",
+}
+
+local g = 1
+while g < 11 do
+  data:extend({
     {
       type = "equipment-grid",
       equipment_categories = {"armor"},
-      name = "sgz-a1-equipment-grid",
-      width = 10,
-      height = 10,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a2-equipment-grid",
-      width = 20,
-      height = 20,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a3-equipment-grid",
-      width = 30,
-      height = 30,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a4-equipment-grid",
-      width = 40,
-      height = 40,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a5-equipment-grid",
-      width = 50,
-      height = 50,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a6-equipment-grid",
-      width = 60,
-      height = 60,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a7-equipment-grid",
-      width = 70,
-      height = 70,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a8-equipment-grid",
-      width = 80,
-      height = 80,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a9-equipment-grid",
-      width = 90,
-      height = 90,
-    },
-    {
-      type = "equipment-grid",
-      equipment_categories = {"armor"},
-      name = "sgz-a10-equipment-grid",
-      width = 100,
-      height = 100,
+      name = grid_name[g],
+      width = width[g],
+      height = height[g],
     },
   })
+  g = g + 1
+end

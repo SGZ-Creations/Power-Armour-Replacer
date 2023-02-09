@@ -1,18 +1,35 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.21
+Date: 09.02.2023
+  Features:
+    - Added a New item grupe for my mod so i will now need to use my new groupe.
+    - Added comaptibility for bobs resistances.
+    - Added more base game resistances. 
+  Changes:
+    - Armour_item file got a rework. (internal)
+    - nvgs_bi_item file got a rework. (internal)
+  Tweaks:
+    - Comaptibility Exoskeleton recipe bob. 
+    - Comaptibility Armour recipe bob.
+    - Battery, tech, recipe.
+    - Laser, Tech,  
+  Thanks:
+    - Discord @Toby1364 For help with the Rework & Compatibility.
+  Releases:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.20
-Date: xx.02.2023
+Date: 06.02.2023
   Compatibilities:
     - SE Progress.
     - K2 Progress.
     - 248k Progress.
-    - Bob's continued: Armour, Exoskeleton, NVG's-Belt Immunity, recipes complet.
+    - Bob's continued: Armour, Exoskeleton, NVG's-Belt Immunity, Roboports recipes completed.
     - Angels continued: Armour, Exoskeleton, NVG's-Belt Immunity, recipes complet.
   Fixes:
     - Changelog.
     - bug with MK 10 laser
     - Not able to craft Exoskeleton MK4.
-  Releases:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.19
 Date: 02.02.2023
@@ -205,7 +222,7 @@ Date: 26.10.2022
     - Bob's:
     - Angels:
   Fixes:
-    - Compatibility was using lot of ram inf loop 50GB seen. rewriten all of that now.
+    - Compatibility memory leak, 50GB seen. Rewriten all of that now.
   Usage:
     - Will not remove item currently existing. Will only remove new crafting capabilities.
 ---------------------------------------------------------------------------------------------------

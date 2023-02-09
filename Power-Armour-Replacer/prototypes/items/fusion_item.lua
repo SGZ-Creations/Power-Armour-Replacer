@@ -52,16 +52,16 @@ local power = {
 }
 
 local order = {
-  "daz[energy-source]-aa[armour-replacer]",
-  "dbz[energy-source]-aa[armour-replacer]",
-  "dcz[energy-source]-aa[armour-replacer]",
-  "ddz[energy-source]-aa[armour-replacer]",
-  "dez[energy-source]-aa[armour-replacer]",
-  "dfz[energy-source]-aa[armour-replacer]",
-  "dgz[energy-source]-aa[armour-replacer]",
-  "dhz[energy-source]-aa[armour-replacer]",
-  "diz[energy-source]-aa[armour-replacer]",
-  "djz[energy-source]-aa[armour-replacer]",
+  "caz[energy-source]-aa[armour-replacer]",
+  "cbz[energy-source]-aa[armour-replacer]",
+  "ccz[energy-source]-aa[armour-replacer]",
+  "cdz[energy-source]-aa[armour-replacer]",
+  "cez[energy-source]-aa[armour-replacer]",
+  "cfz[energy-source]-aa[armour-replacer]",
+  "cgz[energy-source]-aa[armour-replacer]",
+  "chz[energy-source]-aa[armour-replacer]",
+  "ciz[energy-source]-aa[armour-replacer]",
+  "cjz[energy-source]-aa[armour-replacer]",
 }
 
 local i = 1
@@ -111,7 +111,7 @@ while i < 11 do
       icon_size = 64,
       stack_size = 20,
       order = order[i],
-      subgroup = "equipment",
+      subgroup = "replacer_item",
       placed_as_equipment_result = "f_mk" .. tostring(i),
     }
   })

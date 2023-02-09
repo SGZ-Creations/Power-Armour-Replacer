@@ -66,49 +66,49 @@ local buffer_capacity = {
 local i = 1
 while i < 11 do
 
-    data:extend({
+data:extend({
+    {
+        type = "item",
+        name = "b_mk" .. tostring(i),
+        icon = icon[i],
+        icon_size = 64,
+        stack_size = 20,
+        order = order[i],
+        subgroup = "replacer_item",
+        placed_as_equipment_result = "b_mk" .. tostring(i),
+    },
+    {
+        type = "battery-equipment",
+        name = "b_mk" .. tostring(i),
+        sprite =
         {
-            type = "item",
-            name = "b_mk" .. tostring(i),
-            icon = icon[i],
-            icon_size = 64,
-            stack_size = 20,
-            order = order[i],
-            subgroup = "equipment",
-            placed_as_equipment_result = "b_mk" .. tostring(i),
-        },
-        {
-            type = "battery-equipment",
-            name = "b_mk" .. tostring(i),
-            sprite =
+            filename = graphics[i],
+            width = 32,
+            height = 64,
+            priority = "medium",
+            hr_version =
             {
-                filename = graphics[i],
-                width = 32,
-                height = 64,
+                filename = graphics2[i],
+                width = 64,
+                height = 128,
                 priority = "medium",
-                hr_version =
-                {
-                    filename = graphics2[i],
-                    width = 64,
-                    height = 128,
-                    priority = "medium",
-                    scale = 0.5
-                }
-            },
-            shape =
-            {
-                width = 1,
-                height = 2,
-                type = "full"
-            },
-            energy_source =
-            {
-                type = "electric",
-                buffer_capacity = buffer_capacity[i],
-                usage_priority = "tertiary"
-            },
-            categories = { "armor" }
-        }
-    })
-    i = i + 1
+                scale = 0.5
+            }
+        },
+        shape =
+        {
+            width = 1,
+            height = 2,
+            type = "full"
+        },
+        energy_source =
+        {
+            type = "electric",
+            buffer_capacity = buffer_capacity[i],
+            usage_priority = "tertiary"
+        },
+        categories = { "armor" }
+    }
+})
+i = i + 1
 end

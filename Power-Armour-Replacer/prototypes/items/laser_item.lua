@@ -38,16 +38,16 @@ local icon = {
 }
 
 local orders = {
-    "eaz[active-defense]-aa[armour-replacer]",--1
-    "ebz[active-defense]-ab[armour-replacer]",--2
-    "ecz[active-defense]-ac[armour-replacer]",--3
-    "edz[active-defense]-ad[armour-replacer]",--4
-    "eez[active-defense]-ae[armour-replacer]",--5
-    "efz[active-defense]-af[armour-replacer]",--6
-    "egz[active-defense]-ag[armour-replacer]",--7
-    "ehz[active-defense]-ah[armour-replacer]",--8
-    "eiz[active-defense]-ai[armour-replacer]",--9
-    "ejz[active-defense]-aj[armour-replacer]",--10
+    "daz[active-defense]-aa[armour-replacer]",--1
+    "dbz[active-defense]-ab[armour-replacer]",--2
+    "dcz[active-defense]-ac[armour-replacer]",--3
+    "ddz[active-defense]-ad[armour-replacer]",--4
+    "dez[active-defense]-ae[armour-replacer]",--5
+    "dfz[active-defense]-af[armour-replacer]",--6
+    "dgz[active-defense]-ag[armour-replacer]",--7
+    "dhz[active-defense]-ah[armour-replacer]",--8
+    "diz[active-defense]-ai[armour-replacer]",--9
+    "djz[active-defense]-aj[armour-replacer]",--10
 }
 
 local cooldown = {
@@ -132,7 +132,7 @@ while i < 11 do
             icon = icon[i],
             icon_size = 64, icon_mipmaps = 4,
             placed_as_equipment_result = "l_mk" .. tostring(i),
-            subgroup = "military-equipment",
+            subgroup = "replacer_item",
             order = orders[i],
             default_request_amount = 10,
             stack_size = 20

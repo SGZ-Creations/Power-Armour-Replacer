@@ -34,7 +34,7 @@ data:extend({
         recipe = "l_mk2"
       },
     },
-    prerequisites = {"laser_1", "battery"},
+    prerequisites = {"laser_1"},
     unit =
     {
       count = 500,
@@ -57,7 +57,7 @@ data:extend({
         recipe = "l_mk3"
       },
     },
-    prerequisites = {"laser_2", "advanced-electronics"},
+    prerequisites = {"laser_2", },
     unit =
     {
       count = 500,
@@ -81,7 +81,7 @@ data:extend({
         recipe = "l_mk4"
       },
     },
-    prerequisites = {"laser_3",},
+    prerequisites = {"laser_3", "advanced-electronics"},
     unit =
     {
       count = 500,

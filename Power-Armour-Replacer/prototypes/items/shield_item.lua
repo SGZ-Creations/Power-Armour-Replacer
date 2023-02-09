@@ -38,16 +38,16 @@ local icon = {
 }
 
 local order = {
-  "haz[energy-shield-mk2]-aa[armour-replacer]",--1
-  "hbz[energy-shield-mk2]-ab[armour-replacer]",--2
-  "hcz[energy-shield-mk2]-ac[armour-replacer]",--3
-  "hdz[energy-shield-mk2]-ad[armour-replacer]",--4
-  "hez[energy-shield-mk2]-ae[armour-replacer]",--5
-  "hfz[energy-shield-mk2]-af[armour-replacer]",--6
-  "hgz[energy-shield-mk2]-ag[armour-replacer]",--7
-  "hhz[energy-shield-mk2]-ah[armour-replacer]",--8
-  "hiz[energy-shield-mk2]-ai[armour-replacer]",--9
-  "hjz[energy-shield-mk2]-aj[armour-replacer]",--10
+  "faz[energy-shield-mk2]-aa[armour-replacer]",--1
+  "fbz[energy-shield-mk2]-ab[armour-replacer]",--2
+  "fcz[energy-shield-mk2]-ac[armour-replacer]",--3
+  "fdz[energy-shield-mk2]-ad[armour-replacer]",--4
+  "fez[energy-shield-mk2]-ae[armour-replacer]",--5
+  "ffz[energy-shield-mk2]-af[armour-replacer]",--6
+  "fgz[energy-shield-mk2]-ag[armour-replacer]",--7
+  "fhz[energy-shield-mk2]-ah[armour-replacer]",--8
+  "fiz[energy-shield-mk2]-ai[armour-replacer]",--9
+  "fjz[energy-shield-mk2]-aj[armour-replacer]",--10
 }
 
 -- Shield value.
@@ -108,7 +108,7 @@ local i = 1
 while i < 11 do
   data:extend({
     {
-      subgroup = "equipment",
+      subgroup = "replacer_item",
       type = "energy-shield-equipment",
       name = "s_mk" .. tostring(i),
       sprite =
@@ -151,7 +151,7 @@ while i < 11 do
       stack_size = 20,
       placed_as_equipment_result = "s_mk" .. tostring(i),
       order = order[i],
-      subgroup = "equipment",
+      subgroup = "replacer_item",
     }
   })
   i = i + 1

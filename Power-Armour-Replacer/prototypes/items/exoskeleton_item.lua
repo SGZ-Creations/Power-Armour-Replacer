@@ -48,11 +48,11 @@ local energy_consumption = {
 }
 
 local orders = {
-    "caz[exoskeleton]-aa[armour-replacer]",
-    "cbz[exoskeleton]-ab[armour-replacer]",
-    "ccz[exoskeleton]-ac[armour-replacer]",
-    "cdz[exoskeleton]-ad[armour-replacer]",
-    "cez[exoskeleton]-ae[armour-replacer]",
+    "ia[exoskeleton]-aa[armour-replacer]",
+    "ib[exoskeleton]-ab[armour-replacer]",
+    "ic[exoskeleton]-ac[armour-replacer]",
+    "id[exoskeleton]-ad[armour-replacer]",
+    "ie[exoskeleton]-ae[armour-replacer]",
 }
 
 local i = 1
@@ -94,7 +94,7 @@ while i < 6 do
             type = "item",
             name = "e_mk" .. tostring(i),
             placed_as_equipment_result = "e_mk" .. tostring(i),
-            subgroup = "equipment",
+            subgroup = "replacer_item",
             order = orders[i],
             icon_size = 64, icon_mipmaps = 4,
             icon = icon[i],

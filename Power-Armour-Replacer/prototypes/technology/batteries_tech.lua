@@ -34,7 +34,7 @@ data:extend({
         recipe = "b_mk2"
       },
     },
-    prerequisites = {"battery_1", "battery"},
+    prerequisites = {"battery_1", },
     unit =
     {
       count = 500,
@@ -57,7 +57,7 @@ data:extend({
         recipe = "b_mk3"
       },
     },
-    prerequisites = {"battery_2", "advanced-electronics"},
+    prerequisites = {"battery_2", "battery", "advanced-electronics"},
     unit =
     {
       count = 500,

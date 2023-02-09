@@ -168,6 +168,7 @@ compat.update_ingredients(recipes[1], {
             ["wood"] = {"solder", 100}, -- the first three are for replacing ingredients in the recipe
             ["electronic-circuit"] = {"basic-circuit-board", 55},
             ["steel-plate"] = {"rubber", 75},
+            ["stone-brick"] = {"glass", 100},
             {"tinned-copper-cable", 55} -- these two are for adding new ingredients to the recipe
         }
     },
@@ -175,7 +176,6 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
             {"silicon", 100},
-            {"glass", 100},
         }
     },
     -- Angels
@@ -341,9 +341,10 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobplates"},
         replacements = {
+            ["engine-unit"] = {"silicon", 160},
+            ["iron-gear-wheel"] = {"gunmetal-alloy", 120},
             {"cobalt-steel-alloy", 150},
             {"invar-alloy", 100},
-            ["engine-unit"] = {"silicon", 160},
         }
     },
     {
@@ -356,7 +357,7 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["iron-gear-wheel"] = {"angels-wire-silver", 55},
+            ["gunmetal-alloy"] = {"angels-wire-silver", 55},
             ["cobalt-steel-alloy"] = {"solder", 200},
             ["engine-unit"] = {"concrete-brick", 135},
         }

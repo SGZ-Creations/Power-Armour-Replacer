@@ -141,6 +141,41 @@ if mods["bobwarfare"] then
     data.raw.technology["night-vision-equipment-2"].enabled = false
     data.raw.recipe["night-vision-equipment-3"].enabled = false
     data.raw.technology["night-vision-equipment-3"].enabled = false
+    data.raw.recipe["solar-panel-equipment-2"].enabled = false
+    data.raw.technology["solar-panel-equipment-2"].enabled = false
+    data.raw.recipe["solar-panel-equipment-3"].enabled = false
+    data.raw.technology["solar-panel-equipment-3"].enabled = false
+    data.raw.recipe["solar-panel-equipment-4"].enabled = false
+    data.raw.technology["solar-panel-equipment-4"].enabled = false
+    data.raw.recipe["personal-laser-defense-equipment-2"].enabled = false
+    data.raw.technology["personal-laser-defense-equipment-2"].enabled = false
+    data.raw.recipe["personal-laser-defense-equipment-3"].enabled = false
+    data.raw.technology["personal-laser-defense-equipment-3"].enabled = false
+    data.raw.recipe["personal-laser-defense-equipment-4"].enabled = false
+    data.raw.technology["personal-laser-defense-equipment-4"].enabled = false
+    data.raw.recipe["personal-laser-defense-equipment-5"].enabled = false
+    data.raw.technology["personal-laser-defense-equipment-5"].enabled = false
+    data.raw.recipe["personal-laser-defense-equipment-6"].enabled = false
+    data.raw.technology["personal-laser-defense-equipment-6"].enabled = false
+    data.raw.recipe["battery-mk3-equipment"].enabled = false
+    data.raw.technology["bob-battery-equipment-3"].enabled = false
+    data.raw.recipe["battery-mk4-equipment"].enabled = false
+    data.raw.technology["bob-battery-equipment-4"].enabled = false
+    data.raw.recipe["battery-mk5-equipment"].enabled = false
+    data.raw.technology["bob-battery-equipment-5"].enabled = false
+    data.raw.recipe["battery-mk6-equipment"].enabled = false
+    data.raw.technology["bob-battery-equipment-6"].enabled = false
+--[[    data.raw.recipe[""].enabled = false
+    data.raw.technology[""].enabled = false
+    data.raw.recipe[""].enabled = false
+    data.raw.technology[""].enabled = false
+    data.raw.recipe[""].enabled = false
+    data.raw.technology[""].enabled = false
+    data.raw.recipe[""].enabled = false
+    data.raw.technology[""].enabled = false
+]]
+    data.raw.recipe["personal-roboport-mk3-equipment"].enabled = false
+    data.raw.recipe["personal-roboport-mk4-equipment"].enabled = false
 -- Equipments 2 Hidden
     data.raw.recipe["exoskeleton-equipment-2"].hidden = true
     data.raw.technology["exoskeleton-equipment-2"].hidden = true
@@ -150,6 +185,41 @@ if mods["bobwarfare"] then
     data.raw.technology["night-vision-equipment-2"].hidden = true
     data.raw.recipe["night-vision-equipment-3"].hidden = true
     data.raw.technology["night-vision-equipment-3"].hidden = true
+    data.raw.recipe["solar-panel-equipment-2"].hidden = true
+    data.raw.technology["solar-panel-equipment-2"].hidden = true
+    data.raw.recipe["solar-panel-equipment-3"].hidden = true
+    data.raw.technology["solar-panel-equipment-3"].hidden = true
+    data.raw.recipe["solar-panel-equipment-4"].hidden = true
+    data.raw.technology["solar-panel-equipment-4"].hidden = true
+    data.raw.recipe["personal-laser-defense-equipment-2"].hidden = true
+    data.raw.technology["personal-laser-defense-equipment-2"].hidden = true
+    data.raw.recipe["personal-laser-defense-equipment-3"].hidden = true
+    data.raw.technology["personal-laser-defense-equipment-3"].hidden = true
+    data.raw.recipe["personal-laser-defense-equipment-4"].hidden = true
+    data.raw.technology["personal-laser-defense-equipment-4"].hidden = true
+    data.raw.recipe["personal-laser-defense-equipment-5"].hidden = true
+    data.raw.technology["personal-laser-defense-equipment-5"].hidden = true
+    data.raw.recipe["personal-laser-defense-equipment-6"].hidden = true
+    data.raw.technology["personal-laser-defense-equipment-6"].hidden = true
+    data.raw.recipe["battery-mk3-equipment"].hidden = true
+    data.raw.technology["bob-battery-equipment-3"].hidden = true
+    data.raw.recipe["battery-mk4-equipment"].hidden = true
+    data.raw.technology["bob-battery-equipment-4"].hidden = true
+    data.raw.recipe["battery-mk5-equipment"].hidden = true
+    data.raw.technology["bob-battery-equipment-5"].hidden = true
+    data.raw.recipe["battery-mk6-equipment"].hidden = true
+    data.raw.technology["bob-battery-equipment-6"].hidden = true
+--[[    data.raw.recipe[""].hidden = true
+    data.raw.technology[""].hidden = true
+    data.raw.recipe[""].hidden = true
+    data.raw.technology[""].hidden = true
+    data.raw.recipe[""].hidden = true
+    data.raw.technology[""].hidden = true
+    data.raw.recipe[""].hidden = true
+    data.raw.technology[""].hidden = true
+]]
+    data.raw.recipe["personal-roboport-mk3-equipment"].hidden = true
+    data.raw.recipe["personal-roboport-mk4-equipment"].hidden = true
 end
 
 if mods["RampantArsenal"] then
