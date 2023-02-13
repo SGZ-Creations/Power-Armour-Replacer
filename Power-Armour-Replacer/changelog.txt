@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.22
+Date: xx.02.2023
+  Features:
+    - Bob's. Theses once will need tweking later on. but have been addded along Angels.
+    - Angels continued adding recipes for other equipment missing it.
+    - Darkstar Some recipes has sort of gotten added. This one could be getting a way more improved Compatibility. It has to be played alone witch i don't have time to yet.
+  Changes:
+    - Shields don't use more than 1 in the amount. Made it easier to craft. This is agian subject to change.
+    - Small Science rework on all tech. Added Chemical packs to mk5's.
+  Compatibilities:
+    - Bob's to mk5 done. Tweaking may be needed.
+    - Angels to mk5 done. Tweaking may be needed.
+    - Darkstar. A bit here and there.
+  Fixes:
+    - Issue with NVG's and Belt Imunnity.
+  Thanks:
+    - Discord @Toby1364 For a quick correction that was missed on version 0.1.21.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.21
 Date: 09.02.2023
   Features:
@@ -97,7 +115,9 @@ Date: 15.01.2023
   Fixes:
     - Icon size of Exoskeleton. Was using wrong placeholder directory.
     - Item order in crafting window.
-    - An oversight when creating Laser & Solar Equipemnt. In beta 0.1.16-3
+    - An oversight when creating Laser & Solar Equipemnt. In beta 0.1.16-3.
+  Known-Issues-Fixed:
+    - Icons for Exoskeleton.
   Info:
     - Lot more stuff that I don't know what is to be adde to this list.
     - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on their side.
@@ -125,7 +145,7 @@ Date: 09.01.2023
     - Decresed power produced by fusion_reactor drasticly.
     - Removed realeses spamed in changelogs. Will continue moving the link to the newes verison.
     - Armour recipe adjustment 1 done. More to come
-  Known-issues:
+  Known-Issues:
     - Icons for Exoskeleton are a bit weird. Hope to solve this soon but i've tried a lot to no success.
   WIP:
     - Recipe & tech reserch compatibility needs adjusting.

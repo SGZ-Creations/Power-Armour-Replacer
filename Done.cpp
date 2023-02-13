@@ -16,3 +16,11 @@ Compatibilites
 - (?)Angels mods
 - (?)Bobs mods
 
+
+
+{
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+            ["battery"] = {"lithium-ion-battery", 30},
+        }
+    },

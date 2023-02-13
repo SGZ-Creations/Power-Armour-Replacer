@@ -126,7 +126,10 @@ compat.update_technologies{
         },
         ["armour_10"] = {
             "rocket-control-unit",
-        }
+        },
+        ["laser_5"] = {
+            ["nuclear-power"] = "bob-heat-pipe-1",
+        },
     },
     ["angelssmelting"] = {
         ["armour_1"] = {
@@ -170,8 +173,6 @@ compat.update_technologies{
             "angels-stone-smelting-2",
         },
     },
--- Hey if u came here to remove the reserch i have added items from this reserch to craft it.
--- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove.
     ["Clowns-Processing"] = {
         ["armour_10"] = {
             "advanced-depleted-uranium-smelting-1",
@@ -183,17 +184,23 @@ compat.update_technologies{
             "advanced-depleted-uranium-smelting-1",
         },
     },
+    ["Darkstar_utilities_fixed"] = {
+        ["laser_5"] = {
+            "laser-cores",
+        },
+    },
     ["248k"] = {
         ["armour_3"] = {
             ["angels-aluminium-smelting-1"] = "el_caster_tech",
             "el_caster_tech",
         },
-        ["battery_1"] = {
+        ["battery_3"] = {
             "el_lithium_tech",
         },
         ["nv-bi_mk1"] = {
             "el_lithium_tech",
-        },
-        
+        },       
     },
 }
+-- Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.
+-- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove that would make it easier to unlock.

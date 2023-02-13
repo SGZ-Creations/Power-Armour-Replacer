@@ -60,7 +60,7 @@ local recipes = {
         ingredients = {
             {"p-s_mk4", 1},
             {"battery", 190},
-            {"advanced-circuit", 134},
+            {"advanced-circuit", 110},
             {"sulfur", 123},
             {"steel-plate", 115},
         },
@@ -74,8 +74,8 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"p-s_mk5", 1},
-            {"advanced-circuit", 134},
-            {"engine-unit", 142},
+            {"advanced-circuit", 130},
+            {"engine-unit", 140},
             {"electric-engine-unit", 80},
             {"iron-stick", 300},
         },
@@ -89,7 +89,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"p-s_mk6", 1},
-            {"electric-engine-unit", 136},
+            {"electric-engine-unit", 120},
             {"plastic-bar", 140},
             {"low-density-structure", 175},
         },
@@ -157,7 +157,8 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-plate"] = {"glass", 50},
-            {"resin", 85},
+            ["iron-stick"] = {"lead-plate", 60},
+            {"rubber", 75},
         }
     },
     {
@@ -178,7 +179,7 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-plate"] = {"glass", 50},
-            ["b_mk1"] = {"insulated-cable", 120},
+            ["b_mk1"] = {"solder", 110},
             {"rubber", 120},
         }
     },
@@ -186,7 +187,7 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 15},
+            ["electronic-circuit"] = {"electronic-circuit", 20},
         }
     },
     {
@@ -203,7 +204,7 @@ compat.update_ingredients(recipes[3], {
         replacements = {
             ["copper-plate"] = {"tinned-copper-cable", 50},
             ["battery"] = {"electronic-circuit", 40},
-            {"insulated-cable", 180},
+            {"insulated-cable", 140},
         }
     },
     {
@@ -212,6 +213,7 @@ compat.update_ingredients(recipes[3], {
             ["steel-plate"] = {"steel-bearing", 30},
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -219,27 +221,25 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
---[[
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["advanced-circuit"] = {"solder", 110},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["battery"] = {"silicon-nitride", 50},
+            ["engine-unit"] = {"nickel-plate", 80},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"angels-wire-silver", 100},
+            {"glass", 150},
         }
     },
 })
@@ -247,139 +247,141 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["sulfur"] = {"gilded-copper-cable", 130},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["battery"] = {"silcon", 200},
+            ["steel-plate"] = {"brass-alloy", 70},
+            {"insulated-cable", 125},
+            {"lead-plate"}
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            ["silcon"] = {"angels-mono-silcon", 200},
+            ["steel-plate"] = {"angels-plate-chrome", 50},
         }
     },
 })
+--[[
 compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[9], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
-    }
+    },
 })
 ]]
 data:extend(recipes)

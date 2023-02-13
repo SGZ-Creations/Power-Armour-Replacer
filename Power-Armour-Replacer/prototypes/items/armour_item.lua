@@ -364,7 +364,6 @@ if mods["bobwarfare"] then
     })
     a = a + 1 
   end
-  
 else
   local a = 1
   while a < 11 do

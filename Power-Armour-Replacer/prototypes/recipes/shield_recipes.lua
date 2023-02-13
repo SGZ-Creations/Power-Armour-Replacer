@@ -18,7 +18,7 @@ local recipes = {
         enabled = false,
         energy_required = 10,
         ingredients = {
-            {"s_mk1", 5},
+            {"s_mk1", 1},
             {"electronic-circuit", 130},
             {"engine-unit", 60},
             {"steel-plate", 160},
@@ -32,7 +32,7 @@ local recipes = {
         enabled = false,
         energy_required = 15,
         ingredients = {
-            {"s_mk2", 2},
+            {"s_mk2", 1},
             {"electronic-circuit", 160},
             {"advanced-circuit", 45},
             {"copper-cable", 155},
@@ -45,7 +45,7 @@ local recipes = {
         enabled = false,
         energy_required = 20,
         ingredients = {
-            {"s_mk3", 5},
+            {"s_mk3", 1},
             {"small-lamp", 90},
             {"plastic-bar", 50},
             {"advanced-circuit", 65},
@@ -58,7 +58,7 @@ local recipes = {
         enabled = false,
         energy_required = 25,
         ingredients = {
-            {"s_mk4", 2},
+            {"s_mk4", 1},
             {"electric-engine-unit", 55},
             {"advanced-circuit", 90},
             {"plastic-bar", 90},
@@ -72,9 +72,9 @@ local recipes = {
         energy_required = 30,
         hide_from_player_crafting = true,
         ingredients = {
-            {"s_mk5", 50},
-            {"f_mk3", 5},
-            {"p-s_mk4", 3},
+            {"s_mk5", 1},
+            {"f_mk3", 1},
+            {"p-s_mk4", 1},
             {"uranium-235", 80},
         },
         result = "s_mk6"
@@ -86,7 +86,7 @@ local recipes = {
         energy_required = 35,
         hide_from_player_crafting = true,
         ingredients = {
-            {"s_mk6", 2},
+            {"s_mk6", 1},
             {"copper-plate", 165},
             {"uranium-238", 120},
             {"low-density-structure", 105},
@@ -102,7 +102,7 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"s_mk7", 3},
+            {"s_mk7", 1},
             {"uranium-235", 120},
             {"plastic-bar", 124},
             {"processing-unit", 80},
@@ -118,8 +118,8 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"s_mk8", 2},
-            {"b_mk8", 6},
+            {"s_mk8", 1},
+            {"b_mk8", 1},
             {"low-density-structure", 180},
             {"uranium-235", 55},
             {type="fluid", name="petroleum-gas", amount=350},
@@ -134,7 +134,7 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"s_mk9", 2},
+            {"s_mk9", 1},
             {"rocket-control-unit", 75},
             {"processing-unit", 130},
             {"low-density-structure", 155},
@@ -176,16 +176,6 @@ compat.update_ingredients(recipes[1], {
             {"glass", 70},
         }
     },
-    --[[
-    -- Angels
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
-        }
-    },
-    ]]
     --SE
     {
         dependencies = {"space-exploration"},
@@ -199,13 +189,14 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 75},
-            ["engine-unit"] = {"insulated-cable", 180},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"steel-bearing", 50},
+            ["iron-plate"] = {"tin-plate", 55},
+            ["engine-unit"] = {"silver-plate", 100},
         }
     },
     --Darkstar
@@ -219,20 +210,18 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
-            ["silicon"] = {"angels-mono-silicon", 90},
+            ["silicon"] = {"angels-mono-silicon", 50},
             {"glass", 95},
         }
     },
---[[
     --Angels
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            ["silver-plate"] = {"steel-gear-wheel", 80},
         }
     },
-]]  --SE-K2
+    --SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -252,14 +241,15 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"insulated-cable", 240},
+            ["advanced-circuit"] = {"insulated-cable", 110},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["battery"] = {"tinned-copper-cable", 50},
-            {"rubber", 35}
+            {"rubber", 35},
+            {"invar-alloy", 45},
         }
     },
     --Darkstar
@@ -273,11 +263,10 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["copper-plate"] = {"bronze-alloy", 100},
-            {"invar-alloy", 90},
+            ["copper-cable"] = {"bronze-alloy", 75},
         }
     },
-    --SE-K2
+    --SE--K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -296,7 +285,8 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["small-lamp"] = {"insulated-cable", 240},
+            ["small-lamp"] = {"insulated-cable", 170},
+            ["advanced-circuit"] = {"insulated-cable", 140},
         }
     },
     {
@@ -311,25 +301,23 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
-            {"leaded-glass", 95},
+            {"leaded-glass", 75},
         }
     },
     --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["silver-plate"] = {"angels-silver-wire", 150},
+            ["silver-plate"] = {"angels-wire-silver", 55},
         }
     },
     --248K
---[[
     {
-        dependencies = {"248k"},
+        dependencies = {"248k", "bobplates"},
         replacements = {
-            {"", 55},
+            {"lithium-ion-battery", 35},
         }
     },
-]]
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
@@ -353,66 +341,65 @@ compat.update_ingredients(recipes[4], {
     },
 })
 compat.update_ingredients(recipes[5], {
-    --[[
+    
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            {"insulated-cable", 175},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["steel-plate"] = {"glass", 100},
+            {"nickel-plate", 150},
+            {"silver-plate", 200},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            ["electric-engine-unit"] = {"engine-unit", 60},
+            {"angels-plate-chrome", 50},
         }
     },
-    --[[
     ----SE-K2
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-components", 30},
-            ["plastic-bar"] = {"electronic-circuit", 50},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     }, 
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["small-lamp"] = {"silicon", 65},
+            [""] = {"", 0},
         }
     },
-]]
+
 })
 compat.update_ingredients(recipes[6], {
     --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
 ]]
@@ -422,22 +409,22 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
 ]]
@@ -447,47 +434,47 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"silicon-wafer", 70},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
 ]]
 })
 compat.update_ingredients(recipes[9], {
---[[
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"processing-unit", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
 ]]
@@ -497,22 +484,22 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
 ]]

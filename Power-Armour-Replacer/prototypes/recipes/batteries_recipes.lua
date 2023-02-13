@@ -47,7 +47,7 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"b_mk3", 1},
-            {"electronic-circuit", 15},
+            {"electronic-circuit", 50},
             {"advanced-circuit", 20},
             {"copper-cable", 150},
             {"steel-plate", 75},
@@ -158,14 +158,25 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 100},
+            {"solder", 30},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["small-electric-pole"] = {"resin", 25},
+            ["small-electric-pole"] = {"ruber", 40},
+            {"lead-plate", 20},
         }
     },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
+        replacements = {
+            {"silicon", 60},
+            {"glass", 40},
+        }
+    },
+    --SE--K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -179,16 +190,31 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 100},
-            {"solder", 120},
-            {"tinned-copper-cable", 140},
+            {"solder", 60},
+            {"tinned-copper-cable", 110},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            {"lead-plates", 35},
+            {"lead-plate", 35},
         }
     },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
+        replacements = {
+            {"silicon", 60},
+        }
+    },
+    {
+        dependencies = {"Darkstar_utilities_fixed", "angelssmelting",},
+        replacements = {
+            ["silicon"] = {"angels-mono-silicon", 60},
+            {"angels-mono-silicon", 60},
+        }
+    },
+    --SE--K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -200,15 +226,45 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-circuit", 100},
+            ["advanced-circuit"] = {"electronic-circuit", 50},
+            {"solder", 85},
         }
     },
     {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        dependencies = {"bobplates"},
         replacements = {
-            ["battery"] = {"lithium-ion-battery", 30},
+            {"lead-plate", 55},
         }
     },
+    --248K
+    {
+        dependencies = {"248k", "bobplates"},
+        replacements = {
+            {"lithium-ion-battery", 10},
+        }
+    },
+    --Angels
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["steel-plate"] = {"steel-bearing", 85},
+        }
+    },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
+        replacements = {
+            {"silicon", 60},
+        }
+    },
+    {
+        dependencies = {"Darkstar_utilities_fixed", "angelssmelting",},
+        replacements = {
+            ["silicon"] = {"angels-mono-silicon", 60},
+            {"angels-mono-silicon", 60},
+        }
+    },
+    --SE--K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -223,119 +279,190 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
---[[
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["advanced-circuit"] = {"insulated-cable", 120},
+            ["copper-cable"] = {"solder", 110},
+            {"insulated-cable", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["steel-plate"] = {"bronze-alloy", 60},
+            {"invar-alloy", 50},
         }
     },
+    --248K
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"248k", "bobplates"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"lithium-ion-battery", 10},
         }
-    }
+    },
+    --Angles
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            {"lead-plate", 55},
+        }
+    },
+    --Clowns
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"solid-white-phosphourus", 100},
+        }
+    },
 })
 compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            ["advanced-circuit"] = {"advanced-circuit", 80},
+            {"tinned-copper-cable", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            ["low-density-structure"] = {"brass-plate", 50},
+            ["steel-plate"] = {"aluminium-plate", 100},
         }
     },
+    --248K
+    {
+        dependencies = {"248k", "bobplates"},
+        replacements = {
+            {"lithium-ion-battery", 20},
+        }
+    },
+    --Angles
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            {"insulated-cable", 210},
         }
-    }
+    },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
+        replacements = {
+            {"silicon", 60},
+        }
+    },
+    {
+        dependencies = {"Darkstar_utilities_fixed", "angelssmelting",},
+        replacements = {
+            ["silicon"] = {"angels-mono-silicon", 60},
+            {"angels-mono-silicon", 60},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"solid-white-phosphourus", 200},
+        }
+    },
 })
+--[[
 compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
+    --248K
+    {
+        dependencies = {"248k", "bobplates"},
+        replacements = {
+            {"lithium-ion-battery", 20},
+        }
+    },
+    --Angles
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
-    }
+    },
+    --Clowens
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"solid-white-phosphourus", 300},
+        }
+    },
 })
 compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
+    --248K
+    {
+        dependencies = {"248k", "bobplates"},
+        replacements = {
+            {"lithium-ion-battery", 30},
+        }
+    },
+    --Angles
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
-    }
+    },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"solid-white-phosphourus", 400},
+        }
+    },
 })
 compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     }
 })
@@ -343,22 +470,22 @@ compat.update_ingredients(recipes[9], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     }
 })
@@ -366,22 +493,22 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 100},
-            {"", 50}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["-"] = {"", 50},
-            {"---", 35}
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["__"] = {"", 100},
-            ["--"] = {"", 35},
+            [""] = {"", 0},
+            [""] = {"", 0},
         }
     }
 })

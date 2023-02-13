@@ -16,7 +16,7 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"automation-science-pack", 1},
       },
       time = 15
     },
@@ -34,12 +34,12 @@ data:extend({
         recipe = "r_mk2"
       },
     },
-    prerequisites = {"roboport_1", },
+    prerequisites = {"roboport_1",},
     unit =
     {
       count = 750,
       ingredients = {
-        {"automation-science-pack", 2}
+        {"automation-science-pack", 2},
       },
       time = 15
     },
@@ -57,13 +57,13 @@ data:extend({
         recipe = "r_mk3"
       },
     },
-    prerequisites = {"roboport_2", },
+    prerequisites = {"roboport_2",},
     unit =
     {
       count = 750,
       ingredients = {
         {"automation-science-pack", 3},
-        {"logistic-science-pack", 1}
+        {"logistic-science-pack", 1},
       },
       time = 15
     },
@@ -81,14 +81,14 @@ data:extend({
         recipe = "r_mk4"
       },
     },
-    prerequisites = {"roboport_3", },
+    prerequisites = {"roboport_3",},
     unit =
     {
       count = 750,
       ingredients = {
         {"automation-science-pack", 4},
         {"logistic-science-pack", 2},
-        {"military-science-pack", 1}
+        {"military-science-pack", 1},
       },
       time = 15
     },
@@ -113,7 +113,8 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 5},
         {"logistic-science-pack", 3},
-        {"military-science-pack", 2}
+        {"military-science-pack", 2},
+        {"chemical-science-pack", 1},
       },
       time = 15
     },
@@ -139,7 +140,7 @@ data:extend({
         {"automation-science-pack", 6},
         {"logistic-science-pack", 4},
         {"military-science-pack", 3},
-        {"chemical-science-pack", 1}
+        {"chemical-science-pack", 2},
       },
       time = 15
     },
@@ -165,7 +166,7 @@ data:extend({
         {"automation-science-pack", 7},
         {"logistic-science-pack", 5},
         {"military-science-pack", 4},
-        {"chemical-science-pack", 2}
+        {"chemical-science-pack", 3},
       },
       time = 15
     },
@@ -191,8 +192,8 @@ data:extend({
         {"automation-science-pack", 8},
         {"logistic-science-pack", 6},
         {"military-science-pack", 5},
-        {"chemical-science-pack", 3},
-        {"production-science-pack", 1}
+        {"chemical-science-pack", 4},
+        {"production-science-pack", 1},
       },
       time = 15
     },
@@ -210,7 +211,7 @@ data:extend({
         recipe = "r_mk9"
       },
     },
-    prerequisites = {"roboport_8", },
+    prerequisites = {"roboport_8",} ,
     unit =
     {
       count = 750,
@@ -218,8 +219,8 @@ data:extend({
         {"automation-science-pack", 9},
         {"logistic-science-pack", 7},
         {"military-science-pack", 6},
-        {"chemical-science-pack", 4},
-        {"production-science-pack", 2}
+        {"chemical-science-pack", 5},
+        {"production-science-pack", 2},
       },
       time = 15
     },
@@ -239,7 +240,7 @@ data:extend({
         recipe = "r_mk10"
       },
     },
-    prerequisites = {"roboport_9", },
+    prerequisites = {"roboport_9",},
     unit =
     {
       count = 750,
@@ -247,9 +248,9 @@ data:extend({
         {"automation-science-pack", 10},
         {"logistic-science-pack", 8},
         {"military-science-pack", 7},
-        {"chemical-science-pack", 5},
+        {"chemical-science-pack", 6},
         {"production-science-pack", 3},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
       },
       time = 15
     },

@@ -167,7 +167,7 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["wood"] = {"solder", 100}, -- the first three are for replacing ingredients in the recipe
             ["electronic-circuit"] = {"basic-circuit-board", 55},
-            ["steel-plate"] = {"rubber", 75},
+            ["steel-plate"] = {"rubber", 20},
             ["stone-brick"] = {"glass", 100},
             {"tinned-copper-cable", 55} -- these two are for adding new ingredients to the recipe
         }
@@ -221,7 +221,7 @@ compat.update_ingredients(recipes[2], {
             ["copper-plate"] = {"bronze-alloy", 75},
             ["iron-gear-wheel"] = {"silver-plate", 75},
             ["steel-plate"] = {"steel-bearing", 155},
-            {"rubber", 15}
+            {"rubber", 40}
         }
     },
     {
@@ -280,7 +280,7 @@ compat.update_ingredients(recipes[3], {
             ["plastic-bar"] = {"zinc-plate", 50},
             ["steel-plate"] = {"aluminium-plate", 150},
             ["engine-unit"] = {"cobalt-steel-alloy", 100},
-            {"rubber", 35}
+            {"rubber", 60},
         }
     },
     {

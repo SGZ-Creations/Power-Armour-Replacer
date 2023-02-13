@@ -1,30 +1,16 @@
 
-local type = {
-  "night-vision-equipment",
-  "night-vision-equipment", 
-  "belt-immunity-equipment", 
-  "belt-immunity-equipment", 
-}
-
-local name = {
-  "nv_mk1",
-  "nv_mk2",
-  "bi_mk1",
-  "bi_mk2",
-}
-
 local buffer_capacity = {
   "120kJ", --nvg
-  "100YJ", --||--
+  "100kJ", --||--
   "100kJ", --bi
-  "10kJ" --||--
+  "100kJ" --||--
 }
 
 local input_flow_limit = {
   "240kW", --nvg
-  "10kW", --||--
+  "1kW", --||--
   "240kW", --bi
-  "10kW" --||--
+  "1kW" --||--
 }
 
 local energy_input = {
@@ -75,8 +61,8 @@ local i = 1
 while i < 3 do
   data:extend({
     {
-      type = type[i],
-      name = name[i],
+      type = "night-vision-equipment",
+      name = "nv_mk" .. tostring(i),
       sprite =
       {
         filename = graphics[i],
@@ -115,9 +101,9 @@ while i < 3 do
     {
       type = "item",
       subgroup = "replacer_item",
-      placed_as_equipment_result = "nv_mk1",
+      placed_as_equipment_result = "nv_mk" .. tostring(i),
       order = order[i],
-      name = name[i],
+      name = "nv_mk" .. tostring(i),
       icon = graphics[i],
       icon_size = 64,
       stack_size = stack_size[i],
@@ -130,8 +116,8 @@ i = 1
 while i < 3 do
   data:extend({
     {
-      type = type[i + 2],
-      name = name[i + 2],
+      type = "belt-immunity-equipment",
+      name = "bi_mk" .. tostring(i),
       sprite =
       {
         filename = graphics[i + 2],
@@ -166,11 +152,11 @@ while i < 3 do
     },
     {
       type = "item",
-      name = name[i + 2],
+      name = "bi_mk" .. tostring(i),
       icon = graphics[i + 2],
       icon_size = 64,
       stack_size = stack_size[i + 2],
-      placed_as_equipment_result = name[i + 2],
+      placed_as_equipment_result = "bi_mk" .. tostring(i),
       order = order[i + 2],
       subgroup = "replacer_item",
     },

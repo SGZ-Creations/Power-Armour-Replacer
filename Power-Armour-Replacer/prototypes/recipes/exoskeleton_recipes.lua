@@ -203,7 +203,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
-            {"diamond", 6},
+            {"diamond", 4},
         }
     },
     --Angels

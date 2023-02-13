@@ -51,8 +51,8 @@ local order = {
     "bjz[battery]-aa[armour-replacer]",
 }
 local buffer_capacity = {
-    "1TJ",
-    "2TJ",
+    "10GJ",--Nerfed due to not containing battery in recipe.
+    "20GJ",--Nerfed due to not containing battery in recipe.
     "3TJ",
     "4TJ",
     "5TJ",
