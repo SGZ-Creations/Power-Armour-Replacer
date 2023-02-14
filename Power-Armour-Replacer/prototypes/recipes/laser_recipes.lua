@@ -185,7 +185,7 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 4},
+            ["electronic-circuit"] = {"automation-core", 5},
         }
     },
 })
@@ -214,7 +214,7 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 4},
+            ["electronic-circuit"] = {"automation-core", 10},
             ["engine-unit"] = {"motor", 20},
         }
     },
@@ -248,7 +248,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"", 0},
+            ["electronic-circuit"] = {"automation-core", 30},
             ["battery"] = {"electronic-components", 30},
         }
     },

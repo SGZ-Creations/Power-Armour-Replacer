@@ -271,7 +271,7 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"space-exploration"},
         replacements = {
             ["advanced-circuit"] = {"electronic-components", 30},
-            ["electronic-circuit"] = {"atomation-core", 40},
+            ["electronic-circuit"] = {"automation-core", 40},
         }
     }, 
     {

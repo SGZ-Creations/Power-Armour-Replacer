@@ -242,6 +242,13 @@ compat.update_ingredients(recipes[4], {
             {"glass", 150},
         }
     },
+    --SE
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["engine-unit"] = {"electric-motor", 30},
+        }
+    },
 })
 compat.update_ingredients(recipes[5], {
     {

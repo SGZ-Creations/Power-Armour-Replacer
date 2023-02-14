@@ -91,7 +91,6 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 140},
-
         }
     },
     --Darkstar
@@ -117,7 +116,7 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"auromation-core", 20},
+            ["electronic-circuit"] = {"automation-core", 20},
         }
     },
 })
@@ -158,20 +157,12 @@ compat.update_ingredients(recipes[2], {
             ["battery"] = {"aluminium-plate", 55},
         }
     },
---[[
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"", 55},
-        }
-    }
-]]
     --SE-K2
     {
         dependencies = {"space-exploration"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 25},
-            ["battery"] = {"motors", 25},
+            ["battery"] = {"motor", 25},
         }
     }, 
     {
@@ -222,12 +213,11 @@ compat.update_ingredients(recipes[3], {
     },
     -- SE-K2
     {
-        dependencies = {"space-exploration"},
+        dependencies = {"Krastorio2", "space-exploration"},
         replacements = {
-            ["advanced-circuit"] = {"motors", 20},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"mineral-water", 100},
         }
-    }, 
+    },
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -235,12 +225,21 @@ compat.update_ingredients(recipes[3], {
             ["lubricant"] = {"mineral-water", 100},
         }
     },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["advanced-circuit"] = {"motor", 20},
+            ["lubricant"] = {"", 0},
+            {"low-density-structure", 60},
+        }
+    }, 
+    
 })
 compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"processing-unit", 120}
+            {"processing-unit", 120},
         }
     },
     {
@@ -271,7 +270,15 @@ compat.update_ingredients(recipes[4], {
         replacements = {
             {"angels-plate-chrome", 300},
         }
-    }
+    },
+    --SE
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["low-density-structure"] = {"low-density-structure", 80},
+            {"electric-motor", 30},
+        }
+    },
 })
 compat.update_ingredients(recipes[5], {
     {
