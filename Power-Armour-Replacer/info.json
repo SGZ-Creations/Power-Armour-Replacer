@@ -21,7 +21,9 @@
 		"(?) Darkstar_utilities_fixed", 
 		"(?) Krastorio2",
 		"(?) SeaBlockMetaPack",
-		"! IndustrialRevolution3"
+		"! IndustrialRevolution3",
+		"! Insectitron",
+		"! expanded-rocket-payloads-continued"
 	],
 	"description": "Replaces Armours & Equipents. Adds 10 New Power Armour, 10 New Batteries, 10 New Reactors, 10 New Shields, 5 New Exoskeletons, 2 New NVG's, 2 New Belt-immunity ",
 	"package": {

@@ -4,11 +4,12 @@ Date: 14.02.2023
   Compatibility:
     - SE added a few.
     - K2 added a few.
+    - Marked Incompatibility, expanded-rocket-payloads-continued, Insectitron. Due to Recipe & Tech deadlock. that will not be fixed.
   Changes:
     - Armour Replacer now requires 1.0 of CAS mod.
   Fixes:
     - Crash with SE K2 mod set.
-    - Loading the compatibility of howe recipes are created.
+    - Loading the compatibility of how recipes are created.
   Thanks:
     - @sky_trooper for finding the issues with the SE K2 Compatibility.
 ---------------------------------------------------------------------------------------------------
