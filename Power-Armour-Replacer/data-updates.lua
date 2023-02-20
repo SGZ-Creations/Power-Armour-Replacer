@@ -98,7 +98,7 @@ compat.update_technologies{
             ["electronics"] = "automation",
         },
         ["armour_3"] = {
-            "zinc-processing",
+            ["plastics"] = "zinc-processing",
             "aluminium-processing",
             "cobalt-processing",
         },
@@ -148,7 +148,7 @@ compat.update_technologies{
         ["armour_4"] = {
             "angels-silver-smelting-1",
             "plastic-1",
-            
+            "angels-stone-smelting-2",
         },
         ["armour_6"] = {
             ["rocket-fuel"] = "angels-titanium-smelting-1",
@@ -170,7 +170,7 @@ compat.update_technologies{
     },
     ["angelspetrochem"] = {
         ["armour_4"] = {
-            "angels-stone-smelting-2",
+            
         },
     },
     ["Clowns-Processing"] = {

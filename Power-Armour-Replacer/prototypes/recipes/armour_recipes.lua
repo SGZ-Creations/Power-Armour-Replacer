@@ -221,15 +221,29 @@ compat.update_ingredients(recipes[2], {
             ["copper-plate"] = {"bronze-alloy", 75},
             ["iron-gear-wheel"] = {"silver-plate", 75},
             ["steel-plate"] = {"steel-bearing", 155},
-            {"rubber", 40}
+            {"rubber", 20},
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting",},
         replacements = {
-            ["silver-plate"] = {"clay-brick", 100},
+            ["silver-plate"] = {"basic-electronic-componenets", 100},
+            ["rubber"] = {"iron-gear-wheel", 40},
         }
     },
+    {
+        dependencies = {"angelssmelting", "EarlyTrainsUpdated"},
+        replacements = {
+            ["basic-electronic-componenets"] = {"engine-unit", 10},
+        }
+    },
+    {
+        dependencies = {"Bio_Industries", "angelssmelting"},
+        replacements = {
+            ["iron-gear-wheel"] = {"rubber", 20},
+        }
+    },
+    --Darkstar
     {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
@@ -287,13 +301,13 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["cobalt-steel-alloy"] = {"lead-plate", 100},
-            ["zinc-plate"] = {"brass-alloy", 35},
+            ["zinc-plate"] = {"clay-brick", 125},
         }
     },
     {
         dependencies = {"angelspetrochem", "SeaBlockMetaPack", "bobplates"},
         replacements = {
-            ["rubber"] = {"clay-brick", 150},
+            ["rubber"] = {"glass", 125},
             {"steel-plate", 100}
         }
     },

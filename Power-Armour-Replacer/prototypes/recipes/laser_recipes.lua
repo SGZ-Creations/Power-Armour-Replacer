@@ -150,7 +150,7 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobplates", "bobelectronics"},
         replacements = {
-            {"solder", 100},
+            {"solder", 80},
         }
     },
     {
@@ -164,14 +164,27 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"steel-bearing", 80},
+            ["steel-plate"] = {"steel-bearing", 50},
         }
     },
     -- Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["iron-plate"] = {"steel-gear-wheel", 50},
+            ["iron-plate"] = {"glass", 20},
+        }
+    },
+    {
+        dependencies = {"Bio_Industries", "angelssmelting"},
+        replacements = {
+            {"rubber", 20},
+        }
+    },
+    --Darkstar
+    {
+        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
+        replacements = {
+            {"angels-mono-silicon", 20},
         }
     },
     --SE K2

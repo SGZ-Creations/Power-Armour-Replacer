@@ -158,7 +158,7 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["iron-plate"] = {"glass", 50},
             ["iron-stick"] = {"lead-plate", 60},
-            {"rubber", 75},
+            {"rubber", 30},
         }
     },
     {
@@ -180,7 +180,7 @@ compat.update_ingredients(recipes[2], {
         replacements = {
             ["iron-plate"] = {"glass", 50},
             ["b_mk1"] = {"solder", 110},
-            {"rubber", 120},
+            {"rubber", 50},
         }
     },
     --SE-K2

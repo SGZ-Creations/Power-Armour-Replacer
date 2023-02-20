@@ -87,28 +87,28 @@ local damage_modifier = {
     50,--10
 }
 local energy_consumption = {
-    "0.05MJ",
-    "0.1MJ",
-    "0.15MJ",
-    "0.2MJ",
-    "0.25MJ",
-    "0.3MJ",
-    "0.35MJ",
-    "0.4MJ",
-    "0.45MJ",
-    "0.5MJ",
+    "0.50MJ",
+    "1.00MJ",
+    "1.50MJ",
+    "2.00MJ",
+    "2.50MJ",
+    "3.00MJ",
+    "3.50MJ",
+    "4.00MJ",
+    "4.50MJ",
+    "5.00MJ",
 }
 local buffer_capacity = {
-    "0.2MJ",
-    "0.3MJ",
-    "0.4MJ",
-    "0.5MJ",
-    "0.6MJ",
-    "0.7MJ",
-    "0.8MJ",
-    "0.9MJ",
-    "1.0MJ",
-    "1.1MJ",
+    "10MJ",--1
+    "15MJ",--2
+    "20MJ",--3
+    "25MJ",--4
+    "30MJ",--5
+    "35MJ",--6
+    "40MJ",--7
+    "45MJ",--8
+    "50MJ",--9
+    "55MJ",--0
 }
 local duration = {
     40,
