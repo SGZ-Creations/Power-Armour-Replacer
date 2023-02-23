@@ -38,29 +38,29 @@ local icon = {
 }
 
 local orders = {
-    "gaz[energy-source]-aa[armour-replacer]",
-    "gbz[energy-source]-ab[armour-replacer]",
-    "gcz[energy-source]-ac[armour-replacer]",
-    "gdz[energy-source]-ad[armour-replacer]",
-    "gez[energy-source]-ae[armour-replacer]",
-    "gfz[energy-source]-af[armour-replacer]",
-    "ggz[energy-source]-ag[armour-replacer]",
-    "ghz[energy-source]-ah[armour-replacer]",
-    "giz[energy-source]-ai[armour-replacer]",
-    "gjz[energy-source]-aj[armour-replacer]",
+    "ga[energy-source]-aa[armour-replacer]",
+    "gb[energy-source]-ab[armour-replacer]",
+    "gc[energy-source]-ac[armour-replacer]",
+    "gd[energy-source]-ad[armour-replacer]",
+    "ge[energy-source]-ae[armour-replacer]",
+    "gf[energy-source]-af[armour-replacer]",
+    "gg[energy-source]-ag[armour-replacer]",
+    "gh[energy-source]-ah[armour-replacer]",
+    "gi[energy-source]-ai[armour-replacer]",
+    "gj[energy-source]-aj[armour-replacer]",
 }
 
 local powers = {
-    "10kW",
-    "20kW",
-    "30kW",
-    "40kW",
-    "50kW",
-    "60kW",
-    "70kW",
-    "80kW",
-    "90kW",
-    "100kW",
+    "10MW",
+    "20MW",
+    "30MW",
+    "40MW",
+    "50MW",
+    "60MW",
+    "70MW",
+    "80MW",
+    "90MW",
+    "100MW",
 }
 
 local i = 1

@@ -257,6 +257,12 @@ compat.update_ingredients(recipes[3], {
             {"glass", 130},
         }
     },
+    {
+        dependencies = {"bobpower"},
+        replacements = {
+            ["iron-plate"] = {"heat-pipe", 25},
+        }
+    },
     --SE-K2
     {
         dependencies = {"space-exploration"},
@@ -316,6 +322,12 @@ compat.update_ingredients(recipes[5], {
         replacements = {
             ["plastic-bar"] = {"sapphire-5", 50},
             ["sulfur"] = {"silicon-wafer", 125},
+        }
+    },
+    {
+        dependencies = {"bobpower"},
+        replacements = {
+            ["heat-pipe"] = {"heat-pipe-2", 25},
         }
     },
     {

@@ -1,24 +1,24 @@
 
 local buffer_capacity = {
-  "120kJ", --nvg
-  "100kJ", --||--
-  "100kJ", --bi
-  "100kJ" --||--
+  "1TJ", --nvg
+  "1kJ", --||--
+  "1TJ", --bi
+  "1kJ" --||--
 }
 
 local input_flow_limit = {
-  "240kW", --nvg
+  "150GW", --nvg
   "1kW", --||--
-  "240kW", --bi
+  "150GW", --bi
   "1kW" --||--
 }
 
 local energy_input = {
-  "10kW", --nvg
+  "125GW", --nvg
   "0W", --||--
 }
 local energy_consumption = {
-  "200kW", --bi
+  "125GW", --bi
   "1W", --||--
 }
 

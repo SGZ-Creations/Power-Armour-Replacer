@@ -127,8 +127,11 @@ compat.update_technologies{
         ["armour_10"] = {
             "rocket-control-unit",
         },
+        ["laser_3"] = {
+            "bob-heat-pipe-1",
+        },
         ["laser_5"] = {
-            ["nuclear-power"] = "bob-heat-pipe-1",
+            ["nuclear-power"] = "bob-heat-pipe-2",
         },
     },
     ["angelssmelting"] = {
@@ -147,8 +150,10 @@ compat.update_technologies{
         },
         ["armour_4"] = {
             "angels-silver-smelting-1",
-            "plastic-1",
             "angels-stone-smelting-2",
+        },
+        ["armour_5"] = {
+            "plastic-1",
         },
         ["armour_6"] = {
             ["rocket-fuel"] = "angels-titanium-smelting-1",
