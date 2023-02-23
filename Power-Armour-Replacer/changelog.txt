@@ -1,7 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.24
-Date: ????
+Date: 23.02.2023
   Changes:
+    - Belt Immunity & NVG's, Made elctrical requirement more reasonable to these equipments.
+  Compatibility:
+    - Bob's power: Laser Tweaked tech to have heat pipes involved. 
+    - Bob's power: Laser Tweaked Recipes to have heat pipes involved.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.23
 Date: 14.02.2023
