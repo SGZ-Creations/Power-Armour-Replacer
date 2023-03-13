@@ -1,15 +1,3 @@
---recipes--
-    require("prototypes.recipes.armour_recipes")
-    require("prototypes.recipes.batteries_recipes")
-    require("prototypes.recipes.fusion_recipes")
-    require("prototypes.recipes.exoskeleton_recipes")
-    require("prototypes.recipes.solar_recipes")
-    require("prototypes.recipes.roboport_recipes")
-    require("prototypes.recipes.laser_recipes")
-    require("prototypes.recipes.shield_recipes")
-    require("prototypes.recipes.nvgs_bi_recipes")
-    require("prototypes.recipes.vanilla-fix_recipes")
-
 --items--
     require("prototypes.items.armour_item")
     require("prototypes.items.batteries_item")
@@ -21,6 +9,17 @@
     require("prototypes.items.shield_item")
     require("prototypes.items.nvgs_bi_item")
 
+--recipes--
+    require("prototypes.recipes.armour_recipes")
+    require("prototypes.recipes.batteries_recipes")
+    require("prototypes.recipes.fusion_recipes")
+    require("prototypes.recipes.exoskeleton_recipes")
+    require("prototypes.recipes.solar_recipes")
+    require("prototypes.recipes.roboport_recipes")
+    require("prototypes.recipes.laser_recipes")
+    require("prototypes.recipes.shield_recipes")
+    require("prototypes.recipes.nvgs_bi_recipes")
+
 --technology--
     require("prototypes.technology.armour_tech")
     require("prototypes.technology.batteries_tech")
@@ -31,7 +30,6 @@
     require("prototypes.technology.laser_tech")
     require("prototypes.technology.shield_tech")
     require("prototypes.technology.nvgs_bi_tech")
-    require("prototypes.technology.vanilla-fix_tech")
 
 --other--
     require("prototype.achievements")

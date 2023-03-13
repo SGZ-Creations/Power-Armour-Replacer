@@ -1,8 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.25
+Date: xx.03.2023
+  Features:
+    - Failure to load mod error message check added. If this one show up the issues are on the players side for the most part. 
+  Info:
+    - Moved all advanced compatibility to my lib mod for a clean code build.
+  Fixes:
+    - MK5 Soalr had un specified amount of lead plates.
+    - Roboport 1 for bob's mods was hidden by the vanilla dissabling section.
+  Changes:
+    - Vanilla Compatibility moved to lib mod.
+    - Solar power production increased was still low compared to reacotrs. It's now closer to reactors production.
+    - Tech not being able to be reserched due to dissabled tech. same as one above.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.24
 Date: 23.02.2023
   Changes:
-    - Belt Immunity & NVG's, Made elctrical requirement more reasonable to these equipments.
+    - Belt Immunity & NVG's, Made elctrical requirement more reasonable to these equipments. U would want MK4 or higher reacotrs
   Compatibility:
     - Bob's power: Laser Tweaked tech to have heat pipes involved. 
     - Bob's power: Laser Tweaked Recipes to have heat pipes involved.

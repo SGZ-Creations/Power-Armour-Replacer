@@ -263,7 +263,7 @@ compat.update_ingredients(recipes[5], {
             ["battery"] = {"silcon", 200},
             ["steel-plate"] = {"brass-alloy", 70},
             {"insulated-cable", 125},
-            {"lead-plate"}
+            {"lead-plate", 20},
         }
     },
     {

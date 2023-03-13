@@ -51,16 +51,16 @@ local orders = {
 }
 
 local powers = {
-    "10MW",
-    "20MW",
-    "30MW",
-    "40MW",
-    "50MW",
-    "60MW",
-    "70MW",
-    "80MW",
-    "90MW",
-    "100MW",
+    "1.1GW",
+    "2.1GW",
+    "3.1GW",
+    "4.1GW",
+    "5.1GW",
+    "6.1GW",
+    "7.1GW",
+    "8.1GW",
+    "9.1GW",
+    "10.1GW",
 }
 
 local i = 1

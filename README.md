@@ -1,4 +1,4 @@
-# MK10-Armour This Factorio mod adds 
+# Power-Armour-Replacer This Factorio mod adds 
 8-10 New Armour Tiers (max mk10)
 8-10 New Shields Tiers (max mk10) 
 8-10 New Batteries (max mk10)

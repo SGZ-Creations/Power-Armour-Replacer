@@ -9,8 +9,19 @@
     Only exception with this mod is that i won't be doping anything regarding bob's vehicle Equipment as it has nothing to do with ti
 ]]
 
+--[[
+if not mods["lib"] or mods["Configurable-Armour-Suits"] then
+    local message = "\n---------------------------------------------------------------------------------------------------"
+    message = message .. "\nPlease Make sure u have Library & Configurable Armour & Suits installed. & not conflicting with other mods."
+    message = message .. "\nShould it not be installed u can get it here: https://mods.factorio.com/mod/Configurable-Armour-Suits"
+    message = message .. "\nShould it not be installed u can get it here: https://github.com/SGZ-Creations?tab=repositories"
+    message = message .. "\n---------------------------------------------------------------------------------------------------"
+    error(message)
+end
+]]
+
 local function remove(type, name)
-     data.raw[type][name] = nil
+    data.raw[type][name] = nil
 end
 
 --armours
@@ -105,7 +116,7 @@ if mods["Darkstar_utilities_fixed"] then
     data.raw.technology["advanced-exoskeleton-equipment"].hidden = true
 end
 
-if mods["bobwarfare"] then
+if mods[""] then
 --armours
 --[[
     remove("recipe", "bob-power-armor-mk3")
@@ -119,19 +130,23 @@ if mods["bobwarfare"] then
     remove("technology", "bob-power-armor-5")
 ]]
 -- Armours 1 Enabled
-    data.raw.recipe["bob-power-armor-mk3"].enabled = false
-    data.raw.technology["bob-power-armor-3"].enabled = false
-    data.raw.recipe["bob-power-armor-mk4"].enabled = false
-    data.raw.technology["bob-power-armor-4"].enabled = false
-    data.raw.recipe["bob-power-armor-mk5"].enabled = false
-    data.raw.technology["bob-power-armor-5"].enabled = false
+data.raw.recipe["bob-power-armor-mk3"].enabled = false
+data.raw.technology["bob-power-armor-3"].enabled = false
+data.raw.recipe["bob-power-armor-mk4"].enabled = false
+data.raw.technology["bob-power-armor-4"].enabled = false
+data.raw.recipe["bob-power-armor-mk5"].enabled = false
+data.raw.technology["bob-power-armor-5"].enabled = false
 -- Armours 2 Hidden
-    data.raw.recipe["bob-power-armor-mk3"].hidden = true
-    data.raw.technology["bob-power-armor-3"].hidden = true
-    data.raw.recipe["bob-power-armor-mk4"].hidden = true
-    data.raw.technology["bob-power-armor-4"].hidden = true
-    data.raw.recipe["bob-power-armor-mk5"].hidden = true
-    data.raw.technology["bob-power-armor-5"].hidden = true
+data.raw.recipe["bob-power-armor-mk3"].hidden = true
+data.raw.technology["bob-power-armor-3"].hidden = true
+data.raw.recipe["bob-power-armor-mk4"].hidden = true
+data.raw.technology["bob-power-armor-4"].hidden = true
+data.raw.recipe["bob-power-armor-mk5"].hidden = true
+data.raw.technology["bob-power-armor-5"].hidden = true
+end
+
+if mods["bobequipment"] then
+
 -- Equipments 1 Enabled
     data.raw.recipe["exoskeleton-equipment-2"].enabled = false
     data.raw.technology["exoskeleton-equipment-2"].enabled = false
@@ -165,6 +180,9 @@ if mods["bobwarfare"] then
     data.raw.technology["bob-battery-equipment-5"].enabled = false
     data.raw.recipe["battery-mk6-equipment"].enabled = false
     data.raw.technology["bob-battery-equipment-6"].enabled = false
+    data.raw.recipe["personal-roboport-equipment"].enabled = false
+    data.raw.recipe["personal-roboport-mk3-equipment"].enabled = false
+    data.raw.recipe["personal-roboport-mk4-equipment"].enabled = false
 --[[    data.raw.recipe[""].enabled = false
     data.raw.technology[""].enabled = false
     data.raw.recipe[""].enabled = false
@@ -174,8 +192,7 @@ if mods["bobwarfare"] then
     data.raw.recipe[""].enabled = false
     data.raw.technology[""].enabled = false
 ]]
-    data.raw.recipe["personal-roboport-mk3-equipment"].enabled = false
-    data.raw.recipe["personal-roboport-mk4-equipment"].enabled = false
+
 -- Equipments 2 Hidden
     data.raw.recipe["exoskeleton-equipment-2"].hidden = true
     data.raw.technology["exoskeleton-equipment-2"].hidden = true
@@ -209,6 +226,10 @@ if mods["bobwarfare"] then
     data.raw.technology["bob-battery-equipment-5"].hidden = true
     data.raw.recipe["battery-mk6-equipment"].hidden = true
     data.raw.technology["bob-battery-equipment-6"].hidden = true
+    data.raw.technology["personal-roboport-equipment"].hidden = false
+    data.raw.recipe["personal-roboport-equipment"].hidden = true
+    data.raw.recipe["personal-roboport-mk3-equipment"].hidden = true
+    data.raw.recipe["personal-roboport-mk4-equipment"].hidden = true
 --[[    data.raw.recipe[""].hidden = true
     data.raw.technology[""].hidden = true
     data.raw.recipe[""].hidden = true
@@ -218,8 +239,6 @@ if mods["bobwarfare"] then
     data.raw.recipe[""].hidden = true
     data.raw.technology[""].hidden = true
 ]]
-    data.raw.recipe["personal-roboport-mk3-equipment"].hidden = true
-    data.raw.recipe["personal-roboport-mk4-equipment"].hidden = true
 end
 
 if mods["RampantArsenal"] then
@@ -341,3 +360,62 @@ if mods["PowerAndArmor"] then
     data.raw.item["PaA-personal-laser-defense-mk2-equipment"].hidden = true
     data.raw.item["PaA-personal-laser-defense-mk3-equipment"].hidden = true]]
 end
+
+--[[
+local function convert_prototype(destination, source)
+    if destination.type ~= source.type then error("trying to replace prototypes that don't match")
+
+    local dr = data.raw
+
+    local new_thing_name = source.name
+    local overwrite_name = destination.name
+
+    --local typeof = type -- ! Lua Function name type !
+    local type = destination.type
+
+
+    dr[type][PaA-power-armor-mk3] = nil
+
+    --overwrite the prototype itself and hope it works
+    source.name = overwrite_name
+    dr[type][a_mk3] = source
+end
+
+    --keep overwrite item or no?
+    --destination = nil --clear argument so we don't use it
+
+    --we need to find SOURCE things, remove them, and overwrite DEST
+    --item-specific? equipments and take results for SOURCE?
+
+    --recipes that result in SOURCE?
+    --recipes that have ingredient SOURCE?
+    --technologies that unlock SOURCE?
+
+
+local function convert_prototype(destination, source)
+    if destination.type ~= source.type then error("trying to replace prototypes that don't match")
+
+    local dr = data.raw
+
+    local new_thing_name = source.name
+    local overwrite_name = destination.name
+
+    --local typeof = type -- ! Lua Function name type !
+    local type = destination.type
+
+
+    dr[type][new_thing_name] = nil
+
+    --overwrite the prototype itself and hope it works
+    source.name = overwrite_name
+    dr[type][overwrite_name] = source
+end
+    --keep overwrite item or no?
+    --destination = nil --clear argument so we don't use it
+
+    --we need to find SOURCE things, remove them, and overwrite DEST
+    --item-specific? equipments and take results for SOURCE?
+
+    --recipes that result in SOURCE?
+    --recipes that have ingredient SOURCE?
+    --technologies that unlock SOURCE?]]

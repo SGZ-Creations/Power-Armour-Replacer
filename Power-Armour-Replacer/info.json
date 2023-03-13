@@ -2,28 +2,27 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "1.1",
-	"version": "0.1.24",
+	"version": "0.1.25",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours",
 	"dependencies":
 	[
 		"base >= 1.1", 
+		"lib >= 0.1.0",
 		"~ Configurable-Armour-Suits >= 1.0.0",
-		"? Rampant >= 3.1.2",
 		"(?) angelsbioprocessing",
 		"(?) angelspetrochem",
 		"(?) angelsrefining",
-		"(?) angelssmelting",
-		"(?) bobplate",
-		"(?) bobwarfare",
+		"? angelssmelting",
+		"? bobplate",
+		"? bobwarfare",
 		"(?) bobequipment", 
-		"(?) Darkstar_utilities_fixed", 
+		"? Darkstar_utilities_fixed", 
 		"(?) Krastorio2",
 		"(?) SeaBlockMetaPack",
-		"! IndustrialRevolution3",
-		"! Insectitron",
-		"! expanded-rocket-payloads-continued"
+		"? Rampant >= 3.1.2",
+		"! IndustrialRevolution3"
 	],
 	"description": "Replaces Armours & Equipents. Adds 10 New Power Armour, 10 New Batteries, 10 New Reactors, 10 New Shields, 5 New Exoskeletons, 2 New NVG's, 2 New Belt-immunity ",
 	"package": {
@@ -37,7 +36,6 @@
 			"locale/de/mod-locale.cfg",
 			"local/fr/mod-locale.cfg",
 			"prototypes/recipes/z_mods-fixes_recipes.lua",
-			"control.lua",
 			"old_armour_item.lua"
 		]
 	}
