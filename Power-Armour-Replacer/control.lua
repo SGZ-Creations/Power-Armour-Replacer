@@ -4,7 +4,7 @@ local function check_for_error(event)
   if script.active_mods["base"] then
       if settings.startup["vanilla-warning"].value then
           printer(
-            "Base/Vanilla Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics.\nThis mod is functional in vanilla but was never intet with vanilla.\nYou can dissable this message in startup settings if u don't want the warnings."
+            "\nBase/Vanilla Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics.\nThis mod is functional in vanilla but was never intet with vanilla.\nYou can dissable this message in startup settings if u don't want the warnings."
           )
       end
   end
@@ -12,7 +12,7 @@ local function check_for_error(event)
   if script.active_mods["bobwarfare"] then
       if settings.startup["bobwarfare-warning"].value then
           printer(
-            "Bobs Armours are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
+            "\nBobs Armours are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
           )
       end
   end
@@ -20,7 +20,7 @@ local function check_for_error(event)
   if script.active_mods["bobequipment"] then
     if settings.startup["bobequipment-warning"].value then
         game.print(
-          "Bobs Equipment are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
+          "\nBobs Equipment are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
         )
     end
   end
