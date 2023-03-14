@@ -1,8 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.25
-Date: xx.03.2023
+Date: 14.03.2023
   Features:
-    - Failure to load mod error message check added. If this one show up the issues are on the players side for the most part. 
+    - Warning messages will now show if my mod changes functionality of other mods.
   Info:
     - Moved all advanced compatibility to my lib mod for a clean code build.
   Fixes:
@@ -12,6 +12,9 @@ Date: xx.03.2023
     - Vanilla Compatibility moved to lib mod.
     - Solar power production increased was still low compared to reacotrs. It's now closer to reactors production.
     - Tech not being able to be reserched due to dissabled tech. same as one above.
+    - Updated redme file on github.
+  Thanks:
+    - Discord @Honktown for with in game chat warnings.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.24
 Date: 23.02.2023

@@ -9,17 +9,6 @@
     Only exception with this mod is that i won't be doping anything regarding bob's vehicle Equipment as it has nothing to do with ti
 ]]
 
---[[
-if not mods["lib"] or mods["Configurable-Armour-Suits"] then
-    local message = "\n---------------------------------------------------------------------------------------------------"
-    message = message .. "\nPlease Make sure u have Library & Configurable Armour & Suits installed. & not conflicting with other mods."
-    message = message .. "\nShould it not be installed u can get it here: https://mods.factorio.com/mod/Configurable-Armour-Suits"
-    message = message .. "\nShould it not be installed u can get it here: https://github.com/SGZ-Creations?tab=repositories"
-    message = message .. "\n---------------------------------------------------------------------------------------------------"
-    error(message)
-end
-]]
-
 local function remove(type, name)
     data.raw[type][name] = nil
 end
@@ -116,7 +105,7 @@ if mods["Darkstar_utilities_fixed"] then
     data.raw.technology["advanced-exoskeleton-equipment"].hidden = true
 end
 
-if mods[""] then
+if mods["bobwarfare"] then
 --armours
 --[[
     remove("recipe", "bob-power-armor-mk3")
@@ -360,62 +349,3 @@ if mods["PowerAndArmor"] then
     data.raw.item["PaA-personal-laser-defense-mk2-equipment"].hidden = true
     data.raw.item["PaA-personal-laser-defense-mk3-equipment"].hidden = true]]
 end
-
---[[
-local function convert_prototype(destination, source)
-    if destination.type ~= source.type then error("trying to replace prototypes that don't match")
-
-    local dr = data.raw
-
-    local new_thing_name = source.name
-    local overwrite_name = destination.name
-
-    --local typeof = type -- ! Lua Function name type !
-    local type = destination.type
-
-
-    dr[type][PaA-power-armor-mk3] = nil
-
-    --overwrite the prototype itself and hope it works
-    source.name = overwrite_name
-    dr[type][a_mk3] = source
-end
-
-    --keep overwrite item or no?
-    --destination = nil --clear argument so we don't use it
-
-    --we need to find SOURCE things, remove them, and overwrite DEST
-    --item-specific? equipments and take results for SOURCE?
-
-    --recipes that result in SOURCE?
-    --recipes that have ingredient SOURCE?
-    --technologies that unlock SOURCE?
-
-
-local function convert_prototype(destination, source)
-    if destination.type ~= source.type then error("trying to replace prototypes that don't match")
-
-    local dr = data.raw
-
-    local new_thing_name = source.name
-    local overwrite_name = destination.name
-
-    --local typeof = type -- ! Lua Function name type !
-    local type = destination.type
-
-
-    dr[type][new_thing_name] = nil
-
-    --overwrite the prototype itself and hope it works
-    source.name = overwrite_name
-    dr[type][overwrite_name] = source
-end
-    --keep overwrite item or no?
-    --destination = nil --clear argument so we don't use it
-
-    --we need to find SOURCE things, remove them, and overwrite DEST
-    --item-specific? equipments and take results for SOURCE?
-
-    --recipes that result in SOURCE?
-    --recipes that have ingredient SOURCE?
-    --technologies that unlock SOURCE?]]

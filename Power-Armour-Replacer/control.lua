@@ -12,18 +12,34 @@ local function check_for_error(event)
   if script.active_mods["bobwarfare"] then
       if settings.startup["bobwarfare-warning"].value then
           printer(
-            "Bobs Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
+            "Bobs Armours are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
           )
       end
   end
-  --[[
-  if script.active_mods["bobwarfare"] then
-    if settings.startup["bobwarfare-warning"].value then
+
+  if script.active_mods["bobequipment"] then
+    if settings.startup["bobequipment-warning"].value then
         game.print(
-          "Bobs Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
+          "Bobs Equipment are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
         )
     end
-  end]]
+  end
+
+  if script.active_mods["Power Armor MK3"] then
+    if settings.startup["P-A_MK3-warning"].value then
+        game.print(
+          "P-A_MK3's Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics. This mod is redundant at this point.\nYou can dissable this message in startup settings if u don't want the warnings."
+        )
+    end
+  end
+
+  if script.active_mods["RampantArsenal"] then
+    if settings.startup["arsenal--warning"].value then
+        game.print(
+          "RampantArsenal Armours & Equipment are Dissabled & Hidden due to intentional mod mechanics. Some technolegies are blocked until someone fixes it.\nYou can dissable this message in startup settings if u don't want the warnings."
+        )
+    end
+  end
 end
 
 local function on_configuration_changed()

@@ -6,4 +6,3 @@
 9-10 New fusion reactors (max mk10)
 4-5 new Exo Skeleton (max mk5)
 Achievements
-and replaces all vanailla versions. tho no worry it will jsut migrate to my version. so noting is lost on converting hopfully but is not guranteed as for acidental bugs.
