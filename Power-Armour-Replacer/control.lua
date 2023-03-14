@@ -28,15 +28,15 @@ local function check_for_error(event)
   if script.active_mods["Power Armor MK3"] then
     if settings.startup["P-A_MK3-warning"].value then
         game.print(
-          "P-A_MK3's Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics. This mod is redundant at this point.\nYou can dissable this message in startup settings if u don't want the warnings."
+          "\nP-A_MK3's Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics. This mod is redundant at this point.\nYou can dissable this message in startup settings if u don't want the warnings."
         )
     end
   end
 
   if script.active_mods["RampantArsenal"] then
-    if settings.startup["arsenal--warning"].value then
+    if settings.startup["arsenal-warning"].value then
         game.print(
-          "RampantArsenal Armours & Equipment are Dissabled & Hidden due to intentional mod mechanics. Some technolegies are blocked until someone fixes it.\nYou can dissable this message in startup settings if u don't want the warnings."
+          "\nRampantArsenal Armours & Equipment are Dissabled & Hidden due to intentional mod mechanics. Some technolegies are blocked until someone fixes it.\nYou can dissable this message in startup settings if u don't want the warnings."
         )
     end
   end
