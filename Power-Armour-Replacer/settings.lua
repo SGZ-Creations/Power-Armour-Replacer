@@ -55,3 +55,51 @@ if mods["RampantArsenal"] then
     },
   })
 end
+
+if mods["Insectitron"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "Insectitron-issue",
+      setting_type = "startup",
+      default_value = true,
+      order = "2Aaa"
+    },
+  })
+end
+
+if mods["SpaceMod"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "SpaceMod-issue",
+      setting_type = "startup",
+      default_value = true,
+      order = "2Aab"
+    },
+  })
+end
+
+if mods["TeleportationEquipment"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "Teleportation-issue",
+      setting_type = "startup",
+      default_value = true,
+      order = "2Aac"
+    },
+  })
+end
+
+if mods["osm-radioactivity"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "radioactivity-issue",
+      setting_type = "startup",
+      default_value = true,
+      order = "2Aad"
+    },
+  })
+end
