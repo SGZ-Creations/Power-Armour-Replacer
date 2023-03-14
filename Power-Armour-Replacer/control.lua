@@ -4,7 +4,7 @@ local function check_for_error(event)
   if script.active_mods["base"] then
       if settings.startup["vanilla-warning"].value then
           printer(
-            "\nBase/Vanilla Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics.\nThis mod is functional in vanilla but was never intet with vanilla.\nYou can dissable this message in startup settings if u don't want the warnings."
+            "\nBase/Vanilla Armours & Equipment are Dissabled/Hidden due to intentional mod mechanics.\nPower Armour & Replacer is functional in vanilla but was never inteded with vanilla.\nYou can dissable this message in startup settings if u don't want the warnings."
           )
       end
   end
