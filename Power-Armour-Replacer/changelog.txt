@@ -1,8 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.27
 Date: 10.05.2023
+  Features:
+    - Added T3 & T4 heat pipe tech prerequisites to lasers.
   Fixes:
     - Fixed Depencies for PAR Library.
+    - Crash if bob's power wasn't enabled.
   Info:
     - The for lib mod needing name due to invalid name unde uploade. 
 ---------------------------------------------------------------------------------------------------

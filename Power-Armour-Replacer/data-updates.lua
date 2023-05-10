@@ -127,11 +127,19 @@ compat.update_technologies{
         ["armour_10"] = {
             "rocket-control-unit",
         },
+    },
+    ["bobpower"] = {
         ["laser_3"] = {
             "bob-heat-pipe-1",
         },
         ["laser_5"] = {
             ["nuclear-power"] = "bob-heat-pipe-2",
+        },
+        ["laser_7"] = {
+            "bob-heat-pipe-3"
+        },
+        ["laser_9"] = {
+            "bob-heat-pipe-4"
         },
     },
     ["angelssmelting"] = {
