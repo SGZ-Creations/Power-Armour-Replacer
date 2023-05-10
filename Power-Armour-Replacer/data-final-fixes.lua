@@ -1,12 +1,12 @@
 --[[
     Clean up phase of all mods adding Technolegy Recipes for Armour's & Equipment's.
-    making the game less confiubg on waht to craft and hopefully not have 2-4 recipes.
+    making the game less confusing on waht to craft and hopefully not have 2-4 recipes.
     From diffrent mods giving u multiple MK3 armours in game.
 
-    At some point should u have 2-4 mods giving u armours this mod will do a clean up & convert your previous
-    Armour, Equipment to one version. Witch i want to let u modify to your likings in the end. if it ends up being to OP u can adjust it all.
+    At some point should u have, 2-4 mods giving u armours this mod will do a clean up & convert your previous Armour, Equipment to one version. 
+    Witch i want to let u modify to your likings in the end. if it ends up being to OP u can adjust it all.
 
-    Only exception with this mod is that i won't be doping anything regarding bob's vehicle Equipment as it has nothing to do with ti
+    Only exception with this mod is that i won't be duping anything regarding bob's vehicle Equipment as it has nothing to do with this.
 ]]
 
 local function remove(type, name)

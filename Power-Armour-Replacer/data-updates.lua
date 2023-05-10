@@ -204,7 +204,7 @@ compat.update_technologies{
         },
         ["nv-bi_mk1"] = {
             "el_lithium_tech",
-        },       
+        },
     },
 }
 -- Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.

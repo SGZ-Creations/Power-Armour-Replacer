@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.26
+Date: 10.05.2023
+  Fixes:
+    - Typos.
+  Comaptibility:
+    - Marked Nulius Incompatible due to missing tech. If porvided a reason to why i would look in to maybe fixing it.
+  Info:
+    - Looking for an texture designer modeling person.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.25
 Date: 14.03.2023
   Features:
@@ -6,7 +15,7 @@ Date: 14.03.2023
   Info:
     - Moved all advanced compatibility to my lib mod for a clean code build.
   Fixes:
-    - MK5 Soalr had un specified amount of lead plates.
+    - MK5 Solar had un specified amount of lead plates.
     - Roboport 1 for bob's mods was hidden by the vanilla dissabling section.
   Changes:
     - Vanilla Compatibility moved to lib mod.
@@ -14,7 +23,7 @@ Date: 14.03.2023
     - Tech not being able to be reserched due to dissabled tech. same as one above.
     - Updated redme file on github.
   Thanks:
-    - Discord @Honktown for with in game chat warnings.
+    - @Honktown for in game chat warnings.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.24
 Date: 23.02.2023
