@@ -2,14 +2,14 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "1.1",
-	"version": "0.1.26",
+	"version": "0.1.27",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours",
 	"dependencies":
 	[
 		"base >= 1.1", 
-		"~ lib >= 0.1.1",
+		"~ par_lib >= 0.1.2",
 		"~ Configurable-Armour-Suits >= 1.0.0",
 		"(?) angelsbioprocessing",
 		"(?) angelspetrochem",

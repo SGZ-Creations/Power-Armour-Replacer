@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.27
+Date: 10.05.2023
+  Fixes:
+    - Fixed Depencies for PAR Library.
+  Info:
+    - The for lib mod needing name due to invalid name unde uploade. 
+---------------------------------------------------------------------------------------------------
 Version: 0.1.26
 Date: 10.05.2023
   Features:
