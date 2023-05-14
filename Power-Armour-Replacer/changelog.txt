@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.28
+Date: 11.05.2023
+  Changes:
+    - Solar panels power production increased again. May be changed again later.
+    - Recistance values for pierce_decrease & pierce_percent.
+    - Changelog 0.1.26.
+    - Provided with a reason to not make Compatibility with Nullius. Armours Don't apear in game :/ 
+---------------------------------------------------------------------------------------------------
 Version: 0.1.27
 Date: 10.05.2023
   Features:
@@ -16,7 +24,7 @@ Date: 10.05.2023
   Fixes:
     - Typos.
   Comaptibility:
-    - Marked Nulius Incompatible due to missing tech. If porvided a reason to why i would look in to maybe fixing it.
+    - Marked Nulius Incompatible due to missing tech. If porvided with the reason. I would look in to trying to fix it.
   Info:
     - Looking for an texture designer modeling person.
 ---------------------------------------------------------------------------------------------------

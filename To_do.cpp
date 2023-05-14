@@ -1,4 +1,4 @@
-    Compatibilites list:
+     Compatibilites list:
     (?)K2
     (?)SE
     Incompatible:
@@ -51,3 +51,15 @@ end
 ]]
 
 and replaces all vanailla versions. Tho no worry it will just migrate to my version. So noting is lost on converting hopfully but is not guranteed as for acidental bugs.
+
+["nullius"] = {
+        ["armour_1"] = {
+            ["angels-brass-smelting-1"] = 
+        },
+        ["armour_3"] = {
+
+        },
+        ["armour_7"] = {
+
+        }
+    }
