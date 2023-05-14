@@ -1,11 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.28
-Date: 11.05.2023
+Date: 14.05.2023
   Changes:
     - Solar panels power production increased again. May be changed again later.
     - Recistance values for pierce_decrease & pierce_percent.
     - Changelog 0.1.26.
-    - Provided with a reason to not make Compatibility with Nullius. Armours Don't apear in game :/ 
+    - Provided with a reason to not make Compatibility with Nullius. Armours Don't apear in game :/
+  Fixes:
+    - Par lib required the player to have experimental 1.1.81. witch wasen't relased.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.27
 Date: 10.05.2023
