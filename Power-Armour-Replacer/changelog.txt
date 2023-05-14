@@ -1,13 +1,22 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.28
 Date: 14.05.2023
+  Features:
+    - Added "bobenemies" items compatibility.
   Changes:
     - Solar panels power production increased again. May be changed again later.
     - Recistance values for pierce_decrease & pierce_percent.
-    - Changelog 0.1.26.
-    - Provided with a reason to not make Compatibility with Nullius. Armours Don't apear in game :/
+    - Changelog 0.1.26. & 0.1.21
+    - Provided with a reason to not make Compatibility with Nullius. Armours Don't apear in game. :/
+  Info:
+    - Tech requirement for "bobenemies" will be added in the next update.
+    - Better recipes will also be made for "bobenemies" combined with "bobplates". 
   Fixes:
     - Par lib required the player to have experimental 1.1.81. witch wasen't relased.
+    - Crash if only angels smelting was present. bobplates was dissabled.
+    - Typos.
+  Thanks:
+    - Discord @_CodeGreen for help with solving and prviding some code to fix and improve comptibility. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.27
 Date: 10.05.2023
@@ -29,6 +38,8 @@ Date: 10.05.2023
     - Marked Nulius Incompatible due to missing tech. If porvided with the reason. I would look in to trying to fix it.
   Info:
     - Looking for an texture designer modeling person.
+  Releases:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM. This was last unreleased Beta.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.25
 Date: 14.03.2023
@@ -103,8 +114,6 @@ Date: 09.02.2023
     - Laser, Tech,  
   Thanks:
     - Discord @Toby1364 For help with the Rework & Compatibility.
-  Releases:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.20
 Date: 06.02.2023
@@ -259,7 +268,7 @@ Date: 01.11.2022
     - Vanilla equipment where not unlockable as for needing missing/dissabled technology. Teses will be removed at a later state.
     - Battery Equipment mk2 reqiured 1000 is suppose to have only 200.
   Known-issues:
-    - Shield stats are not complete
+    - Shield stats are not complete.
     - Armour resistances is not complete.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.9
@@ -290,7 +299,7 @@ Date: 28.10.2022 03:31 CET
     - Small change with Seablock tech Mk3 items.
     - Removed rubber from being used in Seablock early on.
   Fixes:
-    - Possible crash specifing wrong mod with tech (angles bronze smeltin 1)
+    - Possible crash specifing wrong mod with tech (angles bronze smelting 1)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 26.10.2022

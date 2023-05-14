@@ -5,7 +5,7 @@
 	"version": "0.1.28",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
-	"homepage": "https://github.com/SGZ-Creations/MK10-Armours",
+	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
 	[
 		"base >= 1.1", 
@@ -14,10 +14,11 @@
 		"(?) angelsbioprocessing",
 		"(?) angelspetrochem",
 		"(?) angelsrefining",
-		"? bobpower",
 		"? angelssmelting",
+		"? bobpower",
 		"? bobplate",
 		"? bobwarfare",
+		"? bobenemies",
 		"(?) bobequipment", 
 		"? Darkstar_utilities_fixed", 
 		"? Krastorio2",
@@ -27,7 +28,7 @@
 		"! IndustrialRevolution3",
 		"! nullius"
 	],
-	"description": "Replaces Armours & Equipents. Adds 10 New Power Armour, 10 New Batteries, 10 New Reactors, 10 New Shields, 5 New Exoskeletons, 2 New NVG's, 2 New Belt-immunity ",
+	"description": "Replaces Armours & Equipents.\nAdds 10 New Power Armour,\n10 New Batteries,10 New Reactors,\n10 New Shields,\n5 New Exoskeletons,\n2 New NVG's,\n2 New Belt-immunity",
 	"package": {
 		"ignore": [
 			"Done.cpp",

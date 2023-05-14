@@ -14,13 +14,18 @@ compat.update_ingredients = function(recipe, replacements)
 end
 
 compat.update_technologies = function(replacements)
-    for mod, technologies in pairs(replacements) do
-        if mods[mod] then
-            for technology, prerequisites in pairs(technologies) do
-                util.update_technology(technology, prerequisites)
+    for dependency, technologies in pairs(replacements) do
+        if type(dependency) == "table" then
+            for _, mod in pairs(dependency) do
+                if not mods[mod] then goto continue end
             end
+        else
+            if not mods[dependency] then goto continue end
         end
+        for technology, prerequisites in pairs(technologies) do
+            util.update_technology(technology, prerequisites)
+        end
+        ::continue::
     end
 end
-
 return compat

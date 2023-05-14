@@ -33,7 +33,6 @@ if settings.startup["hard_science_required"].value then
 end
 
 compat.update_technologies{
-
     ["boblogistics"] = {
         ["roboport_3"] = {
             "bob-robo-modular-1"
@@ -144,7 +143,6 @@ compat.update_technologies{
     },
     ["angelssmelting"] = {
         ["armour_1"] = {
-            "angels-bronze-smelting-1",
             "angels-solder-smelting-1",
         },
         ["armour_2"] = {
@@ -152,7 +150,6 @@ compat.update_technologies{
         },
         ["armour_3"] = {
             ["zinc-processing"] = "angels-stone-smelting-1",
-            ["advanced-electronics"] = "angels-brass-smelting-1",
             ["cobalt-processing"] = "angels-lead-smelting-2",
             ["aluminium-processing"] = "angels-aluminium-smelting-1",
         },
@@ -171,7 +168,7 @@ compat.update_technologies{
         },
         ["armour_7"] = {
            ["tungsten-processing"] = "angels-tungsten-smelting-1",
-           ["low-density-structure"] = "cobalt-processing",
+           ["low-density-structure"] = "angels-cobalt-steel-smelting-1"
         },
         ["armour_9"] = {
             ["nitinol-processing"] = "angels-nitinol-smelting-1",
@@ -184,6 +181,18 @@ compat.update_technologies{
     ["angelspetrochem"] = {
         ["armour_4"] = {
             
+        },
+    },
+    [{"angelssmelting", "bobplate"}] = {
+        ["armour_1"] = {
+            "angels-bronze-smelting-1",
+        },
+        ["armour_3"] = {
+            ["advanced-electronics"] = "angels-brass-smelting-1",
+        },
+        ["armour_7"] = {
+            ["angels-cobalt-steel-smelting-1"] = "cobalt-processing",
+            ["low-density-structure"] = "cobalt-processing",
         },
     },
     ["Clowns-Processing"] = {
