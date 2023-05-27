@@ -121,7 +121,6 @@ local recipes = {
             {"b_mk7", 20},
             {type="fluid", name="lubricant", amount=350},
             {"low-density-structure", 125},
-            
         },
         result = "a_mk8",
     },
@@ -173,6 +172,13 @@ compat.update_ingredients(recipes[1], {
         }
     },
     {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 100}
+        }
+    },
+    {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
             {"silicon", 100},
@@ -198,23 +204,14 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["steel-plate"] = {"steel-gear-wheel", 45},
+            ["electronic-circuit"] = {"automation-core", 10},
         }
     },
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 10},
         }
     },
-    --[[
-    {
-        if settings.startup["bobmods-enemies-enableartifacts"].value = true then
-        dependencies = {"bobenemies"},
-        replacements = {
-            {"alien-artifact", 50}
-        }
-    },
-    ]]
 })
 compat.update_ingredients(recipes[2], {
     {
@@ -232,6 +229,14 @@ compat.update_ingredients(recipes[2], {
             {"rubber", 20},
         }
     },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 200}
+        }
+    },
+    --Angels
     {
         dependencies = {"angelssmelting",},
         replacements = {
@@ -269,25 +274,16 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"steel-gear-wheel", 50}
+            ["steel-plate"] = {"steel-gear-wheel", 50},
+            ["electronic-circuit"] = {"automation-core", 16},
         }
     },
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 16},
+            
         }
     },
---[[
-    {
-        if settings.startup["bobmods-enemies-enableartifacts"].value == true then
-        dependencies = {"bobenemies"},
-        replacements = {
-            {"alien-artifact", 50}
-        }
-    end
-    },
-]]
 })
 compat.update_ingredients(recipes[3], {
     {
@@ -306,15 +302,20 @@ compat.update_ingredients(recipes[3], {
             {"rubber", 60},
         }
     },
-    --[[
     {
-        if settings.startup["bobmods-enemies-enableartifacts"].value = true then
         dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 50},
+            {"alien-artifact", 300},
         }
     },
-    ]]
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 100},
+        }
+    },
     -- Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -360,13 +361,13 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-components", 55},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["engine-unit"] = {"rare-metals", 50},
+            ["advanced-circuit"] = {"electronic-components", 55},
         }
     },
 })
@@ -386,6 +387,20 @@ compat.update_ingredients(recipes[4], {
             ["advanced-circuit"] = {"electronic-circuit", 100},
         }
     },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 400},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 200},
+        }
+    },
     -- Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -400,24 +415,15 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-components", 65},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["engine-unit"] = {"rare-metals", 60},
+            ["advanced-circuit"] = {"electronic-components", 65},
         }
     },
-    --[[
-    {
-        if settings.startup["bobmods-enemies-enableartifacts"].value = true then
-        dependencies = {"bobenemies"},
-        replacements = {
-            {"alien-artifact", 50},
-        }
-    },
-    ]]
 })
 
 compat.update_ingredients(recipes[5], {
@@ -441,22 +447,26 @@ compat.update_ingredients(recipes[5], {
             {"ruby-5", 50},
         }
     },
-    --[[
     {
-        if settings.startup["bobmods-enemies-enableartifacts"].value = true then
         dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 50},
+            {"alien-artifact", 500},
         }
     },
-    ]]
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 300},
+        }
+    },
 })
 
 compat.update_ingredients(recipes[6], {
-    
     {
         dependencies = {"bobelectronics"},
-        replacements = { 
+        replacements = {
             {"advanced-circuit", 250},
         }
     },
@@ -470,6 +480,27 @@ compat.update_ingredients(recipes[6], {
         }
     },
     {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 600},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 400},
+        }
+    },
+    {
+        dependencies = {"bobenemies", "bobplates"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+        }
+    },
+    --Angels
+    {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["processing-unit"] = {"plastic-bar", 100},
@@ -482,15 +513,6 @@ compat.update_ingredients(recipes[6], {
             ["red-wire"] = {"steel-plate", 100},
         }
     },
-    --[[
-    {
-        if settings.startup["bobmods-enemies-enableartifacts"].value = true then
-        dependencies = {"bobenemies"},
-        replacements = {
-            {"alien-artifact", 50},
-        }
-    },
-    ]]
 })
 
 compat.update_ingredients(recipes[7], {
@@ -514,6 +536,27 @@ compat.update_ingredients(recipes[7], {
         }
     },
     {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 700},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 500},
+        }
+    },
+    {
+        dependencies = {"bobenemies", "bobplates"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+        }
+    },
+    --Angels
+    {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["rocket-control-unit"] = {"tungsten-plate", 250},
@@ -530,7 +573,6 @@ compat.update_ingredients(recipes[7], {
 })
 
 compat.update_ingredients(recipes[8], {
-    
     {
         dependencies = {"bobwarfare"},
         replacements = {
@@ -560,10 +602,29 @@ compat.update_ingredients(recipes[8], {
             {"amethyst-5", 100},
         }
     },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 800},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 600},
+        }
+    },
+    {
+        dependencies = {"bobenemies", "bobplates"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+        }
+    },
 })
 
 compat.update_ingredients(recipes[9], {
-    
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -581,6 +642,26 @@ compat.update_ingredients(recipes[9], {
             {"amethyst-5", 50},
             {"topaz-5", 50},
             {"diamond-5", 50},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 900},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 700},
+        }
+    },
+    {
+        dependencies = {"bobenemies", "bobplates"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
         }
     },
     {
@@ -612,6 +693,26 @@ compat.update_ingredients(recipes[10], {
         }
     },
     {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact", 1000},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            {"alien-artifact-red", 800},
+        }
+    },
+    {
+        dependencies = {"bobenemies", "bobplates"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+        }
+    },
+    {
         dependencies = {"angelssmelting"},
         replacements = {
             ["copper-tungsten-alloy"] = {"copper-tungsten-alloy", 200},
@@ -625,89 +726,4 @@ compat.update_ingredients(recipes[10], {
         }
     },
 })
-
-if settings.startup["bobmods-enemies-enableartifacts"].value == true then
-    compat.update_ingredients(recipes[1], {
-        {
-            dependencies = {"bobenemies"},
-            replacements = {
-                {"alien-artifact", 100}
-            }
-        },
-    })
-    compat.update_ingredients(recipes[2], {
-        {
-            dependencies = {"bobenemies"},
-            replacements = {
-                {"alien-artifact", 200}
-            }
-        },
-    })
-    compat.update_ingredients(recipes[3], {
-        {
-            dependencies = {"bobenemies"},
-            replacements = {
-                {"alien-artifact", 300},
-                {"alien-artifact-red", 100},
-            }
-        },
-    })
-    compat.update_ingredients(recipes[4], {
-        {
-            dependencies = {"bobenemies"},
-            replacements = {
-                {"alien-artifact", 400}, 
-                {"alien-artifact-red", 200},
-            }
-        },
-    })
-    compat.update_ingredients(recipes[5], {
-        {
-            dependencies = {"bobenemies"},
-            replacements = {
-                {"alien-artifact", 500}
-            }
-        },
-    })
-    compat.update_ingredients(recipes[6], {
-        {
-            dependencies = {"bobenemies", "bobplates"},
-            replacements = {
-                {"alien-artifact", 600}
-            }
-        },
-    })
-    compat.update_ingredients(recipes[7], {
-        {
-            dependencies = {"bobenemies", "bobplates"},
-            replacements = {
-                {"alien-artifact", 700}
-            }
-        },
-    })
-    compat.update_ingredients(recipes[8], {
-        {
-            dependencies = {"bobenemies", "bobplates"},
-            replacements = {
-                {"alien-artifact", 800}
-            }
-        },
-    })
-    compat.update_ingredients(recipes[9], {
-        {
-            dependencies = {"bobenemies", "bobplates"},
-            replacements = {
-                {"alien-artifact", 900}
-            }
-        },
-    })
-    compat.update_ingredients(recipes[10], {
-        {
-            dependencies = {"bobenemies", "bobplates"},
-            replacements = {
-                {"alien-artifact", 1000}
-            }
-        },
-    })
-end
 data:extend(recipes)

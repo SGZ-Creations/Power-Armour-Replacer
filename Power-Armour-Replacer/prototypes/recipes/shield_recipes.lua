@@ -176,9 +176,9 @@ compat.update_ingredients(recipes[1], {
             {"glass", 70},
         }
     },
-    --SE
+    --K2
     {
-        dependencies = {"space-exploration"},
+        dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"automation-core", 15},
         }
@@ -270,14 +270,14 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-components", 30},
-            ["electronic-circuit"] = {"automation-core", 40},
         }
-    }, 
+    },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["copper-cable"] = {"rare-metals", 60},
+            ["electronic-circuit"] = {"automation-core", 40},
+            ["advanced-circuit"] = {"electronic-components", 30},
         }
     },
 })
@@ -329,14 +329,14 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-components", 30},
             ["plastic-bar"] = {"electronic-circuit", 50},
         }
-    }, 
+    },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["small-lamp"] = {"silicon", 65},
+            ["advanced-circuit"] = {"electronic-components", 30},
         }
     },
 })

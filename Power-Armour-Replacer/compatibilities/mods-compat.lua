@@ -1,10 +1,14 @@
 local compat = {}
 local util = require("__Power-Armour-Replacer__.util")
 
-compat.update_ingredients = function(recipe, replacements)
+compat.update_ingredients = function(recipe, replacements, setting)
+    local setting_val = settings.startup[setting] and settings.startup[setting].value or nil
     for _, replacement in pairs(replacements) do
         for _, dependency in pairs(replacement.dependencies) do
             if not mods[dependency] then
+                goto next_replacement
+            end
+            if setting and setting_val ~= true then
                 goto next_replacement
             end
         end

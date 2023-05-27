@@ -193,12 +193,12 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["iron-plate"] = {"iron-beam", 25},
             ["steel-plate"] = {"steel-beam", 25},
+            ["electronic-circuit"] = {"automation-core", 5},
         }
     },
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 5},
         }
     },
 })
@@ -227,7 +227,7 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 10},
+            --["electronic-circuit"] = {"automation-core", 10},
             ["engine-unit"] = {"motor", 20},
         }
     },
@@ -267,14 +267,14 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 30},
-            ["battery"] = {"electronic-components", 30},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["iron-plate"] = {"iron-beam", 30},
+            ["electronic-circuit"] = {"automation-core", 30},
+            ["battery"] = {"electronic-components", 30},
         }
     },
 })
@@ -298,13 +298,13 @@ compat.update_ingredients(recipes[4], {
         dependencies = {"space-exploration"},
         replacements = {
             ["electronic-circuit"] = {"", 0},
-            ["battery"] = {"electronic-components", 50},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["iron-plate"] = {"iron-beam", 30},
+            ["battery"] = {"electronic-components", 50},
         }
     },
 ]]

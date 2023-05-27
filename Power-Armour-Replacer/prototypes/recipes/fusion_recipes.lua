@@ -182,7 +182,7 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 4},
+            --["electronic-circuit"] = {"automation-core", 4},
         }
     },
 })
@@ -225,7 +225,7 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 10},
+            --["electronic-circuit"] = {"automation-core", 10},
         }
     },
 })
@@ -256,13 +256,13 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"space-exploration"},
         replacements = {
             ["b_mk1"] = {"motor", 20},
-            ["electronic-circuit"] = {"automation-core", 30},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["solid-fuel"] = {"rare-metals", 35},
+            ["electronic-circuit"] = {"automation-core", 30},
         }
     },
 })

@@ -2,7 +2,8 @@ local util = {}
 
 util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients
-    for _, ingredient in pairs(ingredients) do
+    local remove = {}
+    for i, ingredient in pairs(ingredients) do
         if ingredient.type then
             local replacement = replacements[ingredient.name]
             if replacement then
@@ -16,11 +17,17 @@ util.update_ingredients = function(recipe, replacements)
                 ingredient[2] = replacement[2]
             end
         end
+        if ingredient[1] == "" or ingredient.name == "" then
+            remove[#remove+1]=i
+        end
     end
     for k, new_ingredient in pairs(replacements) do
         if type(k) ~= "string" then
             ingredients[#ingredients+1] = new_ingredient
         end
+    end
+    for _, remove_ingredient in pairs(remove) do
+        table.remove(ingredients,remove_ingredient)
     end
 end
 

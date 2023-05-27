@@ -111,12 +111,12 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["steel-plate"] = {"steel-gear-wheel", 50},
+            ["electronic-circuit"] = {"automation-core", 20},
         }
     },
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 20},
         }
     },
 })
