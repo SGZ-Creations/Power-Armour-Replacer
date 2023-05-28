@@ -51,16 +51,16 @@ local orders = {
 }
 
 local powers = {
+    "5GW",
     "10GW",
+    "15GW",
     "20GW",
+    "25GW",
     "30GW",
+    "35GW",
     "40GW",
+    "45GW",
     "50GW",
-    "60GW",
-    "70GW",
-    "80GW",
-    "90GW",
-    "100GW",
 }
 
 local i = 1
@@ -96,7 +96,7 @@ while i < 11 do
             },
             shape =
             {
-                width = 1,
+                width = 2,
                 height = 1,
                 type = "full"
             },

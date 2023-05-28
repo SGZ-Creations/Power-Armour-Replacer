@@ -32,5 +32,6 @@
     require("prototypes.technology.nvgs_bi_tech")
 
 --other--
+    require("prototypes.animation.player_style")
     require("prototype.achievements")
     require("prototype.armour_equipment_category")

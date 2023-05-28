@@ -63,3 +63,18 @@ and replaces all vanailla versions. Tho no worry it will just migrate to my vers
 
         }
     }
+
+{
+    dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+    replacements = {
+        ["battery"] = {"lithium-ion-battery", 30},
+    }
+},
+
+  if script.active_mods[""] then
+    if settings.startup["-warning"].value then
+        game.print(
+          " Equipment are Dissabled/Hidden due to intentional mod mechanics.\nYou can dissable this message in startup settings if u don't want the warnings."
+        )
+    end
+  end

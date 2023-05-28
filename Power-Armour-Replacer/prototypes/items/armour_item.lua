@@ -350,7 +350,7 @@ if mods["bobwarfare"] then
             type = "poison",
             decrease = poison_decrease[a],
             percent = poison_percent[a], 
-          },  
+          },
         },
         subgroup = "replacer_item",
         order = order[a],
