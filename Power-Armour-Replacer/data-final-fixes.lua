@@ -241,8 +241,8 @@ if mods["Krastorio2"] then
     data.raw.technology["kr-advanced-exoskeleton-equipment"].hidden = true
     data.raw.technology["kr-superior-exoskeleton-equipment"].hidden = true
     data.raw.technology["kr-imersite-night-vision-equipment"].hidden = true
-    data.raw.technology["kr-energy-shield-mk3-equipment"].hidden = true
-    data.raw.technology["kr-energy-shield-mk4-equipment"].hidden = true
+    --data.raw.technology["kr-energy-shield-mk3-equipment"].hidden = true
+    --data.raw.technology["kr-energy-shield-mk4-equipment"].hidden = true
     data.raw.technology["kr-advanced-additional-engine"].hidden = true
     --data.raw.technology[""].hidden = true
 
@@ -268,8 +268,8 @@ if mods["Krastorio2"] then
     data.raw.technology["kr-battery-mk3-equipment"].enabled = false
     data.raw.technology["kr-nuclear-reactor-equipment"].enabled = false
     data.raw.technology["kr-antimatter-reactor-equipment"].enabled = false
-    data.raw.technology["kr-energy-shield-mk3-equipment"].enabled = false
-    data.raw.technology["kr-energy-shield-mk4-equipment"].enabled = false
+    --data.raw.technology["kr-energy-shield-mk3-equipment"].enabled = false
+    --data.raw.technology["kr-energy-shield-mk4-equipment"].enabled = false
     data.raw.technology["kr-imersite-solar-panel-equipment"].enabled = false
     data.raw.technology["kr-imersite-night-vision-equipment"].enabled = false
     data.raw.technology["kr-advanced-exoskeleton-equipment"].enabled = false
