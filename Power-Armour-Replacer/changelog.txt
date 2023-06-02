@@ -11,6 +11,8 @@ Date: 02.06.2023
     - "--||--" More Equipment Tech from Bobs.
     - Improved library mod. Now reqires 0.1.4.
     - Shields Changed Internal Name.
+  Warnings:
+    - Make sure the Technology for The Migrated content is not blocked after update.
   Thanks:
     - Discord @_CodeGreen. For providing better cleanup conversion code Recipes & Technology
 ---------------------------------------------------------------------------------------------------
