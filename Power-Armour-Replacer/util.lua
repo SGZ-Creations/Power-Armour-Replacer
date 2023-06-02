@@ -1,5 +1,7 @@
 local util = {}
 
+--Compatible Recipe Generator
+
 util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients
     local remove = {}
@@ -31,6 +33,8 @@ util.update_ingredients = function(recipe, replacements)
     end
 end
 
+--Technology Compatibility Generator
+
 util.update_technology = function(name, replacements)
     local technology = data.raw.technology[name]
     if not technology then error("Technology with name \""..name.."\" does not exist") end
@@ -43,6 +47,85 @@ util.update_technology = function(name, replacements)
     for _, prerequisite in ipairs(replacements) do
         prerequisites[#prerequisites+1] = prerequisite
     end
+end
+
+-- Technology Prerequisites Converter
+local replace = {
+    ["modular-armor"] = "armour_1",
+    ["power-armor"] = "armour_2",
+    ["power-armor-2"] = "armour_3",
+    ["kr-power-armor-mk3"] = "armour_3",
+    ["kr-power-armor-mk4"] = "armour_4",
+    ["fusion-reactor-equipment"] = "fusion-reactor_1",
+    ["solar-panel-equipment"] = "solar_1",
+    ["personal-laser-defense-equipment"] = "laser_1",
+    ["kr-personal-laser-defense-mk2-equipment"] = "laser_2",
+    ["kr-personal-laser-defense-mk3-equipment"] = "laser_3",
+    ["kr-personal-laser-defense-mk4-equipment"] = "laser_4",
+    ["personal-roboport-equipment"] = "roboport_1",
+    ["personal-roboport-mk2-equipment"] = "roboport_2",
+    ["personal-roboport-mk3-equipment"] = "roboport_3",
+    ["personal-roboport-mk4-equipment"] = "roboport_4",
+    ["energy-shield-equipment"] = "shield_1",
+    ["energy-shield-mk2-equipment"] = "shield_2",
+    ["bob-energy-shield-equipment-3"] = "shield_3",
+    ["bob-energy-shield-equipment-4"] = "shield_4",
+    ["bob-energy-shield-equipment-5"] = "shield_5",
+    ["bob-energy-shield-equipment-6"] = "shield_6",
+}
+
+local function replace_prerequisites(prerequisites)
+    if not prerequisites then return end
+    for i, prereq in pairs(prerequisites) do
+        if replace[prereq] then
+            prerequisites[i] = replace[prereq]
+        end
+    end
+end
+
+for _, technology in pairs(data.raw.technology) do
+    if technology.normal then
+        replace_prerequisites(technology.normal.prerequisites)
+    end
+    if technology.expensive then
+        replace_prerequisites(technology.expensive.prerequisites)
+    end
+    replace_prerequisites(technology.prerequisites)
+end
+
+
+--Recipe item Converter
+
+local item_replace = {
+    ["fusion-reactor-equipment"] = "f_mk1",
+    ["nuclear-reactor-equipment"] = "f_mk2",
+    --["old-item-name-3"] = "new-item-name-3",
+}
+
+local function replace_ingredients(ingredients)
+    if not ingredients then return end
+    for _, item in pairs(ingredients) do
+        if item.type and item.type == "fluid" then goto continue end
+        local item_name = item[1] or item.name
+        if item_replace[item_name] then
+            if item.name then
+                item.name = item_replace[item_name]
+            else
+                item[1] = item_replace[item_name]
+            end
+        end
+        ::continue::
+    end
+end
+
+for _, recipe in pairs(data.raw.recipe) do
+    if recipe.normal then
+        replace_ingredients(recipe.normal.ingredients)
+    end
+    if recipe.expensive then
+        replace_ingredients(recipe.expensive.ingredients)
+    end
+    replace_ingredients(recipe.ingredients)
 end
 
 return util

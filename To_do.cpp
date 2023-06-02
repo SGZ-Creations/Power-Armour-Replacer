@@ -78,3 +78,31 @@ and replaces all vanailla versions. Tho no worry it will just migrate to my vers
         )
     end
   end
+
+--[[
+    remove("recipe", "bob-power-armor-mk3")
+    remove("recipe", "bob-power-armor-mk4")
+    remove("recipe", "bob-power-armor-5")
+    remove("armor", "bob-power-armor-3")
+    remove("armor", "bob-power-armor-mk4")
+    remove("armor", "bob-power-armor-5")
+    remove("technology", "bob-power-armor-mk3")
+    remove("technology", "bob-power-armor-mk4")
+    remove("technology", "bob-power-armor-5")
+]]
+
+--[[
+    remove("armor", "terra-tech-power-armor")
+    remove("armor", "terra-tech-power-armor-mk2")
+    remove("technology", "terra-tech-power-armor-mk2-tech")
+    remove("technology", "terra-tech-power-armor-tech")
+    remove("recipe", "terra-tech-power-armor")
+    remove("recipe", "terra-tech-power-armor-mk2")
+    ]]
+
+    --armour.item
+--[[
+    data.raw.item["power-armor-mk3"].hidden = true
+    data.raw.item["power-armor-mk4"].hidden = true
+    data.raw.item["power-armor-mk5"].hidden = true
+]]

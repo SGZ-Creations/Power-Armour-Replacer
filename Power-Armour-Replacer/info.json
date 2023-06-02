@@ -2,14 +2,14 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "1.1",
-	"version": "0.1.30",
+	"version": "0.1.31",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
 	[
 		"base >= 1.1", 
-		"~ par_lib >= 0.1.3",
+		"~ par_lib >= 0.1.4",
 		"~ Configurable-Armour-Suits >= 1.0.0",
 		"(?) angelsbioprocessing",
 		"(?) angelspetrochem",
@@ -25,7 +25,7 @@
 		"? space-exploration >= 0.6.101",
 		"(?) SeaBlockMetaPack",
 		"? Rampant >= 3.1.2",
-		"! IndustrialRevolution3",
+		"? IndustrialRevolution3",
 		"! nullius"
 	],
 	"description": "Replaces Armours & Equipents.\nAdds 10 New Power Armour,\n10 New Batteries,10 New Reactors,\n10 New Shields,\n5 New Exoskeletons,\n2 New NVG's,\n2 New Belt-immunity",

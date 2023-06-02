@@ -1,7 +1,7 @@
 data:extend({
     {
     type = "technology",
-    name = "shields_1",
+    name = "shield_1",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-equipment.png",
     effects =
@@ -24,7 +24,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_2",
+    name = "shield_2",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -34,7 +34,7 @@ data:extend({
         recipe = "s_mk2"
       },
     },
-    prerequisites = {"shields_1",},
+    prerequisites = {"shield_1",},
     unit =
     {
       count = 500,
@@ -47,7 +47,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_3",
+    name = "shield_3",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -57,7 +57,7 @@ data:extend({
         recipe = "s_mk3"
       },
     },
-    prerequisites = {"shields_2",},
+    prerequisites = {"shield_2",},
     unit =
     {
       count = 500,
@@ -71,7 +71,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_4",
+    name = "shield_4",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -81,7 +81,7 @@ data:extend({
         recipe = "s_mk4"
       },
     },
-    prerequisites = {"shields_3",},
+    prerequisites = {"shield_3",},
     unit =
     {
       count = 500,
@@ -96,7 +96,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_5",
+    name = "shield_5",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -106,7 +106,7 @@ data:extend({
         recipe = "s_mk5"
       },
     },
-    prerequisites = {"shields_4",},
+    prerequisites = {"shield_4",},
     unit =
     {
       count = 500,
@@ -122,7 +122,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_6",
+    name = "shield_6",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -132,7 +132,7 @@ data:extend({
         recipe = "s_mk6"
       },
     },
-    prerequisites = {"shields_5",},
+    prerequisites = {"shield_5",},
     unit =
     {
       count = 500,
@@ -148,7 +148,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_7",
+    name = "shield_7",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -158,7 +158,7 @@ data:extend({
         recipe = "s_mk7"
       },
     },
-    prerequisites = {"shields_6",},
+    prerequisites = {"shield_6",},
     unit =
     {
       count = 500,
@@ -174,7 +174,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_8",
+    name = "shield_8",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -184,7 +184,7 @@ data:extend({
         recipe = "s_mk8"
       },
     },
-    prerequisites = {"shields_7",},
+    prerequisites = {"shield_7",},
     unit =
     {
       count = 500,
@@ -201,7 +201,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_9",
+    name = "shield_9",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -211,7 +211,7 @@ data:extend({
         recipe = "s_mk9"
       },
     },
-    prerequisites = {"shields_8"},
+    prerequisites = {"shield_8"},
     unit =
     {
       count = 500,
@@ -228,7 +228,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "shields_10",
+    name = "shield_10",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
     effects =
@@ -238,7 +238,7 @@ data:extend({
         recipe = "s_mk10"
       },
     },
-    prerequisites = {"shields_9",},
+    prerequisites = {"shield_9",},
     unit =
     {
       count = 500,

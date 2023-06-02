@@ -270,18 +270,18 @@ compat.update_ingredients(recipes[2], {
             ["rubber"] = {"bronze-alloy", 75},
         }
     },
-    --SEK2
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["steel-plate"] = {"steel-gear-wheel", 50},
-            ["electronic-circuit"] = {"automation-core", 16},
+            ["electronic-circuit"] = {"automation-core", 5},
         }
     },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
-            
         }
     },
 })

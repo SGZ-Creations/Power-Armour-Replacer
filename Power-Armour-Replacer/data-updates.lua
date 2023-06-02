@@ -28,7 +28,7 @@ if settings.startup["hard_science_required"].value then
         "laser_6",
         "solar_6",
         "roboport_6",
-        "shields_6",
+        "shield_6",
     }
 end
 
@@ -180,10 +180,10 @@ compat.update_technologies{
     },
     ["angelspetrochem"] = {
         ["armour_4"] = {
-            
+
         },
     },
-    [{"angelssmelting", "bobplate"}] = {
+    [{"bobplate", "angelssmelting"}] = {
         ["armour_1"] = {
             "angels-bronze-smelting-1",
         },

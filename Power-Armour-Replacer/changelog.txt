@@ -1,6 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.31
+Date: 02.06.2023
+  Features:
+    - Removed Incoimpatibility with IR3. Hope it last.
+    - Compatibility with IR3
+  Changes:
+    - "Hidden & Dissabled" Rampant Arsenal's Personal Reactors, Equipment Techs. 
+    - "--||--" K2's Power Armor & Equipments Techs.
+    - "--||--" SE's Equipment Techs.
+    - "--||--" More Equipment Tech from Bobs.
+    - Improved library mod. Now reqires 0.1.4.
+    - Shields Changed Internal Name.
+  Thanks:
+    - Discord @_CodeGreen. For providing better cleanup conversion code Recipes & Technology
+---------------------------------------------------------------------------------------------------
 Version: 0.1.30
-Date: 27.05.2023
+Date: 28.05.2023
   Features:
     - Finaly added armour animations.
   Changes:
@@ -11,7 +26,7 @@ Date: 27.05.2023
   Warnings:
     - Recommended to take out your solar panels of the grid before updating. To be safe from game deleting them.
   Thanks:
-    - @Dr Pez. for Helping coding the Animation and finding a easy way of implementing it.
+    - Discord @Dr Pez. for Helping coding the Animation and finding a easy way of implementing it.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.29
 Date: 27.05.2023
@@ -29,8 +44,8 @@ Date: 27.05.2023
   Known-Issues:
     - Reverse Factory, using bob's, Angels, K2, SE, when recycling batteries wont work. no issues in vanilla.
   Thanks:
-    - @Dr Pez. Helping on improving some compatibility code for the fixes.
-    - @grenaldn. Reporting the bug.
+    - Discord @Dr Pez. Helping on improving some compatibility code for the fixes.
+    - Discord @grenaldn. Reporting the bug.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.28
 Date: 14.05.2023
@@ -245,7 +260,7 @@ Date: 09.01.2023
     - Some Compatibility removed, Obselete.
   Fixes:
     - Compatibility Recipes & Tech research.
-  Comaptibility:
+  Compatibility:
     - 248k Progress.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.14
@@ -300,7 +315,7 @@ Date: 01.11.2022
     - Missing prerequsite for shield mk1 & 2.
     - Vanilla Equipment where not unlockable as for needing missing/dissabled technology. Teses will be removed at a later state.
     - Battery Equipment mk2 reqiured 1000 is was suppose to have 200.
-  Known-issues:
+  Known-Issues:
     - Shield stats are not complete.
     - Armour resistances is not complete.
 ---------------------------------------------------------------------------------------------------
@@ -350,7 +365,7 @@ Date: 26.10.2022
     - Continued compatibility with bob's angels.
   Thanks:
     - Discord @JanSharp for help when code was broken.
-  Compatibilities:
+  Compatibility:
     - Bob's:
     - Angels:
   Fixes:

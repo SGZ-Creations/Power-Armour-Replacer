@@ -11,7 +11,7 @@ data:extend({
         recipe = "l_mk1"
       },
     },
-    prerequisites = {"armour_1", "steel-processing", },
+    prerequisites = {"armour_1", },
     unit =
     {
       count = 500,

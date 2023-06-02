@@ -1,0 +1,15 @@
+{
+  "technology":
+  [
+    [ "shields_1", "shield_1" ],
+    [ "shields_2", "shield_2" ],
+    [ "shields_3", "shield_3" ],
+    [ "shields_4", "shield_4" ],
+    [ "shields_5", "shield_5" ],
+    [ "shields_6", "shield_6" ],
+    [ "shields_7", "shield_7" ],
+    [ "shields_8", "shield_8" ],
+    [ "shields_9", "shield_9" ],
+    [ "shields_10", "shield_10" ]
+  ]
+}
