@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.33
+Date: 03.06.2023
+  Features:
+    - Added the lasers that i forgot in 0.1.31 for K2.
+  Changes:
+    - Now requires version 0.1.5 of P.A.R Library.
+    - Crusial Change to compatibility by attaching a version minimum. Mostly all mods i have listed.
+  Fixes:
+    - Improved code after/from crash at 0.1.32./0.1.31
+---------------------------------------------------------------------------------------------------
 Version: 0.1.32
 Date: 02.06.2023
   Fixes:
