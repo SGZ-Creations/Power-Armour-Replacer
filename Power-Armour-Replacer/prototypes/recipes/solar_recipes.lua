@@ -161,6 +161,16 @@ compat.update_ingredients(recipes[1], {
             {"rubber", 30},
         }
     },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"bronze-beam", 20},
+            ["iron-stick"] = {"tin-rod", 20},
+            ["iron-plate"] = {"copper-pellet", 40},
+        }
+    },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -183,13 +193,23 @@ compat.update_ingredients(recipes[2], {
             {"rubber", 50},
         }
     },
-    --SE-K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"bronze-plate-heavy", 20},
+            ["b_mk1"] = {"tin-ingot", 50},
+            ["steel-plate"] = {"copper-pellet", 40},
+        }
+    },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 20},
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -274,8 +294,9 @@ compat.update_ingredients(recipes[5], {
         }
     },
 })
---[[
+
 compat.update_ingredients(recipes[6], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -283,20 +304,22 @@ compat.update_ingredients(recipes[6], {
             [""] = {"", 0},
         }
     },
+    ]]
     {
         dependencies = {"bobplates"},
         replacements = {
             [""] = {"", 0},
-            [""] = {"", 0},
+            ["p-s_mk5"] = {"p-s_mk6", 1},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
             [""] = {"", 0},
-            [""] = {"", 0},
+            ["p-s_mk5"] = {"p-s_mk6", 1},
         }
     },
+    
 })
 compat.update_ingredients(recipes[7], {
     {
@@ -320,6 +343,7 @@ compat.update_ingredients(recipes[7], {
             [""] = {"", 0},
         }
     },
+    
 })
 compat.update_ingredients(recipes[8], {
     {
@@ -390,5 +414,4 @@ compat.update_ingredients(recipes[10], {
         }
     },
 })
-]]
 data:extend(recipes)

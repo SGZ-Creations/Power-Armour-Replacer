@@ -167,7 +167,7 @@ compat.update_ingredients(recipes[1], {
             ["steel-plate"] = {"steel-bearing", 50},
         }
     },
-    -- Angels
+    --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
@@ -180,14 +180,24 @@ compat.update_ingredients(recipes[1], {
             {"rubber", 20},
         }
     },
-    --Darkstar
+    --Darkstar--Angels
     {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
             {"angels-mono-silicon", 20},
         }
     },
-    --SE K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"bronze-window", 20},
+            ["copper-plate"] = {"copper-cable", 40},
+            ["iron-plate"] = {"copper-pellet", 80},
+            ["steel-plate"] = {"tin-gear-wheel", 20},
+        }
+    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -196,6 +206,7 @@ compat.update_ingredients(recipes[1], {
             ["electronic-circuit"] = {"automation-core", 5},
         }
     },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -217,13 +228,23 @@ compat.update_ingredients(recipes[2], {
             {"tinned-copper-cable", 80},
         }
     },
-    --SE K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"bronze-window", 20},
+            ["engine-unit"] = {"copper-motor", 20},
+            ["copper-plate"] = {"copper-beam", 50},
+        }
+    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"iron-beam", 25},
         }
     },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -293,13 +314,15 @@ compat.update_ingredients(recipes[4], {
         }
     },
 --[[
-    --SE-K2
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
             ["electronic-circuit"] = {"", 0},
         }
     },
+    ]]
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -307,7 +330,7 @@ compat.update_ingredients(recipes[4], {
             ["battery"] = {"electronic-components", 50},
         }
     },
-]]
+
 })
 compat.update_ingredients(recipes[5], {
     {
@@ -345,8 +368,41 @@ compat.update_ingredients(recipes[5], {
         }
     },
 })
---[[
+
 compat.update_ingredients(recipes[6], {
+    --[[
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 0},
+            [""] = {"", 0},
+        }
+    },
+    ]]
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            [""] = {"", 0},
+            ["l_mk5"] = {"l_mk6", 1},
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            [""] = {"", 0},
+            ["l_mk5"] = {"l_mk6", 1},
+        }
+    },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed"},
+        replacements = {
+            {"laser-core", 5},
+        }
+    },
+})
+compat.update_ingredients(recipes[7], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -368,6 +424,39 @@ compat.update_ingredients(recipes[6], {
             [""] = {"", 0},
         }
     },
+    ]]
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed"},
+        replacements = {
+            {"laser-core", 5},
+        }
+    },
+})
+compat.update_ingredients(recipes[8], {
+    --[[
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 0},
+            [""] = {"", 0},
+        }
+    },
+    {
+        dependencies = {"bobplates"},
+        replacements = {
+            [""] = {"", 0},
+            [""] = {"", 0},
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+           [""] = {"", 0},
+           [""] = {"", 0},
+        }
+    },
+    ]]
     --Darkstar
     {
         dependencies = {"Darkstar_utilities_fixed"},
@@ -376,67 +465,8 @@ compat.update_ingredients(recipes[6], {
         }
     },
 })
-compat.update_ingredients(recipes[7], {
-    {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
-        }
-    },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 15},
-        }
-    },
-})
-compat.update_ingredients(recipes[8], {
-    {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
-        }
-    },
-    {
-        dependencies = {"bobplates"},
-        replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-           [""] = {"", 0},
-           [""] = {"", 0},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 20},
-        }
-    },
-})
 compat.update_ingredients(recipes[9], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -458,15 +488,17 @@ compat.update_ingredients(recipes[9], {
             [""] = {"", 0},
         }
     },
+    ]]
     --Darkstar
     {
         dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
-            {"laser-core", 25},
+            {"laser-core", 10},
         }
     },
 })
 compat.update_ingredients(recipes[10], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -488,13 +520,13 @@ compat.update_ingredients(recipes[10], {
             [""] = {"", 0},
         }
     },
+    ]]
     --Darkstar
     {
         dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
-            {"laser-core", 30},
+            {"laser-core", 10},
         }
     },
 })
-]]
 data:extend(recipes)

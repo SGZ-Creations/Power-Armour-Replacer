@@ -4,7 +4,7 @@ data:extend({
         name = "exoskeleton_1",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"armour_2"},
+        prerequisites = {"armour_2", "fusion-reactor_1"},
         effects =
         {
             {

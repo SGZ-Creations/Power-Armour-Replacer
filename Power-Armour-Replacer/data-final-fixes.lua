@@ -138,6 +138,9 @@ if mods["bobequipment"] then
     data.raw.technology["solar-panel-equipment-4"].enabled = false
     data.raw.technology["night-vision-equipment-2"].enabled = false
     data.raw.technology["night-vision-equipment-3"].enabled = false
+    data.raw.technology["fusion-reactor-equipment-2"].enabled = false
+    data.raw.technology["fusion-reactor-equipment-3"].enabled = false
+    data.raw.technology["fusion-reactor-equipment-4"].enabled = false
     data.raw.technology["bob-energy-shield-equipment-3"].enabled = false
     data.raw.technology["bob-energy-shield-equipment-4"].enabled = false
     data.raw.technology["bob-energy-shield-equipment-5"].enabled = false
@@ -162,6 +165,13 @@ if mods["bobequipment"] then
     data.raw.recipe["solar-panel-equipment-4"].enabled = false
     data.raw.recipe["night-vision-equipment-2"].enabled = false
     data.raw.recipe["night-vision-equipment-3"].enabled = false
+    data.raw.recipe["fusion-reactor-equipment-2"].enabled = false
+    data.raw.recipe["fusion-reactor-equipment-3"].enabled = false
+    data.raw.recipe["fusion-reactor-equipment-4"].enabled = false
+    data.raw.recipe["energy-shield-mk3-equipment"].enabled = false
+    data.raw.recipe["energy-shield-mk4-equipment"].enabled = false
+    data.raw.recipe["energy-shield-mk5-equipment"].enabled = false
+    data.raw.recipe["energy-shield-mk6-equipment"].enabled = false
     data.raw.recipe["personal-roboport-mk3-equipment"].enabled = false
     data.raw.recipe["personal-roboport-mk4-equipment"].enabled = false
     data.raw.recipe["personal-laser-defense-equipment-2"].enabled = false
@@ -186,10 +196,13 @@ if mods["bobequipment"] then
     data.raw.technology["exoskeleton-equipment-3"].hidden = true
     data.raw.technology["night-vision-equipment-2"].hidden = true
     data.raw.technology["night-vision-equipment-3"].hidden = true
-    data.raw.technology["bob-energy-shield-equipment-3"].hidden = false
-    data.raw.technology["bob-energy-shield-equipment-4"].hidden = false
-    data.raw.technology["bob-energy-shield-equipment-5"].hidden = false
-    data.raw.technology["bob-energy-shield-equipment-6"].hidden = false
+    data.raw.technology["fusion-reactor-equipment-2"].hidden = true
+    data.raw.technology["fusion-reactor-equipment-3"].hidden = true
+    data.raw.technology["fusion-reactor-equipment-4"].hidden = true
+    data.raw.technology["bob-energy-shield-equipment-3"].hidden = true
+    data.raw.technology["bob-energy-shield-equipment-4"].hidden = true
+    data.raw.technology["bob-energy-shield-equipment-5"].hidden = true
+    data.raw.technology["bob-energy-shield-equipment-6"].hidden = true
     data.raw.technology["personal-roboport-mk3-equipment"].hidden = true
     data.raw.technology["personal-roboport-mk4-equipment"].hidden = true
     data.raw.technology["personal-laser-defense-equipment-2"].hidden = true
@@ -209,6 +222,13 @@ if mods["bobequipment"] then
     data.raw.recipe["exoskeleton-equipment-3"].hidden = true
     data.raw.recipe["night-vision-equipment-2"].hidden = true
     data.raw.recipe["night-vision-equipment-3"].hidden = true
+    data.raw.recipe["fusion-reactor-equipment-2"].hidden = true
+    data.raw.recipe["fusion-reactor-equipment-3"].hidden = true
+    data.raw.recipe["fusion-reactor-equipment-4"].hidden = true
+    data.raw.recipe["energy-shield-mk3-equipment"].hidden = true
+    data.raw.recipe["energy-shield-mk4-equipment"].hidden = true
+    data.raw.recipe["energy-shield-mk5-equipment"].hidden = true
+    data.raw.recipe["energy-shield-mk6-equipment"].hidden = true
     data.raw.recipe["personal-roboport-mk3-equipment"].hidden = true
     data.raw.recipe["personal-roboport-mk4-equipment"].hidden = true
     data.raw.recipe["personal-laser-defense-equipment-2"].hidden = true
@@ -264,6 +284,7 @@ if mods["Krastorio2"] and mods["space-exploration"] then
 
     data.raw.technology["kr-power-armor-mk3"].enabled = false
     data.raw.technology["kr-power-armor-mk4"].enabled = false
+    data.raw.technology["battery-equipment"].enabled = false
     data.raw.technology["kr-portable-generator"].enabled = false
     data.raw.technology["kr-battery-mk3-equipment"].enabled = false
     data.raw.technology["kr-nuclear-reactor-equipment"].enabled = false

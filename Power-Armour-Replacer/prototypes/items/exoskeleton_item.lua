@@ -40,11 +40,11 @@ local speed_bonus = {
 }
 
 local energy_consumption = {
-    "1.0MW",
-    "2.0MW",
-    "3.0MW",
-    "4.0MW",
-    "5.0MW",
+    "10.0MW",
+    "20.0MW",
+    "30.0MW",
+    "40.0MW",
+    "50.0MW",
 }
 
 local orders = {

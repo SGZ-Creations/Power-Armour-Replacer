@@ -7,11 +7,7 @@ Also this is where i specify item(s) completed:
 - 10 Roboport
 - 10 Personal laser defense
 - 5  Exoskeleton
-- 2  NVG''s
+- 2  NVGs
 - 2  Belt-immunity
 
-
-// WIP 
 Compatibilites
-- (?)Angels mods
-- (?)Bobs mods

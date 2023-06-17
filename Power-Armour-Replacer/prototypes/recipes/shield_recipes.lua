@@ -199,7 +199,7 @@ compat.update_ingredients(recipes[2], {
             ["engine-unit"] = {"silver-plate", 100},
         }
     },
-    --Darkstar
+    --Darkstar--Angels
     {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
@@ -214,14 +214,13 @@ compat.update_ingredients(recipes[2], {
             {"glass", 95},
         }
     },
-    --Angels
     {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
             ["silver-plate"] = {"steel-gear-wheel", 80},
         }
     },
-    --SE-K2
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -230,6 +229,7 @@ compat.update_ingredients(recipes[2], {
             ["iron-plate"] = {"iron-beam", 40},
         }
     },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -363,7 +363,8 @@ compat.update_ingredients(recipes[5], {
             {"angels-plate-chrome", 50},
         }
     },
-    ----SE-K2
+    --[[
+    --SE-K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -377,14 +378,13 @@ compat.update_ingredients(recipes[5], {
             [""] = {"", 0},
         }
     },
-
+    ]]
 })
 compat.update_ingredients(recipes[6], {
-    --[[
+    
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
             [""] = {"", 0},
         }
     },
@@ -392,7 +392,7 @@ compat.update_ingredients(recipes[6], {
         dependencies = {"bobplates"},
         replacements = {
             [""] = {"", 0},
-            [""] = {"", 0},
+            ["s_mk5"] = {"s_mk6", 1},
         }
     },
     {
@@ -400,12 +400,11 @@ compat.update_ingredients(recipes[6], {
         replacements = {
             [""] = {"", 0},
             [""] = {"", 0},
+            ["s_mk5"] = {"s_mk6", 1},
         }
     },
-]]
 })
 compat.update_ingredients(recipes[7], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -427,10 +426,8 @@ compat.update_ingredients(recipes[7], {
             [""] = {"", 0},
         }
     },
-]]
 })
 compat.update_ingredients(recipes[8], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -452,10 +449,8 @@ compat.update_ingredients(recipes[8], {
             [""] = {"", 0},
         }
     },
-]]
 })
 compat.update_ingredients(recipes[9], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -477,10 +472,8 @@ compat.update_ingredients(recipes[9], {
             [""] = {"", 0},
         }
     },
-]]
 })
 compat.update_ingredients(recipes[10], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -502,6 +495,5 @@ compat.update_ingredients(recipes[10], {
             [""] = {"", 0},
         }
     },
-]]
 })
 data:extend(recipes)

@@ -8,7 +8,7 @@ local recipes = {
             {"electronic-circuit", 44},
             {"steel-plate", 140},
             {"copper-plate", 150},
-            {"p-s_mk1", 2},
+            {"stone-bricks", 20},
         },
         result = "f_mk1"
     },
@@ -47,7 +47,7 @@ local recipes = {
             {"f_mk3", 1},
             {"advanced-circuit", 40},
             {"engine-unit", 40},
-            {"steel-plate", 110}
+            {"steel-plate", 110},
         },
         result = "f_mk4"
     },
@@ -172,13 +172,23 @@ compat.update_ingredients(recipes[1], {
             {"glass", 35},
         }
     },
-    --SE-K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"copper-rotor", 20},
+            ["steel-plate"] = {"glass", 40},
+            ["copper-plate"] = {"copper-cable", 50},
+        }
+    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"iron-beam", 40},
         }
     },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -215,13 +225,24 @@ compat.update_ingredients(recipes[2], {
             ["rubber"] = {"bronze-alloy", 60},
         }
     },
-    -- SE-K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"iron-frame-small", 30},
+            ["iron-plate"] = {"iron-window", 30},
+            ["copper-cable"] = {"bronze-plate-heavy", 50},
+            {"rubber", 50},
+        }
+    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"iron-beam", 40},
         }
     },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -313,7 +334,7 @@ compat.update_ingredients(recipes[5], {
         }
     },
 })
---[[
+
 compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobelectronics"},
@@ -325,14 +346,14 @@ compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk5"] = {"f_mk6", 1},
             [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk5"] = {"f_mk6", 1},
             [""] = {"", 0},
         }
     },
@@ -348,14 +369,14 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk6"] = {"f_mk7", 1},
             [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk6"] = {"f_mk7", 1},
             [""] = {"", 0},
         }
     },
@@ -371,14 +392,14 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk7"] = {"f_mk8", 1},
             [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk7"] = {"f_mk8", 1},
             [""] = {"", 0},
         }
     },
@@ -394,14 +415,14 @@ compat.update_ingredients(recipes[9], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk8"] = {"f_mk9", 1},
             [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk8"] = {"f_mk9", 1},
             [""] = {"", 0},
         }
     },
@@ -417,17 +438,16 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk9"] = {"f_mk10", 1},
             [""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
+            ["f_mk9"] = {"f_mk10", 1},
             [""] = {"", 0},
         }
     },
 })
-]]
 data:extend(recipes)

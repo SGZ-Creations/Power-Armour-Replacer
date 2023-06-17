@@ -1,9 +1,3 @@
-     Compatibilites list:
-    (?)K2
-    (?)SE
-    Incompatible:
-    (!)(?)IR3
-
 //Use to copy
 {"", },
 {type="fluid", name="???", amount=100},
@@ -106,3 +100,37 @@ and replaces all vanailla versions. Tho no worry it will just migrate to my vers
     data.raw.item["power-armor-mk4"].hidden = true
     data.raw.item["power-armor-mk5"].hidden = true
 ]]
+
+
+local original_sprite = {
+    texture = "path/to/original/sprite.png",
+    color = {1, 1, 1, 255} -- White color
+}
+
+local shifted_color = {
+    r = 0.5, -- Shift the red channel by 0.5
+    g = 0.5, -- Shift the green channel by 0.5
+    b = 0.5, -- Shift the blue channel by 0.5
+    a = 255
+}
+
+local shifted_sprite = {
+    texture = "path/to/original/sprite.png",
+    color = shifted_color
+}
+
+local entity = -- Reference to the entity you want to modify
+
+game:get_service("rendering"):set_sprite(entity, shifted_sprite)
+
+
+66 items to make grphics for
+~ 
+
+--IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            [""] = {"", 0},
+        }
+    },

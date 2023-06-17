@@ -223,6 +223,40 @@ compat.update_technologies{
             "el_lithium_tech",
         },
     },
+    ["IndustrialRevolution3"] = {
+        ["armour_1"] = {
+            ["automation"] = "ir-bronze-forestry",
+        },
+        ["armour_2"] = {
+            ["electronics"] = "ir-iron-milestone",
+        },
+        ["armour_3"] = {
+            ["advanced-electronics"] = "electronics",
+        },
+        ["fusion-reactor_2"] = {
+            "ir-iron-milestone",
+        },
+        ["fusion-reactor_4"] = {
+            ["electronics"] = "ir-iron-milestone",
+        },
+        ["battery_1"] = {
+            ["ir-steel-milestone"] = "ir-bronze-milestone"
+        },
+        ["battery_2"] = {
+            "ir-iron-milestone"
+        },
+        ["battery_3"] = {
+            ["advanced-electronics"] = "electronics",
+            "ir-steel-milestone",
+        },
+        ["laser_3"] = {
+            ["laser"] = "electronics",
+            "ir-steel-milestone",
+        },
+        ["laser_5"] = {
+            ["nuclear-power"] = "laser",
+        },
+    },
 }
 -- Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.
 -- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove that would make it easier to unlock.

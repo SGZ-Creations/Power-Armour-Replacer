@@ -176,13 +176,23 @@ compat.update_ingredients(recipes[1], {
             {"glass", 40},
         }
     },
-    --SE--K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"bronze-beam", 20},
+            ["small-electric-pole"] = {"copper-frame-small", 30},
+            ["steel-plate"] = {"bronze-pellet", 40},
+        }
+    }, 
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
             ["small-electric-pole"] = {"wood", 50},
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -219,12 +229,20 @@ compat.update_ingredients(recipes[2], {
             {"angels-mono-silicon", 60},
         }
     },
-    --SE--K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["steel-plate"] = {"", 0},
+        }
+    },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -250,13 +268,13 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            {"lithium-ion-battery", 10},
+            {"lithium-ion-battery", 20},
         }
     },
     {
         dependencies = {"248k"},
         replacements = {
-            {"lithium-ion-battery", 10},
+            {"lithium-ion-battery", 20},
         }
     },
     --Angels
@@ -280,13 +298,21 @@ compat.update_ingredients(recipes[3], {
             {"angels-mono-silicon", 60},
         }
     },
-    --SE--K2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            [""] = {"", 0},
+        }
+    },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
             --["advanced-circuit"] = {"electronic-circuit", 30},
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -338,6 +364,7 @@ compat.update_ingredients(recipes[5], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 80},
+            {"electronic-circuit", 80},
             {"tinned-copper-cable", 200},
         }
     },
@@ -383,27 +410,26 @@ compat.update_ingredients(recipes[5], {
         }
     },
 })
---[[
 compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["low-density-structure"] = {"titanium-plate", 100},
+            ["steel-plate"] = {"aluminium-plate", 100},
+            {"plastic-bar", 140},
         }
     },
     --248K
     {
         dependencies = {"248k", "bobplates"},
         replacements = {
-            {"lithium-ion-battery", 20},
+            {"lithium-ion-battery", 30},
         }
     },
     --Angles
@@ -435,13 +461,20 @@ compat.update_ingredients(recipes[7], {
         replacements = {
             [""] = {"", 0},
             [""] = {"", 0},
+            {"lithium-ion-battery", 100},
         }
     },
     --248K
     {
-        dependencies = {"248k", "bobplates"},
+        dependencies = {"248k",},
         replacements = {
-            {"lithium-ion-battery", 30},
+            {"lithium-ion-battery", 100},
+        }
+    },
+    {
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+             {"lithium-ion-battery", 100},
         }
     },
     --Angles
@@ -450,6 +483,8 @@ compat.update_ingredients(recipes[7], {
         replacements = {
             [""] = {"", 0},
             [""] = {"", 0},
+            {"angels-plate-platinum", 200},
+            {"angels-plate-chrome", 200},
         }
     },
     {
@@ -479,6 +514,7 @@ compat.update_ingredients(recipes[8], {
         replacements = {
             [""] = {"", 0},
             [""] = {"", 0},
+            {"angels-wire-platinum", 300},
         }
     }
 })
@@ -528,5 +564,4 @@ compat.update_ingredients(recipes[10], {
         }
     }
 })
-]]
 data:extend(recipes)

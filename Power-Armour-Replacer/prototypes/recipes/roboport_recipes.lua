@@ -158,9 +158,21 @@ compat.update_ingredients(recipes[1], {
         }
     },
     {
+        dependencies = {"angelspetrochem", "bobplates",},
+        replacements = {
+            ["rubber"] = {"tin-plate", 50},
+        }
+    },
+    {
         dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
         replacements = {
             ["rubber"] = {"tin-plate", 50},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem", "Bio_Industries"},
+        replacements = {
+            {"rubber", 50}
         }
     },
     --SE-K2

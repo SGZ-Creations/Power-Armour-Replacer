@@ -1,6 +1,6 @@
 local util = {}
 
---Compatible Recipe Generator
+--Recipe Compatibility Generator
 
 util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients
@@ -56,7 +56,6 @@ local replace = {
     ["power-armor-2"] = "armour_3",
     ["kr-power-armor-mk3"] = "armour_3",
     ["kr-power-armor-mk4"] = "armour_4",
-    ["fusion-reactor-equipment"] = "fusion-reactor_1",
     ["solar-panel-equipment"] = "solar_1",
     ["personal-laser-defense-equipment"] = "laser_1",
     ["kr-personal-laser-defense-mk2-equipment"] = "laser_2",
@@ -72,6 +71,11 @@ local replace = {
     ["bob-energy-shield-equipment-4"] = "shield_4",
     ["bob-energy-shield-equipment-5"] = "shield_5",
     ["bob-energy-shield-equipment-6"] = "shield_6",
+    ["fusion-reactor-equipment"] = "fusion-reactor_1",
+    ["fusion-reactor-equipment-2"] = "fusion-reactor_2",
+    ["fusion-reactor-equipment-3"] = "fusion-reactor_3",
+    ["fusion-reactor-equipment-4"] = "fusion-reactor_4",
+    --[""] = "",
 }
 
 local function replace_prerequisites(prerequisites)
@@ -94,12 +98,16 @@ for _, technology in pairs(data.raw.technology) do
 end
 
 
---Recipe item Converter
+--Recipe Item Converter
 
 local item_replace = {
     ["fusion-reactor-equipment"] = "f_mk1",
     ["nuclear-reactor-equipment"] = "f_mk2",
-    --["old-item-name-3"] = "new-item-name-3",
+    ["exoskeleton-equipment"] = "e_mk1",
+    ["battery-equipment"] = "b_mk1",
+    ["energy-shield-mk6-equipment"] = "s_mk6",
+    ["fusion-reactor-equipment-4"] = "fusion-reactor_4",
+    --[""] = "",
 }
 
 local function replace_ingredients(ingredients)

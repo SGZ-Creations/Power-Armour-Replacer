@@ -172,13 +172,6 @@ compat.update_ingredients(recipes[1], {
         }
     },
     {
-        dependencies = {"bobenemies"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
-            {"alien-artifact", 100}
-        }
-    },
-    {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
             {"silicon", 100},
@@ -190,6 +183,7 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["wood"] = {"solder", 100},
             ["stone-brick"] = {"lead-plate", 100},
+            ["rubber"] = {"steel-gear-wheel", 25},
         }
     },
     -- SeaBlock
@@ -197,6 +191,22 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"SeaBlockMetaPack", "bobplates"},
         replacements = {
             ["rubber"] = {"copper-plate", 100},
+        }
+    },
+    {
+        dependencies = {"Bio_Industries"},
+        replacements = {
+            ["steel-gear-wheel"] = {"rubber", 50},
+        }
+    },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["steel-plate"] = {"copper-frame-large", 20},
+            ["electronic-circuit"] = {"glass", 80},
+            ["wood"] = {"rubber", 50},
+            {"copper-cable", 100},
         }
     },
     --SEK2 as long is it don't mark mod as incompatible for no reason.
@@ -268,6 +278,15 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
         replacements = {
             ["rubber"] = {"bronze-alloy", 75},
+        }
+    },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["advanced-electronics"] = {"electronic-circuit", 50},
+            ["engin-unit"] = {"copper-coil", 50},
+            {"copper-cable-heavy", 50},
         }
     },
     --K2
@@ -357,12 +376,19 @@ compat.update_ingredients(recipes[3], {
             ["cobalt-steel-alloy"] = {"lithium-ion-battery", 30},
         }
     },
-    --SEK2
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+        }
+    },
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {

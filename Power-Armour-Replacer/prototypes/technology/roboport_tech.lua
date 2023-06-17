@@ -11,7 +11,7 @@ data:extend({
         recipe = "r_mk1"
       },
     },
-    prerequisites = {"armour_1", },
+    prerequisites = {"armour_1", "fusion-reactor_1"},
     unit =
     {
       count = 750,
