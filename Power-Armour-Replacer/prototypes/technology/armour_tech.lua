@@ -193,7 +193,7 @@
           {"logistic-science-pack", 6},
           {"military-science-pack", 5},
           {"chemical-science-pack", 4},
-          {"production-science-pack", 1},
+          {"production-science-pack", 2},
         },
         time = 15
       },
@@ -220,7 +220,8 @@
           {"logistic-science-pack", 7},
           {"military-science-pack", 6},
           {"chemical-science-pack", 5},
-          {"production-science-pack", 2},
+          {"production-science-pack", 3},
+          {"utility-science-pack", 1},
         },
         time = 15
       },
@@ -247,8 +248,8 @@
           {"logistic-science-pack", 8},
           {"military-science-pack", 7},
           {"chemical-science-pack", 6},
-          {"production-science-pack", 3},
-          {"utility-science-pack", 1},
+          {"production-science-pack", 4},
+          {"utility-science-pack", 2},
         },
         time = 15
       },

@@ -346,15 +346,13 @@ compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["f_mk5"] = {"f_mk6", 1},
-            [""] = {"", 0},
+            {"cobalt-steel-bearing", 50},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["f_mk5"] = {"f_mk6", 1},
-            [""] = {"", 0},
+            {"angels-plate-manganese", 100},
         }
     },
 })
@@ -371,6 +369,7 @@ compat.update_ingredients(recipes[7], {
         replacements = {
             ["f_mk6"] = {"f_mk7", 1},
             [""] = {"", 0},
+            {"cobalt-steel-bearing", 50},
         }
     },
     {

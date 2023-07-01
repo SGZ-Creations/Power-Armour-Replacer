@@ -89,20 +89,30 @@ end
 if mods["Darkstar_utilities_fixed"] then
 --Enabled
     data.raw.technology["terra-tech-power-armor-tech"].enabled = false
-    data.raw.technology["terra-tech-power-armor-mk2-tech"].enabled = false
     data.raw.technology["advanced-exoskeleton-equipment"].enabled = false
+    data.raw.technology["terra-tech-power-armor-mk2-tech"].enabled = false
+    data.raw.technology["energy-shield-mk3-equipment"].enabled = false
+    data.raw.technology["battery-mk3-equipment"].enabled = false
+    data.raw.technology["battery-mk4-equipment"].enabled = false
 
     data.raw.recipe["terra-tech-power-armor"].enabled = false
     data.raw.recipe["terra-tech-power-armor-mk2"].enabled = false
     data.raw.recipe["advanced-exoskeleton-equipment"].enabled = false
-    --Hidden
+    data.raw.recipe["battery-mk3"].enabled = false
+    data.raw.recipe["battery-mk4"].enabled = false
+--Hidden
     data.raw.technology["terra-tech-power-armor-tech"].hidden = true
-    data.raw.technology["terra-tech-power-armor-mk2-tech"].hidden = true
+    data.raw.technology["energy-shield-mk3-equipment"].hidden = true
     data.raw.technology["advanced-exoskeleton-equipment"].hidden = true
-
+    data.raw.technology["terra-tech-power-armor-mk2-tech"].hidden = true
+    data.raw.technology["battery-mk3-equipment"].hidden = true
+    data.raw.technology["battery-mk4-equipment"].hidden = true
+    
     data.raw.recipe["terra-tech-power-armor"].hidden = true
     data.raw.recipe["terra-tech-power-armor-mk2"].hidden = true
     data.raw.recipe["advanced-exoskeleton-equipment"].hidden = true
+    data.raw.recipe["battery-mk3"].hidden = true
+    data.raw.recipe["battery-mk4"].hidden = true
 end
 
 if mods["bobwarfare"] then

@@ -92,6 +92,17 @@ compat.update_technologies{
 
         },
     },
+    [{"bobplate", "angelssmelting"}] = {
+        ["armour_1"] = {
+            "angels-bronze-smelting-1",
+        },
+        ["armour_3"] = {
+            ["advanced-electronics"] = "angels-brass-smelting-1",
+        },
+        ["armour_7"] = {
+            ["low-density-structure"] = "cobalt-processing",
+        },
+    },
     ["bobplates"] = {
         ["armour_2"] = {
             ["electronics"] = "automation",
@@ -180,19 +191,7 @@ compat.update_technologies{
     },
     ["angelspetrochem"] = {
         ["armour_4"] = {
-
-        },
-    },
-    [{"bobplate", "angelssmelting"}] = {
-        ["armour_1"] = {
-            "angels-bronze-smelting-1",
-        },
-        ["armour_3"] = {
-            ["advanced-electronics"] = "angels-brass-smelting-1",
-        },
-        ["armour_7"] = {
-            ["angels-cobalt-steel-smelting-1"] = "cobalt-processing",
-            ["low-density-structure"] = "cobalt-processing",
+            
         },
     },
     ["Clowns-Processing"] = {

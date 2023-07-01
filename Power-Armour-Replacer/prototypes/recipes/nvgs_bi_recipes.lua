@@ -254,7 +254,6 @@ compat.update_ingredients(recipes[4], {
         }
     },
     --248K
---[[
     {
         dependencies = {"248k"},
         replacements = {
@@ -262,6 +261,5 @@ compat.update_ingredients(recipes[4], {
             [""] = {"", 0},
         }
     }
-]]
 })
 data:extend(recipes)

@@ -228,6 +228,20 @@ compat.update_ingredients(recipes[2], {
             {"tinned-copper-cable", 80},
         }
     },
+    --Bio-Industries--Angels
+    {
+        dependencies = {"Bio_Industries", "angelssmelting"},
+        replacements = {
+            {"rubber", 40},
+        }
+    },
+    --Darkstar--Angels
+    {
+        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
+        replacements = {
+            {"angels-mono-silicon", 40},
+        }
+    },
     --IR3
     {
         dependencies = {"IndustrialRevolution3"},
@@ -266,8 +280,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["battery"] = {"basic-circuit-board", 100},
-            ["iron-gear-wheel"] = {"insulated-cable", 120},
+            ["battery"] = {"insulated-cable", 120},
         }
     },
     {
@@ -281,7 +294,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["iron-plate"] = {"heat-pipe", 25},
+            ["iron-plate"] = {"heat-pipe", 10},
         }
     },
     --SE-K2
@@ -309,8 +322,34 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["pipe"] = {"ruby-5", 50},
+            ["pipe"] = {"nickel-plate", 250},
             ["iron-gear-wheel"] = {"brass-gear-wheel", 40},
+        }
+    },
+    {
+        dependencies = {"bobpower"},
+        replacements = {
+            {"heat-pipe", 20},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"solid-white-phosphorus", 100},
+        }
+    },
+    --248k
+    {
+        dependencies = {"248k"},
+        replacements = {
+            {"el_aluminum_item", 150},
+        }
+    },
+    {
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+            ["el_aluminum_item"] = {"aluminium-plate", 150},
+            {"lithium-ion-battery", 30},
         }
     },
 --[[
@@ -330,7 +369,6 @@ compat.update_ingredients(recipes[4], {
             ["battery"] = {"electronic-components", 50},
         }
     },
-
 })
 compat.update_ingredients(recipes[5], {
     {
@@ -338,19 +376,20 @@ compat.update_ingredients(recipes[5], {
         replacements = {
             ["copper-cable"] = {"gilded-copper-cable", 200},
             {"advanced-circuit", 100},
+            {"electronic-circuit", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["plastic-bar"] = {"sapphire-5", 50},
+            ["plastic-bar"] = {"ruby-5", 100},
             ["sulfur"] = {"silicon-wafer", 125},
         }
     },
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["heat-pipe"] = {"heat-pipe-2", 25},
+            ["heat-pipe"] = {"heat-pipe-2", 30},
         }
     },
     {
@@ -358,6 +397,12 @@ compat.update_ingredients(recipes[5], {
         replacements = {
             {"angels-plate-chrome", 200},
             {"invar-alloy", 80},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"solid-white-phosphorus", 100},
         }
     },
     --Darkstar
@@ -370,27 +415,38 @@ compat.update_ingredients(recipes[5], {
 })
 
 compat.update_ingredients(recipes[6], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"tinned-copper-cable", 120},
         }
     },
-    ]]
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            ["l_mk5"] = {"l_mk6", 1},
+            ["engine-unit"] = {"angels-plate-platinum", 100},
+            {"gunmetal-alloy", 100},
+            {"sapphire-5", 100},
         }
     },
     {
+        dependencies = {"bobpower"},
+        replacements = {
+            ["heat-pipe"] = {"heat-pipe-2", 40},
+        }
+    },
+    --Angels
+    {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            ["l_mk5"] = {"l_mk6", 1},
+            ["sulfur"] = {"angels-plate-manganese", 50},
+        }
+    },
+    --Clowns
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"solid-white-phosphorus", 200},
         }
     },
     --Darkstar
@@ -402,29 +458,25 @@ compat.update_ingredients(recipes[6], {
     },
 })
 compat.update_ingredients(recipes[7], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["copper-cable"] = {"gilded-copper-cable", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["electric-engine-unit"] = {"gunmetal-alloy", 200},
+            {"emerald-5", 100},
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"Clowns-Processing"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --{type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
-    ]]
     --Darkstar
     {
         dependencies = {"Darkstar_utilities_fixed"},
@@ -434,29 +486,38 @@ compat.update_ingredients(recipes[7], {
     },
 })
 compat.update_ingredients(recipes[8], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["copper-cable"] = {"insulated-cable", 150},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["plastic-bar"] = {"titanium-plate", 250},
+            {"tungsten-plate", 250},
+            {"amethyst-5", 100},
+        }
+    },
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            {"heat-shield-tile", 200},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-           [""] = {"", 0},
-           [""] = {"", 0},
+           ["insulated-cable"] = {"angels-wire-platinum", 200},
         }
     },
-    ]]
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            --{type="fluid", name="liquid-dimethylmercury", amount=200},
+        }
+    },
     --Darkstar
     {
         dependencies = {"Darkstar_utilities_fixed"},
@@ -466,29 +527,42 @@ compat.update_ingredients(recipes[8], {
     },
 })
 compat.update_ingredients(recipes[9], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"advanced-processing-unit", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["steel-plate"] = {"nitinol-bearing", 50},
+            ["low-density-structure"] = {"nitinol-gear-wheel", 50},
+            {"topaz-5", 100},
+        }
+    },
+    
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            ["plastic-bar"] = {"heat-shield-tile", 300},
+            {"heat-shield-tile", 300},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"rubber", 100},
         }
     },
-    ]]
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-osmium", 250},
+            {"clowns-plate-depleted-uranium", 250},
+            --{type="fluid", name="liquid-dimethylmercury", amount=300},
+        }
+    },
     --Darkstar
     {
         dependencies = {"Darkstar_utilities_fixed"},
@@ -498,29 +572,48 @@ compat.update_ingredients(recipes[9], {
     },
 })
 compat.update_ingredients(recipes[10], {
-    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["processing-unit"] = {"advanced-processing-unit", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["steel-plate"] = {"cobalt-steel-plate", 200},
+            {"tungsten-carbide", 100},
+            {"diamond-5", 100},
+        }
+    },
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            {"heat-shield-tile", 400},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"copper-tungsten-alloy", 200},
+            {"angels-wire-silver", 100},
+            {"angels-wire-platinum", 100},
         }
     },
-    ]]
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-osmium", 250},
+            {"clowns-plate-depleted-uranium", 250},
+            --{type="fluid", name="liquid-dimethylmercury", amount=400},
+        }
+    },
+    {
+        dependencies = {"extendedangels"},
+        replacements = {
+            {"titanium-concrete-brick", 100},
+        }
+    },
     --Darkstar
     {
         dependencies = {"Darkstar_utilities_fixed"},

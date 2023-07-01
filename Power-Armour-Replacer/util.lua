@@ -75,7 +75,9 @@ local replace = {
     ["fusion-reactor-equipment-2"] = "fusion-reactor_2",
     ["fusion-reactor-equipment-3"] = "fusion-reactor_3",
     ["fusion-reactor-equipment-4"] = "fusion-reactor_4",
-    --[""] = "",
+    ["exoskeleton-equipment"] = "exoskeleton_1",
+    ["exoskeleton-equipment-2"] = "exoskeleton_2",
+    ["exoskeleton-equipment-3"] = "exoskeleton_3",
 }
 
 local function replace_prerequisites(prerequisites)
@@ -104,8 +106,17 @@ local item_replace = {
     ["fusion-reactor-equipment"] = "f_mk1",
     ["nuclear-reactor-equipment"] = "f_mk2",
     ["exoskeleton-equipment"] = "e_mk1",
+    ["exoskeleton-equipment-2"] = "e_mk2",
+    ["exoskeleton-equipment-3"] = "e_mk3",
     ["battery-equipment"] = "b_mk1",
+    ["energy-shield-mk2-equipment"] = "s_mk2",
+    ["energy-shield-mk3-equipment"] = "s_mk3",
+    ["energy-shield-mk4-equipment"] = "s_mk4",
+    ["energy-shield-mk5-equipment"] = "s_mk5",
     ["energy-shield-mk6-equipment"] = "s_mk6",
+    ["fusion-reactor-equipment"] = "fusion-reactor_1",
+    ["fusion-reactor-equipment-2"] = "fusion-reactor_2",
+    ["fusion-reactor-equipment-3"] = "fusion-reactor_3",
     ["fusion-reactor-equipment-4"] = "fusion-reactor_4",
     --[""] = "",
 }

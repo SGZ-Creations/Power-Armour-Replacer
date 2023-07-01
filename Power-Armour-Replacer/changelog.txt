@@ -4,14 +4,15 @@ Date: 08.06.2023
   Features:
     - Added little bit of IR3 Compatiblity to get u better started with the armours.
   Changes:
-    - Attempted to hidden/dissable more of Bob's tehc & recipes as it wasn't working.
+    - Attempted to hide/dissable more of Bob's tech & recipes as it wasn't working.
+    - Darkstar Utilities Fixed hidden/dissable Battery techs & recipes as it wasn't done yet.
     - Increased power consumption for Exoskeletons 10GW and increase by 10 every tier. 10 20 30...
-    - Tweaked recipes to not have rubber in mk 1 armour if u don't have a desent way of making it.
+    - Tweaked recipes to not have rubber in mk 1 armour if u don't have a desent mod/way of making it early.
     - Made that rubber is added by only playing with bob's or by Bio Industries.
     - Made Lot's more recipes and tech hidden & dissabled. Regarding other mods.
     - Removed alien artifacts from armour_1 as it will be hard later when the enemy ovehaul mod gets made.
+    - Reduced craft time for armours. See no reason to make it slow other than taking the players time :p Sadly the one part is that i wanted players to use machines for it. As for any tiers above 5 needs machines regarless.
   Fixes:
-    - Technology for SpaceX was using bob-energy-shield-equipment-6 instead of shield_6
     - Recipe for Insectitrons was using vanila exoskeleton.
     - Name of roboport was having traces of copied name of Fusion Reactors.
     - NO Locales.
@@ -21,6 +22,7 @@ Date: 08.06.2023
     - Added "248k" to the list.
   Pre-realeses:
     - Applies Only to dowloading beta on my discord.
+    - Unfinished section of crafting eqipments is reqiring the same verison as it need to craft. Mk6 needs MK6.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.33
 Date: 03.06.2023

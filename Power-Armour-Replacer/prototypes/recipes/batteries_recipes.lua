@@ -355,7 +355,7 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphourus", 100},
+            {"solid-white-phosphorus", 100},
         }
     },
 })
@@ -412,32 +412,30 @@ compat.update_ingredients(recipes[5], {
 })
 compat.update_ingredients(recipes[6], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            
-        }
-    },
-    {
         dependencies = {"bobplates"},
-        replacements = {
-            ["low-density-structure"] = {"titanium-plate", 100},
+        replacements = { 
             ["steel-plate"] = {"aluminium-plate", 100},
-            {"plastic-bar", 140},
+            {"titanium-plate", 100},
         }
     },
     --248K
     {
-        dependencies = {"248k", "bobplates"},
+        dependencies = {"248k"},
         replacements = {
-            {"lithium-ion-battery", 30},
+            {"el_lithium_battery", 30},
+        }
+    },
+    {
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+            ["el_lithium_battery"] = {"lithium-ion-battery", 100},
         }
     },
     --Angles
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["tungsten-plate"] = {"angels-plate-chrome", 200},
         }
     },
     --Clowens
@@ -452,15 +450,15 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["rocket-control-unit"] = {"low-density-structure", 50},
+            {"processing-unit", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["battery"] = {"silver-zinc-battery", 100},
+            ["plastic-bar"] = {"titanium-plate", 150},
             {"lithium-ion-battery", 100},
         }
     },
@@ -468,21 +466,20 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"248k",},
         replacements = {
-            {"lithium-ion-battery", 100},
+            {"el_lithium_battery", 100},
         }
     },
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-             {"lithium-ion-battery", 100},
+            ["el_lithium_battery"] = {"lithium-ion-battery", 100},
         }
     },
     --Angles
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["lubricant"] = {"", 0},
             {"angels-plate-platinum", 200},
             {"angels-plate-chrome", 200},
         }
@@ -498,70 +495,86 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"gilded-copper-cable", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["battery"] = {"silver-zinc-battery", 200},
+            ["water"] = {"", 0},
+            {"tungsten-plate", 200},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["water"] = {"", 0},
             {"angels-wire-platinum", 300},
         }
-    }
+    },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            --{type="fluid", name="liquid-dimethylmercury", amount=100},
+        }
+    },
 })
 compat.update_ingredients(recipes[9], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"advanced-processing-unit", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["battery"] = {"silver-zinc-battery", 300},
+            ["plastic-bar"] = {"copper-tungsten-alloy", 250},
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"Clowns-Processing"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"clowns-plate-osmium", 250},
+            --{type="fluid", name="liquid-dimethylmercury", amount=400},
         }
-    }
+    },
 })
 compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["low-density-structure"] = {"nitinol-alloy", 100},
+            ["rocket-control-unit"] = {"low-density-structure", 100},
+            {"advanced-processing-unit", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            ["battery"] = {"silver-zinc-battery", 400},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"tungsten-carbide", 100},
         }
-    }
+    },
+    {
+        dependencies = {"extendedangels"},
+        replacements = {
+            {"titanium-concrete-brick", 100},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-osmium", 250},
+            --{type="fluid", name="liquid-dimethylmercury", amount=400},
+        }
+    },
 })
 data:extend(recipes)

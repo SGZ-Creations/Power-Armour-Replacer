@@ -4,7 +4,7 @@ local recipes = {
         name = "a_mk1",
         enabled = false,
         total_raw = true,
-        energy_required = 100.0,
+        energy_required = 50.0,
         ingredients = {
             {"heavy-armor", 1},
             {"stone-brick", 50},
@@ -19,7 +19,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk2",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 50.0,
         ingredients = {
             {"a_mk1", 1},
             {"copper-plate", 200},
@@ -34,7 +34,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk3",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 50.0,
         ingredients = {
             {"a_mk2", 1},
             {"plastic-bar", 50},
@@ -50,7 +50,7 @@ local recipes = {
         name = "a_mk4",
         enabled = false,
         
-        energy_required = 100.0,
+        energy_required = 50.0,
         ingredients = {
             {"a_mk3", 1},
             {"iron-gear-wheel", 150},
@@ -65,7 +65,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk5",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 50.0,
         ingredients = {
             {"a_mk4", 1},
             {"b_mk3", 15},
@@ -79,7 +79,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk6",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 10.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -95,7 +95,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk7",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 10.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -112,7 +112,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk8",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 10.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -128,7 +128,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk9",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 10.0,
         category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
@@ -144,7 +144,7 @@ local recipes = {
         type = "recipe",
         name = "a_mk10",
         enabled = false,
-        energy_required = 100.0,
+        energy_required = 10.0,
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk9", 1},
@@ -194,7 +194,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
     {
-        dependencies = {"Bio_Industries"},
+        dependencies = {"Bio_Industries", "angelssmelting",},
         replacements = {
             ["steel-gear-wheel"] = {"rubber", 50},
         }
@@ -662,6 +662,7 @@ compat.update_ingredients(recipes[9], {
         dependencies = {"bobplates"},
         replacements = {
             ["low-density-structure"] = {"tungsten-carbide", 250},
+            {"tungsten-plate", 200},
             {"sapphire-5", 50},
             {"ruby-5", 50},
             {"emerald-5", 50},
@@ -703,13 +704,14 @@ compat.update_ingredients(recipes[10], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 200},
-            {"tungsten-plate", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["s_mk8"] = {"copper-tungsten-alloy", 200},
+            {"nitinol-alloy", 100},
+            {"nitinol-bearing", 100},
             {"sapphire-5", 100},
             {"ruby-5", 100},
             {"emerald-5", 100},

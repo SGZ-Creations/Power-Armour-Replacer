@@ -87,16 +87,16 @@ local damage_modifier = {
     50,--10
 }
 local energy_consumption = {
-    "0.50MJ",
-    "1.00MJ",
-    "1.50MJ",
-    "2.00MJ",
-    "2.50MJ",
-    "3.00MJ",
-    "3.50MJ",
-    "4.00MJ",
-    "4.50MJ",
-    "5.00MJ",
+    "1MJ",
+    "2MJ",
+    "3MJ",
+    "4MJ",
+    "5MJ",
+    "6MJ",
+    "7MJ",
+    "8MJ",
+    "9MJ",
+    "10MJ",
 }
 local buffer_capacity = {
     "10MJ",--1
