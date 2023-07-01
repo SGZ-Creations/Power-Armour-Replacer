@@ -459,9 +459,9 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"clowns-plate-osmium", 200},
+            ["nuclear-fuel"] = {"clowns-plate-depleted-uranium", 200},
             {"clowns-plate-magnesium", 200},
-            {"clowns-plate-depleted-uranium", 200},
+            {"clowns-plate-osmium", 200},
         }
     },
 })

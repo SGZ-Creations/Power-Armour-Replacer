@@ -294,7 +294,6 @@ compat.update_ingredients(recipes[5], {
         }
     },
 })
-
 compat.update_ingredients(recipes[6], {
     --[[
     {
