@@ -415,7 +415,7 @@ compat.update_ingredients(recipes[6], {
         dependencies = {"bobplates"},
         replacements = { 
             ["steel-plate"] = {"aluminium-plate", 100},
-            {"titanium-plate", 100},
+            ["low-density-structure"] = {"titanium-plate", 100},
         }
     },
     --248K
@@ -516,6 +516,7 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
+            {"clowns-plate-magnesium", 200},
             --{type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
@@ -538,7 +539,7 @@ compat.update_ingredients(recipes[9], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-osmium", 250},
-            --{type="fluid", name="liquid-dimethylmercury", amount=400},
+            --{type="fluid", name="liquid-dimethylmercury", amount=200},
         }
     },
 })
@@ -546,8 +547,7 @@ compat.update_ingredients(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["low-density-structure"] = {"nitinol-alloy", 100},
-            ["rocket-control-unit"] = {"low-density-structure", 100},
+            ["rocket-control-unit"] = {"nitinol-alloy", 100},
             {"advanced-processing-unit", 200},
         }
     },
@@ -573,7 +573,8 @@ compat.update_ingredients(recipes[10], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-osmium", 250},
-            --{type="fluid", name="liquid-dimethylmercury", amount=400},
+            {"clowns-plate-magnesium", 200},
+            --{type="fluid", name="liquid-dimethylmercury", amount=300},
         }
     },
 })

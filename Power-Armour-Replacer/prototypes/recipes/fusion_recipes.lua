@@ -425,6 +425,14 @@ compat.update_ingredients(recipes[9], {
             [""] = {"", 0},
         }
     },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-osmium", 100},
+            {"clowns-plate-magnesium", 100},
+            {"clowns-plate-depleted-uranium", 100},
+        }
+    },
 })
 compat.update_ingredients(recipes[10], {
     {
@@ -446,6 +454,14 @@ compat.update_ingredients(recipes[10], {
         replacements = {
             ["f_mk9"] = {"f_mk10", 1},
             [""] = {"", 0},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-osmium", 200},
+            {"clowns-plate-magnesium", 200},
+            {"clowns-plate-depleted-uranium", 200},
         }
     },
 })
