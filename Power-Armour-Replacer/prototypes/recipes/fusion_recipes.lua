@@ -8,7 +8,7 @@ local recipes = {
             {"electronic-circuit", 44},
             {"steel-plate", 140},
             {"copper-plate", 150},
-            {"stone-bricks", 20},
+            {"stone-brick", 20},
         },
         result = "f_mk1"
     },

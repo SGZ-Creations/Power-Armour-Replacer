@@ -9,7 +9,7 @@
 	"dependencies":
 	[
 		"base >= 1.1", 
-		"~ par_lib >= 0.1.5",
+		"~ par_lib >= 0.1.7",
 		"~ Configurable-Armour-Suits >= 1.0.0",
 		"(?) angelsbioprocessing >= 0.7.24",
 		"(?) angelspetrochem >= 0.9.24",

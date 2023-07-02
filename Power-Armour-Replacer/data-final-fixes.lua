@@ -13,6 +13,7 @@ local function remove(type, name)
     data.raw[type][name] = nil
 end
 ]]
+
 --Enabled
     data.raw.recipe["power-armor"].enabled = false
     data.raw.recipe["modular-armor"].enabled = false

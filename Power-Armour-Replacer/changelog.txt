@@ -21,9 +21,12 @@ Date: 08.06.2023
   Info-json:
     - Added "grand-unified-factorio-theory" to the list.
     - Added "248k" to the list.
+  Thanks:
+    - Discord: @Dr Pez. For a big compatibility improvement.
   Pre-realeses:
     - Applies Only to dowloading beta on my discord.
-    - Unfinished section of crafting eqipments is reqiring the same verison as it need to craft. Mk6 needs MK6.
+  Pre-realese-Fixes:
+    - Core Compatibility Function Typo casing 5+ mods to fail on load. Beta Stage
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.33
 Date: 03.06.2023
@@ -55,7 +58,7 @@ Date: 02.06.2023
   Warnings:
     - Make sure the Technology for The Migrated content is not blocked after update.
   Thanks:
-    - Discord @_CodeGreen. For providing better cleanup conversion code Recipes & Technology
+    - Discord: @_CodeGreen. For providing better cleanup conversion code Recipes & Technology
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.30
 Date: 28.05.2023
@@ -69,7 +72,7 @@ Date: 28.05.2023
   Warnings:
     - Recommended to take out your solar panels of the grid before updating. To be safe from game deleting them.
   Thanks:
-    - Discord @Dr Pez. for Helping coding the Animation and finding a easy way of implementing it.
+    - Discord: @Dr Pez. for Helping coding the Animation and finding a easy way of implementing it.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.29
 Date: 27.05.2023

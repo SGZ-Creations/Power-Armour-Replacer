@@ -5,12 +5,18 @@ local util = {}
 util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients
     local remove = {}
+    local not_crafting = false
     for i, ingredient in pairs(ingredients) do
         if ingredient.type then
             local replacement = replacements[ingredient.name]
             if replacement then
                 ingredient.name = replacement[1]
                 ingredient.amount = replacement[2]
+                --where type exists, check if fluid
+                if ingredient.type == "fluid" then
+                    --trigger category change
+                    not_crafting = true
+                end
             end
         else
             local replacement = replacements[ingredient[1]]
@@ -30,6 +36,10 @@ util.update_ingredients = function(recipe, replacements)
     end
     for _, remove_ingredient in pairs(remove) do
         table.remove(ingredients,remove_ingredient)
+    end
+    --check if category == default, change it
+    if not_crafting and recipe.category == "crafting" then
+        recipe.category = "crafting-with-fluid"
     end
 end
 
@@ -51,6 +61,8 @@ end
 
 -- Technology Prerequisites Converter
 local replace = {
+    ["night-vision-equipment"] = "nv-bi_mk1",
+    ["belt-immunity-equipment"] = "nv-bi_mk1",
     ["modular-armor"] = "armour_1",
     ["power-armor"] = "armour_2",
     ["power-armor-2"] = "armour_3",
@@ -103,7 +115,12 @@ end
 --Recipe Item Converter
 
 local item_replace = {
+    ["night-vision-equipment"] = "nv_mk1",
+    ["belt-immunity-equipment"] = "bi_mk1",
     ["fusion-reactor-equipment"] = "f_mk1",
+    ["fusion-reactor-equipment-2"] = "f_mk2",
+    ["fusion-reactor-equipment-3"] = "f_mk3",
+    ["fusion-reactor-equipment-4"] = "f_mk4",
     ["nuclear-reactor-equipment"] = "f_mk2",
     ["exoskeleton-equipment"] = "e_mk1",
     ["exoskeleton-equipment-2"] = "e_mk2",
@@ -114,11 +131,7 @@ local item_replace = {
     ["energy-shield-mk4-equipment"] = "s_mk4",
     ["energy-shield-mk5-equipment"] = "s_mk5",
     ["energy-shield-mk6-equipment"] = "s_mk6",
-    ["fusion-reactor-equipment"] = "fusion-reactor_1",
-    ["fusion-reactor-equipment-2"] = "fusion-reactor_2",
-    ["fusion-reactor-equipment-3"] = "fusion-reactor_3",
-    ["fusion-reactor-equipment-4"] = "fusion-reactor_4",
-    --[""] = "",
+   --[""] = "",
 }
 
 local function replace_ingredients(ingredients)

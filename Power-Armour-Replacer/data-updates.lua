@@ -33,6 +33,12 @@ if settings.startup["hard_science_required"].value then
 end
 
 compat.update_technologies{
+    ["base"] = {
+        ["spidertron"] = {
+            ["fusion-reactor_1"] = "fusion-reactor_5",
+            ["exoskeleton_1"] = "exoskeleton_5",
+        },
+    },
     ["boblogistics"] = {
         ["roboport_3"] = {
             "bob-robo-modular-1"
@@ -256,6 +262,81 @@ compat.update_technologies{
             ["nuclear-power"] = "laser",
         },
     },
+    ["SpaceMod"] = {
+        ["protection-fields"] = {
+            ["bob-energy-shield-equipment-6"] = "shield_6",
+        }
+    }
 }
 -- Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.
 -- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove that would make it easier to unlock.
+
+
+compat.update_ingredients(data.raw.recipe["spidertron"], {
+    {
+        dependencies = {"base"},
+        replacements = {
+            ["f_mk1"] = {"f_mk5", 2},
+            ["e_mk1"] = {"e_mk5", 4},
+        }
+    },
+    {
+        dependencies = {"base",},
+        replacements = {
+            ["f_mk5"] = {"rtg", 2},
+            ["e_mk5"] = {"", 0},
+            
+        }
+    },
+})
+compat.update_ingredients(data.raw.recipe["cannon-spidertron"], {
+    {
+        dependencies = {"Cannon_Spidertron"},
+        replacements = {
+            ["f_mk1"] = {"f_mk5", 2},
+            ["e_mk1"] = {"e_mk5", 4},
+        }
+    },
+})
+
+compat.update_ingredients(data.raw.recipe["artillery-spidertron"], {
+    {
+        dependencies = {"artillery-spidertron"},
+        replacements = {
+            ["f_mk1"] = {"f_mk5", 2},
+            ["e_mk1"] = {"e_mk5", 4},
+        }
+    },
+})
+
+compat.update_ingredients(data.raw.recipe["protection-field"], {
+    {
+        dependencies = {"SpaceMod"},
+        replacements = {
+            ["s_mk1"] = {"s_mk6", 100},
+        }
+    },
+})
+--[[
+compat.update_ingredients(data.raw.recipe["protection-field-goopless"], {
+    {
+        dependencies = {"SpaceMod", "bobmodules",},
+        replacements = {
+            ["s_mk1"] = {"s_mk3", 1000},
+        }
+    },
+})
+]]
+if mods["Nanobots"] then
+    local tech_eff = data.raw.technology["nv-bi_mk1"].effects
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-trees"})
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-items"})
+end
+
+if mods["Krastorio2"] then
+    local tech_eff = data.raw.technology["nv-bi_mk1"].effects
+        table.add(tech_eff,{type="unlock-recipe",recipe="vehicle-roboport"})
+end
