@@ -9,7 +9,7 @@
 	"dependencies":
 	[
 		"base >= 1.1", 
-		"~ par_lib >= 0.1.7",
+		"~ par_lib >= 0.1.8",
 		"~ Configurable-Armour-Suits >= 1.0.0",
 		"(?) angelsbioprocessing >= 0.7.24",
 		"(?) angelspetrochem >= 0.9.24",
@@ -27,7 +27,7 @@
 		"? Rampant >= 3.1.2",
 		"? 248k",
 		"(?) IndustrialRevolution3 >= 3.0.18",
-		"? grand-unified-factorio-theory",
+		"? grand-unified-factorio-theory >= 1.0.16",
 		"! nullius"
 	],
 	"description": "Replaces Armours & Equipents.\nAdds 10 New Power Armour,\n10 New Batteries,10 New Reactors,\n10 New Shields,\n5 New Exoskeletons,\n2 New NVG's,\n2 New Belt-immunity",

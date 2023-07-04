@@ -126,6 +126,7 @@ local item_replace = {
     ["exoskeleton-equipment-2"] = "e_mk2",
     ["exoskeleton-equipment-3"] = "e_mk3",
     ["battery-equipment"] = "b_mk1",
+    ["energy-shield-equipment"] = "s_mk1",
     ["energy-shield-mk2-equipment"] = "s_mk2",
     ["energy-shield-mk3-equipment"] = "s_mk3",
     ["energy-shield-mk4-equipment"] = "s_mk4",

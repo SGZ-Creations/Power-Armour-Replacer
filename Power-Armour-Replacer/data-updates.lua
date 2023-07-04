@@ -281,7 +281,7 @@ compat.update_ingredients(data.raw.recipe["spidertron"], {
         }
     },
     {
-        dependencies = {"base",},
+        dependencies = {"base", "bobrevamp"},
         replacements = {
             ["f_mk5"] = {"rtg", 2},
             ["e_mk5"] = {"", 0},
@@ -289,6 +289,7 @@ compat.update_ingredients(data.raw.recipe["spidertron"], {
         }
     },
 })
+--[[
 compat.update_ingredients(data.raw.recipe["cannon-spidertron"], {
     {
         dependencies = {"Cannon_Spidertron"},
@@ -298,7 +299,15 @@ compat.update_ingredients(data.raw.recipe["cannon-spidertron"], {
         }
     },
 })
-
+compat.update_ingredients(data.raw.recipe["ss-space-spidertron"], {
+    {
+        dependencies = {"space-spidertron"},
+        replacements = {
+            ["bi_mk1"] = {"bi_mk2", 4},
+            ["belt-immunity-equipment"] = {"bi_mk2", 4},
+        }
+    },
+})
 compat.update_ingredients(data.raw.recipe["artillery-spidertron"], {
     {
         dependencies = {"artillery-spidertron"},
@@ -308,12 +317,23 @@ compat.update_ingredients(data.raw.recipe["artillery-spidertron"], {
         }
     },
 })
+]]
+compat.update_ingredients(data.raw.recipe["fusion-reactor"], {
+    {
+        dependencies = {"SpaceMod",},
+        replacements = {
+            ["f_mk1"] = {"f_mk4", 40},
+        }
+    },
+})
 
-compat.update_ingredients(data.raw.recipe["protection-field"], {
+
+compat.update_ingredients(data.raw.recipe["protection-field"],
+{
     {
         dependencies = {"SpaceMod"},
         replacements = {
-            ["s_mk1"] = {"s_mk6", 100},
+            ["s_mk2"] = {"s_mk6", 1000},
         }
     },
 })
@@ -326,17 +346,18 @@ compat.update_ingredients(data.raw.recipe["protection-field-goopless"], {
         }
     },
 })
-]]
+--[[
 if mods["Nanobots"] then
     local tech_eff = data.raw.technology["nv-bi_mk1"].effects
-        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
-        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
-        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
-        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-trees"})
-        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-items"})
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"}),
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"}),
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"}),
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-trees"}),
+        table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-items"}),
 end
 
 if mods["Krastorio2"] then
     local tech_eff = data.raw.technology["nv-bi_mk1"].effects
-        table.add(tech_eff,{type="unlock-recipe",recipe="vehicle-roboport"})
+        table.add(tech_eff,{type="unlock-recipe",recipe="vehicle-roboport"}),
 end
+]]

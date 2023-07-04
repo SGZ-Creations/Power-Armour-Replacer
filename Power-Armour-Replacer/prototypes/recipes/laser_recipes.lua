@@ -474,7 +474,7 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {type="fluid", name="liquid-dimethylmercury", amount=100},
+            --{type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
     --Darkstar
@@ -515,7 +515,7 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {type="fluid", name="liquid-dimethylmercury", amount=200},
+            --{type="fluid", name="liquid-dimethylmercury", amount=200},
         }
     },
     --Darkstar
@@ -560,7 +560,7 @@ compat.update_ingredients(recipes[9], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-           {type="fluid", name="liquid-dimethylmercury", amount=300},
+           --{type="fluid", name="liquid-dimethylmercury", amount=300},
         }
     },
     --Darkstar
@@ -605,7 +605,7 @@ compat.update_ingredients(recipes[10], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-            {type="fluid", name="liquid-dimethylmercury", amount=400},
+            --{type="fluid", name="liquid-dimethylmercury", amount=400},
         }
     },
     {
