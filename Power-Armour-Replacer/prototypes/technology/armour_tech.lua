@@ -167,6 +167,7 @@
           {"logistic-science-pack", 5},
           {"military-science-pack", 4},
           {"chemical-science-pack", 3},
+          {"production-science-pack", 1},
         },
         time = 15
       },

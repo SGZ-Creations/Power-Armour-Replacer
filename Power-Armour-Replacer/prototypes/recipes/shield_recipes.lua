@@ -199,25 +199,32 @@ compat.update_ingredients(recipes[2], {
             ["engine-unit"] = {"silver-plate", 100},
         }
     },
-    --Darkstar--Angels
+    --Angels
+    {
+        dependencies = {"angelssmelting",},
+        replacements = {
+            ["silver-plate"] = {"seteel-gear-wheel", 80},
+        }
+    },
+    {
+        dependencies = {"angelssmelting", "bobplates",},
+        replacements = {
+            ["silver-plate"] = {"seteel-gear-wheel", 80},
+        }
+    },
+    --Darkstar
     {
         dependencies = {"bobplates", "Darkstar_utilities_fixed"},
         replacements = {
             {"silicon", 115},
-            {"glass", 95},
+            {"glass", 55},
         }
     },
     {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
             ["silicon"] = {"angels-mono-silicon", 50},
-            {"glass", 95},
-        }
-    },
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            ["silver-plate"] = {"steel-gear-wheel", 80},
+            {"glass", 55},
         }
     },
     --K2

@@ -335,7 +335,8 @@ compat.update_ingredients(recipes[5], {
     },
 })
 
-compat.update_ingredients(recipes[6], {
+compat.update_ingredients(recipes[6],
+{
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -356,7 +357,22 @@ compat.update_ingredients(recipes[6], {
         }
     },
 })
-compat.update_ingredients(recipes[7], {
+compat.update_ingredients(recipes[7],
+{
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            ["electric-engin-unit"] = {"rtg", 35},
+            [""] = {"", 0},
+        }
+    },
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            [""] = {"", 0},
+            [""] = {"", 0},
+        }
+    },    
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -380,7 +396,8 @@ compat.update_ingredients(recipes[7], {
         }
     },
 })
-compat.update_ingredients(recipes[8], {
+compat.update_ingredients(recipes[8],
+{
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -403,7 +420,8 @@ compat.update_ingredients(recipes[8], {
         }
     },
 })
-compat.update_ingredients(recipes[9], {
+compat.update_ingredients(recipes[9],
+{
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -434,7 +452,8 @@ compat.update_ingredients(recipes[9], {
         }
     },
 })
-compat.update_ingredients(recipes[10], {
+compat.update_ingredients(recipes[10],
+{
     {
         dependencies = {"bobelectronics"},
         replacements = {

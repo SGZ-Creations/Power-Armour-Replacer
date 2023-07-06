@@ -94,8 +94,11 @@ compat.update_technologies{
         ["armour_8"] = {
             "heat-shield",
         },
-        ["exoskeleton_4"] = {
-
+        ["laser_7"] = {
+            "heat-shield",
+        },
+        ["fusion-reactor_7"] = {
+            "rtg",
         },
     },
     [{"bobplate", "angelssmelting"}] = {
@@ -272,7 +275,8 @@ compat.update_technologies{
 -- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove that would make it easier to unlock.
 
 
-compat.update_ingredients(data.raw.recipe["spidertron"], {
+compat.update_ingredients(data.raw.recipe["spidertron"],
+{
     {
         dependencies = {"base"},
         replacements = {
@@ -290,7 +294,8 @@ compat.update_ingredients(data.raw.recipe["spidertron"], {
     },
 })
 --[[
-compat.update_ingredients(data.raw.recipe["cannon-spidertron"], {
+compat.update_ingredients(data.raw.recipe["cannon-spidertron"],
+{
     {
         dependencies = {"Cannon_Spidertron"},
         replacements = {
@@ -299,7 +304,8 @@ compat.update_ingredients(data.raw.recipe["cannon-spidertron"], {
         }
     },
 })
-compat.update_ingredients(data.raw.recipe["ss-space-spidertron"], {
+compat.update_ingredients(data.raw.recipe["ss-space-spidertron"],
+{
     {
         dependencies = {"space-spidertron"},
         replacements = {
@@ -308,7 +314,8 @@ compat.update_ingredients(data.raw.recipe["ss-space-spidertron"], {
         }
     },
 })
-compat.update_ingredients(data.raw.recipe["artillery-spidertron"], {
+compat.update_ingredients(data.raw.recipe["artillery-spidertron"],
+{
     {
         dependencies = {"artillery-spidertron"},
         replacements = {
@@ -318,7 +325,8 @@ compat.update_ingredients(data.raw.recipe["artillery-spidertron"], {
     },
 })
 ]]
-compat.update_ingredients(data.raw.recipe["fusion-reactor"], {
+compat.update_ingredients(data.raw.recipe["fusion-reactor"],
+{
     {
         dependencies = {"SpaceMod",},
         replacements = {

@@ -287,14 +287,14 @@ compat.update_ingredients(recipes[3], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"nickel-plate", 200},
-            ["iron-gear-wheel"] = {"brass-gear-wheel", 30},
+            ["iron-gear-wheel"] = {"brass-alloy", 20},
             {"glass", 130},
         }
     },
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["iron-plate"] = {"heat-pipe", 10},
+            ["iron-plate"] = {"heat-pipe", 5},
         }
     },
     --SE-K2
@@ -323,13 +323,13 @@ compat.update_ingredients(recipes[4], {
         dependencies = {"bobplates"},
         replacements = {
             ["pipe"] = {"nickel-plate", 250},
-            ["iron-gear-wheel"] = {"brass-gear-wheel", 40},
+            ["iron-gear-wheel"] = {"brass-alloy", 20},
         }
     },
     {
         dependencies = {"bobpower"},
         replacements = {
-            {"heat-pipe", 20},
+            {"heat-pipe", 5},
         }
     },
     {
@@ -389,7 +389,7 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["heat-pipe"] = {"heat-pipe-2", 30},
+            ["heat-pipe"] = {"heat-pipe-2", 10},
         }
     },
     {
