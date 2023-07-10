@@ -5,11 +5,11 @@ local recipes = {
         enabled = false,
         energy_required = 5,
         ingredients = {
-            {"copper-plate", 120},
-            {"electronic-circuit", 115},
-            {"steel-plate", 120},
-            {"copper-cable", 125},
-            {"iron-gear-wheel", 120},
+            {"copper-plate", 100},
+            {"electronic-circuit", 100},
+            {"steel-plate", 100},
+            {"copper-cable", 100},
+            {"iron-gear-wheel", 100},
         },
         result = "e_mk1"
     },

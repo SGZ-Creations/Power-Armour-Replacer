@@ -4,7 +4,8 @@ Date: 04.07.2023
   Features:
     - Added little bit of IR3 Compatiblity to get u better started with the armours.
   Changes:
-    - Attempted to hide/dissable more of Bob's tech & recipes as it wasn't working.
+    - Changed few vanilla recipe to be more forgiving. Rather than paying everyting u own. wil be having a full look on the vanilla recipes later. Make them better where it is needed.
+    - Bob's Fixed, hidden/dissable tech & recipes as it wasn't working.
     - Darkstar Utilities Fixed, hidden/dissable techs & recipes as it wasn't done yet.
     - Increased power consumption for Exoskeletons 10GW and increase by 10 every tier. 10 20 30...
     - Tweaked recipes to not have rubber in mk 1 armour if u don't have a desent mod/way of making it early.
@@ -13,6 +14,7 @@ Date: 04.07.2023
     - Removed alien artifacts from armour_1 as it will be hard later when the enemy ovehaul mod gets made.
     - Reduced craft time for armours. See no reason to make it slow other than taking the players time :p Sadly the one part is that i wanted players to use machines for it. As for any tiers above 5 needs machines regarless.
     - mk9-10 uses utility science. Mk 7-10 uses production science.
+    - Moved laser Tech prerequsite from mk 2 to mk5 as it was using chemical science way to eeraly for being need to mk3.
   Fixes:
     - Recipe for Insectitrons was using vanila exoskeleton.
     - Name of roboport was having traces of copied name of Fusion Reactors.
@@ -26,7 +28,8 @@ Date: 04.07.2023
   Pre-realeses:
     - Applies Only to dowloading beta on my discord.
   Pre-realese-Fixes:
-    - Core Compatibility Function Typo casing 5+ mods to fail on load. Beta Stage
+    - Core Compatibility Function Typo casing 5+ mods to fail on load. Beta Stage.
+    - Version 0.1.34-6 to let players know waht specific beta release version in use. this will change a i post small changes.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.33
 Date: 03.06.2023

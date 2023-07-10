@@ -6,8 +6,8 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"electronic-circuit", 100},
-            {"steel-plate", 130},
-            {"iron-plate", 135},
+            {"steel-plate", 100},
+            {"iron-plate", 100},
             {"copper-plate", 100},
         },
         result = "l_mk1"
@@ -20,7 +20,7 @@ local recipes = {
         ingredients = {
             {"l_mk1", 1},
             {"electronic-circuit", 115},
-            {"engine-unit", 45},
+            {"engine-unit", 15},
             {"copper-plate", 150},
         },
         result = "l_mk2"

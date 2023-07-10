@@ -8,9 +8,9 @@ local recipes = {
         ingredients = {
             {"heavy-armor", 1},
             {"stone-brick", 50},
-            {"wood", 200},
-            {"steel-plate", 100},
-            {"electronic-circuit", 100}
+            {"wood", 100},
+            {"steel-plate", 20},
+            {"electronic-circuit", 30}
         },
         result = "a_mk1",
         allow_decomposition = true,
@@ -22,10 +22,10 @@ local recipes = {
         energy_required = 50.0,
         ingredients = {
             {"a_mk1", 1},
-            {"copper-plate", 200},
+            {"copper-plate", 170},
             {"iron-gear-wheel", 150},
-            {"steel-plate", 150},
-            {"electronic-circuit", 200},
+            {"steel-plate", 55},
+            {"electronic-circuit", 80},
         },
         result = "a_mk2",
         allow_decomposition = true,

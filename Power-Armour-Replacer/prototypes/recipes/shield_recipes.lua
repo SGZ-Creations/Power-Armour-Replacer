@@ -5,10 +5,10 @@ local recipes = {
         enabled = false,
         energy_required = 5,
         ingredients = {
-            {"iron-plate", 106},
-            {"stone-brick", 110},
-            {"copper-plate", 130},
-            {"electronic-circuit", 120},
+            {"iron-plate", 100},
+            {"stone-brick", 100},
+            {"copper-plate", 100},
+            {"electronic-circuit", 100},
         },
         result = "s_mk1"
     },
@@ -19,10 +19,10 @@ local recipes = {
         energy_required = 10,
         ingredients = {
             {"s_mk1", 1},
-            {"electronic-circuit", 130},
-            {"engine-unit", 60},
-            {"steel-plate", 160},
-            {"iron-plate", 140},
+            {"electronic-circuit", 100},
+            {"engine-unit", 20},
+            {"steel-plate", 130},
+            {"iron-plate", 130},
         },
         result = "s_mk2"
     },

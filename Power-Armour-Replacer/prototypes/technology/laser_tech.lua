@@ -60,7 +60,6 @@ data:extend({
     prerequisites =
     {
       "laser_2",
-      "laser",
     },
     unit =
     {
@@ -113,7 +112,7 @@ data:extend({
     prerequisites =
     {
       "laser_4",
-      "nuclear-power",
+      "laser",
     },
     unit =
     {

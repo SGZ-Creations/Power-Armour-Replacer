@@ -5,10 +5,10 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"electronic-circuit", 44},
-            {"steel-plate", 140},
-            {"copper-plate", 150},
-            {"stone-brick", 20},
+            {"electronic-circuit", 50},
+            {"steel-plate", 100},
+            {"copper-plate", 100},
+            {"stone-brick", 50},
         },
         result = "f_mk1"
     },
@@ -338,16 +338,10 @@ compat.update_ingredients(recipes[5], {
 compat.update_ingredients(recipes[6],
 {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
-            {"cobalt-steel-bearing", 50},
+            ["elctric-engin-unit"] = {"zinc-plate", 50},
+            ["uranium-fuel-cell"] = {"cobalt-steel-bearing", 50},
         }
     },
     {
@@ -362,14 +356,14 @@ compat.update_ingredients(recipes[7],
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            ["electric-engin-unit"] = {"rtg", 35},
+            ["electric-engine-unit"] = {"rtg", 35},
             [""] = {"", 0},
         }
     },
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
+            ["advanced-circuit"] = {"processing-unit", 100},
             [""] = {"", 0},
         }
     },    
@@ -425,7 +419,7 @@ compat.update_ingredients(recipes[9],
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
+            ["processing-unit"] = {"advanced-processing-unit", 50},
             [""] = {"", 0},
         }
     },
@@ -457,7 +451,7 @@ compat.update_ingredients(recipes[10],
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
+            ["processing-unit"] = {"advanced-processing-unit", 100},
             [""] = {"", 0},
         }
     },

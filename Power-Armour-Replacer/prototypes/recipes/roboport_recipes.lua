@@ -8,7 +8,7 @@ local recipes = {
             {"iron-chest", 5},
             {"electronic-circuit", 75},
             {"copper-cable", 150},
-            {"small-lamp", 20},
+            {"small-lamp", 10},
         },
         result = "r_mk1"
     },

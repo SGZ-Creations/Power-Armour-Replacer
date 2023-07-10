@@ -39,6 +39,24 @@ compat.update_technologies{
             ["exoskeleton_1"] = "exoskeleton_5",
         },
     },
+    --[[
+    ["space-exploration"] = {
+        ["spidertron"] = {
+            ["se-rtg-equipment"] = "fusion-reactor_5",
+        },
+    },
+    [{"krastorio2", "space-exploration"}] = {
+        ["worker-robot-speed-8"] = {
+            ["se-rtg-equipment-2"] = "fusion-reactor_2",
+        },  
+    },
+    [{"space-exploration", "spidertron-extended", "spidertron-extended-se"}] = {
+        ["spidertronmk2-tech"] = {
+            ["se-rtg-equipment-2"] = "fusion-reactor_2",
+        }  
+    },
+    
+    ]]
     ["boblogistics"] = {
         ["roboport_3"] = {
             "bob-robo-modular-1"
@@ -258,11 +276,10 @@ compat.update_technologies{
             "ir-steel-milestone",
         },
         ["laser_3"] = {
-            ["laser"] = "electronics",
+            "electronics",
             "ir-steel-milestone",
         },
         ["laser_5"] = {
-            ["nuclear-power"] = "laser",
         },
     },
     ["SpaceMod"] = {
