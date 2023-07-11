@@ -25,11 +25,10 @@ Date: 04.07.2023
     - Added "248k" to the list.
   Thanks:
     - Discord: @Dr Pez. For a big compatibility improvement.
-  Pre-realeses:
-    - Applies Only to dowloading beta on my discord.
-  Pre-realese-Fixes:
+  Discord-Realese:
     - Core Compatibility Function Typo casing 5+ mods to fail on load. Beta Stage.
-    - Version 0.1.34-6 to let players know waht specific beta release version in use. this will change a i post small changes.
+    - Version 0.1.34-6p2 to let players know waht specific beta release version in use. this will change aa i post small changes.
+    - The entire 0.1.34 will be a Discord only releases.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.33
 Date: 03.06.2023
