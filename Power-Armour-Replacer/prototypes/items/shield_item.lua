@@ -65,43 +65,43 @@ local max_s = {
 }
 -- Intenal battery
 local buffer_capacity = {
-  "2MJ",
-  "4MJ",
-  "6MJ",
-  "8MJ",
-  "10MJ",
-  "12MJ",
-  "14MJ",
-  "16MJ",
-  "18MJ",
-  "20MJ",
+  "0.2MJ",
+  "0.4MJ",
+  "0.6MJ",
+  "0.8MJ",
+  "1.0MJ",
+  "1.2MJ",
+  "1.4MJ",
+  "1.6MJ",
+  "1.8MJ",
+  "2.0MJ",
 }
---Max Consuption
+--Max Consuption has effect on recharge speed
 local input_flow_limit = {
-  "0.2GW",
-  "0.4GW",
-  "0.6GW",
-  "0.8GW",
-  "1.0GW",
-  "1.2GW",
-  "1.4GW",
-  "1.6GW",
-  "1.8GW",
-  "2.0GW",
+  "1GW",   --1
+  "2GW",   --2
+  "3GW",   --3
+  "4GW",   --4
+  "5GW",   --5
+  "6GW",   --6
+  "7GW",   --7
+  "8GW",   --8
+  "9GW",   --9
+  "10GW",   --10
 }
 
--- Recharge speed the higer the lower it charges
+-- Recharge speed the higer the lower it charges Doin't touch beyond 0.1.34-6p1
 local energy_per_shield = {
-  "1.0MJ",
-  "0.5MJ",
-  "256kJ",
-  "128kJ",
-  "64kJ",
-  "32kJ",
-  "16kJ",
-  "8kJ",
-  "4kJ",
-  "2kJ",
+"10000kJ",      --1
+"5000kJ",       --2
+"2500kJ",       --3
+"1200kJ",       --4
+"640kJ",        --5
+"300kJ",        --6
+"160kJ",        --7
+"80kJ",         --8
+"40kJ",         --9
+"20kJ",         --10
 }
 
 local i = 1

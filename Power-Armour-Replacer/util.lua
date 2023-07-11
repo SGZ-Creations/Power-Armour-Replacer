@@ -163,4 +163,12 @@ for _, recipe in pairs(data.raw.recipe) do
     replace_ingredients(recipe.ingredients)
 end
 
+-- Replaces Chest content
+
+--[[
+local function replace_chestitesm(chestitems)
+    if not chestitems then return end
+    for _, item in pairs(chestitems) do 
+]]
+
 return util
