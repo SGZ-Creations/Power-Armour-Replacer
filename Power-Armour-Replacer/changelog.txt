@@ -27,8 +27,8 @@ Date: 04.07.2023
   Thanks:
     - Discord: @Dr Pez. For a big compatibility improvement.
   Discord-Realese:
-    - Core Compatibility Function Typo casing 5+ mods to fail on load. Beta Stage.
-    - Version 0.1.34-6p2 to let players know waht specific beta release version in use. this will change aa i post small changes.
+    - Core Compatibility Function Typo causing 5+ mods to fail on load. Beta Stage.
+    - Version 0.1.34-6p2 to let players know waht specific beta release version in use. this will change as i post discord updates.
     - The entire 0.1.34 will be a Discord only releases.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.33
@@ -322,7 +322,7 @@ Date: 09.01.2023
     - Removed realeses spamed in changelogs. Will continue moving the link to the newes verison.
     - Armour recipe adjustment 1 done. More to come.
   Known-Issues:
-    -  ̶ ̶I̶c̶o̶n̶s̶ ̶f̶o̶r̶ ̶E̶x̶o̶s̶k̶e̶l̶e̶t̶o̶n̶ ̶a̶r̶e̶ ̶a̶ ̶b̶i̶t̶ ̶w̶e̶i̶r̶d̶.̶ ̶H̶o̶p̶e̶ ̶t̶o̶ ̶s̶o̶l̶v̶e̶ ̶t̶h̶i̶s̶ ̶s̶o̶o̶n̶ ̶b̶u̶t̶ ̶i̶'̶v̶e̶ ̶t̶r̶i̶e̶d̶ ̶a̶ ̶l̶o̶t̶ ̶t̶o̶ ̶n̶o̶ ̶s̶u̶c̶c̶e̶s̶s̶
+    - ̶ ̶I̶c̶o̶n̶s̶ ̶f̶o̶r̶ ̶E̶x̶o̶s̶k̶e̶l̶e̶t̶o̶n̶ ̶a̶r̶e̶ ̶a̶ ̶b̶i̶t̶ ̶w̶e̶i̶r̶d̶.̶ ̶H̶o̶p̶e̶ ̶t̶o̶ ̶s̶o̶l̶v̶e̶ ̶t̶h̶i̶s̶ ̶s̶o̶o̶n̶ ̶b̶u̶t̶ ̶i̶'̶v̶e̶ ̶t̶r̶i̶e̶d̶ ̶a̶ ̶l̶o̶t̶ ̶t̶o̶ ̶n̶o̶ ̶s̶u̶c̶c̶e̶s̶s̶
   WIP:
     - Recipe & Tech research compatibility needs adjusting.
   Internal:
