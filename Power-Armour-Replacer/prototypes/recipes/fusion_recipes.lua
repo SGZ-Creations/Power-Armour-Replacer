@@ -230,7 +230,7 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"IndustrialRevolution3"},
         replacements = {
             ["electronic-circuit"] = {"iron-frame-small", 30},
-            ["iron-plate"] = {"iron-window", 30},
+            ["iron-plate"] = {"", 0},
             ["copper-cable"] = {"bronze-plate-heavy", 50},
             {"rubber", 50},
         }

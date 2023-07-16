@@ -171,6 +171,7 @@ compat.update_technologies{
         },
         ["laser_5"] = {
             ["nuclear-power"] = "bob-heat-pipe-2",
+            "bob-heat-pipe-2",
         },
         ["laser_7"] = {
             "bob-heat-pipe-3"

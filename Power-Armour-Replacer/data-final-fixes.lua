@@ -14,6 +14,16 @@ local function remove(type, name)
 end
 ]]
 
+--TeleportationEquipment Mod
+require("compatibilities.teleportation-equipment.teleportation_tech")
+
+--SpaceMod Mod
+require("compatibilities.SpaceMod.SpaceMod_tech")
+
+--Any-else
+require("compatibilities.Misc.misc-tech")
+
+
 --Enabled
     data.raw.recipe["power-armor"].enabled = false
     data.raw.recipe["modular-armor"].enabled = false

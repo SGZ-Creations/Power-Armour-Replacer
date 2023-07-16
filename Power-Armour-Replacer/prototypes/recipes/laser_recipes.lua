@@ -191,7 +191,7 @@ compat.update_ingredients(recipes[1], {
     {
         dependencies = {"IndustrialRevolution3"},
         replacements = {
-            ["electronic-circuit"] = {"bronze-window", 20},
+            ["electronic-circuit"] = {"", 0},
             ["copper-plate"] = {"copper-cable", 40},
             ["iron-plate"] = {"copper-pellet", 80},
             ["steel-plate"] = {"tin-gear-wheel", 20},
@@ -246,7 +246,7 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"IndustrialRevolution3"},
         replacements = {
-            ["electronic-circuit"] = {"bronze-window", 20},
+            ["electronic-circuit"] = {"", 0},
             ["engine-unit"] = {"copper-motor", 20},
             ["copper-plate"] = {"copper-beam", 50},
         }
