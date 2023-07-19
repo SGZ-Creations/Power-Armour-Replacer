@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.36
+Date: 19.07.2023
+  Changes:
+    - Made sure that recipes with armours used converts to P.A.&.R versions instead. One mod found tyo be the case it Klonan's Combat Drones.
+  Info:
+    - Mini update. More features coming later.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.35
 Date: 16.07.2023
   Changes:

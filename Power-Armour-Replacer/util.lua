@@ -117,6 +117,9 @@ end
 --Recipe Item Converter
 
 local item_replace = {
+    ["modular-armor"] = "a_mk1",
+    ["power-armor"] = "a_mk2",
+    ["power-armor-mk2"] = "a_mk3",
     ["night-vision-equipment"] = "nv_mk1",
     ["belt-immunity-equipment"] = "bi_mk1",
     ["fusion-reactor-equipment"] = "f_mk1",
