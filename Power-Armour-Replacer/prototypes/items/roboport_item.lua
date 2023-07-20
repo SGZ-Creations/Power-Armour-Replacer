@@ -1,28 +1,28 @@
 
 local graphics = {
     "__base__/graphics/equipment/personal-roboport-equipment.png",--1
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--2
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--3
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--4
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--5
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--6
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--7
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--8
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--9
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--10
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--2
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--3
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--4
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--5
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--6
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--7
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--8
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--9
+    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--10
 }
 
 local graphics2 = {
     "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--1
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--2
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--3
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--4
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--5
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--6
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--7
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--8
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--9
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--10
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--2
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--3
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--4
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--5
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--6
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--7
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--8
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--9
+    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--10
 }
 
 local icons = {

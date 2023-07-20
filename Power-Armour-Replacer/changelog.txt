@@ -1,8 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.37
+Date: xx.07.2023
+  Changes:
+    - Place holder graphics changed on Roboports & Batteries.
+  Fixs:
+    - Typos.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.36
 Date: 19.07.2023
   Changes:
-    - Made sure that recipes with armours used converts to P.A.&.R versions instead. One mod found tyo be the case it Klonan's Combat Drones.
+    - Made sure that recipes with armours used converts to P.A.&.R versions instead. One mod found to be the case was Klonan's Combat Drones.
   Info:
     - Mini update. More features coming later.
 ---------------------------------------------------------------------------------------------------

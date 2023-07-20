@@ -1,28 +1,28 @@
 
 local graphics = {
     "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
+    "__base__/graphics/equipment/battery-mk2-equipment.png",
 }
 
 local graphics2 = {
     "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
+    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
 }
 
 local icon = {
