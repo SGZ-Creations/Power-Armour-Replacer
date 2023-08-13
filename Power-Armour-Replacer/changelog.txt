@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.39
-Date: 13.08.2023
+Date: 14.08.2023
   Minor Features:
     - Function to hide item in filter UI/Tab regarding other mods.
     - Settings to re-enable items in filter UI/Tab.
