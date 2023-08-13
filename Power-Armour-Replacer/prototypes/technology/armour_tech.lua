@@ -57,7 +57,7 @@
           recipe = "a_mk3"
         },
       },
-      prerequisites = {"armour_2", "advanced-electronics", "plastics", "engine"},
+      prerequisites = {"armour_2", "advanced-electronics", "plastics", "engine", "military-2",},
       unit =
       {
         count = 1000,
@@ -106,7 +106,7 @@
           recipe = "a_mk5"
         },
       },
-      prerequisites = {"armour_4", "advanced-electronics-2", "electric-engine", "uranium-processing"},
+      prerequisites = {"armour_4", "advanced-electronics-2", "electric-engine", "uranium-processing", "military-3",},
       unit =
       {
         count = 1000,
@@ -158,7 +158,7 @@
           recipe = "a_mk7"
         },
       },
-      prerequisites = {"armour_6", "low-density-structure", "rocket-control-unit",},
+      prerequisites = {"armour_6", "low-density-structure",},
       unit =
       {
         count = 1000,
@@ -212,7 +212,7 @@
           recipe = "a_mk9"
         },
       },
-      prerequisites = {"armour_8"},
+      prerequisites = {"armour_8", "rocket-control-unit", "military-4",},
       unit =
       {
         count = 1000,

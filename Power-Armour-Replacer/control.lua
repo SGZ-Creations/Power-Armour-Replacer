@@ -5,7 +5,7 @@ local function check_for_error(event)
   if script.active_mods["base"] then
       if settings.startup["vanilla-warning"].value then
           printer(
-            "\nBase/Vanilla Armours & Equipment are Disabled/Hidden due to intentional mod mechanics.\nPower Armour & Replacer is functional in vanilla but was never intended with vanilla.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
+            "\nBase/Vanilla Armours & Equipment are Disabled/Hidden due to intentional mod mechanics.\nFilters are hidden, Can enabled under [Vanilla Filters] (PA&R) startup settings.\nPower Armour & Replacer is functional in vanilla but was never intended with vanilla.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
           )
       end
   end
@@ -29,7 +29,23 @@ local function check_for_error(event)
   if script.active_mods["Power Armor MK3"] then
     if settings.startup["P-A_MK3-warning"].value then
         game.print(
-          "\nP-A_MK3's Armours & Equipment are Disabled/Hidden due to intentional mod mechanics.\nThis mod is redundant at this point.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
+          "\nPower Armor MK3's Armours & Equipment are Disabled & Hidden due to intentional mod mechanics.\nFilters are hidden, Can enable it under [Modded Filters] (PA&R) startup settings.\nThis mod can still have useful tech and items to play with.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
+        )
+    end
+  end
+
+  if script.active_mods["custom_power_armor_fix"] then
+    if settings.startup["cutom's-armour-warning"].value then
+        game.print(
+          "\nCustom Power Armour fix's Armours & Equipment are Disabled & Hidden due to intentional mod mechanics.\nFilters are hidden, Can enable it under [Modded Filters] (PA&R) startup settings.\nThis mod has have a few turret equipment to play with.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
+        )
+    end
+  end
+
+  if script.active_mods["PowerAndArmour"] then
+    if settings.startup["powerandarmor-warning"].value then
+        game.print(
+          "\nPower&Armor's Armours & Equipment are Disabled & Hidden due to intentional mod mechanics.\nFilters are hidden, Can enable it under [Modded Filters] (PA&R) startup settings.\nThere's nothing left on this mod to need it enabled.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
         )
     end
   end
@@ -37,11 +53,11 @@ local function check_for_error(event)
   if script.active_mods["RampantArsenal"] then
     if settings.startup["arsenal-warning"].value then
         game.print(
-          "\nRampantArsenal Armours & Equipment are Disabled & Hidden due to intentional mod mechanics.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
+          "\nRampantArsenal Armours & Equipment are Disabled & Hidden due to intentional mod mechanics.\nFilters are hidden, Can enable it under [Modded Filters] (PA&R) startup settings.\nYou can disable this message in (PA&R) startup settings if u don't want the warnings."
         )
     end
   end
-  
+
   -- Mod Issue Warnings.
   if script.active_mods["Insectitron"] then
     if settings.startup["Insectitron-issue"].value then
@@ -78,9 +94,22 @@ end
 
 local function on_configuration_changed()
   check_for_error()
-
 end
 
 script.on_init(on_configuration_changed)
 script.on_configuration_changed(on_configuration_changed)
 script.on_event(defines.events.on_player_created, check_for_error)
+
+
+
+--[[
+commands.add_command("give_me_one", "Gives 1 item", function(event)
+    local player_index = event.player_index
+    local player = game.get_player(player_index)
+    local parameter = event.parameter
+    if game.item_prototypes[parameter] then
+      player.insert{name = parameter, count = 1}
+    end
+  end
+)
+]]

@@ -1,6 +1,23 @@
 data:extend({
   {
     type = "bool-setting",
+    name = "vanilla-filters",
+    setting_type = "startup",
+    default_value = true,
+    order = "3Aaa"
+  },
+  {
+    type = "bool-setting",
+    name = "mod-filters",
+    setting_type = "startup",
+    default_value = true,
+    order = "3Aab"
+  },
+})
+
+data:extend({
+  {
+    type = "bool-setting",
     name = "vanilla-warning",
     setting_type = "startup",
     default_value = true,
@@ -40,6 +57,30 @@ if mods["Power Armor MK3"] then
       setting_type = "startup",
       default_value = true,
       order = "1Zaa"
+    },
+  })
+end
+
+if mods["custom_power_armor_fix"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "cutom's-armour-warning",
+      setting_type = "startup",
+      default_value = true,
+      order = "1Zab"
+    },
+  })
+end
+
+if mods["PowerAndArmor"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "powerandarmor-warning",
+      setting_type = "startup",
+      default_value = true,
+      order = "1Zab"
     },
   })
 end

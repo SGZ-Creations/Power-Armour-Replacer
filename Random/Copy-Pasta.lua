@@ -1,20 +1,25 @@
+data.raw.recipe[""].enabled = false
+data.raw.technology[""].enabled = false
+data.raw.recipe[""].hidden = true
+data.raw.technology[""].hidden = true
+Hide_Item("")
 
 --Max Consuption has effect on recharge speed
 local input_flow_limit = {
-    "5GW",   --1
-    "50GW",   --2
-    "500GW",   --3
-    "5000GW",   --4
-    "50000GW",   --5
-    "500000GW",   --6
-    "5000000GW",   --7
-    "50000000GW",   --8
+    "5GW",           --1
+    "50GW",          --2   
+    "500GW",         --3
+    "5000GW",        --4
+    "50000GW",       --5
+    "500000GW",      --6
+    "5000000GW",     --7
+    "50000000GW",    --8
     "500000000GW",   --9
-    "50000000000GW",   --10
-  }
-  
-  -- Recharge speed the higer the lower it charges Doin't touch beyond 0.1.34-6p1
-  local energy_per_shield = {
+    "50000000000GW", --10
+}
+
+-- Recharge speed the higer the lower it charges Doin't touch beyond 0.1.34-6p1
+local energy_per_shield = {
     "10kJ", --1
     "10kJ", --2
     "10kJ", --3
@@ -25,7 +30,7 @@ local input_flow_limit = {
     "10kJ", --8
     "10kJ", --9
     "10kJ", --10
-  }
+}
 
 
 //Use to copy
@@ -38,10 +43,6 @@ local input_flow_limit = {
     ["", ""]
   ]
 
-//--[[
-item.flags = item.flags or {}
-table.insert(item.flags, "hidden")
-//]]
 
 // remove("", "")
 
@@ -124,13 +125,6 @@ and replaces all vanailla versions. Tho no worry it will just migrate to my vers
     remove("recipe", "terra-tech-power-armor-mk2")
     ]]
 
-    --armour.item
---[[
-    data.raw.item["power-armor-mk3"].hidden = true
-    data.raw.item["power-armor-mk4"].hidden = true
-    data.raw.item["power-armor-mk5"].hidden = true
-]]
-
 
 local original_sprite = {
     texture = "path/to/original/sprite.png",
@@ -164,3 +158,10 @@ game:get_service("rendering"):set_sprite(entity, shifted_sprite)
             [""] = {"", 0},
         }
     },
+
+--local remove "remove" tech
+--[[
+local function remove(type, name)
+    data.raw[type][name] = nil
+end
+]]

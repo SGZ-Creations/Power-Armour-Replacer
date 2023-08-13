@@ -137,7 +137,7 @@ local item_replace = {
     ["energy-shield-mk4-equipment"] = "s_mk4",
     ["energy-shield-mk5-equipment"] = "s_mk5",
     ["energy-shield-mk6-equipment"] = "s_mk6",
-   --[""] = "",
+    --[""] = "",
 }
 
 local function replace_ingredients(ingredients)

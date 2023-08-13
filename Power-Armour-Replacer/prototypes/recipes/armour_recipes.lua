@@ -103,7 +103,6 @@ local recipes = {
             {"f_mk5", 5},
             {type="fluid", name="petroleum-gas", amount=700},
             {"green-wire", 100},
-            {"rocket-control-unit", 50},
             {"low-density-structure", 75},
         },
         result = "a_mk7",
@@ -553,8 +552,8 @@ compat.update_ingredients(recipes[7], {
         dependencies = {"bobplates"},
         replacements = {
             ["green-wire"] = {"ceramic-bearing", 200},
-            ["rocket-control-unit"] = {"tungsten-plate", 250},
             ["low-density-structure"] = {"cobalt-steel-bearing", 200},
+            {"tungsten-plate", 250},
             {"sapphire-5", 50},
             {"ruby-5", 50},
             {"emerald-5", 50},
@@ -585,7 +584,7 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["rocket-control-unit"] = {"tungsten-plate", 250},
+            {"tungsten-plate", 250},
             {"glass", 50},
 
         }
