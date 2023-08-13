@@ -1,9 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.38
+Date: 07.08.2023
+  Changes:
+    - Control stage. With updates, new messages reagarding other mods.
+  Fixes:
+    - Miss placed line of code casued a crash with SE.
+  Discord-Realese:
+    - Not all things mentioned here would be done yet.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.37
-Date: xx.07.2023
+Date: 20.07.2023
   Changes:
     - Place holder graphics changed on Roboports & Batteries.
-  Fixs:
+  Fixes:
     - Typos.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.36

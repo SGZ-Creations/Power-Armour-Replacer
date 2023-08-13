@@ -218,8 +218,7 @@ compat.update_technologies{
         },
     },
     ["angelspetrochem"] = {
-        ["armour_4"] = {
-            
+        ["armour_4"] = { 
         },
     },
     ["Clowns-Processing"] = {

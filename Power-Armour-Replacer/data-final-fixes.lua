@@ -4,7 +4,7 @@
     From diffrent mods giving u multiple "MK3 armours" in game.
 
     At some point should u have, 2-4 mods giving u armours this mod will hopefully do a clean up & convert your previous Armour, Equipment to one version. 
-    Witch i want to let u modify to your likings in the end. If it ends up being to OP u can adjust it all.
+    Which i want to let u modify to your likings in the end. If it ends up being to OP u can adjust it all.
 
     Only exception with this mod is that i won't be duping anything regarding bob's vehicle Equipment as it has nothing to do with this.
 ]]
@@ -23,7 +23,6 @@ require("compatibilities.SpaceMod.SpaceMod_tech")
 --Any-else
 require("compatibilities.Misc.misc-tech")
 
-
 --Enabled
     data.raw.recipe["power-armor"].enabled = false
     data.raw.recipe["modular-armor"].enabled = false
@@ -32,7 +31,6 @@ require("compatibilities.Misc.misc-tech")
     data.raw.technology["modular-armor"].enabled = false
     data.raw.technology["power-armor"].enabled = false
     data.raw.technology["power-armor-mk2"].enabled = false
-
 --Hidden
     data.raw.recipe["modular-armor"].hidden = true
     data.raw.recipe["power-armor"].hidden = true
@@ -403,7 +401,7 @@ if mods["space-exploration"] then
     data.raw.technology["energy-shield-mk4-equipment"].enabled = false
     data.raw.technology["energy-shield-mk5-equipment"].enabled = false
     data.raw.technology["energy-shield-mk6-equipment"].enabled = false
-    data.raw.technology["kr-battery-mk3-equipment"].enabled = false
+    --data.raw.technology[""].enabled = false
     --data.raw.technology[""].enabled = false
     --data.raw.technology[""].enabled = false
 
@@ -466,6 +464,7 @@ if mods["custom_power_armor_fix"] then
     data.raw.technology["power-armor-mk3"].hidden = true
     data.raw.technology["power-armor-mk4"].hidden = true
     data.raw.technology["power-armor-mk5"].hidden = true
+
 end
 
 if mods["Power Armor MK3"] then
