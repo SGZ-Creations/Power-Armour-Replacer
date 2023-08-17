@@ -1,3 +1,2 @@
---functions
-require("functions.science-setting")
-require("functions.tech-replace-convert")
+--structures
+require("structures.science-setting")

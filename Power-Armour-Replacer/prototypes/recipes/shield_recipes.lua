@@ -143,7 +143,7 @@ local recipes = {
         result = "s_mk10"
     },
 }
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
 
@@ -332,7 +332,7 @@ compat.update_ingredients(recipes[4], {
             --["el-aluminium-item"] = {"aluminium-plate", 35},
         }
     },
-  --SE-K2
+    --SE-K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -348,7 +348,6 @@ compat.update_ingredients(recipes[4], {
     },
 })
 compat.update_ingredients(recipes[5], {
-    
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -387,8 +386,8 @@ compat.update_ingredients(recipes[5], {
     },
     ]]
 })
+--[[
 compat.update_ingredients(recipes[6], {
-    
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -503,4 +502,5 @@ compat.update_ingredients(recipes[10], {
         }
     },
 })
+]]
 data:extend(recipes)

@@ -66,13 +66,14 @@ local recipes = {
         result = "nv_mk2"
     },
 }
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"steel-bearing", 150},
+            {"carbon", 40},
         }
     },
     -- Angels
@@ -204,7 +205,6 @@ compat.update_ingredients(recipes[3], {
             ["lubricant"] = {"", 0},
         }
     },
-    
     -- SE-K2
     {
         dependencies = {"Krastorio2"},
@@ -226,8 +226,6 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 100},
-            ["f_mk5"] = {"processing-unit", 100},
             {"gilded-copper-cable", 260},
             {"insulated-cable", 240},
         }
@@ -235,8 +233,10 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobplates"},
         replacements = {
+            ["f_mk5"] = {"advanced-processing-unit", 100},
             ["petroleum-gas"] = {"dinitrogen-tetroxide", 300},
             {"titanium-plate", 200},
+            {"copper-tungsten-alloy", 200}
         }
     },
     --Angels

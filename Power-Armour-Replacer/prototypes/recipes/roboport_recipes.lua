@@ -145,7 +145,7 @@ local recipes = {
     },
 }
 
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
@@ -198,13 +198,13 @@ compat.update_ingredients(recipes[2], {
             ["electronic-circuit"] = {"basic-circuit-board", 45},
             ["copper-cable"] = {"tinned-copper-cable", 75},
             {"insualted-cable", 60},
-      }
+        }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-gear-wheel"] = {"steel-gear-wheel", 60},
-      }
+        }
     },
     --SE-K2
     {

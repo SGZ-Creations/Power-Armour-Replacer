@@ -139,7 +139,7 @@ local recipes = {
         result = "f_mk10"
     },
 }
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
@@ -351,6 +351,7 @@ compat.update_ingredients(recipes[6],
         }
     },
 })
+--[[
 compat.update_ingredients(recipes[7],
 {
     {
@@ -478,4 +479,5 @@ compat.update_ingredients(recipes[10],
         }
     },
 })
+]]
 data:extend(recipes)

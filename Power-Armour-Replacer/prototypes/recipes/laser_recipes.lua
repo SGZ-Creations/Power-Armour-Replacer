@@ -144,7 +144,7 @@ local recipes = {
         result = "l_mk10"
     },
 }
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
@@ -509,7 +509,7 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-           ["insulated-cable"] = {"angels-wire-platinum", 200},
+            ["insulated-cable"] = {"angels-wire-platinum", 200},
         }
     },
     {
@@ -528,20 +528,14 @@ compat.update_ingredients(recipes[8], {
 })
 compat.update_ingredients(recipes[9], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            {"advanced-processing-unit", 100},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"nitinol-bearing", 50},
             ["low-density-structure"] = {"nitinol-gear-wheel", 50},
+            {"advanced-processing-unit", 100},
             {"topaz-5", 100},
         }
     },
-    
     {
         dependencies = {"bobrevamp"},
         replacements = {
@@ -560,7 +554,7 @@ compat.update_ingredients(recipes[9], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-           --{type="fluid", name="liquid-dimethylmercury", amount=300},
+            --{type="fluid", name="liquid-dimethylmercury", amount=300},
         }
     },
     --Darkstar
@@ -573,14 +567,9 @@ compat.update_ingredients(recipes[9], {
 })
 compat.update_ingredients(recipes[10], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 200},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
+            ["processing-unit"] = {"advanced-processing-unit", 200},
             ["steel-plate"] = {"cobalt-steel-plate", 200},
             {"tungsten-carbide", 100},
             {"diamond-5", 100},

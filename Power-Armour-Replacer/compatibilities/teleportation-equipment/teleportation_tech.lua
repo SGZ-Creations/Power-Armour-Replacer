@@ -30,4 +30,3 @@ if mods["TeleportationEquipment"] then
     },
   })
 end
-    

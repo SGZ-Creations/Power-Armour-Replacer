@@ -27,8 +27,6 @@ local function Hide_Item(name)
 end
 
 --Enabled
-
-
   data.raw.technology["modular-armor"].enabled = false
   data.raw.technology["power-armor"].enabled = false
   data.raw.technology["power-armor-mk2"].enabled = false
@@ -98,7 +96,7 @@ end
   data.raw.recipe["personal-roboport-equipment"].hidden = true
   data.raw.recipe["personal-laser-defense-equipment"].hidden = true
   data.raw.recipe["personal-roboport-mk2-equipment"].hidden = true
-  
+
   --if not mods[] then
 if settings.startup["vanilla-filters"].value then
   Hide_Item("power-armor")

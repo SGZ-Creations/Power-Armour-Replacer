@@ -8,6 +8,13 @@ compat.update_technologies{
       ["exoskeleton_1"] = "exoskeleton_5",
     },
   },
+
+  ["space-spidertron"] = {
+    ["spidertron"] = {
+      "no-power-equipment_mk2",
+    }
+  },
+
   --[[
   ["space-exploration"] = {
     ["spidertron"] = {
@@ -40,6 +47,7 @@ compat.update_technologies{
       "bob-robo-modular-4"
     },
   },
+
   ["bobelectronics"] = {
     ["laser_3"] = {
       ["advanced-electronics"] = "electronics"
@@ -69,6 +77,23 @@ compat.update_technologies{
       "advanced-electronics-3"
     },
   },
+
+  ["bobpower"] = {
+    ["laser_3"] = {
+      "bob-heat-pipe-1",
+    },
+    ["laser_5"] = {
+      ["nuclear-power"] = "bob-heat-pipe-2",
+      "bob-heat-pipe-2",
+    },
+    ["laser_7"] = {
+      "bob-heat-pipe-3"
+    },
+    ["laser_9"] = {
+      "bob-heat-pipe-4"
+    },
+  },
+
   ["bobwarfare"] = {
     ["armour_5"] = {
       ["uranium-processing"] = "bob-armor-making-3"
@@ -77,6 +102,13 @@ compat.update_technologies{
       "bob-armor-making-4"
     },
   },
+
+  [{"bobrevamp", "bobplate",}] = {
+    ["fusion-reactor_7"] = {
+      "rtg",
+    },
+  },
+
   ["bobrevamp"] = {
     ["armour_8"] = {
       "heat-shield",
@@ -84,10 +116,8 @@ compat.update_technologies{
     ["laser_7"] = {
       "heat-shield",
     },
-    ["fusion-reactor_7"] = {
-      "rtg",
-    },
   },
+
   [{"bobplate", "angelssmelting"}] = {
     ["armour_1"] = {
       "angels-bronze-smelting-1",
@@ -134,21 +164,7 @@ compat.update_technologies{
       "rocket-control-unit",
     },
   },
-  ["bobpower"] = {
-    ["laser_3"] = {
-      "bob-heat-pipe-1",
-    },
-    ["laser_5"] = {
-      ["nuclear-power"] = "bob-heat-pipe-2",
-      "bob-heat-pipe-2",
-    },
-    ["laser_7"] = {
-      "bob-heat-pipe-3"
-    },
-    ["laser_9"] = {
-      "bob-heat-pipe-4"
-    },
-  },
+
   ["angelssmelting"] = {
     ["armour_1"] = {
       "angels-solder-smelting-1",
@@ -186,10 +202,12 @@ compat.update_technologies{
       "angels-chrome-smelting-1"
     },
   },
+
   ["angelspetrochem"] = {
     ["armour_4"] = {
     },
   },
+
   ["Clowns-Processing"] = {
     ["armour_10"] = {
       "advanced-depleted-uranium-smelting-1",
@@ -201,11 +219,13 @@ compat.update_technologies{
       "advanced-depleted-uranium-smelting-1",
     },
   },
+
   ["Darkstar_utilities_fixed"] = {
     ["laser_5"] = {
       "laser-cores",
     },
   },
+
   ["248k"] = {
     ["armour_3"] = {
       ["angels-aluminium-smelting-1"] = "el_caster_tech",
@@ -218,6 +238,7 @@ compat.update_technologies{
       "el_lithium_tech",
     },
   },
+
   ["IndustrialRevolution3"] = {
     ["armour_1"] = {
       ["automation"] = "ir-bronze-forestry",
@@ -251,105 +272,12 @@ compat.update_technologies{
     ["laser_5"] = {
     },
   },
+
   ["SpaceMod"] = {
     ["protection-fields"] = {
       ["bob-energy-shield-equipment-6"] = "shield_6",
     }
-  }
+  },
 }
 -- Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.
 -- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove that would make it easier to unlock.
-
-
-compat.update_ingredients(data.raw.recipe["spidertron"],
-{
-  {
-    dependencies = {"base"},
-    replacements = {
-        ["f_mk1"] = {"f_mk5", 2},
-        ["e_mk1"] = {"e_mk5", 4},
-    }
-  },
-  {
-    dependencies = {"base", "bobrevamp"},
-    replacements = {
-      ["f_mk5"] = {"rtg", 2},
-      ["e_mk5"] = {"", 0},
-    }
-  },
-})
---[[
-compat.update_ingredients(data.raw.recipe["cannon-spidertron"],
-{
-  {
-    dependencies = {"Cannon_Spidertron"},
-    replacements = {
-      ["f_mk1"] = {"f_mk5", 2},
-      ["e_mk1"] = {"e_mk5", 4},
-    }
-  },
-})
-compat.update_ingredients(data.raw.recipe["ss-space-spidertron"],
-{
-  {
-    dependencies = {"space-spidertron"},
-    replacements = {
-      ["bi_mk1"] = {"bi_mk2", 4},
-      ["belt-immunity-equipment"] = {"bi_mk2", 4},
-    }
-  },
-})
-compat.update_ingredients(data.raw.recipe["artillery-spidertron"],
-{
-  {
-    dependencies = {"artillery-spidertron"},
-    replacements = {
-      ["f_mk1"] = {"f_mk5", 2},
-      ["e_mk1"] = {"e_mk5", 4},
-    }
-  },
-})
-]]
-compat.update_ingredients(data.raw.recipe["fusion-reactor"],
-{
-  {
-    dependencies = {"SpaceMod",},
-    replacements = {
-      ["f_mk1"] = {"f_mk4", 40},
-    }
-  },
-})
-
-compat.update_ingredients(data.raw.recipe["protection-field"],
-{
-  {
-    dependencies = {"SpaceMod"},
-    replacements = {
-      ["s_mk2"] = {"s_mk6", 1000},
-    }
-  },
-})
---[[
-compat.update_ingredients(data.raw.recipe["protection-field-goopless"], {
-  {
-    dependencies = {"SpaceMod", "bobmodules",},
-    replacements = {
-      ["s_mk1"] = {"s_mk3", 1000},
-    }
-  },
-})
---[[
-if mods["Nanobots"] then
-  local tech_eff = data.raw.technology["nv-bi_mk1"].effects
-  table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"}),
-  table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"}),
-  table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"}),
-  table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-trees"}),
-  table.add(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-items"}),
-end
-
-if mods["Krastorio2"] then
-  local tech_eff = data.raw.technology["nv-bi_mk1"].effects
-  table.add(tech_eff,{type="unlock-recipe",recipe="vehicle-roboport"}),
-end
-]]

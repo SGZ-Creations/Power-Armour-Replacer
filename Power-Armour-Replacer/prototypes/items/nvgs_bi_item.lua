@@ -23,10 +23,10 @@ local energy_consumption = {
 }
 
 local order = {
-  "ja[night-vision]-aa[armour-replacer]",
-  "jb[night-vision]-ab[armour-replacer]",
-  "jc[belt-immunity]-ab[armour-replacer]",
-  "jd[belt-immunity]-ab[armour-replacer]",
+  "jcc[night-vision]-ac[armour-replacer]", --1
+  "jdd[night-vision]-ad[armour-replacer]", --2
+  "jaa[belt-immunity]-aa[armour-replacer]",--3
+  "jbb[belt-immunity]-ab[armour-replacer]",--4
 }
 
 local stack_size = {
@@ -37,14 +37,14 @@ local stack_size = {
 }
 
 local graphics = {
-  "__base__/graphics/equipment/night-vision-equipment.png", 
+  "__base__/graphics/equipment/night-vision-equipment.png",
   "__base__/graphics/equipment/night-vision-equipment.png",
   "__base__/graphics/icons/belt-immunity-equipment.png",
   "__base__/graphics/icons/belt-immunity-equipment.png",
 }
 
 local hr_graphics = {
-  "__base__/graphics/equipment/hr-night-vision-equipment.png", 
+  "__base__/graphics/equipment/hr-night-vision-equipment.png",
   "__base__/graphics/equipment/hr-night-vision-equipment.png",
   "__base__/graphics/equipment/hr-belt-immunity-equipment.png",
   "__base__/graphics/equipment/hr-belt-immunity-equipment.png",

@@ -49,7 +49,6 @@ local recipes = {
         type = "recipe",
         name = "a_mk4",
         enabled = false,
-        
         energy_required = 50.0,
         ingredients = {
             {"a_mk3", 1},
@@ -156,8 +155,7 @@ local recipes = {
     },
 }
 
-
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
@@ -222,6 +220,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
+
 compat.update_ingredients(recipes[2], {
     {
         dependencies = {"bobelectronics", "bobplates"},
@@ -303,6 +302,7 @@ compat.update_ingredients(recipes[2], {
         }
     },
 })
+
 compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobelectronics"},
@@ -651,16 +651,11 @@ compat.update_ingredients(recipes[8], {
 
 compat.update_ingredients(recipes[9], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["rocket-control-unit"] = {"processing-unit", 100},
-            {"advanced-processing-unit", 150},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
             ["low-density-structure"] = {"tungsten-carbide", 250},
+            ["rocket-control-unit"] = {"processing-unit", 100},
+            {"advanced-processing-unit", 150},
             {"tungsten-plate", 200},
             {"sapphire-5", 50},
             {"ruby-5", 50},
@@ -700,14 +695,9 @@ compat.update_ingredients(recipes[9], {
 })
 compat.update_ingredients(recipes[10], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 200},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
+            ["processing-unit"] = {"advanced-processing-unit", 200},
             ["s_mk8"] = {"copper-tungsten-alloy", 200},
             {"nitinol-alloy", 100},
             {"nitinol-bearing", 100},

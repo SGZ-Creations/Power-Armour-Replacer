@@ -77,7 +77,7 @@ local recipes = {
         result = "e_mk5"
     },
 }
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 
 compat.update_ingredients(recipes[1], {
     {
@@ -208,7 +208,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-           ["battery"] = {"lithium-ion-battery", 55},
+            ["battery"] = {"lithium-ion-battery", 55},
         }
     },
     --IR3
@@ -249,12 +249,6 @@ compat.update_ingredients(recipes[3], {
 })
 compat.update_ingredients(recipes[4], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            {"processing-unit", 120},
-        }
-    },
-    {
         dependencies = {"bobrevamp"},
         replacements = {
             ["steel-plate"] = {"heat-shield-tile", 135},
@@ -266,6 +260,7 @@ compat.update_ingredients(recipes[4], {
             ["plastic-bar"] = {"cobalt-steel-bearing", 120},
             ["battery"] = {"silver-zinc-battery", 150},
             {"tungsten-gear-wheel", 115},
+            {"processing-unit", 120},
         }
     },
     --Clowns
@@ -296,7 +291,6 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 120},
             {"gilded-copper-cable", 90},
             {"insulated-cable", 660},
         }
@@ -304,6 +298,7 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobplates"},
         replacements = {
+            ["processing-unit"] = {"advanced-processing-unit", 120},
             ["steel-plate"] = {"copper-tungsten-alloy", 200},
             ["battery"] = {"tungsten-carbide", 200},
         }

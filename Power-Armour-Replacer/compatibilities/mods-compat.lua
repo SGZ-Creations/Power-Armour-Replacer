@@ -32,4 +32,5 @@ compat.update_technologies = function(replacements)
         ::continue::
     end
 end
+
 return compat

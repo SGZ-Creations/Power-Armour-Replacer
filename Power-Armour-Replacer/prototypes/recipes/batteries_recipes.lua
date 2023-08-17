@@ -151,7 +151,7 @@ local recipes = {
     },
 }
 
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
@@ -413,7 +413,7 @@ compat.update_ingredients(recipes[5], {
 compat.update_ingredients(recipes[6], {
     {
         dependencies = {"bobplates"},
-        replacements = { 
+        replacements = {
             ["steel-plate"] = {"aluminium-plate", 100},
             ["low-density-structure"] = {"titanium-plate", 100},
         }
@@ -448,17 +448,12 @@ compat.update_ingredients(recipes[6], {
 })
 compat.update_ingredients(recipes[7], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["rocket-control-unit"] = {"low-density-structure", 50},
-            {"processing-unit", 100},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
+            ["rocket-control-unit"] = {"low-density-structure", 50},
             ["battery"] = {"silver-zinc-battery", 100},
             ["plastic-bar"] = {"titanium-plate", 150},
+            {"processing-unit", 100},
             {"lithium-ion-battery", 100},
         }
     },
@@ -523,16 +518,11 @@ compat.update_ingredients(recipes[8], {
 })
 compat.update_ingredients(recipes[9], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            {"advanced-processing-unit", 100},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
             ["battery"] = {"silver-zinc-battery", 300},
             ["plastic-bar"] = {"copper-tungsten-alloy", 250},
+            {"advanced-processing-unit", 100},
         }
     },
     {
@@ -545,16 +535,11 @@ compat.update_ingredients(recipes[9], {
 })
 compat.update_ingredients(recipes[10], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["rocket-control-unit"] = {"nitinol-alloy", 100},
-            {"advanced-processing-unit", 200},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
             ["battery"] = {"silver-zinc-battery", 400},
+            ["rocket-control-unit"] = {"nitinol-alloy", 100},
+            {"advanced-processing-unit", 200},
         }
     },
     {

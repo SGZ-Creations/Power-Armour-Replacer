@@ -143,7 +143,7 @@ local recipes = {
         result = "p-s_mk10"
     },
 }
-local compat = require("compatibilities/mods-compat")
+local compat = require("compatibilities.mods-compat")
 --Compatibility section
 compat.update_ingredients(recipes[1], {
     {
@@ -318,8 +318,8 @@ compat.update_ingredients(recipes[6], {
             ["p-s_mk5"] = {"p-s_mk6", 1},
         }
     },
-    
 })
+--[[
 compat.update_ingredients(recipes[7], {
     {
         dependencies = {"bobelectronics"},
@@ -413,4 +413,5 @@ compat.update_ingredients(recipes[10], {
         }
     },
 })
+]]
 data:extend(recipes)
