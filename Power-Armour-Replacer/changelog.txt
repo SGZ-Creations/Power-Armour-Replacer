@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.41
+Date: 18.08.2023
+  Bugfixes:
+    - Temp solution to make mod load with Exotic Industries without crashing.
+  Scripting:
+    - Renamed a file.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.40
-Date: 14.08.2023
+Date: 17.08.2023
   Changes:
     - Moved possible circuit requirements to bobplates instead.
   Modding:

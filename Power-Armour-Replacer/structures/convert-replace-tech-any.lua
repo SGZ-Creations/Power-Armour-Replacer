@@ -14,8 +14,7 @@ compat.update_technologies{
       "no-power-equipment_mk2",
     }
   },
-
-  --[[
+--[[
   ["space-exploration"] = {
     ["spidertron"] = {
       ["se-rtg-equipment"] = "fusion-reactor_5",

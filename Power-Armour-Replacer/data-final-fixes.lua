@@ -10,6 +10,6 @@ require("compatibilities.Misc.misc-tech")
 --structures
 require("structures.invalid-recipe-tech-replaced")
 require("structures.compatibility-recipe")
-require("structures.tech-replace-convert")
+require("structures.convert-replace-tech-any")
 require("structures.moved-tech")
 require("structures.filters")
