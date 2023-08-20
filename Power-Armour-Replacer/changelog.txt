@@ -1,4 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.42
+Date: 18.08.2023
+  Modding:
+    - Improved SpaceX Compatibility.
+    - Recipes for Exotic Industries started (EI).
+  Bugfixes:
+    - Crash with 248K.
+    - Crash with half Bob's modpack, & SpaceX (space mod)
+  Scripting:
+    - Reloacated load positions of file to not have problem with 248K & EI modpacks.
+    - Had by mistake put it in Final fixes which casues errors on 248K & EI side.
+    - SpaceX files removed.
+  Info:
+    - Updating to this version does remove the crashes with EI & 248K tho in EI the tech system will have bad compatibility. untill i have cleard things between my end & EI.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.41
 Date: 18.08.2023
   Bugfixes:

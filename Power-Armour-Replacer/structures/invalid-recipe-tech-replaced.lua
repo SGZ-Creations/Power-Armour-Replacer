@@ -1,9 +1,7 @@
-local util = require("__Power-Armour-Replacer__.util")
-
 -- Technology Prerequisites Converter
 local replace = {
   ["night-vision-equipment"] = "nv-bi_mk1",
-  --["belt-immunity-equipment"] = "nv-bi_mk1",
+  ["belt-immunity-equipment"] = "nv-bi_mk1",
   ["modular-armor"] = "armour_1",
   ["power-armor"] = "armour_2",
   ["power-armor-2"] = "armour_3",

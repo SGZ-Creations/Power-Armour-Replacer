@@ -1,3 +1,7 @@
+--[[ 
+Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.
+Also i suggest u download "Clowns Sicence" if u haven't. Before u remove anything. As that would make it easier to unlock.
+]]
 -- Compatibility files
 local compat = require("compatibilities.mods-compat")
 
@@ -225,9 +229,14 @@ compat.update_technologies{
     },
   },
 
+  ["exotic-industries"] = {
+    ["armour_1"] = {
+      ["automation"] = "logistics",
+    },
+  },
+
   ["248k"] = {
     ["armour_3"] = {
-      ["angels-aluminium-smelting-1"] = "el_caster_tech",
       "el_caster_tech",
     },
     ["battery_3"] = {
@@ -235,6 +244,12 @@ compat.update_technologies{
     },
     ["nv-bi_mk1"] = {
       "el_lithium_tech",
+    },
+  },
+
+  [{"248k", "angelssmelting"}] = {
+    ["armour_3"] = {
+      ["angels-aluminium-smelting-1"] = "el_caster_tech",
     },
   },
 
@@ -274,9 +289,19 @@ compat.update_technologies{
 
   ["SpaceMod"] = {
     ["protection-fields"] = {
-      ["bob-energy-shield-equipment-6"] = "shield_6",
+      "shield_10",
+    },
+    ["fusion-reactor"] = {
+      "fusion-reactor_10",
+    }
+  },
+
+  [{"SpaceMod", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",}] = {
+    ["protection-fields"] = {
+      ["shield_10"] = "shield_6",
+    },
+    ["fusion-reactor"] = {
+      ["fusion-reactor_10"] = "fusion-reactor_4",
     }
   },
 }
--- Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.
--- Also i suggest u download "Clowns Sicence" if u haven't. Before u remove that would make it easier to unlock.

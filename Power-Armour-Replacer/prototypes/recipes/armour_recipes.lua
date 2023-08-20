@@ -196,6 +196,15 @@ compat.update_ingredients(recipes[1], {
             ["steel-gear-wheel"] = {"rubber", 50},
         }
     },
+    --EI
+    {
+        dependencies = {"exotic-industries"},
+        replacements = {
+            ["steel-plate"] = {"ei_iron-beam", 30},
+            ["electronic-circuit"] = {"ei_steam-engine", 10},
+            {"copper-plate", 20},
+        }
+    },
     --IR3
     {
         dependencies = {"IndustrialRevolution3"},

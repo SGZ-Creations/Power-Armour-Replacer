@@ -57,7 +57,13 @@ compat.update_ingredients(data.raw.recipe["fusion-reactor"],
   {
     dependencies = {"SpaceMod",},
     replacements = {
-      ["f_mk1"] = {"f_mk4", 40},
+      ["f_mk1"] = {"f_mk10", 5},
+    }
+  },
+  {
+    dependencies = {"SpaceMod", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+    replacements = {
+      ["f_mk10"] = {"f_mk4", 40},
     }
   },
 })
@@ -65,16 +71,22 @@ compat.update_ingredients(data.raw.recipe["fusion-reactor"],
 compat.update_ingredients(data.raw.recipe["protection-field"],
 {
   {
-    dependencies = {"SpaceMod"},
+    dependencies = {"SpaceMod",},
     replacements = {
-      ["s_mk2"] = {"s_mk6", 1000},
+      ["s_mk2"] = {"s_mk10", 5},
+    }
+  },
+  {
+    dependencies = {"SpaceMod", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+    replacements = {
+      ["s_mk10"] = {"s_mk6", 100},
     }
   },
 })
 
 compat.update_ingredients(data.raw.recipe["protection-field-goopless"], {
   {
-    dependencies = {"SpaceMod", "bobmodules",},
+    dependencies = {"SpaceMod", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
     replacements = {
       ["s_mk1"] = {"s_mk3", 1000},
     }
