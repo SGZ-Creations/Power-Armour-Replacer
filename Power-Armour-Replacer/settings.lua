@@ -4,14 +4,14 @@ data:extend({
     name = "vanilla-filters",
     setting_type = "startup",
     default_value = true,
-    order = "3Aaa"
+    order = "1Aaa"
   },
   {
     type = "bool-setting",
     name = "mod-filters",
     setting_type = "startup",
     default_value = true,
-    order = "3Aab"
+    order = "1Aab"
   },
 })
 
@@ -21,7 +21,7 @@ data:extend({
     name = "vanilla-warning",
     setting_type = "startup",
     default_value = true,
-    order = "1Aaa"
+    order = "2Aaa"
   },
 })
 
@@ -32,7 +32,7 @@ data:extend({
       name = "bobwarfare-warning",
       setting_type = "startup",
       default_value = true,
-      order = "1Aab"
+      order = "2Aab"
     },
   })
 end
@@ -44,7 +44,7 @@ if mods["bobequipment"] then
       name = "bobequipment-warning",
       setting_type = "startup",
       default_value = true,
-      order = "1Aac"
+      order = "2Aac"
     },
   })
 end
@@ -56,7 +56,7 @@ if mods["Power Armor MK3"] then
       name = "P-A_MK3-warning",
       setting_type = "startup",
       default_value = true,
-      order = "1Zaa"
+      order = "2Aad"
     },
   })
 end
@@ -68,7 +68,19 @@ if mods["custom_power_armor_fix"] then
       name = "cutom's-armour-warning",
       setting_type = "startup",
       default_value = true,
-      order = "1Zab"
+      order = "2Aae"
+    },
+  })
+end
+
+if mods["Darkstar_utilities_fixed"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "darkstar-fixed-warning",
+      setting_type = "startup",
+      default_value = true,
+      order = "2Aaf"
     },
   })
 end
@@ -80,7 +92,7 @@ if mods["PowerAndArmor"] then
       name = "powerandarmor-warning",
       setting_type = "startup",
       default_value = true,
-      order = "1Zab"
+      order = "2Aag"
     },
   })
 end
@@ -92,7 +104,7 @@ if mods["RampantArsenal"] then
       name = "arsenal-warning",
       setting_type = "startup",
       default_value = true,
-      order = "1Zab"
+      order = "2Aah"
     },
   })
 end
@@ -104,7 +116,7 @@ if mods["Insectitron"] then
       name = "Insectitron-issue",
       setting_type = "startup",
       default_value = true,
-      order = "2Aaa"
+      order = "3Aaa"
     },
   })
 end
@@ -116,7 +128,7 @@ if mods["SpaceMod"] then
       name = "SpaceMod-issue",
       setting_type = "startup",
       default_value = true,
-      order = "2Aab"
+      order = "3Aab"
     },
   })
 end
@@ -128,7 +140,7 @@ if mods["TeleportationEquipment"] then
       name = "Teleportation-issue",
       setting_type = "startup",
       default_value = true,
-      order = "2Aac"
+      order = "3Aac"
     },
   })
 end
@@ -140,7 +152,7 @@ if mods["osm-radioactivity"] then
       name = "radioactivity-issue",
       setting_type = "startup",
       default_value = true,
-      order = "2Aad"
+      order = "3Aad"
     },
   })
 end

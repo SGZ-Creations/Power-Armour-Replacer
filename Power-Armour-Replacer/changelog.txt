@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.43
+Date: 22.08.2023
+  Changes:
+    - Corrected & added more Info Warnings. Bob's & Darkstar.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.42
-Date: 18.08.2023
+Date: 20.08.2023
   Modding:
     - Improved SpaceX Compatibility.
     - Recipes for Exotic Industries started (EI).

@@ -116,38 +116,53 @@ if settings.startup["vanilla-filters"].value then
   Hide_Item("personal-laser-defense-equipment")
 end
 
+
 if mods["Darkstar_utilities_fixed"] then
 --Enabled
-  data.raw.technology["terra-tech-power-armor-tech"].enabled = false
-  data.raw.technology["advanced-exoskeleton-equipment"].enabled = false
-  data.raw.technology["terra-tech-power-armor-mk2-tech"].enabled = false
-  data.raw.technology["energy-shield-mk3-equipment"].enabled = false
   data.raw.technology["battery-mk3-equipment"].enabled = false
   data.raw.technology["battery-mk4-equipment"].enabled = false
+  data.raw.technology["terra-tech-power-armor-tech"].enabled = false
+  data.raw.technology["energy-shield-mk3-equipment"].enabled = false
+  data.raw.technology["advanced-exoskeleton-equipment"].enabled = false
+  data.raw.technology["terra-tech-power-armor-mk2-tech"].enabled = false
 
+  data.raw.recipe["battery-mk3"].enabled = false
+  data.raw.recipe["battery-mk4"].enabled = false
   data.raw.recipe["terra-tech-power-armor"].enabled = false
   data.raw.recipe["terra-tech-power-armor-mk2"].enabled = false
   data.raw.recipe["advanced-exoskeleton-equipment"].enabled = false
-  data.raw.recipe["battery-mk3"].enabled = false
-  data.raw.recipe["battery-mk4"].enabled = false
+  data.raw.recipe["personal-roboport-equipment-mk2"].enabled = false
+  data.raw.recipe["large-personal-roboport-equipment"].enabled = false
 --Hidden
+  data.raw.technology["battery-mk3-equipment"].hidden = true
+  data.raw.technology["battery-mk4-equipment"].hidden = true
   data.raw.technology["terra-tech-power-armor-tech"].hidden = true
   data.raw.technology["energy-shield-mk3-equipment"].hidden = true
   data.raw.technology["advanced-exoskeleton-equipment"].hidden = true
   data.raw.technology["terra-tech-power-armor-mk2-tech"].hidden = true
-  data.raw.technology["battery-mk3-equipment"].hidden = true
-  data.raw.technology["battery-mk4-equipment"].hidden = true
 
+  data.raw.recipe["battery-mk3"].hidden = true
+  data.raw.recipe["battery-mk4"].hidden = true
   data.raw.recipe["terra-tech-power-armor"].hidden = true
   data.raw.recipe["terra-tech-power-armor-mk2"].hidden = true
   data.raw.recipe["advanced-exoskeleton-equipment"].hidden = true
-  data.raw.recipe["battery-mk3"].hidden = true
-  data.raw.recipe["battery-mk4"].hidden = true
+  data.raw.recipe["personal-roboport-equipment-mk2"].hidden = true
+  data.raw.recipe["large-personal-roboport-equipment"].hidden = true
+
+  if settings.startup["mod-filters"].value then
+  Hide_Item("battery-mk3")
+  Hide_Item("battery-mk4")
+  Hide_Item("terra-tech-power-armor")
+  Hide_Item("terra-tech-power-armor-mk2")
+  Hide_Item("advanced-exoskeleton-equipment")
+  Hide_Item("personal-roboport-equipment-mk2")
+  Hide_Item("large-personal-roboport-equipment")
+  end
 end
 
 if mods["bobwarfare"] then
 --Enabled
-  data.raw.recipe["bob-power-armor-mk3"].enabled = false
+  data.raw.recipe["bob-power-armor-mk3"].disable = true
   data.raw.recipe["bob-power-armor-mk4"].enabled = false
   data.raw.recipe["bob-power-armor-mk5"].enabled = false
 
@@ -163,6 +178,12 @@ if mods["bobwarfare"] then
   data.raw.technology["bob-power-armor-3"].hidden = true
   data.raw.technology["bob-power-armor-4"].hidden = true
   data.raw.technology["bob-power-armor-5"].hidden = true
+
+  if settings.startup["mod-filters"].value then
+    Hide_Item("bob-power-armor-mk3")
+    Hide_Item("bob-power-armor-mk4")
+    Hide_Item("bob-power-armor-mk5")
+  end
 end
 
 if mods["bobequipment"] then
@@ -192,7 +213,6 @@ if mods["bobequipment"] then
   data.raw.technology["personal-laser-defense-equipment-4"].enabled = false
   data.raw.technology["personal-laser-defense-equipment-5"].enabled = false
   data.raw.technology["personal-laser-defense-equipment-6"].enabled = false
-  --data.raw.technology[""].enabled = false
 
   data.raw.recipe["battery-mk3-equipment"].enabled = false
   data.raw.recipe["battery-mk4-equipment"].enabled = false
@@ -219,10 +239,6 @@ if mods["bobequipment"] then
   data.raw.recipe["personal-laser-defense-equipment-4"].enabled = false
   data.raw.recipe["personal-laser-defense-equipment-5"].enabled = false
   data.raw.recipe["personal-laser-defense-equipment-6"].enabled = false
-  --data.raw.recipe[""].enabled = false
-  --data.raw.recipe[""].enabled = false
-  --data.raw.recipe[""].enabled = false
-  --data.raw.recipe[""].enabled = false
 
 --Hidden
   data.raw.technology["bob-battery-equipment-3"].hidden = true
@@ -276,6 +292,34 @@ if mods["bobequipment"] then
   data.raw.recipe["personal-laser-defense-equipment-4"].hidden = true
   data.raw.recipe["personal-laser-defense-equipment-5"].hidden = true
   data.raw.recipe["personal-laser-defense-equipment-6"].hidden = true
+
+  if settings.startup["mod-filters"].value then
+    Hide_Item("battery-mk3-equipment")
+    Hide_Item("battery-mk4-equipment")
+    Hide_Item("battery-mk5-equipment")
+    Hide_Item("battery-mk6-equipment")
+    Hide_Item("solar-panel-equipment-2")
+    Hide_Item("solar-panel-equipment-3")
+    Hide_Item("solar-panel-equipment-4")
+    Hide_Item("exoskeleton-equipment-2")
+    Hide_Item("exoskeleton-equipment-3")
+    Hide_Item("night-vision-equipment-2")
+    Hide_Item("night-vision-equipment-3")
+    Hide_Item("fusion-reactor-equipment-2")
+    Hide_Item("fusion-reactor-equipment-3")
+    Hide_Item("fusion-reactor-equipment-4")
+    Hide_Item("energy-shield-mk3-equipment")
+    Hide_Item("energy-shield-mk4-equipment")
+    Hide_Item("energy-shield-mk5-equipment")
+    Hide_Item("energy-shield-mk6-equipment")
+    Hide_Item("personal-roboport-mk3-equipment")
+    Hide_Item("personal-roboport-mk4-equipment")
+    Hide_Item("personal-laser-defense-equipment-2")
+    Hide_Item("personal-laser-defense-equipment-3")
+    Hide_Item("personal-laser-defense-equipment-4")
+    Hide_Item("personal-laser-defense-equipment-5")
+    Hide_Item("personal-laser-defense-equipment-6")
+  end
 end
 
 if mods["Krastorio2"] and mods["space-exploration"] then
