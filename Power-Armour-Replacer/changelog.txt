@@ -1,17 +1,22 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.44
-Date: 26.08.2023
+Date: 27.08.2023
   Changes:
     - Vanilla recipes price adjusted. Feedback would be great.
     - All PA&R items in recipes is/was removed (Vanilla)
     - Tech prerequisites in general adjusted/added.
     - Added modded tech prereqesits.
     - Compat - Util files merged.
+    - Moved TeleportationEquipment code to other files.
   Bugfixes:
     - Known Nanobot compat bug.
-    - WIP Fluid in Compatibility issue resolved?
+    - Fluid in Compatibility issue resolved.
+  Modding:
+    - Rewrote tech changes for TeleportationEquipment.
   Thanks:
-    - Discord: @Dr Pez. For fixing Compatibility fluid recipes. Simplefied Compatiblity. Merging files. 
+    - Discord: @Dr Pez. For fixing Compatibility fluid recipes. Simplefied Compatiblity. Merging files.
+  Discord-Realese:
+    - Just to say that it's a Realease on S_gamez Discord only.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.43
 Date: 22.08.2023
