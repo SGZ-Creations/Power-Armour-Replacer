@@ -1,3 +1,6 @@
+--functions files--
+    --require("compatibilities.util")
+    --require("compatibilities.mods-compat")
 --items--
     require("prototypes.items.armour_item")
     require("prototypes.items.batteries_item")

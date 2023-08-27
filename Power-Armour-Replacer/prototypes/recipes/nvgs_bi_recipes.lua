@@ -25,7 +25,7 @@ local recipes = {
         ingredients = {
             {"bi_mk1", 1},
             {type="fluid", name="sulfuric-acid", amount=150},
-            {"f_mk5", 2},
+            {"nuclear-fuel", 10},
             {"low-density-structure", 25},
             {"sulfur", 30},
         },
@@ -58,7 +58,7 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"nv_mk1", 1},
-            {"f_mk5", 2},
+            {"nuclear-fuel", 10},
             {"advanced-circuit", 55},
             {"processing-unit", 40},
             {type="fluid", name="petroleum-gas", amount=250},
@@ -66,9 +66,11 @@ local recipes = {
         result = "nv_mk2"
     },
 }
-local compat = require("compatibilities.mods-compat")
+
+local util = require("compatibilities.util")
+
 --Compatibility section
-compat.update_ingredients(recipes[1], {
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -124,11 +126,11 @@ compat.update_ingredients(recipes[1], {
     },
 })
 
-compat.update_ingredients(recipes[2], {
+util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["f_mk5"] = {"processing-unit", 100},
+            ["nuclear-fuel"] = {"processing-unit", 100},
             {"advanced-processing-unit", 100},
             {"gilded-copper-cable", 260},
         }
@@ -155,18 +157,16 @@ compat.update_ingredients(recipes[2], {
         }
     },
     --248K
-    --[[
     {
         dependencies = {"248k"},
         replacements = {
-            ["f_mk5"] = {"el_aluminium_item", 100},
+            ["nuclear-fuel"] = {"el_aluminium_item", 100},
             [""] = {"", 0},
         }
     }
-]]
 })
 
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -222,7 +222,7 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -233,7 +233,7 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["f_mk5"] = {"advanced-processing-unit", 100},
+            ["nuclear-fuel"] = {"advanced-processing-unit", 100},
             ["petroleum-gas"] = {"dinitrogen-tetroxide", 300},
             {"titanium-plate", 200},
             {"copper-tungsten-alloy", 200}
@@ -257,7 +257,7 @@ compat.update_ingredients(recipes[4], {
     {
         dependencies = {"248k"},
         replacements = {
-            ["f_mk5"] = {"el_aluminium_item", 100},
+            ["nuclear-fuel"] = {"el_aluminium_item", 100},
             [""] = {"", 0},
         }
     }

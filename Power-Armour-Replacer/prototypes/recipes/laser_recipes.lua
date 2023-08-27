@@ -19,7 +19,7 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"l_mk1", 1},
-            {"electronic-circuit", 115},
+            {"electronic-circuit", 100},
             {"engine-unit", 15},
             {"copper-plate", 150},
         },
@@ -32,7 +32,7 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"l_mk2", 1},
-            {"electronic-circuit", 120},
+            {"electronic-circuit", 100},
             {"iron-plate", 125},
             {"battery", 45},
             {"green-wire", 55},
@@ -47,8 +47,8 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"l_mk3", 1},
-            {"pipe", 55},
-            {"electronic-circuit", 135},
+            {"pipe", 50},
+            {"advanced-circuit", 100},
             {"iron-gear-wheel", 85},
         },
         result = "l_mk4"
@@ -61,8 +61,8 @@ local recipes = {
         ingredients = {
             {"l_mk4", 1},
             {"heat-pipe", 50},
-            {"copper-cable", 230},
-            {"plastic-bar", 150},
+            {"copper-cable", 200},
+            {"plastic-bar", 120},
             {"sulfur", 80},
         },
         result = "l_mk5"
@@ -76,8 +76,8 @@ local recipes = {
         ingredients = {
             {"l_mk5", 1},
             {"heat-pipe", 150},
-            {"sulfur", 160},
-            {"advanced-circuit", 90},
+            {"sulfur", 150},
+            {"processing-unit", 50},
             {"battery", 125},
             {"engine-unit", 100},
         },
@@ -92,7 +92,8 @@ local recipes = {
         ingredients = {
             {"l_mk6", 1},
             {"low-density-structure", 60},
-            {"advanced-circuit", 160},
+            {"advanced-circuit", 100},
+            {"processing-unit", 100},
             {"electric-engine-unit", 70},
             {"copper-cable", 115},
         },
@@ -107,9 +108,10 @@ local recipes = {
         ingredients = {
             {"l_mk7", 1},
             {"low-density-structure", 130},
-            {"plastic-bar", 230},
-            {"copper-cable", 310},
-            {"processing-unit", 65},
+            {"plastic-bar", 200},
+            {"copper-cable", 300},
+            {"processing-unit", 100},
+            {"advanced-circuit", 100},
         },
         result = "l_mk8"
     },
@@ -124,7 +126,9 @@ local recipes = {
             {"rocket-control-unit", 60},
             {"low-density-structure", 180},
             {"processing-unit", 100},
-            {"plastic-bar", 280},
+            {"advanced-circuit", 100},
+            {"sulfur", 150},
+            {"plastic-bar", 300},
         },
         result = "l_mk9"
     },
@@ -136,17 +140,21 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"l_mk9", 1},
-            {"rocket-control-unit", 111},
-            {"low-density-structure", 222},
-            {"processing-unit", 145},
-            {"steel-plate", 333},
-        },  
+            {"rocket-control-unit", 100},
+            {"low-density-structure", 200},
+            {"processing-unit", 100},
+            {"advanced-circuit", 100},
+            {"steel-plate", 300},
+            {"sulfur", 150},
+        },
         result = "l_mk10"
     },
 }
-local compat = require("compatibilities.mods-compat")
+
+local util = require("compatibilities.util")
+
 --Compatibility section
-compat.update_ingredients(recipes[1], {
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobplates", "bobelectronics"},
         replacements = {
@@ -158,7 +166,6 @@ compat.update_ingredients(recipes[1], {
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 70},
             ["copper-plate"] = {"copper-cable", 110},
-
         }
     },
     {
@@ -213,7 +220,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
-compat.update_ingredients(recipes[2], {
+util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -267,7 +274,7 @@ compat.update_ingredients(recipes[2], {
         }
     },
 })
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     -- Misc mod
     {
         dependencies = {"WireShortcuts"},
@@ -312,7 +319,7 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -370,7 +377,7 @@ compat.update_ingredients(recipes[4], {
         }
     },
 })
-compat.update_ingredients(recipes[5], {
+util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -414,7 +421,7 @@ compat.update_ingredients(recipes[5], {
     },
 })
 
-compat.update_ingredients(recipes[6], {
+util.ingredient_prereq(recipes[6], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -457,7 +464,7 @@ compat.update_ingredients(recipes[6], {
         }
     },
 })
-compat.update_ingredients(recipes[7], {
+util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -474,7 +481,7 @@ compat.update_ingredients(recipes[7], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            --{type="fluid", name="liquid-dimethylmercury", amount=100},
+            {type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
     --Darkstar
@@ -485,7 +492,7 @@ compat.update_ingredients(recipes[7], {
         }
     },
 })
-compat.update_ingredients(recipes[8], {
+util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -515,7 +522,7 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            --{type="fluid", name="liquid-dimethylmercury", amount=200},
+            {type="fluid", name="liquid-dimethylmercury", amount=200},
         }
     },
     --Darkstar
@@ -526,7 +533,7 @@ compat.update_ingredients(recipes[8], {
         }
     },
 })
-compat.update_ingredients(recipes[9], {
+util.ingredient_prereq(recipes[9], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -554,7 +561,7 @@ compat.update_ingredients(recipes[9], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-            --{type="fluid", name="liquid-dimethylmercury", amount=300},
+            {type="fluid", name="liquid-dimethylmercury", amount=300},
         }
     },
     --Darkstar
@@ -565,7 +572,7 @@ compat.update_ingredients(recipes[9], {
         }
     },
 })
-compat.update_ingredients(recipes[10], {
+util.ingredient_prereq(recipes[10], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -579,6 +586,7 @@ compat.update_ingredients(recipes[10], {
         dependencies = {"bobrevamp"},
         replacements = {
             {"heat-shield-tile", 400},
+            ["advanced-processing-unit"] = {"processing-unit", 100}
         }
     },
     {
@@ -594,7 +602,7 @@ compat.update_ingredients(recipes[10], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-            --{type="fluid", name="liquid-dimethylmercury", amount=400},
+            {type="fluid", name="liquid-dimethylmercury", amount=400},
         }
     },
     {

@@ -57,7 +57,7 @@ data:extend({
         recipe = "f_mk3"
       },
     },
-    prerequisites = {"fusion-reactor_2", "solar_3"},
+    prerequisites = {"fusion-reactor_2", "solar_3", "oil-processing", "battery",},
     unit =
     {
       count = 500,
@@ -81,7 +81,7 @@ data:extend({
         recipe = "f_mk4"
       },
     },
-    prerequisites = {"fusion-reactor_3", "solar_4"},
+    prerequisites = {"fusion-reactor_3", "solar_4", "advanced-electronics", "engine",},
     unit =
     {
       count = 500,

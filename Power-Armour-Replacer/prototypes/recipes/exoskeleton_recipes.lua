@@ -38,8 +38,8 @@ local recipes = {
         ingredients = {
             {"e_mk2", 1},
             {"battery", 165},
-            {"advanced-circuit", 135},
-            {"steel-plate", 170},
+            {"advanced-circuit", 100},
+            {"steel-plate", 150},
             {"iron-stick", 175},
             {type="fluid", name="lubricant", amount=450},
         },
@@ -56,6 +56,7 @@ local recipes = {
             {"battery", 205},
             {"plastic-bar", 190},
             {"steel-plate", 180},
+            {"processing-unit", 100},
             {"low-density-structure", 115},
         },
         result = "e_mk4"
@@ -70,16 +71,18 @@ local recipes = {
             {"e_mk4", 1},
             {"battery", 250},
             {"steel-plate", 250},
-            {"processing-unit", 110},
+            {"processing-unit", 100},
+            {"advanced-circuit", 100},
             {"rocket-control-unit", 150},
             {"low-density-structure", 150},
         },
         result = "e_mk5"
     },
 }
-local compat = require("compatibilities.mods-compat")
 
-compat.update_ingredients(recipes[1], {
+local util = require("compatibilities.util")
+
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
@@ -120,7 +123,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
-compat.update_ingredients(recipes[2], {
+util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -164,7 +167,7 @@ compat.update_ingredients(recipes[2], {
             ["electronic-circuit"] = {"electronic-circuit", 25},
             ["battery"] = {"motor", 25},
         }
-    }, 
+    },
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -173,7 +176,7 @@ compat.update_ingredients(recipes[2], {
         }
     },
 })
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -244,10 +247,9 @@ compat.update_ingredients(recipes[3], {
             ["lubricant"] = {"", 0},
             {"low-density-structure", 60},
         }
-    }, 
-    
+    },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobrevamp"},
         replacements = {
@@ -287,7 +289,7 @@ compat.update_ingredients(recipes[4], {
         }
     },
 })
-compat.update_ingredients(recipes[5], {
+util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -302,7 +304,6 @@ compat.update_ingredients(recipes[5], {
             ["steel-plate"] = {"copper-tungsten-alloy", 200},
             ["battery"] = {"tungsten-carbide", 200},
         }
-            
     },
     --Clowns
     {

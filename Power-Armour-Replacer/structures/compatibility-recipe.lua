@@ -1,6 +1,6 @@
-local compat = require("compatibilities.mods-compat")
+local util = require("compatibilities.util")
 
-compat.update_ingredients(data.raw.recipe["cannon-spidertron"],
+util.ingredient_prereq(data.raw.recipe["cannon-spidertron"],
 {
   {
     dependencies = {"Cannon_Spidertron"},
@@ -11,7 +11,7 @@ compat.update_ingredients(data.raw.recipe["cannon-spidertron"],
   },
 })
 
-compat.update_ingredients(data.raw.recipe["ss-space-spidertron"],
+util.ingredient_prereq(data.raw.recipe["ss-space-spidertron"],
 {
   {
     dependencies = {"space-spidertron"},
@@ -24,7 +24,7 @@ compat.update_ingredients(data.raw.recipe["ss-space-spidertron"],
   },
 })
 
-compat.update_ingredients(data.raw.recipe["artillery-spidertron"],
+util.ingredient_prereq(data.raw.recipe["artillery-spidertron"],
 {
   {
     dependencies = {"artillery-spidertron"},
@@ -35,7 +35,7 @@ compat.update_ingredients(data.raw.recipe["artillery-spidertron"],
   },
 })
 
-compat.update_ingredients(data.raw.recipe["spidertron"],
+util.ingredient_prereq(data.raw.recipe["spidertron"],
 {
   {
     dependencies = {"base"},
@@ -52,7 +52,7 @@ compat.update_ingredients(data.raw.recipe["spidertron"],
   },
 })
 
-compat.update_ingredients(data.raw.recipe["fusion-reactor"],
+util.ingredient_prereq(data.raw.recipe["fusion-reactor"],
 {
   {
     dependencies = {"SpaceMod",},
@@ -68,7 +68,7 @@ compat.update_ingredients(data.raw.recipe["fusion-reactor"],
   },
 })
 
-compat.update_ingredients(data.raw.recipe["protection-field"],
+util.ingredient_prereq(data.raw.recipe["protection-field"],
 {
   {
     dependencies = {"SpaceMod",},
@@ -84,7 +84,7 @@ compat.update_ingredients(data.raw.recipe["protection-field"],
   },
 })
 
-compat.update_ingredients(data.raw.recipe["protection-field-goopless"], {
+util.ingredient_prereq(data.raw.recipe["protection-field-goopless"], {
   {
     dependencies = {"SpaceMod", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
     replacements = {

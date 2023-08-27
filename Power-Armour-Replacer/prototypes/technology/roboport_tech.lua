@@ -235,8 +235,6 @@ data:extend({
     icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
     effects =
     {
-      
-      
       {
         type = "unlock-recipe",
         recipe = "r_mk10"

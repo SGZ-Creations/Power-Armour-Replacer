@@ -19,7 +19,7 @@ local recipes = {
         energy_required = 10,
         ingredients = {
             {"p-s_mk1", 1},
-            {"b_mk1", 2},
+            {"copper-plate", 70},
             {"steel-plate", 50},
             {"electronic-circuit", 30},
         },
@@ -74,7 +74,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"p-s_mk5", 1},
-            {"advanced-circuit", 130},
+            {"processing-unit", 60},
             {"engine-unit", 140},
             {"electric-engine-unit", 80},
             {"iron-stick", 300},
@@ -89,8 +89,9 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"p-s_mk6", 1},
-            {"electric-engine-unit", 120},
             {"plastic-bar", 140},
+            {"processing-unit", 70},
+            {"electric-engine-unit", 120},
             {"low-density-structure", 175},
         },
         result = "p-s_mk7"
@@ -104,7 +105,7 @@ local recipes = {
         ingredients = {
             {"p-s_mk7", 1},
             {"copper-cable", 300},
-            {"battery", 233},
+            {"battery", 200},
             {"plastic-bar", 170},
             {"low-density-structure", 175},
         },
@@ -143,9 +144,11 @@ local recipes = {
         result = "p-s_mk10"
     },
 }
-local compat = require("compatibilities.mods-compat")
+
+local util = require("compatibilities.util")
+
 --Compatibility section
-compat.update_ingredients(recipes[1], {
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -178,7 +181,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
-compat.update_ingredients(recipes[2], { 
+util.ingredient_prereq(recipes[2], { 
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -189,7 +192,7 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-plate"] = {"glass", 50},
-            ["b_mk1"] = {"solder", 110},
+            ["copper-plate"] = {"solder", 110},
             {"rubber", 50},
         }
     },
@@ -198,7 +201,7 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"IndustrialRevolution3"},
         replacements = {
             ["electronic-circuit"] = {"bronze-plate-heavy", 20},
-            ["b_mk1"] = {"tin-ingot", 50},
+            ["copper-plates"] = {"tin-ingot", 50},
             ["steel-plate"] = {"copper-pellet", 40},
         }
     },
@@ -213,12 +216,12 @@ compat.update_ingredients(recipes[2], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["b_mk1"] = {"rare-metals", 30},
+            ["copper-plates"] = {"rare-metals", 30},
             ["steel-plate"] = {"steel-beam", 50},
         }
     },
 })
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -241,7 +244,7 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -270,7 +273,7 @@ compat.update_ingredients(recipes[4], {
         }
     },
 })
-compat.update_ingredients(recipes[5], {
+util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -294,7 +297,7 @@ compat.update_ingredients(recipes[5], {
         }
     },
 })
-compat.update_ingredients(recipes[6], {
+util.ingredient_prereq(recipes[6], {
     --[[
     {
         dependencies = {"bobelectronics"},
@@ -309,6 +312,7 @@ compat.update_ingredients(recipes[6], {
         replacements = {
             [""] = {"", 0},
             ["p-s_mk5"] = {"p-s_mk6", 1},
+            {"lithium", 50},
         }
     },
     {
@@ -320,7 +324,7 @@ compat.update_ingredients(recipes[6], {
     },
 })
 --[[
-compat.update_ingredients(recipes[7], {
+util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -333,6 +337,7 @@ compat.update_ingredients(recipes[7], {
         replacements = {
             [""] = {"", 0},
             [""] = {"", 0},
+            {"lithium", 50},
         }
     },
     {
@@ -344,7 +349,7 @@ compat.update_ingredients(recipes[7], {
     },
     
 })
-compat.update_ingredients(recipes[8], {
+util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -367,7 +372,7 @@ compat.update_ingredients(recipes[8], {
         }
     },
 })
-compat.update_ingredients(recipes[9], {
+util.ingredient_prereq(recipes[9], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -390,7 +395,7 @@ compat.update_ingredients(recipes[9], {
         }
     },
 })
-compat.update_ingredients(recipes[10], {
+util.ingredient_prereq(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

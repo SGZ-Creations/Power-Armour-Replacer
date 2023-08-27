@@ -66,7 +66,7 @@ local function check_for_error(event)
     end
   end
 
-  -- Mod Issue Warnings.
+--Mod Issue Warnings.
   if script.active_mods["Insectitron"] then
     if settings.startup["Insectitron-issue"].value then
       printer(

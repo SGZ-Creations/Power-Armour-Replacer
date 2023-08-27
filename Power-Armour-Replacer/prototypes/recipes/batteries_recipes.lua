@@ -11,7 +11,6 @@ local recipes = {
             {"copper-cable", 50},
         },
         result = "b_mk1"
-        
     },
     {
         type = "recipe",
@@ -142,7 +141,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"b_mk9", 1},
-            {"battery", 40},
+            {"battery", 140},
             {"rocket-control-unit", 135},
             {"low-density-structure", 200},
             {type="fluid", name="sulfuric-acid", amount=150},
@@ -151,9 +150,10 @@ local recipes = {
     },
 }
 
-local compat = require("compatibilities.mods-compat")
+local util = require("compatibilities.util")
+
 --Compatibility section
-compat.update_ingredients(recipes[1], {
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -200,7 +200,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
-compat.update_ingredients(recipes[2], {
+util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
@@ -250,7 +250,7 @@ compat.update_ingredients(recipes[2], {
         }
     },
 })
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -321,7 +321,7 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -359,7 +359,7 @@ compat.update_ingredients(recipes[4], {
         }
     },
 })
-compat.update_ingredients(recipes[5], {
+util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -410,12 +410,13 @@ compat.update_ingredients(recipes[5], {
         }
     },
 })
-compat.update_ingredients(recipes[6], {
+util.ingredient_prereq(recipes[6], {
     {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"aluminium-plate", 100},
             ["low-density-structure"] = {"titanium-plate", 100},
+            {"lithium", 50},
         }
     },
     --248K
@@ -446,7 +447,7 @@ compat.update_ingredients(recipes[6], {
         }
     },
 })
-compat.update_ingredients(recipes[7], {
+util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -486,7 +487,7 @@ compat.update_ingredients(recipes[7], {
         }
     },
 })
-compat.update_ingredients(recipes[8], {
+util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -516,7 +517,7 @@ compat.update_ingredients(recipes[8], {
         }
     },
 })
-compat.update_ingredients(recipes[9], {
+util.ingredient_prereq(recipes[9], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -533,7 +534,7 @@ compat.update_ingredients(recipes[9], {
         }
     },
 })
-compat.update_ingredients(recipes[10], {
+util.ingredient_prereq(recipes[10], {
     {
         dependencies = {"bobplates"},
         replacements = {

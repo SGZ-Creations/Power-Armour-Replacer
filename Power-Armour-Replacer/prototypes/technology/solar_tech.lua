@@ -6,7 +6,6 @@ data:extend({
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
-
             {
                 type = "unlock-recipe",
                 recipe = "p-s_mk1"

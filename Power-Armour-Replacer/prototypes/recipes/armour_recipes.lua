@@ -24,7 +24,7 @@ local recipes = {
             {"a_mk1", 1},
             {"copper-plate", 170},
             {"iron-gear-wheel", 150},
-            {"steel-plate", 55},
+            {"steel-plate", 50},
             {"electronic-circuit", 80},
         },
         result = "a_mk2",
@@ -67,9 +67,8 @@ local recipes = {
         energy_required = 50.0,
         ingredients = {
             {"a_mk4", 1},
-            {"b_mk3", 15},
+            {"battery", 50},
             {"advanced-circuit", 150},
-            {"processing-unit", 100},
             {"uranium-235", 350},
         },
         result = "a_mk5",
@@ -83,10 +82,11 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk5", 1},
-            {"p-s_mk3", 5},
-            {type="fluid", name="petroleum-gas", amount=350},
+            {"solar-panel", 20},
             {"processing-unit", 150},
             {"red-wire", 100},
+            {"green-wire", 100},
+            {type="fluid", name="petroleum-gas", amount=350},
         },
         result = "a_mk6",
     },
@@ -99,10 +99,11 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk6", 1},
-            {"f_mk5", 5},
-            {type="fluid", name="petroleum-gas", amount=700},
+            {"red-wire", 100},
             {"green-wire", 100},
+            {"uranium-fuel-cell", 100},
             {"low-density-structure", 75},
+            {type="fluid", name="petroleum-gas", amount=700},
         },
         result = "a_mk7",
     },
@@ -115,10 +116,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk7", 1},
-            {"f_mk5", 10},
-            {"b_mk7", 20},
-            {type="fluid", name="lubricant", amount=350},
+            {"battery", 100},
+            {"nuclear-fuel", 10},
             {"low-density-structure", 125},
+            {type="fluid", name="lubricant", amount=350},
         },
         result = "a_mk8",
     },
@@ -131,10 +132,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk8", 1},
-            {"s_mk5", 5},
-            {type="fluid", name="lubricant", amount=700},
+            {"solar-panel", 30},
             {"rocket-control-unit", 100},
             {"low-density-structure", 175},
+            {type="fluid", name="lubricant", amount=700},
         },
         result = "a_mk9",
     },
@@ -146,7 +147,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"a_mk9", 1},
-            {"s_mk8", 5},
+            {"solar-panel", 40},
             {"rocket-control-unit", 200},
             {"processing-unit", 250},
             {"low-density-structure", 250},
@@ -155,17 +156,18 @@ local recipes = {
     },
 }
 
-local compat = require("compatibilities.mods-compat")
+local util = require("compatibilities.util")
+
 --Compatibility section
-compat.update_ingredients(recipes[1], {
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["wood"] = {"solder", 100}, -- the first three are for replacing ingredients in the recipe
+            ["wood"] = {"solder", 100},
             ["electronic-circuit"] = {"basic-circuit-board", 55},
             ["steel-plate"] = {"rubber", 20},
             ["stone-brick"] = {"glass", 100},
-            {"tinned-copper-cable", 55} -- these two are for adding new ingredients to the recipe
+            {"tinned-copper-cable", 55},
         }
     },
     {
@@ -230,7 +232,7 @@ compat.update_ingredients(recipes[1], {
     },
 })
 
-compat.update_ingredients(recipes[2], {
+util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
@@ -312,7 +314,7 @@ compat.update_ingredients(recipes[2], {
     },
 })
 
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -405,13 +407,13 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobplates"},
         replacements = {
             ["engine-unit"] = {"silicon", 160},
             ["iron-gear-wheel"] = {"gunmetal-alloy", 120},
-            {"cobalt-steel-alloy", 150},
+            ["copper-plate"] = {"cobalt-steel-alloy", 150},
             {"invar-alloy", 100},
         }
     },
@@ -460,7 +462,7 @@ compat.update_ingredients(recipes[4], {
     },
 })
 
-compat.update_ingredients(recipes[5], {
+util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobwarfare"},
         replacements = {
@@ -476,7 +478,7 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["b_mk3"] = {"aluminium-plate", 50},
+            ["battery"] = {"aluminium-plate", 50},
             {"sapphire-5", 50},
             {"ruby-5", 50},
         }
@@ -497,7 +499,7 @@ compat.update_ingredients(recipes[5], {
     },
 })
 
-compat.update_ingredients(recipes[6], {
+util.ingredient_prereq(recipes[6], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -508,9 +510,9 @@ compat.update_ingredients(recipes[6], {
         dependencies = {"bobplates"},
         replacements = {
             ["red-wire"] = {"titanium-plate", 200},
+            ["solar-panel"] = {"gold-plate", 100},
             {"sapphire-5", 100},
             {"ruby-5", 100},
-
         }
     },
     {
@@ -538,22 +540,24 @@ compat.update_ingredients(recipes[6], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["processing-unit"] = {"plastic-bar", 100},
+            ["gold-plate"] = {"cobalt-steel-alloy", 100},
             {"gilded-copper-cable", 55},
         }
     },
     {
         dependencies = {"WireShortcuts"},
         replacements = {
-            ["red-wire"] = {"steel-plate", 100},
+            ["green-wire"] = {"steel-plate", 100},
+            ["red-wire"] = {"copper-cable", 200},
         }
     },
 })
 
-compat.update_ingredients(recipes[7], {
+util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["f_mk5"] = {"advanced-circuit", 300},
+            {"advanced-circuit", 300},
             {"processing-unit", 100},
         }
     },
@@ -602,15 +606,16 @@ compat.update_ingredients(recipes[7], {
         dependencies = {"WireShortcuts"},
         replacements = {
             ["green-wire"] = {"steel-plate", 100},
+            ["red-wire"] = {"copper-cable", 200},
         }
     },
 })
 
-compat.update_ingredients(recipes[8], {
+util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"bobwarfare"},
         replacements = {
-            ["f_mk5"] = {"heavy-armor-3", 1}
+            {"heavy-armor-3", 1}
         }
     },
     {
@@ -628,8 +633,8 @@ compat.update_ingredients(recipes[8], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["b_mk7"] = {"copper-tungsten-alloy", 200},
-            {"silver-zinc-battery", 100},
+            ["nuclear-fuel"] = {"copper-tungsten-alloy", 200},
+            ["battery"] = {"silver-zinc-battery", 100},
             {"sapphire-5", 100},
             {"ruby-5", 100},
             {"emerald-5", 100},
@@ -658,13 +663,13 @@ compat.update_ingredients(recipes[8], {
     },
 })
 
-compat.update_ingredients(recipes[9], {
+util.ingredient_prereq(recipes[9], {
     {
         dependencies = {"bobplates"},
         replacements = {
             ["low-density-structure"] = {"tungsten-carbide", 250},
             ["rocket-control-unit"] = {"processing-unit", 100},
-            {"advanced-processing-unit", 150},
+            ["solar-panel"] = {"advanced-processing-unit", 150},
             {"tungsten-plate", 200},
             {"sapphire-5", 50},
             {"ruby-5", 50},
@@ -702,12 +707,12 @@ compat.update_ingredients(recipes[9], {
         }
     },
 })
-compat.update_ingredients(recipes[10], {
+util.ingredient_prereq(recipes[10], {
     {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 200},
-            ["s_mk8"] = {"copper-tungsten-alloy", 200},
+            ["solar-panel"] = {"copper-tungsten-alloy", 200},
             {"nitinol-alloy", 100},
             {"nitinol-bearing", 100},
             {"sapphire-5", 100},

@@ -66,7 +66,7 @@ local order = {
 
 local i = 1
 while i < 11 do
-  data:extend({ 
+  data:extend({
     {
       type = "generator-equipment",
       name = "f_mk" .. tostring(i),

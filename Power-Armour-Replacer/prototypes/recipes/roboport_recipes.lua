@@ -5,6 +5,7 @@ local recipes = {
         enabled = false,
         energy_required = 10,
         ingredients = {
+            {"wood", 200},
             {"iron-chest", 5},
             {"electronic-circuit", 75},
             {"copper-cable", 150},
@@ -17,7 +18,6 @@ local recipes = {
         name = "r_mk2",
         enabled = false,
         energy_required = 20,
-        
         ingredients = {
             {"r_mk1", 1},
             {"electronic-circuit", 100},
@@ -46,11 +46,10 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {"r_mk3", 1},
-            {"electronic-circuit", 132},
+            {"electronic-circuit", 130},
             {"engine-unit", 140},
-            {"steel-plate", 167},
-            {"iron-gear-wheel", 173},
-            
+            {"steel-plate", 160},
+            {"iron-gear-wheel", 170},
         },
         result = "r_mk4"
     },
@@ -63,7 +62,7 @@ local recipes = {
             {"r_mk4", 1},
             {"steel-chest", 30},
             {"flying-robot-frame", 65},
-            {"b_mk3", 3},
+            {"battery", 45},
         },
         result = "r_mk5"
     },
@@ -76,9 +75,9 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"r_mk5", 1},
-            {"advanced-circuit", 82},
-            {"electric-engine-unit", 128},
-            {"steel-plate", 231},
+            {"processing-unit", 50},
+            {"electric-engine-unit", 120},
+            {"steel-plate", 230},
             {type="fluid", name="lubricant", amount=300},
         },
         result = "r_mk6"
@@ -91,10 +90,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"r_mk6", 1},
-            {"processing-unit", 117},
-            {"p-s_mk5", 5},
-            {"iron-stick", 272},
-            {"low-density-structure", 57},
+            {"processing-unit", 120},
+            {"uranium-235", 50},
+            {"iron-stick", 270},
+            {"low-density-structure", 60},
         },
         result = "r_mk7"
     },
@@ -106,10 +105,10 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"r_mk7", 1},
-            {"low-density-structure", 128},
-            {"steel-plate", 268},
-            {"copper-cable", 321},
-            {"uranium-235", 162},
+            {"low-density-structure", 130},
+            {"steel-plate", 270},
+            {"copper-cable", 320},
+            {"uranium-235", 160},
         },
         result = "r_mk8"
     },
@@ -122,9 +121,9 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"r_mk8", 1},
-            {"rocket-control-unit", 82},
-            {"low-density-structure", 143},
-            {"advanced-circuit", 157},
+            {"rocket-control-unit", 80},
+            {"low-density-structure", 150},
+            {"advanced-circuit", 160},
             {type="fluid", name="lubricant", amount=600},
         },
         result = "r_mk9"
@@ -145,12 +144,14 @@ local recipes = {
     },
 }
 
-local compat = require("compatibilities.mods-compat")
+local util = require("compatibilities.util")
+
 --Compatibility section
-compat.update_ingredients(recipes[1], {
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
+            ["wood"] = {"resin", 200},
             ["electronic-circuit"] = {"basic-circuit-board", 30},
             ["iron-chest"] = {"solder", 75},
             ["small-lamp"] = {"rubber", 50},
@@ -161,12 +162,14 @@ compat.update_ingredients(recipes[1], {
         dependencies = {"angelspetrochem", "bobplates",},
         replacements = {
             ["rubber"] = {"tin-plate", 50},
+            ["resin"] = {"wood", 200},
         }
     },
     {
         dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
         replacements = {
             ["rubber"] = {"tin-plate", 50},
+            ["resin"] = {"wood", 200},
         }
     },
     {
@@ -191,7 +194,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
-compat.update_ingredients(recipes[2], {
+util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -215,7 +218,7 @@ compat.update_ingredients(recipes[2], {
         }
     },
 })
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"boblogistics"},
         replacements = {
@@ -225,7 +228,7 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"boblogistics"},
         replacements = {
@@ -236,22 +239,22 @@ compat.update_ingredients(recipes[4], {
         }
     },
 })
-compat.update_ingredients(recipes[5], {
+util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"boblogistics"},
         replacements = {
             ["steel-chest"] = {"roboport-antenna-2", 5},
-            ["b_mk3"] = {"roboport-chargepad-2", 5},
+            ["battery"] = {"roboport-chargepad-2", 5},
             ["flying-robot-frame"] = {"roboport-door-2", 5},
         }
     },
 })
 
-compat.update_ingredients(recipes[6], {
+util.ingredient_prereq(recipes[6], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["advanced-circuit"] = {"roboport-antenna-2", 10},
+            ["processing-unit"] = {"roboport-antenna-2", 10},
             ["electric-engine-unit"] = {"roboport-chargepad-2", 10},
             ["steel-plate"] = {"roboport-door-2", 10},
             ["lubricant"] = {"", 0},
@@ -259,18 +262,18 @@ compat.update_ingredients(recipes[6], {
     },
 })
 
-compat.update_ingredients(recipes[7], {
+util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"boblogistics"},
         replacements = {
             ["processing-unit"] = {"roboport-antenna-3", 5},
-            ["p-s_mk5"] = {"roboport-chargepad-3", 5},
+            ["uranium-235"] = {"roboport-chargepad-3", 5},
             ["iron-stick"] = {"roboport-door-3", 5},
             ["low-density-structure"] = {"", 0},
         }
     },
 })
-compat.update_ingredients(recipes[8], {
+util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"boblogistics"},
         replacements = {
@@ -281,7 +284,7 @@ compat.update_ingredients(recipes[8], {
         }
     },
 })
-compat.update_ingredients(recipes[9], {
+util.ingredient_prereq(recipes[9], {
     {
         dependencies = {"boblogistics"},
         replacements = {
@@ -292,7 +295,7 @@ compat.update_ingredients(recipes[9], {
         }
     },
 })
-compat.update_ingredients(recipes[10], {
+util.ingredient_prereq(recipes[10], {
     {
         dependencies = {"boblogistics"},
         replacements = {

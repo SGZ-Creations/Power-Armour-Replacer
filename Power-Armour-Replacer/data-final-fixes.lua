@@ -1,14 +1,7 @@
 --TeleportationEquipment Mod
-require("compatibilities.teleportation-equipment.teleportation_tech")
-
---SpaceMod Mod
---require("compatibilities.SpaceMod.SpaceMod_tech")
-
---Any-else
-require("compatibilities.Misc.misc-tech")
+--require("compatibilities.teleportation-equipment.teleportation_tech")
 
 --structures
 require("structures.compatibility-recipe")
-require("structures.moved-tech")
+require("structures.altered-tech")
 require("structures.filters")
-

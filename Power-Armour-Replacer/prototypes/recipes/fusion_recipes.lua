@@ -32,7 +32,7 @@ local recipes = {
         energy_required = 50,
         ingredients = {
             {"f_mk2", 1},
-            {"b_mk1", 3},
+            {"battery", 10},
             {"electronic-circuit", 120},
             {"solid-fuel", 50},
         },
@@ -45,9 +45,10 @@ local recipes = {
         energy_required = 55,
         ingredients = {
             {"f_mk3", 1},
-            {"advanced-circuit", 40},
+            {"advanced-circuit", 20},
+            {"copper-plate", 50},
             {"engine-unit", 40},
-            {"steel-plate", 110},
+            {"steel-plate", 100},
         },
         result = "f_mk4"
     },
@@ -58,9 +59,10 @@ local recipes = {
         energy_required = 60,
         ingredients = {
             {"f_mk4", 1},
-            {"b_mk3", 5},
-            {"advanced-circuit", 80},
+            {"battery", 20},
+            {"plastic-bar", 50},
             {"engine-unit", 50},
+            {"advanced-circuit", 50},
         },
         result = "f_mk5"
     },
@@ -72,10 +74,11 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"f_mk5", 1},
-            {"advanced-circuit", 182},
-            {"electric-engine-unit", 64},
-            {"uranium-fuel-cell", 150},
-            {"plastic-bar", 132},
+            {"plastic-bar", 100},
+            {"processing-unit", 50},
+            {"advanced-circuit", 80},
+            {"uranium-fuel-cell", 100},
+            {"electric-engine-unit", 65},
         },
         result = "f_mk6"
     },
@@ -87,8 +90,9 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"f_mk6", 1},
-            {"electric-engine-unit", 97},
-            {"advanced-circuit", 75},
+            {"electric-engine-unit", 100},
+            {"processing-unit", 50},
+            {"advanced-circuit", 100},
             {"pipe", 80},
         },
         result = "f_mk7"
@@ -101,9 +105,9 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"f_mk7", 1},
-            {"p-s_mk7", 4},
-            {"advanced-circuit", 75},
-            {"processing-unit", 105},
+            {"sulfur", 50},
+            {"advanced-circuit", 100},
+            {"processing-unit", 100},
             {"low-density-structure", 100},
         },
         result = "f_mk8"
@@ -117,8 +121,8 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"f_mk8", 1},
-            {"processing-unit", 165},
             {"nuclear-fuel", 55},
+            {"processing-unit", 150},
             {type="fluid", name="petroleum-gas", amount=200}
         },
         result = "f_mk9"
@@ -131,17 +135,19 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"f_mk9", 1},
-            {"s_mk5", 5},
-            {"p-s_mk7", 6},
-            {"processing-unit", 195},
+            {"battery", 100},
+            {"processing-unit", 200},
+            {"rocket-control-unit", 30},
             {"low-density-structure", 250},
         },
         result = "f_mk10"
     },
 }
-local compat = require("compatibilities.mods-compat")
+
+local util = require("compatibilities.util")
+
 --Compatibility section
-compat.update_ingredients(recipes[1], {
+util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -196,7 +202,7 @@ compat.update_ingredients(recipes[1], {
         }
     },
 })
-compat.update_ingredients(recipes[2], {
+util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -208,7 +214,9 @@ compat.update_ingredients(recipes[2], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-plate"] = {"silver-plate", 20},
+            {"solder", 40},
             {"rubber", 60},
+            {"glass", 30}
         }
     },
     --Anegels
@@ -250,7 +258,7 @@ compat.update_ingredients(recipes[2], {
         }
     },
 })
-compat.update_ingredients(recipes[3], {
+util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -261,7 +269,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["b_mk1"] = {"brass-alloy", 100},
+            {"brass-alloy", 100},
             {"invar-alloy", 65},
             {"silver-plate", 70},
         }
@@ -276,7 +284,7 @@ compat.update_ingredients(recipes[3], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["b_mk1"] = {"motor", 20},
+            {"motor", 20},
         }
     },
     {
@@ -287,7 +295,7 @@ compat.update_ingredients(recipes[3], {
         }
     },
 })
-compat.update_ingredients(recipes[4], {
+util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -310,7 +318,7 @@ compat.update_ingredients(recipes[4], {
         }
     },
 })
-compat.update_ingredients(recipes[5], {
+util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -321,27 +329,28 @@ compat.update_ingredients(recipes[5], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["b_mk3"] = {"brass-alloy", 150},
+            {"brass-alloy", 150},
             {"ceramic-bearing", 80},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["b_mk3"] = {"angels-plate-chrome", 150},
+            {"angels-plate-chrome", 150},
             {"angels-silver-wire", 135},
             {"brass-alloy", 150},
         }
     },
 })
 
-compat.update_ingredients(recipes[6],
+util.ingredient_prereq(recipes[6],
 {
     {
         dependencies = {"bobplates"},
         replacements = {
             ["elctric-engin-unit"] = {"zinc-plate", 50},
             ["uranium-fuel-cell"] = {"cobalt-steel-bearing", 50},
+            {"lithium", 50},
         }
     },
     {
@@ -351,34 +360,28 @@ compat.update_ingredients(recipes[6],
         }
     },
 })
---[[
-compat.update_ingredients(recipes[7],
+util.ingredient_prereq(recipes[7],
 {
-    {
-        dependencies = {"bobrevamp"},
-        replacements = {
-            ["electric-engine-unit"] = {"rtg", 35},
-            [""] = {"", 0},
-        }
-    },
     {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"processing-unit", 100},
             [""] = {"", 0},
         }
-    },    
+    },
     {
         dependencies = {"bobelectronics"},
         replacements = {
             [""] = {"", 0},
             [""] = {"", 0},
+            {"lithium", 50},
         }
     },
     {
-        dependencies = {"bobplates"},
+        dependencies = {"bobplates", "bobrevamp"},
         replacements = {
             ["f_mk6"] = {"f_mk7", 1},
+            ["electric-engine-unit"] = {"rtg", 35},
             [""] = {"", 0},
             {"cobalt-steel-bearing", 50},
         }
@@ -391,7 +394,7 @@ compat.update_ingredients(recipes[7],
         }
     },
 })
-compat.update_ingredients(recipes[8],
+util.ingredient_prereq(recipes[8],
 {
     {
         dependencies = {"bobelectronics"},
@@ -415,7 +418,7 @@ compat.update_ingredients(recipes[8],
         }
     },
 })
-compat.update_ingredients(recipes[9],
+util.ingredient_prereq(recipes[9],
 {
     {
         dependencies = {"bobelectronics"},
@@ -447,7 +450,7 @@ compat.update_ingredients(recipes[9],
         }
     },
 })
-compat.update_ingredients(recipes[10],
+util.ingredient_prereq(recipes[10],
 {
     {
         dependencies = {"bobelectronics"},
@@ -479,5 +482,4 @@ compat.update_ingredients(recipes[10],
         }
     },
 })
-]]
 data:extend(recipes)
