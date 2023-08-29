@@ -70,7 +70,7 @@ local recipes = {
 local util = require("compatibilities.util")
 
 --Compatibility section
-util.ingredient_prereq(recipes[1], {
+util.ingredient_prereq(recipes[1], { --bi_mk1
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -126,7 +126,7 @@ util.ingredient_prereq(recipes[1], {
     },
 })
 
-util.ingredient_prereq(recipes[2], {
+util.ingredient_prereq(recipes[2], { --bi_mk2
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -166,7 +166,7 @@ util.ingredient_prereq(recipes[2], {
     }
 })
 
-util.ingredient_prereq(recipes[3], {
+util.ingredient_prereq(recipes[3], { --nvg_mk1
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -222,7 +222,7 @@ util.ingredient_prereq(recipes[3], {
         }
     },
 })
-util.ingredient_prereq(recipes[4], {
+util.ingredient_prereq(recipes[4], { --nvg_mk2
     {
         dependencies = {"bobelectronics"},
         replacements = {

@@ -1,4 +1,4 @@
 --structures
 require("structures.science-setting")
-require("structures.modded-tech-prerequsits")
+require("structures.mod-tech-prereq")
 require("structures.invalid-recipe-tech-replaced")

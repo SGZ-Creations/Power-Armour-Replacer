@@ -1,6 +1,16 @@
 data:extend({
   {
     type = "bool-setting",
+    name = "PA&R-info",
+    setting_type = "startup",
+    default_value = true,
+    order = "1Aac"
+  },
+})
+
+data:extend({
+  {
+    type = "bool-setting",
     name = "vanilla-filters",
     setting_type = "startup",
     default_value = true,
@@ -13,9 +23,6 @@ data:extend({
     default_value = true,
     order = "1Aab"
   },
-})
-
-data:extend({
   {
     type = "bool-setting",
     name = "vanilla-warning",

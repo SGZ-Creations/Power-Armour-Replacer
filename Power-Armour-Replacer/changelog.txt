@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.45
+Date: 27.08.2023
+  Bugfixes:
+    - Some tech prerequsites not showing.
+  Features:
+    - New message added.
+  Scripting:
+    - Reworked messages in control stage
+  Thanks:
+    - @_CodeGreen. For helping with multi lane script placments.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.44
 Date: 27.08.2023
   Changes:
