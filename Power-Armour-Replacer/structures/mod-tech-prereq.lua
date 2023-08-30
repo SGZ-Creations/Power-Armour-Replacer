@@ -293,7 +293,7 @@ util.technology_dependancy
 		["laser_5"] = {
 		},
 	},
-
+	--[[
 	["SpaceMod"] = {
 		["protection-fields"] = {
 			"shield_10",
@@ -311,4 +311,5 @@ util.technology_dependancy
 			["fusion-reactor_10"] = "fusion-reactor_4",
 		}
 	},
+	]]
 }

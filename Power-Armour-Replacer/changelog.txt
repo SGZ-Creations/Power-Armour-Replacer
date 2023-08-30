@@ -3,12 +3,17 @@ Version: 0.1.45
 Date: 27.08.2023
   Bugfixes:
     - Some tech prerequsites not showing.
+    - Mod needing battery equipments 
   Features:
-    - New message added.
+    - New messages added.
   Scripting:
-    - Reworked messages in control stage
+    - Reworked messages in control stage.
+    - Reverted the fluid fix for now.
+  Modding:
+    - Hiladdar's robots requiring battery equipement as prerequesites.
   Thanks:
     - @_CodeGreen. For helping with multi lane script placments.
+    - @rmm for finding the incompatibility.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.44
 Date: 27.08.2023

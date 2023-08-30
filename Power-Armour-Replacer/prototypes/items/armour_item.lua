@@ -310,7 +310,7 @@ if mods["bobwarfare"] then
           {
             type = "plasma",
             decrease = plasma_decrease[a],
-            percent = plasma_percent[a], 
+            percent = plasma_percent[a],
           },
           {
             type = "bob-pierce",

@@ -149,12 +149,6 @@ local util = require("compatibilities.util")
 --Compatibility section
 util.ingredient_prereq(recipes[1], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 75},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"steel-bearing", 75},
@@ -350,6 +344,7 @@ util.ingredient_prereq(recipes[6],
         replacements = {
             ["elctric-engin-unit"] = {"zinc-plate", 50},
             ["uranium-fuel-cell"] = {"cobalt-steel-bearing", 50},
+            ["electric-engine-unit"] = {"titnaium-plate", 50},
             {"lithium", 50},
         }
     },
@@ -365,32 +360,29 @@ util.ingredient_prereq(recipes[7],
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"processing-unit", 100},
-            [""] = {"", 0},
+            {"gilded-copper-cable", 50},
         }
     },
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
-            {"lithium", 50},
+            ["advanced-circuit"] = {"processing-unit", 100},
+            ["electric-engine-unit"] = {"lithium", 50},
+            {"cobalt-steel-bearing", 50},
         }
     },
     {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
-            ["f_mk6"] = {"f_mk7", 1},
-            ["electric-engine-unit"] = {"rtg", 35},
-            [""] = {"", 0},
-            {"cobalt-steel-bearing", 50},
+            {"rtg", 40},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["f_mk6"] = {"f_mk7", 1},
-            [""] = {"", 0},
+            ["pipe"] = {"heat-pipe-3", 20},
+            {"angels-wire-silver", 100},
+            {"angels-wire-platinum", 100},
         }
     },
 })
@@ -399,22 +391,28 @@ util.ingredient_prereq(recipes[8],
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            {"solder", 100},
+            {"tinned-copper-cable", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["f_mk7"] = {"f_mk8", 1},
-            [""] = {"", 0},
+            ["sulfur"] = {"titanium-plate", 100},
+            {"silicon-nitride", 100},
+            {"tungsten-plate", 100},
+        }
+    },
+    {
+        dependencies = {"bobplates", "bobrevamp"},
+        replacements = {
+            {"rtg", 40},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["f_mk7"] = {"f_mk8", 1},
-            [""] = {"", 0},
+            ["titanium-plate"] = {"reinforced-concrete-brick", 100},
         }
     },
 })
@@ -423,22 +421,30 @@ util.ingredient_prereq(recipes[9],
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 50},
-            [""] = {"", 0},
+            {"solder", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["f_mk8"] = {"f_mk9", 1},
-            [""] = {"", 0},
+            ["advanced-circuit"] = {"advanced-processing-unit", 50},
+            ["nuclear-fuel"] = {"heat-pipe-4", 20},
+            ["petroleum-gas"] = {"ammonia", 200},
+            {"tungsten-crabide", 100},
+            {"rtg", 40},
+        }
+    },
+    {
+        dependencies = {"bobplates", "bobrevamp"},
+        replacements = {
+            {"rtg", 40},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["f_mk8"] = {"f_mk9", 1},
-            [""] = {"", 0},
+            ["ammonia"] = {"gas-monochloramine", 100},
+            {"uranium-234", 20},
         }
     },
     {
@@ -455,28 +461,29 @@ util.ingredient_prereq(recipes[10],
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 100},
-            [""] = {"", 0},
+            {"gilded-copper-cable", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["f_mk9"] = {"f_mk10", 1},
-            [""] = {"", 0},
+            ["battery"] = {"silver-zinc-battery", 200},
+            ["processing-unit"] = {"advanced-processing-unit", 200},
+            {"copper-tungsten-plate", 200},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["f_mk9"] = {"f_mk10", 1},
-            [""] = {"", 0},
+            {"angels-wire-platinum", 200},
+            {"silver-oxite", 100},
+            {"uranium-234", 20},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            ["nuclear-fuel"] = {"clowns-plate-depleted-uranium", 200},
+            {"clowns-plate-depleted-uranium", 200},
             {"clowns-plate-magnesium", 200},
             {"clowns-plate-osmium", 200},
         }

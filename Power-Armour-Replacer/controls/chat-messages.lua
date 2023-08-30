@@ -7,8 +7,8 @@ local function check_for_error(event)
     Power Armour & Replacer works in vanilla but was not intended with vanilla.
     PA&R provides Armours & Equipment that is meant to be OP, & meant to be played along with other overhaul mods. Meaning if u play in vanilla, this mod will make you Over-OP.
     All equipments stats will stay as is & are not changeable, since the mod is balanced within itself. There for high cost is to be expected.
-    Still should u wish change how things are my CAS mod will allow you to tweak and alter my Armours grids and INV bonuses if they are to big for your likings.
-    CAS is required by PA&R so it should be in your mod list to allow for easy tweaking.
+    Still should you wish to change how things are my CAS mod will allow you to tweak and alter my Armours grids and INV bonuses if they are to big for your likings.
+    CAS is required by PA&R so it should be in your mod list, to allow for easy tweaking.
     In the CAS mod you can also enable space-science-packs to be required in reaserch should u wish that.
     THANKS FOR READING. You can disable this message in (PA&R) startup settings if u don't want the INFO.
         ]])

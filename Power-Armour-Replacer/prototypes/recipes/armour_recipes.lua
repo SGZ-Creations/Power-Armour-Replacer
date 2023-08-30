@@ -501,6 +501,13 @@ util.ingredient_prereq(recipes[5], {
 
 util.ingredient_prereq(recipes[6], {
     {
+        dependencies = {"bobenemies", "bobplates"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
+            ["green-wire"] = {"alien-blue-alloy", 100},
+        }
+    },
+    {
         dependencies = {"bobelectronics"},
         replacements = {
             {"advanced-circuit", 250},
@@ -529,12 +536,6 @@ util.ingredient_prereq(recipes[6], {
             {"alien-artifact-red", 400},
         }
     },
-    {
-        dependencies = {"bobenemies", "bobplates"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
-        }
-    },
     --Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -555,10 +556,10 @@ util.ingredient_prereq(recipes[6], {
 
 util.ingredient_prereq(recipes[7], {
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"bobenemies", "bobplates"},
+        setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"advanced-circuit", 300},
-            {"processing-unit", 100},
+            ["red-wire"] = {"alien-orange-alloy", 100},
         }
     },
     {
@@ -566,6 +567,8 @@ util.ingredient_prereq(recipes[7], {
         replacements = {
             ["green-wire"] = {"ceramic-bearing", 200},
             ["low-density-structure"] = {"cobalt-steel-bearing", 200},
+            ["red-wire"] = {"advanced-circuit", 300},
+            {"processing-unit", 100},
             {"tungsten-plate", 250},
             {"sapphire-5", 50},
             {"ruby-5", 50},
@@ -585,12 +588,6 @@ util.ingredient_prereq(recipes[7], {
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
             {"alien-artifact-red", 500},
-        }
-    },
-    {
-        dependencies = {"bobenemies", "bobplates"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
         }
     },
     --Angels

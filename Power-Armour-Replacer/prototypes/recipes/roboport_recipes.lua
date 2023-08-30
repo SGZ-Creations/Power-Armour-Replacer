@@ -209,6 +209,12 @@ util.ingredient_prereq(recipes[2], {
             ["iron-gear-wheel"] = {"steel-gear-wheel", 60},
         }
     },
+    {
+        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
+        replacements = {
+            {"silicon", 100},
+        }
+    },
     --SE-K2
     {
         dependencies = {"space-exploration"},

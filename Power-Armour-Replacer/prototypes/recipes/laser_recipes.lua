@@ -198,7 +198,7 @@ util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"IndustrialRevolution3"},
         replacements = {
-            ["electronic-circuit"] = {"", 0},
+            --["electronic-circuit"] = {"", 0},
             ["copper-plate"] = {"copper-cable", 40},
             ["iron-plate"] = {"copper-pellet", 80},
             ["steel-plate"] = {"tin-gear-wheel", 20},
@@ -329,6 +329,7 @@ util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobplates"},
         replacements = {
+            ["advanced-circuit"] = {"electronic-circuit", 100},
             ["pipe"] = {"nickel-plate", 250},
             ["iron-gear-wheel"] = {"brass-alloy", 20},
         }
@@ -475,13 +476,14 @@ util.ingredient_prereq(recipes[7], {
         dependencies = {"bobplates"},
         replacements = {
             ["electric-engine-unit"] = {"gunmetal-alloy", 200},
+            {"cobalt-steel-gear-wheel", 40},
             {"emerald-5", 100},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {type="fluid", name="liquid-dimethylmercury", amount=100},
+            --{type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
     --Darkstar
@@ -522,7 +524,7 @@ util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {type="fluid", name="liquid-dimethylmercury", amount=200},
+            --{type="fluid", name="liquid-dimethylmercury", amount=200},
         }
     },
     --Darkstar
@@ -539,8 +541,8 @@ util.ingredient_prereq(recipes[9], {
         replacements = {
             ["steel-plate"] = {"nitinol-bearing", 50},
             ["low-density-structure"] = {"nitinol-gear-wheel", 50},
-            {"advanced-processing-unit", 100},
-            {"topaz-5", 100},
+            ["advanced-circuit"] = {"advanced-processing-unit", 100},
+            ["sulfur"] = {"topaz-5", 100},
         }
     },
     {
@@ -561,7 +563,7 @@ util.ingredient_prereq(recipes[9], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-            {type="fluid", name="liquid-dimethylmercury", amount=300},
+            --{type="fluid", name="liquid-dimethylmercury", amount=300},
         }
     },
     --Darkstar
@@ -578,7 +580,7 @@ util.ingredient_prereq(recipes[10], {
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 200},
             ["steel-plate"] = {"cobalt-steel-plate", 200},
-            {"tungsten-carbide", 100},
+            ["sulfur"] = {"tungsten-carbide", 100},
             {"diamond-5", 100},
         }
     },
@@ -602,7 +604,7 @@ util.ingredient_prereq(recipes[10], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-            {type="fluid", name="liquid-dimethylmercury", amount=400},
+            --{type="fluid", name="liquid-dimethylmercury", amount=400},
         }
     },
     {
