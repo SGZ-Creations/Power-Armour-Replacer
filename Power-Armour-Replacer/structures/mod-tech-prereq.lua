@@ -69,7 +69,7 @@ util.technology_dependancy
 		"bob-heat-pipe-1",
 		},
 		["laser_5"] = {
-			["nuclear-power"] = "bob-heat-pipe-2",  
+			["nuclear-power"] = "bob-heat-pipe-2",
 			"bob-heat-pipe-2",
 		},
 		["laser_7"] = {
@@ -270,12 +270,6 @@ util.technology_dependancy
 		["armour_3"] = {
 			["advanced-electronics"] = "electronics",
 		},
-		["fusion-reactor_2"] = {
-			"ir-iron-milestone",
-		},
-		["fusion-reactor_4"] = {
-			["electronics"] = "ir-iron-milestone",
-		},
 		["battery_1"] = {
 			["ir-steel-milestone"] = "ir-bronze-milestone"
 		},
@@ -286,6 +280,12 @@ util.technology_dependancy
 			["advanced-electronics"] = "electronics",
 			"ir-steel-milestone",
 		},
+		["fusion-reactor_2"] = {
+			"ir-iron-milestone",
+		},
+		["fusion-reactor_4"] = {
+			["electronics"] = "ir-iron-milestone",
+		},
 		["laser_3"] = {
 			"electronics",
 			"ir-steel-milestone",
@@ -293,23 +293,4 @@ util.technology_dependancy
 		["laser_5"] = {
 		},
 	},
-	--[[
-	["SpaceMod"] = {
-		["protection-fields"] = {
-			"shield_10",
-		},
-		["fusion-reactor"] = {
-			"fusion-reactor_10",
-		}
-	},
-
-	[{"SpaceMod", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",}] = {
-		["protection-fields"] = {
-			["shield_10"] = "shield_6",
-		},
-		["fusion-reactor"] = {
-			["fusion-reactor_10"] = "fusion-reactor_4",
-		}
-	},
-	]]
 }

@@ -430,7 +430,7 @@ util.ingredient_prereq(recipes[9],
             ["advanced-circuit"] = {"advanced-processing-unit", 50},
             ["nuclear-fuel"] = {"heat-pipe-4", 20},
             ["petroleum-gas"] = {"ammonia", 200},
-            {"tungsten-crabide", 100},
+            {"tungsten-carbide", 100},
             {"rtg", 40},
         }
     },

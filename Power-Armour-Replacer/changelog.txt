@@ -1,9 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.46
+Date: 30.08.2023
+  Modding:
+    - Made adjustments for SpaceModFeorasFork. To make it work along with PA&R.
+  Bugfixes:
+    - Typo that made item in recipe not appear in fusion_9. bobsplates mod.
+    - Shorted, Corrected Localization again. EN NO.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.45
-Date: 27.08.2023
+Date: 30.08.2023
   Bugfixes:
     - Some tech prerequsites not showing.
-    - Mod needing battery equipments 
+    - Mod needing battery equipments.
   Features:
     - New messages added.
   Scripting:
@@ -26,13 +34,13 @@ Date: 27.08.2023
     - Moved TeleportationEquipment code to other files.
   Bugfixes:
     - Known Nanobot compat bug.
-    - Fluid in Compatibility issue resolved.
+    - Fluid in Compatibility issue resolved. Broke Items conversion.
   Modding:
     - Rewrote tech changes for TeleportationEquipment.
   Thanks:
-    - Discord: @Dr Pez. For fixing Compatibility fluid recipes. Simplefied Compatiblity. Merging files.
+    - Discord: @Dr Pez. For fixing fluid recipes Compatibility. & Merging files.
   Discord-Realese:
-    - Just to say that it's a Realease on S_gamez Discord only.
+    - ̶J̶u̶s̶t̶ ̶t̶o̶ ̶s̶a̶y̶ ̶t̶h̶a̶t̶ ̶i̶t̶'̶s̶ ̶a̶ ̶R̶e̶a̶l̶e̶a̶s̶e̶ ̶o̶n̶ ̶S̶_̶g̶a̶m̶e̶z̶ ̶D̶i̶s̶c̶o̶r̶d̶ ̶o̶n̶l̶y̶.̶
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.43
 Date: 22.08.2023

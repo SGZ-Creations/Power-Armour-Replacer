@@ -52,6 +52,7 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
   },
 })
 
+--SpaceMod
 util.ingredient_prereq(data.raw.recipe["fusion-reactor"],
 {
   {
@@ -89,6 +90,59 @@ util.ingredient_prereq(data.raw.recipe["protection-field-goopless"], {
     dependencies = {"SpaceMod", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
     replacements = {
       ["s_mk1"] = {"s_mk3", 1000},
+    }
+  },
+})
+
+--SpaceModFeorasFork
+
+util.ingredient_prereq(data.raw.recipe["fusion-reactor"],
+{
+  {
+    dependencies = {"SpaceModFeorasFork",},
+    replacements = {
+      ["f_mk1"] = {"f_mk10", 5},
+    }
+  },
+  {
+    dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+    replacements = {
+      ["f_mk10"] = {"f_mk4", 40},
+    }
+  },
+})
+
+util.ingredient_prereq(data.raw.recipe["protection-field"],
+{
+  {
+    dependencies = {"SpaceModFeorasFork",},
+    replacements = {
+      ["s_mk2"] = {"s_mk10", 5},
+    }
+  },
+  {
+    dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+    replacements = {
+      ["s_mk10"] = {"s_mk6", 100},
+    }
+  },
+})
+
+util.ingredient_prereq(data.raw.recipe["protection-field-goopless"], {
+  {
+    dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+    replacements = {
+      --["s_mk2"] = {"s_mk3", 1000},
+    }
+  },
+})
+
+util.ingredient_prereq(data.raw.recipe["laser-cannon"], {
+  {
+    dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+    replacements = {
+      ["personal-laser-defense-equipment-6"] = {"l_mk6", 100},
+      --["l_mk2"] = {"l_mk6", 100},
     }
   },
 })
