@@ -1,0 +1,68 @@
+{
+    "item":
+    [
+        [ "-armor", "a_mk" ],
+        [ "-armor", "a_mk" ],  
+        [ "-armor", "a_mk" ],
+        [ "-armor", "a_mk" ],
+        [ "energy-shield-equipment", "shield_1" ],
+        [ "energy-shield-mk2-equipment", "shield_2" ],
+        [ "energy-shield-mk3-equipment", "shield_3" ],
+        [ "energy-shield-mk4-equipment", "shield_4" ],
+        [ "energy-shield-mk5-equipment", "shield_5" ],
+        [ "energy-shield-mk6-equipment", "shield_6" ],
+        [ "energy-shield-mk6-equipment", "shield_6" ]
+    ],
+    "entity":
+    [
+        [ "shields_1", "s_1" ],
+        [ "shields_2", "s_2" ],
+        [ "shields_3", "s_3" ],
+        [ "shields_4", "s_4" ],
+        [ "shields_5", "s_5" ],
+        [ "shields_6", "s_6" ],
+        [ "shields_7", "s_7" ],
+        [ "shields_8", "s_8" ],
+        [ "shields_9", "s_9" ],
+        [ "shields_10", "s_10" ]
+    ],
+    "equipment":
+    [
+        [ "shields_1", "s_1" ],
+        [ "shields_2", "s_2" ],
+        [ "shields_3", "s_3" ],
+        [ "shields_4", "s_4" ],
+        [ "shields_5", "s_5" ],
+        [ "shields_6", "s_6" ],
+        [ "shields_7", "s_7" ],
+        [ "shields_8", "s_8" ],
+        [ "shields_9", "s_9" ],
+        [ "shields_10", "s_10" ]
+    ],
+    "recipe":
+    [
+        [ "shields_1", "s_1" ],
+        [ "shields_2", "s_2" ],
+        [ "shields_3", "s_3" ],
+        [ "shields_4", "s_4" ],
+        [ "shields_5", "s_5" ],
+        [ "shields_6", "s_6" ],
+        [ "shields_7", "s_7" ],
+        [ "shields_8", "s_8" ],
+        [ "shields_9", "s_9" ],
+        [ "shields_10", "s_10" ]
+    ],
+    "technology":
+    [   
+        [ "shields_1", "shield_1" ],
+        [ "shields_2", "shield_2" ],
+        [ "shields_3", "shield_3" ],
+        [ "shields_4", "shield_4" ],
+        [ "shields_5", "shield_5" ],
+        [ "shields_6", "shield_6" ],
+        [ "shields_7", "shield_7" ],
+        [ "shields_8", "shield_8" ],
+        [ "shields_9", "shield_9" ],
+        [ "shields_10", "shield_10" ]
+    ]
+}

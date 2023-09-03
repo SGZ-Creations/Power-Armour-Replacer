@@ -3,10 +3,10 @@ local util = {}
 --Recipe Compatibility Generator
 
 util.update_ingredients = function(recipe, replacements)
-    local ingredients = recipe.ingredients
-    local remove = {}
-    local not_crafting = false
-    for i, ingredient in pairs(ingredients) do
+    local ingredients = recipe.ingredients  --original list to be replaced
+    local remove = {} -- local table to trim ingredients after the replacements (to maintain order)
+    local not_crafting = false -- trigger for crafting cat change
+    for i, ingredient in pairs(ingredients) do -- for each line of ingredients list
         if ingredient.type then
             local replacement = replacements[ingredient.name]
             if replacement then
@@ -14,7 +14,6 @@ util.update_ingredients = function(recipe, replacements)
                 ingredient.amount = replacement[2]
                 --where type exists, check if fluid
                 if ingredient.type == "fluid" then
-                    --trigger category change
                     not_crafting = true
                 end
             end
@@ -29,17 +28,24 @@ util.update_ingredients = function(recipe, replacements)
             remove[#remove+1]=i
         end
     end
-    for k, new_ingredient in pairs(replacements) do
+    for k, new_ingredient in pairs(replacements) do --if new, and not replacement
         if type(k) ~= "string" then
             ingredients[#ingredients+1] = new_ingredient
+            if new_ingredient.type and new_ingredient.type == "fluid" then
+                not_crafting = true --trigger category change
+            end
         end
     end
     for _, remove_ingredient in pairs(remove) do
         table.remove(ingredients,remove_ingredient)
     end
     --check if category == default, change it
-    if not_crafting and recipe.category == "crafting" then
-        recipe.category = "crafting-with-fluid"
+    if not_crafting then
+        if recipe.category == "crafting" then
+            recipe.category = "crafting-with-fluid"
+        elseif recipe.category == nil then
+            recipe.category = "crafting-with-fluid"
+        end
     end
 end
 

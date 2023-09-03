@@ -98,15 +98,9 @@ util.technology_dependancy
 		},
 	},
 
-	[{"bobplate", "angelssmelting"}] = {
-		["armour_1"] = {
-			"angels-bronze-smelting-1",
-		},
-		["armour_3"] = {
-			["advanced-electronics"] = "angels-brass-smelting-1",
-		},
-		["armour_7"] = {
-			["low-density-structure"] = "cobalt-processing",
+	[{"bobrevamp", "bobplates",}] = {
+		["fusion-reactor_7"] = {
+			"rtg",
 		},
 	},
 
@@ -210,6 +204,18 @@ util.technology_dependancy
 		},
 		["shield_6"] = {
 			"angels-silver-casting-2",
+		},
+	},
+
+	[{"bobplates", "angelssmelting"}] = {
+		["armour_1"] = {
+			"angels-bronze-smelting-1",
+		},
+		["armour_3"] = {
+			["advanced-electronics"] = "angels-brass-smelting-1",
+		},
+		["armour_7"] = {
+			["low-density-structure"] = "cobalt-processing",
 		},
 	},
 

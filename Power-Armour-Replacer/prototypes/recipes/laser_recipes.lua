@@ -483,7 +483,7 @@ util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            --{type="fluid", name="liquid-dimethylmercury", amount=100},
+            {type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
     --Darkstar
@@ -524,7 +524,7 @@ util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            --{type="fluid", name="liquid-dimethylmercury", amount=200},
+            {type="fluid", name="liquid-dimethylmercury", amount=200},
         }
     },
     --Darkstar
@@ -555,6 +555,7 @@ util.ingredient_prereq(recipes[9], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
+            {"copper-tungsten-alloy", 200},
             {"rubber", 100},
         }
     },
@@ -563,7 +564,7 @@ util.ingredient_prereq(recipes[9], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-            --{type="fluid", name="liquid-dimethylmercury", amount=300},
+            {type="fluid", name="liquid-dimethylmercury", amount=300},
         }
     },
     --Darkstar
@@ -588,13 +589,13 @@ util.ingredient_prereq(recipes[10], {
         dependencies = {"bobrevamp"},
         replacements = {
             {"heat-shield-tile", 400},
+            {"nitinol-alloy", 100},
             ["advanced-processing-unit"] = {"processing-unit", 100}
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            {"copper-tungsten-alloy", 200},
             {"angels-wire-silver", 100},
             {"angels-wire-platinum", 100},
         }
@@ -604,7 +605,7 @@ util.ingredient_prereq(recipes[10], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
-            --{type="fluid", name="liquid-dimethylmercury", amount=400},
+            {type="fluid", name="liquid-dimethylmercury", amount=400},
         }
     },
     {

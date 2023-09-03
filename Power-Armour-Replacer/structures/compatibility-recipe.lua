@@ -128,21 +128,11 @@ util.ingredient_prereq(data.raw.recipe["protection-field"],
   },
 })
 
-util.ingredient_prereq(data.raw.recipe["protection-field-goopless"], {
-  {
-    dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
-    replacements = {
-      --["s_mk2"] = {"s_mk3", 1000},
-    }
-  },
-})
-
 util.ingredient_prereq(data.raw.recipe["laser-cannon"], {
   {
     dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
     replacements = {
       ["personal-laser-defense-equipment-6"] = {"l_mk6", 100},
-      --["l_mk2"] = {"l_mk6", 100},
     }
   },
 })

@@ -301,6 +301,7 @@ util.ingredient_prereq(recipes[4], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"invar-alloy", 70},
+            ["engine-unit"] = {"silicon-wafer", 100},
             {"silver-plate", 60},
             {"nickel-plate", 80},
         }
@@ -323,6 +324,7 @@ util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobplates"},
         replacements = {
+            ["engine-unit"] = {"aluminium-plate", 100},
             {"brass-alloy", 150},
             {"ceramic-bearing", 80},
         }
@@ -378,9 +380,14 @@ util.ingredient_prereq(recipes[7],
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"bobpower"},
         replacements = {
             ["pipe"] = {"heat-pipe-3", 20},
+        }
+    },
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
             {"angels-wire-silver", 100},
             {"angels-wire-platinum", 100},
         }
@@ -469,7 +476,7 @@ util.ingredient_prereq(recipes[10],
         replacements = {
             ["battery"] = {"silver-zinc-battery", 200},
             ["processing-unit"] = {"advanced-processing-unit", 200},
-            {"copper-tungsten-plate", 200},
+            {"copper-tungsten-alloy", 200},
         }
     },
     {

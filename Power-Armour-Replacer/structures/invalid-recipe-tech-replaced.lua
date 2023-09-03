@@ -54,13 +54,28 @@ local replace = {
     ["bob-energy-shield-equipment-5"] = "shield_5",
     ["bob-energy-shield-equipment-6"] = "shield_6",
 }
+local function replace_exists(replace_v, prerequisites)
+    for _, prereq in pairs(prerequisites) do
+        if prereq == replace_v then
+            return true
+        end
+    end
+end
 
 local function replace_prerequisites(prerequisites)
 if not prerequisites then return end
+local remove_prereq = {}
     for i, prereq in pairs(prerequisites) do
         if replace[prereq] then
-            prerequisites[i] = replace[prereq]
+            if not replace_exists(replace[prereq], prerequisites) then
+                prerequisites[i] = replace[prereq]
+            else
+                remove_prereq[#remove_prereq+1]=i
+            end
         end
+    end
+    for _, rem in pairs(remove_prereq) do
+        table.remove(prerequisites,rem)
     end
 end
 

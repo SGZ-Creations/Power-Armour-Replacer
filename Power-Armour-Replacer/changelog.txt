@@ -1,6 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.47
+Date: 03.09.2023
+  Changes:
+    - Recipes bob's fusion reactor.
+    - Migrations change "sgz-a??-equipment-grid", --> "par-a??-equipment-grid".
+  Bugfixes:
+    - Recipe converter.
+    - Prerqesites for bob's RTG to mk7 reactors.
+    - typos.
+  Scripting:
+    - Files Read order.
+    - Load order within.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.46
-Date: 30.08.2023
+Date: 31.08.2023
   Modding:
     - Made adjustments for SpaceModFeorasFork. To make it work along with PA&R.
   Bugfixes:

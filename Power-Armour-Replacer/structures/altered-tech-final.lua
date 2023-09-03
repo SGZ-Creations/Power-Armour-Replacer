@@ -11,12 +11,3 @@ if mods["Krastorio2"] then
   local tech_eff = data.raw.technology["roboport_6"].effects
   table.insert(tech_eff,{type="unlock-recipe",recipe="vehicle-roboport"})
 end
-
-if mods["TeleportationEquipment"] then
-  local tech_eff = data.raw.technology["teleportation-equipment"]
-  tech_eff.unit.count = 1000
-  tech_eff.unit.ingredients =  {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-  }
-end
