@@ -6,4 +6,10 @@ util.technology_dependancy
 			["solar_1"] = "armour_3",
 		},
 	},
+
+	["SpaceModFeorasFork"] = {
+		["space-ai-robots"] = {
+			["fusion-reactor_1"] = "fusion-reactor_4",
+		},
+	},
 }

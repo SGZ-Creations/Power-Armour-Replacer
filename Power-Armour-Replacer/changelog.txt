@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.48
+Date: xx.10.2023
+  Minor Features:
+    - Added "armor-spill-prevention" As a requirtement. to prevent spills whenr u want to upgrade but forget that u have a lot of stuff on your person.
+  Changes:
+    - Made pre-requsites for space-ai-robots require fusion-reactor_4 instead of fusion-reactor_1 when playing with my mod and SpaceModFeorasFork are enabled.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.47
 Date: 03.09.2023
   Changes:
