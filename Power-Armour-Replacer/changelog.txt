@@ -1,20 +1,35 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.49
+Date: 09.11.2023
+  Changes:
+    - Removed all and any relation to green, red wires. For Factorio 2.0. I have sort of confirmed it's removal. Stage 1
+    - Recipes Laser mk3, Armour mk6 & Mk7
+  Modding:
+    - Removed support for WireShortcuts as it mostly becomes redundant with 2.0. Stage 1
+    - Traces for Py Block added. Want to rework later. Looking for coder to work with me on this.
+    - "Hidden & Dissabled" Hiladdar_Gear's Equipment, Techs & Intermediate.
+  Info:
+    - 2.0 Factorio Stage 1 Removed Wires.
+    - 2.0 Factorio Stage 2 Coming in future update hopefuly before the 2.0 Relaese. ??2024??
+  Releases:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.48
-Date: xx.10.2023
+Date: 11.10.2023
   Minor Features:
-    - Added "armor-spill-prevention" As a requirtement. to prevent spills whenr u want to upgrade but forget that u have a lot of stuff on your person.
+    - Added "armor-spill-prevention" As a requirtement. to prevent spills when u want to upgrade but forget that u have a lot of stuff on your person.
   Changes:
     - Made pre-requsites for space-ai-robots require fusion-reactor_4 instead of fusion-reactor_1 when playing with my mod and SpaceModFeorasFork are enabled.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.47
 Date: 03.09.2023
   Changes:
-    - Recipes bob's fusion reactor.
+    - Recipes Bob's fusion reactor.
     - Migrations change "sgz-a??-equipment-grid", --> "par-a??-equipment-grid".
   Bugfixes:
     - Recipe converter.
-    - Prerqesites for bob's RTG to mk7 reactors.
-    - typos.
+    - Prerqesites for Bob's RTG to mk7 reactors.
+    - Typos.
   Scripting:
     - Files Read order.
     - Load order within.
@@ -247,7 +262,7 @@ Date: 27.05.2023
     - Crash without bob's enemies installed reported by "grenaldn".
     - Crash in SE using K2 items witout K2. Specifing wrong mod dependency.
   Modding:
-    - Some more items added to bob's enemies recipes. still far from done with this one.
+    - Some more items added to bob's enemies recipes. Still far from done with this one.
   Known-Issues:
     - Reverse Factory, using bob's, Angels, K2, SE, when recycling batteries wont work. no issues in vanilla.
   Thanks:
@@ -293,8 +308,6 @@ Date: 10.05.2023
     - Looking for an texture designer modeling person.
   Modding:
     - Marked Nulius Incompatible due to missing tech. If porvided with the reason. I would look in to trying to fix it.
-  Releases:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM. This was last unreleased Beta.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.25
 Date: 14.03.2023

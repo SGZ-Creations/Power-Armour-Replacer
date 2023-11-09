@@ -379,14 +379,14 @@ util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            [""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
 })
@@ -418,14 +418,14 @@ util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
+            --[""] = {"", 0},
             ["s_mk6"] = {"s_mk7", 1},
             {"lithium", 50},
         }
@@ -434,7 +434,7 @@ util.ingredient_prereq(recipes[7], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["s_mk6"] = {"s_mk7", 1},
-            [""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
 })
@@ -442,22 +442,22 @@ util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
 })
@@ -465,22 +465,22 @@ util.ingredient_prereq(recipes[9], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
 })
@@ -488,22 +488,22 @@ util.ingredient_prereq(recipes[10], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            [""] = {"", 0},
-            [""] = {"", 0},
+            --[""] = {"", 0},
+            --[""] = {"", 0},
         }
     },
 })

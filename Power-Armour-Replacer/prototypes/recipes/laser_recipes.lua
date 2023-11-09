@@ -33,10 +33,9 @@ local recipes = {
         ingredients = {
             {"l_mk2", 1},
             {"electronic-circuit", 100},
-            {"iron-plate", 125},
             {"battery", 45},
-            {"green-wire", 55},
-            {"red-wire", 55},
+            {"steel-plate", 50},
+            {"plastic-bar", 55},
         },
         result = "l_mk3"
     },
@@ -275,14 +274,6 @@ util.ingredient_prereq(recipes[2], {
     },
 })
 util.ingredient_prereq(recipes[3], {
-    -- Misc mod
-    {
-        dependencies = {"WireShortcuts"},
-        replacements = {
-            ["red-wire"] = {"iron-gear-wheel", 60},
-            ["green-wire"] = {"steel-plate", 50},
-        }
-    },
     --Bob's
     {
         dependencies = {"bobelectronics"},

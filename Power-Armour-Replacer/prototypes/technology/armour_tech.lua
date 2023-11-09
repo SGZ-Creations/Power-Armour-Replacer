@@ -1,19 +1,18 @@
+if not mods["PyBlock"] then
 	data:extend({
 		{
 			type = "technology",
 			name = "armour_1",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__base__/graphics/technology/power-armor.png",
-			effects =
-			{
+			effects = {
 				{
 					type = "unlock-recipe",
 					recipe = "a_mk1"
 				},
 			},
 			prerequisites = {"heavy-armor", "automation",},
-			unit =
-			{
+			unit = {
 				count = 1000,
 				ingredients = {
 					{"automation-science-pack", 1}
@@ -27,16 +26,14 @@
 			name = "armour_2",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__base__/graphics/technology/power-armor-mk2.png",
-			effects =
-			{
+			effects = {
 				{
 					type = "unlock-recipe",
 					recipe = "a_mk2"
 				},
 			},
 			prerequisites = {"armour_1", "electronics"},
-			unit =
-			{
+			unit = {
 				count = 1000,
 				ingredients = {
 					{"automation-science-pack", 2}
@@ -50,16 +47,14 @@
 			name = "armour_3",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__base__/graphics/technology/power-armor-mk2.png",
-			effects =
-			{
+			effects = {
 				{
 					type = "unlock-recipe",
 					recipe = "a_mk3"
 				},
 			},
 			prerequisites = {"armour_2", "advanced-electronics", "plastics", "engine", "military-2",},
-			unit =
-			{
+			unit = {
 				count = 1000,
 				ingredients = {
 					{"automation-science-pack", 3},
@@ -257,4 +252,5 @@
 			order = "g-a-b"
 		},
 	})
+end
 

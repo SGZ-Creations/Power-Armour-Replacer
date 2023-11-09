@@ -32,7 +32,7 @@ local function check_for_error(event)
         Bobs Armours are Disabled/Hidden due to PA&R's intentional replacement mechanics.
     Filters are hidden, Can be re-enabled under [Modded Filters] (PA&R) startup settings.
     You can disable this message in (PA&R) startup settings if u don't want the INFO.
-    ]])
+            ]])
         end
     end
 
@@ -40,6 +40,16 @@ local function check_for_error(event)
         if settings.startup["bobequipment-warning"].value then
             printer([[
         Bobs Equipment are Disabled/Hidden due to PA&R's intentional replacement mechanics.
+    Filters are hidden, Can be re-enabled under [Modded Filters] (PA&R) startup settings.
+    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+            ]])
+        end
+    end
+
+    if script.active_mods["Hiladdar_Gear"] then
+        if settings.startup["hl_gear-warning"].value then
+            printer([[
+        Hiladdar_Gear's Equipment, Tech, & Intermediate. are Disabled/Hidden due to PA&R's intentional replacement mechanics.
     Filters are hidden, Can be re-enabled under [Modded Filters] (PA&R) startup settings.
     You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
