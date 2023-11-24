@@ -107,7 +107,7 @@ data:extend({
             buffer_capacity = buffer_capacity[i],
             usage_priority = "tertiary"
         },
-        categories = { "armor" }
+        categories = {"armor"}
     }
 })
 i = i + 1

@@ -166,7 +166,6 @@ while i < 11 do
                 usage_priority = "secondary-input",
                 buffer_capacity = buffer_capacity[i]
             },
-
             attack_parameters =
             {
                 type = "beam",

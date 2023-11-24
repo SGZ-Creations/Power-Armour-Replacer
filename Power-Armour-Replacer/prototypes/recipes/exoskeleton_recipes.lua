@@ -320,5 +320,12 @@ util.ingredient_prereq(recipes[5], {
             {"angels-plate-chrome", 500},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["rocket-control-unit"] = {"matter-cube", 2},
+        }
+    },
 })
 data:extend(recipes)

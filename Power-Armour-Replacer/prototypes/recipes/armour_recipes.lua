@@ -740,6 +740,13 @@ if not mods["PyBlock"] then
                 {"clowns-plate-depleted-uranium", 500},
             }
         },
+        --K2
+        {
+            dependencies = {"Krastorio2"},
+            replacements = {
+                ["solar-panel"] = {"matter-cube", 2},
+            }
+        },
     })
     data:extend(recipes)
 end

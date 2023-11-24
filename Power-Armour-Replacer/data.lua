@@ -12,6 +12,7 @@
     require("prototypes.items.laser_item")
     require("prototypes.items.shield_item")
     require("prototypes.items.nvgs_bi_item")
+    require("prototypes.items.rcu_item")
 
 --prototypes.recipes
     require("prototypes.recipes.armour_recipes")
@@ -23,6 +24,7 @@
     require("prototypes.recipes.laser_recipes")
     require("prototypes.recipes.shield_recipes")
     require("prototypes.recipes.nvgs_bi_recipes")
+    require("prototypes.recipes.rcu_recipes")
 
 --prototypes.technology
     require("prototypes.technology.armour_tech")
@@ -34,6 +36,7 @@
     require("prototypes.technology.laser_tech")
     require("prototypes.technology.shield_tech")
     require("prototypes.technology.nvgs_bi_tech")
+    require("prototypes.technology.rcu_tech")
 
 --prototypes.other
     require("prototypes.animation.player_style")

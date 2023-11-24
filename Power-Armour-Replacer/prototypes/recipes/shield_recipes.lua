@@ -418,9 +418,9 @@ util.ingredient_prereq(recipes[7], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
+            --[""] = {"", 0}, 
             --[""] = {"", 0},
-            --[""] = {"", 0},
-        }
+        }-- TODO:Complete Tier 7 to 10 Shields for bobs mods
     },
     {
         dependencies = {"bobplates"},
@@ -504,6 +504,12 @@ util.ingredient_prereq(recipes[10], {
         replacements = {
             --[""] = {"", 0},
             --[""] = {"", 0},
+        }
+    },--K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["rocket-control-unit"] = {"matter-cube", 2},
         }
     },
 })

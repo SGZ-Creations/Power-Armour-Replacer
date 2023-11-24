@@ -394,8 +394,9 @@ util.ingredient_prereq(recipes[9], {
             [""] = {"", 0},
         }
     },
-})
+})]]
 util.ingredient_prereq(recipes[10], {
+    --[[
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -416,7 +417,14 @@ util.ingredient_prereq(recipes[10], {
             [""] = {"", 0},
             [""] = {"", 0},
         }
+    },]]
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["rocket-control-unit"] = {"matter-cube", 2},
+        }
     },
 })
-]]
+
 data:extend(recipes)

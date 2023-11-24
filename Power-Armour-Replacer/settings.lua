@@ -4,31 +4,21 @@ data:extend({
         name = "PA&R-info",
         setting_type = "startup",
         default_value = true,
-        order = "1Aac"
-    },
-})
-
-data:extend({
-    {
-        type = "bool-setting",
-        name = "vanilla-filters",
-        setting_type = "startup",
-        default_value = true,
         order = "1Aaa"
-    },
-    {
-        type = "bool-setting",
-        name = "mod-filters",
-        setting_type = "startup",
-        default_value = true,
-        order = "1Aab"
     },
     {
         type = "bool-setting",
         name = "vanilla-warning",
         setting_type = "startup",
         default_value = true,
-        order = "2Aaa"
+        order = "1Aab"
+    },
+    {
+        type = "bool-setting",
+        name = "vanilla-filters",
+        setting_type = "startup",
+        default_value = true,
+        order = "1Aac"
     },
 })
 
@@ -39,7 +29,14 @@ data:extend({
             name = "bobwarfare-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Aab"
+            order = "2Baa"
+        },
+        {
+            type = "bool-setting",
+            name = "BobW-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Bab"
         },
     })
 end
@@ -51,31 +48,14 @@ if mods["bobequipment"] then
             name = "bobequipment-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Aac"
+            order = "2Caa"
         },
-    })
-end
-
-if mods["Hiladdar_Gear"] then
-    data:extend({
         {
             type = "bool-setting",
-            name = "hl_gear-warning",
+            name = "BobE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "2Aad"
-        },
-    })
-end
-
-if mods["Power Armor MK3"] then
-    data:extend({
-        {
-            type = "bool-setting",
-            name = "P-A_MK3-warning",
-            setting_type = "startup",
-            default_value = true,
-            order = "2Aae"
+            order = "2Cab"
         },
     })
 end
@@ -87,7 +67,14 @@ if mods["custom_power_armor_fix"] then
             name = "cutom's-armour-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Aaf"
+            order = "2Daa"
+        },
+        {
+            type = "bool-setting",
+            name = "CPAF-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Dab"
         },
     })
 end
@@ -99,7 +86,69 @@ if mods["Darkstar_utilities_fixed"] then
             name = "darkstar-fixed-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Aag"
+            order = "2Eaa"
+        },
+        {
+            type = "bool-setting",
+            name = "darkstar-fixed-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Eab"
+        },
+    })
+end
+
+if mods["Hiladdar_Gear"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "hl_gear-warning",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Faa"
+        },
+        {
+            type = "bool-setting",
+            name = "hl_gear-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Fab"
+        },
+    })
+end
+
+if mods["Krastorio2"] and mods["space-exploration"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "K2-warning",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Gaa"
+        },
+        {
+            type = "bool-setting",
+            name = "KE-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Gab"
+        },
+    })
+elseif mods["Krastorio2"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "K2-warning",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Gaa"
+        },
+        {
+            type = "bool-setting",
+            name = "K2-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Gab"
         },
     })
 end
@@ -111,7 +160,33 @@ if mods["PowerAndArmor"] then
             name = "powerandarmor-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Aah"
+            order = "2Haa"
+        },
+        {
+            type = "bool-setting",
+            name = "P&A-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Hab"
+        },
+    })
+end
+
+if mods["Power Armor MK3"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "P-A_MK3-warning",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Iaa"
+        },
+        {
+            type = "bool-setting",
+            name = "MK3-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Iab"
         },
     })
 end
@@ -123,7 +198,33 @@ if mods["RampantArsenal"] then
             name = "arsenal-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Aai"
+            order = "2Jaa"
+        },
+        {
+            type = "bool-setting",
+            name = "Arsenal-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Jab"
+        },
+    })
+end
+
+if mods["space-exploration"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "SE-warning",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Kaa"
+        },
+        {
+            type = "bool-setting",
+            name = "SE-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Kab"
         },
     })
 end
@@ -140,7 +241,7 @@ if mods["Insectitron"] then
     })
 end
 
-if mods["SpaceMod"] then
+if mods["SpaceModFeorasFork"] then
     data:extend({
         {
             type = "bool-setting",

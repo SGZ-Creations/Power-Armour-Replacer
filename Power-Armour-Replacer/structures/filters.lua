@@ -133,7 +133,7 @@ if mods["bobwarfare"] then
     data.raw.technology["bob-power-armor-4"].hidden = true
     data.raw.technology["bob-power-armor-5"].hidden = true
 
-    if settings.startup["mod-filters"].value then
+    if settings.startup["BobW-filters"].value then
         Hide_Item("bob-power-armor-mk3")
         Hide_Item("bob-power-armor-mk4")
         Hide_Item("bob-power-armor-mk5")
@@ -247,7 +247,7 @@ if mods["bobequipment"] then
     data.raw.recipe["personal-laser-defense-equipment-5"].hidden = true
     data.raw.recipe["personal-laser-defense-equipment-6"].hidden = true
 
-    if settings.startup["mod-filters"].value then
+    if settings.startup["BobE-filters"].value then
         Hide_Item("battery-mk3-equipment")
         Hide_Item("battery-mk4-equipment")
         Hide_Item("battery-mk5-equipment")
@@ -323,7 +323,7 @@ if mods["custom_power_armor_fix"] then
     data.raw.technology["mk2-heavy-exoskeleton"].hidden = true
     data.raw.technology["overcharged-fusion-reactor"].hidden = true
     --Filter
-    if settings.startup["mod-filters"].value then
+    if settings.startup["CPAF-filters"].value then
         Hide_Item("shield-mk3")
         Hide_Item("shield-mk4")
         Hide_Item("energy-cell")
@@ -369,7 +369,7 @@ if mods["Darkstar_utilities_fixed"] then
     data.raw.recipe["personal-roboport-equipment-mk2"].hidden = true
     data.raw.recipe["large-personal-roboport-equipment"].hidden = true
 
-    if settings.startup["mod-filters"].value then
+    if settings.startup["darkstar-fixed-filters"].value then
     Hide_Item("battery-mk3")
     Hide_Item("battery-mk4")
     Hide_Item("terra-tech-power-armor")
@@ -477,7 +477,7 @@ if mods["Hiladdar_Gear"] then
     data.raw.technology["hsmd-miniaturization-6"].enabled = false
     data.raw.technology["hsmd-miniaturization-7"].enabled = false
 
-    if settings.startup["mod-filters"].value then
+    if settings.startup["hl_gear-filters"].value then
         Hide_Item("hsmd-power-armor-mk3")
         Hide_Item("hsmd-power-armor-mk4")
         Hide_Item("hsmd-solar-panel-s1-equipment")
@@ -519,6 +519,9 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     data.raw.recipe["power-armor-mk4"].hidden = true
     data.raw.recipe["portable-generator"].hidden = true
     data.raw.recipe["additional-engine"].hidden = true
+    data.raw.recipe["small-portable-generator"].hidden = true
+    data.raw.recipe["big-solar-panel-equipment"].hidden = true
+    data.raw.recipe["big-battery-equipment"].hidden = true
     data.raw.recipe["advanced-additional-engine"].hidden = true
     data.raw.recipe["nuclear-reactor-equipment"].hidden = true
     data.raw.recipe["antimatter-reactor-equipment"].hidden = true
@@ -526,6 +529,7 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     data.raw.recipe["personal-laser-defense-mk2-equipment"].hidden = true
     data.raw.recipe["personal-laser-defense-mk3-equipment"].hidden = true
     data.raw.recipe["personal-laser-defense-mk4-equipment"].hidden = true
+    data.raw.recipe["personal-submachine-laser-defense-mk1-equipment"].hidden = true
     --data.raw.recipe[""].hidden = true
 
     data.raw.technology["kr-power-armor-mk3"].hidden = true
@@ -533,6 +537,7 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     data.raw.technology["kr-portable-generator"].hidden = true
     data.raw.technology["kr-battery-mk3-equipment"].hidden = true
     data.raw.technology["kr-nuclear-reactor-equipment"].hidden = true
+    data.raw.technology["kr-advanced-additional-engine"].hidden = true
     data.raw.technology["kr-antimatter-reactor-equipment"].hidden = true
     data.raw.technology["kr-advanced-exoskeleton-equipment"].hidden = true
     data.raw.technology["kr-superior-exoskeleton-equipment"].hidden = true
@@ -540,21 +545,24 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     data.raw.technology["kr-personal-laser-defense-mk2-equipment"].hidden = true
     data.raw.technology["kr-personal-laser-defense-mk3-equipment"].hidden = true
     data.raw.technology["kr-personal-laser-defense-mk4-equipment"].hidden = true
-    data.raw.technology["kr-advanced-additional-engine"].hidden = true
     --data.raw.technology[""].hidden = true
 
 --Enabled
     data.raw.recipe["power-armor-mk3"].enabled = false
     data.raw.recipe["power-armor-mk4"].enabled = false
-    data.raw.recipe["portable-generator"].enabled = false
     data.raw.recipe["additional-engine"].enabled = false
-    data.raw.recipe["advanced-additional-engine"].enabled = false
+    data.raw.recipe["portable-generator"].enabled = false
+    data.raw.recipe["small-portable-generator"].enabled = false
+    data.raw.recipe["big-battery-equipment"].enabled = false
+    data.raw.recipe["big-solar-panel-equipment"].enabled = false
     data.raw.recipe["nuclear-reactor-equipment"].enabled = false
+    data.raw.recipe["advanced-additional-engine"].enabled = false
     data.raw.recipe["antimatter-reactor-equipment"].enabled = false
     data.raw.recipe["personal-roboport-equipment"].enabled = false
     data.raw.recipe["personal-laser-defense-mk2-equipment"].enabled = false
     data.raw.recipe["personal-laser-defense-mk3-equipment"].enabled = false
     data.raw.recipe["personal-laser-defense-mk4-equipment"].enabled = false
+    data.raw.recipe["personal-submachine-laser-defense-mk1-equipment"].enabled = false
     --data.raw.recipe[""].enabled = false
 
     data.raw.technology["kr-power-armor-mk3"].enabled = false
@@ -563,6 +571,7 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     data.raw.technology["kr-portable-generator"].enabled = false
     data.raw.technology["kr-battery-mk3-equipment"].enabled = false
     data.raw.technology["kr-nuclear-reactor-equipment"].enabled = false
+    data.raw.technology["kr-advanced-additional-engine"].enabled = false
     data.raw.technology["kr-antimatter-reactor-equipment"].enabled = false
     data.raw.technology["kr-imersite-solar-panel-equipment"].enabled = false
     data.raw.technology["kr-imersite-night-vision-equipment"].enabled = false
@@ -571,15 +580,43 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     data.raw.technology["kr-personal-laser-defense-mk2-equipment"].enabled = false
     data.raw.technology["kr-personal-laser-defense-mk3-equipment"].enabled = false
     data.raw.technology["kr-personal-laser-defense-mk4-equipment"].enabled = false
-    data.raw.technology["kr-advanced-additional-engine"].enabled = false
     --data.raw.technology[""].enabled = false
 
+    if settings.startup["KE-filters"].value then
+        Hide_Item("power-armor-mk3")
+        Hide_Item("power-armor-mk4")
+        Hide_Item("portable-generator")
+        Hide_Item("small-portable-generator")
+        Hide_Item("big-solar-panel-equipment")
+        Hide_Item("imersite-solar-panel-equipment")
+        Hide_Item("big-imersite-solar-panel-equipment")
+        Hide_Item("nuclear-reactor-equipment")
+        Hide_Item("antimatter-reactor-equipment")
+        Hide_Item("big-battery-equipment")
+        Hide_Item("battery-mk2-equipment")
+        Hide_Item("big-battery-mk2-equipment")
+        Hide_Item("battery-mk3-equipment")
+        Hide_Item("big-battery-mk3-equipment")
+        Hide_Item("superior-exoskeleton-equipment")
+        Hide_Item("advanced-exoskeleton-equipment")
+        Hide_Item("imersite-night-vision-equipment")
+        Hide_Item("personal-laser-defense-mk2-equipment")
+        Hide_Item("personal-laser-defense-mk3-equipment")
+        Hide_Item("personal-laser-defense-mk4-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk1-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk2-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk3-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk4-equipment")
+    end
 elseif mods["Krastorio2"] then
 --Hidden
     data.raw.recipe["power-armor-mk3"].hidden = true
     data.raw.recipe["power-armor-mk4"].hidden = true
-    data.raw.recipe["portable-generator"].hidden = true
     data.raw.recipe["additional-engine"].hidden = true
+    data.raw.recipe["portable-generator"].hidden = true
+    data.raw.recipe["small-portable-generator"].hidden = true
+    data.raw.recipe["big-solar-panel-equipment"].hidden = true
+    data.raw.recipe["big-battery-equipment"].hidden = true
     data.raw.recipe["advanced-additional-engine"].hidden = true
     data.raw.recipe["nuclear-reactor-equipment"].hidden = true
     data.raw.recipe["antimatter-reactor-equipment"].hidden = true
@@ -589,6 +626,10 @@ elseif mods["Krastorio2"] then
     data.raw.recipe["personal-laser-defense-mk2-equipment"].hidden = true
     data.raw.recipe["personal-laser-defense-mk3-equipment"].hidden = true
     data.raw.recipe["personal-laser-defense-mk4-equipment"].hidden = true
+    data.raw.recipe["personal-submachine-laser-defense-mk1-equipment"].hidden = true
+    data.raw.recipe["personal-submachine-laser-defense-mk2-equipment"].hidden = true
+    data.raw.recipe["personal-submachine-laser-defense-mk3-equipment"].hidden = true
+    data.raw.recipe["personal-submachine-laser-defense-mk4-equipment"].hidden = true
     --data.raw.recipe[""].hidden = true
 
     data.raw.technology["kr-power-armor-mk3"].hidden = true
@@ -611,8 +652,11 @@ elseif mods["Krastorio2"] then
 --Enabled
     data.raw.recipe["power-armor-mk3"].enabled = false
     data.raw.recipe["power-armor-mk4"].enabled = false
-    data.raw.recipe["portable-generator"].enabled = false
     data.raw.recipe["additional-engine"].enabled = false
+    data.raw.recipe["portable-generator"].enabled = false
+    data.raw.recipe["small-portable-generator"].enabled = false
+    data.raw.recipe["big-solar-panel-equipment"].enabled = false
+    data.raw.recipe["big-battery-equipment"].enabled = false
     data.raw.recipe["advanced-additional-engine"].enabled = false
     data.raw.recipe["nuclear-reactor-equipment"].enabled = false
     data.raw.recipe["antimatter-reactor-equipment"].enabled = false
@@ -622,6 +666,10 @@ elseif mods["Krastorio2"] then
     data.raw.recipe["personal-laser-defense-mk2-equipment"].enabled = false
     data.raw.recipe["personal-laser-defense-mk3-equipment"].enabled = false
     data.raw.recipe["personal-laser-defense-mk4-equipment"].enabled = false
+    data.raw.recipe["personal-submachine-laser-defense-mk1-equipment"].enabled = false
+    data.raw.recipe["personal-submachine-laser-defense-mk2-equipment"].enabled = false
+    data.raw.recipe["personal-submachine-laser-defense-mk3-equipment"].enabled = false
+    data.raw.recipe["personal-submachine-laser-defense-mk4-equipment"].enabled = false
     --data.raw.recipe[""].enabled = false
 
     data.raw.technology["kr-power-armor-mk3"].enabled = false
@@ -632,6 +680,7 @@ elseif mods["Krastorio2"] then
     data.raw.technology["kr-antimatter-reactor-equipment"].enabled = false
     data.raw.technology["kr-energy-shield-mk3-equipment"].enabled = false
     data.raw.technology["kr-energy-shield-mk4-equipment"].enabled = false
+    data.raw.technology["kr-advanced-additional-engine"].enabled = false
     data.raw.technology["kr-imersite-solar-panel-equipment"].enabled = false
     data.raw.technology["kr-imersite-night-vision-equipment"].enabled = false
     data.raw.technology["kr-advanced-exoskeleton-equipment"].enabled = false
@@ -639,68 +688,143 @@ elseif mods["Krastorio2"] then
     data.raw.technology["kr-personal-laser-defense-mk2-equipment"].enabled = false
     data.raw.technology["kr-personal-laser-defense-mk3-equipment"].enabled = false
     data.raw.technology["kr-personal-laser-defense-mk4-equipment"].enabled = false
-    data.raw.technology["kr-advanced-additional-engine"].enabled = false
     --data.raw.technology[""].enabled = false
+
+    if settings.startup["K2-filters"].value then
+        Hide_Item("power-armor-mk3")
+        Hide_Item("power-armor-mk4")
+        Hide_Item("portable-generator")
+        Hide_Item("small-portable-generator")
+        Hide_Item("big-solar-panel-equipment")
+        Hide_Item("imersite-solar-panel-equipment")
+        Hide_Item("big-imersite-solar-panel-equipment")
+        Hide_Item("nuclear-reactor-equipment")
+        Hide_Item("antimatter-reactor-equipment")
+        Hide_Item("big-battery-equipment")
+        Hide_Item("battery-mk2-equipment")
+        Hide_Item("big-battery-mk2-equipment")
+        Hide_Item("battery-mk3-equipment")
+        Hide_Item("big-battery-mk3-equipment")
+        Hide_Item("energy-shield-mk3-equipment")
+        Hide_Item("energy-shield-mk4-equipment")
+        Hide_Item("superior-exoskeleton-equipment")
+        Hide_Item("advanced-exoskeleton-equipment")
+        Hide_Item("imersite-night-vision-equipment")
+        Hide_Item("personal-laser-defense-mk2-equipment")
+        Hide_Item("personal-laser-defense-mk3-equipment")
+        Hide_Item("personal-laser-defense-mk4-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk1-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk2-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk3-equipment")
+        Hide_Item("personal-submachine-laser-defense-mk4-equipment")
+        --Hide_Item("")
+    end
 end
+
+if mods["RampantArsenal"] then
+    -- Enabled 
+        data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].enabled = false
+        data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].enabled = false
+        data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].enabled = false
+        data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].enabled = false
+        data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].enabled = false
+
+        data.raw.recipe["mk3-battery-rampant-arsenal"].enabled = false
+        data.raw.recipe["mk3-shield-rampant-arsenal"].enabled = false
+        data.raw.recipe["mk3-generator-rampant-arsenal"].enabled = false
+        data.raw.recipe["nuclear-generator-rampant-arsenal"].enabled = false
+        data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].enabled = false
+
+    -- Hidden        
+        data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].hidden = true
+        data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].hidden = true
+        data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].hidden = true
+        data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].hidden = true
+        data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].hidden = true
+
+        data.raw.recipe["mk3-shield-rampant-arsenal"].hidden = true
+        data.raw.recipe["mk3-battery-rampant-arsenal"].hidden = true
+        data.raw.recipe["mk3-generator-rampant-arsenal"].hidden = true
+        data.raw.recipe["nuclear-generator-rampant-arsenal"].hidden = true
+        data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].hidden = true
+
+        if settings.startup["Arsenal-filters"].value then
+            Hide_Item("mk3-shield-rampant-arsenal")
+            Hide_Item("mk3-battery-rampant-arsenal")
+            Hide_Item("mk3-generator-rampant-arsenal")
+            Hide_Item("nuclear-generator-rampant-arsenal")
+            Hide_Item("power-armor-mk3-armor-rampant-arsenal")
+        end
+    end
 
 if mods["space-exploration"] then
 --Enabled
+    data.raw.recipe["se-rtg-equipment"].enabled = false
+    data.raw.recipe["se-rtg-equipment-2"].enabled = false
     data.raw.recipe["energy-shield-mk3-equipment"].enabled = false
     data.raw.recipe["energy-shield-mk4-equipment"].enabled = false
     data.raw.recipe["energy-shield-mk5-equipment"].enabled = false
     data.raw.recipe["energy-shield-mk6-equipment"].enabled = false
-    data.raw.recipe["personal-roboport-equipment"].enabled = false
-    --data.raw.recipe[""].enabled = false
+    data.raw.recipe["se-adaptive-armour-equipment-1"].enabled = false
+    data.raw.recipe["se-adaptive-armour-equipment-2"].enabled = false
+    data.raw.recipe["se-adaptive-armour-equipment-3"].enabled = false
+    data.raw.recipe["se-adaptive-armour-equipment-4"].enabled = false
+    data.raw.recipe["se-adaptive-armour-equipment-5"].enabled = false
     --data.raw.recipe[""].enabled = false
 
+    data.raw.technology["se-rtg-equipment"].enabled = false
+    data.raw.technology["se-rtg-equipment-2"].enabled = false
+    data.raw.technology["se-adaptive-armour-1"].enabled = false
+    data.raw.technology["se-adaptive-armour-2"].enabled = false
+    data.raw.technology["se-adaptive-armour-3"].enabled = false
+    data.raw.technology["se-adaptive-armour-4"].enabled = false
+    data.raw.technology["se-adaptive-armour-5"].enabled = false
     data.raw.technology["energy-shield-mk3-equipment"].enabled = false
     data.raw.technology["energy-shield-mk4-equipment"].enabled = false
     data.raw.technology["energy-shield-mk5-equipment"].enabled = false
     data.raw.technology["energy-shield-mk6-equipment"].enabled = false
     --data.raw.technology[""].enabled = false
-    --data.raw.technology[""].enabled = false
-    --data.raw.technology[""].enabled = false
 
 --Hidden
+    data.raw.recipe["se-rtg-equipment"].hidden = true
+    data.raw.recipe["se-rtg-equipment-2"].hidden = true
+    data.raw.recipe["energy-shield-mk3-equipment"].hidden = true
+    data.raw.recipe["energy-shield-mk4-equipment"].hidden = true
+    data.raw.recipe["energy-shield-mk5-equipment"].hidden = true
+    data.raw.recipe["energy-shield-mk6-equipment"].hidden = true
+    data.raw.recipe["se-adaptive-armour-equipment-1"].hidden = false
+    data.raw.recipe["se-adaptive-armour-equipment-2"].hidden = false
+    data.raw.recipe["se-adaptive-armour-equipment-3"].hidden = false
+    data.raw.recipe["se-adaptive-armour-equipment-4"].hidden = false
+    data.raw.recipe["se-adaptive-armour-equipment-5"].hidden = false
+    --data.raw.recipe[""].hidden = true
+
+    data.raw.technology["se-rtg-equipment"].hidden = true
+    data.raw.technology["se-rtg-equipment-2"].hidden = true
+    data.raw.technology["se-adaptive-armour-1"].hidden = true
+    data.raw.technology["se-adaptive-armour-2"].hidden = true
+    data.raw.technology["se-adaptive-armour-3"].hidden = true
+    data.raw.technology["se-adaptive-armour-4"].hidden = true
+    data.raw.technology["se-adaptive-armour-5"].hidden = true
+    data.raw.technology["energy-shield-mk3-equipment"].hidden = true
+    data.raw.technology["energy-shield-mk4-equipment"].hidden = true
+    data.raw.technology["energy-shield-mk5-equipment"].hidden = true
+    data.raw.technology["energy-shield-mk6-equipment"].hidden = true
     --data.raw.technology[""].hidden = true
 
-    data.raw.recipe["personal-roboport-equipment"].hidden = true
-    --data.raw.recipe[""].hidden = true
-end
-
-if mods["RampantArsenal"] then
--- Enabled 
-    data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].enabled = false
-    data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].enabled = false
-    data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].enabled = false
-    data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].enabled = false
-    data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].enabled = false
-
-    data.raw.recipe["mk3-battery-rampant-arsenal"].enabled = false
-    data.raw.recipe["mk3-shield-rampant-arsenal"].enabled = false
-    data.raw.recipe["mk3-generator-rampant-arsenal"].enabled = false
-    data.raw.recipe["nuclear-generator-rampant-arsenal"].enabled = false
-    data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].enabled = false
-
--- Hidden        
-    data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].hidden = true
-    data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].hidden = true
-    data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].hidden = true
-    data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].hidden = true
-    data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].hidden = true
-
-    data.raw.recipe["mk3-shield-rampant-arsenal"].hidden = true
-    data.raw.recipe["mk3-battery-rampant-arsenal"].hidden = true
-    data.raw.recipe["mk3-generator-rampant-arsenal"].hidden = true
-    data.raw.recipe["nuclear-generator-rampant-arsenal"].hidden = true
-    data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].hidden = true
-
-    if settings.startup["mod-filters"].value then
-        Hide_Item("mk3-shield-rampant-arsenal")
-        Hide_Item("mk3-battery-rampant-arsenal")
-        Hide_Item("mk3-generator-rampant-arsenal")
-        Hide_Item("nuclear-generator-rampant-arsenal")
-        Hide_Item("power-armor-mk3-armor-rampant-arsenal")
+    if settings.startup["SE-filters"].value then
+        Hide_Item("se-rtg-equipment")
+        Hide_Item("se-rtg-equipment-2")
+        Hide_Item("energy-shield-mk3-equipment")
+        Hide_Item("energy-shield-mk4-equipment")
+        Hide_Item("energy-shield-mk5-equipment")
+        Hide_Item("energy-shield-mk6-equipment")
+        Hide_Item("se-adaptive-armour-equipment-1")
+        Hide_Item("se-adaptive-armour-equipment-2")
+        Hide_Item("se-adaptive-armour-equipment-3")
+        Hide_Item("se-adaptive-armour-equipment-4")
+        Hide_Item("se-adaptive-armour-equipment-5")
+        --Hide_Item("")
     end
 end
 
@@ -741,7 +865,7 @@ if mods["Power Armor MK3"] then
     data.raw.technology["pamk3-pamk4"].enabled = false
     data.raw.technology["pamk3-battmk3"].enabled = false
     --Filters
-    if settings.startup["mod-filters"].value then
+    if settings.startup["MK3-filters"].value then
         Hide_Item("pamk3-se")
         Hide_Item("pamk3-pnr")
         Hide_Item("pamk3-inff")
@@ -806,7 +930,7 @@ if mods["PowerAndArmor"] then
     data.raw.technology["PaA-mk3-personal-laser-defense-equipment"].hidden = true
 
     --filters
-    if settings.startup["mod-filters"].value then
+    if settings.startup["P&A-filters"].value then
         Hide_Item("PaA-power-armor-mk3")
         Hide_Item("PaA-power-armor-mk4")
         Hide_Item("PaA-battery-mk3-equipment")

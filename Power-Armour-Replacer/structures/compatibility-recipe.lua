@@ -40,10 +40,25 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
     {
         dependencies = {"base"},
         replacements = {
-                ["f_mk1"] = {"f_mk5", 2},
-                ["e_mk1"] = {"e_mk5", 4},
+            ["f_mk1"] = {"f_mk5", 2},
+            ["e_mk1"] = {"e_mk5", 4},
+        }
+    },--[[
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["f_mk1"] = {"f_mk5", 2},
+            ["e_mk1"] = {"e_mk5", 4},
         }
     },
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["f_mk1"] = {"f_mk5", 2},
+            ["e_mk1"] = {"e_mk5", 4},
+        }
+    },
+    ]]
     {
         dependencies = {"base", "bobrevamp", "bobplates",},
         replacements = {

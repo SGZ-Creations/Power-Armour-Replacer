@@ -258,7 +258,7 @@ util.ingredient_prereq(recipes[4], { --nvg_mk2
         dependencies = {"248k"},
         replacements = {
             ["nuclear-fuel"] = {"el_aluminium_item", 100},
-            [""] = {"", 0},
+            --[""] = {"", 0},
         }
     }
 })

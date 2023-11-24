@@ -171,14 +171,12 @@ while i < 11 do
                 usage_priority = "secondary-input"
             },
             charging_energy = charging_energy[i],
-
             robot_limit = robot_limit[i],
             construction_radius = construction_radius[i],
             spawn_and_station_height = 0.4,
             spawn_and_station_shadow_height_offset = 0.5,
             charge_approach_distance = 2.6,
             robots_shrink_when_entering_and_exiting = true,
-
             recharging_animation =
             {
                 filename = "__base__/graphics/entity/roboport/roboport-recharging.png",

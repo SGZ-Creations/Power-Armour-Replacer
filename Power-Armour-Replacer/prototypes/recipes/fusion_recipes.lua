@@ -495,5 +495,12 @@ util.ingredient_prereq(recipes[10],
             {"clowns-plate-osmium", 200},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["rocket-control-unit"] = {"matter-cube", 2},
+        }
+    },
 })
 data:extend(recipes)
