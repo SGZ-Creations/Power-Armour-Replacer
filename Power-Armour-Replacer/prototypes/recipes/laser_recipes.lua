@@ -611,7 +611,8 @@ util.ingredient_prereq(recipes[10], {
         replacements = {
             {"laser-core", 10},
         }
-    },--K2
+    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {

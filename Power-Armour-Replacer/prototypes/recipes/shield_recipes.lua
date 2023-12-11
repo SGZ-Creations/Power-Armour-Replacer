@@ -505,7 +505,8 @@ util.ingredient_prereq(recipes[10], {
             --[""] = {"", 0},
             --[""] = {"", 0},
         }
-    },--K2
+    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
