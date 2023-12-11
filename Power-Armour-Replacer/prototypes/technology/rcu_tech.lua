@@ -9,14 +9,13 @@ if not data.raw.technology["rocket-control-unit"] then
 				type = "unlock-recipe",
 				recipe = "rocket-control-unit"
 			},
-			prerequisites = {"utility-science-pack", "speed-module"},
+			prerequisites = {"chemical-science-pack"},
 			unit = {
 			count = 500,
 			ingredients = {
 				{"automation-science-pack", 1},
 				{"logistic-science-pack", 1},
 				{"chemical-science-pack", 1},
-				{"utility-science-pack", 1}
 			},
 			time = 45
 			},

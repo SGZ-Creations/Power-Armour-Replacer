@@ -219,7 +219,7 @@ Date: 04.07.2023
     - Name of roboport was having traces of copied name of Fusion Reactors.
     - NO EN Locales.
     - Changelog typos.
-  Info-json:
+  Modding:
     - Added "grand-unified-factorio-theory" to the list.
     - Added "248k" to the list.
   Discord-Releases:
