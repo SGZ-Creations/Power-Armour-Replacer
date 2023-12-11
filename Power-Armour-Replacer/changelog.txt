@@ -18,8 +18,8 @@ Date: 00.12.2023
     - Added File rcu_item.lua
     - Added File rcu_recipe.lua
     - Added File rcu_tech.lua
-    - Added File tech rcu.png
-    - Added File item/recipe rcu.png
+    - Added File rcu.png for tech. 
+    - Added File rcu.png for item/recipe.
   Info:
     - Factorio 2.0 Stage 2 Done. Checking for RCU Exsistance.
 ---------------------------------------------------------------------------------------------------
