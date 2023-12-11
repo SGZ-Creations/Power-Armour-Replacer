@@ -12,8 +12,9 @@ Date: 00.12.2023
     - Added Seperate setting for all Filter tabs
     - Removed old "Modded Filter" Setting.
     - Chat messages.
-    - Some K2 Recipe Compatiblity.
+    - Some K2 Recipe Compatibility.
     - Deleted Un Used templated Local files.
+    - Changelog Typos.
   Scripting:
     - Added File rcu_item.lua
     - Added File rcu_recipe.lua
@@ -22,6 +23,8 @@ Date: 00.12.2023
     - Added File rcu.png for item/recipe.
   Info:
     - Factorio 2.0 Stage 2 Done. Checking for RCU Exsistance.
+  Discord-Releases:
+    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.49
 Date: 09.11.2023
@@ -35,8 +38,6 @@ Date: 09.11.2023
   Info:
     - 2.0 Factorio Stage 1 Removed Wires.
     - 2.0 Factorio Stage 2 Coming in future update hopefuly before the 2.0 Relaese. ??2024??
-  Releases:
-    - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.48
 Date: 11.10.2023
@@ -98,7 +99,7 @@ Date: 27.08.2023
     - Rewrote tech changes for TeleportationEquipment.
   Thanks:
     - Discord: @Dr Pez. For fixing fluid recipes Compatibility. & Merging files.
-  Discord-Realese:
+  Discord-Releases:
     - ̶J̶u̶s̶t̶ ̶t̶o̶ ̶s̶a̶y̶ ̶t̶h̶a̶t̶ ̶i̶t̶'̶s̶ ̶a̶ ̶R̶e̶a̶l̶e̶a̶s̶e̶ ̶o̶n̶ ̶S̶_̶g̶a̶m̶e̶z̶ ̶D̶i̶s̶c̶o̶r̶d̶ ̶o̶n̶l̶y̶.̶
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.43
@@ -168,7 +169,7 @@ Date: 07.08.2023
   Bugfixes:
     - Miss placed line of code caused a crash with SE.
     - Typos.
-  Discord-Realese:
+  Discord-Releases:
     - Not all things mentioned here would be done yet.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.37
@@ -221,7 +222,7 @@ Date: 04.07.2023
   Info-json:
     - Added "grand-unified-factorio-theory" to the list.
     - Added "248k" to the list.
-  Discord-Realese:
+  Discord-Releases:
     - Core Compatibility Function Typo causing 5+ mods to fail on load. Beta Stage.
     - Version 0.1.34-6p2 to let players know waht specific beta release version in use. this will change as i post discord updates.
     - The entire 0.1.34 will be a Discord only releases.
@@ -354,7 +355,7 @@ Version: 0.1.24
 Date: 23.02.2023
   Changes:
     - Belt Immunity & NVG's, Made elctrical requirement more reasonable to these equipments. U would want MK4 or higher reactors.
-  Compatibility:
+  Modding:
     - Bob's power: Laser Tweaked tech to have heat pipes involved. 
     - Bob's power: Laser Tweaked Recipes to have heat pipes involved.
 ---------------------------------------------------------------------------------------------------
@@ -631,5 +632,5 @@ Date: 15.10.2022
     - Discord @Toby1364 for help working on mod in general.
     - Discord @Chunnyluny for help with testing the alpha.
     - join my discord to participate in the testing or just play with the Alpha/Beta.
-  Discord-Realese:
+  Discord-Releases:
     - Alpha 1-5 used same versioning by me not thinking realy.
