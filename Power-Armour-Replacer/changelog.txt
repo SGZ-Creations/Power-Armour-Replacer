@@ -3,8 +3,8 @@ Version: 0.1.51
 Date: 12.12.2023
   Changes:
     - Messages on warning/issue messages shown on save start. (Unless disabled in settings).
-    - SE settings adjusted shows separately
-    - K2 Settings adjusted shows separately
+    - SE settings adjusted shows separately.
+    - K2 Settings adjusted shows separately.
     - KE have separate setting created. only shows of SEK2 load along.
   Bugfixes:
     - SE's Adaptive Armour recipes not hidden after migration.
