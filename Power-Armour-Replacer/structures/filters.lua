@@ -792,11 +792,11 @@ if mods["space-exploration"] then
     data.raw.recipe["energy-shield-mk4-equipment"].hidden = true
     data.raw.recipe["energy-shield-mk5-equipment"].hidden = true
     data.raw.recipe["energy-shield-mk6-equipment"].hidden = true
-    data.raw.recipe["se-adaptive-armour-equipment-1"].hidden = false
-    data.raw.recipe["se-adaptive-armour-equipment-2"].hidden = false
-    data.raw.recipe["se-adaptive-armour-equipment-3"].hidden = false
-    data.raw.recipe["se-adaptive-armour-equipment-4"].hidden = false
-    data.raw.recipe["se-adaptive-armour-equipment-5"].hidden = false
+    data.raw.recipe["se-adaptive-armour-equipment-1"].hidden = true
+    data.raw.recipe["se-adaptive-armour-equipment-2"].hidden = true
+    data.raw.recipe["se-adaptive-armour-equipment-3"].hidden = true
+    data.raw.recipe["se-adaptive-armour-equipment-4"].hidden = true
+    data.raw.recipe["se-adaptive-armour-equipment-5"].hidden = true
     --data.raw.recipe[""].hidden = true
 
     data.raw.technology["se-rtg-equipment"].hidden = true

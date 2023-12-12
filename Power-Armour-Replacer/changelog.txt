@@ -1,6 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.51
+Date: 12.12.2023
+  Changes:
+    - Messages on warning/issue messages shown on save start. (Unless disabled in settings).
+    - SE settings adjusted.
+    - K2 Settings adjusted.
+    - KE have seprate setting created.
+  Bugfixes:
+    - SE's Adaptive Armour recipes not hidden after migration.
+  Scripting:
+    - "data.raw.recipe["recipe"].hidden = false" --> "data.raw.recipe["recipe"].hidden = true"
+---------------------------------------------------------------------------------------------------
 Version: 0.1.50
-Date: 00.12.2023
+Date: 11.12.2023
   Changes:
     - Added RCU Recipes, Tech, Item,
     - More Recipes, Tech in K2 where hidden & disabled. Issue may still occure.
@@ -58,6 +70,8 @@ Date: 03.09.2023
   Scripting:
     - Files Read order.
     - Load order within.
+  Thanks:
+    - Discord: @Dr Pez.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.46
 Date: 31.08.2023

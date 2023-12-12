@@ -121,7 +121,7 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     data:extend({
         {
             type = "bool-setting",
-            name = "K2-warning",
+            name = "KE-warning",
             setting_type = "startup",
             default_value = true,
             order = "2Gaa"
@@ -133,6 +133,13 @@ if mods["Krastorio2"] and mods["space-exploration"] then
             default_value = true,
             order = "2Gab"
         },
+        {
+            type = "bool-setting",
+            name = "SE-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Lab"
+        },
     })
 elseif mods["Krastorio2"] then
     data:extend({
@@ -141,14 +148,14 @@ elseif mods["Krastorio2"] then
             name = "K2-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Gaa"
+            order = "2Haa"
         },
         {
             type = "bool-setting",
             name = "K2-filters",
             setting_type = "startup",
             default_value = true,
-            order = "2Gab"
+            order = "2Hab"
         },
     })
 end
@@ -160,14 +167,14 @@ if mods["PowerAndArmor"] then
             name = "powerandarmor-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Haa"
+            order = "2Iaa"
         },
         {
             type = "bool-setting",
             name = "P&A-filters",
             setting_type = "startup",
             default_value = true,
-            order = "2Hab"
+            order = "2Iab"
         },
     })
 end
@@ -179,14 +186,14 @@ if mods["Power Armor MK3"] then
             name = "P-A_MK3-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Iaa"
+            order = "2Jaa"
         },
         {
             type = "bool-setting",
             name = "MK3-filters",
             setting_type = "startup",
             default_value = true,
-            order = "2Iab"
+            order = "2Jab"
         },
     })
 end
@@ -198,33 +205,33 @@ if mods["RampantArsenal"] then
             name = "arsenal-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Jaa"
+            order = "2Kaa"
         },
         {
             type = "bool-setting",
             name = "Arsenal-filters",
             setting_type = "startup",
             default_value = true,
-            order = "2Jab"
+            order = "2Kab"
         },
     })
 end
 
-if mods["space-exploration"] then
+if mods["space-exploration"] and not mods["Krastorio2"] then
     data:extend({
         {
             type = "bool-setting",
             name = "SE-warning",
             setting_type = "startup",
             default_value = true,
-            order = "2Kaa"
+            order = "2Laa"
         },
         {
             type = "bool-setting",
             name = "SE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "2Kab"
+            order = "2Lab"
         },
     })
 end

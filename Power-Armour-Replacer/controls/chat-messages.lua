@@ -1,3 +1,5 @@
+--PA&R have hide & disable mechanics for --||-- Armours & Equipment.
+
 local function check_for_error(event)
     local printer = game.print
 
@@ -18,10 +20,11 @@ local function check_for_error(event)
     if script.active_mods["base"] then
         if settings.startup["vanilla-warning"].value then
             printer([[
-        Base/Vanilla Armours & Equipment are Disabled/Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Vanilla Filters] is toggles off.
-    Power Armour & Replacer is functional in vanilla but was not intended with vanilla.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for Base/Vanilla Armours & Equipment.
+Filters are hidden if startup setting [Vanilla Filters] is toggles off.
+Power Armour & Replacer is functional in vanilla but was not intended with vanilla.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -29,9 +32,10 @@ local function check_for_error(event)
     if script.active_mods["bobwarfare"] then
         if settings.startup["bobwarfare-warning"].value then
     printer([[
-        Bobs Armours are Disabled/Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Bob's Warfare Filters] is toggles off.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for Bobs Armours & Equipment.
+Filters are hidden if startup setting [Bob's Warfare Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -39,9 +43,11 @@ local function check_for_error(event)
     if script.active_mods["bobequipment"] then
         if settings.startup["bobequipment-warning"].value then
             printer([[
-        Bobs Equipment are Disabled/Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Bob's Equipment Filters] is toggles off.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for --||-- Armours & Equipment.
+Bobs Equipment are Disabled/Hidden due to PA&R's intentional replacement mechanics.
+Filters are hidden if startup setting [Bob's Equipment Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -49,10 +55,11 @@ local function check_for_error(event)
     if script.active_mods["custom_power_armor_fix"] then
         if settings.startup["cutom's-armour-warning"].value then
             printer([[
-        Custom Power Armour fix's Armours & Equipment are Disabled & Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Custom Power Armour fix Filters] is toggles off.
-    This mod has have a few turret equipment to play with.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for Custom Power Armour fix's Armours & Equipment.
+Filters are hidden if startup setting [Custom Power Armour fix Filters] is toggles off.
+This mod has have a few turret equipment to play with.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -60,9 +67,10 @@ local function check_for_error(event)
     if script.active_mods["Darkstar_utilities_fixed"] then
         if settings.startup["darkstar-fixed-warning"].value then
             printer([[
-        Darkstar-fixed, Armours & Equipment are Disabled & Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Darkstar Filters] is toggles off.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for Darkstar-fixed Armours & Equipment.
+Filters are hidden if startup setting [Darkstar Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -70,9 +78,11 @@ local function check_for_error(event)
     if script.active_mods["Hiladdar_Gear"] then
         if settings.startup["hl_gear-warning"].value then
             printer([[
-        Hiladdar_Gear's Equipment, Tech, & Intermediate. are Disabled/Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Hiladdar_Gear Filters] is toggles off.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for --||-- Armours & Equipment.
+Hiladdar_Gear's Equipment, Tech, & Intermediate. are Disabled/Hidden due to PA&R's intentional replacement mechanics.
+Filters are hidden if startup setting [Hiladdar_Gear Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -80,21 +90,35 @@ local function check_for_error(event)
     if script.active_mods["Power Armor MK3"] then
         if settings.startup["P-A_MK3-warning"].value then
             printer([[
-        Power Armor MK3's Armours & Equipment are Disabled & Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [MK3's Filters] is toggles off.
-    This mod can still have useful tech and items to play with.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for Power Armor MK3's Armours & Equipment.
+Filters are hidden if startup setting [MK3's Filters] is toggles off.
+This mod can still have useful tech and items to play with.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
 
-    if script.active_mods["Krastorio2"] then
+    if script.active_mods["Krastorio2"] and script.active_mods["space-exploration"] then
+        if settings.startup["KE-warning"].value then
+        printer([[
+
+PA&R have hide & disable mechanics for SE's & K2's Armours & Equipment.
+All items should be hidden on K2. SE & K2 Recipe Compatibility is yet to be worked more on.
+Filters are hidden if startup setting [KE Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+            ]])
+        end
+    end
+
+    if script.active_mods["Krastorio2"] and not script.active_mods["space-exploration"] then
         if settings.startup["K2-warning"].value then
         printer([[
-        Krastorio's Armours & Equipment are Disabled & Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Krastorio Filters] is toggles off.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
-    All items should be hidden on K2. Recipe Compatibility is yet to be worked more on.
+
+PA&R have hide & disable mechanics for Krastorio's Armours & Equipment.
+Filters are hidden if startup setting [Krastorio Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+All items should be hidden on K2. Recipe Compatibility is yet to be worked more on.
             ]])
         end
     end
@@ -102,31 +126,34 @@ local function check_for_error(event)
     if script.active_mods["PowerAndArmour"] then
         if settings.startup["powerandarmor-warning"].value then
         printer([[
-        Power&Armor's Armours & Equipment are Disabled & Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Power&Armor Filters] is toggles off.
-    There's nothing left on this mod to need it enabled.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+PA&R have hide & disable mechanics for PowerAndArmor's Armours & Equipment.
+There's nothing left on this mod to need it enabled.
+Filters are hidden if startup setting [Power&Armor Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
 
     if script.active_mods["RampantArsenal"] then
         if settings.startup["arsenal-warning"].value then
-            printer([[
-        RampantArsenal Armours & Equipment are Disabled & Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [Arsenal Filters] is toggles off.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO."
+            printer([[ 
+
+PA&R have hide & disable mechanics for RampantArsenal Armours & Equipment.
+Filters are hidden if startup setting [Arsenal Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
 
-    if script.active_mods["space-exploration"] then
+    if script.active_mods["space-exploration"] and not script.active_mods["Krastorio2"] then
         if settings.startup["SE-warning"].value then
         printer([[
-        SE's Armours & Equipment are Partily Disabled & Hidden due to PA&R's intentional replacement mechanics.
-    Filters are hidden if startup setting [SE Filters] is toggles off.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO
-    Much left to do everywhere on SE Compatibility.
+
+PA&R have hide & disable mechanics for SE's Armours & Equipment.
+Filters are hidden if startup setting [SE Filters] is toggles off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+Much left to do everywhere on SE Compatibility.
             ]])
         end
     end
@@ -135,8 +162,9 @@ local function check_for_error(event)
     if script.active_mods["Insectitron"] then
         if settings.startup["Insectitron-issue"].value then
             printer([[
-        Insectitronics mod should currently be working as expected.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+Insectitronics mod should currently be working as expected.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -144,9 +172,10 @@ local function check_for_error(event)
     if script.active_mods["SpaceModFeorasFork"] then
         if settings.startup["SpaceMod-issue"].value then
             printer([[
-        SpaceModFeorasFork has changes made by P.A.&.R mod.
-    Should you find issue please let me know.
-    You can dissable this message in (PA&R) startup settings if u don't want the INFO.
+
+SpaceModFeorasFork has changes made by P.A.&.R mod.
+Should you find issue with PA&R's Compatibility please let me know.
+You can dissable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -154,8 +183,10 @@ local function check_for_error(event)
     if script.active_mods["TeleportationEquipment"] then
         if settings.startup["Teleportation-issue"].value then
             printer([[
-        TeleportationEquipment mod has technology changes made by P.A.&.R mod.
-    You can disable this message in (PA&R) startup settings if u don't want the INFO.
+
+TeleportationEquipment mod has technology changes made by P.A.&.R mod.
+Should you find issue with PA&R's Compatibility please let me know.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
@@ -163,9 +194,10 @@ local function check_for_error(event)
     if script.active_mods["osm-radioactivity"] then
         if settings.startup["radioactivity-issue"].value then
             printer([[
-        osm-radioactivity Should be working as expected. Has non known bugs to it (PA&R).
-    Should you find issue please let me know.
-    You can dissable this message in (PA&R) startup settings if u don't want the INFO.
+
+osm-radioactivity Should be working as expected. Has non known bugs to it (PA&R).
+Should you find issue with PA&R's Compatibility please let me know.
+You can dissable this message in (PA&R) startup settings if u don't want the INFO.
             ]])
         end
     end
