@@ -370,13 +370,13 @@ if mods["Darkstar_utilities_fixed"] then
     data.raw.recipe["large-personal-roboport-equipment"].hidden = true
 
     if settings.startup["darkstar-fixed-filters"].value then
-    Hide_Item("battery-mk3")
-    Hide_Item("battery-mk4")
-    Hide_Item("terra-tech-power-armor")
-    Hide_Item("terra-tech-power-armor-mk2")
-    Hide_Item("advanced-exoskeleton-equipment")
-    Hide_Item("personal-roboport-equipment-mk2")
-    Hide_Item("large-personal-roboport-equipment")
+        Hide_Item("battery-mk3")
+        Hide_Item("battery-mk4")
+        Hide_Item("terra-tech-power-armor")
+        Hide_Item("terra-tech-power-armor-mk2")
+        Hide_Item("advanced-exoskeleton-equipment")
+        Hide_Item("personal-roboport-equipment-mk2")
+        Hide_Item("large-personal-roboport-equipment")
     end
 end
 
@@ -722,40 +722,40 @@ elseif mods["Krastorio2"] then
 end
 
 if mods["RampantArsenal"] then
-    -- Enabled 
-        data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].enabled = false
-        data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].enabled = false
-        data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].enabled = false
-        data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].enabled = false
-        data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].enabled = false
+-- Enabled 
+    data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].enabled = false
+    data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].enabled = false
+    data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].enabled = false
+    data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].enabled = false
+    data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].enabled = false
 
-        data.raw.recipe["mk3-battery-rampant-arsenal"].enabled = false
-        data.raw.recipe["mk3-shield-rampant-arsenal"].enabled = false
-        data.raw.recipe["mk3-generator-rampant-arsenal"].enabled = false
-        data.raw.recipe["nuclear-generator-rampant-arsenal"].enabled = false
-        data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].enabled = false
+    data.raw.recipe["mk3-battery-rampant-arsenal"].enabled = false
+    data.raw.recipe["mk3-shield-rampant-arsenal"].enabled = false
+    data.raw.recipe["mk3-generator-rampant-arsenal"].enabled = false
+    data.raw.recipe["nuclear-generator-rampant-arsenal"].enabled = false
+    data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].enabled = false
 
-    -- Hidden        
-        data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].hidden = true
-        data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].hidden = true
-        data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].hidden = true
-        data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].hidden = true
-        data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].hidden = true
+-- Hidden        
+    data.raw.technology["rampant-arsenal-technology-power-armor-mk3"].hidden = true
+    data.raw.technology["rampant-arsenal-technology-battery-equipment-3"].hidden = true
+    data.raw.technology["rampant-arsenal-technology-shield-equipment-2"].hidden = true
+    data.raw.technology["rampant-arsenal-technology-generator-equipment-2"].hidden = true
+    data.raw.technology["rampant-arsenal-technology-generator-equipment-3"].hidden = true
 
-        data.raw.recipe["mk3-shield-rampant-arsenal"].hidden = true
-        data.raw.recipe["mk3-battery-rampant-arsenal"].hidden = true
-        data.raw.recipe["mk3-generator-rampant-arsenal"].hidden = true
-        data.raw.recipe["nuclear-generator-rampant-arsenal"].hidden = true
-        data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].hidden = true
+    data.raw.recipe["mk3-shield-rampant-arsenal"].hidden = true
+    data.raw.recipe["mk3-battery-rampant-arsenal"].hidden = true
+    data.raw.recipe["mk3-generator-rampant-arsenal"].hidden = true
+    data.raw.recipe["nuclear-generator-rampant-arsenal"].hidden = true
+    data.raw.recipe["power-armor-mk3-armor-rampant-arsenal"].hidden = true
 
-        if settings.startup["Arsenal-filters"].value then
-            Hide_Item("mk3-shield-rampant-arsenal")
-            Hide_Item("mk3-battery-rampant-arsenal")
-            Hide_Item("mk3-generator-rampant-arsenal")
-            Hide_Item("nuclear-generator-rampant-arsenal")
-            Hide_Item("power-armor-mk3-armor-rampant-arsenal")
-        end
+    if settings.startup["Arsenal-filters"].value then
+        Hide_Item("mk3-shield-rampant-arsenal")
+        Hide_Item("mk3-battery-rampant-arsenal")
+        Hide_Item("mk3-generator-rampant-arsenal")
+        Hide_Item("nuclear-generator-rampant-arsenal")
+        Hide_Item("power-armor-mk3-armor-rampant-arsenal")
     end
+end
 
 if mods["space-exploration"] then
 --Enabled
