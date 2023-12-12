@@ -23,4 +23,4 @@ Bob's
 K2
 SE
 Py
-IR3 if capable & possible.
+IR3 if possible.
