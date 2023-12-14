@@ -6,7 +6,7 @@ Date: 14.12.2023
   Bugfixes:
     - Missing name of Hiladders Gear. inprints on warning messaages in game prints.
     - Missing name of Bob's Equipment. inprints on warning messaages in game prints.
-    - Missing some name details on some Achievements.
+    - Missing some details on some Achievements.
     - Battery Achievements order.
     - Imporved some Achievements details, names.
   Thanks:
