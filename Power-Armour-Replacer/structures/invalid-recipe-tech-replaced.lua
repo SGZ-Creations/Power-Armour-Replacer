@@ -5,7 +5,7 @@
 local replace = {
     ["modular-armor"] = "armour_1",
     ["power-armor"] = "armour_1",
-    ["power-armor-2"] = "armour_2",
+    ["power-armor-mk2"] = "armour_2",
     ["bob-power-armor-mk3"] = "armour_3",
     ["bob-power-armor-mk4"] = "armour_4",
     ["bob-power-armor-mk5"] = "armour_5",

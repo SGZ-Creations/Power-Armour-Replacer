@@ -315,7 +315,7 @@ if mods["bobwarfare"] then
                     {
                         type = "bob-pierce",
                         decrease = pierce_decrease[a],
-                        percent = pierce_percent[a], 
+                        percent = pierce_percent[a],
                     },
                     {
                         type = "physical",
@@ -335,27 +335,27 @@ if mods["bobwarfare"] then
                     {
                         type = "fire",
                         decrease = fire_decrease[a],
-                        percent = fire_percent[a], 
+                        percent = fire_percent[a],
                     },
                     {
                         type = "electric",
                         decrease = electric_decrease[a],
-                        percent = electric_percent[a], 
+                        percent = electric_percent[a],
                     },
                     {
                         type = "impact",
                         decrease = impact_decrease[a],
-                        percent = impact_percent[a], 
+                        percent = impact_percent[a],
                     },
                     {
                         type = "laser",
                         decrease = laser_decrease[a],
-                        percent = laser_percent[a], 
+                        percent = laser_percent[a],
                     },
                     {
                         type = "poison",
                         decrease = poison_decrease[a],
-                        percent = poison_percent[a], 
+                        percent = poison_percent[a],
                     },
                 },
                 subgroup = "replacer_item",
@@ -403,22 +403,22 @@ else
                     {
                         type = "electric",
                         decrease = electric_decrease[a],
-                        percent = electric_percent[a], 
+                        percent = electric_percent[a],
                     },
                     {
                         type = "impact",
                         decrease = impact_decrease[a],
-                        percent = impact_percent[a], 
+                        percent = impact_percent[a],
                     },
                     {
                         type = "laser",
                         decrease = laser_decrease[a],
-                        percent = laser_percent[a], 
+                        percent = laser_percent[a],
                     },
                     {
                         type = "poison",
                         decrease = poison_decrease[a],
-                        percent = poison_percent[a], 
+                        percent = poison_percent[a],
                     },
                 },
                 subgroup = "replacer_item",

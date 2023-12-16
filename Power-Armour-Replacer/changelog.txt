@@ -1,11 +1,21 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.53
 Date: 16.12.2023
+  Changes:
+    - Crafting gui tab order.
   Bugfixes:
     - Load order.
+    - If required research was vanilla Power Armour MK2. The chain would be blocked, finaly fixed.
   Scripting:
     - Load order of file to make sure changes apply.
     - Order of code within.
+    - Noticed that vanilla conversion for a_mk2 wasn't working "power-armor-2" --> "power-armor-mk2".
+  Modding:
+    - Added Compatibility with spidertron-extended.
+    - Fixed kind of a bug for spidertron-extended. When played with bob's.
+    - Recipe Adjusted on SpaceModFeorasFork.
+    - Recipe Adjusted on spidertron-extended.
+    - Removed Compatibility with SpaceMod kinda outdated. Switch to SpaceModFeorasFork should u wish to continue.
   Thanks:
     - @_CodeGreen for making me spot the load order issue.
 ---------------------------------------------------------------------------------------------------
@@ -20,7 +30,7 @@ Date: 14.12.2023
     - Battery Achievements order.
     - Imporved some Achievements details, names.
   Thanks:
-    - @Rmm2 testing mod.
+    - @Rmm2 for testing my mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.51
 Date: 12.12.2023
