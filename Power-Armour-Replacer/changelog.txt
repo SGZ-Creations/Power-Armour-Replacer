@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.53
+Date: 16.12.2023
+  Bugfixes:
+    - Load order.
+  Scripting:
+    - Load order of file to make sure changes apply.
+    - Order of code within.
+  Thanks:
+    - @_CodeGreen for making me spot the load order issue.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.52
 Date: 14.12.2023
   Changes:

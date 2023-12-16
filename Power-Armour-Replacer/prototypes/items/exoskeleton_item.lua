@@ -24,6 +24,14 @@ local icon = {
     "__base__/graphics/icons/exoskeleton-equipment.png",
 }
 
+local orders = {
+    "ia[exoskeleton]-aa[armour-replacer]",
+    "ib[exoskeleton]-ab[armour-replacer]",
+    "ic[exoskeleton]-ac[armour-replacer]",
+    "id[exoskeleton]-ad[armour-replacer]",
+    "ie[exoskeleton]-ae[armour-replacer]",
+}
+
 local speed_bonus = {
     1.0,
     2.0,
@@ -38,14 +46,6 @@ local energy_consumption = {
     "30.0MW",
     "40.0MW",
     "50.0MW",
-}
-
-local orders = {
-    "ia[exoskeleton]-aa[armour-replacer]",
-    "ib[exoskeleton]-ab[armour-replacer]",
-    "ic[exoskeleton]-ac[armour-replacer]",
-    "id[exoskeleton]-ad[armour-replacer]",
-    "ie[exoskeleton]-ae[armour-replacer]",
 }
 
 local i = 1

@@ -43,6 +43,12 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
             ["f_mk1"] = {"f_mk5", 2},
             ["e_mk1"] = {"e_mk5", 4},
         }
+    },
+    {
+        dependencies = {"base", "bobrevamp", "bobplates",},
+        replacements = {
+            ["f_mk5"] = {"rtg", 2},
+        }
     },--[[
     {
         dependencies = {"Krastorio2"},
@@ -59,12 +65,6 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
         }
     },
     ]]
-    {
-        dependencies = {"base", "bobrevamp", "bobplates",},
-        replacements = {
-            ["f_mk5"] = {"rtg", 2},
-        }
-    },
 })
 
 --SpaceMod

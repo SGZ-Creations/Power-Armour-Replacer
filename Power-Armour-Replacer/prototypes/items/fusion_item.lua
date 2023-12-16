@@ -93,8 +93,8 @@ while i < 11 do
                 -- Can also be defined as manual (a set of points which fall within the width/height - can't be empty)
                 --[[type = "manual",
                 points = {{0, 0},                 {2, 0},
-                                    {0, 1},                 {2, 1},
-                                    {0, 2}, {1, 2}, {2, 2},}]]
+                {0, 1},                 {2, 1},
+                {0, 2}, {1, 2}, {2, 2},}]]
             },
             energy_source =
             {
