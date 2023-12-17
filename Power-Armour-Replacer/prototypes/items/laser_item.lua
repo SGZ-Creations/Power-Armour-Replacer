@@ -190,7 +190,6 @@ while i < 11 do
                     }
                 }
             },
-
             automatic = true,
             categories = { "armor" }
         }

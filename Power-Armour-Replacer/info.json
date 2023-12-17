@@ -47,14 +47,7 @@
 			"Done.cpp",
 			"README.md",
 			"To_do.cpp",
-			".gitignore",
-			"locale/cs/mod-locale.cfg",
-			"locale/sk/mod-locale.cfg",
-			"locale/de/mod-locale.cfg",
-			"local/fr/mod-locale.cfg",
-			"prototypes/recipes/z_mods-fixes_recipes.lua",
-			"old_armour_item.lua",
-			"Later"
+			".gitignore"
 		]
 	}
 }
