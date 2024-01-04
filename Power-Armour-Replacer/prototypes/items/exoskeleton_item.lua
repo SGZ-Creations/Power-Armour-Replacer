@@ -41,11 +41,11 @@ local speed_bonus = {
 }
 
 local energy_consumption = {
-    "10.0MW",
-    "20.0MW",
-    "30.0MW",
-    "40.0MW",
-    "50.0MW",
+    "10.0GW",
+    "20.0GW",
+    "30.0GW",
+    "40.0GW",
+    "50.0GW",
 }
 
 local i = 1

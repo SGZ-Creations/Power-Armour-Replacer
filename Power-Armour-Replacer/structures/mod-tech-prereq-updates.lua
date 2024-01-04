@@ -64,6 +64,7 @@ util.technology_dependancy
 		},
 	},
 
+
 	["bobpower"] = {
 		["laser_3"] = {
 		"bob-heat-pipe-1",
@@ -274,16 +275,20 @@ util.technology_dependancy
 			["electronics"] = "ir-iron-milestone",
 		},
 		["armour_3"] = {
-			["advanced-electronics"] = "electronics",
+			["advanced-electronics"] = "ir-electronics-1",
+			["military-2"] = "ir-gold-milestone",
+			["plastics"] = "ir-electronics-1",
 		},
 		["battery_1"] = {
-			["ir-steel-milestone"] = "ir-bronze-milestone"
+			["steel-processing"] = "ir-bronze-milestone",
 		},
 		["battery_2"] = {
-			"ir-iron-milestone"
+			"ir-iron-milestone",
 		},
 		["battery_3"] = {
-			["advanced-electronics"] = "electronics",
+			["advanced-electronics"] = "ir-electronics-1",
+		},
+		["battery_4"] = {
 			"ir-steel-milestone",
 		},
 		["fusion-reactor_2"] = {
@@ -293,10 +298,26 @@ util.technology_dependancy
 			["electronics"] = "ir-iron-milestone",
 		},
 		["laser_3"] = {
-			"electronics",
+			"ir-electronics-1",
+		},
+		["laser_4"] = {
 			"ir-steel-milestone",
 		},
 		["laser_5"] = {
+		},
+		["roboport_1"] = {
+			"ir-steambot",
+		},
+		["roboport_2"] = {
+			"ir-iron-milestone",
+		},
+		["roboport_3"] = {
+			"ir-iron-motor",
+			"ir-electronics-1",
+			"engine",
+		},
+		["roboport_4"] = {
+			"ir-steel-milestone",
 		},
 	},
 }

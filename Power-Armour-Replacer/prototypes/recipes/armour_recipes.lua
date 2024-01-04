@@ -294,9 +294,11 @@ if not mods["PyBlock"] then
         {
             dependencies = {"IndustrialRevolution3"},
             replacements = {
-                ["advanced-electronics"] = {"electronic-circuit", 50},
+                ["electronic-circuit"] = {"copper-rotor", 50},
                 ["engin-unit"] = {"copper-coil", 50},
-                {"copper-cable-heavy", 50},
+                ["steel-plate"] = {"copper-cable-heavy", 50},
+                ["iron-gear-wheel"] = {"iron-plate-heavy", 50},
+                {"copper-engine-unit", 10},
             }
         },
         --K2
@@ -391,6 +393,10 @@ if not mods["PyBlock"] then
         {
             dependencies = {"IndustrialRevolution3"},
             replacements = {
+                ["advanced-circuit"] = {"computer-mk1", 30},
+                ["plastic-bar"] = {"iron-rotor", 20},
+                ["steel-plate"] = {"copper-coil", 40},
+                {"gold-foil", 50},
             }
         },
         --SE
@@ -448,6 +454,12 @@ if not mods["PyBlock"] then
                 ["plastic-bar"] = {"insulated-cable", 180},
             }
         },
+        --IR3
+        {
+            dependencies = {"IndustrialRevolution3"},
+            replacements = {
+            }
+        },
         -- SE K2
         {
             dependencies = {"space-exploration"},
@@ -498,6 +510,18 @@ if not mods["PyBlock"] then
                 {"alien-artifact-red", 300},
             }
         },
+        --IR3
+        {
+            dependencies = {"IndustrialRevolution3"},
+            replacements = {
+            }
+        },
+        -- SE K2
+        {
+            dependencies = {"space-exploration"},
+            replacements = {
+            }
+        },
     })
 
     util.ingredient_prereq(recipes[6], {
@@ -546,6 +570,18 @@ if not mods["PyBlock"] then
                 {"gilded-copper-cable", 55},
             }
         },
+        --IR3
+        {
+            dependencies = {"IndustrialRevolution3"},
+            replacements = {
+            }
+        },
+        -- SE K2
+        {
+            dependencies = {"space-exploration"},
+            replacements = {
+            }
+        },
     })
 
     util.ingredient_prereq(recipes[7], {
@@ -590,7 +626,18 @@ if not mods["PyBlock"] then
             replacements = {
                 {"tungsten-plate", 250},
                 {"glass", 50},
-
+            }
+        },
+        --IR3
+        {
+            dependencies = {"IndustrialRevolution3"},
+            replacements = {
+            }
+        },
+        -- SE K2
+        {
+            dependencies = {"space-exploration"},
+            replacements = {
             }
         },
     })
@@ -645,6 +692,18 @@ if not mods["PyBlock"] then
             replacements = {
             }
         },
+        --IR3
+        {
+            dependencies = {"IndustrialRevolution3"},
+            replacements = {
+            }
+        },
+        -- SE K2
+        {
+            dependencies = {"space-exploration"},
+            replacements = {
+            }
+        },
     })
 
     util.ingredient_prereq(recipes[9], {
@@ -688,6 +747,18 @@ if not mods["PyBlock"] then
             replacements = {
                 ["low-density-structure"] = {"tungsten-carbide", 250},
                 {"reinforced-concrete-brick", 200},
+            }
+        },
+        --IR3
+        {
+            dependencies = {"IndustrialRevolution3"},
+            replacements = {
+            }
+        },
+        -- SE K2
+        {
+            dependencies = {"space-exploration"},
+            replacements = {
             }
         },
     })
@@ -738,6 +809,12 @@ if not mods["PyBlock"] then
             replacements = {
                 {"clowns-plate-osmium", 500},
                 {"clowns-plate-depleted-uranium", 500},
+            }
+        },
+        --IR3
+        {
+            dependencies = {"IndustrialRevolution3"},
+            replacements = {
             }
         },
         --K2

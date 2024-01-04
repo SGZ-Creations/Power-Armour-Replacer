@@ -193,6 +193,17 @@ util.ingredient_prereq(recipes[1], {
             ["small-lamp"] = {"motor", 10},
         }
     },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["small-lamp"] = {"copper-frame-large", 20},
+            ["electronic-circuit"] = {"glass", 80},
+            ["wood"] = {"rubber", 50},
+            ["iron-chest"] = {"tin-plate", 100},
+            {"copper-roboport-equipment", 1}
+        }
+    },
 })
 util.ingredient_prereq(recipes[2], {
     {
@@ -215,6 +226,15 @@ util.ingredient_prereq(recipes[2], {
             {"silicon", 100},
         }
     },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"glass", 40},
+            {"iron-plate-heavy", 20},
+            {"copper-rotor", 20},
+        }
+    },
     --SE-K2
     {
         dependencies = {"space-exploration"},
@@ -233,6 +253,15 @@ util.ingredient_prereq(recipes[3], {
             ["iron-plate"] = {"roboport-door-1", 5},
         }
     },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+            ["electronic-circuit"] = {"computer-mk1", 100},
+            {"iron-rotor", 20},
+            {"gold-foil", 50},
+        }
+    },
 })
 util.ingredient_prereq(recipes[4], {
     {
@@ -244,6 +273,12 @@ util.ingredient_prereq(recipes[4], {
             ["iron-gear-wheel"] = {"", 0},
         }
     },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+        }
+    },
 })
 util.ingredient_prereq(recipes[5], {
     {
@@ -252,6 +287,12 @@ util.ingredient_prereq(recipes[5], {
             ["steel-chest"] = {"roboport-antenna-2", 5},
             ["battery"] = {"roboport-chargepad-2", 5},
             ["flying-robot-frame"] = {"roboport-door-2", 5},
+        }
+    },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
         }
     },
 })
@@ -266,6 +307,12 @@ util.ingredient_prereq(recipes[6], {
             ["lubricant"] = {"", 0},
         }
     },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+        }
+    },
 })
 
 util.ingredient_prereq(recipes[7], {
@@ -276,6 +323,12 @@ util.ingredient_prereq(recipes[7], {
             ["uranium-235"] = {"roboport-chargepad-3", 5},
             ["iron-stick"] = {"roboport-door-3", 5},
             ["low-density-structure"] = {"", 0},
+        }
+    },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
         }
     },
 })
@@ -289,6 +342,12 @@ util.ingredient_prereq(recipes[8], {
             ["uranium-235"] = {"", 0},
         }
     },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
+        }
+    },
 })
 util.ingredient_prereq(recipes[9], {
     {
@@ -298,6 +357,12 @@ util.ingredient_prereq(recipes[9], {
             ["low-density-structure"] = {"roboport-chargepad-4", 5},
             ["advanced-circuit"] = {"roboport-door-4", 5},
             ["lubricant"] = {"", 0},
+        }
+    },
+    --IR3
+    {
+        dependencies = {"IndustrialRevolution3"},
+        replacements = {
         }
     },
 })

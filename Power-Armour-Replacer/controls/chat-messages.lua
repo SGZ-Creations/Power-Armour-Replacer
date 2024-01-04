@@ -21,7 +21,7 @@ THANKS FOR READING. You can disable this message in (PA&R) startup settings if u
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for Base/Vanilla Armours & Equipment.
-Filters are hidden if startup setting [Vanilla Filters] is toggles off.
+Filters are hidden if startup setting [Vanilla Filters] is toggled off.
 Power Armour & Replacer is functional in vanilla but was not intended with vanilla.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
@@ -29,10 +29,10 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 
     if script.active_mods["bobwarfare"] then
         if settings.startup["bobwarfare-warning"].value then
-    printer([[
+            printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Bobs Warfare" the Armours are dissabled, hidden.
-Filters are hidden if startup setting [Bob's Warfare Filters] is toggles off.
+Filters are hidden if startup setting [Bob's Warfare Filters] is toggled off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
     end
@@ -42,7 +42,7 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Bobs Equipment" the equipments are dissabled, hidden. 
-Filters are hidden if startup setting [Bob's Equipment Filters] is toggles off.
+Filters are hidden if startup setting [Bob's Equipment Filters] is toggled off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
     end
@@ -52,7 +52,7 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Custom Power Armour fix's" Armours & Equipment.
-Filters are hidden if startup setting [Custom Power Armour fix Filters] is toggles off.
+Filters are hidden if startup setting [Custom Power Armour fix Filters] is toggled off.
 This mod has have a few turret equipment to play with.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
@@ -63,7 +63,7 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Darkstar-fixed" Armours & Equipment.
-Filters are hidden if startup setting [Darkstar Filters] is toggles off.
+Filters are hidden if startup setting [Darkstar Filters] is toggled off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
     end
@@ -73,7 +73,18 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Hiladdar_Gear mod" Armours & Equipment, Tech & Intermediate.
-Filters are hidden if startup setting [Hiladdar_Gear Filters] is toggles off.
+Filters are hidden if startup setting [Hiladdar_Gear Filters] is toggled off.
+You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+        end
+    end
+
+    if script.active_mods["IndustrialRevolution3"] then
+        if settings.startup["IR3-warning"].value then
+            printer([[
+---------------------------------------------------------------------------------------------------
+PA&R have hide & disable mechanics for "IndustrialRevolution3" the Armours & Equipment are dissabled, hidden.
+Filters are hidden if startup setting [IR3 Filters(not added yet)] is toggled off.
+Please Report any unexpected issue to https://discord.gg/tbxnpsxkDM
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
     end
@@ -83,7 +94,7 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for Power Armor MK3's Armours & Equipment.
-Filters are hidden if startup setting [MK3's Filters] is toggles off.
+Filters are hidden if startup setting [MK3's Filters] is toggled off.
 This mod can still have useful tech and items to play with.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
@@ -91,21 +102,21 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 
     if script.active_mods["Krastorio2"] and script.active_mods["space-exploration"] then
         if settings.startup["KE-warning"].value then
-        printer([[
+            printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for SE's & K2's Armours & Equipment.
 All items should be hidden on K2. SE & K2 Recipe Compatibility is yet to be worked more on.
-Filters are hidden if startup setting [KE Filters] is toggles off.
+Filters are hidden if startup setting [KE Filters] is toggled off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
     end
 
     if script.active_mods["Krastorio2"] and not script.active_mods["space-exploration"] then
         if settings.startup["K2-warning"].value then
-        printer([[
+            printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for Krastorio's Armours & Equipment.
-Filters are hidden if startup setting [Krastorio Filters] is toggles off.
+Filters are hidden if startup setting [Krastorio Filters] is toggled off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.
 All items should be hidden on K2. Recipe Compatibility is yet to be worked more on.]])
         end
@@ -113,11 +124,11 @@ All items should be hidden on K2. Recipe Compatibility is yet to be worked more 
 
     if script.active_mods["PowerAndArmour"] then
         if settings.startup["powerandarmor-warning"].value then
-        printer([[
+            printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for PowerAndArmor's Armours & Equipment.
 There's nothing left on this mod to need it enabled.
-Filters are hidden if startup setting [Power&Armor Filters] is toggles off.
+Filters are hidden if startup setting [Power&Armor Filters] is toggled off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
         end
     end

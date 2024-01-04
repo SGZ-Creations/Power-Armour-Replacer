@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.54
+Date: 03.01.2024
+  Features:
+    - Added message to IR3.
+  Changes:
+    - Power consuption for Exoskeletons MW -> GW. for real this time :p
+    - IR3 Recipes: Armour 2-3, roboport 1-3.
+    - IR3 general chnages to imptove compatibility.
+  Bugfixes:
+    - Found K2 Exoskeleton researchable but uncraftable.
+    - IR3 construction bots where hidden along the vanilla Personal Roboports.
+  Info:
+    - Haven't been able to do extended testing, please report any issue you find with IR3 compatibility. 
+  Issues:
+    - IR3 Overwites Science pack requirment. Need to find solution.
+  Thanks:
+    - Discord: @fishcloud1 for letting me know about IR3's bot bug.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.53
 Date: 16.12.2023
   Changes:
@@ -17,7 +35,7 @@ Date: 16.12.2023
     - Recipe Adjusted on spidertron-extended.
     - Removed Compatibility with SpaceMod kinda outdated. Switch to SpaceModFeorasFork should u wish to continue.
   Thanks:
-    - @_CodeGreen for making me spot the load order issue.
+    - Discord: @_CodeGreen for making me spot the load order issue.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.52
 Date: 14.12.2023
@@ -30,7 +48,7 @@ Date: 14.12.2023
     - Battery Achievements order.
     - Imporved some Achievements details, names.
   Thanks:
-    - @Rmm2 for testing my mod.
+    - Discord: @Rmm2 for testing my mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.51
 Date: 12.12.2023
@@ -335,7 +353,7 @@ Date: 27.05.2023
     - Crash in SE using K2 items witout K2. Specifing wrong mod dependency.
   Modding:
     - Some more items added to bob's enemies recipes. Still far from done with this one.
-  Known-Issues:
+  Issues:
     - Reverse Factory, using bob's, Angels, K2, SE, when recycling batteries wont work. no issues in vanilla.
   Thanks:
     - Discord @Dr Pez. Helping on improving some compatibility code for the fixes.
@@ -535,7 +553,7 @@ Date: 15.01.2023
   Locale:
     - Added English templates for CS, DE, SK, locals twice.
     - Updated EN, NO locales.
-  Known-Issues-Fixed:
+  Issues-Fixed:
     - Icons for Exoskeleton.
   Discord-Releases:
     - ̶N̶o̶t̶e̶ ̶i̶f̶ ̶u̶ ̶u̶s̶e̶ ̶t̶h̶e̶ ̶0̶.̶1̶.̶1̶6̶ ̶u̶ ̶a̶r̶e̶ ̶u̶s̶i̶n̶g̶ ̶t̶h̶e̶ ̶b̶e̶t̶a̶ ̶v̶e̶r̶s̶i̶o̶n̶ ̶o̶f̶ ̶1̶.̶0̶ ̶r̶e̶l̶e̶a̶s̶e̶.
@@ -567,7 +585,7 @@ Date: 09.01.2023
   Scripting:
     - Marked some files to be left out of the mod until it's usable. Reducing size of mod slightly. Check info.json should u want more info.
     - Recipe & Tech research compatibility needs adjusting.
-  Known-Issues:
+  Issues:
     - ̶ ̶I̶c̶o̶n̶s̶ ̶f̶o̶r̶ ̶E̶x̶o̶s̶k̶e̶l̶e̶t̶o̶n̶ ̶a̶r̶e̶ ̶a̶ ̶b̶i̶t̶ ̶w̶e̶i̶r̶d̶.̶ ̶H̶o̶p̶e̶ ̶t̶o̶ ̶s̶o̶l̶v̶e̶ ̶t̶h̶i̶s̶ ̶s̶o̶o̶n̶ ̶b̶u̶t̶ ̶i̶'̶v̶e̶ ̶t̶r̶i̶e̶d̶ ̶a̶ ̶l̶o̶t̶ ̶t̶o̶ ̶n̶o̶ ̶s̶u̶c̶c̶e̶s̶s̶
   Thanks:
     - Discord @RedsTom#4616 for FR (France) Translation.
@@ -606,7 +624,7 @@ Date: 01.11.2022
     - Battery Equipment mk2 reqiured 1000 is was suppose to have 200.
   Thanks:
     - Discord @Toby1364 for praticipating on this project.
-  Known-Issues:
+  Issues:
     - ̶S̶h̶i̶e̶l̶d̶ ̶s̶t̶a̶t̶s̶ ̶a̶r̶e̶ ̶n̶o̶t̶ ̶c̶o̶m̶p̶l̶e̶t̶e̶.
     - ̶A̶r̶m̶o̶u̶r̶ ̶r̶e̶s̶i̶s̶t̶a̶n̶c̶e̶s̶ ̶i̶s̶ ̶n̶o̶t̶ ̶c̶o̶m̶p̶l̶e̶t̶e̶.
 ---------------------------------------------------------------------------------------------------

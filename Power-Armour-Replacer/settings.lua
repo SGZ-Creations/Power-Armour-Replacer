@@ -248,6 +248,18 @@ if mods["Insectitron"] then
     })
 end
 
+if mods["IndustrialRevolution3"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "IR3-warning",
+            setting_type = "startup",
+            default_value = true,
+            order = "2Maa"
+        },
+    })
+end
+
 if mods["SpaceModFeorasFork"] then
     data:extend({
         {
