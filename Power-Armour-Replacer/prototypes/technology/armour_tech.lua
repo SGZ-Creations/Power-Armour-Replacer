@@ -46,7 +46,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_3",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3.png",
 			effects = {
 				{
 					type = "unlock-recipe",
@@ -68,7 +68,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_4",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4.png",
 			effects =
 			{
 				{
@@ -93,7 +93,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_5",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
@@ -119,7 +119,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_6",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
@@ -145,7 +145,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_7",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
@@ -172,7 +172,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_8",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
@@ -199,7 +199,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_9",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
@@ -227,7 +227,7 @@ if not mods["PyBlock"] then
 			type = "technology",
 			name = "armour_10",
 			icon_size = 256, icon_mipmaps = 4,
-			icon = "__base__/graphics/technology/power-armor-mk2.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{

@@ -223,16 +223,16 @@ local order = {
 }
 
 local icon = {
-    "__Power-Armour-Replacer__/texture/items/power-armor.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk2.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk3.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk4.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk5.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk6.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk7.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk8.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk9.png",
-    "__Power-Armour-Replacer__/texture/items/power-armor-mk10.png",
+    "__base__/graphics/icons/power-armor.png",
+    "__base__/graphics/icons/power-armor-mk2.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
+    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
 }
 
 local grid_name = {
@@ -305,7 +305,7 @@ if mods["bobwarfare"] then
                 type = "armor",
                 name = "a_mk" .. tostring(a),
                 icon = icon[a],
-                icon_size = 256, icon_mipmaps = 4,
+                icon_size = 64, icon_mipmaps = 4,
                 resistances = {
                     {
                         type = "plasma",
@@ -364,11 +364,11 @@ if mods["bobwarfare"] then
                 infinite = true,
                 equipment_grid = grid_name[a],
                 inventory_size_bonus = inventory_bonus[a],
-                open_sound = {filename =    "__base__/sound/armor-open.ogg", volume = 1},
+                open_sound = {filename = "__base__/sound/armor-open.ogg", volume = 1},
                 close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
             },
         })
-        a = a + 1 
+        a = a + 1
     end
 else
     local a = 1
@@ -378,7 +378,7 @@ else
                 type = "armor",
                 name = "a_mk" .. tostring(a),
                 icon = icon[a],
-                icon_size = 256, icon_mipmaps = 4,
+                icon_size = 64, icon_mipmaps = 4,
                 resistances = {
                     {
                         type = "physical",

@@ -10,8 +10,8 @@ util.technology_dependancy
 	["SpaceModFeorasFork"] = {
 		["space-ai-robots"] = {
 			["fusion-reactor_1"] = "fusion-reactor_10",
-			["battery_1"] = "battery_10",
-			["exoskeleton_1"] = "exoskeleton_5",
+			["par-battery-technology-1"] = "par-battery-technology-10",
+			["par-exoskeleton-technology-1"] = "par-exoskeleton-technology-5",
 			["nv-bi_mk1"] = "no-power-equipment_mk2",
 			["armour_2"] = "armour_10",
 		},
@@ -20,8 +20,8 @@ util.technology_dependancy
 	[{"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",}] = {
 		["space-ai-robots"] = {
 			["fusion-reactor_1"] = "fusion-reactor_8",
-			["battery_10"] = "battery_8",
-			["exoskeleton_5"] = "exoskeleton_3",
+			["par-battery-technology-10"] = "par-battery-technology-8",
+			["par-exoskeleton-technology-5"] = "par-exoskeleton-technology-3",
 			["armour_10"] = "armour_6",
 		},
 	},
@@ -29,7 +29,7 @@ util.technology_dependancy
 	["base"] = {
 		["spidertron"] = {
 			["fusion-reactor_1"] = "fusion-reactor_5",
-			["exoskeleton_1"] = "exoskeleton_5",
+			["par-exoskeleton-technology-1"] = "par-exoskeleton-technology-5",
 		},
 	},
 }

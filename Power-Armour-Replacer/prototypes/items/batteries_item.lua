@@ -1,100 +1,35 @@
+local icon_utils = require("structures.icon-utils")
 
-local graphics = {
-    "__base__/graphics/equipment/battery-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
-    "__base__/graphics/equipment/battery-mk2-equipment.png",
+local batteries = {
+    { buffer_capacity = "10GJ", order = "baz", }, --Nerfed due to not containing battery in recipe.
+    { buffer_capacity = "20GJ", order = "bbz", }, --Nerfed due to not containing battery in recipe.
+    { buffer_capacity = "3TJ",  order = "bcz", },
+    { buffer_capacity = "4TJ",  order = "bdz", },
+    { buffer_capacity = "5TJ",  order = "bez", },
+    { buffer_capacity = "6TJ",  order = "bfz", },
+    { buffer_capacity = "7TJ",  order = "bgz", },
+    { buffer_capacity = "8TJ",  order = "bhz", },
+    { buffer_capacity = "9TJ",  order = "biz", },
+    { buffer_capacity = "10TJ", order = "bjz", },
 }
 
-local graphics2 = {
-    "__base__/graphics/equipment/hr-battery-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-    "__base__/graphics/equipment/hr-battery-mk2-equipment.png",
-}
-
-local icon = {
-    "__base__/graphics/icons/battery-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-    "__base__/graphics/icons/battery-mk2-equipment.png",
-}
-
-local order = {
-    "baz[battery]-aa[armour-replacer]",
-    "bbz[battery]-aa[armour-replacer]",
-    "bcz[battery]-aa[armour-replacer]",
-    "bdz[battery]-aa[armour-replacer]",
-    "bez[battery]-aa[armour-replacer]",
-    "bfz[battery]-aa[armour-replacer]",
-    "bgz[battery]-aa[armour-replacer]",
-    "bhz[battery]-aa[armour-replacer]",
-    "biz[battery]-aa[armour-replacer]",
-    "bjz[battery]-aa[armour-replacer]",
-}
-local buffer_capacity = {
-    "10GJ",--Nerfed due to not containing battery in recipe.
-    "20GJ",--Nerfed due to not containing battery in recipe.
-    "3TJ",
-    "4TJ",
-    "5TJ",
-    "6TJ",
-    "7TJ",
-    "8TJ",
-    "9TJ",
-    "10TJ",
-}
-
-local i = 1
-while i < 11 do
-
-data:extend({
-    {
+for tier, battery in pairs(batteries) do
+    ---@type data.ItemPrototype
+    local item = {
         type = "item",
-        name = "b_mk" .. tostring(i),
-        icon = icon[i],
-        icon_size = 64,
+        name = "par-battery-mk" .. tostring(tier),
+        icons = icon_utils.create_equipment_icon("battery", 64, 4, tier),
         stack_size = 20,
-        order = order[i],
+        order = battery.order .. "[battery]-aa[armour-replacer]",
         subgroup = "replacer_item",
-        placed_as_equipment_result = "b_mk" .. tostring(i),
-    },
-    {
+        placed_as_equipment_result = "par-battery-mk" .. tostring(tier),
+    }
+
+    ---@type data.EquipmentPrototype
+    local equipment = {
         type = "battery-equipment",
-        name = "b_mk" .. tostring(i),
-        sprite =
-        {
-            filename = graphics[i],
-            width = 32,
-            height = 64,
-            priority = "medium",
-            hr_version =
-            {
-                filename = graphics2[i],
-                width = 64,
-                height = 128,
-                priority = "medium",
-                scale = 0.5
-            }
-        },
+        name = "par-battery-mk" .. tostring(tier),
+        sprite = icon_utils.create_equipment_sprite("battery", 32, 64, tier),
         shape =
         {
             width = 1,
@@ -104,11 +39,14 @@ data:extend({
         energy_source =
         {
             type = "electric",
-            buffer_capacity = buffer_capacity[i],
+            buffer_capacity = battery.buffer_capacity,
             usage_priority = "tertiary"
         },
-        categories = {"armor"}
+        categories = { "armor" }
     }
-})
-i = i + 1
+
+    data:extend({
+        item,
+        equipment,
+    })
 end

@@ -1,7 +1,7 @@
 local recipes = {
     {
         type = "recipe",
-        name = "e_mk1",
+        name = "par-exoskelton-mk1",
         enabled = false,
         energy_required = 5,
         ingredients = {
@@ -11,64 +11,64 @@ local recipes = {
             {"copper-cable", 100},
             {"iron-gear-wheel", 100},
         },
-        result = "e_mk1"
+        result = "par-exoskelton-mk1"
     },
     {
         type = "recipe",
-        name = "e_mk2",
+        name = "par-exoskelton-mk2",
         enabled = false,
         energy_required = 10,
         ingredients = {
-            {"e_mk1", 1},
+            {"par-exoskelton-mk1", 1},
             {"battery", 120},
             {"iron-gear-wheel", 60},
             {"electronic-circuit", 120},
             {"steel-plate", 140},
             {"iron-stick", 70},
         },
-        result = "e_mk2"
+        result = "par-exoskelton-mk2"
     },
     {
         type = "recipe",
-        name = "e_mk3",
+        name = "par-exoskelton-mk3",
         enabled = false,
         energy_required = 15,
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"e_mk2", 1},
+            {"par-exoskelton-mk2", 1},
             {"battery", 165},
             {"advanced-circuit", 100},
             {"steel-plate", 150},
             {"iron-stick", 175},
             {type="fluid", name="lubricant", amount=450},
         },
-        result = "e_mk3"
+        result = "par-exoskelton-mk3"
     },
     {
         type = "recipe",
-        name = "e_mk4",
+        name = "par-exoskelton-mk4",
         enabled = false,
         energy_required = 20,
         hide_from_player_crafting = true,
         ingredients = {
-            {"e_mk3", 1},
+            {"par-exoskelton-mk3", 1},
             {"battery", 205},
             {"plastic-bar", 190},
             {"steel-plate", 180},
             {"processing-unit", 100},
             {"low-density-structure", 115},
         },
-        result = "e_mk4"
+        result = "par-exoskelton-mk4"
     },
     {
         type = "recipe",
-        name = "e_mk5",
+        name = "par-exoskelton-mk5",
         enabled = false,
         energy_required = 25,
         hide_from_player_crafting = true,
         ingredients = {
-            {"e_mk4", 1},
+            {"par-exoskelton-mk4", 1},
             {"battery", 250},
             {"steel-plate", 250},
             {"processing-unit", 100},
@@ -76,7 +76,7 @@ local recipes = {
             {"rocket-control-unit", 150},
             {"low-density-structure", 150},
         },
-        result = "e_mk5"
+        result = "par-exoskelton-mk5"
     },
 }
 

@@ -10,7 +10,7 @@ util.technology_dependancy
 	["base"] = {
 		["spidertron"] = {
 			["fusion-reactor_1"] = "fusion-reactor_5",
-			["exoskeleton_1"] = "exoskeleton_5",
+			["par-exoskeleton-technology-1"] = "par-exoskeleton-technology-5",
 		},
 	},
 
@@ -44,10 +44,10 @@ util.technology_dependancy
 		["laser_5"] = {
 			"advanced-electronics"
 		},
-		["battery_3"] = {
+		["par-battery-technology-3"] = {
 			["advanced-electronics"] = "electronics"
 		},
-		["battery_5"] = {
+		["par-battery-technology-5"] = {
 			"advanced-electronics"
 		},
 		["armour_3"] = {
@@ -139,7 +139,7 @@ util.technology_dependancy
 		["armour_10"] = {
 			"rocket-control-unit",
 		},
-		["battery_6"] = {
+		["par-battery-technology-6"] = {
 			"lithium-processing",
 		},
 		["shield_6"] = {
@@ -188,7 +188,7 @@ util.technology_dependancy
 			["nitinol-processing"] = "angels-nitinol-smelting-1",
 			"angels-stone-smelting-3",
 		},
-		["exoskeleton_3"] = {
+		["par-exoskeleton-technology-3"] = {
 			"angels-chrome-smelting-1",
 		},
 		["fusion-reactor_3"] = {
@@ -229,10 +229,10 @@ util.technology_dependancy
 		["armour_10"] = {
 			"advanced-depleted-uranium-smelting-1",
 		},
-		["exoskeleton_4"] = {
+		["par-exoskeleton-technology-4"] = {
 			"advanced-osmium-smelting",
 		},
-		["exoskeleton_5"] = {
+		["par-exoskeleton-technology-5"] = {
 			"advanced-depleted-uranium-smelting-1",
 		},
 	},
@@ -253,7 +253,7 @@ util.technology_dependancy
 		["armour_3"] = {
 			"el_caster_tech",
 		},
-		["battery_3"] = {
+		["par-battery-technology-3"] = {
 			"el_lithium_tech",
 		},
 		["nv-bi_mk1"] = {
@@ -279,16 +279,16 @@ util.technology_dependancy
 			["military-2"] = "ir-gold-milestone",
 			["plastics"] = "ir-electronics-1",
 		},
-		["battery_1"] = {
+		["par-battery-technology-1"] = {
 			["steel-processing"] = "ir-bronze-milestone",
 		},
-		["battery_2"] = {
+		["par-battery-technology-2"] = {
 			"ir-iron-milestone",
 		},
-		["battery_3"] = {
+		["par-battery-technology-3"] = {
 			["advanced-electronics"] = "ir-electronics-1",
 		},
-		["battery_4"] = {
+		["par-battery-technology-4"] = {
 			"ir-steel-milestone",
 		},
 		["fusion-reactor_2"] = {

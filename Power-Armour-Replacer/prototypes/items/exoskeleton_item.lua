@@ -1,98 +1,50 @@
+local icon_utils = require("structures.icon-utils")
 
-local graphics = {
-    "__base__/graphics/equipment/exoskeleton-equipment.png",
-    "__base__/graphics/equipment/exoskeleton-equipment.png",
-    "__base__/graphics/equipment/exoskeleton-equipment.png",
-    "__base__/graphics/equipment/exoskeleton-equipment.png",
-    "__base__/graphics/equipment/exoskeleton-equipment.png",
+local exoskeletons = {
+    { energy_consumption = "10.0GW", speed_bonus = 1.0, order = "ia[exoskeleton]-aa[armour-replacer]" },
+    { energy_consumption = "20.0GW", speed_bonus = 2.0, order = "ib[exoskeleton]-ab[armour-replacer]" },
+    { energy_consumption = "30.0GW", speed_bonus = 3.0, order = "ic[exoskeleton]-ac[armour-replacer]" },
+    { energy_consumption = "40.0GW", speed_bonus = 4.0, order = "id[exoskeleton]-ad[armour-replacer]" },
+    { energy_consumption = "50.0GW", speed_bonus = 5.0, order = "ie[exoskeleton]-ae[armour-replacer]" },
 }
 
-local graphics2 = {
-    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
-    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
-    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
-    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
-    "__base__/graphics/equipment/hr-exoskeleton-equipment.png",
-}
+for tier, exoskeleton in pairs(exoskeletons) do
+    ---@type data.ItemPrototype
+    local item = {
+        type = "item",
+        name = "par-exoskelton-mk" .. tostring(tier),
+        placed_as_equipment_result = "par-exoskelton-mk" .. tostring(tier),
+        subgroup = "replacer_item",
+        order = exoskeleton.order,
+        icons = icon_utils.create_equipment_icon("exoskeleton", 64, 4, tier),
+        stack_size = 20,
+    }
 
-
-local icon = {
-    "__base__/graphics/icons/exoskeleton-equipment.png",
-    "__base__/graphics/icons/exoskeleton-equipment.png",
-    "__base__/graphics/icons/exoskeleton-equipment.png",
-    "__base__/graphics/icons/exoskeleton-equipment.png",
-    "__base__/graphics/icons/exoskeleton-equipment.png",
-}
-
-local orders = {
-    "ia[exoskeleton]-aa[armour-replacer]",
-    "ib[exoskeleton]-ab[armour-replacer]",
-    "ic[exoskeleton]-ac[armour-replacer]",
-    "id[exoskeleton]-ad[armour-replacer]",
-    "ie[exoskeleton]-ae[armour-replacer]",
-}
-
-local speed_bonus = {
-    1.0,
-    2.0,
-    3.0,
-    4.0,
-    5.0,
-}
-
-local energy_consumption = {
-    "10.0GW",
-    "20.0GW",
-    "30.0GW",
-    "40.0GW",
-    "50.0GW",
-}
-
-local i = 1
-while i < 6 do
-    data:extend({
+    ---@type data.EquipmentPrototype
+    local equipment = {
+        type = "movement-bonus-equipment",
+        name = "par-exoskelton-mk" .. tostring(tier),
+        sprite = icon_utils.create_equipment_sprite("exoskeleton", 64, 128, tier,
+            "__base__/graphics/equipment/exoskeleton-equipment.png",
+            "__base__/graphics/equipment/hr-exoskeleton-equipment.png"),
+        shape =
         {
-            type = "movement-bonus-equipment",
-            name = "e_mk" .. tostring(i),
-            sprite =
-            {
-                filename = graphics[i],
-                width = 64,
-                height = 128,
-                priority = "medium",
-                hr_version = {
-                    filename = graphics2[i],
-                    width = 128,
-                    height = 256,
-                    priority = "medium",
-                    scale = 0.5
-                    }
-            },
-            shape =
-            {
-                width = 2,
-                height = 4,
-                type = "full"
-            },
-            energy_source =
-            {
-                type = "electric",
-                usage_priority = "secondary-input"
-            },
-            energy_consumption = energy_consumption[i],
-            movement_bonus = speed_bonus[i],
-            categories = { "armor" }
+            width = 2,
+            height = 4,
+            type = "full"
         },
+        energy_source =
         {
-            type = "item",
-            name = "e_mk" .. tostring(i),
-            placed_as_equipment_result = "e_mk" .. tostring(i),
-            subgroup = "replacer_item",
-            order = orders[i],
-            icon_size = 64, icon_mipmaps = 4,
-            icon = icon[i],
-            stack_size = 20,
-        }
+            type = "electric",
+            usage_priority = "secondary-input"
+        },
+        energy_consumption = exoskeleton.energy_consumption,
+        movement_bonus = exoskeleton.speed_bonus,
+        categories = { "armor" }
+    }
+
+    data:extend({
+        item,
+        equipment,
     })
-    i = i + 1
 end

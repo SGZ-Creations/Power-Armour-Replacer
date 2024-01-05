@@ -1,15 +1,16 @@
+local icon_utils = require("structures.icon-utils")
+
 data:extend({
     {
         type = "technology",
-        name = "exoskeleton_1",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
+        name = "par-exoskeleton-technology-1",
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 1),
         prerequisites = {"armour_2", "fusion-reactor_1"},
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "e_mk1"
+                recipe = "par-exoskelton-mk1"
             }
         },
         unit =
@@ -24,15 +25,14 @@ data:extend({
     },
     {
         type = "technology",
-        name = "exoskeleton_2",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_1", "battery", "armour_4"},
+        name = "par-exoskeleton-technology-2",
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 2),
+        prerequisites = {"par-exoskeleton-technology-1", "battery", "armour_4"},
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "e_mk2"
+                recipe = "par-exoskelton-mk2"
             }
         },
         unit =
@@ -49,15 +49,14 @@ data:extend({
     },
     {
         type = "technology",
-        name = "exoskeleton_3",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_2", "armour_6"},
+        name = "par-exoskeleton-technology-3",
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 3),
+        prerequisites = {"par-exoskeleton-technology-2", "armour_6"},
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "e_mk3"
+                recipe = "par-exoskelton-mk3"
             }
         },
         unit =
@@ -75,19 +74,18 @@ data:extend({
     },
     {
         type = "technology",
-        name = "exoskeleton_4",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
+        name = "par-exoskeleton-technology-4",
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 4),
         prerequisites =
         {
-            "exoskeleton_3",
+            "par-exoskeleton-technology-3",
             "armour_8",
         },
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "e_mk4"
+                recipe = "par-exoskelton-mk4"
             }
         },
         unit =
@@ -106,15 +104,14 @@ data:extend({
     },
     {
         type = "technology",
-        name = "exoskeleton_5",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
-        prerequisites = {"exoskeleton_4", "armour_10"},
+        name = "par-exoskeleton-technology-5",
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 5),
+        prerequisites = {"par-exoskeleton-technology-4", "armour_10"},
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "e_mk5"
+                recipe = "par-exoskelton-mk5"
             }
         },
         unit =

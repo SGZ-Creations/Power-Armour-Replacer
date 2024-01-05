@@ -6,7 +6,7 @@ util.ingredient_prereq(data.raw.recipe["cannon-spidertron"],
         dependencies = {"Cannon_Spidertron"},
         replacements = {
             ["f_mk1"] = {"f_mk5", 2},
-            ["e_mk1"] = {"e_mk5", 4},
+            ["par-exoskelton-mk1"] = {"par-exoskelton-mk5", 4},
         }
     },
 })
@@ -19,7 +19,7 @@ util.ingredient_prereq(data.raw.recipe["ss-space-spidertron"],
             ["bi_mk1"] = {"bi_mk2", 4},
             ["belt-immunity-equipment"] = {"bi_mk2", 4},
             ["f_mk1"] = {"f_mk5", 2},
-            ["e_mk1"] = {"e_mk5", 4},
+            ["par-exoskelton-mk1"] = {"par-exoskelton-mk5", 4},
         }
     },
 })
@@ -30,7 +30,7 @@ util.ingredient_prereq(data.raw.recipe["artillery-spidertron"],
         dependencies = {"artillery-spidertron"},
         replacements = {
             ["f_mk1"] = {"f_mk5", 2},
-            ["e_mk1"] = {"e_mk5", 4},
+            ["par-exoskelton-mk1"] = {"par-exoskelton-mk5", 4},
         }
     },
 })
@@ -41,7 +41,7 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
         dependencies = {"base"},
         replacements = {
             ["f_mk1"] = {"f_mk5", 2},
-            ["e_mk1"] = {"e_mk5", 4},
+            ["par-exoskelton-mk1"] = {"par-exoskelton-mk5", 4},
         }
     },
     {
@@ -162,8 +162,8 @@ util.ingredient_prereq(data.raw.recipe["space-ai-robot"],
         dependencies = {"SpaceModFeorasFork",},
         replacements = {
             ["f_mk1"] = {"f_mk10", 7},
-            ["b_mk2"] = {"b_mk10", 5},
-            ["e_mk1"] = {"e_mk5", 7},
+            ["par-battery-mk2"] = {"par-battery-mk10", 5},
+            ["par-exoskelton-mk1"] = {"par-exoskelton-mk5", 7},
             ["bi_mk1"] = {"bi_mk2", 37},
         }
     },
@@ -171,8 +171,8 @@ util.ingredient_prereq(data.raw.recipe["space-ai-robot"],
         dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
         replacements = {
             ["f_mk10"] = {"f_mk8", 3},
-            ["b_mk10"] = {"b_mk8", 2},
-            ["e_mk5"] = {"e_mk3", 3},
+            ["par-battery-mk10"] = {"par-battery-mk8", 2},
+            ["par-exoskelton-mk5"] = {"par-exoskelton-mk3", 3},
             ["bi_mk2"] = {"bi_mk2", 18},
         }
     },
