@@ -9,7 +9,7 @@ util.technology_dependancy
 {
 	["base"] = {
 		["spidertron"] = {
-			["fusion-reactor_1"] = "fusion-reactor_5",
+			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-5",
 			["par-exoskeleton-technology-1"] = "par-exoskeleton-technology-5",
 		},
 	},
@@ -100,7 +100,7 @@ util.technology_dependancy
 	},
 
 	[{"bobrevamp", "bobplates",}] = {
-		["fusion-reactor_7"] = {
+		["par-fusion-reactor-tech-7"] = {
 			"rtg",
 		},
 	},
@@ -146,7 +146,7 @@ util.technology_dependancy
 			"lithium-processing",
 			"cobalt-processing"
 		},
-		["fusion-reactor_6"] = {
+		["par-fusion-reactor-tech-6"] = {
 			"lithium-processing",
 		},
 		["solar_6"] = {
@@ -191,14 +191,14 @@ util.technology_dependancy
 		["par-exoskeleton-technology-3"] = {
 			"angels-chrome-smelting-1",
 		},
-		["fusion-reactor_3"] = {
+		["par-fusion-reactor-tech-3"] = {
 			"angels-invar-smelting-1",
 			"angels-silver-smelting-1",
 		},
-		["fusion-reactor_4"] = {
+		["par-fusion-reactor-tech-4"] = {
 			"angels-nickel-smelting-1",
 		},
-		["fusion-reactor_5"] = {
+		["par-fusion-reactor-tech-5"] = {
 			"advanced-electronics",
 			"angels-brass-smelting-1",
 			"angels-gold-smelting-1",
@@ -291,10 +291,10 @@ util.technology_dependancy
 		["par-battery-technology-4"] = {
 			"ir-steel-milestone",
 		},
-		["fusion-reactor_2"] = {
+		["par-fusion-reactor-tech-2"] = {
 			"ir-iron-milestone",
 		},
-		["fusion-reactor_4"] = {
+		["par-fusion-reactor-tech-4"] = {
 			["electronics"] = "ir-iron-milestone",
 		},
 		["laser_3"] = {

@@ -50,8 +50,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-1_1-100-fusion",
-        order = "Faa[f_mk5]",
-        item_product = "f_mk5",
+        order = "Faa[par-fusion-reactor-mk5]",
+        item_product = "par-fusion-reactor-mk5",
         amount = 100,
         steam_stats_name = "fusion-production-overall",
         icon = "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
@@ -61,8 +61,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-1_2-1000-fusion",
-        order = "Fab[f_mk5]",
-        item_product = "f_mk5",
+        order = "Fab[par-fusion-reactor-mk5]",
+        item_product = "par-fusion-reactor-mk5",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
         icon = "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
@@ -72,8 +72,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-2_3-100-fusion",
-        order = "Fac[f_mk10]",
-        item_product = "f_mk10",
+        order = "Fac[par-fusion-reactor-mk10]",
+        item_product = "par-fusion-reactor-mk10",
         amount = 100,
         steam_stats_name = "fusion-production-overall",
         icon = "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",
@@ -83,8 +83,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-2_4-1000-fusion",
-        order = "Fad[f_mk10]",
-        item_product = "f_mk10",
+        order = "Fad[par-fusion-reactor-mk10]",
+        item_product = "par-fusion-reactor-mk10",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
         icon = "__base__/graphics/equipment/hr-fusion-reactor-equipment.png",

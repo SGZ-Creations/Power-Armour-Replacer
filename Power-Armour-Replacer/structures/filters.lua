@@ -892,7 +892,7 @@ if mods["PowerAndArmor"] then
     data.raw.recipe["PaA-exoskeleton-mk2-equipment"].enabled = false
     data.raw.recipe["PaA-night-vision-mk2-equipment"].enabled = false
     data.raw.recipe["PaA-energy-shield-mk3-equipment"].enabled = false
-    data.raw.recipe["PaA-fusion-reactor-mk2-equipment"].enabled = false
+    data.raw.recipe["PaA-par-fusion-reactor-mk2-equipment"].enabled = false
     data.raw.recipe["PaA-personal-roboport-mk3-equipment"].enabled = false
     data.raw.recipe["PaA-personal-dockingport-mk3-equipment"].enabled = false
     data.raw.recipe["PaA-personal-laser-defense-mk2-equipment"].enabled = false
@@ -918,7 +918,7 @@ if mods["PowerAndArmor"] then
     data.raw.recipe["PaA-exoskeleton-mk2-equipment"].hidden = true
     data.raw.recipe["PaA-night-vision-mk2-equipment"].hidden = true
     data.raw.recipe["PaA-energy-shield-mk3-equipment"].hidden = true
-    data.raw.recipe["PaA-fusion-reactor-mk2-equipment"].hidden = true
+    data.raw.recipe["PaA-par-fusion-reactor-mk2-equipment"].hidden = true
     data.raw.recipe["PaA-personal-roboport-mk3-equipment"].hidden = true
     data.raw.recipe["PaA-personal-dockingport-mk3-equipment"].hidden = true
     data.raw.recipe["PaA-personal-laser-defense-mk2-equipment"].hidden = true
@@ -944,7 +944,7 @@ if mods["PowerAndArmor"] then
         Hide_Item("PaA-exoskeleton-mk2-equipment")
         Hide_Item("PaA-night-vision-mk2-equipment")
         Hide_Item("PaA-energy-shield-mk3-equipment")
-        Hide_Item("PaA-fusion-reactor-mk2-equipment")
+        Hide_Item("PaA-par-fusion-reactor-mk2-equipment")
         Hide_Item("PaA-personal-roboport-mk3-equipment")
         Hide_Item("PaA-personal-dockingport-mk3-equipment")
         Hide_Item("PaA-personal-laser-defense-mk2-equipment")

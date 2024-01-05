@@ -17,7 +17,7 @@ if mods["bobequipment"] then
         util.color("#2ee55c"), -- Green
         util.color("#ff8533"), -- Orange
         util.color("#00FFFF"), -- Cyan
-        util.color("#000000"), -- Pink
+        util.color("#AA336A"), -- DarkPink
         util.color("#000000"), -- Black
     }
 else
@@ -31,7 +31,7 @@ else
         util.color("#33b4ff"), -- Blue
         util.color("#00FFFF"), -- Cyan
         util.color("#2ee55c"), -- Green
-        util.color("#000000"), -- Pink
+        util.color("#AA336A"), -- DarkPink
         util.color("#b459ff"), -- Purple
         util.color("#ffb726"), -- Yellow
         util.color("#ff8533"), -- Orange

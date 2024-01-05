@@ -40,5 +40,5 @@
 
 --prototypes.other
     require("prototypes.animation.player_style")
-    require("prototypes.achievements")
-    require("prototypes.armour_equipment_category")
+    require("prototypes.misc.achievements")
+    require("prototypes.misc.armour_equipment_category")

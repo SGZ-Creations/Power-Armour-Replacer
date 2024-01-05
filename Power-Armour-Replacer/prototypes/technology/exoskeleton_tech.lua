@@ -5,7 +5,7 @@ data:extend({
         type = "technology",
         name = "par-exoskeleton-technology-1",
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 1),
-        prerequisites = {"armour_2", "fusion-reactor_1"},
+        prerequisites = {"armour_2", "par-fusion-reactor-tech-1"},
         effects =
         {
             {
