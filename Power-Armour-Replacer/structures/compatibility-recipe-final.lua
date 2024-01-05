@@ -183,7 +183,7 @@ util.ingredient_prereq(data.raw.recipe["space-ai-robot-frame"],
     {
         dependencies = {"SpaceModFeorasFork",},
         replacements = {
-            ["a_mk2"] = {"a_mk10", 5},
+            ["par-armour-mk2"] = {"par-armour-mk10", 5},
             ["l_mk1"] = {"l_mk10", 5},
             ["r_mk1"] = {"r_mk10", 5},
         }
@@ -191,7 +191,7 @@ util.ingredient_prereq(data.raw.recipe["space-ai-robot-frame"],
     {
         dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
         replacements = {
-            ["a_mk10"] = {"a_mk8", 2},
+            ["par-armour-mk10"] = {"par-armour-mk8", 2},
             ["l_mk10"] = {"l_mk10", 2},
             ["r_mk10"] = {"r_mk10", 2},
         }

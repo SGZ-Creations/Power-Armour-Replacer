@@ -90,7 +90,7 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
     end
 
     if script.active_mods["Power Armor MK3"] then
-        if settings.startup["P-A_MK3-warning"].value then
+        if settings.startup["P-par-armour-mk3-warning"].value then
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for Power Armor MK3's Armours & Equipment.

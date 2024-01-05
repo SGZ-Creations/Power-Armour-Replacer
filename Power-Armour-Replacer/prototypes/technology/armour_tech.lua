@@ -2,13 +2,13 @@ if not mods["PyBlock"] then
 	data:extend({
 		{
 			type = "technology",
-			name = "armour_1",
+			name = "par-armour-tech-1",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__base__/graphics/technology/power-armor.png",
 			effects = {
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk1"
+					recipe = "par-armour-mk1"
 				},
 			},
 			prerequisites = {"heavy-armor", "automation",},
@@ -23,16 +23,16 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_2",
+			name = "par-armour-tech-2",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__base__/graphics/technology/power-armor-mk2.png",
 			effects = {
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk2"
+					recipe = "par-armour-mk2"
 				},
 			},
-			prerequisites = {"armour_1", "electronics"},
+			prerequisites = {"par-armour-tech-1", "electronics"},
 			unit = {
 				count = 1000,
 				ingredients = {
@@ -44,16 +44,16 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_3",
+			name = "par-armour-tech-3",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3.png",
 			effects = {
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk3"
+					recipe = "par-armour-mk3"
 				},
 			},
-			prerequisites = {"armour_2", "advanced-electronics", "plastics", "engine", "military-2",},
+			prerequisites = {"par-armour-tech-2", "advanced-electronics", "plastics", "engine", "military-2",},
 			unit = {
 				count = 1000,
 				ingredients = {
@@ -66,17 +66,17 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_4",
+			name = "par-armour-tech-4",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4.png",
 			effects =
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk4"
+					recipe = "par-armour-mk4"
 				},
 			},
-			prerequisites = {"armour_3", "military-science-pack"},
+			prerequisites = {"par-armour-tech-3", "military-science-pack"},
 			unit =
 			{
 				count = 1000,
@@ -91,17 +91,17 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_5",
+			name = "par-armour-tech-5",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk5"
+					recipe = "par-armour-mk5"
 				},
 			},
-			prerequisites = {"armour_4", "advanced-electronics-2", "electric-engine", "uranium-processing", "military-3",},
+			prerequisites = {"par-armour-tech-4", "advanced-electronics-2", "electric-engine", "uranium-processing", "military-3",},
 			unit =
 			{
 				count = 1000,
@@ -117,17 +117,17 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_6",
+			name = "par-armour-tech-6",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk6"
+					recipe = "par-armour-mk6"
 				},
 			},
-			prerequisites = {"armour_5", "circuit-network"},
+			prerequisites = {"par-armour-tech-5", "circuit-network"},
 			unit =
 			{
 				count = 1000,
@@ -143,17 +143,17 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_7",
+			name = "par-armour-tech-7",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk7"
+					recipe = "par-armour-mk7"
 				},
 			},
-			prerequisites = {"armour_6", "low-density-structure",},
+			prerequisites = {"par-armour-tech-6", "low-density-structure",},
 			unit =
 			{
 				count = 1000,
@@ -170,17 +170,17 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_8",
+			name = "par-armour-tech-8",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk8"
+					recipe = "par-armour-mk8"
 				},
 			},
-			prerequisites = {"armour_7", "production-science-pack"},
+			prerequisites = {"par-armour-tech-7", "production-science-pack"},
 			unit =
 			{
 				count = 1000,
@@ -197,17 +197,17 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_9",
+			name = "par-armour-tech-9",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk9"
+					recipe = "par-armour-mk9"
 				},
 			},
-			prerequisites = {"armour_8", "rocket-control-unit", "military-4",},
+			prerequisites = {"par-armour-tech-8", "rocket-control-unit", "military-4",},
 			unit =
 			{
 				count = 1000,
@@ -225,17 +225,17 @@ if not mods["PyBlock"] then
 		},
 		{
 			type = "technology",
-			name = "armour_10",
+			name = "par-armour-tech-10",
 			icon_size = 256, icon_mipmaps = 4,
 			icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 			effects =
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "a_mk10"
+					recipe = "par-armour-mk10"
 				},
 			},
-			prerequisites = {"armour_9"},
+			prerequisites = {"par-armour-tech-9"},
 			unit =
 			{
 				count = 1000,

@@ -2,10 +2,10 @@
 {
     "item":
     [
-        [ "-armor", "a_mk" ],
-        [ "-armor", "a_mk" ],  
-        [ "-armor", "a_mk" ],
-        [ "-armor", "a_mk" ],
+        [ "-armor", "par-armour-mk" ],
+        [ "-armor", "par-armour-mk" ],  
+        [ "-armor", "par-armour-mk" ],
+        [ "-armor", "par-armour-mk" ],
         [ "energy-shield-equipment", "shield_1" ],
         [ "energy-shield-mk2-equipment", "shield_2" ],
         [ "energy-shield-mk3-equipment", "shield_3" ],

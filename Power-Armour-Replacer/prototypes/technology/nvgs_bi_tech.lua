@@ -4,7 +4,7 @@ data:extend({
         name = "nv-bi_mk1",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/texture/tech/belt-immunity-night-vision-equipment.png"),
-        prerequisites = {"armour_3", "par-fusion-reactor-tech-1"},
+        prerequisites = {"par-armour-tech-3", "par-fusion-reactor-tech-1"},
         effects =
         {
             {
@@ -37,7 +37,7 @@ data:extend({
         {
             "nv-bi_mk1",
             "par-fusion-reactor-tech-5",
-            "armour_7",
+            "par-armour-tech-7",
             "battery",
             "advanced-electronics-2",
             "low-density-structure",

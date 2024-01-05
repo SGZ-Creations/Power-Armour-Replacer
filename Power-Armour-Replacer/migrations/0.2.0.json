@@ -1,6 +1,16 @@
 {
     "item":
-    [
+    [      
+        [ "a_mk1", "par-armour-mk1"],
+        [ "a_mk2", "par-armour-mk2"],
+        [ "a_mk3", "par-armour-mk3"],
+        [ "a_mk4", "par-armour-mk4"],
+        [ "a_mk5", "par-armour-mk5"],
+        [ "a_mk6", "par-armour-mk6"],
+        [ "a_mk7", "par-armour-mk7"],
+        [ "a_mk8", "par-armour-mk8"],
+        [ "a_mk9", "par-armour-mk9"],
+        [ "a_mk10", "par-armour-mk10"],
         [ "b_mk1", "par-battery-mk1"],
         [ "b_mk2", "par-battery-mk2"],
         [ "b_mk3", "par-battery-mk3"],
@@ -28,7 +38,17 @@
         [ "f_mk10", "par-fusion-reactor-mk10"]
     ],
     "entity":
-    [
+    [      
+        [ "a_mk1", "par-armour-mk1"],
+        [ "a_mk2", "par-armour-mk2"],
+        [ "a_mk3", "par-armour-mk3"],
+        [ "a_mk4", "par-armour-mk4"],
+        [ "a_mk5", "par-armour-mk5"],
+        [ "a_mk6", "par-armour-mk6"],
+        [ "a_mk7", "par-armour-mk7"],
+        [ "a_mk8", "par-armour-mk8"],
+        [ "a_mk9", "par-armour-mk9"],
+        [ "a_mk10", "par-armour-mk10"],
         [ "b_mk1", "par-battery-mk1"],
         [ "b_mk2", "par-battery-mk2"],
         [ "b_mk3", "par-battery-mk3"],
@@ -56,8 +76,18 @@
         [ "f_mk10", "par-fusion-reactor-mk10"]
     ],
     "equipment":
-    [
-        [ "b_mk1", "par-battery-mk1"],
+    [      
+        [ "a_mk1", "par-armour-mk1"],
+        [ "a_mk2", "par-armour-mk2"],
+        [ "a_mk3", "par-armour-mk3"],
+        [ "a_mk4", "par-armour-mk4"],
+        [ "a_mk5", "par-armour-mk5"],
+        [ "a_mk6", "par-armour-mk6"],
+        [ "a_mk7", "par-armour-mk7"],
+        [ "a_mk8", "par-armour-mk8"],
+        [ "a_mk9", "par-armour-mk9"],
+        [ "a_mk10", "par-armour-mk10"],
+        [ "b_mk1", "par-battery-mk1"], 
         [ "b_mk2", "par-battery-mk2"],
         [ "b_mk3", "par-battery-mk3"],
         [ "b_mk4", "par-battery-mk4"],
@@ -84,7 +114,17 @@
         [ "f_mk10", "par-fusion-reactor-mk10"]
     ],
     "recipe":
-    [
+    [      
+        [ "a_mk1", "par-armour-mk1"],
+        [ "a_mk2", "par-armour-mk2"],
+        [ "a_mk3", "par-armour-mk3"],
+        [ "a_mk4", "par-armour-mk4"],
+        [ "a_mk5", "par-armour-mk5"],
+        [ "a_mk6", "par-armour-mk6"],
+        [ "a_mk7", "par-armour-mk7"],
+        [ "a_mk8", "par-armour-mk8"],
+        [ "a_mk9", "par-armour-mk9"],
+        [ "a_mk10", "par-armour-mk10"],
         [ "b_mk1", "par-battery-mk1"],
         [ "b_mk2", "par-battery-mk2"],
         [ "b_mk3", "par-battery-mk3"],
@@ -112,22 +152,32 @@
         [ "f_mk10", "par-fusion-reactor-mk10"]
     ],
     "technology":
-    [
-        [ "battery_1", "par-battery-technology-1"],
-        [ "battery_2", "par-battery-technology-2"],
-        [ "battery_3", "par-battery-technology-3"],
-        [ "battery_4", "par-battery-technology-4"],
-        [ "battery_5", "par-battery-technology-5"],
-        [ "battery_6", "par-battery-technology-6"],
-        [ "battery_7", "par-battery-technology-7"],
-        [ "battery_8", "par-battery-technology-8"],
-        [ "battery_9", "par-battery-technology-9"],
-        [ "battery_10", "par-battery-technology-10"],
-        [ "exoskeleton_1", "par-exoskeleton-technology-1"],
-        [ "exoskeleton_2", "par-exoskeleton-technology-2"],
-        [ "exoskeleton_3", "par-exoskeleton-technology-3"],
-        [ "exoskeleton_4", "par-exoskeleton-technology-4"],
-        [ "exoskeleton_5", "par-exoskeleton-technology-5"],
+    [   
+        [ "armour_1", "par-armour-tech-1"],
+        [ "armour_2", "par-armour-tech-2"],
+        [ "armour_3", "par-armour-tech-3"],
+        [ "armour_4", "par-armour-tech-4"],
+        [ "armour_5", "par-armour-tech-5"],
+        [ "armour_6", "par-armour-tech-6"],
+        [ "armour_7", "par-armour-tech-7"],
+        [ "armour_8", "par-armour-tech-8"],
+        [ "armour_9", "par-armour-tech-9"],
+        [ "armour_10", "par-armour-tech-10"],
+        [ "battery_1", "par-battery-tech-1"],
+        [ "battery_2", "par-battery-tech-2"],
+        [ "battery_3", "par-battery-tech-3"],
+        [ "battery_4", "par-battery-tech-4"],
+        [ "battery_5", "par-battery-tech-5"],
+        [ "battery_6", "par-battery-tech-6"],
+        [ "battery_7", "par-battery-tech-7"],
+        [ "battery_8", "par-battery-tech-8"],
+        [ "battery_9", "par-battery-tech-9"],
+        [ "battery_10", "par-battery-tech-10"],
+        [ "exoskeleton_1", "par-exoskeleton-tech-1"],
+        [ "exoskeleton_2", "par-exoskeleton-tech-2"],
+        [ "exoskeleton_3", "par-exoskeleton-tech-3"],
+        [ "exoskeleton_4", "par-exoskeleton-tech-4"],
+        [ "exoskeleton_5", "par-exoskeleton-tech-5"],
         [ "fusion-reactor_1", "par-fusion-reactor-tech-1"],
         [ "fusion-reactor_2", "par-fusion-reactor-tech-2"],
         [ "fusion-reactor_3", "par-fusion-reactor-tech-3"],

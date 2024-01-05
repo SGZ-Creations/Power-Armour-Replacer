@@ -3,7 +3,7 @@ local icon_utils = require("structures.icon-utils")
 data:extend({
   {
     type = "technology",
-    name = "par-battery-technology-1",
+    name = "par-battery-tech-1",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 1),
     effects =
     {
@@ -12,7 +12,7 @@ data:extend({
         recipe = "par-battery-mk1"
       },
     },
-    prerequisites = { "armour_1", "steel-processing", },
+    prerequisites = { "par-armour-tech-1", "steel-processing", },
     unit =
     {
       count = 500,
@@ -25,7 +25,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-2",
+    name = "par-battery-tech-2",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 2),
     effects =
     {
@@ -34,7 +34,7 @@ data:extend({
         recipe = "par-battery-mk2"
       },
     },
-    prerequisites = { "par-battery-technology-1", },
+    prerequisites = { "par-battery-tech-1", },
     unit =
     {
       count = 500,
@@ -47,7 +47,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-3",
+    name = "par-battery-tech-3",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 3),
     effects =
     {
@@ -56,7 +56,7 @@ data:extend({
         recipe = "par-battery-mk3"
       },
     },
-    prerequisites = { "par-battery-technology-2", "battery", "advanced-electronics" },
+    prerequisites = { "par-battery-tech-2", "battery", "advanced-electronics" },
     unit =
     {
       count = 500,
@@ -70,7 +70,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-4",
+    name = "par-battery-tech-4",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 4),
     effects =
     {
@@ -79,7 +79,7 @@ data:extend({
         recipe = "par-battery-mk4"
       },
     },
-    prerequisites = { "par-battery-technology-3", },
+    prerequisites = { "par-battery-tech-3", },
     unit =
     {
       count = 500,
@@ -94,7 +94,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-5",
+    name = "par-battery-tech-5",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 5),
     effects =
     {
@@ -103,7 +103,7 @@ data:extend({
         recipe = "par-battery-mk5"
       },
     },
-    prerequisites = { "par-battery-technology-4", },
+    prerequisites = { "par-battery-tech-4", },
     unit =
     {
       count = 500,
@@ -119,7 +119,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-6",
+    name = "par-battery-tech-6",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 6),
     effects =
     {
@@ -128,7 +128,7 @@ data:extend({
         recipe = "par-battery-mk6"
       },
     },
-    prerequisites = { "par-battery-technology-5", },
+    prerequisites = { "par-battery-tech-5", },
     unit =
     {
       count = 500,
@@ -144,7 +144,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-7",
+    name = "par-battery-tech-7",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 7),
     effects =
     {
@@ -153,7 +153,7 @@ data:extend({
         recipe = "par-battery-mk7"
       },
     },
-    prerequisites = { "par-battery-technology-6", },
+    prerequisites = { "par-battery-tech-6", },
     unit =
     {
       count = 500,
@@ -170,7 +170,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-8",
+    name = "par-battery-tech-8",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 8),
     effects =
     {
@@ -179,7 +179,7 @@ data:extend({
         recipe = "par-battery-mk8"
       },
     },
-    prerequisites = { "par-battery-technology-7", },
+    prerequisites = { "par-battery-tech-7", },
     unit =
     {
       count = 500,
@@ -196,7 +196,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-9",
+    name = "par-battery-tech-9",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 9),
     effects =
     {
@@ -205,7 +205,7 @@ data:extend({
         recipe = "par-battery-mk9"
       },
     },
-    prerequisites = { "par-battery-technology-8", },
+    prerequisites = { "par-battery-tech-8", },
     unit =
     {
       count = 500,
@@ -223,7 +223,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "par-battery-technology-10",
+    name = "par-battery-tech-10",
     icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 10),
     effects =
     {
@@ -232,7 +232,7 @@ data:extend({
         recipe = "par-battery-mk10"
       },
     },
-    prerequisites = { "par-battery-technology-9", },
+    prerequisites = { "par-battery-tech-9", },
     unit =
     {
       count = 500,

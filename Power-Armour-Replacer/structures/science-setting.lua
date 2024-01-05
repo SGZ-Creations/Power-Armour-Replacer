@@ -16,10 +16,10 @@ end
 
 if settings.startup["hard_science_required"].value then
     add_space_science{
-        "armour_6",
-        "par-battery-technology-6",
+        "par-armour-tech-6",
+        "par-battery-tech-6",
         "par-fusion-reactor-tech-6",
-        "par-exoskeleton-technology-5",
+        "par-exoskeleton-tech-5",
         "laser_6",
         "solar_6",
         "roboport_6",

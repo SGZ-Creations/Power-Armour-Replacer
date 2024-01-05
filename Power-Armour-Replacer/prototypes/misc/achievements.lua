@@ -140,8 +140,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "i-have-friends",
-        order = "Aaa[a_mk1]",
-        item_product = "a_mk1",
+        order = "Aaa[par-armour-mk1]",
+        item_product = "par-armour-mk1",
         amount = 10,
         steam_stats_name = "armor-production-overall",
         icon = "__base__/graphics/technology/power-armor-mk2.png",
@@ -151,8 +151,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "i-have-friends-upgrade-1",
-        order = "Aab[a_mk5]",
-        item_product = "a_mk5",
+        order = "Aab[par-armour-mk5]",
+        item_product = "par-armour-mk5",
         amount = 10,
         steam_stats_name = "armor-production-overall",
         icon = "__base__/graphics/technology/power-armor-mk2.png",
@@ -162,8 +162,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "i-have-friends-upgrade-2",
-        order = "Aac[a_mk10]",
-        item_product = "a_mk10",
+        order = "Aac[par-armour-mk10]",
+        item_product = "par-armour-mk10",
         amount = 10,
         steam_stats_name = "armor-production-overall",
         icon = "__base__/graphics/technology/power-armor-mk2.png",

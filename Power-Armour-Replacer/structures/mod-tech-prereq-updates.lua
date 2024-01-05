@@ -10,7 +10,7 @@ util.technology_dependancy
 	["base"] = {
 		["spidertron"] = {
 			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-5",
-			["par-exoskeleton-technology-1"] = "par-exoskeleton-technology-5",
+			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-5",
 		},
 	},
 
@@ -44,22 +44,22 @@ util.technology_dependancy
 		["laser_5"] = {
 			"advanced-electronics"
 		},
-		["par-battery-technology-3"] = {
+		["par-battery-tech-3"] = {
 			["advanced-electronics"] = "electronics"
 		},
-		["par-battery-technology-5"] = {
+		["par-battery-tech-5"] = {
 			"advanced-electronics"
 		},
-		["armour_3"] = {
+		["par-armour-tech-3"] = {
 			["advanced-electronics"] = "electronics"
 		},
-		["armour_5"] = {
+		["par-armour-tech-5"] = {
 			["advanced-electronics-2"] = "advanced-electronics"
 		},
-		["armour_7"] = {
+		["par-armour-tech-7"] = {
 			"advanced-electronics-2"
 		},
-		["armour_9"] = {
+		["par-armour-tech-9"] = {
 			"advanced-electronics-3"
 		},
 	},
@@ -82,16 +82,16 @@ util.technology_dependancy
 	},
 
 	["bobwarfare"] = {
-		["armour_5"] = {
+		["par-armour-tech-5"] = {
 			["uranium-processing"] = "bob-armor-making-3"
 		},
-		["armour_8"] = {
+		["par-armour-tech-8"] = {
 			"bob-armor-making-4"
 		},
 	},
 
 	["bobrevamp"] = {
-		["armour_8"] = {
+		["par-armour-tech-8"] = {
 			"heat-shield",
 		},
 		["laser_7"] = {
@@ -106,40 +106,40 @@ util.technology_dependancy
 	},
 
 	["bobplates"] = {
-		["armour_2"] = {
+		["par-armour-tech-2"] = {
 			["electronics"] = "automation",
 		},
-		["armour_3"] = {
+		["par-armour-tech-3"] = {
 			["plastics"] = "zinc-processing",
 			"aluminium-processing",
 			"cobalt-processing",
 		},
-		["armour_4"] = {
+		["par-armour-tech-4"] = {
 			["advanced-electronics"] = "invar-processing"
 		},
-		["armour_5"] = {
+		["par-armour-tech-5"] = {
 			["electric-engine"] = "gem-processing-2"
 		},
-		["armour_6"] = {
+		["par-armour-tech-6"] = {
 			["circuit-network"] = "titanium-processing",
 			["advanced-electronics-3"] = "electric-engine",
 			"battery-2",
 		},
-		["armour_7"] = {
+		["par-armour-tech-7"] = {
 			["rocket-control-unit"] = "tungsten-processing",
 			"ceramics",
 		},
-		["armour_8"] = {
+		["par-armour-tech-8"] = {
 			"battery-3",
 			"low-density-structure",
 		},
-		["armour_9"] = {
+		["par-armour-tech-9"] = {
 			"nitinol-processing",
 		},
-		["armour_10"] = {
+		["par-armour-tech-10"] = {
 			"rocket-control-unit",
 		},
-		["par-battery-technology-6"] = {
+		["par-battery-tech-6"] = {
 			"lithium-processing",
 		},
 		["shield_6"] = {
@@ -155,40 +155,40 @@ util.technology_dependancy
 	},
 
 	["angelssmelting"] = {
-		["armour_1"] = {
+		["par-armour-tech-1"] = {
 			"angels-solder-smelting-1",
 		},
-		["armour_2"] = {
+		["par-armour-tech-2"] = {
 			"angels-steel-smelting-1",
 		},
-		["armour_3"] = {
+		["par-armour-tech-3"] = {
 			["zinc-processing"] = "angels-stone-smelting-1",
 			["cobalt-processing"] = "angels-lead-smelting-2",
 			["aluminium-processing"] = "angels-aluminium-smelting-1",
 		},
-		["armour_4"] = {
+		["par-armour-tech-4"] = {
 			"angels-silver-smelting-1",
 			"angels-stone-smelting-2",
 		},
-		["armour_5"] = {
+		["par-armour-tech-5"] = {
 			"plastic-1",
 		},
-		["armour_6"] = {
+		["par-armour-tech-6"] = {
 			["rocket-fuel"] = "angels-titanium-smelting-1",
 			["titanium-processing"] = "angels-titanium-smelting-1",
 			["battery-2"] = "angels-glass-smelting-2",
 			"angels-cobalt-steel-smelting-1",
 			"angels-gold-smelting-1",
 		},
-		["armour_7"] = {
+		["par-armour-tech-7"] = {
 			["tungsten-processing"] = "angels-tungsten-smelting-1",
 			["low-density-structure"] = "angels-cobalt-steel-smelting-1",
 		},
-		["armour_9"] = {
+		["par-armour-tech-9"] = {
 			["nitinol-processing"] = "angels-nitinol-smelting-1",
 			"angels-stone-smelting-3",
 		},
-		["par-exoskeleton-technology-3"] = {
+		["par-exoskeleton-tech-3"] = {
 			"angels-chrome-smelting-1",
 		},
 		["par-fusion-reactor-tech-3"] = {
@@ -209,30 +209,30 @@ util.technology_dependancy
 	},
 
 	[{"bobplates", "angelssmelting"}] = {
-		["armour_1"] = {
+		["par-armour-tech-1"] = {
 			"angels-bronze-smelting-1",
 		},
-		["armour_3"] = {
+		["par-armour-tech-3"] = {
 			["advanced-electronics"] = "angels-brass-smelting-1",
 		},
-		["armour_7"] = {
+		["par-armour-tech-7"] = {
 			["low-density-structure"] = "cobalt-processing",
 		},
 	},
 
 	["angelspetrochem"] = {
-		["armour_4"] = {
+		["par-armour-tech-4"] = {
 		},
 	},
 
 	["Clowns-Processing"] = {
-		["armour_10"] = {
+		["par-armour-tech-10"] = {
 			"advanced-depleted-uranium-smelting-1",
 		},
-		["par-exoskeleton-technology-4"] = {
+		["par-exoskeleton-tech-4"] = {
 			"advanced-osmium-smelting",
 		},
-		["par-exoskeleton-technology-5"] = {
+		["par-exoskeleton-tech-5"] = {
 			"advanced-depleted-uranium-smelting-1",
 		},
 	},
@@ -244,16 +244,16 @@ util.technology_dependancy
 	},
 
 	["exotic-industries"] = {
-		["armour_1"] = {
+		["par-armour-tech-1"] = {
 			["automation"] = "logistics",
 		},
 	},
 
 	["248k"] = {
-		["armour_3"] = {
+		["par-armour-tech-3"] = {
 			"el_caster_tech",
 		},
-		["par-battery-technology-3"] = {
+		["par-battery-tech-3"] = {
 			"el_lithium_tech",
 		},
 		["nv-bi_mk1"] = {
@@ -262,33 +262,33 @@ util.technology_dependancy
 	},
 
 	[{"248k", "angelssmelting"}] = {
-		["armour_3"] = {
+		["par-armour-tech-3"] = {
 			["angels-aluminium-smelting-1"] = "el_caster_tech",
 		},
 	},
 
 	["IndustrialRevolution3"] = {
-		["armour_1"] = {
+		["par-armour-tech-1"] = {
 			["automation"] = "ir-bronze-forestry",
 		},
-		["armour_2"] = {
+		["par-armour-tech-2"] = {
 			["electronics"] = "ir-iron-milestone",
 		},
-		["armour_3"] = {
+		["par-armour-tech-3"] = {
 			["advanced-electronics"] = "ir-electronics-1",
 			["military-2"] = "ir-gold-milestone",
 			["plastics"] = "ir-electronics-1",
 		},
-		["par-battery-technology-1"] = {
+		["par-battery-tech-1"] = {
 			["steel-processing"] = "ir-bronze-milestone",
 		},
-		["par-battery-technology-2"] = {
+		["par-battery-tech-2"] = {
 			"ir-iron-milestone",
 		},
-		["par-battery-technology-3"] = {
+		["par-battery-tech-3"] = {
 			["advanced-electronics"] = "ir-electronics-1",
 		},
-		["par-battery-technology-4"] = {
+		["par-battery-tech-4"] = {
 			"ir-steel-milestone",
 		},
 		["par-fusion-reactor-tech-2"] = {

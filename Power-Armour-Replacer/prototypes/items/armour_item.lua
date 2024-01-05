@@ -210,16 +210,16 @@ local laser_percent = {
     "95",--0
 }
 local order = {
-    "aaz[a_mk1]-aa[armour-replacer]",
-    "abz[a_mk2]-ab[armour-replacer]",
-    "acz[a_mk3]-ab[armour-replacer]",
-    "adz[a_mk4]-ab[armour-replacer]",
-    "aez[a_mk5]-ab[armour-replacer]",
-    "afz[a_mk6]-ab[armour-replacer]",
-    "agz[a_mk7]-ab[armour-replacer]",
-    "ahz[a_mk8]-ab[armour-replacer]",
-    "aiz[a_mk9]-ab[armour-replacer]",
-    "ajz[a_mk10]-ab[armour-replacer]",
+    "aaz[par-armour-mk1]-aa[armour-replacer]",
+    "abz[par-armour-mk2]-ab[armour-replacer]",
+    "acz[par-armour-mk3]-ab[armour-replacer]",
+    "adz[par-armour-mk4]-ab[armour-replacer]",
+    "aez[par-armour-mk5]-ab[armour-replacer]",
+    "afz[par-armour-mk6]-ab[armour-replacer]",
+    "agz[par-armour-mk7]-ab[armour-replacer]",
+    "ahz[par-armour-mk8]-ab[armour-replacer]",
+    "aiz[par-armour-mk9]-ab[armour-replacer]",
+    "ajz[par-armour-mk10]-ab[armour-replacer]",
 }
 
 local icon = {
@@ -303,7 +303,7 @@ if mods["bobwarfare"] then
         data:extend({
             {
                 type = "armor",
-                name = "a_mk" .. tostring(a),
+                name = "par-armour-mk" .. tostring(a),
                 icon = icon[a],
                 icon_size = 64, icon_mipmaps = 4,
                 resistances = {
@@ -376,7 +376,7 @@ else
         data:extend({
             {
                 type = "armor",
-                name = "a_mk" .. tostring(a),
+                name = "par-armour-mk" .. tostring(a),
                 icon = icon[a],
                 icon_size = 64, icon_mipmaps = 4,
                 resistances = {
