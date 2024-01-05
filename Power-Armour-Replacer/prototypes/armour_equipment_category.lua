@@ -3,8 +3,8 @@ data:extend({
     {
         type = "item-group",
         name = "replacer_armor",
-        icon = "__Power-Armour-Replacer__/texture/items/power-armor-mk5.png",
-        icon_size = 256,
+        icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
+        icon_size = 64,
         order = "ca",
     },
     {

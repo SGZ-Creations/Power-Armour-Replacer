@@ -5,8 +5,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-1_1-100-batteries",
-        order = "Baa[b_mk5]",
-        item_product = "b_mk5",
+        order = "Baa[par-battery-mk5]",
+        item_product = "par-battery-mk5",
         amount = 100,
         steam_stats_name = "batteries-production-overall",
         icon = "__base__/graphics/icons/battery-mk2-equipment.png",
@@ -16,8 +16,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-1_2-1000-batteries",
-        order = "Bab[b_mk5]",
-        item_product = "b_mk5",
+        order = "Bab[par-battery-mk5]",
+        item_product = "par-battery-mk5",
         amount = 1000,
         steam_stats_name = "batteries-production-overall",
         icon = "__base__/graphics/icons/battery-mk2-equipment.png",
@@ -27,8 +27,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-2_3-100-batteries",
-        order = "Bac[b_mk10]",
-        item_product = "b_mk10",
+        order = "Bac[par-battery-mk10]",
+        item_product = "par-battery-mk10",
         amount = 100,
         steam_stats_name = "batteries-production-overall",
         icon = "__base__/graphics/icons/battery-mk2-equipment.png",
@@ -38,8 +38,8 @@ data:extend(
     {
         type = "produce-achievement",
         name = "mass-equipment-2_4-1000-batteries",
-        order = "Bad[b_mk10]",
-        item_product = "b_mk10",
+        order = "Bad[par-battery-mk10]",
+        item_product = "par-battery-mk10",
         amount = 1000,
         steam_stats_name = "batteries-production-overall",
         icon = "__base__/graphics/icons/battery-mk2-equipment.png",
