@@ -1,201 +1,75 @@
+local icon_utils = require("structures.icon-utils")
 
-local graphics = {
-    "__base__/graphics/equipment/personal-roboport-equipment.png",--1
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--2
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--3
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--4
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--5
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--6
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--7
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--8
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--9
-    "__base__/graphics/equipment/personal-roboport-mk2-equipment.png",--10
-}
-
-local graphics2 = {
-    "__base__/graphics/equipment/hr-personal-roboport-equipment.png",--1
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--2
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--3
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--4
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--5
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--6
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--7
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--8
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--9
-    "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png",--10
+local roboports = {
+    { charging_energy = "1MW", buffer_capacity =   "4MJ", input_flow_limit = "1MW", construction_radius =  5, robot_limit =10, charging_station_count =10, order = "ea[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-1", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-1", 64, 64)},
+    { charging_energy = "2MW", buffer_capacity =  "16MJ", input_flow_limit = "2MW", construction_radius = 10, robot_limit =12, charging_station_count =12, order = "eb[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-1", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-1", 64, 64)},
+    { charging_energy = "3MW", buffer_capacity =  "36MJ", input_flow_limit = "3MW", construction_radius = 15, robot_limit =14, charging_station_count =14, order = "ec[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-1", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-1", 64, 64)},
+    { charging_energy = "4MW", buffer_capacity =  "64MJ", input_flow_limit = "4MW", construction_radius = 20, robot_limit =16, charging_station_count =16, order = "ed[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-1", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-1", 64, 64)},
+    { charging_energy = "5MW", buffer_capacity = "100MJ", input_flow_limit = "5MW", construction_radius = 25, robot_limit =18, charging_station_count =18, order = "ee[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-1", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-1", 64, 64)},
+    { charging_energy = "6MW", buffer_capacity = "144MJ", input_flow_limit = "6MW", construction_radius = 30, robot_limit =20, charging_station_count =20, order = "ef[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-2", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-2", 64, 64)},
+    { charging_energy = "7MW", buffer_capacity = "196MJ", input_flow_limit = "7MW", construction_radius = 40, robot_limit =24, charging_station_count =24, order = "eg[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-2", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-2", 64, 64)},
+    { charging_energy = "8MW", buffer_capacity = "256MJ", input_flow_limit = "8MW", construction_radius = 60, robot_limit =26, charging_station_count =26, order = "eh[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-2", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-2", 64, 64)},
+    { charging_energy = "9MW", buffer_capacity = "324MJ", input_flow_limit = "9MW", construction_radius = 80, robot_limit =28, charging_station_count =28, order = "ei[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-2", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-2", 64, 64)},
+    { charging_energy ="10MW", buffer_capacity = "400MJ", input_flow_limit ="10MW", construction_radius =100, robot_limit =30, charging_station_count =30, order = "ej[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-2", 64, 4), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-2", 64, 64)},
 }
 
-local icons = {
-    "__base__/graphics/icons/personal-roboport-equipment.png",--1
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--2
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--3
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--4
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--5
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--6
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--7
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--8
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--9
-    "__base__/graphics/icons/personal-roboport-mk2-equipment.png",--10
-}
+for tier, roboport in pairs(roboports) do
+    ---@type data.ItemPrototype
+    local item = {
+        type = "item",
+        name = "par-roboport-mk" .. tostring(tier),
+        placed_as_equipment_result = "par-roboport-mk" .. tostring(tier),
+        icons = roboport.port_texture, tier,
+        stack_size = 20,
+        order = roboport.order,
+        subgroup = "replacer_item",
+    }
 
-local charging_station_count = {
-    10,
-    12,
-    14,
-    16,
-    18,
-    20,
-    24,
-    26,
-    28,
-    30,
-}
-local robot_limit = {
-    10,
-    12,
-    14,
-    16,
-    18,
-    20,
-    24,
-    26,
-    28,
-    30,
-}
-local construction_radius = {
-    5,  --1
-    10, --2
-    15, --3
-    20, --4
-    25, --5
-    30, --6
-    40, --7
-    60, --8
-    80, --9
-    100, --10
-}
-local input_flow_limit =  {
-    "1MW",
-    "2MW",
-    "3MW",
-    "4MW",
-    "5MW",
-    "6MW",
-    "7MW",
-    "8MW",
-    "9MW",
-    "10MW",
-}
-local buffer_capacity =  {
-    "4MJ",
-    "16MJ",
-    "36MJ",
-    "64MJ",
-    "100MJ",
-    "144MJ",
-    "196MJ",
-    "256MJ",
-    "324MJ",
-    "400MJ",
-}
-local charging_energy =  {
-    "1MW",
-    "2MW",
-    "3MW",
-    "4MW",
-    "5MW",
-    "6MW",
-    "7MW",
-    "8MW",
-    "9MW",
-    "10MW",
-}
-
-local orders = {
-    "ea[roboport]-aa[armour-replacer]",--1
-    "eb[roboport]-aa[armour-replacer]",--2
-    "ec[roboport]-aa[armour-replacer]",--3
-    "ed[roboport]-aa[armour-replacer]",--4
-    "ee[roboport]-aa[armour-replacer]",--5
-    "ef[roboport]-aa[armour-replacer]",--6
-    "eg[roboport]-aa[armour-replacer]",--7
-    "eh[roboport]-aa[armour-replacer]",--8
-    "ei[roboport]-aa[armour-replacer]",--9
-    "ej[roboport]-aa[armour-replacer]",--10
-}
-
-local i = 1
-while i < 11 do
-    data:extend({
-        {
-            type = "item",
-            name = "r_mk" .. tostring(i),
-            icon = icons[i],
-            icon_size = 64,
-            stack_size = 20,
-            icon_mipmaps = 4,
-            order = orders[i],
-            subgroup = "replacer_item",
-            placed_as_equipment_result = "r_mk" .. tostring(i),
-        },
-        {
-            type = "roboport-equipment",
-            name = "r_mk" .. tostring(i),
-            take_result = "r_mk" .. tostring(i),
-            sprite =
-            {
-                filename = graphics[i],
-                width = 64,
-                height = 64,
-                priority = "medium",
-                hr_version =
-                {
-                    filename = graphics2[i],
-                    width = 128,
-                    height = 128,
-                    priority = "medium",
-                    scale = 0.5
-                }
-            },
-            shape =
-            {
+    ---@type data.EquipmentPrototype
+    local equipment = {
+        type = "roboport-equipment",
+        name = "par-roboport-mk" .. tostring(tier),
+        take_result = "par-roboport-mk" .. tostring(tier),
+        sprite = roboport.port_sprite, tier,
+        shape = {
                 width = 2,
                 height = 2,
                 type = "full"
             },
-            energy_source =
-            {
+        energy_source = {
                 type = "electric",
-                buffer_capacity = buffer_capacity[i],
-                input_flow_limit = input_flow_limit[i],
+                buffer_capacity = roboport.buffer_capacity,
+                input_flow_limit = roboport.input_flow_limit,
                 usage_priority = "secondary-input"
             },
-            charging_energy = charging_energy[i],
-            robot_limit = robot_limit[i],
-            construction_radius = construction_radius[i],
-            spawn_and_station_height = 0.4,
-            spawn_and_station_shadow_height_offset = 0.5,
-            charge_approach_distance = 2.6,
-            robots_shrink_when_entering_and_exiting = true,
-            recharging_animation =
-            {
-                filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
-                draw_as_glow = true,
-                priority = "high",
-                width = 37,
-                height = 35,
-                frame_count = 16,
-                scale = 1.5,
-                animation_speed = 0.5
-            },
-            recharging_light = { intensity = 0.2, size = 3, color = { r = 0.5, g = 0.5, b = 1.0 } },
-            stationing_offset = { 0, -0.6 },
-            charging_station_shift = { 0, 0.5 },
-            charging_station_count = charging_station_count[i],
-            charging_distance = 1.6,
-            charging_threshold_distance = 5,
-            categories = { "armor" }
-        }
+        charging_energy = roboport.charging_energy,
+        robot_limit = roboport.robot_limit,
+        construction_radius = roboport.construction_radius,
+        spawn_and_station_height = 0.4,
+        spawn_and_station_shadow_height_offset = 0.5,
+        charge_approach_distance = 2.6,
+        robots_shrink_when_entering_and_exiting = true,
+        recharging_animation = {
+            filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
+            draw_as_glow = true,
+            priority = "high",
+            width = 37,
+            height = 35,
+            frame_count = 16,
+            scale = 1.5,
+            animation_speed = 0.5
+        },
+        recharging_light = { intensity = 0.2, size = 3, color = { r = 0.5, g = 0.5, b = 1.0 } },
+        stationing_offset = { 0, -0.6 },
+        charging_station_shift = { 0, 0.5 },
+        charging_station_count = roboport.charging_station_count,
+        charging_distance = 1.6,
+        charging_threshold_distance = 5,
+        categories = { "armor" }
+    }
+
+    data:extend({
+        item,
+        equipment
     })
-    i = i + 1
 end

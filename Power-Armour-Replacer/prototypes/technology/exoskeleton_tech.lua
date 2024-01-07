@@ -10,7 +10,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-exoskelton-mk1"
+                recipe = "par-exoskeleton-mk1"
             }
         },
         unit =
@@ -32,7 +32,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-exoskelton-mk2"
+                recipe = "par-exoskeleton-mk2"
             }
         },
         unit =
@@ -56,7 +56,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-exoskelton-mk3"
+                recipe = "par-exoskeleton-mk3"
             }
         },
         unit =
@@ -85,7 +85,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-exoskelton-mk4"
+                recipe = "par-exoskeleton-mk4"
             }
         },
         unit =
@@ -111,7 +111,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-exoskelton-mk5"
+                recipe = "par-exoskeleton-mk5"
             }
         },
         unit =

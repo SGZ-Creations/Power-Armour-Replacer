@@ -1,113 +1,50 @@
-local graphics = {
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
-    "__base__/graphics/equipment/solar-panel-equipment.png",
+local icon_utils = require("structures.icon-utils")
+
+local panels = {
+    {powers = "5GW", orders ="ga[energy-source]-aa[armour-replacer]"},
+    {powers ="10GW", orders ="gb[energy-source]-ab[armour-replacer]"},
+    {powers ="15GW", orders ="gc[energy-source]-ac[armour-replacer]"},
+    {powers ="20GW", orders ="gd[energy-source]-ad[armour-replacer]"},
+    {powers ="25GW", orders ="ge[energy-source]-ae[armour-replacer]"},
+    {powers ="30GW", orders ="gf[energy-source]-af[armour-replacer]"},
+    {powers ="35GW", orders ="gg[energy-source]-ag[armour-replacer]"},
+    {powers ="40GW", orders ="gh[energy-source]-ah[armour-replacer]"},
+    {powers ="45GW", orders ="gi[energy-source]-ai[armour-replacer]"},
+    {powers ="50GW", orders ="gj[energy-source]-aj[armour-replacer]"},
 }
 
-local graphics2 = {
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-    "__base__/graphics/equipment/hr-solar-panel-equipment.png",
-}
+for tier, panel in pairs(panels) do
+    ---@type data.ItemPrototype
+    local item = {
+        type = "item",
+        name = "par-solar-panel-mk" .. tostring(tier),
+        icons = icon_utils.create_equipment_icon("solar-panel", 64, 4, tier),
+        placed_as_equipment_result = "par-solar-panel-mk" .. tostring(tier),
+        subgroup = "replacer_item",
+        order = panel.orders,
+        stack_size = 20
+    }
 
-local icon = {
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-    "__base__/graphics/icons/solar-panel-equipment.png",
-}
-
-local orders = {
-    "ga[energy-source]-aa[armour-replacer]",
-    "gb[energy-source]-ab[armour-replacer]",
-    "gc[energy-source]-ac[armour-replacer]",
-    "gd[energy-source]-ad[armour-replacer]",
-    "ge[energy-source]-ae[armour-replacer]",
-    "gf[energy-source]-af[armour-replacer]",
-    "gg[energy-source]-ag[armour-replacer]",
-    "gh[energy-source]-ah[armour-replacer]",
-    "gi[energy-source]-ai[armour-replacer]",
-    "gj[energy-source]-aj[armour-replacer]",
-}
-
-local powers = {
-    "5GW",
-    "10GW",
-    "15GW",
-    "20GW",
-    "25GW",
-    "30GW",
-    "35GW",
-    "40GW",
-    "45GW",
-    "50GW",
-}
-
-local i = 1
-while i < 11 do
-    data:extend({
-        {
-            type = "item",
-            name = "p-s_mk" .. tostring(i),
-            icon = icon[i],
-            icon_size = 64, icon_mipmaps = 4,
-            placed_as_equipment_result = "p-s_mk" .. tostring(i),
-            subgroup = "replacer_item",
-            order = orders[i],
-            stack_size = 20
-        },
-        {
-            type = "solar-panel-equipment",
-            name = "p-s_mk" .. tostring(i),
-            sprite =
-            {
-                filename = graphics[i],
-                width = 32,
-                height = 32,
-                priority = "medium",
-                hr_version =
-                {
-                    filename = graphics2[i],
-                    width = 64,
-                    height = 64,
-                    priority = "medium",
-                    scale = 0.5
-                }
-            },
-            shape =
-            {
+    ---@type data.EquipmentPrototype
+    local equipment = {
+        type = "solar-panel-equipment",
+        name = "par-solar-panel-mk" .. tostring(tier),
+        sprite = icon_utils.create_equipment_sprite("solar-panel", 32, 32, tier),
+        shape = {
                 width = 2,
                 height = 1,
                 type = "full"
             },
-            energy_source =
-            {
+        energy_source = {
                 type = "electric",
                 usage_priority = "primary-output"
             },
-            power = powers[i],
-            categories = {"armor"}
-        }
+        power = panel.powers,
+        categories = {"armor"}
+    }
+
+    data:extend({
+        item,
+        equipment
     })
-    i = i + 1
 end

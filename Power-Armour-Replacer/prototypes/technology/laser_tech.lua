@@ -1,14 +1,14 @@
 data:extend({
     {
         type = "technology",
-        name = "laser_1",
+        name = "par-laser-tech-1",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk1"
+                recipe = "par-laser-mk1"
             },
         },
         prerequisites = {"par-armour-tech-1", "par-fusion-reactor-tech-1"},
@@ -24,17 +24,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_2",
+        name = "par-laser-tech-2",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk2"
+                recipe = "par-laser-mk2"
             },
         },
-        prerequisites = {"laser_1"},
+        prerequisites = {"par-laser-tech-1"},
         unit =
         {
             count = 500,
@@ -47,19 +47,19 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_3",
+        name = "par-laser-tech-3",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk3"
+                recipe = "par-laser-mk3"
             },
         },
         prerequisites =
         {
-            "laser_2",
+            "par-laser-tech-2",
         },
         unit =
         {
@@ -74,17 +74,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_4",
+        name = "par-laser-tech-4",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk4"
+                recipe = "par-laser-mk4"
             },
         },
-        prerequisites = {"laser_3", "advanced-electronics"},
+        prerequisites = {"par-laser-tech-3", "advanced-electronics"},
         unit =
         {
             count = 500,
@@ -99,19 +99,19 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_5",
+        name = "par-laser-tech-5",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk5"
+                recipe = "par-laser-mk5"
             },
         },
         prerequisites =
         {
-            "laser_4",
+            "par-laser-tech-4",
             "laser",
         },
         unit =
@@ -129,17 +129,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_6",
+        name = "par-laser-tech-6",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk6"
+                recipe = "par-laser-mk6"
             },
         },
-        prerequisites = {"laser_5",},
+        prerequisites = {"par-laser-tech-5",},
         unit =
         {
             count = 500,
@@ -155,17 +155,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_7",
+        name = "par-laser-tech-7",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk7"
+                recipe = "par-laser-mk7"
             },
         },
-        prerequisites = {"laser_6",},
+        prerequisites = {"par-laser-tech-6",},
         unit =
         {
             count = 500,
@@ -182,17 +182,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_8",
+        name = "par-laser-tech-8",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk8"
+                recipe = "par-laser-mk8"
             },
         },
-        prerequisites = {"laser_7",},
+        prerequisites = {"par-laser-tech-7",},
         unit =
         {
             count = 500,
@@ -209,17 +209,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_9",
+        name = "par-laser-tech-9",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk9"
+                recipe = "par-laser-mk9"
             },
         },
-        prerequisites = {"laser_8",},
+        prerequisites = {"par-laser-tech-8",},
         unit =
         {
             count = 500,
@@ -237,17 +237,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "laser_10",
+        name = "par-laser-tech-10",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/laser-shooting-speed.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "l_mk10"
+                recipe = "par-laser-mk10"
             },
         },
-        prerequisites = {"laser_9",},
+        prerequisites = {"par-laser-tech-9",},
         unit =
         {
             count = 500,

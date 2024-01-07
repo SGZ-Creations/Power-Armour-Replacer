@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "technology",
-        name = "nv-bi_mk1",
+        name = "par-night-immunity-tech-1",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/texture/tech/belt-immunity-night-vision-equipment.png"),
         prerequisites = {"par-armour-tech-3", "par-fusion-reactor-tech-1"},
@@ -9,11 +9,11 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "nv_mk1"
+                recipe = "par-nightvision-mk1"
             },
             {
                 type = "unlock-recipe",
-                recipe = "bi_mk1"
+                recipe = "par-belt-immunity-mk1"
             },
         },
         unit =
@@ -30,12 +30,12 @@ data:extend({
     },
     {
         type = "technology",
-        name = "no-power-equipment_mk2",
+        name = "par-night-immunity-tech-2",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/texture/tech/belt-immunity-night-vision-equipment-1.png"),
         prerequisites =
         {
-            "nv-bi_mk1",
+            "par-night-immunity-tech-1",
             "par-fusion-reactor-tech-5",
             "par-armour-tech-7",
             "battery",
@@ -46,11 +46,11 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "nv_mk2"
+                recipe = "par-nightvision-mk2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "bi_mk2"
+                recipe = "par-belt-immunity-mk2"
             },
         },
         unit =

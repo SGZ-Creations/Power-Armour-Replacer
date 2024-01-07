@@ -1,158 +1,58 @@
-local graphics = {
-    "__base__/graphics/equipment/energy-shield-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
+local icon_utils = require("structures.icon-utils")
+
+--m_shield (Shield value.)
+--buffer_capacity (Intenal battery)
+--input_flow_limit (Max Consuption has effect on recharge speed)
+--energy_per_shield (Recharge speed the higer the lower it charges Don't touch beyond 0.1.34-6p1)
+
+local shields = {
+    {energy_per_shield = "10000kJ", input_flow_limit = "1GW",  buffer_capacity = "0.2MJ", m_shield = 1000,     order="faz[energy-shield-mk2]-aa[armour-replacer]"},
+    {energy_per_shield = "5000kJ",  input_flow_limit = "2GW",  buffer_capacity = "0.4MJ", m_shield = 5000,     order="fbz[energy-shield-mk2]-ab[armour-replacer]"},
+    {energy_per_shield = "2500kJ",  input_flow_limit = "3GW",  buffer_capacity = "0.6MJ", m_shield = 10000,    order="fcz[energy-shield-mk2]-ac[armour-replacer]"},
+    {energy_per_shield = "1200kJ",  input_flow_limit = "4GW",  buffer_capacity = "0.8MJ", m_shield = 50000,    order="fdz[energy-shield-mk2]-ad[armour-replacer]"},
+    {energy_per_shield = "640kJ",   input_flow_limit = "5GW",  buffer_capacity = "1.0MJ", m_shield = 100000,   order="fez[energy-shield-mk2]-ae[armour-replacer]"},
+    {energy_per_shield = "300kJ",   input_flow_limit = "6GW",  buffer_capacity = "1.2MJ", m_shield = 500000,   order="ffz[energy-shield-mk2]-af[armour-replacer]"},
+    {energy_per_shield = "160kJ",   input_flow_limit = "7GW",  buffer_capacity = "1.4MJ", m_shield = 1000000,  order="fgz[energy-shield-mk2]-ag[armour-replacer]"},
+    {energy_per_shield = "80kJ",    input_flow_limit = "8GW",  buffer_capacity = "1.6MJ", m_shield = 3000000,  order="fhz[energy-shield-mk2]-ah[armour-replacer]"},
+    {energy_per_shield = "40kJ",    input_flow_limit = "9GW",  buffer_capacity = "1.8MJ", m_shield = 5000000,  order="fiz[energy-shield-mk2]-ai[armour-replacer]"},
+    {energy_per_shield = "20kJ",    input_flow_limit = "10GW", buffer_capacity = "2.0MJ", m_shield = 10000000, order="fjz[energy-shield-mk2]-aj[armour-replacer]"},
 }
 
-local graphics2 = {
-    "__base__/graphics/equipment/hr-energy-shield-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png",--
-}
+for tier, shield in pairs(shields) do
+    ---@type data.ItemPrototype
+    local item = {
+        type = "item",
+        name = "par-shield-mk" .. tostring(tier),
+        placed_as_equipment_result = "par-shield-mk" .. tostring(tier),
+        icons = icon_utils.create_equipment_icon("energy-shield", 64, 4, tier),
+        stack_size = 20,
+        order = shield.order,
+        subgroup = "replacer_item",
+    }
 
-local icon = {
-    "__base__/graphics/equipment/energy-shield-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-    "__base__/graphics/equipment/energy-shield-mk2-equipment.png",--
-}
-
-local order = {
-    "faz[energy-shield-mk2]-aa[armour-replacer]",--1
-    "fbz[energy-shield-mk2]-ab[armour-replacer]",--2
-    "fcz[energy-shield-mk2]-ac[armour-replacer]",--3
-    "fdz[energy-shield-mk2]-ad[armour-replacer]",--4
-    "fez[energy-shield-mk2]-ae[armour-replacer]",--5
-    "ffz[energy-shield-mk2]-af[armour-replacer]",--6
-    "fgz[energy-shield-mk2]-ag[armour-replacer]",--7
-    "fhz[energy-shield-mk2]-ah[armour-replacer]",--8
-    "fiz[energy-shield-mk2]-ai[armour-replacer]",--9
-    "fjz[energy-shield-mk2]-aj[armour-replacer]",--10
-}
-
--- Shield value.
-local max_s = {
-    1000,--1
-    5000,--2
-    10000,--3
-    50000,--4
-    100000,--5
-    500000,--6
-    1000000,--7
-    3000000,--8
-    5000000,--9
-    10000000,--10
-}
--- Intenal battery
-local buffer_capacity = {
-    "0.2MJ",
-    "0.4MJ",
-    "0.6MJ",
-    "0.8MJ",
-    "1.0MJ",
-    "1.2MJ",
-    "1.4MJ",
-    "1.6MJ",
-    "1.8MJ",
-    "2.0MJ",
-}
---Max Consuption has effect on recharge speed
-local input_flow_limit = {
-    "1GW",--1
-    "2GW",--2
-    "3GW",--3
-    "4GW",--4
-    "5GW",--5
-    "6GW",--6
-    "7GW",--7
-    "8GW",--8
-    "9GW",--9
-    "10GW",--10
-}
-
--- Recharge speed the higer the lower it charges Doin't touch beyond 0.1.34-6p1
-local energy_per_shield = {
-    "10000kJ",--1
-    "5000kJ",--2
-    "2500kJ",--3
-    "1200kJ",--4
-    "640kJ",--5
-    "300kJ",--6
-    "160kJ",--7
-    "80kJ",--8
-    "40kJ",--9
-    "20kJ",--10
-}
-
-local i = 1
-while i < 11 do
-    data:extend({
-        {
-            subgroup = "replacer_item",
-            type = "energy-shield-equipment",
-            name = "s_mk" .. tostring(i),
-            sprite =
-            {
-                filename = graphics[i],
-                width = 64,
-                height = 64,
-                priority = "medium",
-                hr_version =
-                {
-                    filename = graphics2[i],
-                    width = 128,
-                    height = 128,
-                    priority = "medium",
-                    scale = 0.5
-                }
+    ---@type data.EquipmentPrototype
+    local equipment = {
+        type = "energy-shield-equipment",
+        name = "par-shield-mk" .. tostring(tier),
+        sprite = icon_utils.create_equipment_sprite("energy-shield", 64, 64, tier),
+        shape = {
+            width = 2,
+            height = 2,
+            type = "full"
             },
-            shape =
-            {
-                width = 2,
-                height = 2,
-                type = "full"
-            },
-            max_shield_value = max_s[i],
-            energy_source =
-            {
+        max_shield_value = shield.m_shield,
+        energy_source = {
                 type = "electric",
-                buffer_capacity = buffer_capacity[i],
-                input_flow_limit = input_flow_limit[i],
+                buffer_capacity = shield.buffer_capacity,
+                input_flow_limit = shield.input_flow_limit,
                 usage_priority = "primary-input"
             },
-            energy_per_shield = energy_per_shield[i],
-            categories = {"armor"}
-        },
-        {
-            type = "item",
-            name = "s_mk" .. tostring(i),
-            icon = icon[i],
-            icon_size = 64,
-            stack_size = 20,
-            placed_as_equipment_result = "s_mk" .. tostring(i),
-            order = order[i],
-            subgroup = "replacer_item",
-        }
+        energy_per_shield = shield.energy_per_shield,
+        categories = {"armor"}
+    }
+
+    data:extend({
+        item,
+        equipment
     })
-    i = i + 1
 end

@@ -12,8 +12,8 @@ for tier, exoskeleton in pairs(exoskeletons) do
     ---@type data.ItemPrototype
     local item = {
         type = "item",
-        name = "par-exoskelton-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-exoskelton-mk" .. tostring(tier),
+        name = "par-exoskeleton-mk" .. tostring(tier),
+        placed_as_equipment_result = "par-exoskeleton-mk" .. tostring(tier),
         subgroup = "replacer_item",
         order = exoskeleton.order,
         icons = icon_utils.create_equipment_icon("exoskeleton", 64, 4, tier),
@@ -23,7 +23,7 @@ for tier, exoskeleton in pairs(exoskeletons) do
     ---@type data.EquipmentPrototype
     local equipment = {
         type = "movement-bonus-equipment",
-        name = "par-exoskelton-mk" .. tostring(tier),
+        name = "par-exoskeleton-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("exoskeleton", 64, 128, tier,
             "__base__/graphics/equipment/exoskeleton-equipment.png",
             "__base__/graphics/equipment/hr-exoskeleton-equipment.png"),

@@ -34,7 +34,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk2"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-1", "solar_2"},
+        prerequisites = {"par-fusion-reactor-tech-1", "par-solar-panel-tech-2"},
         unit =
         {
             count = 500,
@@ -57,7 +57,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk3"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-2", "solar_3", "oil-processing", "battery",},
+        prerequisites = {"par-fusion-reactor-tech-2", "par-solar-panel-tech-3", "oil-processing", "battery",},
         unit =
         {
             count = 500,
@@ -81,7 +81,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk4"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-3", "solar_4", "advanced-electronics", "engine",},
+        prerequisites = {"par-fusion-reactor-tech-3", "par-solar-panel-tech-4", "advanced-electronics", "engine",},
         unit =
         {
             count = 500,
@@ -106,7 +106,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk5"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-4", "solar_5"},
+        prerequisites = {"par-fusion-reactor-tech-4", "par-solar-panel-tech-5"},
         unit =
         {
             count = 500,
@@ -132,7 +132,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk6"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-5", "solar_6"},
+        prerequisites = {"par-fusion-reactor-tech-5", "par-solar-panel-tech-6"},
         unit =
         {
             count = 500,
@@ -158,7 +158,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk7"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-6", "solar_7"},
+        prerequisites = {"par-fusion-reactor-tech-6", "par-solar-panel-tech-7"},
         unit =
         {
             count = 500,
@@ -185,7 +185,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk8"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-7", "solar_8"},
+        prerequisites = {"par-fusion-reactor-tech-7", "par-solar-panel-tech-8"},
         unit =
         {
             count = 500,
@@ -212,7 +212,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk9"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-8", "solar_9"},
+        prerequisites = {"par-fusion-reactor-tech-8", "par-solar-panel-tech-9"},
         unit =
         {
             count = 500,
@@ -240,7 +240,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk10"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-9", "solar_10"},
+        prerequisites = {"par-fusion-reactor-tech-9", "par-solar-panel-tech-10"},
         unit =
         {
             count = 500,

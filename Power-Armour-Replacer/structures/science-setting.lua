@@ -20,9 +20,9 @@ if settings.startup["hard_science_required"].value then
         "par-battery-tech-6",
         "par-fusion-reactor-tech-6",
         "par-exoskeleton-tech-5",
-        "laser_6",
-        "solar_6",
-        "roboport_6",
-        "shield_6",
+        "par-laser-tech-6",
+        "par-solar-panel-tech-6",
+        "par-roboport-tech-6",
+        "par-shield-tech-6",
     }
 end

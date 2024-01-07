@@ -11,7 +11,8 @@
     require("prototypes.items.roboport_item")
     require("prototypes.items.laser_item")
     require("prototypes.items.shield_item")
-    require("prototypes.items.nvgs_bi_item")
+    require("prototypes.items.nvgs_item")
+    require("prototypes.items.immuntiy_item")
     require("prototypes.items.rcu_item")
 
 --prototypes.recipes
@@ -23,7 +24,8 @@
     require("prototypes.recipes.roboport_recipes")
     require("prototypes.recipes.laser_recipes")
     require("prototypes.recipes.shield_recipes")
-    require("prototypes.recipes.nvgs_bi_recipes")
+    require("prototypes.recipes.immunity_recipes")
+    require("prototypes.recipes.nvgs_recipes")
     require("prototypes.recipes.rcu_recipes")
 
 --prototypes.technology

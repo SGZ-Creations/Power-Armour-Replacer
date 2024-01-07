@@ -1,14 +1,14 @@
 data:extend({
     {
         type = "technology",
-        name = "solar_1",
+        name = "par-solar-panel-tech-1",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk1"
+                recipe = "par-solar-panel-mk1"
             },
         },
         prerequisites = {"par-armour-tech-1"},
@@ -24,17 +24,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_2",
+        name = "par-solar-panel-tech-2",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk2"
+                recipe = "par-solar-panel-mk2"
             },
         },
-        prerequisites = {"solar_1", },
+        prerequisites = {"par-solar-panel-tech-1", },
         unit =
         {
             count = 250,
@@ -47,7 +47,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_3",
+        name = "par-solar-panel-tech-3",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -55,10 +55,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk3"
+                recipe = "par-solar-panel-mk3"
             },
         },
-        prerequisites = {"solar_2", },
+        prerequisites = {"par-solar-panel-tech-2", },
         unit =
         {
             count = 250,
@@ -72,7 +72,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_4",
+        name = "par-solar-panel-tech-4",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -80,10 +80,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk4"
+                recipe = "par-solar-panel-mk4"
             },
         },
-        prerequisites = {"solar_3", },
+        prerequisites = {"par-solar-panel-tech-3", },
         unit =
         {
             count = 250,
@@ -98,7 +98,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_5",
+        name = "par-solar-panel-tech-5",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -106,10 +106,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk5"
+                recipe = "par-solar-panel-mk5"
             },
         },
-        prerequisites = {"solar_4", },
+        prerequisites = {"par-solar-panel-tech-4", },
         unit =
         {
             count = 250,
@@ -125,7 +125,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_6",
+        name = "par-solar-panel-tech-6",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -133,10 +133,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk6"
+                recipe = "par-solar-panel-mk6"
             },
         },
-        prerequisites = {"solar_5", },
+        prerequisites = {"par-solar-panel-tech-5", },
         unit =
         {
             count = 250,
@@ -152,7 +152,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_7",
+        name = "par-solar-panel-tech-7",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -160,10 +160,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk7"
+                recipe = "par-solar-panel-mk7"
             },
         },
-        prerequisites = {"solar_6", },
+        prerequisites = {"par-solar-panel-tech-6", },
         unit =
         {
             count = 250,
@@ -180,7 +180,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_8",
+        name = "par-solar-panel-tech-8",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -188,10 +188,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk8"
+                recipe = "par-solar-panel-mk8"
             },
         },
-        prerequisites = {"solar_7", },
+        prerequisites = {"par-solar-panel-tech-7", },
         unit =
         {
             count = 250,
@@ -208,7 +208,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_9",
+        name = "par-solar-panel-tech-9",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -216,10 +216,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk9"
+                recipe = "par-solar-panel-mk9"
             },
         },
-        prerequisites = {"solar_8", },
+        prerequisites = {"par-solar-panel-tech-8", },
         unit =
         {
             count = 250,
@@ -237,7 +237,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "solar_10",
+        name = "par-solar-panel-tech-10",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/solar-panel-equipment.png",
         effects =
@@ -245,10 +245,10 @@ data:extend({
 
             {
                 type = "unlock-recipe",
-                recipe = "p-s_mk10"
+                recipe = "par-solar-panel-mk10"
             },
         },
-        prerequisites = {"solar_9", },
+        prerequisites = {"par-solar-panel-tech-9", },
         unit =
         {
             count = 250,

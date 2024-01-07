@@ -1,14 +1,14 @@
 data:extend({
     {
         type = "technology",
-        name = "shield_1",
+        name = "par-shield-tech-1",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk1"
+                recipe = "par-shield-mk1"
             },
         },
         prerequisites = {"par-armour-tech-1", "par-fusion-reactor-tech-1"},
@@ -24,17 +24,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_2",
+        name = "par-shield-tech-2",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk2"
+                recipe = "par-shield-mk2"
             },
         },
-        prerequisites = {"shield_1",},
+        prerequisites = {"par-shield-tech-1",},
         unit =
         {
             count = 500,
@@ -47,17 +47,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_3",
+        name = "par-shield-tech-3",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk3"
+                recipe = "par-shield-mk3"
             },
         },
-        prerequisites = {"shield_2",},
+        prerequisites = {"par-shield-tech-2",},
         unit =
         {
             count = 500,
@@ -71,17 +71,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_4",
+        name = "par-shield-tech-4",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk4"
+                recipe = "par-shield-mk4"
             },
         },
-        prerequisites = {"shield_3",},
+        prerequisites = {"par-shield-tech-3",},
         unit =
         {
             count = 500,
@@ -96,17 +96,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_5",
+        name = "par-shield-tech-5",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk5"
+                recipe = "par-shield-mk5"
             },
         },
-        prerequisites = {"shield_4",},
+        prerequisites = {"par-shield-tech-4",},
         unit =
         {
             count = 500,
@@ -122,17 +122,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_6",
+        name = "par-shield-tech-6",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk6"
+                recipe = "par-shield-mk6"
             },
         },
-        prerequisites = {"shield_5",},
+        prerequisites = {"par-shield-tech-5",},
         unit =
         {
             count = 500,
@@ -148,17 +148,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_7",
+        name = "par-shield-tech-7",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk7"
+                recipe = "par-shield-mk7"
             },
         },
-        prerequisites = {"shield_6",},
+        prerequisites = {"par-shield-tech-6",},
         unit =
         {
             count = 500,
@@ -175,17 +175,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_8",
+        name = "par-shield-tech-8",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk8"
+                recipe = "par-shield-mk8"
             },
         },
-        prerequisites = {"shield_7",},
+        prerequisites = {"par-shield-tech-7",},
         unit =
         {
             count = 500,
@@ -202,17 +202,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_9",
+        name = "par-shield-tech-9",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk9"
+                recipe = "par-shield-mk9"
             },
         },
-        prerequisites = {"shield_8"},
+        prerequisites = {"par-shield-tech-8"},
         unit =
         {
             count = 500,
@@ -230,17 +230,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "shield_10",
+        name = "par-shield-tech-10",
         icon_size = 256, icon_mipmaps = 4,
         icon = "__base__/graphics/technology/energy-shield-mk2-equipment.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "s_mk10"
+                recipe = "par-shield-mk10"
             },
         },
-        prerequisites = {"shield_9",},
+        prerequisites = {"par-shield-tech-9",},
         unit =
         {
             count = 500,

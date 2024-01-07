@@ -16,32 +16,32 @@ util.technology_dependancy
 
 	["space-spidertron"] = {
 		["spidertron"] = {
-			"no-power-equipment_mk2",
+			"par-night-immunity-tech-2",
 		}
 	},
 	["boblogistics"] = {
-		["roboport_3"] = {
+		["par-roboport-tech-3"] = {
 			"bob-robo-modular-1"
 		},
-		["roboport_5"] = {
+		["par-roboport-tech-5"] = {
 			"bob-robo-modular-2"
 		},
-		["roboport_7"] = {
+		["par-roboport-tech-7"] = {
 			"bob-robo-modular-3"
 		},
-		["roboport_9"] = {
+		["par-roboport-tech-9"] = {
 			"bob-robo-modular-4"
 		},
 	},
 
 	["bobelectronics"] = {
-		["laser_3"] = {
+		["par-laser-tech-3"] = {
 			["advanced-electronics"] = "electronics"
 		},
-		["laser_4"] = {
+		["par-laser-tech-4"] = {
 			["advanced-electronics"] = "gem-processing-2"
 		},
-		["laser_5"] = {
+		["par-laser-tech-5"] = {
 			"advanced-electronics"
 		},
 		["par-battery-tech-3"] = {
@@ -66,17 +66,17 @@ util.technology_dependancy
 
 
 	["bobpower"] = {
-		["laser_3"] = {
+		["par-laser-tech-3"] = {
 		"bob-heat-pipe-1",
 		},
-		["laser_5"] = {
+		["par-laser-tech-5"] = {
 			["nuclear-power"] = "bob-heat-pipe-2",
 			"bob-heat-pipe-2",
 		},
-		["laser_7"] = {
+		["par-laser-tech-7"] = {
 			"bob-heat-pipe-3"
 		},
-		["laser_9"] = {
+		["par-laser-tech-9"] = {
 			"bob-heat-pipe-4"
 		},
 	},
@@ -94,7 +94,7 @@ util.technology_dependancy
 		["par-armour-tech-8"] = {
 			"heat-shield",
 		},
-		["laser_7"] = {
+		["par-laser-tech-7"] = {
 			"heat-shield",
 		},
 	},
@@ -142,14 +142,14 @@ util.technology_dependancy
 		["par-battery-tech-6"] = {
 			"lithium-processing",
 		},
-		["shield_6"] = {
+		["par-shield-tech-6"] = {
 			"lithium-processing",
 			"cobalt-processing"
 		},
 		["par-fusion-reactor-tech-6"] = {
 			"lithium-processing",
 		},
-		["solar_6"] = {
+		["par-solar-panel-tech-6"] = {
 			"lithium-processing",
 		},
 	},
@@ -203,7 +203,7 @@ util.technology_dependancy
 			"angels-brass-smelting-1",
 			"angels-gold-smelting-1",
 		},
-		["shield_6"] = {
+		["par-shield-tech-6"] = {
 			"angels-silver-casting-2",
 		},
 	},
@@ -238,7 +238,7 @@ util.technology_dependancy
 	},
 
 	["Darkstar_utilities_fixed"] = {
-		["laser_5"] = {
+		["par-laser-tech-5"] = {
 			"laser-cores",
 		},
 	},
@@ -256,7 +256,7 @@ util.technology_dependancy
 		["par-battery-tech-3"] = {
 			"el_lithium_tech",
 		},
-		["nv-bi_mk1"] = {
+		["par-night-immunity-tech-1"] = {
 			"el_lithium_tech",
 		},
 	},
@@ -297,26 +297,26 @@ util.technology_dependancy
 		["par-fusion-reactor-tech-4"] = {
 			["electronics"] = "ir-iron-milestone",
 		},
-		["laser_3"] = {
+		["par-laser-tech-3"] = {
 			"ir-electronics-1",
 		},
-		["laser_4"] = {
+		["par-laser-tech-4"] = {
 			"ir-steel-milestone",
 		},
-		["laser_5"] = {
+		["par-laser-tech-5"] = {
 		},
-		["roboport_1"] = {
+		["par-roboport-tech-1"] = {
 			"ir-steambot",
 		},
-		["roboport_2"] = {
+		["par-roboport-tech-2"] = {
 			"ir-iron-milestone",
 		},
-		["roboport_3"] = {
+		["par-roboport-tech-3"] = {
 			"ir-iron-motor",
 			"ir-electronics-1",
 			"engine",
 		},
-		["roboport_4"] = {
+		["par-roboport-tech-4"] = {
 			"ir-steel-milestone",
 		},
 	},

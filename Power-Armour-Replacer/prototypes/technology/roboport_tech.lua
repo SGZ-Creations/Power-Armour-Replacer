@@ -1,14 +1,14 @@
 data:extend({
     {
         type = "technology",
-        name = "roboport_1",
+        name = "par-roboport-tech-1",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk1"
+                recipe = "par-roboport-mk1"
             },
         },
         prerequisites = {"par-armour-tech-1", "par-fusion-reactor-tech-1"},
@@ -24,17 +24,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_2",
+        name = "par-roboport-tech-2",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk2"
+                recipe = "par-roboport-mk2"
             },
         },
-        prerequisites = {"roboport_1",},
+        prerequisites = {"par-roboport-tech-1",},
         unit =
         {
             count = 750,
@@ -47,17 +47,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_3",
+        name = "par-roboport-tech-3",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk3"
+                recipe = "par-roboport-mk3"
             },
         },
-        prerequisites = {"roboport_2",},
+        prerequisites = {"par-roboport-tech-2",},
         unit =
         {
             count = 750,
@@ -71,17 +71,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_4",
+        name = "par-roboport-tech-4",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk4"
+                recipe = "par-roboport-mk4"
             },
         },
-        prerequisites = {"roboport_3",},
+        prerequisites = {"par-roboport-tech-3",},
         unit =
         {
             count = 750,
@@ -96,17 +96,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_5",
+        name = "par-roboport-tech-5",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk5"
+                recipe = "par-roboport-mk5"
             },
         },
-        prerequisites = {"roboport_4", },
+        prerequisites = {"par-roboport-tech-4", },
         unit =
         {
             count = 750,
@@ -122,17 +122,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_6",
+        name = "par-roboport-tech-6",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk6"
+                recipe = "par-roboport-mk6"
             },
         },
-        prerequisites = {"roboport_5", },
+        prerequisites = {"par-roboport-tech-5", },
         unit =
         {
             count = 750,
@@ -148,17 +148,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_7",
+        name = "par-roboport-tech-7",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk7"
+                recipe = "par-roboport-mk7"
             },
         },
-        prerequisites = {"roboport_6", },
+        prerequisites = {"par-roboport-tech-6", },
         unit =
         {
             count = 750,
@@ -175,17 +175,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_8",
+        name = "par-roboport-tech-8",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk8"
+                recipe = "par-roboport-mk8"
             },
         },
-        prerequisites = {"roboport_7", },
+        prerequisites = {"par-roboport-tech-7", },
         unit =
         {
             count = 750,
@@ -202,17 +202,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_9",
+        name = "par-roboport-tech-9",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk9"
+                recipe = "par-roboport-mk9"
             },
         },
-        prerequisites = {"roboport_8",} ,
+        prerequisites = {"par-roboport-tech-8",} ,
         unit =
         {
             count = 750,
@@ -230,17 +230,17 @@ data:extend({
     },
     {
         type = "technology",
-        name = "roboport_10",
+        name = "par-roboport-tech-10",
         icon_size = 256, icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "r_mk10"
+                recipe = "par-roboport-mk10"
             },
         },
-        prerequisites = {"roboport_9",},
+        prerequisites = {"par-roboport-tech-9",},
         unit =
         {
             count = 750,

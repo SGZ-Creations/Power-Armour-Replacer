@@ -3,7 +3,7 @@ util.technology_dependancy
 {
 	["TeleportationEquipment"] = {
 		["teleportation-equipment"] = {
-			["solar_1"] = "par-armour-tech-3",
+			["par-solar-panel-tech-1"] = "par-armour-tech-3",
 		},
 	},
 
@@ -12,7 +12,7 @@ util.technology_dependancy
 			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-10",
 			["par-battery-tech-1"] = "par-battery-tech-10",
 			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-5",
-			["nv-bi_mk1"] = "no-power-equipment_mk2",
+			["par-night-immunity-tech-1"] = "par-night-immunity-tech-2",
 			["par-armour-tech-2"] = "par-armour-tech-10",
 		},
 	},

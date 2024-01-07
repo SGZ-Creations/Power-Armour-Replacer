@@ -1,7 +1,7 @@
 local recipes = {
     {
         type = "recipe",
-        name = "p-s_mk1",
+        name = "par-solar-panel-mk1",
         enabled = false,
         energy_required = 5,
         ingredients = {
@@ -10,138 +10,138 @@ local recipes = {
             {"iron-stick", 35},
             {"electronic-circuit", 20},
         },
-        result = "p-s_mk1"
+        result = "par-solar-panel-mk1"
     },
     {
         type = "recipe",
-        name = "p-s_mk2",
+        name = "par-solar-panel-mk2",
         enabled = false,
         energy_required = 10,
         ingredients = {
-            {"p-s_mk1", 1},
+            {"par-solar-panel-mk1", 1},
             {"copper-plate", 70},
             {"steel-plate", 50},
             {"electronic-circuit", 30},
         },
-        result = "p-s_mk2"
+        result = "par-solar-panel-mk2"
     },
     {
         type = "recipe",
-        name = "p-s_mk3",
+        name = "par-solar-panel-mk3",
         enabled = false,
         energy_required = 15,
         ingredients = {
-            {"p-s_mk2", 1},
+            {"par-solar-panel-mk2", 1},
             {"battery", 30},
             {"steel-plate", 75},
             {"copper-plate", 40},
         },
-        result = "p-s_mk3"
+        result = "par-solar-panel-mk3"
     },
     {
         type = "recipe",
-        name = "p-s_mk4",
+        name = "par-solar-panel-mk4",
         enabled = false,
         energy_required = 20,
         ingredients = {
-            {"p-s_mk3", 1},
+            {"par-solar-panel-mk3", 1},
             {"electronic-circuit", 135},
             {"advanced-circuit", 100},
             {"engine-unit", 120},
             {"battery", 150},
         },
-        result = "p-s_mk4"
+        result = "par-solar-panel-mk4"
     },
     {
         type = "recipe",
-        name = "p-s_mk5",
+        name = "par-solar-panel-mk5",
         enabled = false,
         energy_required = 25,
         ingredients = {
-            {"p-s_mk4", 1},
+            {"par-solar-panel-mk4", 1},
             {"battery", 190},
             {"advanced-circuit", 110},
             {"sulfur", 123},
             {"steel-plate", 115},
         },
-        result = "p-s_mk5"
+        result = "par-solar-panel-mk5"
     },
     {
         type = "recipe",
-        name = "p-s_mk6",
+        name = "par-solar-panel-mk6",
         enabled = false,
         energy_required = 30,
         hide_from_player_crafting = true,
         ingredients = {
-            {"p-s_mk5", 1},
+            {"par-solar-panel-mk5", 1},
             {"processing-unit", 60},
             {"engine-unit", 140},
             {"electric-engine-unit", 80},
             {"iron-stick", 300},
         },
-        result = "p-s_mk6"
+        result = "par-solar-panel-mk6"
     },
     {
         type = "recipe",
-        name = "p-s_mk7",
+        name = "par-solar-panel-mk7",
         enabled = false,
         energy_required = 35,
         hide_from_player_crafting = true,
         ingredients = {
-            {"p-s_mk6", 1},
+            {"par-solar-panel-mk6", 1},
             {"plastic-bar", 140},
             {"processing-unit", 70},
             {"electric-engine-unit", 120},
             {"low-density-structure", 175},
         },
-        result = "p-s_mk7"
+        result = "par-solar-panel-mk7"
     },
     {
         type = "recipe",
-        name = "p-s_mk8",
+        name = "par-solar-panel-mk8",
         enabled = false,
         energy_required = 40,
         hide_from_player_crafting = true,
         ingredients = {
-            {"p-s_mk7", 1},
+            {"par-solar-panel-mk7", 1},
             {"copper-cable", 300},
             {"battery", 200},
             {"plastic-bar", 170},
             {"low-density-structure", 175},
         },
-        result = "p-s_mk8"
+        result = "par-solar-panel-mk8"
     },
     {
         type = "recipe",
-        name = "p-s_mk9",
+        name = "par-solar-panel-mk9",
         enabled = false,
         energy_required = 45,
         hide_from_player_crafting = true,
         category="crafting-with-fluid",
         ingredients = {
-            {"p-s_mk8", 1},
+            {"par-solar-panel-mk8", 1},
             {"processing-unit", 123},
             {"rocket-control-unit", 175},
             {"low-density-structure", 175},
             {type="fluid", name="lubricant", amount=250},
         },
-        result = "p-s_mk9"
+        result = "par-solar-panel-mk9"
     },
     {
         type = "recipe",
-        name = "p-s_mk10",
+        name = "par-solar-panel-mk10",
         enabled = false,
         energy_required = 50,
         hide_from_player_crafting = true,
         category="crafting-with-fluid",
         ingredients = {
-            {"p-s_mk9", 1},
+            {"par-solar-panel-mk9", 1},
             {"processing-unit", 144},
             {"rocket-control-unit", 200},
             {"low-density-structure", 200},
             {type="fluid", name="lubricant", amount=350},
         },
-        result = "p-s_mk10"
+        result = "par-solar-panel-mk10"
     },
 }
 
@@ -311,7 +311,7 @@ util.ingredient_prereq(recipes[6], {
         dependencies = {"bobplates"},
         replacements = {
             [""] = {"", 0},
-            ["p-s_mk5"] = {"p-s_mk6", 1},
+            ["par-solar-panel-mk5"] = {"par-solar-panel-mk6", 1},
             {"lithium", 50},
         }
     },
@@ -319,7 +319,7 @@ util.ingredient_prereq(recipes[6], {
         dependencies = {"angelssmelting"},
         replacements = {
             [""] = {"", 0},
-            ["p-s_mk5"] = {"p-s_mk6", 1},
+            ["par-solar-panel-mk5"] = {"par-solar-panel-mk6", 1},
         }
     },
 })
