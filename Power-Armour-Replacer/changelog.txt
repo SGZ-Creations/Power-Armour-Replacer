@@ -14,7 +14,6 @@ Date: 07.01.2024
     - Added Textures/Graphics by Kirazy.
     - Added Seperate Licensing for Textures/Graphics.
   Info:
-    - To-be fix coluring for roboport.
     - Still having placeholders: Belt immmunity 1-2, Armour 6-10, belt-immunity & Nightvision tech. Hopefully having a kind person help with this.
   Thansk:
     - Discord: @Kira (Kirazy) For the aswomness of allowing me to use the Textures/Graphics along with the code to implement the Textures/Graphics for my mod.

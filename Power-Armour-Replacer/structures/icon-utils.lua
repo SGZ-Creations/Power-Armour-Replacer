@@ -44,7 +44,7 @@ end
 ---@param equipment_name string # The equipment to create an icon for, e.g. "battery".
 ---@param icon_size data.SpriteSizeType # The size of the square icon, in pixels. e.g. `32` for a 32px by 32px icon.
 ---@param icon_mipmaps? data.IconMipMapType # Optional. The number of icons present in the icon file, to be used at decreased scale.
----@param tier? integer # The tier of icon to create. Used to obtain the tint.
+---@param tier integer # The tier of icon to create. Used to obtain the tint.
 ---@return data.IconData[] # A 3-layer icons definition for the given `equipment_name`.
 function icon_utils.create_equipment_icon(equipment_name, icon_size, icon_mipmaps, tier)
     ---@type data.IconData[]
@@ -79,7 +79,7 @@ end
 ---@param equipment_name string # The equipment to create an icon for, e.g. "battery".
 ---@param icon_size data.SpriteSizeType # The size of the square icon, in pixels. e.g. `32` for a 32px by 32px icon.
 ---@param icon_mipmaps? data.IconMipMapType # Optional. The number of icons present in the icon file, to be used at decreased scale.
----@param tier? integer # The tier of icon to create. Used to obtain the tint.
+---@param tier integer # The tier of icon to create. Used to obtain the tint.
 ---@return data.IconData[] # A 3-layer icons definition for the given `equipment_name`.
 function icon_utils.create_equipment_technology_icon(equipment_name, icon_size, icon_mipmaps, tier)
     ---@type data.IconData[]
@@ -121,7 +121,7 @@ end
 ---@param equipment_name string # The equipment to create a layered sprite for, e.g. "battery".
 ---@param width data.SpriteSizeType # The width of the normal resolution icon. It is assumed that the width of the high-resolution icon is twice the width, exactly.
 ---@param height data.SpriteSizeType # The height of the normal resolution icon. It is assumed that the height of the high-resolution icon is twice the width, exactly.
----@param tier? integer # The tier of icon to create. Used to obtain the tint.
+---@param tier integer # The tier of icon to create. Used to obtain the tint.
 ---@param base_filename? data.FileName # A specific image file to use for the normal-resolution base layer.
 ---@param hr_base_filename? data.FileName # A specific image file to use for the high-resolution base layer.
 ---@return data.Sprite # A 3 layer sprite definition with normal and high-resolution sprites.
