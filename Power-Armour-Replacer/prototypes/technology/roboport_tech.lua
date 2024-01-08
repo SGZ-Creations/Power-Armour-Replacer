@@ -1,9 +1,9 @@
+local icon_utils = require("structures.icon-utils")
 data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-1",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 4, 1),
         effects =
         {
             {
@@ -25,8 +25,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-2",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 4, 2),
         effects =
         {
             {
@@ -48,8 +47,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-3",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 4, 3),
         effects =
         {
             {
@@ -72,8 +70,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-4",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 4, 4),
         effects =
         {
             {
@@ -97,8 +94,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-5",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 4, 5),
         effects =
         {
             {
@@ -123,8 +119,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-6",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 4, 6),
         effects =
         {
             {
@@ -149,8 +144,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-7",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 4, 7),
         effects =
         {
             {
@@ -176,8 +170,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-8",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 4, 8),
         effects =
         {
             {
@@ -203,8 +196,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-9",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 4, 9),
         effects =
         {
             {
@@ -231,8 +223,7 @@ data:extend({
     {
         type = "technology",
         name = "par-roboport-tech-10",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-mk2-equipment.png"),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 4, 10),
         effects =
         {
             {

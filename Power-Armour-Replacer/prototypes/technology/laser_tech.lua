@@ -1,9 +1,9 @@
+local icon_utils = require("structures.icon-utils")
 data:extend({
     {
         type = "technology",
         name = "par-laser-tech-1",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 1),
         effects =
         {
             {
@@ -25,8 +25,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-2",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 2),
         effects =
         {
             {
@@ -48,8 +47,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-3",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 3),
         effects =
         {
             {
@@ -75,8 +73,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-4",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 4),
         effects =
         {
             {
@@ -100,8 +97,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-5",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 5),
         effects =
         {
             {
@@ -130,8 +126,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-6",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 6),
         effects =
         {
             {
@@ -156,8 +151,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-7",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 7),
         effects =
         {
             {
@@ -183,8 +177,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-8",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 8),
         effects =
         {
             {
@@ -210,8 +203,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-9",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 9),
         effects =
         {
             {
@@ -238,8 +230,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-10",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/laser-shooting-speed.png",
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 10),
         effects =
         {
             {

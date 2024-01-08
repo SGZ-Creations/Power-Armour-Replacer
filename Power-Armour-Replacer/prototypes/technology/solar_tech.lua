@@ -1,10 +1,9 @@
+local icon_utils = require("structures.icon-utils")
 data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-1",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 1),
         {
             {
                 type = "unlock-recipe",
@@ -25,9 +24,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-2",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 2),
         {
             {
                 type = "unlock-recipe",
@@ -48,9 +45,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-3",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 3),
         {
 
             {
@@ -73,9 +68,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-4",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 4),
         {
 
             {
@@ -99,9 +92,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-5",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 5),
         {
 
             {
@@ -126,9 +117,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-6",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 6),
         {
 
             {
@@ -153,9 +142,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-7",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 7),
         {
 
             {
@@ -181,9 +168,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-8",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 8),
         {
 
             {
@@ -209,9 +194,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-9",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 9),
         {
 
             {
@@ -238,9 +221,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-10",
-        icon_size = 256, icon_mipmaps = 4,
-        icon = "__base__/graphics/technology/solar-panel-equipment.png",
-        effects =
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 10),
         {
 
             {

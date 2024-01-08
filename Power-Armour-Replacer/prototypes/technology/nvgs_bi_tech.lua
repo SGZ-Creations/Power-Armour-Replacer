@@ -40,7 +40,7 @@ data:extend({
             "par-armour-tech-7",
             "battery",
             "advanced-electronics-2",
-            "low-density-structure",
+			"production-science-pack",
         },
         effects =
         {
@@ -61,6 +61,7 @@ data:extend({
                 {"logistic-science-pack", 2},
                 {"military-science-pack", 2},
                 {"chemical-science-pack", 2},
+				{"production-science-pack", 2},
             },
             time = 15
         },

@@ -1,5 +1,4 @@
 local icon_utils = require("structures.icon-utils")
-
 data:extend({
   {
     type = "technology",

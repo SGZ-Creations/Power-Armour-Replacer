@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 08.01.2024
+  Changes:
+    - Production science packs added: night immunity 2.
+    - Production science prereqesite: night immunity 2.
+  Bugfixes:
+    - Missing Tech Texture: Solar, Shield, roboport, laser, fusion reactor.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 08.01.2024
   Changes:
