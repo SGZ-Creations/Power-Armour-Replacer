@@ -2,7 +2,7 @@
 
 local icon_utils = {}
 
-if mods["bobequipment"] then
+--if mods["bobequipment"] then
     -- Follow Bob's tier colors when playing with Bob's mods.
 
     -- Make this a global (or available globally somehow) and reference it
@@ -15,12 +15,12 @@ if mods["bobequipment"] then
         util.color("#33b4ff"), -- Blue
         util.color("#b459ff"), -- Purple
         util.color("#2ee55c"), -- Green
-        util.color("#ff8533"), -- Orange
         util.color("#00FFFF"), -- Cyan
         util.color("#AA336A"), -- DarkPink
+        util.color("#ff8533"), -- Orange
         util.color("#000000"), -- Black
     }
-else
+--[[else
     -- Make this a global (or available globally somehow) and reference it
     -- when you ened to get a color for a tier.
     ---@type data.Color[]
@@ -37,7 +37,7 @@ else
         util.color("#ff8533"), -- Orange
         util.color("#f22318"), -- Red
     }
-end
+end]]
 
 --- Creates an icons definition for the given `equipment_name`, with images presumed to be located
 --- in the graphics/icons folder and providing 3 images, a base, mask and highlights image.

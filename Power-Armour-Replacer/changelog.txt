@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 08.01.2024
+  Changes:
+    - Colour/Color Tier made to have one system only similar to bobs with 4 extra tiers.
+  Bugfixes:
+    - Fixed names being in an interanl view.
+  Issues:
+    - Updating angles will casue the mod to crash.
+    - Looking to get this update at a point where my own game dosen't crash. :p 
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 07.01.2024
   Features:
