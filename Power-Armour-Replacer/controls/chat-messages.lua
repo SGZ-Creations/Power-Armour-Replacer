@@ -12,7 +12,8 @@ All equipments stats will stay as is & are not changeable, since the mod is bala
 Still should you wish to change how things are my CAS mod will allow you to tweak and alter my Armours grids and INV bonuses if they are to big for your likings.
 CAS is required by PA&R so it should be in your mod list, to allow for easy tweaking.
 In the CAS mod you can also enable space-science-packs to be required in reaserch should u wish that.
-THANKS FOR READING. You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+THANKS FOR READING. You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
     end
 
 -- Warnings
@@ -23,7 +24,8 @@ THANKS FOR READING. You can disable this message in (PA&R) startup settings if u
 PA&R have hide & disable mechanics for Base/Vanilla Armours & Equipment.
 Filters are hidden if startup setting [Vanilla Filters] is toggled off.
 Power Armour & Replacer is functional in vanilla but was not intended with vanilla.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -33,7 +35,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Bobs Warfare" the Armours are dissabled, hidden.
 Filters are hidden if startup setting [Bob's Warfare Filters] is toggled off.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -43,7 +46,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Bobs Equipment" the equipments are dissabled, hidden. 
 Filters are hidden if startup setting [Bob's Equipment Filters] is toggled off.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -54,7 +58,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 PA&R have hide & disable mechanics for "Custom Power Armour fix's" Armours & Equipment.
 Filters are hidden if startup setting [Custom Power Armour fix Filters] is toggled off.
 This mod has have a few turret equipment to play with.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -64,7 +69,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Darkstar-fixed" Armours & Equipment.
 Filters are hidden if startup setting [Darkstar Filters] is toggled off.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -74,7 +80,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for "Hiladdar_Gear mod" Armours & Equipment, Tech & Intermediate.
 Filters are hidden if startup setting [Hiladdar_Gear Filters] is toggled off.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -85,18 +92,20 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 PA&R have hide & disable mechanics for "IndustrialRevolution3" the Armours & Equipment are dissabled, hidden.
 Filters are hidden if startup setting [IR3 Filters(not added yet)] is toggled off.
 Please Report any unexpected issue to https://discord.gg/tbxnpsxkDM
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
     if script.active_mods["Power Armor MK3"] then
-        if settings.startup["P-par-armour-mk3-warning"].value then
+        if settings.startup["P-A_MK3-warning"].value then
             printer([[
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for Power Armor MK3's Armours & Equipment.
 Filters are hidden if startup setting [MK3's Filters] is toggled off.
 This mod can still have useful tech and items to play with.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -107,7 +116,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 PA&R have hide & disable mechanics for SE's & K2's Armours & Equipment.
 All items should be hidden on K2. SE & K2 Recipe Compatibility is yet to be worked more on.
 Filters are hidden if startup setting [KE Filters] is toggled off.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -118,7 +128,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 PA&R have hide & disable mechanics for Krastorio's Armours & Equipment.
 Filters are hidden if startup setting [Krastorio Filters] is toggled off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.
-All items should be hidden on K2. Recipe Compatibility is yet to be worked more on.]])
+All items should be hidden on K2. Recipe Compatibility is yet to be worked more on.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -129,7 +140,8 @@ All items should be hidden on K2. Recipe Compatibility is yet to be worked more 
 PA&R have hide & disable mechanics for PowerAndArmor's Armours & Equipment.
 There's nothing left on this mod to need it enabled.
 Filters are hidden if startup setting [Power&Armor Filters] is toggled off.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -139,7 +151,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 ---------------------------------------------------------------------------------------------------
 PA&R have hide & disable mechanics for RampantArsenal Armours & Equipment.
 Filters are hidden if startup setting [Arsenal Filters] is toggles off.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -150,7 +163,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 PA&R have hide & disable mechanics for SE's Armours & Equipment.
 Filters are hidden if startup setting [SE Filters] is toggles off.
 You can disable this message in (PA&R) startup settings if u don't want the INFO.
-Much left to do everywhere on SE Compatibility.]])
+Much left to do everywhere on SE Compatibility.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -160,7 +174,8 @@ Much left to do everywhere on SE Compatibility.]])
             printer([[
 ---------------------------------------------------------------------------------------------------
 Insectitronics mod should currently be working as expected.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -170,7 +185,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 ---------------------------------------------------------------------------------------------------
 SpaceModFeorasFork has changes made by P.A.&.R mod.
 Should you find issue with PA&R's Compatibility please let me know.
-You can dissable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can dissable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -180,7 +196,8 @@ You can dissable this message in (PA&R) startup settings if u don't want the INF
 ---------------------------------------------------------------------------------------------------
 TeleportationEquipment mod has technology changes made by P.A.&.R mod.
 Should you find issue with PA&R's Compatibility please let me know.
-You can disable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can disable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 
@@ -190,7 +207,8 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
 ---------------------------------------------------------------------------------------------------
 osm-radioactivity Should be working as expected. Has non known bugs to it (PA&R).
 Should you find issue with PA&R's Compatibility please let me know.
-You can dissable this message in (PA&R) startup settings if u don't want the INFO.]])
+You can dissable this message in (PA&R) startup settings if u don't want the INFO.
+---------------------------------------------------------------------------------------------------]])
         end
     end
 end
