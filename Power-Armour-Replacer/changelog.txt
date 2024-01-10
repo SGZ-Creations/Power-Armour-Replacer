@@ -5,7 +5,7 @@ Date: 10.01.2024
     - Crash on save create/load for Power Armour MK3 mod.
     - Setting name mismatch.
   Thanks:
-    - Discord: @failingatom2.
+    - Discord: @failingatom2 for reporting the crash.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 08.01.2024
