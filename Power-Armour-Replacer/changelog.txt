@@ -4,6 +4,7 @@ Date: 13.01.2024
   Features:
     - Improved Achivements Textures. 
   Changes:
+    - Armour Resistance.
     - Moved Production science prereqesite from night immunity 2 --> Armour 7
     - Armour item code rework.
     - Removed Depricated textures.
