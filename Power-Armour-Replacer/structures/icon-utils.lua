@@ -70,7 +70,6 @@ function icon_utils.create_equipment_icon(equipment_name, icon_size, icon_mipmap
             tint = { 1, 1, 1, 0 }, -- Additive blending.
         },
     }
-
     return icons
 end
 
@@ -111,7 +110,6 @@ function icon_utils.create_equipment_technology_icon(equipment_name, icon_size, 
             shift = {100, 100}
         }
     }
-
     return icons
 end
 

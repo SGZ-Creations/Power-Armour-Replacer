@@ -1,5 +1,17 @@
 --PA&R have hide & disable mechanics for --||-- Armours & Equipment.
 
+-- Architecture:
+-- 1. High-level toggle for display warnings or not, gate every message under this setting.
+-- 2. Gate individual messages to display _state_, so if the setting that hides an item is enable, 
+--    display the warning if that and the high-level setting are true.
+
+-- Power Armour & Replacer:
+-- These warnings can be disabled in runtime settings.
+-- - Vanilla armour equipment has been disabled.
+-- - Bobs armor equipment has been disabled.
+-- - ...
+-- Move to Tips & Tricks
+
 local function check_for_error(event)
     local printer = game.print
 

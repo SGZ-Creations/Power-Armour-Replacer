@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 13.01.2024
+  Features:
+    - Improved Achivements Textures. 
+  Changes:
+    - Moved Production science prereqesite from night immunity 2 --> Armour 7
+    - Armour item code rework.
+    - Removed Depricated textures.
+    - Reqires C.A.S version 1.4.3+
+    - Changelog.
+  Bugfixes:
+    - Equipment Solar panel, recipes was missing it's un-lock.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: 10.01.2024
   Modding:
@@ -28,10 +41,11 @@ Date: 08.01.2024
 Version: 0.2.0
 Date: 07.01.2024
   Features:
-    - Full texture rework.
+    - Texture rework.
   Changes:
     - Internal Items Names.
-    - Full code rework.
+    - Code rework.
+    - Reqires C.A.S version 1.4.2+
   Scripting:
     - Item Name Change par-...-mk(1-10).
     - Tech Name Change par-...-tech-(1-10).

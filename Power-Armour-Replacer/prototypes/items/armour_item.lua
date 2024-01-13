@@ -1,476 +1,133 @@
---[[
-% 40=0.4 or 105=1.05    
-Flatt Resistance 500
-Biter Damage 2000
-1. Damage Calculation (2000-500)x(1-1.05)
-2. Damage Calculation (2000-500)x(100-105) then devide answer by 100
-]]
-    local inventory_bonus = {
-    "50", --0
-    "100", --1
-    "150", --2
-    "200", --3
-    "250", --4
-    "300", --5
-    "350", --6
-    "400", --7
-    "450", --8
-    "500", --9
-}
-local physical_decrease = {
-    "20", --0
-    "40", --1
-    "60", --2
-    "80", --3
-    "100", --4
-    "120", --5
-    "140", --6
-    "160", --7
-    "180", --8
-    "200", --9
-}
-local physical_percent = {
-    "10", --0
-    "20", --1
-    "30", --2
-    "40", --3
-    "50", --4
-    "60", --5
-    "70", --6
-    "80", --7
-    "90", --8
-    "100", --9
-}
-local acid_decrease = {
-    "50", --0
-    "100", --1
-    "150", --2
-    "200", --3
-    "250", --4
-    "300", --5
-    "350", --6
-    "400", --7
-    "450", --8
-    "500", --9
-}
-local acid_percent = {
-    "15", --1
-    "30", --2
-    "45", --3
-    "60", --4
-    "75", --5
-    "80", --6
-    "85", --7
-    "90", --8
-    "100", --9
-    "105", --0
-}
-local explosion_decrease = {
-    "100", --1
-    "200", --2
-    "300", --3
-    "400", --4
-    "500", --5
-    "600", --6
-    "700", --7
-    "800", --8
-    "900", --9
-    "1000", --10
-}
-local explosion_percent = {
-    "25", --1
-    "25", --2
-    "50", --3
-    "50", --4
-    "75", --5
-    "75", --6
-    "85", --7
-    "85", --8
-    "110", --9
-    "110", --10
-}
-local fire_decrease = {
-    "30", --1
-    "60", --2
-    "90", --3
-    "120", --4
-    "150", --5
-    "180", --6
-    "210", --7
-    "240", --8
-    "270", --9
-    "300", --10
-}
-local fire_percent = {
-    "10", --1
-    "20", --2
-    "30", --3
-    "40", --4
-    "50", --5
-    "60", --6
-    "70", --7
-    "80", --8
-    "90", --9
-    "100", --10
-}
-local poison_decrease = {
-    "20",--1
-    "40",--2
-    "60",--3
-    "80",--4
-    "100",--5
-    "120",--6
-    "140",--7
-    "160",--8
-    "180",--9
-    "200",--10
-}
-local poison_percent = {
-    "25",--0
-    "30",--1
-    "35",--2
-    "40",--3
-    "45",--4
-    "50",--5
-    "55",--6
-    "60",--7
-    "65",--8
-    "70",--9
-}
-local electric_decrease = {
-    "30",--0
-    "40",--1
-    "50",--2
-    "60",--3
-    "70",--4
-    "80",--5
-    "90",--6
-    "100",--7
-    "110",--8
-    "120",--9
-}
-local electric_percent = {
-    "12",--1
-    "24",--2
-    "36",--3
-    "48",--4
-    "60",--5
-    "72",--6
-    "84",--7
-    "96",--8
-    "108",--9
-    "120",--0
-}
-local impact_decrease = {
-    "50",--0
-    "100",--1
-    "150",--2
-    "200",--3
-    "250",--4
-    "300",--5
-    "350",--6
-    "400",--7
-    "450",--8
-    "500",--9
-}
-local impact_percent = {
-    "5",--0
-    "10",--1
-    "15",--2
-    "20",--3
-    "25",--4
-    "30",--5
-    "35",--6
-    "40",--7
-    "45",--8
-    "50",--9
-}
-local laser_decrease = {
-    "11",--1
-    "22",--2
-    "33",--3
-    "44",--4
-    "55",--5
-    "66",--6
-    "77",--7
-    "88",--8
-    "99",--9
-    "111",--0
-}
-local laser_percent = {
-    "5",--1
-    "15",--2
-    "25",--3
-    "35",--4
-    "45",--5
-    "55",--6
-    "65",--7
-    "75",--8
-    "85",--9
-    "95",--0
-}
-local order = {
-    "aaz[par-armour-mk1]-aa[armour-replacer]",
-    "abz[par-armour-mk2]-ab[armour-replacer]",
-    "acz[par-armour-mk3]-ab[armour-replacer]",
-    "adz[par-armour-mk4]-ab[armour-replacer]",
-    "aez[par-armour-mk5]-ab[armour-replacer]",
-    "afz[par-armour-mk6]-ab[armour-replacer]",
-    "agz[par-armour-mk7]-ab[armour-replacer]",
-    "ahz[par-armour-mk8]-ab[armour-replacer]",
-    "aiz[par-armour-mk9]-ab[armour-replacer]",
-    "ajz[par-armour-mk10]-ab[armour-replacer]",
+local power_armour_equipment = {
+    { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  icon = "__base__/graphics/icons/power-armor.png", },
+    { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  icon = "__base__/graphics/icons/power-armor-mk2.png", },
+    { order = "acz", inventory_bonus = 150, grid_width = 30,  grid_height = 30,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png", },
+    { order = "adz", inventory_bonus = 200, grid_width = 40,  grid_height = 40,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png", },
+    { order = "aez", inventory_bonus = 250, grid_width = 50,  grid_height = 50,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", },
+    { order = "afz", inventory_bonus = 300, grid_width = 60,  grid_height = 60,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --6
+    { order = "agz", inventory_bonus = 350, grid_width = 70,  grid_height = 70,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --7
+    { order = "ahz", inventory_bonus = 400, grid_width = 80,  grid_height = 80,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --8
+    { order = "aiz", inventory_bonus = 450, grid_width = 90,  grid_height = 90,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --9
+    { order = "ajz", inventory_bonus = 500, grid_width = 100, grid_height = 100, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --10
 }
 
-local icon = {
-    "__base__/graphics/icons/power-armor.png",
-    "__base__/graphics/icons/power-armor-mk2.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
-    "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png",
+local resistances = {
+    -- Vanilla               1,   2,   3,   4,   5,   6,   7,   8,   9,   10,
+    physical_decrease  = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200 },
+    physical_percent   = {  10,  20,  30,  40,  50,  60,  70,  80,  90,  100 },
+    acid_decrease      = {  50, 100, 150, 200, 250, 300, 350, 400, 450,  500 },
+    acid_percent       = {  15,  30,  45,  60,  75,  80,  85,  90, 100,  105 },
+    explosion_decrease = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 },
+    explosion_percent  = {  25,  25,  50,  50,  75,  75,  85,  85, 110,  110 },
+    fire_decrease      = {  30,  60,  90, 120, 150, 180, 210, 240, 270,  300 },
+    fire_percent       = {  10,  20,  30,  40,  50,  60,  70,  80,  90,  100 },
+    poison_decrease    = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200 },
+    poison_percent     = {  25,  30,  35,  40,  45,  50,  55,  60,  65,   70 },
+    electric_decrease  = {  30,  40,  50,  60,  70,  80,  90, 100, 110,  120 },
+    electric_percent   = {  12,  24,  36,  48,  60,  72,  84,  96, 108,  120 },
+    impact_decrease    = {  50, 100, 150, 200, 250, 300, 350, 400, 450,  500 },
+    impact_percent     = {   5,  10,  15,  20,  25,  30,  35,  40,  45,   50 },
+    laser_decrease     = {  11,  22,  33,  44,  55,  66,  77,  88,  99,  111 },
+    laser_percent      = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },
+
+    -- Bobs Warfare          1,   2,   3,   4,   5,   6,   7,   8,   9,   10,
+    plasma_decrease    = {  15,  30,  45,  60,  75, 100, 115, 130, 145,  160 },
+    plasma_percent     = {  50,  55,  60,  65,  70,  75,  80,  85,  90,   95 },
+    pierce_decrease    = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 },
+    pierce_percent     = {  10,  12,  14,  16,  18,  22,  24,  26,  28,   30 },
+
+	-- other future mod
 }
 
-local grid_name = {
-    "par-a1-equipment-grid",
-    "par-a2-equipment-grid",
-    "par-a3-equipment-grid",
-    "par-a4-equipment-grid",
-    "par-a5-equipment-grid",
-    "par-a6-equipment-grid",
-    "par-a7-equipment-grid",
-    "par-a8-equipment-grid",
-    "par-a9-equipment-grid",
-    "par-a10-equipment-grid",
-}
+for tier, equipment in pairs(power_armour_equipment) do
+    local equipment_name = "par-armour-mk" .. tier
+    local equipment_grid_name = "par-a" .. tier .. "-equipment-grid"
+    local equipment_order = equipment.order .. "[par-armour-mk" .. tier .. "]-ab[armour-replacer]"
 
-if mods["bobwarfare"] then
-    local plasma_decrease = {
-        "15",
-        "30",
-        "45",
-        "60",
-        "75",
-        "100",
-        "115",
-        "130",
-        "145",
-        "160",
-    }
-    local plasma_percent = {
-        "50",
-        "55",
-        "60",
-        "65",
-        "70",
-        "75",
-        "80",
-        "85",
-        "90",
-        "95",
-    }
-    local pierce_decrease = {
-        "100",
-        "200",
-        "300",
-        "400",
-        "500",
-        "600",
-        "700",
-        "800",
-        "900",
-        "1000",
-    }
-    local pierce_percent = {
-        "10",
-        "12",
-        "14",
-        "16",
-        "18",
-        "22",
-        "24",
-        "26",
-        "28",
-        "30",
-    }
-
-    local a = 1
-    while a < 11 do
-        data:extend({
+    ---@type data.ArmorPrototype
+    local equipment_armor = {
+        name = equipment_name,
+        type = "armor",
+        icon = equipment.icon,
+        icon_size = 64,
+        icon_mipmaps = 4,
+        resistances = {
             {
-                type = "armor",
-                name = "par-armour-mk" .. tostring(a),
-                icon = icon[a],
-                icon_size = 64, icon_mipmaps = 4,
-                resistances = {
-                    {
-                        type = "plasma",
-                        decrease = plasma_decrease[a],
-                        percent = plasma_percent[a],
-                    },
-                    {
-                        type = "bob-pierce",
-                        decrease = pierce_decrease[a],
-                        percent = pierce_percent[a],
-                    },
-                    {
-                        type = "physical",
-                        decrease = physical_decrease[a],
-                        percent = physical_percent[a],
-                    },
-                    {
-                        type = "acid",
-                        decrease = acid_decrease[a],
-                        percent = acid_percent[a],
-                    },
-                    {
-                        type = "explosion",
-                        decrease = explosion_decrease[a],
-                        percent = explosion_percent[a],
-                    },
-                    {
-                        type = "fire",
-                        decrease = fire_decrease[a],
-                        percent = fire_percent[a],
-                    },
-                    {
-                        type = "electric",
-                        decrease = electric_decrease[a],
-                        percent = electric_percent[a],
-                    },
-                    {
-                        type = "impact",
-                        decrease = impact_decrease[a],
-                        percent = impact_percent[a],
-                    },
-                    {
-                        type = "laser",
-                        decrease = laser_decrease[a],
-                        percent = laser_percent[a],
-                    },
-                    {
-                        type = "poison",
-                        decrease = poison_decrease[a],
-                        percent = poison_percent[a],
-                    },
-                },
-                subgroup = "replacer_item",
-                order = order[a],
-                stack_size = 1,
-                infinite = true,
-                equipment_grid = grid_name[a],
-                inventory_size_bonus = inventory_bonus[a],
-                open_sound = {filename = "__base__/sound/armor-open.ogg", volume = 1},
-                close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
+                type = "physical",
+                decrease = resistances.physical_decrease[tier],
+                percent = resistances.physical_percent[tier],
             },
-        })
-        a = a + 1
-    end
-else
-    local a = 1
-    while a < 11 do
-        data:extend({
             {
-                type = "armor",
-                name = "par-armour-mk" .. tostring(a),
-                icon = icon[a],
-                icon_size = 64, icon_mipmaps = 4,
-                resistances = {
-                    {
-                        type = "physical",
-                        decrease = physical_decrease[a],
-                        percent = physical_percent[a],
-                    },
-                    {
-                        type = "acid",
-                        decrease = acid_decrease[a],
-                        percent = acid_percent[a],
-                    },
-                    {
-                        type = "explosion",
-                        decrease = explosion_decrease[a],
-                        percent = explosion_percent[a],
-                    },
-                    {
-                        type = "fire",
-                        decrease = fire_decrease[a],
-                        percent = fire_percent[a], 
-                    },
-                    {
-                        type = "electric",
-                        decrease = electric_decrease[a],
-                        percent = electric_percent[a],
-                    },
-                    {
-                        type = "impact",
-                        decrease = impact_decrease[a],
-                        percent = impact_percent[a],
-                    },
-                    {
-                        type = "laser",
-                        decrease = laser_decrease[a],
-                        percent = laser_percent[a],
-                    },
-                    {
-                        type = "poison",
-                        decrease = poison_decrease[a],
-                        percent = poison_percent[a],
-                    },
-                },
-                subgroup = "replacer_item",
-                order = order[a],
-                stack_size = 1,
-                infinite = true,
-                equipment_grid = grid_name[a],
-                inventory_size_bonus = inventory_bonus[a],
-                open_sound = {filename =    "__base__/sound/armor-open.ogg", volume = 1},
-                close_sound = {filename = "__base__/sound/armor-close.ogg", volume = 1}
+                type = "acid",
+                decrease = resistances.acid_decrease[tier],
+                percent = resistances.acid_percent[tier],
             },
-        })
-        a = a + 1
-    end
-end
-
-local width = {
-    "10",
-    "20",
-    "30",
-    "40",
-    "50",
-    "60",
-    "70",
-    "80",
-    "90",
-    "100",
-}
-
-local height = {
-    "10",
-    "20",
-    "30",
-    "40",
-    "50",
-    "60",
-    "70",
-    "80",
-    "90",
-    "100",
-}
-
-local g = 1
-while g < 11 do
-    data:extend({
-        {
-            type = "equipment-grid",
-            equipment_categories = {"armor"},
-            name = grid_name[g],
-            width = width[g],
-            height = height[g],
+            {
+                type = "explosion",
+                decrease = resistances.explosion_decrease[tier],
+                percent = resistances.explosion_percent[tier],
+            },
+            {
+                type = "fire",
+                decrease = resistances.fire_decrease[tier],
+                percent = resistances.fire_percent[tier],
+            },
+            {
+                type = "electric",
+                decrease = resistances.electric_decrease[tier],
+                percent = resistances.electric_percent[tier],
+            },
+            {
+                type = "impact",
+                decrease = resistances.impact_decrease[tier],
+                percent = resistances.impact_percent[tier],
+            },
+            {
+                type = "laser",
+                decrease = resistances.laser_decrease[tier],
+                percent = resistances.laser_percent[tier],
+            },
+            {
+                type = "poison",
+                decrease = resistances.poison_decrease[tier],
+                percent = resistances.poison_percent[tier],
+            },
         },
+        subgroup = "replacer_item",
+        order = equipment_order,
+        stack_size = 1,
+        infinite = true,
+        equipment_grid = equipment_grid_name,
+        inventory_size_bonus = equipment.inventory_bonus,
+        open_sound = { filename = "__base__/sound/armor-open.ogg", volume = 1 },
+        close_sound = { filename = "__base__/sound/armor-close.ogg", volume = 1 }
+    }
+
+    if mods["bobwarfare"] then
+        table.insert(equipment_armor.resistances, {
+            type = "plasma",
+            decrease = resistances.plasma_decrease[tier],
+            percent = resistances.plasma_percent[tier],
+        })
+
+        table.insert(equipment_armor.resistances, {
+            type = "bob-pierce",
+            decrease = resistances.pierce_decrease[tier],
+            percent = resistances.pierce_percent[tier],
+        })
+    end
+
+    ---@type data.EquipmentGridPrototype
+    local equipment_grid = {
+        name = equipment_grid_name,
+        type = "equipment-grid",
+        equipment_categories = {"armor"},
+        width = equipment.grid_width,
+        height = equipment.grid_height,
+    }
+
+    data:extend({
+        equipment_armor,
+        equipment_grid
     })
-    g = g + 1
 end

@@ -2,9 +2,11 @@ data:extend({
     {
         type = "technology",
         name = "par-night-immunity-tech-1",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/texture/tech/belt-immunity-night-vision-equipment.png"),
-        prerequisites = {"par-armour-tech-3", "par-fusion-reactor-tech-1"},
+        icon_size = 256,
+        icon_mipmaps = 4,
+        icons = util.technology_icon_constant_equipment(
+            "__Power-Armour-Replacer__/graphics/technology/night-immunity/belt-immunity-night-vision-equipment.png"),
+        prerequisites = { "par-armour-tech-3", "par-fusion-reactor-tech-1" },
         effects =
         {
             {
@@ -20,9 +22,9 @@ data:extend({
         {
             count = 500,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "military-science-pack",   1 },
             },
             time = 15
         },
@@ -31,8 +33,10 @@ data:extend({
     {
         type = "technology",
         name = "par-night-immunity-tech-2",
-        icon_size = 256, icon_mipmaps = 4,
-        icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/texture/tech/belt-immunity-night-vision-equipment-1.png"),
+        icon_size = 256,
+        icon_mipmaps = 4,
+        icons = util.technology_icon_constant_equipment(
+            "__Power-Armour-Replacer__/graphics/technology/night-immunity/belt-immunity-night-vision-equipment-1.png"),
         prerequisites =
         {
             "par-night-immunity-tech-1",
@@ -40,7 +44,6 @@ data:extend({
             "par-armour-tech-7",
             "battery",
             "advanced-electronics-2",
-			"production-science-pack",
         },
         effects =
         {
@@ -57,11 +60,11 @@ data:extend({
         {
             count = 500,
             ingredients = {
-                {"automation-science-pack", 2},
-                {"logistic-science-pack", 2},
-                {"military-science-pack", 2},
-                {"chemical-science-pack", 2},
-				{"production-science-pack", 2},
+                { "automation-science-pack", 2 },
+                { "logistic-science-pack",   2 },
+                { "military-science-pack",   2 },
+                { "chemical-science-pack",   2 },
+                { "production-science-pack", 2 },
             },
             time = 15
         },

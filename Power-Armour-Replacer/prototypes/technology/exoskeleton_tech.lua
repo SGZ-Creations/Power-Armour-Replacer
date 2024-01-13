@@ -4,7 +4,7 @@ data:extend({
         type = "technology",
         name = "par-exoskeleton-tech-1",
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 1),
-        prerequisites = {"par-armour-tech-2", "par-fusion-reactor-tech-1"},
+        prerequisites = { "par-armour-tech-2", "par-fusion-reactor-tech-1" },
         effects =
         {
             {
@@ -16,7 +16,7 @@ data:extend({
         {
             count = 500,
             ingredients = {
-                {"automation-science-pack", 1},
+                { "automation-science-pack", 1 },
             },
             time = 15
         },
@@ -26,7 +26,7 @@ data:extend({
         type = "technology",
         name = "par-exoskeleton-tech-2",
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 2),
-        prerequisites = {"par-exoskeleton-tech-1", "battery", "par-armour-tech-4"},
+        prerequisites = { "par-exoskeleton-tech-1", "battery", "par-armour-tech-4" },
         effects =
         {
             {
@@ -38,9 +38,9 @@ data:extend({
         {
             count = 1000,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "military-science-pack",   1 },
             },
             time = 15
         },
@@ -50,7 +50,7 @@ data:extend({
         type = "technology",
         name = "par-exoskeleton-tech-3",
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 3),
-        prerequisites = {"par-exoskeleton-tech-2", "par-armour-tech-6"},
+        prerequisites = { "par-exoskeleton-tech-2", "par-armour-tech-6" },
         effects =
         {
             {
@@ -62,10 +62,10 @@ data:extend({
         {
             count = 1500,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1},
-                {"chemical-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "military-science-pack",   1 },
+                { "chemical-science-pack",   1 },
             },
             time = 15
         },
@@ -91,11 +91,11 @@ data:extend({
         {
             count = 2000,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "military-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 },
             },
             time = 15
         },
@@ -105,7 +105,7 @@ data:extend({
         type = "technology",
         name = "par-exoskeleton-tech-5",
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 5),
-        prerequisites = {"par-exoskeleton-tech-4", "par-armour-tech-10"},
+        prerequisites = { "par-exoskeleton-tech-4", "par-armour-tech-10" },
         effects =
         {
             {
@@ -117,12 +117,12 @@ data:extend({
         {
             count = 2500,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
-                {"utility-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "military-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 },
+                { "utility-science-pack",    1 },
             },
             time = 15
         },
