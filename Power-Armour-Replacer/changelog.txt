@@ -12,6 +12,8 @@ Date: 13.01.2024
     - Changelog.
   Bugfixes:
     - Equipment Solar panel, recipes was missing it's un-lock.
+  Thanks:
+    - Discord: @Kira (Kirazy) For the Improved Armour code implementation for my mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: 10.01.2024
