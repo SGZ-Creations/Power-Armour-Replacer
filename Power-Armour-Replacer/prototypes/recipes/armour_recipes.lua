@@ -69,6 +69,7 @@ if not mods["PyBlock"] then
             ingredients = {
                 {"par-armour-mk4", 1},
                 {"battery", 50},
+                {"electric-engine-unit", 25},
                 {"advanced-circuit", 150},
                 {"uranium-235", 350},
             },

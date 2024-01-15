@@ -38,9 +38,6 @@ util.technology_dependancy
 		["par-laser-tech-3"] = {
 			["advanced-electronics"] = "electronics"
 		},
-		["par-laser-tech-4"] = {
-			["advanced-electronics"] = "gem-processing-2"
-		},
 		["par-laser-tech-5"] = {
 			"advanced-electronics"
 		},
@@ -151,6 +148,9 @@ util.technology_dependancy
 		},
 		["par-solar-panel-tech-6"] = {
 			"lithium-processing",
+		},
+		["par-laser-tech-4"] = {
+			["advanced-electronics"] = "gem-processing-2"
 		},
 	},
 
