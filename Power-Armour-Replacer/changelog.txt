@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.6
+Date: 17.01.2024
+  Changes:
+    - Fixed bobplate --> bobplates in info.json with the new dependency system on the website, should fix mod not found.
+    - https://mods.factorio.com/mod/Power-Armour-Replacer/dependencies?direction=out&sort=idx&filter=all
+---------------------------------------------------------------------------------------------------
 Version: 0.2.5
 Date: 15.01.2024
   Changes:
