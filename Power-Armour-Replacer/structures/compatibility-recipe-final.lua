@@ -102,7 +102,7 @@ util.ingredient_prereq(data.raw.recipe["immolator"],
     {
         dependencies = {"spidertron-extended", "bobrevamp",},
         replacements = {
-            ["refiend-concrete"] = {"heat-shield-tile", 100},
+            ["refined-concrete"] = {"heat-shield-tile", 200},
         }
     },
 })

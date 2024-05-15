@@ -142,6 +142,7 @@ local recipes = {
         ingredients = {
             {"par-battery-mk9", 1},
             {"battery", 140},
+            {"processing-unit", 50},
             {"rocket-control-unit", 135},
             {"low-density-structure", 200},
             {type="fluid", name="sulfuric-acid", amount=150},
@@ -157,20 +158,27 @@ util.ingredient_prereq(recipes[1], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 100},
-            {"solder", 30},
+            ["electronic-circuit"] = {"basic-circuit-board", 50},
+            ["small-electric-pole"] = {"ruber", 50},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["small-electric-pole"] = {"ruber", 40},
-            {"lead-plate", 20},
+            ["electronic-circuit"] = {"electronic-circuit", 50},
+            ["small-electric-pole"] = {"ruber", 50},
+            ["steel-plate"] = {"lead-plate", 50},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"solder", 50},
         }
     },
     --Darkstar
     {
-        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
+        dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
             {"silicon", 60},
             {"glass", 40},
@@ -202,24 +210,31 @@ util.ingredient_prereq(recipes[1], {
 })
 util.ingredient_prereq(recipes[2], {
     {
-        dependencies = {"bobelectronics", "bobplates"},
+        dependencies = {"bobelectronics", },
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 100},
-            {"solder", 60},
-            {"tinned-copper-cable", 110},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 100},
             {"lead-plate", 35},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"solder", 60},
+            {"tinned-copper-cable", 110},
         }
     },
     --Darkstar
     {
-        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
+        dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
             {"silicon", 60},
+            {"lead-plate", 35},
         }
     },
     {
@@ -254,14 +269,19 @@ util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-circuit", 50},
-            {"solder", 85},
+            ["advanced-circuit"] = {"electronic-circuit", 150},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             {"lead-plate", 55},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"solder", 85},
         }
     },
     --248K
@@ -274,7 +294,7 @@ util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"248k"},
         replacements = {
-            {"lithium-ion-battery", 20},
+            --{"lithium-ion-battery", 20},
         }
     },
     --Angels
@@ -325,8 +345,7 @@ util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"insulated-cable", 120},
-            ["copper-cable"] = {"solder", 110},
+            ["advanced-circuit"] = {"electronic-circuit", 200},
             {"insulated-cable", 100},
         }
     },
@@ -335,6 +354,11 @@ util.ingredient_prereq(recipes[4], {
         replacements = {
             ["steel-plate"] = {"bronze-alloy", 60},
             {"invar-alloy", 50},
+        }
+    },{
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["copper-cable"] = {"solder", 110},
         }
     },
     --248K
@@ -363,9 +387,8 @@ util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"advanced-circuit", 80},
-            {"electronic-circuit", 80},
-            {"tinned-copper-cable", 200},
+            ["advanced-circuit"] = {"advanced-circuit", 250},
+            {"insulated-cable", 210},
         }
     },
     {
@@ -374,19 +397,17 @@ util.ingredient_prereq(recipes[5], {
             ["low-density-structure"] = {"brass-plate", 50},
             ["steel-plate"] = {"aluminium-plate", 100},
         }
+    },{
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"tinned-copper-cable", 200},
+        }
     },
     --248K
     {
         dependencies = {"248k", "bobplates"},
         replacements = {
             {"lithium-ion-battery", 20},
-        }
-    },
-    --Angles
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            {"insulated-cable", 210},
         }
     },
     --Darkstar
@@ -411,6 +432,12 @@ util.ingredient_prereq(recipes[5], {
     },
 })
 util.ingredient_prereq(recipes[6], {
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["advanced-circuit"] = {"advanced-circuit", 300},
+        }
+    },
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -449,13 +476,26 @@ util.ingredient_prereq(recipes[6], {
 })
 util.ingredient_prereq(recipes[7], {
     {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["advanced-circuit"] = {"processing-unit", 350},
+            ["lubricant"] = {"", 0},
+        }
+    },
+    {
         dependencies = {"bobplates"},
         replacements = {
             ["rocket-control-unit"] = {"low-density-structure", 50},
             ["battery"] = {"silver-zinc-battery", 100},
             ["plastic-bar"] = {"titanium-plate", 150},
-            {"processing-unit", 100},
+            ["lubricant"] = {"", 0},
             {"lithium-ion-battery", 100},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"gilded-copper-cable", 100},
         }
     },
     --248K
@@ -491,7 +531,7 @@ util.ingredient_prereq(recipes[8], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"gilded-copper-cable", 200},
+            ["water"] = {"processing-unit", 400},
         }
     },
     {
@@ -500,6 +540,11 @@ util.ingredient_prereq(recipes[8], {
             ["battery"] = {"silver-zinc-battery", 200},
             ["water"] = {"", 0},
             {"tungsten-plate", 200},
+        }
+    },{
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"gilded-copper-cable", 200},
         }
     },
     {
@@ -513,40 +558,53 @@ util.ingredient_prereq(recipes[8], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-magnesium", 200},
-            --{type="fluid", name="liquid-dimethylmercury", amount=100},
+            {type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
 })
 util.ingredient_prereq(recipes[9], {
     {
+        dependencies = {"bobelectronics",},
+        replacements = {
+            ["processing-unit"] = {"advanced-processing-unit", 450},
+        }
+    },
+    {
         dependencies = {"bobplates"},
         replacements = {
+            ["processing-unit"] = {"advanced-processing-unit", 450},
             ["battery"] = {"silver-zinc-battery", 300},
             ["plastic-bar"] = {"copper-tungsten-alloy", 250},
-            {"advanced-processing-unit", 100},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-osmium", 250},
-            --{type="fluid", name="liquid-dimethylmercury", amount=200},
+            {type="fluid", name="liquid-dimethylmercury", amount=200},
         }
     },
 })
 util.ingredient_prereq(recipes[10], {
     {
+        dependencies = {"bobelectronics",},
+        replacements = {
+            ["processing-unit"] = {"advanced-processing-unit", 500},
+        }
+    },
+    {
         dependencies = {"bobplates"},
         replacements = {
+            ["processing-unit"] = {"advanced-processing-unit", 500},
             ["battery"] = {"silver-zinc-battery", 400},
             ["rocket-control-unit"] = {"nitinol-alloy", 100},
-            {"advanced-processing-unit", 200},
+            {"tungsten-carbide",600},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            {"tungsten-carbide", 100},
+            {"tungsten-carbide", 600},
         }
     },
     {
@@ -560,7 +618,7 @@ util.ingredient_prereq(recipes[10], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-magnesium", 200},
-            --{type="fluid", name="liquid-dimethylmercury", amount=300},
+            ["sulfuric-acid"] = {"liquid-dimethylmercury", 300},
         }
     },
     --K2

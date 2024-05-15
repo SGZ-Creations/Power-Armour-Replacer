@@ -163,12 +163,26 @@ if not mods["PyBlock"] then
     --Compatibility section
     util.ingredient_prereq(recipes[1], {
         {
+            dependencies = {"bobelectronics",},
+            replacements = {
+                ["electronic-circuit"] = {"basic-circuit-board", 100},
+                ["steel-plate"] = {"rubber", 50},
+                ["wood"] = {"resin", 150},
+            }
+        },
+        {
+            dependencies = {"bobplates"},
+            replacements = {
+                ["electronic-circuit"] = {"electronic-circuit", 100},
+                ["stone-brick"] = {"glass", 100},
+                ["steel-plate"] = {"rubber", 50},
+                ["wood"] = {"resin", 150},
+            }
+        },
+        {
             dependencies = {"bobelectronics", "bobplates"},
             replacements = {
-                ["wood"] = {"solder", 100},
-                ["electronic-circuit"] = {"basic-circuit-board", 55},
-                ["steel-plate"] = {"rubber", 20},
-                ["stone-brick"] = {"glass", 100},
+                ["resin"] = {"solder", 100},
                 {"tinned-copper-cable", 55},
             }
         },
@@ -178,11 +192,10 @@ if not mods["PyBlock"] then
                 {"silicon", 100},
             }
         },
-        -- Angels
+        --Angels
         {
             dependencies = {"bobplates", "angelssmelting"},
             replacements = {
-                ["wood"] = {"solder", 100},
                 ["stone-brick"] = {"lead-plate", 100},
                 ["rubber"] = {"steel-gear-wheel", 25},
             }
@@ -219,7 +232,7 @@ if not mods["PyBlock"] then
                 {"copper-cable", 100},
             }
         },
-        --SEK2 as long is it don't mark mod as incompatible for no reason.
+        --SEK2 as long it don't mark mod as incompatible for no reason.
         {
             dependencies = {"Krastorio2"},
             replacements = {
@@ -236,18 +249,26 @@ if not mods["PyBlock"] then
 
     util.ingredient_prereq(recipes[2], {
         {
-            dependencies = {"bobelectronics", "bobplates"},
+            dependencies = {"bobelectronics"},
             replacements = {
-                ["electronic-circuit"] = {"basic-circuit-board", 75},
+                ["electronic-circuit"] = {"basic-circuit-board", 200},
+                {"insulated-cable", 50},
             }
         },
         {
             dependencies = {"bobplates"},
             replacements = {
+                ["stone-brick"] = {"glass", 100},
                 ["copper-plate"] = {"bronze-alloy", 75},
                 ["iron-gear-wheel"] = {"silver-plate", 75},
                 ["steel-plate"] = {"steel-bearing", 155},
-                {"rubber", 20},
+            }
+        },
+        {
+            dependencies = {"bobelectronics", "bobplates"},
+            replacements = {
+                ["insulated-cable"] = {"solder", 50},
+                {"tinned-copper-cable", 55},
             }
         },
         {
@@ -322,13 +343,14 @@ if not mods["PyBlock"] then
         {
             dependencies = {"bobelectronics"},
             replacements = {
-                ["advanced-circuit"] = {"electronic-circuit", 100},
-                {"basic-circuit-board", 50}
+                ["advanced-circuit"] = {"electronic-circuit", 300},
+                {"rubber", 60},
             }
         },
         {
             dependencies = {"bobplates"},
             replacements = {
+                ["advanced-circuit"] = {"electronic-circuit", 300},
                 ["plastic-bar"] = {"zinc-plate", 50},
                 ["steel-plate"] = {"aluminium-plate", 150},
                 ["engine-unit"] = {"cobalt-steel-alloy", 100},
@@ -417,18 +439,20 @@ if not mods["PyBlock"] then
     })
     util.ingredient_prereq(recipes[4], {
         {
+            dependencies = {"bobelectronics"},
+            replacements = {
+                ["advanced-circuit"] = {"electronic-circuit", 400},
+                ["plastic-bar"] = {"insulated-cable", 180},
+            }
+        },
+        {
             dependencies = {"bobplates"},
             replacements = {
+                ["advanced-circuit"] = {"electronic-circuit", 400},
                 ["engine-unit"] = {"silicon", 160},
                 ["iron-gear-wheel"] = {"gunmetal-alloy", 120},
                 ["copper-plate"] = {"cobalt-steel-alloy", 150},
                 {"invar-alloy", 100},
-            }
-        },
-        {
-            dependencies = {"bobelectronics"},
-            replacements = {
-                ["advanced-circuit"] = {"electronic-circuit", 100},
             }
         },
         {
@@ -450,9 +474,13 @@ if not mods["PyBlock"] then
             dependencies = {"angelssmelting", "bobplates"},
             replacements = {
                 ["gunmetal-alloy"] = {"angels-wire-silver", 55},
-                ["cobalt-steel-alloy"] = {"solder", 200},
                 ["engine-unit"] = {"concrete-brick", 135},
-                ["plastic-bar"] = {"insulated-cable", 180},
+            }
+        },
+        {
+            dependencies = {"angelssmelting", "bobplates", "bobelectronics"},
+            replacements = {
+                ["cobalt-steel-alloy"] = {"solder", 200},
             }
         },
         --IR3
@@ -486,15 +514,24 @@ if not mods["PyBlock"] then
         {
             dependencies = {"bobelectronics"},
             replacements = {
-                ["processing-unit"] = {"electronic-circuit", 200},
+                {"advanced-circuit", 500},
             }
         },
         {
             dependencies = {"bobplates"},
             replacements = {
-                ["battery"] = {"aluminium-plate", 50},
+                ["battery"] = {"aluminium-plate", 150},
+                ["uranium-235"] = {"silver-plate", 200},
+                {"advanced-circuit", 500},
+                {"silver-plate", 200},
                 {"sapphire-5", 50},
                 {"ruby-5", 50},
+            }
+        },
+        {
+            dependencies = {"bobelectronics", "bobplates"},
+            replacements = {
+                ["engine-unit"] = {"gilded-copper-cable", 500},
             }
         },
         {
@@ -527,25 +564,28 @@ if not mods["PyBlock"] then
 
     util.ingredient_prereq(recipes[6], {
         {
-            dependencies = {"bobenemies", "bobplates"},
-            setting = "bobmods-enemies-enableartifacts",
-            replacements = {
-                ["steel-plate"] = {"alien-blue-alloy", 100},
-            }
-        },
-        {
             dependencies = {"bobelectronics"},
             replacements = {
-                {"advanced-circuit", 250},
+                ["processing-unit"] = {"advanced-circuit", 600},
             }
         },
         {
             dependencies = {"bobplates"},
             replacements = {
+                ["processing-unit"] = {"advanced-circuit", 600},
+                ["steel-plate"] = {"brass-alloy", 100},
                 ["copper-plate"] = {"titanium-plate", 200},
                 ["solar-panel"] = {"gold-plate", 100},
                 {"sapphire-5", 100},
                 {"ruby-5", 100},
+            }
+        },
+        {
+            dependencies = {"bobenemies", "bobplates"},
+            setting = "bobmods-enemies-enableartifacts",
+            replacements = {
+                ["steel-plate"] = {"alien-blue-alloy", 100},
+                {"alien-blue-alloy", 100},
             }
         },
         {
@@ -577,7 +617,7 @@ if not mods["PyBlock"] then
             replacements = {
             }
         },
-        -- SE K2
+        --SE K2
         {
             dependencies = {"space-exploration"},
             replacements = {
@@ -587,10 +627,9 @@ if not mods["PyBlock"] then
 
     util.ingredient_prereq(recipes[7], {
         {
-            dependencies = {"bobenemies", "bobplates"},
-            setting = "bobmods-enemies-enableartifacts",
+            dependencies = {"bobelectronics",},
             replacements = {
-                ["copper-cable"] = {"alien-orange-alloy", 100},
+                ["uranium-fuel-cell"] = {"processing-unit", 700},
             }
         },
         {
@@ -598,13 +637,26 @@ if not mods["PyBlock"] then
             replacements = {
                 ["steel-plate"] = {"ceramic-bearing", 200},
                 ["low-density-structure"] = {"cobalt-steel-bearing", 200},
-                ["copper-cable"] = {"advanced-circuit", 300},
-                {"processing-unit", 100},
+                ["uranium-fuel-cell"] = {"tungsten-plate", 250},
                 {"tungsten-plate", 250},
                 {"sapphire-5", 50},
                 {"ruby-5", 50},
                 {"emerald-5", 50},
                 {"amethyst-5", 50},
+            }
+        },
+        {
+            dependencies = {"bobelectronics", "bobplates"},
+            replacements = {
+                ["copper-cable"] = {"gilded-copper-cable", 250},
+                {"solder", 150},
+            }
+        },
+        {
+            dependencies = {"bobenemies", "bobplates"},
+            setting = "bobmods-enemies-enableartifacts",
+            replacements = {
+                {"alien-orange-alloy", 100},
             }
         },
         {
@@ -625,7 +677,6 @@ if not mods["PyBlock"] then
         {
             dependencies = {"angelssmelting", "bobplates"},
             replacements = {
-                {"tungsten-plate", 250},
                 {"glass", 50},
             }
         },
@@ -645,9 +696,21 @@ if not mods["PyBlock"] then
 
     util.ingredient_prereq(recipes[8], {
         {
-            dependencies = {"bobwarfare"},
+            dependencies = {"bobelectronics"},
             replacements = {
-                {"heavy-armor-3", 1}
+                ["nuclear-fuel"] = {"processing-unit", 800},
+            }
+        },
+        {
+            dependencies = {"bobplates"},
+            replacements = {
+                ["nuclear-fuel"] = {"copper-tungsten-alloy", 200},
+                ["battery"] = {"silver-zinc-battery", 100},
+                {"copper-tungsten-alloy", 200},
+                {"sapphire-5", 100},
+                {"ruby-5", 100},
+                {"emerald-5", 100},
+                {"amethyst-5", 100},
             }
         },
         {
@@ -657,20 +720,9 @@ if not mods["PyBlock"] then
             }
         },
         {
-            dependencies = {"bobelectronics"},
+            dependencies = {"bobwarfare"},
             replacements = {
-                {"processing-unit", 200},
-            }
-        },
-        {
-            dependencies = {"bobplates"},
-            replacements = {
-                ["nuclear-fuel"] = {"copper-tungsten-alloy", 200},
-                ["battery"] = {"silver-zinc-battery", 100},
-                {"sapphire-5", 100},
-                {"ruby-5", 100},
-                {"emerald-5", 100},
-                {"amethyst-5", 100},
+                {"heavy-armor-3", 1}
             }
         },
         {
@@ -709,12 +761,17 @@ if not mods["PyBlock"] then
 
     util.ingredient_prereq(recipes[9], {
         {
+            dependencies = {"bobelectronics",},
+            replacements = {
+                ["solar-panel"] = {"advanced-processing-unit", 900},
+            }
+        },
+        {
             dependencies = {"bobplates"},
             replacements = {
-                ["low-density-structure"] = {"tungsten-carbide", 250},
-                ["rocket-control-unit"] = {"processing-unit", 100},
-                ["solar-panel"] = {"advanced-processing-unit", 150},
-                {"tungsten-plate", 200},
+                ["solar-panel"] = {"advanced-processing-unit", 900},
+                ["low-density-structure"] = {"tungsten-carbide", 300},
+                {"tungsten-plate", 300},
                 {"sapphire-5", 50},
                 {"ruby-5", 50},
                 {"emerald-5", 50},
@@ -765,12 +822,20 @@ if not mods["PyBlock"] then
     })
     util.ingredient_prereq(recipes[10], {
         {
+            dependencies = {"bobelectronics",},
+            replacements = {
+                ["solar-panel"] = {"advanced-processing-unit", 1000},
+                ["processing-unit"] = {"insulated-cable", 550},
+            }
+        },
+        {
             dependencies = {"bobplates"},
             replacements = {
-                ["processing-unit"] = {"advanced-processing-unit", 200},
-                ["solar-panel"] = {"copper-tungsten-alloy", 200},
-                {"nitinol-alloy", 100},
-                {"nitinol-bearing", 100},
+                ["solar-panel"] = {"advanced-processing-unit", 1000},
+                ["processing-unit"] = {"copper-tungsten-alloy", 500},
+                {"copper-tungsten-alloy", 500},
+                {"nitinol-alloy", 600},
+                {"nitinol-bearing", 600},
                 {"sapphire-5", 100},
                 {"ruby-5", 100},
                 {"emerald-5", 100},

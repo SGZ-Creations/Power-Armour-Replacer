@@ -1,3 +1,11 @@
+--[[
+% 40=0.4 or 105=1.05    
+Flatt Resistance 500
+Incoming Damage 2000
+1. Damage Calculation (2000-1000)x(1 - 0.95) = 50
+2. Damage Calculation (2000-1000)x(100 - 95) ÷ 100 = 50
+]]
+
 local power_armour_equipment = {
     { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  icon = "__base__/graphics/icons/power-armor.png", },
     { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  icon = "__base__/graphics/icons/power-armor-mk2.png", },

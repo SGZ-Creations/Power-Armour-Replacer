@@ -84,21 +84,29 @@ local util = require("compatibilities.util")
 
 util.ingredient_prereq(recipes[1], {
     {
-        dependencies = {"bobelectronics", "bobplates"},
+        dependencies = {"bobelectronics"},
         replacements = {
-            ["copper-cable"] = {"solder", 50},
-            ["steel-plate"] = {"tined-copper-cable", 110},
+            ["electronic-circuit"] = {"basic-circuit-board", 100},
         }
     },
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"bobplates"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 140},
+            ["electronic-circuit"] = {"electronic-circuit", 100},
+            ["iron-gear-wheel"] = {"carbon", 80},
+            {"steel-gear-wheel", 200},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["copper-cable"] = {"solder", 50},
+            {"tinned-copper-cable", 100},
         }
     },
     --Darkstar
     {
-        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
+        dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
             {"silicon", 115},
         }
@@ -125,11 +133,18 @@ util.ingredient_prereq(recipes[1], {
 })
 util.ingredient_prereq(recipes[2], {
     {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["electronic-circuit"] = {"electronic-circuit", 200},
+        }
+    },
+    {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"invar-alloy", 150},
             ["steel-plate"] = {"cobalt-steel-bearing", 75},
             ["iron-gear-wheel"] = {"steel-bearing", 60},
+            ["electronic-circuit"] = {"electronic-circuit", 200},
         }
     },
     -- Angels
@@ -180,9 +195,7 @@ util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"advanced-circuit", 125},
-            ["steel-plate"] = {"gilded-copper-cable", 200},
-            ["iron-gear-wheel"] = {"invar-alloy", 155},
+            {"advanced-circuit", 300},
             ["lubricant"] = {"", 0},
         }
     },
@@ -191,7 +204,16 @@ util.ingredient_prereq(recipes[3], {
         replacements = {
             ["iron-stick"] = {"titanium-bearing", 75},
             ["battery"] = {"lithium-ion-battery", 90},
-            {"titanium-plate", 125}
+            ["iron-gear-wheel"] = {"invar-alloy", 155},
+            ["lubricant"] = {"", 0},
+            {"advanced-circuit", 300},
+            {"titanium-plate", 125},
+        }
+    },
+    {
+        dependencies = {"bobelectronics"},
+        replacements = {
+            ["steel-plate"] = {"gilded-copper-cable", 200},
         }
     },
     {
@@ -251,9 +273,9 @@ util.ingredient_prereq(recipes[3], {
 })
 util.ingredient_prereq(recipes[4], {
     {
-        dependencies = {"bobrevamp"},
+        dependencies = {"bobelectronics"},
         replacements = {
-            ["steel-plate"] = {"heat-shield-tile", 135},
+            {"processing-unit", 400},
         }
     },
     {
@@ -261,8 +283,14 @@ util.ingredient_prereq(recipes[4], {
         replacements = {
             ["plastic-bar"] = {"cobalt-steel-bearing", 120},
             ["battery"] = {"silver-zinc-battery", 150},
+            {"processing-unit", 400},
             {"tungsten-gear-wheel", 115},
-            {"processing-unit", 120},
+        }
+    },
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            ["steel-plate"] = {"heat-shield-tile", 135},
         }
     },
     --Clowns
@@ -293,16 +321,24 @@ util.ingredient_prereq(recipes[5], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"gilded-copper-cable", 90},
-            {"insulated-cable", 660},
+            ["processing-unit"] = {"advanced-processing-unit", 500},
+            ["advanced-circuit"] = {"insulated-cable", 660},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 120},
+            ["processing-unit"] = {"advanced-processing-unit", 500},
             ["steel-plate"] = {"copper-tungsten-alloy", 200},
             ["battery"] = {"tungsten-carbide", 200},
+            ["advanced-circuit"] = {"nitinol-bearing", 200},
+            ["insulated-cable"] = {"nitinol-bearing", 200},
+        }
+    },
+    {
+        dependencies = {"bobplates", "bobelectronics"},
+        replacements = {
+            {"gilded-copper-cable", 90},
         }
     },
     --Clowns

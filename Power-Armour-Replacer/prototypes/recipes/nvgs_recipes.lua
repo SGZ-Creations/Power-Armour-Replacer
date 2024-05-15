@@ -1,6 +1,5 @@
 
     local recipes = {
-    --Recipe 3
     {
         type = "recipe",
         name = "par-nightvision-mk1",
@@ -10,14 +9,13 @@
         category = "crafting-with-fluid",
         ingredients = {
             {"iron-gear-wheel", 100},
-            {"copper-cable", 100},
+            {"battery", 5},
             {"small-lamp", 10},
             {"electronic-circuit", 30},
             {type="fluid", name="lubricant", amount=200},
         },
         result = "par-nightvision-mk1"
     },
-    --Recipe 4
     {
         type = "recipe",
         name = "par-nightvision-mk2",
@@ -29,12 +27,13 @@
             {"par-nightvision-mk1", 1},
             {"nuclear-fuel", 10},
             {"advanced-circuit", 55},
+            {"low-density-structure", 25},
             {"processing-unit", 40},
             {type="fluid", name="petroleum-gas", amount=250},
         },
         result = "par-nightvision-mk2"
     },
-} 
+}
 
 local util = require("compatibilities.util")
 
@@ -42,7 +41,7 @@ util.ingredient_prereq(recipes[1], { --nvg_mk1
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"tinned-copper-cable", 50},
+            {"electronic-circuit", 100},
         }
     },
     {
@@ -50,6 +49,12 @@ util.ingredient_prereq(recipes[1], { --nvg_mk1
         replacements = {
             ["small-lamp"] = {"steel-bearing", 50},
             ["iron-gear-wheel"] = {"carbon", 35},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"tinned-copper-cable", 50},
         }
     },
     -- Angels
@@ -98,17 +103,31 @@ util.ingredient_prereq(recipes[2], { --nvg_mk2
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"gilded-copper-cable", 260},
-            {"insulated-cable", 240},
+            ["advanced-circuit"] = {"insulated-cable", 240},
+            ["processing-unit"] = {"rubber", 200},
+            ["nuclear-fuel"] = {"advanced-processing-unit", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["nuclear-fuel"] = {"advanced-processing-unit", 100},
-            ["petroleum-gas"] = {"dinitrogen-tetroxide", 300},
+            ["advanced-circuit"] = {"advanced-processing-unit", 200},
+            ["nuclear-fuel"] = {"titanium-plate", 200},
+            ["processing-unit"] = {"copper-tungsten-alloy", 200},
+            {"copper-tungsten-alloy", 200},
             {"titanium-plate", 200},
-            {"copper-tungsten-alloy", 200}
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"gilded-copper-cable", 260},
+        }
+    },
+    {
+        dependencies = {"bobrevamp", "bobplates"},
+        replacements = {
+            ["petroleum-gas"] = {"dinitrogen-tetroxide", 300},
         }
     },
     --Angels

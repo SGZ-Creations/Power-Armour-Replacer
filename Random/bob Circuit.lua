@@ -25,6 +25,12 @@
         }
     },
     {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            --{"", 0},
+        }
+    },
+    {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             --{"", 0},

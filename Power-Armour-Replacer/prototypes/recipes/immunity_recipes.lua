@@ -14,7 +14,6 @@ local recipes = {
         },
         result = "par-belt-immunity-mk1"
     },
-    --Recipe 2
     {
         type = "recipe",
         name = "par-belt-immunity-mk2",
@@ -37,6 +36,12 @@ local util = require("compatibilities.util")
 
 --Compatibility section
 util.ingredient_prereq(recipes[1], {
+    {
+        dependencies = {"bobelectronics",},
+        replacements = {
+			{"electronic-circuit", 100},
+        }
+    },
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -96,17 +101,27 @@ util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["nuclear-fuel"] = {"processing-unit", 100},
-            {"advanced-processing-unit", 100},
-            {"gilded-copper-cable", 260},
+            ["nuclear-fuel"] = {"advanced-processing-unit", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["sulfuric-acid"] = {"dinitrogen-tetroxide", 300},
+            ["nuclear-fuel"] = {"advanced-processing-unit", 200},
             ["sulfur"] = {"tungsten-plate", 200},
             {"cobalt-steel-alloy", 200},
+        }
+    },
+    {
+        dependencies = {"bobrevamp", "bobplates"},
+        replacements = {
+            ["sulfuric-acid"] = {"dinitrogen-tetroxide", 300},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"gilded-copper-cable", 260},
         }
     },
     {
