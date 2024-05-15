@@ -8,9 +8,7 @@ Date: 17.01.2024
     - Night immunity Tech Mk2 Removed par-fusion-reactor-tech-5 tech Requirement.
   Modding:
     - Recipe bug "refiend -> refined" under exteneded spidertrons. temp comp with bob's until done on originl-mod.
-    - Bobs mods: Armour, Batteries, Exo Leggings, Fusion, NVG's, Belt Immunity, Roboports, Shields,
-    - Complete the unfinshed recipes for bob's mods 7-10 should now be craftable.
-    - Angels mods:
+    - Complete the unfinshed recipes in Bobs mods: Armour, Batteries, Exo Leggings, Fusion, NVG's, Belt Immunity, Roboports, Shields,
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.6
 Date: 17.01.2024
