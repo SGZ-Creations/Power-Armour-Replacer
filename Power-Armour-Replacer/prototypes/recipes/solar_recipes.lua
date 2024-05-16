@@ -220,7 +220,7 @@ util.ingredient_prereq(recipes[2], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            {"silver-plate", 0},
+            ["silver-plate"] = {"", 0},
         }
     },
     --IR3

@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.8
+Date: 16.05.2024
+  Changes:
+    - Optional dependency Rampant -> RampanFixed.
+  Bugfixes:
+    - Crash with angels due to a value was mistakenly set to 0 rather than removed.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.7
-Date: 17.01.2024
+Date: 15.05.2024
   Changes:
     - Reworked Compatibility recipes across items.
     - Night immunity Tech Mk1 = (par-armour-tech-1, par-fusion-reactor-tech-5).
