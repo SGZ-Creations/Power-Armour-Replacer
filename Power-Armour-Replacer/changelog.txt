@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.9
+Date: 17.05.2024
+  Changes:
+    - Research for Armour mk 5 Bob(Angels) gem processing 2 --> gem processing 3.
+    - Some other tweaks of the recipes done in 0.2.7.
+    - Fixed some recipe chnages that would apply do to repalceing non exsisting item.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.8
 Date: 16.05.2024
   Changes:
@@ -18,7 +25,7 @@ Date: 15.05.2024
     - Complete the unfinshed recipes in Bobs mods: Armour, Batteries, Exo Leggings, Fusion, NVG's, Belt Immunity, Roboports, Shields,
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.6
-Date: 17.01.2024
+Date: 28.04.2024
   Changes:
     - Fixed bobplate --> bobplates in info.json with the new dependency system on the website, should fix mod not found.
     - https://mods.factorio.com/mod/Power-Armour-Replacer/dependencies?direction=out&sort=idx&filter=all

@@ -115,7 +115,7 @@ util.technology_dependancy
 			["advanced-electronics"] = "invar-processing"
 		},
 		["par-armour-tech-5"] = {
-			["electric-engine"] = "gem-processing-2"
+			["electric-engine"] = "gem-processing-3"
 		},
 		["par-armour-tech-6"] = {
 			["circuit-network"] = "titanium-processing",

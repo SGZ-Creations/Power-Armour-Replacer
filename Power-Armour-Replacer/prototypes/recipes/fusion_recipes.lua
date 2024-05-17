@@ -348,6 +348,19 @@ util.ingredient_prereq(recipes[4], {
             {"solder", 90},
         }
     },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates"},
+        replacements = {
+            ["nickel-plate"] = {"gold-plate", 100}
+        }
+    },
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates"},
+        replacements = {
+            {"gold-plate", 100}
+        }
+    },
     --Angels
     {
         dependencies = {"angelssmelting"},

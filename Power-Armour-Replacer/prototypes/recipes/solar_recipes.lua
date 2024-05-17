@@ -305,6 +305,19 @@ util.ingredient_prereq(recipes[4], {
             {"bronze-alloy", 60},
         }
     },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates"},
+        replacements = {
+            ["nickel-plate"] = {"gold-plate", 50},
+        }
+    },
+    {
+        dependencies = {"Darkstar_utilities_fixed"},
+        replacements = {
+            {"gold-plate", 50},
+        }
+    },
     --Angels
     {
         dependencies = {"angelssmelting"},

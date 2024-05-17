@@ -294,8 +294,8 @@ util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"nickel-plate", 200},
-            ["iron-gear-wheel"] = {"brass-alloy", 20},
+            ["steel-plate"] = {"invar-alloy", 200},
+            ["plastic-bar"] = {"brass-alloy", 20},
             {"electronic-circuit", 150},
             {"glass", 130},
         }
@@ -303,7 +303,7 @@ util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["iron-plate"] = {"heat-pipe", 5},
+            {"heat-pipe", 5},
         }
     },
     --SE-K2
