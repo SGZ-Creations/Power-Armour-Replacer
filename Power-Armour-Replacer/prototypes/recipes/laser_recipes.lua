@@ -294,8 +294,8 @@ util.ingredient_prereq(recipes[3], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"invar-alloy", 200},
-            ["plastic-bar"] = {"brass-alloy", 20},
+            ["steel-plate"] = {"invar-alloy", 60},
+            ["plastic-bar"] = {"brass-alloy", 60},
             {"electronic-circuit", 150},
             {"glass", 130},
         }
@@ -329,18 +329,18 @@ util.ingredient_prereq(recipes[4], {
         }
     },
     {
-        dependencies = {"bobpower"},
-        replacements = {
-            {"heat-pipe", 5},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 200},
             ["pipe"] = {"nickel-plate", 250},
-            ["iron-gear-wheel"] = {"brass-alloy", 20},
+            ["iron-gear-wheel"] = {"brass-alloy", 90},
             {"carbon", 100},
+        }
+    },
+    {
+        dependencies = {"bobpower"},
+        replacements = {
+            {"heat-pipe", 5},
         }
     },
     {
@@ -349,6 +349,20 @@ util.ingredient_prereq(recipes[4], {
             {"solder", 50},
         }
     },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed", "bobplates"},
+        replacements = {
+            ["nickel-plate"] = {"gold-plate", 75},
+        }
+    },
+    {
+        dependencies = {"Darkstar_utilities_fixed"},
+        replacements = {
+            {"gold-plate", 75},
+        }
+    },
+    --Clowns
     {
         dependencies = {"Clowns-Processing"},
         replacements = {

@@ -1,10 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.10
+Date: 18.05.2024
+  Changes:
+    - Veird Resource value increments
+    - Requires C.A.S version 1.4.4+
+  Locale:
+    - Fixed Missleading naming.
+  Bugfixes:
+    - Changelog
+---------------------------------------------------------------------------------------------------
 Version: 0.2.9
 Date: 17.05.2024
   Changes:
     - Research for Armour mk 5 Bob(Angels) gem processing 2 --> gem processing 3.
     - Some other tweaks of the recipes done in 0.2.7.
-    - Fixed some recipe chnages that would apply do to repalceing non exsisting item.
+    - Fixed some recipe change mechanic that wouldn't apply. trying to replace non exsisting item(s).
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.8
 Date: 16.05.2024
@@ -75,7 +85,7 @@ Date: 08.01.2024
   Changes:
     - Colour/Color Tier made to have one system only similar to bobs with 4 extra tiers.
   Bugfixes:
-    - Fixed names being in an interanl view.
+    - Fixed names having internal view.
   Issues:
     - Updating angles will casue the mod to crash.
     - Looking to get this update at a point where my own game dosen't crash. :p 
@@ -87,12 +97,12 @@ Date: 07.01.2024
   Changes:
     - Internal Items Names.
     - Code rework.
-    - Reqires C.A.S version 1.4.2+
+    - Requires C.A.S version 1.4.2+
   Scripting:
     - Item Name Change par-...-mk(1-10).
     - Tech Name Change par-...-tech-(1-10).
     - Some case par-...-...-mk(1-10).
-    - All Item genrator code have been re-done.
+    - All Item generator code have been re-done.
     - Added Textures/Graphics by Kirazy.
     - Added Seperate Licensing for Textures/Graphics.
   Info:
