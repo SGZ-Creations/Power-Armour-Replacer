@@ -1,6 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.11
+Date: 18.06.2024
+  Changes:
+    - Removed forgotton last traces from the circuit-network tech after my (last 0.1.50).
+    - Removed circuit-network prerequisite.
+  Features:
+    - Added some smal Py High Tech Compatiblity.
+  Bugfixes:
+    - Removed Research Blockcade from power armour mk3 on Py High Tech.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.10
-Date: 18.05.2024
+Date: 16.06.2024
   Changes:
     - Veird Resource value increments
     - Requires C.A.S version 1.4.4+
