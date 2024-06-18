@@ -106,7 +106,13 @@ if not mods["PyBlock"] then
 					recipe = "par-armour-mk5"
 				},
 			},
-			prerequisites = { "par-armour-tech-4", "advanced-electronics-2", "electric-engine", "uranium-processing", "military-3", },
+			prerequisites = {
+					"par-armour-tech-4",
+					"advanced-electronics-2",
+					"electric-engine",
+					"uranium-processing",
+					"military-3",
+				},
 			unit =
 			{
 				count = 1000,
@@ -133,7 +139,7 @@ if not mods["PyBlock"] then
 					recipe = "par-armour-mk6"
 				},
 			},
-			prerequisites = { "par-armour-tech-5", "circuit-network" },
+			prerequisites = { "par-armour-tech-5"},
 			unit =
 			{
 				count = 1000,

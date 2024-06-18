@@ -120,8 +120,8 @@ util.technology_dependancy
 			["electric-engine"] = "gem-processing-3"
 		},
 		["par-armour-tech-6"] = {
-			["circuit-network"] = "titanium-processing",
 			["advanced-electronics-3"] = "electric-engine",
+			"titanium-processing",
 			"battery-2",
 		},
 		["par-armour-tech-7"] = {
@@ -266,6 +266,15 @@ util.technology_dependancy
 	[{"248k", "angelssmelting"}] = {
 		["par-armour-tech-3"] = {
 			["angels-aluminium-smelting-1"] = "el_caster_tech",
+		},
+	},
+
+	["pyhightech"] = {
+		["par-armour-tech-2"] = {
+			["electronics"] = "vacuum-tube-electronics",
+		},
+		["par-armour-tech-3"] = {
+			["advanced-electronics"] = "basic-electronics",
 		},
 	},
 
