@@ -269,14 +269,28 @@ util.technology_dependancy
 		},
 	},
 
+	["pyalternativeenergy"] = {
+		["par-armour-tech-3"] = {
+			["advanced-electronics"] = "machine-components-mk01",
+			"alloys-mk02",
+		},
+	},
+
 	["pyhightech"] = {
 		["par-armour-tech-2"] = {
 			["electronics"] = "vacuum-tube-electronics",
-		},
-		["par-armour-tech-3"] = {
-			["advanced-electronics"] = "basic-electronics",
+			"aluminium-mk01",
+			"chromium-mk01",
 		},
 	},
+
+	--[[
+	["pyrawores"] = {
+		["mod"] = {
+			["tech"] = "tech",
+			"tech",
+	},
+	]]
 
 	["IndustrialRevolution3"] = {
 		["par-armour-tech-1"] = {

@@ -24,7 +24,7 @@ if not mods["PyBlock"] then
             ingredients = {
                 {"par-armour-mk1", 1},
                 {"copper-plate", 170},
-                {"iron-gear-wheel", 150},
+                {"iron-gear-wheel", 150},--(small-parts-01 in pyanodons)
                 {"steel-plate", 50},
                 {"electronic-circuit", 80},
             },
@@ -53,7 +53,7 @@ if not mods["PyBlock"] then
             energy_required = 50.0,
             ingredients = {
                 {"par-armour-mk3", 1},
-                {"iron-gear-wheel", 150},
+                {"iron-gear-wheel", 150},--(small-parts-01 in pyanodons)
                 {"engine-unit", 100},
                 {"plastic-bar", 100},
                 {"advanced-circuit", 125},
@@ -213,6 +213,21 @@ if not mods["PyBlock"] then
                 ["steel-gear-wheel"] = {"rubber", 50},
             }
         },
+        --Pyanodon
+        {
+            dependencies = {"pyalienlife",},
+            replacements = {
+                ["wood"] = {"latex", 30},
+            }
+        },
+        {
+            dependencies = {"pyrawores",},
+            replacements = {
+                ["electronic-circuit"] = {"nexelit-plate", 25},
+                ["stone-brick"] = {"solder", 30},
+                ["steel-plate"] = {"titanium-plate", 20},
+            }
+        },
         --EI
         {
             dependencies = {"exotic-industries"},
@@ -310,6 +325,17 @@ if not mods["PyBlock"] then
             dependencies = {"angelspetrochem", "bobplates", "SeaBlockMetaPack"},
             replacements = {
                 ["rubber"] = {"bronze-alloy", 75},
+            }
+        },
+        --Pyanodon
+        {
+            dependencies = {"pyrawores",},
+            replacements = {
+                ["copper-plate"] = {"chromium", 35},
+                ["steel-plate"] = {"aluminium-plate", 45},
+                --["small-parts-01"] = {"small-parts-01", 75},
+                ["iron-gear-wheel"] = {"iron-gear-wheel", 75},
+                ["electronic-circuit"] = {"electronic-circuit", 40},
             }
         },
         --IR3
@@ -412,6 +438,28 @@ if not mods["PyBlock"] then
                 ["cobalt-steel-alloy"] = {"lithium-ion-battery", 30},
             }
         },
+        --Pyanodon
+        {
+            dependencies = {"pyalternativeenergy",},
+            replacements = {
+                ["advanced-circuit"] = {"electronic-mk01", 5},
+                ["plastic-bar"] = {"nxsb-alloy", 40},
+            },
+        },
+        {
+            dependencies = {"pycoalprocessing", "pyrawores"},
+            replacements = {
+                ["engine-unit"] = {"nbfe-alloy", 30},
+                ["steel-plate"] = {"nichrome", 50},
+            },
+        },
+        {
+            dependencies = {"pypetroleumhandling", "pyrawores"},
+            replacements = {
+                ["engine-unit"] = {"nbfe-alloyh", 30},
+                {"ticl4", 20},
+            },
+        },
         --IR3
         {
             dependencies = {"IndustrialRevolution3"},
@@ -481,6 +529,16 @@ if not mods["PyBlock"] then
             dependencies = {"angelssmelting", "bobplates", "bobelectronics"},
             replacements = {
                 ["cobalt-steel-alloy"] = {"solder", 200},
+            }
+        },
+        --Pyanodon
+        {
+            dependencies = {"pyalternativeenergy",},
+            replacements = {
+                ["iron-gear-wheel"] = {"mechanical-parts-01", 10},
+                ["advanced-circuit"] = {"electronic-mk01", 10},
+                ["engine-unit"] = {"controler-mk01", 10},
+                ["plastic-bar"] = {"", 0},
             }
         },
         --IR3
