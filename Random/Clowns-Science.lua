@@ -27,5 +27,6 @@ Recipe 4
 * ultimate-splitter,
 * express-inserter,
 * eletric-engine-unit,
-output: 
+output: To be decided
+input count: To be decided
 ]]
