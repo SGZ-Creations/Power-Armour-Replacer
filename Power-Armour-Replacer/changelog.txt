@@ -4,6 +4,7 @@ Date: 18.06.2024
   Changes:
     - Removed forgotton last traces from the circuit-network tech after my (last 0.1.50).
     - Removed circuit-network prerequisite.
+    - Changelog dates.
   Features:
     - Have listed Pyanodon mods as optional now.
   Info:
@@ -15,7 +16,7 @@ Date: 18.06.2024
     - Removed Research Blockcade from power-armour-mk3 on Py High Tech.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.10
-Date: 16.06.2024
+Date: 17.06.2024
   Changes:
     - Veird Resource value increments
     - Requires C.A.S version 1.4.4+
