@@ -272,7 +272,7 @@ util.technology_dependancy
 	["pyalternativeenergy"] = {
 		["par-armour-tech-3"] = {
 			["advanced-electronics"] = "machine-components-mk01",
-			"alloys-mk02",
+			[""] = "alloys-mk02",
 		},
 	},
 
@@ -281,6 +281,9 @@ util.technology_dependancy
 			["electronics"] = "vacuum-tube-electronics",
 			"aluminium-mk01",
 			"chromium-mk01",
+		},
+		["par-armour-tech-5"] = {
+			["advanced-electronics-2"] = "machine-components-mk02",
 		},
 	},
 
