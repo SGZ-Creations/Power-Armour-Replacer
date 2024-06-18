@@ -78,8 +78,6 @@ if mods["PyBlock"] then
                 {"par-armour-mk5", 1},
                 {"solar-panel", 20},
                 {"processing-unit", 150},
-                --{"red-wire", 100},
-                --{"green-wire", 100},
                 {type="fluid", name="petroleum-gas", amount=350},
             },
             result = "par-armour-mk6",
@@ -93,8 +91,6 @@ if mods["PyBlock"] then
             hide_from_player_crafting = true,
             ingredients = {
                 {"par-armour-mk6", 1},
-                --{"red-wire", 100},
-                --{"green-wire", 100},
                 {"uranium-fuel-cell", 100},
                 {"low-density-structure", 75},
                 {type="fluid", name="petroleum-gas", amount=700},
