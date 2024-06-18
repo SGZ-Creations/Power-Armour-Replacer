@@ -5,7 +5,12 @@ Date: 18.06.2024
     - Removed forgotton last traces from the circuit-network tech after my (last 0.1.50).
     - Removed circuit-network prerequisite.
   Features:
-    - Added some smal Py High Tech Compatiblity.
+    - Have listed Pyanodon mods as optional now.
+  Info:
+    - Pyanodon mod Compatilblity will be in alpha.
+  Modding:
+    - Changed tech prereqesites for Py mods.
+    - Recipes chnages made with/for Py mods.
   Bugfixes:
     - Removed Research Blockcade from power-armour-mk3 on Py High Tech.
 ---------------------------------------------------------------------------------------------------
