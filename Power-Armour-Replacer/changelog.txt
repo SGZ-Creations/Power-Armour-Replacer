@@ -7,7 +7,7 @@ Date: 18.06.2024
   Features:
     - Added some smal Py High Tech Compatiblity.
   Bugfixes:
-    - Removed Research Blockcade from power armour mk3 on Py High Tech.
+    - Removed Research Blockcade from power-armour-mk3 on Py High Tech.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.10
 Date: 16.06.2024
