@@ -1,6 +1,4 @@
 --compatibilities
-    require("compatibilities.py-block.recipes.armour_recipes")
-    require("compatibilities.py-block.technology.armour_tech")
 
 --prototypes.items
     require("prototypes.items.armour_item")
@@ -14,7 +12,20 @@
     require("prototypes.items.nvgs_item")
     require("prototypes.items.immuntiy_item")
     require("prototypes.items.rcu_item")
-
+--dlc.spaceage
+--[[
+    require("dlc-spaceage.items.armour_spaceage")
+    require("dlc-spaceage.items.batteries_spaceage")
+    require("dlc-spaceage.items.exoskeleton_spaceage")
+    require("dlc-spaceage.items.fission_spaceage")
+    require("dlc-spaceage.items.fusion_spaceage")
+    require("dlc-spaceage.items.immunity_spaceage")
+    require("dlc-spaceage.items.laser_spaceage")
+    require("dlc-spaceage.items.nvgs_spaceage")
+    require("dlc-spaceage.items.roboport_spaceage")
+    require("dlc-spaceage.items.shields_spaceage")
+    require("dlc-spaceage.items.solar_spaceage")
+]]
 --prototypes.recipes
     require("prototypes.recipes.armour_recipes")
     require("prototypes.recipes.batteries_recipes")

@@ -66,10 +66,26 @@ util.ingredient_prereq = function(recipe, replacements, setting)
 end
 
 --Technology Compatibility Generator
-
+--[[
 util.update_technology = function(name, replacements)
     local technology = data.raw.technology[name]
     if not technology then error("Technology with name \""..name.."\" does not exist") end
+    local prerequisites = technology.prerequisites
+    for i, prerequisite in pairs(prerequisites) do
+        if replacements[prerequisite] then
+            prerequisites[i] = replacements[prerequisite]
+        end
+    end
+    for _, prerequisite in ipairs(replacements) do
+        prerequisites[#prerequisites+1] = prerequisite
+    end
+end
+]]
+util.update_technology = function(name, replacements)
+    local technology = data.raw.technology[name]
+    if not technology then
+        log("Technology with name \""..name.."\" does not exist")
+    return nil end
     local prerequisites = technology.prerequisites
     for i, prerequisite in pairs(prerequisites) do
         if replacements[prerequisite] then
