@@ -259,6 +259,13 @@ util.ingredient_prereq(recipes[1], {
         replacements = {
         }
     },
+    -- Power Armor MK3
+    {
+        dependencies = {"Power Armor MK3"},
+        replacements = {
+            ["heavy-armor"] = {"pamk3-hvest", 1},
+        }
+    },
 })
 
 util.ingredient_prereq(recipes[2], {

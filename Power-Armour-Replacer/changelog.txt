@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.13
+Date: 01.08.2024
+  Features:
+    - Made recipe integration with "Power Armor MK3" utility armours.
+    - Changed reicpes for "Power Armor MK3" utility armours.
+  Changes:
+    - Eptyed code from files prepeard for 2.0 for reducing mod size teporarley.
+  Bugfixes:
+    - Known PY issues solved in same version issue was presented :P
+---------------------------------------------------------------------------------------------------
 Version: 0.2.12
 Date: 28.07.2024
   Features:
@@ -6,7 +16,7 @@ Date: 28.07.2024
   Changes:
     - Prepeard for modularity in the mod. Need to look in to allowing for enabling section of the mod you wish to use.
   Known-Issues:
-    - Py compatibility missing recipe ingredients mk3.
+    - P̶y̶ c̶o̶m̶p̶a̶t̶i̶b̶i̶l̶i̶t̶y̶ m̶i̶s̶s̶i̶n̶g̶ r̶e̶c̶i̶p̶e̶ i̶n̶g̶r̶e̶d̶i̶e̶n̶t̶s̶ m̶k̶3̶.
   Bugfixes:
     - Typo in recipes for py compatibility.
   Info:

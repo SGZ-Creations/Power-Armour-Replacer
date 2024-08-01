@@ -39,6 +39,9 @@
     require("prototypes.recipes.nvgs_recipes")
     require("prototypes.recipes.rcu_recipes")
 
+--structure
+    require("structures.compatibility-recipe-data")
+
 --prototypes.technology
     require("prototypes.technology.armour_tech")
     require("prototypes.technology.batteries_tech")

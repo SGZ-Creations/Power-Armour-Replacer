@@ -81,6 +81,7 @@ util.update_technology = function(name, replacements)
     end
 end
 ]]
+
 util.update_technology = function(name, replacements)
     local technology = data.raw.technology[name]
     if not technology then
