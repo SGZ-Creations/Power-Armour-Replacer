@@ -742,6 +742,13 @@ util.ingredient_prereq(recipes[7], {
             {"glass", 50},
         }
     },
+    --Darkstar
+    {
+        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
+        replacements = {
+            ["glass"] = {"leaded-glass", 50},
+        }
+    },
     --IR3
     {
         dependencies = {"IndustrialRevolution3"},

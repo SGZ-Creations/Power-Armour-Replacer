@@ -458,9 +458,9 @@ util.ingredient_prereq(recipes[6], {
     },
     --Angels
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "bobelectronics", "bobplates"},
         replacements = {
-            --{"angels-wire-silver", 100},
+            ["solder"] = {"angels-wire-silver", 100},
         }
     },
 })
@@ -479,6 +479,7 @@ util.ingredient_prereq(recipes[7], {
             ["processing-unit"] = {"processing-unit", 350},
             ["solid-fuel"] = {"titanium-gear-wheel", 220},
             ["uranium-238"] = {"lithium-ion-battery", 145},
+            ["resin"] = {"tungsten-plate", 200},
             {"titanium-gear-wheel", 220},
             {"lithium-ion-battery", 145},
             {"silicon-nitride", 200},
@@ -491,11 +492,26 @@ util.ingredient_prereq(recipes[7], {
             ["insulated-cable"] = {"solder", 240},
         }
     },
+    --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["par-shield-mk6"] = {"par-shield-mk7", 1},
-            --[""] = {"", 0},
+            ["solder"] = {"angles-plate-platinum", 150},
+            ["copper-plate"] = {"tungsten-plate", 30},
+        }
+    },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed"},
+        replacements = {
+            {"leaded-glass", 50},
+        }
+    },
+    --Pyanodon
+    {
+        dependencies = {"pycoalprocessing", "pyhightech", "pyrawores",},
+        replacements = {
+            ["solid-fuel"] = {"re-magnet", 25},
         }
     },
 })
@@ -514,16 +530,32 @@ util.ingredient_prereq(recipes[8], {
             ["processing-unit"] = {"processing-unit", 400},
             ["uranium-235"] = {"tungsten-plate", 360},
             ["lubricant"] = {"", 0},
+            {"gunmetal-alloy", 100},
             {"tungsten-plate", 360},
-            {"cobalt-steel-plate", 290},
+            {"cobalt-steel-alloy", 290},
             {"silicon-nitride", 400},
         }
     },
     {
+        dependencies = {"bobrevamp", "angelssmelting"},
+        replacements = {
+            {"heat-shield-tile", 200},
+        }
+    },
+    --Angels
+    {
         dependencies = {"angelssmelting"},
         replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
+            ["plastic-bar"] = {"low-density-structure", 125},
+        }
+    },
+    --Clowns
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            ["resin"] = {"clowns-plate-osmium", 200},
+            {"clowns-plate-osmium", 200},
+            {"clowns-plate-magnesium", 150},
         }
     },
 })
@@ -544,6 +576,7 @@ util.ingredient_prereq(recipes[9], {
             ["uranium-235"] = {"copper-tungsten-alloy", 300},
             ["petroleum-gas"] = {"", 0},
             {"tungsten-carbide", 325},
+            {"nitinol-bearing", 200},
         }
     },
     {
@@ -553,11 +586,28 @@ util.ingredient_prereq(recipes[9], {
             {"gilded-copper-cable", 365},
         }
     },
+    --Angels
+    {
+        dependencies = {"bobrevamp", "angelssmelting"},
+        replacements = {
+            {"heat-shield-tile", 300},
+        }
+    },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
+            ["gilder-copper-cable"] = {"agnels-wire-platinum", 230},
+            {"angels-wire-silver", 300},
+            {"angels-plate-chrome", 350},
+        }
+    },
+    --Clowns
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-depleted-uranium", 500},
+            {"clowns-plate-osmium", 200},
+            {"clowns-plate-magnesium", 150},
         }
     },
 })
@@ -577,7 +627,7 @@ util.ingredient_prereq(recipes[10], {
             ["sulfuric-acid"] = {"", 0},
             {"silver-zinc-battery", 280},
             {"tungsten-carbide", 325},
-            {"nitinol-alloy", 490},
+            {"nitinol-gear-wheel", 450},
         }
     },
     {
@@ -589,10 +639,26 @@ util.ingredient_prereq(recipes[10], {
         }
     },
     {
+        dependencies = {"bobrevamp", "angelssmelting"},
+        replacements = {
+            {"heat-shield-tile", 400},
+        }
+    },
+    {
         dependencies = {"angelssmelting"},
         replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
+            ["solder"] = {"angels-platnium-wire", 300},
+            ["gilded-copper-cable"] = {"angels-silver-wire", 450},
+            {"angels-plate-chrome", 500},
+        }
+    },
+    --Clowns
+    {
+        dependencies = {"Clowns-Processing"},
+        replacements = {
+            {"clowns-plate-depleted-uranium", 500},
+            {"clowns-plate-osmium", 200},
+            {"clowns-plate-magnesium", 150},
         }
     },
     --K2

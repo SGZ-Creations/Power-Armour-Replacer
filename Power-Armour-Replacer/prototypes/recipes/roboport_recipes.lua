@@ -148,7 +148,7 @@ local util = require("compatibilities.util")
 
 --Compatibility section
 util.ingredient_prereq(recipes[1], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -229,7 +229,7 @@ util.ingredient_prereq(recipes[1], {
     },
 })
 util.ingredient_prereq(recipes[2], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -279,7 +279,7 @@ util.ingredient_prereq(recipes[2], {
     },
 })
 util.ingredient_prereq(recipes[3], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -319,7 +319,7 @@ util.ingredient_prereq(recipes[3], {
     },
 })
 util.ingredient_prereq(recipes[4], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -359,7 +359,7 @@ util.ingredient_prereq(recipes[4], {
     },
 })
 util.ingredient_prereq(recipes[5], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -402,7 +402,7 @@ util.ingredient_prereq(recipes[5], {
 })
 
 util.ingredient_prereq(recipes[6], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -443,7 +443,7 @@ util.ingredient_prereq(recipes[6], {
 })
 
 util.ingredient_prereq(recipes[7], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -490,7 +490,7 @@ util.ingredient_prereq(recipes[7], {
     },
 })
 util.ingredient_prereq(recipes[8], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -538,7 +538,7 @@ util.ingredient_prereq(recipes[8], {
     },
 })
 util.ingredient_prereq(recipes[9], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  
@@ -587,7 +587,7 @@ util.ingredient_prereq(recipes[9], {
     },
 })
 util.ingredient_prereq(recipes[10], {
-    --0(Base recipe or item added ends up removed) return the amount of number with the amount of diffrent items being used
+    --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
     --3(roboport-chargepad),  

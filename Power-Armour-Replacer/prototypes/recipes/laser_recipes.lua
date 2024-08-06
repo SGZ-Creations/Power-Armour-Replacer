@@ -648,7 +648,7 @@ util.ingredient_prereq(recipes[10], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 200},
-            ["steel-plate"] = {"cobalt-steel-plate", 200},
+            ["steel-plate"] = {"cobalt-steel-alloy", 200},
             ["sulfur"] = {"tungsten-carbide", 100},
             ["advanced-circuit"] = {"nitinol-alloy", 100},
             {"nitinol-alloy", 100},

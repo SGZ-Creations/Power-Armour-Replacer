@@ -1,11 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.14
+Date: 05.08.2024
+  Features:
+    - Completed the final recipes for Bob's Angels Combi. (Full mods set)
+  Changes:
+    - Hopefully removed all "solid-fuel" in recipes, playing Py mods. (Item recipe is removed in modpack).
+    - Recipes for Bob's, Angles, Clowns, Darkstar,
+    - Removed Recipe blockade for shields MK7.
+  Bugfixes:
+    - Item in recipe "cobalt-steel-plate" --> "cobalt-steel-alloy" :P (laser MK10)
+---------------------------------------------------------------------------------------------------
 Version: 0.2.13
 Date: 01.08.2024
   Features:
     - Made recipe integration with "Power Armor MK3" utility armours.
     - Changed reicpes for "Power Armor MK3" utility armours.
   Changes:
-    - Eptyed code from files prepeard for 2.0 for reducing mod size teporarley.
+    - Emptyed code from files prepeard for 2.0 for reducing mod size teporarley.
   Bugfixes:
     - Known PY issues solved in same version issue was presented :P
 ---------------------------------------------------------------------------------------------------

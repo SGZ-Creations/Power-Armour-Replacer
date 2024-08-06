@@ -317,6 +317,14 @@ util.ingredient_prereq(recipes[3], {
             {"motor", 20},
         }
     },
+    --Pyanodon
+    {
+        dependencies = {"pycoalprocessing",},
+        replacements = {
+            ["solid-fuel"] = {"chromium", 45},
+        }
+    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
