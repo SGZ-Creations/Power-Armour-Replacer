@@ -9,6 +9,11 @@ Date: 07.08.2024
     - Removed Recipe blockade for shields MK7.
   Bugfixes:
     - Item in recipe "cobalt-steel-plate" --> "cobalt-steel-alloy" :P (laser MK10)
+    - Corrected tech prerequsites for SpaceX Fork mod.
+    - SpaceX recipe compatibility wasn't referencing item correctly.
+  Scripting:
+    - Excluded un-needed files entirly from mod.
+    - Update info file.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.13
 Date: 01.08.2024

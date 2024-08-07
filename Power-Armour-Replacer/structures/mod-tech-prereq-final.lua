@@ -19,10 +19,12 @@ util.technology_dependancy
 
 	[{"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",}] = {
 		["space-ai-robots"] = {
-			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-8",
-			["par-battery-tech-10"] = "par-battery-tech-8",
+			["par-fusion-reactor-tech-10"] = "par-fusion-reactor-tech-4",
+			["par-battery-tech-10"] = "par-battery-tech-6",
 			["par-exoskeleton-tech-5"] = "par-exoskeleton-tech-3",
-			["par-armour-tech-10"] = "par-armour-tech-6",
+			["par-armour-tech-10"] = "par-armour-tech-8",
+			"par-roboport-tech-4",
+			"par-laser-tech-10",
 		},
 	},
 

@@ -1,6 +1,7 @@
 --compatibilities
-	--require("compatibilities.recipes.armour")
-	--require("compatibilities.recipes.fusion")
+	--require("compatibilities.recipes.armour_updates")
+	--require("compatibilities.recipes.fusion_updates")
+	--require("compatibilities.recipes.shield_updates")
 --structures
 	require("structures.compatibility-recipe-update")
 	require("structures.science-setting")

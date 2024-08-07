@@ -193,6 +193,7 @@ util.ingredient_prereq(data.raw.recipe["space-ai-robot-frame"],
         dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
         replacements = {
             ["par-armour-mk10"] = {"par-armour-mk8", 2},
+            ["par-laser-mk6"] = {"par-laser-mk10", 2},
             ["par-laser-mk10"] = {"par-laser-mk10", 2},
             ["par-roboport-mk10"] = {"par-roboport-mk10", 2},
         }
