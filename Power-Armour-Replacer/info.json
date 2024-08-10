@@ -2,7 +2,7 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "1.1",
-	"version": "0.2.14",
+	"version": "0.2.15",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
@@ -52,7 +52,7 @@
 	"description": "Replaces Armours & Equipents.\nAdds 10 New Power Armour,\n10 New Batteries,\n10 New Reactors,\n10 New Shields,\n5 New Exoskeletons,\n2 New NVG's,\n2 New Belt-immunity",
 	"package": {
 		"ignore": [
-			"compatibilities/recipes/**",
+			"compatibilities/recipes/final-fixes/**",
 			"dlc-quality/**",
 			"dlc-spaceage/**"
 		]

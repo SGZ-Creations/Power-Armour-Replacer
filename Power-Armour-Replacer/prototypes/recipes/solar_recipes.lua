@@ -271,13 +271,6 @@ util.ingredient_prereq(recipes[3], {
             --{"", 0},
         }
     },
-    --Angels
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            --{"", 100},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -309,20 +302,22 @@ util.ingredient_prereq(recipes[4], {
     {
         dependencies = {"Darkstar_utilities_fixed", "bobplates"},
         replacements = {
-            ["nickel-plate"] = {"gold-plate", 50},
+            ["silicon-nitride"] = {"gold-plate", 50},
+            [""] = {"", 80},
         }
     },
     {
         dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
             {"gold-plate", 50},
+            {"leaded-glass", 100},
         }
     },
     --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            {"angels-wire-silver", 100},
+            ["gold-plate"] = {"angels-wire-silver", 100},
         }
     },
     --SE
@@ -349,8 +344,9 @@ util.ingredient_prereq(recipes[5], {
             ["steel-plate"] = {"brass-alloy", 70},
             ["sulfur"] = {"lead-plate", 40},
             ["battery"] = {"silicon-wafer", 300},
+            {"silicon-nitride", 65},
             {"aluminium-plate", 60},
-            {"lead-plate", 40},
+            {"lead-plate", 50},
         }
     },
     {
@@ -358,6 +354,15 @@ util.ingredient_prereq(recipes[5], {
         replacements = {
             ["silicon-wafer"] = {"angels-mono-silcon", 300},
             ["steel-plate"] = {"angels-plate-chrome", 50},
+        }
+    },
+    --Darkstar
+    {
+        dependencies = {"Darkstar_utilities_fixed"},
+        replacements = {
+            ["lead-plate"] = {"leaded-glass", 50},
+            {"lithium-plate", 50},
+            {"gold-plate", 100},
         }
     },
 })

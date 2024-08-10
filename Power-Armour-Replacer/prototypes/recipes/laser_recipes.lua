@@ -362,6 +362,13 @@ util.ingredient_prereq(recipes[4], {
             {"gold-plate", 75},
         }
     },
+    --Angels
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["gold-plate"] = {"angels-wire-silver", 125},
+        }
+    },
     --Clowns
     {
         dependencies = {"Clowns-Processing"},

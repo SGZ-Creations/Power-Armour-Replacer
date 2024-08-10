@@ -1,4 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.15
+Date: 10.08.2024
+  Features:
+    - Added folder recipes & updates in compatibility.
+    - Added file in compatibility.recipes.updates.armour_updates.lua
+    - Added file in compatibility.recipes.updates.fusion_updates.lua
+    - Added file in compatibility.recipes.updates.shield_updates.lua
+  Changes:
+    - Adjusted recipes from Darkstar to alinge more to Bob's Angels Combi.
+    - Medium sized Re-organized file structure.
+  Bugfixes:
+    - Recipe conversion spelling.
+  Info:
+    - Please report any bug you might find.
+    - Why do I even do these file changes it can just make problems :cry:
+  Scripting:
+    - Moved compatibility code to new files and changed load oreder to update stage.
+    - This will effect other mods that do have compatibility with my mod if it does recipes.
+    - Updated info.json file.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.14
 Date: 07.08.2024
   Features:
@@ -13,7 +33,7 @@ Date: 07.08.2024
     - SpaceX recipe compatibility wasn't referencing item correctly.
   Scripting:
     - Excluded un-needed files entirly from mod.
-    - Update info file.
+    - Update info.json file.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.13
 Date: 01.08.2024

@@ -1,5 +1,3 @@
---compatibilities
-
 --prototypes.items
     require("prototypes.items.armour_item")
     require("prototypes.items.batteries_item")
@@ -12,6 +10,7 @@
     require("prototypes.items.nvgs_item")
     require("prototypes.items.immuntiy_item")
     require("prototypes.items.rcu_item")
+
 --dlc.spaceage
 --[[
     require("dlc-spaceage.items.armour_spaceage")
@@ -39,8 +38,8 @@
     require("prototypes.recipes.nvgs_recipes")
     require("prototypes.recipes.rcu_recipes")
 
---structure
-    require("structures.compatibility-recipe-data")
+--compatibilities
+    require("compatibilities.misc.compatibility-recipe-data")
 
 --prototypes.technology
     require("prototypes.technology.armour_tech")
