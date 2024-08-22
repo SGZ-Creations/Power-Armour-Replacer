@@ -1,11 +1,27 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.16
+Date: 23.08.2024
+  Features:
+    - Some new recipe change when using 248K.
+    - Added file compatibility.recipes.updates.immunity_updates.lua
+    - Added file compatibility.recipes.updates.nvgs_updates.lua
+  Changes:
+    - Compatibility Load order for NVGS & Belt Immunity moved to update stage.
+    - Moved file location for tech fiile.
+    - 248K Recipes somewhat bobs's.
+    - Some tidbits of SE recipes.
+  Bugfixes:
+    - Crash with 248K item typo in reicpe, aluminium to aluminum.
+  Credits:
+    - Thanks for bug report @solewanderer #1919. let me know to remove this.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.15
 Date: 10.08.2024
   Features:
     - Added folder recipes & updates in compatibility.
-    - Added file in compatibility.recipes.updates.armour_updates.lua
-    - Added file in compatibility.recipes.updates.fusion_updates.lua
-    - Added file in compatibility.recipes.updates.shield_updates.lua
+    - Added file compatibility.recipes.updates.armour_updates.lua
+    - Added file compatibility.recipes.updates.fusion_updates.lua
+    - Added file compatibility.recipes.updates.shield_updates.lua
   Changes:
     - Adjusted recipes from Darkstar to alinge more to Bob's Angels Combi.
     - Medium sized Re-organized file structure.

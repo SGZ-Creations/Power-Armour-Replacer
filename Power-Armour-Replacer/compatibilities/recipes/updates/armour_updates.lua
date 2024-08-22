@@ -276,6 +276,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk3"], {
         dependencies = {"248k"},
         replacements = {
             {"el_aluminum_item", 150},
+            {"fi_materials_glass", 200},
         }
     },
     {
@@ -471,6 +472,13 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
         replacements = {
             ["gunmetal-alloy"] = {"angels-wire-silver", 55},
             ["electric-engine-unit"] = {"angels-wire-platinum", 155},
+        }
+    },
+    --248K
+    {
+        dependencies = {"248k"},
+        replacements = {
+            ["uranium-235"] = {"fi_materials_glass", 400},
         }
     },
     --IR3
@@ -779,11 +787,36 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
         replacements = {
         }
     },
-    --K2
+    --248K
+    {
+        dependencies = {"248k"},
+        replacements = {
+            {"fi_materials_titan", 350},
+            {"fu_materials_KFK", 100},
+            {"gr_materials_circuit", 100},
+        }
+    },
+    {
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+            ["fi_materials_titan"] = {"titanium-plate", 350},
+        }
+    },
+    --SEK2
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["rocket-control-unit"] = {"se-naquium-processor", 2},
+            ["low-density-structure"] = {"se-nanomaterial", 200},
+			["advanced-circuit"] = {"se-quantum-processor", 2},
+        }
+    },
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["solar-panel"] = {"matter-cube", 2},
+            ["rocket-control-unit"] = {"matter-cube", 2},
+            ["solar-panel"] = {"ai-core", 10},
+            {"matter-cube", 2},
         }
     },
 })

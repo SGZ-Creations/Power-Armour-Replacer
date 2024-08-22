@@ -7,7 +7,9 @@
 	require("structures.invalid-recipe-tech-replaced")
 	require("structures.filters")
 
---compatibilities load order dependant
+--compatibilities.misc load order dependant
 	require("compatibilities.misc.compatibility-recipe-final")
 	require("compatibilities.misc.altered-tech-final")
-	require("compatibilities.misc.mod-tech-prereq-final")
+
+--compatibilities.tech load order dependant
+require("compatibilities.misc.pars-3rd-party-tech-final")

@@ -441,6 +441,22 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk9"], {
     },
 })
 util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk10"], {
+    --248K
+    {
+        dependencies = {"248k"},
+        replacements = {
+            {"fi_materials_titan", 350},
+            {"fu_materials_KFK", 100},
+            {"gr_materials_circuit", 100},
+        }
+    },
+    {
+        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
+        replacements = {
+            ["fi_materials_titan"] = {"titanium-plate", 350},
+        }
+    },
+    --Bobs
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -485,11 +501,20 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk10"], {
             {"clowns-plate-osmium", 200},
         }
     },
-    --K2
+    --SEK2
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+			["rocket-control-unit"] = {"se-quantum-processor", 2},
+            ["low-density-structure"] = {"se-nanomaterial", 50},
+            ["processing-unit"] = {"se-naquium-processor", 2},
+        }
+    },
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["rocket-control-unit"] = {"matter-cube", 2},
+            ["battery"] = {"ai-core", 10},
         }
     },
 })

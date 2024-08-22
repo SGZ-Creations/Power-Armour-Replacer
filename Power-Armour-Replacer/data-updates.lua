@@ -1,9 +1,16 @@
---compatibilities
+--compatibilities.recipes
 	require("compatibilities.recipes.updates.armour_updates")
 	require("compatibilities.recipes.updates.fusion_updates")
+	require("compatibilities.recipes.updates.immunity_updates")
+	require("compatibilities.recipes.updates.nvgs_updates")
 	require("compatibilities.recipes.updates.shield_updates")
+
+--compatibilities.misc
 	require("compatibilities.misc.compatibility-recipe-update")
 	require("compatibilities.misc.altered-tech-updates")
-	require("compatibilities.misc.mod-tech-prereq-updates")
+
+--compatibilities.tech
+	require("compatibilities.technology.updates.par-tech-updates")
+
 --structures
 	require("structures.science-setting")

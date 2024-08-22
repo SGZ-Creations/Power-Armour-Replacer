@@ -211,7 +211,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk4"], {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
             {"aluminium-plate", 100},
-            --["el-aluminium-item"] = {"aluminium-plate", 35},
+            --["el_aluminum_item"] = {"aluminium-plate", 35},
         }
     },
     --SE-K2
