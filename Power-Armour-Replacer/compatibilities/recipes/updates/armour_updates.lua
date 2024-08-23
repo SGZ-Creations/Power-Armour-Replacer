@@ -727,6 +727,22 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
+            ["lubricant"] = {"", 0},
+            ["solar-panel"] = {"", 0},
+            --["rocket-control-unit"] = {"", 0},
+            --["low-density-structure"] = {"", 0},
+            {"se-heavy-assembly", 30},
+			{"se-quantum-processor", 10},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["lubricant"] = {"", 0},
+            ["solar-panel"] = {"", 0},
+            --["rocket-control-unit"] = {"", 0},
+            --["low-density-structure"] = {"", 0},
+			{"lithium-sulfur-battery", 450},
         }
     },
 })
@@ -806,17 +822,28 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["rocket-control-unit"] = {"se-naquium-processor", 2},
-            ["low-density-structure"] = {"se-nanomaterial", 200},
-			["advanced-circuit"] = {"se-quantum-processor", 2},
+            ["processing-unit"] = {"", 0},
+            ["advanced-circuit"] = {"", 0},
+            ["low-density-structure"] = {"", 0},
+            ["solar-panel"] = {"", 0},
+            {"se-nanomaterial", 200},
+            {"se-heavy-assembly", 50},
+            {"se-naquium-processor", 20},
+			{"se-quantum-processor", 20},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["rocket-control-unit"] = {"matter-cube", 2},
-            ["solar-panel"] = {"ai-core", 10},
-            {"matter-cube", 2},
+            ["processing-unit"] = {"", 0},
+            ["advanced-circuit"] = {"", 0},
+            ["low-density-structure"] = {"", 0},
+            ["solar-panel"] = {"", 0},
+			{"lithium-sulfur-battery", 500},
+            {"energy-control-unit", 100},
+			{"imersium-beam", 500},
+            {"matter-cube", 20},
+            {"ai-core", 10},
         }
     },
 })

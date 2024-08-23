@@ -3,15 +3,23 @@ Version: 0.2.16
 Date: 23.08.2024
   Features:
     - Some new recipe change when using 248K.
-    - Added file compatibility.recipes.updates.immunity_updates.lua
-    - Added file compatibility.recipes.updates.nvgs_updates.lua
+    - Added file compatibility.recipes.updates.batteries_updates
+    - Added file compatibility.recipes.updates.exolegs_updates
+    - Added file compatibility.recipes.updates.immunity_updates
+    - Added file compatibility.recipes.updates.lasers_updates
+    - Added file compatibility.recipes.updates.nvgs_updates
+    - Added file compatibility.recipes.updates.roboports_updates
+    - Added file compatibility.recipes.updates.solar_updates
   Changes:
     - Compatibility Load order for NVGS & Belt Immunity moved to update stage.
+    - Compatibility Load order for all recipes is now moved to update stage. This should also alow me to move some section if needed to be added to final fixes.
     - Moved file location for tech fiile.
     - 248K Recipes somewhat bobs's.
-    - Some tidbits of SE recipes.
+    - More recipe changes thna i expected.
+    - Some SEK2 recipes.
   Bugfixes:
     - Crash with 248K item typo in reicpe, aluminium to aluminum.
+    - Few more dupe item crashes.
   Credits:
     - Thanks for bug report @solewanderer #1919. let me know to remove this.
 ---------------------------------------------------------------------------------------------------

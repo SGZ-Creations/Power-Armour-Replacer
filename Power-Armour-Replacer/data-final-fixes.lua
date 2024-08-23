@@ -9,7 +9,7 @@
 
 --compatibilities.misc load order dependant
 	require("compatibilities.misc.compatibility-recipe-final")
+	require("compatibilities.misc.pars-3rd-party-tech-final")
 	require("compatibilities.misc.altered-tech-final")
 
 --compatibilities.tech load order dependant
-require("compatibilities.misc.pars-3rd-party-tech-final")
