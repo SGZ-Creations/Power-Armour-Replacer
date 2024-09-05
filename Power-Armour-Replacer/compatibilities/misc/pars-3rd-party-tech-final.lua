@@ -34,4 +34,24 @@ util.technology_dependancy
 			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-5",
 		},
 	},
+
+	["spidertrontiers-community-updates"] = {
+		["spidertron_mk2"] = {
+			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-7",
+		},
+		["spidertron_mk3"] = {
+			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-9",
+		},
+	},
+
+	--[[
+	["spidertrontiers"] = {
+		["spidertron_mk2"] = {
+			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-7",
+		},
+		["spidertron_mk3"] = {
+			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-9",
+		},
+	},
+	]]
 }

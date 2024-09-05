@@ -1,5 +1,26 @@
 local util = require("compatibilities.util")
 
+util.ingredient_prereq(data.raw.recipe["spidertron_mk2"],
+{
+    {
+        dependencies = {"spidertrontiers-community-updates"},
+        replacements = {
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk5", 8},
+            ["par-fusion-reactor-mk1"] = {"par-fusion-reactor-mk7", 4},
+        }
+    },
+})
+
+util.ingredient_prereq(data.raw.recipe["spidertron_mk3"],
+{
+    {
+        dependencies = {"spidertrontiers-community-updates"},
+        replacements = {
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk5", 12},
+            ["par-fusion-reactor-mk1"] = {"par-fusion-reactor-mk9", 8},
+        }
+    },
+})
 
 util.ingredient_prereq(data.raw.recipe["cannon-spidertron"],
 {
