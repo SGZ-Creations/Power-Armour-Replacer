@@ -1,0 +1,62 @@
+--prototypes.items
+    require("prototypes.items.armour_item")
+    require("prototypes.items.batteries_item")
+    require("prototypes.items.fusion_item")
+    require("prototypes.items.exoskeleton_item")
+    require("prototypes.items.solar_item")
+    require("prototypes.items.roboport_item")
+    require("prototypes.items.laser_item")
+    require("prototypes.items.shield_item")
+    require("prototypes.items.nvgs_item")
+    require("prototypes.items.immuntiy_item")
+    require("prototypes.items.rcu_item")
+
+--dlc.spaceage
+--[[
+    require("dlc-spaceage.items.armour_spaceage")
+    require("dlc-spaceage.items.batteries_spaceage")
+    require("dlc-spaceage.items.exoskeleton_spaceage")
+    require("dlc-spaceage.items.fission_spaceage")
+    require("dlc-spaceage.items.fusion_spaceage")
+    require("dlc-spaceage.items.immunity_spaceage")
+    require("dlc-spaceage.items.laser_spaceage")
+    require("dlc-spaceage.items.nvgs_spaceage")
+    require("dlc-spaceage.items.roboport_spaceage")
+    require("dlc-spaceage.items.shields_spaceage")
+    require("dlc-spaceage.items.solar_spaceage")
+]]
+--prototypes.recipes
+    require("prototypes.recipes.armour_recipes")
+    require("prototypes.recipes.batteries_recipes")
+    require("prototypes.recipes.fusion_recipes")
+    require("prototypes.recipes.exoskeleton_recipes")
+    require("prototypes.recipes.solar_recipes")
+    require("prototypes.recipes.roboport_recipes")
+    require("prototypes.recipes.laser_recipes")
+    require("prototypes.recipes.shield_recipes")
+    require("prototypes.recipes.immunity_recipes")
+    require("prototypes.recipes.nvgs_recipes")
+    require("prototypes.recipes.rcu_recipes")
+
+--compatibilities
+    require("compatibilities.misc.compatibility-recipe-data")
+
+--prototypes.technology
+    require("prototypes.technology.armour_tech")
+    require("prototypes.technology.batteries_tech")
+    require("prototypes.technology.exoskeleton_tech")
+    require("prototypes.technology.fusion_tech")
+    require("prototypes.technology.solar_tech")
+    require("prototypes.technology.roboport_tech")
+    require("prototypes.technology.laser_tech")
+    require("prototypes.technology.shield_tech")
+    require("prototypes.technology.nvgs_bi_tech")
+    require("prototypes.technology.rcu_tech")
+
+--prototypes.other
+    require("prototypes.animation.player_style")
+    require("prototypes.misc.achievements")
+    require("prototypes.misc.armour_equipment_category")
+
+--structures.dependency
+    require("structures.dependency-data")
