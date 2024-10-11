@@ -179,12 +179,10 @@ util.technology_dependancy
 			["rocket-fuel"] = "angels-titanium-smelting-1",
 			["titanium-processing"] = "angels-titanium-smelting-1",
 			["battery-2"] = "angels-glass-smelting-2",
-			"angels-cobalt-steel-smelting-1",
 			"angels-gold-smelting-1",
 		},
 		["par-armour-tech-7"] = {
 			["tungsten-processing"] = "angels-tungsten-smelting-1",
-			["low-density-structure"] = "angels-cobalt-steel-smelting-1",
 		},
 		["par-armour-tech-9"] = {
 			["nitinol-processing"] = "angels-nitinol-smelting-1",
@@ -194,7 +192,6 @@ util.technology_dependancy
 			"angels-chrome-smelting-1",
 		},
 		["par-fusion-reactor-tech-3"] = {
-			"angels-invar-smelting-1",
 			"angels-silver-smelting-1",
 		},
 		["par-fusion-reactor-tech-4"] = {
@@ -202,7 +199,6 @@ util.technology_dependancy
 		},
 		["par-fusion-reactor-tech-5"] = {
 			"advanced-electronics",
-			"angels-brass-smelting-1",
 			"angels-gold-smelting-1",
 		},
 		["par-shield-tech-6"] = {
@@ -217,8 +213,18 @@ util.technology_dependancy
 		["par-armour-tech-3"] = {
 			["advanced-electronics"] = "angels-brass-smelting-1",
 		},
+		["par-armour-tech-6"] = {
+			"angels-cobalt-steel-smelting-1",
+		},
 		["par-armour-tech-7"] = {
 			["low-density-structure"] = "cobalt-processing",
+			["cobalt-processing"] = "angels-cobalt-steel-smelting-1",
+		},
+		["par-fusion-reactor-tech-3"] = {
+			"angels-invar-smelting-1",
+		},
+		["par-fusion-reactor-tech-5"] = {
+			"angels-brass-smelting-1",
 		},
 	},
 

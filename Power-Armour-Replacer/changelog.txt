@@ -3,7 +3,9 @@ Version: 0.2.18
 Date: 00.12.2024
   Scripting:
     - Renamed Quality Comp files.
-    - figuring out why some/lot's of my tech dependecy code won't work and apply fix.
+    - Figuring out why some/lot's of my tech dependecy code won't work and apply fix.
+  Modding:
+    - Issue with missing ores if bob's ores are not enabled. Added to bob's plates instead due to it having ores as dependendcy.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.17
 Date: 05.09.2024
