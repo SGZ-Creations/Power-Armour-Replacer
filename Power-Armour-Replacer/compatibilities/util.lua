@@ -3,9 +3,7 @@ local util = {}
 --Recipe Compatibility Generator
 
 util.update_ingredients = function(recipe, replacements)
-    local ingredients = (recipe.normal and recipe.normal.ingredients)
-        or (recipe.expensive and recipe.expensive.ingredients)
-            or recipe.ingredients  --original list to be replaced
+    local ingredients = recipe.ingredients  --original list to be replaced
     local remove = {} -- local table to trim ingredients after the replacements (to maintain order)
     local not_crafting = false -- trigger for crafting cat change
     for i, ingredient in pairs(ingredients) do -- for each line of ingredients list
@@ -22,8 +20,9 @@ util.update_ingredients = function(recipe, replacements)
         else
             local replacement = replacements[ingredient[1]]
             if replacement then
-                ingredient[1] = replacement[1]
-                ingredient[2] = replacement[2]
+                ingredient.type = "item"
+                ingredient.name = replacement[1]
+                ingredient.amount = replacement[2]
             end
         end
         if ingredient[1] == "" or ingredient.name == "" then

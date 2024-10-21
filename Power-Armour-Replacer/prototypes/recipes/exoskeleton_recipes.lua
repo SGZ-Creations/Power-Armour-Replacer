@@ -5,13 +5,13 @@ local recipes = {
         enabled = false,
         energy_required = 5,
         ingredients = {
-            {"copper-plate", 100},
-            {"electronic-circuit", 100},
-            {"steel-plate", 100},
-            {"copper-cable", 100},
-            {"iron-gear-wheel", 100},
+            {type="item", name="copper-plate", amount=100},
+            {type="item", name="electronic-circuit", amount=100},
+            {type="item", name="steel-plate", amount=100},
+            {type="item", name="copper-cable", amount=100},
+            {type="item", name="iron-gear-wheel", amount=100},
         },
-        result = "par-exoskeleton-mk1"
+        results = {{type="item", name="par-exoskeleton-mk1", amount=1}}
     },
     {
         type = "recipe",
@@ -19,14 +19,14 @@ local recipes = {
         enabled = false,
         energy_required = 10,
         ingredients = {
-            {"par-exoskeleton-mk1", 1},
-            {"battery", 120},
-            {"iron-gear-wheel", 60},
-            {"electronic-circuit", 120},
-            {"steel-plate", 140},
-            {"iron-stick", 70},
+            {type="item", name="par-exoskeleton-mk1", amount=1},
+            {type="item", name="battery", amount=120},
+            {type="item", name="iron-gear-wheel", amount=60},
+            {type="item", name="electronic-circuit", amount=120},
+            {type="item", name="steel-plate", amount=140},
+            {type="item", name="iron-stick", amount=70},
         },
-        result = "par-exoskeleton-mk2"
+        results = {{type="item", name="par-exoskeleton-mk2", amount=1}}
     },
     {
         type = "recipe",
@@ -36,14 +36,14 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"par-exoskeleton-mk2", 1},
-            {"battery", 165},
-            {"advanced-circuit", 100},
-            {"steel-plate", 150},
-            {"iron-stick", 175},
+            {type="item", name="par-exoskeleton-mk2", amount=1},
+            {type="item", name="battery", amount=165},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="steel-plate", amount=150},
+            {type="item", name="iron-stick", amount=175},
             {type="fluid", name="lubricant", amount=450},
         },
-        result = "par-exoskeleton-mk3"
+        results = {{type="item", name="par-exoskeleton-mk3", amount=1}}
     },
     {
         type = "recipe",
@@ -52,14 +52,14 @@ local recipes = {
         energy_required = 20,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-exoskeleton-mk3", 1},
-            {"battery", 205},
-            {"plastic-bar", 190},
-            {"steel-plate", 180},
-            {"processing-unit", 100},
-            {"low-density-structure", 120},
+            {type="item", name="par-exoskeleton-mk3", amount=1},
+            {type="item", name="battery", amount=205},
+            {type="item", name="plastic-bar", amount=190},
+            {type="item", name="steel-plate", amount=180},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="low-density-structure", amount=120},
         },
-        result = "par-exoskeleton-mk4"
+        results = {{type="item", name="par-exoskeleton-mk4", amount=1}}
     },
     {
         type = "recipe",
@@ -68,14 +68,14 @@ local recipes = {
         energy_required = 25,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-exoskeleton-mk4", 1},
-            {"battery", 250},
-            {"steel-plate", 250},
-            {"processing-unit", 100},
-            {"armour-control-unit", 150},
-            {"low-density-structure", 150},
+            {type="item", name="par-exoskeleton-mk4", amount=1},
+            {type="item", name="battery", amount=250},
+            {type="item", name="steel-plate", amount=250},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="armour-control-unit", amount=150},
+            {type="item", name="low-density-structure", amount=150},
         },
-        result = "par-exoskeleton-mk5"
+        results = {{type="item", name="par-exoskeleton-mk5", amount=1}}
     },
 }
 data:extend(recipes)

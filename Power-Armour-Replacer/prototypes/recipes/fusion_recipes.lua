@@ -5,12 +5,12 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"electronic-circuit", 50},
-            {"steel-plate", 100},
-            {"copper-plate", 100},
-            {"stone-brick", 50},
+            {type="item", name="electronic-circuit", amount=50},
+            {type="item", name="steel-plate", amount=100},
+            {type="item", name="copper-plate", amount=100},
+            {type="item", name="stone-brick", amount=50},
         },
-        result = "par-fusion-reactor-mk1"
+        results = {{type="item", name="par-fusion-reactor-mk1", amount=1}},
     },
     {
         type = "recipe",
@@ -18,12 +18,12 @@ local recipes = {
         enabled = false,
         energy_required = 45,
         ingredients = {
-            {"par-fusion-reactor-mk1", 1},
-            {"iron-plate", 95},
-            {"copper-cable", 165},
-            {"electronic-circuit", 60},
+            {type="item", name="par-fusion-reactor-mk1", amount=1},
+            {type="item", name="iron-plate", amount=95},
+            {type="item", name="copper-cable", amount=165},
+            {type="item", name="electronic-circuit", amount=60},
         },
-        result = "par-fusion-reactor-mk2"
+        results = {{type="item", name="par-fusion-reactor-mk2", amount=1}},
     },
     {
         type = "recipe",
@@ -31,12 +31,12 @@ local recipes = {
         enabled = false,
         energy_required = 50,
         ingredients = {
-            {"par-fusion-reactor-mk2", 1},
-            {"battery", 10},
-            {"electronic-circuit", 120},
-            {"solid-fuel", 50},
+            {type="item", name="par-fusion-reactor-mk2", amount=1},
+            {type="item", name="battery", amount=10},
+            {type="item", name="electronic-circuit", amount=120},
+            {type="item", name="solid-fuel", amount=50},
         },
-        result = "par-fusion-reactor-mk3"
+        results = {{type="item", name="par-fusion-reactor-mk3", amount=1}},
     },
     {
         type = "recipe",
@@ -44,13 +44,13 @@ local recipes = {
         enabled = false,
         energy_required = 55,
         ingredients = {
-            {"par-fusion-reactor-mk3", 1},
-            {"advanced-circuit", 20},
-            {"copper-plate", 50},
-            {"engine-unit", 40},
-            {"steel-plate", 100},
+            {type="item", name="par-fusion-reactor-mk3", amount=1},
+            {type="item", name="advanced-circuit", amount=20},
+            {type="item", name="copper-plate", amount=50},
+            {type="item", name="engine-unit", amount=40},
+            {type="item", name="steel-plate", amount=100},
         },
-        result = "par-fusion-reactor-mk4"
+        results = {{type="item", name="par-fusion-reactor-mk4", amount=1}},
     },
     {
         type = "recipe",
@@ -58,13 +58,13 @@ local recipes = {
         enabled = false,
         energy_required = 60,
         ingredients = {
-            {"par-fusion-reactor-mk4", 1},
-            {"battery", 20},
-            {"plastic-bar", 50},
-            {"engine-unit", 50},
-            {"advanced-circuit", 50},
+            {type="item", name="par-fusion-reactor-mk4", amount=1},
+            {type="item", name="battery", amount=20},
+            {type="item", name="plastic-bar", amount=50},
+            {type="item", name="engine-unit", amount=50},
+            {type="item", name="advanced-circuit", amount=50},
         },
-        result = "par-fusion-reactor-mk5"
+        results = {{type="item", name="par-fusion-reactor-mk5", amount=1}},
     },
     {
         type = "recipe",
@@ -73,14 +73,14 @@ local recipes = {
         energy_required = 65,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-fusion-reactor-mk5", 1},
-            {"plastic-bar", 100},
-            {"processing-unit", 50},
-            {"advanced-circuit", 80},
-            {"uranium-fuel-cell", 100},
-            {"electric-engine-unit", 65},
+            {type="item", name="par-fusion-reactor-mk5", amount=1},
+            {type="item", name="plastic-bar", amount=100},
+            {type="item", name="processing-unit", amount=50},
+            {type="item", name="advanced-circuit", amount=80},
+            {type="item", name="uranium-fuel-cell", amount=100},
+            {type="item", name="electric-engine-unit", amount=65},
         },
-        result = "par-fusion-reactor-mk6"
+        results = {{type="item", name="par-fusion-reactor-mk6", amount=1}},
     },
     {
         type = "recipe",
@@ -89,13 +89,13 @@ local recipes = {
         energy_required = 70,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-fusion-reactor-mk6", 1},
-            {"electric-engine-unit", 100},
-            {"processing-unit", 50},
-            {"advanced-circuit", 100},
-            {"pipe", 80},
+            {type="item", name="par-fusion-reactor-mk6", amount=1},
+            {type="item", name="electric-engine-unit", amount=100},
+            {type="item", name="processing-unit", amount=50},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="pipe", amount=80},
         },
-        result = "par-fusion-reactor-mk7"
+        results = {{type="item", name="par-fusion-reactor-mk7", amount=1}},
     },
     {
         type = "recipe",
@@ -104,13 +104,13 @@ local recipes = {
         energy_required = 75,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-fusion-reactor-mk7", 1},
-            {"sulfur", 50},
-            {"advanced-circuit", 100},
-            {"processing-unit", 100},
-            {"low-density-structure", 100},
+            {type="item", name="par-fusion-reactor-mk7", amount=1},
+            {type="item", name="sulfur", amount=50},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="low-density-structure", amount=100},
         },
-        result = "par-fusion-reactor-mk8"
+        results = {{type="item", name="par-fusion-reactor-mk8", amount=1}},
     },
     {
         type = "recipe",
@@ -120,14 +120,14 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"par-fusion-reactor-mk8", 1},
-            {"nuclear-fuel", 55},
-            {"processing-unit", 150},
-            {"armour-control-unit", 30},
-            {"low-density-structure", 250},
+            {type="item", name="par-fusion-reactor-mk8", amount=1},
+            {type="item", name="nuclear-fuel", amount=55},
+            {type="item", name="processing-unit", amount=150},
+            {type="item", name="armour-control-unit", amount=30},
+            {type="item", name="low-density-structure", amount=250},
             {type="fluid", name="petroleum-gas", amount=200}
         },
-        result = "par-fusion-reactor-mk9"
+        results = {{type="item", name="par-fusion-reactor-mk9", amount=1}},
     },
     {
         type = "recipe",
@@ -136,13 +136,13 @@ local recipes = {
         energy_required = 85,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-fusion-reactor-mk9", 1},
-            {"battery", 100},
-            {"processing-unit", 200},
-            {"armour-control-unit", 30},
-            {"low-density-structure", 250},
+            {type="item", name="par-fusion-reactor-mk9", amount=1},
+            {type="item", name="battery", amount=100},
+            {type="item", name="processing-unit", amount=200},
+            {type="item", name="armour-control-unit", amount=30},
+            {type="item", name="low-density-structure", amount=250},
         },
-        result = "par-fusion-reactor-mk10"
+        results = {{type="item", name="par-fusion-reactor-mk10", amount=1}},
     },
 }
 data:extend(recipes)

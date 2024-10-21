@@ -7,11 +7,11 @@ if not data.raw.recipe["rocket-control-unit"] then
 			enabled = false,
 			category = "crafting",
 			ingredients = {
-				{"processing-unit", 2},
-				{"plastic-bar", 2},
-				{"battery", 2},
+				{type="item", name="processing-unit", amount=2},
+				{type="item", name="plastic-bar", amount=2},
+				{type="item", name="battery", amount=2},
 			},
-			results = {{"armour-control-unit", 3}}
+			results = {{type="item", name="armour-control-unit", amount=3}}
 		},
 	})
 end

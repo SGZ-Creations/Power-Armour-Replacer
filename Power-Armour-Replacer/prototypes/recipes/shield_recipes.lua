@@ -5,12 +5,12 @@ local recipes = {
         enabled = false,
         energy_required = 5,
         ingredients = {
-            {"iron-plate", 100},
-            {"stone-brick", 100},
-            {"copper-plate", 100},
-            {"electronic-circuit", 100},
+            {type="item", name="iron-plate", amount=100},
+            {type="item", name="stone-brick", amount=100},
+            {type="item", name="copper-plate", amount=100},
+            {type="item", name="electronic-circuit", amount=100},
         },
-        result = "par-shield-mk1"
+        results = {{type="item", name="par-shield-mk1", amount=1}}
     },
     {
         type = "recipe",
@@ -18,13 +18,13 @@ local recipes = {
         enabled = false,
         energy_required = 10,
         ingredients = {
-            {"par-shield-mk1", 1},
-            {"electronic-circuit", 100},
-            {"engine-unit", 20},
-            {"steel-plate", 130},
-            {"iron-plate", 130},
+            {type="item", name="par-shield-mk1", amount=1},
+            {type="item", name="electronic-circuit", amount=100},
+            {type="item", name="engine-unit", amount=20},
+            {type="item", name="steel-plate", amount=130},
+            {type="item", name="iron-plate", amount=130},
         },
-        result = "par-shield-mk2"
+        results = {{type="item", name="par-shield-mk2", amount=1}}
     },
     {
         type = "recipe",
@@ -32,12 +32,12 @@ local recipes = {
         enabled = false,
         energy_required = 15,
         ingredients = {
-            {"par-shield-mk2", 1},
-            {"electronic-circuit", 160},
-            {"advanced-circuit", 45},
-            {"copper-cable", 155},
+            {type="item", name="par-shield-mk2", amount=1},
+            {type="item", name="electronic-circuit", amount=160},
+            {type="item", name="advanced-circuit", amount=45},
+            {type="item", name="copper-cable", amount=155},
         },
-        result = "par-shield-mk3"
+        results = {{type="item", name="par-shield-mk3", amount=1}}
     },
     {
         type = "recipe",
@@ -45,12 +45,12 @@ local recipes = {
         enabled = false,
         energy_required = 20,
         ingredients = {
-            {"par-shield-mk3", 1},
-            {"small-lamp", 90},
-            {"plastic-bar", 50},
-            {"advanced-circuit", 65},
+            {type="item", name="par-shield-mk3", amount=1},
+            {type="item", name="small-lamp", amount=90},
+            {type="item", name="plastic-bar", amount=50},
+            {type="item", name="advanced-circuit", amount=65},
         },
-        result = "par-shield-mk4"
+        results = {{type="item", name="par-shield-mk4", amount=1}}
     },
     {
         type = "recipe",
@@ -58,13 +58,13 @@ local recipes = {
         enabled = false,
         energy_required = 25,
         ingredients = {
-            {"par-shield-mk4", 1},
-            {"electric-engine-unit", 55},
-            {"advanced-circuit", 90},
-            {"steel-plate", 80},
-            {"plastic-bar", 90},
+            {type="item", name="par-shield-mk4", amount=1},
+            {type="item", name="electric-engine-unit", amount=55},
+            {type="item", name="advanced-circuit", amount=90},
+            {type="item", name="steel-plate", amount=80},
+            {type="item", name="plastic-bar", amount=90},
         },
-        result = "par-shield-mk5"
+        results = {{type="item", name="par-shield-mk5", amount=1}}
     },
     {
         type = "recipe",
@@ -73,13 +73,13 @@ local recipes = {
         energy_required = 30,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-shield-mk5", 1},
-            {"nuclear-fuel", 20},
-            {"battery", 100},
-            {"uranium-235", 80},
-            {"processing-unit", 60},
+            {type="item", name="par-shield-mk5", amount=1},
+            {type="item", name="nuclear-fuel", amount=20},
+            {type="item", name="battery", amount=100},
+            {type="item", name="uranium-235", amount=80},
+            {type="item", name="processing-unit", amount=60},
         },
-        result = "par-shield-mk6"
+        results = {{type="item", name="par-shield-mk6", amount=1}}
     },
     {
         type = "recipe",
@@ -88,14 +88,14 @@ local recipes = {
         energy_required = 35,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-shield-mk6", 1},
-            {"copper-plate", 165},
-            {"uranium-238", 120},
-            {"processing-unit", 70},
-            {"low-density-structure", 105},
-            {"solid-fuel", 250},
+            {type="item", name="par-shield-mk6", amount=1},
+            {type="item", name="copper-plate", amount=165},
+            {type="item", name="uranium-238", amount=120},
+            {type="item", name="processing-unit", amount=70},
+            {type="item", name="low-density-structure", amount=105},
+            {type="item", name="solid-fuel", amount=250},
         },
-        result = "par-shield-mk7"
+        results = {{type="item", name="par-shield-mk7", amount=1}}
     },
     {
         type = "recipe",
@@ -105,13 +105,13 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"par-shield-mk7", 1},
-            {"uranium-235", 120},
-            {"plastic-bar", 124},
-            {"processing-unit", 85},
+            {type="item", name="par-shield-mk7", amount=1},
+            {type="item", name="uranium-235", amount=120},
+            {type="item", name="plastic-bar", amount=124},
+            {type="item", name="processing-unit", amount=85},
             {type="fluid", name="lubricant", amount=350},
         },
-        result = "par-shield-mk8"
+        results = {{type="item", name="par-shield-mk8", amount=1}}
     },
     {
         type = "recipe",
@@ -121,14 +121,14 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"par-shield-mk8", 1},
-            {"battery", 100},
-            {"uranium-235", 55},
-            {"processing-unit", 95},
-            {"low-density-structure", 180},
+            {type="item", name="par-shield-mk8", amount=1},
+            {type="item", name="battery", amount=100},
+            {type="item", name="uranium-235", amount=55},
+            {type="item", name="processing-unit", amount=95},
+            {type="item", name="low-density-structure", amount=180},
             {type="fluid", name="petroleum-gas", amount=350},
         },
-        result = "par-shield-mk9"
+        results = {{type="item", name="par-shield-mk9", amount=1}}
     },
     {
         type = "recipe",
@@ -138,13 +138,13 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"par-shield-mk9", 1},
-            {"armour-control-unit", 75},
-            {"processing-unit", 110},
-            {"low-density-structure", 155},
+            {type="item", name="par-shield-mk9", amount=1},
+            {type="item", name="armour-control-unit", amount=75},
+            {type="item", name="processing-unit", amount=110},
+            {type="item", name="low-density-structure", amount=155},
             {type="fluid", name="sulfuric-acid", amount=350},
         },
-        result = "par-shield-mk10"
+        results = {{type="item", name="par-shield-mk10", amount=1}}
     },
 }
 data:extend(recipes)

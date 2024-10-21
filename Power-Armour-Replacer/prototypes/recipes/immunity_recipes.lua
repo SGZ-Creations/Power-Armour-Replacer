@@ -8,11 +8,11 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {type="fluid", name="lubricant", amount=200},
-            {"electronic-circuit", 30},
-            {"steel-plate", 55},
-            {"battery", 5},
+            {type="item", name="electronic-circuit", amount=30},
+            {type="item", name="steel-plate", amount=55},
+            {type="item", name="battery", amount=5},
         },
-        result = "par-belt-immunity-mk1"
+        results = {{type="item", name="par-belt-immunity-mk1", amount=1}}
     },
     {
         type = "recipe",
@@ -22,15 +22,15 @@ local recipes = {
         hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
-            {"par-belt-immunity-mk1", 1},
+            {type="item", name="par-belt-immunity-mk1", amount=1},
             {type="fluid", name="sulfuric-acid", amount=150},
-            {"nuclear-fuel", 10},
-            {"advanced-circuit", 55},
-            {"processing-unit", 40},
-            {"low-density-structure", 25},
-            {"sulfur", 30},
+            {type="item", name="nuclear-fuel", amount=10},
+            {type="item", name="advanced-circuit", amount=55},
+            {type="item", name="processing-unit", amount=40},
+            {type="item", name="low-density-structure", amount=25},
+            {type="item", name="sulfur", amount=30},
         },
-        result = "par-belt-immunity-mk2"
+        results = {{type="item", name="par-belt-immunity-mk2", amount=1}}
     },
 }
 data:extend(recipes)

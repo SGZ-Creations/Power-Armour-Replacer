@@ -5,12 +5,12 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"electronic-circuit", 100},
-            {"steel-plate", 100},
-            {"iron-plate", 100},
-            {"copper-plate", 100},
+            {type="item", name="electronic-circuit", amount=100},
+            {type="item", name="steel-plate", amount=100},
+            {type="item", name="iron-plate", amount=100},
+            {type="item", name="copper-plate", amount=100},
         },
-        result = "par-laser-mk1"
+        results = {{type="item", name="par-laser-mk1", amount=1}}
     },
     {
         type = "recipe",
@@ -18,12 +18,12 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"par-laser-mk1", 1},
-            {"electronic-circuit", 100},
-            {"engine-unit", 15},
-            {"copper-plate", 150},
+            {type="item", name="par-laser-mk1", amount=1},
+            {type="item", name="electronic-circuit", amount=100},
+            {type="item", name="engine-unit", amount=15},
+            {type="item", name="copper-plate", amount=150},
         },
-        result = "par-laser-mk2"
+        results = {{type="item", name="par-laser-mk2", amount=1}}
     },
     {
         type = "recipe",
@@ -31,13 +31,13 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"par-laser-mk2", 1},
-            {"electronic-circuit", 100},
-            {"battery", 45},
-            {"steel-plate", 50},
-            {"plastic-bar", 55},
+            {type="item", name="par-laser-mk2", amount=1},
+            {type="item", name="electronic-circuit", amount=100},
+            {type="item", name="battery", amount=45},
+            {type="item", name="steel-plate", amount=50},
+            {type="item", name="plastic-bar", amount=55},
         },
-        result = "par-laser-mk3"
+        results = {{type="item", name="par-laser-mk3", amount=1}}
     },
     {
         type = "recipe",
@@ -45,12 +45,12 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"par-laser-mk3", 1},
-            {"pipe", 50},
-            {"advanced-circuit", 100},
-            {"iron-gear-wheel", 85},
+            {type="item", name="par-laser-mk3", amount=1},
+            {type="item", name="pipe", amount=50},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="iron-gear-wheel", amount=85},
         },
-        result = "par-laser-mk4"
+        results = {{type="item", name="par-laser-mk4", amount=1}}
     },
     {
         type = "recipe",
@@ -58,13 +58,13 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {"par-laser-mk4", 1},
-            {"heat-pipe", 50},
-            {"copper-cable", 200},
-            {"plastic-bar", 120},
-            {"sulfur", 80},
+            {type="item", name="par-laser-mk4", amount=1},
+            {type="item", name="heat-pipe", amount=50},
+            {type="item", name="copper-cable", amount=200},
+            {type="item", name="plastic-bar", amount=120},
+            {type="item", name="sulfur", amount=80},
         },
-        result = "par-laser-mk5"
+        results = {{type="item", name="par-laser-mk5", amount=1}}
     },
     {
         type = "recipe",
@@ -73,14 +73,14 @@ local recipes = {
         energy_required = 40,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-laser-mk5", 1},
-            {"heat-pipe", 150},
-            {"sulfur", 150},
-            {"processing-unit", 50},
-            {"battery", 125},
-            {"engine-unit", 100},
+            {type="item", name="par-laser-mk5", amount=1},
+            {type="item", name="heat-pipe", amount=150},
+            {type="item", name="sulfur", amount=150},
+            {type="item", name="processing-unit", amount=50},
+            {type="item", name="battery", amount=125},
+            {type="item", name="engine-unit", amount=100},
         },
-        result = "par-laser-mk6"
+        results = {{type="item", name="par-laser-mk6", amount=1}}
     },
     {
         type = "recipe",
@@ -89,14 +89,14 @@ local recipes = {
         energy_required = 40,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-laser-mk6", 1},
-            {"low-density-structure", 60},
-            {"advanced-circuit", 100},
-            {"processing-unit", 100},
-            {"electric-engine-unit", 70},
-            {"copper-cable", 115},
+            {type="item", name="par-laser-mk6", amount=1},
+            {type="item", name="low-density-structure", amount=60},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="electric-engine-unit", amount=70},
+            {type="item", name="copper-cable", amount=115},
         },
-        result = "par-laser-mk7"
+        results = {{type="item", name="par-laser-mk7", amount=1}}
     },
     {
         type = "recipe",
@@ -105,14 +105,14 @@ local recipes = {
         energy_required = 40,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-laser-mk7", 1},
-            {"low-density-structure", 130},
-            {"plastic-bar", 200},
-            {"copper-cable", 300},
-            {"processing-unit", 100},
-            {"advanced-circuit", 100},
+            {type="item", name="par-laser-mk7", amount=1},
+            {type="item", name="low-density-structure", amount=130},
+            {type="item", name="plastic-bar", amount=200},
+            {type="item", name="copper-cable", amount=300},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="advanced-circuit", amount=100},
         },
-        result = "par-laser-mk8"
+        results = {{type="item", name="par-laser-mk8", amount=1}}
     },
     {
         type = "recipe",
@@ -121,15 +121,15 @@ local recipes = {
         energy_required = 40,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-laser-mk8", 1},
-            {"armour-control-unit", 60},
-            {"low-density-structure", 180},
-            {"processing-unit", 100},
-            {"advanced-circuit", 100},
-            {"sulfur", 150},
-            {"plastic-bar", 300},
+            {type="item", name="par-laser-mk8", amount=1},
+            {type="item", name="armour-control-unit", amount=60},
+            {type="item", name="low-density-structure", amount=180},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="sulfur", amount=150},
+            {type="item", name="plastic-bar", amount=300},
         },
-        result = "par-laser-mk9"
+        results = {{type="item", name="par-laser-mk9", amount=1}}
     },
     {
         type = "recipe",
@@ -138,15 +138,15 @@ local recipes = {
         energy_required = 40,
         hide_from_player_crafting = true,
         ingredients = {
-            {"par-laser-mk9", 1},
-            {"armour-control-unit", 100},
-            {"low-density-structure", 200},
-            {"processing-unit", 100},
-            {"advanced-circuit", 100},
-            {"steel-plate", 300},
-            {"sulfur", 150},
+            {type="item", name="par-laser-mk9", amount=1},
+            {type="item", name="armour-control-unit", amount=100},
+            {type="item", name="low-density-structure", amount=200},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="steel-plate", amount=300},
+            {type="item", name="sulfur", amount=150},
         },
-        result = "par-laser-mk10"
+        results = {{type="item", name="par-laser-mk10", amount=1}}
     },
 }
 data:extend(recipes)
