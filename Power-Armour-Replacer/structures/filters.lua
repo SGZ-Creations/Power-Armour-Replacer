@@ -12,7 +12,7 @@
 local function Hide_Item(name)
     local item = data.raw.item[name]
     if item then
-            item.hidden = true
+        item.hidden = true
     end
 
     local armour_item = data.raw.armor[name]
