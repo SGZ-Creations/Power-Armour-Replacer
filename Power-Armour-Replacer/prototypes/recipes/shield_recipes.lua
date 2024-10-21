@@ -139,7 +139,7 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"par-shield-mk9", 1},
-            {"rocket-control-unit", 75},
+            {"armour-control-unit", 75},
             {"processing-unit", 110},
             {"low-density-structure", 155},
             {type="fluid", name="sulfuric-acid", amount=350},

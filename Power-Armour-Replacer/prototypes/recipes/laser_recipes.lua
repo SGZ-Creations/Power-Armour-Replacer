@@ -122,7 +122,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"par-laser-mk8", 1},
-            {"rocket-control-unit", 60},
+            {"armour-control-unit", 60},
             {"low-density-structure", 180},
             {"processing-unit", 100},
             {"advanced-circuit", 100},
@@ -139,7 +139,7 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {"par-laser-mk9", 1},
-            {"rocket-control-unit", 100},
+            {"armour-control-unit", 100},
             {"low-density-structure", 200},
             {"processing-unit", 100},
             {"advanced-circuit", 100},

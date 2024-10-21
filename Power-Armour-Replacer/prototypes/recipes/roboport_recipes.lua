@@ -121,7 +121,7 @@ local recipes = {
         category = "crafting-with-fluid",
         ingredients = {
             {"par-roboport-mk8", 1},
-            {"rocket-control-unit", 80},
+            {"armour-control-unit", 80},
             {"low-density-structure", 150},
             {"advanced-circuit", 160},
             {type="fluid", name="lubricant", amount=600},
@@ -137,7 +137,7 @@ local recipes = {
         ingredients = {
             {"par-roboport-mk9", 1},
             {"low-density-structure", 196},
-            {"rocket-control-unit", 164},
+            {"armour-control-unit", 164},
             {"processing-unit", 171},
         },
         result = "par-roboport-mk10"

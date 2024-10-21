@@ -1,16 +1,15 @@
 {
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
-	"factorio_version": "1.1",
-	"version": "0.2.18",
+	"factorio_version": "2.0",
+	"version": "0.3.0",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
 	[
-		"base >= 1.1",
-		"armor-spill-prevention >= 0.0.8",
-		"~ Configurable-Armour-Suits >= 1.4.4",
+		"~ Configurable-Armour-Suits >= 1.5.0",
+		"? armor-spill-prevention >= 0.0.8",
 		"? angelssmelting >= 0.6.21",
 		"? bobplates >= 1.1.6",
 		"? bobpower >= 1.1.7",

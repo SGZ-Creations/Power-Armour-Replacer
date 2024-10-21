@@ -110,7 +110,7 @@ local recipes = {
         ingredients = {
             {"par-battery-mk7", 1},
             {"battery", 90},
-            {"rocket-control-unit", 65},
+            {"armour-control-unit", 65},
             {"processing-unit", 50},
             {type="fluid", name="water", amount=500},
         },
@@ -127,7 +127,7 @@ local recipes = {
             {"battery", 100},
             {"plastic-bar", 135},
             {"processing-unit", 50},
-            {"rocket-control-unit", 95},
+            {"armour-control-unit", 95},
             {"low-density-structure", 175},
         },
         result = "par-battery-mk9"
@@ -143,7 +143,7 @@ local recipes = {
             {"par-battery-mk9", 1},
             {"battery", 140},
             {"processing-unit", 50},
-            {"rocket-control-unit", 135},
+            {"armour-control-unit", 135},
             {"low-density-structure", 200},
             {type="fluid", name="sulfuric-acid", amount=150},
         },

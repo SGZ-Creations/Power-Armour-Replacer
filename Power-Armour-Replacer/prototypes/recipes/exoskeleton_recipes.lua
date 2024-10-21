@@ -72,7 +72,7 @@ local recipes = {
             {"battery", 250},
             {"steel-plate", 250},
             {"processing-unit", 100},
-            {"rocket-control-unit", 150},
+            {"armour-control-unit", 150},
             {"low-density-structure", 150},
         },
         result = "par-exoskeleton-mk5"

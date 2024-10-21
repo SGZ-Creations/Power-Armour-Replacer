@@ -729,7 +729,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
         replacements = {
             ["lubricant"] = {"", 0},
             ["solar-panel"] = {"", 0},
-            --["rocket-control-unit"] = {"", 0},
+            --["armour-control-unit"] = {"", 0},
             --["low-density-structure"] = {"", 0},
             {"se-heavy-assembly", 30},
 			{"se-quantum-processor", 10},
@@ -740,7 +740,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
         replacements = {
             ["lubricant"] = {"", 0},
             ["solar-panel"] = {"", 0},
-            --["rocket-control-unit"] = {"", 0},
+            --["armour-control-unit"] = {"", 0},
             --["low-density-structure"] = {"", 0},
 			{"lithium-sulfur-battery", 450},
         }

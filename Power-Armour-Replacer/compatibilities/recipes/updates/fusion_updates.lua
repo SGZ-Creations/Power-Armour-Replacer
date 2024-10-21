@@ -505,7 +505,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk10"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-			["rocket-control-unit"] = {"se-quantum-processor", 2},
+			["armour-control-unit"] = {"se-quantum-processor", 2},
             ["low-density-structure"] = {"se-nanomaterial", 50},
             ["processing-unit"] = {"se-naquium-processor", 2},
         }
@@ -513,7 +513,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["rocket-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"matter-cube", 2},
             ["battery"] = {"ai-core", 10},
         }
     },

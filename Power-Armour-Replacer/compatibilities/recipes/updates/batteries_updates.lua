@@ -331,7 +331,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk7"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["rocket-control-unit"] = {"low-density-structure", 50},
+            ["armour-control-unit"] = {"low-density-structure", 50},
             ["battery"] = {"silver-zinc-battery", 100},
             ["plastic-bar"] = {"titanium-plate", 150},
             ["lubricant"] = {"", 0},
@@ -443,7 +443,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk10"], {
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 500},
             ["battery"] = {"silver-zinc-battery", 400},
-            ["rocket-control-unit"] = {"nitinol-alloy", 100},
+            ["armour-control-unit"] = {"nitinol-alloy", 100},
             {"tungsten-carbide",600},
         }
     },
@@ -471,7 +471,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["rocket-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"matter-cube", 2},
         }
     },
 })

@@ -136,7 +136,7 @@ local recipes = {
         ingredients = {
             {"par-armour-mk8", 1},
             {"solar-panel", 30},
-            {"rocket-control-unit", 100},
+            {"armour-control-unit", 100},
             {"low-density-structure", 175},
             {type="fluid", name="lubricant", amount=700},
         },
@@ -151,7 +151,7 @@ local recipes = {
         ingredients = {
             {"par-armour-mk9", 1},
             {"solar-panel", 40},
-            {"rocket-control-unit", 200},
+            {"armour-control-unit", 200},
             {"processing-unit", 250},
             {"low-density-structure", 250},
         },

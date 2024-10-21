@@ -421,7 +421,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk9"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["rocket-control-unit"] = {"roboport-antenna-4", 5},
+            ["armour-control-unit"] = {"roboport-antenna-4", 5},
             ["low-density-structure"] = {"roboport-chargepad-4", 5},
             ["advanced-circuit"] = {"roboport-door-4", 5},
             ["advanced-processing-unit"] = {"roboport-door-4", 5},
@@ -463,7 +463,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk10"], {
         dependencies = {"boblogistics"},
         replacements = {
             ["low-density-structure"] = {"roboport-antenna-4", 10},
-            ["rocket-control-unit"] = {"roboport-chargepad-4", 10},
+            ["armour-control-unit"] = {"roboport-chargepad-4", 10},
             ["advanced-processing-unit"] = {"roboport-door-4", 10},
             ["processing-unit"] = {"roboport-door-4", 10},
             ["silver-zinc-battery"] = {"", 0},
@@ -475,7 +475,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["rocket-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"matter-cube", 2},
         }
     },
 })

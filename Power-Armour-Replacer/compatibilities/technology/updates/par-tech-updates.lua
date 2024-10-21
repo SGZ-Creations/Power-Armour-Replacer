@@ -125,7 +125,7 @@ util.technology_dependancy
 			"battery-2",
 		},
 		["par-armour-tech-7"] = {
-			["rocket-control-unit"] = "tungsten-processing",
+			["armour-control-unit"] = "tungsten-processing",
 			"ceramics",
 		},
 		["par-armour-tech-8"] = {
@@ -136,7 +136,7 @@ util.technology_dependancy
 			"nitinol-processing",
 		},
 		["par-armour-tech-10"] = {
-			"rocket-control-unit",
+			"armour-control-unit",
 		},
 		["par-battery-tech-6"] = {
 			"lithium-processing",

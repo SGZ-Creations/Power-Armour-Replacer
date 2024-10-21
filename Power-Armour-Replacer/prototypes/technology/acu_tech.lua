@@ -2,13 +2,13 @@ if not data.raw.technology["rocket-control-unit"] then
 	data:extend({
 		{
 			type = "technology",
-			name = "rocket-control-unit",
+			name = "armour-control-unit",
 			icon_size = 256,
 			icon_mipmaps = 4,
-			icon = "__Power-Armour-Replacer__/graphics/technology/rcu/rcu-tech.png",
+			icon = "__Power-Armour-Replacer__/graphics/technology/acu/acu-tech.png",
 			effects = {
 				type = "unlock-recipe",
-				recipe = "rocket-control-unit"
+				recipe = "armour-control-unit"
 			},
 			prerequisites = { "chemical-science-pack" },
 			unit = {

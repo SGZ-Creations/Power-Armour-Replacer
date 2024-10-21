@@ -221,7 +221,7 @@ data:extend({
 				recipe = "par-armour-mk9"
 			},
 		},
-		prerequisites = { "par-armour-tech-8", "rocket-control-unit", "military-4", },
+		prerequisites = { "par-armour-tech-8", "armour-control-unit", "military-4", },
 		unit =
 		{
 			count = 1000,

@@ -123,7 +123,7 @@ local recipes = {
             {"par-fusion-reactor-mk8", 1},
             {"nuclear-fuel", 55},
             {"processing-unit", 150},
-            {"rocket-control-unit", 30},
+            {"armour-control-unit", 30},
             {"low-density-structure", 250},
             {type="fluid", name="petroleum-gas", amount=200}
         },
@@ -139,7 +139,7 @@ local recipes = {
             {"par-fusion-reactor-mk9", 1},
             {"battery", 100},
             {"processing-unit", 200},
-            {"rocket-control-unit", 30},
+            {"armour-control-unit", 30},
             {"low-density-structure", 250},
         },
         result = "par-fusion-reactor-mk10"

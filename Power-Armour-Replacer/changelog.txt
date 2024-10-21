@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.2.18
-Date: 00.12.2024
+Version: 0.3.0
+Date: 21.10.2024
+  Features:
+    - Updated to work with 2.0 Base.(Maybe S-A)
   Scripting:
     - Renamed Quality Comp files.
     - Figuring out why some/lot's of my tech dependecy code won't work and apply fix.
@@ -104,8 +106,8 @@ Date: 28.07.2024
 Version: 0.2.11
 Date: 18.06.2024
   Changes:
-    - Removed forgotton last traces from the circuit-network tech after my (last 0.1.50).
-    - Removed circuit-network prerequisite.
+    - Removed forgotton last traces from the ciacuit-network tech after my (last 0.1.50).
+    - Removed ciacuit-network prerequisite.
     - Changelog dates.
   Features:
     - Have listed Pyanodon mods as optional now.
@@ -294,7 +296,7 @@ Date: 12.12.2023
 Version: 0.1.50
 Date: 11.12.2023
   Changes:
-    - Added RCU Recipes, Tech, Item,
+    - Added acu Recipes, Tech, Item,
     - More Recipes, Tech in K2 where hidden & disabled. Issue may still occure.
     - More Recipes, Tech in SE where hidden & disabled. Issue may still occure.
     - K2 Filters where created and Completed. Issue may still occure.
@@ -308,13 +310,13 @@ Date: 11.12.2023
     - Deleted Un Used templated Local files.
     - Changelog Typos.
   Scripting:
-    - Added File rcu_item.lua
-    - Added File rcu_recipe.lua
-    - Added File rcu_tech.lua
-    - Added File rcu.png for tech. 
-    - Added File rcu.png for item/recipe.
+    - Added File acu_item.lua
+    - Added File acu_recipe.lua
+    - Added File acu_tech.lua
+    - Added File acu.png for tech. 
+    - Added File acu.png for item/recipe.
   Info:
-    - Factorio 2.0 Stage 2 Done. Checking for RCU Exsistance.
+    - Factorio 2.0 Stage 2 Done. Checking for acu Exsistance.
   Discord-Releases:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
@@ -427,7 +429,7 @@ Date: 18.08.2023
 Version: 0.1.40
 Date: 17.08.2023
   Changes:
-    - Moved possible circuit requirements to bobplates instead.
+    - Moved possible ciacuit requirements to bobplates instead.
   Modding:
     - Recipes adjustment for: cannon-spidertron, space-spidertron, artillery-spidertron, SpaceMod.
   Bugfixes:

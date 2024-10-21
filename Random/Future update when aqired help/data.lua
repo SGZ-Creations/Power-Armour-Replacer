@@ -9,7 +9,7 @@
     require("prototypes.items.shield_item")
     require("prototypes.items.nvgs_item")
     require("prototypes.items.immuntiy_item")
-    require("prototypes.items.rcu_item")
+    require("prototypes.items.acu_item")
 
 --dlc.spaceage
 --[[
@@ -36,7 +36,7 @@
     require("prototypes.recipes.shield_recipes")
     require("prototypes.recipes.immunity_recipes")
     require("prototypes.recipes.nvgs_recipes")
-    require("prototypes.recipes.rcu_recipes")
+    require("prototypes.recipes.acu_recipes")
 
 --compatibilities
     require("compatibilities.misc.compatibility-recipe-data")
@@ -51,7 +51,7 @@
     require("prototypes.technology.laser_tech")
     require("prototypes.technology.shield_tech")
     require("prototypes.technology.nvgs_bi_tech")
-    require("prototypes.technology.rcu_tech")
+    require("prototypes.technology.acu_tech")
 
 --prototypes.other
     require("prototypes.animation.player_style")

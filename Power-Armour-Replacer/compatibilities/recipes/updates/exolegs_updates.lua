@@ -285,7 +285,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk5"], {
         replacements = {
 			["battery"] = {"lithium-sulfur-battery", 500},
 			["steel-plate"] = {"imersium-beam", 200},
-			["rocket-control-unit"] = {"se-quantum-processor", 5},
+			["armour-control-unit"] = {"se-quantum-processor", 5},
 			["low-density-structure"] = {"se-heavy-bearing", 500},
 			["processing-unit"] = {"se-naquium-processor", 5},
             {"se-nanomaterial", 500},

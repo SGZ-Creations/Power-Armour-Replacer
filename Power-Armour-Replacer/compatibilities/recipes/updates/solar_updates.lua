@@ -376,7 +376,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["rocket-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"matter-cube", 2},
         }
     },
 })
