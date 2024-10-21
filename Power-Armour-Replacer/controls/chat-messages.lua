@@ -15,7 +15,7 @@
 local function check_for_error(event)
     local printer = game.print
 
-    if settings.startup["PA&R-info"].value then
+    if settings.startup["PAR-info"].value then
         printer([[
 ---------------------------------------------------------------------------------------------------
 Power Armour & Replacer works in vanilla but was not intended with vanilla.

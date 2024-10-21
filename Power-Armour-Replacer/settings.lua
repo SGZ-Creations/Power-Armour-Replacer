@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "bool-setting",
-        name = "PA&R-info",
+        name = "PAR-info",
         setting_type = "startup",
         default_value = true,
         order = "1Aaa"
@@ -171,7 +171,7 @@ if mods["PowerAndArmor"] then
         },
         {
             type = "bool-setting",
-            name = "P&A-filters",
+            name = "PA-filters",
             setting_type = "startup",
             default_value = true,
             order = "2Iab"
