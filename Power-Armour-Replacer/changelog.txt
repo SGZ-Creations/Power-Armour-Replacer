@@ -5,6 +5,7 @@ Date: 22.10.2024
     - Updated to work with 2.0 Base & S-A.
     - Added sounds to all items in mod.
     - Made sure equipping equipment can be eqquippted.(bug)
+    - Added propper Weight values to all items in mod to be able to ship items in rocket for SA.
   Changes:
     - Deleted dlc folders.
     - Removed Compatibility with IR3 as the mod is now a dead ghost.
