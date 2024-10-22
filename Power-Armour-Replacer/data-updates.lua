@@ -10,7 +10,6 @@
 	require("compatibilities.recipes.updates.shield_updates")
 	require("compatibilities.recipes.updates.solar_updates")
 
---compatibilities.misc
 	require("compatibilities.misc.compatibility-recipe-update")
 	require("compatibilities.misc.altered-tech-updates")
 
