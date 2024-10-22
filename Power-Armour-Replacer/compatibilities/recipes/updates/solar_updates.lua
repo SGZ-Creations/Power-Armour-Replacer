@@ -26,15 +26,6 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
             {"silicon", 25},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"bronze-beam", 20},
-            ["iron-stick"] = {"tin-rod", 20},
-            ["iron-plate"] = {"copper-pellet", 40},
-        }
-    },
     --SE
     {
         dependencies = {"space-exploration"},
@@ -73,15 +64,6 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk2"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["silver-plate"] = {"", 0},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"bronze-plate-heavy", 20},
-            ["copper-plates"] = {"tin-ingot", 50},
-            ["steel-plate"] = {"copper-pellet", 40},
         }
     },
     --SE

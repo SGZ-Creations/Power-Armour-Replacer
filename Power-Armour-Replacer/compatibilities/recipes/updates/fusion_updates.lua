@@ -35,15 +35,6 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk1"], {
             {"glass", 35},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"copper-rotor", 20},
-            ["steel-plate"] = {"glass", 40},
-            ["copper-plate"] = {"copper-cable", 50},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -110,16 +101,6 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk2"], {
         dependencies = {"SeaBlockMetaPack", "bobplates"},
         replacements = {
             ["rubber"] = {"bronze-alloy", 60},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"iron-frame-small", 30},
-            ["iron-plate"] = {"", 0},
-            ["copper-cable"] = {"bronze-plate-heavy", 50},
-            {"rubber", 50},
         }
     },
     --K2

@@ -154,16 +154,6 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
             ["battery"] = {"lithium-ion-battery", 55},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"copper-rotor", 30},
-            ["steel-plate"] = {"tin-gear-wheel", 30},
-            {"iron-rivet", 20},
-            {"iron-beam", 20},
-        }
-    },
     --SEK2
     {
         dependencies = {"Krastorio2", "space-exploration"},

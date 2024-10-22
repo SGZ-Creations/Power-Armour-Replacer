@@ -91,16 +91,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
             {"copper-plate", 20},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["steel-plate"] = {"copper-frame-large", 20},
-            ["electronic-circuit"] = {"glass", 80},
-            ["wood"] = {"rubber", 50},
-            {"copper-cable", 100},
-        }
-    },
     --SEK2 as long it don't mark mod as incompatible for no reason.
     {
         dependencies = {"Krastorio2"},
@@ -189,17 +179,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk2"], {
             ["steel-plate"] = {"aluminium-plate", 45},
             ["small-parts-01"] = {"small-parts-01", 75},
             ["electronic-circuit"] = {"electronic-circuit", 40},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"copper-rotor", 50},
-            ["engin-unit"] = {"copper-coil", 50},
-            ["steel-plate"] = {"copper-cable-heavy", 50},
-            ["iron-gear-wheel"] = {"iron-plate-heavy", 50},
-            {"copper-engine-unit", 10},
         }
     },
     --K2
@@ -313,16 +292,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk3"], {
             {"ticl4", 20},
         },
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["advanced-circuit"] = {"computer-mk1", 30},
-            ["plastic-bar"] = {"iron-rotor", 20},
-            ["steel-plate"] = {"copper-coil", 40},
-            {"gold-foil", 50},
-        }
-    },
     --SE
     {
         dependencies = {"space-exploration"},
@@ -407,12 +376,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
             ["plastic-bar"] = {"", 0},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-        }
-    },
     -- SE K2
     {
         dependencies = {"space-exploration"},
@@ -481,12 +444,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
             ["uranium-235"] = {"fi_materials_glass", 400},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-        }
-    },
     -- SE K2
     {
         dependencies = {"space-exploration"},
@@ -536,12 +493,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
             ["processing-unit"] = {"plastic-bar", 100},
             ["gold-plate"] = {"cobalt-steel-alloy", 100},
             {"gilded-copper-cable", 55},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
         }
     },
     --SE K2
@@ -602,12 +553,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
             ["glass"] = {"leaded-glass", 50},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-        }
-    },
     -- SE K2
     {
         dependencies = {"space-exploration"},
@@ -653,12 +598,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
         replacements = {
             {"alien-artifact", 800},
             {"alien-artifact-red", 600},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
         }
     },
     -- SE K2
@@ -717,19 +656,12 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
             {"reinforced-concrete-brick", 200},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-        }
-    },
     -- SE K2
     {
         dependencies = {"space-exploration"},
         replacements = {
             ["lubricant"] = {"", 0},
             ["solar-panel"] = {"", 0},
-            --["armour-control-unit"] = {"", 0},
             --["low-density-structure"] = {"", 0},
             {"se-heavy-assembly", 30},
 			{"se-quantum-processor", 10},
@@ -740,7 +672,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
         replacements = {
             ["lubricant"] = {"", 0},
             ["solar-panel"] = {"", 0},
-            --["armour-control-unit"] = {"", 0},
             --["low-density-structure"] = {"", 0},
 			{"lithium-sulfur-battery", 450},
         }
@@ -795,12 +726,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
         replacements = {
             {"clowns-plate-osmium", 500},
             {"clowns-plate-depleted-uranium", 500},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
         }
     },
     --248K

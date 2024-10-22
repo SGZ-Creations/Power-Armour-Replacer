@@ -35,16 +35,6 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk1"], {
             ["carbon"] = {"solid-carbon", 150},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["engine-unit"] = {"iron-motor", 20},
-            ["small-lamp"] = {"copper-gate", 20},
-            ["iron-gear-wheel"] = {"copper-cable-heavy", 10},
-            ["lubricant"] = {"", 0},
-        }
-    },
     -- SE-K2
     {
         dependencies = {"Krastorio2"},

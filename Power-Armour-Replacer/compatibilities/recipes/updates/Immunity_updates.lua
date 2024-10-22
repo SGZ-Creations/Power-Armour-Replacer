@@ -35,16 +35,6 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk1"], {
         ["battery"] = {"el_lithium_battery", 35},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["engine-unit"] = {"iron-motor", 20},
-            ["battery"] = {"copper-gate", 20},
-            ["steel-plate"] = {"copper-cable-heavy", 10},
-            ["lubricant"] = {"", 0},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},

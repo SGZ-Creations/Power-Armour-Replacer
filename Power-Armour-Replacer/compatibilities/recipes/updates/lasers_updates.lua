@@ -42,16 +42,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
             {"angels-mono-silicon", 20},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            --["electronic-circuit"] = {"", 0},
-            ["copper-plate"] = {"copper-cable", 40},
-            ["iron-plate"] = {"copper-pellet", 80},
-            ["steel-plate"] = {"tin-gear-wheel", 20},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -101,15 +91,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk2"], {
         dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
         replacements = {
             {"angels-mono-silicon", 40},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"", 0},
-            ["engine-unit"] = {"copper-motor", 20},
-            ["copper-plate"] = {"copper-beam", 50},
         }
     },
     --K2

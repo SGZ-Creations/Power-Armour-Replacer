@@ -30,15 +30,6 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk1"], {
             {"glass", 40},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"bronze-beam", 20},
-            ["small-electric-pole"] = {"copper-frame-small", 30},
-            ["steel-plate"] = {"bronze-pellet", 40},
-        }
-    }, 
     --SE
     {
         dependencies = {"space-exploration"},
@@ -88,13 +79,6 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk2"], {
         replacements = {
             ["silicon"] = {"angels-mono-silicon", 60},
             {"angels-mono-silicon", 60},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["steel-plate"] = {"", 0},
         }
     },
     --SE
@@ -162,13 +146,6 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk3"], {
         replacements = {
             ["silicon"] = {"angels-mono-silicon", 60},
             {"angels-mono-silicon", 60},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            [""] = {"", 0},
         }
     },
     --SE
@@ -243,7 +220,8 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk5"], {
             ["low-density-structure"] = {"brass-plate", 50},
             ["steel-plate"] = {"aluminium-plate", 100},
         }
-    },{
+    },
+    {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"tinned-copper-cable", 200},

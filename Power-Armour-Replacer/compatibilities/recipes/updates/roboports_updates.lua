@@ -69,17 +69,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk1"], {
             ["small-lamp"] = {"motor", 10},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["small-lamp"] = {"copper-frame-large", 20},
-            ["electronic-circuit"] = {"glass", 80},
-            ["wood"] = {"rubber", 50},
-            ["iron-chest"] = {"tin-plate", 100},
-            {"copper-roboport-equipment", 1}
-        }
-    },
 })
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk2"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
@@ -111,15 +100,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk2"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-cable"] = {"tinned-copper-cable", 175},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"glass", 80},
-            {"iron-plate-heavy", 60},
-            {"copper-rotor", 60},
         }
     },
     --SE-K2
@@ -161,15 +141,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk3"], {
             ["rubber"] = {"", 0},
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-            ["electronic-circuit"] = {"computer-mk1", 100},
-            {"iron-rotor", 20},
-            {"gold-foil", 50},
-        }
-    },
 })
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk4"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
@@ -202,12 +173,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk4"], {
             ["iron-gear-wheel"] = {"", 0},
             ["bronze-alloy"] = {"", 0},
             ["rubber"] = {"", 0},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
         }
     },
 })
@@ -246,12 +211,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk5"], {
             ["ceramic-bearing"] = {"", 0}, --0
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-        }
-    },
 })
 
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk6"], {
@@ -285,12 +244,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk6"], {
             ["invar-alloy"] = {"roboport-door-2", 10},
             ["silicon-nitride"] = {"", 0},
             ["lubricant"] = {"", 0},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
         }
     },
 })
@@ -335,13 +288,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk7"], {
             ["gilded-copper-cable"] = {"", 0},--0
         }
     },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
-        }
-    },
-})
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk8"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
@@ -381,12 +327,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk8"], {
             ["processing-unit"] = {"", 0}, --0
             ["tungsten-plate"] = {"", 0}, --0
             ["rubber"] = {"", 0}, --0
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
         }
     },
 })
@@ -430,12 +370,6 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk9"], {
             ["silicon-wafer"] = {"", 0},
             ["lubricant"] = {"", 0},
             ["solder"] = {"", 0},
-        }
-    },
-    --IR3
-    {
-        dependencies = {"IndustrialRevolution3"},
-        replacements = {
         }
     },
 })
