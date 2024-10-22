@@ -18,9 +18,13 @@ for tier, roboport in pairs(roboports) do
     local item = {
         type = "item",
         name = "par-roboport-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-roboport-mk" .. tostring(tier),
+        place_as_equipment_result = "par-roboport-mk" .. tostring(tier),
         icons = roboport.port_texture,
+        inventory_move_sound = item_sounds.roboport_inventory_move,
+        pick_sound = item_sounds.roboport_inventory_pickup,
+        drop_sound = item_sounds.roboport_inventory_move,
         stack_size = 20,
+        weight = 10000,
         order = roboport.order,
         subgroup = "replacer_item",
     }

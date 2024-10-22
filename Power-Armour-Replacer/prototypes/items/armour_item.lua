@@ -7,16 +7,16 @@ Incoming Damage 2000
 ]]
 
 local power_armour_equipment = {
-    { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  icon = "__base__/graphics/icons/power-armor.png", },
-    { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  icon = "__base__/graphics/icons/power-armor-mk2.png", },
-    { order = "acz", inventory_bonus = 150, grid_width = 30,  grid_height = 30,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png", },
-    { order = "adz", inventory_bonus = 200, grid_width = 40,  grid_height = 40,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png", },
-    { order = "aez", inventory_bonus = 250, grid_width = 50,  grid_height = 50,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", },
-    { order = "afz", inventory_bonus = 300, grid_width = 60,  grid_height = 60,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --6
-    { order = "agz", inventory_bonus = 350, grid_width = 70,  grid_height = 70,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --7
-    { order = "ahz", inventory_bonus = 400, grid_width = 80,  grid_height = 80,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --8
-    { order = "aiz", inventory_bonus = 450, grid_width = 90,  grid_height = 90,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --9
-    { order = "ajz", inventory_bonus = 500, grid_width = 100, grid_height = 100, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --10
+    { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  --[[weightvalue=5,]]  icon = "__base__/graphics/icons/power-armor.png", },
+    { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  --[[weightvalue=10,]]  icon = "__base__/graphics/icons/power-armor-mk2.png", },
+    { order = "acz", inventory_bonus = 150, grid_width = 30,  grid_height = 30,  --[[weightvalue=15,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png", },
+    { order = "adz", inventory_bonus = 200, grid_width = 40,  grid_height = 40,  --[[weightvalue=20,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png", },
+    { order = "aez", inventory_bonus = 250, grid_width = 50,  grid_height = 50,  --[[weightvalue=25,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", },
+    { order = "afz", inventory_bonus = 300, grid_width = 60,  grid_height = 60,  --[[weightvalue=30,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --6
+    { order = "agz", inventory_bonus = 350, grid_width = 70,  grid_height = 70,  --[[weightvalue=35,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --7
+    { order = "ahz", inventory_bonus = 400, grid_width = 80,  grid_height = 80,  --[[weightvalue=30,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --8
+    { order = "aiz", inventory_bonus = 450, grid_width = 90,  grid_height = 90,  --[[weightvalue=45,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --9
+    { order = "ajz", inventory_bonus = 500, grid_width = 100, grid_height = 100, --[[weightvalue=50,]]  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --10
 }
 
 local resistances = {
@@ -58,7 +58,6 @@ for tier, equipment in pairs(power_armour_equipment) do
         type = "armor",
         icon = equipment.icon,
         icon_size = 64,
-        icon_mipmaps = 4,
         resistances = {
             {
                 type = "physical",
@@ -103,7 +102,11 @@ for tier, equipment in pairs(power_armour_equipment) do
         },
         subgroup = "replacer_item",
         order = equipment_order,
+        inventory_move_sound = item_sounds.armor_large_inventory_move,
+        pick_sound = item_sounds.armor_large_inventory_pickup,
+        drop_sound = item_sounds.armor_large_inventory_move,
         stack_size = 1,
+        weight = 55000,--power_armour_equipment.weightvalue,
         infinite = true,
         equipment_grid = equipment_grid_name,
         inventory_size_bonus = equipment.inventory_bonus,

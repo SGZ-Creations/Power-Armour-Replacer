@@ -13,11 +13,15 @@ for tier, exoskeleton in pairs(exoskeletons) do
     local item = {
         type = "item",
         name = "par-exoskeleton-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-exoskeleton-mk" .. tostring(tier),
+        place_as_equipment_result = "par-exoskeleton-mk" .. tostring(tier),
         subgroup = "replacer_item",
         order = exoskeleton.order,
         icons = icon_utils.create_equipment_icon("exoskeleton", 64, 4, tier),
+        inventory_move_sound = item_sounds.exoskeleton_inventory_move,
+        pick_sound = item_sounds.exoskeleton_inventory_pickup,
+        drop_sound = item_sounds.exoskeleton_inventory_move,
         stack_size = 20,
+        weight = 25000,
     }
 
     ---@type data.EquipmentPrototype
@@ -27,14 +31,12 @@ for tier, exoskeleton in pairs(exoskeletons) do
         sprite = icon_utils.create_equipment_sprite("exoskeleton", 64, 128, tier,
             "__base__/graphics/equipment/exoskeleton-equipment.png",
             "__base__/graphics/equipment/hr-exoskeleton-equipment.png"),
-        shape =
-        {
+        shape = {
             width = 2,
             height = 4,
             type = "full"
         },
-        energy_source =
-        {
+        energy_source = {
             type = "electric",
             usage_priority = "secondary-input"
         },

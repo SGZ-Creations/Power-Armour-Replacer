@@ -10,10 +10,14 @@ for tier, nightvision in pairs(nightvisions) do
     local item = {
         type = "item",
         name = "par-nightvision-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-nightvision-mk" .. tostring(tier),
+        place_as_equipment_result = "par-nightvision-mk" .. tostring(tier),
         order = nightvision.order,
         icons = icon_utils.create_equipment_icon("night-vision", 64, 4, tier),
+        inventory_move_sound = item_sounds.electric_small_inventory_move,
+        pick_sound = item_sounds.electric_small_inventory_pickup,
+        drop_sound = item_sounds.electric_small_inventory_move,
         stack_size = 5,
+        weight = 550,
         subgroup = "replacer_item",
     }
 

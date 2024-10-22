@@ -10,11 +10,14 @@ for tier, immunity in pairs(Immunities) do
     local item = {
         type = "item",
         name = "par-belt-immunity-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-belt-immunity-mk" .. tostring(tier),
+        place_as_equipment_result = "par-belt-immunity-mk" .. tostring(tier),
         icon = "__base__/graphics/icons/belt-immunity-equipment.png",
         icon_size = 64,
-        mip_maps = 4,
         stack_size = 5,
+        weight = 5500,
+        inventory_move_sound = item_sounds.mechanical_inventory_move,
+        pick_sound = item_sounds.mechanical_inventory_pickup,
+        drop_sound = item_sounds.mechanical_inventory_move,
         order = immunity.order,
         subgroup = "replacer_item",
     }

@@ -18,9 +18,13 @@ for tier, reactor in pairs(reactors) do
     local item = {
         type = "item",
         name = "par-fusion-reactor-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-fusion-reactor-mk" .. tostring(tier),
+        place_as_equipment_result = "par-fusion-reactor-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("fusion-reactor", 64, 4, tier),
         stack_size = 20,
+        weight = 35000,
+        inventory_move_sound = item_sounds.reactor_inventory_move,
+        pick_sound = item_sounds.reactor_inventory_pickup,
+        drop_sound = item_sounds.reactor_inventory_move,
         order = reactor.order,
         subgroup = "replacer_item",
     }

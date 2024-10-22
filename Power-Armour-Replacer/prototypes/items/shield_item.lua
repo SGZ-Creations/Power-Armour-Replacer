@@ -23,9 +23,13 @@ for tier, shield in pairs(shields) do
     local item = {
         type = "item",
         name = "par-shield-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-shield-mk" .. tostring(tier),
+        place_as_equipment_result = "par-shield-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("energy-shield", 64, 4, tier),
+        inventory_move_sound = item_sounds.energy_shield_inventory_move,
+        pick_sound = item_sounds.energy_shield_inventory_pickup,
+        drop_sound = item_sounds.energy_shield_inventory_move,
         stack_size = 20,
+        weight = 10000,
         order = shield.order,
         subgroup = "replacer_item",
     }

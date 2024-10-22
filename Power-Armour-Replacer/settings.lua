@@ -22,6 +22,18 @@ data:extend({
     },
 })
 
+if mods["space-age"] or mods["mech-armor"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "MechTechFilters",
+            setting_type = "startup",
+            default_value = true,
+            order = "1Aad"
+        },
+    })
+end
+
 if mods["bobwarfare"] then
 data:extend({
         {

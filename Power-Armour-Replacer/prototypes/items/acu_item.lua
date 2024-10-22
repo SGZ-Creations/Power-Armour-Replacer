@@ -7,7 +7,8 @@ if not data.raw.item["rocket-control-unit"] then
 			icon_size = 64, icon_mipmaps = 4,
 			subgroup = "intermediate-product",
 			order = "n[armour-control-unit]",
-			stack_size = 200
+			stack_size = 500,
+			weight = 2500,
 		},
 	})
 end

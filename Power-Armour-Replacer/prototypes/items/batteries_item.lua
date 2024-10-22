@@ -20,9 +20,13 @@ for tier, battery in pairs(batteries) do
         name = "par-battery-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("battery", 64, 4, tier),
         stack_size = 20,
+        weight = 15000,
+        inventory_move_sound = item_sounds.electric_small_inventory_move,
+        pick_sound = item_sounds.electric_small_inventory_pickup,
+        drop_sound = item_sounds.electric_small_inventory_move,
         order = battery.order .. "[battery]-aa[armour-replacer]",
         subgroup = "replacer_item",
-        placed_as_equipment_result = "par-battery-mk" .. tostring(tier),
+        place_as_equipment_result = "par-battery-mk" .. tostring(tier),
     }
 
     ---@type data.EquipmentPrototype

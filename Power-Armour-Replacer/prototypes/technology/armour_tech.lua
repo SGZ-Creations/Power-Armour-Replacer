@@ -3,7 +3,6 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-1",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__base__/graphics/technology/power-armor.png",
 		effects = {
 			{
@@ -25,7 +24,6 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-2",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__base__/graphics/technology/power-armor-mk2.png",
 		effects = {
 			{
@@ -47,7 +45,6 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-3",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3.png",
 		effects = {
 			{
@@ -70,7 +67,6 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-4",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4.png",
 		effects =
 		{
@@ -96,7 +92,6 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-5",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 		effects =
 		{
@@ -129,7 +124,6 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-6",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 		effects =
 		{
@@ -156,7 +150,6 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-7",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
 		effects =
 		{
@@ -184,10 +177,8 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-8",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk8"
@@ -212,10 +203,8 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-9",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk9"
@@ -241,18 +230,15 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-10",
 		icon_size = 256,
-		icon_mipmaps = 4,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk10"
 			},
 		},
 		prerequisites = { "par-armour-tech-9" },
-		unit =
-		{
+		unit = {
 			count = 1000,
 			ingredients = {
 				{ "automation-science-pack", 10 },

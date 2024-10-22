@@ -3,7 +3,6 @@ data:extend({
         type = "technology",
         name = "par-night-immunity-tech-1",
         icon_size = 256,
-        icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/graphics/technology/night-immunity/belt-immunity-night-vision-equipment.png"),
         prerequisites = { "par-armour-tech-1", "par-fusion-reactor-tech-5" },
         effects =
@@ -33,7 +32,6 @@ data:extend({
         type = "technology",
         name = "par-night-immunity-tech-2",
         icon_size = 256,
-        icon_mipmaps = 4,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/graphics/technology/night-immunity/belt-immunity-night-vision-equipment-1.png"),
         prerequisites =
         {

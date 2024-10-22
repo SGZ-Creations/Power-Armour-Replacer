@@ -1,10 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
-Date: 12.10.2024
+Date: 22.10.2024
   Features:
-    - Updated to work with 2.0 Base.(Maybe S-A)
+    - Updated to work with 2.0 Base & S-A.
+    - Added sounds to all items in mod.
+    - Made sure equipping equipment can be eqquippted.(bug)
+  Changes:
+    - Deleted dlc folders.
+  Scripting:
+    - Deleted some Mipmap. Reworking texture is coming eventualy. looking at you tech tree.
   Info:
-    - will try maintain to some extend for 1.1 atleast 6 more months should you find bugs.
+    - Will try maintain to some extend for 1.1 at least 6 more months should you find bugs.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.18
 Date: 12.10.2024

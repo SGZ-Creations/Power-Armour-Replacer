@@ -18,9 +18,13 @@ for tier, laser in pairs(lasers) do
     local item = {
         type = "item",
         name = "par-laser-mk" .. tostring(tier),
-        placed_as_equipment_result = "par-laser-mk" .. tostring(tier),
+        place_as_equipment_result = "par-laser-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("laser-defense", 64, 4, tier),
+        inventory_move_sound = item_sounds.turret_inventory_move,
+        pick_sound = item_sounds.turret_inventory_pickup,
+        drop_sound = item_sounds.turret_inventory_move,
         stack_size = 20,
+        weight = 120,
         order = laser.order,
         subgroup = "replacer_item",
     }
@@ -48,7 +52,6 @@ for tier, laser in pairs(lasers) do
             damage_modifier = laser.damage_modifier,
             ammo_category = "laser",
             ammo_type = {
-                category = "laser",
                 energy_consumption = laser.energy_consumption,
                 action = {
                     type = "direct",
@@ -63,7 +66,7 @@ for tier, laser in pairs(lasers) do
             }
         },
         automatic = true,
-        categories = { "armor" }
+        categories = {"armor"}
     }
 
     data:extend({
