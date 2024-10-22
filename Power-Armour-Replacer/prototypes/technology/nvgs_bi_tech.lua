@@ -40,7 +40,7 @@ data:extend({
             "par-night-immunity-tech-1",
             "par-armour-tech-10",
             "battery",
-            "advanced-electronics-2",
+            "processing-unit",
         },
         effects =
         {

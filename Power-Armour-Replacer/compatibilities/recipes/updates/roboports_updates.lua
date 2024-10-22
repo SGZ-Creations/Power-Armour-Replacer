@@ -288,6 +288,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk7"], {
             ["gilded-copper-cable"] = {"", 0},--0
         }
     },
+})
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk8"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.

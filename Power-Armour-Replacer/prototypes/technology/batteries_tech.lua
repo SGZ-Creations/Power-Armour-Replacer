@@ -55,7 +55,7 @@ data:extend({
                 recipe = "par-battery-mk3"
             },
         },
-        prerequisites = { "par-battery-tech-2", "battery", "advanced-electronics",},
+        prerequisites = { "par-battery-tech-2", "battery", "advanced-circuit",},
         unit =
         {
             count = 500,

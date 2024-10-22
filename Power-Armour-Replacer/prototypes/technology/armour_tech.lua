@@ -55,7 +55,7 @@ data:extend({
 				recipe = "par-armour-mk3"
 			},
 		},
-		prerequisites = { "par-armour-tech-2", "advanced-electronics", "plastics", "engine", "military-2", },
+		prerequisites = { "par-armour-tech-2", "advanced-circuit", "plastics", "engine", "military-2", },
 		unit = {
 			count = 1000,
 			ingredients = {
@@ -107,7 +107,7 @@ data:extend({
 		},
 		prerequisites = {
 				"par-armour-tech-4",
-				"advanced-electronics-2",
+				"processing-unit",
 				"electric-engine",
 				"uranium-processing",
 				"military-3",

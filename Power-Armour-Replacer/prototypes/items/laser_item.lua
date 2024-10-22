@@ -34,17 +34,19 @@ for tier, laser in pairs(lasers) do
             width = 2,
             height = 2,
             type = "full"
-            },
+        },
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
             buffer_capacity = laser.buffer_capacity
-            },
+        },
         attack_parameters = {
             type = "beam",
             cooldown = laser.cooldown,
             range = laser.range,
+            range_mode = "center-to-bounding-box",
             damage_modifier = laser.damage_modifier,
+            ammo_category = "laser",
             ammo_type = {
                 category = "laser",
                 energy_consumption = laser.energy_consumption,

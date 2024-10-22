@@ -198,7 +198,7 @@ util.technology_dependancy
 			"angels-nickel-smelting-1",
 		},
 		["par-fusion-reactor-tech-5"] = {
-			"advanced-electronics",
+			"advanced-circuit",
 			"angels-gold-smelting-1",
 		},
 		["par-shield-tech-6"] = {

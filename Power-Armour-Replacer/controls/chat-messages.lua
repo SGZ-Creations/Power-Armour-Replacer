@@ -97,18 +97,6 @@ You can disable this message in (PA&R) startup settings if u don't want the INFO
         end
     end
 
-    if script.active_mods["IndustrialRevolution3"] then
-        if settings.startup["IR3-warning"].value then
-            printer([[
----------------------------------------------------------------------------------------------------
-PA&R have hide & disable mechanics for "IndustrialRevolution3" the Armours & Equipment are dissabled, hidden.
-Filters are hidden if startup setting [IR3 Filters(not added yet)] is toggled off.
-Please Report any unexpected issue to https://discord.gg/tbxnpsxkDM
-You can disable this message in (PA&R) startup settings if u don't want the INFO.
----------------------------------------------------------------------------------------------------]])
-        end
-    end
-
     if script.active_mods["Power Armor MK3"] then
         if settings.startup["P-A_MK3-warning"].value then
             printer([[

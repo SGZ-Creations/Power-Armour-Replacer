@@ -5,7 +5,7 @@ util.ingredient_prereq(data.raw.recipe["heavy-armor"],
     {
         dependencies = {"base"},
         replacements = {
-            {"light-armor", 1},
+            {type="item", name="light-armor", amount=1},
         }
     },
 })

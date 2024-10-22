@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
-Date: 21.10.2024
+Date: 12.10.2024
   Features:
     - Updated to work with 2.0 Base.(Maybe S-A)
+  Info:
+    - will try maintain to some extend for 1.1 atleast 6 more months should you find bugs.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.18
+Date: 12.10.2024
   Scripting:
     - Renamed Quality Comp files.
     - Figuring out why some/lot's of my tech dependecy code won't work and apply fix.

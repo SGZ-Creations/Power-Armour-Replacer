@@ -78,7 +78,7 @@ data:extend({
                 recipe = "par-fusion-reactor-mk4"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-3", "par-solar-panel-tech-4", "advanced-electronics", "engine", },
+        prerequisites = { "par-fusion-reactor-tech-3", "par-solar-panel-tech-4", "advanced-circuit", "engine", },
         unit =
         {
             count = 500,

@@ -81,7 +81,7 @@ data:extend({
                 recipe = "par-laser-mk4"
             },
         },
-        prerequisites = { "par-laser-tech-3", "advanced-electronics" },
+        prerequisites = { "par-laser-tech-3", "advanced-circuit",},
         unit =
         {
             count = 500,
