@@ -21,7 +21,7 @@ data:extend({
         order = "1Aac"
     },
 })
-
+--[[
 if mods["space-age"] or mods["mech-armor"] then
     data:extend({
         {
@@ -33,7 +33,7 @@ if mods["space-age"] or mods["mech-armor"] then
         },
     })
 end
-
+]]
 if mods["bobwarfare"] then
 data:extend({
         {

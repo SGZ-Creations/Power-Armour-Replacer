@@ -112,7 +112,7 @@ if settings.startup["vanilla-filters"].value then
     Hide_Item("personal-laser-defense-equipment")
 end
 
-
+--[[
 if mods["space-age"] or mods["mech-armor"] then
 
     data.raw.technology["mech-armor"].enabled = false
@@ -124,7 +124,7 @@ if mods["space-age"] or mods["mech-armor"] then
     if settings.startup["MechTechFilters"].value then
         Hide_Item("mech-armor")
     end
-end
+end]]
 
 if mods["bobwarfare"] then
 --Enabled
