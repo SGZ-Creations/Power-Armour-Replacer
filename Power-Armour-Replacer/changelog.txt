@@ -7,6 +7,7 @@ Date: 22.10.2024
     - Made sure equipping equipment can be eqquippted.(bug)
   Changes:
     - Deleted dlc folders.
+    - Removed Compatibility with IR3 as the mod is now a dead ghost.
   Scripting:
     - Deleted some Mipmap. Reworking texture is coming eventualy. looking at you tech tree.
   Info:
