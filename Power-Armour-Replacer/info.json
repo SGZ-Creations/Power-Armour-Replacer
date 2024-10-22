@@ -8,7 +8,7 @@
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
 	[
-		"~ Configurable-Armour-Suits >= 1.5.0",
+		"~ Configurable-Armour-Suits >= 1.5.3",
 		"? age-extensions >= 0.0.1",
 		"? space-age",
 		"? armor-spill-prevention >= 0.0.8",
