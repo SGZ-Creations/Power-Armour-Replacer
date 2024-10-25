@@ -47,7 +47,7 @@ data:extend({
         item_product = "par-battery-mk5",
         amount = 100,
         steam_stats_name = "batteries-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -57,7 +57,7 @@ data:extend({
         item_product = "par-battery-mk5",
         amount = 1000,
         steam_stats_name = "batteries-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -67,7 +67,7 @@ data:extend({
         item_product = "par-battery-mk10",
         amount = 100,
         steam_stats_name = "batteries-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 10),
         limited_to_one_game = true,
     },
     {
@@ -77,7 +77,7 @@ data:extend({
         item_product = "par-battery-mk10",
         amount = 1000,
         steam_stats_name = "batteries-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 10),
         limited_to_one_game = true,
     },
     --Fusion
@@ -88,7 +88,7 @@ data:extend({
         item_product = "par-fusion-reactor-mk5",
         amount = 100,
         steam_stats_name = "fusion-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 5),
         icon_size = 256,
         limited_to_one_game = true,
     },
@@ -99,7 +99,7 @@ data:extend({
         item_product = "par-fusion-reactor-mk5",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 5),
         icon_size = 256,
         limited_to_one_game = true,
     },
@@ -110,7 +110,7 @@ data:extend({
         item_product = "par-fusion-reactor-mk10",
         amount = 100,
         steam_stats_name = "fusion-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 10),
         icon_size = 256,
         limited_to_one_game = true,
     },
@@ -121,7 +121,7 @@ data:extend({
         item_product = "par-fusion-reactor-mk10",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 10),
         icon_size = 256,
         limited_to_one_game = true,
     },
@@ -167,7 +167,7 @@ data:extend({
         item_product = "par-laser-mk5",
         amount = 100,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -177,7 +177,7 @@ data:extend({
         item_product = "par-laser-mk5",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -187,7 +187,7 @@ data:extend({
         item_product = "par-laser-mk10",
         amount = 100,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 10),
         limited_to_one_game = true,
     },
     {
@@ -197,7 +197,7 @@ data:extend({
         item_product = "par-laser-mk10",
         amount = 1000,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 10),
         limited_to_one_game = true,
     },
     --roboport
@@ -208,7 +208,7 @@ data:extend({
         item_product = "par-roboport-mk5",
         amount = 100,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -218,7 +218,7 @@ data:extend({
         item_product = "par-roboport-mk5",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-1", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -228,7 +228,7 @@ data:extend({
         item_product = "par-roboport-mk10",
         amount = 100,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 10),
         limited_to_one_game = true,
     },
     {
@@ -238,7 +238,7 @@ data:extend({
         item_product = "par-roboport-mk10",
         amount = 1000,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("personal-roboport-2", 256, 10),
         limited_to_one_game = true,
     },
     --Shield
@@ -249,7 +249,7 @@ data:extend({
         item_product = "par-shield-mk5",
         amount = 100,
         steam_stats_name = "shield-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -259,7 +259,7 @@ data:extend({
         item_product = "par-shield-mk5",
         amount = 1000,
         steam_stats_name = "shield-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -269,7 +269,7 @@ data:extend({
         item_product = "par-shield-mk10",
         amount = 100,
         steam_stats_name = "shield-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 10),
         limited_to_one_game = true,
     },
     {
@@ -279,7 +279,7 @@ data:extend({
         item_product = "par-shield-mk10",
         amount = 1000,
         steam_stats_name = "shield-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("energy-shield", 256, 10),
         limited_to_one_game = true,
     },
     --Solar
@@ -290,7 +290,7 @@ data:extend({
         item_product = "par-solar-panel-mk5",
         amount = 100,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -300,7 +300,7 @@ data:extend({
         item_product = "par-solar-panel-mk5",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 5),
         limited_to_one_game = true,
     },
     {
@@ -310,7 +310,7 @@ data:extend({
         item_product = "par-solar-panel-mk10",
         amount = 100,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 10),
         limited_to_one_game = true,
     },
     {
@@ -320,7 +320,7 @@ data:extend({
         item_product = "par-solar-panel-mk10",
         amount = 1000,
         steam_stats_name = "roboport-production-overall",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 10),
         limited_to_one_game = true,
     },
 })
