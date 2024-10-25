@@ -2,13 +2,14 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "2.0",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"author": "SGZ_Creations",
 	"contact": "https://discord.gg/tbxnpsxkDM",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
 	[
-		"~ Configurable-Armour-Suits >= 1.5.3",
+		"base",
+		"~ Configurable-Armour-Suits >= 1.5.4",
 		"? age-extensions >= 0.0.1",
 		"? space-age",
 		"? armor-spill-prevention >= 0.0.8",

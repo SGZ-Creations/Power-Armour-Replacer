@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 24.10.2024
+  Features:
+    - Deeper Compatibility with S-A
+  Graphics:
+    - Broken graphics.
+    - Removed outdated graphics code. 
+  Changes:
+    - Optional space science setting apering with S-A or SE.
+  SpaceAge:
+    - ???
+---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 22.10.2024
   Bugfixes:
@@ -10,7 +22,7 @@ Date: 22.10.2024
     - Updated to work with 2.0 Base & S-A.
     - Added sounds to all items in mod.
     - Made sure equipping equipment can be eqquippted.(bug)
-    - Added propper Weight values to all items in mod to be able to ship items in rocket for SA.
+    - Added propper Weight values to all items in mod to be able to ship items in rocket for S-A.
   Changes:
     - Deleted dlc folders.
     - Removed Compatibility with IR3 as the mod is now a dead ghost.
@@ -241,6 +253,7 @@ Date: 07.01.2024
     - Tech Name Change par-...-tech-(1-10).
     - Some case par-...-...-mk(1-10).
     - All Item generator code have been re-done.
+  Graphics:
     - Added Textures/Graphics by Kirazy.
     - Added Seperate Licensing for Textures/Graphics.
   Info:

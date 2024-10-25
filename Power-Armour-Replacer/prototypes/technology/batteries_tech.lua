@@ -3,7 +3,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-1",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 1),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 1),
         effects =
         {
             {
@@ -11,21 +11,14 @@ data:extend({
                 recipe = "par-battery-mk1"
             },
         },
-        prerequisites = {"par-armour-tech-1", "steel-processing",},
-        unit =
-        {
-            count = 500,
-            ingredients = {
-                { "automation-science-pack", 1}
-            },
-            time = 15
-        },
+        prerequisites = {"par-armour-tech-1",},
+		research_trigger = {type ="craft-item", item ="par-armour-mk1", count = 1},
         order = "g-a-b"
     },
     {
         type = "technology",
         name = "par-battery-tech-2",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 2),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 2),
         effects =
         {
             {
@@ -47,7 +40,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-3",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 3),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 3),
         effects =
         {
             {
@@ -70,7 +63,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-4",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 4),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 4),
         effects =
         {
             {
@@ -94,7 +87,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-5",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 5),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 5),
         effects =
         {
             {
@@ -119,7 +112,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-6",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 6),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 6),
         effects =
         {
             {
@@ -144,7 +137,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-7",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 7),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 7),
         effects =
         {
             {
@@ -170,7 +163,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-8",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 8),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 8),
         effects =
         {
             {
@@ -196,7 +189,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-9",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 9),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 9),
         effects =
         {
             {
@@ -223,7 +216,7 @@ data:extend({
     {
         type = "technology",
         name = "par-battery-tech-10",
-        icons = icon_utils.create_equipment_technology_icon("battery", 256, 0, 10),
+        icons = icon_utils.create_equipment_technology_icon("battery", 256, 10),
         effects =
         {
             {

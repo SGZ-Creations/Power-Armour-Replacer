@@ -43,30 +43,26 @@ end]]
 --- in the graphics/icons folder and providing 3 images, a base, mask and highlights image.
 ---@param equipment_name string # The equipment to create an icon for, e.g. "battery".
 ---@param icon_size data.SpriteSizeType # The size of the square icon, in pixels. e.g. `32` for a 32px by 32px icon.
----@param icon_mipmaps? data.IconMipMapType # Optional. The number of icons present in the icon file, to be used at decreased scale.
 ---@param tier integer # The tier of icon to create. Used to obtain the tint.
 ---@return data.IconData[] # A 3-layer icons definition for the given `equipment_name`.
-function icon_utils.create_equipment_icon(equipment_name, icon_size, icon_mipmaps, tier)
+function icon_utils.create_equipment_icon(equipment_name, icon_size, tier)
     ---@type data.IconData[]
     local icons = {
         -- Base layer, untinted.
         {
             icon = "__Power-Armour-Replacer__/graphics/icons/" .. equipment_name .. "/" .. equipment_name .. "-icon-base.png",
             icon_size = icon_size,
-            icon_mipmaps = icon_mipmaps,
         },
         -- Mask layer, tinted.
         {
             icon = "__Power-Armour-Replacer__/graphics/icons/" .. equipment_name .. "/" .. equipment_name .. "-icon-mask.png",
             icon_size = icon_size,
-            icon_mipmaps = icon_mipmaps or 0,
             tint = icon_utils.tints[tier or 0],
         },
         -- Highlights layer, untinted (though for icon, special tint to replicate additive blending)
         {
             icon = "__Power-Armour-Replacer__/graphics/icons/" .. equipment_name .. "/" .. equipment_name .. "-icon-highlights.png",
             icon_size = icon_size,
-            icon_mipmaps = icon_mipmaps or 0,
             tint = { 1, 1, 1, 0 }, -- Additive blending.
         },
     }
@@ -77,36 +73,31 @@ end
 --- in the graphics/icons folder and providing 3 images, a base, mask and highlights image.
 ---@param equipment_name string # The equipment to create an icon for, e.g. "battery".
 ---@param icon_size data.SpriteSizeType # The size of the square icon, in pixels. e.g. `32` for a 32px by 32px icon.
----@param icon_mipmaps? data.IconMipMapType # Optional. The number of icons present in the icon file, to be used at decreased scale.
 ---@param tier integer # The tier of icon to create. Used to obtain the tint.
 ---@return data.IconData[] # A 3-layer icons definition for the given `equipment_name`.
-function icon_utils.create_equipment_technology_icon(equipment_name, icon_size, icon_mipmaps, tier)
+function icon_utils.create_equipment_technology_icon(equipment_name, icon_size, tier)
     ---@type data.IconData[]
     local icons = {
         -- Base layer, untinted.
         {
             icon = "__Power-Armour-Replacer__/graphics/technology/" .. equipment_name .. "/" .. equipment_name .. "-technology-base.png",
             icon_size = icon_size,
-            icon_mipmaps = icon_mipmaps,
         },
         -- Mask layer, tinted.
         {
             icon = "__Power-Armour-Replacer__/graphics/technology/" .. equipment_name .. "/" .. equipment_name .. "-technology-mask.png",
             icon_size = icon_size,
-            icon_mipmaps = icon_mipmaps or 0,
             tint = icon_utils.tints[tier or 0],
         },
         -- Highlights layer, untinted (though for icon, special tint to replicate additive blending)
         {
             icon = "__Power-Armour-Replacer__/graphics/technology/" .. equipment_name .. "/" .. equipment_name .. "-technology-highlights.png",
             icon_size = icon_size,
-            icon_mipmaps = icon_mipmaps or 0,
             tint = { 1, 1, 1, 0 }, -- Additive blending.
         },
         {
             icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
             icon_size = 128,
-            icon_mipmaps = 3,
             shift = {100, 100}
         }
     }
@@ -134,14 +125,6 @@ function icon_utils.create_equipment_sprite(equipment_name, width, height, tier,
                 height = height,
                 priority = "medium",
                 flags = { "no-crop" },
-                hr_version = {
-                    filename = hr_base_filename and hr_base_filename or "__Power-Armour-Replacer__/graphics/equipment/" .. equipment_name .. "/hr-" .. equipment_name .. "-equipment-base.png",
-                    width = width * 2,
-                    height = height * 2,
-                    priority = "medium",
-                    flags = { "no-crop" },
-                    scale = 0.5,
-                }
             },
             -- Mask layer, tinted.
             {
@@ -150,15 +133,6 @@ function icon_utils.create_equipment_sprite(equipment_name, width, height, tier,
                 height = height,
                 priority = "medium",
                 flags = { "no-crop" },
-                hr_version = {
-                    filename = "__Power-Armour-Replacer__/graphics/equipment/" .. equipment_name .. "/hr-" .. equipment_name .. "-equipment-mask.png",
-                    width = width * 2,
-                    height = height * 2,
-                    priority = "medium",
-                    flags = { "no-crop" },
-                    tint = icon_utils.tints[tier or 0],
-                    scale = 0.5,
-                }
             },
             -- Highlights layer, additive blending.
             {
@@ -167,19 +141,9 @@ function icon_utils.create_equipment_sprite(equipment_name, width, height, tier,
                 height = height,
                 priority = "medium",
                 flags = { "no-crop" },
-                hr_version = {
-                    filename = "__Power-Armour-Replacer__/graphics/equipment/" .. equipment_name .. "/hr-" .. equipment_name .. "-equipment-highlights.png",
-                    width = width * 2,
-                    height = height * 2,
-                    priority = "medium",
-                    flags = { "no-crop" },
-                    blend_mode = "additive",
-                    scale = 0.5,
-                }
             }
         }
     }
-
     return sprite
 end
 

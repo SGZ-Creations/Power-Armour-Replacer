@@ -3,7 +3,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-1",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 1),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 1),
         effects =
         {
             {
@@ -11,21 +11,14 @@ data:extend({
                 recipe = "par-laser-mk1"
             },
         },
-        prerequisites = { "par-armour-tech-1", "par-fusion-reactor-tech-1" },
-        unit =
-        {
-            count = 500,
-            ingredients = {
-                { "automation-science-pack", 1 }
-            },
-            time = 15
-        },
+        prerequisites = {"par-fusion-reactor-tech-1" },
+        research_trigger = {type ="craft-item", item ="par-fusion-reactor-mk1", count = 5},
         order = "g-a-b"
     },
     {
         type = "technology",
         name = "par-laser-tech-2",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 2),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 2),
         effects =
         {
             {
@@ -47,7 +40,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-3",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 3),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 3),
         effects =
         {
             {
@@ -73,7 +66,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-4",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 4),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4),
         effects =
         {
             {
@@ -97,7 +90,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-5",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 5),
         effects =
         {
             {
@@ -126,7 +119,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-6",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 6),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 6),
         effects =
         {
             {
@@ -151,7 +144,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-7",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 7),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 7),
         effects =
         {
             {
@@ -177,7 +170,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-8",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 8),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 8),
         effects =
         {
             {
@@ -203,7 +196,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-9",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 9),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 9),
         effects =
         {
             {
@@ -230,7 +223,7 @@ data:extend({
     {
         type = "technology",
         name = "par-laser-tech-10",
-        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 10),
         effects =
         {
             {

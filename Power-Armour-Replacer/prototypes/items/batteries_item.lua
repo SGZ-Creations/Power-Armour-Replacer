@@ -18,7 +18,7 @@ for tier, battery in pairs(batteries) do
     local item = {
         type = "item",
         name = "par-battery-mk" .. tostring(tier),
-        icons = icon_utils.create_equipment_icon("battery", 64, 4, tier),
+        icons = icon_utils.create_equipment_icon("battery", 64,  tier),
         stack_size = 20,
         weight = 15000,
         inventory_move_sound = item_sounds.electric_small_inventory_move,

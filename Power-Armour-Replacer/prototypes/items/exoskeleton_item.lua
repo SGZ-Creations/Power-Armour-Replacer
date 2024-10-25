@@ -16,7 +16,7 @@ for tier, exoskeleton in pairs(exoskeletons) do
         place_as_equipment_result = "par-exoskeleton-mk" .. tostring(tier),
         subgroup = "replacer_item",
         order = exoskeleton.order,
-        icons = icon_utils.create_equipment_icon("exoskeleton", 64, 4, tier),
+        icons = icon_utils.create_equipment_icon("exoskeleton", 64, tier),
         inventory_move_sound = item_sounds.exoskeleton_inventory_move,
         pick_sound = item_sounds.exoskeleton_inventory_pickup,
         drop_sound = item_sounds.exoskeleton_inventory_move,

@@ -4,7 +4,7 @@ data:extend({
         name = "par-night-immunity-tech-1",
         icon_size = 256,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/graphics/technology/night-immunity/belt-immunity-night-vision-equipment.png"),
-        prerequisites = { "par-armour-tech-1", "par-fusion-reactor-tech-5" },
+        prerequisites = {"par-fusion-reactor-tech-5" },
         effects =
         {
             {
@@ -16,16 +16,7 @@ data:extend({
                 recipe = "par-belt-immunity-mk1"
             },
         },
-        unit =
-        {
-            count = 500,
-            ingredients = {
-                { "automation-science-pack", 1 },
-                { "logistic-science-pack",   1 },
-                { "military-science-pack",   1 },
-            },
-            time = 15
-        },
+        research_trigger = {type ="craft-item", item ="par-fusion-reactor-mk5", count = 5},
         order = "g-g"
     },
     {
@@ -53,13 +44,13 @@ data:extend({
         },
         unit =
         {
-            count = 500,
+            count = 750,
             ingredients = {
-                { "automation-science-pack", 2 },
-                { "logistic-science-pack",   2 },
-                { "military-science-pack",   2 },
-                { "chemical-science-pack",   2 },
-                { "production-science-pack", 2 },
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "military-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 },
             },
             time = 15
         },

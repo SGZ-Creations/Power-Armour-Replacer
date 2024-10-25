@@ -11,13 +11,7 @@ data:extend({
 			},
 		},
 		prerequisites = { "heavy-armor", "automation", },
-		unit = {
-			count = 1000,
-			ingredients = {
-				{ "automation-science-pack", 1 }
-			},
-			time = 15
-		},
+		research_trigger = {type ="craft-item", item ="heavy-armor", count = 1},
 		order = "g-a-b"
 	},
 	{
@@ -106,6 +100,7 @@ data:extend({
 				"electric-engine",
 				"uranium-processing",
 				"military-3",
+				"armour-control-unit",
 			},
 		unit =
 		{
@@ -210,7 +205,7 @@ data:extend({
 				recipe = "par-armour-mk9"
 			},
 		},
-		prerequisites = { "par-armour-tech-8", "armour-control-unit", "military-4", },
+		prerequisites = { "par-armour-tech-8", "military-4", },
 		unit =
 		{
 			count = 1000,

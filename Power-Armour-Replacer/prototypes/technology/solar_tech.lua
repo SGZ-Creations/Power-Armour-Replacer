@@ -3,27 +3,21 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-1",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 1),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 1),
         effects = {
             {
                 type = "unlock-recipe",
                 recipe = "par-solar-panel-mk1"
             },
         },
-        prerequisites = { "par-armour-tech-1" },
-        unit = {
-            count = 250,
-            ingredients = {
-                { "automation-science-pack", 1 },
-            },
-            time = 15
-        },
+        prerequisites = {"par-armour-tech-1"},
+        research_trigger = {type ="craft-item", item ="par-armour-mk1", count = 1},
         order = "g-a-b"
     },
     {
         type = "technology",
         name = "par-solar-panel-tech-2",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 2),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 2),
         effects = {
             {
                 type = "unlock-recipe",
@@ -43,7 +37,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-3",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 3),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 3),
         effects = {
             {
                 type = "unlock-recipe",
@@ -64,7 +58,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-4",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 4),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4),
         effects = {
             {
                 type = "unlock-recipe",
@@ -86,7 +80,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-5",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 5),
         effects = {
             {
                 type = "unlock-recipe",
@@ -109,7 +103,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-6",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 6),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 6),
         effects = {
             {
                 type = "unlock-recipe",
@@ -132,7 +126,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-7",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 7),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 7),
         effects = {
             {
                 type = "unlock-recipe",
@@ -156,7 +150,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-8",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 8),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 8),
         effects = {
             {
                 type = "unlock-recipe",
@@ -180,7 +174,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-9",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 9),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 9),
         effects = {
             {
                 type = "unlock-recipe",
@@ -205,7 +199,7 @@ data:extend({
     {
         type = "technology",
         name = "par-solar-panel-tech-10",
-        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 4, 10),
+        icons = icon_utils.create_equipment_technology_icon("solar-panel", 256, 10),
         effects = {
             {
                 type = "unlock-recipe",

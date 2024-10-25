@@ -18,7 +18,7 @@ for tier, panel in pairs(panels) do
     local item = {
         type = "item",
         name = "par-solar-panel-mk" .. tostring(tier),
-        icons = icon_utils.create_equipment_icon("solar-panel", 64, 4, tier),
+        icons = icon_utils.create_equipment_icon("solar-panel", 64, tier),
         place_as_equipment_result = "par-solar-panel-mk" .. tostring(tier),
         subgroup = "replacer_item",
         order = panel.orders,

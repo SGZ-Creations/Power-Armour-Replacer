@@ -12,7 +12,7 @@ for tier, nightvision in pairs(nightvisions) do
         name = "par-nightvision-mk" .. tostring(tier),
         place_as_equipment_result = "par-nightvision-mk" .. tostring(tier),
         order = nightvision.order,
-        icons = icon_utils.create_equipment_icon("night-vision", 64, 4, tier),
+        icons = icon_utils.create_equipment_icon("night-vision", 64, tier),
         inventory_move_sound = item_sounds.electric_small_inventory_move,
         pick_sound = item_sounds.electric_small_inventory_pickup,
         drop_sound = item_sounds.electric_small_inventory_move,

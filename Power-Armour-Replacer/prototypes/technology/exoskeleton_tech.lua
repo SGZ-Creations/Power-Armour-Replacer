@@ -3,7 +3,7 @@ data:extend({
     {
         type = "technology",
         name = "par-exoskeleton-tech-1",
-        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 1),
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 1),
         prerequisites = { "par-armour-tech-2", "par-fusion-reactor-tech-1" },
         effects =
         {
@@ -12,20 +12,13 @@ data:extend({
                 recipe = "par-exoskeleton-mk1"
             }
         },
-        unit =
-        {
-            count = 500,
-            ingredients = {
-                { "automation-science-pack", 1 },
-            },
-            time = 15
-        },
+        research_trigger = {type ="craft-item", item ="par-armour-mk2", count = 1},
         order = "g-h"
     },
     {
         type = "technology",
         name = "par-exoskeleton-tech-2",
-        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 2),
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 2),
         prerequisites = { "par-exoskeleton-tech-1", "battery", "par-armour-tech-4" },
         effects =
         {
@@ -49,7 +42,7 @@ data:extend({
     {
         type = "technology",
         name = "par-exoskeleton-tech-3",
-        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 3),
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 3),
         prerequisites = { "par-exoskeleton-tech-2", "par-armour-tech-6" },
         effects =
         {
@@ -74,7 +67,7 @@ data:extend({
     {
         type = "technology",
         name = "par-exoskeleton-tech-4",
-        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 4),
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4),
         prerequisites =
         {
             "par-exoskeleton-tech-3",
@@ -104,7 +97,7 @@ data:extend({
     {
         type = "technology",
         name = "par-exoskeleton-tech-5",
-        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4, 5),
+        icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 5),
         prerequisites = { "par-exoskeleton-tech-4", "par-armour-tech-10" },
         effects =
         {

@@ -19,7 +19,7 @@ for tier, laser in pairs(lasers) do
         type = "item",
         name = "par-laser-mk" .. tostring(tier),
         place_as_equipment_result = "par-laser-mk" .. tostring(tier),
-        icons = icon_utils.create_equipment_icon("laser-defense", 64, 4, tier),
+        icons = icon_utils.create_equipment_icon("laser-defense", 64, tier),
         inventory_move_sound = item_sounds.turret_inventory_move,
         pick_sound = item_sounds.turret_inventory_pickup,
         drop_sound = item_sounds.turret_inventory_move,
