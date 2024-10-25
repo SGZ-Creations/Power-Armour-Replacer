@@ -15,6 +15,7 @@ Date: 24.10.2024
   Bugfixes:
     - Tech tree issue processing unit was applied to worng tech.
     - Made base mech armour use MK5 armour and prerequsite.
+    - Rmoved vanilla S-A Tech, Item, Equipment: Battery MK3, Fusion Reactor.
   SpaceAge:
     - Added S-A SciencePacks to Par Armour Tech.
     - Changed Prerequsites to cont in the science packs.
