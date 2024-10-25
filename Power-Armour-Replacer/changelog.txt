@@ -8,8 +8,9 @@ Date: 24.10.2024
     - Removed outdated graphics code. 
   Changes:
     - Optional space science setting apering with S-A or SE.
+    - Changed Weight values on Armour & Lasers.
   SpaceAge:
-    - ???
+    - Added S-A SciencePacks to Par Tech.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 22.10.2024
@@ -21,7 +22,7 @@ Date: 22.10.2024
   Features:
     - Updated to work with 2.0 Base & S-A.
     - Added sounds to all items in mod.
-    - Made sure equipping equipment can be eqquippted.(bug)
+    - Made sure equipping equipment can be equipted.(bug)
     - Added propper Weight values to all items in mod to be able to ship items in rocket for S-A.
   Changes:
     - Deleted dlc folders.
