@@ -16,6 +16,22 @@ util.technology_dependancy
 	},
 	]]
 
+	["space-age"] = {
+		["par-armour-tech-9"] = {
+			"promethium-science-pack"
+		},
+		["par-armour-tech-7"] = {
+			"cryogenic-science-pack"
+		},
+		["par-armour-tech-6"] = {
+			"metallurgic-science-pack",
+			"agricultural-science-pack",
+			"electromagnetic-science-pack"
+		},
+		["par-armour-tech-5"] = {
+			"space-science-pack",
+		},
+	},
 
 	["space-spidertron"] = {
 		["spidertron"] = {
