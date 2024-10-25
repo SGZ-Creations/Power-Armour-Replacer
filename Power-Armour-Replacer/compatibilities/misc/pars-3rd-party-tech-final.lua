@@ -31,7 +31,7 @@ util.technology_dependancy
 	["base"] = {
 		["spidertron"] = {
 			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-5",
-			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-5",
+			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-3",
 		},
 	},
 

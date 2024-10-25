@@ -13,3 +13,4 @@
 	require("compatibilities.misc.altered-tech-final")
 
 --compatibilities.tech load order dependant
+    require("compatibilities.technology.final-fixes.par-tech-final-fixes")

@@ -15,6 +15,7 @@
 
 --compatibilities.tech
 	require("compatibilities.technology.updates.par-tech-updates")
+	require("compatibilities.technology.updates.sa-science-pack-updates")
 	--require("compatibilities.misc.pars-3rd-party-tech-updates")
 --structures
 	require("structures.science-setting")

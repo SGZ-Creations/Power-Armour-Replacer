@@ -29,7 +29,7 @@ data:extend({
 		unit = {
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 2 }
+				{ "automation-science-pack", 1 }
 			},
 			time = 15
 		},
@@ -50,7 +50,7 @@ data:extend({
 		unit = {
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 3 },
+				{ "automation-science-pack", 2 },
 				{ "logistic-science-pack",   1 }
 			},
 			time = 15
@@ -74,7 +74,7 @@ data:extend({
 		{
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 4 },
+				{ "automation-science-pack", 3 },
 				{ "logistic-science-pack",   2 },
 				{ "military-science-pack",   1 }
 			},
@@ -95,18 +95,15 @@ data:extend({
 			},
 		},
 		prerequisites = {
-				"par-armour-tech-4",
-				"processing-unit",
-				"electric-engine",
-				"uranium-processing",
-				"military-3",
-				"armour-control-unit",
-			},
-		unit =
-		{
+			"par-armour-tech-4",
+			"electric-engine",
+			"military-3",
+			"armour-control-unit",
+		},
+		unit ={
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 5 },
+				{ "automation-science-pack", 4 },
 				{ "logistic-science-pack",   3 },
 				{ "military-science-pack",   2 },
 				{ "chemical-science-pack",   1 },
@@ -127,12 +124,14 @@ data:extend({
 				recipe = "par-armour-mk6"
 			},
 		},
-		prerequisites = { "par-armour-tech-5"},
-		unit =
-		{
+		prerequisites = { 
+			"par-armour-tech-5",
+			"processing-unit",
+		},
+		unit ={
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 6 },
+				{ "automation-science-pack", 5 },
 				{ "logistic-science-pack",   4 },
 				{ "military-science-pack",   3 },
 				{ "chemical-science-pack",   2 },
@@ -146,19 +145,22 @@ data:extend({
 		name = "par-armour-tech-7",
 		icon_size = 256,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
-		effects =
-		{
+		effects ={
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk7"
 			},
 		},
-		prerequisites = { "par-armour-tech-6", "production-science-pack", "low-density-structure", },
-		unit =
-		{
+		prerequisites = {
+			"par-armour-tech-6",
+			"production-science-pack",
+			"low-density-structure",
+			"nuclear-power",
+		},
+		unit ={
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 7 },
+				{ "automation-science-pack", 6 },
 				{ "logistic-science-pack",   5 },
 				{ "military-science-pack",   4 },
 				{ "chemical-science-pack",   3 },
@@ -179,12 +181,16 @@ data:extend({
 				recipe = "par-armour-mk8"
 			},
 		},
-		prerequisites = { "par-armour-tech-7", "production-science-pack" },
+		prerequisites = {
+			"par-armour-tech-7",
+			"production-science-pack",
+			"kovarex-enrichment-process"
+		},
 		unit =
 		{
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 8 },
+				{ "automation-science-pack", 7 },
 				{ "logistic-science-pack",   6 },
 				{ "military-science-pack",   5 },
 				{ "chemical-science-pack",   4 },
@@ -210,7 +216,7 @@ data:extend({
 		{
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 9 },
+				{ "automation-science-pack", 8 },
 				{ "logistic-science-pack",   7 },
 				{ "military-science-pack",   6 },
 				{ "chemical-science-pack",   5 },
@@ -236,7 +242,7 @@ data:extend({
 		unit = {
 			count = 1000,
 			ingredients = {
-				{ "automation-science-pack", 10 },
+				{ "automation-science-pack", 9 },
 				{ "logistic-science-pack",   8 },
 				{ "military-science-pack",   7 },
 				{ "chemical-science-pack",   6 },

@@ -1,5 +1,24 @@
 local util = require("compatibilities.util")
 
+util.ingredient_prereq(data.raw.recipe["mech-armor"],
+{
+    {
+        dependencies = {"space-age"},
+        replacements = {
+            ["par-armour-mk2"] = {"par-armour-mk5", 1},
+        }
+    },
+})
+util.ingredient_prereq(data.raw.recipe["mech-armor"],
+{
+    {
+        dependencies = {"mech-armor"},
+        replacements = {
+            ["par-armour-mk2"] = {"par-armour-mk5", 1},
+        }
+    },
+})
+
 util.ingredient_prereq(data.raw.recipe["spidertron_mk2"],
 {
     {
@@ -63,7 +82,7 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
         dependencies = {"base"},
         replacements = {
             ["par-fusion-reactor-mk1"] = {"par-fusion-reactor-mk5", 2},
-            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk5", 4},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk3", 4},
         }
     },
     {

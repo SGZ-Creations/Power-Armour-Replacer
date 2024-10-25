@@ -16,6 +16,7 @@ util.technology_dependancy
 	},
 	]]
 
+
 	["space-spidertron"] = {
 		["spidertron"] = {
 			"par-night-immunity-tech-2",
