@@ -10,9 +10,8 @@
 	[
 		"base",
 		"~ Configurable-Armour-Suits >= 1.5.4",
-		"? age-extensions >= 0.0.1",
+		"? PARs-SpaceAge-Extension >= 0.0.1",
 		"? space-age",
-		"? armor-spill-prevention >= 0.0.8",
 		"? angelssmelting >= 0.6.21",
 		"? bobplates >= 1.1.6",
 		"? bobpower >= 1.1.7",

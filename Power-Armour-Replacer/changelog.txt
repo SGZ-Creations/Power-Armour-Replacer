@@ -9,6 +9,7 @@ Date: 24.10.2024
   Changes:
     - Optional space science setting apering with S-A or SE.
     - Changed Weight values on Armour & Lasers.
+    - Listed Dependencies: 1 removed, 1 name corrected.
   SpaceAge:
     - Added S-A SciencePacks to Par Tech.
 ---------------------------------------------------------------------------------------------------
