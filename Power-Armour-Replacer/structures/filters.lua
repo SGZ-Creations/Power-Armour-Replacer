@@ -113,7 +113,7 @@ if settings.startup["vanilla-filters"].value then
 end
 
 --[[
-if mods["space-age"] or mods["mech-armor"] then
+if (mods["space-age"] or mods["mech-armor"])then
 
     data.raw.technology["mech-armor"].enabled = false
 
@@ -125,6 +125,23 @@ if mods["space-age"] or mods["mech-armor"] then
         Hide_Item("mech-armor")
     end
 end]]
+
+if mods["space-age"] then
+
+    data.raw.technology["fusion-reactor-equipment"].enabled = false
+    data.raw.technology["battery-mk3-equipment"].enabled = false
+
+    data.raw.recipe["fusion-reactor-equipment"].hidden = true
+    data.raw.recipe["battery-mk3-equipment"].hidden = true
+
+    data.raw.technology["fusion-reactor-equipment"].hidden = true
+    data.raw.technology["battery-mk3-equipment"].hidden = true
+
+    if settings.startup["SAFilters"].value then
+        Hide_Item("fusion-reactor-equipment")
+        Hide_Item("battery-mk3-equipment")
+    end
+end
 
 if mods["bobwarfare"] then
 --Enabled

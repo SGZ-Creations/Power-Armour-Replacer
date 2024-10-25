@@ -22,7 +22,7 @@ data:extend({
     },
 })
 --[[
-if mods["space-age"] or mods["mech-armor"] then
+if (mods["space-age"] or mods["mech-armor"])then
     data:extend({
         {
             type = "bool-setting",
@@ -34,6 +34,17 @@ if mods["space-age"] or mods["mech-armor"] then
     })
 end
 ]]
+if mods["space-age"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "SAFilters",
+            setting_type = "startup",
+            default_value = true,
+            order = "1Aad"
+        },
+    })
+end
 if mods["bobwarfare"] then
 data:extend({
         {
