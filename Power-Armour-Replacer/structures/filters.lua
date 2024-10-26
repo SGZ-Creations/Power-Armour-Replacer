@@ -105,7 +105,7 @@ if settings.startup["vanilla-filters"].value then
     Hide_Item("night-vision-equipment")
     Hide_Item("belt-immunity-equipment")
     Hide_Item("energy-shield-equipment")
-    Hide_Item("fusion-reactor-equipment")
+    Hide_Item("fission-reactor-equipment")
     Hide_Item("personal-roboport-equipment")
     Hide_Item("energy-shield-mk2-equipment")
     Hide_Item("personal-roboport-mk2-equipment")

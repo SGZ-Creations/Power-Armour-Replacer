@@ -1,6 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 26.10.2024
+  Bugfixes:
+    - Changelog.
+    - Wrong filter for item fission reactor stil used the 1.1 name not 2.0.
+    - Corrected locals naming for Fusion - Fission.
+    - Removed Un-used Locals from IR3.
+    - Corrected some NO Locals left in English.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.2
-Date: 24.10.2024
+Date: 25.10.2024
   Features:
     - Deeper Compatibility with S-A.
     - Factoriopedia-simulations.
@@ -12,11 +21,12 @@ Date: 24.10.2024
     - Optional space science setting apering with S-A or SE.
     - Changed Weight values on Armour & Lasers.
     - Listed Dependencies: 1 removed, 1 name corrected.
-    - updated Recipes on 7-10.
+    - Updated Recipes on 7-10.
+    - Changed Tech to have crafting requirement instead of science. 
   Bugfixes:
     - Tech tree issue processing unit was applied to worng tech.
     - Made base mech armour use MK5 armour and prerequsite.
-    - Rmoved vanilla S-A Tech, Item, Equipment: Battery MK3, Fusion Reactor.
+    - Removed vanilla S-A Tech, Item, Equipment: Battery MK3, Fusion Reactor.
   SpaceAge:
     - Added S-A SciencePacks to Par Armour Tech.
     - Changed Prerequsites to cont in the science packs.
