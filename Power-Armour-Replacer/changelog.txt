@@ -20,6 +20,8 @@ Date: 24.10.2024
   SpaceAge:
     - Added S-A SciencePacks to Par Armour Tech.
     - Changed Prerequsites to cont in the science packs.
+  Thnaks:
+    - @Mylon for help solving Factoriopedia Simulations.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 22.10.2024
