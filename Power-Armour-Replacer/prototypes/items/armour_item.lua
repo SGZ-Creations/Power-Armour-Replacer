@@ -1,3 +1,4 @@
+local simulations = require("__base__.prototypes.factoriopedia-simulations")
 --[[
 % 40=0.4 or 105=1.05    
 Flatt Resistance 500
@@ -102,6 +103,7 @@ for tier, equipment in pairs(power_armour_equipment) do
         },
         subgroup = "replacer_item",
         order = equipment_order,
+        factoriopedia_simulation = simulations.factoriopedia_power_armor_mk2,
         inventory_move_sound = item_sounds.armor_large_inventory_move,
         pick_sound = item_sounds.armor_large_inventory_pickup,
         drop_sound = item_sounds.armor_large_inventory_move,
