@@ -102,6 +102,74 @@ if mods["space-age"] then
 			{"cryogenic-science-pack",       4},
 			{"promethium-science-pack",      2}
 		},
-		time = 60
+		time = 15
+	}
+	data.raw.technology["par-exoskeleton-tech-3"].unit =
+	{
+		count = 1500,
+		ingredients =
+		{
+			{"automation-science-pack",      1},
+			{"logistic-science-pack",        1},
+			{"military-science-pack",        1},
+			{"chemical-science-pack",        1},
+			{"space-science-pack",           1},
+			{"metallurgic-science-pack",     1},
+			{"agricultural-science-pack",    1},
+			{"electromagnetic-science-pack", 1}
+		},
+		time = 15
+	}
+	data.raw.technology["par-exoskeleton-tech-4"].unit =
+	{
+		count = 2000,
+		ingredients =
+		{
+			{"automation-science-pack",      1},
+			{"logistic-science-pack",        1},
+			{"military-science-pack",        1},
+			{"chemical-science-pack",        1},
+			{"space-science-pack",           1},
+			{"metallurgic-science-pack",     1},
+			{"agricultural-science-pack",    1},
+			{"electromagnetic-science-pack", 1},
+			{"cryogenic-science-pack",       1}
+		},
+		time = 15
+	}
+	data.raw.technology["par-exoskeleton-tech-5"].unit =
+	{
+		count = 2500,
+		ingredients =
+		{
+			{"automation-science-pack",      1},
+			{"logistic-science-pack",        1},
+			{"military-science-pack",        1},
+			{"chemical-science-pack",        1},
+			{"space-science-pack",           1},
+			{"metallurgic-science-pack",     1},
+			{"agricultural-science-pack",    1},
+			{"electromagnetic-science-pack", 1},
+			{"cryogenic-science-pack",       1},
+			{"promethium-science-pack",      1}
+		},
+		time = 15
+	}
+	data.raw.technology["par-night-immunity-tech-2"].unit =
+	{
+		count = 750,
+		ingredients =
+		{
+			{"automation-science-pack",      1},
+			{"logistic-science-pack",        1},
+			{"military-science-pack",        1},
+			{"chemical-science-pack",        1},
+			{"production-science-pack",      1},
+			{"space-science-pack",           1},
+			{"metallurgic-science-pack",     1},
+			{"agricultural-science-pack",    1},
+			{"electromagnetic-science-pack", 1},
+		},
+		time = 15
 	}
 end

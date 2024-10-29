@@ -35,7 +35,7 @@ local recipes = {
             {type="item", name="par-shield-mk2", amount=1},
             {type="item", name="electronic-circuit", amount=160},
             {type="item", name="advanced-circuit", amount=45},
-            {type="item", name="copper-cable", amount=155},
+            {type="item", name="battery", amount=25},
         },
         results = {{type="item", name="par-shield-mk3", amount=1}}
     },

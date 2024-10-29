@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.3
 Date: 26.10.2024
+  Changes:
+    - More S-A Tech added.
+    - Recipe Shield MK3
   Bugfixes:
     - Changelog.
     - Wrong filter for item fission reactor stil used the 1.1 name not 2.0.

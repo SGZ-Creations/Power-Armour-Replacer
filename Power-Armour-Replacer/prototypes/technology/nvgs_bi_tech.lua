@@ -27,7 +27,7 @@ data:extend({
         prerequisites =
         {
             "par-night-immunity-tech-1",
-            "par-armour-tech-10",
+            "par-armour-tech-5",
             "battery",
             "processing-unit",
         },
