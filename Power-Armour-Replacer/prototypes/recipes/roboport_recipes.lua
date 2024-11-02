@@ -136,9 +136,9 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-roboport-mk9", amount=1},
-            {type="item", name="low-density-structure", amount=196},
-            {type="item", name="armour-control-unit", amount=164},
-            {type="item", name="processing-unit", amount=171},
+            {type="item", name="low-density-structure", amount=195},
+            {type="item", name="armour-control-unit", amount=165},
+            {type="item", name="processing-unit", amount=170},
         },
         results = {{type="item", name="par-roboport-mk10", amount=1}}
     },
