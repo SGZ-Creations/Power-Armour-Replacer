@@ -10,6 +10,9 @@ Date: 26.10.2024
     - Corrected locals naming for Fusion - Fission.
     - Removed Un-used Locals from IR3.
     - Corrected some NO Locals left in English.
+    - 2.0.16 items sound being global.
+  Info:
+    - Experimental only. Until 2.0.16 becomes stable.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.2
 Date: 25.10.2024

@@ -1,4 +1,5 @@
 local simulations = require("__base__.prototypes.factoriopedia-simulations")
+local item_sounds = require("__base__.prototypes.item_sounds")
 --[[
 % 40=0.4 or 105=1.05    
 Flatt Resistance 500
@@ -108,7 +109,7 @@ for tier, equipment in pairs(power_armour_equipment) do
         pick_sound = item_sounds.armor_large_inventory_pickup,
         drop_sound = item_sounds.armor_large_inventory_move,
         stack_size = 1,
-        weight = 100000,--power_armour_equipment.weightvalue,
+        weight = 100000,--power_armour.weightvalue,
         infinite = true,
         equipment_grid = equipment_grid_name,
         inventory_size_bonus = equipment.inventory_bonus,
