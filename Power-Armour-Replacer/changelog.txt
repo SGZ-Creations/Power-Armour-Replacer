@@ -3,11 +3,15 @@ Version: 0.3.5
 Date: 00.11.2024
   Changes:
     - MK5 Roboport recipes.
-    - Deleted outated HR textures.
   Bugfixes:
-    - Enetity(Equipment) coloring.
+    - Enetity(Equipment).
     - Techtree scaling.
-    - Fucked size for equiped skeletone.
+    - Mistakently using the hr textures on skeletone icon.
+  Graphics:
+    - Coloring have returned to inside the grids.
+    - Removed old non hr texture files, the correct once.
+    - Adjusted resoution regarding texture files.
+    - Corrected the tech tree icon scale.
   Credits:
     - Discord: @Kira (Kirazy) for help on solving the tint.
 ---------------------------------------------------------------------------------------------------
