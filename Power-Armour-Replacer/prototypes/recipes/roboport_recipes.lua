@@ -61,8 +61,8 @@ local recipes = {
         ingredients = {
             {type="item", name="par-roboport-mk4", amount=1},
             {type="item", name="steel-chest", amount=30},
-            {type="item", name="flying-robot-frame", amount=65},
-            {type="item", name="battery", amount=45},
+            {type="item", name="flying-robot-frame", amount=10},
+            {type="item", name="advanced-circuit", amount=40},
         },
         results = {{type="item", name="par-roboport-mk5", amount=1}}
     },
