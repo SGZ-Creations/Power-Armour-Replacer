@@ -82,18 +82,21 @@ function icon_utils.create_equipment_technology_icon(equipment_name, icon_size, 
         {
             icon = "__Power-Armour-Replacer__/graphics/technology/" .. equipment_name .. "/" .. equipment_name .. "-technology-base.png",
             icon_size = icon_size,
+            scale = 256 / icon_size,
         },
         -- Mask layer, tinted.
         {
             icon = "__Power-Armour-Replacer__/graphics/technology/" .. equipment_name .. "/" .. equipment_name .. "-technology-mask.png",
             icon_size = icon_size,
             tint = icon_utils.tints[tier or 0],
+            scale = 256 / icon_size,
         },
         -- Highlights layer, untinted (though for icon, special tint to replicate additive blending)
         {
             icon = "__Power-Armour-Replacer__/graphics/technology/" .. equipment_name .. "/" .. equipment_name .. "-technology-highlights.png",
             icon_size = icon_size,
             tint = { 1, 1, 1, 0 }, -- Additive blending.
+            scale = 256 / icon_size,
         },
         {
             icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
@@ -130,6 +133,7 @@ function icon_utils.create_equipment_sprite(equipment_name, width, height, tier,
                 filename = "__Power-Armour-Replacer__/graphics/equipment/" .. equipment_name .. "/" .. equipment_name .. "-equipment-mask.png",
                 width = width,
                 height = height,
+                tint = icon_utils.tints[tier or 0],
                 priority = "medium",
                 flags = { "no-crop" },
             },
@@ -138,6 +142,7 @@ function icon_utils.create_equipment_sprite(equipment_name, width, height, tier,
                 filename = "__Power-Armour-Replacer__/graphics/equipment/" .. equipment_name .. "/" .. equipment_name .. "-equipment-highlights.png",
                 width = width,
                 height = height,
+                blending_mode = "additive-soft",
                 priority = "medium",
                 flags = { "no-crop" },
             }

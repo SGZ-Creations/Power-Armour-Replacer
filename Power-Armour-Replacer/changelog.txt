@@ -4,6 +4,11 @@ Date: 00.11.2024
   Changes:
     - MK5 Roboport recipes.
     - Deleted outated HR textures.
+  Bugfixes:
+    - Enetity(Equipment) coloring. 
+    - Techtree scaling. 
+  Credits:
+    - Discord: @Kira (Kirazy) for help on solving the tint.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.4
 Date: 11.11.2024
