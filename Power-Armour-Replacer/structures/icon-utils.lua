@@ -142,7 +142,7 @@ function icon_utils.create_equipment_sprite(equipment_name, width, height, tier,
                 filename = "__Power-Armour-Replacer__/graphics/equipment/" .. equipment_name .. "/" .. equipment_name .. "-equipment-highlights.png",
                 width = width,
                 height = height,
-                blending_mode = "additive-soft",
+                blend_mode = "additive-soft",
                 priority = "medium",
                 flags = { "no-crop" },
             }

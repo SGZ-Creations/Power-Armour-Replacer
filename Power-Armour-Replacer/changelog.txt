@@ -5,8 +5,9 @@ Date: 00.11.2024
     - MK5 Roboport recipes.
     - Deleted outated HR textures.
   Bugfixes:
-    - Enetity(Equipment) coloring. 
-    - Techtree scaling. 
+    - Enetity(Equipment) coloring.
+    - Techtree scaling.
+    - Fucked size for equiped skeletone.
   Credits:
     - Discord: @Kira (Kirazy) for help on solving the tint.
 ---------------------------------------------------------------------------------------------------
