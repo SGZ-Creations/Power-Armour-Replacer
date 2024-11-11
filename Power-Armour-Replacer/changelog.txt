@@ -13,7 +13,7 @@ Date: 11.11.2024
     - Adjusted resoution regarding texture files.
     - Corrected the tech tree icon scale.
   Credits:
-    - Discord: @Kira (Kirazy) for help on solving the tint.
+    - Discord: @Kira (Kirazy) for help on solving my texture problems.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.4
 Date: 11.11.2024
