@@ -16,7 +16,8 @@ local replace = {
     ["exoskeleton-equipment"] = "par-exoskeleton-tech-1",
     ["personal-roboport-equipment"] = "par-roboport-tech-1",
     ["personal-roboport-mk2-equipment"] = "par-roboport-tech-2",
-    ["fusion-reactor-equipment"] = "par-fusion-reactor-tech-1",
+    ["fission-reactor-equipment"] = "par-fusion-reactor-tech-1",
+    ["fusion-reactor-equipment"] = "par-fusion-reactor-tech-5",-- Note: fix this for PAR's SA Extention
     ["belt-immunity-equipment"] = "par-night-immunity-tech-1",
     ["night-vision-equipment"] = "par-night-immunity-tech-1",
     ["personal-laser-defense-equipment"] = "par-laser-tech-1",
@@ -111,6 +112,7 @@ local item_replace = {
     ["belt-immunity-equipment"] = "par-belt-immunity-mk1",
     ["personal-roboport-equipment"] = "par-roboport-mk1",
     ["personal-roboport-mk2-equipment"] = "par-roboport-mk2",
+    ["fission-reactor-equipment"] = "par-fusion-reactor-mk1",
     
 -- Mods
     ["bob-power-armor-mk3"] = "par-armour-mk3",
@@ -122,7 +124,6 @@ local item_replace = {
     ["battery-mk6-equipment"] = "par-battery-mk6",
     ["exoskeleton-equipment-2"] = "par-exoskeleton-mk2",
     ["exoskeleton-equipment-3"] = "par-exoskeleton-mk3",
-    ["fusion-reactor-equipment"] = "par-fusion-reactor-mk1",
     ["fusion-reactor-equipment-2"] = "par-fusion-reactor-mk2",
     ["fusion-reactor-equipment-3"] = "par-fusion-reactor-mk3",
     ["fusion-reactor-equipment-4"] = "par-fusion-reactor-mk4",

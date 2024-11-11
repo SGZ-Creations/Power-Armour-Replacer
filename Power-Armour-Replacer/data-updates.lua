@@ -10,12 +10,11 @@
 	require("compatibilities.recipes.updates.shield_updates")
 	require("compatibilities.recipes.updates.solar_updates")
 
-	require("compatibilities.misc.compatibility-recipe-update")
-	require("compatibilities.misc.altered-tech-updates")
+	require("compatibilities.mods-recipes.compatibility-recipe-update")
+	require("compatibilities.technology.updates.altered-tech-updates")
 
 --compatibilities.tech
 	require("compatibilities.technology.updates.par-tech-updates")
 	require("compatibilities.technology.updates.sa-science-pack-updates")
-	--require("compatibilities.misc.pars-3rd-party-tech-updates")
 --structures
 	require("structures.science-setting")

@@ -25,7 +25,7 @@
     require("prototypes.recipes.acu_recipes")
 
 --compatibilities
-    require("compatibilities.misc.compatibility-recipe-data")
+    require("compatibilities.mods-recipes.compatibility-recipe-data")
 
 --prototypes.technology
     require("prototypes.technology.armour_tech")
