@@ -34,7 +34,7 @@ for tier, reactor in pairs(reactors) do
     local equipment = {
         type = "generator-equipment",
         name = "par-fusion-reactor-mk" .. tostring(tier),
-        sprite = icon_utils.create_equipment_sprite("fusion-reactor", 128, 128, tier),
+        sprite = icon_utils.create_equipment_sprite("fusion-reactor", 256, 256, tier),
         shape =
         {
             width = 3,

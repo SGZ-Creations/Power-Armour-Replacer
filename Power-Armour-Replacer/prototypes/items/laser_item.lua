@@ -34,7 +34,7 @@ for tier, laser in pairs(lasers) do
     local equipment = {
         type = "active-defense-equipment",
         name = "par-laser-mk" .. tostring(tier),
-        sprite = icon_utils.create_equipment_sprite("laser-defense", 64, 64, tier),
+        sprite = icon_utils.create_equipment_sprite("laser-defense", 128, 128, tier),
         shape = {
             width = 2,
             height = 2,

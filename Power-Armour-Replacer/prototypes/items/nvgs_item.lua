@@ -26,7 +26,7 @@ for tier, nightvision in pairs(nightvisions) do
     local equipment = {
         type = "night-vision-equipment",
         name = "par-nightvision-mk" .. tostring(tier),
-        sprite = icon_utils.create_equipment_sprite("night-vision", 64, 64, tier),
+        sprite = icon_utils.create_equipment_sprite("night-vision", 128, 128, tier),
         shape =
         {
             width = 1,

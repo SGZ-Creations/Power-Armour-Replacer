@@ -39,7 +39,7 @@ for tier, shield in pairs(shields) do
     local equipment = {
         type = "energy-shield-equipment",
         name = "par-shield-mk" .. tostring(tier),
-        sprite = icon_utils.create_equipment_sprite("energy-shield", 64, 64, tier),
+        sprite = icon_utils.create_equipment_sprite("energy-shield", 128, 128, tier),
         shape = {
             width = 2,
             height = 2,

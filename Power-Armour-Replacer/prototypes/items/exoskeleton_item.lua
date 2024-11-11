@@ -29,8 +29,8 @@ for tier, exoskeleton in pairs(exoskeletons) do
     local equipment = {
         type = "movement-bonus-equipment",
         name = "par-exoskeleton-mk" .. tostring(tier),
-        sprite = icon_utils.create_equipment_sprite("exoskeleton", 64, 128, tier,
-            "__base__/graphics/equipment/hr-exoskeleton-equipment.png"),
+        sprite = icon_utils.create_equipment_sprite("exoskeleton", 128, 256, tier,
+            "__base__/graphics/equipment/exoskeleton-equipment.png"),
         shape = {
             width = 2,
             height = 4,

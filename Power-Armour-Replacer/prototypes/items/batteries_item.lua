@@ -34,7 +34,7 @@ for tier, battery in pairs(batteries) do
     local equipment = {
         type = "battery-equipment",
         name = "par-battery-mk" .. tostring(tier),
-        sprite = icon_utils.create_equipment_sprite("battery", 32, 64, tier),
+        sprite = icon_utils.create_equipment_sprite("battery", 64, 128, tier),
         shape =
         {
             width = 1,

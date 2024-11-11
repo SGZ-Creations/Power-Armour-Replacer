@@ -34,7 +34,7 @@ for tier, panel in pairs(panels) do
     local equipment = {
         type = "solar-panel-equipment",
         name = "par-solar-panel-mk" .. tostring(tier),
-        sprite = icon_utils.create_equipment_sprite("solar-panel", 32, 32, tier),
+        sprite = icon_utils.create_equipment_sprite("solar-panel", 64, 64, tier),
         shape = {
                 width = 2,
                 height = 1,
