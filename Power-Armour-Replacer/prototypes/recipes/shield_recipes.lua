@@ -46,7 +46,7 @@ local recipes = {
         energy_required = 20,
         ingredients = {
             {type="item", name="par-shield-mk3", amount=1},
-            {type="item", name="small-lamp", amount=90},
+            {type="item", name="small-lamp", amount=20},
             {type="item", name="plastic-bar", amount=50},
             {type="item", name="advanced-circuit", amount=65},
         },
