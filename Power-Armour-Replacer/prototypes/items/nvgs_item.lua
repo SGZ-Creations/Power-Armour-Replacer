@@ -3,7 +3,7 @@ local icon_utils = require("structures.icon-utils")
 
 local nightvisions = {
     {buffer_capacity = "1TJ", input_flow_limit ="150GW", energy_input ="125GW", order ="jcc[night-vision]-ac[armour-replacer]"},
-    {buffer_capacity = "1kJ", input_flow_limit =  "1kW", energy_input =   "0W", order ="jdd[night-vision]-ad[armour-replacer]"},
+    {buffer_capacity = "1kJ", input_flow_limit =  "1kW", energy_input =   "1W", order ="jdd[night-vision]-ad[armour-replacer]"},
 }
 
 for tier, nightvision in pairs(nightvisions) do
