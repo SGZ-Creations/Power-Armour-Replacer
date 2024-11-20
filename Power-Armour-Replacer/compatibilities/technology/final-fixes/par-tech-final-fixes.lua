@@ -8,6 +8,12 @@ util.technology_dependancy
 		},
 	},
 
+	["SpidertronPatrols"] = {
+		["spidertron"] = {
+			"par-exoskeleton-tech-3",
+		},
+	},
+
 	["space-age"] = {
 		["mech-armor"] = {
 			["par-armour-tech-2"] = "par-armour-tech-5",
