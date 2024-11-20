@@ -3,10 +3,13 @@ Version: 0.3.6
 Date: 13.11.2024
   Changes:
     - Recipe Shield MK4.
+    - Removed the green scale from NVG's.
   Bugfixes:
     - NVG's MK2 was not activating at night.
   Modding:
-    - Added MK3 Skeleton tech pre-requesite in for spidertron with SpidertronPatrols. (No Bugs seen here) 0.3.5 or 0.3.6 @Big John.
+    - Added MK3 Skeleton tech pre-requesite in spidertron with SpidertronPatrols. (No Bugs seen here) 0.3.5 or 0.3.6 @Big John.
+  Info:
+    - NVG's can be a bit bright but let me know. I do want to have it more phosphor white but current way is good 2 so it might stay.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.5
 Date: 11.11.2024

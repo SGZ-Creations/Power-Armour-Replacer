@@ -2,8 +2,8 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
 
 local nightvisions = {
-    {buffer_capacity = "1TJ", input_flow_limit ="150GW", energy_input ="125GW", order ="jcc[night-vision]-ac[armour-replacer]"},
-    {buffer_capacity = "1kJ", input_flow_limit =  "1kW", energy_input =   "1W", order ="jdd[night-vision]-ad[armour-replacer]"},
+    {buffer_capacity = "1TJ", input_flow_limit ="150GW", energy_input ="125GW", order ="jcc[night-vision]-ac[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-frozen.png"}}},
+    {buffer_capacity = "1kJ", input_flow_limit =  "1kW", energy_input =   "1W", order ="jdd[night-vision]-ad[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-day.png"}}},
 }
 
 for tier, nightvision in pairs(nightvisions) do
@@ -43,9 +43,8 @@ for tier, nightvision in pairs(nightvisions) do
         activate_sound = { filename = "__base__/sound/nightvision-on.ogg", volume = 0.5 },
         deactivate_sound = { filename = "__base__/sound/nightvision-off.ogg", volume = 0.5 },
         darkness_to_turn_on = 0.5,
-        color_lookup = {{0.5, "__core__/graphics/color_luts/nightvision.png"}},
+        color_lookup = nightvision.lut,
     }
-
     data:extend({
         item,
         equipment
