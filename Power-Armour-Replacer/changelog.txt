@@ -3,7 +3,6 @@ Version: 0.3.6
 Date: 13.11.2024
   Changes:
     - Recipe Shield MK4.
-    - Reduced the green scale of Night Vision.
   Bugfixes:
     - NVG's MK2 was not activating at night.
   Modding:

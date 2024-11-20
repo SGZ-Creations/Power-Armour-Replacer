@@ -44,13 +44,6 @@ for tier, nightvision in pairs(nightvisions) do
         deactivate_sound = { filename = "__base__/sound/nightvision-off.ogg", volume = 0.5 },
         darkness_to_turn_on = 0.5,
         color_lookup = {{0.5, "__core__/graphics/color_luts/nightvision.png"}},
-        zoom_to_world_daytime_color_lookup = {
-            {0.25, "identity"},
-            {0.95, "__core__/graphics/color_luts/night.png"},
-            {0.95, "__core__/graphics/color_luts/night.png"},
-            {0.95, "__core__/graphics/color_luts/night.png"},
-            {0.75, "identity"},
-        },
     }
 
     data:extend({
