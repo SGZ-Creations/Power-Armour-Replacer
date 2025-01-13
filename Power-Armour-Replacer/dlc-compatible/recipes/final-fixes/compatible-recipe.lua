@@ -1,4 +1,4 @@
-local util = require("compatibilities.util")
+local util = require("dlc-compatible.util")
 
 util.ingredient_prereq(data.raw.recipe["mech-armor"],
 {
@@ -82,7 +82,7 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
         dependencies = {"base"},
         replacements = {
             ["par-fusion-reactor-mk1"] = {"par-fusion-reactor-mk5", 2},
-            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk3", 4},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk2", 4},
         }
     },
     {

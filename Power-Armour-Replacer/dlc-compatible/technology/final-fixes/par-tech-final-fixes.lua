@@ -1,10 +1,10 @@
-local util = require("compatibilities.util")
+local util = require("dlc-compatible.util")
 util.technology_dependancy
 {
 	["base"] = {
 		["spidertron"] = {
 			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-5",
-			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-3",
+			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-2",
 		},
 	},
 
@@ -62,3 +62,17 @@ util.technology_dependancy
 		},
 	},
 }
+
+if mods["Nanobots"] then
+    local tech_eff = data.raw.technology["par-night-immunity-tech-2"].effects
+    table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
+    table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
+    table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
+    table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-trees"})
+    table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-items"})
+end
+
+if mods["Krastorio2"] then
+    local tech_eff = data.raw.technology["par-roboport-tech-6"].effects
+    table.insert(tech_eff,{type="unlock-recipe",recipe="vehicle-roboport"})
+end

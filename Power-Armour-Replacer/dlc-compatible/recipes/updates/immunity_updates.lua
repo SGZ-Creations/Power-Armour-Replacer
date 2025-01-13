@@ -1,4 +1,4 @@
-local util = require("compatibilities.util")
+local util = require("dlc-compatible.util")
 
 --Compatibility section
 util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk1"], {

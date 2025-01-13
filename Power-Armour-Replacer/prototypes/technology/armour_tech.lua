@@ -1,10 +1,26 @@
 data:extend({
+--[[
+---@type data.TechnologyPrototype
+	local tech = dlc-ti {
+	{icon = "__base__/graphics/technology/power-armor.png",}, --1
+	{icon = "__base__/graphics/technology/power-armor-mk2.png",}, --2
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3",}, --3
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4",}, --4
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --5
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --6
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --7
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --8
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --9
+	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --10
+
+}--tech.dlc-ti,
+]]
 	{
 		type = "technology",
 		name = "par-armour-tech-1",
 		icon_size = 256,
 		icon = "__base__/graphics/technology/power-armor.png",
-		effects = {
+		effect = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk1"

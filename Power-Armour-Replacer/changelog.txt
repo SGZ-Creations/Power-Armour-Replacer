@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.7
+Date: 13.01.2025
+  Changes:
+    - Changelog typo.
+    - Spider tech pre-requesite & recipe changed again from mk3 to mk2.
+    - Removed all battery components from solar equipment.
+  Modding:
+    - Removed bob's Heavy armour 3-4 from recipes & techs.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.6
 Date: 13.11.2024
   Changes:
@@ -72,10 +81,10 @@ Date: 25.10.2024
     - Updated Recipes on 7-10.
     - Changed Tech to have crafting requirement instead of science. 
     - [space-age] Added SciencePacks to Par Armour Tech.
-    - [space-age] Changed Prerequsites to cont in the science packs.
+    - [space-age] Changed Prerequsites to count in the science packs.
   Bugfixes:
     - Tech tree issue processing unit was applied to worng tech.
-    - [space-age] Made base mech armour use MK5 armour and prerequsite.
+    - [space-age] Made base mech armour use MK5 armour as prerequsite.
     - [space-age] Removed Tech, Item, Equipment: Battery MK3, Fusion Reactor.
   Credits:
     - @Mylon for help solving Factoriopedia Simulations.
@@ -83,15 +92,16 @@ Date: 25.10.2024
 Version: 0.3.1
 Date: 22.10.2024
   Bugfixes:
-    - Fixed release crash with missing file no idea what that was about.
+    - Fixed release crash with missing file. No idea what that was about.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 22.10.2024
   Features:
     - Updated to work with 2.0 Base & [space-age].
     - Added sounds to all items in mod.
-    - Made sure equipping equipment can be equipted.(bug)
     - [space-age] Added propper Weight values to all items in mod to be able to ship items in rocket.
+  Bugfixes:
+    - Made sure equipping equipment can be equipted.
   Changes:
     - [space-age] Deleted dlc folders.
     - Removed Compatibility with IR3 as the mod is now a dead ghost.

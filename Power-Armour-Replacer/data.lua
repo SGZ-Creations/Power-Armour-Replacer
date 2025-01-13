@@ -24,9 +24,6 @@
     require("prototypes.recipes.nvgs_recipes")
     require("prototypes.recipes.acu_recipes")
 
---compatibilities
-    require("compatibilities.mods-recipes.compatibility-recipe-data")
-
 --prototypes.technology
     require("prototypes.technology.armour_tech")
     require("prototypes.technology.batteries_tech")

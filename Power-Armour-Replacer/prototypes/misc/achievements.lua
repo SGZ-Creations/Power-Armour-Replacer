@@ -1,9 +1,4 @@
 local icon_utils = require("structures.icon-utils")
---[[
--------------------------------------------------------------- icon_size,  Mipmaps,    Tier,
-icons = icon_utils.create_equipment_technology_icon("battery",       256,        4,      5),
-]]
-
 data:extend({
     --Armor
     {

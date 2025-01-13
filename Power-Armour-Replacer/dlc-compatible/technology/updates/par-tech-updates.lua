@@ -3,36 +3,10 @@ Hey if u came here to remove the reserch. Note i have added items from this rese
 Also i suggest u download "Clowns Sicence" if u haven't. Before u remove anything. As that would make it easier to unlock.
 ]]
 -- Compatibility files
-local util = require("compatibilities.util")
+local util = require("dlc-compatible.util")
 
 util.technology_dependancy
 {
-	--[[
-	["base"] = {
-		["spidertron"] = {
-			["par-fusion-reactor-tech-1"] = "par-fusion-reactor-tech-5",
-			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-5",
-		},
-	},
-	]]
-
-	["space-age"] = {
-		["par-armour-tech-9"] = {
-			"promethium-science-pack"
-		},
-		["par-armour-tech-7"] = {
-			"cryogenic-science-pack"
-		},
-		["par-armour-tech-6"] = {
-			"metallurgic-science-pack",
-			"agricultural-science-pack",
-			"electromagnetic-science-pack"
-		},
-		["par-armour-tech-5"] = {
-			"space-science-pack",
-		},
-	},
-
 	["space-spidertron"] = {
 		["spidertron"] = {
 			"par-night-immunity-tech-2",
@@ -97,6 +71,7 @@ util.technology_dependancy
 		},
 	},
 
+--[[
 	["bobwarfare"] = {
 		["par-armour-tech-5"] = {
 			["uranium-processing"] = "bob-armor-making-3"
@@ -105,7 +80,7 @@ util.technology_dependancy
 			"bob-armor-making-4"
 		},
 	},
-
+]]
 	["bobrevamp"] = {
 		["par-armour-tech-8"] = {
 			"heat-shield",
@@ -131,10 +106,11 @@ util.technology_dependancy
 			"cobalt-processing",
 		},
 		["par-armour-tech-4"] = {
-			["advanced-electronics"] = "invar-processing"
+			["advanced-electronics"] = "invar-processing",
 		},
 		["par-armour-tech-5"] = {
-			["electric-engine"] = "gem-processing-3"
+			["electric-engine"] = "gem-processing-3",
+			--["uranium-processing"] = "",
 		},
 		["par-armour-tech-6"] = {
 			["advanced-electronics-3"] = "electric-engine",
@@ -142,7 +118,7 @@ util.technology_dependancy
 			"battery-2",
 		},
 		["par-armour-tech-7"] = {
-			["armour-control-unit"] = "tungsten-processing",
+			"tungsten-processing",
 			"ceramics",
 		},
 		["par-armour-tech-8"] = {
@@ -317,3 +293,12 @@ util.technology_dependancy
 	},
 	]]
 }
+
+if mods["TeleportationEquipment"] then
+    local tech_eff = data.raw.technology["teleportation-equipment"]
+    if not mods["exotic-industries"] then tech_eff.unit.count = 1000 end
+    tech_eff.unit.ingredients =  {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+    }
+end

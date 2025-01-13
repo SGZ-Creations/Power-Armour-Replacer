@@ -1,5 +1,5 @@
 --if settings.startup["moddular-disable-armour"] then
-local util = require("compatibilities.util")
+local util = require("dlc-compatible.util")
 util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
 	-- Power Armor MK3
 	{
@@ -395,7 +395,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
     {
         dependencies = {"bobwarfare"},
         replacements = {
-            ["uranium-235"] = {"heavy-armor-2", 1},
+            --["uranium-235"] = {"heavy-armor-2", 1},
         }
     },
     {
@@ -589,7 +589,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
     {
         dependencies = {"bobwarfare"},
         replacements = {
-            {"heavy-armor-3", 1}
+            --{"heavy-armor-3", 1}
         }
     },
     {

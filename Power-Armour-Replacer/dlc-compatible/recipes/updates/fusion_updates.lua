@@ -1,4 +1,4 @@
-local util = require("compatibilities.util")
+local util = require("dlc-compatible.util")
 util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk1"], {
     {
         dependencies = {"bobelectronics",},

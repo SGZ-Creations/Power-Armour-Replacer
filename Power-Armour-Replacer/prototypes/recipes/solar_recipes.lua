@@ -32,7 +32,7 @@ local recipes = {
         energy_required = 15,
         ingredients = {
             {type="item", name="par-solar-panel-mk2", amount=1},
-            {type="item", name="battery", amount=30},
+            --{type="item", name="battery", amount=30}, --change this.
             {type="item", name="steel-plate", amount=75},
             {type="item", name="copper-plate", amount=40},
         },
@@ -48,7 +48,7 @@ local recipes = {
             {type="item", name="electronic-circuit", amount=135},
             {type="item", name="advanced-circuit", amount=100},
             {type="item", name="engine-unit", amount=120},
-            {type="item", name="battery", amount=150},
+            --{type="item", name="battery", amount=150},--change this.
         },
         results = {{type="item", name="par-solar-panel-mk4", amount=1}}
     },
@@ -59,7 +59,7 @@ local recipes = {
         energy_required = 25,
         ingredients = {
             {type="item", name="par-solar-panel-mk4", amount=1},
-            {type="item", name="battery", amount=190},
+            --{type="item", name="battery", amount=190}, --change this.
             {type="item", name="advanced-circuit", amount=110},
             {type="item", name="sulfur", amount=123},
             {type="item", name="steel-plate", amount=115},
@@ -105,7 +105,7 @@ local recipes = {
         ingredients = {
             {type="item", name="par-solar-panel-mk7", amount=1},
             {type="item", name="copper-cable", amount=300},
-            {type="item", name="battery", amount=200},
+            --{type="item", name="battery", amount=200}, --change this.
             {type="item", name="plastic-bar", amount=170},
             {type="item", name="low-density-structure", amount=175},
         },
