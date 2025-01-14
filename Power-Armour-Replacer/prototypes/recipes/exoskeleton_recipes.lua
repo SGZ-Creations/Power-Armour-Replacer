@@ -9,7 +9,8 @@ local recipes = {
             {type="item", name="electronic-circuit", amount=100},
             {type="item", name="steel-plate", amount=100},
             {type="item", name="copper-cable", amount=100},
-            {type="item", name="iron-gear-wheel", amount=100},
+            {type="item", name="iron-gear-wheel", amount=50},
+            {type="item", name="iron-stick", amount=50},
         },
         results = {{type="item", name="par-exoskeleton-mk1", amount=1}}
     },
@@ -21,10 +22,10 @@ local recipes = {
         ingredients = {
             {type="item", name="par-exoskeleton-mk1", amount=1},
             {type="item", name="battery", amount=120},
-            {type="item", name="iron-gear-wheel", amount=60},
-            {type="item", name="electronic-circuit", amount=120},
-            {type="item", name="steel-plate", amount=140},
-            {type="item", name="iron-stick", amount=70},
+            {type="item", name="iron-gear-wheel", amount=50},
+            {type="item", name="electronic-circuit", amount=125},
+            {type="item", name="steel-plate", amount=125},
+            {type="item", name="iron-stick", amount=75},
         },
         results = {{type="item", name="par-exoskeleton-mk2", amount=1}}
     },
