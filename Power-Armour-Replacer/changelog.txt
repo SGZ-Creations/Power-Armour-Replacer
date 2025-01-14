@@ -3,9 +3,10 @@ Version: 0.3.8
 Date: 15.01.2025
   Changes:
     - Change tech order on all tech. this should now display 9, 10 not (10, 9).
-    - Need Migration for fusion to fission WIP
+    - Migration for fusion to fission. Let me know if you encounter issues.
   Scripting:
-    - - "par-fusion-reactor" --> "par-fission-reactor"
+    - File renaming.
+    - "par-fusion-reactor" --> "par-fission-reactor"
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
 Date: 14.01.2025
