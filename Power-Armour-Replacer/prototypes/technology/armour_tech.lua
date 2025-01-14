@@ -26,7 +26,7 @@ data:extend({
 				recipe = "par-armour-mk1"
 			},
 		},
-		prerequisites = { "heavy-armor", "automation", },
+		prerequisites = { "heavy-armor", "automation", "lamp"},
 		research_trigger = {type ="craft-item", item ="heavy-armor", count = 1},
 		order = "g-a-b"
 	},
