@@ -79,8 +79,8 @@ data:extend({
     {
         type = "produce-achievement",
         name = "mass-equipment-1_1-100-fusion",
-        order = "Faa[par-fusion-reactor-mk5]",
-        item_product = "par-fusion-reactor-mk5",
+        order = "Faa[par-fission-reactor-mk5]",
+        item_product = "par-fission-reactor-mk5",
         amount = 100,
         steam_stats_name = "fusion-production-overall",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 5),
@@ -90,8 +90,8 @@ data:extend({
     {
         type = "produce-achievement",
         name = "mass-equipment-1_2-1000-fusion",
-        order = "Fab[par-fusion-reactor-mk5]",
-        item_product = "par-fusion-reactor-mk5",
+        order = "Fab[par-fission-reactor-mk5]",
+        item_product = "par-fission-reactor-mk5",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 5),
@@ -101,8 +101,8 @@ data:extend({
     {
         type = "produce-achievement",
         name = "mass-equipment-2_3-100-fusion",
-        order = "Fac[par-fusion-reactor-mk10]",
-        item_product = "par-fusion-reactor-mk10",
+        order = "Fac[par-fission-reactor-mk10]",
+        item_product = "par-fission-reactor-mk10",
         amount = 100,
         steam_stats_name = "fusion-production-overall",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 10),
@@ -112,8 +112,8 @@ data:extend({
     {
         type = "produce-achievement",
         name = "mass-equipment-2_4-1000-fusion",
-        order = "Fad[par-fusion-reactor-mk10]",
-        item_product = "par-fusion-reactor-mk10",
+        order = "Fad[par-fission-reactor-mk10]",
+        item_product = "par-fission-reactor-mk10",
         amount = 1000,
         steam_stats_name = "fusion-production-overall",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 10),

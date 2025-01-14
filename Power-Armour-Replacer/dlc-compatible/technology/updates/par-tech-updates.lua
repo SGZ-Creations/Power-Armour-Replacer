@@ -91,7 +91,7 @@ util.technology_dependancy
 	},
 
 	[{"bobrevamp", "bobplates",}] = {
-		["par-fusion-reactor-tech-7"] = {
+		["par-fission-reactor-tech-7"] = {
 			"rtg",
 		},
 	},
@@ -138,7 +138,7 @@ util.technology_dependancy
 			"lithium-processing",
 			"cobalt-processing"
 		},
-		["par-fusion-reactor-tech-6"] = {
+		["par-fission-reactor-tech-6"] = {
 			"lithium-processing",
 		},
 		["par-solar-panel-tech-6"] = {
@@ -184,13 +184,13 @@ util.technology_dependancy
 		["par-exoskeleton-tech-3"] = {
 			"angels-chrome-smelting-1",
 		},
-		["par-fusion-reactor-tech-3"] = {
+		["par-fission-reactor-tech-3"] = {
 			"angels-silver-smelting-1",
 		},
-		["par-fusion-reactor-tech-4"] = {
+		["par-fission-reactor-tech-4"] = {
 			"angels-nickel-smelting-1",
 		},
-		["par-fusion-reactor-tech-5"] = {
+		["par-fission-reactor-tech-5"] = {
 			"advanced-circuit",
 			"angels-gold-smelting-1",
 		},
@@ -213,10 +213,10 @@ util.technology_dependancy
 			["low-density-structure"] = "cobalt-processing",
 			["cobalt-processing"] = "angels-cobalt-steel-smelting-1",
 		},
-		["par-fusion-reactor-tech-3"] = {
+		["par-fission-reactor-tech-3"] = {
 			"angels-invar-smelting-1",
 		},
-		["par-fusion-reactor-tech-5"] = {
+		["par-fission-reactor-tech-5"] = {
 			"angels-brass-smelting-1",
 		},
 	},

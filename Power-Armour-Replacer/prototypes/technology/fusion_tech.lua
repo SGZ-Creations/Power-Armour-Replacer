@@ -2,31 +2,31 @@ local icon_utils = require("structures.icon-utils")
 data:extend({
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-1",
+        name = "par-fission-reactor-tech-1",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 1),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk1"
+                recipe = "par-fission-reactor-mk1"
             },
         },
         prerequisites = {"par-armour-tech-1", },
         research_trigger = {type ="craft-item", item ="par-armour-mk1", count = 1},
-        order = "g-a-b"
+        order = "FissionReactor01"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-2",
+        name = "par-fission-reactor-tech-2",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 2),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk2"
+                recipe = "par-fission-reactor-mk2"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-1", "par-solar-panel-tech-2" },
+        prerequisites = { "par-fission-reactor-tech-1", "par-solar-panel-tech-2" },
         unit =
         {
             count = 500,
@@ -35,20 +35,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor02"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-3",
+        name = "par-fission-reactor-tech-3",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 3),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk3"
+                recipe = "par-fission-reactor-mk3"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-2", "par-solar-panel-tech-3", "oil-processing", "battery", },
+        prerequisites = { "par-fission-reactor-tech-2", "par-solar-panel-tech-3", "oil-processing", "battery", },
         unit =
         {
             count = 500,
@@ -58,20 +58,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor03"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-4",
+        name = "par-fission-reactor-tech-4",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 4),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk4"
+                recipe = "par-fission-reactor-mk4"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-3", "par-solar-panel-tech-4", "advanced-circuit", "engine", },
+        prerequisites = { "par-fission-reactor-tech-3", "par-solar-panel-tech-4", "advanced-circuit", "engine", },
         unit =
         {
             count = 500,
@@ -82,20 +82,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor04"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-5",
+        name = "par-fission-reactor-tech-5",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 5),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk5"
+                recipe = "par-fission-reactor-mk5"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-4", "par-solar-panel-tech-5" },
+        prerequisites = { "par-fission-reactor-tech-4", "par-solar-panel-tech-5" },
         unit =
         {
             count = 500,
@@ -107,20 +107,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor05"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-6",
+        name = "par-fission-reactor-tech-6",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 6),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk6"
+                recipe = "par-fission-reactor-mk6"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-5", "par-solar-panel-tech-6" },
+        prerequisites = { "par-fission-reactor-tech-5", "par-solar-panel-tech-6" },
         unit =
         {
             count = 500,
@@ -132,20 +132,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor06"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-7",
+        name = "par-fission-reactor-tech-7",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 7),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk7"
+                recipe = "par-fission-reactor-mk7"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-6", "par-solar-panel-tech-7" },
+        prerequisites = { "par-fission-reactor-tech-6", "par-solar-panel-tech-7" },
         unit =
         {
             count = 500,
@@ -158,20 +158,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor07"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-8",
+        name = "par-fission-reactor-tech-8",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 8),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk8"
+                recipe = "par-fission-reactor-mk8"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-7", "par-solar-panel-tech-8" },
+        prerequisites = { "par-fission-reactor-tech-7", "par-solar-panel-tech-8" },
         unit =
         {
             count = 500,
@@ -184,20 +184,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor08"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-9",
+        name = "par-fission-reactor-tech-9",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 9),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk9"
+                recipe = "par-fission-reactor-mk9"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-8", "par-solar-panel-tech-9" },
+        prerequisites = { "par-fission-reactor-tech-8", "par-solar-panel-tech-9" },
         unit =
         {
             count = 500,
@@ -211,20 +211,20 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor09"
     },
     {
         type = "technology",
-        name = "par-fusion-reactor-tech-10",
+        name = "par-fission-reactor-tech-10",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 10),
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "par-fusion-reactor-mk10"
+                recipe = "par-fission-reactor-mk10"
             },
         },
-        prerequisites = { "par-fusion-reactor-tech-9", "par-solar-panel-tech-10" },
+        prerequisites = { "par-fission-reactor-tech-9", "par-solar-panel-tech-10" },
         unit =
         {
             count = 500,
@@ -238,6 +238,6 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "FissionReactor10"
     }
 });

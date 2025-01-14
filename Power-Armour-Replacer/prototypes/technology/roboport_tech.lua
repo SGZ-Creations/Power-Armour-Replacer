@@ -11,9 +11,9 @@ data:extend({
                 recipe = "par-roboport-mk1"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-1"},
-        research_trigger = {type ="craft-item", item ="par-fusion-reactor-mk1", count = 5},
-        order = "g-a-b"
+        prerequisites = {"par-fission-reactor-tech-1"},
+        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 5},
+        order = "Roboport01"
     },
     {
         type = "technology",
@@ -35,7 +35,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport02"
     },
     {
         type = "technology",
@@ -58,7 +58,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport03"
     },
     {
         type = "technology",
@@ -82,7 +82,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport04"
     },
     {
         type = "technology",
@@ -107,7 +107,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport05"
     },
     {
         type = "technology",
@@ -132,7 +132,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport06"
     },
     {
         type = "technology",
@@ -158,7 +158,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport07"
     },
     {
         type = "technology",
@@ -184,7 +184,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport08"
     },
     {
         type = "technology",
@@ -211,7 +211,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport09"
     },
     {
         type = "technology",
@@ -238,6 +238,6 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Roboport10"
     }
 });

@@ -11,9 +11,9 @@ data:extend({
                 recipe = "par-laser-mk1"
             },
         },
-        prerequisites = {"par-fusion-reactor-tech-1" },
-        research_trigger = {type ="craft-item", item ="par-fusion-reactor-mk1", count = 5},
-        order = "g-a-b"
+        prerequisites = {"par-fission-reactor-tech-1" },
+        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 5},
+        order = "Laser01"
     },
     {
         type = "technology",
@@ -35,7 +35,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser02"
     },
     {
         type = "technology",
@@ -61,7 +61,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser03"
     },
     {
         type = "technology",
@@ -85,7 +85,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser04"
     },
     {
         type = "technology",
@@ -114,7 +114,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser05"
     },
     {
         type = "technology",
@@ -139,7 +139,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser06"
     },
     {
         type = "technology",
@@ -165,7 +165,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser07"
     },
     {
         type = "technology",
@@ -191,7 +191,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser08"
     },
     {
         type = "technology",
@@ -218,7 +218,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser09"
     },
     {
         type = "technology",
@@ -245,6 +245,6 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Laser10"
     }
 });

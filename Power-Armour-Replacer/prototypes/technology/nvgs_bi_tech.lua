@@ -4,7 +4,7 @@ data:extend({
         name = "par-night-immunity-tech-1",
         icon_size = 256,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/graphics/technology/night-immunity/belt-immunity-night-vision-equipment.png"),
-        prerequisites = {"par-fusion-reactor-tech-5" },
+        prerequisites = {"par-fission-reactor-tech-5" },
         effects =
         {
             {
@@ -16,8 +16,8 @@ data:extend({
                 recipe = "par-belt-immunity-mk1"
             },
         },
-        research_trigger = {type ="craft-item", item ="par-fusion-reactor-mk5", count = 5},
-        order = "g-g"
+        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk5", count = 5},
+        order = "NvgImmunity1"
     },
     {
         type = "technology",
@@ -54,6 +54,6 @@ data:extend({
             },
             time = 15
         },
-        order = "g-g"
+        order = "NvgImmunity2"
     },
 });

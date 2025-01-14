@@ -1,5 +1,5 @@
 local util = require("dlc-compatible.util")
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk1"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -50,7 +50,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk1"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk2"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -118,7 +118,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk2"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk3"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -171,7 +171,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk3"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk4"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -216,7 +216,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk4"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk5"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -257,7 +257,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk5"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk6"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -285,7 +285,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk6"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk7"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -331,7 +331,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk7"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk8"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -369,7 +369,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk8"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk9"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -421,7 +421,7 @@ util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk9"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-fusion-reactor-mk10"], {
+util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk10"], {
     --248K
     {
         dependencies = {"248k"},

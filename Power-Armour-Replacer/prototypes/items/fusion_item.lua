@@ -18,8 +18,8 @@ for tier, reactor in pairs(reactors) do
     ---@type data.ItemPrototype
     local item = {
         type = "item",
-        name = "par-fusion-reactor-mk" .. tostring(tier),
-        place_as_equipment_result = "par-fusion-reactor-mk" .. tostring(tier),
+        name = "par-fission-reactor-mk" .. tostring(tier),
+        place_as_equipment_result = "par-fission-reactor-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("fusion-reactor", 64, tier),
         stack_size = 20,
         weight = 35000,
@@ -33,7 +33,7 @@ for tier, reactor in pairs(reactors) do
     ---@type data.EquipmentPrototype
     local equipment = {
         type = "generator-equipment",
-        name = "par-fusion-reactor-mk" .. tostring(tier),
+        name = "par-fission-reactor-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("fusion-reactor", 256, 256, tier),
         shape =
         {

@@ -4,7 +4,7 @@ data:extend({
         type = "technology",
         name = "par-exoskeleton-tech-1",
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 1),
-        prerequisites = { "par-armour-tech-2", "par-fusion-reactor-tech-1" },
+        prerequisites = { "par-armour-tech-2", "par-fission-reactor-tech-1" },
         effects =
         {
             {
@@ -17,7 +17,7 @@ data:extend({
             }
         },
         research_trigger = {type ="craft-item", item ="par-armour-mk2", count = 1},
-        order = "g-h"
+        order = "ExoLegs1"
     },
     {
         type = "technology",
@@ -41,7 +41,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-h"
+        order = "ExoLegs2"
     },
     {
         type = "technology",
@@ -66,7 +66,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-h"
+        order = "ExoLegs3"
     },
     {
         type = "technology",
@@ -96,7 +96,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-h"
+        order = "ExoLegs4"
     },
     {
         type = "technology",
@@ -123,6 +123,6 @@ data:extend({
             },
             time = 15
         },
-        order = "g-h"
+        order = "ExoLegs5"
     }
 });

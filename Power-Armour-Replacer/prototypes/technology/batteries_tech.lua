@@ -13,7 +13,7 @@ data:extend({
         },
         prerequisites = {"par-armour-tech-1",},
 		research_trigger = {type ="craft-item", item ="par-armour-mk1", count = 1},
-        order = "g-a-b"
+        order = "Battery01"
     },
     {
         type = "technology",
@@ -35,7 +35,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery02"
     },
     {
         type = "technology",
@@ -58,7 +58,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery03"
     },
     {
         type = "technology",
@@ -82,7 +82,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery04"
     },
     {
         type = "technology",
@@ -107,7 +107,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery05"
     },
     {
         type = "technology",
@@ -132,7 +132,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery06"
     },
     {
         type = "technology",
@@ -158,7 +158,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery07"
     },
     {
         type = "technology",
@@ -184,7 +184,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery08"
     },
     {
         type = "technology",
@@ -211,7 +211,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery09"
     },
     {
         type = "technology",
@@ -238,6 +238,6 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Battery10"
     }
 });

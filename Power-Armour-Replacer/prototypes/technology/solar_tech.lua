@@ -12,7 +12,7 @@ data:extend({
         },
         prerequisites = {"par-armour-tech-1"},
         research_trigger = {type ="craft-item", item ="par-armour-mk1", count = 1},
-        order = "g-a-b"
+        order = "Solar01"
     },
     {
         type = "technology",
@@ -32,7 +32,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar02"
     },
     {
         type = "technology",
@@ -53,7 +53,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar03"
     },
     {
         type = "technology",
@@ -75,7 +75,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar04"
     },
     {
         type = "technology",
@@ -98,7 +98,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar05"
     },
     {
         type = "technology",
@@ -121,7 +121,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar06"
     },
     {
         type = "technology",
@@ -145,7 +145,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar07"
     },
     {
         type = "technology",
@@ -169,7 +169,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar08"
     },
     {
         type = "technology",
@@ -194,7 +194,7 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar09"
     },
     {
         type = "technology",
@@ -219,6 +219,6 @@ data:extend({
             },
             time = 15
         },
-        order = "g-a-b"
+        order = "Solar100"
     }
 });

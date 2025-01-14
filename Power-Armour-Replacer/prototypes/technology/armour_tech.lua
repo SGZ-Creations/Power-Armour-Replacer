@@ -28,7 +28,7 @@ data:extend({
 		},
 		prerequisites = { "heavy-armor", "automation", "lamp"},
 		research_trigger = {type ="craft-item", item ="heavy-armor", count = 1},
-		order = "g-a-b"
+		order = "Armour01"
 	},
 	{
 		type = "technology",
@@ -49,7 +49,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour02"
 	},
 	{
 		type = "technology",
@@ -71,7 +71,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour03"
 	},
 	{
 		type = "technology",
@@ -96,7 +96,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour04"
 	},
 	{
 		type = "technology",
@@ -126,7 +126,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour05"
 	},
 	{
 		type = "technology",
@@ -154,7 +154,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour06"
 	},
 	{
 		type = "technology",
@@ -184,7 +184,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour07"
 	},
 	{
 		type = "technology",
@@ -214,7 +214,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour08"
 	},
 	{
 		type = "technology",
@@ -241,7 +241,7 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour09"
 	},
 	{
 		type = "technology",
@@ -267,6 +267,6 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "g-a-b"
+		order = "Armour10"
 	},
 })

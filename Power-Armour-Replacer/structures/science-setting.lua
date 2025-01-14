@@ -18,7 +18,7 @@ if not(mods["space-age"] or mods["space-exploration"])then
         add_space_science{
             "par-armour-tech-6",
             "par-battery-tech-6",
-            "par-fusion-reactor-tech-6",
+            "par-fission-reactor-tech-6",
             "par-exoskeleton-tech-5",
             "par-laser-tech-6",
             "par-solar-panel-tech-6",
