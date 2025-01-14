@@ -1,7 +1,7 @@
 --prototypes.items
     require("prototypes.items.armour_item")
     require("prototypes.items.batteries_item")
-    require("prototypes.items.fusion_item")
+    require("prototypes.items.fission_item")
     require("prototypes.items.exoskeleton_item")
     require("prototypes.items.solar_item")
     require("prototypes.items.roboport_item")
@@ -14,7 +14,7 @@
 --prototypes.recipes
     require("prototypes.recipes.armour_recipes")
     require("prototypes.recipes.batteries_recipes")
-    require("prototypes.recipes.fusion_recipes")
+    require("prototypes.recipes.fission_recipes")
     require("prototypes.recipes.exoskeleton_recipes")
     require("prototypes.recipes.solar_recipes")
     require("prototypes.recipes.roboport_recipes")
@@ -28,7 +28,7 @@
     require("prototypes.technology.armour_tech")
     require("prototypes.technology.batteries_tech")
     require("prototypes.technology.exoskeleton_tech")
-    require("prototypes.technology.fusion_tech")
+    require("prototypes.technology.fission_tech")
     require("prototypes.technology.solar_tech")
     require("prototypes.technology.roboport_tech")
     require("prototypes.technology.laser_tech")

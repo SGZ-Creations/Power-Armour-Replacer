@@ -2,7 +2,7 @@
 	require("dlc-compatible.recipes.updates.armour_updates")
 	require("dlc-compatible.recipes.updates.batteries_updates")
 	require("dlc-compatible.recipes.updates.exolegs_updates")
-	require("dlc-compatible.recipes.updates.fusion_updates")
+	require("dlc-compatible.recipes.updates.fission_updates")
 	require("dlc-compatible.recipes.updates.immunity_updates")
 	require("dlc-compatible.recipes.updates.lasers_updates")
 	require("dlc-compatible.recipes.updates.nvgs_updates")
