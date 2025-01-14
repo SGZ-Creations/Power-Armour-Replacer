@@ -9,6 +9,8 @@ Date: 13.01.2025
     - [space-age] Armours recipes added. More to come for the other (Items/Equipments)
   Modding:
     - Removed bob's Heavy armour 3-4 from recipes & techs.
+  Scripting:
+    - Some Refactoring.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.6
 Date: 13.11.2024
