@@ -2,9 +2,11 @@
 Version: 0.3.7
 Date: 13.01.2025
   Changes:
-    - Changelog typo.
+    - Changelog typo. 0.3.2
     - Spider tech pre-requesite & recipe changed again from mk3 to mk2.
     - Removed all battery components from solar equipment.
+    - Stick can now also be unlocked at Exoskeleton MK1.
+    - [space-age] Armours recipes added. More to come for the other (Items/Equipments)
   Modding:
     - Removed bob's Heavy armour 3-4 from recipes & techs.
 ---------------------------------------------------------------------------------------------------
