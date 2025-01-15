@@ -2,7 +2,7 @@
 Version: 0.3.8
 Date: 15.01.2025
   Changes:
-    - Change tech order on all tech. this should now display 9, 10 not (10, 9).
+    - Change tech order on all tech. This should now display 9, 10 not (10, 9).
     - Migration for fusion to fission. Let me know if you encounter issues.
   Scripting:
     - File renaming.
