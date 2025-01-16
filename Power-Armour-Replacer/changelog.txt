@@ -4,9 +4,9 @@ Date: 16.01.2025
   Bugfixes:
     - Armour mk1 was not unlockable.
   Info:
-    - Should you not be able to craft more items past tier 5 please check an assembler fisrt.
+    - Should you not be able to craft more items past tier 5 please check an assembler first.
     - Have had more than 1 report on this before.
-    - Tho should you still have issues after checking and assembler please upload save file with the mod you use.
+    - Tho should you still have issues after checking the assembler please upload save file with the mod(s) you use.
   Credits:
     - Thanks for the report about the missing armour mk1 unlock @quizling
 ---------------------------------------------------------------------------------------------------
