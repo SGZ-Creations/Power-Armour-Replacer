@@ -20,7 +20,7 @@ data:extend({
 		name = "par-armour-tech-1",
 		icon_size = 256,
 		icon = "__base__/graphics/technology/power-armor.png",
-		effect = {
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk1"
