@@ -25,6 +25,10 @@ data:extend({
 				type = "unlock-recipe",
 				recipe = "par-armour-mk1"
 			},
+            {
+                type = "unlock-recipe",
+                recipe = "iron-stick"
+            }
 		},
 		prerequisites = { "heavy-armor", "automation", "lamp"},
 		research_trigger = {type ="craft-item", item ="heavy-armor", count = 1},

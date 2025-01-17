@@ -11,10 +11,6 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "par-exoskeleton-mk1"
             },
-            {
-                type = "unlock-recipe",
-                recipe = "iron-stick"
-            }
         },
         research_trigger = {type ="craft-item", item ="par-armour-mk2", count = 1},
         order = "ExoLegs1"

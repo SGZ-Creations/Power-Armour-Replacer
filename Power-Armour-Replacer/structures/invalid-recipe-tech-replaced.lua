@@ -113,7 +113,6 @@ local item_replace = {
     ["personal-roboport-equipment"] = "par-roboport-mk1",
     ["personal-roboport-mk2-equipment"] = "par-roboport-mk2",
     ["fission-reactor-equipment"] = "par-fission-reactor-mk1",
-    
 -- Mods
     ["bob-power-armor-mk3"] = "par-armour-mk3",
     ["bob-power-armor-mk4"] = "par-armour-mk4",
