@@ -13,7 +13,7 @@
 	require("compatibility.recipes.updates.compatible-recipe")
 
 --dlc-compatible.tech
-	require("compatibility.technology.updates.par-depedenecy-updates")
+	require("compatibility.technology.updates.par-depedency-updates")
 	require("compatibility.technology.updates.spaceage-science-updates")
 --structures
 	require("structures.science-setting")

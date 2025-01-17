@@ -1,4 +1,4 @@
-local util = require("dlc-compatible.util")
+local util = require("compatibility.util")
 util.technology_dependancy
 {
 	["base"] = {

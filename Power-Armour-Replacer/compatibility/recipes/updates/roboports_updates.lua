@@ -1,4 +1,4 @@
-local util = require("dlc-compatible.util")
+local util = require("compatibility.util")
 
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk1"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used

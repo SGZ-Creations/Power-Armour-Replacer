@@ -1,5 +1,5 @@
 --if settings.startup["moddular-disable-armour"] then
-local util = require("dlc-compatible.util")
+local util = require("compatibility.util")
 util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
 	-- Power Armor MK3
 	{
