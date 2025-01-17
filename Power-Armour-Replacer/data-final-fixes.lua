@@ -3,7 +3,7 @@
 	require("structures.filters")
 
 --dlc-compatible.misc load order dependant
-	require("dlc-compatible.recipes.final-fixes.compatible-recipe")
+	require("compatibility.recipes.final-fixes.compatible-recipe")
 
 --dlc-compatible.tech load order dependant
-    require("dlc-compatible.technology.final-fixes.par-tech-final-fixes")
+    require("compatibility.technology.final-fixes.par-tech-final-fixes")

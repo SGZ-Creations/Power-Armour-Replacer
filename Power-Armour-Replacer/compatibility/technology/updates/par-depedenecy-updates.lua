@@ -3,10 +3,58 @@ Hey if u came here to remove the reserch. Note i have added items from this rese
 Also i suggest u download "Clowns Sicence" if u haven't. Before u remove anything. As that would make it easier to unlock.
 ]]
 -- Compatibility files
-local util = require("dlc-compatible.util")
-
+local util = require("compatibility.util")
 util.technology_dependancy
 {
+	["space-age"] = {
+		["par-armour-tech-5"] = {
+			"space-science-pack",
+		},
+		["par-battery-tech-5"] = {
+			"space-science-pack",
+		},
+		["par-solar-tech-5"] = {
+			"space-science-pack",
+		},
+		["par-armour-tech-6"] = {
+			"metallurgic-science-pack",
+			"agricultural-science-pack",
+			"electromagnetic-science-pack"
+		},
+		["par-battery-tech-6"] = {
+			"agricultural-science-pack",
+		},
+		["par-solar-tech-6"] = {
+			"agricultural-science-pack",
+		},
+		["par-armour-tech-7"] = {
+			["nuclear-power"] ="cryogenic-science-pack"
+		},
+		["par-battery-tech-7"] = {
+			"cryogenic-science-pack",
+		},
+		["par-solar-tech-7"] = {
+			"cryogenic-science-pack",
+		},
+		["par-armour-tech-8"] = {
+			["kovarex-enrichment-process"] ="cryogenic-plant"
+		},
+		["par-battery-tech-8"] = {
+			"cryogenic-plant",
+		},
+		["par-solar-tech-8"] = {
+			"cryogenic-plant",
+		},
+		["par-armour-tech-9"] = {
+			"promethium-science-pack"
+		},
+		["par-battery-tech-9"] = {
+			"promethium-science-pack",
+		},
+		["par-solar-tech-9"] = {
+			"promethium-science-pack",
+		},
+	},
 	["space-spidertron"] = {
 		["spidertron"] = {
 			"par-night-immunity-tech-2",
