@@ -13,13 +13,19 @@ util.technology_dependancy
 		["par-battery-tech-5"] = {
 			"space-science-pack",
 		},
-		["par-solar-tech-5"] = {
+		["par-solar-panel-tech-5"] = {
 			"space-science-pack",
 		},
 		["par-laser-tech-5"] = {
 			"space-science-pack",
 		},
 		["par-roboport-tech-5"] = {
+			"space-science-pack",
+		},
+		["par-shield-tech-5"] = {
+			"space-science-pack",
+		},
+		["par-fission-reactor-tech-5"] = {
 			"space-science-pack",
 		},
 		["par-armour-tech-6"] = {
@@ -30,14 +36,20 @@ util.technology_dependancy
 		["par-battery-tech-6"] = {
 			"agricultural-science-pack",
 		},
-		["par-solar-tech-6"] = {
+		["par-solar-panel-tech-6"] = {
 			"agricultural-science-pack",
 		},
 		["par-laser-tech-6"] = {
-			"agricultural-science-pack",
+			"metallurgic-science-pack",
 		},
 		["par-roboport-tech-6"] = {
-			"agricultural-science-pack",
+			"metallurgic-science-pack",
+		},
+		["par-shield-tech-6"] = {
+			"electromagnetic-science-pack",
+		},
+		["par-fission-reactor-tech-6"] = {
+			"electromagnetic-science-pack",
 		},
 		["par-armour-tech-7"] = {
 			["nuclear-power"] = "cryogenic-science-pack"
@@ -45,7 +57,7 @@ util.technology_dependancy
 		["par-battery-tech-7"] = {
 			"cryogenic-science-pack",
 		},
-		["par-solar-tech-7"] = {
+		["par-solar-panel-tech-7"] = {
 			"cryogenic-science-pack",
 		},
 		["par-laser-tech-7"] = {
@@ -54,20 +66,14 @@ util.technology_dependancy
 		["par-roboport-tech-7"] = {
 			"cryogenic-science-pack",
 		},
+		["par-shield-tech-7"] = {
+			"cryogenic-science-pack",
+		},
+		["par-fission-reactor-tech-7"] = {
+			"cryogenic-science-pack",
+		},
 		["par-armour-tech-8"] = {
 			["kovarex-enrichment-process"] = "cryogenic-plant"
-		},
-		["par-battery-tech-8"] = {
-			"cryogenic-plant",
-		},
-		["par-solar-tech-8"] = {
-			"cryogenic-plant",
-		},
-		["par-laser-tech-8"] = {
-			"cryogenic-plant",
-		},
-		["par-roboport-tech-8"] = {
-			"cryogenic-plant",
 		},
 		["par-armour-tech-9"] = {
 			"promethium-science-pack"
@@ -75,13 +81,19 @@ util.technology_dependancy
 		["par-battery-tech-9"] = {
 			"promethium-science-pack",
 		},
-		["par-solar-tech-9"] = {
+		["par-solar-panel-tech-9"] = {
 			"promethium-science-pack",
 		},
 		["par-laser-tech-9"] = {
 			"promethium-science-pack",
 		},
 		["par-roboport-tech-9"] = {
+			"promethium-science-pack",
+		},
+		["par-shield-tech-9"] = {
+			"promethium-science-pack",
+		},
+		["par-fission-reactor-tech-9"] = {
 			"promethium-science-pack",
 		},
 	},
