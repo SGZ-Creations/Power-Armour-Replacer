@@ -9,6 +9,8 @@ Date: 18.01.2025
   Changes:
     - Science should now start at 1 on mk2.
     - Move the stick unlock at armour mk1 making sure it's available in time for solar tech.
+  Modding:
+    - Bob's 2.0 implementation is started.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.9
 Date: 16.01.2025
