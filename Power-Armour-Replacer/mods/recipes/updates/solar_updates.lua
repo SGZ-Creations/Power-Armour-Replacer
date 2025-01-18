@@ -1,5 +1,4 @@
-local util = require("compatibility.util")
-
+local util = require("mods.util")
 util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
     {
         dependencies = {"bobplates"},

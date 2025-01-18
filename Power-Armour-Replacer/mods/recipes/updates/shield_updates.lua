@@ -1,4 +1,4 @@
-local util = require("compatibility.util")
+local util = require("mods.util")
 util.ingredient_prereq(data.raw.recipe["par-shield-mk1"], {
     {
         dependencies = {"bobelectronics"},

@@ -15,3 +15,14 @@ if not data.raw.recipe["rocket-control-unit"] then
 		},
 	})
 end
+
+local util = require("mods.util")
+util.ingredient_prereq(data.raw.recipe["heavy-armor"],
+{
+    {
+        dependencies = {"base"},
+        replacements = {
+            {type="item", name="light-armor", amount=1},
+        }
+    },
+})

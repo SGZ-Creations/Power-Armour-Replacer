@@ -321,13 +321,3 @@ if mods["space-age"] then
     data:extend(recipes)
 end
 
-local util = require("Power-Armour-Replacer.compatibility.util")
-util.ingredient_prereq(data.raw.recipe["heavy-armor"],
-{
-    {
-        dependencies = {"base"},
-        replacements = {
-            {type="item", name="light-armor", amount=1},
-        }
-    },
-})

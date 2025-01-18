@@ -1,4 +1,4 @@
-local util = require("compatibility.util")
+local util = require("mods.util")
 util.technology_dependancy
 {
 	["base"] = {

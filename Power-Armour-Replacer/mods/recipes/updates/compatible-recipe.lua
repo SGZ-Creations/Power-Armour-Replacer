@@ -1,5 +1,4 @@
-local util = require("compatibility.util")
-
+local util = require("mods.util")
 util.ingredient_prereq(data.raw.recipe["pamk3-lvest"],
 {
     {
