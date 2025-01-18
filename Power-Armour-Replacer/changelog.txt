@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.10
-Date: 17.01.2025
+Date: 18.01.2025
+  Features:
+    - [space-age] Addedd MK5 tech Space science.
+    - [space-age] Battery, Solar: MK6-10 Agricultural. MK7-10 Cryogenic. MK9-10 Promethium.
+    - [space-age] Roboport, Laser: MK6-10 Metalurgic. MK7-10 Cryogenic. MK9-10 Promethium.
+    - [space-age] Shield; Reactor: MK6-10 Elctromagnetic. MK7-10 Cryogenic. MK9-10 Promethium.
   Changes:
     - Science should now start at 1 on mk2.
     - Move the stick unlock at armour mk1 making sure it's available in time for solar tech.

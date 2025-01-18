@@ -1,19 +1,19 @@
 --dlc-compatible.recipes
-	require("compatibility.recipes.updates.armour_updates")
-	require("compatibility.recipes.updates.batteries_updates")
-	require("compatibility.recipes.updates.exolegs_updates")
-	require("compatibility.recipes.updates.fission_updates")
-	require("compatibility.recipes.updates.immunity_updates")
-	require("compatibility.recipes.updates.lasers_updates")
-	require("compatibility.recipes.updates.nvgs_updates")
-	require("compatibility.recipes.updates.roboports_updates")
-	require("compatibility.recipes.updates.shield_updates")
-	require("compatibility.recipes.updates.solar_updates")
+	require("mods.recipes.updates.armour_updates")
+	require("mods.recipes.updates.batteries_updates")
+	require("mods.recipes.updates.exolegs_updates")
+	require("mods.recipes.updates.fission_updates")
+	require("mods.recipes.updates.immunity_updates")
+	require("mods.recipes.updates.lasers_updates")
+	require("mods.recipes.updates.nvgs_updates")
+	require("mods.recipes.updates.roboports_updates")
+	require("mods.recipes.updates.shield_updates")
+	require("mods.recipes.updates.solar_updates")
 
-	require("compatibility.recipes.updates.compatible-recipe")
+	require("mods.recipes.updates.compatible-recipe")
 
 --dlc-compatible.tech
-	require("compatibility.technology.updates.par-depedency-updates")
-	require("compatibility.technology.updates.spaceage-science-updates")
+	require("mods.technology.updates.par-depedency-updates")
+	require("mods.technology.updates.spaceage-science-updates")
 --structures
 	require("structures.science-setting")

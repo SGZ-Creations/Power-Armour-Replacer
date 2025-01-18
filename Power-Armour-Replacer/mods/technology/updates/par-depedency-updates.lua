@@ -3,7 +3,7 @@ Hey if u came here to remove the reserch. Note i have added items from this rese
 Also i suggest u download "Clowns Sicence" if u haven't. Before u remove anything. As that would make it easier to unlock.
 ]]
 -- Compatibility files
-local util = require("compatibility.util")
+local util = require("mods.util")
 util.technology_dependancy
 {
 	["space-age"] = {
