@@ -1,6 +1,4 @@
---[[
-	Battry & Solar
-]]
+
 
 if mods["space-age"] then
 	data.raw.technology["par-battery-tech-5"].unit =

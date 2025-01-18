@@ -1,46 +1,6 @@
---[[
-	Battry & Solar
-]]
-
-local util = require("Power-Armour-Replacer.compatibility.util")
-util.technology_dependancy
-{
-	["space-age"] = {
-		["par-battery-tech-5"] = {
-			"space-science-pack",
-		},
-		["par-solar-tech-5"] = {
-			"space-science-pack",
-		},
-		["par-battery-tech-6"] = {
-			"agricultural-science-pack",
-		},
-		["par-solar-tech-6"] = {
-			"agricultural-science-pack",
-		},
-		["par-battery-tech-7"] = {
-			"cryogenic-science-pack",
-		},
-		["par-solar-tech-7"] = {
-			"cryogenic-science-pack",
-		},
-		["par-battery-tech-8"] = {
-			"cryogenic-plant",
-		},
-		["par-solar-tech-8"] = {
-			"cryogenic-plant",
-		},
-		["par-battery-tech-9"] = {
-			"promethium-science-pack",
-		},
-		["par-solar-tech-9"] = {
-			"promethium-science-pack",
-		},
-	},
-}
 
 if mods["space-age"] then
-	data.raw.technology["par-battery-tech-5"].unit =
+	data.raw.technology["par-laser-tech-5"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -53,7 +13,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-battery-tech-6"].unit =
+	data.raw.technology["par-laser-tech-6"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -67,7 +27,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-battery-tech-7"].unit =
+	data.raw.technology["par-laser-tech-7"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -83,7 +43,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-battery-tech-8"].unit =
+	data.raw.technology["par-laser-tech-8"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -99,7 +59,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-battery-tech-9"].unit =
+	data.raw.technology["par-laser-tech-9"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -117,7 +77,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-battery-tech-10"].unit =
+	data.raw.technology["par-laser-tech-10"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -135,7 +95,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-solar-tech-5"].unit =
+	data.raw.technology["par-roboport-tech-5"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -148,7 +108,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-solar-tech-6"].unit =
+	data.raw.technology["par-roboport-tech-6"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -162,7 +122,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-solar-tech-7"].unit =
+	data.raw.technology["par-roboport-tech-7"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -178,7 +138,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-solar-tech-8"].unit =
+	data.raw.technology["par-roboport-tech-8"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -194,7 +154,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-solar-tech-9"].unit =
+	data.raw.technology["par-roboport-tech-9"].unit =
 	{
 		count = 1000,
 		ingredients =
@@ -212,7 +172,7 @@ if mods["space-age"] then
 		},
 		time = 15
 	}
-	data.raw.technology["par-solar-tech-10"].unit =
+	data.raw.technology["par-roboport-tech-10"].unit =
 	{
 		count = 1000,
 		ingredients =
