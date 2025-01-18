@@ -179,12 +179,11 @@ if mods["bobequipment"] then
     data.raw.technology["exoskeleton-equipment-3"].enabled = false
     data.raw.technology["solar-panel-equipment-2"].enabled = false
     data.raw.technology["solar-panel-equipment-3"].enabled = false
-    data.raw.technology["solar-panel-equipment-4"].enabled = false
     data.raw.technology["night-vision-equipment-2"].enabled = false
     data.raw.technology["night-vision-equipment-3"].enabled = false
-    data.raw.technology["fusion-reactor-equipment-2"].enabled = false
-    data.raw.technology["fusion-reactor-equipment-3"].enabled = false
-    data.raw.technology["fusion-reactor-equipment-4"].enabled = false
+    data.raw.technology["fission-reactor-equipment-2"].enabled = false
+    data.raw.technology["fission-reactor-equipment-3"].enabled = false
+    data.raw.technology["fission-reactor-equipment-4"].enabled = false
     data.raw.technology["bob-energy-shield-equipment-3"].enabled = false
     data.raw.technology["bob-energy-shield-equipment-4"].enabled = false
     data.raw.technology["bob-energy-shield-equipment-5"].enabled = false
@@ -205,12 +204,11 @@ if mods["bobequipment"] then
     data.raw.recipe["exoskeleton-equipment-3"].enabled = false
     data.raw.recipe["solar-panel-equipment-2"].enabled = false
     data.raw.recipe["solar-panel-equipment-3"].enabled = false
-    data.raw.recipe["solar-panel-equipment-4"].enabled = false
     data.raw.recipe["night-vision-equipment-2"].enabled = false
     data.raw.recipe["night-vision-equipment-3"].enabled = false
-    data.raw.recipe["fusion-reactor-equipment-2"].enabled = false
-    data.raw.recipe["fusion-reactor-equipment-3"].enabled = false
-    data.raw.recipe["fusion-reactor-equipment-4"].enabled = false
+    data.raw.recipe["fission-reactor-equipment-2"].enabled = false
+    data.raw.recipe["fission-reactor-equipment-3"].enabled = false
+    data.raw.recipe["fission-reactor-equipment-4"].enabled = false
     data.raw.recipe["energy-shield-mk3-equipment"].enabled = false
     data.raw.recipe["energy-shield-mk4-equipment"].enabled = false
     data.raw.recipe["energy-shield-mk5-equipment"].enabled = false
@@ -230,14 +228,13 @@ if mods["bobequipment"] then
     data.raw.technology["bob-battery-equipment-6"].hidden = true
     data.raw.technology["solar-panel-equipment-2"].hidden = true
     data.raw.technology["solar-panel-equipment-3"].hidden = true
-    data.raw.technology["solar-panel-equipment-4"].hidden = true
     data.raw.technology["exoskeleton-equipment-2"].hidden = true
     data.raw.technology["exoskeleton-equipment-3"].hidden = true
     data.raw.technology["night-vision-equipment-2"].hidden = true
     data.raw.technology["night-vision-equipment-3"].hidden = true
-    data.raw.technology["fusion-reactor-equipment-2"].hidden = true
-    data.raw.technology["fusion-reactor-equipment-3"].hidden = true
-    data.raw.technology["fusion-reactor-equipment-4"].hidden = true
+    data.raw.technology["fission-reactor-equipment-2"].hidden = true
+    data.raw.technology["fission-reactor-equipment-3"].hidden = true
+    data.raw.technology["fission-reactor-equipment-4"].hidden = true
     data.raw.technology["bob-energy-shield-equipment-3"].hidden = true
     data.raw.technology["bob-energy-shield-equipment-4"].hidden = true
     data.raw.technology["bob-energy-shield-equipment-5"].hidden = true
@@ -256,14 +253,13 @@ if mods["bobequipment"] then
     data.raw.recipe["battery-mk6-equipment"].hidden = true
     data.raw.recipe["solar-panel-equipment-2"].hidden = true
     data.raw.recipe["solar-panel-equipment-3"].hidden = true
-    data.raw.recipe["solar-panel-equipment-4"].hidden = true
     data.raw.recipe["exoskeleton-equipment-2"].hidden = true
     data.raw.recipe["exoskeleton-equipment-3"].hidden = true
     data.raw.recipe["night-vision-equipment-2"].hidden = true
     data.raw.recipe["night-vision-equipment-3"].hidden = true
-    data.raw.recipe["fusion-reactor-equipment-2"].hidden = true
-    data.raw.recipe["fusion-reactor-equipment-3"].hidden = true
-    data.raw.recipe["fusion-reactor-equipment-4"].hidden = true
+    data.raw.recipe["fission-reactor-equipment-2"].hidden = true
+    data.raw.recipe["fission-reactor-equipment-3"].hidden = true
+    data.raw.recipe["fission-reactor-equipment-4"].hidden = true
     data.raw.recipe["energy-shield-mk3-equipment"].hidden = true
     data.raw.recipe["energy-shield-mk4-equipment"].hidden = true
     data.raw.recipe["energy-shield-mk5-equipment"].hidden = true
@@ -288,9 +284,9 @@ if mods["bobequipment"] then
         Hide_Item("exoskeleton-equipment-3")
         Hide_Item("night-vision-equipment-2")
         Hide_Item("night-vision-equipment-3")
-        Hide_Item("fusion-reactor-equipment-2")
-        Hide_Item("fusion-reactor-equipment-3")
-        Hide_Item("fusion-reactor-equipment-4")
+        Hide_Item("fission-reactor-equipment-2")
+        Hide_Item("fission-reactor-equipment-3")
+        Hide_Item("fission-reactor-equipment-4")
         Hide_Item("energy-shield-mk3-equipment")
         Hide_Item("energy-shield-mk4-equipment")
         Hide_Item("energy-shield-mk5-equipment")
