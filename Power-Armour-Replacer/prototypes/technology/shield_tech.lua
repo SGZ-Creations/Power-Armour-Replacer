@@ -185,7 +185,7 @@ data:extend({
         unit = {
             count = 500,
             ingredients = {
-                {"automation-science-pack", 9},
+                {"automation-science-pack", 8},
                 {"logistic-science-pack", 7},
                 {"military-science-pack", 6},
                 {"chemical-science-pack", 5},
