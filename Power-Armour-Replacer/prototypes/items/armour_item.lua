@@ -111,6 +111,7 @@ for tier, equipment in pairs(power_armour_equipment) do
         stack_size = 1,
         weight = 100000,--power_armour.weightvalue,
         infinite = true,
+        durability = 1000000,
         equipment_grid = equipment_grid_name,
         inventory_size_bonus = equipment.inventory_bonus,
         open_sound = { filename = "__base__/sound/armor-open.ogg", volume = 1 },
