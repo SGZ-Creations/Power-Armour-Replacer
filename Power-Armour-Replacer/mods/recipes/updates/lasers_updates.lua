@@ -11,7 +11,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"steel-bearing", 50},
-            {"rubber", 100},
+            {"bob-bob-rubber", 100},
             {"carbon", 100},
         }
     },
@@ -25,21 +25,14 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["rubber"] = {"steel-gear-wheel", 40},
-            ["iron-plate"] = {"glass", 20},
+            ["bob-rubber"] = {"steel-gear-wheel", 40},
+            ["iron-plate"] = {"bob-glass", 20},
         }
     },
     {
         dependencies = {"Bio_Industries", "angelssmelting"},
         replacements = {
-            {"rubber", 20},
-        }
-    },
-    --Darkstar--Angels
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            {"angels-mono-silicon", 20},
+            {"bob-rubber", 20},
         }
     },
     --K2
@@ -68,8 +61,8 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk2"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["engine-unit"] = {"lead-plate", 90},
-            ["copper-plate"] = {"glass", 45},
+            ["engine-unit"] = {"bob-lead-plate", 90},
+            ["copper-plate"] = {"bob-glass", 45},
         }
     },
     {
@@ -81,16 +74,9 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk2"], {
     },
     --Bio-Industries--Angels
     {
-        dependencies = {"Bio_Industries", "angelssmelting"},
+        dependencies = {"Bio_Industries", "angelssmelting", "bobplates"},
         replacements = {
-            ["insulated-cable"] = {"rubber", 50},
-        }
-    },
-    --Darkstar--Angels
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            {"angels-mono-silicon", 40},
+            ["insulated-cable"] = {"bob-rubber", 50},
         }
     },
     --K2
@@ -122,9 +108,9 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk3"], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"invar-alloy", 60},
-            ["plastic-bar"] = {"brass-alloy", 60},
+            ["plastic-bar"] = {"bob-brass-alloy", 60},
             {"electronic-circuit", 150},
-            {"glass", 130},
+            {"bob-glass", 130},
         }
     },
     {
@@ -159,8 +145,8 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk4"], {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 200},
-            ["pipe"] = {"nickel-plate", 250},
-            ["iron-gear-wheel"] = {"brass-alloy", 90},
+            ["pipe"] = {"bob-nickel-plate", 250},
+            ["iron-gear-wheel"] = {"bob-brass-alloy", 90},
             {"carbon", 100},
         }
     },
@@ -176,24 +162,11 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk4"], {
             {"solder", 50},
         }
     },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed", "bobplates"},
-        replacements = {
-            ["nickel-plate"] = {"gold-plate", 75},
-        }
-    },
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"gold-plate", 75},
-        }
-    },
     --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["gold-plate"] = {"angels-wire-silver", 125},
+            ["bob-gold-plate"] = {"angels-wire-silver", 125},
         }
     },
     --Clowns
@@ -213,7 +186,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk4"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["el_aluminum_item"] = {"aluminium-plate", 150},
+            ["el_aluminum_item"] = {"bob-aluminium-plate", 150},
             {"lithium-ion-battery", 30},
         }
     },
@@ -276,13 +249,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk5"], {
             {"solid-white-phosphorus", 100},
         }
     },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 5},
-        }
-    },
 })
 
 util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
@@ -296,7 +262,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
         dependencies = {"bobplates"},
         replacements = {
             ["engine-unit"] = {"angels-plate-platinum", 100},
-            {"gunmetal-alloy", 100},
+            {"bob-gunmetal-alloy", 100},
             {"sapphire-5", 100},
         }
     },
@@ -345,7 +311,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk7"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["electric-engine-unit"] = {"gunmetal-alloy", 200},
+            ["electric-engine-unit"] = {"bob-gunmetal-alloy", 200},
             {"cobalt-steel-gear-wheel", 40},
             {"emerald-5", 100},
         }
@@ -369,13 +335,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk7"], {
             {type="fluid", name="liquid-dimethylmercury", amount=100},
         }
     },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 5},
-        }
-    },
 })
 util.ingredient_prereq(data.raw.recipe["par-laser-mk8"], {
     {
@@ -388,8 +347,8 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk8"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["plastic-bar"] = {"titanium-plate", 250},
-            ["copper-cable"] = {"tungsten-plate", 250},
+            ["plastic-bar"] = {"bob-titanium-plate", 250},
+            ["copper-cable"] = {"bob-tungsten-plate", 250},
             {"amethyst-5", 100},
         }
     },
@@ -412,27 +371,20 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk8"], {
             {type="fluid", name="liquid-dimethylmercury", amount=200},
         }
     },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 10},
-        }
-    },
 })
 util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 200},
-            ["advanced-circuit"] = {"rubber", 500},
+            ["advanced-circuit"] = {"bob-rubber", 500},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 200},
-            ["advanced-circuit"] = {"aluminium-plate", 200},
+            ["advanced-circuit"] = {"bob-aluminium-plate", 200},
             ["steel-plate"] = {"nitinol-bearing", 100},
             ["low-density-structure"] = {"nitinol-gear-wheel", 100},
             ["sulfur"] = {"topaz-5", 100},
@@ -449,8 +401,8 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            {"copper-tungsten-alloy", 200},
-            {"rubber", 100},
+            {"bob-copper-tungsten-alloy", 200},
+            {"bob-rubber", 100},
         }
     },
     --Clowns
@@ -460,13 +412,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-depleted-uranium", 250},
             {type="fluid", name="liquid-dimethylmercury", amount=300},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 10},
         }
     },
 })
@@ -483,7 +428,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk10"], {
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 200},
             ["steel-plate"] = {"cobalt-steel-alloy", 200},
-            ["sulfur"] = {"tungsten-carbide", 100},
+            ["sulfur"] = {"bob-tungsten-carbide", 100},
             ["advanced-circuit"] = {"nitinol-alloy", 100},
             {"nitinol-alloy", 100},
             {"diamond-5", 100},
@@ -522,13 +467,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk10"], {
         dependencies = {"extendedangels"},
         replacements = {
             {"titanium-concrete-brick", 100},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 10},
         }
     },
     --K2

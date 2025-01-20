@@ -3,10 +3,10 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["iron-plate"] = {"glass", 50},
-            ["iron-stick"] = {"lead-plate", 60},
+            ["iron-plate"] = {"bob-glass", 50},
+            ["iron-stick"] = {"bob-lead-plate", 60},
             ["electronic-circuit"] = {"electronic-circuit", 50},
-            {"rubber", 30},
+            {"bob-rubber", 30},
             {"carbon", 75},
             {"stone-bricks", 50},
         }
@@ -16,13 +16,6 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 50},
             ["copper-plate"] = {"tinned-copper-cable", 90}
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 25},
         }
     },
     --SE
@@ -40,9 +33,9 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk2"], {
             ["copper-plate"] = {"solder", 110},
             ["electronic-circuit"] = {"electronic-circuit", 60},
             {"carbon", 125},
-            {"silver-plate", 135},
-            {"rubber", 50},
-            {"glass", 50},
+            {"bob-silver-plate", 135},
+            {"bob-rubber", 50},
+            {"bob-glass", 50},
         },
     },
     {
@@ -51,18 +44,11 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk2"], {
             ["electronic-circuit"] = {"basic-circuit-board", 60},
         },
     },
-    --Darkstar
-    {
-        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 50},
-        }
-    },
     --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["silver-plate"] = {"", 0},
+            ["bob-silver-plate"] = {"", 0},
         }
     },
     --SE
@@ -124,33 +110,18 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk4"], {
         dependencies = {"bobplates"},
         replacements = {
             ["battery"] = {"silicon-nitride", 50},
-            ["engine-unit"] = {"nickel-plate", 80},
-            ["advanced-circuit"] = {"bronze-alloy", 60},
+            ["engine-unit"] = {"bob-nickel-plate", 80},
+            ["advanced-circuit"] = {"bob-bronze-alloy", 60},
             ["electronic-circuit"] = {"electronic-circuit", 70},
             {"silicon-wafer", 200},
-            {"bronze-alloy", 60},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed", "bobplates"},
-        replacements = {
-            ["silicon-nitride"] = {"gold-plate", 50},
-            [""] = {"", 80},
-        }
-    },
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"gold-plate", 50},
-            {"leaded-glass", 100},
+            {"bob-bronze-alloy", 60},
         }
     },
     --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["gold-plate"] = {"angels-wire-silver", 100},
+            ["bob-gold-plate"] = {"angels-wire-silver", 100},
         }
     },
     --SE
@@ -174,12 +145,12 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk5"], {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 90},
-            ["steel-plate"] = {"brass-alloy", 70},
-            ["sulfur"] = {"lead-plate", 40},
+            ["steel-plate"] = {"bob-brass-alloy", 70},
+            ["sulfur"] = {"bob-lead-plate", 40},
             ["battery"] = {"silicon-wafer", 300},
             {"silicon-nitride", 65},
-            {"aluminium-plate", 60},
-            {"lead-plate", 50},
+            {"bob-aluminium-plate", 60},
+            {"bob-lead-plate", 50},
         }
     },
     {
@@ -187,15 +158,6 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk5"], {
         replacements = {
             ["silicon-wafer"] = {"angels-mono-silcon", 300},
             ["steel-plate"] = {"angels-plate-chrome", 50},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            ["lead-plate"] = {"leaded-glass", 50},
-            {"lithium-plate", 50},
-            {"gold-plate", 100},
         }
     },
 })
@@ -213,9 +175,9 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk6"], {
             ["processing-unit"] = {"advanced-circuit", 110},
             ["electric-engine-unit"] = {"cobalt-steel-alloy", 100},
             ["engine-unit"] = {"silicon-nitride", 200},
-            ["iron-stick"] = {"titanium-plate", 200},
+            ["iron-stick"] = {"bob-titanium-plate", 200},
             {"silicon-wafer", 400},
-            {"lithium", 50},
+            {"bob-lithium", 50},
         }
     },
     {
@@ -266,8 +228,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk8"], {
             ["battery"] = {"silver-zinc-battery", 100},
             {"processing-unit", 130},
             {"invar-plate", 350},
-            {"gunmetal-alloy", 350},
-            {"aluminium-plate", 350},
+            {"bob-gunmetal-alloy", 350},
+            {"bob-aluminium-plate", 350},
         }
     },
     {
@@ -300,8 +262,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk9"], {
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 140},
             ["lubricant"] = {"ferric-chloride-solution", 200},
-            {"tungsten-carbide", 250},
-            {"tungsten-plate", 500},
+            {"bob-tungsten-carbide", 250},
+            {"bob-tungsten-plate", 500},
         }
     },
     {
@@ -335,7 +297,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk10"], {
             ["processing-unit"] = {"advanced-processing-unit", 150},
             ["lubricant"] = {"ferric-chloride-solution", 200},
             {"nitinol-alloy", 500},
-            {"copper-tungsten-alloy", 500},
+            {"bob-copper-tungsten-alloy", 500},
         }
     },
     {

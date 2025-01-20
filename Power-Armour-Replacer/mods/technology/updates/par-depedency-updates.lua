@@ -221,18 +221,8 @@ util.technology_dependancy
 		["par-armour-tech-10"] = {
 			"armour-control-unit",
 		},
-		["par-battery-tech-6"] = {
-			"lithium-processing",
-		},
 		["par-shield-tech-6"] = {
-			"lithium-processing",
 			"cobalt-processing"
-		},
-		["par-fission-reactor-tech-6"] = {
-			"lithium-processing",
-		},
-		["par-solar-panel-tech-6"] = {
-			"lithium-processing",
 		},
 		["par-laser-tech-4"] = {
 			["advanced-electronics"] = "gem-processing-2"
@@ -311,11 +301,6 @@ util.technology_dependancy
 		},
 	},
 
-	["angelspetrochem"] = {
-		["par-armour-tech-4"] = {
-		},
-	},
-
 	["Clowns-Processing"] = {
 		["par-armour-tech-10"] = {
 			"advanced-depleted-uranium-smelting-1",
@@ -325,12 +310,6 @@ util.technology_dependancy
 		},
 		["par-exoskeleton-tech-5"] = {
 			"advanced-depleted-uranium-smelting-1",
-		},
-	},
-
-	["Darkstar_utilities_fixed"] = {
-		["par-laser-tech-5"] = {
-			"laser-cores",
 		},
 	},
 
@@ -375,13 +354,6 @@ util.technology_dependancy
 			["advanced-electronics-2"] = "machine-components-mk02",
 		},
 	},
-	--[[
-	["pyrawores"] = {
-		["mod"] = {
-			["tech"] = "tech",
-			"tech",
-	},
-	]]
 }
 
 if mods["TeleportationEquipment"] then

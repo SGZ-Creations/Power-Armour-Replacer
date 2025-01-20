@@ -63,7 +63,7 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["nuclear-fuel"] = {"advanced-processing-unit", 200},
-            ["sulfur"] = {"tungsten-plate", 200},
+            ["sulfur"] = {"bob-tungsten-plate", 200},
             {"cobalt-steel-alloy", 200},
         }
     },
@@ -104,7 +104,7 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk2"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["fi_materials_titan"] = {"titanium-plate", 350},
+            ["fi_materials_titan"] = {"bob-titanium-plate", 350},
         }
     },
     -- SE K2

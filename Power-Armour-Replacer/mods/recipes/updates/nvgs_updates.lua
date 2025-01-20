@@ -56,7 +56,7 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk2"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"insulated-cable", 240},
-            ["processing-unit"] = {"rubber", 200},
+            ["processing-unit"] = {"bob-rubber", 200},
             ["nuclear-fuel"] = {"advanced-processing-unit", 200},
         }
     },
@@ -64,10 +64,10 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"advanced-processing-unit", 200},
-            ["nuclear-fuel"] = {"titanium-plate", 200},
-            ["processing-unit"] = {"copper-tungsten-alloy", 200},
-            {"copper-tungsten-alloy", 200},
-            {"titanium-plate", 200},
+            ["nuclear-fuel"] = {"bob-titanium-plate", 200},
+            ["processing-unit"] = {"bob-copper-tungsten-alloy", 200},
+            {"bob-copper-tungsten-alloy", 200},
+            {"bob-titanium-plate", 200},
         }
     },
     {
@@ -108,7 +108,7 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk2"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["fi_materials_titan"] = {"titanium-plate", 350},
+            ["fi_materials_titan"] = {"bob-titanium-plate", 350},
         }
     },
 	--SEK2

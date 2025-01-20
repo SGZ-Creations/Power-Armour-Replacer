@@ -12,21 +12,13 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 50},
             ["small-electric-pole"] = {"ruber", 50},
-            ["steel-plate"] = {"lead-plate", 50},
+            ["steel-plate"] = {"bob-lead-plate", 50},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"solder", 50},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 60},
-            {"glass", 40},
         }
     },
     --SE
@@ -55,7 +47,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            {"lead-plate", 35},
+            {"bob-lead-plate", 35},
         }
     },
     {
@@ -63,27 +55,6 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk2"], {
         replacements = {
             {"solder", 60},
             {"tinned-copper-cable", 110},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 60},
-            {"lead-plate", 35},
-        }
-    },
-    {
-        dependencies = {"Darkstar_utilities_fixed", "angelssmelting",},
-        replacements = {
-            ["silicon"] = {"angels-mono-silicon", 60},
-            {"angels-mono-silicon", 60},
-        }
-    },
-    --SE
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
         }
     },
     --K2
@@ -104,7 +75,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk3"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            {"lead-plate", 55},
+            {"bob-lead-plate", 55},
         }
     },
     {
@@ -120,38 +91,11 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk3"], {
             {"lithium-ion-battery", 20},
         }
     },
-    {
-        dependencies = {"248k"},
-        replacements = {
-            --{"lithium-ion-battery", 20},
-        }
-    },
     --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
             ["steel-plate"] = {"steel-bearing", 85},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
-        replacements = {
-            {"silicon", 60},
-        }
-    },
-    {
-        dependencies = {"Darkstar_utilities_fixed", "angelssmelting",},
-        replacements = {
-            ["silicon"] = {"angels-mono-silicon", 60},
-            {"angels-mono-silicon", 60},
-        }
-    },
-    --SE
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-            --["advanced-circuit"] = {"electronic-circuit", 30},
         }
     },
     --K2
@@ -174,7 +118,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk4"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"bronze-alloy", 60},
+            ["steel-plate"] = {"bob-bronze-alloy", 60},
             {"invar-alloy", 50},
         }
     },{
@@ -194,7 +138,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk4"], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            {"lead-plate", 55},
+            {"bob-lead-plate", 55},
         }
     },
     --Clowns
@@ -217,7 +161,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk5"], {
         dependencies = {"bobplates"},
         replacements = {
             ["low-density-structure"] = {"brass-plate", 50},
-            ["steel-plate"] = {"aluminium-plate", 100},
+            ["steel-plate"] = {"bob-aluminium-plate", 100},
         }
     },
     {
@@ -231,20 +175,6 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk5"], {
         dependencies = {"248k", "bobplates"},
         replacements = {
             {"lithium-ion-battery", 20},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed", "bobplates",},
-        replacements = {
-            {"silicon", 60},
-        }
-    },
-    {
-        dependencies = {"Darkstar_utilities_fixed", "angelssmelting",},
-        replacements = {
-            ["silicon"] = {"angels-mono-silicon", 60},
-            {"angels-mono-silicon", 60},
         }
     },
     {
@@ -264,9 +194,9 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk6"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"aluminium-plate", 100},
-            ["low-density-structure"] = {"titanium-plate", 100},
-            {"lithium", 50},
+            ["steel-plate"] = {"bob-aluminium-plate", 100},
+            ["low-density-structure"] = {"bob-titanium-plate", 100},
+            {"bob-lithium", 50},
         }
     },
     --248K
@@ -286,7 +216,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk6"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["tungsten-plate"] = {"angels-plate-chrome", 200},
+            ["bob-bob-tungsten-plate"] = {"angels-plate-chrome", 200},
         }
     },
     --Clowens
@@ -310,7 +240,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk7"], {
         replacements = {
             ["armour-control-unit"] = {"low-density-structure", 50},
             ["battery"] = {"silver-zinc-battery", 100},
-            ["plastic-bar"] = {"titanium-plate", 150},
+            ["plastic-bar"] = {"bob-titanium-plate", 150},
             ["lubricant"] = {"", 0},
             {"lithium-ion-battery", 100},
         }
@@ -362,7 +292,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk8"], {
         replacements = {
             ["battery"] = {"silver-zinc-battery", 200},
             ["water"] = {"", 0},
-            {"tungsten-plate", 200},
+            {"bob-tungsten-plate", 200},
         }
     },{
         dependencies = {"bobelectronics", "bobplates"},
@@ -397,7 +327,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk9"], {
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 450},
             ["battery"] = {"silver-zinc-battery", 300},
-            ["plastic-bar"] = {"copper-tungsten-alloy", 250},
+            ["plastic-bar"] = {"bob-copper-tungsten-alloy", 250},
         }
     },
     {
@@ -421,13 +351,13 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk10"], {
             ["processing-unit"] = {"advanced-processing-unit", 500},
             ["battery"] = {"silver-zinc-battery", 400},
             ["armour-control-unit"] = {"nitinol-alloy", 100},
-            {"tungsten-carbide",600},
+            {"bob-tungsten-carbide",600},
         }
     },
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            {"tungsten-carbide", 600},
+            {"bob-tungsten-carbide", 600},
         }
     },
     {

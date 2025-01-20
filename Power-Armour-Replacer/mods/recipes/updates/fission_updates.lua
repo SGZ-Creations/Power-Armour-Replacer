@@ -20,21 +20,6 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk1"], {
             {"solder", 40},
         }
     },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 115},
-            {"glass", 35},
-        }
-    },
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            ["silicon"] = {"angels-mono-silicon", 50},
-            {"glass", 35},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -55,16 +40,16 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk2"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 100},
-            {"rubber", 60},
+            {"bob-rubber", 60},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["iron-plate"] = {"silver-plate", 20},
-            {"glass", 30},
-            {"rubber", 60},
+            ["iron-plate"] = {"bob-silver-plate", 20},
+            {"bob-glass", 30},
+            {"bob-rubber", 60},
         }
     },
     {
@@ -78,29 +63,14 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk2"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["silver-plate"] = {"lead-plate", 40},
-        }
-    },
-	--Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 100},
-            {"glass", 100},
-            {"lead", 100},
-        }
-    },
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            ["silicon"] = {"angels-mono-silicon", 50},
+            ["bob-silver-plate"] = {"bob-lead-plate", 40},
         }
     },
     -- SeaBlock-
     {
         dependencies = {"SeaBlockMetaPack", "bobplates"},
         replacements = {
-            ["rubber"] = {"bronze-alloy", 60},
+            ["bob-rubber"] = {"bob-bronze-alloy", 60},
         }
     },
     --K2
@@ -130,9 +100,9 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk3"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 150},
-            {"brass-alloy", 100},
+            {"bob-brass-alloy", 100},
             {"invar-alloy", 65},
-            {"silver-plate", 70},
+            {"bob-silver-plate", 70},
         }
     },
     {
@@ -145,8 +115,8 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk3"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["silver-plate"] = {"angels-wire-silver", 120},
-            ["brass-alloy"] = {"clay-brick", 150},
+            ["bob-silver-plate"] = {"angels-wire-silver", 120},
+            ["bob-brass-alloy"] = {"clay-brick", 150},
         }
     },
     {
@@ -184,8 +154,8 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk4"], {
             ["advanced-circuit"] = {"electronic-circuit", 200},
             ["steel-plate"] = {"invar-alloy", 70},
             ["engine-unit"] = {"silicon-wafer", 100},
-            {"silver-plate", 60},
-            {"nickel-plate", 80},
+            {"bob-silver-plate", 60},
+            {"bob-nickel-plate", 80},
         }
     },
     {
@@ -199,13 +169,13 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk4"], {
     {
         dependencies = {"Darkstar_utilities_fixed", "bobplates"},
         replacements = {
-            ["nickel-plate"] = {"leaded-glass", 300},
+            ["bob-nickel-plate"] = {"leaded-glass", 300},
         }
     },
     {
         dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
-            {"gold-plate", 200},
+            {"bob-gold-plate", 200},
         }
     },
     --Angels
@@ -227,9 +197,9 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk5"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["engine-unit"] = {"aluminium-plate", 100},
+            ["engine-unit"] = {"bob-aluminium-plate", 100},
             ["advanced-circuit"] = {"advanced-circuit", 250},
-            {"brass-alloy", 150},
+            {"bob-brass-alloy", 150},
             {"ceramic-bearing", 80},
         }
     },
@@ -245,14 +215,7 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk5"], {
         replacements = {
             {"angels-plate-chrome", 150},
             {"angels-wire-silver", 135},
-            {"brass-alloy", 150},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"diamond", 5},
+            {"bob-brass-alloy", 150},
         }
     },
 })
@@ -263,18 +226,18 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk6"], {
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 300},
             ["processing-unit"] = {"insulated-cable", 100},
-            ["uranium-fuel-cell"] = {"resin", 100},
+            ["uranium-fuel-cell"] = {"bob-resin", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"lithium", 50},
+            ["processing-unit"] = {"bob-lithium", 50},
             ["advanced-circuit"] = {"advanced-circuit", 300},
             ["uranium-fuel-cell"] = {"cobalt-steel-bearing", 250},
-            ["electric-engine-unit"] = {"titanium-plate", 150},
+            ["electric-engine-unit"] = {"bob-titanium-plate", 150},
             {"cobalt-steel-bearing", 250},
-            {"zinc-plate", 150},
+            {"bob-zinc-plate", 150},
             {"lithium-ion-battery", 150},
         }
     },
@@ -289,7 +252,7 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"rubber", 300},
+            ["advanced-circuit"] = {"bob-rubber", 300},
             ["processing-unit"] = {"processing-unit", 350},
         }
     },
@@ -303,11 +266,11 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk7"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"processing-unit", 350},
-            ["advanced-circuit"] = {"silver-plate", 200},
+            ["advanced-circuit"] = {"bob-silver-plate", 200},
             ["electric-engine-unit"] = {"lithium-ion-battery", 175},
             ["pipe"] = {"cobalt-steel-bearing", 350},
             {"cobalt-steel-bearing", 350},
-            {"silver-plate", 200},
+            {"bob-silver-plate", 200},
         }
     },
     {
@@ -343,10 +306,10 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk8"], {
         dependencies = {"bobplates"},
         replacements = {
             ["sulfur"] = {"processing-unit", 400},
-            ["advanced-circuit"] = {"titanium-plate", 200},
+            ["advanced-circuit"] = {"bob-titanium-plate", 200},
             ["insulated-cable"] = {"silicon-nitride", 100},
-            {"titanium-plate", 200},
-            {"tungsten-plate", 200},
+            {"bob-titanium-plate", 200},
+            {"bob-tungsten-plate", 200},
         }
     },
     {
@@ -365,7 +328,7 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk8"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["titanium-plate"] = {"reinforced-concrete-brick", 100},
+            ["bob-titanium-plate"] = {"reinforced-concrete-brick", 100},
         }
     },
 })
@@ -388,9 +351,9 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk9"], {
             ["processing-unit"] = {"advanced-processing-unit", 450},
             ["petroleum-gas"] = {"ammonia", 200},
             ["low-density-structure"] =  {"nitinol-alloy", 100},
-            ["nuclear-fuel"] =  {"tungsten-carbide", 100},
+            ["nuclear-fuel"] =  {"bob-tungsten-carbide", 100},
             {"invar-alloy", 200},
-            {"tungsten-carbide", 100},
+            {"bob-tungsten-carbide", 100},
         }
     },
     {
@@ -434,7 +397,7 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk10"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["fi_materials_titan"] = {"titanium-plate", 350},
+            ["fi_materials_titan"] = {"bob-titanium-plate", 350},
         }
     },
     --Bobs
@@ -449,7 +412,7 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk10"], {
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 500},
             ["battery"] = {"silver-zinc-battery", 200},
-            {"copper-tungsten-alloy", 200},
+            {"bob-copper-tungsten-alloy", 200},
             {"nitinol-bearing", 100},
         }
     },

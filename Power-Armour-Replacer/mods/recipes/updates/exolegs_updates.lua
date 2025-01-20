@@ -21,30 +21,12 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk1"], {
             {"tinned-copper-cable", 100},
         }
     },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 115},
-        }
-    },
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            ["silicon"] = {"angels-mono-silicon", 90},
-        }
-    },
     --SE-K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["steel-plate"] = {"steel-gear-wheel", 50},
             ["electronic-circuit"] = {"automation-core", 20},
-        }
-    },
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
         }
     },
 })
@@ -68,28 +50,15 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk2"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["invar-alloy"] = {"bronze-alloy", 130},
+            ["invar-alloy"] = {"bob-bronze-alloy", 130},
             ["cobalt-steel-bearing"] = {"brass-gear-wheel", 70},
         },
-    },
-    --Darkstar
-    {
-        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
-        replacements = {
-            {"silicon", 115},
-        }
-    },
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            ["silicon"] = {"angels-mono-silicon", 90},
-        }
     },
     --248K
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["battery"] = {"aluminium-plate", 55},
+            ["battery"] = {"bob-aluminium-plate", 55},
         }
     },
     --SE-K2
@@ -124,19 +93,13 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
             ["iron-gear-wheel"] = {"invar-alloy", 155},
             ["lubricant"] = {"", 0},
             {"advanced-circuit", 300},
-            {"titanium-plate", 125},
+            {"bob-bob-titanium-plate", 125},
         }
     },
     {
         dependencies = {"bobelectronics"},
         replacements = {
             ["steel-plate"] = {"gilded-copper-cable", 200},
-        }
-    },
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"diamond", 4},
         }
     },
     --Angels
@@ -241,8 +204,8 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk5"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-processing-unit", 500},
-            ["steel-plate"] = {"copper-tungsten-alloy", 200},
-            ["battery"] = {"tungsten-carbide", 200},
+            ["steel-plate"] = {"bob-copper-tungsten-alloy", 200},
+            ["battery"] = {"bob-tungsten-carbide", 200},
             ["insulated-cable"] = {"nitinol-bearing", 200},
             {"nitinol-bearing", 200},
         }
