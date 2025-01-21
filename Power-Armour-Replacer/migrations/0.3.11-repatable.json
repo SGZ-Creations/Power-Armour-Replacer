@@ -1,10 +1,12 @@
 {
     "item":
     [
-        [ "-armor", "par-armour-mk" ],
-        [ "-armor", "par-armour-mk" ],  
-        [ "-armor", "par-armour-mk" ],
-        [ "-armor", "par-armour-mk" ],
+        [ "modular-armor", "par-armour-mk1" ],
+        [ "power-armor", "par-armour-mk1" ],  
+        [ "power-armor-mk2", "par-armour-mk2" ],
+        [ "bob-power-armor-mk3", "par-armour-mk3" ],
+        [ "bob-power-armor-mk4", "par-armour-mk4" ],
+        [ "bob-power-armor-mk5", "par-armour-mk5" ],
         [ "energy-shield-equipment", "par-shield-mk1" ],
         [ "energy-shield-mk2-equipment", "par-shield-mk2" ],
         [ "energy-shield-mk3-equipment", "par-shield-mk3" ],
@@ -15,6 +17,12 @@
     ],
     "entity":
     [
+        [ "modular-armor", "par-armour-mk1" ],
+        [ "power-armor", "par-armour-mk1" ],  
+        [ "power-armor-mk2", "par-armour-mk2" ],
+        [ "bob-power-armor-mk3", "par-armour-mk3" ],
+        [ "bob-power-armor-mk4", "par-armour-mk4" ],
+        [ "bob-power-armor-mk5", "par-armour-mk5" ],
         [ "shields_1", "par-shield-mk1" ],
         [ "shields_2", "par-shield-mk2" ],
         [ "shields_3", "par-shield-mk3" ],
@@ -24,6 +32,12 @@
     ],
     "equipment":
     [
+        [ "modular-armor", "par-armour-mk1" ],
+        [ "power-armor", "par-armour-mk1" ],  
+        [ "power-armor-mk2", "par-armour-mk2" ],
+        [ "bob-power-armor-mk3", "par-armour-mk3" ],
+        [ "bob-power-armor-mk4", "par-armour-mk4" ],
+        [ "bob-power-armor-mk5", "par-armour-mk5" ],
         [ "shields_1", "par-shield-mk1" ],
         [ "shields_2", "par-shield-mk2" ],
         [ "shields_3", "par-shield-mk3" ],
@@ -33,6 +47,12 @@
     ],
     "recipe":
     [
+        [ "modular-armor", "par-armour-mk1" ],
+        [ "power-armor", "par-armour-mk1" ],  
+        [ "power-armor-mk2", "par-armour-mk2" ],
+        [ "bob-power-armor-mk3", "par-armour-mk3" ],
+        [ "bob-power-armor-mk4", "par-armour-mk4" ],
+        [ "bob-power-armor-mk5", "par-armour-mk5" ],
         [ "shields_1", "par-shield-mk1" ],
         [ "shields_2", "par-shield-mk2" ],
         [ "shields_3", "par-shield-mk3" ],
@@ -42,6 +62,12 @@
     ],
     "technology":
     [   
+        [ "modular-armor", "par-armour-tech-1"],
+        [ "power-armor", "par-armour-tech-1"],  
+        [ "power-armor-mk2", "par-armour-tech-2"],
+        [ "bob-power-armor-3", "par-armour-tech-3"],
+        [ "bob-power-armor-4", "par-armour-tech-4"],
+        [ "bob-power-armor-5", "par-armour-tech-5"],
         [ "shields_1", "par-shield-tech-1" ],
         [ "shields_2", "par-shield-tech-2" ],
         [ "shields_3", "par-shield-tech-3" ],
