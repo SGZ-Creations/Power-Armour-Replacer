@@ -38,7 +38,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
         dependencies = {"bobplates", "angelssmelting"},
         replacements = {
             ["stone-brick"] = {"bob-lead-plate", 100},
-            ["bob-rubber"] = {"steel-gear-wheel", 25},
+            ["bob-rubber"] = {"bob-steel-gear-wheel", 25},
         }
     },
     -- SeaBlock
@@ -51,7 +51,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
     {
         dependencies = {"Bio_Industries", "angelssmelting",},
         replacements = {
-            ["steel-gear-wheel"] = {"bob-rubber", 50},
+            ["bob-steel-gear-wheel"] = {"bob-rubber", 50},
         }
     },
     --Pyanodon
@@ -66,7 +66,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"nexelit-plate", 25},
             ["stone-brick"] = {"solder", 30},
-            ["steel-plate"] = {"bob-titanium-plate", 20},
+            ["steel-plate"] = {"titanium-plate", 20},
         }
     },
     --EI
@@ -86,11 +86,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
             ["electronic-circuit"] = {"automation-core", 10},
         }
     },
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-        }
-    },
 })
 
 util.ingredient_prereq(data.raw.recipe["par-armour-mk2"], {
@@ -107,7 +102,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk2"], {
             ["stone-brick"] = {"bob-glass", 100},
             ["copper-plate"] = {"bob-bronze-alloy", 75},
             ["iron-gear-wheel"] = {"bob-silver-plate", 75},
-            ["steel-plate"] = {"steel-bearing", 155},
+            ["steel-plate"] = {"bob-steel-bearing", 155},
         }
     },
     {
@@ -172,14 +167,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"steel-gear-wheel", 50},
+            ["steel-plate"] = {"bob-steel-gear-wheel", 50},
             ["electronic-circuit"] = {"automation-core", 5},
-        }
-    },
-    --SE
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
         }
     },
 })
@@ -198,7 +187,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk3"], {
             ["advanced-circuit"] = {"electronic-circuit", 300},
             ["plastic-bar"] = {"bob-zinc-plate", 50},
             ["steel-plate"] = {"bob-aluminium-plate", 150},
-            ["engine-unit"] = {"cobalt-steel-alloy", 100},
+            ["engine-unit"] = {"bob-cobalt-steel-alloy", 100},
             {"bob-rubber", 60},
         }
     },
@@ -220,7 +209,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk3"], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["cobalt-steel-alloy"] = {"bob-lead-plate", 100},
+            ["bob-cobalt-steel-alloy"] = {"bob-lead-plate", 100},
             ["bob-zinc-plate"] = {"clay-brick", 125},
         }
     },
@@ -255,7 +244,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk3"], {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
             ["el_aluminum_item"] = {"bob-aluminium-plate", 150},
-            ["cobalt-steel-alloy"] = {"lithium-ion-battery", 30},
+            ["bob-cobalt-steel-alloy"] = {"bob-lithium-ion-battery", 30},
         }
     },
     --Pyanodon
@@ -302,8 +291,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
             ["advanced-circuit"] = {"electronic-circuit", 400},
             ["engine-unit"] = {"silicon", 160},
             ["iron-gear-wheel"] = {"bob-gunmetal-alloy", 120},
-            ["copper-plate"] = {"cobalt-steel-alloy", 150},
-            {"invar-alloy", 100},
+            ["copper-plate"] = {"bob-cobalt-steel-alloy", 150},
+            {"bob-invar-alloy", 100},
         }
     },
     {
@@ -331,7 +320,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
     {
         dependencies = {"angelssmelting", "bobplates", "bobelectronics"},
         replacements = {
-            ["cobalt-steel-alloy"] = {"solder", 200},
+            ["bob-cobalt-steel-alloy"] = {"solder", 200},
         }
     },
     --Pyanodon
@@ -442,8 +431,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
         dependencies = {"bobenemies", "bobplates"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            ["steel-plate"] = {"alien-blue-alloy", 100},
-            {"alien-blue-alloy", 100},
+            ["steel-plate"] = {"bob-alien-blue-alloy", 100},
+            {"bob-alien-blue-alloy", 100},
         }
     },
     {
@@ -459,7 +448,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["processing-unit"] = {"plastic-bar", 100},
-            ["bob-gold-plate"] = {"cobalt-steel-alloy", 100},
+            ["bob-gold-plate"] = {"bob-cobalt-steel-alloy", 100},
             {"gilded-copper-cable", 55},
         }
     },
@@ -481,8 +470,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"ceramic-bearing", 200},
-            ["low-density-structure"] = {"cobalt-steel-bearing", 200},
+            ["steel-plate"] = {"bob-ceramic-bearing", 200},
+            ["low-density-structure"] = {"bob-cobalt-steel-bearing", 200},
             ["uranium-fuel-cell"] = {"bob-tungsten-plate", 250},
             {"bob-tungsten-plate", 250},
             {"sapphire-5", 50},
@@ -504,7 +493,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
         replacements = {
             {"alien-artifact", 700},
             {"alien-artifact-red", 500},
-            {"alien-orange-alloy", 100},
+            {"bob-alien-orange-alloy", 100},
         }
     },
     --Angels
@@ -521,12 +510,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
             ["bob-glass"] = {"leaded-bob-glass", 50},
         }
     },
-    -- SE K2
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-        }
-    },
 })
 
 util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
@@ -540,7 +523,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
         dependencies = {"bobplates"},
         replacements = {
             ["nuclear-fuel"] = {"bob-copper-tungsten-alloy", 200},
-            ["battery"] = {"silver-zinc-battery", 100},
+            ["battery"] = {"bob-silver-zinc-battery", 100},
             {"bob-copper-tungsten-alloy", 200},
             {"sapphire-5", 100},
             {"ruby-5", 100},
@@ -574,13 +557,13 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["solar-panel"] = {"advanced-processing-unit", 900},
+            ["solar-panel"] = {"bob-advanced-processing-unit", 900},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["solar-panel"] = {"advanced-processing-unit", 900},
+            ["solar-panel"] = {"bob-advanced-processing-unit", 900},
             ["low-density-structure"] = {"bob-tungsten-carbide", 300},
             {"bob-tungsten-plate", 300},
             {"sapphire-5", 50},
@@ -641,18 +624,18 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["solar-panel"] = {"advanced-processing-unit", 1000},
+            ["solar-panel"] = {"bob-advanced-processing-unit", 1000},
             ["processing-unit"] = {"insulated-cable", 550},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["solar-panel"] = {"advanced-processing-unit", 1000},
+            ["solar-panel"] = {"bob-advanced-processing-unit", 1000},
             ["processing-unit"] = {"bob-copper-tungsten-alloy", 500},
             {"bob-copper-tungsten-alloy", 500},
-            {"nitinol-alloy", 600},
-            {"nitinol-bearing", 600},
+            {"bob-nitinol-alloy", 600},
+            {"bob-nitinol-bearing", 600},
             {"sapphire-5", 100},
             {"ruby-5", 100},
             {"emerald-5", 100},

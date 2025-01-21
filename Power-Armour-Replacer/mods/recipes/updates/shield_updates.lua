@@ -12,7 +12,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 50},
             ["stone-brick"] = {"bob-rubber", 90},
-            {"carbon", 100},
+            {"bob-carbon", 100},
         }
     },
     {
@@ -48,7 +48,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["steel-plate"] = {"steel-bearing", 50},
+            ["steel-plate"] = {"bob-steel-bearing", 50},
             ["iron-plate"] = {"bob-tin-plate", 55},
             ["engine-unit"] = {"bob-silver-plate", 100},
         }
@@ -57,13 +57,13 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk2"], {
     {
         dependencies = {"angelssmelting",},
         replacements = {
-            ["bob-silver-plate"] = {"steel-gear-wheel", 80},
+            ["bob-silver-plate"] = {"bob-steel-gear-wheel", 80},
         }
     },
     {
         dependencies = {"angelssmelting", "bobplates",},
         replacements = {
-            ["bob-silver-plate"] = {"steel-gear-wheel", 80},
+            ["bob-silver-plate"] = {"bob-steel-gear-wheel", 80},
         }
     },
     --K2
@@ -71,7 +71,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk2"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["engine-unit"] = {"rare-metals", 40},
-            ["steel-plate"] = {"steel-gear-wheel", 40},
+            ["steel-plate"] = {"bob-steel-gear-wheel", 40},
             ["iron-plate"] = {"iron-beam", 40},
         }
     },
@@ -95,8 +95,8 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk3"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 150},
-            ["advanced-circuit"] = {"invar-alloy", 45},
-            {"invar-alloy", 45},
+            ["advanced-circuit"] = {"bob-invar-alloy", 45},
+            {"bob-invar-alloy", 45},
             {"bob-rubber", 65},
         }
     },
@@ -141,12 +141,12 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk4"], {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 200},
-            ["small-lamp"] = {"silicon-wafer", 125},
+            ["small-lamp"] = {"bob-silicon-wafer", 125},
             ["battery"] = {"bob-silver-plate", 100},
             ["plastic-bar"] = {"bob-brass-alloy", 100},
             ["bob-resin"] = {"bob-brass-alloy", 100},
             ["steel-plate"] = {"silicon", 165},
-            {"silicon-wafer", 125},
+            {"bob-silicon-wafer", 125},
         }
     },
     --Angels
@@ -160,7 +160,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk4"], {
     {
         dependencies = {"248k", "bobplates"},
         replacements = {
-            {"lithium-ion-battery", 35},
+            {"bob-lithium-ion-battery", 35},
         }
     },
     {
@@ -216,21 +216,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk5"], {
             ["bob-silver-plate"] = {"angels-wire-silver", 105},
             ["electric-engine-unit"] = {"engine-unit", 100},
             {"angels-plate-chrome", 50},
-            {"lithium-ion-battery", 100},
-        }
-    },
-    --SE-K2
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
-        }
-    },
-    {
-        dependencies = {"Krastorio2"},
-        replacements = {
-            --[""] = {"", 0},
+            {"bob-lithium-ion-battery", 100},
         }
     },
 })
@@ -245,11 +231,11 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk6"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-circuit", 300},
-            ["uranium-235"] = {"cobalt-steel-bearing", 100},
+            ["uranium-235"] = {"bob-cobalt-steel-bearing", 100},
             ["nuclear-fuel"] = {"bob-titanium-plate", 100},
             ["battery"] = {"lithium", 120},
             {"bob-aluminium-plate", 200},
-            {"ceramic-bearing", 200},
+            {"bob-ceramic-bearing", 200},
         }
     },
     {
@@ -280,12 +266,12 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk7"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"processing-unit", 350},
-            ["solid-fuel"] = {"titanium-gear-wheel", 220},
-            ["uranium-238"] = {"lithium-ion-battery", 145},
+            ["solid-fuel"] = {"bob-titanium-gear-wheel", 220},
+            ["uranium-238"] = {"bob-lithium-ion-battery", 145},
             ["bob-resin"] = {"bob-tungsten-plate", 200},
-            {"titanium-gear-wheel", 220},
-            {"lithium-ion-battery", 145},
-            {"silicon-nitride", 200},
+            {"bob-titanium-gear-wheel", 220},
+            {"bob-lithium-ion-battery", 145},
+            {"bob-silicon-nitride", 200},
         }
     },
     {
@@ -328,8 +314,8 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk8"], {
             ["lubricant"] = {"", 0},
             {"bob-gunmetal-alloy", 100},
             {"bob-tungsten-plate", 360},
-            {"cobalt-steel-alloy", 290},
-            {"silicon-nitride", 400},
+            {"bob-cobalt-steel-alloy", 290},
+            {"bob-silicon-nitride", 400},
         }
     },
     {
@@ -359,7 +345,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 450},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
             ["uranium-235"] = {"insulated-cable", 200},
             ["petroleum-gas"] = {"", 0},
         }
@@ -367,12 +353,12 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk9"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 450},
-            ["battery"] = {"silver-zinc-battery", 280},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
+            ["battery"] = {"bob-silver-zinc-battery", 280},
             ["uranium-235"] = {"bob-copper-tungsten-alloy", 300},
             ["petroleum-gas"] = {"", 0},
             {"bob-tungsten-carbide", 325},
-            {"nitinol-bearing", 200},
+            {"bob-nitinol-bearing", 200},
         }
     },
     {
@@ -411,7 +397,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["sulfuric-acid"] = {"", 0},
             {"bob-rubber", 395},
         }
@@ -419,11 +405,11 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk10"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["sulfuric-acid"] = {"", 0},
-            {"silver-zinc-battery", 280},
+            {"bob-silver-zinc-battery", 280},
             {"bob-tungsten-carbide", 325},
-            {"nitinol-gear-wheel", 450},
+            {"bob-nitinol-gear-wheel", 450},
         }
     },
     {

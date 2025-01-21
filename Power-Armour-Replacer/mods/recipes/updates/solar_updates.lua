@@ -7,7 +7,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
             ["iron-stick"] = {"bob-lead-plate", 60},
             ["electronic-circuit"] = {"electronic-circuit", 50},
             {"bob-rubber", 30},
-            {"carbon", 75},
+            {"bob-carbon", 75},
             {"stone-bricks", 50},
         }
     },
@@ -32,7 +32,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk2"], {
         replacements = {
             ["copper-plate"] = {"solder", 110},
             ["electronic-circuit"] = {"electronic-circuit", 60},
-            {"carbon", 125},
+            {"bob-carbon", 125},
             {"bob-silver-plate", 135},
             {"bob-rubber", 50},
             {"bob-glass", 50},
@@ -79,15 +79,9 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk3"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"steel-bearing", 30},
+            ["steel-plate"] = {"bob-steel-bearing", 30},
             {"electronic-circuit", 70},
-            {"silicon-wafer", 100},
-        }
-    },
-    {
-        dependencies = {"bobelectronics", "bobplates"},
-        replacements = {
-            --{"", 0},
+            {"bob-silicon-wafer", 100},
         }
     },
     --K2
@@ -109,11 +103,11 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk4"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["battery"] = {"silicon-nitride", 50},
+            ["battery"] = {"bob-silicon-nitride", 50},
             ["engine-unit"] = {"bob-nickel-plate", 80},
             ["advanced-circuit"] = {"bob-bronze-alloy", 60},
             ["electronic-circuit"] = {"electronic-circuit", 70},
-            {"silicon-wafer", 200},
+            {"bob-silicon-wafer", 200},
             {"bob-bronze-alloy", 60},
         }
     },
@@ -147,8 +141,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk5"], {
             ["advanced-circuit"] = {"advanced-circuit", 90},
             ["steel-plate"] = {"bob-brass-alloy", 70},
             ["sulfur"] = {"bob-lead-plate", 40},
-            ["battery"] = {"silicon-wafer", 300},
-            {"silicon-nitride", 65},
+            ["battery"] = {"bob-silicon-wafer", 300},
+            {"bob-silicon-nitride", 65},
             {"bob-aluminium-plate", 60},
             {"bob-lead-plate", 50},
         }
@@ -156,7 +150,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk5"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["silicon-wafer"] = {"angels-mono-silcon", 300},
+            ["bob-silicon-wafer"] = {"angels-mono-silcon", 300},
             ["steel-plate"] = {"angels-plate-chrome", 50},
         }
     },
@@ -173,17 +167,11 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk6"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-circuit", 110},
-            ["electric-engine-unit"] = {"cobalt-steel-alloy", 100},
-            ["engine-unit"] = {"silicon-nitride", 200},
+            ["electric-engine-unit"] = {"bob-cobalt-steel-alloy", 100},
+            ["engine-unit"] = {"bob-silicon-nitride", 200},
             ["iron-stick"] = {"bob-titanium-plate", 200},
-            {"silicon-wafer", 400},
+            {"bob-silicon-wafer", 400},
             {"bob-lithium", 50},
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            --[""] = {"", 0},
         }
     },
 })
@@ -199,10 +187,10 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk7"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"processing-unit", 120},
-            ["electric-engine-unit"] = {"cobalt-steel-alloy", 100},
-            {"lithium-ion-battery", 50},
-            {"silicon-wafer", 500},
-            {"silicon-nitride", 400},
+            ["electric-engine-unit"] = {"bob-cobalt-steel-alloy", 100},
+            {"bob-lithium-ion-battery", 50},
+            {"bob-silicon-wafer", 500},
+            {"bob-silicon-nitride", 400},
         }
     },
     {
@@ -225,7 +213,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk8"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["battery"] = {"silver-zinc-battery", 100},
+            ["battery"] = {"bob-silver-zinc-battery", 100},
             {"processing-unit", 130},
             {"invar-plate", 350},
             {"bob-gunmetal-alloy", 350},
@@ -251,8 +239,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 140},
-            ["lubricant"] = {"ferric-chloride-solution", 200},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 140},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
             {"insulated-cable", 250},
             --[""] = {"", 0},
         }
@@ -260,8 +248,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk9"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 140},
-            ["lubricant"] = {"ferric-chloride-solution", 200},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 140},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
             {"bob-tungsten-carbide", 250},
             {"bob-tungsten-plate", 500},
         }
@@ -286,17 +274,17 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["lubricant"] = {"ferric-chloride-solution", 200},
-            ["processing-unit"] = {"advanced-processing-unit", 150},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 150},
             {"insulated-cable", 500},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 150},
-            ["lubricant"] = {"ferric-chloride-solution", 200},
-            {"nitinol-alloy", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 150},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
+            {"bob-nitinol-alloy", 500},
             {"bob-copper-tungsten-alloy", 500},
         }
     },
@@ -305,14 +293,6 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk10"], {
         replacements = {
             {"gilded-copper-cable", 500},
             {"solder", 500},
-        }
-    },
-    --Angles
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
         }
     },
     --K2

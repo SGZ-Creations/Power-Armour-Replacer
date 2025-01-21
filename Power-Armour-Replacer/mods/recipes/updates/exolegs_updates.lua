@@ -10,8 +10,8 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["iron-gear-wheel"] = {"carbon", 80},
-            {"steel-gear-wheel", 200},
+            ["iron-gear-wheel"] = {"bob-carbon", 80},
+            {"bob-steel-gear-wheel", 200},
         }
     },
     {
@@ -25,7 +25,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"steel-gear-wheel", 50},
+            ["steel-plate"] = {"bob-steel-gear-wheel", 50},
             ["electronic-circuit"] = {"automation-core", 20},
         }
     },
@@ -40,9 +40,9 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk2"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["iron-stick"] = {"invar-alloy", 150},
-            ["steel-plate"] = {"cobalt-steel-bearing", 75},
-            ["iron-gear-wheel"] = {"steel-bearing", 60},
+            ["iron-stick"] = {"bob-invar-alloy", 150},
+            ["steel-plate"] = {"bob-cobalt-steel-bearing", 75},
+            ["iron-gear-wheel"] = {"bob-steel-bearing", 60},
             ["electronic-circuit"] = {"electronic-circuit", 200},
         }
     },
@@ -50,8 +50,8 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk2"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["invar-alloy"] = {"bob-bronze-alloy", 130},
-            ["cobalt-steel-bearing"] = {"brass-gear-wheel", 70},
+            ["bob-invar-alloy"] = {"bob-bronze-alloy", 130},
+            ["bob-cobalt-steel-bearing"] = {"bob-brass-gear-wheel", 70},
         },
     },
     --248K
@@ -88,9 +88,9 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["iron-stick"] = {"titanium-bearing", 75},
-            ["battery"] = {"lithium-ion-battery", 90},
-            ["iron-gear-wheel"] = {"invar-alloy", 155},
+            ["iron-stick"] = {"bob-titanium-bearing", 75},
+            ["battery"] = {"bob-lithium-ion-battery", 90},
+            ["iron-gear-wheel"] = {"bob-invar-alloy", 155},
             ["lubricant"] = {"", 0},
             {"advanced-circuit", 300},
             {"bob-bob-titanium-plate", 125},
@@ -113,7 +113,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["battery"] = {"lithium-ion-battery", 55},
+            ["battery"] = {"bob-lithium-ion-battery", 55},
         }
     },
     --SEK2
@@ -151,10 +151,10 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk4"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["plastic-bar"] = {"cobalt-steel-bearing", 120},
-            ["battery"] = {"silver-zinc-battery", 150},
+            ["plastic-bar"] = {"bob-cobalt-steel-bearing", 120},
+            ["battery"] = {"bob-silver-zinc-battery", 150},
             {"processing-unit", 400},
-            {"tungsten-gear-wheel", 115},
+            {"bob-tungsten-gear-wheel", 115},
         }
     },
     {
@@ -196,18 +196,18 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             {"insulated-cable", 660},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["steel-plate"] = {"bob-copper-tungsten-alloy", 200},
             ["battery"] = {"bob-tungsten-carbide", 200},
-            ["insulated-cable"] = {"nitinol-bearing", 200},
-            {"nitinol-bearing", 200},
+            ["insulated-cable"] = {"bob-nitinol-bearing", 200},
+            {"bob-nitinol-bearing", 200},
         }
     },
     {

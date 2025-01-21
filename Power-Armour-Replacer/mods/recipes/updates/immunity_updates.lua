@@ -10,8 +10,8 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk1"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"steel-bearing", 150},
-            {"carbon", 40},
+            ["steel-plate"] = {"bob-steel-bearing", 150},
+            {"bob-carbon", 40},
         }
     },
     -- Angels
@@ -25,7 +25,7 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk1"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-        ["battery"] = {"lithium-ion-battery", 35},
+        ["battery"] = {"bob-lithium-ion-battery", 35},
         }
     },
     {
@@ -56,15 +56,15 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["nuclear-fuel"] = {"advanced-processing-unit", 200},
+            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["nuclear-fuel"] = {"advanced-processing-unit", 200},
+            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
             ["sulfur"] = {"bob-tungsten-plate", 200},
-            {"cobalt-steel-alloy", 200},
+            {"bob-cobalt-steel-alloy", 200},
         }
     },
     {

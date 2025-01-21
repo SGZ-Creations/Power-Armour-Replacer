@@ -4,14 +4,14 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk1"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 50},
-            ["small-electric-pole"] = {"ruber", 50},
+            ["small-electric-pole"] = {"bob-rubber", 50},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 50},
-            ["small-electric-pole"] = {"ruber", 50},
+            ["small-electric-pole"] = {"bob-rubber", 50},
             ["steel-plate"] = {"bob-lead-plate", 50},
         }
     },
@@ -88,14 +88,14 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk3"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            {"lithium-ion-battery", 20},
+            {"bob-lithium-ion-battery", 20},
         }
     },
     --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["steel-plate"] = {"steel-bearing", 85},
+            ["steel-plate"] = {"bob-steel-bearing", 85},
         }
     },
     --K2
@@ -119,7 +119,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk4"], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"bob-bronze-alloy", 60},
-            {"invar-alloy", 50},
+            {"bob-invar-alloy", 50},
         }
     },{
         dependencies = {"bobelectronics", "bobplates"},
@@ -131,7 +131,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk4"], {
     {
         dependencies = {"248k", "bobplates"},
         replacements = {
-            {"lithium-ion-battery", 10},
+            {"bob-lithium-ion-battery", 10},
         }
     },
     --Angles
@@ -160,7 +160,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk5"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["low-density-structure"] = {"brass-plate", 50},
+            ["low-density-structure"] = {"bob-brass-alloy", 50},
             ["steel-plate"] = {"bob-aluminium-plate", 100},
         }
     },
@@ -174,7 +174,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk5"], {
     {
         dependencies = {"248k", "bobplates"},
         replacements = {
-            {"lithium-ion-battery", 20},
+            {"bob-lithium-ion-battery", 20},
         }
     },
     {
@@ -209,7 +209,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk6"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["el_lithium_battery"] = {"lithium-ion-battery", 100},
+            ["el_lithium_battery"] = {"bob-lithium-ion-battery", 100},
         }
     },
     --Angles
@@ -239,10 +239,10 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk7"], {
         dependencies = {"bobplates"},
         replacements = {
             ["armour-control-unit"] = {"low-density-structure", 50},
-            ["battery"] = {"silver-zinc-battery", 100},
+            ["battery"] = {"bob-silver-zinc-battery", 100},
             ["plastic-bar"] = {"bob-titanium-plate", 150},
             ["lubricant"] = {"", 0},
-            {"lithium-ion-battery", 100},
+            {"bob-lithium-ion-battery", 100},
         }
     },
     {
@@ -261,7 +261,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk7"], {
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-            ["el_lithium_battery"] = {"lithium-ion-battery", 100},
+            ["el_lithium_battery"] = {"bob-lithium-ion-battery", 100},
         }
     },
     --Angles
@@ -290,7 +290,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk8"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["battery"] = {"silver-zinc-battery", 200},
+            ["battery"] = {"bob-silver-zinc-battery", 200},
             ["water"] = {"", 0},
             {"bob-tungsten-plate", 200},
         }
@@ -319,14 +319,14 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 450},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 450},
-            ["battery"] = {"silver-zinc-battery", 300},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
+            ["battery"] = {"bob-silver-zinc-battery", 300},
             ["plastic-bar"] = {"bob-copper-tungsten-alloy", 250},
         }
     },
@@ -342,15 +342,15 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
-            ["battery"] = {"silver-zinc-battery", 400},
-            ["armour-control-unit"] = {"nitinol-alloy", 100},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
+            ["battery"] = {"bob-silver-zinc-battery", 400},
+            ["armour-control-unit"] = {"bob-nitinol-alloy", 100},
             {"bob-tungsten-carbide",600},
         }
     },

@@ -102,6 +102,7 @@ util.technology_dependancy
 			"par-night-immunity-tech-2",
 		}
 	},
+	--[[
 	["boblogistics"] = {
 		["par-roboport-tech-3"] = {
 			"bob-robo-modular-1"
@@ -140,7 +141,7 @@ util.technology_dependancy
 			"advanced-electronics-2"
 		},
 		["par-armour-tech-9"] = {
-			"advanced-electronics-3"
+			"bob-advanced-processing-unit"
 		},
 	},
 
@@ -161,16 +162,6 @@ util.technology_dependancy
 		},
 	},
 
---[[
-	["bobwarfare"] = {
-		["par-armour-tech-5"] = {
-			["uranium-processing"] = "bob-armor-making-3"
-		},
-		["par-armour-tech-8"] = {
-			"bob-armor-making-4"
-		},
-	},
-]]
 	["bobrevamp"] = {
 		["par-armour-tech-8"] = {
 			"heat-shield",
@@ -191,41 +182,41 @@ util.technology_dependancy
 			["electronics"] = "automation",
 		},
 		["par-armour-tech-3"] = {
-			["plastics"] = "zinc-processing",
-			"aluminium-processing",
-			"cobalt-processing",
+			["plastics"] = "bob-zinc-processing",
+			"bob-aluminium-processing",
+			"bob-cobalt-processing",
 		},
 		["par-armour-tech-4"] = {
-			["advanced-electronics"] = "invar-processing",
+			["advanced-electronics"] = "bob-invar-processing",
 		},
 		["par-armour-tech-5"] = {
-			["electric-engine"] = "gem-processing-3",
+			["electric-engine"] = "bob-gem-processing-3",
 			--["uranium-processing"] = "",
 		},
 		["par-armour-tech-6"] = {
-			["advanced-electronics-3"] = "electric-engine",
-			"titanium-processing",
+			["bob-advanced-processing-unit"] = "electric-engine",
+			"bob-titanium-processing",
 			"battery-2",
 		},
 		["par-armour-tech-7"] = {
-			"tungsten-processing",
-			"ceramics",
+			"bob-tungsten-processing",
+			"bob-ceramics",
 		},
 		["par-armour-tech-8"] = {
 			"battery-3",
 			"low-density-structure",
 		},
 		["par-armour-tech-9"] = {
-			"nitinol-processing",
+			"bob-nitinol-processing",
 		},
 		["par-armour-tech-10"] = {
 			"armour-control-unit",
 		},
 		["par-shield-tech-6"] = {
-			"cobalt-processing"
+			"bob-cobalt-processing"
 		},
 		["par-laser-tech-4"] = {
-			["advanced-electronics"] = "gem-processing-2"
+			["advanced-electronics"] = "bob-gem-processing-2"
 		},
 	},
 
@@ -236,11 +227,6 @@ util.technology_dependancy
 		["par-armour-tech-2"] = {
 			"angels-steel-smelting-1",
 		},
-		["par-armour-tech-3"] = {
-			["zinc-processing"] = "angels-stone-smelting-1",
-			["cobalt-processing"] = "angels-lead-smelting-2",
-			["aluminium-processing"] = "angels-aluminium-smelting-1",
-		},
 		["par-armour-tech-4"] = {
 			"angels-silver-smelting-1",
 			"angels-stone-smelting-2",
@@ -250,15 +236,15 @@ util.technology_dependancy
 		},
 		["par-armour-tech-6"] = {
 			["rocket-fuel"] = "angels-titanium-smelting-1",
-			["titanium-processing"] = "angels-titanium-smelting-1",
+			["bob-titanium-processing"] = "angels-titanium-smelting-1",
 			["battery-2"] = "angels-glass-smelting-2",
 			"angels-gold-smelting-1",
 		},
 		["par-armour-tech-7"] = {
-			["tungsten-processing"] = "angels-tungsten-smelting-1",
+			["bob-tungsten-processing"] = "angels-tungsten-smelting-1",
 		},
 		["par-armour-tech-9"] = {
-			["nitinol-processing"] = "angels-nitinol-smelting-1",
+			["bob-nitinol-processing"] = "angels-nitinol-smelting-1",
 			"angels-stone-smelting-3",
 		},
 		["par-exoskeleton-tech-3"] = {
@@ -285,13 +271,16 @@ util.technology_dependancy
 		},
 		["par-armour-tech-3"] = {
 			["advanced-electronics"] = "angels-brass-smelting-1",
+			["bob-zinc-processing"] = "angels-stone-smelting-1",
+			["bob-cobalt-processing"] = "angels-lead-smelting-2",
+			["bob-aluminium-processing"] = "angels-aluminium-smelting-1",
 		},
 		["par-armour-tech-6"] = {
 			"angels-cobalt-steel-smelting-1",
 		},
 		["par-armour-tech-7"] = {
-			["low-density-structure"] = "cobalt-processing",
-			["cobalt-processing"] = "angels-cobalt-steel-smelting-1",
+			["low-density-structure"] = "bob-cobalt-processing",
+			["bob-cobalt-processing"] = "angels-cobalt-steel-smelting-1",
 		},
 		["par-fission-reactor-tech-3"] = {
 			"angels-invar-smelting-1",
@@ -353,8 +342,9 @@ util.technology_dependancy
 		["par-armour-tech-5"] = {
 			["advanced-electronics-2"] = "machine-components-mk02",
 		},
-	},
+	},]]
 }
+
 
 if mods["TeleportationEquipment"] then
     local tech_eff = data.raw.technology["teleportation-equipment"]

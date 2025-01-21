@@ -12,18 +12,18 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk1"], {
             ["small-lamp"] = {"bob-rubber", 150},
             ["electronic-circuit"] = {"basic-circuit-board", 100},
             ["copper-cable"] = {"insualted-cable", 100},
-            ["iron-chest"] = {"steel-gear-wheel", 100},
+            ["iron-chest"] = {"bob-steel-gear-wheel", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["small-lamp"] = {"carbon", 100},
+            ["small-lamp"] = {"bob-carbon", 100},
             ["wood"] = {"bob-resin", 150},
-            ["iron-chest"] = {"carbon", 100},
+            ["iron-chest"] = {"bob-carbon", 100},
             {"stone-brick", 50},
-            {"carbon", 100},
+            {"bob-carbon", 100},
         }
     },
     {
@@ -86,8 +86,8 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 200},
-            ["iron-gear-wheel"] = {"steel-bearing", 100},
-            {"carbon", 200},
+            ["iron-gear-wheel"] = {"bob-steel-bearing", 100},
+            {"bob-carbon", 200},
         }
     },
     {
@@ -194,8 +194,8 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk5"], {
             ["steel-chest"] = {"advanced-circuit", 250}, --2
             ["insualted-cable"] = {"bob-aluminium-plate", 200}, --1
             ["flying-robot-frame"] = {"bob-aluminium-plate", 200}, --1
-            ["battery"] = {"lithium-ion-battery", 250}, --3
-            {"ceramic-bearing", 200}, --0
+            ["battery"] = {"bob-lithium-ion-battery", 250}, --3
+            {"bob-ceramic-bearing", 200}, --0
         }
     },
     {
@@ -207,8 +207,8 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk5"], {
             ["insualted-cable"] = {"roboport-door-2", 200}, --1
             ["bob-aluminium-plate"] = {"roboport-door-2", 5}, --1
             ["battery"] = {"roboport-chargepad-2", 5}, --3
-            ["lithium-ion-battery"] = {"roboport-chargepad-2", 5}, --3
-            ["ceramic-bearing"] = {"", 0}, --0
+            ["bob-lithium-ion-battery"] = {"roboport-chargepad-2", 5}, --3
+            ["bob-ceramic-bearing"] = {"", 0}, --0
         }
     },
 })
@@ -229,8 +229,8 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk6"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-circuit", 300},
-            ["steel-plate"] = {"invar-alloy", 300},
-            {"silicon-nitride", 300},
+            ["steel-plate"] = {"bob-invar-alloy", 300},
+            {"bob-silicon-nitride", 300},
             ["lubricant"] = {"", 0},
         }
     },
@@ -241,8 +241,8 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk6"], {
             ["advanced-circuit"] = {"roboport-antenna-2", 10},
             ["processing-unit"] = {"roboport-antenna-2", 10},
             ["steel-plate"] = {"roboport-door-2", 10},
-            ["invar-alloy"] = {"roboport-door-2", 10},
-            ["silicon-nitride"] = {"", 0},
+            ["bob-invar-alloy"] = {"roboport-door-2", 10},
+            ["bob-silicon-nitride"] = {"", 0},
             ["lubricant"] = {"", 0},
         }
     },
@@ -339,17 +339,17 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["advanced-circuit"] = {"advanced-processing-unit", 450},
+            ["advanced-circuit"] = {"bob-advanced-processing-unit", 450},
             ["lubricant"] = {"", 0},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["advanced-circuit"] = {"advanced-processing-unit", 450},
+            ["advanced-circuit"] = {"bob-advanced-processing-unit", 450},
             ["lubricant"] = {"", 0},
             {"bob-copper-tungsten-alloy", 450},
-            {"silicon-wafer", 450},
+            {"bob-silicon-wafer", 450},
         }
     },
     {
@@ -365,10 +365,10 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk9"], {
             ["armour-control-unit"] = {"roboport-antenna-4", 5},
             ["low-density-structure"] = {"roboport-chargepad-4", 5},
             ["advanced-circuit"] = {"roboport-door-4", 5},
-            ["advanced-processing-unit"] = {"roboport-door-4", 5},
+            ["bob-advanced-processing-unit"] = {"roboport-door-4", 5},
             ["tinned-copper-cable"] = {"", 0},
             ["bob-copper-tungsten-alloy"] = {"", 0},
-            ["silicon-wafer"] = {"", 0},
+            ["bob-silicon-wafer"] = {"", 0},
             ["lubricant"] = {"", 0},
             ["solder"] = {"", 0},
         }
@@ -382,16 +382,16 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"advanced-processing-unit", 500},
-            {"silver-zinc-battery", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 500},
+            {"bob-silver-zinc-battery", 500},
             {"bob-tungsten-carbide", 500},
-            {"nitinol-alloy", 500},
+            {"bob-nitinol-alloy", 500},
         }
     },
     {
@@ -399,11 +399,11 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk10"], {
         replacements = {
             ["low-density-structure"] = {"roboport-antenna-4", 10},
             ["armour-control-unit"] = {"roboport-chargepad-4", 10},
-            ["advanced-processing-unit"] = {"roboport-door-4", 10},
+            ["bob-advanced-processing-unit"] = {"roboport-door-4", 10},
             ["processing-unit"] = {"roboport-door-4", 10},
-            ["silver-zinc-battery"] = {"", 0},
+            ["bob-silver-zinc-battery"] = {"", 0},
             ["bob-tungsten-carbide"] = {"", 0},
-            ["nitinol-alloy"] = {"", 0},
+            ["bob-nitinol-alloy"] = {"", 0},
         }
     },
     --K2

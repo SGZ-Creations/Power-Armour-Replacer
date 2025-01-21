@@ -9,8 +9,8 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk1"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["small-lamp"] = {"steel-bearing", 50},
-            ["iron-gear-wheel"] = {"carbon", 35},
+            ["small-lamp"] = {"bob-steel-bearing", 50},
+            ["iron-gear-wheel"] = {"bob-carbon", 35},
         }
     },
     {
@@ -24,14 +24,14 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk1"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["copper-cable"] = {"angels-wire-silver", 100},
-            {"silicon-wafers", 45},
+            {"bob-silicon-wafers", 45},
         }
     },
     {
         dependencies = {"angelspetrochem"},
         replacements = {
             ["lubricant"] = {"hydrogen", 250},
-            ["carbon"] = {"solid-carbon", 150},
+            ["bob-carbon"] = {"solid-bob-carbon", 150},
         }
     },
     -- SE-K2
@@ -57,13 +57,13 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk2"], {
         replacements = {
             ["advanced-circuit"] = {"insulated-cable", 240},
             ["processing-unit"] = {"bob-rubber", 200},
-            ["nuclear-fuel"] = {"advanced-processing-unit", 200},
+            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["advanced-circuit"] = {"advanced-processing-unit", 200},
+            ["advanced-circuit"] = {"bob-advanced-processing-unit", 200},
             ["nuclear-fuel"] = {"bob-titanium-plate", 200},
             ["processing-unit"] = {"bob-copper-tungsten-alloy", 200},
             {"bob-copper-tungsten-alloy", 200},
