@@ -1,4 +1,4 @@
---dlc-compatible.recipes
+--compatible.recipes
 	require("mods.recipes.updates.armour_updates")
 	require("mods.recipes.updates.batteries_updates")
 	require("mods.recipes.updates.exolegs_updates")
@@ -9,10 +9,9 @@
 	require("mods.recipes.updates.roboports_updates")
 	require("mods.recipes.updates.shield_updates")
 	require("mods.recipes.updates.solar_updates")
+	require("mods.recipes.updates.compatible_updates")
 
-	require("mods.recipes.updates.compatible-recipe")
-
---dlc-compatible.tech
+--compatible.tech
 	require("mods.technology.updates.par-depedency-updates")
 	require("mods.technology.updates.spaceage-science-updates")
 --structures

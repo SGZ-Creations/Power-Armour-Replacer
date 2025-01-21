@@ -1,4 +1,3 @@
-// Entity & Equipment. uses item name.
 {
     "item":
     [
@@ -21,11 +20,7 @@
         [ "shields_3", "par-shield-mk3" ],
         [ "shields_4", "par-shield-mk4" ],
         [ "shields_5", "par-shield-mk5" ],
-        [ "shields_6", "par-shield-mk6" ],
-        [ "shields_7", "par-shield-mk7" ],
-        [ "shields_8", "par-shield-mk8" ],
-        [ "shields_9", "par-shield-mk9" ],
-        [ "shields_10", "par-shield-mk10" ]
+        [ "shields_6", "par-shield-mk6" ]
     ],
     "equipment":
     [
@@ -34,11 +29,7 @@
         [ "shields_3", "par-shield-mk3" ],
         [ "shields_4", "par-shield-mk4" ],
         [ "shields_5", "par-shield-mk5" ],
-        [ "shields_6", "par-shield-mk6" ],
-        [ "shields_7", "par-shield-mk7" ],
-        [ "shields_8", "par-shield-mk8" ],
-        [ "shields_9", "par-shield-mk9" ],
-        [ "shields_10", "par-shield-mk10" ]
+        [ "shields_6", "par-shield-mk6" ]
     ],
     "recipe":
     [
@@ -47,11 +38,7 @@
         [ "shields_3", "par-shield-mk3" ],
         [ "shields_4", "par-shield-mk4" ],
         [ "shields_5", "par-shield-mk5" ],
-        [ "shields_6", "par-shield-mk6" ],
-        [ "shields_7", "par-shield-mk7" ],
-        [ "shields_8", "par-shield-mk8" ],
-        [ "shields_9", "par-shield-mk9" ],
-        [ "shields_10", "par-shield-mk10" ]
+        [ "shields_6", "par-shield-mk6" ]
     ],
     "technology":
     [   
@@ -60,10 +47,6 @@
         [ "shields_3", "par-shield-tech-3" ],
         [ "shields_4", "par-shield-tech-4" ],
         [ "shields_5", "par-shield-tech-5" ],
-        [ "shields_6", "par-shield-tech-6" ],
-        [ "shields_7", "par-shield-tech-7" ],
-        [ "shields_8", "par-shield-tech-8" ],
-        [ "shields_9", "par-shield-tech-9" ],
-        [ "shields_10", "par-shield-tech-10" ]
+        [ "shields_6", "par-shield-tech-6" ]
     ]
 }
