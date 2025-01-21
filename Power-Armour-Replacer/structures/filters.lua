@@ -1,6 +1,6 @@
 --[[
         Clean up phase of all mods adding technology Recipes for Armour's & Equipment's.
-        making the game less confusing on waht to craft and hopefully not have 2-4 recipes.
+        making the game less confusing on what to craft and hopefully not have 2-4 recipes.
         From diffrent mods giving u multiple "MK3 armours" in game.
 
         At some point should u have, 2-4 mods giving u armours this mod will hopefully do a clean up & convert your previous Armour, Equipment to one version. 
@@ -179,6 +179,7 @@ if mods["bobequipment"] then
     data.raw.technology["exoskeleton-equipment-3"].enabled = false
     data.raw.technology["solar-panel-equipment-2"].enabled = false
     data.raw.technology["solar-panel-equipment-3"].enabled = false
+    data.raw.technology["solar-panel-equipment-4"].enabled = false
     data.raw.technology["night-vision-equipment-2"].enabled = false
     data.raw.technology["night-vision-equipment-3"].enabled = false
     data.raw.technology["fission-reactor-equipment-2"].enabled = false
@@ -204,6 +205,7 @@ if mods["bobequipment"] then
     data.raw.recipe["exoskeleton-equipment-3"].enabled = false
     data.raw.recipe["solar-panel-equipment-2"].enabled = false
     data.raw.recipe["solar-panel-equipment-3"].enabled = false
+    data.raw.recipe["solar-panel-equipment-4"].enabled = false
     data.raw.recipe["night-vision-equipment-2"].enabled = false
     data.raw.recipe["night-vision-equipment-3"].enabled = false
     data.raw.recipe["fission-reactor-equipment-2"].enabled = false
@@ -228,6 +230,7 @@ if mods["bobequipment"] then
     data.raw.technology["bob-battery-equipment-6"].hidden = true
     data.raw.technology["solar-panel-equipment-2"].hidden = true
     data.raw.technology["solar-panel-equipment-3"].hidden = true
+    data.raw.technology["solar-panel-equipment-4"].hidden = true
     data.raw.technology["exoskeleton-equipment-2"].hidden = true
     data.raw.technology["exoskeleton-equipment-3"].hidden = true
     data.raw.technology["night-vision-equipment-2"].hidden = true
@@ -253,6 +256,7 @@ if mods["bobequipment"] then
     data.raw.recipe["battery-mk6-equipment"].hidden = true
     data.raw.recipe["solar-panel-equipment-2"].hidden = true
     data.raw.recipe["solar-panel-equipment-3"].hidden = true
+    data.raw.recipe["solar-panel-equipment-4"].hidden = true
     data.raw.recipe["exoskeleton-equipment-2"].hidden = true
     data.raw.recipe["exoskeleton-equipment-3"].hidden = true
     data.raw.recipe["night-vision-equipment-2"].hidden = true
