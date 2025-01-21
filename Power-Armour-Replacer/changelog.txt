@@ -7,6 +7,10 @@ Date: 20.01.2025
     - Fixed all internal naming changes for bob's mods to work with PAR.
     - Reworked some recipes that do now have bob & vanilla intermediates. 
     - Ex: Tungsten & Tungsten Carbide. Has duplicates that will be an issue later if not patched correctly.
+    - Bob's reciped compatibility will be put on hold as portion of my item removal function unde my util.lua is broken. Seeking help in this.
+    - As i need to still learn more in the aspect of local functions.
+    - Should someone want to give a pullrequest with a fix on my. https://github.com/SGZ-Creations/Power-Armour-Replacer/pulls
+    - More on my git issue site & Discord.
   Info:
     - Repatable migrations goal is the part that should attempt to replace,
     - Vanilla and modded Armours & Equipments. Then give you PAR's counter part items automatically.
