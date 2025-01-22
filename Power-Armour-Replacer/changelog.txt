@@ -5,7 +5,7 @@ Date: 20.01.2025
     - First try at repatable migration.
   Modding:
     - Fixed all internal naming changes for bob's mods to work with PAR.
-    - Reworked some recipes that do now have bob & vanilla intermediates. 
+    - Reworked some recipes that do now have bob & vanilla intermediates.
     - Ex: Tungsten & Tungsten Carbide. Has duplicates that will be an issue later if not patched correctly.
     - Bob's reciped compatibility will be put on hold as portion of my item removal function unde my util.lua is broken. Seeking help in this.
     - As i need to still learn more in the aspect of local functions.
@@ -16,7 +16,6 @@ Date: 20.01.2025
     - Vanilla and modded Armours & Equipments. Then give you PAR's counter part items automatically.
     - This should also then forfill the main goal of what this mod was meant to do.
     - I will have to try this out for a few versions. 
-    - If it seems to not do anything i may put on it hold and/or see what else i might need to do about it for it to succeed.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.10
 Date: 18.01.2025
