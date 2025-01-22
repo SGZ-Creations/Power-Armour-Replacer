@@ -325,11 +325,11 @@ util.technology_dependancy
 			["angels-aluminium-smelting-1"] = "el_caster_tech",
 		},
 	},
-
+	]]
 	["pyalternativeenergy"] = {
 		["par-armour-tech-3"] = {
 			["advanced-electronics"] = "machine-components-mk01",
-			[""] = "alloys-mk02",
+			"alloys-mk02",
 		},
 	},
 
@@ -342,9 +342,8 @@ util.technology_dependancy
 		["par-armour-tech-5"] = {
 			["advanced-electronics-2"] = "machine-components-mk02",
 		},
-	},]]
+	},
 }
-
 
 if mods["TeleportationEquipment"] then
     local tech_eff = data.raw.technology["teleportation-equipment"]
