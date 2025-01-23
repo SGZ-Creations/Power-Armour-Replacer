@@ -82,8 +82,7 @@ data:extend({
 		name = "par-armour-tech-4",
 		icon_size = 256,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4.png",
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk4"
@@ -107,8 +106,7 @@ data:extend({
 		name = "par-armour-tech-5",
 		icon_size = 256,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk5"
@@ -120,7 +118,7 @@ data:extend({
 			"military-3",
 			"armour-control-unit",
 		},
-		unit ={
+		unit = {
 			count = 1000,
 			ingredients = {
 				{ "automation-science-pack", 4 },
@@ -137,18 +135,17 @@ data:extend({
 		name = "par-armour-tech-6",
 		icon_size = 256,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk6"
 			},
 		},
-		prerequisites = { 
+		prerequisites = {
 			"par-armour-tech-5",
 			"processing-unit",
 		},
-		unit ={
+		unit = {
 			count = 1000,
 			ingredients = {
 				{ "automation-science-pack", 5 },
@@ -165,7 +162,7 @@ data:extend({
 		name = "par-armour-tech-7",
 		icon_size = 256,
 		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
-		effects ={
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "par-armour-mk7"
@@ -177,7 +174,7 @@ data:extend({
 			"low-density-structure",
 			"nuclear-power",
 		},
-		unit ={
+		unit = {
 			count = 1000,
 			ingredients = {
 				{ "automation-science-pack", 6 },
@@ -206,8 +203,7 @@ data:extend({
 			"production-science-pack",
 			"kovarex-enrichment-process"
 		},
-		unit =
-		{
+		unit = {
 			count = 1000,
 			ingredients = {
 				{ "automation-science-pack", 7 },
@@ -232,8 +228,7 @@ data:extend({
 			},
 		},
 		prerequisites = { "par-armour-tech-8", "military-4", },
-		unit =
-		{
+		unit = {
 			count = 1000,
 			ingredients = {
 				{ "automation-science-pack", 8 },
