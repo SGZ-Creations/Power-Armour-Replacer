@@ -14,5 +14,6 @@
 --compatible.tech
 	require("mods.technology.updates.par-depedency-updates")
 	require("mods.technology.updates.spaceage-science-updates")
+	require("mods.technology.updates.bobs-science-updates")
 --structures
 	require("structures.science-setting")
