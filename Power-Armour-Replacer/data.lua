@@ -40,3 +40,5 @@
     require("prototypes.animation.player_style")
     require("prototypes.misc.achievements")
     require("prototypes.misc.armour_equipment_category")
+--structures
+    --require("structure.tips-andd-trick")
