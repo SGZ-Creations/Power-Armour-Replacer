@@ -117,10 +117,12 @@ util.technology_dependancy
 			"bob-robo-modular-4"
 		},
 	},
+	]]
 
 	["bobelectronics"] = {
+	--[[
 		["par-laser-tech-3"] = {
-			["advanced-electronics"] = "electronics"
+		["advanced-electronics"] = "electronics"
 		},
 		["par-laser-tech-5"] = {
 			"advanced-electronics"
@@ -131,21 +133,22 @@ util.technology_dependancy
 		["par-battery-tech-5"] = {
 			"advanced-electronics"
 		},
+		]]
 		["par-armour-tech-3"] = {
-			["advanced-electronics"] = "electronics"
+			["advanced-circuit"] = "electronics"
 		},
 		["par-armour-tech-5"] = {
-			["advanced-electronics-2"] = "advanced-electronics"
+			["advanced-electronics"] = "advanced-electronics"
 		},
 		["par-armour-tech-7"] = {
-			"advanced-electronics-2"
+			"processing-unit"
 		},
 		["par-armour-tech-9"] = {
 			"bob-advanced-processing-unit"
 		},
 	},
 
-
+--[[
 	["bobpower"] = {
 		["par-laser-tech-3"] = {
 		"bob-heat-pipe-1",
@@ -161,7 +164,7 @@ util.technology_dependancy
 			"bob-heat-pipe-4"
 		},
 	},
-
+]]
 	["bobrevamp"] = {
 		["par-armour-tech-8"] = {
 			"heat-shield",
@@ -170,13 +173,13 @@ util.technology_dependancy
 			"heat-shield",
 		},
 	},
-
+--[[
 	[{"bobrevamp", "bobplates",}] = {
 		["par-fission-reactor-tech-7"] = {
 			"rtg",
 		},
 	},
-
+	]]
 	["bobplates"] = {
 		["par-armour-tech-2"] = {
 			["electronics"] = "automation",
@@ -187,7 +190,7 @@ util.technology_dependancy
 			"bob-cobalt-processing",
 		},
 		["par-armour-tech-4"] = {
-			["advanced-electronics"] = "bob-invar-processing",
+			["processing-unit"] = "bob-invar-processing",
 		},
 		["par-armour-tech-5"] = {
 			["electric-engine"] = "bob-gem-processing-3",
@@ -196,30 +199,29 @@ util.technology_dependancy
 		["par-armour-tech-6"] = {
 			["bob-advanced-processing-unit"] = "electric-engine",
 			"bob-titanium-processing",
-			"battery-2",
+			"bob-battery-2",
 		},
 		["par-armour-tech-7"] = {
 			"bob-tungsten-processing",
 			"bob-ceramics",
 		},
 		["par-armour-tech-8"] = {
-			"battery-3",
+			"bob-battery-3",
 			"low-density-structure",
 		},
 		["par-armour-tech-9"] = {
 			"bob-nitinol-processing",
 		},
-		["par-armour-tech-10"] = {
-			"armour-control-unit",
-		},
+		--[[
 		["par-shield-tech-6"] = {
 			"bob-cobalt-processing"
 		},
 		["par-laser-tech-4"] = {
-			["advanced-electronics"] = "bob-gem-processing-2"
+			["processing-unit"] = "bob-gem-processing-2"
 		},
+		]]
 	},
-
+--[[
 	["angelssmelting"] = {
 		["par-armour-tech-1"] = {
 			"angels-solder-smelting-1",
@@ -237,7 +239,7 @@ util.technology_dependancy
 		["par-armour-tech-6"] = {
 			["rocket-fuel"] = "angels-titanium-smelting-1",
 			["bob-titanium-processing"] = "angels-titanium-smelting-1",
-			["battery-2"] = "angels-glass-smelting-2",
+			["bob-battery-2"] = "angels-glass-smelting-2",
 			"angels-gold-smelting-1",
 		},
 		["par-armour-tech-7"] = {
@@ -270,7 +272,7 @@ util.technology_dependancy
 			"angels-bronze-smelting-1",
 		},
 		["par-armour-tech-3"] = {
-			["advanced-electronics"] = "angels-brass-smelting-1",
+			["processing-unit"] = "angels-brass-smelting-1",
 			["bob-zinc-processing"] = "angels-stone-smelting-1",
 			["bob-cobalt-processing"] = "angels-lead-smelting-2",
 			["bob-aluminium-processing"] = "angels-aluminium-smelting-1",
@@ -328,7 +330,7 @@ util.technology_dependancy
 	]]
 	["pyalternativeenergy"] = {
 		["par-armour-tech-3"] = {
-			["advanced-electronics"] = "machine-components-mk01",
+			["processing-unit"] = "machine-components-mk01",
 			"alloys-mk02",
 		},
 	},
@@ -340,7 +342,7 @@ util.technology_dependancy
 			"chromium-mk01",
 		},
 		["par-armour-tech-5"] = {
-			["advanced-electronics-2"] = "machine-components-mk02",
+			["processing-unit"] = "machine-components-mk02",
 		},
 	},
 }

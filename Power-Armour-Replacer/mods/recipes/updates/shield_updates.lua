@@ -145,7 +145,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk4"], {
             ["battery"] = {"bob-silver-plate", 100},
             ["plastic-bar"] = {"bob-brass-alloy", 100},
             ["bob-resin"] = {"bob-brass-alloy", 100},
-            ["steel-plate"] = {"silicon", 165},
+            ["steel-plate"] = {"bob-silicon-plate", 165},
             {"bob-silicon-wafer", 125},
         }
     },
@@ -180,7 +180,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["small-lamp"] = {"silicon", 65},
+            ["small-lamp"] = {"bob-silicon-plate", 65},
             ["advanced-circuit"] = {"electronic-components", 30},
         }
     },

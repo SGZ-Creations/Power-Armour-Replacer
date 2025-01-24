@@ -13,7 +13,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
         dependencies = {"bobelectronics",},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 100},
-            ["steel-plate"] = {"bob-rubber", 50},
+            ["stone-brick"] = {"bob-rubber", 50},
             ["wood"] = {"bob-resin", 150},
         }
     },
@@ -21,8 +21,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["stone-brick"] = {"bob-glass", 100},
-            ["steel-plate"] = {"bob-rubber", 50},
+            ["steel-plate"] = {"bob-glass", 100},
+            ["stone-brick"] = {"bob-rubber", 50},
             ["wood"] = {"bob-resin", 150},
         }
     },
@@ -289,7 +289,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 400},
-            ["engine-unit"] = {"silicon", 160},
+            ["engine-unit"] = {"bob-silicon-plate", 160},
             ["iron-gear-wheel"] = {"bob-gunmetal-alloy", 120},
             ["copper-plate"] = {"bob-cobalt-steel-alloy", 150},
             {"bob-invar-alloy", 100},
@@ -330,15 +330,10 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
             ["iron-gear-wheel"] = {"mechanical-parts-01", 10},
             ["advanced-circuit"] = {"electronics-mk01", 10},
             ["engine-unit"] = {"controler-mk01", 10},
-            ["plastic-bar"] = {"", 0},
+            --["plastic-bar"] = {"", 0},
         }
     },
-    -- SE K2
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-        }
-    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -349,12 +344,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
 })
 
 util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
-    {
-        dependencies = {"bobwarfare"},
-        replacements = {
-            --["uranium-235"] = {"heavy-armor-2", 1},
-        }
-    },
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -452,12 +441,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
             {"gilded-copper-cable", 55},
         }
     },
-    --SE K2
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-        }
-    },
 })
 
 util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
@@ -481,6 +464,12 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
         }
     },
     {
+        dependencies = {"bobplates", "space-age"},
+        replacements = {
+            ["bob-tungsten-plate"] = {"tungsten-plate", 250},
+        }
+    },
+    {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-cable"] = {"gilded-copper-cable", 250},
@@ -501,13 +490,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             {"bob-glass", 50},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"bobplates", "Darkstar_utilities_fixed"},
-        replacements = {
-            ["bob-glass"] = {"leaded-bob-glass", 50},
         }
     },
 })
@@ -538,12 +520,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
         }
     },
     {
-        dependencies = {"bobwarfare"},
-        replacements = {
-            --{"heavy-armor-3", 1}
-        }
-    },
-    {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
@@ -564,14 +540,12 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
         dependencies = {"bobplates"},
         replacements = {
             ["solar-panel"] = {"bob-advanced-processing-unit", 900},
-            ["low-density-structure"] = {"bob-tungsten-carbide", 300},
-            {"bob-tungsten-plate", 300},
-            {"sapphire-5", 50},
-            {"ruby-5", 50},
-            {"emerald-5", 50},
-            {"amethyst-5", 50},
-            {"topaz-5", 50},
-            {"diamond-5", 50},
+            {"bob-sapphire-5", 50},
+            {"bob-ruby-5", 50},
+            {"bob-emerald-5", 50},
+            {"bob-amethyst-5", 50},
+            {"bob-topaz-5", 50},
+            {"bob-diamond-5", 50},
         }
     },
     {
@@ -597,7 +571,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["low-density-structure"] = {"bob-tungsten-carbide", 250},
             {"reinforced-concrete-brick", 200},
         }
     },
@@ -605,8 +578,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["lubricant"] = {"", 0},
-            ["solar-panel"] = {"", 0},
+            --["lubricant"] = {"", 0},
+            --["solar-panel"] = {"", 0},
             {"se-heavy-assembly", 30},
 			{"se-quantum-processor", 10},
         }
@@ -614,8 +587,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["lubricant"] = {"", 0},
-            ["solar-panel"] = {"", 0},
+            --["lubricant"] = {"", 0},
 			{"lithium-sulfur-battery", 450},
         }
     },
@@ -624,24 +596,22 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["solar-panel"] = {"bob-advanced-processing-unit", 1000},
-            ["processing-unit"] = {"insulated-cable", 550},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 1000},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["solar-panel"] = {"bob-advanced-processing-unit", 1000},
-            ["processing-unit"] = {"bob-copper-tungsten-alloy", 500},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 1000},
             {"bob-copper-tungsten-alloy", 500},
             {"bob-nitinol-alloy", 600},
             {"bob-nitinol-bearing", 600},
-            {"sapphire-5", 100},
-            {"ruby-5", 100},
-            {"emerald-5", 100},
-            {"amethyst-5", 100},
-            {"topaz-5", 100},
-            {"diamond-5", 100},
+            {"bob-sapphire-5", 100},
+            {"bob-ruby-5", 100},
+            {"bob-emerald-5", 100},
+            {"bob-amethyst-5", 100},
+            {"bob-topaz-5", 100},
+            {"bob-diamond-5", 100},
         }
     },
     {
@@ -661,7 +631,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-copper-tungsten-alloy"] = {"bob-copper-tungsten-alloy", 200},
+            ["bob-copper-tungsten-alloy"] = {"bob-copper-tungsten-alloy", 250},
         }
     },
     {
@@ -690,10 +660,9 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["processing-unit"] = {"", 0},
-            ["advanced-circuit"] = {"", 0},
-            ["low-density-structure"] = {"", 0},
-            ["solar-panel"] = {"", 0},
+            --["processing-unit"] = {"", 0},
+            --["advanced-circuit"] = {"", 0},
+            --["low-density-structure"] = {"", 0},
             {"se-nanomaterial", 200},
             {"se-heavy-assembly", 50},
             {"se-naquium-processor", 20},
@@ -703,10 +672,9 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["processing-unit"] = {"", 0},
-            ["advanced-circuit"] = {"", 0},
-            ["low-density-structure"] = {"", 0},
-            ["solar-panel"] = {"", 0},
+            --["processing-unit"] = {"", 0},
+            --["advanced-circuit"] = {"", 0},
+            --["low-density-structure"] = {"", 0},
 			{"lithium-sulfur-battery", 500},
             {"energy-control-unit", 100},
 			{"imersium-beam", 500},

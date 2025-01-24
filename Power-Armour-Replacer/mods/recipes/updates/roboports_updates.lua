@@ -93,7 +93,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk2"], {
     {
         dependencies = {"Darkstar_utilities_fixed"},
         replacements = {
-            {"silicon", 200},
+            {"bob-silicon-plate", 200},
         }
     },
     {
