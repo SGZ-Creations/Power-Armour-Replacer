@@ -169,6 +169,13 @@ if mods["bobwarfare"] then
     end
 end
 
+if mods["bobplates"] and mods["space-age"] then
+    Hide_Item("bob-carbon")
+    Hide_Item("bob-lithium")
+    Hide_Item("bob-tungsten-plate")
+    Hide_Item("bob-tungsten-carbide")
+end
+
 if mods["bobequipment"] then
 --Enabled
     data.raw.technology["bob-battery-equipment-3"].enabled = false
