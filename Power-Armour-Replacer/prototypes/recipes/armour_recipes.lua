@@ -281,6 +281,8 @@ if mods["space-age"] then
                 {type="item", name="par-armour-mk7", amount=1},
                 {type="item", name="battery", amount=100},
                 {type="item", name="low-density-structure", amount=125},
+                {type="item", name="carbon-fiber", amount=100},
+                {type="item", name="tungsten-carbide", amount=175},
                 {type="fluid", name="fluoroketone-cold", amount=100},
                 {type="item", name="supercapacitor", amount=100},
             },
