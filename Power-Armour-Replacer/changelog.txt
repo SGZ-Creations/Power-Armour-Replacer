@@ -6,6 +6,7 @@ Date: 24.01.2025
     - Changed how to unlocked armour from start.
     - Armour should now have bob-like recipes.
     - Removed bobs tungsten items from armour MK9 & MK10
+    - Fixed duplicates with bobs untill the fixed is done on there end
   Features:
     - Repeatable migration.
   Changes:
