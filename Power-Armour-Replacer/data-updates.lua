@@ -1,5 +1,5 @@
 --compatible.recipes
-	--require("mods.recipes.updates.armour_updates")
+	require("mods.recipes.updates.armour_updates")
 	--require("mods.recipes.updates.batteries_updates")
 	--require("mods.recipes.updates.exolegs_updates")
 	--require("mods.recipes.updates.fission_updates")
