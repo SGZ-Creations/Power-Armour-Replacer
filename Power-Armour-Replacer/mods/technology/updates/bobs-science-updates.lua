@@ -13,16 +13,14 @@ if mods["bobtech"]and mods["bobplates"] then
 	data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="steam-engine", count = 24}
 	data.raw.technology["bob-chemical-processing-1"].unit = nil
 
-	if mods["bobelectronics"]then
-		data.raw.technology["military"].research_trigger = {type ="craft-item", item ="basic-circuit-board", count = 50}
-		data.raw.technology["military"].unit = nil
-	end
+	data.raw.technology["military"].research_trigger = {type ="craft-item", item ="firearm-magazine", count = 20}
+	data.raw.technology["military"].unit = nil
 end
 
 if mods["bobtech"] then
 	if settings.startup["bobmods-burnerphase"].value == true then
 		if mods["bobplates"]then
-			data.raw.technology["bob-alloy-processing"].research_trigger = {type ="craft-item", item ="automation-science-pack", count = 50}
+			data.raw.technology["bob-alloy-processing"].research_trigger = {type ="craft-item", item ="bob-tin-plate", count = 50}
 			data.raw.technology["bob-alloy-processing"].unit = nil
 
 			data.raw.technology["logistics"].research_trigger = {type ="craft-item", item ="inserter", count = 20}
@@ -38,10 +36,10 @@ if mods["bobtech"] then
 				data.raw.technology["electronics"].research_trigger = {type ="craft-item", item ="small-electric-pole", count = 10}
 				data.raw.technology["electronics"].unit = nil
 
-				data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="", count = 12}
+				data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="basic-circuit-board", count = 50}
 				data.raw.technology["bob-electrolysis-1"].unit = nil
 
-				data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="", count = 24}
+				data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bob-carbon", count = 25}
 				data.raw.technology["bob-chemical-processing-1"].unit = nil
 			end
 		end
