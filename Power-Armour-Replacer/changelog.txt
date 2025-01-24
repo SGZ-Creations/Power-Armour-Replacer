@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.12
+Date: ????
+  Modding:
+    - Bobs Advanced logistic science added to roboports.
+    - Changed how to unlocked armour from start.
+  Features:
+    - Repeatable migration.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.11
 Date: 20.01.2025
   Features:
