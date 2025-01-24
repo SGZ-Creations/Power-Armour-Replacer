@@ -1,23 +1,28 @@
-if mods["bobplates"]then
-	for _, recipe in pairs(data.raw.recipe) do
-		for _, result in pairs(recipe.results or {}) do
-				if result.name == "bob-carbon" then result.name = "carbon"
-				elseif result.name == "bob-tungsten-plate" then result.name = "tungsten-plate"
-				elseif result.name == "bob-tungsten-carbide" then result.name = "tungsten-carbide"
-				elseif result.name == "bob-lithium" then result.name = "lithium-plate"
-			end
-		end
-	end
-end
+if mods["bobplates"] and mods["space-age"] then
+    local replacements = {
+        ["bob-carbon"] = "carbon",
+        ["bob-tungsten-plate"] = "tungsten-plate",
+        ["bob-tungsten-carbide"] = "tungsten-carbide",
+        ["bob-lithium"] = "lithium-plate",
+    }
+    for _, recipe in pairs(data.raw.recipe) do
+        for _, ingredient in pairs(recipe.ingredients or {}) do
+            local replace = replacements[ingredient.name]
+				if replace then
+                ingredient.name = replace
+            end
+        end
 
-if mods["bobplates"]then
-	for _, recipe in pairs(data.raw.recipe) do
-		for _, input in pairs(recipe.ingredients or {}) do
-				if input.name == "bob-carbon" then input.name = "carbon"
-				elseif input.name == "bob-tungsten-plate" then input.name = "tungsten-plate"
-				elseif input.name == "bob-tungsten-carbide" then input.name = "tungsten-carbide"
-				elseif input.name == "bob-lithium" then input.name = "lithium-plate"
+		for _, result in pairs(recipe.results or {}) do
+			local replace = replacements[result.name]
+				if replace then
+				result.name = replace
 			end
 		end
-	end
+
+        if recipe.main_product then
+			local replace = replacements[recipe.main_product]
+		if replace then recipe.main_product = replace end
+        end
+    end
 end

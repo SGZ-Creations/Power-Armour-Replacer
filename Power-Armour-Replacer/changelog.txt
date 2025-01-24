@@ -1,16 +1,32 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: 24.01.2025
+  Bugfixes:
+    - Crash with transport drones.
+  Info:
+    - Need to learn on getting a better understanding on coding better.
+    - Tho that aint easy when over tired.
+  Features:
+    - Repeatable migration.
+  Credit:
+    - @jurgy for helping with solving the crash in 0.3.12.
+    - @stringweasel for helping with solving the crash in 0.3.12.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.12
 Date: 24.01.2025
   Modding:
     - Tried adding Bobs Advanced logistic science to roboports.
     - Changed how to unlocked armour from start.
     - Armour should now have bob-like recipes.
-    - Removed bobs tungsten items from armour MK9 & MK10
-    - Fixed duplicates with bobs untill the fixed is done on there end
+    - Removed bobs tungsten items from armour MK9 & MK10.
+    - Fixed duplicates with bobs untill the fix is done on there end.
   Features:
     - Repeatable migration.
   Changes:
-    - [space-age] Improved armour recipe MK8 - MK10
+    - [space-age] Improved armour recipe MK8 - MK10. 
+  Credit:
+    - @jurgy for helping with all the bobs conversion code in 0.3.12.
+    - @stringweasel for helping with all the bobs conversion code in 0.3.12.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.11
 Date: 20.01.2025
