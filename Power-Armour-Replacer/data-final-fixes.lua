@@ -8,4 +8,4 @@
 --compatible.tech load order dependant
 	require("mods.technology.final-fixes.bobs-science-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")
-	--require("mods.recipes.final-fixes.bobs-duplicate-items")
+	require("mods.recipes.final-fixes.bobs-duplicate-items")
