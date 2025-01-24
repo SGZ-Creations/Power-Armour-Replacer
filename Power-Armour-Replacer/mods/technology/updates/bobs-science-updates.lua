@@ -7,23 +7,41 @@ if mods["bobtech"]and mods["bobplates"] then
 	data.raw.technology["steel-processing"].research_trigger = {type ="craft-fluid", fluid ="bob-oxygen", amount = 1000}
 	data.raw.technology["steel-processing"].unit = nil
 
-	data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="automation-science-pack", count = 100}
+	data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="boiler", count = 12}
 	data.raw.technology["bob-electrolysis-1"].unit = nil
 
-	data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="automation-science-pack", count = 100}
+	data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="steam-engine", count = 24}
 	data.raw.technology["bob-chemical-processing-1"].unit = nil
+
+	data.raw.technology["military"].research_trigger = {type ="craft-item", item ="steam-engine", count = 24}
+	data.raw.technology["military"].unit = nil
 end
 
-if mods["bobtech"] and mods["bobslogistics"] then
-	table.insert(data.raw.technology["par-roboport-tech-5"].unit.ingredients, {"advanced-logistic-science-pack", 1})
+if mods["bobtech"] then
+	if settings.startup["bobmods-burnerphase"].value == true then
+		if mods["bobplates"]then
+			data.raw.technology["bob-alloy-processing"].research_trigger = {type ="craft-item", item ="automation-science-pack", count = 50}
+			data.raw.technology["bob-alloy-processing"].unit = nil
 
-	table.insert(data.raw.technology["par-roboport-tech-6"].unit.ingredients, {"advanced-logistic-science-pack", 2})
+			if mods["bobelectronics"]then
+				data.raw.technology["electronics"].research_trigger = {type ="craft-item", item ="small-electric-pole", count = 10}
+				data.raw.technology["electronics"].unit = nil
+			end
 
-	table.insert(data.raw.technology["par-roboport-tech-7"].unit.ingredients, {"advanced-logistic-science-pack", 3})
+			data.raw.technology["logistics"].research_trigger = {type ="craft-item", item ="inserter", count = 20}
+			data.raw.technology["logistics"].unit = nil
 
-	table.insert(data.raw.technology["par-roboport-tech-8"].unit.ingredients, {"advanced-logistic-science-pack", 4})
+			data.raw.technology["lab"].research_trigger = {type ="craft-item", item ="transport-belt", count = 20}
+			data.raw.technology["lab"].unit = nil
 
-	table.insert(data.raw.technology["par-roboport-tech-9"].unit.ingredients, {"advanced-logistic-science-pack", 5})
+			data.raw.technology["logistic-science-pack"].research_trigger = {type ="craft-item", item ="lab", count = 10}
+			data.raw.technology["logistic-science-pack"].unit = nil
 
-	table.insert(data.raw.technology["par-roboport-tech-10"].unit.ingredients, {"advanced-logistic-science-pack", 6})
+			data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="boiler", count = 12}
+			data.raw.technology["bob-electrolysis-1"].unit = nil
+
+			data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="steam-engine", count = 24}
+			data.raw.technology["bob-chemical-processing-1"].unit = nil
+		end
+	end
 end
