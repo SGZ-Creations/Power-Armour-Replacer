@@ -4,8 +4,12 @@ Date: ????
   Modding:
     - Bobs Advanced logistic science added to roboports.
     - Changed how to unlocked armour from start.
+    - Armour should now have bob-like recipes.
+    - Removed bobs tungsten items from armour MK9 & MK10
   Features:
     - Repeatable migration.
+  Changes:
+    - Improved armour recipe MK9 & MK10
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.11
 Date: 20.01.2025
