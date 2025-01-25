@@ -1,4 +1,4 @@
-if mods["bobtech"] and mods["bobslogistics"] then
+if mods["bobtech"] and mods["boblogistics"] then
 	table.insert(data.raw.technology["par-roboport-tech-5"].unit.ingredients, {"advanced-logistic-science-pack", 1})
 
 	table.insert(data.raw.technology["par-roboport-tech-6"].unit.ingredients, {"advanced-logistic-science-pack", 2})
