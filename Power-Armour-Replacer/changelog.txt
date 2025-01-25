@@ -3,6 +3,9 @@ Version: 0.3.14
 Date: 25.01.2025
   Modding:
     - Added seedling conversion to bobs.
+    - Par's broken locales on bobs recipes.
+  Features:
+    - Added charging_station_count_affected_by_quality to roboports
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 24.01.2025

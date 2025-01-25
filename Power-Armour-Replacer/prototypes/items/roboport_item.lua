@@ -68,6 +68,7 @@ for tier, roboport in pairs(roboports) do
         stationing_offset = { 0, -0.6 },
         charging_station_shift = { 0, 0.5 },
         charging_station_count = roboport.charging_station_count,
+        charging_station_count_affected_by_quality  = true,
         charging_distance = 1.6,
         charging_threshold_distance = 5,
         categories = { "armor" }
