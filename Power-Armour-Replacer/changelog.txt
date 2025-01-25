@@ -4,6 +4,7 @@ Date: 25.01.2025
   Modding:
     - Added seedling conversion to bobs.
     - Par's broken locales on bobs recipes.
+    - Fixed bob logistic science issue on my roboports.
   Features:
     - Added charging_station_count_affected_by_quality to roboports
 ---------------------------------------------------------------------------------------------------
