@@ -6,10 +6,12 @@ util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients  --original list to be replaced
     local remove = {} -- local table to trim ingredients after the replacements (to maintain order)
     local not_crafting = false -- trigger for crafting cat change
-    for i, ingredient in pairs(ingredients) do -- for each line of ingredients list
-        if ingredient.type then
-            local replacement = replacements[ingredient.name]
-            if replacement then
+    for i, ingredient in pairs(ingredients) do -- for each line of ingredients list--[[{1,{ingredient.type,ingredient.name,ingredient.amount},}]]
+        local replacement = replacements[ingredient.name]--[[replacement = name{replacement[1],replacement[2]}]]
+        if replacement then
+            if replacement[1]=="zero" then
+                remove[#remove+1]=i
+            else
                 ingredient.name = replacement[1]
                 ingredient.amount = replacement[2]
                 --where type exists, check if fluid
@@ -17,16 +19,6 @@ util.update_ingredients = function(recipe, replacements)
                     not_crafting = true
                 end
             end
-        else
-            local replacement = replacements[ingredient[1]]
-            if replacement then
-                ingredient.type = "item"
-                ingredient.name = replacement[1]
-                ingredient.amount = replacement[2]
-            end
-        end
-        if ingredient[1] == "" or ingredient.name == "" then
-            remove[#remove+1]=i
         end
     end
     for k, new_ingredient in pairs(replacements) do --if new, and not replacement
