@@ -18,20 +18,20 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk1"], {
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["lubricant"] = {"hydrogen", 250},
+            ["lubricant"] = {"bob-hydrogen", 250},
         }
     },
     --248K
     {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
-        ["battery"] = {"bob-lithium-ion-battery", 35},
+            ["battery"] = {"bob-lithium-ion-battery", 35},
         }
     },
     {
         dependencies = {"248k"},
         replacements = {
-        ["battery"] = {"el_lithium_battery", 35},
+            ["battery"] = {"el_lithium_battery", 35},
         }
     },
     --K2
@@ -47,7 +47,7 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk1"], {
         dependencies = {"space-exploration"},
         replacements = {
             --["electronic-circuit"] = {"automation-core", 10},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
         }
     },
 })
@@ -114,8 +114,8 @@ util.ingredient_prereq(data.raw.recipe["par-belt-immunity-mk2"], {
             ["low-density-structure"] = {"se-nanomaterial", 50},
             ["processing-unit"] = {"se-naquium-processor", 2},
 			["advanced-circuit"] = {"se-quantum-processor", 2},
-            ["rocket-fuel"] = {"", 0},
-            ["sulfuric-acid"] = {"", 0},
+            ["rocket-fuel"] = {"zero"},
+            ["sulfuric-acid"] = {"zero"},
         }
     },
     {

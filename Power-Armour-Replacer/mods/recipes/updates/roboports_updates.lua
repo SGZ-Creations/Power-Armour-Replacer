@@ -79,7 +79,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk2"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 200},
-            {"insualted-cable", 180},
+            {"insulated-cable", 180},
         }
     },
     {
@@ -138,7 +138,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk3"], {
             ["engine-unit"] = {"roboport-chargepad-1", 5},
             ["iron-plate"] = {"roboport-door-1", 5},
             ["bob-bronze-alloy"] = {"roboport-door-1", 5},
-            ["bob-rubber"] = {"", 0},
+            ["bob-rubber"] = {"zero"},
         }
     },
 })
@@ -170,9 +170,9 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk4"], {
             ["engine-unit"] = {"roboport-chargepad-1", 10},
             ["steel-plate"] = {"roboport-door-1", 10},
             ["bob-brass-alloy"] = {"roboport-door-1", 10},
-            ["iron-gear-wheel"] = {"", 0},
-            ["bob-bronze-alloy"] = {"", 0},
-            ["bob-rubber"] = {"", 0},
+            ["iron-gear-wheel"] = {"zero"},
+            ["bob-bronze-alloy"] = {"zero"},
+            ["bob-rubber"] = {"zero"},
         }
     },
 })
@@ -208,7 +208,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk5"], {
             ["bob-aluminium-plate"] = {"roboport-door-2", 5}, --1
             ["battery"] = {"roboport-chargepad-2", 5}, --3
             ["bob-lithium-ion-battery"] = {"roboport-chargepad-2", 5}, --3
-            ["bob-ceramic-bearing"] = {"", 0}, --0
+            ["bob-ceramic-bearing"] = {"zero"}, --0
         }
     },
 })
@@ -222,7 +222,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk6"], {
         dependencies = {"bobelectronics",},
         replacements = {
             ["processing-unit"] = {"advanced-circuit", 300},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
         }
     },
     {
@@ -231,7 +231,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk6"], {
             ["processing-unit"] = {"advanced-circuit", 300},
             ["steel-plate"] = {"bob-invar-alloy", 300},
             {"bob-silicon-nitride", 300},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
         }
     },
     {
@@ -242,8 +242,8 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk6"], {
             ["processing-unit"] = {"roboport-antenna-2", 10},
             ["steel-plate"] = {"roboport-door-2", 10},
             ["bob-invar-alloy"] = {"roboport-door-2", 10},
-            ["bob-silicon-nitride"] = {"", 0},
-            ["lubricant"] = {"", 0},
+            ["bob-silicon-nitride"] = {"zero"},
+            ["lubricant"] = {"zero"},
         }
     },
 })
@@ -284,8 +284,8 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk7"], {
             ["insualted-cable"] = {"roboport-chargepad-3", 5}, --3
             ["iron-stick"] = {"roboport-door-3", 5}, --1
             ["solder-alloy"] = {"roboport-door-3", 5}, --1
-            ["low-density-structure"] = {"", 0}, --0
-            ["gilded-copper-cable"] = {"", 0},--0
+            ["low-density-structure"] = {"zero"}, --0
+            ["gilded-copper-cable"] = {"zero"},--0
         }
     },
 })
@@ -324,10 +324,10 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk8"], {
             ["bob-silver-plate"] = {"roboport-chargepad-3", 10}, --3
             ["copper-cable"] = {"roboport-door-3", 10}, --1
             ["gilded-copper-cable"] = {"roboport-door-3", 10}, --1
-            ["uranium-235"] = {"", 0}, --0
-            ["processing-unit"] = {"", 0}, --0
-            ["bob-tungsten-plate"] = {"", 0}, --0
-            ["bob-rubber"] = {"", 0}, --0
+            ["uranium-235"] = {"zero"}, --0
+            ["processing-unit"] = {"zero"}, --0
+            ["bob-tungsten-plate"] = {"zero"}, --0
+            ["bob-rubber"] = {"zero"}, --0
         }
     },
 })
@@ -340,14 +340,14 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk9"], {
         dependencies = {"bobelectronics",},
         replacements = {
             ["advanced-circuit"] = {"bob-advanced-processing-unit", 450},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"bob-advanced-processing-unit", 450},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
             {"bob-copper-tungsten-alloy", 450},
             {"bob-silicon-wafer", 450},
         }
@@ -366,11 +366,11 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk9"], {
             ["low-density-structure"] = {"roboport-chargepad-4", 5},
             ["advanced-circuit"] = {"roboport-door-4", 5},
             ["bob-advanced-processing-unit"] = {"roboport-door-4", 5},
-            ["tinned-copper-cable"] = {"", 0},
-            ["bob-copper-tungsten-alloy"] = {"", 0},
-            ["bob-silicon-wafer"] = {"", 0},
-            ["lubricant"] = {"", 0},
-            ["solder"] = {"", 0},
+            ["tinned-copper-cable"] = {"zero"},
+            ["bob-copper-tungsten-alloy"] = {"zero"},
+            ["bob-silicon-wafer"] = {"zero"},
+            ["lubricant"] = {"zero"},
+            ["solder"] = {"zero"},
         }
     },
 })
@@ -401,9 +401,9 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk10"], {
             ["armour-control-unit"] = {"roboport-chargepad-4", 10},
             ["bob-advanced-processing-unit"] = {"roboport-door-4", 10},
             ["processing-unit"] = {"roboport-door-4", 10},
-            ["bob-silver-zinc-battery"] = {"", 0},
-            ["bob-tungsten-carbide"] = {"", 0},
-            ["bob-nitinol-alloy"] = {"", 0},
+            ["bob-silver-zinc-battery"] = {"zero"},
+            ["bob-tungsten-carbide"] = {"zero"},
+            ["bob-nitinol-alloy"] = {"zero"},
         }
     },
     --K2

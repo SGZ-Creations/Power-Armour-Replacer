@@ -330,7 +330,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
             ["iron-gear-wheel"] = {"mechanical-parts-01", 10},
             ["advanced-circuit"] = {"electronics-mk01", 10},
             ["engine-unit"] = {"controler-mk01", 10},
-            --["plastic-bar"] = {"", 0},
+            ["plastic-bar"] = {"zero"},
         }
     },
     --K2
@@ -357,8 +357,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
             ["uranium-235"] = {"bob-silver-plate", 200},
             {"advanced-circuit", 500},
             {"bob-silver-plate", 200},
-            {"sapphire-5", 50},
-            {"ruby-5", 50},
+            {"bob-sapphire-5", 50},
+            {"bob-ruby-5", 50},
         }
     },
     {
@@ -390,12 +390,6 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
             ["uranium-235"] = {"fi_materials_glass", 400},
         }
     },
-    -- SE K2
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-        }
-    },
 })
 
 util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
@@ -412,8 +406,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
             ["steel-plate"] = {"bob-brass-alloy", 100},
             ["copper-plate"] = {"bob-titanium-plate", 200},
             ["solar-panel"] = {"bob-gold-plate", 100},
-            {"sapphire-5", 100},
-            {"ruby-5", 100},
+            {"bob-sapphire-5", 100},
+            {"bob-ruby-5", 100},
         }
     },
     {
@@ -457,10 +451,10 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
             ["low-density-structure"] = {"bob-cobalt-steel-bearing", 200},
             ["uranium-fuel-cell"] = {"bob-tungsten-plate", 250},
             {"bob-tungsten-plate", 250},
-            {"sapphire-5", 50},
-            {"ruby-5", 50},
-            {"emerald-5", 50},
-            {"amethyst-5", 50},
+            {"bob-sapphire-5", 50},
+            {"bob-ruby-5", 50},
+            {"bob-emerald-5", 50},
+            {"bob-amethyst-5", 50},
         }
     },
     {
@@ -507,10 +501,10 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
             ["nuclear-fuel"] = {"bob-copper-tungsten-alloy", 200},
             ["battery"] = {"bob-silver-zinc-battery", 100},
             {"bob-copper-tungsten-alloy", 200},
-            {"sapphire-5", 100},
-            {"ruby-5", 100},
-            {"emerald-5", 100},
-            {"amethyst-5", 100},
+            {"bob-sapphire-5", 100},
+            {"bob-ruby-5", 100},
+            {"bob-emerald-5", 100},
+            {"bob-amethyst-5", 100},
         }
     },
     {
@@ -578,8 +572,8 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            --["lubricant"] = {"", 0},
-            --["solar-panel"] = {"", 0},
+            ["lubricant"] = {"zero"},
+            ["solar-panel"] = {"zero"},
             {"se-heavy-assembly", 30},
 			{"se-quantum-processor", 10},
         }
@@ -587,7 +581,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
 			{"lithium-sulfur-battery", 450},
         }
     },
@@ -602,8 +596,9 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"bobplates"},
         replacements = {
+            --{type="fluid", name="carbon-dioxide", amount=500},-- Adding fluid just works Thasnks PEZ
             ["processing-unit"] = {"bob-advanced-processing-unit", 1000},
-            {"bob-copper-tungsten-alloy", 500},
+            ["low-density-structure"] = {"bob-copper-tungsten-alloy", 500},
             {"bob-nitinol-alloy", 600},
             {"bob-nitinol-bearing", 600},
             {"bob-sapphire-5", 100},
@@ -660,9 +655,9 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            --["processing-unit"] = {"", 0},
-            --["advanced-circuit"] = {"", 0},
-            --["low-density-structure"] = {"", 0},
+            ["processing-unit"] = {"zero"},
+            ["advanced-circuit"] = {"zero"},
+            ["low-density-structure"] = {"zero"},
             {"se-nanomaterial", 200},
             {"se-heavy-assembly", 50},
             {"se-naquium-processor", 20},
@@ -672,9 +667,9 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["processing-unit"] = {"", 0},
-            --["advanced-circuit"] = {"", 0},
-            --["low-density-structure"] = {"", 0},
+            ["processing-unit"] = {"zero"},
+            ["advanced-circuit"] = {"zero"},
+            ["low-density-structure"] = {"zero"},
 			{"lithium-sulfur-battery", 500},
             {"energy-control-unit", 100},
 			{"imersium-beam", 500},

@@ -11,7 +11,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"bob-steel-bearing", 50},
-            {"bob-bob-rubber", 100},
+            {"bob-rubber", 100},
             {"bob-carbon", 100},
         }
     },
@@ -42,12 +42,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
             ["iron-plate"] = {"iron-beam", 25},
             ["steel-plate"] = {"steel-beam", 25},
             ["electronic-circuit"] = {"automation-core", 5},
-        }
-    },
-    --SE
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
         }
     },
 })
@@ -119,12 +113,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk3"], {
             {"heat-pipe", 5},
         }
     },
-    --SE-K2
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-        }
-    },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -209,7 +198,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk5"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["plastic-bar"] = {"ruby-5", 100},
+            ["plastic-bar"] = {"bob-ruby-5", 100},
             ["sulfur"] = {"bob-silicon-wafer", 125},
             {"advanced-circuit", 250},
         }
@@ -252,9 +241,8 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["engine-unit"] = {"angels-plate-platinum", 100},
             {"bob-gunmetal-alloy", 100},
-            {"sapphire-5", 100},
+            {"bob-sapphire-5", 100},
         }
     },
     {
@@ -273,6 +261,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
+            ["engine-unit"] = {"angels-plate-platinum", 100},
             ["sulfur"] = {"angels-plate-manganese", 50},
         }
     },
@@ -281,13 +270,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"solid-white-phosphorus", 200},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"Darkstar_utilities_fixed"},
-        replacements = {
-            {"laser-core", 5},
         }
     },
 })
@@ -303,8 +285,8 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk7"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electric-engine-unit"] = {"bob-gunmetal-alloy", 200},
-            {"cobalt-bob-steel-gear-wheel", 40},
-            {"emerald-5", 100},
+            {"bob-cobalt-steel-gear-wheel", 40},
+            {"bob-emerald-5", 100},
         }
     },
     {
@@ -340,7 +322,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk8"], {
         replacements = {
             ["plastic-bar"] = {"bob-titanium-plate", 250},
             ["copper-cable"] = {"bob-tungsten-plate", 250},
-            {"amethyst-5", 100},
+            {"bob-amethyst-5", 100},
         }
     },
     {
@@ -378,7 +360,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
             ["advanced-circuit"] = {"bob-aluminium-plate", 200},
             ["steel-plate"] = {"bob-nitinol-bearing", 100},
             ["low-density-structure"] = {"bob-nitinol-gear-wheel", 100},
-            ["sulfur"] = {"topaz-5", 100},
+            ["sulfur"] = {"bob-topaz-5", 100},
         }
     },
     {
@@ -422,7 +404,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk10"], {
             ["sulfur"] = {"bob-tungsten-carbide", 100},
             ["advanced-circuit"] = {"bob-nitinol-alloy", 100},
             {"bob-nitinol-alloy", 100},
-            {"diamond-5", 100},
+            {"bob-diamond-5", 100},
         }
     },
     {

@@ -8,7 +8,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
             ["electronic-circuit"] = {"electronic-circuit", 50},
             {"bob-rubber", 30},
             {"bob-carbon", 75},
-            {"stone-bricks", 50},
+            {"stone-brick", 50},
         }
     },
     {
@@ -48,7 +48,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk2"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-silver-plate"] = {"", 0},
+            ["bob-silver-plate"] = {"zero"},
         }
     },
     --SE
@@ -180,7 +180,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk7"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"processing-unit", 120},
-            --[""] = {"", 0},
+            --[""] = {"zero"},
         }
     },
     {
@@ -196,8 +196,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk7"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
+            --[""] = {"zero"},
+            --[""] = {"zero"},
         }
     },
 })
@@ -215,7 +215,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk8"], {
         replacements = {
             ["battery"] = {"bob-silver-zinc-battery", 100},
             {"processing-unit", 130},
-            {"invar-plate", 350},
+            {"bob-invar-alloy", 350},
             {"bob-gunmetal-alloy", 350},
             {"bob-aluminium-plate", 350},
         }
@@ -230,8 +230,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk8"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
+            --[""] = {"zero"},
+            --[""] = {"zero"},
         }
     },
 })
@@ -242,7 +242,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk9"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 140},
             ["lubricant"] = {"bob-ferric-chloride-solution", 200},
             {"insulated-cable", 250},
-            --[""] = {"", 0},
+            --[""] = {"zero"},
         }
     },
     {
@@ -265,8 +265,8 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk9"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            --[""] = {"", 0},
-            --[""] = {"", 0},
+            --[""] = {"zero"},
+            --[""] = {"zero"},
         }
     },
 })

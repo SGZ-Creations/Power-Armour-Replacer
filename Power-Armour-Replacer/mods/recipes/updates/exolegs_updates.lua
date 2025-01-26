@@ -41,7 +41,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"bob-invar-alloy", 150},
-            ["steel-plate"] = {"bob-cobalt-steel-bearing", 75},
+            ["steel-plate"] = {"bob-cobalt-steel-gear-wheel", 95},
             ["iron-gear-wheel"] = {"bob-steel-bearing", 60},
             ["electronic-circuit"] = {"electronic-circuit", 200},
         }
@@ -82,7 +82,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
         dependencies = {"bobelectronics"},
         replacements = {
             {"advanced-circuit", 300},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
         }
     },
     {
@@ -91,9 +91,9 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
             ["iron-stick"] = {"bob-titanium-bearing", 75},
             ["battery"] = {"bob-lithium-ion-battery", 90},
             ["iron-gear-wheel"] = {"bob-invar-alloy", 155},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
             {"advanced-circuit", 300},
-            {"bob-bob-titanium-plate", 125},
+            {"bob-titanium-plate", 125},
         }
     },
     {
@@ -136,8 +136,8 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
         dependencies = {"space-exploration"},
         replacements = {
             ["advanced-circuit"] = {"motor", 20},
-            ["lubricant"] = {"", 0},
             {"low-density-structure", 60},
+            ["lubricant"] = {"zero"},
         }
     },
 })
@@ -186,7 +186,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk4"], {
             ["plastic-bar"] = {"se-dynamic-emitter", 20},
             ["steel-plate"] = {"imersium-beam", 200},
             ["processing-unit"] = {"se-lattice-pressure-vessel", 10},
-            ["low-density-structure"] = {"", 0},
+            ["low-density-structure"] = {"zero"},
             {"electric-motor", 30},
             {"matter-cube", 3},
         }

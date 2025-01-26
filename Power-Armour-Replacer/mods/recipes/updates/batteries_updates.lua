@@ -232,7 +232,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk7"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"processing-unit", 350},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
         }
     },
     {
@@ -241,7 +241,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk7"], {
             ["armour-control-unit"] = {"low-density-structure", 50},
             ["battery"] = {"bob-silver-zinc-battery", 100},
             ["plastic-bar"] = {"bob-titanium-plate", 150},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
             {"bob-lithium-ion-battery", 100},
         }
     },
@@ -268,7 +268,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk7"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
             {"angels-plate-platinum", 200},
             {"angels-plate-chrome", 200},
         }
@@ -291,7 +291,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk8"], {
         dependencies = {"bobplates"},
         replacements = {
             ["battery"] = {"bob-silver-zinc-battery", 200},
-            ["water"] = {"", 0},
+            ["water"] = {"zero"},
             {"bob-tungsten-plate", 200},
         }
     },{
@@ -303,7 +303,7 @@ util.ingredient_prereq(data.raw.recipe["par-battery-mk8"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["water"] = {"", 0},
+            ["water"] = {"zero"},
             {"angels-wire-platinum", 300},
         }
     },

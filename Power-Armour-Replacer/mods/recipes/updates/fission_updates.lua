@@ -386,6 +386,7 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk10"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["battery"] = {"bob-silver-zinc-battery", 200},
             {"bob-copper-tungsten-alloy", 200},
+            {"bob-silver-nitrate", 100},
             {"bob-nitinol-bearing", 100},
         }
     },
@@ -407,12 +408,6 @@ util.ingredient_prereq(data.raw.recipe["par-fission-reactor-mk10"], {
         replacements = {
             {"angels-wire-platinum", 200},
             {"uranium-234", 20},
-        }
-    },
-    {
-        dependencies = {"bobplates", "angelssmelting"},
-        replacements = {
-            {"bob-silver-oxite", 100},
         }
     },
     {

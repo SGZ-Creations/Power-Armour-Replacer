@@ -303,7 +303,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk8"], {
         replacements = {
             ["processing-unit"] = {"processing-unit", 400},
             ["uranium-235"] = {"bob-resin", 200},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
         }
     },
     {
@@ -311,7 +311,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk8"], {
         replacements = {
             ["processing-unit"] = {"processing-unit", 400},
             ["uranium-235"] = {"bob-tungsten-plate", 360},
-            ["lubricant"] = {"", 0},
+            ["lubricant"] = {"zero"},
             {"bob-gunmetal-alloy", 100},
             {"bob-tungsten-plate", 360},
             {"bob-cobalt-steel-alloy", 290},
@@ -347,7 +347,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk9"], {
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 450},
             ["uranium-235"] = {"insulated-cable", 200},
-            ["petroleum-gas"] = {"", 0},
+            ["petroleum-gas"] = {"zero"},
         }
     },
     {
@@ -356,7 +356,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk9"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 450},
             ["battery"] = {"bob-silver-zinc-battery", 280},
             ["uranium-235"] = {"bob-copper-tungsten-alloy", 300},
-            ["petroleum-gas"] = {"", 0},
+            ["petroleum-gas"] = {"zero"},
             {"bob-tungsten-carbide", 325},
             {"bob-nitinol-bearing", 200},
         }
@@ -398,7 +398,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk10"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            ["sulfuric-acid"] = {"", 0},
+            ["sulfuric-acid"] = {"zero"},
             {"bob-rubber", 395},
         }
     },
@@ -406,7 +406,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            ["sulfuric-acid"] = {"", 0},
+            ["sulfuric-acid"] = {"zero"},
             {"bob-silver-zinc-battery", 280},
             {"bob-tungsten-carbide", 325},
             {"bob-nitinol-gear-wheel", 450},
@@ -416,7 +416,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk10"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["bob-rubber"] = {"gilded-copper-cable", 465},
-            {"tinnded-copper-cable", 360},
+            {"tinned-copper-cable", 360},
             {"solder", 455},
         }
     },
