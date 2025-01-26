@@ -1,12 +1,17 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.14
-Date: 25.01.2025
+Date: 26.01.2025
   Modding:
     - Added seedling conversion to bobs.
     - Par's broken locales on bobs recipes.
     - Fixed bob logistic science issue on my roboports.
+    - Restored bob's recipes.
   Features:
     - Added charging_station_count_affected_by_quality to roboports
+  Scripting:
+    - Fixed until.lua
+  Credit:
+    - Thanks a lot @Pez for all the help.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 24.01.2025
