@@ -125,17 +125,27 @@ if (mods["space-age"] or mods["mech-armor"])then
         Hide_Item("mech-armor")
     end
 end]]
+if mods["space-age"] and mods["vanilla-loaders-hd"] then
+    data.raw.technology["turbo-transport-belt"].enabled = false
+
+    data.raw.technology["turbo-transport-belt"].hidden = true
+
+    data.raw.recipe["turbo-loader"].hidden = true
+
+    Hide_Item("turbo-loader")
+
+end
 
 if mods["space-age"] then
 
     data.raw.technology["fusion-reactor-equipment"].enabled = false
     data.raw.technology["battery-mk3-equipment"].enabled = false
 
-    data.raw.recipe["fusion-reactor-equipment"].hidden = true
-    data.raw.recipe["battery-mk3-equipment"].hidden = true
-
     data.raw.technology["fusion-reactor-equipment"].hidden = true
     data.raw.technology["battery-mk3-equipment"].hidden = true
+
+    data.raw.recipe["fusion-reactor-equipment"].hidden = true
+    data.raw.recipe["battery-mk3-equipment"].hidden = true
 
     if settings.startup["SAFilters"].value then
         Hide_Item("fusion-reactor-equipment")
