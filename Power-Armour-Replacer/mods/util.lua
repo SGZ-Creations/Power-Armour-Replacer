@@ -23,10 +23,14 @@ util.update_ingredients = function(recipe, replacements)
     end
     for k, new_ingredient in pairs(replacements) do --if new, and not replacement
         if type(k) ~= "string" then
-            ingredients[#ingredients+1] = new_ingredient
+            local ingtype = "item"
+            local name = new_ingredient[1] or new_ingredient.name
+            local amt = new_ingredient[2] or new_ingredient.amount
             if new_ingredient.type and new_ingredient.type == "fluid" then
+                ingtype = "fluid"
                 not_crafting = true --trigger category change
             end
+            ingredients[#ingredients+1] = {type=ingtype,name=name ,amount=amt}
         end
     end
     for _, remove_ingredient in pairs(remove) do
