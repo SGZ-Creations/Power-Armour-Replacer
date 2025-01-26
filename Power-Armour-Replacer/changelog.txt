@@ -11,6 +11,9 @@ Date: 26.01.2025
     - Repatable migration.
   Scripting:
     - Fixed until.lua
+  Info:
+    - Some issue with bobs at this point i can't do much with bobs being in beta testing.
+    - Basicly me trying to put plaster on a wound while the knife is still in it. 
   Credit:
     - Thanks a lot @Pez for all the help.
 ---------------------------------------------------------------------------------------------------

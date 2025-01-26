@@ -46,7 +46,6 @@ util.ingredient_prereq(data.raw.recipe["par-nightvision-mk1"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            --["electronic-circuit"] = {"automation-core", 15},
             ["lubricant"] = {"zero"},
         }
     },

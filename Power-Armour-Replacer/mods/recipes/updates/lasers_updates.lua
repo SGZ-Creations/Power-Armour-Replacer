@@ -30,9 +30,9 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
         }
     },
     {
-        dependencies = {"Bio_Industries", "angelssmelting"},
+        dependencies = {"bobplates", "Bio_Industries", "angelssmelting"},
         replacements = {
-            {"bob-rubber", 20},
+            ["bob-rubber"] = {"bob-rubber", 20},
         }
     },
     --K2
@@ -84,7 +84,6 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk2"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            --["electronic-circuit"] = {"automation-core", 10},
             ["engine-unit"] = {"motor", 20},
         }
     },
@@ -248,7 +247,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["heat-pipe"] = {"heat-pipe-2", 40},
+            ["heat-pipe"] = {"heat-pipe-2", 10},
         }
     },
     {
@@ -284,9 +283,15 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk7"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["electric-engine-unit"] = {"bob-gunmetal-alloy", 200},
+            ["electric-engine-unit"] = {"bob-brass-alloy", 200},
             {"bob-cobalt-steel-gear-wheel", 40},
             {"bob-emerald-5", 100},
+        }
+    },
+    {
+        dependencies = {"bobpower"},
+        replacements = {
+            {"heat-pipe-3", 15},
         }
     },
     {
@@ -323,6 +328,12 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk8"], {
             ["plastic-bar"] = {"bob-titanium-plate", 250},
             ["copper-cable"] = {"bob-tungsten-plate", 250},
             {"bob-amethyst-5", 100},
+        }
+    },
+    {
+        dependencies = {"bobpower"},
+        replacements = {
+            {"heat-pipe-3", 15},
         }
     },
     {
@@ -364,6 +375,12 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
         }
     },
     {
+        dependencies = {"bobpower"},
+        replacements = {
+            {"heat-pipe-4", 20},
+        }
+    },
+    {
         dependencies = {"bobrevamp"},
         replacements = {
             ["plastic-bar"] = {"heat-shield-tile", 300},
@@ -375,7 +392,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
         dependencies = {"angelssmelting"},
         replacements = {
             {"bob-copper-tungsten-alloy", 200},
-            {"bob-rubber", 100},
+            ["bob-rubber"] = {"bob-rubber", 100},
         }
     },
     --Clowns
@@ -411,6 +428,12 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk10"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["insulated-cable"] = {"gilded-copper-cable", 100}
+        }
+    },
+    {
+        dependencies = {"bobpower"},
+        replacements = {
+            {"heat-pipe-4", 20},
         }
     },
     {

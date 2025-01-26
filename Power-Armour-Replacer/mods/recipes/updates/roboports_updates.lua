@@ -141,6 +141,12 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk3"], {
             ["bob-rubber"] = {"zero"},
         }
     },
+    {
+        dependencies = {"boblogistics", "space-age"},
+        replacements = {
+            ["bob-rubber"] = {"zero"},
+        }
+    },
 })
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk4"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
@@ -175,6 +181,12 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk4"], {
             ["bob-rubber"] = {"zero"},
         }
     },
+    {
+        dependencies = {"boblogistics", "space-age"},
+        replacements = {
+            ["bob-rubber"] = {"zero"},
+        }
+    },
 })
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk5"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
@@ -194,8 +206,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk5"], {
             ["steel-chest"] = {"advanced-circuit", 250}, --2
             ["insualted-cable"] = {"bob-aluminium-plate", 200}, --1
             ["flying-robot-frame"] = {"bob-aluminium-plate", 200}, --1
-            ["battery"] = {"bob-lithium-ion-battery", 250}, --3
-            {"bob-ceramic-bearing", 200}, --0
+            {"bob-ceramic-bearing", 200}, --3
         }
     },
     {
@@ -206,9 +217,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk5"], {
             ["flying-robot-frame"] = {"roboport-door-2", 5}, --1
             ["insualted-cable"] = {"roboport-door-2", 200}, --1
             ["bob-aluminium-plate"] = {"roboport-door-2", 5}, --1
-            ["battery"] = {"roboport-chargepad-2", 5}, --3
-            ["bob-lithium-ion-battery"] = {"roboport-chargepad-2", 5}, --3
-            ["bob-ceramic-bearing"] = {"zero"}, --0
+            ["bob-ceramic-bearing"] = {"roboport-chargepad-2", 5}, --3
         }
     },
 })
@@ -288,6 +297,12 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk7"], {
             ["gilded-copper-cable"] = {"zero"},--0
         }
     },
+    {
+        dependencies = {"boblogistics", "space-age"},
+        replacements = {
+            ["gilded-copper-cable"] = {"zero"},--0
+        }
+    },
 })
 util.ingredient_prereq(data.raw.recipe["par-roboport-mk8"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
@@ -324,10 +339,16 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk8"], {
             ["bob-silver-plate"] = {"roboport-chargepad-3", 10}, --3
             ["copper-cable"] = {"roboport-door-3", 10}, --1
             ["gilded-copper-cable"] = {"roboport-door-3", 10}, --1
-            ["uranium-235"] = {"zero"}, --0
-            ["processing-unit"] = {"zero"}, --0
             ["bob-tungsten-plate"] = {"zero"}, --0
+            ["processing-unit"] = {"zero"}, --0
+            ["uranium-235"] = {"zero"}, --0
             ["bob-rubber"] = {"zero"}, --0
+        }
+    },
+    {
+        dependencies = {"boblogistics", "space-age"},
+        replacements = {
+            ["processing-unit"] = {"zero"}, --0
         }
     },
 })
@@ -366,10 +387,18 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk9"], {
             ["low-density-structure"] = {"roboport-chargepad-4", 5},
             ["advanced-circuit"] = {"roboport-door-4", 5},
             ["bob-advanced-processing-unit"] = {"roboport-door-4", 5},
-            ["tinned-copper-cable"] = {"zero"},
             ["bob-copper-tungsten-alloy"] = {"zero"},
+            ["tinned-copper-cable"] = {"zero"},
             ["bob-silicon-wafer"] = {"zero"},
             ["lubricant"] = {"zero"},
+            ["solder"] = {"zero"},
+        }
+    },
+    {
+        dependencies = {"boblogistics", "space-age"},
+        replacements = {
+            ["tinned-copper-cable"] = {"zero"},
+            ["bob-silicon-wafer"] = {"zero"},
             ["solder"] = {"zero"},
         }
     },
@@ -404,6 +433,12 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk10"], {
             ["bob-silver-zinc-battery"] = {"zero"},
             ["bob-tungsten-carbide"] = {"zero"},
             ["bob-nitinol-alloy"] = {"zero"},
+        }
+    },
+    {
+        dependencies = {"boblogistics", "space-age"},
+        replacements = {
+            ["bob-tungsten-carbide"] = {"zero"},
         }
     },
     --K2
