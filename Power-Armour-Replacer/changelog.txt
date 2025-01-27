@@ -4,8 +4,11 @@ Date: 27.01.2025
   Changes:
     - Changelog.
     - Recipes when bobs are enabled.
+    - Achivements the survive hit points name change.
   Features:
     - Made Nanobots2 work as old nanobots.
+  Scripting:
+    - Restructured locals files.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.14
 Date: 26.01.2025
