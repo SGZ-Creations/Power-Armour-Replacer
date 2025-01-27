@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.15
+Date: 27.01.2025
+  Changes:
+    - Changelog.
+    - Recipes when bobs are enabled.
+  Features:
+    - Made Nanobots2 work as old nanobots.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.14
 Date: 26.01.2025
   Modding:
@@ -54,10 +62,10 @@ Date: 20.01.2025
     - Fixed all internal naming changes for bob's mods to work with PAR.
     - Reworked some recipes that do now have bob & vanilla intermediates.
     - Ex: Tungsten & Tungsten Carbide. Has duplicates that will be an issue later if not patched correctly.
-    - Bob's reciped compatibility will be put on hold as portion of my item removal function unde my util.lua is broken. Seeking help in this.
+    - B̶o̶b̶'s̶ r̶e̶c̶i̶p̶e̶d̶ c̶o̶m̶p̶a̶t̶i̶b̶i̶l̶i̶t̶y̶ w̶i̶l̶l̶ b̶e̶ p̶u̶t̶ o̶n̶ h̶o̶l̶d̶ a̶s̶ p̶o̶r̶t̶i̶o̶n̶ o̶f̶ m̶y̶ i̶t̶e̶m̶ r̶e̶m̶o̶v̶a̶l̶ f̶u̶n̶c̶t̶i̶o̶n̶ u̶n̶d̶e̶ m̶y̶ u̶t̶i̶l̶.l̶u̶a̶ i̶s̶ b̶r̶o̶k̶e̶n̶. S̶e̶e̶k̶i̶n̶g̶ h̶e̶l̶p̶ i̶n̶ t̶h̶i̶s̶.
     - As i need to still learn more in the aspect of local functions.
-    - Should someone want to give a pullrequest with a fix on my. https://github.com/SGZ-Creations/Power-Armour-Replacer/pulls
-    - More on my git issue site & Discord.
+    - S̶h̶o̶u̶l̶d̶ s̶o̶m̶e̶o̶n̶e̶ w̶a̶n̶t̶ t̶o̶ g̶i̶v̶e̶ a̶ p̶u̶l̶l̶r̶e̶q̶u̶e̶s̶t̶ w̶i̶t̶h̶ a̶ f̶i̶x̶ o̶n̶ m̶y̶.
+    - M̶o̶r̶e̶ o̶n̶ m̶y̶ g̶i̶t̶ i̶s̶s̶u̶e̶ s̶i̶t̶e̶ &̶ D̶i̶s̶c̶o̶r̶d̶.
   Info:
     - Repatable migrations goal is the part that should attempt to replace,
     - Vanilla and modded Armours & Equipments. Then give you PAR's counter part items automatically.

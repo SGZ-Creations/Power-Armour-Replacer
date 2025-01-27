@@ -8,7 +8,7 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["wood"] = {"bob-resin", 200},
+            ["wood"] = {"bob-resin", 100},
             ["small-lamp"] = {"bob-rubber", 150},
             ["electronic-circuit"] = {"basic-circuit-board", 100},
             ["copper-cable"] = {"insualted-cable", 100},
