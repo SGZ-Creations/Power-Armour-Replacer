@@ -1,3 +1,9 @@
+local DRR = data.raw.recipe
+local DRT = data.raw.technology
+local DRI = data.raw.item
+local SS = settings.startup
+local M = mods
+
 --[[
         Clean up phase of all mods adding technology Recipes for Armour's & Equipment's.
         making the game less confusing on what to craft and hopefully not have 2-4 recipes.
@@ -10,7 +16,7 @@
 ]]
 
 local function Hide_Item(name)
-    local item = data.raw.item[name]
+    local item = DRI[name]
     if item then
         item.hidden = true
     end
@@ -25,76 +31,76 @@ local function Hide_Item(name)
 end
 
 --Enabled
-    data.raw.technology["modular-armor"].enabled = false
-    data.raw.technology["power-armor"].enabled = false
-    data.raw.technology["power-armor-mk2"].enabled = false
+    DRT["modular-armor"].enabled = false
+    DRT["power-armor"].enabled = false
+    DRT["power-armor-mk2"].enabled = false
 --Hidden
-    data.raw.recipe["modular-armor"].hidden = true
-    data.raw.recipe["power-armor"].hidden = true
-    data.raw.recipe["power-armor-mk2"].hidden = true
+    DRR["modular-armor"].hidden = true
+    DRR["power-armor"].hidden = true
+    DRR["power-armor-mk2"].hidden = true
 
-    data.raw.technology["modular-armor"].hidden = true
-    data.raw.technology["power-armor"].hidden = true
-    data.raw.technology["power-armor-mk2"].hidden = true
+    DRT["modular-armor"].hidden = true
+    DRT["power-armor"].hidden = true
+    DRT["power-armor-mk2"].hidden = true
 
 --Enabled
-    data.raw.technology["energy-shield-equipment"].enabled = false
-    data.raw.technology["energy-shield-mk2-equipment"].enabled = false
-    data.raw.technology["fission-reactor-equipment"].enabled = false
-    data.raw.technology["night-vision-equipment"].enabled = false
-    data.raw.technology["battery-equipment"].enabled = false
-    data.raw.technology["battery-mk2-equipment"].enabled = false
-    data.raw.technology["belt-immunity-equipment"].enabled = false
-    data.raw.technology["exoskeleton-equipment"].enabled = false
-    data.raw.technology["personal-laser-defense-equipment"].enabled = false
-    data.raw.technology["personal-roboport-equipment"].enabled = false
-    data.raw.technology["personal-roboport-mk2-equipment"].enabled = false
-    data.raw.technology["solar-panel-equipment"].enabled = false
+    DRT["energy-shield-equipment"].enabled = false
+    DRT["energy-shield-mk2-equipment"].enabled = false
+    DRT["fission-reactor-equipment"].enabled = false
+    DRT["night-vision-equipment"].enabled = false
+    DRT["battery-equipment"].enabled = false
+    DRT["battery-mk2-equipment"].enabled = false
+    DRT["belt-immunity-equipment"].enabled = false
+    DRT["exoskeleton-equipment"].enabled = false
+    DRT["personal-laser-defense-equipment"].enabled = false
+    DRT["personal-roboport-equipment"].enabled = false
+    DRT["personal-roboport-mk2-equipment"].enabled = false
+    DRT["solar-panel-equipment"].enabled = false
 
-    data.raw.recipe["power-armor"].enabled = false
-    data.raw.recipe["modular-armor"].enabled = false
-    data.raw.recipe["power-armor-mk2"].enabled = false
-    data.raw.recipe["battery-equipment"].enabled = false
-    data.raw.recipe["exoskeleton-equipment"].enabled = false
-    data.raw.recipe["battery-mk2-equipment"].enabled = false
-    data.raw.recipe["solar-panel-equipment"].enabled = false
-    data.raw.recipe["night-vision-equipment"].enabled = false
-    data.raw.recipe["belt-immunity-equipment"].enabled = false
-    data.raw.recipe["energy-shield-equipment"].enabled = false
-    data.raw.recipe["fission-reactor-equipment"].enabled = false
-    data.raw.recipe["personal-roboport-equipment"].enabled = false
-    data.raw.recipe["energy-shield-mk2-equipment"].enabled = false
-    data.raw.recipe["personal-roboport-mk2-equipment"].enabled = false
-    data.raw.recipe["personal-laser-defense-equipment"].enabled = false
+    DRR["power-armor"].enabled = false
+    DRR["modular-armor"].enabled = false
+    DRR["power-armor-mk2"].enabled = false
+    DRR["battery-equipment"].enabled = false
+    DRR["exoskeleton-equipment"].enabled = false
+    DRR["battery-mk2-equipment"].enabled = false
+    DRR["solar-panel-equipment"].enabled = false
+    DRR["night-vision-equipment"].enabled = false
+    DRR["belt-immunity-equipment"].enabled = false
+    DRR["energy-shield-equipment"].enabled = false
+    DRR["fission-reactor-equipment"].enabled = false
+    DRR["personal-roboport-equipment"].enabled = false
+    DRR["energy-shield-mk2-equipment"].enabled = false
+    DRR["personal-roboport-mk2-equipment"].enabled = false
+    DRR["personal-laser-defense-equipment"].enabled = false
 
 --Hidden
-    data.raw.technology["fission-reactor-equipment"].hidden = true
-    data.raw.technology["energy-shield-equipment"].hidden = true
-    data.raw.technology["night-vision-equipment"].hidden = true
-    data.raw.technology["energy-shield-mk2-equipment"].hidden = true
-    data.raw.technology["exoskeleton-equipment"].hidden = true
-    data.raw.technology["belt-immunity-equipment"].hidden = true
-    data.raw.technology["battery-equipment"].hidden = true
-    data.raw.technology["battery-mk2-equipment"].hidden = true
-    data.raw.technology["solar-panel-equipment"].hidden = true
-    data.raw.technology["personal-roboport-equipment"].hidden = true
-    data.raw.technology["personal-roboport-mk2-equipment"].hidden = true
-    data.raw.technology["personal-laser-defense-equipment"].hidden = true
+    DRT["fission-reactor-equipment"].hidden = true
+    DRT["energy-shield-equipment"].hidden = true
+    DRT["night-vision-equipment"].hidden = true
+    DRT["energy-shield-mk2-equipment"].hidden = true
+    DRT["exoskeleton-equipment"].hidden = true
+    DRT["belt-immunity-equipment"].hidden = true
+    DRT["battery-equipment"].hidden = true
+    DRT["battery-mk2-equipment"].hidden = true
+    DRT["solar-panel-equipment"].hidden = true
+    DRT["personal-roboport-equipment"].hidden = true
+    DRT["personal-roboport-mk2-equipment"].hidden = true
+    DRT["personal-laser-defense-equipment"].hidden = true
 
-    data.raw.recipe["energy-shield-equipment"].hidden = true
-    data.raw.recipe["energy-shield-mk2-equipment"].hidden = true
-    data.raw.recipe["fission-reactor-equipment"].hidden = true
-    data.raw.recipe["night-vision-equipment"].hidden = true
-    data.raw.recipe["battery-equipment"].hidden = true
-    data.raw.recipe["battery-mk2-equipment"].hidden = true
-    data.raw.recipe["belt-immunity-equipment"].hidden = true
-    data.raw.recipe["exoskeleton-equipment"].hidden = true
-    data.raw.recipe["solar-panel-equipment"].hidden = true
-    data.raw.recipe["personal-roboport-equipment"].hidden = true
-    data.raw.recipe["personal-laser-defense-equipment"].hidden = true
-    data.raw.recipe["personal-roboport-mk2-equipment"].hidden = true
+    DRR["energy-shield-equipment"].hidden = true
+    DRR["energy-shield-mk2-equipment"].hidden = true
+    DRR["fission-reactor-equipment"].hidden = true
+    DRR["night-vision-equipment"].hidden = true
+    DRR["battery-equipment"].hidden = true
+    DRR["battery-mk2-equipment"].hidden = true
+    DRR["belt-immunity-equipment"].hidden = true
+    DRR["exoskeleton-equipment"].hidden = true
+    DRR["solar-panel-equipment"].hidden = true
+    DRR["personal-roboport-equipment"].hidden = true
+    DRR["personal-laser-defense-equipment"].hidden = true
+    DRR["personal-roboport-mk2-equipment"].hidden = true
 
-if settings.startup["vanilla-filters"].value then
+if SS["vanilla-filters"].value then
     Hide_Item("power-armor")
     Hide_Item("modular-armor")
     Hide_Item("power-armor-mk2")
@@ -125,52 +131,53 @@ if (mods["space-age"] or mods["mech-armor"])then
         Hide_Item("mech-armor")
     end
 end]]
-if mods["space-age"] and mods["vanilla-loaders-hd"] then
-    data.raw.technology["turbo-transport-belt"].enabled = false
 
-    data.raw.technology["turbo-transport-belt"].hidden = true
+if M["space-age"] and M["vanilla-loaders-hd"] then
+    DRT["turbo-transport-belt"].enabled = false
 
-    data.raw.recipe["turbo-loader"].hidden = true
+    DRT["turbo-transport-belt"].hidden = true
+
+    DRR["turbo-loader"].hidden = true
 
     Hide_Item("turbo-loader")
 
 end
 
-if mods["space-age"] then
+if M["space-age"] then
 
-    data.raw.technology["fusion-reactor-equipment"].enabled = false
-    data.raw.technology["battery-mk3-equipment"].enabled = false
+    DRT["fusion-reactor-equipment"].enabled = false
+    DRT["battery-mk3-equipment"].enabled = false
 
-    data.raw.technology["fusion-reactor-equipment"].hidden = true
-    data.raw.technology["battery-mk3-equipment"].hidden = true
+    DRT["fusion-reactor-equipment"].hidden = true
+    DRT["battery-mk3-equipment"].hidden = true
 
-    data.raw.recipe["fusion-reactor-equipment"].hidden = true
-    data.raw.recipe["battery-mk3-equipment"].hidden = true
+    DRR["fusion-reactor-equipment"].hidden = true
+    DRR["battery-mk3-equipment"].hidden = true
 
-    if settings.startup["SAFilters"].value then
+    if SS["SAFilters"].value then
         Hide_Item("fusion-reactor-equipment")
         Hide_Item("battery-mk3-equipment")
     end
 end
 
-if mods["bobwarfare"] then
+if M["bobwarfare"] then
 --Enabled
-    data.raw.recipe["bob-power-armor-mk3"].enabled = false
-    data.raw.recipe["bob-power-armor-mk4"].enabled = false
-    data.raw.recipe["bob-power-armor-mk5"].enabled = false
+    DRR["bob-power-armor-mk3"].enabled = false
+    DRR["bob-power-armor-mk4"].enabled = false
+    DRR["bob-power-armor-mk5"].enabled = false
 
-    data.raw.technology["bob-power-armor-3"].enabled = false
-    data.raw.technology["bob-power-armor-4"].enabled = false
-    data.raw.technology["bob-power-armor-5"].enabled = false
+    DRT["bob-power-armor-3"].enabled = false
+    DRT["bob-power-armor-4"].enabled = false
+    DRT["bob-power-armor-5"].enabled = false
 
 --Hidden
-    data.raw.recipe["bob-power-armor-mk3"].hidden = true
-    data.raw.recipe["bob-power-armor-mk4"].hidden = true
-    data.raw.recipe["bob-power-armor-mk5"].hidden = true
+    DRR["bob-power-armor-mk3"].hidden = true
+    DRR["bob-power-armor-mk4"].hidden = true
+    DRR["bob-power-armor-mk5"].hidden = true
 
-    data.raw.technology["bob-power-armor-3"].hidden = true
-    data.raw.technology["bob-power-armor-4"].hidden = true
-    data.raw.technology["bob-power-armor-5"].hidden = true
+    DRT["bob-power-armor-3"].hidden = true
+    DRT["bob-power-armor-4"].hidden = true
+    DRT["bob-power-armor-5"].hidden = true
 
     if settings.startup["BobW-filters"].value then
         Hide_Item("bob-power-armor-mk3")
@@ -179,14 +186,15 @@ if mods["bobwarfare"] then
     end
 end
 
-if mods["bobplates"] and mods["space-age"] then
+if M["bobplates"] and M["space-age"] then
+    Hide_Item("seedling")
     Hide_Item("bob-carbon")
     Hide_Item("bob-lithium")
     Hide_Item("bob-tungsten-plate")
     Hide_Item("bob-tungsten-carbide")
 end
 
-if mods["bobequipment"] then
+if M["bobequipment"] then
 --Enabled
     data.raw.technology["bob-battery-equipment-3"].enabled = false
     data.raw.technology["bob-battery-equipment-4"].enabled = false

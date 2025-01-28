@@ -5,6 +5,7 @@ Date: 27.01.2025
     - Changelog.
     - Recipes when bobs are enabled.
     - Achivements the survive hit points name change.
+    - All items with fusion reactor from [space-age] should now be temp repalced with fission reactor mk1.
   Features:
     - Made Nanobots2 work as old nanobots.
   Scripting:

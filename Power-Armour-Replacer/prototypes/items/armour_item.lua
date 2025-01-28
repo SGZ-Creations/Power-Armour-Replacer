@@ -109,7 +109,7 @@ for tier, equipment in pairs(power_armour_equipment) do
         pick_sound = item_sounds.armor_large_inventory_pickup,
         drop_sound = item_sounds.armor_large_inventory_move,
         stack_size = 1,
-        weight = 100000,--power_armour.weightvalue,
+        weight = 100000,--power_armour_equipment.weightvalue,
         infinite = true,
         durability = 1000000,
         equipment_grid = equipment_grid_name,
