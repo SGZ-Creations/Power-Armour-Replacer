@@ -4,7 +4,10 @@ data:extend({
         name = "par-night-immunity-tech-1",
         icon_size = 256,
         icons = util.technology_icon_constant_equipment("__Power-Armour-Replacer__/graphics/technology/night-immunity/belt-immunity-night-vision-equipment.png"),
-        prerequisites = {"par-fission-reactor-tech-5" },
+        prerequisites = {
+            "par-fission-reactor-tech-5",
+            "par-armour-tech-5",
+        },
         effects =
         {
             {
@@ -27,8 +30,6 @@ data:extend({
         prerequisites =
         {
             "par-night-immunity-tech-1",
-            "par-armour-tech-5",
-            "battery",
             "processing-unit",
         },
         effects =
