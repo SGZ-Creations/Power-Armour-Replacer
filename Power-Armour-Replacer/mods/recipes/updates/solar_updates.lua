@@ -1,5 +1,6 @@
 local util = require("mods.util")
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
+local DRR = data.raw.recipe
+util.ingredient_prereq(DRR["par-solar-panel-mk1"], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -15,6 +16,11 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 50},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
             ["copper-plate"] = {"tinned-copper-cable", 90}
         }
     },
@@ -26,7 +32,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk1"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk2"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk2"], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -67,13 +73,12 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk2"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk3"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["copper-plate"] = {"tinned-copper-cable", 50},
-            ["battery"] = {"insulated-cable", 140},
             {"electronic-circuit", 70},
+            ["battery"] = {"insulated-cable", 140},
         }
     },
     {
@@ -84,6 +89,12 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk3"], {
             {"bob-silicon-wafer", 100},
         }
     },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["copper-plate"] = {"tinned-copper-cable", 50},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -92,11 +103,10 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk3"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk4"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"solder", 110},
             ["electronic-circuit"] = {"electronic-circuit", 70},
         }
     },
@@ -109,6 +119,12 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk4"], {
             ["electronic-circuit"] = {"electronic-circuit", 70},
             {"bob-silicon-wafer", 200},
             {"bob-bronze-alloy", 60},
+        }
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["advanced-circuit"] = {"solder", 110},
         }
     },
     --Angels
@@ -126,12 +142,11 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk4"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk5"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 90},
-            ["sulfur"] = {"gilded-copper-cable", 130},
             {"insulated-cable", 125},
         }
     },
@@ -148,6 +163,12 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk5"], {
         }
     },
     {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["sulfur"] = {"gilded-copper-cable", 130},
+        }
+    },
+    {
         dependencies = {"angelssmelting"},
         replacements = {
             ["bob-silicon-wafer"] = {"angels-mono-silcon", 300},
@@ -155,12 +176,11 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk5"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk6"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"advanced-circuit", 110},
-            {"gilded-copper-cable", 200},
         }
     },
     {
@@ -174,8 +194,14 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk6"], {
             {"bob-lithium", 50},
         }
     },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            {"gilded-copper-cable", 130},
+        }
+    },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk7"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -201,11 +227,10 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk7"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk8"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["copper-cable"] = {"tinned-copper-cable", 300},
             {"insulated-cable", 150},
             {"processing-unit", 130},
         }
@@ -223,6 +248,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk8"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
+            ["copper-cable"] = {"tinned-copper-cable", 300},
             {"solder", 150},
         }
     },
@@ -235,7 +261,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk8"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk9"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -270,7 +296,7 @@ util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk9"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-solar-panel-mk10"], {
+util.ingredient_prereq(DRR["par-solar-panel-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

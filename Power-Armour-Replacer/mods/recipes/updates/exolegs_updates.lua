@@ -1,5 +1,7 @@
 local util = require("mods.util")
-util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk1"], {
+local DRR = data.raw.recipe
+
+util.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -30,7 +32,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk1"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk2"], {
+util.ingredient_prereq(DRR["par-exoskeleton-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -77,7 +79,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk2"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
+util.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -97,7 +99,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
         }
     },
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["steel-plate"] = {"gilded-copper-cable", 200},
         }
@@ -141,7 +143,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk3"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk4"], {
+util.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -192,7 +194,7 @@ util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk4"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-exoskeleton-mk5"], {
+util.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

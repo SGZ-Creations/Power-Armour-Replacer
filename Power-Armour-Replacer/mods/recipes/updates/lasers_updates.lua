@@ -251,7 +251,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
         }
     },
     {
-        dependencies = {"bobelectronics"},
+        dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"tinned-copper-cable", 120},
         }

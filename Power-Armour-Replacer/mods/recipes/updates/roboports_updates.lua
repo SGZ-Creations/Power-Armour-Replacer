@@ -11,17 +11,16 @@ util.ingredient_prereq(data.raw.recipe["par-roboport-mk1"], {
             ["wood"] = {"bob-resin", 100},
             ["small-lamp"] = {"bob-rubber", 150},
             ["electronic-circuit"] = {"basic-circuit-board", 100},
-            ["copper-cable"] = {"insualted-cable", 100},
-            ["iron-chest"] = {"bob-steel-gear-wheel", 100},
+            ["copper-cable"] = {"insulated-cable", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
+            ["iron-chest"] = {"bob-steel-gear-wheel", 100},
             ["small-lamp"] = {"bob-carbon", 100},
             ["wood"] = {"bob-resin", 150},
-            ["iron-chest"] = {"bob-carbon", 100},
             {"stone-brick", 50},
             {"bob-carbon", 100},
         }
