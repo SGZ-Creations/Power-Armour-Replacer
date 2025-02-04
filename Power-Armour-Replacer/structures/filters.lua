@@ -876,7 +876,7 @@ if Mods["space-exploration"] then
 end
 
 
-if Mods["Power Armor MK3"] and Mods["space-age"] then
+if Mods["Power Armor MK3"] then
     --Hidden
     DRR["pamk3-se"].hidden = true
     DRR["pamk3-inff"].hidden = true
@@ -917,54 +917,8 @@ if Mods["Power Armor MK3"] and Mods["space-age"] then
         Hide_Item("pamk3-pamk4")
         Hide_Item("pamk3-battmk3")
     end
-    else if Mods["Power Armor MK3"] then
-        --Hidden
-        DRR["pamk3-se"].hidden = true
-        DRR["pamk3-pnr"].hidden = true
-        DRR["pamk3-inff"].hidden = true
-        DRR["pamk3-nvmk2"].hidden = true
-        DRR["pamk3-esmk3"].hidden = true
-        DRR["pamk3-pamk3"].hidden = true
-        DRR["pamk3-pamk4"].hidden = true
-        DRR["pamk3-battmk3"].hidden = true
-
-        DRT["pamk3-se"].hidden = true
-        DRT["pamk3-pnr"].hidden = true
-        DRT["pamk3-nvmk2"].hidden = true
-        DRT["pamk3-esmk3"].hidden = true
-        DRT["pamk3-pamk3"].hidden = true
-        DRT["pamk3-pamk4"].hidden = true
-        DRT["pamk3-battmk3"].hidden = true
-    --Enabled
-        DRR["pamk3-se"].enabled = false
-        DRR["pamk3-pnr"].enabled = false
-        DRR["pamk3-inff"].enabled = false
-        DRR["pamk3-nvmk2"].enabled = false
-        DRR["pamk3-esmk3"].enabled = false
-        DRR["pamk3-pamk3"].enabled = false
-        DRR["pamk3-pamk4"].enabled = false
-        DRR["pamk3-battmk3"].enabled = false
-
-        DRT["pamk3-se"].enabled = false
-        DRT["pamk3-pnr"].enabled = false
-        DRT["pamk3-nvmk2"].enabled = false
-        DRT["pamk3-esmk3"].enabled = false
-        DRT["pamk3-pamk3"].enabled = false
-        DRT["pamk3-pamk4"].enabled = false
-        DRT["pamk3-battmk3"].enabled = false
-        --Filters
-        if SS["MK3-filters"].value then
-            Hide_Item("pamk3-se")
-            Hide_Item("pamk3-pnr")
-            Hide_Item("pamk3-inff")
-            Hide_Item("pamk3-nvmk2")
-            Hide_Item("pamk3-esmk3")
-            Hide_Item("pamk3-pamk3")
-            Hide_Item("pamk3-pamk4")
-            Hide_Item("pamk3-battmk3")
-        end
-    end
 end
+
 
 if Mods["PowerAndArmor"] then
     --Enabled
