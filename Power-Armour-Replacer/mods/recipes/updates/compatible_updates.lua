@@ -1,5 +1,6 @@
 local util = require("mods.util")
-util.ingredient_prereq(data.raw.recipe["pamk3-lvest"],
+local DRR = data.raw.recipe
+util.ingredient_prereq(DRR["pamk3-lvest"],
 {
     {
         dependencies = {"Power Armor MK3"},
@@ -10,7 +11,7 @@ util.ingredient_prereq(data.raw.recipe["pamk3-lvest"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["heavy-armor"],
+util.ingredient_prereq(DRR["heavy-armor"],
 {
     {
         dependencies = {"Power Armor MK3"},
@@ -22,7 +23,7 @@ util.ingredient_prereq(data.raw.recipe["heavy-armor"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["pamk3-hvest"],
+util.ingredient_prereq(DRR["pamk3-hvest"],
 {
     {
         dependencies = {"Power Armor MK3"},

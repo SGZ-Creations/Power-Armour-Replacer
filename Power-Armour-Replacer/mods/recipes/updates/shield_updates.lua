@@ -1,5 +1,6 @@
 local util = require("mods.util")
-util.ingredient_prereq(data.raw.recipe["par-shield-mk1"], {
+local DRR = data.raw.recipe
+util.ingredient_prereq(DRR["par-shield-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -37,7 +38,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk1"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk2"], {
+util.ingredient_prereq(DRR["par-shield-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -83,7 +84,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk2"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk3"], {
+util.ingredient_prereq(DRR["par-shield-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -128,7 +129,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk3"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk4"], {
+util.ingredient_prereq(DRR["par-shield-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -185,7 +186,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk4"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk5"], {
+util.ingredient_prereq(DRR["par-shield-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -220,7 +221,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk5"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk6"], {
+util.ingredient_prereq(DRR["par-shield-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -253,7 +254,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk6"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk7"], {
+util.ingredient_prereq(DRR["par-shield-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -297,7 +298,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk7"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk8"], {
+util.ingredient_prereq(DRR["par-shield-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -341,7 +342,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk8"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk9"], {
+util.ingredient_prereq(DRR["par-shield-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -393,7 +394,7 @@ util.ingredient_prereq(data.raw.recipe["par-shield-mk9"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-shield-mk10"], {
+util.ingredient_prereq(DRR["par-shield-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

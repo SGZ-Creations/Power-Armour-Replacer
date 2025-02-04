@@ -1,5 +1,6 @@
 local util = require("mods.util")
-util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
+local DRR = data.raw.recipe
+util.ingredient_prereq(DRR["par-laser-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -45,7 +46,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk1"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk2"], {
+util.ingredient_prereq(DRR["par-laser-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -88,7 +89,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk2"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk3"], {
+util.ingredient_prereq(DRR["par-laser-mk3"], {
     --Bob's
     {
         dependencies = {"bobelectronics"},
@@ -122,7 +123,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk3"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk4"], {
+util.ingredient_prereq(DRR["par-laser-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -187,7 +188,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk4"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk5"], {
+util.ingredient_prereq(DRR["par-laser-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -230,7 +231,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk5"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
+util.ingredient_prereq(DRR["par-laser-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -272,7 +273,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk6"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk7"], {
+util.ingredient_prereq(DRR["par-laser-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -314,7 +315,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk7"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk8"], {
+util.ingredient_prereq(DRR["par-laser-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -356,7 +357,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk8"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
+util.ingredient_prereq(DRR["par-laser-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -405,7 +406,7 @@ util.ingredient_prereq(data.raw.recipe["par-laser-mk9"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-laser-mk10"], {
+util.ingredient_prereq(DRR["par-laser-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

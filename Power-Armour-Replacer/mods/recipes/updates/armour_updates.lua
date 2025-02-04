@@ -1,6 +1,6 @@
---if settings.startup["moddular-disable-armour"] then
 local util = require("mods.util")
-util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
+local DRR = data.raw.recipe
+util.ingredient_prereq(DRR["par-armour-mk1"], {
 	-- Power Armor MK3
 	{
 		dependencies = {"Power Armor MK3"},
@@ -88,7 +88,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk1"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-armour-mk2"], {
+util.ingredient_prereq(DRR["par-armour-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -173,7 +173,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk2"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-armour-mk3"], {
+util.ingredient_prereq(DRR["par-armour-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -277,7 +277,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk3"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
+util.ingredient_prereq(DRR["par-armour-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -343,7 +343,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk4"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
+util.ingredient_prereq(DRR["par-armour-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -392,7 +392,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk5"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
+util.ingredient_prereq(DRR["par-armour-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -437,7 +437,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk6"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
+util.ingredient_prereq(DRR["par-armour-mk7"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -488,7 +488,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk7"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
+util.ingredient_prereq(DRR["par-armour-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -523,7 +523,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk8"], {
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
+util.ingredient_prereq(DRR["par-armour-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -586,7 +586,7 @@ util.ingredient_prereq(data.raw.recipe["par-armour-mk9"], {
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["par-armour-mk10"], {
+util.ingredient_prereq(DRR["par-armour-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
