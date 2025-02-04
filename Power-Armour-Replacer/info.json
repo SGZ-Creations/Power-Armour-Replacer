@@ -2,7 +2,7 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "2.0",
-	"version": "0.3.15",
+	"version": "0.3.16",
 	"author": "SGZ_Creations",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
@@ -38,7 +38,7 @@
 		"(?) custom_power_armor_fix >= 5.1.1",
 		"(?) mech-armor >= 1.0.0",
 		"(?) PowerAndArmor >= 1.19",
-		"(?) Power Armor MK3 >= 0.4.7",
+		"? Power Armor MK3 >= 0.4.7",
 		"(?) pypostprocessing >= 0.2.23",
 		"(?) RampantArsenal >= 1.1.6",
 		"(?) space-spidertron",

@@ -1,6 +1,7 @@
 local DRR = data.raw.recipe
 local DRT = data.raw.technology
 local DRI = data.raw.item
+local DRA = data.raw.armor
 local SS = settings.startup
 local Mods = mods
 
@@ -21,7 +22,7 @@ local function Hide_Item(name)
         item.hidden = true
     end
 
-    local armour_item = data.raw.armor[name]
+    local armour_item = DRA[name]
     if armour_item then
         armour_item.hidden = true
     end
@@ -875,7 +876,6 @@ if Mods["space-exploration"] then
     end
 end
 
-
 if Mods["Power Armor MK3"] then
     --Hidden
     DRR["pamk3-se"].hidden = true
@@ -908,7 +908,7 @@ if Mods["Power Armor MK3"] then
     DRT["pamk3-pamk4"].enabled = false
     DRT["pamk3-battmk3"].enabled = false
     --Filters
-    if SS["SA-MK3-filters"].value then
+    if SS["MK3-filters"].value then
         Hide_Item("pamk3-se")
         Hide_Item("pamk3-inff")
         Hide_Item("pamk3-nvmk2")
@@ -918,7 +918,6 @@ if Mods["Power Armor MK3"] then
         Hide_Item("pamk3-battmk3")
     end
 end
-
 
 if Mods["PowerAndArmor"] then
     --Enabled
