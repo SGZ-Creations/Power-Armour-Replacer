@@ -234,7 +234,7 @@ util.ingredient_prereq(DRR["par-shield-mk6"], {
             ["processing-unit"] = {"advanced-circuit", 300},
             ["uranium-235"] = {"bob-cobalt-steel-bearing", 100},
             ["nuclear-fuel"] = {"bob-titanium-plate", 100},
-            ["battery"] = {"lithium", 120},
+            ["battery"] = {"bob-lithium", 120},
             {"bob-aluminium-plate", 200},
             {"bob-ceramic-bearing", 200},
         }
