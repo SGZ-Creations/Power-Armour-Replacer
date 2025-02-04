@@ -59,3 +59,8 @@ if mods["bobtech"] and mods["boblogistics"] then
 
 	table.insert(data.raw.technology["par-roboport-tech-10"].unit.ingredients, {"advanced-logistic-science-pack", 6})
 end
+
+if not mods["boblibrary"] then
+    local tech_eff = data.raw.technology["par-armour-tech-1"].effects
+    table.insert(tech_eff,{type="unlock-recipe",recipe="iron-stick"})
+end

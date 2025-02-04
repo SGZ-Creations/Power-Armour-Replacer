@@ -36,7 +36,6 @@ util.ingredient_prereq(DRR["par-solar-panel-mk2"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["copper-plate"] = {"solder", 110},
             ["electronic-circuit"] = {"electronic-circuit", 60},
             {"bob-carbon", 125},
             {"bob-silver-plate", 135},
@@ -48,6 +47,12 @@ util.ingredient_prereq(DRR["par-solar-panel-mk2"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 60},
+        },
+    },
+    {
+        dependencies = {"bobelectronics", "bobplates"},
+        replacements = {
+            ["copper-plate"] = {"solder", 110},
         },
     },
     --Angels
