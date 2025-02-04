@@ -9,6 +9,7 @@ Date: 27.01.2025
     - Added "par-armour-tech-5" to prerequisite on "par-night-immunity-tech-1" removed on "par-night-immunity-tech-2" so it easier to find.
   Features:
     - Made Nanobots2 work as old nanobots.
+    - Repatable migration.
   Modding:
     - Nanobots mods eqiupment unlocks at NightImunity 1 instead of 2
   Scripting:
