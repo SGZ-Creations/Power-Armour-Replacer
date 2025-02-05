@@ -42,3 +42,5 @@
     require("prototypes.misc.armour_equipment_category")
 --structures
     --require("structure.tips-andd-trick")
+    require("structures.Milestones.preset_addons")
+    require("structures.Milestones.presets")
