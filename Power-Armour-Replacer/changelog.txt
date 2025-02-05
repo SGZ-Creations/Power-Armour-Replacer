@@ -3,6 +3,7 @@ Version: 0.3.16
 Date: 05.02.2025
   Changes:
   Features:
+    - Preparing Compatibility for Milestones mod. 
   Bugfixes:
     - Crash without Aged Bobs.
     - Crash with Armour MK3 mod.

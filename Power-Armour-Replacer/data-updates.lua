@@ -17,3 +17,5 @@
 	require("mods.technology.updates.bobs-science-updates")
 --structures
 	require("structures.science-setting")
+    --require("structures.Milestones.preset_addons")
+    --require("structures.Milestones.presets")
