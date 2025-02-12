@@ -148,7 +148,7 @@ util.ingredient_prereq(DRR["spidertronmk2"],
         }
     },
     {
-        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobelectronics", "boblogistics", "bobtech"},
         replacements = {
             ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk5", 5},
         }
@@ -164,7 +164,7 @@ util.ingredient_prereq(DRR["spidertronmk3"],
         }
     },
     {
-        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
+        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobelectronics", "boblogistics", "bobtech"},
         replacements = {
             ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk5", 5},
         }
