@@ -1,6 +1,7 @@
 local util = require("mods.util")
+local DRR = data.raw.recipe
 
-util.ingredient_prereq(data.raw.recipe["mech-armor"],
+util.ingredient_prereq(DRR["mech-armor"],
 {
     {
         dependencies = {"space-age"},
@@ -9,7 +10,7 @@ util.ingredient_prereq(data.raw.recipe["mech-armor"],
         }
     },
 })
-util.ingredient_prereq(data.raw.recipe["mech-armor"],
+util.ingredient_prereq(DRR["mech-armor"],
 {
     {
         dependencies = {"mech-armor"},
@@ -19,7 +20,7 @@ util.ingredient_prereq(data.raw.recipe["mech-armor"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["spidertron_mk2"],
+util.ingredient_prereq(DRR["spidertron_mk2"],
 {
     {
         dependencies = {"spidertrontiers-community-updates"},
@@ -30,7 +31,7 @@ util.ingredient_prereq(data.raw.recipe["spidertron_mk2"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["spidertron_mk3"],
+util.ingredient_prereq(DRR["spidertron_mk3"],
 {
     {
         dependencies = {"spidertrontiers-community-updates"},
@@ -41,7 +42,7 @@ util.ingredient_prereq(data.raw.recipe["spidertron_mk3"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["cannon-spidertron"],
+util.ingredient_prereq(DRR["cannon-spidertron"],
 {
     {
         dependencies = {"Cannon_Spidertron"},
@@ -52,7 +53,7 @@ util.ingredient_prereq(data.raw.recipe["cannon-spidertron"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["ss-space-spidertron"],
+util.ingredient_prereq(DRR["ss-space-spidertron"],
 {
     {
         dependencies = {"space-spidertron"},
@@ -65,7 +66,7 @@ util.ingredient_prereq(data.raw.recipe["ss-space-spidertron"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["artillery-spidertron"],
+util.ingredient_prereq(DRR["artillery-spidertron"],
 {
     {
         dependencies = {"artillery-spidertron"},
@@ -76,7 +77,7 @@ util.ingredient_prereq(data.raw.recipe["artillery-spidertron"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["spidertron"],
+util.ingredient_prereq(DRR["spidertron"],
 {
     {
         dependencies = {"base"},
@@ -86,15 +87,26 @@ util.ingredient_prereq(data.raw.recipe["spidertron"],
         }
     },
     {
-        dependencies = {"base", "bobrevamp", "bobplates",},
+        dependencies = {"base", "bobrevamp", "bobplates", "bobwarfare"},
         replacements = {
             ["par-fission-reactor-mk5"] = {"rtg", 2},
+            ["par-fission-reactor-mk1"] = {"mech-brain", 1}
         }
     },
 })
 
+util.ingredient_prereq(DRR["heavy-spidertron"],
+{
+    {
+        dependencies = {"base", "bobrevamp", "bobplates", "bobwarfare"},
+        replacements = {
+            ["par-fission-reactor-mk1"] = "mech-brain", 1,
+        }
+    },
+})
+--[[
 --spidertron-extended
-util.ingredient_prereq(data.raw.recipe["spidertronmk2"],
+util.ingredient_prereq(DRR["spidertronmk2"],
 {
     {
         dependencies = {"spidertron-extended",},
@@ -110,7 +122,7 @@ util.ingredient_prereq(data.raw.recipe["spidertronmk2"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["spidertronmk3"],
+util.ingredient_prereq(DRR["spidertronmk3"],
 {
     {
         dependencies = {"spidertron-extended",},
@@ -126,7 +138,7 @@ util.ingredient_prereq(data.raw.recipe["spidertronmk3"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["immolator"],
+util.ingredient_prereq(DRR["immolator"],
 {
     {
         dependencies = {"spidertron-extended",},
@@ -148,7 +160,7 @@ util.ingredient_prereq(data.raw.recipe["immolator"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["spidertron-builder"],
+util.ingredient_prereq(DRR["spidertron-builder"],
 {
     {
         dependencies = {"spidertron-extended",},
@@ -163,9 +175,9 @@ util.ingredient_prereq(data.raw.recipe["spidertron-builder"],
         }
     },
 })
-
+]]
 --SpaceModFeorasFork
-util.ingredient_prereq(data.raw.recipe["fusion-reactor"],
+util.ingredient_prereq(DRR["fusion-reactor"],
 {
     {
         dependencies = {"SpaceModFeorasFork",},
@@ -181,7 +193,7 @@ util.ingredient_prereq(data.raw.recipe["fusion-reactor"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["protection-field"],
+util.ingredient_prereq(DRR["protection-field"],
 {
     {
         dependencies = {"SpaceModFeorasFork",},
@@ -197,7 +209,7 @@ util.ingredient_prereq(data.raw.recipe["protection-field"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["space-ai-robot"],
+util.ingredient_prereq(DRR["space-ai-robot"],
 {
     {
         dependencies = {"SpaceModFeorasFork",},
@@ -219,7 +231,7 @@ util.ingredient_prereq(data.raw.recipe["space-ai-robot"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["space-ai-robot-frame"],
+util.ingredient_prereq(DRR["space-ai-robot-frame"],
 {
     {
         dependencies = {"SpaceModFeorasFork",},
@@ -240,7 +252,7 @@ util.ingredient_prereq(data.raw.recipe["space-ai-robot-frame"],
     },
 })
 
-util.ingredient_prereq(data.raw.recipe["laser-cannon"], {
+util.ingredient_prereq(DRR["laser-cannon"], {
     {
         dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
         replacements = {
