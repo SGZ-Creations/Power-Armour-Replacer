@@ -80,30 +80,63 @@ util.ingredient_prereq(DRR["artillery-spidertron"],
 util.ingredient_prereq(DRR["spidertron"],
 {
     {
-        dependencies = {"base"},
+        dependencies = {},
         replacements = {
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk5", 2},
             ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk2", 4},
         }
     },
     {
-        dependencies = {"base", "bobrevamp", "bobplates", "bobwarfare"},
+        dependencies = {"bobwarfare"},
         replacements = {
-            ["par-fission-reactor-mk5"] = {"rtg", 2},
-            ["par-fission-reactor-mk1"] = {"mech-brain", 1}
+            ["par-fission-reactor-mk5"] = {"mech-brain", 10},
+        }
+    },
+    {
+        dependencies = {"bobrevamp", "bobplates"},
+        replacements = {
+            ["mech-brain"] = {"rtg", 20},
+            ["par-fission-reactor-mk5"] = {"rtg", 20}
+        }
+    },
+    {
+        dependencies = {"bobrevamp", "bobplates", "bobwarfare",},
+        replacements = {
+            ["mech-brain"] = {"rtg", 20},
+            ["par-fission-reactor-mk5"] = {"rtg", 20},
+            {"mech-brain", 10},
         }
     },
 })
 
+
 util.ingredient_prereq(DRR["heavy-spidertron"],
 {
     {
-        dependencies = {"base", "bobrevamp", "bobplates", "bobwarfare"},
+        dependencies = {"bobwarfare"},
         replacements = {
-            ["par-fission-reactor-mk1"] = "mech-brain", 1,
+            ["par-fission-reactor-mk1"] = {"mech-brain", 5},
+        }
+    },
+    {
+        dependencies = {"bobrevamp", "bobplates",},
+        replacements = {
+            ["mech-brain"] = {"rtg", 10},
+            ["par-fission-reactor-mk1"] = {"rtg", 10},
+        }
+    },
+    {
+        dependencies = {"bobrevamp", "bobplates", "bobwarfare",},
+        replacements = {
+            ["mech-brain"] = {"rtg", 10},
+            ["par-fission-reactor-mk1"] = {"rtg", 10},
+            {"mech-brain", 5},
         }
     },
 })
+
+
+
 --[[
 --spidertron-extended
 util.ingredient_prereq(DRR["spidertronmk2"],
