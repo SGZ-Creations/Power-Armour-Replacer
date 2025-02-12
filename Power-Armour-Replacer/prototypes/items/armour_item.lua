@@ -112,7 +112,7 @@ for tier, equipment in pairs(power_armour_equipment) do
         weight = 100000,--power_armour_equipment.weightvalue,
         infinite = true,
         durability = 1000000,
-        equipment_grid = equipment_grid_name,
+        equipment_grid = equipment_grid_name, -- disable to removes qiulity. now make a setting or function that tells if setting =  grids H-W 0 then remove grid entirly. 
         inventory_size_bonus = equipment.inventory_bonus,
         open_sound = { filename = "__base__/sound/armor-open.ogg", volume = 1 },
         close_sound = { filename = "__base__/sound/armor-close.ogg", volume = 1 }
