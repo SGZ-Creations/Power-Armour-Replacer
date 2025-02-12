@@ -19,7 +19,7 @@ util.ingredient_prereq(DRR["par-shield-mk1"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["iron-plate"] = {"tinned-copper-cable", 65},
+            ["iron-plate"] = {"bob-tinned-copper-cable", 65},
             ["copper-plate"] = {"solder", 80},
         }
     },
@@ -88,7 +88,7 @@ util.ingredient_prereq(DRR["par-shield-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"insulated-cable", 110},
+            ["advanced-circuit"] = {"bob-insulated-cable", 110},
             ["electronic-circuit"] = {"electronic-circuit", 150},
         }
     },
@@ -104,7 +104,7 @@ util.ingredient_prereq(DRR["par-shield-mk3"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["battery"] = {"tinned-copper-cable", 50},
+            ["battery"] = {"bob-tinned-copper-cable", 50},
         }
     },
     --Angels
@@ -133,7 +133,7 @@ util.ingredient_prereq(DRR["par-shield-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["small-lamp"] = {"insulated-cable", 145},
+            ["small-lamp"] = {"bob-insulated-cable", 145},
             ["advanced-circuit"] = {"electronic-circuit", 200},
             ["plastic-bar"] = {"bob-resin", 250},
         }
@@ -191,7 +191,7 @@ util.ingredient_prereq(DRR["par-shield-mk5"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 250},
-            {"insulated-cable", 175},
+            {"bob-insulated-cable", 175},
         }
     },
     {
@@ -206,8 +206,8 @@ util.ingredient_prereq(DRR["par-shield-mk5"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 150},
-            {"tinned-copper-cable", 100},
+            {"bob-gilded-copper-cable", 150},
+            {"bob-tinned-copper-cable", 100},
         }
     },
     --Angels
@@ -242,7 +242,7 @@ util.ingredient_prereq(DRR["par-shield-mk6"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 100},
+            {"bob-gilded-copper-cable", 100},
             {"solder", 100},
         }
     },
@@ -260,7 +260,7 @@ util.ingredient_prereq(DRR["par-shield-mk7"], {
         replacements = {
             ["processing-unit"] = {"processing-unit", 350},
             ["solid-fuel"] = {"bob-resin", 155},
-            ["uranium-238"] = {"insulated-cable", 130},
+            ["uranium-238"] = {"bob-insulated-cable", 130},
         }
     },
     {
@@ -279,7 +279,7 @@ util.ingredient_prereq(DRR["par-shield-mk7"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["uranium-238"] = {"solder", 240},
-            ["insulated-cable"] = {"solder", 240},
+            ["bob-insulated-cable"] = {"solder", 240},
         }
     },
     --Angels
@@ -347,7 +347,7 @@ util.ingredient_prereq(DRR["par-shield-mk9"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 450},
-            ["uranium-235"] = {"insulated-cable", 200},
+            ["uranium-235"] = {"bob-insulated-cable", 200},
             ["petroleum-gas"] = {"zero"},
         }
     },
@@ -365,8 +365,8 @@ util.ingredient_prereq(DRR["par-shield-mk9"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["insulated-cable"] = {"solder", 250},
-            {"gilded-copper-cable", 365},
+            ["bob-insulated-cable"] = {"solder", 250},
+            {"bob-gilded-copper-cable", 365},
         }
     },
     --Angels
@@ -416,8 +416,8 @@ util.ingredient_prereq(DRR["par-shield-mk10"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["bob-rubber"] = {"gilded-copper-cable", 465},
-            {"tinned-copper-cable", 360},
+            ["bob-rubber"] = {"bob-gilded-copper-cable", 465},
+            {"bob-tinned-copper-cable", 360},
             {"solder", 455},
         }
     },
@@ -430,7 +430,7 @@ util.ingredient_prereq(DRR["par-shield-mk10"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["gilded-copper-cable"] = {"angels-wire-silver", 450},
+            ["bob-gilded-copper-cable"] = {"angels-wire-silver", 450},
             ["solder"] = {"angels-wire-platnium", 300},
             {"angels-plate-chrome", 500},
         }

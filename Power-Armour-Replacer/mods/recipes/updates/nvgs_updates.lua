@@ -17,7 +17,7 @@ util.ingredient_prereq(DRR["par-nightvision-mk1"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"tinned-copper-cable", 50},
+            {"bob-tinned-copper-cable", 50},
         }
     },
     -- Angels
@@ -55,7 +55,7 @@ util.ingredient_prereq(DRR["par-nightvision-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"insulated-cable", 240},
+            ["advanced-circuit"] = {"bob-insulated-cable", 240},
             ["processing-unit"] = {"bob-rubber", 200},
             ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
         }
@@ -73,7 +73,7 @@ util.ingredient_prereq(DRR["par-nightvision-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 260},
+            {"bob-gilded-copper-cable", 260},
         }
     },
     {

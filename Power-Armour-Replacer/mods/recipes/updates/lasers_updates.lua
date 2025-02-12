@@ -63,15 +63,15 @@ util.ingredient_prereq(DRR["par-laser-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"tinned-copper-cable", 80},
-            {"insulated-cable", 80},
+            {"bob-tinned-copper-cable", 80},
+            {"bob-insulated-cable", 80},
         }
     },
     --Bio-Industries--Angels
     {
         dependencies = {"Bio_Industries", "angelssmelting", "bobplates"},
         replacements = {
-            ["insulated-cable"] = {"bob-rubber", 50},
+            ["bob-insulated-cable"] = {"bob-rubber", 50},
         }
     },
     --K2
@@ -94,7 +94,7 @@ util.ingredient_prereq(DRR["par-laser-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["battery"] = {"insulated-cable", 120},
+            ["battery"] = {"bob-insulated-cable", 120},
             {"electronic-circuit", 150},
         }
     },
@@ -212,7 +212,7 @@ util.ingredient_prereq(DRR["par-laser-mk5"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"gilded-copper-cable", 200},
+            ["copper-cable"] = {"bob-gilded-copper-cable", 200},
         }
     },
     --Angels
@@ -254,7 +254,7 @@ util.ingredient_prereq(DRR["par-laser-mk6"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"tinned-copper-cable", 120},
+            {"bob-tinned-copper-cable", 120},
         }
     },
     --Angels
@@ -277,7 +277,7 @@ util.ingredient_prereq(DRR["par-laser-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"insulated-cable", 100},
+            ["advanced-circuit"] = {"bob-insulated-cable", 100},
             {"processing-unit", 350},
         }
     },
@@ -304,7 +304,7 @@ util.ingredient_prereq(DRR["par-laser-mk7"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"gilded-copper-cable", 100},
+            ["copper-cable"] = {"bob-gilded-copper-cable", 100},
         }
     },
     --Clowns
@@ -319,7 +319,7 @@ util.ingredient_prereq(DRR["par-laser-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"insulated-cable", 250},
+            ["advanced-circuit"] = {"bob-insulated-cable", 250},
             {"processing-unit", 400},
         }
     },
@@ -347,7 +347,7 @@ util.ingredient_prereq(DRR["par-laser-mk8"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["insulated-cable"] = {"angels-wire-platinum", 200},
+            ["bob-insulated-cable"] = {"angels-wire-platinum", 200},
         }
     },
     {
@@ -411,7 +411,7 @@ util.ingredient_prereq(DRR["par-laser-mk10"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 200},
-            ["advanced-circuit"] = {"insulated-cable", 300}
+            ["advanced-circuit"] = {"bob-insulated-cable", 300}
         }
     },
     {
@@ -428,7 +428,7 @@ util.ingredient_prereq(DRR["par-laser-mk10"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["insulated-cable"] = {"gilded-copper-cable", 100}
+            ["bob-insulated-cable"] = {"bob-gilded-copper-cable", 100}
         }
     },
     {

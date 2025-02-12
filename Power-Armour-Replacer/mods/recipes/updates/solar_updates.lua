@@ -21,7 +21,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk1"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-plate"] = {"tinned-copper-cable", 90}
+            ["copper-plate"] = {"bob-tinned-copper-cable", 90}
         }
     },
     --SE
@@ -83,7 +83,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk3"], {
         dependencies = {"bobelectronics"},
         replacements = {
             {"electronic-circuit", 70},
-            ["battery"] = {"insulated-cable", 140},
+            ["battery"] = {"bob-insulated-cable", 140},
         }
     },
     {
@@ -97,7 +97,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk3"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-plate"] = {"tinned-copper-cable", 50},
+            ["copper-plate"] = {"bob-tinned-copper-cable", 50},
         }
     },
     --K2
@@ -152,7 +152,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk5"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 90},
-            {"insulated-cable", 125},
+            {"bob-insulated-cable", 125},
         }
     },
     {
@@ -170,7 +170,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk5"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["sulfur"] = {"gilded-copper-cable", 130},
+            ["sulfur"] = {"bob-gilded-copper-cable", 130},
         }
     },
     {
@@ -202,7 +202,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk6"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 130},
+            {"bob-gilded-copper-cable", 130},
         }
     },
 })
@@ -236,7 +236,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"insulated-cable", 150},
+            {"bob-insulated-cable", 150},
             {"processing-unit", 130},
         }
     },
@@ -253,7 +253,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk8"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"tinned-copper-cable", 300},
+            ["copper-cable"] = {"bob-tinned-copper-cable", 300},
             {"solder", 150},
         }
     },
@@ -272,7 +272,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 140},
             ["lubricant"] = {"bob-ferric-chloride-solution", 200},
-            {"insulated-cable", 250},
+            {"bob-insulated-cable", 250},
             --[""] = {"zero"},
         }
     },
@@ -288,7 +288,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk9"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 250},
+            {"bob-gilded-copper-cable", 250},
             {"solder", 250},
         }
     },
@@ -307,7 +307,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk10"], {
         replacements = {
             ["lubricant"] = {"bob-ferric-chloride-solution", 200},
             ["processing-unit"] = {"bob-advanced-processing-unit", 150},
-            {"insulated-cable", 500},
+            {"bob-insulated-cable", 500},
         }
     },
     {
@@ -322,7 +322,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk10"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 500},
+            {"bob-gilded-copper-cable", 500},
             {"solder", 500},
         }
     },

@@ -55,7 +55,7 @@ util.ingredient_prereq(DRR["par-battery-mk2"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"solder", 60},
-            {"tinned-copper-cable", 110},
+            {"bob-tinned-copper-cable", 110},
         }
     },
     --K2
@@ -113,7 +113,7 @@ util.ingredient_prereq(DRR["par-battery-mk4"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 200},
-            {"insulated-cable", 100},
+            {"bob-insulated-cable", 100},
         }
     },
     {
@@ -155,7 +155,7 @@ util.ingredient_prereq(DRR["par-battery-mk5"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 250},
-            {"insulated-cable", 210},
+            {"bob-insulated-cable", 210},
         }
     },
     {
@@ -168,7 +168,7 @@ util.ingredient_prereq(DRR["par-battery-mk5"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"tinned-copper-cable", 200},
+            {"bob-tinned-copper-cable", 200},
         }
     },
     --248K
@@ -249,7 +249,7 @@ util.ingredient_prereq(DRR["par-battery-mk7"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 100},
+            {"bob-gilded-copper-cable", 100},
         }
     },
     --248K
@@ -298,7 +298,7 @@ util.ingredient_prereq(DRR["par-battery-mk8"], {
     },{
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 200},
+            {"bob-gilded-copper-cable", 200},
         }
     },
     {

@@ -12,7 +12,7 @@ util.ingredient_prereq(DRR["par-roboport-mk1"], {
             ["wood"] = {"bob-resin", 100},
             ["small-lamp"] = {"bob-rubber", 150},
             ["electronic-circuit"] = {"basic-circuit-board", 100},
-            ["copper-cable"] = {"insulated-cable", 100},
+            ["copper-cable"] = {"bob-insulated-cable", 100},
         }
     },
     {
@@ -30,8 +30,8 @@ util.ingredient_prereq(DRR["par-roboport-mk1"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["iron-chest"] = {"solder", 150},
-            ["copper-cable"] = {"tinned-copper-cable", 100},
-            ["insualted-cable"] = {"tinned-copper-cable", 100},
+            ["copper-cable"] = {"bob-tinned-copper-cable", 100},
+            ["insualted-cable"] = {"bob-tinned-copper-cable", 100},
         }
     },
     {
@@ -79,7 +79,7 @@ util.ingredient_prereq(DRR["par-roboport-mk2"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 200},
-            {"insulated-cable", 180},
+            {"bob-insulated-cable", 180},
         }
     },
     {
@@ -99,7 +99,7 @@ util.ingredient_prereq(DRR["par-roboport-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"tinned-copper-cable", 175},
+            ["copper-cable"] = {"bob-tinned-copper-cable", 175},
         }
     },
     --SE-K2
@@ -281,7 +281,7 @@ util.ingredient_prereq(DRR["par-roboport-mk7"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["iron-stick"] = {"solder-alloy", 100},--1
-            {"gilded-copper-cable", 350},--0
+            {"bob-gilded-copper-cable", 350},--0
         }
     },
     {
@@ -294,13 +294,13 @@ util.ingredient_prereq(DRR["par-roboport-mk7"], {
             ["iron-stick"] = {"roboport-door-3", 5}, --1
             ["solder-alloy"] = {"roboport-door-3", 5}, --1
             ["low-density-structure"] = {"zero"}, --0
-            ["gilded-copper-cable"] = {"zero"},--0
+            ["bob-gilded-copper-cable"] = {"zero"},--0
         }
     },
     {
         dependencies = {"boblogistics", "space-age"},
         replacements = {
-            ["gilded-copper-cable"] = {"zero"},--0
+            ["bob-gilded-copper-cable"] = {"zero"},--0
         }
     },
 })
@@ -328,7 +328,7 @@ util.ingredient_prereq(DRR["par-roboport-mk8"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"gilded-copper-cable", 400}, --1
+            ["copper-cable"] = {"bob-gilded-copper-cable", 400}, --1
         }
     },
     {
@@ -338,7 +338,7 @@ util.ingredient_prereq(DRR["par-roboport-mk8"], {
             ["steel-plate"] = {"roboport-chargepad-3", 10}, --3
             ["bob-silver-plate"] = {"roboport-chargepad-3", 10}, --3
             ["copper-cable"] = {"roboport-door-3", 10}, --1
-            ["gilded-copper-cable"] = {"roboport-door-3", 10}, --1
+            ["bob-gilded-copper-cable"] = {"roboport-door-3", 10}, --1
             ["bob-tungsten-plate"] = {"zero"}, --0
             ["processing-unit"] = {"zero"}, --0
             ["uranium-235"] = {"zero"}, --0
@@ -377,7 +377,7 @@ util.ingredient_prereq(DRR["par-roboport-mk9"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"solder", 300},
-            {"tinned-copper-cable", 300},
+            {"bob-tinned-copper-cable", 300},
         }
     },
     {
@@ -388,7 +388,7 @@ util.ingredient_prereq(DRR["par-roboport-mk9"], {
             ["advanced-circuit"] = {"roboport-door-4", 5},
             ["bob-advanced-processing-unit"] = {"roboport-door-4", 5},
             ["bob-copper-tungsten-alloy"] = {"zero"},
-            ["tinned-copper-cable"] = {"zero"},
+            ["bob-tinned-copper-cable"] = {"zero"},
             ["bob-silicon-wafer"] = {"zero"},
             ["lubricant"] = {"zero"},
             ["solder"] = {"zero"},
@@ -397,7 +397,7 @@ util.ingredient_prereq(DRR["par-roboport-mk9"], {
     {
         dependencies = {"boblogistics", "space-age"},
         replacements = {
-            ["tinned-copper-cable"] = {"zero"},
+            ["bob-tinned-copper-cable"] = {"zero"},
             ["bob-silicon-wafer"] = {"zero"},
             ["solder"] = {"zero"},
         }

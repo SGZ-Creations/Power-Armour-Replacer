@@ -20,7 +20,7 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-cable"] = {"solder", 50},
-            {"tinned-copper-cable", 100},
+            {"bob-tinned-copper-cable", 100},
         }
     },
     --SE-K2
@@ -101,7 +101,7 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["steel-plate"] = {"gilded-copper-cable", 200},
+            ["steel-plate"] = {"bob-gilded-copper-cable", 200},
         }
     },
     --Angels
@@ -199,7 +199,7 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            {"insulated-cable", 660},
+            {"bob-insulated-cable", 660},
         }
     },
     {
@@ -208,14 +208,14 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["steel-plate"] = {"bob-copper-tungsten-alloy", 200},
             ["battery"] = {"bob-tungsten-carbide", 200},
-            ["insulated-cable"] = {"bob-nitinol-bearing", 200},
+            ["bob-insulated-cable"] = {"bob-nitinol-bearing", 200},
             {"bob-nitinol-bearing", 200},
         }
     },
     {
         dependencies = {"bobplates", "bobelectronics"},
         replacements = {
-            {"gilded-copper-cable", 90},
+            {"bob-gilded-copper-cable", 90},
         }
     },
     --Clowns

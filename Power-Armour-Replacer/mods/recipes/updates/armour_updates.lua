@@ -30,7 +30,7 @@ util.ingredient_prereq(DRR["par-armour-mk1"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["bob-resin"] = {"solder", 100},
-            {"tinned-copper-cable", 55},
+            {"bob-tinned-copper-cable", 55},
         }
     },
     --Angels
@@ -93,7 +93,7 @@ util.ingredient_prereq(DRR["par-armour-mk2"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 200},
-            {"insulated-cable", 50},
+            {"bob-insulated-cable", 50},
         }
     },
     {
@@ -108,8 +108,8 @@ util.ingredient_prereq(DRR["par-armour-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["insulated-cable"] = {"solder", 50},
-            {"tinned-copper-cable", 55},
+            ["bob-insulated-cable"] = {"solder", 50},
+            {"bob-tinned-copper-cable", 55},
         }
     },
     {
@@ -282,7 +282,7 @@ util.ingredient_prereq(DRR["par-armour-mk4"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 400},
-            ["plastic-bar"] = {"insulated-cable", 180},
+            ["plastic-bar"] = {"bob-insulated-cable", 180},
         }
     },
     {
@@ -364,7 +364,7 @@ util.ingredient_prereq(DRR["par-armour-mk5"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["engine-unit"] = {"gilded-copper-cable", 500},
+            ["engine-unit"] = {"bob-gilded-copper-cable", 500},
         }
     },
     {
@@ -432,7 +432,7 @@ util.ingredient_prereq(DRR["par-armour-mk6"], {
         replacements = {
             ["processing-unit"] = {"plastic-bar", 100},
             ["bob-gold-plate"] = {"bob-cobalt-steel-alloy", 100},
-            {"gilded-copper-cable", 55},
+            {"bob-gilded-copper-cable", 55},
         }
     },
 })
@@ -466,7 +466,7 @@ util.ingredient_prereq(DRR["par-armour-mk7"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"gilded-copper-cable", 250},
+            ["copper-cable"] = {"bob-gilded-copper-cable", 250},
             {"solder", 150},
         }
     },

@@ -77,7 +77,7 @@ util.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 260},
+            {"bob-gilded-copper-cable", 260},
         }
     },
     {

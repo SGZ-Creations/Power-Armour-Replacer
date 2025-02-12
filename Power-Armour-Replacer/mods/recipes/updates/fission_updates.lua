@@ -5,7 +5,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
         dependencies = {"bobelectronics",},
         replacements = {
             ["electronic-circuit"] = {"basic-circuit-board", 50},
-            {"insulated-cable", 50},
+            {"bob-insulated-cable", 50},
         }
     },
     {
@@ -17,7 +17,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
     {
         dependencies = {"bobplates", "bobelectronics",},
         replacements = {
-            ["copper-plate"] = {"tinned-copper-cable", 55},
+            ["copper-plate"] = {"bob-tinned-copper-cable", 55},
             {"solder", 40},
         }
     },
@@ -49,7 +49,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
     {
         dependencies = {"bobplates", "bobelectronics",},
         replacements = {
-            ["copper-cable"] = {"tinned-copper-cable", 120},
+            ["copper-cable"] = {"bob-tinned-copper-cable", 120},
             {"solder", 50},
         }
     },
@@ -79,7 +79,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["solid-fuel"] = {"insulated-cable", 180},
+            ["solid-fuel"] = {"bob-insulated-cable", 180},
             ["electronic-circuit"] = {"electronic-circuit", 150},
         }
     },
@@ -148,7 +148,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk4"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-plate"] = {"tinned-copper-cable", 150},
+            ["copper-plate"] = {"bob-tinned-copper-cable", 150},
             {"solder", 90},
         }
     },
@@ -164,7 +164,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"insulated-cable", 100},
+            {"bob-insulated-cable", 100},
             ["advanced-circuit"] = {"advanced-circuit", 250},
         }
     },
@@ -180,7 +180,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk5"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 100},
+            {"bob-gilded-copper-cable", 100},
         }
     },
     --Angels
@@ -199,7 +199,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk6"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 300},
-            ["processing-unit"] = {"insulated-cable", 100},
+            ["processing-unit"] = {"bob-insulated-cable", 100},
             ["uranium-fuel-cell"] = {"bob-resin", 100},
         }
     },
@@ -250,8 +250,8 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["heat-pipe-3"] = {"gilded-copper-cable", 50},
-            {"gilded-copper-cable", 50},
+            ["heat-pipe-3"] = {"bob-gilded-copper-cable", 50},
+            {"bob-gilded-copper-cable", 50},
         }
     },
     {
@@ -272,7 +272,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"insulated-cable", 350},
+            ["advanced-circuit"] = {"bob-insulated-cable", 350},
             ["sulfur"] = {"processing-unit", 400},
         }
     },
@@ -281,7 +281,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
         replacements = {
             ["sulfur"] = {"processing-unit", 400},
             ["advanced-circuit"] = {"bob-titanium-plate", 200},
-            ["insulated-cable"] = {"bob-silicon-nitride", 100},
+            ["bob-insulated-cable"] = {"bob-silicon-nitride", 100},
             {"bob-titanium-plate", 200},
             {"bob-tungsten-plate", 200},
         }
@@ -290,7 +290,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"solder", 100},
-            {"tinned-copper-cable", 100},
+            {"bob-tinned-copper-cable", 100},
         }
     },
     {
@@ -394,7 +394,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"gilded-copper-cable", 200},
+            {"bob-gilded-copper-cable", 200},
         }
     },
     {
