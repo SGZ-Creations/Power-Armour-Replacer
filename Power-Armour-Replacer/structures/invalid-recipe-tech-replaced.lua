@@ -84,11 +84,8 @@ local remove_prereq = {}
 end
 
 for _, technology in pairs(data.raw.technology) do
-    if technology.normal then
-        replace_prerequisites(technology.normal.prerequisites)
-    end
-    if technology.expensive then
-        replace_prerequisites(technology.expensive.prerequisites)
+    if technology then
+        replace_prerequisites(technology.prerequisites)
     end
     replace_prerequisites(technology.prerequisites)
 end
@@ -165,19 +162,18 @@ local function replace_ingredients(ingredients)
 end
 
 for _, recipe in pairs(data.raw.recipe) do
-    if recipe.normal then
-        replace_ingredients(recipe.normal.ingredients)
-    end
-    if recipe.expensive then
-        replace_ingredients(recipe.expensive.ingredients)
+    if recipe then
+        replace_ingredients(recipe.ingredients)
     end
     replace_ingredients(recipe.ingredients)
 end
 
 -- Replaces Chest content
-
 --[[
-local function replace_chestitesm(chestitems)
-    if not chestitems then return end
-    for _, item in pairs(chestitems) do 
+entity = data.raw.item ..chest.. or ["steel-chest"] or ["wooden-chest"] or 
+if mods["boblogistics"] then ["brass-chest"] or ["titanium-chest"]
+
+function entity in pairs(data.raw.entity) do
+    if not data.raw.entity  then return end
+    for _, item in (chestitems) do 
 ]]
