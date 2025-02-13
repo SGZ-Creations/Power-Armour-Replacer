@@ -3,7 +3,6 @@ Version: 0.3.16
 Date: 05.02.2025
   Changes:
     - Another "bob-" prefix.
-    - Working on fixing Spidertron Extended Compatibility.
   Features:
     - Preparing Compatibility for Milestones mod.
     - Preparing to move Ingame info message to tips & tricks.
@@ -11,6 +10,7 @@ Date: 05.02.2025
     - Crash without Aged Bobs.
     - Crash with Armour MK3 mod.
   Modding:
+    - Updated Spidertron Extended compatibility.
     - Crash Aged Bobs.
     - Crash Armour MK3 mod.
 ---------------------------------------------------------------------------------------------------
