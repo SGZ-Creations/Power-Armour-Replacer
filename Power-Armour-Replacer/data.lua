@@ -40,7 +40,8 @@
     require("prototypes.animation.player_style")
     require("prototypes.misc.achievements")
     require("prototypes.misc.armour_equipment_category")
+
 --structures
-    require("structures.tips-and-tricks")
-    require("structures.Milestones.preset_addons")
-    require("structures.Milestones.presets")
+    --require("structures.tips-and-tricks")
+    --require("structures.Milestones.preset_addons")
+    --require("structures.Milestones.presets")
