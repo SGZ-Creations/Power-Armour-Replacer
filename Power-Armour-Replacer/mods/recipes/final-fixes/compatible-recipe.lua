@@ -135,9 +135,6 @@ util.ingredient_prereq(DRR["heavy-spidertron"],
     },
 })
 
-
-
---[[
 --spidertron-extended
 util.ingredient_prereq(DRR["spidertronmk2"],
 {
@@ -145,12 +142,6 @@ util.ingredient_prereq(DRR["spidertronmk2"],
         dependencies = {"spidertron-extended",},
         replacements = {
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
-        }
-    },
-    {
-        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobelectronics", "boblogistics", "bobtech"},
-        replacements = {
-            ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk5", 5},
         }
     },
 })
@@ -163,12 +154,6 @@ util.ingredient_prereq(DRR["spidertronmk3"],
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
         }
     },
-    {
-        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobelectronics", "boblogistics", "bobtech"},
-        replacements = {
-            ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk5", 5},
-        }
-    },
 })
 
 util.ingredient_prereq(DRR["immolator"],
@@ -177,18 +162,6 @@ util.ingredient_prereq(DRR["immolator"],
         dependencies = {"spidertron-extended",},
         replacements = {
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
-        }
-    },
-    {
-        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
-        replacements = {
-            ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk5", 5},
-        }
-    },
-    {
-        dependencies = {"spidertron-extended", "bobrevamp",},
-        replacements = {
-            ["refined-concrete"] = {"heat-shield-tile", 200},
         }
     },
 })
@@ -201,14 +174,8 @@ util.ingredient_prereq(DRR["spidertron-builder"],
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
         }
     },
-    {
-        dependencies = {"spidertron-extended", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
-        replacements = {
-            ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk5", 5},
-        }
-    },
 })
-]]
+
 --SpaceModFeorasFork
 util.ingredient_prereq(DRR["fusion-reactor"],
 {
