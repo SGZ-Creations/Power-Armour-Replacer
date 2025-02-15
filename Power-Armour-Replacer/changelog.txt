@@ -1,8 +1,18 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
-Date: 15.02.2025
+Date: 16.02.2025
   Info:
     - [space-age] Heavily recommend using "reverse-factory" For more info read.
+    - The unification code was moved over to my Alt Chemical Processing mod.
+  Changes:
+    - Bobs & [space-age] bridge is moved to Alt Chemical Processing so if you are currntly playing bobs and par please use that mod to restore recipes.
+    - items in the bridge would be along with newly added salt:
+    - ["bob-carbon"] = "carbon".
+    - ["bob-tungsten-plate"] = "tungsten-plate".
+    - ["bob-tungsten-carbide"] = "tungsten-carbide".
+    - ["bob-lithium"] = "lithium-plate".
+    - ["seedling"] = "tree-seed".
+    - ["bob-salt"] = "salt", from "SaltedFish" mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.16
 Date: 05.02.2025
