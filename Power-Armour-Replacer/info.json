@@ -2,7 +2,7 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "2.0",
-	"version": "0.3.16",
+	"version": "0.3.17",
 	"author": "SGZ_Creations",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
@@ -11,6 +11,7 @@
 		"~ Configurable-Armour-Suits >= 1.5.7",
 		"? PARs-SpaceAge-Extension >= 0.0.1",
 		"? space-age",
+		"? reverse-factory >= 9.0.20",
 		"(?) angelssmelting >= 0.6.21",
 		"? bobplates >= 1.3.0",
 		"? bobpower >= 1.3.0",
