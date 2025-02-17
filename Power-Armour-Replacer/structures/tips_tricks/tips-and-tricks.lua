@@ -64,7 +64,6 @@ data:extend({
 		dependencies = {"par_info"},
 		order = "2AB",
 		indent = 1,
-		starting_status = "unlocked",
 	},
 })
 
@@ -75,9 +74,14 @@ if mods["Power Armor MK3"] then
 			name = "par_power_armor_mk3-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			starting_status = "unlocked",
 			order = "3AA",
 			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "pamk3-lvest",
+				event_type = "crafting-finished",
+				count = 1,
+			},
 		},
 	})
 end
@@ -89,9 +93,14 @@ if mods["space-exploration"] then
 			name = "par_k2-se-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			starting_status = "unlocked",
 			order = "3AA",
 			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "par-armour-mk1",
+				event_type = "crafting-finished",
+				count = 1,
+			},
 		},
 	})
 end
