@@ -1,25 +1,24 @@
 data:extend({
---[[
----@type data.TechnologyPrototype
-	local tech = dlc-ti {
-	{icon = "__base__/graphics/technology/power-armor.png",}, --1
-	{icon = "__base__/graphics/technology/power-armor-mk2.png",}, --2
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3",}, --3
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4",}, --4
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --5
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --6
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --7
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --8
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --9
-	{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5",}, --10
 
-}--tech.dlc-ti,
-]]
+--[[-@type data.TechnologyPrototype
+	local tech = simpletech {
+		{icon = "__base__/graphics/technology/power-armor.png", icon_size = 256,}, --1
+		{icon = "__base__/graphics/technology/power-armor-mk2.png", icon_size = 256,}, --2
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3", icon_size = 256,}, --3
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4", icon_size = 256,}, --4
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --5
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --6
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --7
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --8
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --9
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --10
+	}
+	local technology = { ]]
 	{
 		type = "technology",
 		name = "par-armour-tech-1",
-		icon_size = 256,
-		icon = "__base__/graphics/technology/power-armor.png",
+		icon_size = 256, --simpletech.icon_size,
+		icon = "__base__/graphics/technology/power-armor.png", --simpletech.icon,
 		effects = {
 			{
 				type = "unlock-recipe",
