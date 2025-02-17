@@ -17,5 +17,6 @@
 	require("mods.technology.updates.bobs-science-updates")
 --structures
 	require("structures.science-setting")
+    --require("structures.tips_tricks.tips-a-tricks-updates")
     --require("structures.Milestones.preset_addons")
     --require("structures.Milestones.presets")
