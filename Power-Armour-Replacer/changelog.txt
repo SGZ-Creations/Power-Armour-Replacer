@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 16.02.2025
+  Features:
+    - Reapatable migrations.
   Changes:
     - Bobs & [space-age] bridge is moved to Alt Chemical Processing 
     - If you are currntly playing Bobs and PA&R please use that mod to restore the merge of items in recipes.
