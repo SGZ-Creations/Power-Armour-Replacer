@@ -8,7 +8,7 @@ Date: 16.02.2025
     - Control stage code are deleted, no longer in use/needed.
     - Deleted setting(s) regarding the old chat popup.
     - Bobs & [space-age] bridge is moved to Alt Chemical Processing. 
-    - If you are currntly playing Bobs and PA&R please use that mod to restore the merge of items in recipes.
+    - If you are currently playing Bobs and PA&R please use that mod to restore the merge of items in recipes.
     - Items in the bridge are as fllowes: ["bob-carbon"] = "carbon". ["bob-tungsten-plate"] = "tungsten-plate". ["bob-tungsten-carbide"] = "tungsten-carbide". ["bob-lithium"] = "lithium-plate". ["seedling"] = "tree-seed". ["bob-salt"] = "salt", from "SaltedFish" if mods["SaltedFish"].
   Info:
     - [space-age] Heavily recommend using "reverse-factory" For more info read.

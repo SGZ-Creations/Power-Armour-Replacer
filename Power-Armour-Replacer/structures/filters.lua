@@ -187,14 +187,6 @@ if Mods["bobwarfare"] then
     end
 end
 
-if Mods["bobplates"] and Mods["space-age"] then
-    Hide_Item("seedling")
-    Hide_Item("bob-carbon")
-    Hide_Item("bob-lithium")
-    Hide_Item("bob-tungsten-plate")
-    Hide_Item("bob-tungsten-carbide")
-end
-
 if Mods["bobequipment"] then
 --Enabled
     DRT["bob-battery-equipment-3"].enabled = false
