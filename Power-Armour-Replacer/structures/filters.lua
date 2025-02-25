@@ -133,7 +133,7 @@ if (mods["space-age"] or mods["mech-armor"])then
     end
 end]]
 
-if Mods["space-age"] and Mods["vanilla-loaders-hd"] then
+if Mods["space-age"] and Mods["vanilla-loaders-hd"] and Mods["boblogistics"] then
     DRT["turbo-transport-belt"].enabled = false
 
     DRT["turbo-transport-belt"].hidden = true
