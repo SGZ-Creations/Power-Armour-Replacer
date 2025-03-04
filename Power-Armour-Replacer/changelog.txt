@@ -1,9 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
-Date: 16.02.2025
+Date: 04.03.2025
   Features:
     - Reapatable migrations.
-    - Added all the old chat popups to tips and tricks.
+    - Added all the old chat popups to tips & tricks. some teext changes may happen as the mods updates.  
   Changes:
     - Achivement name change [Surviving planet destruction] --> [Leviathan]
     - Control stage code are deleted, no longer in use/needed.
@@ -14,7 +14,7 @@ Date: 16.02.2025
   Bugfixes:
     - Mistakenly disabled turbo loaders from Vanilla Loader should only happen if using boblogistics.
   Info:
-    - [space-age] Heavily recommend using "reverse-factory" For more info read.
+    - [space-age] Heavily recommend using "reverse-factory" For more info read mod page.
     - The unification code was moved over to my Alt Chemical Processing mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.16
