@@ -474,9 +474,15 @@ util.ingredient_prereq(DRR["par-armour-mk7"], {
         dependencies = {"bobenemies", "bobplates"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
+            {"bob-alien-orange-alloy", 100},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = "bobmods-enemies-enableartifacts",
+        replacements = {
             {"alien-artifact", 700},
             {"alien-artifact-red", 500},
-            {"bob-alien-orange-alloy", 100},
         }
     },
     --Angels
@@ -547,12 +553,6 @@ util.ingredient_prereq(DRR["par-armour-mk9"], {
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
             {"alien-artifact", 900},
-        }
-    },
-    {
-        dependencies = {"bobenemies"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
             {"alien-artifact-red", 700},
         }
     },
@@ -560,6 +560,7 @@ util.ingredient_prereq(DRR["par-armour-mk9"], {
         dependencies = {"bobenemies", "bobplates"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
+            {"bob-alien-orange-alloy", 200},
         }
     },
     {

@@ -218,6 +218,7 @@ util.ingredient_prereq(DRR["par-roboport-mk5"], {
             ["insualted-cable"] = {"roboport-door-2", 200}, --1
             ["bob-aluminium-plate"] = {"roboport-door-2", 5}, --1
             ["bob-ceramic-bearing"] = {"roboport-chargepad-2", 5}, --3
+            {"roboport-chargepad-2", 5}, --3
         }
     },
 })
