@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
-Date: 0.0.2025
+Date: 08.03.2025
   Changes:
     - Moved disabel function: Filter, Recipe, Tech. To chemical mod.
+    - Removed Redundant settings
   Modding:
     - Fixed missing item in roboport recipe (boblogiostics)
     - Added item to armour recipes (bobplate, bobenemies)
