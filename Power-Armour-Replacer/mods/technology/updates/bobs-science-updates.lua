@@ -36,7 +36,7 @@ if mods["bobtech"] then
 				data.raw.technology["electronics"].research_trigger = {type ="craft-item", item ="small-electric-pole", count = 10}
 				data.raw.technology["electronics"].unit = nil
 
-				data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="basic-circuit-board", count = 50}
+				data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 50}
 				data.raw.technology["bob-electrolysis-1"].unit = nil
 
 				data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bob-carbon", count = 25}
@@ -47,17 +47,17 @@ if mods["bobtech"] then
 end
 
 if mods["bobtech"] and mods["boblogistics"] then
-	table.insert(data.raw.technology["par-roboport-tech-5"].unit.ingredients, {"advanced-logistic-science-pack", 1})
+	table.insert(data.raw.technology["par-roboport-tech-5"].unit.ingredients, {"bob-advanced-logistic-science-pack", 1})
 
-	table.insert(data.raw.technology["par-roboport-tech-6"].unit.ingredients, {"advanced-logistic-science-pack", 2})
+	table.insert(data.raw.technology["par-roboport-tech-6"].unit.ingredients, {"bob-advanced-logistic-science-pack", 2})
 
-	table.insert(data.raw.technology["par-roboport-tech-7"].unit.ingredients, {"advanced-logistic-science-pack", 3})
+	table.insert(data.raw.technology["par-roboport-tech-7"].unit.ingredients, {"bob-advanced-logistic-science-pack", 3})
 
-	table.insert(data.raw.technology["par-roboport-tech-8"].unit.ingredients, {"advanced-logistic-science-pack", 4})
+	table.insert(data.raw.technology["par-roboport-tech-8"].unit.ingredients, {"bob-advanced-logistic-science-pack", 4})
 
-	table.insert(data.raw.technology["par-roboport-tech-9"].unit.ingredients, {"advanced-logistic-science-pack", 5})
+	table.insert(data.raw.technology["par-roboport-tech-9"].unit.ingredients, {"bob-advanced-logistic-science-pack", 5})
 
-	table.insert(data.raw.technology["par-roboport-tech-10"].unit.ingredients, {"advanced-logistic-science-pack", 6})
+	table.insert(data.raw.technology["par-roboport-tech-10"].unit.ingredients, {"bob-advanced-logistic-science-pack", 6})
 end
 
 if not mods["boblibrary"] then

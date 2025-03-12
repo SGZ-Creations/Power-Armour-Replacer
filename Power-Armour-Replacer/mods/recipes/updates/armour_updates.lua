@@ -12,7 +12,7 @@ util.ingredient_prereq(DRR["par-armour-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 100},
             ["stone-brick"] = {"bob-rubber", 50},
             ["wood"] = {"bob-resin", 150},
         }
@@ -29,7 +29,7 @@ util.ingredient_prereq(DRR["par-armour-mk1"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["bob-resin"] = {"solder", 100},
+            ["bob-resin"] = {"bob-solder", 100},
             {"bob-tinned-copper-cable", 55},
         }
     },
@@ -65,7 +65,7 @@ util.ingredient_prereq(DRR["par-armour-mk1"], {
         dependencies = {"pyrawores",},
         replacements = {
             ["electronic-circuit"] = {"nexelit-plate", 25},
-            ["stone-brick"] = {"solder", 30},
+            ["stone-brick"] = {"bob-solder", 30},
             ["steel-plate"] = {"titanium-plate", 20},
         }
     },
@@ -92,7 +92,7 @@ util.ingredient_prereq(DRR["par-armour-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 200},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 200},
             {"bob-insulated-cable", 50},
         }
     },
@@ -108,7 +108,7 @@ util.ingredient_prereq(DRR["par-armour-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["bob-insulated-cable"] = {"solder", 50},
+            ["bob-insulated-cable"] = {"bob-solder", 50},
             {"bob-tinned-copper-cable", 55},
         }
     },
@@ -320,7 +320,7 @@ util.ingredient_prereq(DRR["par-armour-mk4"], {
     {
         dependencies = {"angelssmelting", "bobplates", "bobelectronics"},
         replacements = {
-            ["bob-cobalt-steel-alloy"] = {"solder", 200},
+            ["bob-cobalt-steel-alloy"] = {"bob-solder", 200},
         }
     },
     --Pyanodon
@@ -467,7 +467,7 @@ util.ingredient_prereq(DRR["par-armour-mk7"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-cable"] = {"bob-gilded-copper-cable", 250},
-            {"solder", 150},
+            {"bob-solder", 150},
         }
     },
     {
@@ -516,7 +516,7 @@ util.ingredient_prereq(DRR["par-armour-mk8"], {
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            {"heat-shield-tile", 200},
+            {"bob-heat-shield-tile", 200},
         }
     },
     {

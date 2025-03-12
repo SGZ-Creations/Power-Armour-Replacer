@@ -11,7 +11,7 @@ util.ingredient_prereq(DRR["par-roboport-mk1"], {
         replacements = {
             ["wood"] = {"bob-resin", 100},
             ["small-lamp"] = {"bob-rubber", 150},
-            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 100},
             ["copper-cable"] = {"bob-insulated-cable", 100},
         }
     },
@@ -29,7 +29,7 @@ util.ingredient_prereq(DRR["par-roboport-mk1"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["iron-chest"] = {"solder", 150},
+            ["iron-chest"] = {"bob-solder", 150},
             ["copper-cable"] = {"bob-tinned-copper-cable", 100},
             ["insualted-cable"] = {"bob-tinned-copper-cable", 100},
         }
@@ -78,7 +78,7 @@ util.ingredient_prereq(DRR["par-roboport-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 200},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 200},
             {"bob-insulated-cable", 180},
         }
     },
@@ -377,7 +377,7 @@ util.ingredient_prereq(DRR["par-roboport-mk9"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 300},
+            {"bob-solder", 300},
             {"bob-tinned-copper-cable", 300},
         }
     },
@@ -392,7 +392,7 @@ util.ingredient_prereq(DRR["par-roboport-mk9"], {
             ["bob-tinned-copper-cable"] = {"zero"},
             ["bob-silicon-wafer"] = {"zero"},
             ["lubricant"] = {"zero"},
-            ["solder"] = {"zero"},
+            ["bob-solder"] = {"zero"},
         }
     },
     {
@@ -400,7 +400,7 @@ util.ingredient_prereq(DRR["par-roboport-mk9"], {
         replacements = {
             ["bob-tinned-copper-cable"] = {"zero"},
             ["bob-silicon-wafer"] = {"zero"},
-            ["solder"] = {"zero"},
+            ["bob-solder"] = {"zero"},
         }
     },
 })

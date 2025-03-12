@@ -4,7 +4,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 50},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 50},
             {"bob-insulated-cable", 50},
         }
     },
@@ -18,7 +18,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
         dependencies = {"bobplates", "bobelectronics",},
         replacements = {
             ["copper-plate"] = {"bob-tinned-copper-cable", 55},
-            {"solder", 40},
+            {"bob-solder", 40},
         }
     },
     --K2
@@ -33,7 +33,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 100},
             {"bob-rubber", 60},
         }
     },
@@ -50,7 +50,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
         dependencies = {"bobplates", "bobelectronics",},
         replacements = {
             ["copper-cable"] = {"bob-tinned-copper-cable", 120},
-            {"solder", 50},
+            {"bob-solder", 50},
         }
     },
     --Angels
@@ -95,7 +95,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 50}
+            {"bob-solder", 50}
         }
     },
     --Angels
@@ -149,7 +149,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk4"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-plate"] = {"bob-tinned-copper-cable", 150},
-            {"solder", 90},
+            {"bob-solder", 90},
         }
     },
     --Angels
@@ -233,7 +233,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["pipe"] = {"heat-pipe-3", 20},
+            ["pipe"] = {"bob-heat-pipe-3", 20},
         }
     },
     {
@@ -250,14 +250,14 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["heat-pipe-3"] = {"bob-gilded-copper-cable", 50},
+            ["bob-heat-pipe-3"] = {"bob-gilded-copper-cable", 50},
             {"bob-gilded-copper-cable", 50},
         }
     },
     {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
-            {"rtg", 40},
+            {"bob-rtg", 40},
         }
     },
     {
@@ -289,14 +289,14 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 100},
+            {"bob-solder", 100},
             {"bob-tinned-copper-cable", 100},
         }
     },
     {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
-            {"rtg", 40},
+            {"bob-rtg", 40},
         }
     },
     {
@@ -316,7 +316,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["nuclear-fuel"] = {"heat-pipe-4", 20},
+            ["nuclear-fuel"] = {"bob-heat-pipe-4", 20},
         }
     },
     {
@@ -333,13 +333,13 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 100},
+            {"bob-solder", 100},
         }
     },
     {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
-            {"rtg", 40},
+            {"bob-rtg", 40},
         }
     },
     {
@@ -400,7 +400,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
     {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
-            {"rtg", 80},
+            {"bob-rtg", 80},
         }
     },
     --Angels

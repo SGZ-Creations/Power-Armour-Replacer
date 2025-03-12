@@ -4,7 +4,7 @@ util.ingredient_prereq(DRR["par-battery-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 50},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 50},
             ["small-electric-pole"] = {"bob-rubber", 50},
         }
     },
@@ -19,7 +19,7 @@ util.ingredient_prereq(DRR["par-battery-mk1"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 50},
+            {"bob-solder", 50},
         }
     },
     --SE
@@ -41,7 +41,7 @@ util.ingredient_prereq(DRR["par-battery-mk2"], {
     {
         dependencies = {"bobelectronics", },
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 100},
         }
     },
     {
@@ -54,7 +54,7 @@ util.ingredient_prereq(DRR["par-battery-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 60},
+            {"bob-solder", 60},
             {"bob-tinned-copper-cable", 110},
         }
     },
@@ -82,7 +82,7 @@ util.ingredient_prereq(DRR["par-battery-mk3"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 85},
+            {"bob-solder", 85},
         }
     },
     --248K
@@ -125,7 +125,7 @@ util.ingredient_prereq(DRR["par-battery-mk4"], {
     },{
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"solder", 110},
+            ["copper-cable"] = {"bob-solder", 110},
         }
     },
     --248K

@@ -79,7 +79,7 @@ util.ingredient_prereq(DRR["par-nightvision-mk2"], {
     {
         dependencies = {"bobrevamp", "bobplates"},
         replacements = {
-            ["petroleum-gas"] = {"dinitrogen-tetroxide", 300},
+            ["petroleum-gas"] = {"bob-dinitrogen-tetroxide", 300},
         }
     },
     --Angels
@@ -92,7 +92,7 @@ util.ingredient_prereq(DRR["par-nightvision-mk2"], {
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
+            ["bob-dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
             ["petroleum-gas"] = {"liquid-polyethylene", 300},
         }
     },

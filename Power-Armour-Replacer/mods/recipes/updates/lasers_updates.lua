@@ -4,7 +4,7 @@ util.ingredient_prereq(DRR["par-laser-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 50},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 50},
             ["copper-plate"] = {"copper-cable", 110},
         }
     },
@@ -19,7 +19,7 @@ util.ingredient_prereq(DRR["par-laser-mk1"], {
     {
         dependencies = {"bobplates", "bobelectronics"},
         replacements = {
-            {"solder", 80},
+            {"bob-solder", 80},
         }
     },
     --Angels
@@ -50,7 +50,7 @@ util.ingredient_prereq(DRR["par-laser-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 60},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 60},
         }
     },
     {
@@ -148,7 +148,7 @@ util.ingredient_prereq(DRR["par-laser-mk4"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"solder", 50},
+            {"bob-solder", 50},
         }
     },
     --Angels
@@ -206,7 +206,7 @@ util.ingredient_prereq(DRR["par-laser-mk5"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["heat-pipe"] = {"heat-pipe-2", 10},
+            ["heat-pipe"] = {"bob-heat-pipe-2", 10},
         }
     },
     {
@@ -248,7 +248,7 @@ util.ingredient_prereq(DRR["par-laser-mk6"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["heat-pipe"] = {"heat-pipe-2", 10},
+            ["heat-pipe"] = {"bob-heat-pipe-2", 10},
         }
     },
     {
@@ -292,13 +292,13 @@ util.ingredient_prereq(DRR["par-laser-mk7"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            {"heat-pipe-3", 15},
+            {"bob-heat-pipe-3", 15},
         }
     },
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            {"heat-shield-tile", 100},
+            {"bob-heat-shield-tile", 100},
         }
     },
     {
@@ -334,13 +334,13 @@ util.ingredient_prereq(DRR["par-laser-mk8"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            {"heat-pipe-3", 15},
+            {"bob-heat-pipe-3", 15},
         }
     },
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            {"heat-shield-tile", 200},
+            {"bob-heat-shield-tile", 200},
         }
     },
     --Angels
@@ -378,14 +378,14 @@ util.ingredient_prereq(DRR["par-laser-mk9"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            {"heat-pipe-4", 20},
+            {"bob-heat-pipe-4", 20},
         }
     },
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            ["plastic-bar"] = {"heat-shield-tile", 300},
-            {"heat-shield-tile", 300},
+            ["plastic-bar"] = {"bob-heat-shield-tile", 300},
+            {"bob-heat-shield-tile", 300},
         }
     },
     --Angels
@@ -434,13 +434,13 @@ util.ingredient_prereq(DRR["par-laser-mk10"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            {"heat-pipe-4", 20},
+            {"bob-heat-pipe-4", 20},
         }
     },
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            {"heat-shield-tile", 400},
+            {"bob-heat-shield-tile", 400},
         }
     },
     --Angels

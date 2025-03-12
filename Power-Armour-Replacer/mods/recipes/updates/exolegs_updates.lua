@@ -5,7 +5,7 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 100},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 100},
         }
     },
     {
@@ -19,7 +19,7 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"solder", 50},
+            ["copper-cable"] = {"bob-solder", 50},
             {"bob-tinned-copper-cable", 100},
         }
     },
@@ -162,7 +162,7 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
     {
         dependencies = {"bobrevamp"},
         replacements = {
-            ["steel-plate"] = {"heat-shield-tile", 135},
+            ["steel-plate"] = {"bob-heat-shield-tile", 135},
         }
     },
     --Clowns

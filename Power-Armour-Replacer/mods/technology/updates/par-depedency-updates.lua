@@ -167,16 +167,16 @@ util.technology_dependancy
 ]]
 	["bobrevamp"] = {
 		["par-armour-tech-8"] = {
-			"heat-shield",
+			"bob-heat-shield",
 		},
 		["par-laser-tech-7"] = {
-			"heat-shield",
+			"bob-heat-shield",
 		},
 	},
 --[[
 	[{"bobrevamp", "bobplates",}] = {
 		["par-fission-reactor-tech-7"] = {
-			"rtg",
+			"bob-rtg",
 		},
 	},
 	]]

@@ -1,8 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 12.03.2025
+  Features:
+    - Repeatable migrations.
   Changes:
-    - Moved disabel function: Filter, Recipe, Tech. To chemical mod.
+    - Moved disable function: Filter, Recipe, Tech. To Chemical mod.
     - Removed Redundant settings.
     - Improved tips description on some mods.
   Modding:
@@ -10,12 +12,12 @@ Date: 12.03.2025
     - Added item to armour recipes (bobplate, bobenemies).
     - bob- Prefix Crashing with beta (11.03.25).
   Bugfixes:
-    - Crashes with bobs in general.
+    - Crashes with bobs in general. (11.03.25).
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 04.03.2025
   Features:
-    - Reapatable migrations.
+    - Repeatable migrations.
     - Added all the old chat popups to tips & tricks. some teext changes may happen as the mods updates.  
   Changes:
     - Achivement name change [Surviving planet destruction] --> [Leviathan]
@@ -23,7 +25,7 @@ Date: 04.03.2025
     - Deleted setting(s) regarding the old chat popup.
     - Bobs & [space-age] bridge is moved to Alt Chemical Processing. 
     - If you are currently playing Bobs and PA&R please use that mod to restore the merge of items in recipes.
-    - Items in the bridge are as fllowes: ["bob-carbon"] = "carbon". ["bob-tungsten-plate"] = "tungsten-plate". ["bob-tungsten-carbide"] = "tungsten-carbide". ["bob-lithium"] = "lithium-plate". ["seedling"] = "tree-seed". ["bob-salt"] = "salt", from "SaltedFish" if mods["SaltedFish"].
+    - Items in the bridge are as followes: ["bob-carbon"] = "carbon". ["bob-tungsten-plate"] = "tungsten-plate". ["bob-tungsten-carbide"] = "tungsten-carbide". ["bob-lithium"] = "lithium-plate". ["seedling"] = "tree-seed". ["bob-salt"] = "salt", from "SaltedFish" if mods["SaltedFish"].
   Bugfixes:
     - Mistakenly disabled turbo loaders from Vanilla Loader should only happen if using boblogistics.
   Info:
@@ -55,7 +57,7 @@ Date: 04.02.2025
     - Added "par-armour-tech-5" to prerequisite on "par-night-immunity-tech-1" removed on "par-night-immunity-tech-2" so it easier to find.
   Features:
     - Made Nanobots2 work as old nanobots.
-    - Repatable migration.
+    - Repeatable migration.
   Modding:
     - Nanobots mods eqiupment unlocks at NightImunity 1 instead of 2
   Scripting:
@@ -70,7 +72,7 @@ Date: 26.01.2025
     - Restored bob's recipes.
   Features:
     - Added charging_station_count_affected_by_quality to roboports.
-    - Repatable migration.
+    - Repeatable migration.
   Scripting:
     - Fixed until.lua
   Info:

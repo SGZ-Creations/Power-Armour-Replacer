@@ -89,48 +89,48 @@ util.ingredient_prereq(DRR["spidertron"],
     {
         dependencies = {"bobwarfare"},
         replacements = {
-            ["par-fission-reactor-mk5"] = {"mech-brain", 10},
+            ["par-fission-reactor-mk5"] = {"bob-mech-brain", 10},
         }
     },
     {
         dependencies = {"bobrevamp", "bobplates"},
         replacements = {
-            ["mech-brain"] = {"rtg", 20},
-            ["par-fission-reactor-mk5"] = {"rtg", 20}
+            ["bob-mech-brain"] = {"bob-rtg", 20},
+            ["par-fission-reactor-mk5"] = {"bob-rtg", 20}
         }
     },
     {
         dependencies = {"bobrevamp", "bobplates", "bobwarfare",},
         replacements = {
-            ["mech-brain"] = {"rtg", 20},
-            ["par-fission-reactor-mk5"] = {"rtg", 20},
-            {"mech-brain", 10},
+            ["bob-mech-brain"] = {"bob-rtg", 20},
+            ["par-fission-reactor-mk5"] = {"bob-rtg", 20},
+            {"bob-mech-brain", 10},
         }
     },
 })
 
 
-util.ingredient_prereq(DRR["heavy-spidertron"],
+util.ingredient_prereq(DRR["bob-heavy-spidertron"],
 {
     {
         dependencies = {"bobwarfare"},
         replacements = {
-            ["par-fission-reactor-mk1"] = {"mech-brain", 5},
+            ["par-fission-reactor-mk1"] = {"bob-mech-brain", 5},
         }
     },
     {
         dependencies = {"bobrevamp", "bobplates",},
         replacements = {
-            ["mech-brain"] = {"rtg", 10},
-            ["par-fission-reactor-mk1"] = {"rtg", 10},
+            ["bob-mech-brain"] = {"bob-rtg", 10},
+            ["par-fission-reactor-mk1"] = {"bob-rtg", 10},
         }
     },
     {
         dependencies = {"bobrevamp", "bobplates", "bobwarfare",},
         replacements = {
-            ["mech-brain"] = {"rtg", 10},
-            ["par-fission-reactor-mk1"] = {"rtg", 10},
-            {"mech-brain", 5},
+            ["bob-mech-brain"] = {"bob-rtg", 10},
+            ["par-fission-reactor-mk1"] = {"bob-rtg", 10},
+            {"bob-mech-brain", 5},
         }
     },
 })

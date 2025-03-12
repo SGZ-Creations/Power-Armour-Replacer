@@ -71,7 +71,7 @@ util.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
     {
         dependencies = {"bobrevamp", "bobplates"},
         replacements = {
-            ["sulfuric-acid"] = {"dinitrogen-tetroxide", 300},
+            ["sulfuric-acid"] = {"bob-dinitrogen-tetroxide", 300},
         }
     },
     {
@@ -89,7 +89,7 @@ util.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
+            ["bob-dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
             ["sulfuric-acid"] = {"liquid-polyethylene", 300},
         }
     },

@@ -15,7 +15,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 50},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 50},
         }
     },
     {
@@ -46,13 +46,13 @@ util.ingredient_prereq(DRR["par-solar-panel-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"basic-circuit-board", 60},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 60},
         },
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-plate"] = {"solder", 110},
+            ["copper-plate"] = {"bob-solder", 110},
         },
     },
     --Angels
@@ -129,7 +129,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk4"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["advanced-circuit"] = {"solder", 110},
+            ["advanced-circuit"] = {"bob-solder", 110},
         }
     },
     --Angels
@@ -254,7 +254,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk8"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-cable"] = {"bob-tinned-copper-cable", 300},
-            {"solder", 150},
+            {"bob-solder", 150},
         }
     },
     --Angels
@@ -289,7 +289,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"bob-gilded-copper-cable", 250},
-            {"solder", 250},
+            {"bob-solder", 250},
         }
     },
     --Angels
@@ -323,7 +323,7 @@ util.ingredient_prereq(DRR["par-solar-panel-mk10"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"bob-gilded-copper-cable", 500},
-            {"solder", 500},
+            {"bob-solder", 500},
         }
     },
     --K2

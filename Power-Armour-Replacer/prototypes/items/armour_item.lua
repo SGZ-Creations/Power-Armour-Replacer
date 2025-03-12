@@ -120,7 +120,7 @@ for tier, equipment in pairs(power_armour_equipment) do
 
     if mods["bobwarfare"] then
         table.insert(equipment_armor.resistances, {
-            type = "plasma",
+            type = "bob-plasma",
             decrease = resistances.plasma_decrease[tier],
             percent = resistances.plasma_percent[tier],
         })

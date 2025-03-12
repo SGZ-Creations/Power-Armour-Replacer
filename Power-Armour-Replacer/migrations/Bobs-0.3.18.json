@@ -1,0 +1,16 @@
+{
+	"item":[
+        ["solder", "bob-solder"],
+        ["rtg", "bob-rtg"],
+		["mech-brain", "bob-mech-brain"],
+		["heat-pipe-4", "bob-heat-pipe-4"],
+		["heat-pipe-3", "bob-heat-pipe-3"],
+		["heat-pipe-2", "bob-heat-pipe-2"],
+		["basic-circuit-board", "bob-basic-circuit-board"],
+		["advanced-logistic-science-pack", "bob-advanced-logistic-science-pack"]
+    ],
+	"technology":
+    [
+        ["heat-shield", "bob-heat-shield"]
+    ]
+}
