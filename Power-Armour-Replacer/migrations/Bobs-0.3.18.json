@@ -2,6 +2,7 @@
 	"item":[
         ["solder", "bob-solder"],
         ["rtg", "bob-rtg"],
+        ["heat-shield-tile", "bob-heat-shield-tile"],
 		["mech-brain", "bob-mech-brain"],
 		["heat-pipe-4", "bob-heat-pipe-4"],
 		["heat-pipe-3", "bob-heat-pipe-3"],
