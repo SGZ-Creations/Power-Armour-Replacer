@@ -182,133 +182,133 @@ if Mods["bobequipment"] then
     DRT["bob-battery-equipment-4"].enabled = false
     DRT["bob-battery-equipment-5"].enabled = false
     DRT["bob-battery-equipment-6"].enabled = false
-    DRT["exoskeleton-equipment-2"].enabled = false
-    DRT["exoskeleton-equipment-3"].enabled = false
-    DRT["solar-panel-equipment-2"].enabled = false
-    DRT["solar-panel-equipment-3"].enabled = false
-    DRT["solar-panel-equipment-4"].enabled = false
-    DRT["night-vision-equipment-2"].enabled = false
-    DRT["night-vision-equipment-3"].enabled = false
-    DRT["fission-reactor-equipment-2"].enabled = false
-    DRT["fission-reactor-equipment-3"].enabled = false
-    DRT["fission-reactor-equipment-4"].enabled = false
+    DRT["bob-exoskeleton-equipment-2"].enabled = false
+    DRT["bob-exoskeleton-equipment-3"].enabled = false
+    DRT["bob-solar-panel-equipment-2"].enabled = false
+    DRT["bob-solar-panel-equipment-3"].enabled = false
+    DRT["bob-solar-panel-equipment-4"].enabled = false
+    DRT["bob-night-vision-equipment-2"].enabled = false
+    DRT["bob-night-vision-equipment-3"].enabled = false
+    DRT["bob-fission-reactor-equipment-2"].enabled = false
+    DRT["bob-fission-reactor-equipment-3"].enabled = false
+    DRT["bob-fission-reactor-equipment-4"].enabled = false
     DRT["bob-energy-shield-equipment-3"].enabled = false
     DRT["bob-energy-shield-equipment-4"].enabled = false
     DRT["bob-energy-shield-equipment-5"].enabled = false
     DRT["bob-energy-shield-equipment-6"].enabled = false
-    DRT["personal-roboport-mk3-equipment"].enabled = false
-    DRT["personal-roboport-mk4-equipment"].enabled = false
-    DRT["personal-laser-defense-equipment-2"].enabled = false
-    DRT["personal-laser-defense-equipment-3"].enabled = false
-    DRT["personal-laser-defense-equipment-4"].enabled = false
-    DRT["personal-laser-defense-equipment-5"].enabled = false
-    DRT["personal-laser-defense-equipment-6"].enabled = false
+    DRT["bob-personal-roboport-mk3-equipment"].enabled = false
+    DRT["bob-personal-roboport-mk4-equipment"].enabled = false
+    DRT["bob-personal-laser-defense-equipment-2"].enabled = false
+    DRT["bob-personal-laser-defense-equipment-3"].enabled = false
+    DRT["bob-personal-laser-defense-equipment-4"].enabled = false
+    DRT["bob-personal-laser-defense-equipment-5"].enabled = false
+    DRT["bob-personal-laser-defense-equipment-6"].enabled = false
 
-    DRR["battery-mk3-equipment"].enabled = false
-    DRR["battery-mk4-equipment"].enabled = false
-    DRR["battery-mk5-equipment"].enabled = false
-    DRR["battery-mk6-equipment"].enabled = false
-    DRR["exoskeleton-equipment-2"].enabled = false
-    DRR["exoskeleton-equipment-3"].enabled = false
-    DRR["solar-panel-equipment-2"].enabled = false
-    DRR["solar-panel-equipment-3"].enabled = false
-    DRR["solar-panel-equipment-4"].enabled = false
-    DRR["night-vision-equipment-2"].enabled = false
-    DRR["night-vision-equipment-3"].enabled = false
-    DRR["fission-reactor-equipment-2"].enabled = false
-    DRR["fission-reactor-equipment-3"].enabled = false
-    DRR["fission-reactor-equipment-4"].enabled = false
-    DRR["energy-shield-mk3-equipment"].enabled = false
-    DRR["energy-shield-mk4-equipment"].enabled = false
-    DRR["energy-shield-mk5-equipment"].enabled = false
-    DRR["energy-shield-mk6-equipment"].enabled = false
-    DRR["personal-roboport-mk3-equipment"].enabled = false
-    DRR["personal-roboport-mk4-equipment"].enabled = false
-    DRR["personal-laser-defense-equipment-2"].enabled = false
-    DRR["personal-laser-defense-equipment-3"].enabled = false
-    DRR["personal-laser-defense-equipment-4"].enabled = false
-    DRR["personal-laser-defense-equipment-5"].enabled = false
-    DRR["personal-laser-defense-equipment-6"].enabled = false
+    DRR["bob-battery-mk3-equipment"].enabled = false
+    DRR["bob-battery-mk4-equipment"].enabled = false
+    DRR["bob-battery-mk5-equipment"].enabled = false
+    DRR["bob-battery-mk6-equipment"].enabled = false
+    DRR["bob-exoskeleton-equipment-2"].enabled = false
+    DRR["bob-exoskeleton-equipment-3"].enabled = false
+    DRR["bob-solar-panel-equipment-2"].enabled = false
+    DRR["bob-solar-panel-equipment-3"].enabled = false
+    DRR["bob-solar-panel-equipment-4"].enabled = false
+    DRR["bob-night-vision-equipment-2"].enabled = false
+    DRR["bob-night-vision-equipment-3"].enabled = false
+    DRR["bob-fission-reactor-equipment-2"].enabled = false
+    DRR["bob-fission-reactor-equipment-3"].enabled = false
+    DRR["bob-fission-reactor-equipment-4"].enabled = false
+    DRR["bob-energy-shield-mk3-equipment"].enabled = false
+    DRR["bob-energy-shield-mk4-equipment"].enabled = false
+    DRR["bob-energy-shield-mk5-equipment"].enabled = false
+    DRR["bob-energy-shield-mk6-equipment"].enabled = false
+    DRR["bob-personal-roboport-mk3-equipment"].enabled = false
+    DRR["bob-personal-roboport-mk4-equipment"].enabled = false
+    DRR["bob-personal-laser-defense-equipment-2"].enabled = false
+    DRR["bob-personal-laser-defense-equipment-3"].enabled = false
+    DRR["bob-personal-laser-defense-equipment-4"].enabled = false
+    DRR["bob-personal-laser-defense-equipment-5"].enabled = false
+    DRR["bob-personal-laser-defense-equipment-6"].enabled = false
 
 --Hidden
     DRT["bob-battery-equipment-3"].hidden = true
     DRT["bob-battery-equipment-4"].hidden = true
     DRT["bob-battery-equipment-5"].hidden = true
     DRT["bob-battery-equipment-6"].hidden = true
-    DRT["solar-panel-equipment-2"].hidden = true
-    DRT["solar-panel-equipment-3"].hidden = true
-    DRT["solar-panel-equipment-4"].hidden = true
-    DRT["exoskeleton-equipment-2"].hidden = true
-    DRT["exoskeleton-equipment-3"].hidden = true
-    DRT["night-vision-equipment-2"].hidden = true
-    DRT["night-vision-equipment-3"].hidden = true
-    DRT["fission-reactor-equipment-2"].hidden = true
-    DRT["fission-reactor-equipment-3"].hidden = true
-    DRT["fission-reactor-equipment-4"].hidden = true
+    DRT["bob-solar-panel-equipment-2"].hidden = true
+    DRT["bob-solar-panel-equipment-3"].hidden = true
+    DRT["bob-solar-panel-equipment-4"].hidden = true
+    DRT["bob-exoskeleton-equipment-2"].hidden = true
+    DRT["bob-exoskeleton-equipment-3"].hidden = true
+    DRT["bob-night-vision-equipment-2"].hidden = true
+    DRT["bob-night-vision-equipment-3"].hidden = true
+    DRT["bob-fission-reactor-equipment-2"].hidden = true
+    DRT["bob-fission-reactor-equipment-3"].hidden = true
+    DRT["bob-fission-reactor-equipment-4"].hidden = true
     DRT["bob-energy-shield-equipment-3"].hidden = true
     DRT["bob-energy-shield-equipment-4"].hidden = true
     DRT["bob-energy-shield-equipment-5"].hidden = true
     DRT["bob-energy-shield-equipment-6"].hidden = true
-    DRT["personal-roboport-mk3-equipment"].hidden = true
-    DRT["personal-roboport-mk4-equipment"].hidden = true
-    DRT["personal-laser-defense-equipment-2"].hidden = true
-    DRT["personal-laser-defense-equipment-3"].hidden = true
-    DRT["personal-laser-defense-equipment-4"].hidden = true
-    DRT["personal-laser-defense-equipment-5"].hidden = true
-    DRT["personal-laser-defense-equipment-6"].hidden = true
+    DRT["bob-personal-roboport-mk3-equipment"].hidden = true
+    DRT["bob-personal-roboport-mk4-equipment"].hidden = true
+    DRT["bob-personal-laser-defense-equipment-2"].hidden = true
+    DRT["bob-personal-laser-defense-equipment-3"].hidden = true
+    DRT["bob-personal-laser-defense-equipment-4"].hidden = true
+    DRT["bob-personal-laser-defense-equipment-5"].hidden = true
+    DRT["bob-personal-laser-defense-equipment-6"].hidden = true
 
-    DRR["battery-mk3-equipment"].hidden = true
-    DRR["battery-mk4-equipment"].hidden = true
-    DRR["battery-mk5-equipment"].hidden = true
-    DRR["battery-mk6-equipment"].hidden = true
-    DRR["solar-panel-equipment-2"].hidden = true
-    DRR["solar-panel-equipment-3"].hidden = true
-    DRR["solar-panel-equipment-4"].hidden = true
-    DRR["exoskeleton-equipment-2"].hidden = true
-    DRR["exoskeleton-equipment-3"].hidden = true
-    DRR["night-vision-equipment-2"].hidden = true
-    DRR["night-vision-equipment-3"].hidden = true
-    DRR["fission-reactor-equipment-2"].hidden = true
-    DRR["fission-reactor-equipment-3"].hidden = true
-    DRR["fission-reactor-equipment-4"].hidden = true
-    DRR["energy-shield-mk3-equipment"].hidden = true
-    DRR["energy-shield-mk4-equipment"].hidden = true
-    DRR["energy-shield-mk5-equipment"].hidden = true
-    DRR["energy-shield-mk6-equipment"].hidden = true
-    DRR["personal-roboport-mk3-equipment"].hidden = true
-    DRR["personal-roboport-mk4-equipment"].hidden = true
-    DRR["personal-laser-defense-equipment-2"].hidden = true
-    DRR["personal-laser-defense-equipment-3"].hidden = true
-    DRR["personal-laser-defense-equipment-4"].hidden = true
-    DRR["personal-laser-defense-equipment-5"].hidden = true
-    DRR["personal-laser-defense-equipment-6"].hidden = true
+    DRR["bob-battery-mk3-equipment"].hidden = true
+    DRR["bob-battery-mk4-equipment"].hidden = true
+    DRR["bob-battery-mk5-equipment"].hidden = true
+    DRR["bob-battery-mk6-equipment"].hidden = true
+    DRR["bob-solar-panel-equipment-2"].hidden = true
+    DRR["bob-solar-panel-equipment-3"].hidden = true
+    DRR["bob-solar-panel-equipment-4"].hidden = true
+    DRR["bob-exoskeleton-equipment-2"].hidden = true
+    DRR["bob-exoskeleton-equipment-3"].hidden = true
+    DRR["bob-night-vision-equipment-2"].hidden = true
+    DRR["bob-night-vision-equipment-3"].hidden = true
+    DRR["bob-fission-reactor-equipment-2"].hidden = true
+    DRR["bob-fission-reactor-equipment-3"].hidden = true
+    DRR["bob-fission-reactor-equipment-4"].hidden = true
+    DRR["bob-energy-shield-mk3-equipment"].hidden = true
+    DRR["bob-energy-shield-mk4-equipment"].hidden = true
+    DRR["bob-energy-shield-mk5-equipment"].hidden = true
+    DRR["bob-energy-shield-mk6-equipment"].hidden = true
+    DRR["bob-personal-roboport-mk3-equipment"].hidden = true
+    DRR["bob-personal-roboport-mk4-equipment"].hidden = true
+    DRR["bob-personal-laser-defense-equipment-2"].hidden = true
+    DRR["bob-personal-laser-defense-equipment-3"].hidden = true
+    DRR["bob-personal-laser-defense-equipment-4"].hidden = true
+    DRR["bob-personal-laser-defense-equipment-5"].hidden = true
+    DRR["bob-personal-laser-defense-equipment-6"].hidden = true
 
     if SS["BobE-filters"].value then
-        Hide_Item("battery-mk3-equipment")
-        Hide_Item("battery-mk4-equipment")
-        Hide_Item("battery-mk5-equipment")
-        Hide_Item("battery-mk6-equipment")
-        Hide_Item("solar-panel-equipment-2")
-        Hide_Item("solar-panel-equipment-3")
-        Hide_Item("solar-panel-equipment-4")
-        Hide_Item("exoskeleton-equipment-2")
-        Hide_Item("exoskeleton-equipment-3")
-        Hide_Item("night-vision-equipment-2")
-        Hide_Item("night-vision-equipment-3")
-        Hide_Item("fission-reactor-equipment-2")
-        Hide_Item("fission-reactor-equipment-3")
-        Hide_Item("fission-reactor-equipment-4")
-        Hide_Item("energy-shield-mk3-equipment")
-        Hide_Item("energy-shield-mk4-equipment")
-        Hide_Item("energy-shield-mk5-equipment")
-        Hide_Item("energy-shield-mk6-equipment")
-        Hide_Item("personal-roboport-mk3-equipment")
-        Hide_Item("personal-roboport-mk4-equipment")
-        Hide_Item("personal-laser-defense-equipment-2")
-        Hide_Item("personal-laser-defense-equipment-3")
-        Hide_Item("personal-laser-defense-equipment-4")
-        Hide_Item("personal-laser-defense-equipment-5")
-        Hide_Item("personal-laser-defense-equipment-6")
+        Hide_Item("bob-battery-mk3-equipment")
+        Hide_Item("bob-battery-mk4-equipment")
+        Hide_Item("bob-battery-mk5-equipment")
+        Hide_Item("bob-battery-mk6-equipment")
+        Hide_Item("bob-solar-panel-equipment-2")
+        Hide_Item("bob-solar-panel-equipment-3")
+        Hide_Item("bob-solar-panel-equipment-4")
+        Hide_Item("bob-exoskeleton-equipment-2")
+        Hide_Item("bob-exoskeleton-equipment-3")
+        Hide_Item("bob-night-vision-equipment-2")
+        Hide_Item("bob-night-vision-equipment-3")
+        Hide_Item("bob-fission-reactor-equipment-2")
+        Hide_Item("bob-fission-reactor-equipment-3")
+        Hide_Item("bob-fission-reactor-equipment-4")
+        Hide_Item("bob-energy-shield-mk3-equipment")
+        Hide_Item("bob-energy-shield-mk4-equipment")
+        Hide_Item("bob-energy-shield-mk5-equipment")
+        Hide_Item("bob-energy-shield-mk6-equipment")
+        Hide_Item("bob-personal-roboport-mk3-equipment")
+        Hide_Item("bob-personal-roboport-mk4-equipment")
+        Hide_Item("bob-personal-laser-defense-equipment-2")
+        Hide_Item("bob-personal-laser-defense-equipment-3")
+        Hide_Item("bob-personal-laser-defense-equipment-4")
+        Hide_Item("bob-personal-laser-defense-equipment-5")
+        Hide_Item("bob-personal-laser-defense-equipment-6")
     end
 end
 

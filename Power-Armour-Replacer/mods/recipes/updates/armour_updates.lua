@@ -116,7 +116,7 @@ util.ingredient_prereq(DRR["par-armour-mk2"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 200}
+            {"bob-alien-artifact", 200}
         }
     },
     --Angels
@@ -195,14 +195,14 @@ util.ingredient_prereq(DRR["par-armour-mk3"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 300},
+            {"bob-alien-artifact", 300},
         }
     },
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact-red", 100},
+            {"bob-alien-artifact-red", 100},
         }
     },
     -- Angels
@@ -299,14 +299,14 @@ util.ingredient_prereq(DRR["par-armour-mk4"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 400},
+            {"bob-alien-artifact", 400},
         }
     },
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact-red", 200},
+            {"bob-alien-artifact-red", 200},
         }
     },
     -- Angels
@@ -371,8 +371,8 @@ util.ingredient_prereq(DRR["par-armour-mk5"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 500},
-            {"alien-artifact-red", 300},
+            {"bob-alien-artifact", 500},
+            {"bob-alien-artifact-red", 300},
         }
     },
     -- Angels
@@ -422,8 +422,8 @@ util.ingredient_prereq(DRR["par-armour-mk6"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 600},
-            {"alien-artifact-red", 400},
+            {"bob-alien-artifact", 600},
+            {"bob-alien-artifact-red", 400},
         }
     },
     --Angels
@@ -481,8 +481,8 @@ util.ingredient_prereq(DRR["par-armour-mk7"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 700},
-            {"alien-artifact-red", 500},
+            {"bob-alien-artifact", 700},
+            {"bob-alien-artifact-red", 500},
         }
     },
     --Angels
@@ -523,8 +523,8 @@ util.ingredient_prereq(DRR["par-armour-mk8"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 800},
-            {"alien-artifact-red", 600},
+            {"bob-alien-artifact", 800},
+            {"bob-alien-artifact-red", 600},
         }
     },
 })
@@ -552,8 +552,8 @@ util.ingredient_prereq(DRR["par-armour-mk9"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 900},
-            {"alien-artifact-red", 700},
+            {"bob-alien-artifact", 900},
+            {"bob-alien-artifact-red", 700},
         }
     },
     {
@@ -614,8 +614,8 @@ util.ingredient_prereq(DRR["par-armour-mk10"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"alien-artifact", 1000},
-            {"alien-artifact-red", 800},
+            {"bob-alien-artifact", 1000},
+            {"bob-alien-artifact-red", 800},
         }
     },
     {

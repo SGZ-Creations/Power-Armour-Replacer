@@ -134,10 +134,10 @@ util.ingredient_prereq(DRR["par-roboport-mk3"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["electronic-circuit"] = {"roboport-antenna-1", 5},
-            ["engine-unit"] = {"roboport-chargepad-1", 5},
-            ["iron-plate"] = {"roboport-door-1", 5},
-            ["bob-bronze-alloy"] = {"roboport-door-1", 5},
+            ["electronic-circuit"] = {"bob-roboport-antenna-1", 5},
+            ["engine-unit"] = {"bob-roboport-chargepad-1", 5},
+            ["iron-plate"] = {"bob-roboport-door-1", 5},
+            ["bob-bronze-alloy"] = {"bob-roboport-door-1", 5},
             ["bob-rubber"] = {"zero"},
         }
     },
@@ -172,10 +172,10 @@ util.ingredient_prereq(DRR["par-roboport-mk4"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["electronic-circuit"] = {"roboport-antenna-1", 10},
-            ["engine-unit"] = {"roboport-chargepad-1", 10},
-            ["steel-plate"] = {"roboport-door-1", 10},
-            ["bob-brass-alloy"] = {"roboport-door-1", 10},
+            ["electronic-circuit"] = {"bob-roboport-antenna-1", 10},
+            ["engine-unit"] = {"bob-roboport-chargepad-1", 10},
+            ["steel-plate"] = {"bob-roboport-door-1", 10},
+            ["bob-brass-alloy"] = {"bob-roboport-door-1", 10},
             ["iron-gear-wheel"] = {"zero"},
             ["bob-bronze-alloy"] = {"zero"},
             ["bob-rubber"] = {"zero"},
@@ -212,13 +212,13 @@ util.ingredient_prereq(DRR["par-roboport-mk5"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["steel-chest"] = {"roboport-antenna-2", 5}, --2
-            ["advanced-circuit"] = {"roboport-antenna-2", 5}, --2
-            ["flying-robot-frame"] = {"roboport-door-2", 5}, --1
-            ["insualted-cable"] = {"roboport-door-2", 200}, --1
-            ["bob-aluminium-plate"] = {"roboport-door-2", 5}, --1
-            ["bob-ceramic-bearing"] = {"roboport-chargepad-2", 5}, --3
-            {"roboport-chargepad-2", 5}, --3
+            ["steel-chest"] = {"bob-roboport-antenna-2", 5}, --2
+            ["advanced-circuit"] = {"bob-roboport-antenna-2", 5}, --2
+            ["flying-robot-frame"] = {"bob-roboport-door-2", 5}, --1
+            ["insualted-cable"] = {"bob-roboport-door-2", 200}, --1
+            ["bob-aluminium-plate"] = {"bob-roboport-door-2", 5}, --1
+            ["bob-ceramic-bearing"] = {"bob-roboport-chargepad-2", 5}, --3
+            {"bob-roboport-chargepad-2", 5}, --3
         }
     },
 })
@@ -247,11 +247,11 @@ util.ingredient_prereq(DRR["par-roboport-mk6"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["electric-engine-unit"] = {"roboport-chargepad-2", 10},
-            ["advanced-circuit"] = {"roboport-antenna-2", 10},
-            ["processing-unit"] = {"roboport-antenna-2", 10},
-            ["steel-plate"] = {"roboport-door-2", 10},
-            ["bob-invar-alloy"] = {"roboport-door-2", 10},
+            ["electric-engine-unit"] = {"bob-roboport-chargepad-2", 10},
+            ["advanced-circuit"] = {"bob-roboport-antenna-2", 10},
+            ["processing-unit"] = {"bob-roboport-antenna-2", 10},
+            ["steel-plate"] = {"bob-roboport-door-2", 10},
+            ["bob-invar-alloy"] = {"bob-roboport-door-2", 10},
             ["bob-silicon-nitride"] = {"zero"},
             ["lubricant"] = {"zero"},
         }
@@ -288,12 +288,12 @@ util.ingredient_prereq(DRR["par-roboport-mk7"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["processing-unit"] = {"roboport-antenna-3", 5}, --2
-            ["uranium-235"] = {"roboport-chargepad-3", 5}, --3
-            ["bob-titanium-plate"] = {"roboport-chargepad-3", 5}, --3
-            ["insualted-cable"] = {"roboport-chargepad-3", 5}, --3
-            ["iron-stick"] = {"roboport-door-3", 5}, --1
-            ["solder-alloy"] = {"roboport-door-3", 5}, --1
+            ["processing-unit"] = {"bob-roboport-antenna-3", 5}, --2
+            ["uranium-235"] = {"bob-roboport-chargepad-3", 5}, --3
+            ["bob-titanium-plate"] = {"bob-roboport-chargepad-3", 5}, --3
+            ["insualted-cable"] = {"bob-roboport-chargepad-3", 5}, --3
+            ["iron-stick"] = {"bob-roboport-door-3", 5}, --1
+            ["solder-alloy"] = {"bob-roboport-door-3", 5}, --1
             ["low-density-structure"] = {"zero"}, --0
             ["bob-gilded-copper-cable"] = {"zero"},--0
         }
@@ -335,11 +335,11 @@ util.ingredient_prereq(DRR["par-roboport-mk8"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["low-density-structure"] = {"roboport-antenna-3", 10}, --2
-            ["steel-plate"] = {"roboport-chargepad-3", 10}, --3
-            ["bob-silver-plate"] = {"roboport-chargepad-3", 10}, --3
-            ["copper-cable"] = {"roboport-door-3", 10}, --1
-            ["bob-gilded-copper-cable"] = {"roboport-door-3", 10}, --1
+            ["low-density-structure"] = {"bob-roboport-antenna-3", 10}, --2
+            ["steel-plate"] = {"bob-roboport-chargepad-3", 10}, --3
+            ["bob-silver-plate"] = {"bob-roboport-chargepad-3", 10}, --3
+            ["copper-cable"] = {"bob-roboport-door-3", 10}, --1
+            ["bob-gilded-copper-cable"] = {"bob-roboport-door-3", 10}, --1
             ["bob-tungsten-plate"] = {"zero"}, --0
             ["processing-unit"] = {"zero"}, --0
             ["uranium-235"] = {"zero"}, --0
@@ -384,10 +384,10 @@ util.ingredient_prereq(DRR["par-roboport-mk9"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["armour-control-unit"] = {"roboport-antenna-4", 5},
-            ["low-density-structure"] = {"roboport-chargepad-4", 5},
-            ["advanced-circuit"] = {"roboport-door-4", 5},
-            ["bob-advanced-processing-unit"] = {"roboport-door-4", 5},
+            ["armour-control-unit"] = {"bob-roboport-antenna-4", 5},
+            ["low-density-structure"] = {"bob-roboport-chargepad-4", 5},
+            ["advanced-circuit"] = {"bob-roboport-door-4", 5},
+            ["bob-advanced-processing-unit"] = {"bob-roboport-door-4", 5},
             ["bob-copper-tungsten-alloy"] = {"zero"},
             ["bob-tinned-copper-cable"] = {"zero"},
             ["bob-silicon-wafer"] = {"zero"},
@@ -427,10 +427,10 @@ util.ingredient_prereq(DRR["par-roboport-mk10"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["low-density-structure"] = {"roboport-antenna-4", 10},
-            ["armour-control-unit"] = {"roboport-chargepad-4", 10},
-            ["bob-advanced-processing-unit"] = {"roboport-door-4", 10},
-            ["processing-unit"] = {"roboport-door-4", 10},
+            ["low-density-structure"] = {"bob-roboport-antenna-4", 10},
+            ["armour-control-unit"] = {"bob-roboport-chargepad-4", 10},
+            ["bob-advanced-processing-unit"] = {"bob-roboport-door-4", 10},
+            ["processing-unit"] = {"bob-roboport-door-4", 10},
             ["bob-silver-zinc-battery"] = {"zero"},
             ["bob-tungsten-carbide"] = {"zero"},
             ["bob-nitinol-alloy"] = {"zero"},
