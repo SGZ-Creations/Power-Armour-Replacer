@@ -8,10 +8,16 @@
 		["heat-pipe-3", "bob-heat-pipe-3"],
 		["heat-pipe-2", "bob-heat-pipe-2"],
 		["basic-circuit-board", "bob-basic-circuit-board"],
-		["advanced-logistic-science-pack", "bob-advanced-logistic-science-pack"]
+		["advanced-logistic-science-pack", "bob-advanced-logistic-science-pack"],
+		["alien-artifact", "bob-alien-artifact"],
+		["alien-artifact-red", "bob-alien-artifact-red"],
+		["alien-artifact-orange","bob-alien-artifact-orange"],
+		["alien-artifact-yellow","bob-alien-artifact-yellow"],
+		["alien-artifact-green","bob-alien-artifact-green"],
+		["alien-artifact-blue","bob-alien-artifact-blue"],
+		["alien-artifact-purple","bob-alien-artifact-purple"]
     ],
-	"technology":
-    [
+	"technology":[
         ["heat-shield", "bob-heat-shield"]
     ]
 }
