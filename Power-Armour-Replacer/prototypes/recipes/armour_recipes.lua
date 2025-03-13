@@ -3,7 +3,6 @@ local recipes = {
         type = "recipe",
         name = "par-armour-mk1",
         enabled = false,
-        total_raw = true,
         energy_required = 50.0,
         ingredients = {
             {type="item", name="heavy-armor", amount=1},
@@ -13,7 +12,6 @@ local recipes = {
             {type="item", name="electronic-circuit", amount=30}
         },
         results = {{type="item", name="par-armour-mk1", amount=1}},
-        allow_decomposition = true,
     },
     {
         type = "recipe",
@@ -28,7 +26,6 @@ local recipes = {
             {type="item", name="electronic-circuit", amount=80},
         },
         results = {{type="item", name="par-armour-mk2", amount=1}},
-        allow_decomposition = true,
     },
     {
         type = "recipe",
@@ -43,7 +40,6 @@ local recipes = {
             {type="item", name="advanced-circuit", amount=125},
         },
         results = {{type="item", name="par-armour-mk3", amount=1}},
-        allow_decomposition = true,
     },
     {
         type = "recipe",
@@ -58,7 +54,6 @@ local recipes = {
             {type="item", name="advanced-circuit", amount=125},
         },
         results = {{type="item", name="par-armour-mk4", amount=1}},
-        allow_decomposition = true,
     },
     {
         type = "recipe",
@@ -77,9 +72,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk6",
+        category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk5", amount=1},
@@ -94,9 +89,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk7",
+        category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk6", amount=1},
@@ -111,9 +106,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk8",
+        category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk7", amount=1},
@@ -127,9 +122,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk9",
+        category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk8", amount=1},
@@ -143,9 +138,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk10",
+        category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        category="crafting-with-fluid",
         hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk9", amount=1},
@@ -163,8 +158,9 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk1",
+            category = "electronics-or-assembling",
+            allow_decomposition = true,
             enabled = false,
-            total_raw = true,
             energy_required = 50.0,
             ingredients = {
                 {type="item", name="heavy-armor", amount=1},
@@ -174,11 +170,12 @@ if mods["space-age"] then
                 {type="item", name="electronic-circuit", amount=30},
             },
             results = {{type="item", name="par-armour-mk1", amount=1}},
-            allow_decomposition = true,
         },
         {
             type = "recipe",
             name = "par-armour-mk2",
+            category = "electronics-or-assembling",
+            allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
             ingredients = {
@@ -189,11 +186,12 @@ if mods["space-age"] then
                 {type="item", name="electronic-circuit", amount=80},
             },
             results = {{type="item", name="par-armour-mk2", amount=1}},
-            allow_decomposition = true,
         },
         {
             type = "recipe",
             name = "par-armour-mk3",
+            category = "electronics-or-assembling",
+            allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
             ingredients = {
@@ -204,11 +202,12 @@ if mods["space-age"] then
                 {type="item", name="advanced-circuit", amount=125},
             },
             results = {{type="item", name="par-armour-mk3", amount=1}},
-            allow_decomposition = true,
         },
         {
             type = "recipe",
             name = "par-armour-mk4",
+            category = "electronics-or-assembling",
+            allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
             ingredients = {
@@ -219,11 +218,11 @@ if mods["space-age"] then
                 {type="item", name="advanced-circuit", amount=125},
             },
             results = {{type="item", name="par-armour-mk4", amount=1}},
-            allow_decomposition = true,
         },
         {
             type = "recipe",
             name = "par-armour-mk5",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50.0,
             ingredients = {
@@ -239,9 +238,9 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk6",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            --category="crafting-with-fluid",
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk5", amount=1},
@@ -256,9 +255,9 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk7",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            --category="crafting-with-fluid",
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk6", amount=1},
@@ -273,9 +272,9 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk8",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            category="crafting-with-fluid",
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk7", amount=1},
@@ -291,9 +290,9 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk9",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            category="crafting-with-fluid",
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk8", amount=1},
@@ -310,9 +309,9 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk10",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            --category="crafting-with-fluid",
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk9", amount=1},
