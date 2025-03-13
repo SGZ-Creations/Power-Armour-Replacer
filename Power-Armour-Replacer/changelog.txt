@@ -3,6 +3,10 @@ Version: 0.3.19
 Date: 00.03.2025
   Features:
     - [space-age] Made it possible to craft all my items in an Elctromagnetic Plant.
+  Info:
+    - [space-age] Recipes are on the way soon. Battery, Fission, Laser, Roboport, Shield, Solar, Exolegs.
+  Modding:
+    - Re Migrate items that has been migrated in 1.3.0 already.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 12.03.2025
