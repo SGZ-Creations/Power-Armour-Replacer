@@ -3,6 +3,8 @@ Version: 0.3.19
 Date: 00.03.2025
   Features:
     - [space-age] Made it possible to craft all my items in an Elctromagnetic Plant.
+  Changes:
+    - Elctromagnetic Mech crafting. Can use Elctromagnetic Plant to craft sarcophagus.
   Info:
     - [space-age] Recipes are on the way soon. Battery, Fission, Laser, Roboport, Shield, Solar, Exolegs.
   Modding:

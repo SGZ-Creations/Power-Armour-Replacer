@@ -2,8 +2,10 @@
 	Armour, Skeleton, Nightvision, BeltImmunity.
 ]]
 local DRT = data.raw.technology
-
+local DRR = data.raw["recipe"]
 if mods["space-age"] then
+	DRR["mech-armor"].category = "electronics-or-assembling"
+
 	table.insert(DRT["par-armour-tech-5"].unit.ingredients, {"space-science-pack", 1})
 
 	table.insert(DRT["par-armour-tech-6"].unit.ingredients, {"space-science-pack",           2})
