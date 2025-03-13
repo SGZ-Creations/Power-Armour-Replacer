@@ -25,7 +25,7 @@
 		["alien-artifact-purple","bob-alien-artifact-purple"],
 		["bob-salt", "salt"]
     ],
-	"recipes":[
+	"recipe":[
 		["advanced-logistic-science-pack", "bob-advanced-logistic-science-pack"],
 		["basic-electronic-components", "bob-basic-electronic-components"],
 		["basic-circuit-board", "bob-basic-circuit-board"],
@@ -35,6 +35,7 @@
 		["phenolic-board", "bob-phenolic-board"],
 		["wooden-board", "bob-wooden-board"],
         ["solder-alloy", "bob-solder-alloy"],
+        ["solder-alloy-lead", "bob-solder-alloy-lead"],
 		["limestone", "bob-limestone"],
         ["solder", "bob-solder"]
     ],
