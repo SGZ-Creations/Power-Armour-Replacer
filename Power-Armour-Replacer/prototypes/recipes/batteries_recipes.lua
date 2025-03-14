@@ -156,7 +156,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk1",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 25,
             ingredients = {
@@ -170,7 +169,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk2",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 30,
             ingredients = {
@@ -184,7 +182,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk3",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 35,
             ingredients = {
@@ -199,7 +196,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk4",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -215,7 +211,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk5",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 45,
             ingredients = {
@@ -272,7 +267,7 @@ if mods["space-age"] then
                 {type="item", name="battery", amount=90},
                 {type="item", name="armour-control-unit", amount=65},
                 {type="item", name="processing-unit", amount=50},
-                {type="fluid", name="water", amount=500},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
             results = {{type="item", name="par-battery-mk8", amount=1}}
         },
@@ -285,11 +280,12 @@ if mods["space-age"] then
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-battery-mk8", amount=1},
-                {type="item", name="battery", amount=100},
+                {type="item", name="supercapacitor", amount=100},
                 {type="item", name="plastic-bar", amount=135},
                 {type="item", name="processing-unit", amount=50},
                 {type="item", name="armour-control-unit", amount=95},
                 {type="item", name="low-density-structure", amount=175},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
             results = {{type="item", name="par-battery-mk9", amount=1}}
         },
@@ -307,6 +303,7 @@ if mods["space-age"] then
                 {type="item", name="armour-control-unit", amount=135},
                 {type="item", name="low-density-structure", amount=200},
                 {type="fluid", name="sulfuric-acid", amount=150},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
             results = {{type="item", name="par-battery-mk10", amount=1}}
         },

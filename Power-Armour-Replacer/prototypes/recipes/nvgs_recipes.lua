@@ -67,6 +67,7 @@ if mods["space-age"] then
                 {type="item", name="advanced-circuit", amount=55},
                 {type="item", name="processing-unit", amount=40},
                 {type="fluid", name="petroleum-gas", amount=250},
+                {type="fluid", name="fluoroketone-cold", amount=150},
             },
             results = {{type="item", name="par-nightvision-mk2", amount=1}}
         },

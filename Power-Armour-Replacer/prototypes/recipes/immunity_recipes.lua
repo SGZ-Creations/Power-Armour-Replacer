@@ -23,12 +23,13 @@ local recipes = {
         hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-belt-immunity-mk1", amount=1},
-            {type="fluid", name="sulfuric-acid", amount=150},
-            {type="item", name="nuclear-fuel", amount=10},
+            {type="item", name="low-density-structure", amount=25},
             {type="item", name="advanced-circuit", amount=55},
             {type="item", name="processing-unit", amount=40},
-            {type="item", name="low-density-structure", amount=25},
+            {type="item", name="nuclear-fuel", amount=10},
             {type="item", name="sulfur", amount=30},
+            {type="fluid", name="sulfuric-acid", amount=150},
+            {type="fluid", name="fluoroketone-cold", amount=150},
         },
         results = {{type="item", name="par-belt-immunity-mk2", amount=1}}
     },
@@ -61,11 +62,11 @@ if mods["space-age"]then
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-belt-immunity-mk1", amount=1},
-                {type="fluid", name="sulfuric-acid", amount=150},
-                {type="item", name="nuclear-fuel", amount=10},
+                {type="item", name="low-density-structure", amount=25},
                 {type="item", name="advanced-circuit", amount=55},
                 {type="item", name="processing-unit", amount=40},
-                {type="item", name="low-density-structure", amount=25},
+                {type="fluid", name="sulfuric-acid", amount=150},
+                {type="item", name="nuclear-fuel", amount=10},
                 {type="item", name="sulfur", amount=30},
             },
             results = {{type="item", name="par-belt-immunity-mk2", amount=1}}

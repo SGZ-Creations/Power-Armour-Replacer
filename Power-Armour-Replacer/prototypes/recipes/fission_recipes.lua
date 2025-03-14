@@ -152,7 +152,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk1",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -166,7 +165,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk2",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 45,
             ingredients = {
@@ -180,7 +178,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk3",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50,
             ingredients = {
@@ -194,7 +191,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk4",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 55,
             ingredients = {
@@ -209,7 +205,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk5",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 60,
             ingredients = {

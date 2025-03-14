@@ -86,7 +86,6 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-exoskeleton-mk1",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 5,
             ingredients = {
@@ -102,7 +101,6 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-exoskeleton-mk2",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -158,11 +156,13 @@ if mods["space-age"]then
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-exoskeleton-mk4", amount=1},
-                {type="item", name="battery", amount=250},
                 {type="item", name="steel-plate", amount=250},
                 {type="item", name="processing-unit", amount=100},
                 {type="item", name="armour-control-unit", amount=150},
                 {type="item", name="low-density-structure", amount=150},
+                {type="item", name="lithium-plate", amount=100},
+                {type="item", name="quantum-processor", amount=20},
+                {type="item", name="supercapacitor", amount=250},
             },
             results = {{type="item", name="par-exoskeleton-mk5", amount=1}}
         },

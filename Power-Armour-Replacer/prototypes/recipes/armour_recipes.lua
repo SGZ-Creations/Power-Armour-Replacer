@@ -158,7 +158,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk1",
-            category = "electronics-or-assembling",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -174,7 +173,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk2",
-            category = "electronics-or-assembling",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -190,7 +188,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk3",
-            category = "electronics-or-assembling",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -206,7 +203,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk4",
-            category = "electronics-or-assembling",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -222,7 +218,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk5",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50.0,
             ingredients = {
@@ -324,6 +319,7 @@ if mods["space-age"] then
                 {type="item", name="supercapacitor", amount=100},
                 {type="item", name="lithium-plate", amount=100},
                 {type="item", name="quantum-processor", amount=20},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
             results = {{type="item", name="par-armour-mk10", amount=1}},
         },

@@ -156,7 +156,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk1",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -170,7 +169,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk2",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -184,7 +182,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk3",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -199,7 +196,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk4",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -213,7 +209,6 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk5",
-            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             ingredients = {
