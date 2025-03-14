@@ -247,12 +247,16 @@ if mods["space-age"] then
             ingredients = {
                 {type="item", name="par-laser-mk6", amount=1},
                 {type="item", name="low-density-structure", amount=60},
+                {type="item", name="electric-engine-unit", amount=70},
                 {type="item", name="advanced-circuit", amount=100},
                 {type="item", name="processing-unit", amount=100},
-                {type="item", name="electric-engine-unit", amount=70},
                 {type="item", name="copper-cable", amount=115},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-laser-mk7", amount=1}}
+            results = {
+                {type="item", name="par-laser-mk7", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
         {
             type = "recipe",
@@ -268,8 +272,12 @@ if mods["space-age"] then
                 {type="item", name="copper-cable", amount=300},
                 {type="item", name="processing-unit", amount=100},
                 {type="item", name="advanced-circuit", amount=100},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-laser-mk8", amount=1}}
+            results = {
+                {type="item", name="par-laser-mk8", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
         {
             type = "recipe",
@@ -280,14 +288,18 @@ if mods["space-age"] then
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-laser-mk8", amount=1},
-                {type="item", name="armour-control-unit", amount=60},
                 {type="item", name="low-density-structure", amount=180},
-                {type="item", name="processing-unit", amount=100},
+                {type="item", name="armour-control-unit", amount=60},
                 {type="item", name="advanced-circuit", amount=100},
-                {type="item", name="sulfur", amount=150},
+                {type="item", name="processing-unit", amount=100},
                 {type="item", name="plastic-bar", amount=300},
+                {type="item", name="sulfur", amount=150},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-laser-mk9", amount=1}}
+            results = {
+                {type="item", name="par-laser-mk9", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
         {
             type = "recipe",
@@ -298,14 +310,18 @@ if mods["space-age"] then
             hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-laser-mk9", amount=1},
-                {type="item", name="armour-control-unit", amount=100},
                 {type="item", name="low-density-structure", amount=200},
-                {type="item", name="processing-unit", amount=100},
+                {type="item", name="armour-control-unit", amount=100},
                 {type="item", name="advanced-circuit", amount=100},
+                {type="item", name="processing-unit", amount=100},
                 {type="item", name="steel-plate", amount=300},
                 {type="item", name="sulfur", amount=150},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-laser-mk10", amount=1}}
+            results = {
+                {type="item", name="par-laser-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
     }
     data:extend(recipes)

@@ -4,9 +4,8 @@ Date: 00.03.2025
   Features:
     - [space-age] Made it possible to craft mk6+ items in Elctromagnetic Plant.
   Changes:
-    - Elctromagnetic Mech crafting. Can use Elctromagnetic Plant to craft sarcophagus.
-  Info:
-    - [space-age] Recipes are on the way soon. Battery, Fission, Laser, Roboport, Shield, Solar, Exolegs.
+    - [space-age] Elctromagnetic Mech crafting. Can use Elctromagnetic Plant to craft sarcophagus.
+    - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exolegs.
   Modding:
     - Re Migrate bobs items that has been migrated in 1.3.0 already.
 ---------------------------------------------------------------------------------------------------
