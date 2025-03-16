@@ -1,20 +1,15 @@
 ---@class data.TechnologyPrototype.type
+local Tech = data.raw["technology"]
 
 if mods["bobtech"]and mods["bobplates"] then
-	data.raw.technology["heavy-armor"].research_trigger = {type ="craft-item", item ="light-armor", count = 1}
-	data.raw.technology["heavy-armor"].unit = nil
-
-	data.raw.technology["steel-processing"].research_trigger = {type ="craft-fluid", fluid ="bob-oxygen", amount = 1000}
-	data.raw.technology["steel-processing"].unit = nil
+	Tech["steel-processing"].research_trigger = {type ="craft-fluid", fluid ="bob-oxygen", amount = 1000}
+	--Tech["steel-processing"].unit = nil
 
 	data.raw.technology["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="boiler", count = 12}
 	data.raw.technology["bob-electrolysis-1"].unit = nil
 
 	data.raw.technology["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="steam-engine", count = 24}
 	data.raw.technology["bob-chemical-processing-1"].unit = nil
-
-	data.raw.technology["military"].research_trigger = {type ="craft-item", item ="firearm-magazine", count = 20}
-	data.raw.technology["military"].unit = nil
 end
 
 if mods["bobtech"] then
