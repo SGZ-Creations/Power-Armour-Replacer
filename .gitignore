@@ -1,6 +1,6 @@
-.vscode/*
+.vscode/
 .gitignore
-Random/*
+Random/
 mods-named-using-file.cpp
 Copy-Pasta
 Later-maybe
