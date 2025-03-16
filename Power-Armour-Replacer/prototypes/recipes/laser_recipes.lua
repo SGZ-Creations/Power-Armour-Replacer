@@ -255,7 +255,7 @@ if mods["space-age"] then
             },
             results = {
                 {type="item", name="par-laser-mk7", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                --{type="fluid", name="fluoroketone-hot", amount=200},
             }
         },
         {
@@ -276,7 +276,7 @@ if mods["space-age"] then
             },
             results = {
                 {type="item", name="par-laser-mk8", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                --{type="fluid", name="fluoroketone-hot", amount=200},
             }
         },
         {
@@ -298,7 +298,7 @@ if mods["space-age"] then
             },
             results = {
                 {type="item", name="par-laser-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                --{type="fluid", name="fluoroketone-hot", amount=200},
             }
         },
         {
@@ -320,7 +320,7 @@ if mods["space-age"] then
             },
             results = {
                 {type="item", name="par-laser-mk10", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                --{type="fluid", name="fluoroketone-hot", amount=200},
             }
         },
     }
