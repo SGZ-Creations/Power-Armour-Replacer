@@ -42,7 +42,7 @@ for tier, nightvision in pairs(nightvisions) do
         categories = {"armor"},
         activate_sound = { filename = "__base__/sound/nightvision-on.ogg", volume = 0.5 },
         deactivate_sound = { filename = "__base__/sound/nightvision-off.ogg", volume = 0.5 },
-        darkness_to_turn_on = 0.5,
+        darkness_to_turn_on = 0.75,
         color_lookup = nightvision.lut,
     }
     data:extend({
