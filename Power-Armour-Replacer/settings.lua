@@ -6,6 +6,24 @@ data:extend({
         default_value = true,
         order = "1Aac"
     },
+    {
+        type = "int-setting",
+        name = "BotChargingAmount",
+        setting_type = "startup",
+        default_value = 0,
+        minimum_value = 0,
+        maximum_value = 1000,
+        order = "1Aad"
+    },
+    {
+        type = "int-setting",
+        name = "ShieldHealthValue",
+        setting_type = "startup",
+        default_value = 0,
+        minimum_value = 0,
+        maximum_value = 10000000,
+        order = "1Aad"
+    },
 })
 --[[
 if (mods["space-age"] or mods["mech-armor"])then
