@@ -309,6 +309,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk10",
+            main_product = "par-armour-mk10",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
@@ -326,7 +327,10 @@ if mods["space-age"] then
                 {type="item", name="quantum-processor", amount=20},
                 {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-armour-mk10", amount=1}},
+            results = {
+                {type="item", name="par-armour-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            },
         },
     }
     data:extend(recipes)
