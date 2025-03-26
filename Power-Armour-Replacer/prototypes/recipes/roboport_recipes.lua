@@ -150,6 +150,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk1",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -164,6 +165,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk2",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 20,
             ingredients = {
@@ -177,6 +179,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk3",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 30,
             ingredients = {
@@ -190,6 +193,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk4",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -204,6 +208,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk5",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 50,
             ingredients = {

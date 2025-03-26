@@ -6,10 +6,11 @@ Date: 00.03.2025
   Features:
     - [space-age] Made it possible to craft mk6+ items in Elctromagnetic Plant.
     - ACU recipe [space-age] Edition.
-    - Added crafting category = "electronics-or-handcrafting"
+    - Added crafting category = "electronics-or-handcrafting" using hands all assemblers, elctromagnetic-plant.
   Changes:
     - [space-age] Elctromagnetic Mech crafting. Can use Elctromagnetic Plant to craft sarcophagus.
     - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exolegs.
+    - [space-age] Recipes are now using new crafting category from mk1-5 and 6-10 reqires assembly 2 or elctromagnetic-plant.
     - Achivement text make more sense.
     - Start of base game towards PAR will now have crafting triggers over science research.
   Modding:

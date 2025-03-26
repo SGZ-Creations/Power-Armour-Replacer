@@ -2,6 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "armour-control-unit",
+		category = "electronics-or-handcrafting",
 		energy_required = 10,
 		enabled = false,
 		ingredients = {

@@ -86,6 +86,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-exoskeleton-mk1",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 5,
             ingredients = {
@@ -101,6 +102,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-exoskeleton-mk2",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 10,
             ingredients = {

@@ -40,7 +40,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-nightvision-mk1",
-            category = "electronics-or-assembling",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 10,
             hide_from_player_crafting = true,

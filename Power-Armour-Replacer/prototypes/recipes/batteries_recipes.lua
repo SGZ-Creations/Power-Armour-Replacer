@@ -156,6 +156,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk1",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 25,
             ingredients = {
@@ -169,6 +170,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk2",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 30,
             ingredients = {
@@ -182,6 +184,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk3",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 35,
             ingredients = {
@@ -196,6 +199,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk4",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -211,6 +215,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk5",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 45,
             ingredients = {

@@ -154,6 +154,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-shield-mk1",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 5,
             ingredients = {
@@ -167,6 +168,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-shield-mk2",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -181,6 +183,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-shield-mk3",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 15,
             ingredients = {
@@ -194,6 +197,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-shield-mk4",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 20,
             ingredients = {
@@ -207,6 +211,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-shield-mk5",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 25,
             ingredients = {

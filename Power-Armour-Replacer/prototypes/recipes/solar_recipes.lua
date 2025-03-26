@@ -151,6 +151,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk1",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 5,
             ingredients = {
@@ -164,6 +165,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk2",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -177,6 +179,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk3",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 15,
             ingredients = {
@@ -190,6 +193,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk4",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 20,
             ingredients = {
@@ -203,6 +207,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk5",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 25,
             ingredients = {

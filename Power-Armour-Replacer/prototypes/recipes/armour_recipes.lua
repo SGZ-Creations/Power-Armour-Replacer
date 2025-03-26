@@ -158,6 +158,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk1",
+            category = "electronics-or-handcrafting",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -173,6 +174,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk2",
+            category = "electronics-or-handcrafting",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -188,6 +190,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk3",
+            category = "electronics-or-handcrafting",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -203,6 +206,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk4",
+            category = "electronics-or-handcrafting",
             allow_decomposition = true,
             enabled = false,
             energy_required = 50.0,
@@ -218,6 +222,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-armour-mk5",
+            category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 50.0,
             ingredients = {
