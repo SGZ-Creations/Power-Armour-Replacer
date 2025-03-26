@@ -245,7 +245,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk7",
-            category = "electromagnetics",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             hide_from_player_crafting = true,
@@ -266,7 +266,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk8",
-            category = "electromagnetics",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             hide_from_player_crafting = true,
@@ -287,7 +287,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk9",
-            category = "electromagnetics",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             hide_from_player_crafting = true,
@@ -309,7 +309,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-laser-mk10",
-            category = "electromagnetics",
+            category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
             hide_from_player_crafting = true,

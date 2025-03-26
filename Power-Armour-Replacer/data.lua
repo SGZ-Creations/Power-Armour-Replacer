@@ -1,4 +1,3 @@
-    require("prototypes.misc.crafting-catergoies")
 --prototypes.items
     require("prototypes.items.armour_item")
     require("prototypes.items.batteries_item")
@@ -11,7 +10,7 @@
     require("prototypes.items.nvgs_item")
     require("prototypes.items.immuntiy_item")
     require("prototypes.items.acu_item")
-
+    require("prototypes.misc.crafting-catergoies")
 --prototypes.recipes
     require("prototypes.recipes.armour_recipes")
     require("prototypes.recipes.batteries_recipes")
