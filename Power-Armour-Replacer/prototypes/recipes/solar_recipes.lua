@@ -255,6 +255,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk8",
+            main_product = "par-solar-panel-mk8",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
@@ -272,6 +273,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk9",
+            main_product = "par-solar-panel-mk9",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 45,
@@ -284,11 +286,15 @@ if mods["space-age"] then
                 {type="fluid", name="lubricant", amount=250},
                 {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-solar-panel-mk9", amount=1}}
+            results = {
+                {type="item", name="par-solar-panel-mk9", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
         {
             type = "recipe",
             name = "par-solar-panel-mk10",
+            main_product = "par-solar-panel-mk10",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50,
@@ -301,7 +307,10 @@ if mods["space-age"] then
                 {type="fluid", name="lubricant", amount=350},
                 {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-solar-panel-mk10", amount=1}}
+            results = {
+                {type="item", name="par-solar-panel-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
     }
     data:extend(recipes)

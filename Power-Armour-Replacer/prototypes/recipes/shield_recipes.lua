@@ -275,6 +275,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-shield-mk9",
+            main_product = "par-shield-mk9",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 45,
@@ -285,13 +286,18 @@ if mods["space-age"] then
                 {type="item", name="uranium-235", amount=55},
                 {type="item", name="processing-unit", amount=95},
                 {type="item", name="low-density-structure", amount=180},
-                {type="fluid", name="petroleum-gas", amount=350},
+                {type="fluid", name="lubricant", amount=350},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-shield-mk9", amount=1}}
+            results = {
+                {type="item", name="par-shield-mk9", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
         {
             type = "recipe",
             name = "par-shield-mk10",
+            main_product = "par-shield-mk10",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50,
@@ -301,9 +307,13 @@ if mods["space-age"] then
                 {type="item", name="armour-control-unit", amount=75},
                 {type="item", name="processing-unit", amount=110},
                 {type="item", name="low-density-structure", amount=155},
-                {type="fluid", name="sulfuric-acid", amount=350},
+                {type="fluid", name="lubricant", amount=350},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-shield-mk10", amount=1}}
+            results = {
+                {type="item", name="par-shield-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
     }
     data:extend(recipes)
