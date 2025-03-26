@@ -1,3 +1,4 @@
+    require("prototypes.misc.crafting-catergoies")
 --prototypes.items
     require("prototypes.items.armour_item")
     require("prototypes.items.batteries_item")
