@@ -33,5 +33,18 @@ if mods["space-age"] then
 end
 
 if not mods["aai-industry"] then
-	table.insert(data.raw.recipe["heavy-arrmor"].ingredients, {type="item", name="light-armor", amount=1})
+	table.insert(data.raw.recipe["heavy-armor"].ingredients, {type="item", name="light-armor", amount=1})
 end
+
+--[[
+function add_to_ingredients(ingredients, new_ingredient)
+
+	for _, ingredient in ipairs (ingredients) do
+
+	if ingredient.type == new_ingredient.type and ingredient.name == new_ingredient.name then
+	return end
+
+	table.insert(ingredients, new_ingredient)
+	end
+end
+]]
