@@ -32,13 +32,6 @@ if mods["space-age"] then
 	})
 end
 
-local util = require("mods.util")
-util.ingredient_prereq(data.raw.recipe["heavy-armor"],
-{
-    {
-        dependencies = {"base"},
-        replacements = {
-            {type="item", name="light-armor", amount=1},
-        }
-    },
-})
+if not mods["aai-industry"] then
+	table.insert(data.raw.recipe["heavy-arrmor"].ingredients, {type="item", name="light-armor", amount=1})
+end
