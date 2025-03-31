@@ -1,3 +1,5 @@
+--require("ShieldSettings")
+
 data:extend({
     {
         type = "bool-setting",

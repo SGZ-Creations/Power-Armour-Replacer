@@ -31,7 +31,11 @@ if mods["space-age"] then
 		},
 	})
 end
-
+--[[
+if not data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1}then
+	table.insert(data.raw.recipe["heavy-armor"].ingredients, {type="item", name="light-armor", amount=1})
+elseif data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1}then return end
+]]
 data.raw.recipe["heavy-armor"].ingredients = {
 	{type="item", name="light-armor", amount=1},
 	{type="item", name="steel-plate", amount=40},
