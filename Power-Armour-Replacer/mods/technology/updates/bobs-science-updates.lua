@@ -21,8 +21,8 @@ if mods["bobtech"] then
 			data.raw.technology["logistics"].research_trigger = {type ="craft-item", item ="inserter", count = 20}
 			data.raw.technology["logistics"].unit = nil
 
-			data.raw.technology["lab"].research_trigger = {type ="craft-item", item ="transport-belt", count = 20}
-			data.raw.technology["lab"].unit = nil
+			data.raw.technology["bob-lab"].research_trigger = {type ="craft-item", item ="transport-belt", count = 20}
+			data.raw.technology["bob-lab"].unit = nil
 
 			data.raw.technology["logistic-science-pack"].research_trigger = {type ="craft-item", item ="lab", count = 10}
 			data.raw.technology["logistic-science-pack"].unit = nil
