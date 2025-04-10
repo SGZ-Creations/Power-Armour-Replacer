@@ -4,6 +4,7 @@
 		["basic-electronic-components", "bob-basic-electronic-components"],
 		["basic-circuit-board", "bob-basic-circuit-board"],
 		["sodium-perchlorate", "bob-sodium-perchlorate"],
+        ["red-bulk-inserter", "bob-red-bulk-inserter"],
         ["heat-shield-tile", "bob-heat-shield-tile"],
 		["sodium-chlorate", "bob-sodium-chlorate"],
 		["phenolic-board", "bob-phenolic-board"],
@@ -43,6 +44,7 @@
         ["heat-shield", "bob-heat-shield"]
     ],
 	"entity":[
-        ["reinforced-wall", "bob-reinforced-wall"]
+        ["reinforced-wall", "bob-reinforced-wall"],
+        ["red-bulk-inserter", "bob-red-bulk-inserter"]
     ]
 }
