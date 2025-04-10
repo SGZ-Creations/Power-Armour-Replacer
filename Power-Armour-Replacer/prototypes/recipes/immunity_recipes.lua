@@ -29,7 +29,6 @@ local recipes = {
             {type="item", name="nuclear-fuel", amount=10},
             {type="item", name="sulfur", amount=30},
             {type="fluid", name="sulfuric-acid", amount=150},
-            {type="fluid", name="fluoroketone-cold", amount=150},
         },
         results = {{type="item", name="par-belt-immunity-mk2", amount=1}}
     },
@@ -56,6 +55,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-belt-immunity-mk2",
+            main_product = "par-belt-immunity-mk2",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 20,
@@ -68,8 +68,12 @@ if mods["space-age"]then
                 {type="fluid", name="sulfuric-acid", amount=150},
                 {type="item", name="nuclear-fuel", amount=10},
                 {type="item", name="sulfur", amount=30},
+                {type="fluid", name="fluoroketone-cold", amount=150},
             },
-            results = {{type="item", name="par-belt-immunity-mk2", amount=1}}
+            results = {
+                {type="item", name="par-belt-immunity-mk2", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=150},
+            }
         },
     }
     data:extend(recipes)
