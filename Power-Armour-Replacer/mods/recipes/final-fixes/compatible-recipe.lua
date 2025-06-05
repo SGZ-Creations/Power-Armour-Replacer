@@ -260,3 +260,13 @@ util.ingredient_prereq(DRR["laser-cannon"], {
         }
     },
 })
+--[[
+if not data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1} then
+	table.insert(data.raw.recipe["heavy-armor"].ingredients, {type="item", name="light-armor", amount=1})
+elseif data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1} then return end
+]]
+data.raw.recipe["heavy-armor"].ingredients = {
+	{type="item", name="light-armor", amount=1},
+	{type="item", name="steel-plate", amount=40},
+	{type="item", name="copper-plate", amount=100},
+}

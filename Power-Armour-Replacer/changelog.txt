@@ -3,8 +3,13 @@ Version: 0.4.0
 Date: 02.04.2025
   Major Features:
     - Settings added to other equipment for further customizebility.
+    - ?? Batteries Settings.
+    - ?? Exoskeleton Settings
+    - 60 Roboport Settings.
+    - ?? Shield Settings.
+    - ?? Solar Settings.
   Features:
-    - [space-age] Made it possible to craft mk6+ items in Elctromagnetic Plant.
+    - [space-age] Made it possible to craft all items in Elctromagnetic Plant.
     - ACU recipe [space-age] Edition.
     - Added crafting category = "electronics-or-handcrafting" using hands all assemblers, elctromagnetic-plant.
   Changes:
