@@ -1,13 +1,18 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: 02.04.2025
+Date: 06.06.2025
   Major Features:
     - Settings added to other equipment for further customizebility.
-    - ?? Batteries Settings.
-    - ?? Exoskeleton Settings
+    - 10 Armour Settings.
+    - 10 Batteries Settings.
+    - 10 Exoskeleton Settings
+    - 10 Fission Settings.
+    - 60 Laser
+    - 6 Belt immunity Settings
     - 60 Roboport Settings.
-    - ?? Shield Settings.
-    - ?? Solar Settings.
+    - 40 Shield Settings.
+    - 10 Solar Settings.
+    - Total 216 New setting for you to have fun with hope this mods become fun for you even more now.
   Features:
     - [space-age] Made it possible to craft all items in Elctromagnetic Plant.
     - ACU recipe [space-age] Edition.
@@ -39,7 +44,7 @@ Date: 12.03.2025
   Bugfixes:
     - Crashes with bobs in general. (11.03.25).
   Info:
-    - Mistakenly deleted & reuploded. 21.5.2025
+    - Mistakenly deleted & reuploded. 21.05.2025
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 04.03.2025
