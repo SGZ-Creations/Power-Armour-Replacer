@@ -2,16 +2,16 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
 
 local batteries = {
-    { buffer_capacity = "10GJ", order = "baz", }, --Nerfed due to not containing battery in recipe.
-    { buffer_capacity = "20GJ", order = "bbz", }, --Nerfed due to not containing battery in recipe.
-    { buffer_capacity = "3TJ",  order = "bcz", },
-    { buffer_capacity = "4TJ",  order = "bdz", },
-    { buffer_capacity = "5TJ",  order = "bez", },
-    { buffer_capacity = "6TJ",  order = "bfz", },
-    { buffer_capacity = "7TJ",  order = "bgz", },
-    { buffer_capacity = "8TJ",  order = "bhz", },
-    { buffer_capacity = "9TJ",  order = "biz", },
-    { buffer_capacity = "10TJ", order = "bjz", },
+    { buffer_capacity = "10GJ", weightvalue = 5000, order = "baz"}, --Nerfed due to not containing battery in recipe.
+    { buffer_capacity = "20GJ", weightvalue = 10000, order = "bbz", }, --Nerfed due to not containing battery in recipe.
+    { buffer_capacity = "3TJ",  weightvalue = 15000, order = "bcz", },
+    { buffer_capacity = "4TJ",  weightvalue = 20000, order = "bdz", },
+    { buffer_capacity = "5TJ",  weightvalue = 25000, order = "bez", },
+    { buffer_capacity = "6TJ",  weightvalue = 30000, order = "bfz", },
+    { buffer_capacity = "7TJ",  weightvalue = 35000, order = "bgz", },
+    { buffer_capacity = "8TJ",  weightvalue = 40000, order = "bhz", },
+    { buffer_capacity = "9TJ",  weightvalue = 45000, order = "biz", },
+    { buffer_capacity = "10TJ", weightvalue = 50000, order = "bjz", },
 }
 
 for tier, battery in pairs(batteries) do
@@ -21,7 +21,7 @@ for tier, battery in pairs(batteries) do
         name = "par-battery-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("battery", 64,  tier),
         stack_size = 20,
-        weight = 15000,
+        weight = battery.weightvalue,
         inventory_move_sound = item_sounds.electric_small_inventory_move,
         pick_sound = item_sounds.electric_small_inventory_pickup,
         drop_sound = item_sounds.electric_small_inventory_move,

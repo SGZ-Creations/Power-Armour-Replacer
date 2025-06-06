@@ -36,14 +36,14 @@ for tier, panel in pairs(panels) do
         name = "par-solar-panel-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("solar-panel", 64, 64, tier),
         shape = {
-                width = 2,
-                height = 1,
-                type = "full"
-            },
+            width = 2,
+            height = 1,
+            type = "full"
+        },
         energy_source = {
-                type = "electric",
-                usage_priority = "primary-output"
-            },
+            type = "electric",
+            usage_priority = "primary-output"
+        },
         power = panel.powers,
         categories = {"armor"}
     }

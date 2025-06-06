@@ -8,17 +8,17 @@ Incoming Damage 2000
 2. Damage Calculation (2000-1000)x(100 - 95) ÷ 100 = 50
 ]]
 
-local power_armour_equipment = {
-    { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  weightvalue=100, icon = "__base__/graphics/icons/power-armor.png", },
-    { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  weightvalue=200,  icon = "__base__/graphics/icons/power-armor-mk2.png", },
-    { order = "acz", inventory_bonus = 150, grid_width = 30,  grid_height = 30,  weightvalue=300,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png", },
-    { order = "adz", inventory_bonus = 200, grid_width = 40,  grid_height = 40,  weightvalue=400,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png", },
-    { order = "aez", inventory_bonus = 250, grid_width = 50,  grid_height = 50,  weightvalue=500,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", },
-    { order = "afz", inventory_bonus = 300, grid_width = 60,  grid_height = 60,  weightvalue=600,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --6
-    { order = "agz", inventory_bonus = 350, grid_width = 70,  grid_height = 70,  weightvalue=700,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --7
-    { order = "ahz", inventory_bonus = 400, grid_width = 80,  grid_height = 80,  weightvalue=800,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --8
-    { order = "aiz", inventory_bonus = 450, grid_width = 90,  grid_height = 90,  weightvalue=900,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --9
-    { order = "ajz", inventory_bonus = 500, grid_width = 100, grid_height = 100, weightvalue=1000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --10
+local power_armour = {
+    { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  weightvalue=100000, icon = "__base__/graphics/icons/power-armor.png", },
+    { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  weightvalue=200000,  icon = "__base__/graphics/icons/power-armor-mk2.png", },
+    { order = "acz", inventory_bonus = 150, grid_width = 30,  grid_height = 30,  weightvalue=300000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png", },
+    { order = "adz", inventory_bonus = 200, grid_width = 40,  grid_height = 40,  weightvalue=400000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png", },
+    { order = "aez", inventory_bonus = 250, grid_width = 50,  grid_height = 50,  weightvalue=500000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", },
+    { order = "afz", inventory_bonus = 300, grid_width = 60,  grid_height = 60,  weightvalue=600000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --6
+    { order = "agz", inventory_bonus = 350, grid_width = 70,  grid_height = 70,  weightvalue=700000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --7
+    { order = "ahz", inventory_bonus = 400, grid_width = 80,  grid_height = 80,  weightvalue=800000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --8
+    { order = "aiz", inventory_bonus = 450, grid_width = 90,  grid_height = 90,  weightvalue=900000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --9
+    { order = "ajz", inventory_bonus = 500, grid_width = 100, grid_height = 100, weightvalue=1000000,  icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --10
 }
 
 local resistances = {
@@ -49,7 +49,7 @@ local resistances = {
 	-- other future mod
 }
 
-for tier, equipment in pairs(power_armour_equipment) do
+for tier, equipment in pairs(power_armour) do
     local equipment_name = "par-armour-mk" .. tier
     local equipment_grid_name = "par-a" .. tier .. "-equipment-grid"
     local equipment_order = equipment.order .. "[par-armour-mk" .. tier .. "]-ab[armour-replacer]"
