@@ -2,8 +2,8 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
 
 local nightvisions = {
-    {buffer_capacity = "1TJ", input_flow_limit ="150GW", energy_input ="125GW", order ="jcc[night-vision]-ac[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-frozen.png"}}},
-    {buffer_capacity = "1kJ", input_flow_limit =  "1kW", energy_input =   "1W", order ="jdd[night-vision]-ad[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-day.png"}}},
+    {buffer_capacity = "1TJ", input_flow_limit ="150GW", energy_input ="125GW", weightvalue = 550, order ="jcc[night-vision]-ac[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-frozen.png"}}},
+    {buffer_capacity = "1kJ", input_flow_limit =  "1kW", energy_input =   "1W", weightvalue = 1100, order ="jdd[night-vision]-ad[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-day.png"}}},
 }
 
 for tier, nightvision in pairs(nightvisions) do
@@ -18,7 +18,7 @@ for tier, nightvision in pairs(nightvisions) do
         pick_sound = item_sounds.electric_small_inventory_pickup,
         drop_sound = item_sounds.electric_small_inventory_move,
         stack_size = 5,
-        weight = 550,
+        weight = nightvision.weightvalue,
         subgroup = "replacer_item",
     }
 

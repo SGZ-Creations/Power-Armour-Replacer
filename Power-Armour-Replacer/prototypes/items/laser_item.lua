@@ -2,16 +2,16 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
 
 local lasers = {
-    {duration =10, buffer_capacity ="10MJ", energy_consumption ="1MJ", damage_modifier = 5 , range =14, cooldown = 100, order ="daz[active-defense]-aa[armour-replacer]"},
-    {duration =20, buffer_capacity ="15MJ", energy_consumption ="2MJ", damage_modifier = 10, range =16, cooldown = 85, order ="dbz[active-defense]-ab[armour-replacer]"},
-    {duration =30, buffer_capacity ="20MJ", energy_consumption ="3MJ", damage_modifier = 15, range =18, cooldown = 70, order ="dcz[active-defense]-ac[armour-replacer]"},
-    {duration =40, buffer_capacity ="25MJ", energy_consumption ="4MJ", damage_modifier = 20, range =20, cooldown = 60, order ="ddz[active-defense]-ad[armour-replacer]"},
-    {duration =50, buffer_capacity ="30MJ", energy_consumption ="5MJ", damage_modifier = 25, range =22, cooldown = 50, order ="dez[active-defense]-ae[armour-replacer]"},
-    {duration =60, buffer_capacity ="35MJ", energy_consumption ="6MJ", damage_modifier = 30, range =24, cooldown = 40, order ="dfz[active-defense]-af[armour-replacer]"},
-    {duration =70, buffer_capacity ="40MJ", energy_consumption ="7MJ", damage_modifier = 35, range =26, cooldown = 30, order ="dgz[active-defense]-ag[armour-replacer]"},
-    {duration =80, buffer_capacity ="45MJ", energy_consumption ="8MJ", damage_modifier = 40, range =28, cooldown = 20, order ="dhz[active-defense]-ah[armour-replacer]"},
-    {duration =90, buffer_capacity ="50MJ", energy_consumption ="9MJ", damage_modifier = 45, range =30, cooldown = 10, order ="diz[active-defense]-ai[armour-replacer]"},
-    {duration =100, buffer_capacity ="55MJ", energy_consumption ="10MJ", damage_modifier = 50, range =32, cooldown = 5, order ="djz[active-defense]-aj[armour-replacer]"},
+    {duration =10, buffer_capacity ="10MJ", energy_consumption ="1MJ", damage_modifier = 5 , range =14, cooldown = 100, weightvalue = 10000, order ="daz[active-defense]-aa[armour-replacer]"},
+    {duration =20, buffer_capacity ="15MJ", energy_consumption ="2MJ", damage_modifier = 10, range =16, cooldown = 85, weightvalue = 20000, order ="dbz[active-defense]-ab[armour-replacer]"},
+    {duration =30, buffer_capacity ="20MJ", energy_consumption ="3MJ", damage_modifier = 15, range =18, cooldown = 70, weightvalue = 30000, order ="dcz[active-defense]-ac[armour-replacer]"},
+    {duration =40, buffer_capacity ="25MJ", energy_consumption ="4MJ", damage_modifier = 20, range =20, cooldown = 60, weightvalue = 40000, order ="ddz[active-defense]-ad[armour-replacer]"},
+    {duration =50, buffer_capacity ="30MJ", energy_consumption ="5MJ", damage_modifier = 25, range =22, cooldown = 50, weightvalue = 50000, order ="dez[active-defense]-ae[armour-replacer]"},
+    {duration =60, buffer_capacity ="35MJ", energy_consumption ="6MJ", damage_modifier = 30, range =24, cooldown = 40, weightvalue = 60000, order ="dfz[active-defense]-af[armour-replacer]"},
+    {duration =70, buffer_capacity ="40MJ", energy_consumption ="7MJ", damage_modifier = 35, range =26, cooldown = 30, weightvalue = 70000, order ="dgz[active-defense]-ag[armour-replacer]"},
+    {duration =80, buffer_capacity ="45MJ", energy_consumption ="8MJ", damage_modifier = 40, range =28, cooldown = 20, weightvalue = 80000, order ="dhz[active-defense]-ah[armour-replacer]"},
+    {duration =90, buffer_capacity ="50MJ", energy_consumption ="9MJ", damage_modifier = 45, range =30, cooldown = 10, weightvalue = 90000, order ="diz[active-defense]-ai[armour-replacer]"},
+    {duration =100, buffer_capacity ="55MJ", energy_consumption ="10MJ", damage_modifier = 50, range =32, cooldown = 5, weightvalue = 100000, order ="djz[active-defense]-aj[armour-replacer]"},
 }
 
 for tier, laser in pairs(lasers) do
@@ -25,7 +25,7 @@ for tier, laser in pairs(lasers) do
         pick_sound = item_sounds.turret_inventory_pickup,
         drop_sound = item_sounds.turret_inventory_move,
         stack_size = 20,
-        weight = 10000,
+        weight = laser.weightvalue,
         order = laser.order,
         subgroup = "replacer_item",
     }

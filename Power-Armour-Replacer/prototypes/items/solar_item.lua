@@ -2,16 +2,16 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
 
 local panels = {
-    {powers = "5GW", orders ="ga[energy-source]-aa[armour-replacer]"},
-    {powers ="10GW", orders ="gb[energy-source]-ab[armour-replacer]"},
-    {powers ="15GW", orders ="gc[energy-source]-ac[armour-replacer]"},
-    {powers ="20GW", orders ="gd[energy-source]-ad[armour-replacer]"},
-    {powers ="25GW", orders ="ge[energy-source]-ae[armour-replacer]"},
-    {powers ="30GW", orders ="gf[energy-source]-af[armour-replacer]"},
-    {powers ="35GW", orders ="gg[energy-source]-ag[armour-replacer]"},
-    {powers ="40GW", orders ="gh[energy-source]-ah[armour-replacer]"},
-    {powers ="45GW", orders ="gi[energy-source]-ai[armour-replacer]"},
-    {powers ="50GW", orders ="gj[energy-source]-aj[armour-replacer]"},
+    {powers = "5GW", weightvalue =15000, orders ="ga[energy-source]-aa[armour-replacer]"},
+    {powers ="10GW", weightvalue =30000, orders ="gb[energy-source]-ab[armour-replacer]"},
+    {powers ="15GW", weightvalue =45000, orders ="gc[energy-source]-ac[armour-replacer]"},
+    {powers ="20GW", weightvalue =60000, orders ="gd[energy-source]-ad[armour-replacer]"},
+    {powers ="25GW", weightvalue =75000, orders ="ge[energy-source]-ae[armour-replacer]"},
+    {powers ="30GW", weightvalue =90000, orders ="gf[energy-source]-af[armour-replacer]"},
+    {powers ="35GW", weightvalue =105000, orders ="gg[energy-source]-ag[armour-replacer]"},
+    {powers ="40GW", weightvalue =120000, orders ="gh[energy-source]-ah[armour-replacer]"},
+    {powers ="45GW", weightvalue =135000, orders ="gi[energy-source]-ai[armour-replacer]"},
+    {powers ="50GW", weightvalue =150000, orders ="gj[energy-source]-aj[armour-replacer]"},
 }
 
 for tier, panel in pairs(panels) do
@@ -27,7 +27,7 @@ for tier, panel in pairs(panels) do
         pick_sound = item_sounds.electric_large_inventory_pickup,
         drop_sound = item_sounds.electric_large_inventory_move,
         stack_size = 20,
-        weight = 20000,
+        weight = panel.weightvalue,
     }
 
     ---@type data.EquipmentPrototype
