@@ -2,16 +2,16 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
 
 local reactors = {
-    { power = "10GW", order = "caz[energy-source]-aa[armour-replacer]"},
-    { power = "20GW", order = "cbz[energy-source]-aa[armour-replacer]"},
-    { power = "30GW", order = "ccz[energy-source]-aa[armour-replacer]"},
-    { power = "40GW", order = "cdz[energy-source]-aa[armour-replacer]"},
-    { power = "50GW", order = "cez[energy-source]-aa[armour-replacer]"},
-    { power = "60GW", order = "cfz[energy-source]-aa[armour-replacer]"},
-    { power = "70GW", order = "cgz[energy-source]-aa[armour-replacer]"},
-    { power = "80GW", order = "chz[energy-source]-aa[armour-replacer]"},
-    { power = "90GW", order = "ciz[energy-source]-aa[armour-replacer]"},
-    { power = "100GW", order = "cjz[energy-source]-aa[armour-replacer]"},
+    { power = "10GW", weightvalue = 35000, order = "caz[energy-source]-aa[armour-replacer]"},
+    { power = "20GW", weightvalue = 70000, order = "cbz[energy-source]-aa[armour-replacer]"},
+    { power = "30GW", weightvalue = 105000, order = "ccz[energy-source]-aa[armour-replacer]"},
+    { power = "40GW", weightvalue = 140000, order = "cdz[energy-source]-aa[armour-replacer]"},
+    { power = "50GW", weightvalue = 175000, order = "cez[energy-source]-aa[armour-replacer]"},
+    { power = "60GW", weightvalue = 210000, order = "cfz[energy-source]-aa[armour-replacer]"},
+    { power = "70GW", weightvalue = 245000, order = "cgz[energy-source]-aa[armour-replacer]"},
+    { power = "80GW", weightvalue = 280000, order = "chz[energy-source]-aa[armour-replacer]"},
+    { power = "90GW", weightvalue = 315000, order = "ciz[energy-source]-aa[armour-replacer]"},
+    { power = "100GW", weightvalue = 350000, order = "cjz[energy-source]-aa[armour-replacer]"},
 }
 
 for tier, reactor in pairs(reactors) do
@@ -22,7 +22,7 @@ for tier, reactor in pairs(reactors) do
         place_as_equipment_result = "par-fission-reactor-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("fusion-reactor", 64, tier),
         stack_size = 20,
-        weight = 35000,
+        weight = reactor.weightvalue,
         inventory_move_sound = item_sounds.reactor_inventory_move,
         pick_sound = item_sounds.reactor_inventory_pickup,
         drop_sound = item_sounds.reactor_inventory_move,
