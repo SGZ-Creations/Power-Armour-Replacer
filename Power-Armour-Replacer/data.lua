@@ -11,6 +11,7 @@
     require("prototypes.items.immuntiy_item")
     require("prototypes.items.acu_item")
     require("prototypes.misc.crafting-catergoies")
+
 --prototypes.recipes
     require("prototypes.recipes.armour_recipes")
     require("prototypes.recipes.batteries_recipes")
@@ -42,6 +43,7 @@
     require("prototypes.misc.armour_equipment_category")
 
 --structures
+    require("structures.SimulationScenarioCrash")
     require("structures.tips_tricks.tips-and-tricks")
     --require("structures.Milestones.preset_addons")
     --require("structures.Milestones.presets")
