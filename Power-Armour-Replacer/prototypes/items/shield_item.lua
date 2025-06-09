@@ -1,7 +1,7 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
 local SS = settings.startup
---max_shield (Shield value.)
+--max_shield_value(How high the hitpoint per tier is) (Shield value.)
 --buffer_capacity (Intenal battery)
 --input_flow_limit (Max Consuption has effect on recharge speed)
 --energy_per_shield (Recharge speed the higer the lower it charges Don't touch beyond 0.1.34-6p1)
