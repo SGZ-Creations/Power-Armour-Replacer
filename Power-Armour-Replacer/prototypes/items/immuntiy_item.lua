@@ -1,7 +1,7 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local Immunities = {
-    {buffer_capacity ="1TJ", input_flow_limit = "150GW", energy_consumption = "125GW", order = "jaa[belt-immunity]-aa[armour-replacer]"},
-    {buffer_capacity ="1kJ", input_flow_limit =   "1kW", energy_consumption =    "1W", order = "jbb[belt-immunity]-ab[armour-replacer]"},
+    {buffer_capacity ="1TJ", weightvalue = 5500, input_flow_limit = "150GW", energy_consumption = "125GW", order = "jaa[belt-immunity]-aa[armour-replacer]"},
+    {buffer_capacity ="1kJ", weightvalue = 11000, input_flow_limit =   "1kW", energy_consumption =    "1W", order = "jbb[belt-immunity]-ab[armour-replacer]"},
 }
 
 for tier, immunity in pairs(Immunities) do
@@ -13,7 +13,7 @@ for tier, immunity in pairs(Immunities) do
         icon = "__base__/graphics/icons/belt-immunity-equipment.png",
         icon_size = 64,
         stack_size = 5,
-        weight = 5500,
+        weight = immunity.weightvalue5500,
         inventory_move_sound = item_sounds.mechanical_inventory_move,
         pick_sound = item_sounds.mechanical_inventory_pickup,
         drop_sound = item_sounds.mechanical_inventory_move,

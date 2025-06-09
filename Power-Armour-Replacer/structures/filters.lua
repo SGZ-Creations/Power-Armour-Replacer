@@ -3,7 +3,6 @@ local DRT = data.raw.technology
 local DRI = data.raw.item
 local DRA = data.raw.armor
 local SS = settings.startup
-local Mods = mods
 
 --[[
         Clean up phase of all mods adding technology Recipes for Armour's & Equipment's.
@@ -119,21 +118,22 @@ if SS["vanilla-filters"].value then
     Hide_Item("personal-laser-defense-equipment")
 end
 
---[[
-if (mods["space-age"] or mods["mech-armor"])then
+if mods["PARs-SpaceAge-Extension"] then
+    if (mods["space-age"] or mods["mech-armor"])then
 
-    DRT["mech-armor"].enabled = false
+        DRT["mech-armor"].enabled = false
 
-    DRR["mech-armor"].hidden = true
+        DRR["mech-armor"].hidden = true
 
-    DRT["mech-armor"].hidden = true
+        DRT["mech-armor"].hidden = true
 
-    if settings.startup["MechTechFilters"].value then
-        Hide_Item("mech-armor")
+        if settings.startup["MechTechFilters"].value then
+            Hide_Item("mech-armor")
+        end
     end
-end]]
+end
 
-if Mods["space-age"] then
+if mods["space-age"] then
 
     DRT["fusion-reactor-equipment"].enabled = false
     DRT["battery-mk3-equipment"].enabled = false
@@ -150,7 +150,7 @@ if Mods["space-age"] then
     end
 end
 
-if Mods["bobwarfare"] then
+if mods["bobwarfare"] then
 --Enabled
     DRR["bob-power-armor-mk3"].enabled = false
     DRR["bob-power-armor-mk4"].enabled = false
@@ -176,7 +176,7 @@ if Mods["bobwarfare"] then
     end
 end
 
-if Mods["bobequipment"] then
+if mods["bobequipment"] then
 --Enabled
     DRT["bob-battery-equipment-3"].enabled = false
     DRT["bob-battery-equipment-4"].enabled = false
@@ -312,7 +312,7 @@ if Mods["bobequipment"] then
     end
 end
 
-if Mods["custom_power_armor_fix"] then
+if mods["custom_power_armor_fix"] then
     --Enabled
     DRR["shield-mk3"].enabled = false
     DRR["shield-mk4"].enabled = false
@@ -373,7 +373,7 @@ if Mods["custom_power_armor_fix"] then
     end
 end
 
-if Mods["Darkstar_utilities_fixed"] then
+if mods["Darkstar_utilities_fixed"] then
 --Enabled
     DRT["battery-mk3-equipment"].enabled = false
     DRT["battery-mk4-equipment"].enabled = false
@@ -416,7 +416,7 @@ if Mods["Darkstar_utilities_fixed"] then
     end
 end
 
-if Mods["Hiladdar_Gear"] then
+if mods["Hiladdar_Gear"] then
 --Hidden
     DRR["hsmd-power-armor-mk3"].hidden = true
     DRR["hsmd-power-armor-mk4"].hidden = true
@@ -549,7 +549,7 @@ if Mods["Hiladdar_Gear"] then
     end
 end
 
-if Mods["Krastorio2"] and Mods["space-exploration"] then
+if mods["Krastorio2"] and mods["space-exploration"] then
 --Hidden
     DRR["power-armor-mk3"].hidden = true
     DRR["power-armor-mk4"].hidden = true
@@ -645,7 +645,7 @@ if Mods["Krastorio2"] and Mods["space-exploration"] then
         Hide_Item("personal-submachine-laser-defense-mk3-equipment")
         Hide_Item("personal-submachine-laser-defense-mk4-equipment")
     end
-elseif Mods["Krastorio2"] then
+elseif mods["Krastorio2"] then
 --Hidden
     DRR["power-armor-mk3"].hidden = true
     DRR["power-armor-mk4"].hidden = true
@@ -755,7 +755,7 @@ elseif Mods["Krastorio2"] then
     end
 end
 
-if Mods["RampantArsenal"] then
+if mods["RampantArsenal"] then
 -- Enabled 
     DRT["rampant-arsenal-technology-power-armor-mk3"].enabled = false
     DRT["rampant-arsenal-technology-battery-equipment-3"].enabled = false
@@ -791,7 +791,7 @@ if Mods["RampantArsenal"] then
     end
 end
 
-if Mods["space-exploration"] then
+if mods["space-exploration"] then
 --Enabled
     DRR["se-rtg-equipment"].enabled = false
     DRR["se-rtg-equipment-2"].enabled = false
@@ -857,7 +857,7 @@ if Mods["space-exploration"] then
     end
 end
 
-if Mods["Power Armor MK3"] then
+if mods["Power Armor MK3"] then
     --Hidden
     DRR["pamk3-se"].hidden = true
     DRR["pamk3-inff"].hidden = true
@@ -900,7 +900,7 @@ if Mods["Power Armor MK3"] then
     end
 end
 
-if Mods["PowerAndArmor"] then
+if mods["PowerAndArmor"] then
     --Enabled
     DRR["PaA-battery-mk3-equipment"].enabled = false
     DRR["PaA-power-armor-mk2-upgrade"].enabled = false

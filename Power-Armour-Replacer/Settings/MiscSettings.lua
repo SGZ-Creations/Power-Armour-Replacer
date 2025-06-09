@@ -9,19 +9,19 @@ data:extend({
         order = "10Aac"
     },
 })
---[[
-if (mods["space-age"] or mods["mech-armor"])then
-    data:extend({
-        {
-            type = "bool-setting",
-            name = "MechTechFilters",
-            setting_type = "startup",
-            default_value = true,
-            order = "10Aad"
-        },
-    })
+if mods["PARs-SpaceAge-Extension"] then
+    if (mods["space-age"] or mods["mech-armor"])then
+        data:extend({
+            {
+                type = "bool-setting",
+                name = "MechTechFilters",
+                setting_type = "startup",
+                default_value = true,
+                order = "10Aad"
+            },
+        })
+    end
 end
-]]
 if mods["space-age"] then
     data:extend({
         {
