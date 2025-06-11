@@ -17,9 +17,7 @@ if mods["bobtech"]and mods["bobplates"] then
 	Tech["bob-chemical-processing-1"].unit = nil
 end
 
-if mods["bobplates"] then
-	Recipe["bob-carbon-from-wood"].enabled = true
-end
+
 if mods["bobtech"] then
 	if SS["bobmods-burnerphase"].value == true then
 		if mods["bobplates"]then
@@ -41,6 +39,10 @@ if mods["bobtech"] then
 
 				Tech["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 50}
 				Tech["bob-electrolysis-1"].unit = nil
+
+				if mods["bobplates"] then
+					Recipe["bob-carbon-from-wood"].enabled = true
+				end
 
 				if not mods["Alt_Chemical_Processing"] then
 					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bob-carbon", count = 25}
