@@ -6,7 +6,7 @@ data:extend({
         name = "vanilla-filters",
         setting_type = "startup",
         default_value = true,
-        order = "10Aac"
+        order = "9Aac"
     },
 })
 if mods["PARs-SpaceAge-Extension"] then
@@ -17,7 +17,7 @@ if mods["PARs-SpaceAge-Extension"] then
                 name = "MechTechFilters",
                 setting_type = "startup",
                 default_value = true,
-                order = "10Aad"
+                order = "9Aad"
             },
         })
     end
@@ -29,7 +29,7 @@ if mods["space-age"] then
             name = "SAFilters",
             setting_type = "startup",
             default_value = true,
-            order = "10Aad"
+            order = "9Aad"
         },
     })
 end
@@ -40,7 +40,7 @@ data:extend({
             name = "BobW-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Bab"
+            order = "9Bab"
         },
     })
 end
@@ -52,7 +52,7 @@ if mods["bobequipment"] then
             name = "BobE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Cab"
+            order = "9Cab"
         },
     })
 end
@@ -64,7 +64,7 @@ if mods["custom_power_armor_fix"] then
             name = "CPAF-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Dab"
+            order = "9Dab"
         },
     })
 end
@@ -76,7 +76,7 @@ if mods["Darkstar_utilities_fixed"] then
             name = "darkstar-fixed-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Eab"
+            order = "9Eab"
         },
     })
 end
@@ -88,7 +88,7 @@ if mods["Hiladdar_Gear"] then
             name = "hl_gear-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Fab"
+            order = "9Fab"
         },
     })
 end
@@ -100,14 +100,14 @@ if mods["Krastorio2"] and mods["space-exploration"] then
             name = "KE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Gab"
+            order = "9Gab"
         },
         {
             type = "bool-setting",
             name = "SE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Lab"
+            order = "9Lab"
         },
     })
 elseif mods["Krastorio2"] then
@@ -117,7 +117,7 @@ elseif mods["Krastorio2"] then
             name = "K2-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Hab"
+            order = "9Hab"
         },
     })
 end
@@ -129,7 +129,7 @@ if mods["PowerAndArmor"] then
             name = "PA-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Iab"
+            order = "9Iab"
         },
     })
 end
@@ -141,7 +141,7 @@ if mods["Power Armor MK3"] then
             name = "MK3-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Jab"
+            order = "9Jab"
         },
     })
 end
@@ -153,7 +153,7 @@ if mods["RampantArsenal"] then
             name = "Arsenal-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Kab"
+            order = "9Kab"
         },
     })
 end
@@ -165,7 +165,7 @@ if mods["space-exploration"] and not mods["Krastorio2"] then
             name = "SE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "20Lab"
+            order = "9Lab"
         },
     })
 end
