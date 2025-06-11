@@ -1,7 +1,10 @@
 ---@class data.TechnologyPrototype.type
 local Tech = data.raw["technology"]
----@settings data.settings
+---@class data.RecipePrototype
+local Recipe =data.raw["recipe"]
+---@class data.SettingsStartup
 local SS = settings.startup
+
 
 if mods["bobtech"]and mods["bobplates"] then
 	Tech["steel-processing"].research_trigger = {type ="craft-fluid", fluid ="bob-oxygen", amount = 1000}
@@ -14,6 +17,9 @@ if mods["bobtech"]and mods["bobplates"] then
 	Tech["bob-chemical-processing-1"].unit = nil
 end
 
+if mods["bobplates"] then
+	Recipe["bob-carbon-from-wood"].enabled = true
+end
 if mods["bobtech"] then
 	if SS["bobmods-burnerphase"].value == true then
 		if mods["bobplates"]then
@@ -37,7 +43,7 @@ if mods["bobtech"] then
 				Tech["bob-electrolysis-1"].unit = nil
 
 				if not mods["Alt_Chemical_Processing"] then
-					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bobb-carbon", count = 25}
+					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bob-carbon", count = 25}
 					Tech["bob-chemical-processing-1"].unit = nil
 				elseif mods["Alt_Chemical_Processing"] then
 					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="carbon", count = 25}
