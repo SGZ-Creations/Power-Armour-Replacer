@@ -2,7 +2,7 @@
 Version: 0.4.0
 Date: 06.06.2025
   Major Features:
-    - Settings added to other equipment for further customizebility.
+    - Settings added to other equipment for further customizability.
     - 10 Armour Settings.
     - 10 Batteries Settings.
     - 10 Exoskeleton Settings
@@ -14,21 +14,22 @@ Date: 06.06.2025
     - 10 Solar Settings.
     - Total 216 New setting for you to have fun with hope this mods become fun for you even more now.
   Features:
-    - [space-age] Made it possible to craft all items in Elctromagnetic Plant.
+    - [space-age] Made it possible to craft all items in Electromagnetic Plant.
     - ACU recipe [space-age] Edition.
-    - Added crafting category = "electronics-or-handcrafting" using hands all assemblers, elctromagnetic-plant.
+    - Added crafting category = "electronics-or-handcrafting" using hands all assemblers, electromagnetic-plant.
   Changes:
-    - [space-age] Elctromagnetic Mech crafting. Can use Elctromagnetic Plant to craft sarcophagus.
-    - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exolegs.
-    - [space-age] Recipes are now using new crafting category from mk1-5 and 6-10 reqires assembly 2 or elctromagnetic-plant.
-    - Achivement text make more sense.
+    - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
+    - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exoskeleton.
+    - [space-age] Recipes are now using new crafting category from MK1-5 and 6-10 requires assembly 2 or electromagnetic-plant.
+    - Achievement text make more sense.
     - Start of base game towards PAR will now have crafting triggers over science research.
   Modding:
     - Re Migrate bobs items that has been migrated in 1.3.0 already.
   Bugfixes:
     - Crash with AAI industries.
     - Bobs tech name crash.
-    - Bobs tech soflock bob-carbon. in combination with Alt_Chemical_Processing
+    - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
+    - Fixed many spelling errors across the Changelog.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 12.03.2025
@@ -45,20 +46,20 @@ Date: 12.03.2025
   Bugfixes:
     - Crashes with bobs in general. (11.03.25).
   Info:
-    - Mistakenly deleted & reuploded. 21.05.2025
+    - Mistakenly deleted & reuploaded. 21.05.2025
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 04.03.2025
   Features:
     - Repeatable migrations.
-    - Added all the old chat popups to tips & tricks. some teext changes may happen as the mods updates.  
+    - Added all the old chat popups to tips & tricks. some text changes may happen as the mods updates.  
   Changes:
     - Achivement name change [Surviving planet destruction] --> [Leviathan]
     - Control stage code are deleted, no longer in use/needed.
     - Deleted setting(s) regarding the old chat popup.
     - Bobs & [space-age] bridge is moved to Alt Chemical Processing. 
     - If you are currently playing Bobs and PA&R please use that mod to restore the merge of items in recipes.
-    - Items in the bridge are as followes: ["bob-carbon"] = "carbon". ["bob-tungsten-plate"] = "tungsten-plate". ["bob-tungsten-carbide"] = "tungsten-carbide". ["bob-lithium"] = "lithium-plate". ["seedling"] = "tree-seed". ["bob-salt"] = "salt", from "SaltedFish" if mods["SaltedFish"].
+    - Items in the bridge are as follows: ["bob-carbon"] = "carbon". ["bob-tungsten-plate"] = "tungsten-plate". ["bob-tungsten-carbide"] = "tungsten-carbide". ["bob-lithium"] = "lithium-plate". ["seedling"] = "tree-seed". ["bob-salt"] = "salt", from "SaltedFish" if mods["SaltedFish"].
   Bugfixes:
     - Mistakenly disabled turbo loaders from Vanilla Loader should only happen if using boblogistics.
   Info:
@@ -71,7 +72,7 @@ Date: 05.02.2025
     - Another "bob-" prefix.
   Features:
     - Preparing Compatibility for Milestones mod.
-    - Preparing to move Ingame info message to tips & tricks.
+    - Preparing to move In-game info message to tips & tricks.
   Bugfixes:
     - Crash without Aged Bobs.
     - Crash with Armour MK3 mod.
@@ -85,14 +86,14 @@ Date: 04.02.2025
   Changes:
     - Changelog.
     - Recipes when bobs are enabled.
-    - Achivements the survive hit points name change.
-    - All items with fusion reactor from [space-age] should now be temp repalced with fission reactor mk1.
+    - Achievements the survive hit points name change.
+    - All items with fusion reactor from [space-age] should now be temp replaced with fission reactor mk1.
     - Added "par-armour-tech-5" to prerequisite on "par-night-immunity-tech-1" removed on "par-night-immunity-tech-2" so it easier to find.
   Features:
     - Made Nanobots2 work as old nanobots.
     - Repeatable migration.
   Modding:
-    - Nanobots mods eqiupment unlocks at NightImunity 1 instead of 2
+    - Nanobots mods equipment unlocks at NightImmunity 1 instead of 2
   Scripting:
     - Restructured locals files.
 ---------------------------------------------------------------------------------------------------
@@ -107,7 +108,7 @@ Date: 26.01.2025
     - Added charging_station_count_affected_by_quality to roboports.
     - Repeatable migration.
   Scripting:
-    - Fixed until.lua
+    - Fixed until.Lua
   Info:
     - Some issue with bobs at this point i can't do much with bobs being in beta testing.
     - Basicly me trying to put plaster on a wound while the knife is still in it. 
@@ -120,7 +121,7 @@ Date: 24.01.2025
     - Crash with transport drones.
   Info:
     - Need to learn on getting a better understanding on coding better.
-    - Tho that aint easy when over tired.
+    - Tho that ain't easy when over tired.
   Features:
     - Repeatable migration.
   Credit:
@@ -134,7 +135,7 @@ Date: 24.01.2025
     - Changed how to unlocked armour from start.
     - Armour should now have bob-like recipes.
     - Removed bobs tungsten items from armour MK9 & MK10.
-    - Fixed duplicates with bobs untill the fix is done on there end.
+    - Fixed duplicates with bobs until the fix is done on there end.
   Features:
     - Repeatable migration.
   Changes:
@@ -146,7 +147,7 @@ Date: 24.01.2025
 Version: 0.3.11
 Date: 20.01.2025
   Features:
-    - First try at repatable migration.
+    - First try at repeatable migration.
   Modding:
     - Fixed all internal naming changes for bob's mods to work with PAR.
     - Reworked some recipes that do now have bob & vanilla intermediates.
@@ -156,18 +157,18 @@ Date: 20.01.2025
     - S̶h̶o̶u̶l̶d̶ s̶o̶m̶e̶o̶n̶e̶ w̶a̶n̶t̶ t̶o̶ g̶i̶v̶e̶ a̶ p̶u̶l̶l̶r̶e̶q̶u̶e̶s̶t̶ w̶i̶t̶h̶ a̶ f̶i̶x̶ o̶n̶ m̶y̶.
     - M̶o̶r̶e̶ o̶n̶ m̶y̶ g̶i̶t̶ i̶s̶s̶u̶e̶ s̶i̶t̶e̶ &̶ D̶i̶s̶c̶o̶r̶d̶.
   Info:
-    - Repatable migrations goal is the part that should attempt to replace,
-    - Vanilla and modded Armours & Equipments. Then give you PAR's counter part items automatically.
-    - This should also then forfill the main goal of what this mod was meant to do.
-    - I will have to try this out for a few versions. 
+    - Repeatable migrations goal is the part that should attempt to replace,
+    - Vanilla and modded Armours & Equipment's. Then give you PAR's counter part items automatically.
+    - This should also then for fill the main goal of what this mod was meant to do.
+    - I will have to try this out for a few versions.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.10
 Date: 18.01.2025
   Features:
-    - [space-age] Addedd MK5 tech Space science.
+    - [space-age] Added MK5 tech Space science.
     - [space-age] Battery, Solar: MK6-10 Agricultural. MK7-10 Cryogenic. MK9-10 Promethium.
-    - [space-age] Roboport, Laser: MK6-10 Metalurgic. MK7-10 Cryogenic. MK9-10 Promethium.
-    - [space-age] Shield; Reactor: MK6-10 Elctromagnetic. MK7-10 Cryogenic. MK9-10 Promethium.
+    - [space-age] Roboport, Laser: MK6-10 Metallurgic. MK7-10 Cryogenic. MK9-10 Promethium.
+    - [space-age] Shield; Reactor: MK6-10 Electromagnetic. MK7-10 Cryogenic. MK9-10 Promethium.
   Changes:
     - Science should now start at 1 on mk2.
     - Move the stick unlock at armour mk1 making sure it's available in time for solar tech.
@@ -199,12 +200,12 @@ Version: 0.3.7
 Date: 14.01.2025
   Changes:
     - Changelog typo. 0.3.2
-    - Spider tech Exoskeleton pre-requesite & recipe changed again from mk3 to mk2.
+    - Spider tech Exoskeleton prerequisites & recipe changed again from mk3 to mk2.
     - Removed all battery components from solar equipment.
     - Stick can now also be unlocked at Exoskeleton MK1.
-    - [space-age] Armours recipes added. More to come for the other (Items/Equipments)
+    - [space-age] Armours recipes added. More to come for the other (Items/Equipment's)
   Modding:
-    - Removed bob's Heavy armour 3-4 from recipes & techs. Acording to progress on git.
+    - Removed bob's Heavy armour 3-4 from recipes & techs. According to progress on git.
   Scripting:
     - Some Refactoring.
 ---------------------------------------------------------------------------------------------------
@@ -216,7 +217,7 @@ Date: 13.11.2024
   Bugfixes:
     - NVG's MK2 was not activating at night.
   Modding:
-    - Added MK3 Skeleton tech pre-requesite in spidertron with SpidertronPatrols. (No Bugs seen here) 0.3.5 or 0.3.6 @Big John.
+    - Added MK3 Skeleton tech prerequisites in spidertron with SpidertronPatrols. (No Bugs seen here) 0.3.5 or 0.3.6 @Big John.
   Info:
     - NVG's can be a bit bright but let me know. I do want to have it more phosphor white but current way is good 2 so it might stay.
 ---------------------------------------------------------------------------------------------------
@@ -225,13 +226,13 @@ Date: 11.11.2024
   Changes:
     - MK5 Roboport recipes.
   Bugfixes:
-    - Enetity(Equipment).
-    - Techtree scaling.
-    - Mistakently using the hr textures on skeletone icon.
+    - Entity(Equipment).
+    - Tech tree scaling.
+    - Mistakenly using the hr textures on skeleton icon.
   Graphics:
-    - Coloring have returned to inside the grids.
+    - Colouring have returned to inside the grids.
     - Removed old non hr texture files, the correct once.
-    - Adjusted resoution regarding texture files.
+    - Adjusted resolution regarding texture files.
     - Corrected the tech tree icon scale.
   Credits:
     - Discord: @Kira (Kirazy) for help on solving my texture problems.
@@ -247,7 +248,7 @@ Date: 11.11.2024
     - Experimental only. Until 2.0.16 becomes stable.
   Credits:
     - @bigjohn8141 #8141 for bug report Discord:Spidertron research blocked.
-    - Basegame & Kirazy's Changelog for showing the [space-age] in there changelog.
+    - Base game & Kirazy's Changelog for showing the [space-age] in there changelog.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.3
 Date: 26.10.2024
@@ -257,7 +258,7 @@ Date: 26.10.2024
     - Roboport Mk10 Recipe number change.
   Bugfixes:
     - Changelog.
-    - Wrong filter for item fission reactor stil used the 1.1 name not 2.0.
+    - Wrong filter for item fission reactor still used the 1.1 name not 2.0.
     - Corrected locals naming for Fusion - Fission.
     - Removed Un-used Locals from IR3.
     - Corrected some NO Locals left in English.
@@ -275,16 +276,16 @@ Date: 25.10.2024
     - Removed outdated graphics code.
     - More fixes to come.
   Changes:
-    - [space-age] Optional space science setting apering with S-A or SE.
+    - [space-age] Optional space science setting appearing with S-A or SE.
     - [space-age] Changed Weight values on Armour & Lasers.
     - Listed Dependencies: 1 removed, 1 name corrected.
     - Updated Recipes on 7-10.
     - Changed Tech to have crafting requirement instead of science. 
     - [space-age] Added SciencePacks to Par Armour Tech.
-    - [space-age] Changed Prerequsites to count in the science packs.
+    - [space-age] Changed Prerequisites to count in the science packs.
   Bugfixes:
-    - Tech tree issue processing unit was applied to worng tech.
-    - [space-age] Made base mech armour use MK5 armour as prerequsite.
+    - Tech tree issue processing unit was applied to wrong tech.
+    - [space-age] Made base mech armour use MK5 armour as prerequisites.
     - [space-age] Removed Tech, Item, Equipment: Battery MK3, Fusion Reactor.
   Credits:
     - @Mylon for help solving Factoriopedia Simulations.
@@ -299,14 +300,14 @@ Date: 22.10.2024
   Features:
     - Updated to work with 2.0 Base & [space-age].
     - Added sounds to all items in mod.
-    - [space-age] Added propper Weight values to all items in mod to be able to ship items in rocket.
+    - [space-age] Added proper Weight values to all items in mod to be able to ship items in rocket.
   Bugfixes:
-    - Made sure equipping equipment can be equipted.
+    - Made sure equipping equipment can be equipped.
   Changes:
-    - [space-age] Deleted dlc folders.
+    - [space-age] Deleted DLC folders.
     - Removed Compatibility with IR3 as the mod is now a dead ghost.
   Scripting:
-    - Deleted some Mipmap. Reworking texture is coming eventualy. looking at you tech tree.
+    - Deleted some Mipmap. Reworking texture is coming eventually. looking at you tech tree.
   Info:
     - Will try maintain to some extend for 1.1 at least 6 more months should you find bugs.
 ---------------------------------------------------------------------------------------------------
@@ -314,18 +315,18 @@ Version: 0.2.18
 Date: 12.10.2024
   Scripting:
     - Renamed Quality Comp files.
-    - Figuring out why some/lot's of my tech dependecy code won't work and apply fix.
+    - Figuring out why some/lot's of my tech dependency code won't work and apply fix.
   Modding:
-    - Issue with missing ores if bob's ores are not enabled. Added to bob's plates instead due to it having ores as dependendcy.
+    - Issue with missing ores if bob's ores are not enabled. Added to bob's plates instead due to it having ores as dependency.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.17
 Date: 05.09.2024
   Features:
-    - Adeed some recipe compatibility with spidertrontiers-community-updates.
+    - Added some recipe compatibility with spidertrontiers-community-updates.
   Bugfixes:
-    - Crash in utill.lua
-    - Cerash when using spidertrontiers-community-updates, spidertrontiers.
-    - Created setting-update.lua
+    - Crash in utill.Lua
+    - Crash when using spidertrontiers-community-updates, spidertrontiers.
+    - Created setting-update.Lua
   Credits:
     - Thanks @excosis for the bug report. let me know to remove this.
 ---------------------------------------------------------------------------------------------------
@@ -342,13 +343,13 @@ Date: 23.08.2024
     - Added file compatibility.recipes.updates.solar_updates
   Changes:
     - Compatibility Load order for NVGS & Belt Immunity moved to update stage.
-    - Compatibility Load order for all recipes is now moved to update stage. This should also alow me to move some section if needed to be added to final fixes.
-    - Moved file location for tech fiile.
+    - Compatibility Load order for all recipes is now moved to update stage. This should also allow me to move some section if needed to be added to final fixes.
+    - Moved file location for tech file.
     - 248K Recipes somewhat bobs's.
-    - More recipe changes thna i expected.
+    - More recipe changes than i expected.
     - Some SEK2 recipes.
   Bugfixes:
-    - Crash with 248K item typo in reicpe, aluminium to aluminum.
+    - Crash with 248K item typo in recipe, aluminium to aluminum.
     - Few more dupe item crashes.
   Credits:
     - Thanks for bug report @solewanderer #1919. let me know to remove this.
@@ -357,11 +358,11 @@ Version: 0.2.15
 Date: 10.08.2024
   Features:
     - Added folder recipes & updates in compatibility.
-    - Added file compatibility.recipes.updates.armour_updates.lua
-    - Added file compatibility.recipes.updates.fusion_updates.lua
-    - Added file compatibility.recipes.updates.shield_updates.lua
+    - Added file compatibility.recipes.updates.armour_updates.Lua
+    - Added file compatibility.recipes.updates.fusion_updates.Lua
+    - Added file compatibility.recipes.updates.shield_updates.Lua
   Changes:
-    - Adjusted recipes from Darkstar to alinge more to Bob's Angels Combi.
+    - Adjusted recipes from Darkstar to align more to Bob's Angels Combi.
     - Medium sized Re-organized file structure.
   Bugfixes:
     - Recipe conversion spelling.
@@ -369,86 +370,86 @@ Date: 10.08.2024
     - Please report any bug you might find.
     - Why do I even do these file changes it can just make problems :cry:
   Scripting:
-    - Moved compatibility code to new files and changed load oreder to update stage.
+    - Moved compatibility code to new files and changed load order to update stage.
     - This will effect other mods that do have compatibility with my mod if it does recipes.
-    - Updated info.json file.
+    - Updated info.Json file.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.14
 Date: 07.08.2024
   Features:
     - Completed the final recipes for Bob's Angels Combi. (Full mods set)
   Changes:
-    - Hopefully removed all "solid-fuel" in recipes, playing Py mods. (Item recipe is removed in modpack).
+    - Hopefully removed all "solid-fuel" in recipes, playing PY mods. (Item recipe is removed in modpack).
     - Recipes for Bob's, Angles, Clowns, Darkstar,
     - Removed Recipe blockade for shields MK7.
   Bugfixes:
     - Item in recipe "cobalt-steel-plate" --> "cobalt-steel-alloy" :P (laser MK10)
-    - Corrected tech prerequsites for SpaceX Fork mod.
+    - Corrected tech prerequisites for SpaceX Fork mod.
     - SpaceX recipe compatibility wasn't referencing item correctly.
   Scripting:
-    - Excluded un-needed files entirly from mod.
-    - Update info.json file.
+    - Excluded un-needed files entirely from mod.
+    - Update info.Json file.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.13
 Date: 01.08.2024
   Features:
     - Made recipe integration with "Power Armor MK3" utility armours.
-    - Changed reicpes for "Power Armor MK3" utility armours.
+    - Changed recipes for "Power Armor MK3" utility armours.
   Changes:
-    - Emptyed code from files prepeard for 2.0 for reducing mod size teporarley.
+    - Emptied code from files prepared for 2.0 for reducing mod size temporarily.
   Bugfixes:
     - Known PY issues solved in same version issue was presented :P
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.12
 Date: 28.07.2024
   Features:
-    - 2.0 Preperations.
+    - 2.0 Preparations.
   Changes:
-    - Prepeard for modularity in the mod. Need to look in to allowing for enabling section of the mod you wish to use.
+    - Prepared for modularity in the mod. Need to look in to allowing for enabling section of the mod you wish to use.
   Known-Issues:
     - P̶y̶ c̶o̶m̶p̶a̶t̶i̶b̶i̶l̶i̶t̶y̶ m̶i̶s̶s̶i̶n̶g̶ r̶e̶c̶i̶p̶e̶ i̶n̶g̶r̶e̶d̶i̶e̶n̶t̶s̶ m̶k̶3̶.
   Bugfixes:
-    - Typo in recipes for py compatibility.
+    - Typo in recipes for PY compatibility.
   Info:
     - The modularity mode might be dropped if it end up conflicting with my main vison of the mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.11
 Date: 18.06.2024
   Changes:
-    - Removed forgotton last traces from the circuit-network tech after my (last 0.1.50).
+    - Removed forgotten last traces from the circuit-network tech after my (last 0.1.50).
     - Removed circuit-network prerequisite.
     - Changelog dates.
   Features:
     - Have listed Pyanodon mods as optional now.
   Info:
-    - Pyanodon mod Compatilblity will be in alpha.
+    - Alpha Pyanodon, Compatibility.
   Modding:
-    - Changed tech prereqesites for Py mods.
-    - Recipes chnages made with/for Py mods.
+    - Changed tech prerequisites for PY mods.
+    - Recipes changes made with/for PY mods.
   Bugfixes:
-    - Removed Research Blockcade from power-armour-mk3 on Py High Tech.
+    - Removed Research Blockade from power-armour-mk3 on PY High Tech.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.10
 Date: 17.06.2024
   Changes:
-    - Veird Resource value increments
+    - Weird Resource value increments
     - Requires C.A.S version 1.4.4+
   Locale:
-    - Fixed Missleading naming.
+    - Fixed Misleading naming.
   Bugfixes:
     - Changelog
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.9
 Date: 17.05.2024
   Changes:
-    - Research for Armour mk 5 Bob(Angels) gem processing 2 --> gem processing 3.
+    - Research for Armour MK 5 Bob(Angels) gem processing 2 --> gem processing 3.
     - Some other tweaks of the recipes done in 0.2.7.
-    - Fixed some recipe change mechanic that wouldn't apply. trying to replace non exsisting item(s).
+    - Fixed some recipe change mechanic that wouldn't apply. trying to replace non existing item(s).
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.8
 Date: 16.05.2024
   Changes:
-    - Optional dependency Rampant -> RampanFixed.
+    - Optional dependency Rampant -> RampantFixed.
   Bugfixes:
     - Crash with angels due to a value was mistakenly set to 0 rather than removed.
 ---------------------------------------------------------------------------------------------------
@@ -460,13 +461,13 @@ Date: 15.05.2024
     - Night immunity Tech Mk2 = (par-night-immunity-tech-1, par-armour-tech-10, battery, advanced-electronics-2,).
     - Night immunity Tech Mk2 Removed par-fusion-reactor-tech-5 tech Requirement.
   Modding:
-    - Recipe bug "refiend -> refined" under exteneded spidertrons. temp comp with bob's until done on originl-mod.
-    - Complete the unfinshed recipes in Bobs mods: Armour, Batteries, Exo Leggings, Fusion, NVG's, Belt Immunity, Roboports, Shields,
+    - Recipe bug "refined -> refined" under extended spidertrons. temp comp with bob's until done on original-mod.
+    - Complete the unfinished recipes in Bobs mods: Armour, Batteries, Exo Leggings, Fusion, NVG's, Belt Immunity, Roboports, Shields,
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.6
 Date: 28.04.2024
   Changes:
-    - Fixed bobplate --> bobplates in info.json with the new dependency system on the website, should fix mod not found.
+    - Fixed bobplate --> bobplates in info.Json with the new dependency system on the website, should fix mod not found.
     - https://mods.factorio.com/mod/Power-Armour-Replacer/dependencies?direction=out&sort=idx&filter=all
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.5
@@ -475,18 +476,18 @@ Date: 15.01.2024
     - Big resistances adjustments.
     - Armour recipe 5.
   Bugfixes:
-    - Tech prereqesite crash with bob's electronics was listed in wrong mod dependency.
+    - Tech prerequisite crash with bob's electronics was listed in wrong mod dependency.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.4
 Date: 13.01.2024
   Features:
-    - Improved Achivements Textures. 
+    - Improved Achievements Textures. 
   Changes:
     - Armour Resistance.
-    - Moved Production science prereqesite from night immunity 2 --> Armour 7
+    - Moved Production science prerequisite from night immunity 2 --> Armour 7
     - Armour item code rework.
-    - Removed Depricated textures.
-    - Reqires C.A.S version 1.4.3+
+    - Removed Deprecated textures.
+    - Requires C.A.S version 1.4.3+
     - Changelog.
   Bugfixes:
     - Equipment Solar panel, recipes was missing it's un-lock.
@@ -505,19 +506,19 @@ Version: 0.2.2
 Date: 08.01.2024
   Changes:
     - Production science packs added: night immunity 2.
-    - Production science prereqesite: night immunity 2.
+    - Production science prerequisite: night immunity 2.
   Bugfixes:
     - Missing Tech Texture: Solar, Shield, roboport, laser, fusion reactor.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 08.01.2024
   Changes:
-    - Colour/Color Tier made to have one system only similar to bobs with 4 extra tiers.
+    - Colour Tier made to have one system only similar to bobs with 4 extra tiers.
   Bugfixes:
     - Fixed names having internal view.
   Issues:
-    - Updating angles will casue the mod to crash.
-    - Looking to get this update at a point where my own game dosen't crash. :p 
+    - Updating angles will cause the mod to crash.
+    - Looking to get this update at a point where my own game doesn't crash. :p 
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 07.01.2024
@@ -534,37 +535,37 @@ Date: 07.01.2024
     - All Item generator code have been re-done.
   Graphics:
     - Added Textures/Graphics by Kirazy.
-    - Added Seperate Licensing for Textures/Graphics.
+    - Added Separate Licensing for Textures/Graphics.
   Info:
-    - Still having placeholders: Belt immmunity 1-2, Armour 6-10, belt-immunity & Nightvision tech. Hopefully having a kind person help with this.
+    - Still having placeholders: Belt immunity 1-2, Armour 6-10, belt-immunity & Night vision tech. Hopefully having a kind person help with this.
   Credits:
-    - Discord: @Kira (Kirazy) For the aswomness of allowing me to use the Textures/Graphics along with the code to implement the Textures/Graphics for my mod.
+    - Discord: @Kira (Kirazy) For the awesomeness of allowing me to use the Textures/Graphics along with the code to implement the Textures/Graphics for my mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.54
 Date: 03.01.2024
   Features:
     - Added message to IR3.
   Changes:
-    - Power consuption for Exoskeletons MW -> GW. for real this time :p
+    - Power consumption for Exoskeletons MW -> GW. for real this time :p
     - IR3 Recipes: Armour 2-3, roboport 1-3.
-    - IR3 general chnages to imptove compatibility.
+    - IR3 general changes to improve compatibility.
   Bugfixes:
-    - Found K2 Exoskeleton researchable but uncraftable.
+    - Found K2 Exoskeleton researchable but uncreatable.
     - IR3 construction bots where hidden along the vanilla Personal Roboports.
   Info:
     - Haven't been able to do extended testing, please report any issue you find with IR3 compatibility. 
   Issues:
-    - IR3 Overwites Science pack requirment. Need to find solution.
+    - IR3 Overwrites Science pack requirement. Need to find solution.
   Credits:
     - Discord: @fishcloud1 for letting me know about IR3's bot bug.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.53
 Date: 16.12.2023
   Changes:
-    - Crafting gui tab order.
+    - Crafting GUI tab order.
   Bugfixes:
     - Load order.
-    - If required research was vanilla Power Armour MK2. The chain would be blocked, finaly fixed.
+    - If required research was vanilla Power Armour MK2. The chain would be blocked, finally fixed.
   Scripting:
     - Load order of file to make sure changes apply.
     - Order of code within.
@@ -583,8 +584,8 @@ Date: 14.12.2023
   Changes:
     - Adjustment to warning messages shown on save start. (Unless disabled in settings).
   Bugfixes:
-    - Missing name of Hiladders Gear. inprints on warning messaages in game prints.
-    - Missing name of Bob's Equipment. inprints on warning messaages in game prints.
+    - Missing name of Hiladders Gear. imprints on warning messages in game prints.
+    - Missing name of Bob's Equipment. imprints on warning messages in game prints.
     - Missing some details on some Achievements.
     - Battery Achievements order.
     - Imporved some Achievements details, names.
@@ -606,27 +607,27 @@ Date: 12.12.2023
 Version: 0.1.50
 Date: 11.12.2023
   Changes:
-    - Added rcu Recipes, Tech, Item,
-    - More Recipes, Tech in K2 where hidden & disabled. Issue may still occure.
-    - More Recipes, Tech in SE where hidden & disabled. Issue may still occure.
-    - K2 Filters where created and Completed. Issue may still occure.
-    - SE Filters where created and Completed. Issue may still occure.
-    - Attemted to convert SE RTG's
+    - Added RCU Recipes, Tech, Item,
+    - More Recipes, Tech in K2 where hidden & disabled. Issue may still occur.
+    - More Recipes, Tech in SE where hidden & disabled. Issue may still occur.
+    - K2 Filters where created and Completed. Issue may still occur.
+    - SE Filters where created and Completed. Issue may still occur.
+    - Attempted to convert SE RTG's
     - Spidertron recipe adjusting with SE or K2 or both.
-    - Added Seperate setting for all Filter tabs
+    - Added Separate setting for all Filter tabs
     - Removed old "Modded Filter" Setting.
     - Chat messages.
     - Some K2 Recipe Compatibility.
     - Deleted Un Used templated Local files.
     - Changelog Typos.
   Scripting:
-    - Added File rcu_item.lua
-    - Added File rcu_recipe.lua
-    - Added File rcu_tech.lua
+    - Added File rcu_item.Lua
+    - Added File rcu_recipe.Lua
+    - Added File rcu_tech.Lua
     - Added File rcu.png for tech. 
     - Added File rcu.png for item/recipe.
   Info:
-    - Factorio 2.0 Stage 2 Done. Checking for rcu Exsistance.
+    - Factorio 2.0 Stage 2 Done. Checking for RCU Existence.
   Discord-Releases:
     - Want early-access to the Mod? Head to: https://discord.gg/tbxnpsxkDM.
 ---------------------------------------------------------------------------------------------------
@@ -637,18 +638,18 @@ Date: 09.11.2023
     - Recipes Laser mk3, Armour mk6 & Mk7
   Modding:
     - Removed support for WireShortcuts as it mostly becomes redundant with 2.0. Stage 1
-    - Traces for Py Block added. Want to rework later. Looking for coder to work with me on this.
-    - "Hidden & Dissabled" Hiladdar_Gear's Equipment, Techs & Intermediate.
+    - Traces for PY Block added. Want to rework later. Looking for coder to work with me on this.
+    - "Hidden & Disabled" Hiladdar_Gear's Equipment, Techs & Intermediate.
   Info:
     - 2.0 Factorio Stage 1 Removed Wires.
-    - 2.0 Factorio Stage 2 Coming in future update hopefuly before the 2.0 Relaese. ??2024??
+    - 2.0 Factorio Stage 2 Coming in future update hopefully before the 2.0 Release. ??2024??
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.48
 Date: 11.10.2023
   Minor Features:
-    - Added "armor-spill-prevention" To requirments to prevent spills when u want to upgrade, but forget that u have a lot of stuff on your person.
+    - Added "armor-spill-prevention" To requirements to prevent spills when u want to upgrade, but forget that u have a lot of stuff on your person.
   Changes:
-    - Made pre-requsites for space-ai-robots require fusion-reactor_4 instead of fusion-reactor_1 when playing with my mod and SpaceModFeorasFork are enabled.
+    - Made prerequisites for space-ai-robots require fusion-reactor_4 instead of fusion-reactor_1 when playing with my mod and SpaceModFeorasFork are enabled.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.47
 Date: 03.09.2023
@@ -676,17 +677,17 @@ Date: 31.08.2023
 Version: 0.1.45
 Date: 30.08.2023
   Bugfixes:
-    - Some tech prerequsites not showing.
-    - Mod needing battery equipments.
+    - Some tech prerequisites not showing.
+    - Mod needing battery equipment's,.
   Features:
     - New messages added.
   Scripting:
     - Reworked messages in control stage.
     - Reverted the fluid fix for now.
   Modding:
-    - Hiladdar's robots requiring battery equipement as prerequesites.
+    - Hiladdar's robots requiring battery equipment as prerequisites.
   Credits:
-    - @_CodeGreen. For helping with multi lane script placments.
+    - @_CodeGreen. For helping with multi lane script placements.
     - @rmm for finding the incompatibility.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.44
@@ -696,10 +697,10 @@ Date: 27.08.2023
     - All PA&R items in recipes is/was removed (Vanilla)
     - Tech prerequisites in general adjusted/added.
     - Added modded tech prereqesits.
-    - Compat - Util files merged.
+    - Compatibility - Util files merged.
     - Moved TeleportationEquipment code to other files.
   Bugfixes:
-    - Known Nanobot compat bug.
+    - Known Nanobot compatibility bug.
     - Fluid in Compatibility issue resolved. Broke Items conversion.
   Modding:
     - Rewrote tech changes for TeleportationEquipment.
@@ -723,11 +724,11 @@ Date: 20.08.2023
     - Crash with 248K.
     - Crash with half Bob's modpack, & SpaceX (space mod)
   Scripting:
-    - Reloacated load positions of file to not have problem with 248K & EI modpacks.
-    - Had by mistake put it in Final fixes which casues errors on 248K & EI side.
+    - Relocated load positions of file to not have problem with 248K & EI modpacks.
+    - Had by mistake put it in Final fixes which causes errors on 248K & EI side.
     - SpaceX files removed.
   Info:
-    - Updating to this version does remove the crashes with EI & 248K tho in EI the tech system will have bad compatibility. untill i have cleard things between my end & EI.
+    - Updating to this version does remove the crashes with EI & 248K tho in EI the tech system will have bad compatibility. until i have cleared things between my end & EI.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.41
 Date: 18.08.2023
@@ -739,14 +740,14 @@ Date: 18.08.2023
 Version: 0.1.40
 Date: 17.08.2023
   Changes:
-    - Moved possible circuit requirements to bobplates instead.
+    - Moved possible circuit requirements to Bobplates instead.
   Modding:
     - Recipes adjustment for: cannon-spidertron, space-spidertron, artillery-spidertron, SpaceMod.
   Bugfixes:
     - Bobrevamp & Bobplates to make the RTG not cash when used.
     - Typos
   Scripting:
-    - Moved code around for organizing. Not to add multiple functions in one file to cluter it up.
+    - Moved code around for organizing. Not to add multiple functions in one file to clutter it up.
     - Moved entire code structure to new file sections. Made sure my scripts worked afterwards.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.39
@@ -756,7 +757,7 @@ Date: 14.08.2023
     - Settings to re-enable items in filter UI/Tab.
   Changes:
     - Adjusted Tech Prerequisites military 2-4 added to reasonable locations.
-    - Moved Tech prerequisites Rocket control-unit from 7 --> 9. As utillity being needed & 7 only requires prodution.
+    - Moved Tech prerequisites Rocket control-unit from 7 --> 9. As utility being needed & 7 only requires production.
     - Rocket unit removed in Recipes where it was used 7-8.
     - Control Stage New and Updated messages. Will only show if settings are enabled.
     - Went trough my Final-fixes with new hide and disable.
@@ -771,7 +772,7 @@ Date: 14.08.2023
 Version: 0.1.38
 Date: 07.08.2023
   Changes:
-    - Control stage. With updates, new messages reagarding other mods.
+    - Control stage. With updates, new messages regarding other mods.
   Bugfixes:
     - Miss placed line of code caused a crash with SE.
     - Typos.
@@ -795,33 +796,33 @@ Date: 19.07.2023
 Version: 0.1.35
 Date: 16.07.2023
   Changes:
-    - PA&R Lib is Depricated not required anymore.
-    - Ingame message clean up
+    - PA&R Lib is Deprecated not required anymore.
+    - In-game message clean up
   Info:
     - This update is to attempt solving a bug with the in game mod portal and my mods.
-    - Some section of bob's angels are blcked off due to incomplete recipes.
+    - Some section of bob's angels are blocked off due to incomplete recipes.
   Bugfixes:
     - Attempting to fix a in game mod portal issue where people crashed the main game on trying to download this or the Lib mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.34
 Date: 04.07.2023
   Features:
-    - Added little bit of IR3 Compatiblity to get u better started with the armours.
+    - Added little bit of IR3 Compatibility to get u better started with the armours.
   Changes:
-    - Changed few vanilla recipe to be more forgiving. Rather than paying everyting u own. Wil be having a full look on the vanilla recipes later. Make them better where it is needed.
-    - Bob's Fixed, hidden/dissable tech & recipes as it wasn't working.
-    - Darkstar Utilities Fixed, hidden/dissable techs & recipes as it wasn't done yet.
+    - Changed few vanilla recipe to be more forgiving. Rather than paying everything u own. Wil be having a full look on the vanilla recipes later. Make them better where it is needed.
+    - Bob's Fixed, hidden/disable tech & recipes as it wasn't working.
+    - Darkstar Utilities Fixed, hidden/disable techs & recipes as it wasn't done yet.
     - Increased power consumption for Exoskeletons 10GW and increase by 10 every tier. 10 20 30...
-    - Tweaked recipes to not have rubber in mk 1 armour if u don't have a desent mod/way of making it early.
-    - Made that rubber is only added if playing with bob's or by Bio Industries. This is diffrent if having bob's angels & not bio.
-    - Made Lot's more recipes and tech hidden & dissabled. Regarding other mods.
-    - Removed alien artifacts from a_mk1 as it will be hard later when the enemy ovehaul mod gets made.
-    - Reduced craft time for armours. See no reason to make it slow other than taking the players time :p Sadly the one part is that i wanted players to use machines for it. As for any tiers above 5 needs machines regarless.
-    - mk9-10 uses utility science. Mk 7-10 uses production science.
-    - Moved laser Tech prerequsite from mk 2 to mk5 as it was using chemical science way to early for being needed to unlock mk3.
+    - Tweaked recipes to not have rubber in MK 1 armour if you don't have a decent mod/way of making it early.
+    - Made that rubber is only added if playing with bob's or by Bio Industries. This is different if having bob's angels & not bio.
+    - Made Lot's more recipes and tech hidden & disabled. Regarding other mods.
+    - Removed alien artefacts from a_mk1 as it will be hard later when the enemy overhaul mod gets made.
+    - Reduced craft time for armours. See no reason to make it slow other than taking the players time :p Sadly the one part is that i wanted players to use machines for it. As for any tiers above 5 needs machines regardless.
+    - MK9-10 uses utility science. Mk 7-10 uses production science.
+    - Moved laser Tech prerequisite from MK 2 to mk5 as it was using chemical science way to early for being needed to unlock mk3.
     - Big change to shield recharge speeds 0.1.34-6.
   Bugfixes:
-    - Recipe for Insectitrons was using vanila exoskeleton.
+    - Recipe for Insectitrons was using vanilla exoskeleton.
     - Name of roboport was having traces of copied name of Fusion Reactors.
     - NO EN Locales.
     - Changelog typos.
@@ -830,7 +831,7 @@ Date: 04.07.2023
     - Added "248k" to the list.
   Discord-Releases:
     - Core Compatibility Function Typo causing 5+ mods to fail on load. Beta Stage.
-    - Version 0.1.34-6p2 to let players know waht specific beta release version in use. this will change as i post discord updates.
+    - Version 0.1.34-6p2 to let players know what specific beta release version in use. this will change as i post discord updates.
     - The entire 0.1.34 will be a Discord only releases.
   Credits:
     - Discord: @Dr Pez. For a big compatibility improvement.
@@ -841,7 +842,7 @@ Date: 03.06.2023
     - Added the lasers that i forgot in 0.1.31 for K2.
   Changes:
     - Now requires version 0.1.5 of P.A.R Library.
-    - Crusial Change to compatibility by attaching a version minimum. Mostly all mods i have listed.
+    - Crucial Change to compatibility by attaching a version minimum. Mostly all mods i have listed.
   Bugfixes:
     - Improved code after/from crash at 0.1.32./0.1.29
 ---------------------------------------------------------------------------------------------------
@@ -853,28 +854,28 @@ Date: 02.06.2023
 Version: 0.1.31
 Date: 02.06.2023
   Features:
-    - Removed Incoimpatibility with IR3. Hope it last.
+    - Removed Incompatibility with IR3. Hope it last.
     - Compatibility with IR3
   Changes:
-    - "Hidden & Dissabled" Rampant Arsenal's Personal Reactors, Equipment Techs. 
-    - "--||--" K2's Power Armor & Equipments Techs.
+    - "Hidden & Disabled" Rampant Arsenal's Personal Reactors, Equipment Techs. 
+    - "--||--" K2's Power Armor & Equipment's Techs.
     - "--||--" SE's Equipment Techs.
     - "--||--" More Equipment Tech from Bobs.
-    - Improved library mod. Now reqires 0.1.4.
+    - Improved library mod. Now requires 0.1.4.
     - Shields Changed Internal Name.
   Warnings:
     - Make sure the Technology for The Migrated content is not blocked after update.
   Credits:
-    - Discord: @_CodeGreen. For providing better cleanup conversion code Recipes & Technology
+    - Discord: @_CodeGreen. For providing better clean-up conversion code for Recipes & Technology
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.30
 Date: 28.05.2023
   Features:
-    - Finaly added armour animations.
+    - Finally added armour animations.
   Changes:
     - lots in Changelog.
     - Added strike trough. As for irrelevant sections of changelog.
-    - Crusial change for personal solar 1x1 --> 1x2 size.
+    - Crucial change for personal solar 1x1 --> 1x2 size.
     - Decreased power by personal solar by 50%.
   Warnings:
     - Recommended to take out your solar panels of the grid before updating. To be safe from game deleting them.
@@ -884,14 +885,14 @@ Date: 28.05.2023
 Version: 0.1.29
 Date: 27.05.2023
   Features:
-    - Improved compatibility code "utill.lua".
-    - Imporived compatibility code "mods-compat.lua".
+    - Improved compatibility code "utill.Lua".
+    - Improved compatibility code "mods-compat.Lua".
   Changes:
     - Changelog 0.1.28.
     - Restructured Bob's enemies recipe section to be included in the default recipe changer instead of having duplicates.
   Bugfixes:
     - Crash without bob's enemies installed reported by "grenaldn".
-    - Crash in SE using K2 items witout K2. Specifing wrong mod dependency.
+    - Crash in SE using K2 items without K2. Specifying wrong mod dependency.
   Modding:
     - Some more items added to bob's enemies recipes. Still far from done with this one.
   Issues:
@@ -906,15 +907,15 @@ Date: 14.05.2023
     - Added "bobenemies" items compatibility.
   Changes:
     - Solar panels power production increased again. May be changed again later.
-    - Recistance values for pierce_decrease & pierce_percent.
+    - Resistance values for pierce_decrease & pierce_percent.
     - Changelog 0.1.26. & 0.1.21
-    - Provided with a reason to not make Compatibility with Nullius. Armours Don't apear in game. :/
+    - Provided with a reason to not make Compatibility with Nullius. Armours Don't appear in game. :/
   Info:
     - Tech requirement for "bobenemies" will be added in the upcoming update.
     - Better recipes will also be made for "bobenemies" combined with "bobplates". 
   Bugfixes:
-    - Par lib required the player to have experimental 1.1.81. witch wasen't relased.
-    - Crash if only angels smelting was present. bobplates was dissabled.
+    - Par lib required the player to have experimental 1.1.81. witch wasn't released.
+    - Crash if only angels smelting was present. bobplates was disabled.
     - Typos.
   Credits:
     - Discord @_CodeGreen. Help with solving and providing some code to fix and improve compatibility. 
@@ -927,7 +928,7 @@ Date: 10.05.2023
     - Fixed Dependencies for PAR Library.
     - Crash if bob's power wasn't enabled.
   Info:
-    - The lib mod needing diffrent name due to invalid name under uploade. 
+    - The lib mod needing different name due to invalid name under upload. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.26
 Date: 10.05.2023
@@ -936,9 +937,9 @@ Date: 10.05.2023
   Bugfixes:
     - Typos.
   Info:
-    - Looking for an texture designer modeling person.
+    - Looking for an texture designer modelling person.
   Modding:
-    - Marked Nulius Incompatible due to missing tech. If porvided with the reason. I would look in to trying to fix it.
+    - Marked Nulius Incompatible due to missing tech. If provided with the reason. I would look in to trying to fix it.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.25
 Date: 14.03.2023
@@ -946,21 +947,21 @@ Date: 14.03.2023
     - Warning messages will now show if my mod changes functionality of other mods.
   Changes:
     - Vanilla Compatibility moved to lib mod.
-    - Solar power production increased was still low compared to reacotrs. It's now closer to reactors production.
-    - Tech not being able to be reserched due to dissabled tech. same as one above.
-    - Updated redme file on github.
+    - Solar power production increased was still low compared to reactors. It's now closer to reactors production.
+    - Tech not being able to be researched due to disabled tech. same as one above.
+    - Updated readme file on GitHub.
   Info:
     - Moved all advanced compatibility to my lib mod for a clean code build.
   Bugfixes:
     - MK5 Solar had un specified amount of lead plates.
-    - Roboport 1 for bob's mods was hidden by the vanilla dissabling section.
+    - Roboport 1 for bob's mods was hidden by the vanilla disabling section.
   Credits:
     - @Honktown for in game chat warnings.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.24
 Date: 23.02.2023
   Changes:
-    - Belt Immunity & NVG's, Made elctrical requirement more reasonable to these equipments. U would want MK4 or higher reactors.
+    - Belt Immunity & NVG's, Made electrical requirement more reasonable to these equipment's. U would want MK4 or higher reactors.
   Modding:
     - Bob's power: Laser Tweaked tech to have heat pipes involved. 
     - Bob's power: Laser Tweaked Recipes to have heat pipes involved.
@@ -982,11 +983,11 @@ Date: 14.02.2023
 Version: 0.1.22
 Date: 13.02.2023
   Features:
-    - Bob's. Theses once will need tweking later on. but have been addded along Angels.
+    - Bob's. Compatibility will need tweaking later on. Have been added along Angels.
     - Angels continued adding recipes for other equipment missing it.
     - Darkstar Some recipes has sort of gotten added. This one could be getting a way more improved Compatibility. It has to be played alone witch i don't have time to yet.
   Changes:
-    - Shields don't use more than 1 in the amount. Made it easier to craft. This is agian subject to change.
+    - Shields don't use more than 1 in the amount. Made it easier to craft. This is again subject to change.
     - Small Science rework on all tech. Added Chemical packs to mk5's.
   Modding:
     - Bob's to mk5 done. Tweaking may be needed.
@@ -1000,17 +1001,17 @@ Date: 13.02.2023
 Version: 0.1.21
 Date: 09.02.2023
   Features:
-    - Added a New item grupe for my mod so i will now need to use my new groupe.
-    - Added comaptibility for bobs resistances.
+    - Added a New item group for my mod so i will now need to use my new group.
+    - Added compatibility for bobs resistances.
     - Added more base game resistances. 
   Scripting:
     - Armour_item file got a rework.
     - nvgs_bi_item file got a rework.
   Changes:
-    - Comaptibility Exoskeleton recipe bob. 
-    - Comaptibility Armour recipe bob.
+    - Compatibility Exoskeleton recipe bob. 
+    - Compatibility Armour recipe bob.
     - Battery, tech, recipe.
-    - Laser, Tech,  
+    - Laser, Tech,
   Credits:
     - Discord @Toby1364 For help with the Rework & Compatibility.
 ---------------------------------------------------------------------------------------------------
@@ -1050,24 +1051,24 @@ Date: 17.01.2023
     - Recipes for: Solar(p-s_mk(x)),  Roboport(r_mk(x)), laser(l_mk(x)),
     - Achievement specifying wrong item compared to witch it was showing.
   Credits:
-    - Discord @Toby1364 for praticipating on this project. & doing an Internal cleanup.
+    - Discord @Toby1364 for participating on this project. & doing an Internal clean-up.
     - Discord @Lucif3r for beta testing version 0.1.17. In 248k mod set/pack.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.17
 Date: 16.01.2023
   Features:
-    - Optional Depedencies added.
+    - Optional Dependencies added.
   Changes:
     - Changelog.
     - Exoskeleton Values.
     - Shields Values.
     - Roboport's Values.
   Bugfixes:
-    - Exoskeleton was not equipable.
-    - NVG's was not equipable.
+    - Exoskeleton was not equip able.
+    - NVG's was not equip able.
     - Shield's recharge rate was wrong.
     - Roboport retuned wrong version.
-    - Locales Tamplate re-added.
+    - Locales Template re-added.
   Discord-Releases:
     - ̶N̶o̶t̶e̶ ̶i̶f̶ ̶u̶ ̶u̶s̶e̶ ̶t̶h̶e̶ ̶0̶.̶1̶.̶1̶6̶ ̶&̶ ̶u̶p̶ ̶u̶ ̶a̶r̶e̶ ̶u̶s̶i̶n̶g̶ ̶t̶h̶e̶ ̶l̶a̶s̶t̶ ̶f̶e̶w̶ ̶b̶e̶t̶a̶ ̶v̶e̶r̶s̶i̶o̶n̶s̶,̶ ̶b̶e̶f̶o̶r̶e̶ ̶1̶.̶0̶ ̶r̶e̶l̶e̶a̶s̶e̶.
     - M̶a̶i̶n̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶a̶l̶i̶t̶y̶ ̶I̶m̶p̶l̶e̶m̶e̶n̶t̶e̶d̶.̶ ̶T̶h̶i̶s̶ ̶m̶o̶d̶ ̶i̶s̶ ̶g̶e̶t̶ti̶n̶g̶ ̶i̶t̶'̶s̶ ̶l̶a̶s̶t̶ ̶f̶e̶w̶ ̶a̶d̶d̶i̶t̶i̶o̶n̶s̶ ̶a̶n̶d̶ ̶f̶i̶x̶e̶s̶ ̶b̶e̶f̶o̶r̶e̶ ̶g̶o̶i̶n̶g̶ ̶1̶.̶0̶ ̶R̶e̶l̶e̶a̶s̶e̶ ̶(̶S̶o̶o̶n̶)̶.
@@ -1086,10 +1087,10 @@ Date: 15.01.2023
   Bugfixes:
     - Icon size of Exoskeleton. Was using wrong placeholder directory.
     - Item order in crafting window.
-    - An oversight when creating Laser & Solar Equipemnt. In beta 0.1.16-3.
+    - An oversight when creating Laser & Solar Equipment. In beta 0.1.16-3.
   Info:
-    - Lots more stuff that I don't know what is to be adde to this list.
-    - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likly as it could be easier on their side.
+    - Lots more stuff that I don't know what is to be added to this list.
+    - Some Tech from other mods will be deadlocked untill that mod has made compatibility, if they don't I might add one myself but less likely as it could be easier on their side.
     - T̶h̶i̶s̶ ̶i̶s̶ ̶t̶h̶e̶ ̶c̶h̶a̶n̶g̶e̶l̶o̶g̶ ̶f̶o̶r̶ ̶0̶.̶1̶.̶1̶6̶ ̶b̶e̶t̶a̶ ̶&̶ ̶1̶.̶0̶.̶ ̶T̶h̶o̶ ̶w̶i̶l̶l̶ ̶b̶e̶ ̶l̶i̶s̶t̶e̶d̶ ̶a̶s̶ ̶0̶.̶1̶.̶x̶x̶ ̶f̶o̶r̶ ̶a̶ ̶l̶i̶t̶t̶l̶e̶ ̶w̶h̶i̶l̶e̶ ̶l̶o̶n̶g̶e̶r̶.
   Locale:
     - Added English templates for CS, DE, SK, locals twice.
@@ -1108,7 +1109,7 @@ Version: 0.1.15
 Date: 09.01.2023
   Changes:
     - Armour recipe adjustment 1.1 done.
-    - Some Compatibility removed, Obselete.
+    - Some Compatibility removed, Obsolete.
   Bugfixes:
     - Compatibility Recipes & Tech research.
   Modding:
@@ -1117,11 +1118,11 @@ Date: 09.01.2023
 Version: 0.1.14
 Date: 09.01.2023
   Features:
-    - Added code for personal laser equipment. more on intenal.
+    - Added code for personal laser equipment. more on Scripting.
   Changes:
     - Updated mod Description on what currently added to the mod.
-    - Decreased power produced by fusion_reactor drasticly.
-    - Removed realeses spamed in changelogs. Will continue moving the link to the newes verison.
+    - Decreased power produced by fusion_reactor drastically.
+    - Removed releases spammed in changelogs. Will continue moving the link to the new version.
     - Armour recipe adjustment 1 done. More to come.
   Scripting:
     - Marked some files to be left out of the mod until it's usable. Reducing size of mod slightly. Check info.json should u want more info.
@@ -1155,16 +1156,16 @@ Date: 01.11.2022
     - Exoskeleton have now been added to the list.
     - Items conversion was attempted but things need a nil value to be migrated. (modular-armor --> a_mk1)
   Changes:
-    - Shield values are adjusted more manuly internaly.
+    - Shield values are adjusted more manually internally.
     - Removed hollow reactors.
-    - DE Locals were disabled. (file of incomplete "DE" can be found on github)
-    - Slovak locales were disabled. (file of incomplete "SK" can be found on github)
+    - DE Locals were disabled. (file of incomplete "DE" can be found on GitHub)
+    - Slovak locales were disabled. (file of incomplete "SK" can be found on GitHub)
   Bugfixes:
-    - Missing prerequsite for shield mk1 & 2.
-    - Vanilla Equipment where not unlockable as for needing missing/dissabled technology. Teses will be removed at a later state.
-    - Battery Equipment mk2 reqiured 1000 is was suppose to have 200.
+    - Missing prerequisite for shield mk1 & 2.
+    - Vanilla Equipment where not unlockable as for needing missing/disabled technology. These will be removed at a later state.
+    - Battery Equipment mk2 required 1000 is was suppose to have 200.
   Credits:
-    - Discord @Toby1364 for praticipating on this project.
+    - Discord @Toby1364 for participating on this project.
   Issues:
     - ̶S̶h̶i̶e̶l̶d̶ ̶s̶t̶a̶t̶s̶ ̶a̶r̶e̶ ̶n̶o̶t̶ ̶c̶o̶m̶p̶l̶e̶t̶e̶.
     - ̶A̶r̶m̶o̶u̶r̶ ̶r̶e̶s̶i̶s̶t̶a̶n̶c̶e̶s̶ ̶i̶s̶ ̶n̶o̶t̶ ̶c̶o̶m̶p̶l̶e̶t̶e̶.
@@ -1175,27 +1176,27 @@ Date: 29.10.2022
     - Mod Rename to Power Armour Replacer.
     - Updated NO, EN/EN-GB locales
     - Added/Completed modded armour recipes.
-    - Couple recipe compat done for equipment.
+    - Couple recipe compatibility done for equipment.
   Changes:
     - Reworked tech tree.
-    - Reaserch time reduced from 30 --> 15 across all tech, might be changed again later.
+    - Research time reduced from 30 --> 15 across all tech, might be changed again later.
   Bugfixes:
-    - Atomation 3 replaced with atomation 6 in bob's. Was put on mk 10 when it was used by mk9.
+    - Automation 3 replaced with Automation 6 in bob's. Was put on MK 10 when it was used by mk9.
   Credits:
     - Discord @Tomatoking for doing the NO translation for me :P
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 28.10.2022 03:31 CET
   Features:
-    - Some Clowns-Processing & Atomic_Overhaul Compat
-    - Added compat to mk4 armour Seablock, Angels & Bobs.
-    - Added compat to mk5 armour Angels & Bobs.
+    - Some Clowns-Processing & Atomic_Overhaul compatibility
+    - Added compatibility to mk4 armour Sea block, Angels & Bobs.
+    - Added compatibility to mk5 armour Angels & Bobs.
     - Current tech for Mk1-10 items for Bob's Angels is completed until rework of unlocking the equipment.
   Changes:
     - Added slight change to angels if 248k is active (mk3 items)
     - Reworked tech Mk3 items.
-    - Small change with Seablock tech Mk3 items.
-    - Removed rubber from being used in Seablock early on.
+    - Small change with Sea block tech Mk3 items.
+    - Removed rubber from being used in Sea block early on.
   Bugfixes:
     - Possible crash specifying wrong mod with tech (angles bronze smelting 1)
 ---------------------------------------------------------------------------------------------------
@@ -1206,15 +1207,15 @@ Date: 26.10.2022
     - Hotfix: Was not able to unlock MK3 items (Progression_3) as for disabled aluminium tech using angles.
     - Typo
   Changes:
-    - Tweaked recipes when angelssmelting are active.
+    - Tweaked recipes when Angelssmelting are active.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 26.10.2022
   Changes:
-    - Recipes for shields, and it's hitpoint values has been altered.
+    - Recipes for shields, and it's Hitpoints values has been altered.
     - Continued compatibility with bob's angels.
   Bugfixes:
-    - Compatibility memory leak, 50GB seen. Rewriten all of that now.
+    - Compatibility memory leak, 50GB seen. Rewritten all of that now.
   Modding:
     - Bob's:
     - Angels:
@@ -1230,7 +1231,7 @@ Date: 15.10.2022
     - Settings added to "Configurable-Armour-Suits = 0.3.0.
     - 2 New tiers of NVG's and belt immunity.
     - Achievements: 3 new damage, 15 new crafting.
-    - Locales: NO,EN,SK, (file of incomplete "SC" can be found on github)
+    - Locales: NO,EN,SK, (file of incomplete "SC" can be found on GitHub)
     - Hollow personal Reactors added.
   Credits:
     - Discord @Honktown for help with code.
@@ -1239,4 +1240,4 @@ Date: 15.10.2022
     - Discord @Chunnyluny for help with testing the alpha.
     - join my discord to participate in the testing or just play with the Alpha/Beta.
   Discord-Releases:
-    - Alpha 1-5 used same versioning by me not thinking realy.
+    - Alpha 1-5 used same versioning by me not thinking really.
