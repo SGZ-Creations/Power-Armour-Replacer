@@ -10,6 +10,7 @@
 		"base >= 2.0.16",
 		"~ Configurable-Armour-Suits >= 1.5.10",
 		"? PARs-SpaceAge-Extension >= 0.0.1",
+		"? Alt_Chemical_Processing >= 0.1.20",
 		"? space-age",
 		"? reverse-factory >= 9.0.20",
 		"(?) angelssmelting >= 0.6.21",

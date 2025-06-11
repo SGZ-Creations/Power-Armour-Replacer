@@ -36,8 +36,13 @@ if mods["bobtech"] then
 				Tech["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 50}
 				Tech["bob-electrolysis-1"].unit = nil
 
-				Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bob-carbon", count = 25}
-				Tech["bob-chemical-processing-1"].unit = nil
+				if not mods["Alt_Chemical_Processing"] then
+					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bobb-carbon", count = 25}
+					Tech["bob-chemical-processing-1"].unit = nil
+				elseif mods["Alt_Chemical_Processing"] then
+					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="carbon", count = 25}
+					Tech["bob-chemical-processing-1"].unit = nil
+				end
 			end
 		end
 	end

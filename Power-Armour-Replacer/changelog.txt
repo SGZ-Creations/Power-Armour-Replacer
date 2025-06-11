@@ -28,6 +28,7 @@ Date: 06.06.2025
   Bugfixes:
     - Crash with AAI industries.
     - Bobs tech name crash.
+    - Bobs tech soflock bob-carbon. in combination with Alt_Chemical_Processing
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 12.03.2025
