@@ -4,15 +4,16 @@ Date: 06.06.2025
   Major Features:
     - Settings added to other equipment for further customizability.
     - 10 Armour Settings.
-    - 10 Batteries Settings.
-    - 10 Exoskeleton Settings
-    - 10 Fission Settings.
-    - 60 Laser
-    - 6 Belt immunity Settings
-    - 60 Roboport Settings.
-    - 40 Shield Settings.
-    - 10 Solar Settings.
-    - Total 216 New setting for you to have fun with hope this mods become fun for you even more now.
+    - 20 Batteries Settings.
+    - 15 Exoskeleton Settings
+    - 20 Fission Settings.
+    - 70 Laser Settings.
+    - 8 Belt immunity Settings.
+    - 8 Belt NVGs Settings.
+    - 70 Roboport Settings.
+    - 50 Shield Settings.
+    - 20 Solar Settings.
+    - Total 271 New setting for you to have fun with hope this mods become fun for you even more now.
   Features:
     - [space-age] Made it possible to craft all items in Electromagnetic Plant.
     - ACU recipe [space-age] Edition.
@@ -23,9 +24,8 @@ Date: 06.06.2025
     - [space-age] Recipes are now using new crafting category from MK1-5 and 6-10 requires assembly 2 or electromagnetic-plant.
     - Achievement text make more sense.
     - Start of base game towards PAR will now have crafting triggers over science research.
-  Modding:
-    - Re Migrate bobs items that has been migrated in 1.3.0 already.
   Bugfixes:
+    - Temp fix for compatibility recipes.
     - Crash with AAI industries.
     - Bobs tech name crash.
     - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
