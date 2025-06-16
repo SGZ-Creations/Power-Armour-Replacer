@@ -1,17 +1,19 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
+---@class data.SettingsStartup
+local SS = settings.startup
 
 local batteries = {
-    { buffer_capacity = "10GJ", weightvalue = 5000, order = "baz"}, --Nerfed due to not containing battery in recipe.
-    { buffer_capacity = "20GJ", weightvalue = 10000, order = "bbz", }, --Nerfed due to not containing battery in recipe.
-    { buffer_capacity = "3TJ",  weightvalue = 15000, order = "bcz", },
-    { buffer_capacity = "4TJ",  weightvalue = 20000, order = "bdz", },
-    { buffer_capacity = "5TJ",  weightvalue = 25000, order = "bez", },
-    { buffer_capacity = "6TJ",  weightvalue = 30000, order = "bfz", },
-    { buffer_capacity = "7TJ",  weightvalue = 35000, order = "bgz", },
-    { buffer_capacity = "8TJ",  weightvalue = 40000, order = "bhz", },
-    { buffer_capacity = "9TJ",  weightvalue = 45000, order = "biz", },
-    { buffer_capacity = "10TJ", weightvalue = 50000, order = "bjz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_01"].value) .. "TJ", weightvalue = SS["BatteryWeight_01"].value, order = "baz"}, --Nerfed due to not containing battery in recipe.
+    { buffer_capacity = tostring(SS["BatteryCapacity_02"].value) .. "TJ", weightvalue = SS["BatteryWeight_02"].value, order = "bbz", }, --Nerfed due to not containing battery in recipe.
+    { buffer_capacity = tostring(SS["BatteryCapacity_03"].value) .. "TJ", weightvalue = SS["BatteryWeight_03"].value, order = "bcz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_04"].value) .. "TJ", weightvalue = SS["BatteryWeight_04"].value, order = "bdz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_05"].value) .. "TJ", weightvalue = SS["BatteryWeight_05"].value, order = "bez", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_06"].value) .. "TJ", weightvalue = SS["BatteryWeight_06"].value, order = "bfz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_07"].value) .. "TJ", weightvalue = SS["BatteryWeight_07"].value, order = "bgz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_08"].value) .. "TJ", weightvalue = SS["BatteryWeight_08"].value, order = "bhz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_09"].value) .. "TJ", weightvalue = SS["BatteryWeight_09"].value, order = "biz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_10"].value) .. "TJ", weightvalue = SS["BatteryWeight_10"].value, order = "bjz", },
 }
 
 for tier, battery in pairs(batteries) do

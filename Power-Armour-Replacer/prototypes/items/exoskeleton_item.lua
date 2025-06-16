@@ -1,5 +1,7 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
+---@class data.SettingsStartup
+local SS = settings.startup
 
 local exoskeletons = {
     { energy_consumption = "10.0GW", weightvalue = 25000, speed_bonus = 1.0, order = "ia[exoskeleton]-aa[armour-replacer]" },

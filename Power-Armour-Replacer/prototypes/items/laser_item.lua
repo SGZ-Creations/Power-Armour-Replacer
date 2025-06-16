@@ -1,5 +1,7 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
+---@class data.SettingsStartup
+local SS = settings.startup
 
 local lasers = {
     {duration =10, buffer_capacity ="10MJ", energy_consumption ="1MJ", damage_modifier = 5 , range =14, cooldown = 100, weightvalue = 10000, order ="daz[active-defense]-aa[armour-replacer]"},

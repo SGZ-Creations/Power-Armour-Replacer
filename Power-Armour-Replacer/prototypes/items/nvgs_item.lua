@@ -1,5 +1,7 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
+---@class data.SettingsStartup
+local SS = settings.startup
 
 local nightvisions = {
     {buffer_capacity = "1TJ", input_flow_limit ="150GW", energy_input ="125GW", weightvalue = 550, order ="jcc[night-vision]-ac[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-frozen.png"}}},

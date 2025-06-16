@@ -1,5 +1,7 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
+---@class data.SettingsStartup
+local SS = settings.startup
 
 local reactors = {
     { power = "10GW", weightvalue = 35000, order = "caz[energy-source]-aa[armour-replacer]"},
