@@ -1,4 +1,5 @@
     require("Settings.MiscSettings")
+    require("Settings.ArmourSettings")
     require("Settings.BatteriesSettings")
     require("Settings.ExoskeletonSettings")
     require("Settings.FissionReactorSettings")

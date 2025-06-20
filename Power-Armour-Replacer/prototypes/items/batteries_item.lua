@@ -1,6 +1,6 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
----@class data.SettingsStartup
+---@class LuaSettings
 local SS = settings.startup
 
 local batteries = {
@@ -37,14 +37,12 @@ for tier, battery in pairs(batteries) do
         type = "battery-equipment",
         name = "par-battery-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("battery", 64, 128, tier),
-        shape =
-        {
+        shape = {
             width = 1,
             height = 2,
             type = "full"
         },
-        energy_source =
-        {
+        energy_source = {
             type = "electric",
             buffer_capacity = battery.buffer_capacity,
             usage_priority = "tertiary"

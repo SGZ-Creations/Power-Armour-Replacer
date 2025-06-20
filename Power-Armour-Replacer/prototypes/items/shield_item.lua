@@ -1,23 +1,23 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
----@class data.SettingsStartup
+---@class LuaSettings
 local SS = settings.startup
 --max_shield_value(How high the Hitpoint per tier is) (Shield value.)
 --buffer_capacity (Internal battery)
 --input_flow_limit (Max Consumption has effect on recharge speed)
---energy_per_shield (Recharge speed the higher the lower it charges Don't touch beyond 0.1.34-6p1)
+--energy_per_shield (Recharge speed the higher the lower it charges)
 
 local shields = {
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_01"].value) .. "kJ", input_flow_limit = "1GW",  buffer_capacity = "0.2MJ", max_shield = SS["ShieldHealthValue_01"].value, weightvalue = 12000, order="faz[energy-shield-mk2]-aa[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_02"].value) .. "kJ", input_flow_limit = "2GW",  buffer_capacity = "0.4MJ", max_shield = SS["ShieldHealthValue_02"].value, weightvalue = 24000, order="fbz[energy-shield-mk2]-ab[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_03"].value) .. "kJ", input_flow_limit = "3GW",  buffer_capacity = "0.6MJ", max_shield = SS["ShieldHealthValue_03"].value, weightvalue = 36000, order="fcz[energy-shield-mk2]-ac[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_04"].value) .. "kJ", input_flow_limit = "4GW",  buffer_capacity = "0.8MJ", max_shield = SS["ShieldHealthValue_04"].value, weightvalue = 48000, order="fdz[energy-shield-mk2]-ad[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_05"].value) .. "kJ", input_flow_limit = "5GW",  buffer_capacity = "1.0MJ", max_shield = SS["ShieldHealthValue_05"].value, weightvalue = 60000, order="fez[energy-shield-mk2]-ae[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_06"].value) .. "kJ", input_flow_limit = "6GW",  buffer_capacity = "1.2MJ", max_shield = SS["ShieldHealthValue_06"].value, weightvalue = 72000, order="ffz[energy-shield-mk2]-af[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_07"].value) .. "kJ", input_flow_limit = "7GW",  buffer_capacity = "1.4MJ", max_shield = SS["ShieldHealthValue_07"].value, weightvalue = 84000, order="fgz[energy-shield-mk2]-ag[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_08"].value) .. "kJ", input_flow_limit = "8GW",  buffer_capacity = "1.6MJ", max_shield = SS["ShieldHealthValue_08"].value, weightvalue = 96000, order="fhz[energy-shield-mk2]-ah[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_09"].value) .. "kJ", input_flow_limit = "9GW",  buffer_capacity = "1.8MJ", max_shield = SS["ShieldHealthValue_09"].value, weightvalue = 108000, order="fiz[energy-shield-mk2]-ai[armour-replacer]"},
-    {energy_per_shield = tostring(SS["HitpointRechargeRate_10"].value) .. "kJ", input_flow_limit = "10GW", buffer_capacity = "2.0MJ", max_shield = SS["ShieldHealthValue_10"].value, weightvalue = 120000, order="fjz[energy-shield-mk2]-aj[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_01"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_01"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_01"].value) .. "MJ", max_shield = SS["ShieldHealth_01"].value, weightvalue = SS["ShieldWeight_01"].value, order="faz[energy-shield-mk2]-aa[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_02"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_02"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_02"].value) .. "MJ", max_shield = SS["ShieldHealth_02"].value, weightvalue = SS["ShieldWeight_02"].value, order="fbz[energy-shield-mk2]-ab[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_03"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_03"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_03"].value) .. "MJ", max_shield = SS["ShieldHealth_03"].value, weightvalue = SS["ShieldWeight_03"].value, order="fcz[energy-shield-mk2]-ac[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_04"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_04"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_04"].value) .. "MJ", max_shield = SS["ShieldHealth_04"].value, weightvalue = SS["ShieldWeight_04"].value, order="fdz[energy-shield-mk2]-ad[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_05"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_05"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_05"].value) .. "MJ", max_shield = SS["ShieldHealth_05"].value, weightvalue = SS["ShieldWeight_05"].value, order="fez[energy-shield-mk2]-ae[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_06"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_06"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_06"].value) .. "MJ", max_shield = SS["ShieldHealth_06"].value, weightvalue = SS["ShieldWeight_06"].value, order="ffz[energy-shield-mk2]-af[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_07"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_07"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_07"].value) .. "MJ", max_shield = SS["ShieldHealth_07"].value, weightvalue = SS["ShieldWeight_07"].value, order="fgz[energy-shield-mk2]-ag[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_08"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_08"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_08"].value) .. "MJ", max_shield = SS["ShieldHealth_08"].value, weightvalue = SS["ShieldWeight_08"].value, order="fhz[energy-shield-mk2]-ah[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_09"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_09"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_09"].value) .. "MJ", max_shield = SS["ShieldHealth_09"].value, weightvalue = SS["ShieldWeight_09"].value, order="fiz[energy-shield-mk2]-ai[armour-replacer]"},
+    {energy_per_shield = tostring(SS["HitpointRechargeRate_10"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_10"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_10"].value) .. "MJ", max_shield = SS["ShieldHealth_10"].value, weightvalue = SS["ShieldWeight_10"].value, order="fjz[energy-shield-mk2]-aj[armour-replacer]"},
 }
 
 for tier, shield in pairs(shields) do
@@ -45,14 +45,14 @@ for tier, shield in pairs(shields) do
             width = 2,
             height = 2,
             type = "full"
-            },
+        },
         max_shield_value = shield.max_shield,
         energy_source = {
-                type = "electric",
-                buffer_capacity = shield.buffer_capacity,
-                input_flow_limit = shield.input_flow_limit,
-                usage_priority = "primary-input"
-            },
+            type = "electric",
+            buffer_capacity = shield.buffer_capacity,
+            input_flow_limit = shield.input_flow_limit,
+            usage_priority = "primary-input"
+        },
         energy_per_shield = shield.energy_per_shield,
         categories = {"armor"}
     }

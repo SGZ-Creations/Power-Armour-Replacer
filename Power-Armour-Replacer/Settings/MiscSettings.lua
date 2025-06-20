@@ -3,10 +3,25 @@
 data:extend({
     {
         type = "bool-setting",
+        name = "ArmourDurability",
+        setting_type = "startup",
+        default_value = false,
+        order = "ZAad-9"
+    },
+    {
+        type = "double-setting",
+        name = "SingleArmourDurabilitySetting",
+        setting_type = "startup",
+        default_value = 1000000,
+        minimum_value = 100,
+        order = "ZAae-9"
+    },
+    {
+        type = "bool-setting",
         name = "vanilla-filters",
         setting_type = "startup",
         default_value = true,
-        order = "9Aac"
+        order = "ZAac-9"
     },
 })
 if mods["PARs-SpaceAge-Extension"] then
@@ -17,7 +32,7 @@ if mods["PARs-SpaceAge-Extension"] then
                 name = "MechTechFilters",
                 setting_type = "startup",
                 default_value = true,
-                order = "9Aad"
+                order = "ZAax-9"
             },
         })
     end
@@ -29,7 +44,7 @@ if mods["space-age"] then
             name = "SAFilters",
             setting_type = "startup",
             default_value = true,
-            order = "9Aad"
+            order = "ZAay-9"
         },
     })
 end
@@ -40,7 +55,7 @@ data:extend({
             name = "BobW-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Bab"
+            order = "ZBab-9"
         },
     })
 end
@@ -52,7 +67,7 @@ if mods["bobequipment"] then
             name = "BobE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Cab"
+            order = "ZCab-9"
         },
     })
 end
@@ -64,7 +79,7 @@ if mods["custom_power_armor_fix"] then
             name = "CPAF-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Dab"
+            order = "ZDab-9"
         },
     })
 end
@@ -76,7 +91,7 @@ if mods["Darkstar_utilities_fixed"] then
             name = "darkstar-fixed-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Eab"
+            order = "ZEab-9"
         },
     })
 end
@@ -88,7 +103,7 @@ if mods["Hiladdar_Gear"] then
             name = "hl_gear-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Fab"
+            order = "ZFab-9"
         },
     })
 end
@@ -100,14 +115,14 @@ if mods["Krastorio2"] and mods["space-exploration"] then
             name = "KE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Gab"
+            order = "ZGab-9"
         },
         {
             type = "bool-setting",
             name = "SE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Lab"
+            order = "ZLab-9"
         },
     })
 elseif mods["Krastorio2"] then
@@ -117,7 +132,7 @@ elseif mods["Krastorio2"] then
             name = "K2-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Hab"
+            order = "ZHab-9"
         },
     })
 end
@@ -129,7 +144,7 @@ if mods["PowerAndArmor"] then
             name = "PA-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Iab"
+            order = "ZIab-9"
         },
     })
 end
@@ -141,7 +156,7 @@ if mods["Power Armor MK3"] then
             name = "MK3-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Jab"
+            order = "ZJab-9"
         },
     })
 end
@@ -153,7 +168,7 @@ if mods["RampantArsenal"] then
             name = "Arsenal-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Kab"
+            order = "ZKab-9"
         },
     })
 end
@@ -165,7 +180,7 @@ if mods["space-exploration"] and not mods["Krastorio2"] then
             name = "SE-filters",
             setting_type = "startup",
             default_value = true,
-            order = "9Lab"
+            order = "ZLab-9"
         },
     })
 end

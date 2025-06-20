@@ -1,6 +1,6 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
----@class data.SettingsStartup
+---@class LuaSettings
 local SS = settings.startup
 
 local roboports = {
