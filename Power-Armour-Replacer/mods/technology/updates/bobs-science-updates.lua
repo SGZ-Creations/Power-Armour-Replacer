@@ -17,6 +17,12 @@ if mods["bobtech"]and mods["bobplates"] then
 	Tech["bob-chemical-processing-1"].unit = nil
 end
 
+if mods["bobtech"] then
+	if mods["bobelectronics"]then
+		Tech["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 50}
+		Tech["bob-electrolysis-1"].unit = nil
+	end
+end
 
 if mods["bobtech"] then
 	if SS["bobmods-burnerphase"].value == true then
@@ -36,9 +42,6 @@ if mods["bobtech"] then
 			if mods["bobelectronics"]then
 				Tech["electronics"].research_trigger = {type ="craft-item", item ="small-electric-pole", count = 10}
 				Tech["electronics"].unit = nil
-
-				Tech["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 50}
-				Tech["bob-electrolysis-1"].unit = nil
 
 				if mods["bobplates"] then
 					Recipe["bob-carbon-from-wood"].enabled = true
@@ -71,6 +74,5 @@ if mods["bobtech"] and mods["boblogistics"] then
 end
 
 if not mods["boblibrary"] then
-    local tech_eff = Tech["par-armour-tech-1"].effects
-    table.insert(tech_eff,{type="unlock-recipe",recipe="iron-stick"})
+    table.insert(Tech["par-armour-tech-1"].effects,{type="unlock-recipe",recipe="iron-stick"})
 end

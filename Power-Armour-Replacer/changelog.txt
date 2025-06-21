@@ -28,6 +28,7 @@ Date: 06.06.2025
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
     - Bobs tech name crash.
+    - Tech with creatable unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.
     - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
     - Fixed many spelling errors across the Changelog.
 ---------------------------------------------------------------------------------------------------
