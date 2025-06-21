@@ -8,3 +8,4 @@
 
 --compatible.tech load order dependant
     require("mods.technology.final-fixes.par-tech-final-fixes")
+    require("structures.SimulationScenarioCrash")

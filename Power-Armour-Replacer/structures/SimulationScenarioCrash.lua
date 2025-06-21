@@ -1,4 +1,4 @@
---(Fuck Factorio updates) ScenearioSimulations crashing due to fucking migrations
+--ScenearioSimulations crashing.
 local simulation_crash = {
     "menu-simulation-nauvis-tank-building",
 }
