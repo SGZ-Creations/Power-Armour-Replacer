@@ -3,21 +3,6 @@
 data:extend({
     {
         type = "bool-setting",
-        name = "ArmourDurability",
-        setting_type = "startup",
-        default_value = false,
-        order = "ZAad-9"
-    },
-    {
-        type = "double-setting",
-        name = "SingleArmourDurabilitySetting",
-        setting_type = "startup",
-        default_value = 1000000,
-        minimum_value = 100,
-        order = "ZAae-9"
-    },
-    {
-        type = "bool-setting",
         name = "vanilla-filters",
         setting_type = "startup",
         default_value = true,

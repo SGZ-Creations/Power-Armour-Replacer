@@ -11,16 +11,16 @@ Incoming Damage 2000
 ]]
 
 local power_armour = {
-    { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  weightvalue= SS["ArmourWeight_01"].vlaue, --[[durability= SS["ArmourDurability_01"].value,]] icon = "__base__/graphics/icons/power-armor.png", },
-    { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  weightvalue= SS["ArmourWeight_02"].vlaue, --[[durability= SS["ArmourDurability_02"].value,]] icon = "__base__/graphics/icons/power-armor-mk2.png", },
-    { order = "acz", inventory_bonus = 150, grid_width = 30,  grid_height = 30,  weightvalue= SS["ArmourWeight_03"].vlaue, --[[durability= SS["ArmourDurability_03"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png", },
-    { order = "adz", inventory_bonus = 200, grid_width = 40,  grid_height = 40,  weightvalue= SS["ArmourWeight_04"].vlaue, --[[durability= SS["ArmourDurability_04"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png", },
-    { order = "aez", inventory_bonus = 250, grid_width = 50,  grid_height = 50,  weightvalue= SS["ArmourWeight_05"].vlaue, --[[durability= SS["ArmourDurability_05"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", },
-    { order = "afz", inventory_bonus = 300, grid_width = 60,  grid_height = 60,  weightvalue= SS["ArmourWeight_06"].vlaue, --[[durability= SS["ArmourDurability_06"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --6
-    { order = "agz", inventory_bonus = 350, grid_width = 70,  grid_height = 70,  weightvalue= SS["ArmourWeight_07"].vlaue, --[[durability= SS["ArmourDurability_07"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --7
-    { order = "ahz", inventory_bonus = 400, grid_width = 80,  grid_height = 80,  weightvalue= SS["ArmourWeight_08"].vlaue, --[[durability= SS["ArmourDurability_08"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --8
-    { order = "aiz", inventory_bonus = 450, grid_width = 90,  grid_height = 90,  weightvalue= SS["ArmourWeight_09"].vlaue, --[[durability= SS["ArmourDurability_09"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --9
-    { order = "ajz", inventory_bonus = 500, grid_width = 100, grid_height = 100, weightvalue= SS["ArmourWeight_10"].vlaue, --[[durability= SS["ArmourDurability_10"].value,]] icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --10
+    { order = "aaz", inventory_bonus =  50, grid_width = 10,  grid_height = 10,  weightvalue= SS["ArmourWeight_01"].value, durability= SS["ArmourDurability_01"].value, icon = "__base__/graphics/icons/power-armor.png", },
+    { order = "abz", inventory_bonus = 100, grid_width = 20,  grid_height = 20,  weightvalue= SS["ArmourWeight_02"].value, durability= SS["ArmourDurability_02"].value, icon = "__base__/graphics/icons/power-armor-mk2.png", },
+    { order = "acz", inventory_bonus = 150, grid_width = 30,  grid_height = 30,  weightvalue= SS["ArmourWeight_03"].value, durability= SS["ArmourDurability_03"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk3.png", },
+    { order = "adz", inventory_bonus = 200, grid_width = 40,  grid_height = 40,  weightvalue= SS["ArmourWeight_04"].value, durability= SS["ArmourDurability_04"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk4.png", },
+    { order = "aez", inventory_bonus = 250, grid_width = 50,  grid_height = 50,  weightvalue= SS["ArmourWeight_05"].value, durability= SS["ArmourDurability_05"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", },
+    { order = "afz", inventory_bonus = 300, grid_width = 60,  grid_height = 60,  weightvalue= SS["ArmourWeight_06"].value, durability= SS["ArmourDurability_06"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --6
+    { order = "agz", inventory_bonus = 350, grid_width = 70,  grid_height = 70,  weightvalue= SS["ArmourWeight_07"].value, durability= SS["ArmourDurability_07"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --7
+    { order = "ahz", inventory_bonus = 400, grid_width = 80,  grid_height = 80,  weightvalue= SS["ArmourWeight_08"].value, durability= SS["ArmourDurability_08"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --8
+    { order = "aiz", inventory_bonus = 450, grid_width = 90,  grid_height = 90,  weightvalue= SS["ArmourWeight_09"].value, durability= SS["ArmourDurability_09"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --9
+    { order = "ajz", inventory_bonus = 500, grid_width = 100, grid_height = 100, weightvalue= SS["ArmourWeight_10"].value, durability= SS["ArmourDurability_10"].value, icon = "__Power-Armour-Replacer__/graphics/icons/armour/power-armour-mk5.png", }, --10
 }
 
 local resistances = {
@@ -112,32 +112,18 @@ for tier, equipment in pairs(power_armour) do
         drop_sound = item_sounds.armor_large_inventory_move,
         stack_size = 1,
         weight = equipment.weightvalue,
-        --infinite = true,
-        --durability = 1000000,
-        --durability = equipment.durability,
         equipment_grid = equipment_grid_name, -- disable to removes quality. now make a setting or function that tells if setting =  grids H-W 0 then remove grid entirely. 
         inventory_size_bonus = equipment.inventory_bonus,
         open_sound = { filename = "__base__/sound/armor-open.ogg", volume = 1 },
         close_sound = { filename = "__base__/sound/armor-close.ogg", volume = 1 }
     }
 
---[[Failed to load mods: Error while loading item prototype "par-armour-mk1" (armor): Key "durability" not found in property tree at ROOT.armor.par-armour-mk1
-Modifications: Power Armour & Replacer › Configurable Armour & Suits
-
-Failed to load mods: __Power-Armour-Replacer__/prototypes/items/armour_item.lua:127: bad argument #1 of 3 to 'insert' (table expected, got nil)
-stack traceback:
-[C]: in function 'insert'
-__Power-Armour-Replacer__/prototypes/items/armour_item.lua:127: in main chunk
-[C]: in function 'require'
-__Power-Armour-Replacer__/data.lua:2: in main chunk]]
-    if SS["ArmourDurability"].value == true then
-        table.insert(equipment_armor, {
-            durability = SS["SingleArmourDurabilitySetting"].value
-        })
-    elseif SS["ArmourDurability"].value == false then
-        table.insert(equipment_armor, {
-            infinite = true
-        })
+    if SS["StringDurability"].value == "ArmourdurabilityOFF" then
+        equipment_armor.infinite = true
+    elseif SS["StringDurability"].value == "ArmourDurabilityAll" then
+        equipment_armor.durability = SS["SingleArmourDurabilitySetting"].value
+    elseif  SS["StringDurability"].value == "ArmourDurabilitySolo" then
+        equipment_armor.durability = equipment.durability
     end
 
     if mods["bobwarfare"] then
