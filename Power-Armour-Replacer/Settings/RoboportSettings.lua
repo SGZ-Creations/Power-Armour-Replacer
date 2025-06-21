@@ -1,4 +1,5 @@
 data:extend({
+    ----BotChargingAmount-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
         type = "int-setting",
         name = "BotChargingAmount_01",
@@ -6,7 +7,7 @@ data:extend({
         default_value = 10,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -15,7 +16,7 @@ data:extend({
         default_value = 12,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -24,7 +25,7 @@ data:extend({
         default_value = 14,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -33,7 +34,7 @@ data:extend({
         default_value = 16,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -42,7 +43,7 @@ data:extend({
         default_value = 18,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -51,7 +52,7 @@ data:extend({
         default_value = 20,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -60,7 +61,7 @@ data:extend({
         default_value = 24,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -69,7 +70,7 @@ data:extend({
         default_value = 26,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -78,7 +79,7 @@ data:extend({
         default_value = 28,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
     {
         type = "int-setting",
@@ -87,6 +88,6 @@ data:extend({
         default_value = 30,
         minimum_value = 0,
         maximum_value = 1000,
-        order = "1Roboport"
+        order = "Roboport-1"
     },
 })
