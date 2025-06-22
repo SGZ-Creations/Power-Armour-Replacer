@@ -1,36 +1,25 @@
-local util = require("mods.util")
-local DRR = data.raw.recipe
-util.ingredient_prereq(DRR["pamk3-lvest"],
-{
-    {
-        dependencies = {"Power Armor MK3"},
-        replacements = {
-            ["iron-stick"] = {"light-armor", 1},
-            ["iron-plate"] = {"copper-plate", 10},
-        }
-    },
-})
+---@class data.RecipePrototype
+local Recipe = data.raw.recipe
 
-util.ingredient_prereq(DRR["heavy-armor"],
-{
-    {
-        dependencies = {"Power Armor MK3"},
-        replacements = {
-            ["steel-plate"] = {"steel-plate", 25},
-            ["copper-plate"] = {"copper-plate", 20},
-            ["light-armor"] = {"pamk3-lvest", 1},
-        }
-    },
-})
-
-util.ingredient_prereq(DRR["pamk3-hvest"],
-{
-    {
-        dependencies = {"Power Armor MK3"},
-        replacements = {
-            ["steel-plate"] = {"steel-plate", 50},
-            ["copper-plate"] = {"copper-plate", 40},
-            {"heavy-armor", 1},
-        }
-    },
-})
+if mods["Power Armor MK3"] then
+    Recipe["pamk3-lvest"].ingredients = {
+        {type="item", name="light-armor", amount= 1},
+        {type="item", name="copper-plate", amount= 10}
+    }
+    Recipe["heavy-armor"].ingredients = {
+        {type="item", name="pamk3-lvest", amount= 1},
+        {type="item", name="steel-plate", amount= 25},
+        {type="item", name="copper-plate", amount= 20}
+    }
+    Recipe["pamk3-hvest"].ingredients = {
+        {type="item", name="heavy-armor", amount= 1},
+        {type="item", name="steel-plate", amount= 50},
+        {type="item", name="copper-plate", amount= 40}
+    }
+end
+--Alterenative to fix how armour is added to a recipe.
+--[[
+if not data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1} then
+	table.insert(data.raw.recipe["heavy-armor"].ingredients, {type="item", name="light-armor", amount=1})
+elseif data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1} then return end
+]]
