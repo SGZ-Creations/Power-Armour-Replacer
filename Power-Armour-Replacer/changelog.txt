@@ -56,7 +56,7 @@ Date: 04.03.2025
     - Repeatable migrations.
     - Added all the old chat popups to tips & tricks. some text changes may happen as the mods updates.  
   Changes:
-    - Achivement name change [Surviving planet destruction] --> [Leviathan]
+    - Achievement name change [Surviving planet destruction] --> [Leviathan]
     - Control stage code are deleted, no longer in use/needed.
     - Deleted setting(s) regarding the old chat popup.
     - Bobs & [space-age] bridge is moved to Alt Chemical Processing. 
