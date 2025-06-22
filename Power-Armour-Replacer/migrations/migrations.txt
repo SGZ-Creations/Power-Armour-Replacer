@@ -1,2 +1,2 @@
-Repatable.json
-Repatable.lua
+Repeatable.json
+Repeatable.lua
