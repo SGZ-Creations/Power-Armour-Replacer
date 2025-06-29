@@ -6,6 +6,7 @@
 	require("mods.recipes.final-fixes.compatible-recipe")
 	require("mods.recipes.final-fixes.roboports_finalfix")
 
---compatible.tech load order dependant
+--compatible.tech load order dependantrequire
+	require("mods.technology.final-fixes.par-depedency-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")
     require("structures.SimulationScenarioCrash")

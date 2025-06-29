@@ -18,6 +18,15 @@ if mods["bobtech"]and mods["bobplates"] then
 	if mods["bobelectronics"]then
 		Tech["lamp"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 50}
 		Tech["lamp"].unit = nil
+
+		Tech["bob-alloy-processing"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 100}
+		Tech["bob-alloy-processing"].unit = nil
+
+		Tech["bob-wood-processing"].research_trigger = {type ="craft-item", item ="assembling-machine-1", count = 2}
+		Tech["bob-wood-processing"].unit = nil
+
+		Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-rubber", count = 50}
+		Tech["bob-electronics"].unit = nil
 	end
 end
 
