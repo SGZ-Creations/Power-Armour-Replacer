@@ -9,10 +9,10 @@ local SS = settings.startup
 if mods["bobtech"]and mods["bobplates"] then
 	Tech["steel-processing"].research_trigger = {type ="craft-fluid", fluid ="bob-oxygen", amount = 1000}
 
-	Tech["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="boiler", count = 12}
+	Tech["bob-electrolysis-1"].research_trigger = {type ="craft-item", item ="boiler", count = 3}
 	Tech["bob-electrolysis-1"].unit = nil
 
-	Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="steam-engine", count = 24}
+	Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="steam-engine", count = 6}
 	Tech["bob-chemical-processing-1"].unit = nil
 
 	if mods["bobelectronics"]then
