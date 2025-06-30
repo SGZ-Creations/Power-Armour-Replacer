@@ -16,6 +16,7 @@ for tier, immunity in pairs(Immunities) do
         icon = "__base__/graphics/icons/belt-immunity-equipment.png",
         icon_size = 64,
         stack_size = 5,
+        auto_recycle = false,
         weight = immunity.weightvalue5500,
         inventory_move_sound = item_sounds.mechanical_inventory_move,
         pick_sound = item_sounds.mechanical_inventory_pickup,

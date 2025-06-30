@@ -29,6 +29,7 @@ for tier, panel in pairs(panels) do
         pick_sound = item_sounds.electric_large_inventory_pickup,
         drop_sound = item_sounds.electric_large_inventory_move,
         stack_size = 20,
+        auto_recycle = false,
         weight = panel.weightvalue,
     }
 

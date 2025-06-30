@@ -61,6 +61,7 @@ for tier, equipment in pairs(power_armour) do
         name = equipment_name,
         type = "armor",
         icon = equipment.icon,
+        auto_recycle = false,
         icon_size = 64,
         resistances = {
             {

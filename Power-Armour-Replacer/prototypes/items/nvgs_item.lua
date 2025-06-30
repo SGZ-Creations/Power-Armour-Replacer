@@ -20,6 +20,7 @@ for tier, nightvision in pairs(nightvisions) do
         pick_sound = item_sounds.electric_small_inventory_pickup,
         drop_sound = item_sounds.electric_small_inventory_move,
         stack_size = 5,
+        auto_recycle = false,
         weight = nightvision.weightvalue,
         subgroup = "replacer_item",
     }

@@ -27,6 +27,7 @@ for tier, roboport in pairs(roboports) do
         pick_sound = item_sounds.roboport_inventory_pickup,
         drop_sound = item_sounds.roboport_inventory_move,
         stack_size = 20,
+        auto_recycle = false,
         weight = roboport.weightvalue,
         order = roboport.order,
         subgroup = "replacer_item",

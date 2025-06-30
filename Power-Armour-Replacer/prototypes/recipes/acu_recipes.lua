@@ -20,6 +20,7 @@ if mods["space-age"] then
 			type = "recipe",
 			name = "armour-control-unit-2",
             category = "electronics-or-assembling",
+			auto_recycle = false,
 			energy_required = 10,
 			enabled = false,
 			ingredients = {

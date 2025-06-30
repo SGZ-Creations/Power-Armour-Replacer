@@ -24,6 +24,7 @@ for tier, reactor in pairs(reactors) do
         place_as_equipment_result = "par-fission-reactor-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("fusion-reactor", 64, tier),
         stack_size = 20,
+        auto_recycle = false,
         weight = reactor.weightvalue,
         inventory_move_sound = item_sounds.reactor_inventory_move,
         pick_sound = item_sounds.reactor_inventory_pickup,
