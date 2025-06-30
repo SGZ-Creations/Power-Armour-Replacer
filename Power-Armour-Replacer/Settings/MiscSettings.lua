@@ -23,7 +23,6 @@ if mods["PARs-SpaceAge-Extension"] then
     end
 end
 
-
 if mods["space-age"] then
     data:extend({
         {
@@ -42,6 +41,7 @@ if mods["space-age"] then
         },
     })
 end
+
 if mods["bobwarfare"] then
 data:extend({
         {
