@@ -10,7 +10,7 @@ data:extend({
     },
 })
 if mods["PARs-SpaceAge-Extension"] then
-    if (mods["space-age"] or mods["mech-armor"])then
+    if (mods["space-age"] or mods["mech-armor"]) then
         data:extend({
             {
                 type = "bool-setting",
@@ -22,8 +22,17 @@ if mods["PARs-SpaceAge-Extension"] then
         })
     end
 end
+
+
 if mods["space-age"] then
     data:extend({
+        {
+            type = "int-setting",
+            name = "ArmourControlUnit",
+            setting_type = "startup",
+            default_value = 1,
+            order = "ZAaa-9"
+        },
         {
             type = "bool-setting",
             name = "SAFilters",

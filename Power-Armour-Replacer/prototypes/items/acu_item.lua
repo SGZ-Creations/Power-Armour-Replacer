@@ -1,3 +1,8 @@
+---@class LuaSettings
+local SS = settings.startup
+---@class data.RecipePrototype
+local Recipe = data.raw["recipe"]
+
 data:extend({
 	{
 		type = "item",
@@ -10,3 +15,8 @@ data:extend({
 		weight = 2500,
 	},
 })
+
+
+if mods["space-age"] then
+	table.insert(Recipe["scrap-recycling"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, probability = 0.15, show_details_in_recipe_tooltip = false})
+end
