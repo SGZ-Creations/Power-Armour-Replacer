@@ -4,6 +4,7 @@ Date: 06.06.2025
   Major Features:
     - Settings added to other equipment for further customizability.
     - 1 Setting to Show all items in Players crafting UI.
+    - 1 Amount setting for Armour Control Unit in scrap. 
     - 20 Armour Settings.
     - 20 Batteries Settings.
     - 15 Exoskeleton Settings
@@ -14,7 +15,7 @@ Date: 06.06.2025
     - 70 Roboport Settings.
     - 50 Shield Settings.
     - 20 Solar Settings.
-    - Total 284 New setting for you to have fun with hope this mods become fun for you even more now.
+    - Total 285 New setting for you to have fun with hope this mods become fun for you even more now.
   Features:
     - [space-age] Made it possible to craft all items in Electromagnetic Plant.
     - ACU recipe [space-age] Edition.
