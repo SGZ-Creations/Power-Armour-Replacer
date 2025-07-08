@@ -9,7 +9,7 @@ Date: 06.06.2025
     - 20 Fission Settings.
     - 70 Laser Settings.
     - 8 Belt immunity Settings.
-    - 8 Belt NVGs Settings.
+    - 8 NVGs Settings.
     - 70 Roboport Settings.
     - 50 Shield Settings.
     - 20 Solar Settings.
