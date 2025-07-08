@@ -3,6 +3,7 @@ Version: 0.4.0
 Date: 06.06.2025
   Major Features:
     - Settings added to other equipment for further customizability.
+    - 1 Setting to Show all items in Players crafting UI.
     - 20 Armour Settings.
     - 20 Batteries Settings.
     - 15 Exoskeleton Settings
@@ -13,12 +14,13 @@ Date: 06.06.2025
     - 70 Roboport Settings.
     - 50 Shield Settings.
     - 20 Solar Settings.
-    - Total 283 New setting for you to have fun with hope this mods become fun for you even more now.
+    - Total 284 New setting for you to have fun with hope this mods become fun for you even more now.
   Features:
     - [space-age] Made it possible to craft all items in Electromagnetic Plant.
     - ACU recipe [space-age] Edition.
     - Added crafting category = "electronics-or-handcrafting" using hands all assemblers, electromagnetic-plant.
     - Added options play with the old pre 0.17 durability system.
+    - Setting to Show all items in Players crafting UI.
   Changes:
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
     - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exoskeleton.

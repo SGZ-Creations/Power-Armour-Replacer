@@ -24,6 +24,7 @@
     require("prototypes.recipes.immunity_recipes")
     require("prototypes.recipes.nvgs_recipes")
     require("prototypes.recipes.acu_recipes")
+    require("structures.hide_from_player_crafting")
 
 --prototypes.technology
     require("prototypes.technology.armour_tech")

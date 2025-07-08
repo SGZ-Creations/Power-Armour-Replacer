@@ -5,7 +5,6 @@ local recipes = {
         category = "crafting-with-fluid",
         enabled = false,
         energy_required = 10,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="fluid", name="lubricant", amount=200},
             {type="item", name="electronic-circuit", amount=30},
@@ -20,7 +19,6 @@ local recipes = {
         category = "crafting-with-fluid",
         enabled = false,
         energy_required = 20,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-belt-immunity-mk1", amount=1},
             {type="item", name="low-density-structure", amount=25},
@@ -35,7 +33,7 @@ local recipes = {
 }
 data:extend(recipes)
 
-if mods["space-age"]then
+if mods["space-age"] then
     local recipes = {
         {
             type = "recipe",
@@ -43,7 +41,6 @@ if mods["space-age"]then
             category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 10,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="fluid", name="lubricant", amount=200},
                 {type="item", name="electronic-circuit", amount=30},
@@ -59,7 +56,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 20,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-belt-immunity-mk1", amount=1},
                 {type="item", name="low-density-structure", amount=25},

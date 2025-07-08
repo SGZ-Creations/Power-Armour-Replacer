@@ -35,7 +35,6 @@ local recipes = {
         category = "crafting-with-fluid",
         enabled = false,
         energy_required = 15,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-exoskeleton-mk2", amount=1},
             {type="item", name="battery", amount=165},
@@ -51,7 +50,6 @@ local recipes = {
         name = "par-exoskeleton-mk4",
         enabled = false,
         energy_required = 20,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-exoskeleton-mk3", amount=1},
             {type="item", name="battery", amount=205},
@@ -67,7 +65,6 @@ local recipes = {
         name = "par-exoskeleton-mk5",
         enabled = false,
         energy_required = 25,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-exoskeleton-mk4", amount=1},
             {type="item", name="battery", amount=250},
@@ -121,7 +118,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 15,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-exoskeleton-mk2", amount=1},
                 {type="item", name="battery", amount=165},
@@ -138,7 +134,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 20,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-exoskeleton-mk3", amount=1},
                 {type="item", name="battery", amount=205},
@@ -155,7 +150,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 25,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-exoskeleton-mk4", amount=1},
                 {type="item", name="steel-plate", amount=250},

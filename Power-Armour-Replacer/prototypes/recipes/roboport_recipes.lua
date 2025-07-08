@@ -71,7 +71,6 @@ local recipes = {
         name = "par-roboport-mk6",
         enabled = false,
         energy_required = 60,
-        hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-roboport-mk5", amount=1},
@@ -87,7 +86,6 @@ local recipes = {
         name = "par-roboport-mk7",
         enabled = false,
         energy_required = 70,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-roboport-mk6", amount=1},
             {type="item", name="processing-unit", amount=120},
@@ -102,7 +100,6 @@ local recipes = {
         name = "par-roboport-mk8",
         enabled = false,
         energy_required = 80,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-roboport-mk7", amount=1},
             {type="item", name="low-density-structure", amount=130},
@@ -117,7 +114,6 @@ local recipes = {
         name = "par-roboport-mk9",
         enabled = false,
         energy_required = 90,
-        hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-roboport-mk8", amount=1},
@@ -133,7 +129,6 @@ local recipes = {
         name = "par-roboport-mk10",
         enabled = false,
         energy_required = 100,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-roboport-mk9", amount=1},
             {type="item", name="low-density-structure", amount=195},
@@ -225,7 +220,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 60,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-roboport-mk5", amount=1},
                 {type="item", name="processing-unit", amount=50},
@@ -241,7 +235,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 70,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-roboport-mk6", amount=1},
                 {type="item", name="processing-unit", amount=120},
@@ -257,7 +250,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 80,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-roboport-mk7", amount=1},
                 {type="item", name="low-density-structure", amount=130},
@@ -273,7 +265,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 90,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-roboport-mk8", amount=1},
                 {type="item", name="armour-control-unit", amount=80},
@@ -289,7 +280,6 @@ if mods["space-age"]then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 100,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-roboport-mk9", amount=1},
                 {type="item", name="low-density-structure", amount=195},

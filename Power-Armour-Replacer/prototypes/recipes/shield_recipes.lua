@@ -71,7 +71,6 @@ local recipes = {
         name = "par-shield-mk6",
         enabled = false,
         energy_required = 30,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-shield-mk5", amount=1},
             {type="item", name="nuclear-fuel", amount=20},
@@ -86,7 +85,6 @@ local recipes = {
         name = "par-shield-mk7",
         enabled = false,
         energy_required = 35,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-shield-mk6", amount=1},
             {type="item", name="copper-plate", amount=165},
@@ -102,7 +100,6 @@ local recipes = {
         name = "par-shield-mk8",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-shield-mk7", amount=1},
@@ -118,7 +115,6 @@ local recipes = {
         name = "par-shield-mk9",
         enabled = false,
         energy_required = 45,
-        hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-shield-mk8", amount=1},
@@ -135,7 +131,6 @@ local recipes = {
         name = "par-shield-mk10",
         enabled = false,
         energy_required = 50,
-        hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-shield-mk9", amount=1},
@@ -229,7 +224,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 30,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-shield-mk5", amount=1},
                 {type="item", name="nuclear-fuel", amount=20},
@@ -245,7 +239,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 35,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-shield-mk6", amount=1},
                 {type="item", name="copper-plate", amount=165},
@@ -262,7 +255,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-shield-mk7", amount=1},
                 {type="item", name="uranium-235", amount=120},
@@ -279,7 +271,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 45,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-shield-mk8", amount=1},
                 {type="item", name="battery", amount=100},
@@ -301,7 +292,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-shield-mk9", amount=1},
                 {type="item", name="armour-control-unit", amount=75},

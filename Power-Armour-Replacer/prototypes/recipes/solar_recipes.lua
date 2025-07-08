@@ -71,7 +71,6 @@ local recipes = {
         name = "par-solar-panel-mk6",
         enabled = false,
         energy_required = 30,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-solar-panel-mk5", amount=1},
             {type="item", name="processing-unit", amount=60},
@@ -86,7 +85,6 @@ local recipes = {
         name = "par-solar-panel-mk7",
         enabled = false,
         energy_required = 35,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-solar-panel-mk6", amount=1},
             {type="item", name="plastic-bar", amount=140},
@@ -101,7 +99,6 @@ local recipes = {
         name = "par-solar-panel-mk8",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-solar-panel-mk7", amount=1},
             {type="item", name="copper-cable", amount=300},
@@ -117,7 +114,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 45,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-solar-panel-mk8", amount=1},
             {type="item", name="processing-unit", amount=123},
@@ -133,7 +129,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 50,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-solar-panel-mk9", amount=1},
             {type="item", name="processing-unit", amount=144},
@@ -225,7 +220,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 30,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-solar-panel-mk5", amount=1},
                 {type="item", name="processing-unit", amount=60},
@@ -240,7 +234,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 35,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-solar-panel-mk6", amount=1},
                 {type="item", name="low-density-structure", amount=175},
@@ -259,7 +252,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-solar-panel-mk7", amount=1},
                 {type="item", name="holmium-plate", amount=300},
@@ -277,7 +269,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 45,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-solar-panel-mk8", amount=1},
                 {type="item", name="processing-unit", amount=123},
@@ -298,7 +289,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-solar-panel-mk9", amount=1},
                 {type="item", name="processing-unit", amount=144},

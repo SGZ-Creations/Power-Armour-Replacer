@@ -75,7 +75,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk5", amount=1},
             {type="item", name="armour-control-unit", amount=200},
@@ -92,7 +91,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk6", amount=1},
             {type="item", name="copper-cable", amount=200},
@@ -109,7 +107,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk7", amount=1},
             {type="item", name="battery", amount=100},
@@ -125,7 +122,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk8", amount=1},
             {type="item", name="processing-unit", amount=200},
@@ -141,7 +137,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 10.0,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-armour-mk9", amount=1},
             {type="item", name="armour-control-unit", amount=200},
@@ -241,7 +236,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk5", amount=1},
                 {type="item", name="armour-control-unit", amount=200},
@@ -258,7 +252,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk6", amount=1},
                 {type="item", name="armour-control-unit", amount=200},
@@ -275,7 +268,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk7", amount=1},
                 {type="item", name="battery", amount=100},
@@ -294,7 +286,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk8", amount=1},
                 {type="item", name="armour-control-unit", amount=200},
@@ -317,7 +308,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 10.0,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-armour-mk9", amount=1},
                 {type="item", name="low-density-structure", amount=250},

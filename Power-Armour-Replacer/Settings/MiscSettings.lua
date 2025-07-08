@@ -8,6 +8,13 @@ data:extend({
         default_value = true,
         order = "ZAac-9"
     },
+    {
+        type = "bool-setting",
+        name = "HideRecipesFromPlayer",
+        setting_type = "startup",
+        default_value = true,
+        order = "ZAad-9"
+    },
 })
 if mods["PARs-SpaceAge-Extension"] then
     if (mods["space-age"] or mods["mech-armor"]) then

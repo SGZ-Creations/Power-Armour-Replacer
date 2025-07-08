@@ -71,7 +71,6 @@ local recipes = {
         name = "par-fission-reactor-mk6",
         enabled = false,
         energy_required = 65,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-fission-reactor-mk5", amount=1},
             {type="item", name="plastic-bar", amount=100},
@@ -87,7 +86,6 @@ local recipes = {
         name = "par-fission-reactor-mk7",
         enabled = false,
         energy_required = 70,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-fission-reactor-mk6", amount=1},
             {type="item", name="electric-engine-unit", amount=100},
@@ -102,7 +100,6 @@ local recipes = {
         name = "par-fission-reactor-mk8",
         enabled = false,
         energy_required = 75,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-fission-reactor-mk7", amount=1},
             {type="item", name="sulfur", amount=50},
@@ -118,7 +115,6 @@ local recipes = {
         category = "crafting-with-fluid",
         enabled = false,
         energy_required = 80,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-fission-reactor-mk8", amount=1},
             {type="item", name="nuclear-fuel", amount=55},
@@ -134,7 +130,6 @@ local recipes = {
         name = "par-fission-reactor-mk10",
         enabled = false,
         energy_required = 85,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-fission-reactor-mk9", amount=1},
             {type="item", name="battery", amount=100},
@@ -227,7 +222,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 65,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk5", amount=1},
                 {type="item", name="plastic-bar", amount=100},
@@ -244,7 +238,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 70,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk6", amount=1},
                 {type="item", name="electric-engine-unit", amount=100},
@@ -260,7 +253,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 75,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk7", amount=1},
                 {type="item", name="sulfur", amount=50},
@@ -276,7 +268,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 80,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk8", amount=1},
                 {type="item", name="nuclear-fuel", amount=55},
@@ -293,7 +284,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 85,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk9", amount=1},
                 {type="item", name="battery", amount=100},

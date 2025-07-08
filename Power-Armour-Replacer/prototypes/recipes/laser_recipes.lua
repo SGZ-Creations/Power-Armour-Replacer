@@ -71,7 +71,6 @@ local recipes = {
         name = "par-laser-mk6",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-laser-mk5", amount=1},
             {type="item", name="heat-pipe", amount=150},
@@ -87,7 +86,6 @@ local recipes = {
         name = "par-laser-mk7",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-laser-mk6", amount=1},
             {type="item", name="low-density-structure", amount=60},
@@ -103,7 +101,6 @@ local recipes = {
         name = "par-laser-mk8",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-laser-mk7", amount=1},
             {type="item", name="low-density-structure", amount=130},
@@ -119,7 +116,6 @@ local recipes = {
         name = "par-laser-mk9",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-laser-mk8", amount=1},
             {type="item", name="armour-control-unit", amount=60},
@@ -136,7 +132,6 @@ local recipes = {
         name = "par-laser-mk10",
         enabled = false,
         energy_required = 40,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-laser-mk9", amount=1},
             {type="item", name="armour-control-unit", amount=100},
@@ -237,7 +232,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-laser-mk5", amount=1},
                 {type="item", name="heat-pipe", amount=150},
@@ -255,7 +249,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-laser-mk6", amount=1},
                 {type="item", name="low-density-structure", amount=60},
@@ -277,7 +270,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-laser-mk7", amount=1},
                 {type="item", name="low-density-structure", amount=130},
@@ -299,7 +291,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-laser-mk8", amount=1},
                 {type="item", name="low-density-structure", amount=180},
@@ -322,7 +313,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 40,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-laser-mk9", amount=1},
                 {type="item", name="low-density-structure", amount=200},

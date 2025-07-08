@@ -4,7 +4,6 @@ local recipes = {
         name = "par-nightvision-mk1",
         enabled = false,
         energy_required = 10,
-        hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="iron-gear-wheel", amount=100},
@@ -20,7 +19,6 @@ local recipes = {
         name = "par-nightvision-mk2",
         enabled = false,
         energy_required = 20,
-        hide_from_player_crafting = true,
         category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-nightvision-mk1", amount=1},
@@ -43,7 +41,6 @@ if mods["space-age"] then
             category = "electronics-or-handcrafting",
             enabled = false,
             energy_required = 10,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="iron-gear-wheel", amount=100},
                 {type="item", name="battery", amount=5},
@@ -59,7 +56,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 20,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-nightvision-mk1", amount=1},
                 {type="item", name="nuclear-fuel", amount=10},

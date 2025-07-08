@@ -73,7 +73,6 @@ local recipes = {
         name = "par-battery-mk6",
         enabled = false,
         energy_required = 50,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-battery-mk5", amount=1},
             {type="item", name="advanced-circuit", amount=125},
@@ -90,7 +89,6 @@ local recipes = {
         category="crafting-with-fluid",
         enabled = false,
         energy_required = 55,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-battery-mk6", amount=1},
             {type="item", name="battery", amount=80},
@@ -106,7 +104,6 @@ local recipes = {
         category= "crafting-with-fluid",
         enabled = false,
         energy_required = 60,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-battery-mk7", amount=1},
             {type="item", name="battery", amount=90},
@@ -121,7 +118,6 @@ local recipes = {
         name = "par-battery-mk9",
         enabled = false,
         energy_required = 65,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-battery-mk8", amount=1},
             {type="item", name="battery", amount=100},
@@ -138,7 +134,6 @@ local recipes = {
         category= "crafting-with-fluid",
         enabled = false,
         energy_required = 70,
-        hide_from_player_crafting = true,
         ingredients = {
             {type="item", name="par-battery-mk9", amount=1},
             {type="item", name="battery", amount=140},
@@ -233,7 +228,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 50,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-battery-mk5", amount=1},
                 {type="item", name="advanced-circuit", amount=125},
@@ -250,7 +244,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 55,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-battery-mk6", amount=1},
                 {type="item", name="battery", amount=80},
@@ -266,7 +259,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 60,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-battery-mk7", amount=1},
                 {type="item", name="battery", amount=90},
@@ -282,7 +274,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 65,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-battery-mk8", amount=1},
                 {type="item", name="supercapacitor", amount=100},
@@ -300,7 +291,6 @@ if mods["space-age"] then
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 70,
-            hide_from_player_crafting = true,
             ingredients = {
                 {type="item", name="par-battery-mk9", amount=1},
                 {type="item", name="battery", amount=140},
