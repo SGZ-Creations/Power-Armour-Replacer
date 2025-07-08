@@ -40,11 +40,11 @@ if SS ["HideRecipesFromPlayer"].value == true then
 	Hide["par-shield-mk9"].hide_from_player_crafting = true
 	Hide["par-shield-mk10"].hide_from_player_crafting = true
 
-	Hide["par-solar-mk6"].hide_from_player_crafting = true
-	Hide["par-solar-mk7"].hide_from_player_crafting = true
-	Hide["par-solar-mk8"].hide_from_player_crafting = true
-	Hide["par-solar-mk9"].hide_from_player_crafting = true
-	Hide["par-solar-mk10"].hide_from_player_crafting = true
+	Hide["par-solar-panel-mk6"].hide_from_player_crafting = true
+	Hide["par-solar-panel-mk7"].hide_from_player_crafting = true
+	Hide["par-solar-panel-mk8"].hide_from_player_crafting = true
+	Hide["par-solar-panel-mk9"].hide_from_player_crafting = true
+	Hide["par-solar-panel-mk10"].hide_from_player_crafting = true
 
 	Hide["par-exoskeleton-mk3"].hide_from_player_crafting = true
 	Hide["par-exoskeleton-mk4"].hide_from_player_crafting = true
