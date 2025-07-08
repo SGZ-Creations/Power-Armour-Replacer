@@ -1,10 +1,3 @@
---[[
-if mods["spidertrontiers-community-updates"] then
-	data.raw["bool-setting"]["stack-spidertron-recipes"].default.value = "false"
-	data.raw["bool-setting"]["stack-spidertron-recipes"].hidden = true
-end
-]]
-
 if mods["Power Armor MK3"] then
 	data.raw["bool-setting"]["pam3-nvm2"].hidden = true
 	data.raw["bool-setting"]["pam3-nvm2"].enabled = false
