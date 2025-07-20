@@ -15,7 +15,7 @@ Date: 06.06.2025
     - 70 Roboport Settings.
     - 50 Shield Settings.
     - 20 Solar Settings.
-    - Total 285 New setting for you to have fun with hope this mods become fun for you even more now.
+    - Total of 285 New settings for you to have fun with. Hope this mod became more fun than ever before?
   Features:
     - [space-age] Made it possible to craft all items in Electromagnetic Plant.
     - ACU recipe [space-age] Edition.
@@ -321,8 +321,9 @@ Date: 10.07.2025
   Bugfixes:
     - Crash when disabling spiders in spidertron Extended.
   Info:
-    - 1 bug report for 1.1 fixed before the 1 year after support ends.
+    - 1 bug report for 1.1 fixed. Before the 1 year support ends.
     - The fix is exclusive for the 0.2.19 update.
+    - Re-uploaded due to missing the new 2.0 changelog.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.18
 Date: 12.10.2024
