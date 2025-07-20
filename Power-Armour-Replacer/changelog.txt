@@ -117,7 +117,7 @@ Date: 26.01.2025
   Info:
     - Some issue with bobs at this point i can't do much with bobs being in beta testing.
     - Basicly me trying to put plaster on a wound while the knife is still in it. 
-  Credit:
+  Credits:
     - Thanks a lot @Pez for all the help.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
@@ -129,7 +129,7 @@ Date: 24.01.2025
     - Tho that ain't easy when over tired.
   Features:
     - Repeatable migration.
-  Credit:
+  Credits:
     - @jurgy for helping with solving the crash in 0.3.12.
     - @stringweasel for helping with solving the crash in 0.3.12.
 ---------------------------------------------------------------------------------------------------
@@ -145,7 +145,7 @@ Date: 24.01.2025
     - Repeatable migration.
   Changes:
     - [space-age] Improved armour recipe MK8 - MK10. 
-  Credit:
+  Credits:
     - @jurgy for helping with all the bobs conversion code in 0.3.12.
     - @stringweasel for helping with all the bobs conversion code in 0.3.12.
 ---------------------------------------------------------------------------------------------------
@@ -324,6 +324,8 @@ Date: 10.07.2025
     - 1 bug report for 1.1 fixed. Before the 1 year support ends.
     - The fix is exclusive for the 0.2.19 update.
     - Re-uploaded due to missing the new 2.0 changelog.
+  Credits:
+    - Thanks @ormusn2o for the bug report. let me know to remove this.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.18
 Date: 12.10.2024
