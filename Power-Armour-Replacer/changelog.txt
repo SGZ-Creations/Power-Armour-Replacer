@@ -35,6 +35,10 @@ Date: 06.06.2025
     - Tech with creatable unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.
     - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
     - Fixed many spelling errors across the Changelog.
+  Info:
+    - Note that this version are not fully finished & beta versions are available at my discord server.
+    - Your are welcome to try it and give feedback on what's there. I don't want reports about uncompleted Features. (Example: thee settings are missing)
+    - this INFO will be mark over when the official 0.4 is done.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 12.03.2025
@@ -316,8 +320,13 @@ Date: 22.10.2024
   Info:
     - Will try maintain to some extend for 1.1 at least 6 more months should you find bugs.
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.20
+Date: 21.07.2025
+  Bugfixes:
+    - Missing recipe conversion when using Darkstar & Angels.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.19
-Date: 10.07.2025
+Date: 20.07.2025
   Bugfixes:
     - Crash when disabling spiders in spidertron Extended.
   Info:
