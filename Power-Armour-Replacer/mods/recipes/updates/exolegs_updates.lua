@@ -13,7 +13,7 @@ util.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
             ["iron-gear-wheel"] = {"bob-carbon", 80},
-            {"bob-steel-gear-wheel", 200},
+            ["steel-plate"] = {"bob-steel-gear-wheel", 50},
         }
     },
     {
