@@ -86,7 +86,6 @@ if mods["space-age"]then
             enabled = false,
             energy_required = 5,
             ingredients = {
-                {type="item", name="copper-plate", amount=100},
                 {type="item", name="electronic-circuit", amount=100},
                 {type="item", name="steel-plate", amount=100},
                 {type="item", name="copper-cable", amount=100},
