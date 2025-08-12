@@ -315,6 +315,7 @@ util.ingredient_prereq(DRR["par-armour-mk4"], {
         replacements = {
             ["bob-gunmetal-alloy"] = {"angels-wire-silver", 55},
             ["engine-unit"] = {"concrete-brick", 135},
+            ["bob-silicon-plate"] = {"concrete-brick", 135},
         }
     },
     {

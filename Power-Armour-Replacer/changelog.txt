@@ -320,6 +320,12 @@ Date: 22.10.2024
   Info:
     - Will try maintain to some extend for 1.1 at least 6 more months should you find bugs.
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.21
+Date: 16.08.2025
+  Bugfixes:
+    - Correcting silicon recipe conversion on Armour Mk4 when using Darkstar & Angels.
+    - Fixed missing platinum with Angeles.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.20
 Date: 21.07.2025
   Bugfixes:
