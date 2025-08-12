@@ -22,7 +22,7 @@ for tier, nightvision in pairs(nightvisions) do
         stack_size = 5,
         auto_recycle = false,
         weight = nightvision.weightvalue,
-        subgroup = "replacer_item",
+        subgroup = "PAR_NVGs",
     }
 
     ---@type data.EquipmentPrototype

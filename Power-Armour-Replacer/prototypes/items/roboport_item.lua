@@ -30,7 +30,7 @@ for tier, roboport in pairs(roboports) do
         auto_recycle = false,
         weight = roboport.weightvalue,
         order = roboport.order,
-        subgroup = "replacer_item",
+        subgroup = "PAR_Roboport",
     }
 
     ---@type data.EquipmentPrototype

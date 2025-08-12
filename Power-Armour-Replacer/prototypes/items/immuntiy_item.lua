@@ -15,14 +15,14 @@ for tier, immunity in pairs(Immunities) do
         place_as_equipment_result = "par-belt-immunity-mk" .. tostring(tier),
         icon = "__base__/graphics/icons/belt-immunity-equipment.png",
         icon_size = 64,
-        stack_size = 5,
-        auto_recycle = false,
-        weight = immunity.weightvalue5500,
         inventory_move_sound = item_sounds.mechanical_inventory_move,
         pick_sound = item_sounds.mechanical_inventory_pickup,
         drop_sound = item_sounds.mechanical_inventory_move,
+        stack_size = 5,
+        auto_recycle = false,
+        weight = immunity.weightvalue5500,
         order = immunity.order,
-        subgroup = "replacer_item",
+        subgroup = "PAR_BeltImmunity",
     }
 
     ---@type data.EquipmentPrototype

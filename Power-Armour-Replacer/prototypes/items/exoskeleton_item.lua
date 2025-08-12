@@ -17,8 +17,6 @@ for tier, exoskeleton in pairs(exoskeletons) do
         type = "item",
         name = "par-exoskeleton-mk" .. tostring(tier),
         place_as_equipment_result = "par-exoskeleton-mk" .. tostring(tier),
-        subgroup = "replacer_item",
-        order = exoskeleton.order,
         icons = icon_utils.create_equipment_icon("exoskeleton", 64, tier),
         inventory_move_sound = item_sounds.exoskeleton_inventory_move,
         pick_sound = item_sounds.exoskeleton_inventory_pickup,
@@ -26,6 +24,8 @@ for tier, exoskeleton in pairs(exoskeletons) do
         stack_size = 20,
         auto_recycle = false,
         weight = exoskeleton.weightvalue,
+        order = exoskeleton.order,
+        subgroup = "PAR_Exoskeleton",
     }
 
     ---@type data.EquipmentPrototype

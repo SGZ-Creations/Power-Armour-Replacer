@@ -34,7 +34,7 @@ for tier, shield in pairs(shields) do
         auto_recycle = false,
         weight = shield.weightvalue,
         order = shield.order,
-        subgroup = "replacer_item",
+        subgroup = "PAR_Shield",
     }
 
     ---@type data.EquipmentPrototype

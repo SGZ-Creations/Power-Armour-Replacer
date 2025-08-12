@@ -105,7 +105,7 @@ for tier, equipment in pairs(power_armour) do
                 percent = resistances.poison_percent[tier],
             },
         },
-        subgroup = "replacer_item",
+        subgroup = "PAR_Armour",
         order = equipment_order,
         factoriopedia_simulation = simulations.factoriopedia_power_armor_mk2,
         inventory_move_sound = item_sounds.armor_large_inventory_move,

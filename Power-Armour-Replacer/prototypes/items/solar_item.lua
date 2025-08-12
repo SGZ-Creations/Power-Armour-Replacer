@@ -23,14 +23,14 @@ for tier, panel in pairs(panels) do
         name = "par-solar-panel-mk" .. tostring(tier),
         icons = icon_utils.create_equipment_icon("solar-panel", 64, tier),
         place_as_equipment_result = "par-solar-panel-mk" .. tostring(tier),
-        subgroup = "replacer_item",
-        order = panel.orders,
         inventory_move_sound = item_sounds.electric_large_inventory_move,
         pick_sound = item_sounds.electric_large_inventory_pickup,
         drop_sound = item_sounds.electric_large_inventory_move,
         stack_size = 20,
         auto_recycle = false,
         weight = panel.weightvalue,
+        order = panel.orders,
+        subgroup = "PAR_solar",
     }
 
     ---@type data.EquipmentPrototype

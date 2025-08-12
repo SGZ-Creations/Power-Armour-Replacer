@@ -30,7 +30,7 @@ for tier, laser in pairs(lasers) do
         auto_recycle = false,
         weight = laser.weightvalue,
         order = laser.order,
-        subgroup = "replacer_item",
+        subgroup = "PAR_laser",
     }
 
     ---@type data.EquipmentPrototype

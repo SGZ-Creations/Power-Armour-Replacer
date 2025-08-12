@@ -28,8 +28,8 @@ for tier, battery in pairs(batteries) do
         inventory_move_sound = item_sounds.electric_small_inventory_move,
         pick_sound = item_sounds.electric_small_inventory_pickup,
         drop_sound = item_sounds.electric_small_inventory_move,
+        subgroup = "PAR_Battery",
         order = battery.order .. "[battery]-aa[armour-replacer]",
-        subgroup = "replacer_item",
         place_as_equipment_result = "par-battery-mk" .. tostring(tier),
     }
 
