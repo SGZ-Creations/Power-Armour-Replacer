@@ -54,7 +54,7 @@ util.ingredient_prereq(DRR["par-battery-mk2"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-solder", 60},
+            ["copper-plate"] = {"bob-solder", 60},
             {"bob-tinned-copper-cable", 110},
         }
     },
