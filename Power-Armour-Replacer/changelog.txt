@@ -22,6 +22,7 @@ Date: 06.06.2025
     - Added crafting category = "electronics-or-handcrafting" using hands all assemblers, electromagnetic-plant.
     - Added options play with the old pre 0.17 durability system.
     - Setting to Show all items in Players crafting UI.
+    - Better subgroup system.
   Changes:
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
     - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exoskeleton.
@@ -35,6 +36,7 @@ Date: 06.06.2025
     - Tech with creatable unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.
     - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
     - Fixed many spelling errors across the Changelog.
+    - Recipe issues from 1.1 (mod version 0.2.xx)
   Info:
     - Note that this version are not fully finished & beta versions are available at my discord server.
     - Your are welcome to try it and give feedback on what's there. I don't want reports about uncompleted Features. (Example: thee settings are missing)
