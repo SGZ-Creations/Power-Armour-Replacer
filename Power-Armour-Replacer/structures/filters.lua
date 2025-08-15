@@ -755,6 +755,43 @@ elseif mods["Krastorio2"] then
     end
 end
 
+if mods["RampantArsenalFork"] then
+-- Enabled 
+    DRT["rampant-arsenal-technology-power-armor-mk3"].enabled = false
+    DRT["rampant-arsenal-technology-battery-equipment-3"].enabled = false
+    DRT["rampant-arsenal-technology-shield-equipment-2"].enabled = false
+    DRT["rampant-arsenal-technology-generator-equipment-2"].enabled = false
+    DRT["rampant-arsenal-technology-generator-equipment-3"].enabled = false
+
+    DRR["mk3-battery-rampant-arsenal"].enabled = false
+    DRR["mk3-shield-rampant-arsenal"].enabled = false
+    DRR["mk3-generator-rampant-arsenal"].enabled = false
+    DRR["nuclear-generator-rampant-arsenal"].enabled = false
+    DRR["power-armor-mk3-armor-rampant-arsenal"].enabled = false
+
+-- Hidden        
+    DRT["rampant-arsenal-technology-power-armor-mk3"].hidden = true
+    DRT["rampant-arsenal-technology-battery-equipment-3"].hidden = true
+    DRT["rampant-arsenal-technology-shield-equipment-2"].hidden = true
+    DRT["rampant-arsenal-technology-generator-equipment-2"].hidden = true
+    DRT["rampant-arsenal-technology-generator-equipment-3"].hidden = true
+
+    DRR["mk3-shield-rampant-arsenal"].hidden = true
+    DRR["mk3-battery-rampant-arsenal"].hidden = true
+    DRR["mk3-generator-rampant-arsenal"].hidden = true
+    DRR["nuclear-generator-rampant-arsenal"].hidden = true
+    DRR["power-armor-mk3-armor-rampant-arsenal"].hidden = true
+
+    if SS["Arsenal-filters"].value then
+        Hide_Item("mk3-shield-rampant-arsenal")
+        Hide_Item("mk3-battery-rampant-arsenal")
+        Hide_Item("mk3-generator-rampant-arsenal")
+        Hide_Item("nuclear-generator-rampant-arsenal")
+        Hide_Item("power-armor-mk3-armor-rampant-arsenal")
+    end
+end
+
+
 if mods["RampantArsenal"] then
 -- Enabled 
     DRT["rampant-arsenal-technology-power-armor-mk3"].enabled = false

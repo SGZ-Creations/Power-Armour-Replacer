@@ -162,7 +162,7 @@ if mods["Power Armor MK3"] then
     })
 end
 
-if mods["RampantArsenal"] then
+if (mods["RampantArsenal"] or mods["RampantArsenalFork"]) then
     data:extend({
         {
             type = "bool-setting",
