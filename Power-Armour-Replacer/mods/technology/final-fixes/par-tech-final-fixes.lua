@@ -62,10 +62,10 @@ util.technology_dependancy
 		},
 	},
 }
-local DRT = data.raw.technology
+local Tech = data.raw.technology
 
-if (mods["Nanobots"] or mods["Nanobots2"]) then
-    local tech_eff = DRT["par-night-immunity-tech-1"].effects
+if mods["nanobots-refined"] then
+    local tech_eff = Tech["par-night-immunity-tech-1"].effects
     table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
     table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
     table.insert(tech_eff,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
