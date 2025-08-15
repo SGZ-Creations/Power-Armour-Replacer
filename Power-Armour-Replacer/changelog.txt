@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: 06.06.2025
+Date: 06.09.2025
   Major Features:
     - Settings added to other equipment for further customizability.
     - 1 Setting to Show all items in Players crafting UI.
