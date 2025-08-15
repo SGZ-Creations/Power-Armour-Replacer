@@ -24,12 +24,17 @@ Date: 06.06.2025
     - Setting to Show all items in Players crafting UI.
     - Better subgroup system.
     - Newer updated https://mods.factorio.com/mod/RampantArsenalFork
+    - Better Fixed https://mods.factorio.com/mod/nanobots-refined
   Changes:
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
     - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exoskeleton.
     - [space-age] Recipes are now using new crafting category from MK1-5 and 6-10 requires assembly 2 or electromagnetic-plant.
     - Achievement text make more sense.
     - Start of base game towards PAR will now have crafting triggers over science research.
+    - PA&R's Tips Info changed please read again for the new message.
+    - Rampant's Mech Suit resistances changed, Made combat Mech Suit craft abele with PAR.
+    - Nanobots refined: 1 equipment at: Par Armour 1, last 4 at Night Immunity 1. 
+    - Added ParSpaceAge Extension disabled Function to code point not needed when mod addon is active.
   Bugfixes:
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
@@ -41,7 +46,7 @@ Date: 06.06.2025
     - Added Nanobots Refined to the compatibility. Made the old ones incompatible.
   Info:
     - Note that this version are not fully finished & beta versions are available at my discord server.
-    - Your are welcome to try it and give feedback on what's there. I don't want reports about uncompleted Features. (Example: thee settings are missing)
+    - Your are welcome to try it and give feedback on what's there. I don't want reports about uncompleted Features. (Example: the settings are missing)
     - this INFO will be mark over when the official 0.4 is done.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18

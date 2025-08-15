@@ -62,8 +62,6 @@ util.ingredient_prereq = function(recipe, replacements, setting)
     end
 end
 
---if not technology then error("Technology with name \""..name.."\" does not exist") end
-
 util.update_technology = function(name, replacements)
     local technology = data.raw.technology[name]
     if not technology then

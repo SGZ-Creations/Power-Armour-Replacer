@@ -151,6 +151,25 @@ if mods["Hiladdar_Gear"] then
 	})
 end
 
+if mods["nanobots-refined"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "nanobots-refined-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3FA",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "par-armour-mk1",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+end
+
 if mods["Power Armor MK3"] then
 	data:extend({
 		{
@@ -158,7 +177,7 @@ if mods["Power Armor MK3"] then
 			name = "par_power_armor_mk3-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			order = "3FA",
+			order = "3GA",
 			indent = 2,
 			trigger = {
 				type = "craft-item",
@@ -177,7 +196,7 @@ if mods["PowerAndArmor"] then
 			name = "par_power_and_armor-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			order = "3GA",
+			order = "3HA",
 			indent = 2,
 			trigger = {
 				type = "craft-item",
@@ -189,14 +208,14 @@ if mods["PowerAndArmor"] then
 	})
 end
 
-if mods["RampantArsenal"] then
+if (mods["RampantArsenal"] or mods["RampantArsenalFork"]) then
 	data:extend({
 		{
 			type = "tips-and-tricks-item",
 			name = "par_rampant-arsenal-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			order = "3HA",
+			order = "3IA",
 			indent = 2,
 			trigger = {
 				type = "craft-item",
@@ -204,6 +223,59 @@ if mods["RampantArsenal"] then
 				event_type = "crafting-finished",
 				count = 1,
 			},
+		},
+	})
+end
+
+
+if mods["Insectitron"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_insectitron-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_info"},
+			order = "3JA",
+			indent = 2,
+		},
+	})
+end
+
+if mods["SpaceModFeorasFork"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_space-x-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_info"},
+			order = "3KA",
+			indent = 2,
+		},
+	})
+end
+
+if mods["TeleportationEquipment"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_teleportation-equipment-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_info"},
+			order = "3LA",
+			indent = 2,
+		},
+	})
+end
+
+if mods["osm-radioactivity"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_osm-radioactivity-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_info"},
+			order = "3MA",
+			indent = 2,
 		},
 	})
 end
@@ -261,58 +333,6 @@ if mods["Krastroio2"] and not mods["space-exploration"] then
 				event_type = "crafting-finished",
 				count = 1,
 			},
-		},
-	})
-end
-
-if mods["Insectitron"] then
-	data:extend({
-		{
-			type = "tips-and-tricks-item",
-			name = "par_insectitron-info",
-			category = "power-armour-replacer",
-			dependencies = {"par_info"},
-			order = "3IA",
-			indent = 2,
-		},
-	})
-end
-
-if mods["SpaceModFeorasFork"] then
-	data:extend({
-		{
-			type = "tips-and-tricks-item",
-			name = "par_space-x-info",
-			category = "power-armour-replacer",
-			dependencies = {"par_info"},
-			order = "3JA",
-			indent = 2,
-		},
-	})
-end
-
-if mods["TeleportationEquipment"] then
-	data:extend({
-		{
-			type = "tips-and-tricks-item",
-			name = "par_teleportation-equipment-info",
-			category = "power-armour-replacer",
-			dependencies = {"par_info"},
-			order = "3KA",
-			indent = 2,
-		},
-	})
-end
-
-if mods["osm-radioactivity"] then
-	data:extend({
-		{
-			type = "tips-and-tricks-item",
-			name = "par_osm-radioactivity-info",
-			category = "power-armour-replacer",
-			dependencies = {"par_info"},
-			order = "3LA",
-			indent = 2,
 		},
 	})
 end
