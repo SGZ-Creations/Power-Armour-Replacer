@@ -97,12 +97,13 @@ util.technology_dependancy
 			"promethium-science-pack",
 		},
 	},
+
 	["space-spidertron"] = {
 		["spidertron"] = {
 			"par-night-immunity-tech-2",
 		}
 	},
-	--[[
+
 	["boblogistics"] = {
 		["par-roboport-tech-3"] = {
 			"bob-robo-modular-1"
@@ -117,9 +118,7 @@ util.technology_dependancy
 			"bob-robo-modular-4"
 		},
 	},
-	]]
 
---[[
 	["bobpower"] = {
 		["par-laser-tech-3"] = {
 		"bob-heat-pipe-1",
@@ -135,7 +134,7 @@ util.technology_dependancy
 			"bob-heat-pipe-4"
 		},
 	},
-]]
+
 	["bobrevamp"] = {
 		["par-armour-tech-8"] = {
 			"bob-heat-shield",
@@ -144,13 +143,13 @@ util.technology_dependancy
 			"bob-heat-shield",
 		},
 	},
---[[
+
 	[{"bobrevamp", "bobplates",}] = {
 		["par-fission-reactor-tech-7"] = {
 			"bob-rtg",
 		},
 	},
-	]]
+
 	["bobplates"] = {
 		["par-armour-tech-2"] = {
 			["electronics"] = "automation",
@@ -165,10 +164,8 @@ util.technology_dependancy
 		},
 		["par-armour-tech-5"] = {
 			["electric-engine"] = "bob-gem-processing-3",
-			--["uranium-processing"] = "",
 		},
 		["par-armour-tech-6"] = {
-			["bob-advanced-processing-unit"] = "electric-engine",
 			"bob-titanium-processing",
 			"bob-battery-2",
 		},
@@ -183,14 +180,12 @@ util.technology_dependancy
 		["par-armour-tech-9"] = {
 			"bob-nitinol-processing",
 		},
-		--[[
 		["par-shield-tech-6"] = {
-			"bob-cobalt-processing"
+			"bob-titanium-processing"
 		},
-		["par-laser-tech-4"] = {
-			["processing-unit"] = "bob-gem-processing-2"
+		["par-laser-tech-5"] = {
+			"bob-gem-processing-3"
 		},
-		]]
 	},
 --[[
 	["angelssmelting"] = {
@@ -299,6 +294,7 @@ util.technology_dependancy
 		},
 	},
 	]]
+
 	["pyalternativeenergy"] = {
 		["par-armour-tech-3"] = {
 			["processing-unit"] = "machine-components-mk01",
