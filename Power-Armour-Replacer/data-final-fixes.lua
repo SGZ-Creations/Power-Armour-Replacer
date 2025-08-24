@@ -6,6 +6,7 @@
 	require("mods.recipes.final-fixes.subgroup")
 	require("mods.recipes.final-fixes.compatible-recipe")
 	require("mods.recipes.final-fixes.roboports_finalfix")
+    require("structures.RecyclingFinalFix")
 
 --compatible.tech load order dependantrequire
 	require("mods.technology.final-fixes.par-depedency-fixes")

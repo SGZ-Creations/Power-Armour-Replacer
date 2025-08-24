@@ -19,7 +19,6 @@
 	require("mods.technology.updates.spaceage-science-updates")
 --structures
 	require("structures.science-setting")
-    require("structures.FalseRecycling")
     --require("structures.tips_tricks.tips-a-tricks-updates")
     --require("structures.Milestones.preset_addons")
     --require("structures.Milestones.presets")
