@@ -115,12 +115,14 @@ util.ingredient_prereq(Recipe["bob-heavy-spidertron"],
 {
     {
         dependencies = {"bobwarfare"},
+        seetting = "bobmods-warfare-spidertron-overhaul",
         replacements = {
             ["par-fission-reactor-mk1"] = {"bob-mech-brain", 5},
         }
     },
     {
         dependencies = {"bobwarfare", "bobrevamp", "bobplates",},
+        seetting = "bobmods-warfare-spidertron-overhaul",
         replacements = {
             ["bob-mech-brain"] = {"bob-rtg", 10},
             ["par-fission-reactor-mk1"] = {"bob-rtg", 10},
@@ -128,6 +130,7 @@ util.ingredient_prereq(Recipe["bob-heavy-spidertron"],
     },
     {
         dependencies = {"bobrevamp", "bobplates", "bobwarfare",},
+        seetting = "bobmods-warfare-spidertron-overhaul",
         replacements = {
             ["bob-mech-brain"] = {"bob-rtg", 10},
             ["par-fission-reactor-mk1"] = {"bob-rtg", 10},
