@@ -9,6 +9,6 @@ function Remove(recipe_name, ingredient_name)
     end
 end
 
-if mods["boblogistics"] then
+if mods["boblogistics"]and mods["bobplates"] then
     Remove("par-roboport-mk9", "bob-tinned-copper-cable")
 end
