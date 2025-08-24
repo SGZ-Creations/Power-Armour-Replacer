@@ -1,7 +1,8 @@
 local util = {}
+--https://github.com/modded-factorio/bobsmods/blob/main/boblibrary/recipe-functions.lua
+--https://github.com/modded-factorio/bobsmods/blob/main/bobelectronics/data-updates.lua
 
 --Recipe Compatibility Generator
-
 util.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients  --original list to be replaced
     local remove = {} -- local table to trim ingredients after the replacements (to maintain order)
