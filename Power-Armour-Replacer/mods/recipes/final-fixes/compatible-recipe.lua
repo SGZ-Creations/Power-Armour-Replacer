@@ -120,7 +120,7 @@ util.ingredient_prereq(Recipe["bob-heavy-spidertron"],
         }
     },
     {
-        dependencies = {"bobrevamp", "bobplates",},
+        dependencies = {"bobwarfare", "bobrevamp", "bobplates",},
         replacements = {
             ["bob-mech-brain"] = {"bob-rtg", 10},
             ["par-fission-reactor-mk1"] = {"bob-rtg", 10},
