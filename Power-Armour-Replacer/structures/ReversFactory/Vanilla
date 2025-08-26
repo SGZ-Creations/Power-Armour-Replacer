@@ -1,0 +1,5 @@
+if mods["reverse-factory"] then
+	if (rf) and (rf.norecycle_items) then
+		table.insert(rf.norecycle_items, "modular-armor")
+	end
+end
