@@ -44,6 +44,9 @@ Date: 06.09.2025
     - Fixed many spelling errors across the Changelog.
     - Recipe issues from 1.1 (mod version 0.2.xx)
     - Added Nanobots Refined to the compatibility. Made the old ones incompatible.
+    - Wrong mod required regards to resistances 
+  Credits:
+    - Thanks @MetroidManiax Noticing wrong bobs mod listed.
   Info:
     - Note that this version are not fully finished & beta versions are available at my discord server.
     - Your are welcome to try it and give feedback on what's there. I don't want reports about uncompleted Features. (Example: the settings are missing)

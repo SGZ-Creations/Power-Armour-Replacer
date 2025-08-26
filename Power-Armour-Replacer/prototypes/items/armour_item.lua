@@ -127,7 +127,7 @@ for tier, equipment in pairs(power_armour) do
         equipment_armor.durability = equipment.durability
     end
 
-    if mods["bobwarfare"] then
+    if mods["bobenemies"] then
         table.insert(equipment_armor.resistances, {
             type = "bob-plasma",
             decrease = resistances.plasma_decrease[tier],
