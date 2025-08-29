@@ -26,7 +26,7 @@ if mods["space-age"] then
 			energy_required = 10,
 			enabled = false,
 			ingredients = {
-				{type="item", name="quantom-processor", amount=2},
+				{type="item", name="quantum-processor", amount=2},
 				{type="item", name="tungsten-plate", amount=8},
 				{type="item", name="superconductor", amount=8},
 				{type="item", name="carbon-fiber", amount=8},
