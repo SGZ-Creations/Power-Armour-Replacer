@@ -35,6 +35,7 @@ Date: 06.09.2025
     - Rampant's Mech Suit resistances changed, Made combat Mech Suit craft abele with PAR.
     - Nanobots refined: 1 equipment at: Par Armour 1, last 4 at Night Immunity 1. 
     - Added ParSpaceAge Extension disabled Function to code point not needed when mod addon is active.
+    - NVG's Darkness Systems Now require more than 75% on MK1 & 35% for MK2.
   Bugfixes:
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
