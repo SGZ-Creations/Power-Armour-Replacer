@@ -113,9 +113,9 @@ if mods["quality"] then
             "combat-mech-armor-rampant-arsenal",
         })
     end
-    if (mods[""] or mods["space-age"]) then
+    if (mods["mech-armor"] or mods["space-age"]) then
         PAR.update_rec_recipe_results({
-            "combat-mech-armor-rampant-arsenal",
+            "mech-armor",
         })
     end
 end
