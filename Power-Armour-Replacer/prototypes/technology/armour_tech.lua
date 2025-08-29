@@ -4,14 +4,14 @@ data:extend({
 	local tech = simpletech {
 		{icon = "__base__/graphics/technology/power-armor.png", icon_size = 256,}, --1
 		{icon = "__base__/graphics/technology/power-armor-mk2.png", icon_size = 256,}, --2
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3", icon_size = 256,}, --3
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4", icon_size = 256,}, --4
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --5
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --6
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --7
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --8
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --9
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5", icon_size = 256,}, --10
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-3", icon_size = 256,}, --3
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-4", icon_size = 256,}, --4
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --5
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --6
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --7
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --8
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --9
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --10
 	}
 	local technology = { ]]
 	{
@@ -54,7 +54,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-3",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-3.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-3.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -76,7 +76,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-4",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-4.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-4.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -100,7 +100,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-5",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -129,7 +129,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-6",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-6_1.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-6_0.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -156,7 +156,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-7",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -186,7 +186,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-8",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -215,7 +215,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-9",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -241,7 +241,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-10",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
 		effects = {
 			{
 				type = "unlock-recipe",
