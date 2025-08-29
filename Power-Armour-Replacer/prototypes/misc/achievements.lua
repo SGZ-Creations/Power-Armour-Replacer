@@ -19,7 +19,7 @@ data:extend({
         item_product = "par-armour-mk5",
         amount = 10,
         steam_stats_name = "armor-production-overall",
-        icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+        icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
         icon_size = 256,
         limited_to_one_game = true,
     },
@@ -30,11 +30,11 @@ data:extend({
         item_product = "par-armour-mk10",
         amount = 10,
         steam_stats_name = "armor-production-overall",
-        icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+        icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
         icon_size = 256,
         limited_to_one_game = true,
     },
-    --Bateries
+    --Batteries
     {
         type = "produce-achievement",
         name = "mass-equipment-1_1-100-batteries",
@@ -75,7 +75,7 @@ data:extend({
         icons = icon_utils.create_equipment_technology_icon("battery", 256, 10),
         limited_to_one_game = true,
     },
-    --Fusion
+    --Fission
     {
         type = "produce-achievement",
         name = "mass-equipment-1_1-100-fusion",
