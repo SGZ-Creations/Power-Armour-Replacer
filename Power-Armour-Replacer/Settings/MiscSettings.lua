@@ -12,7 +12,7 @@ data:extend({
         type = "bool-setting",
         name = "HideRecipesFromPlayer",
         setting_type = "startup",
-        default_value = true,
+        default_value = false,
         order = "ZAad-9"
     },
 })

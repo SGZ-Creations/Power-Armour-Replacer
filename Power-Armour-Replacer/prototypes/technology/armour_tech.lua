@@ -1,5 +1,9 @@
-data:extend({
+---@class data.TechnologyPrototype
+local Tech = data.raw["technology"]
+---@class LuaSettings 
+local SS = settings.startup
 
+data:extend({
 --[[-@type data.TechnologyPrototype
 	local tech = simpletech {
 		{icon = "__base__/graphics/technology/power-armor.png", icon_size = 256,}, --1
@@ -264,3 +268,7 @@ data:extend({
 		order = "Armour10"
 	},
 })
+
+if SS["OptionalTech6Texture"].value == true then
+	Tech["par-armour-tech-6"].icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-6_1.png"
+end

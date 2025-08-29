@@ -3,7 +3,7 @@ local Hide = data.raw["recipe"]
 ---@class LuaSettings
 local SS = settings.startup
 
-if SS ["HideRecipesFromPlayer"].value == true then
+if SS ["HideRecipesFromPlayer"].value == false then
 	Hide["par-armour-mk6"].hide_from_player_crafting = true
 	Hide["par-armour-mk7"].hide_from_player_crafting = true
 	Hide["par-armour-mk8"].hide_from_player_crafting = true
