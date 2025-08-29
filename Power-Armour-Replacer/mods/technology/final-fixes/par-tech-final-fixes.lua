@@ -1,5 +1,5 @@
-local util = require("mods.util")
-util.technology_dependancy
+local PAR = require("mods.util")
+PAR.technology_dependancy
 {
 	["base"] = {
 		["spidertron"] = {

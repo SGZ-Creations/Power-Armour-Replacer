@@ -1,6 +1,6 @@
-local util = require("mods.util")
+local PAR = require("mods.util")
 local DRR = data.raw.recipe
-util.ingredient_prereq(DRR["par-armour-mk1"], {
+PAR.ingredient_prereq(DRR["par-armour-mk1"], {
 	-- Power Armor MK3
 	{
 		dependencies = {"Power Armor MK3"},
@@ -88,7 +88,7 @@ util.ingredient_prereq(DRR["par-armour-mk1"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-armour-mk2"], {
+PAR.ingredient_prereq(DRR["par-armour-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -173,7 +173,7 @@ util.ingredient_prereq(DRR["par-armour-mk2"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-armour-mk3"], {
+PAR.ingredient_prereq(DRR["par-armour-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -277,7 +277,7 @@ util.ingredient_prereq(DRR["par-armour-mk3"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-armour-mk4"], {
+PAR.ingredient_prereq(DRR["par-armour-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -344,7 +344,7 @@ util.ingredient_prereq(DRR["par-armour-mk4"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-armour-mk5"], {
+PAR.ingredient_prereq(DRR["par-armour-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -393,7 +393,7 @@ util.ingredient_prereq(DRR["par-armour-mk5"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-armour-mk6"], {
+PAR.ingredient_prereq(DRR["par-armour-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -438,7 +438,7 @@ util.ingredient_prereq(DRR["par-armour-mk6"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-armour-mk7"], {
+PAR.ingredient_prereq(DRR["par-armour-mk7"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -495,7 +495,7 @@ util.ingredient_prereq(DRR["par-armour-mk7"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-armour-mk8"], {
+PAR.ingredient_prereq(DRR["par-armour-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -530,7 +530,7 @@ util.ingredient_prereq(DRR["par-armour-mk8"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-armour-mk9"], {
+PAR.ingredient_prereq(DRR["par-armour-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -588,7 +588,7 @@ util.ingredient_prereq(DRR["par-armour-mk9"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-armour-mk10"], {
+PAR.ingredient_prereq(DRR["par-armour-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {

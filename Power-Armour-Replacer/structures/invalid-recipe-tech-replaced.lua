@@ -162,10 +162,11 @@ local function replace_ingredients(ingredients)
 end
 
 for _, recipe in pairs(data.raw.recipe) do
-    if recipe then
+    if recipe and recipe.category=="recycling" then
+        --skip
+    else
         replace_ingredients(recipe.ingredients)
     end
-    replace_ingredients(recipe.ingredients)
 end
 
 -- Replaces Chest content

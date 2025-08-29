@@ -1,4 +1,4 @@
-local util = require("mods.util")
+local PAR = require("mods.util")
 ---@Class RecipePrototype
 local Recipe = data.raw.recipe
 
@@ -10,7 +10,7 @@ function Remove(recipe_name, ingredient_name)
     end
 end
 
-util.ingredient_prereq(Recipe["par-roboport-mk1"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk1"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -79,7 +79,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk1"], {
         }
     },
 })
-util.ingredient_prereq(Recipe["par-roboport-mk2"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk2"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -120,7 +120,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk2"], {
         }
     },
 })
-util.ingredient_prereq(Recipe["par-roboport-mk3"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk3"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -157,7 +157,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk3"], {
         }
     },
 })
-util.ingredient_prereq(Recipe["par-roboport-mk4"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk4"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -197,7 +197,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk4"], {
         }
     },
 })
-util.ingredient_prereq(Recipe["par-roboport-mk5"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk5"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -232,7 +232,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk5"], {
     },
 })
 
-util.ingredient_prereq(Recipe["par-roboport-mk6"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk6"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -267,7 +267,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk6"], {
     },
 })
 
-util.ingredient_prereq(Recipe["par-roboport-mk7"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk7"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -290,7 +290,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk7"], {
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["iron-stick"] = {"solder-alloy", 100},--1
+            ["iron-stick"] = {"bob-solder-alloy", 100},--1
             {"bob-gilded-copper-cable", 350},--0
         }
     },
@@ -302,7 +302,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk7"], {
             ["bob-titanium-plate"] = {"bob-roboport-chargepad-3", 5}, --3
             ["insualted-cable"] = {"bob-roboport-chargepad-3", 5}, --3
             ["iron-stick"] = {"bob-roboport-door-3", 5}, --1
-            ["solder-alloy"] = {"bob-roboport-door-3", 5}, --1
+            ["bob-solder-alloy"] = {"bob-roboport-door-3", 5}, --1
             ["low-density-structure"] = {"zero"}, --0
             ["bob-gilded-copper-cable"] = {"zero"},--0
         }
@@ -314,7 +314,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk7"], {
         }
     },
 })
-util.ingredient_prereq(Recipe["par-roboport-mk8"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk8"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -362,7 +362,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk8"], {
         }
     },
 })
-util.ingredient_prereq(Recipe["par-roboport-mk9"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk9"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),
@@ -412,7 +412,7 @@ util.ingredient_prereq(Recipe["par-roboport-mk9"], {
         }
     },
 })
-util.ingredient_prereq(Recipe["par-roboport-mk10"], {
+PAR.ingredient_prereq(Recipe["par-roboport-mk10"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
     --2(roboport-antenna),

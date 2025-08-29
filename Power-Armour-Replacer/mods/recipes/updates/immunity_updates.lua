@@ -1,7 +1,7 @@
-local util = require("mods.util")
+local PAR = require("mods.util")
 local DRR = data.raw.recipe
 --Compatibility section
-util.ingredient_prereq(DRR["par-belt-immunity-mk1"], {
+PAR.ingredient_prereq(DRR["par-belt-immunity-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -53,7 +53,7 @@ util.ingredient_prereq(DRR["par-belt-immunity-mk1"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
+PAR.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

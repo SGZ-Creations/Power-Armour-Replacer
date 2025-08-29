@@ -1,6 +1,6 @@
-local util = require("mods.util")
+local PAR = require("mods.util")
 local DRR = data.raw.recipe
-util.ingredient_prereq(DRR["par-nightvision-mk1"], {
+PAR.ingredient_prereq(DRR["par-nightvision-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -51,7 +51,7 @@ util.ingredient_prereq(DRR["par-nightvision-mk1"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-nightvision-mk2"], {
+PAR.ingredient_prereq(DRR["par-nightvision-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

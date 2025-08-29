@@ -1,6 +1,6 @@
-local util = require("mods.util")
+local PAR = require("mods.util")
 local DRR = data.raw.recipe
-util.ingredient_prereq(DRR["par-battery-mk1"], {
+PAR.ingredient_prereq(DRR["par-battery-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -37,7 +37,7 @@ util.ingredient_prereq(DRR["par-battery-mk1"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk2"], {
+PAR.ingredient_prereq(DRR["par-battery-mk2"], {
     {
         dependencies = {"bobelectronics", },
         replacements = {
@@ -66,7 +66,7 @@ util.ingredient_prereq(DRR["par-battery-mk2"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk3"], {
+PAR.ingredient_prereq(DRR["par-battery-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -108,7 +108,7 @@ util.ingredient_prereq(DRR["par-battery-mk3"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk4"], {
+PAR.ingredient_prereq(DRR["par-battery-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -150,7 +150,7 @@ util.ingredient_prereq(DRR["par-battery-mk4"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk5"], {
+PAR.ingredient_prereq(DRR["par-battery-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -185,7 +185,7 @@ util.ingredient_prereq(DRR["par-battery-mk5"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk6"], {
+PAR.ingredient_prereq(DRR["par-battery-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -228,7 +228,7 @@ util.ingredient_prereq(DRR["par-battery-mk6"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk7"], {
+PAR.ingredient_prereq(DRR["par-battery-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -281,7 +281,7 @@ util.ingredient_prereq(DRR["par-battery-mk7"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk8"], {
+PAR.ingredient_prereq(DRR["par-battery-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -316,7 +316,7 @@ util.ingredient_prereq(DRR["par-battery-mk8"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk9"], {
+PAR.ingredient_prereq(DRR["par-battery-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -339,7 +339,7 @@ util.ingredient_prereq(DRR["par-battery-mk9"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-battery-mk10"], {
+PAR.ingredient_prereq(DRR["par-battery-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {

@@ -1,6 +1,6 @@
-local util = require("mods.util")
+local PAR = require("mods.util")
 local DRR = data.raw.recipe
-util.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -29,7 +29,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -75,7 +75,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -128,7 +128,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk4"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -160,7 +160,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk4"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk5"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -194,7 +194,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk5"], {
     },
 })
 
-util.ingredient_prereq(DRR["par-fission-reactor-mk6"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -222,7 +222,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk6"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -268,7 +268,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -306,7 +306,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -358,7 +358,7 @@ util.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
         }
     },
 })
-util.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
+PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
     --248K
     {
         dependencies = {"248k"},
