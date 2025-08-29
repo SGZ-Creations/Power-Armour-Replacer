@@ -4,11 +4,11 @@ local icon_utils = require("structures.icon-utils")
 local SS = settings.startup
 
 local exoskeletons = {
-    { energy_consumption = "10.0GW", weightvalue = 25000, speed_bonus = 1.0, order = "ia[exoskeleton]-aa[armour-replacer]" },
-    { energy_consumption = "20.0GW", weightvalue = 50000, speed_bonus = 2.0, order = "ib[exoskeleton]-ab[armour-replacer]" },
-    { energy_consumption = "30.0GW", weightvalue = 75000, speed_bonus = 3.0, order = "ic[exoskeleton]-ac[armour-replacer]" },
-    { energy_consumption = "40.0GW", weightvalue = 100000, speed_bonus = 4.0, order = "id[exoskeleton]-ad[armour-replacer]" },
-    { energy_consumption = "50.0GW", weightvalue = 125000, speed_bonus = 5.0, order = "ie[exoskeleton]-ae[armour-replacer]" },
+    { energy_consumption = "10.0GW", weightvalue = SS["ExoskeletonWeight_01"].value, speed_bonus = 1.0, order = "ia[exoskeleton]-aa[armour-replacer]" },
+    { energy_consumption = "20.0GW", weightvalue = SS["ExoskeletonWeight_02"].value, speed_bonus = 2.0, order = "ib[exoskeleton]-ab[armour-replacer]" },
+    { energy_consumption = "30.0GW", weightvalue = SS["ExoskeletonWeight_03"].value, speed_bonus = 3.0, order = "ic[exoskeleton]-ac[armour-replacer]" },
+    { energy_consumption = "40.0GW", weightvalue = SS["ExoskeletonWeight_04"].value, speed_bonus = 4.0, order = "id[exoskeleton]-ad[armour-replacer]" },
+    { energy_consumption = "50.0GW", weightvalue = SS["ExoskeletonWeight_05"].value, speed_bonus = 5.0, order = "ie[exoskeleton]-ae[armour-replacer]" },
 }
 
 for tier, exoskeleton in pairs(exoskeletons) do
