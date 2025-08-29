@@ -129,7 +129,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-6",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/power-armour-6_1.png",
 		effects = {
 			{
 				type = "unlock-recipe",
