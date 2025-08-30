@@ -69,11 +69,10 @@ if mods["nanobots-refined"] then
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-trees"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-items"})
-    table.insert(Tech["par-armour-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
 end
 
 
 if mods["Krastorio2"] then
-    local tech_eff = DRT["par-roboport-tech-6"].effects
-    table.insert(tech_eff,{type="unlock-recipe",recipe="vehicle-roboport"})
+	table.insert(Tech["par-roboport-tech-6"].effects,{type="unlock-recipe",recipe="vehicle-roboport"})
 end
