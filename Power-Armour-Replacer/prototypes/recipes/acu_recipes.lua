@@ -9,7 +9,7 @@ data:extend({
 			{type="item", name="advanced-circuit", amount=4},
 			{type="item", name="plastic-bar", amount=2},
 			{type="item", name="iron-plate", amount=2},
-			{type="item", name="copper-wire", amount=5},
+			{type="item", name="copper-cable", amount=5},
 			{type="item", name="battery", amount=2},
 		},
 		results = {{type="item", name="armour-control-unit", amount=4}}
