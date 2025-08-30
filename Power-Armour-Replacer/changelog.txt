@@ -25,7 +25,7 @@ Date: 06.09.2025
     - Better subgroup system.
     - Newer updated https://mods.factorio.com/mod/RampantArsenalFork
     - Better Fixed https://mods.factorio.com/mod/nanobots-refined
-    - Added 1 new tech image for Par Armour 6 
+    - Added 1 new tech image for Par Armour 6 more is coming.
   Changes:
     - Requires CAS Version 1.5.12.
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
@@ -34,10 +34,11 @@ Date: 06.09.2025
     - Achievement text make more sense.
     - Start of base game towards PAR will now have crafting triggers over science research.
     - PA&R's Tips Info changed please read again for the new message.
-    - Rampant's Mech Suit resistances changed, Made combat Mech Suit craft abele with PAR.
+    - Rampant's Mech Suit resistances changed, Made combat Mech Suit craft able with PAR.
     - Nanobots refined: 1 equipment at: Par Armour 1, last 4 at Night Immunity 1. 
     - Added ParSpaceAge Extension disabled Function to code point not needed when mod addon is active.
     - NVG's Darkness Systems Now require more than 75% on MK1 & 35% for MK2.
+    - Moved Metal & stars mech suit to PAR's tab if enabled.
   Bugfixes:
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
