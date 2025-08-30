@@ -38,7 +38,6 @@ if mods["nanobots-refined"] then
 	Item["equipment-bot-chip-nanointerface"].order = "HE"
 end
 
-
 if mods["RampantArsenalFork"] then
 	Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAR_compatibility"
 	Armour["combat-mech-armor-rampant-arsenal"].order = "AF"
@@ -57,4 +56,9 @@ end
 if mods["TeleportationEquipment"]then
 	Item["teleportation-equipment"].subgroup = "PAR_compatibility"
 	Item["teleportation-equipment"].order = "FD"
+end
+
+if mods["metal-and-stars"]then
+	Armour["prototype-mech-armor"].subgroup = "PAR_compatibility"
+	Armour["prototype-mech-armor"].order = "AG"
 end
