@@ -27,7 +27,7 @@ Date: 06.09.2025
     - Better Fixed https://mods.factorio.com/mod/nanobots-refined
     - Added 1 new tech image for Par Armour 6 more is coming.
   Changes:
-    - Requires CAS Version 1.5.12.
+    - Requires CAS Version 1.5.12. Due to texture file name changes.
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
     - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exoskeleton.
     - [space-age] Recipes are now using new crafting category from MK1-5 and 6-10 requires assembly 2 or electromagnetic-plant.
@@ -48,7 +48,7 @@ Date: 06.09.2025
     - Fixed many spelling errors across the Changelog.
     - Recipe issues from 1.1 (mod version 0.2.xx)
     - Added Nanobots Refined to the compatibility. Made the old ones incompatible.
-    - Wrong mod required regards to resistances 
+    - Wrong mod required regards to resistances.
   Credits:
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
     - Thanks @Pez for helping solving Recycling across my mod.
