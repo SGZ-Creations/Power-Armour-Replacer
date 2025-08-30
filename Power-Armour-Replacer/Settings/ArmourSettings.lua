@@ -83,7 +83,7 @@ data:extend({
     ----ArmourDurability------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
         type = "string-setting",
-        name = "StringDurability",
+        name = "Durability",
         setting_type = "startup",
         default_value = "ArmourdurabilityOFF",
         allowed_values = {"ArmourdurabilityOFF", "ArmourDurabilityAll", "ArmourDurabilitySolo"},

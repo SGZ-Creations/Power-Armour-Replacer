@@ -15,6 +15,13 @@ data:extend({
         default_value = false,
         order = "ZAad-9"
     },
+    {
+        type = "bool-setting",
+        name = "OptionalTech6Texture",
+        setting_type = "startup",
+        default_value = false,
+        order = "ZAae-9"
+    },
 })
 if mods["PARs-SpaceAge-Extension"] then
     if (mods["space-age"] or mods["mech-armor"]) then

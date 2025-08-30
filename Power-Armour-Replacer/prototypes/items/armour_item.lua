@@ -119,11 +119,11 @@ for tier, equipment in pairs(power_armour) do
         close_sound = { filename = "__base__/sound/armor-close.ogg", volume = 1 }
     }
 
-    if SS["StringDurability"].value == "ArmourdurabilityOFF" then
+    if SS["Durability"].value == "ArmourdurabilityOFF" then
         equipment_armor.infinite = true
-    elseif SS["StringDurability"].value == "ArmourDurabilityAll" then
+    elseif SS["Durability"].value == "ArmourDurabilityAll" then
         equipment_armor.durability = SS["SingleArmourDurabilitySetting"].value
-    elseif  SS["StringDurability"].value == "ArmourDurabilitySolo" then
+    elseif  SS["Durability"].value == "ArmourDurabilitySolo" then
         equipment_armor.durability = equipment.durability
     end
 
