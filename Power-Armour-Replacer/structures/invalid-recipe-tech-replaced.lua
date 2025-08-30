@@ -57,6 +57,8 @@ local replace = {
     ["bob-energy-shield-equipment-4"] = "par-shield-tech-4",
     ["bob-energy-shield-equipment-5"] = "par-shield-tech-5",
     ["bob-energy-shield-equipment-6"] = "par-shield-tech-6",
+    ["rampant-arsenal-technology-power-armor-mk3"] = "par-armour-tech-7",
+    --["rampant-arsenal-technology-generator-equipment-3"] = "par-armour-tech-2", disabled by mod. 
 }
 local function replace_exists(replace_v, prerequisites)
     for _, prereq in pairs(prerequisites) do
