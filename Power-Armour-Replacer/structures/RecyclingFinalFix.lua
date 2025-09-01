@@ -75,16 +75,16 @@ if mods["quality"] then
         "par-shield-mk10",
 
         --solar
-        "par-solar-mk1",
-        "par-solar-mk2",
-        "par-solar-mk3",
-        "par-solar-mk4",
-        "par-solar-mk5",
-        "par-solar-mk6",
-        "par-solar-mk7",
-        "par-solar-mk8",
-        "par-solar-mk9",
-        "par-solar-mk10",
+        "par-solar-panel-mk1",
+        "par-solar-panel-mk2",
+        "par-solar-panel-mk3",
+        "par-solar-panel-mk4",
+        "par-solar-panel-mk5",
+        "par-solar-panel-mk6",
+        "par-solar-panel-mk7",
+        "par-solar-panel-mk8",
+        "par-solar-panel-mk9",
+        "par-solar-panel-mk10",
 
         --Exoskeleton 
         "par-exoskeleton-mk1",
@@ -94,12 +94,12 @@ if mods["quality"] then
         "par-exoskeleton-mk5",
 
         --immunity
-        "par--mk1",
-        "par--mk2",
+        "par-belt-immunity-mk1",
+        "par-belt-immunity-mk2",
 
         --NVG's
-        "par--mk1",
-        "par--mk2",
+        "par-nightvision-mk1",
+        "par-nightvision-mk2",
     })
     if mods["Power Armor MK3"] then
         PAR.update_rec_recipe_results({
