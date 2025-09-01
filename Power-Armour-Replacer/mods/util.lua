@@ -191,7 +191,7 @@ if mods["quality"] then
                     log("Recycling recipe " .. target_recipe_name .. " not found")
                 end
             else
-            log("error with finding recipe for ".. recipe_name)
+                log("error with finding recipe for ".. recipe_name)
             end
         end
     end
