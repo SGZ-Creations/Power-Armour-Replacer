@@ -4,7 +4,7 @@ local SS = settings.startup
 
 local Immunities = {
     {buffer_capacity ="1TJ", weightvalue = 550, input_flow_limit = "150GW", energy_consumption = "125GW", order = "jaa[belt-immunity]-aa[armour-replacer]"},
-    {buffer_capacity ="1kJ", weightvalue = 1100, input_flow_limit =   "1kW", energy_consumption =    "1W", order = "jbb[belt-immunity]-ab[armour-replacer]"},
+    {buffer_capacity ="1kJ", weightvalue = 1100, input_flow_limit = "1kW", energy_consumption = "1W", order = "jbb[belt-immunity]-ab[armour-replacer]"},
 }
 
 for tier, immunity in pairs(Immunities) do

@@ -4,11 +4,11 @@ local icon_utils = require("structures.icon-utils")
 local SS = settings.startup
 
 local exoskeletons = {
-    { energy_consumption = "10.0GW", weightvalue = SS["ExoskeletonWeight_01"].value, speed_bonus = 1.0, order = "ia[exoskeleton]-aa[armour-replacer]" },
-    { energy_consumption = "20.0GW", weightvalue = SS["ExoskeletonWeight_02"].value, speed_bonus = 2.0, order = "ib[exoskeleton]-ab[armour-replacer]" },
-    { energy_consumption = "30.0GW", weightvalue = SS["ExoskeletonWeight_03"].value, speed_bonus = 3.0, order = "ic[exoskeleton]-ac[armour-replacer]" },
-    { energy_consumption = "40.0GW", weightvalue = SS["ExoskeletonWeight_04"].value, speed_bonus = 4.0, order = "id[exoskeleton]-ad[armour-replacer]" },
-    { energy_consumption = "50.0GW", weightvalue = SS["ExoskeletonWeight_05"].value, speed_bonus = 5.0, order = "ie[exoskeleton]-ae[armour-replacer]" },
+    { energy_consumption = tostring(SS["ExoskeletonEnergyConsumption_01"].value) .. "GW", weightvalue = SS["ExoskeletonWeight_01"].value, speed_bonus = SS["ExoskeletonSpeed_01"].value, order = "ia[exoskeleton]-aa[armour-replacer]" },
+    { energy_consumption = tostring(SS["ExoskeletonEnergyConsumption_02"].value) .. "GW", weightvalue = SS["ExoskeletonWeight_02"].value, speed_bonus = SS["ExoskeletonSpeed_02"].value, order = "ib[exoskeleton]-ab[armour-replacer]" },
+    { energy_consumption = tostring(SS["ExoskeletonEnergyConsumption_03"].value) .. "GW", weightvalue = SS["ExoskeletonWeight_03"].value, speed_bonus = SS["ExoskeletonSpeed_03"].value, order = "ic[exoskeleton]-ac[armour-replacer]" },
+    { energy_consumption = tostring(SS["ExoskeletonEnergyConsumption_04"].value) .. "GW", weightvalue = SS["ExoskeletonWeight_04"].value, speed_bonus = SS["ExoskeletonSpeed_04"].value, order = "id[exoskeleton]-ad[armour-replacer]" },
+    { energy_consumption = tostring(SS["ExoskeletonEnergyConsumption_05"].value) .. "GW", weightvalue = SS["ExoskeletonWeight_05"].value, speed_bonus = SS["ExoskeletonSpeed_05"].value, order = "ie[exoskeleton]-ae[armour-replacer]" },
 }
 
 for tier, exoskeleton in pairs(exoskeletons) do
