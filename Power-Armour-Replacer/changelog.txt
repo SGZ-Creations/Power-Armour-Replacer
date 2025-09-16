@@ -25,7 +25,7 @@ Date: 06.09.2025
     - Better subgroup system.
     - Newer updated https://mods.factorio.com/mod/RampantArsenalFork
     - Better Fixed https://mods.factorio.com/mod/nanobots-refined
-    - Added 1 new tech image for Par Armour 6 more is coming.
+    - Added new Armour, Tech & Recipe Icons Textures for Mk6-7. More is coming.
   Changes:
     - Requires CAS Version 1.5.12. Due to texture file name changes.
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
@@ -35,7 +35,7 @@ Date: 06.09.2025
     - Start of base game towards PAR will now have crafting triggers over science research.
     - PA&R's Tips Info changed please read again for the new message.
     - Rampant's Mech Suit resistances changed, Made combat Mech Suit craft able with PAR.
-    - Nanobots refined: 1 equipment at: Par Armour 1, last 4 at Night Immunity 1. 
+    - Nanobots refined: 5 at Night Immunity 1. 
     - Added ParSpaceAge Extension disabled Function to code point not needed when mod addon is active.
     - NVG's Darkness Systems Now require more than 75% on MK1 & 35% for MK2.
     - Moved Metal & stars mech suit to PAR's tab if enabled.
@@ -43,6 +43,7 @@ Date: 06.09.2025
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
     - Bobs tech name crash.
+    - Broken recycling is finally fixed.
     - Tech with creatable unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.
     - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
     - Fixed many spelling errors across the Changelog.
@@ -52,7 +53,7 @@ Date: 06.09.2025
   Credits:
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
     - Thanks @Pez for helping solving Recycling across my mod.
-    - Thanks @DarkMamaba For providing me with Armour Tech Mk6 Image.
+    - Thanks @DarkMamaba For providing me with new Armour Tech & Recipe Icon Textures for Mk6-7.
   Info:
     - Note that this version are not fully finished & beta versions are available at my discord server.
     - Your are welcome to try it and give feedback on what's there. I don't want reports about uncompleted Features. (Example: the settings are missing)

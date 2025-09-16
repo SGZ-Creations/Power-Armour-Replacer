@@ -160,7 +160,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-7",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -190,7 +190,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-8",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -219,7 +219,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-9",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7.png",
 		effects = {
 			{
 				type = "unlock-recipe",
@@ -245,7 +245,7 @@ data:extend({
 		type = "technology",
 		name = "par-armour-tech-10",
 		icon_size = 256,
-		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5.png",
+		icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7.png",
 		effects = {
 			{
 				type = "unlock-recipe",
