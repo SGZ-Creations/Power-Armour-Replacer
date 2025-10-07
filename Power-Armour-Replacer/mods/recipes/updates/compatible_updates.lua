@@ -4,7 +4,7 @@ local Recipe = data.raw.recipe
 if mods["Power Armor MK3"] then
     Recipe["pamk3-lvest"].ingredients = {
         {type="item", name="light-armor", amount= 1},
-        {type="item", name="copper-plate", amount= 2},
+        {type="item", name="copper-plate", amount= 5},
     }
     Recipe["heavy-armor"].ingredients = {
         {type="item", name="pamk3-lvest", amount= 1},
