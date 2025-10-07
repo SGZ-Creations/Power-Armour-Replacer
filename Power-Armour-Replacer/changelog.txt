@@ -50,6 +50,7 @@ Date: 06.09.2025
     - Recipe issues from 1.1 (mod version 0.2.xx)
     - Added Nanobots Refined to the compatibility. Made the old ones incompatible.
     - Wrong mod required regards to resistances.
+    - Reverse factory by having the mods as dependency by mistake.
   Credits:
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
     - Thanks @Pez for helping solving Recycling across my mod.

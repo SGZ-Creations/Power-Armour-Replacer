@@ -8,7 +8,6 @@
 	require("mods.recipes.final-fixes.roboports_finalfix")
 
 --compatible.tech load order dependant
-	--require("structures.ReversFactory.ReversFixes")
     require("structures.RecyclingFinalFix")
 	require("mods.technology.final-fixes.par-depedency-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")
