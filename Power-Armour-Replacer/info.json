@@ -12,7 +12,6 @@
 		"? PARs-SpaceAge-Extension >= 0.0.1",
 		"? Alt_Chemical_Processing >= 0.1.20",
 		"? space-age",
-		"? reverse-factory >= 9.0.20",
 		"(?) angelssmelting >= 0.6.21",
 		"? bobplates >= 2.0",
 		"? bobpower >= 2.0",
