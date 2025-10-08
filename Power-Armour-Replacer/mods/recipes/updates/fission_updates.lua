@@ -323,7 +323,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 450},
-            ["petroleum-gas"] = {"ammonia", 200},
+            ["petroleum-gas"] = {"bob-ammonia", 200},
             ["low-density-structure"] =  {"bob-nitinol-alloy", 100},
             ["nuclear-fuel"] =  {"bob-tungsten-carbide", 100},
             {"bob-invar-alloy", 200},
@@ -345,7 +345,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["ammonia"] = {"gas-monochloramine", 100},
+            ["bob-ammonia"] = {"gas-monochloramine", 100},
             {"uranium-234", 20},
         }
     },

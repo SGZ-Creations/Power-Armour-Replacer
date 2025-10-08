@@ -44,7 +44,7 @@ Date: 06.09.2025
     - Crash with AAI industries.
     - Bobs tech name crash.
     - Broken recycling is finally fixed.
-    - Tech with creatable unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.
+    - Tech with craft-able unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.
     - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
     - Fixed many spelling errors across the Changelog.
     - Recipe issues from 1.1 (mod version 0.2.xx)
