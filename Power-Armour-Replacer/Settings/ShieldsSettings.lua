@@ -13,7 +13,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_02",
         setting_type = "startup",
-        default_value = 2000,
+        default_value = 900,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -22,7 +22,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_03",
         setting_type = "startup",
-        default_value = 3000,
+        default_value = 800,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -31,7 +31,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_04",
         setting_type = "startup",
-        default_value = 4000,
+        default_value = 700,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -40,7 +40,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_05",
         setting_type = "startup",
-        default_value = 5000,
+        default_value = 600,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -49,7 +49,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_06",
         setting_type = "startup",
-        default_value = 6000,
+        default_value = 500,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -58,7 +58,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_07",
         setting_type = "startup",
-        default_value = 7000,
+        default_value = 400,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -67,7 +67,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_08",
         setting_type = "startup",
-        default_value = 8000,
+        default_value = 300,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -76,7 +76,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_09",
         setting_type = "startup",
-        default_value = 9000,
+        default_value = 200,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -85,7 +85,7 @@ data:extend({
         type = "double-setting",
         name = "HitpointRechargeRate_10",
         setting_type = "startup",
-        default_value = 10000,
+        default_value = 100,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-1"
@@ -277,7 +277,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_01",
         setting_type = "startup",
-        default_value = 1000,
+        default_value = 5000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -286,7 +286,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_02",
         setting_type = "startup",
-        default_value = 2000,
+        default_value = 10000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -295,7 +295,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_03",
         setting_type = "startup",
-        default_value = 3000,
+        default_value = 15000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -304,7 +304,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_04",
         setting_type = "startup",
-        default_value = 4000,
+        default_value = 20000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -313,7 +313,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_05",
         setting_type = "startup",
-        default_value = 5000,
+        default_value = 25000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -322,7 +322,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_06",
         setting_type = "startup",
-        default_value = 6000,
+        default_value = 30000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -331,7 +331,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_07",
         setting_type = "startup",
-        default_value = 7000,
+        default_value = 35000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -340,7 +340,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_08",
         setting_type = "startup",
-        default_value = 8000,
+        default_value = 40000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -349,7 +349,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_09",
         setting_type = "startup",
-        default_value = 9000,
+        default_value = 45000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
@@ -358,7 +358,7 @@ data:extend({
         type = "double-setting",
         name = "ShieldHealth_10",
         setting_type = "startup",
-        default_value = 10000,
+        default_value = 50000,
         minimum_value = 0.1,
         maximum_value = 10000000,
         order = "Shield-4"
