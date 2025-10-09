@@ -249,7 +249,7 @@ if mods["space-age"] then
                 {type="item", name="battery", amount=80},
                 {type="item", name="plastic-bar", amount=65},
                 {type="item", name="advanced-circuit", amount=40},
-                {type="fluid", name="lubricant", amount=300},
+                {type="fluid", name="sulfuric-acid", amount=300},
             },
             results = {{type="item", name="par-battery-mk7", amount=1}}
         },
@@ -264,7 +264,7 @@ if mods["space-age"] then
                 {type="item", name="battery", amount=90},
                 {type="item", name="armour-control-unit", amount=65},
                 {type="item", name="processing-unit", amount=50},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="sulfuric-acid", amount=200},
             },
             results = {{type="item", name="par-battery-mk8", amount=1}}
         },
@@ -281,9 +281,12 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=50},
                 {type="item", name="armour-control-unit", amount=95},
                 {type="item", name="low-density-structure", amount=175},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
-            results = {{type="item", name="par-battery-mk9", amount=1}}
+            results = {
+                {type="item", name="par-battery-mk9", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=100},
+            }
         },
         {
             type = "recipe",
@@ -300,8 +303,11 @@ if mods["space-age"] then
                 {type="fluid", name="sulfuric-acid", amount=150},
                 {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-battery-mk10", amount=1}}
+            results = {
+                {type="item", name="par-battery-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
-    }  
+    }
     data:extend(recipes)
 end

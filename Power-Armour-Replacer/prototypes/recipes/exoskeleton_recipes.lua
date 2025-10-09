@@ -139,8 +139,12 @@ if mods["space-age"]then
                 {type="item", name="steel-plate", amount=180},
                 {type="item", name="processing-unit", amount=100},
                 {type="item", name="low-density-structure", amount=120},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
-            results = {{type="item", name="par-exoskeleton-mk4", amount=1}}
+            results = {
+                {type="item", name="par-exoskeleton-mk4", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=100},
+            }
         },
         {
             type = "recipe",
@@ -157,8 +161,12 @@ if mods["space-age"]then
                 {type="item", name="lithium-plate", amount=100},
                 {type="item", name="quantum-processor", amount=20},
                 {type="item", name="supercapacitor", amount=250},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-exoskeleton-mk5", amount=1}}
+            results = {
+                {type="item", name="par-exoskeleton-mk5", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
     }
     data:extend(recipes)

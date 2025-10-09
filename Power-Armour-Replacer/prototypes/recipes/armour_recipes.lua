@@ -293,12 +293,12 @@ if mods["space-age"] then
                 {type="item", name="tungsten-carbide", amount=175},
                 {type="item", name="tungsten-plate", amount=175},
                 {type="item", name="supercapacitor", amount=100},
-                {type="fluid", name="fluoroketone-cold", amount=200},
                 {type="item", name="quantum-processor", amount=10},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
                 {type="item", name="par-armour-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=100},
             },
         },
         {

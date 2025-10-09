@@ -278,11 +278,11 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=95},
                 {type="item", name="low-density-structure", amount=180},
                 {type="fluid", name="lubricant", amount=350},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
                 {type="item", name="par-shield-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=100},
             }
         },
         {

@@ -275,11 +275,11 @@ if mods["space-age"] then
                 {type="item", name="armour-control-unit", amount=175},
                 {type="item", name="low-density-structure", amount=175},
                 {type="fluid", name="lubricant", amount=250},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
                 {type="item", name="par-solar-panel-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=100},
             }
         },
         {

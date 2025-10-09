@@ -65,7 +65,10 @@ if mods["space-age"] then
                 {type="fluid", name="petroleum-gas", amount=250},
                 {type="fluid", name="fluoroketone-cold", amount=150},
             },
-            results = {{type="item", name="par-nightvision-mk2", amount=1}}
+            results = {
+                {type="item", name="par-nightvision-mk2", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=150},
+            }
         },
     }
     data:extend(recipes)

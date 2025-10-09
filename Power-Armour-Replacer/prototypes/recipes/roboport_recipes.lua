@@ -271,8 +271,12 @@ if mods["space-age"]then
                 {type="item", name="low-density-structure", amount=150},
                 {type="item", name="advanced-circuit", amount=160},
                 {type="fluid", name="lubricant", amount=600},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
-            results = {{type="item", name="par-roboport-mk9", amount=1}}
+            results = {
+                {type="item", name="par-roboport-mk9", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=100},
+            }
         },
         {
             type = "recipe",
@@ -285,8 +289,12 @@ if mods["space-age"]then
                 {type="item", name="low-density-structure", amount=195},
                 {type="item", name="armour-control-unit", amount=165},
                 {type="item", name="processing-unit", amount=170},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-roboport-mk10", amount=1}}
+            results = {
+                {type="item", name="par-roboport-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
         },
     }
     data:extend(recipes)

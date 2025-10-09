@@ -295,11 +295,11 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=100},
                 {type="item", name="plastic-bar", amount=300},
                 {type="item", name="sulfur", amount=150},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
                 {type="item", name="par-laser-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=100},
             }
         },
         {

@@ -259,6 +259,7 @@ if mods["space-age"] then
                 {type="item", name="advanced-circuit", amount=100},
                 {type="item", name="processing-unit", amount=100},
                 {type="item", name="low-density-structure", amount=100},
+                {type="fluid", name="petroleum-gas", amount=100},
             },
             results = {{type="item", name="par-fission-reactor-mk8", amount=1}},
         },
@@ -274,9 +275,13 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=150},
                 {type="item", name="armour-control-unit", amount=30},
                 {type="item", name="low-density-structure", amount=250},
-                {type="fluid", name="petroleum-gas", amount=200}
+                {type="fluid", name="petroleum-gas", amount=200},
+                {type="fluid", name="fluoroketone-cold", amount=100},
             },
-            results = {{type="item", name="par-fission-reactor-mk9", amount=1}},
+            results = {
+                {type="item", name="par-fission-reactor-mk9", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=100},
+            },
         },
         {
             type = "recipe",
@@ -290,8 +295,12 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=200},
                 {type="item", name="armour-control-unit", amount=30},
                 {type="item", name="low-density-structure", amount=250},
+                {type="fluid", name="fluoroketone-cold", amount=200},
             },
-            results = {{type="item", name="par-fission-reactor-mk10", amount=1}},
+            results = {
+                {type="item", name="par-fission-reactor-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            },
         },
     }
     data:extend(recipes)
