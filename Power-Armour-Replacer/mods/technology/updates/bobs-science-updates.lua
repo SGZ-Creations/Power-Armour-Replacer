@@ -53,10 +53,10 @@ if mods["bobtech"] then
 					Recipe["bob-carbon-from-wood"].enabled = true
 				end
 
-				if not mods["Alt_Chemical_Processing"] then
+				if not mods["Alt_Chemical_Processing"] and not mods["space-age"] then
 					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bob-carbon", count = 25}
 					Tech["bob-chemical-processing-1"].unit = nil
-				elseif mods["Alt_Chemical_Processing"] then
+				elseif mods["Alt_Chemical_Processing"] and mods["space-age"] then
 					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="carbon", count = 25}
 					Tech["bob-chemical-processing-1"].unit = nil
 				end
