@@ -135,11 +135,12 @@ if mods["space-age"]then
             energy_required = 20,
             ingredients = {
                 {type="item", name="par-exoskeleton-mk3", amount=1},
-                {type="item", name="battery", amount=205},
-                {type="item", name="plastic-bar", amount=190},
-                {type="item", name="steel-plate", amount=180},
-                {type="item", name="processing-unit", amount=100},
-                {type="item", name="low-density-structure", amount=120},
+                {type="item", name="low-density-structure", amount=200},
+                {type="item", name="supercapacitor", amount=100},
+                {type="item", name="plastic-bar", amount=200},
+                {type="item", name="lithium-plate", amount=100},
+                {type="item", name="tungsten-plate", amount=100},
+                {type="item", name="quantum-processor", amount=10},
                 {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
@@ -156,7 +157,6 @@ if mods["space-age"]then
             energy_required = 25,
             ingredients = {
                 {type="item", name="par-exoskeleton-mk4", amount=1},
-                {type="item", name="steel-plate", amount=250},
                 {type="item", name="processing-unit", amount=100},
                 {type="item", name="armour-control-unit", amount=150},
                 {type="item", name="low-density-structure", amount=150},

@@ -29,7 +29,7 @@ Date: 06.09.2025
   Changes:
     - Requires CAS Version 1.5.12. Due to texture file name changes.
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
-    - [space-age] Recipes have been made for: Battery, Fission, Laser, Roboport, Shield, Solar, Exoskeleton.
+    - [space-age] Recipes have been tweaked for: Armour, Battery, Exoskeleton, Fission, Immunity, Laser, NVGs, Roboport, Shield & SolarPanels. 
     - [space-age] Recipes are now using new crafting category from MK1-5 and 6-10 requires assembly 2 or electromagnetic-plant.
     - Achievement text make more sense.
     - Start of base game towards PAR will now have crafting triggers over science research.
@@ -51,7 +51,7 @@ Date: 06.09.2025
     - Recipe issues from 1.1 (mod version 0.2.xx)
     - Added Nanobots Refined to the compatibility. Made the old ones incompatible.
     - Wrong mod required regards to resistances.
-    - Reverse factory: Having the mods as dependency by mistake. Caused some load order miss hap.
+    - Reverse factory: Having the mods as dependency by mistake. Caused some load order mishaps.
   Credits:
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
     - Thanks @Pez for helping solving Recycling across my mod.
