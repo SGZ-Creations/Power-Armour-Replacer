@@ -266,6 +266,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk9",
+            main_product = "par-fission-reactor-mk9",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 80,
@@ -286,6 +287,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk10",
+            main_product = "par-fission-reactor-mk10",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 85,

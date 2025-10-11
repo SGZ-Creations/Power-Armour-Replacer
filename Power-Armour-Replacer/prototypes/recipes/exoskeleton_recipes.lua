@@ -129,6 +129,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-exoskeleton-mk4",
+            main_product = "par-exoskeleton-mk4",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 20,
@@ -149,6 +150,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-exoskeleton-mk5",
+            main_product = "par-exoskeleton-mk5",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 25,

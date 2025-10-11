@@ -53,6 +53,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-nightvision-mk2",
+            main_product = "par-nightvision-mk2",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 20,

@@ -271,6 +271,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk9",
+            main_product = "par-battery-mk9",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 65,
@@ -291,6 +292,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk10",
+            main_product = "par-battery-mk10",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 70,

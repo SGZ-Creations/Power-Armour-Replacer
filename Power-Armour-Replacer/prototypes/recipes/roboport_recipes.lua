@@ -262,6 +262,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk9",
+            main_product = "par-roboport-mk9",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 90,
@@ -281,6 +282,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk10",
+            main_product = "par-roboport-mk10",
             category = "electronics-or-assembling",
             enabled = false,
             energy_required = 100,

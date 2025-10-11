@@ -329,4 +329,3 @@ if mods["space-age"] then
     }
     data:extend(recipes)
 end
-
