@@ -123,7 +123,7 @@ for tier, equipment in pairs(power_armour) do
         equipment_armor.infinite = true
     elseif SS["Durability"].value == "ArmourDurabilityAll" then
         equipment_armor.durability = SS["SingleArmourDurabilitySetting"].value
-    elseif  SS["Durability"].value == "ArmourDurabilitySolo" then
+    elseif SS["Durability"].value == "ArmourDurabilitySolo" then
         equipment_armor.durability = equipment.durability
     end
 

@@ -3,8 +3,8 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 local SS = settings.startup
 
 local Immunities = {
-    {buffer_capacity ="1TJ", weightvalue = 550, input_flow_limit = "150GW", energy_consumption = "125GW", order = "jaa[belt-immunity]-aa[armour-replacer]"},
-    {buffer_capacity ="1kJ", weightvalue = 1100, input_flow_limit = "1kW", energy_consumption = "1W", order = "jbb[belt-immunity]-ab[armour-replacer]"},
+    {buffer_capacity = tostring(SS["ImmunityBuffer_01"].value) .. "TJ", input_flow_limit = tostring(SS["ImmunityInputFlow_01"].value) .. "GW", energy_consumption = tostring(SS["ImmunityConsumption_01"].value) .. "GW", weightvalue = SS["ImmunityWeightValue_01"].value , order = "jaa[belt-immunity]-aa[armour-replacer]"},
+    {buffer_capacity = tostring(SS["ImmunityBuffer_02"].value) .. "kJ", input_flow_limit = tostring(SS["ImmunityInputFlow_02"].value) .. "kW", energy_consumption = tostring(SS["ImmunityConsumption_02"].value) .. "W", weightvalue = SS["ImmunityWeightValue_02"].value , order = "jbb[belt-immunity]-ab[armour-replacer]"},
 }
 
 for tier, immunity in pairs(Immunities) do
@@ -20,7 +20,7 @@ for tier, immunity in pairs(Immunities) do
         drop_sound = item_sounds.mechanical_inventory_move,
         stack_size = 5,
         auto_recycle = false,
-        weight = immunity.weightvalue5500,
+        weight = immunity.weightvalue,
         order = immunity.order,
         subgroup = "PAR_BeltImmunity",
     }

@@ -4,16 +4,16 @@ local icon_utils = require("structures.icon-utils")
 local SS = settings.startup
 
 local reactors = {
-    { power = "10GW", weightvalue = 35000, order = "caz[energy-source]-aa[armour-replacer]"},
-    { power = "20GW", weightvalue = 70000, order = "cbz[energy-source]-aa[armour-replacer]"},
-    { power = "30GW", weightvalue = 105000, order = "ccz[energy-source]-aa[armour-replacer]"},
-    { power = "40GW", weightvalue = 140000, order = "cdz[energy-source]-aa[armour-replacer]"},
-    { power = "50GW", weightvalue = 175000, order = "cez[energy-source]-aa[armour-replacer]"},
-    { power = "60GW", weightvalue = 210000, order = "cfz[energy-source]-aa[armour-replacer]"},
-    { power = "70GW", weightvalue = 245000, order = "cgz[energy-source]-aa[armour-replacer]"},
-    { power = "80GW", weightvalue = 280000, order = "chz[energy-source]-aa[armour-replacer]"},
-    { power = "90GW", weightvalue = 315000, order = "ciz[energy-source]-aa[armour-replacer]"},
-    { power = "100GW", weightvalue = 350000, order = "cjz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_01"].value) .. "GW", weightvalue = SS["FissionWeight_01"].value, order = "caz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_02"].value) .. "GW", weightvalue = SS["FissionWeight_02"].value, order = "cbz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_03"].value) .. "GW", weightvalue = SS["FissionWeight_03"].value, order = "ccz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_04"].value) .. "GW", weightvalue = SS["FissionWeight_04"].value, order = "cdz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_05"].value) .. "GW", weightvalue = SS["FissionWeight_05"].value, order = "cez[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_06"].value) .. "GW", weightvalue = SS["FissionWeight_06"].value, order = "cfz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_07"].value) .. "GW", weightvalue = SS["FissionWeight_07"].value, order = "cgz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_08"].value) .. "GW", weightvalue = SS["FissionWeight_08"].value, order = "chz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_09"].value) .. "GW", weightvalue = SS["FissionWeight_09"].value, order = "ciz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_10"].value) .. "GW", weightvalue = SS["FissionWeight_10"].value, order = "cjz[energy-source]-aa[armour-replacer]"},
 }
 
 for tier, reactor in pairs(reactors) do

@@ -4,8 +4,8 @@ local icon_utils = require("structures.icon-utils")
 local SS = settings.startup
 
 local nightvisions = {
-    {buffer_capacity = "1TJ", input_flow_limit ="150GW", energy_input ="125GW", Darkness = 0.75, weightvalue = 550, order ="jcc[night-vision]-ac[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-frozen.png"}}},
-    {buffer_capacity = "1kJ", input_flow_limit =  "1kW", energy_input =   "1W", Darkness = 0.35, weightvalue = 1100, order ="jdd[night-vision]-ad[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-day.png"}}},
+    {buffer_capacity =tostring(SS["NvgBuffer_01"].value) .. "TJ", input_flow_limit =tostring(SS["NvgInputFlow_01"].value) .. "GW", energy_input =tostring(SS["NvgEnergyInput_01"].value) .. "GW", Darkness = 0.75, weightvalue = SS["NvgWeightvalue_01"].value, order ="jcc[night-vision]-ac[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-frozen.png"}}},
+    {buffer_capacity =tostring(SS["NvgBuffer_02"].value) .. "kJ", input_flow_limit =tostring(SS["NvgInputFlow_02"].value) .. "kW", energy_input =tostring(SS["NvgEnergyInput_02"].value) .. "W", Darkness = 0.35, weightvalue = SS["NvgWeightvalue_02"].value, order ="jdd[night-vision]-ad[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-day.png"}}},
 }
 
 for tier, nightvision in pairs(nightvisions) do
@@ -30,7 +30,7 @@ for tier, nightvision in pairs(nightvisions) do
         type = "night-vision-equipment",
         name = "par-nightvision-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("night-vision", 128, 128, tier),
-        shape ={
+        shape = {
             width = 1,
             height = 1,
             type = "full"
