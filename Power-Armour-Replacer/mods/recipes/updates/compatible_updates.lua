@@ -25,6 +25,13 @@ if mods["RampantArsenalFork"] and mods["space-age"] then
     }
 end
 
+if mods["RampantArsenalFork"] and mods["mech-armor"] then
+    Recipe["combat-mech-armor-rampant-arsenal"].ingredients = {
+        {type="item", name="mech-armor", amount= 1},
+        {type="item", name="par-armour-mk7", amount= 1},
+    }
+end
+
 --Alterenative to fix how armour is added to a recipe.
 --[[
 if not data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1} then
