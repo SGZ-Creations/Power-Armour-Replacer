@@ -248,7 +248,7 @@ data:extend({
         name = "LaserDamage_01",
         setting_type = "startup",
         default_value = 5,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -256,7 +256,7 @@ data:extend({
         name = "LaserDamage_02",
         setting_type = "startup",
         default_value = 10,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -264,7 +264,7 @@ data:extend({
         name = "LaserDamage_03",
         setting_type = "startup",
         default_value = 15,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -272,7 +272,7 @@ data:extend({
         name = "LaserDamage_04",
         setting_type = "startup",
         default_value = 20,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -280,7 +280,7 @@ data:extend({
         name = "LaserDamage_05",
         setting_type = "startup",
         default_value = 25,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -288,7 +288,7 @@ data:extend({
         name = "LaserDamage_06",
         setting_type = "startup",
         default_value = 30,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -296,7 +296,7 @@ data:extend({
         name = "LaserDamage_07",
         setting_type = "startup",
         default_value = 35,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -304,7 +304,7 @@ data:extend({
         name = "LaserDamage_08",
         setting_type = "startup",
         default_value = 40,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -312,7 +312,7 @@ data:extend({
         name = "LaserDamage_09",
         setting_type = "startup",
         default_value = 45,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
     {
@@ -320,7 +320,7 @@ data:extend({
         name = "LaserDamage_10",
         setting_type = "startup",
         default_value = 50,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Laser-4"
     },
 ----LaserRange-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

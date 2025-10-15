@@ -83,7 +83,7 @@ data:extend({
 ----SolarWeightValue----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
         type = "int-setting",
-        name = "SolarWeightValue_01",
+        name = "SolarWeight_01",
         setting_type = "startup",
         default_value = 15000,
         minimum_value = 1,
@@ -91,7 +91,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_02",
+        name = "SolarWeight_02",
         setting_type = "startup",
         default_value = 30000,
         minimum_value = 1,
@@ -99,7 +99,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_03",
+        name = "SolarWeight_03",
         setting_type = "startup",
         default_value = 45000,
         minimum_value = 1,
@@ -107,7 +107,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_04",
+        name = "SolarWeight_04",
         setting_type = "startup",
         default_value = 60000,
         minimum_value = 1,
@@ -115,7 +115,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_05",
+        name = "SolarWeight_05",
         setting_type = "startup",
         default_value = 75000,
         minimum_value = 1,
@@ -123,7 +123,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_06",
+        name = "SolarWeight_06",
         setting_type = "startup",
         default_value = 90000,
         minimum_value = 1,
@@ -131,7 +131,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_07",
+        name = "SolarWeight_07",
         setting_type = "startup",
         default_value = 105000,
         minimum_value = 1,
@@ -139,7 +139,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_08",
+        name = "SolarWeight_08",
         setting_type = "startup",
         default_value = 120000,
         minimum_value = 1,
@@ -147,7 +147,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_09",
+        name = "SolarWeight_09",
         setting_type = "startup",
         default_value = 135000,
         minimum_value = 1,
@@ -155,7 +155,7 @@ data:extend({
     },
     {
         type = "int-setting",
-        name = "SolarWeightValue_10",
+        name = "SolarWeight_10",
         setting_type = "startup",
         default_value = 150000,
         minimum_value = 1,

@@ -167,7 +167,7 @@ data:extend({
         name = "RoboportInputFlow_01",
         setting_type = "startup",
         default_value = 1,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -175,7 +175,7 @@ data:extend({
         name = "RoboportInputFlow_02",
         setting_type = "startup",
         default_value = 2,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -183,7 +183,7 @@ data:extend({
         name = "RoboportInputFlow_03",
         setting_type = "startup",
         default_value = 3,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -191,7 +191,7 @@ data:extend({
         name = "RoboportInputFlow_04",
         setting_type = "startup",
         default_value = 4,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -199,7 +199,7 @@ data:extend({
         name = "RoboportInputFlow_05",
         setting_type = "startup",
         default_value = 5,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -207,7 +207,7 @@ data:extend({
         name = "RoboportInputFlow_06",
         setting_type = "startup",
         default_value = 6,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -215,7 +215,7 @@ data:extend({
         name = "RoboportInputFlow_07",
         setting_type = "startup",
         default_value = 7,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -223,7 +223,7 @@ data:extend({
         name = "RoboportInputFlow_08",
         setting_type = "startup",
         default_value = 8,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -231,7 +231,7 @@ data:extend({
         name = "RoboportInputFlow_09",
         setting_type = "startup",
         default_value = 9,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
     {
@@ -239,7 +239,7 @@ data:extend({
         name = "RoboportInputFlow_10",
         setting_type = "startup",
         default_value = 10,
-        minimum_value = 0,
+        minimum_value = 0.000001,
         order = "Roboport-3"
     },
 ----RoboportConstructionRadius-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -248,7 +248,7 @@ data:extend({
         name = "RoboportConstructionRadius_01",
         setting_type = "startup",
         default_value = 5,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -256,7 +256,7 @@ data:extend({
         name = "RoboportConstructionRadius_02",
         setting_type = "startup",
         default_value = 10,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -264,7 +264,7 @@ data:extend({
         name = "RoboportConstructionRadius_03",
         setting_type = "startup",
         default_value = 15,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -272,7 +272,7 @@ data:extend({
         name = "RoboportConstructionRadius_04",
         setting_type = "startup",
         default_value = 20,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -280,7 +280,7 @@ data:extend({
         name = "RoboportConstructionRadius_05",
         setting_type = "startup",
         default_value = 25,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -288,7 +288,7 @@ data:extend({
         name = "RoboportConstructionRadius_06",
         setting_type = "startup",
         default_value = 30,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -296,7 +296,7 @@ data:extend({
         name = "RoboportConstructionRadius_07",
         setting_type = "startup",
         default_value = 40,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -304,7 +304,7 @@ data:extend({
         name = "RoboportConstructionRadius_08",
         setting_type = "startup",
         default_value = 60,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -312,7 +312,7 @@ data:extend({
         name = "RoboportConstructionRadius_09",
         setting_type = "startup",
         default_value = 80,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
     {
@@ -320,7 +320,7 @@ data:extend({
         name = "RoboportConstructionRadius_10",
         setting_type = "startup",
         default_value = 100,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-4"
     },
 ----RoboportRobotLimit-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -329,7 +329,7 @@ data:extend({
         name = "RoboportRobotLimit_01",
         setting_type = "startup",
         default_value = 10,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -337,7 +337,7 @@ data:extend({
         name = "RoboportRobotLimit_02",
         setting_type = "startup",
         default_value = 12,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -345,7 +345,7 @@ data:extend({
         name = "RoboportRobotLimit_03",
         setting_type = "startup",
         default_value = 14,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -353,7 +353,7 @@ data:extend({
         name = "RoboportRobotLimit_04",
         setting_type = "startup",
         default_value = 16,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -361,7 +361,7 @@ data:extend({
         name = "RoboportRobotLimit_05",
         setting_type = "startup",
         default_value = 18,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -369,7 +369,7 @@ data:extend({
         name = "RoboportRobotLimit_06",
         setting_type = "startup",
         default_value = 20,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -377,7 +377,7 @@ data:extend({
         name = "RoboportRobotLimit_07",
         setting_type = "startup",
         default_value = 24,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -385,7 +385,7 @@ data:extend({
         name = "RoboportRobotLimit_08",
         setting_type = "startup",
         default_value = 26,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -393,7 +393,7 @@ data:extend({
         name = "RoboportRobotLimit_09",
         setting_type = "startup",
         default_value = 28,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
     {
@@ -401,7 +401,7 @@ data:extend({
         name = "RoboportRobotLimit_10",
         setting_type = "startup",
         default_value = 30,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-5"
     },
 ----RoboportBotCharging-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -410,7 +410,7 @@ data:extend({
         name = "RoboportBotCharging_01",
         setting_type = "startup",
         default_value = 10,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -418,7 +418,7 @@ data:extend({
         name = "RoboportBotCharging_02",
         setting_type = "startup",
         default_value = 12,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -426,7 +426,7 @@ data:extend({
         name = "RoboportBotCharging_03",
         setting_type = "startup",
         default_value = 14,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -434,7 +434,7 @@ data:extend({
         name = "RoboportBotCharging_04",
         setting_type = "startup",
         default_value = 16,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -442,7 +442,7 @@ data:extend({
         name = "RoboportBotCharging_05",
         setting_type = "startup",
         default_value = 18,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -450,7 +450,7 @@ data:extend({
         name = "RoboportBotCharging_06",
         setting_type = "startup",
         default_value = 20,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -458,7 +458,7 @@ data:extend({
         name = "RoboportBotCharging_07",
         setting_type = "startup",
         default_value = 24,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -466,7 +466,7 @@ data:extend({
         name = "RoboportBotCharging_08",
         setting_type = "startup",
         default_value = 26,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -474,7 +474,7 @@ data:extend({
         name = "RoboportBotCharging_09",
         setting_type = "startup",
         default_value = 28,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
     {
@@ -482,7 +482,7 @@ data:extend({
         name = "RoboportBotCharging_10",
         setting_type = "startup",
         default_value = 30,
-        minimum_value = 0,
+        minimum_value = 1,
         order = "Roboport-6"
     },
 ----RoboportWeight-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

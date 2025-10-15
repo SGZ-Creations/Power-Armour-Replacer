@@ -4,16 +4,16 @@ local icon_utils = require("structures.icon-utils")
 local SS = settings.startup
 
 local panels = {
-    {powers = tostring(SS["SolarPower_01"].value) .. "GW", weightvalue = SS["SolarWeightValue_01"].value, orders ="ga[energy-source]-aa[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_02"].value) .. "GW", weightvalue = SS["SolarWeightValue_02"].value, orders ="gb[energy-source]-ab[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_03"].value) .. "GW", weightvalue = SS["SolarWeightValue_03"].value, orders ="gc[energy-source]-ac[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_04"].value) .. "GW", weightvalue = SS["SolarWeightValue_04"].value, orders ="gd[energy-source]-ad[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_05"].value) .. "GW", weightvalue = SS["SolarWeightValue_05"].value, orders ="ge[energy-source]-ae[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_06"].value) .. "GW", weightvalue = SS["SolarWeightValue_06"].value, orders ="gf[energy-source]-af[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_07"].value) .. "GW", weightvalue = SS["SolarWeightValue_07"].value, orders ="gg[energy-source]-ag[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_08"].value) .. "GW", weightvalue = SS["SolarWeightValue_08"].value, orders ="gh[energy-source]-ah[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_09"].value) .. "GW", weightvalue = SS["SolarWeightValue_09"].value, orders ="gi[energy-source]-ai[armour-replacer]"},
-    {powers = tostring(SS["SolarPower_10"].value) .. "GW", weightvalue = SS["SolarWeightValue_10"].value, orders ="gj[energy-source]-aj[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_01"].value) .. "GW", weightvalue = SS["SolarWeight_01"].value, orders ="ga[energy-source]-aa[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_02"].value) .. "GW", weightvalue = SS["SolarWeight_02"].value, orders ="gb[energy-source]-ab[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_03"].value) .. "GW", weightvalue = SS["SolarWeight_03"].value, orders ="gc[energy-source]-ac[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_04"].value) .. "GW", weightvalue = SS["SolarWeight_04"].value, orders ="gd[energy-source]-ad[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_05"].value) .. "GW", weightvalue = SS["SolarWeight_05"].value, orders ="ge[energy-source]-ae[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_06"].value) .. "GW", weightvalue = SS["SolarWeight_06"].value, orders ="gf[energy-source]-af[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_07"].value) .. "GW", weightvalue = SS["SolarWeight_07"].value, orders ="gg[energy-source]-ag[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_08"].value) .. "GW", weightvalue = SS["SolarWeight_08"].value, orders ="gh[energy-source]-ah[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_09"].value) .. "GW", weightvalue = SS["SolarWeight_09"].value, orders ="gi[energy-source]-ai[armour-replacer]"},
+    {powers = tostring(SS["SolarPower_10"].value) .. "GW", weightvalue = SS["SolarWeight_10"].value, orders ="gj[energy-source]-aj[armour-replacer]"},
 }
 
 for tier, panel in pairs(panels) do
