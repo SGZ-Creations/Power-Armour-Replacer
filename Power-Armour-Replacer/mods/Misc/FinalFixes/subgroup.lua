@@ -9,11 +9,15 @@ Armour["heavy-armor"].order = "AC"
 Item["discharge-defense-equipment"].subgroup = "PAR_compatibility"
 Item["discharge-defense-equipment"].order = "FA"
 
+
 if mods["space-age"] then
-	Armour["mech-armor"].subgroup = "PAR_compatibility"
-	Armour["mech-armor"].order = "AE"
 	Item["toolbelt-equipment"].subgroup = "PAR_compatibility"
 	Item["toolbelt-equipment"].order = "FC"
+end
+
+if (mods["mech-armor"] or mods["space-age"]) then
+	Armour["mech-armor"].subgroup = "PAR_compatibility"
+	Armour["mech-armor"].order = "AE"
 end
 
 if mods["Power Armor MK3"] then
@@ -37,10 +41,7 @@ if mods["nanobots-refined"] then
 	Item["equipment-bot-chip-nanointerface"].subgroup = "PAR_compatibility"
 	Item["equipment-bot-chip-nanointerface"].order = "HE"
 end
-
 if mods["RampantArsenalFork"] then
-	Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAR_compatibility"
-	Armour["combat-mech-armor-rampant-arsenal"].order = "AF"
 	Item["shotgun-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
 	Item["shotgun-passive-defense-rampant-arsenal"].order = "TA"
 	Item["cannon-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
@@ -51,6 +52,10 @@ if mods["RampantArsenalFork"] then
 	Item["bullets-passive-defense-rampant-arsenal"].order = "TD"
 	Item["slow-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
 	Item["slow-passive-defense-rampant-arsenal"].order = "TE"
+end
+if mods["RampantArsenalFork"] and (mods["space-age"] or mods["mech-armor"]) then
+	Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAR_compatibility"
+	Armour["combat-mech-armor-rampant-arsenal"].order = "AF"
 end
 
 if mods["TeleportationEquipment"]then
