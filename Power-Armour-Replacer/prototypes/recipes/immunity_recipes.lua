@@ -62,6 +62,7 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=40},
                 {type="item", name="nuclear-fuel", amount=10},
                 {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="petroleum-gas", amount=250},
             },
             results = {
                 {type="item", name="par-belt-immunity-mk2", amount=1},
