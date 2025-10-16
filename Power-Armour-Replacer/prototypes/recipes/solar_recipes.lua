@@ -242,6 +242,7 @@ if mods["space-age"] then
                 {type="item", name="tungsten-carbide", amount=120},
                 {type="item", name="plastic-bar", amount=140},
                 {type="item", name="carbon-fiber", amount=100},
+                {type="fluid", name="electrolyte", amount=1000},
             },
             results = {{type="item", name="par-solar-panel-mk7", amount=1}}
         },
@@ -254,11 +255,12 @@ if mods["space-age"] then
             energy_required = 40,
             ingredients = {
                 {type="item", name="par-solar-panel-mk7", amount=1},
+                {type="item", name="low-density-structure", amount=175},
                 {type="item", name="holmium-plate", amount=300},
                 {type="item", name="supercapacitor", amount=150},
                 {type="item", name="carbon-fiber", amount=100},
                 {type="item", name="plastic-bar", amount=170},
-                {type="item", name="low-density-structure", amount=175},
+                {type="fluid", name="electrolyte", amount=1000},
             },
             results = {{type="item", name="par-solar-panel-mk8", amount=1}}
         },
@@ -274,7 +276,7 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=123},
                 {type="item", name="armour-control-unit", amount=175},
                 {type="item", name="low-density-structure", amount=175},
-                {type="fluid", name="lubricant", amount=250},
+                {type="fluid", name="electrolyte", amount=1000},
                 {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
@@ -294,7 +296,7 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=144},
                 {type="item", name="armour-control-unit", amount=200},
                 {type="item", name="low-density-structure", amount=200},
-                {type="fluid", name="lubricant", amount=350},
+                {type="fluid", name="electrolyte", amount=1000},
                 {type="fluid", name="fluoroketone-cold", amount=200},
             },
             results = {

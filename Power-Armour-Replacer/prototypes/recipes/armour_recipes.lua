@@ -259,7 +259,7 @@ if mods["space-age"] then
                 {type="item", name="lithium-plate", amount=100},
                 {type="item", name="tungsten-carbide", amount=100},
                 {type="item", name="supercapacitor", amount=50},
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="electrolyte", amount=1000},
             },
             results = {{type="item", name="par-armour-mk7", amount=1}},
         },
@@ -276,7 +276,7 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=100},
                 {type="item", name="tungsten-carbide", amount=175},
                 {type="item", name="supercapacitor", amount=100},
-                {type="fluid", name="electrolyte", amount=500},
+                {type="fluid", name="electrolyte", amount=1000},
             },
             results = {{type="item", name="par-armour-mk8", amount=1}},
         },
@@ -295,6 +295,7 @@ if mods["space-age"] then
                 {type="item", name="tungsten-plate", amount=175},
                 {type="item", name="supercapacitor", amount=100},
                 {type="item", name="quantum-processor", amount=10},
+                {type="fluid", name="electrolyte", amount=1000},
                 {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
@@ -320,6 +321,7 @@ if mods["space-age"] then
                 {type="item", name="supercapacitor", amount=100},
                 {type="item", name="lithium-plate", amount=100},
                 {type="item", name="quantum-processor", amount=20},
+                {type="fluid", name="electrolyte", amount=1000},
                 {type="fluid", name="fluoroketone-cold", amount=200},
             },
             results = {

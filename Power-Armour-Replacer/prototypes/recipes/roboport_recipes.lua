@@ -225,7 +225,6 @@ if mods["space-age"]then
                 {type="item", name="processing-unit", amount=50},
                 {type="item", name="electric-engine-unit", amount=120},
                 {type="item", name="steel-plate", amount=230},
-                {type="fluid", name="lubricant", amount=300},
             },
             results = {{type="item", name="par-roboport-mk6", amount=1}}
         },
@@ -241,6 +240,7 @@ if mods["space-age"]then
                 {type="item", name="uranium-235", amount=50},
                 {type="item", name="iron-stick", amount=270},
                 {type="item", name="low-density-structure", amount=60},
+                {type="fluid", name="electrolyte", amount=1000},
             },
             results = {{type="item", name="par-roboport-mk7", amount=1}}
         },
@@ -256,6 +256,7 @@ if mods["space-age"]then
                 {type="item", name="steel-plate", amount=270},
                 {type="item", name="copper-cable", amount=320},
                 {type="item", name="uranium-235", amount=160},
+                {type="fluid", name="electrolyte", amount=1000},
             },
             results = {{type="item", name="par-roboport-mk8", amount=1}}
         },
@@ -271,7 +272,7 @@ if mods["space-age"]then
                 {type="item", name="armour-control-unit", amount=80},
                 {type="item", name="low-density-structure", amount=150},
                 {type="item", name="advanced-circuit", amount=160},
-                {type="fluid", name="lubricant", amount=600},
+                {type="fluid", name="electrolyte", amount=1000},
                 {type="fluid", name="fluoroketone-cold", amount=100},
             },
             results = {
@@ -291,6 +292,7 @@ if mods["space-age"]then
                 {type="item", name="low-density-structure", amount=195},
                 {type="item", name="armour-control-unit", amount=165},
                 {type="item", name="processing-unit", amount=170},
+                {type="fluid", name="electrolyte", amount=1000},
                 {type="fluid", name="fluoroketone-cold", amount=200},
             },
             results = {
