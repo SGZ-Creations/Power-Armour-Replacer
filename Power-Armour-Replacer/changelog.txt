@@ -44,6 +44,7 @@ Date: 19.10.2025
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
     - Bobs tech name crash.
+    - Bobs enemies. Artifact in recipes when setting = off not working. 
     - Crash with missing space-age dependency.
     - Broken recycling is finally fixed. Including Reverse Factory.
     - Tech with craft-able unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.

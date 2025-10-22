@@ -1,6 +1,10 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
-PAR.ingredient_prereq(DRR["par-armour-mk1"], {
+---@class ProtypeRecipe
+local RECIPES = data.raw["recipe"]
+---@class LuaSettings
+local SS = settings.startup
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
 	-- Power Armor MK3
 	{
 		dependencies = {"Power Armor MK3"},
@@ -88,7 +92,13 @@ PAR.ingredient_prereq(DRR["par-armour-mk1"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-armour-mk2"], {
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk2"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -111,17 +121,17 @@ PAR.ingredient_prereq(DRR["par-armour-mk2"], {
             ["bob-insulated-cable"] = {"bob-solder", 50},
             {"bob-tinned-copper-cable", 55},
         }
-    },
+    },--[[
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
             {"bob-alien-artifact", 200}
         }
-    },
+    },]]
     --Angels
     {
-        dependencies = {"angelssmelting",},
+        dependencies = {"bobplates", "angelssmelting"},
         replacements = {
             ["bob-silver-plate"] = {"basic-electronic-componenets", 100},
             ["bob-rubber"] = {"iron-gear-wheel", 40},
@@ -173,7 +183,21 @@ PAR.ingredient_prereq(DRR["par-armour-mk2"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-armour-mk3"], {
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk3"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk3"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk3"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk3"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk3"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk3"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+        table.insert(RECIPES["par-armour-mk3"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -191,6 +215,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk3"], {
             {"bob-rubber", 60},
         }
     },
+    --[[
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
@@ -200,11 +225,11 @@ PAR.ingredient_prereq(DRR["par-armour-mk3"], {
     },
     {
         dependencies = {"bobenemies"},
-        setting = "bobmods-enemies-enableartifacts",
+        setting = "bobmods-enemies-enablenewartifacts",
         replacements = {
             {"bob-alien-artifact-red", 100},
         }
-    },
+    },]]
     -- Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -277,7 +302,23 @@ PAR.ingredient_prereq(DRR["par-armour-mk3"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-armour-mk4"], {
+
+
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk4"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk4"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+        table.insert(RECIPES["par-armour-mk4"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk4"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk4"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk4"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk4"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -295,6 +336,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk4"], {
             {"bob-invar-alloy", 100},
         }
     },
+    --[[
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
@@ -308,7 +350,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk4"], {
         replacements = {
             {"bob-alien-artifact-red", 200},
         }
-    },
+    },]]
     -- Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -344,7 +386,21 @@ PAR.ingredient_prereq(DRR["par-armour-mk4"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-armour-mk5"], {
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk5"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk5"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+        table.insert(RECIPES["par-armour-mk5"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk5"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk5"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk5"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk5"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -368,14 +424,22 @@ PAR.ingredient_prereq(DRR["par-armour-mk5"], {
             ["engine-unit"] = {"bob-gilded-copper-cable", 500},
         }
     },
+    --[[
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
             {"bob-alien-artifact", 500},
+        }
+    },
+    {
+        dependencies = {"bobenemies"},
+        setting = ("bobmods-enemies-enableartifacts", "")
+        replacements = {
             {"bob-alien-artifact-red", 300},
         }
     },
+    ]]
     -- Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -393,7 +457,28 @@ PAR.ingredient_prereq(DRR["par-armour-mk5"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-armour-mk6"], {
+
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+        table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+        if mods["bobplates"] then
+            Remove("par-armour-mk6", "bob-alien-artifact-blue")
+            Remove("par-armour-mk6", "bob-alien-artifact-oranage")
+            table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
+            table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
+        end
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -410,7 +495,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk6"], {
             {"bob-sapphire-5", 100},
             {"bob-ruby-5", 100},
         }
-    },
+    },--[[
     {
         dependencies = {"bobenemies", "bobplates"},
         setting = "bobmods-enemies-enableartifacts",
@@ -423,10 +508,10 @@ PAR.ingredient_prereq(DRR["par-armour-mk6"], {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
         replacements = {
-            {"bob-alien-artifact", 600},
+            {"bob-alien-artifact", 500},
             {"bob-alien-artifact-red", 400},
         }
-    },
+    },]]
     --Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -438,7 +523,27 @@ PAR.ingredient_prereq(DRR["par-armour-mk6"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-armour-mk7"], {
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+        table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+        if mods["bobplates"] then
+            Remove("par-armour-mk7", "bob-alien-artifact-blue")
+            Remove("par-armour-mk7", "bob-alien-artifact-oranage")
+            table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
+            table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
+        end
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk7"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -470,7 +575,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk7"], {
             ["copper-cable"] = {"bob-gilded-copper-cable", 250},
             {"bob-solder", 150},
         }
-    },
+    },--[[
     {
         dependencies = {"bobenemies", "bobplates"},
         setting = "bobmods-enemies-enableartifacts",
@@ -485,7 +590,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk7"], {
             {"bob-alien-artifact", 700},
             {"bob-alien-artifact-red", 500},
         }
-    },
+    },]]
     --Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
@@ -495,7 +600,27 @@ PAR.ingredient_prereq(DRR["par-armour-mk7"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-armour-mk8"], {
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+        table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+        if mods["bobplates"] then
+            Remove("par-armour-mk8", "bob-alien-artifact-blue")
+            Remove("par-armour-mk8", "bob-alien-artifact-oranage")
+            table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
+            table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
+        end
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -519,7 +644,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk8"], {
         replacements = {
             {"bob-heat-shield-tile", 200},
         }
-    },
+    },--[[
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
@@ -527,10 +652,30 @@ PAR.ingredient_prereq(DRR["par-armour-mk8"], {
             {"bob-alien-artifact", 800},
             {"bob-alien-artifact-red", 600},
         }
-    },
+    },]]
 })
 
-PAR.ingredient_prereq(DRR["par-armour-mk9"], {
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+        if mods["bobplates"] then
+            Remove("par-armour-mk9", "bob-alien-artifact-blue")
+            Remove("par-armour-mk9", "bob-alien-artifact-oranage")
+            table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
+            table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
+        end
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -548,7 +693,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk9"], {
             {"bob-topaz-5", 50},
             {"bob-diamond-5", 50},
         }
-    },
+    },--[[
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
@@ -563,7 +708,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk9"], {
         replacements = {
             {"bob-alien-orange-alloy", 200},
         }
-    },
+    },]]
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
@@ -588,7 +733,28 @@ PAR.ingredient_prereq(DRR["par-armour-mk9"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-armour-mk10"], {
+
+if mods["bobenemies"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
+    end
+    if SS["bobmods-enemies-enablenewartifacts"].value == true and SS["bobmods-enemies-enableartifacts"].value == true then
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact-red", amount=100})
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact-orange", amount=100})
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact-purple", amount=100})
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact-yellow", amount=100})
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact-green", amount=100})
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
+        if mods["bobplates"] then
+            Remove("par-armour-mk10", "bob-alien-artifact-blue")
+            Remove("par-armour-mk10", "bob-alien-artifact-oranage")
+            table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
+            table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
+        end
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -610,7 +776,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk10"], {
             {"bob-topaz-5", 100},
             {"bob-diamond-5", 100},
         }
-    },
+    },--[[
     {
         dependencies = {"bobenemies"},
         setting = "bobmods-enemies-enableartifacts",
@@ -618,13 +784,7 @@ PAR.ingredient_prereq(DRR["par-armour-mk10"], {
             {"bob-alien-artifact", 1000},
             {"bob-alien-artifact-red", 800},
         }
-    },
-    {
-        dependencies = {"bobenemies", "bobplates"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
-        }
-    },
+    },]]
     {
         dependencies = {"angelssmelting"},
         replacements = {
@@ -680,4 +840,3 @@ PAR.ingredient_prereq(DRR["par-armour-mk10"], {
         }
     },
 })
---end

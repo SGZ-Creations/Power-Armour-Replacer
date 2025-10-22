@@ -1,5 +1,16 @@
 local PAR = {}
+---@Class RecipePrototype
+local Recipe = data.raw["recipe"]
 -- USE PAR rather than utility
+
+
+function Remove(recipe_name, ingredient_name)
+    for i, ingredient in pairs(Recipe[recipe_name].ingredients) do
+        if ingredient.name == ingredient_name then
+            table.remove(Recipe[recipe_name].ingredients, i)
+        end
+    end
+end
 
 --Recipe Compatibility Generator
 PAR.update_ingredients = function(recipe, replacements)

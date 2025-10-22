@@ -2,14 +2,6 @@ local PAR = require("mods.util")
 ---@Class RecipePrototype
 local Recipe = data.raw.recipe
 
-function Remove(recipe_name, ingredient_name)
-    for i, ingredient in pairs(Recipe[recipe_name].ingredients) do
-        if ingredient.name == ingredient_name then
-            table.remove(Recipe[recipe_name].ingredients, i)
-        end
-    end
-end
-
 PAR.ingredient_prereq(Recipe["par-roboport-mk1"], {
     --0(Base recipe or item added ends up removed if bobslogistics.) return the amount of number with the amount of diffrent items being used
     --1(roboport-door), Applies to Bob's logistics mod.
@@ -206,14 +198,14 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk5"], {
         dependencies = {"bobelectronics",},
         replacements = {
             ["steel-chest"] = {"advanced-circuit", 250}, --2
-            ["flying-robot-frame"] = {"insualted-cable", 250}, --1
+            ["flying-robot-frame"] = {"bob-insulated-cable", 250}, --1
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-chest"] = {"advanced-circuit", 250}, --2
-            ["insualted-cable"] = {"bob-aluminium-plate", 200}, --1
+            ["bob-insulated-cable"] = {"bob-aluminium-plate", 200}, --1
             ["flying-robot-frame"] = {"bob-aluminium-plate", 200}, --1
             {"bob-ceramic-bearing", 200}, --3
         }
@@ -224,7 +216,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk5"], {
             ["steel-chest"] = {"bob-roboport-antenna-2", 5}, --2
             ["advanced-circuit"] = {"bob-roboport-antenna-2", 5}, --2
             ["flying-robot-frame"] = {"bob-roboport-door-2", 5}, --1
-            ["insualted-cable"] = {"bob-roboport-door-2", 200}, --1
+            ["bob-insulated-cable"] = {"bob-roboport-door-2", 200}, --1
             ["bob-aluminium-plate"] = {"bob-roboport-door-2", 5}, --1
             ["bob-ceramic-bearing"] = {"bob-roboport-chargepad-2", 5}, --3
             {"bob-roboport-chargepad-2", 5}, --3
@@ -275,7 +267,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk7"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["uranium-235"] = {"insualted-cable", 350}, --3
+            ["uranium-235"] = {"bob-insulated-cable", 350}, --3
             {"processing-unit", 350}, --2
         }
     },
@@ -283,7 +275,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk7"], {
         dependencies = {"bobplates"},
         replacements = {
             ["uranium-235"] = {"bob-titanium-plate", 350}, --3
-            ["insualted-cable"] = {"bob-titanium-plate", 350}, --3
+            ["bob-insulated-cable"] = {"bob-titanium-plate", 350}, --3
             {"processing-unit", 350}, --2
         }
     },
@@ -300,7 +292,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk7"], {
             ["processing-unit"] = {"bob-roboport-antenna-3", 5}, --2
             ["uranium-235"] = {"bob-roboport-chargepad-3", 5}, --3
             ["bob-titanium-plate"] = {"bob-roboport-chargepad-3", 5}, --3
-            ["insualted-cable"] = {"bob-roboport-chargepad-3", 5}, --3
+            ["bob-insulated-cable"] = {"bob-roboport-chargepad-3", 5}, --3
             ["iron-stick"] = {"bob-roboport-door-3", 5}, --1
             ["bob-solder-alloy"] = {"bob-roboport-door-3", 5}, --1
             ["low-density-structure"] = {"zero"}, --0
@@ -401,7 +393,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk9"], {
             ["bob-silicon-wafer"] = {"zero"},
             ["lubricant"] = {"zero"},
             ["bob-solder"] = {"zero"},
-            Remove("par-roboport-mk9", "bob-tinned-copper-cable")
         }
     },
     {
