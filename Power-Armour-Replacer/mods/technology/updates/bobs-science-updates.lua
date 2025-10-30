@@ -1,7 +1,7 @@
----@class data.TechnologyPrototype.type
+---@class data.TechnologyPrototype
 local Tech = data.raw["technology"]
 ---@class data.RecipePrototype
-local Recipe =data.raw["recipe"]
+local Recipe = data.raw["recipe"]
 ---@class data.SettingsStartup
 local SS = settings.startup
 
