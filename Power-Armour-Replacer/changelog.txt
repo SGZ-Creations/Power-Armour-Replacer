@@ -26,7 +26,8 @@ Date: 15.11.2025
     - Newer updated https://mods.factorio.com/mod/RampantArsenalFork
     - Better Fixed https://mods.factorio.com/mod/nanobots-refined
     - Added new Armour, Tech & Recipe Icons Textures for Mk6-7. More is coming.
-    - RampantAresnalFixed & mech-armour Recipe.
+    - RampantArsenalFixed & mech-armour Recipe.
+    - Made progression changes to Metal & Stars to go along with this mod. 
   Changes:
     - Requires CAS Version 1.5.12. Due to texture file name changes.
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
