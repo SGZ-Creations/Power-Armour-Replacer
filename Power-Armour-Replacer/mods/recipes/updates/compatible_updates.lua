@@ -33,8 +33,8 @@ if mods["RampantArsenalFork"] and mods["mech-armor"] then
 end
 
 if mods["metal-and-stars"] then
-    table.insert(Recipe["mech-armor"].ingredients, {{type="item", name="prototyp-mech-armor", amount= 1}})
-    table.insert(Recipe["prototyp-mech-armor"].ingredients, {{type="item", name="par-armour-mk3", amount= 1}})
+    table.insert(Recipe["mech-armor"].ingredients, {{type="item", name="prototype-mech-armor", amount= 1}})
+    table.insert(Recipe["prototype-mech-armor"].ingredients, {{type="item", name="par-armour-mk3", amount= 1}})
     Remove("prototyp-mech-armor", "low-density-structure")
     Remove("prototyp-mech-armor", "processing-unit")
 end
