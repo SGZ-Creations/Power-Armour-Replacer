@@ -1,7 +1,6 @@
 ---@class data.RecipePrototype
 local Recipe = data.raw.recipe
 
-
 if mods["Power Armor MK3"] then
     Recipe["pamk3-lvest"].ingredients = {
         {type="item", name="light-armor", amount= 1},
