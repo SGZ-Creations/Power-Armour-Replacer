@@ -471,7 +471,7 @@ if mods["bobenemies"] then
         table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
         if mods["bobplates"] then
             Remove("par-armour-mk6", "bob-alien-artifact-blue")
-            Remove("par-armour-mk6", "bob-alien-artifact-oranage")
+            Remove("par-armour-mk6", "bob-alien-artifact-orange")
             table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
             table.insert(RECIPES["par-armour-mk6"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
         end
@@ -536,7 +536,7 @@ if mods["bobenemies"] then
         table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
         if mods["bobplates"] then
             Remove("par-armour-mk7", "bob-alien-artifact-blue")
-            Remove("par-armour-mk7", "bob-alien-artifact-oranage")
+            Remove("par-armour-mk7", "bob-alien-artifact-orange")
             table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
             table.insert(RECIPES["par-armour-mk7"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
         end
@@ -613,7 +613,7 @@ if mods["bobenemies"] then
         table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
         if mods["bobplates"] then
             Remove("par-armour-mk8", "bob-alien-artifact-blue")
-            Remove("par-armour-mk8", "bob-alien-artifact-oranage")
+            Remove("par-armour-mk8", "bob-alien-artifact-orange")
             table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
             table.insert(RECIPES["par-armour-mk8"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
         end
@@ -668,7 +668,7 @@ if mods["bobenemies"] then
         table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
         if mods["bobplates"] then
             Remove("par-armour-mk9", "bob-alien-artifact-blue")
-            Remove("par-armour-mk9", "bob-alien-artifact-oranage")
+            Remove("par-armour-mk9", "bob-alien-artifact-orange")
             table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
             table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
         end
@@ -747,7 +747,7 @@ if mods["bobenemies"] then
         table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-artifact-blue", amount=100})
         if mods["bobplates"] then
             Remove("par-armour-mk10", "bob-alien-artifact-blue")
-            Remove("par-armour-mk10", "bob-alien-artifact-oranage")
+            Remove("par-armour-mk10", "bob-alien-artifact-orange")
             table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-blue-alloy", amount=100})
             table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "bob-alien-orange-alloy", amount=100})
         end

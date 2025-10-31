@@ -11,6 +11,7 @@ PAR.ingredient_prereq(Recipe["mech-armor"],
         }
     },
 })
+
 PAR.ingredient_prereq(Recipe["mech-armor"],
 {
     {
@@ -264,3 +265,10 @@ PAR.ingredient_prereq(Recipe["laser-cannon"], {
         }
     },
 })
+
+if mods["metal-and-stars"] then
+    Remove("prototype-mech-armor", "low-density-structure")
+    Remove("prototype-mech-armor", "processing-unit")
+    table.insert(Recipe["mech-armor"].ingredients, {type="item", name="prototype-mech-armor", amount= 1})
+    table.insert(Recipe["prototype-mech-armor"].ingredients, {type="item", name="par-armour-mk3", amount= 1})
+end

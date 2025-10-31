@@ -118,6 +118,11 @@ if mods["quality"] then
             "mech-armor",
         })
     end
+    if mods["metal-and-stars"]then
+        PAR.update_rec_recipe_results({
+            "prototype-mech-armor",
+        })
+    end
     if mods["bobclasses"] then
         PAR.update_rec_recipe_results({
             "bob-character-fighter",

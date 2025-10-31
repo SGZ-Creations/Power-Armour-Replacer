@@ -1,3 +1,5 @@
+---@class TechnologyPrototype
+local Tech = data.raw["technology"]
 local PAR = require("mods.util")
 PAR.technology_dependancy
 {
@@ -62,7 +64,10 @@ PAR.technology_dependancy
 		},
 	},
 }
-local Tech = data.raw.technology
+
+if mods["metal-and-stars"] then
+	Tech["prototype-mech-armor"].prerequisites = {"par-armour-tech-3", "productivity-module-2", "overclock-module-2"}
+end
 
 if mods["nanobots-refined"] then
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
