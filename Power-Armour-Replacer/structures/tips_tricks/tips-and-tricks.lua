@@ -67,7 +67,7 @@ if mods["space-age"] then
 			indent = 2,
 			trigger = {
 				type = "craft-item",
-				item = "mech-armour",
+				item = "mech-armor",
 				event_type = "crafting-finished",
 				count = 1,
 			},
