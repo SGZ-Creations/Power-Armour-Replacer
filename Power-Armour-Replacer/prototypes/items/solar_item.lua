@@ -30,7 +30,7 @@ for tier, panel in pairs(panels) do
         auto_recycle = false,
         weight = panel.weightvalue,
         order = panel.orders,
-        subgroup = "PAR_solar",
+        subgroup = "PAR_Solar",
     }
 
     ---@type data.EquipmentPrototype

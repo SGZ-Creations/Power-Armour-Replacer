@@ -27,7 +27,7 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "PAR_laser",
+        name = "PAR_Laser",
         group = "replacer_armor",
         order = "AAD",
     },
@@ -45,7 +45,7 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "PAR_solar",
+        name = "PAR_Solar",
         group = "replacer_armor",
         order = "AAG",
     },
@@ -87,7 +87,7 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "Par_intermediates",
+        name = "Par_Intermediates",
         group = "replacer_armor",
         order = "AAN",
     },
