@@ -56,6 +56,25 @@ data:extend({
 	},
 })
 
+if mods["space-age"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_SpaceAge-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3AA",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "mech-armour",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+end
+
 if mods["bobwarfare"] then
 	data:extend({
 		{
@@ -112,6 +131,26 @@ if mods["custom_power_armor_fix"] then
 		},
 	})
 end
+
+if mods["metal-and-stars"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_Metal&Stars-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3DA",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "prototype-mech-armor",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+end
+
 
 if mods["Darkstar_utilities_fixed"] then
 	data:extend({
