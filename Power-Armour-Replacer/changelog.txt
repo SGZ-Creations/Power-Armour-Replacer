@@ -16,6 +16,11 @@ Date: 15.11.2025
     - 50 Shield Settings.
     - 20 Solar Settings.
     - Total of 285 New settings for you to have fun with. Hope this mod became more fun than ever before?
+    - [space-age] Recipes have been tweaked for: Armour, Battery, Exoskeleton, Fission, Immunity, Laser, NVGs, Roboport, Shield & SolarPanels.
+    - [space-age] Recipe changes all over the equipment's & Amours So make sure that all your equipment is still crafting.
+  Minor Features:
+    - Recipes have been tweaked for: Armour, Battery, Exoskeleton, Fission, Immunity, Laser, NVGs, Roboport, Shield & SolarPanels.
+    - Minor Changes for base mod game too. So look to see that your recipes are also still crafting in your assemblers.
   Features:
     - [space-age] Made it possible to craft all items in Electromagnetic Plant.
     - ACU recipe [space-age] Edition.
@@ -27,11 +32,11 @@ Date: 15.11.2025
     - Better Fixed https://mods.factorio.com/mod/nanobots-refined
     - Added new Armour, Tech & Recipe Icons Textures for Mk6-7. More is coming.
     - RampantArsenalFixed & mech-armour Recipe.
-    - Made progression changes to Metal & Stars to go along with this mod. 
+    - Made progression changes to Metal & Stars to go along with this mod.
+    - Added 2 new instances of tips & tricks. So if you have the right mods enabled they should eventually trigger.(SpaceAge, Metal&Stars).
   Changes:
     - Requires CAS Version 1.5.12. Due to texture file name changes.
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.
-    - [space-age] Recipes have been tweaked for: Armour, Battery, Exoskeleton, Fission, Immunity, Laser, NVGs, Roboport, Shield & SolarPanels. 
     - [space-age] Recipes are now using new crafting category from MK1-5 and 6-10 requires assembly 2 or electromagnetic-plant.
     - Achievement text make more sense.
     - Start of base game towards PAR will now have crafting triggers over science research.
