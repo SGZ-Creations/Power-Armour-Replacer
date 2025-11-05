@@ -73,8 +73,8 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plates"] = {"rare-metals", 30},
-            ["steel-plate"] = {"steel-beam", 50},
+            ["copper-plates"] = {"kr-rare-metals", 30},
+            ["steel-plate"] = {"kr-steel-beam", 50},
         }
     },
 })
@@ -104,7 +104,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"steel-beam", 55},
+            ["steel-plate"] = {"kr-steel-beam", 55},
         }
     },
 })
@@ -330,7 +330,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"kr-matter-cube", 2},
         }
     },
 })

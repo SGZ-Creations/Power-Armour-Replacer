@@ -40,8 +40,8 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk1"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 25},
-            ["small-lamp"] = {"iron-beam", 25},
-            ["lubricant"] = {"mineral-water", 100},
+            ["small-lamp"] = {"kr-iron-beam", 25},
+            ["lubricant"] = {"kr-mineral-water", 100},
         }
     },
     {
@@ -125,9 +125,9 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-			["nuclear-fuel"] = {"matter-cube", 2},
-            {"ai-core", 10},
-            {"matter-cube", 2},
+			["nuclear-fuel"] = {"kr-matter-cube", 2},
+            {"kr-ai-core", 10},
+            {"kr-matter-cube", 2},
         }
     },
 })

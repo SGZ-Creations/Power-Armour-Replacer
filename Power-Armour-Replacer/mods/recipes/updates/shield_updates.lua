@@ -34,7 +34,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 15},
+            --["electronic-circuit"] = {"automation-core", 15},
         }
     },
 })
@@ -71,9 +71,9 @@ PAR.ingredient_prereq(DRR["par-shield-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["engine-unit"] = {"rare-metals", 40},
-            ["steel-plate"] = {"bob-steel-gear-wheel", 40},
-            ["iron-plate"] = {"iron-beam", 40},
+            ["engine-unit"] = {"kr-rare-metals", 40},
+            ["steel-plate"] = {"kr-steel-gear-wheel", 40},
+            ["iron-plate"] = {"kr-iron-beam", 40},
         }
     },
     --SE
@@ -123,9 +123,9 @@ PAR.ingredient_prereq(DRR["par-shield-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-cable"] = {"rare-metals", 60},
-            ["electronic-circuit"] = {"automation-core", 40},
-            ["advanced-circuit"] = {"electronic-components", 30},
+            ["copper-cable"] = {"kr-rare-metals", 60},
+            ["electronic-circuit"] = {"kr-automation-core", 40},
+            ["advanced-circuit"] = {"kr-electronic-components", 30},
         }
     },
 })
@@ -181,8 +181,8 @@ PAR.ingredient_prereq(DRR["par-shield-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["small-lamp"] = {"bob-silicon-plate", 65},
-            ["advanced-circuit"] = {"electronic-components", 30},
+            --["small-lamp"] = {"silicon-plate", 65},
+            ["advanced-circuit"] = {"kr-electronic-components", 30},
         }
     },
 })
@@ -448,7 +448,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"kr-matter-cube", 2},
         }
     },
 })

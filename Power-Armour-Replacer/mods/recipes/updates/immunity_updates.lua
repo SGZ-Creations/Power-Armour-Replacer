@@ -40,7 +40,7 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk1"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 20},
-            ["lubricant"] = {"mineral-water", 100},
+            ["lubricant"] = {"kr-mineral-water", 100},
         }
     },
     --SE
@@ -122,9 +122,9 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["nuclear-fuel"] = {"matter-cube", 2},
-            ["sulfur"] = {"ai-core", 10},
-            {"matter-cube", 2},
+            ["nuclear-fuel"] = {"kr-matter-cube", 2},
+            ["sulfur"] = {"kr-ai-core", 10},
+            {"kr-matter-cube", 2},
         }
     },
 })

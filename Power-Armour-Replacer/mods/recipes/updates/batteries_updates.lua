@@ -33,7 +33,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 6},
+            --["electronic-circuit"] = {"automation-core", 6},
         }
     },
 })
@@ -62,7 +62,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"automation-core", 10},
+            --["electronic-circuit"] = {"automation-core", 10},
         }
     },
 })
@@ -103,8 +103,8 @@ PAR.ingredient_prereq(DRR["par-battery-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"steel-beam", 25},
-            ["electronic-circuit"] = {"automation-core", 16},
+            ["steel-plate"] = {"kr-steel-beam", 25},
+            --["electronic-circuit"] = {"automation-core", 16},
         }
     },
 })
@@ -379,7 +379,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"kr-matter-cube", 2},
         }
     },
 })

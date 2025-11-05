@@ -25,7 +25,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 40},
+            ["electronic-circuit"] = {"kr-iron-beam", 40},
         }
     },
 })
@@ -71,7 +71,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 40},
+            ["electronic-circuit"] = {"kr-iron-beam", 40},
         }
     },
 })
@@ -123,8 +123,8 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["solid-fuel"] = {"rare-metals", 35},
-            ["electronic-circuit"] = {"automation-core", 30},
+            ["solid-fuel"] = {"kr-rare-metals", 35},
+            ["electronic-circuit"] = {"kr-automation-core", 30},
         }
     },
 })
@@ -431,8 +431,8 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"matter-cube", 2},
-            ["battery"] = {"ai-core", 10},
+            ["armour-control-unit"] = {"kr-matter-cube", 2},
+            ["battery"] = {"kr-ai-core", 10},
         }
     },
 })

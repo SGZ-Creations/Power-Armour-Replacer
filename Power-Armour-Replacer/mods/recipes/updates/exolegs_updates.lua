@@ -27,8 +27,8 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"bob-steel-gear-wheel", 50},
-            ["electronic-circuit"] = {"automation-core", 20},
+            --["steel-plate"] = {"steel-gear-wheel", 50},
+            --["electronic-circuit"] = {"automation-core", 20},
         }
     },
 })
@@ -74,8 +74,8 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"rare-metals", 20},
-            ["steel-plate"] = {"steel-beam", 45},
+            ["electronic-circuit"] = {"kr-rare-metals", 20},
+            ["steel-plate"] = {"kr-steel-beam", 45},
         }
     },
 })
@@ -122,15 +122,15 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
     {
         dependencies = {"Krastorio2", "space-exploration"},
         replacements = {
-            ["lubricant"] = {"mineral-water", 100},
+            ["lubricant"] = {"kr-mineral-water", 100},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"rare-metals", 20},
-            ["lubricant"] = {"mineral-water", 100},
+            ["electronic-circuit"] = {"kr-rare-metals", 20},
+            ["lubricant"] = {"kr-mineral-water", 100},
         }
     },
     --SE
@@ -184,13 +184,13 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
 	{
         dependencies = {"Krastorio2", "space-exploration"},
         replacements = {
-			["battery"] = {"lithium-sulfur-battery", 350},
+			["battery"] = {"kr-lithium-sulfur-battery", 350},
             ["plastic-bar"] = {"se-dynamic-emitter", 20},
             ["steel-plate"] = {"imersium-beam", 200},
             ["processing-unit"] = {"se-lattice-pressure-vessel", 10},
             ["low-density-structure"] = {"zero"},
             {"electric-motor", 30},
-            {"matter-cube", 3},
+            {"kr-matter-cube", 3},
         }
     },
 })
@@ -237,13 +237,13 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
 	{
         dependencies = {"Krastorio2", "space-exploration"},
         replacements = {
-			["battery"] = {"lithium-sulfur-battery", 500},
+			["battery"] = {"kr-lithium-sulfur-battery", 500},
 			["steel-plate"] = {"imersium-beam", 200},
 			["armour-control-unit"] = {"se-quantum-processor", 5},
 			["low-density-structure"] = {"se-heavy-bearing", 500},
 			["processing-unit"] = {"se-naquium-processor", 5},
             {"se-nanomaterial", 500},
-            {"matter-cube", 6},
+            {"kr-matter-cube", 6},
         }
     },
 })

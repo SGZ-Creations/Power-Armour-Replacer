@@ -76,8 +76,3 @@ if mods["nanobots-refined"] then
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-items"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
 end
-
-
-if mods["Krastorio2"] then
-	table.insert(Tech["par-roboport-tech-6"].effects,{type="unlock-recipe",recipe="vehicle-roboport"})
-end

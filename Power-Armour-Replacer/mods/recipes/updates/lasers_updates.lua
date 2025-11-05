@@ -40,9 +40,9 @@ PAR.ingredient_prereq(DRR["par-laser-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["iron-plate"] = {"iron-beam", 25},
-            ["steel-plate"] = {"steel-beam", 25},
-            ["electronic-circuit"] = {"automation-core", 5},
+            ["iron-plate"] = {"kr-iron-beam", 25},
+            ["steel-plate"] = {"kr-steel-beam", 25},
+            ["electronic-circuit"] = {"kr-automation-core", 5},
         }
     },
 })
@@ -78,7 +78,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"iron-beam", 25},
+            ["electronic-circuit"] = {"kr-iron-beam", 25},
         }
     },
     --SE
@@ -117,9 +117,9 @@ PAR.ingredient_prereq(DRR["par-laser-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["iron-plate"] = {"iron-beam", 30},
-            ["electronic-circuit"] = {"automation-core", 30},
-            ["battery"] = {"electronic-components", 30},
+            ["iron-plate"] = {"kr-iron-beam", 30},
+            ["electronic-circuit"] = {"kr-automation-core", 30},
+            ["battery"] = {"kr-electronic-components", 30},
         }
     },
 })
@@ -183,8 +183,8 @@ PAR.ingredient_prereq(DRR["par-laser-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["iron-plate"] = {"iron-beam", 30},
-            ["battery"] = {"electronic-components", 50},
+            ["iron-plate"] = {"kr-iron-beam", 30},
+            ["battery"] = {"kr-electronic-components", 50},
         }
     },
 })
@@ -470,7 +470,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"kr-matter-cube", 2},
         }
     },
 })

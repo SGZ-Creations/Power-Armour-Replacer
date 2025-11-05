@@ -59,8 +59,8 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["iron-chest"] = {"iron-beam", 10},
-            ["copper-cable"] = {"bob-glass", 25},
+            ["iron-chest"] = {"kr-iron-beam", 10},
+            ["copper-cable"] = {"kr-glass", 25},
         }
     },
     {
@@ -445,7 +445,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"matter-cube", 2},
+            ["armour-control-unit"] = {"kr-matter-cube", 2},
         }
     },
 })

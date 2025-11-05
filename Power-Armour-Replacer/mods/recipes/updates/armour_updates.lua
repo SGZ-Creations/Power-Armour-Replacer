@@ -86,8 +86,8 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"steel-gear-wheel", 45},
-            ["electronic-circuit"] = {"automation-core", 10},
+            ["steel-plate"] = {"kr-steel-gear-wheel", 45},
+            ["electronic-circuit"] = {"kr-automation-core", 10},
         }
     },
 })
@@ -177,8 +177,8 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"bob-steel-gear-wheel", 50},
-            ["electronic-circuit"] = {"automation-core", 5},
+            ["steel-plate"] = {"kr-steel-gear-wheel", 50},
+            ["electronic-circuit"] = {"kr-automation-core", 5},
         }
     },
 })
@@ -297,8 +297,8 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["engine-unit"] = {"rare-metals", 50},
-            ["advanced-circuit"] = {"electronic-components", 55},
+            ["engine-unit"] = {"kr-rare-metals", 50},
+            ["advanced-circuit"] = {"kr-electronic-components", 55},
         }
     },
 })
@@ -380,8 +380,8 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["engine-unit"] = {"rare-metals", 60},
-            ["advanced-circuit"] = {"electronic-components", 65},
+            ["engine-unit"] = {"kr-rare-metals", 60},
+            ["advanced-circuit"] = {"kr-electronic-components", 65},
         }
     },
 })
@@ -729,7 +729,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["lubricant"] = {"zero"},
-			{"lithium-sulfur-battery", 450},
+			{"kr-lithium-sulfur-battery", 450},
         }
     },
 })
@@ -832,11 +832,11 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
             ["processing-unit"] = {"zero"},
             ["advanced-circuit"] = {"zero"},
             ["low-density-structure"] = {"zero"},
-			{"lithium-sulfur-battery", 500},
-            {"energy-control-unit", 100},
-			{"imersium-beam", 500},
-            {"matter-cube", 20},
-            {"ai-core", 10},
+			{"kr-lithium-sulfur-battery", 500},
+            {"kr-energy-control-unit", 100},
+			{"kr-imersium-beam", 500},
+            {"kr-matter-cube", 20},
+            {"kr-ai-core", 10},
         }
     },
 })
