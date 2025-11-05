@@ -795,7 +795,6 @@ end
 if mods["space-exploration"] then
 --Enabled
     DRR["se-rtg-equipment"].enabled = false
-    DRR["se-rtg-equipment-2"].enabled = false
     DRR["energy-shield-mk3-equipment"].enabled = false
     DRR["energy-shield-mk4-equipment"].enabled = false
     DRR["energy-shield-mk5-equipment"].enabled = false
@@ -807,7 +806,6 @@ if mods["space-exploration"] then
     DRR["se-adaptive-armour-equipment-5"].enabled = false
 
     DRT["se-rtg-equipment"].enabled = false
-    DRT["se-rtg-equipment-2"].enabled = false
     DRT["se-adaptive-armour-1"].enabled = false
     DRT["se-adaptive-armour-2"].enabled = false
     DRT["se-adaptive-armour-3"].enabled = false
@@ -820,7 +818,6 @@ if mods["space-exploration"] then
 
 --Hidden
     DRR["se-rtg-equipment"].hidden = true
-    DRR["se-rtg-equipment-2"].hidden = true
     DRR["energy-shield-mk3-equipment"].hidden = true
     DRR["energy-shield-mk4-equipment"].hidden = true
     DRR["energy-shield-mk5-equipment"].hidden = true
@@ -832,7 +829,6 @@ if mods["space-exploration"] then
     DRR["se-adaptive-armour-equipment-5"].hidden = true
 
     DRT["se-rtg-equipment"].hidden = true
-    DRT["se-rtg-equipment-2"].hidden = true
     DRT["se-adaptive-armour-1"].hidden = true
     DRT["se-adaptive-armour-2"].hidden = true
     DRT["se-adaptive-armour-3"].hidden = true
@@ -845,7 +841,6 @@ if mods["space-exploration"] then
 
     if SS["SE-filters"].value then
         Hide_Item("se-rtg-equipment")
-        Hide_Item("se-rtg-equipment-2")
         Hide_Item("energy-shield-mk3-equipment")
         Hide_Item("energy-shield-mk4-equipment")
         Hide_Item("energy-shield-mk5-equipment")

@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: 15.11.2025
+Date: 05.11.2025
   Major Features:
     - Settings added to other equipment for further customizability.
     - 1 Setting to Show all items in Players crafting UI.
@@ -46,6 +46,7 @@ Date: 15.11.2025
     - Added ParSpaceAge Extension disabled Function to code point not needed when mod addon is active.
     - NVG's Darkness Systems Now require more than 75% on MK1 & 35% for MK2.
     - Moved Metal & stars mech suit to PAR's tab if enabled.
+    - SE stack change.
   Bugfixes:
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
@@ -60,6 +61,7 @@ Date: 15.11.2025
     - Added Nanobots Refined to the compatibility. Made the old ones incompatible.
     - Wrong mod required regards to resistances.
     - Reverse factory: Having the mods as dependency by mistake. Caused some load order mishaps.
+    - Crash when loading SE.
   Credits:
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
     - Thanks @Pez for helping solving Recycling across my mod.
