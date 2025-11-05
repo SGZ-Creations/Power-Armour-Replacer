@@ -136,7 +136,7 @@ if mods["metal-and-stars"] then
 	data:extend({
 		{
 			type = "tips-and-tricks-item",
-			name = "par_Metal&Stars-info",
+			name = "par_MetalStars-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
 			order = "3DA",

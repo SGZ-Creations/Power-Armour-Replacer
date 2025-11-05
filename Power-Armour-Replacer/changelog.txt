@@ -1,6 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 5.11.25
+  Changes:
+    - Changelog info --> 0.4.0
+    - Rejected Symbol.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: 05.11.2025
+Date: 5.11.2025
   Major Features:
     - Settings added to other equipment for further customizability.
     - 1 Setting to Show all items in Players crafting UI.
@@ -47,7 +53,7 @@ Date: 05.11.2025
     - Added ParSpaceAge Extension disabled Function to code point not needed when mod addon is active.
     - NVG's Darkness Systems Now require more than 75% on MK1 & 35% for MK2.
     - Moved Metal & stars mech suit to PAR's tab if enabled.
-    - SE stack change.
+    - SE stack change: Armour control Unit. 
   Bugfixes:
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
@@ -70,10 +76,6 @@ Date: 05.11.2025
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
     - Thanks @Pez for helping solving Recycling across my mod.
     - Thanks @DarkMamaba For providing me with new Armour Tech & Recipe Icon Textures for Mk6-7.
-  Info:
-    - Note that this version are not fully finished & beta versions are available at my discord server.
-    - Your are welcome to try it and give feedback on what's there. I don't want reports about uncompleted Features. (Example: the settings are missing)
-    - this INFO will be mark over when the official 0.4 is done.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 12.03.2025
