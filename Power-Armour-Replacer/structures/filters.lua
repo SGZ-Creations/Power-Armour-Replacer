@@ -561,7 +561,6 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     DRR["kr-big-battery-equipment"].hidden = true
     DRR["kr-fusion-reactor-equipment"].hidden = true
     DRR["kr-antimatter-reactor-equipment"].hidden = true
-    DRR["kr-personal-roboport-equipment"].hidden = true
     DRR["kr-advanced-exoskeleton-equipment"].hidden = true
     DRR["kr-superior-exoskeleton-equipment"].hidden = true
     DRR["kr-personal-laser-defense-mk2-equipment"].hidden = true
@@ -572,7 +571,7 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     DRT["kr-power-armor-mk3"].hidden = true
     DRT["kr-power-armor-mk4"].hidden = true
     DRT["kr-portable-generator-equipment"].hidden = true
-    DRT["kr-advanced-additional-engine"].hidden = true
+    DRT["kr-advanced-additional-engine-equipment"].hidden = true
     DRT["kr-battery-mk3-equipment"].hidden = true
     DRT["kr-fusion-reactor-equipment"].hidden = true
     DRT["kr-antimatter-reactor-equipment"].hidden = true
@@ -587,15 +586,14 @@ if mods["Krastorio2"] and mods["space-exploration"] then
 --Enabled
     DRR["kr-power-armor-mk3"].enabled = false
     DRR["kr-power-armor-mk4"].enabled = false
-    DRR["kr-additional-engine"].enabled = false
+    DRR["kr-additional-engine-equipment"].enabled = false
+    DRR["kr-advanced-additional-engine-equipment"].enabled = false
     DRR["kr-portable-generator-equipment"].enabled = false
     DRR["kr-small-portable-generator-equipment"].enabled = false
     DRR["kr-big-battery-equipment"].enabled = false
     DRR["kr-big-solar-panel-equipment"].enabled = false
-    DRR["kr-nuclear-reactor-equipment"].enabled = false
-    DRR["kr-advanced-additional-engine"].enabled = false
+    DRR["kr-fusion-reactor-equipment"].enabled = false
     DRR["kr-antimatter-reactor-equipment"].enabled = false
-    DRR["kr-personal-roboport-equipment"].enabled = false
     DRR["kr-advanced-exoskeleton-equipment"].enabled = false
     DRR["kr-superior-exoskeleton-equipment"].enabled = false
     DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
@@ -607,8 +605,8 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     DRT["kr-power-armor-mk4"].enabled = false
     DRT["kr-portable-generator-equipment"].enabled = false
     DRT["kr-battery-mk3-equipment"].enabled = false
-    DRT["kr-nuclear-reactor-equipment"].enabled = false
-    DRT["kr-advanced-additional-engine"].enabled = false
+    DRT["kr-fusion-reactor-equipment"].enabled = false
+    DRT["kr-advanced-additional-engine-equipment"].enabled = false
     DRT["kr-antimatter-reactor-equipment"].enabled = false
     DRT["kr-superior-solar-panel-equipment"].enabled = false
     DRT["kr-superior-night-vision-equipment"].enabled = false
