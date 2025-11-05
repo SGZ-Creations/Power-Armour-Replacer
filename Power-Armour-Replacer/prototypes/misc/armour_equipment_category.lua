@@ -96,5 +96,17 @@ data:extend({
         name = "PAR_compatibility",
         group = "replacer_armor",
         order = "AAO",
+    },
+    {
+        type = "item-subgroup",
+        name = "PAR_K2Verified",
+        group = "replacer_armor",
+        order = "AAP",
+    },
+    {
+        type = "item-subgroup",
+        name = "PAR_SEVerified",
+        group = "replacer_armor",
+        order = "AAQ",
     }
 })
