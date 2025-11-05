@@ -34,6 +34,7 @@ Date: 05.11.2025
     - RampantArsenalFixed & mech-armour Recipe.
     - Made progression changes to Metal & Stars to go along with this mod.
     - Added 2 new instances of tips & tricks. So if you have the right mods enabled they should eventually trigger.(SpaceAge, Metal&Stars).
+    - Separate subgroup for K2 & SE thee remaining items/armour/suits that the 2 mods have. Is moved to the PA&R UI tab.
   Changes:
     - Requires CAS Version 1.5.12. Due to texture file name changes.
     - [space-age] Electromagnetic Mech crafting. Can use Electromagnetic Plant to craft sarcophagus.

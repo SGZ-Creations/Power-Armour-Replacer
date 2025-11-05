@@ -67,3 +67,38 @@ if mods["metal-and-stars"]then
 	Armour["prototype-mech-armor"].subgroup = "PAR_compatibility"
 	Armour["prototype-mech-armor"].order = "AG"
 end
+if mods["Krastorio2"] then
+	Item["kr-energy-absorber-equipment"].subgroup = "PAR_K2Verified"
+	Item["kr-energy-absorber-equipment"].order = "AA"
+end
+
+if mods["jetpack"] then
+	Item["jetpack-1"].subgroup = "PAR_SEVerified"
+	Item["jetpack-1"].order = "AA"
+	Item["jetpack-2"].subgroup = "PAR_SEVerified"
+	Item["jetpack-2"].order = "AB"
+	Item["jetpack-3"].subgroup = "PAR_SEVerified"
+	Item["jetpack-3"].order = "AC"
+	Item["jetpack-4"].subgroup = "PAR_SEVerified"
+	Item["jetpack-4"].order = "AD"
+end
+
+if mods["space-exploration"] then
+	Item["se-lifesupport-equipment-1"].subgroup = "PAR_SEVerified"
+	Item["se-lifesupport-equipment-1"].order = "BA"
+	Item["se-lifesupport-equipment-2"].subgroup = "PAR_SEVerified"
+	Item["se-lifesupport-equipment-2"].order = "BB"
+	Item["se-lifesupport-equipment-3"].subgroup = "PAR_SEVerified"
+	Item["se-lifesupport-equipment-3"].order = "BC"
+	Item["se-lifesupport-equipment-4"].subgroup = "PAR_SEVerified"
+	Item["se-lifesupport-equipment-4"].order = "BD"
+
+	Armour["se-thruster-suit"].subgroup = "PAR_SEVerified"
+	Armour["se-thruster-suit"].order = "CA"
+	Armour["se-thruster-suit-2"].subgroup = "PAR_SEVerified"
+	Armour["se-thruster-suit-2"].order = "CB"
+	Armour["se-thruster-suit-3"].subgroup = "PAR_SEVerified"
+	Armour["se-thruster-suit-3"].order = "CC"
+	Armour["se-thruster-suit-4"].subgroup = "PAR_SEVerified"
+	Armour["se-thruster-suit-4"].order = "CD"
+end
