@@ -63,6 +63,7 @@ Date: 05.11.2025
     - Wrong mod required regards to resistances.
     - Reverse factory: Having the mods as dependency by mistake. Caused some load order mishaps.
     - Crash when loading SE.
+    - Crash with AAI Industries.
     - Crash with K2.
   Credits:
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
