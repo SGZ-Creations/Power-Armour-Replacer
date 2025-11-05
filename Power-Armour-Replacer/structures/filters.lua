@@ -773,6 +773,8 @@ if mods["space-exploration"] then
     DRR["se-adaptive-armour-equipment-3"].enabled = false
     DRR["se-adaptive-armour-equipment-4"].enabled = false
     DRR["se-adaptive-armour-equipment-5"].enabled = false
+    DRR["se-fusion-reactor-equipment"].enabled = false
+    DRR["se-antimatter-reactor-equipment"].enabled = false
 
     DRT["se-rtg-equipment"].enabled = false
     DRT["se-adaptive-armour-1"].enabled = false
@@ -791,6 +793,8 @@ if mods["space-exploration"] then
     DRR["energy-shield-mk4-equipment"].hidden = true
     DRR["energy-shield-mk5-equipment"].hidden = true
     DRR["energy-shield-mk6-equipment"].hidden = true
+    DRR["se-fusion-reactor-equipment"].hidden = true
+    DRR["se-antimatter-reactor-equipment"].hidden = true
     DRR["se-adaptive-armour-equipment-1"].hidden = true
     DRR["se-adaptive-armour-equipment-2"].hidden = true
     DRR["se-adaptive-armour-equipment-3"].hidden = true
