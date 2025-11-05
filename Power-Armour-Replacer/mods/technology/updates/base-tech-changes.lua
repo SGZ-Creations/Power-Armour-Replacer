@@ -19,5 +19,7 @@ Tech["military"].unit = nil
 Tech["lamp"].research_trigger = {type ="craft-item", item ="electronic-circuit", count = 25}
 Tech["lamp"].unit = nil
 
-Tech["automation"].research_trigger = {type ="craft-item", item ="lab", count = 5}
-Tech["automation"].unit = nil
+if not mods["aai-industry"] then
+	Tech["automation"].research_trigger = {type ="craft-item", item ="lab", count = 5}
+	Tech["automation"].unit = nil
+end
