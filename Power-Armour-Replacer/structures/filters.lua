@@ -551,68 +551,67 @@ end
 
 if mods["Krastorio2"] and mods["space-exploration"] then
 --Hidden
-    DRR["power-armor-mk3"].hidden = true
-    DRR["power-armor-mk4"].hidden = true
-    DRR["portable-generator"].hidden = true
-    DRR["additional-engine"].hidden = true
-    DRR["small-portable-generator"].hidden = true
-    DRR["big-solar-panel-equipment"].hidden = true
-    DRR["big-battery-equipment"].hidden = true
-    DRR["advanced-additional-engine"].hidden = true
-    DRR["nuclear-reactor-equipment"].hidden = true
-    DRR["antimatter-reactor-equipment"].hidden = true
-    DRR["personal-roboport-equipment"].hidden = true
-    DRR["advanced-exoskeleton-equipment"].hidden = true
-    DRR["superior-exoskeleton-equipment"].hidden = true
-    DRR["personal-laser-defense-mk2-equipment"].hidden = true
-    DRR["personal-laser-defense-mk3-equipment"].hidden = true
-    DRR["personal-laser-defense-mk4-equipment"].hidden = true
-    DRR["personal-submachine-laser-defense-mk1-equipment"].hidden = true
+    DRR["kr-power-armor-mk3"].hidden = true
+    DRR["kr-power-armor-mk4"].hidden = true
+    DRR["kr-portable-generator-equipment"].hidden = true
+    DRR["kr-additional-engine-equipment"].hidden = true
+    DRR["kr-small-portable-generator-equipment"].hidden = true
+    DRR["kr-advanced-additional-engine-equipment"].hidden = true
+    DRR["kr-big-solar-panel-equipment"].hidden = true
+    DRR["kr-big-battery-equipment"].hidden = true
+    DRR["kr-fusion-reactor-equipment"].hidden = true
+    DRR["kr-antimatter-reactor-equipment"].hidden = true
+    DRR["kr-personal-roboport-equipment"].hidden = true
+    DRR["kr-advanced-exoskeleton-equipment"].hidden = true
+    DRR["kr-superior-exoskeleton-equipment"].hidden = true
+    DRR["kr-personal-laser-defense-mk2-equipment"].hidden = true
+    DRR["kr-personal-laser-defense-mk3-equipment"].hidden = true
+    DRR["kr-personal-laser-defense-mk4-equipment"].hidden = true
+    --DRR["personal-submachine-laser-defense-mk1-equipment"].hidden = true
 
     DRT["kr-power-armor-mk3"].hidden = true
     DRT["kr-power-armor-mk4"].hidden = true
-    DRT["kr-portable-generator"].hidden = true
-    DRT["kr-battery-mk3-equipment"].hidden = true
-    DRT["kr-nuclear-reactor-equipment"].hidden = true
+    DRT["kr-portable-generator-equipment"].hidden = true
     DRT["kr-advanced-additional-engine"].hidden = true
+    DRT["kr-battery-mk3-equipment"].hidden = true
+    DRT["kr-fusion-reactor-equipment"].hidden = true
     DRT["kr-antimatter-reactor-equipment"].hidden = true
     DRT["kr-advanced-exoskeleton-equipment"].hidden = true
     DRT["kr-superior-exoskeleton-equipment"].hidden = true
-    DRT["kr-imersite-solar-panel-equipment"].hidden = true
-    DRT["kr-imersite-night-vision-equipment"].hidden = true
+    DRT["kr-superior-solar-panel-equipment"].hidden = true
+    DRT["kr-superior-night-vision-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk2-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk3-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk4-equipment"].hidden = true
 
 --Enabled
-    DRR["power-armor-mk3"].enabled = false
-    DRR["power-armor-mk4"].enabled = false
-    DRR["additional-engine"].enabled = false
-    DRR["portable-generator"].enabled = false
-    DRR["small-portable-generator"].enabled = false
-    DRR["big-battery-equipment"].enabled = false
-    DRR["big-solar-panel-equipment"].enabled = false
-    DRR["nuclear-reactor-equipment"].enabled = false
-    DRR["advanced-additional-engine"].enabled = false
-    DRR["antimatter-reactor-equipment"].enabled = false
-    DRR["personal-roboport-equipment"].enabled = false
-    DRR["advanced-exoskeleton-equipment"].enabled = false
-    DRR["superior-exoskeleton-equipment"].enabled = false
-    DRR["personal-laser-defense-mk2-equipment"].enabled = false
-    DRR["personal-laser-defense-mk3-equipment"].enabled = false
-    DRR["personal-laser-defense-mk4-equipment"].enabled = false
-    DRR["personal-submachine-laser-defense-mk1-equipment"].enabled = false
+    DRR["kr-power-armor-mk3"].enabled = false
+    DRR["kr-power-armor-mk4"].enabled = false
+    DRR["kr-additional-engine"].enabled = false
+    DRR["kr-portable-generator-equipment"].enabled = false
+    DRR["kr-small-portable-generator-equipment"].enabled = false
+    DRR["kr-big-battery-equipment"].enabled = false
+    DRR["kr-big-solar-panel-equipment"].enabled = false
+    DRR["kr-nuclear-reactor-equipment"].enabled = false
+    DRR["kr-advanced-additional-engine"].enabled = false
+    DRR["kr-antimatter-reactor-equipment"].enabled = false
+    DRR["kr-personal-roboport-equipment"].enabled = false
+    DRR["kr-advanced-exoskeleton-equipment"].enabled = false
+    DRR["kr-superior-exoskeleton-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
+    --DRR["personal-submachine-laser-defense-mk1-equipment"].enabled = false
 
     DRT["kr-power-armor-mk3"].enabled = false
     DRT["kr-power-armor-mk4"].enabled = false
-    DRT["battery-equipment"].enabled = false
-    DRT["kr-portable-generator"].enabled = false
+    DRT["kr-portable-generator-equipment"].enabled = false
     DRT["kr-battery-mk3-equipment"].enabled = false
     DRT["kr-nuclear-reactor-equipment"].enabled = false
     DRT["kr-advanced-additional-engine"].enabled = false
     DRT["kr-antimatter-reactor-equipment"].enabled = false
-    DRT["kr-imersite-solar-panel-equipment"].enabled = false
-    DRT["kr-imersite-night-vision-equipment"].enabled = false
+    DRT["kr-superior-solar-panel-equipment"].enabled = false
+    DRT["kr-superior-night-vision-equipment"].enabled = false
     DRT["kr-advanced-exoskeleton-equipment"].enabled = false
     DRT["kr-superior-exoskeleton-equipment"].enabled = false
     DRT["kr-personal-laser-defense-mk2-equipment"].enabled = false
@@ -620,105 +619,114 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     DRT["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
     if SS["KE-filters"].value then
-        Hide_Item("power-armor-mk3")
-        Hide_Item("power-armor-mk4")
-        Hide_Item("portable-generator")
-        Hide_Item("small-portable-generator")
-        Hide_Item("big-solar-panel-equipment")
-        Hide_Item("imersite-solar-panel-equipment")
-        Hide_Item("big-imersite-solar-panel-equipment")
-        Hide_Item("nuclear-reactor-equipment")
-        Hide_Item("antimatter-reactor-equipment")
-        Hide_Item("big-battery-equipment")
-        Hide_Item("battery-mk2-equipment")
-        Hide_Item("big-battery-mk2-equipment")
-        Hide_Item("battery-mk3-equipment")
-        Hide_Item("big-battery-mk3-equipment")
-        Hide_Item("superior-exoskeleton-equipment")
-        Hide_Item("advanced-exoskeleton-equipment")
-        Hide_Item("imersite-night-vision-equipment")
-        Hide_Item("personal-laser-defense-mk2-equipment")
-        Hide_Item("personal-laser-defense-mk3-equipment")
-        Hide_Item("personal-laser-defense-mk4-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk1-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk2-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk3-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk4-equipment")
+        Hide_Item("kr-power-armor-mk3")
+        Hide_Item("kr-power-armor-mk4")
+        Hide_Item("kr-portable-generator-equipment")
+        Hide_Item("kr-small-portable-generator-equipment")
+        Hide_Item("kr-big-solar-panel-equipment")
+        Hide_Item("kr-superior-solar-panel-equipment")
+        Hide_Item("kr-big-superior-solar-panel-equipment")
+        Hide_Item("kr-fusion-reactor-equipment")
+        Hide_Item("kr-antimatter-reactor-equipment")
+        Hide_Item("kr-big-battery-equipment")
+        Hide_Item("kr-big-battery-mk2-equipment")
+        Hide_Item("kr-battery-mk3-equipment")
+        Hide_Item("kr-big-battery-mk3-equipment")
+        Hide_Item("kr-superior-exoskeleton-equipment")
+        Hide_Item("kr-advanced-exoskeleton-equipment")
+        Hide_Item("kr-superior-night-vision-equipment")
+        Hide_Item("kr-personal-laser-defense-mk2-equipment")
+        Hide_Item("kr-personal-laser-defense-mk3-equipment")
+        Hide_Item("kr-personal-laser-defense-mk4-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk1-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk2-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk3-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk4-equipment")
     end
 elseif mods["Krastorio2"] then
 --Hidden
-    DRR["power-armor-mk3"].hidden = true
-    DRR["power-armor-mk4"].hidden = true
-    DRR["additional-engine"].hidden = true
-    DRR["portable-generator"].hidden = true
-    DRR["big-battery-equipment"].hidden = true
-    DRR["small-portable-generator"].hidden = true
-    DRR["big-solar-panel-equipment"].hidden = true
-    DRR["nuclear-reactor-equipment"].hidden = true
-    DRR["advanced-additional-engine"].hidden = true
-    DRR["personal-roboport-equipment"].hidden = true
-    DRR["energy-shield-mk3-equipment"].hidden = true
-    DRR["energy-shield-mk4-equipment"].hidden = true
-    DRR["antimatter-reactor-equipment"].hidden = true
-    DRR["imersite-solar-panel-equipment"].hidden = true
-    DRR["big-imersite-solar-panel-equipment"].hidden = true
-    DRR["personal-laser-defense-mk2-equipment"].hidden = true
-    DRR["personal-laser-defense-mk3-equipment"].hidden = true
-    DRR["personal-laser-defense-mk4-equipment"].hidden = true
-    DRR["personal-submachine-laser-defense-mk1-equipment"].hidden = true
-    DRR["personal-submachine-laser-defense-mk2-equipment"].hidden = true
-    DRR["personal-submachine-laser-defense-mk3-equipment"].hidden = true
-    DRR["personal-submachine-laser-defense-mk4-equipment"].hidden = true
+    DRR["kr-power-armor-mk3"].hidden = true
+    DRR["kr-power-armor-mk4"].hidden = true
+    DRR["kr-additional-engine-equipment"].hidden = true
+    DRR["kr-advanced-additional-engine-equipment"].hidden = true
+    DRR["kr-portable-generator-equipment"].hidden = true
+    DRR["kr-small-portable-generator-equipment"].hidden = true
+    DRR["kr-big-solar-panel-equipment"].hidden = true
+    DRR["kr-superior-solar-panel-equipment"].hidden = true
+    DRR["kr-big-superior-solar-panel-equipment"].hidden = true
+    DRR["kr-fusion-reactor-equipment"].hidden = true
+    DRR["kr-energy-shield-mk3-equipment"].hidden = true
+    DRR["kr-energy-shield-mk4-equipment"].hidden = true
+    DRR["kr-antimatter-reactor-equipment"].hidden = true
+    DRR["kr-big-battery-equipment"].hidden = true
+    DRR["kr-big-battery-mk2-equipment"].hidden = true
+    DRR["kr-battery-mk3-equipment"].hidden = true
+    DRR["kr-big-battery-mk3-equipment"].hidden = true
+    DRR["kr-advanced-exoskeleton-equipment"].hidden = true
+    DRR["kr-superior-exoskeleton-equipment"].hidden = true
+    DRR["kr-superior-night-vision-equipment"].hidden = true
+    DRR["kr-personal-laser-defense-mk2-equipment"].hidden = true
+    DRR["kr-personal-laser-defense-mk3-equipment"].hidden = true
+    DRR["kr-personal-laser-defense-mk4-equipment"].hidden = true
+    --DRR["personal-submachine-laser-defense-mk1-equipment"].hidden = true
+    --DRR["personal-submachine-laser-defense-mk2-equipment"].hidden = true
+    --DRR["personal-submachine-laser-defense-mk3-equipment"].hidden = true
+    --DRR["personal-submachine-laser-defense-mk4-equipment"].hidden = true
 
     DRT["kr-power-armor-mk3"].hidden = true
     DRT["kr-power-armor-mk4"].hidden = true
-    DRT["kr-portable-generator"].hidden = true
+    DRT["kr-portable-generator-equipment"].hidden = true
     DRT["kr-battery-mk3-equipment"].hidden = true
-    DRT["kr-nuclear-reactor-equipment"].hidden = true
+    DRT["kr-fusion-reactor-equipment"].hidden = true
     DRT["kr-antimatter-reactor-equipment"].hidden = true
     DRT["kr-advanced-exoskeleton-equipment"].hidden = true
     DRT["kr-superior-exoskeleton-equipment"].hidden = true
-    DRT["kr-imersite-night-vision-equipment"].hidden = true
+    DRT["kr-superior-night-vision-equipment"].hidden = true
     DRT["kr-energy-shield-mk3-equipment"].hidden = true
     DRT["kr-energy-shield-mk4-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk2-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk3-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk4-equipment"].hidden = true
-    DRT["kr-advanced-additional-engine"].hidden = true
+    DRT["kr-advanced-additional-engine-equipment"].hidden = true
 
 --Enabled
-    DRR["power-armor-mk3"].enabled = false
-    DRR["power-armor-mk4"].enabled = false
-    DRR["additional-engine"].enabled = false
-    DRR["portable-generator"].enabled = false
-    DRR["small-portable-generator"].enabled = false
-    DRR["big-solar-panel-equipment"].enabled = false
-    DRR["big-battery-equipment"].enabled = false
-    DRR["advanced-additional-engine"].enabled = false
-    DRR["nuclear-reactor-equipment"].enabled = false
-    DRR["antimatter-reactor-equipment"].enabled = false
-    DRR["personal-roboport-equipment"].enabled = false
-    DRR["energy-shield-mk3-equipment"].enabled = false
-    DRR["energy-shield-mk4-equipment"].enabled = false
-    DRR["personal-laser-defense-mk2-equipment"].enabled = false
-    DRR["personal-laser-defense-mk3-equipment"].enabled = false
-    DRR["personal-laser-defense-mk4-equipment"].enabled = false
-    DRR["personal-submachine-laser-defense-mk1-equipment"].enabled = false
-    DRR["personal-submachine-laser-defense-mk2-equipment"].enabled = false
-    DRR["personal-submachine-laser-defense-mk3-equipment"].enabled = false
-    DRR["personal-submachine-laser-defense-mk4-equipment"].enabled = false
+    DRR["kr-power-armor-mk3"].enabled = false
+    DRR["kr-power-armor-mk4"].enabled = false
+    DRR["kr-additional-engine-equipment"].enabled = false
+    DRR["kr-portable-generator-equipment"].enabled = false
+    DRR["kr-small-portable-generator-equipment"].enabled = false
+    DRR["kr-big-solar-panel-equipment"].enabled = false
+    DRR["kr-advanced-additional-engine-equipment"].enabled = false
+    DRR["kr-fusion-reactor-equipment"].enabled = false
+    DRR["kr-antimatter-reactor-equipment"].enabled = false
+    DRR["kr-energy-shield-mk3-equipment"].enabled = false
+    DRR["kr-energy-shield-mk4-equipment"].enabled = false
+    DRR["kr-big-battery-equipment"].enabled = false
+    DRR["kr-big-battery-mk2-equipment"].enabled = false
+    DRR["kr-battery-mk3-equipment"].enabled = false
+    DRR["kr-big-battery-mk3-equipment"].enabled = false
+    DRR["kr-advanced-exoskeleton-equipment"].enabled = false
+    DRR["kr-superior-exoskeleton-equipment"].enabled = false
+    DRR["kr-superior-night-vision-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
+    --DRR["personal-submachine-laser-defense-mk1-equipment"].enabled = false
+    --DRR["personal-submachine-laser-defense-mk2-equipment"].enabled = false
+    --DRR["personal-submachine-laser-defense-mk3-equipment"].enabled = false
+    --DRR["personal-submachine-laser-defense-mk4-equipment"].enabled = false
 
     DRT["kr-power-armor-mk3"].enabled = false
     DRT["kr-power-armor-mk4"].enabled = false
-    DRT["kr-portable-generator"].enabled = false
+    DRT["kr-portable-generator-equipment"].enabled = false
     DRT["kr-battery-mk3-equipment"].enabled = false
-    DRT["kr-nuclear-reactor-equipment"].enabled = false
+    DRT["kr-fusion-reactor-equipment"].enabled = false
     DRT["kr-antimatter-reactor-equipment"].enabled = false
     DRT["kr-energy-shield-mk3-equipment"].enabled = false
     DRT["kr-energy-shield-mk4-equipment"].enabled = false
-    DRT["kr-advanced-additional-engine"].enabled = false
-    DRT["kr-imersite-solar-panel-equipment"].enabled = false
-    DRT["kr-imersite-night-vision-equipment"].enabled = false
+    DRT["kr-advanced-additional-engine-equipment"].enabled = false
+    DRT["kr-superior-solar-panel-equipment"].enabled = false
+    DRT["kr-superior-night-vision-equipment"].enabled = false
     DRT["kr-advanced-exoskeleton-equipment"].enabled = false
     DRT["kr-superior-exoskeleton-equipment"].enabled = false
     DRT["kr-personal-laser-defense-mk2-equipment"].enabled = false
@@ -726,68 +734,31 @@ elseif mods["Krastorio2"] then
     DRT["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
     if SS["K2-filters"].value then
-        Hide_Item("power-armor-mk3")
-        Hide_Item("power-armor-mk4")
-        Hide_Item("portable-generator")
-        Hide_Item("small-portable-generator")
-        Hide_Item("big-solar-panel-equipment")
-        Hide_Item("imersite-solar-panel-equipment")
-        Hide_Item("big-imersite-solar-panel-equipment")
-        Hide_Item("nuclear-reactor-equipment")
-        Hide_Item("antimatter-reactor-equipment")
-        Hide_Item("big-battery-equipment")
-        Hide_Item("battery-mk2-equipment")
-        Hide_Item("big-battery-mk2-equipment")
-        Hide_Item("battery-mk3-equipment")
-        Hide_Item("big-battery-mk3-equipment")
-        Hide_Item("energy-shield-mk3-equipment")
-        Hide_Item("energy-shield-mk4-equipment")
-        Hide_Item("superior-exoskeleton-equipment")
-        Hide_Item("advanced-exoskeleton-equipment")
-        Hide_Item("imersite-night-vision-equipment")
-        Hide_Item("personal-laser-defense-mk2-equipment")
-        Hide_Item("personal-laser-defense-mk3-equipment")
-        Hide_Item("personal-laser-defense-mk4-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk1-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk2-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk3-equipment")
-        Hide_Item("personal-submachine-laser-defense-mk4-equipment")
-    end
-end
-
-if (mods["RampantArsenalFork"] or mods["RampantArsenal"]) then
--- Enabled 
-    DRT["rampant-arsenal-technology-power-armor-mk3"].enabled = false
-    DRT["rampant-arsenal-technology-battery-equipment-3"].enabled = false
-    DRT["rampant-arsenal-technology-shield-equipment-2"].enabled = false
-    DRT["rampant-arsenal-technology-generator-equipment-2"].enabled = false
-    DRT["rampant-arsenal-technology-generator-equipment-3"].enabled = false
-
-    DRR["mk3-battery-rampant-arsenal"].enabled = false
-    DRR["mk3-shield-rampant-arsenal"].enabled = false
-    DRR["mk3-generator-rampant-arsenal"].enabled = false
-    DRR["nuclear-generator-rampant-arsenal"].enabled = false
-    DRR["power-armor-mk3-armor-rampant-arsenal"].enabled = false
-
--- Hidden        
-    DRT["rampant-arsenal-technology-power-armor-mk3"].hidden = true
-    DRT["rampant-arsenal-technology-battery-equipment-3"].hidden = true
-    DRT["rampant-arsenal-technology-shield-equipment-2"].hidden = true
-    DRT["rampant-arsenal-technology-generator-equipment-2"].hidden = true
-    DRT["rampant-arsenal-technology-generator-equipment-3"].hidden = true
-
-    DRR["mk3-shield-rampant-arsenal"].hidden = true
-    DRR["mk3-battery-rampant-arsenal"].hidden = true
-    DRR["mk3-generator-rampant-arsenal"].hidden = true
-    DRR["nuclear-generator-rampant-arsenal"].hidden = true
-    DRR["power-armor-mk3-armor-rampant-arsenal"].hidden = true
-
-    if SS["Arsenal-filters"].value then
-        Hide_Item("mk3-shield-rampant-arsenal")
-        Hide_Item("mk3-battery-rampant-arsenal")
-        Hide_Item("mk3-generator-rampant-arsenal")
-        Hide_Item("nuclear-generator-rampant-arsenal")
-        Hide_Item("power-armor-mk3-armor-rampant-arsenal")
+        Hide_Item("kr-power-armor-mk3")
+        Hide_Item("kr-power-armor-mk4")
+        Hide_Item("kr-portable-generator")
+        Hide_Item("kr-small-portable-generator-equipment")
+        Hide_Item("kr-big-solar-panel-equipment")
+        Hide_Item("kr-superior-solar-panel-equipment")
+        Hide_Item("kr-big-superior-solar-panel-equipment")
+        Hide_Item("kr-fusion-reactor-equipment")
+        Hide_Item("kr-antimatter-reactor-equipment")
+        Hide_Item("kr-big-battery-equipment")
+        Hide_Item("kr-big-battery-mk2-equipment")
+        Hide_Item("kr-battery-mk3-equipment")
+        Hide_Item("kr-big-battery-mk3-equipment")
+        Hide_Item("kr-energy-shield-mk3-equipment")
+        Hide_Item("kr-energy-shield-mk4-equipment")
+        Hide_Item("kr-advanced-exoskeleton-equipment")
+        Hide_Item("kr-superior-exoskeleton-equipment")
+        Hide_Item("kr-superior-night-vision-equipment")
+        Hide_Item("kr-personal-laser-defense-mk2-equipment")
+        Hide_Item("kr-personal-laser-defense-mk3-equipment")
+        Hide_Item("kr-personal-laser-defense-mk4-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk1-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk2-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk3-equipment")
+        --Hide_Item("personal-submachine-laser-defense-mk4-equipment")
     end
 end
 
@@ -850,6 +821,42 @@ if mods["space-exploration"] then
         Hide_Item("se-adaptive-armour-equipment-3")
         Hide_Item("se-adaptive-armour-equipment-4")
         Hide_Item("se-adaptive-armour-equipment-5")
+    end
+end
+
+if (mods["RampantArsenalFork"] or mods["RampantArsenal"]) then
+-- Enabled 
+    DRT["rampant-arsenal-technology-power-armor-mk3"].enabled = false
+    DRT["rampant-arsenal-technology-battery-equipment-3"].enabled = false
+    DRT["rampant-arsenal-technology-shield-equipment-2"].enabled = false
+    DRT["rampant-arsenal-technology-generator-equipment-2"].enabled = false
+    DRT["rampant-arsenal-technology-generator-equipment-3"].enabled = false
+
+    DRR["mk3-battery-rampant-arsenal"].enabled = false
+    DRR["mk3-shield-rampant-arsenal"].enabled = false
+    DRR["mk3-generator-rampant-arsenal"].enabled = false
+    DRR["nuclear-generator-rampant-arsenal"].enabled = false
+    DRR["power-armor-mk3-armor-rampant-arsenal"].enabled = false
+
+-- Hidden        
+    DRT["rampant-arsenal-technology-power-armor-mk3"].hidden = true
+    DRT["rampant-arsenal-technology-battery-equipment-3"].hidden = true
+    DRT["rampant-arsenal-technology-shield-equipment-2"].hidden = true
+    DRT["rampant-arsenal-technology-generator-equipment-2"].hidden = true
+    DRT["rampant-arsenal-technology-generator-equipment-3"].hidden = true
+
+    DRR["mk3-shield-rampant-arsenal"].hidden = true
+    DRR["mk3-battery-rampant-arsenal"].hidden = true
+    DRR["mk3-generator-rampant-arsenal"].hidden = true
+    DRR["nuclear-generator-rampant-arsenal"].hidden = true
+    DRR["power-armor-mk3-armor-rampant-arsenal"].hidden = true
+
+    if SS["Arsenal-filters"].value then
+        Hide_Item("mk3-shield-rampant-arsenal")
+        Hide_Item("mk3-battery-rampant-arsenal")
+        Hide_Item("mk3-generator-rampant-arsenal")
+        Hide_Item("nuclear-generator-rampant-arsenal")
+        Hide_Item("power-armor-mk3-armor-rampant-arsenal")
     end
 end
 
