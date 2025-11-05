@@ -47,6 +47,7 @@ Date: 05.11.2025
     - NVG's Darkness Systems Now require more than 75% on MK1 & 35% for MK2.
     - Moved Metal & stars mech suit to PAR's tab if enabled.
     - SE stack change.
+    - K2 Recipe compatibility.
   Bugfixes:
     - Temp fix for compatibility recipes.
     - Crash with AAI industries.
@@ -57,11 +58,12 @@ Date: 05.11.2025
     - Tech with craft-able unlocks in bobs was using the vanilla circuit not bobs basic can be a soft-lock.
     - Bobs tech soft lock bob-carbon. in combination with Alt_Chemical_Processing.
     - Fixed many spelling errors across the Changelog.
-    - Recipe issues from 1.1 (mod version 0.2.xx)
+    - Recipe issues from 1.1 (mod version 0.2.xx).
     - Added Nanobots Refined to the compatibility. Made the old ones incompatible.
     - Wrong mod required regards to resistances.
     - Reverse factory: Having the mods as dependency by mistake. Caused some load order mishaps.
     - Crash when loading SE.
+    - Crash with K2.
   Credits:
     - Thanks @MetroidManiax Noticing wrong bobs mod listed.
     - Thanks @Pez for helping solving Recycling across my mod.
