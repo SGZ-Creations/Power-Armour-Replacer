@@ -293,7 +293,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk8"], {
         replacements = {
             ["battery"] = {"bob-silver-zinc-battery", 200},
             ["water"] = {"zero"},
-            {"bob-tungsten-plate", 200},
         }
     },{
         dependencies = {"bobelectronics", "bobplates"},

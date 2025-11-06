@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 7.11.25
+  Bugfixes:
+    - Crash with bobs due to duplicate item in recipe.
+  Changes:
+    - Changelog 0.4.0 more info on AAI crashes.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 5.11.25
   Changes:
@@ -57,7 +64,8 @@ Date: 5.11.2025
     - SE stack change: Armour control Unit. 
   Bugfixes:
     - Temp fix for compatibility recipes.
-    - Crash with AAI industries.
+    - Crash with AAI industries duplicate heavy armour recipe overwrites.
+    - Crash with AAI Industries K2 compatibility trigger.
     - Bobs tech name crash.
     - Bobs enemies. Artifact in recipes when setting = off not working. 
     - Crash with missing space-age dependency.
@@ -70,7 +78,6 @@ Date: 5.11.2025
     - Wrong mod required regards to resistances.
     - Reverse factory: Having the mods as dependency by mistake. Caused some load order mishaps.
     - Crash when loading SE.
-    - Crash with AAI Industries.
     - Crash with K2.
     - K2 Recipe compatibility Prefix.
   Credits:
