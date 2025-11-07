@@ -351,13 +351,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk10"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["battery"] = {"bob-silver-zinc-battery", 400},
             ["armour-control-unit"] = {"bob-nitinol-alloy", 100},
-            {"bob-tungsten-carbide",600},
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            {"bob-tungsten-carbide", 600},
         }
     },
     {
