@@ -149,11 +149,11 @@ if mods["space-age"]then
             enabled = false,
             energy_required = 10,
             ingredients = {
-                {type="item", name="electronic-circuit", amount=50},
-                {type="item", name="iron-gear-wheel", amount=50},
-                {type="item", name="copper-cable", amount=50},
-                {type="item", name="steel-plate", amount=50},
-                {type="item", name="wood", amount=50},
+                {type="item", name="electronic-circuit", amount=25},
+                {type="item", name="iron-gear-wheel", amount=25},
+                {type="item", name="copper-cable", amount=25},
+                {type="item", name="steel-plate", amount=25},
+                {type="item", name="wood", amount=25},
             },
             results = {{type="item", name="par-roboport-mk1", amount=1}}
         },
@@ -165,11 +165,11 @@ if mods["space-age"]then
             energy_required = 20,
             ingredients = {
                 {type="item", name="par-roboport-mk1", amount=1},
-                {type="item", name="electronic-circuit", amount=75},
-                {type="item", name="iron-gear-wheel", amount=75},
-                {type="item", name="copper-cable", amount=75},
-                {type="item", name="steel-plate", amount=75},
-                {type="item", name="wood", amount=75},
+                {type="item", name="electronic-circuit", amount=50},
+                {type="item", name="iron-gear-wheel", amount=50},
+                {type="item", name="copper-cable", amount=50},
+                {type="item", name="steel-plate", amount=50},
+                {type="item", name="wood", amount=50},
             },
             results = {{type="item", name="par-roboport-mk2", amount=1}}
         },
@@ -181,10 +181,10 @@ if mods["space-age"]then
             energy_required = 30,
             ingredients = {
                 {type="item", name="par-roboport-mk2", amount=1},
-                {type="item", name="advanced-circuit", amount=90},
-                {type="item", name="steel-plate", amount=90},
-                {type="item", name="engine-unit", amount=90},
-                {type="item", name="copper-plate", amount=90},
+                {type="item", name="advanced-circuit", amount=75},
+                {type="item", name="steel-plate", amount=75},
+                {type="item", name="engine-unit", amount=75},
+                {type="item", name="copper-plate", amount=75},
             },
             results = {{type="item", name="par-roboport-mk3", amount=1}}
         },

@@ -172,7 +172,7 @@ if mods["space-age"] then
                 {type="item", name="electronic-circuit", amount=50},
                 {type="item", name="copper-plate", amount=50},
                 {type="item", name="steel-plate", amount=50},
-                {type="item", name="wood", amount=25},
+                {type="item", name="wood", amount=50},
             },
             results = {{type="item", name="par-solar-panel-mk2", amount=1}}
         },

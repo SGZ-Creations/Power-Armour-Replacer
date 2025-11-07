@@ -7,6 +7,8 @@ Date: 7.11.25
     - Changelog 0.4.0 more info on AAI crashes.
     - Updated crafting category for RampantArsenalFork[item=combat-mech-armor-rampant-arsenal]
     - Updated crafting category for metal-and-stars [item=prototype-mech-armor]
+    - Cost reduced: Roboport 1-3MK & Armour 1-5MK.
+    - Cost increase: Solar tier 2 wood. 25 --> 50
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 5.11.25
