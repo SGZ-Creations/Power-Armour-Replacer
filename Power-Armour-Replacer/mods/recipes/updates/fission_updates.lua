@@ -324,9 +324,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 450},
             ["petroleum-gas"] = {"bob-ammonia", 200},
             ["low-density-structure"] =  {"bob-nitinol-alloy", 100},
-            ["nuclear-fuel"] =  {"bob-tungsten-carbide", 100},
             {"bob-invar-alloy", 200},
-            {"bob-tungsten-carbide", 100},
         }
     },
     {

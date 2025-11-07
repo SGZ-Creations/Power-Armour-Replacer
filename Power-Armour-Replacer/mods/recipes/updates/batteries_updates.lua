@@ -213,13 +213,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk6"], {
             ["el_lithium_battery"] = {"bob-lithium-ion-battery", 100},
         }
     },
-    --Angles
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["bob-bob-tungsten-plate"] = {"angels-plate-chrome", 200},
-        }
-    },
     --Clowens
     {
         dependencies = {"Clowns-Processing"},

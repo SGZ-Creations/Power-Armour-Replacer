@@ -64,7 +64,6 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
-            ["sulfur"] = {"bob-tungsten-plate", 200},
             {"bob-cobalt-steel-alloy", 200},
         }
     },
