@@ -11,7 +11,6 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["small-lamp"] = {"bob-steel-bearing", 50},
-            ["iron-gear-wheel"] = {"bob-carbon", 35},
         }
     },
     {
@@ -32,7 +31,7 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk1"], {
         dependencies = {"angelspetrochem"},
         replacements = {
             ["lubricant"] = {"hydrogen", 250},
-            ["bob-carbon"] = {"solid-bob-carbon", 150},
+            {"solid-bob-carbon", 150},
         }
     },
     -- SE-K2

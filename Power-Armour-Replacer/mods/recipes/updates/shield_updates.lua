@@ -13,7 +13,6 @@ PAR.ingredient_prereq(DRR["par-shield-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 50},
             ["stone-brick"] = {"bob-rubber", 90},
-            {"bob-carbon", 100},
         }
     },
     {

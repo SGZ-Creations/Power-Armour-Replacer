@@ -12,7 +12,6 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["iron-gear-wheel"] = {"bob-carbon", 80},
             ["steel-plate"] = {"bob-steel-gear-wheel", 50},
         }
     },

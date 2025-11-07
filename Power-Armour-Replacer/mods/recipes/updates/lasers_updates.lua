@@ -13,7 +13,6 @@ PAR.ingredient_prereq(DRR["par-laser-mk1"], {
         replacements = {
             ["steel-plate"] = {"bob-steel-bearing", 50},
             {"bob-rubber", 100},
-            {"bob-carbon", 100},
         }
     },
     {
@@ -136,7 +135,6 @@ PAR.ingredient_prereq(DRR["par-laser-mk4"], {
             ["advanced-circuit"] = {"electronic-circuit", 200},
             ["pipe"] = {"bob-nickel-plate", 250},
             ["iron-gear-wheel"] = {"bob-brass-alloy", 90},
-            {"bob-carbon", 100},
         }
     },
     {

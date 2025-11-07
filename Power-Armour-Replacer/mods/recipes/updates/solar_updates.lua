@@ -8,7 +8,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
             ["iron-stick"] = {"bob-lead-plate", 60},
             ["electronic-circuit"] = {"electronic-circuit", 50},
             {"bob-rubber", 30},
-            {"bob-carbon", 75},
             {"stone-brick", 50},
         }
     },
@@ -37,7 +36,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 60},
-            {"bob-carbon", 125},
             {"bob-silver-plate", 135},
             {"bob-rubber", 50},
             {"bob-glass", 50},

@@ -21,10 +21,8 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
             ["iron-chest"] = {"bob-steel-gear-wheel", 100},
-            ["small-lamp"] = {"bob-carbon", 100},
             ["wood"] = {"bob-resin", 150},
             {"stone-brick", 50},
-            {"bob-carbon", 100},
         }
     },
     {
@@ -88,7 +86,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk2"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 200},
             ["iron-gear-wheel"] = {"bob-steel-bearing", 100},
-            {"bob-carbon", 200},
         }
     },
     {

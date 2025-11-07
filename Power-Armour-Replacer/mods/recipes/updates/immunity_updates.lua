@@ -12,7 +12,6 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["steel-plate"] = {"bob-steel-bearing", 150},
-            {"bob-carbon", 40},
         }
     },
     -- Angels
