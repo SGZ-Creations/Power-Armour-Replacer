@@ -5,6 +5,8 @@ Date: 7.11.25
     - Crash with bobs due to duplicate item in recipe.
   Changes:
     - Changelog 0.4.0 more info on AAI crashes.
+    - Updated crafting category for RampantArsenalFork[item=combat-mech-armor-rampant-arsenal]
+    - Updated crafting category for metal-and-stars [item=prototype-mech-armor]
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 5.11.25
