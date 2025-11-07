@@ -242,7 +242,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk7"], {
             ["armour-control-unit"] = {"low-density-structure", 50},
             ["battery"] = {"bob-silver-zinc-battery", 100},
             ["plastic-bar"] = {"bob-titanium-plate", 150},
-            ["lubricant"] = {"zero"},
             {"bob-lithium-ion-battery", 100},
         }
     },
@@ -283,16 +282,9 @@ PAR.ingredient_prereq(DRR["par-battery-mk7"], {
 })
 PAR.ingredient_prereq(DRR["par-battery-mk8"], {
     {
-        dependencies = {"bobelectronics"},
-        replacements = {
-            ["water"] = {"processing-unit", 400},
-        }
-    },
-    {
         dependencies = {"bobplates"},
         replacements = {
             ["battery"] = {"bob-silver-zinc-battery", 200},
-            ["water"] = {"zero"},
         }
     },{
         dependencies = {"bobelectronics", "bobplates"},
@@ -303,7 +295,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk8"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["water"] = {"zero"},
             {"angels-wire-platinum", 300},
         }
     },

@@ -269,7 +269,6 @@ PAR.ingredient_prereq(DRR["par-shield-mk7"], {
             ["processing-unit"] = {"processing-unit", 350},
             ["solid-fuel"] = {"bob-titanium-gear-wheel", 220},
             ["uranium-238"] = {"bob-lithium-ion-battery", 145},
-            ["bob-resin"] = {"bob-tungsten-plate", 200},
             {"bob-titanium-gear-wheel", 220},
             {"bob-lithium-ion-battery", 145},
             {"bob-silicon-nitride", 200},
@@ -287,7 +286,6 @@ PAR.ingredient_prereq(DRR["par-shield-mk7"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["bob-solder"] = {"angles-plate-platinum", 150},
-            ["copper-plate"] = {"bob-tungsten-plate", 30},
         }
     },
     --Pyanodon
@@ -311,10 +309,8 @@ PAR.ingredient_prereq(DRR["par-shield-mk8"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"processing-unit", 400},
-            ["uranium-235"] = {"bob-tungsten-plate", 360},
             ["lubricant"] = {"zero"},
             {"bob-gunmetal-alloy", 100},
-            {"bob-tungsten-plate", 360},
             {"bob-cobalt-steel-alloy", 290},
             {"bob-silicon-nitride", 400},
         }
@@ -358,7 +354,6 @@ PAR.ingredient_prereq(DRR["par-shield-mk9"], {
             ["battery"] = {"bob-silver-zinc-battery", 280},
             ["uranium-235"] = {"bob-copper-tungsten-alloy", 300},
             ["petroleum-gas"] = {"zero"},
-            {"bob-tungsten-carbide", 325},
             {"bob-nitinol-bearing", 200},
         }
     },
@@ -409,7 +404,6 @@ PAR.ingredient_prereq(DRR["par-shield-mk10"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["sulfuric-acid"] = {"zero"},
             {"bob-silver-zinc-battery", 280},
-            {"bob-tungsten-carbide", 325},
             {"bob-nitinol-gear-wheel", 450},
         }
     },

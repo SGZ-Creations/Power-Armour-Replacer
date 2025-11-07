@@ -321,8 +321,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk8"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["uranium-235"] = {"bob-tungsten-plate", 400}, --0
-            ["bob-rubber"] = {"bob-tungsten-plate", 400}, --0
             ["steel-plate"] = {"bob-silver-plate", 400}, --3
             {"processing-unit", 400}, --0
         }
@@ -341,7 +339,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk8"], {
             ["bob-silver-plate"] = {"bob-roboport-chargepad-3", 10}, --3
             ["copper-cable"] = {"bob-roboport-door-3", 10}, --1
             ["bob-gilded-copper-cable"] = {"bob-roboport-door-3", 10}, --1
-            ["bob-tungsten-plate"] = {"zero"}, --0
             ["processing-unit"] = {"zero"}, --0
             ["uranium-235"] = {"zero"}, --0
             ["bob-rubber"] = {"zero"}, --0
@@ -389,17 +386,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk9"], {
             ["low-density-structure"] = {"bob-roboport-chargepad-4", 5},
             ["advanced-circuit"] = {"bob-roboport-door-4", 5},
             ["bob-advanced-processing-unit"] = {"bob-roboport-door-4", 5},
-            ["bob-copper-tungsten-alloy"] = {"zero"},
-            ["bob-silicon-wafer"] = {"zero"},
-            ["lubricant"] = {"zero"},
-            ["bob-solder"] = {"zero"},
-        }
-    },
-    {
-        dependencies = {"boblogistics", "space-age"},
-        replacements = {
-            ["bob-silicon-wafer"] = {"zero"},
-            ["bob-solder"] = {"zero"},
         }
     },
 })
@@ -419,7 +405,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk10"], {
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             {"bob-silver-zinc-battery", 500},
-            {"bob-tungsten-carbide", 500},
             {"bob-nitinol-alloy", 500},
         }
     },
@@ -430,15 +415,11 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk10"], {
             ["armour-control-unit"] = {"bob-roboport-chargepad-4", 10},
             ["bob-advanced-processing-unit"] = {"bob-roboport-door-4", 10},
             ["processing-unit"] = {"bob-roboport-door-4", 10},
-            ["bob-silver-zinc-battery"] = {"zero"},
-            ["bob-tungsten-carbide"] = {"zero"},
-            ["bob-nitinol-alloy"] = {"zero"},
         }
     },
     {
         dependencies = {"boblogistics", "space-age"},
         replacements = {
-            ["bob-tungsten-carbide"] = {"zero"},
         }
     },
     --K2

@@ -327,7 +327,6 @@ PAR.ingredient_prereq(DRR["par-laser-mk8"], {
         dependencies = {"bobplates"},
         replacements = {
             ["plastic-bar"] = {"bob-titanium-plate", 250},
-            ["copper-cable"] = {"bob-tungsten-plate", 250},
             {"bob-amethyst-5", 100},
         }
     },
@@ -371,7 +370,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk9"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 200},
             ["advanced-circuit"] = {"bob-aluminium-plate", 200},
             ["steel-plate"] = {"bob-nitinol-bearing", 100},
-            ["low-density-structure"] = {"bob-nitinol-gear-wheel", 100},
+            {"bob-nitinol-gear-wheel", 100},
             ["sulfur"] = {"bob-topaz-5", 100},
         }
     },
@@ -419,7 +418,6 @@ PAR.ingredient_prereq(DRR["par-laser-mk10"], {
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 200},
             ["steel-plate"] = {"bob-cobalt-steel-alloy", 200},
-            ["sulfur"] = {"bob-tungsten-carbide", 100},
             ["advanced-circuit"] = {"bob-nitinol-alloy", 100},
             {"bob-nitinol-alloy", 100},
             {"bob-diamond-5", 100},

@@ -281,8 +281,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 140},
             ["lubricant"] = {"bob-ferric-chloride-solution", 200},
-            {"bob-tungsten-carbide", 250},
-            {"bob-tungsten-plate", 500},
         }
     },
     {

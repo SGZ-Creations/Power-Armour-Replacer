@@ -207,7 +207,6 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["steel-plate"] = {"bob-copper-tungsten-alloy", 200},
-            ["battery"] = {"bob-tungsten-carbide", 200},
             ["bob-insulated-cable"] = {"bob-nitinol-bearing", 200},
             {"bob-nitinol-bearing", 200},
         }

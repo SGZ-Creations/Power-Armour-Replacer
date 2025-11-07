@@ -555,18 +555,10 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk7"], {
         replacements = {
             ["steel-plate"] = {"bob-ceramic-bearing", 200},
             ["low-density-structure"] = {"bob-cobalt-steel-bearing", 200},
-            ["uranium-fuel-cell"] = {"bob-tungsten-plate", 250},
-            {"bob-tungsten-plate", 250},
             {"bob-sapphire-5", 50},
             {"bob-ruby-5", 50},
             {"bob-emerald-5", 50},
             {"bob-amethyst-5", 50},
-        }
-    },
-    {
-        dependencies = {"bobplates", "space-age"},
-        replacements = {
-            ["bob-tungsten-plate"] = {"tungsten-plate", 250},
         }
     },
     {

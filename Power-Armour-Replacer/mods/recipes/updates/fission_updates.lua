@@ -386,7 +386,6 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
             ["battery"] = {"bob-silver-zinc-battery", 200},
-            {"bob-copper-tungsten-alloy", 200},
             {"bob-silver-nitrate", 100},
             {"bob-nitinol-bearing", 100},
         }
