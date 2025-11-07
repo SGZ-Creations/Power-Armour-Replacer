@@ -283,7 +283,6 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
             ["advanced-circuit"] = {"bob-titanium-plate", 200},
             ["bob-insulated-cable"] = {"bob-silicon-nitride", 100},
             {"bob-titanium-plate", 200},
-            {"bob-tungsten-plate", 200},
         }
     },
     {
