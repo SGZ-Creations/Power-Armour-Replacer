@@ -13,7 +13,7 @@ local batteries = {
     { buffer_capacity = tostring(SS["BatteryCapacity_07"].value) .. "TJ", weightvalue = SS["BatteryWeight_07"].value, order = "bgz", },
     { buffer_capacity = tostring(SS["BatteryCapacity_08"].value) .. "TJ", weightvalue = SS["BatteryWeight_08"].value, order = "bhz", },
     { buffer_capacity = tostring(SS["BatteryCapacity_09"].value) .. "TJ", weightvalue = SS["BatteryWeight_09"].value, order = "biz", },
-    { buffer_capacity = tostring(SS["BatteryCapacity_10"].value) .. "TJ", weightvalue = SS["BatteryWeight_10"].value, order = "bjz", },
+    { buffer_capacity = tostring(SS["BatteryCapacity_10"].value--[[ * SS["Multiplies"].value]]) .. "TJ", weightvalue = SS["BatteryWeight_10"].value, order = "bjz", },
 }
 
 for tier, battery in pairs(batteries) do
