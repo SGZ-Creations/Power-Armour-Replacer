@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 15.11.25
+  Changes:
+    - Moved Mech Armours to it's own row.
+    - Changed [item=mech-armor] prerequisites if metal & stars are active with it's dependencies.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.2
 Date: 7.11.25
   Bugfixes:

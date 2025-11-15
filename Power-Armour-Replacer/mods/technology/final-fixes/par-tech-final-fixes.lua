@@ -22,6 +22,12 @@ PAR.technology_dependancy
 		}
 	},
 
+	["metal-and-stars"] = {
+		["mech-armor"] = {
+			"prototype-mech-armor",
+		}
+	},
+
 	["mech-armor"] = {
 		["mech-armor"] = {
 			["par-armour-tech-2"] = "par-armour-tech-5",
@@ -68,6 +74,7 @@ PAR.technology_dependancy
 if mods["metal-and-stars"] then
 	Tech["prototype-mech-armor"].prerequisites = {"par-armour-tech-3", "productivity-module-2", "overclock-module-2"}
 end
+
 
 if mods["nanobots-refined"] then
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
