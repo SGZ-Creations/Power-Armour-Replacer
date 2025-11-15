@@ -16,8 +16,8 @@ if mods["space-age"] then
 end
 
 if (mods["mech-armor"] or mods["space-age"]) then
-	Armour["mech-armor"].subgroup = "PAR_compatibility"
-	Armour["mech-armor"].order = "AE"
+	Armour["mech-armor"].subgroup = "PAREXT_MechSuits"
+	Armour["mech-armor"].order = "AB"
 end
 
 if mods["Power Armor MK3"] then
@@ -54,8 +54,8 @@ if mods["RampantArsenalFork"] then
 	Item["slow-passive-defense-rampant-arsenal"].order = "TE"
 end
 if mods["RampantArsenalFork"] and (mods["space-age"] or mods["mech-armor"]) then
-	Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAR_compatibility"
-	Armour["combat-mech-armor-rampant-arsenal"].order = "AF"
+	Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAREXT_MechSuits"
+	Armour["combat-mech-armor-rampant-arsenal"].order = "AC"
 end
 
 if mods["TeleportationEquipment"]then
@@ -64,8 +64,8 @@ if mods["TeleportationEquipment"]then
 end
 
 if mods["metal-and-stars"]then
-	Armour["prototype-mech-armor"].subgroup = "PAR_compatibility"
-	Armour["prototype-mech-armor"].order = "AG"
+	Armour["prototype-mech-armor"].subgroup = "PAREXT_MechSuits"
+	Armour["prototype-mech-armor"].order = "AA"
 end
 if mods["Krastorio2"] then
 	Item["kr-energy-absorber-equipment"].subgroup = "PAR_K2Verified"
