@@ -375,6 +375,11 @@ Date: 22.10.2024
   Info:
     - Will try maintain to some extend for 1.1 at least 6 more months should you find bugs.
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.22
+Date: 18.11.2025
+  Bugfixes:
+    - Fixed Crash if you didn't play with spidertron extended
+---------------------------------------------------------------------------------------------------
 Version: 0.2.21
 Date: 16.08.2025
   Bugfixes:
