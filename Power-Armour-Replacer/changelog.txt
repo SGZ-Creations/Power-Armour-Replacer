@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 23-11-25
+  Features:
+    - Preparing ShockDefence (discharge-defense-equipment)
+  Modding:
+    - Frost Biters Mod integration with PA&R.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.3
 Date: 15.11.25
   Changes:
