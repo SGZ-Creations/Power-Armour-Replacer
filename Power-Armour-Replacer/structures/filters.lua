@@ -5,14 +5,14 @@ local DRA = data.raw.armor
 local SS = settings.startup
 
 --[[
-        Clean up phase of all mods adding technology Recipes for Armour's & Equipment's.
-        making the game less confusing on what to craft and hopefully not have 2-4 recipes.
-        From diffrent mods giving u multiple "MK3 armours" in game.
+    Clean up phase of all mods adding technology Recipes for Armour's & Equipment's.
+    making the game less confusing on what to craft and hopefully not have 2-4 recipes.
+    From diffrent mods giving u multiple "MK3 armours" in game.
 
-        At some point should u have, 2-4 mods giving u armours this mod will hopefully do a clean up & convert your previous Armour, Equipment to one version. 
-        Which i want to let u modify to your likings in the end. If it ends up being to OP u can adjust it all.
+    At some point should u have, 2-4 mods giving u armours this mod will hopefully do a clean up & convert your previous Armour, Equipment to one version. 
+    Which i want to let u modify to your likings in the end. If it ends up being to OP u can adjust it all.
 
-        Only exception with this mod is that i won't be duping anything regarding bob's vehicle Equipment as it has nothing to do with this.
+    Only exception with this mod is that i won't be duping anything regarding bob's vehicle Equipment as it has nothing to do with this.
 ]]
 
 local function Hide_Item(name)
@@ -331,7 +331,7 @@ if mods["Cold_biters"]then
     DRT["cb-power-armor-mk2"].hidden = true
 
     if SS["ColdBitersFilters"].value then
-        Hide_Item("cb-modular")
+        Hide_Item("cb-modular-armor")
         Hide_Item("cb-power-armor")
         Hide_Item("cb-power-armor-mk2")
     end
@@ -591,7 +591,6 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     DRR["kr-personal-laser-defense-mk2-equipment"].hidden = true
     DRR["kr-personal-laser-defense-mk3-equipment"].hidden = true
     DRR["kr-personal-laser-defense-mk4-equipment"].hidden = true
-    --DRR["personal-submachine-laser-defense-mk1-equipment"].hidden = true
 
     DRT["kr-power-armor-mk3"].hidden = true
     DRT["kr-power-armor-mk4"].hidden = true
@@ -624,7 +623,6 @@ if mods["Krastorio2"] and mods["space-exploration"] then
     DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
     DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
     DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
-    --DRR["personal-submachine-laser-defense-mk1-equipment"].enabled = false
 
     DRT["kr-power-armor-mk3"].enabled = false
     DRT["kr-power-armor-mk4"].enabled = false
@@ -661,10 +659,6 @@ if mods["Krastorio2"] and mods["space-exploration"] then
         Hide_Item("kr-personal-laser-defense-mk2-equipment")
         Hide_Item("kr-personal-laser-defense-mk3-equipment")
         Hide_Item("kr-personal-laser-defense-mk4-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk1-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk2-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk3-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk4-equipment")
     end
 elseif mods["Krastorio2"] then
 --Hidden
@@ -691,10 +685,6 @@ elseif mods["Krastorio2"] then
     DRR["kr-personal-laser-defense-mk2-equipment"].hidden = true
     DRR["kr-personal-laser-defense-mk3-equipment"].hidden = true
     DRR["kr-personal-laser-defense-mk4-equipment"].hidden = true
-    --DRR["personal-submachine-laser-defense-mk1-equipment"].hidden = true
-    --DRR["personal-submachine-laser-defense-mk2-equipment"].hidden = true
-    --DRR["personal-submachine-laser-defense-mk3-equipment"].hidden = true
-    --DRR["personal-submachine-laser-defense-mk4-equipment"].hidden = true
 
     DRT["kr-power-armor-mk3"].hidden = true
     DRT["kr-power-armor-mk4"].hidden = true
@@ -734,10 +724,6 @@ elseif mods["Krastorio2"] then
     DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
     DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
     DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
-    --DRR["personal-submachine-laser-defense-mk1-equipment"].enabled = false
-    --DRR["personal-submachine-laser-defense-mk2-equipment"].enabled = false
-    --DRR["personal-submachine-laser-defense-mk3-equipment"].enabled = false
-    --DRR["personal-submachine-laser-defense-mk4-equipment"].enabled = false
 
     DRT["kr-power-armor-mk3"].enabled = false
     DRT["kr-power-armor-mk4"].enabled = false
@@ -778,10 +764,6 @@ elseif mods["Krastorio2"] then
         Hide_Item("kr-personal-laser-defense-mk2-equipment")
         Hide_Item("kr-personal-laser-defense-mk3-equipment")
         Hide_Item("kr-personal-laser-defense-mk4-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk1-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk2-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk3-equipment")
-        --Hide_Item("personal-submachine-laser-defense-mk4-equipment")
     end
 end
 
@@ -918,7 +900,7 @@ if mods["Power Armor MK3"] then
     DRT["pamk3-pamk3"].enabled = false
     DRT["pamk3-pamk4"].enabled = false
     DRT["pamk3-battmk3"].enabled = false
-    --Filters
+--Filters
     if SS["MK3-filters"].value then
         Hide_Item("pamk3-se")
         Hide_Item("pamk3-inff")
