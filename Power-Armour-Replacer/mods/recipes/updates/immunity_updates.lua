@@ -106,6 +106,13 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
             ["fi_materials_titan"] = {"bob-titanium-plate", 350},
         }
     },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 500},
+        }
+    },
     -- SE K2
     {
         dependencies = {"space-exploration"},

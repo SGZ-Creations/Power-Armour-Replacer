@@ -707,6 +707,13 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
             {"reinforced-concrete-brick", 200},
         }
     },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 400},
+        }
+    },
     -- SE K2
     {
         dependencies = {"space-exploration"},
@@ -788,6 +795,13 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
         replacements = {
             {"clowns-plate-osmium", 500},
             {"clowns-plate-depleted-uranium", 500},
+        }
+    },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 500},
         }
     },
     --248K

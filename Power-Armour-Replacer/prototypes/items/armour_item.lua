@@ -25,30 +25,32 @@ local power_armour = {
 
 local resistances = {
     -- Vanilla               1,   2,   3,   4,   5,   6,   7,   8,   9,   10,
-    physical_decrease  = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200 },
-    physical_percent   = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },--p
-    acid_decrease      = {  50, 100, 150, 200, 250, 300, 350, 400, 450,  500 },
-    acid_percent       = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },--p
-    explosion_decrease = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 },
-    explosion_percent  = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },--p
-    fire_decrease      = {  30,  60,  90, 120, 150, 180, 210, 240, 270,  300 },
-    fire_percent       = {  10,  20,  30,  40,  50,  60,  70,  80,  90,  100 },--p
-    poison_decrease    = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200 },
-    poison_percent     = {  15,  25,  35,  45,  55,  65,  75,  95, 105,  115 },--p
-    electric_decrease  = {  30,  40,  50,  60,  70,  80,  90, 100, 110,  120 },
-    electric_percent   = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200 },--p
-    impact_decrease    = {  50, 100, 150, 200, 250, 300, 350, 400, 450,  500 },
-    impact_percent     = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },--p
-    laser_decrease     = {  11,  22,  33,  44,  55,  66,  77,  88,  99,  110 },
-    laser_percent      = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },--p
+    physical_decrease  = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200},
+    physical_percent   = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
+    acid_decrease      = {  50, 100, 150, 200, 250, 300, 350, 400, 450,  500},
+    acid_percent       = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
+    explosion_decrease = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000},
+    explosion_percent  = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
+    fire_decrease      = {  30,  60,  90, 120, 150, 180, 210, 240, 270,  300},
+    fire_percent       = {  10,  20,  30,  40,  50,  60,  70,  80,  90,  100},--p
+    poison_decrease    = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200},
+    poison_percent     = {  15,  25,  35,  45,  55,  65,  75,  95, 105,  115},--p
+    electric_decrease  = {  30,  40,  50,  60,  70,  80,  90, 100, 110,  120},
+    electric_percent   = {  20,  40,  60,  80, 100, 120, 140, 160, 180,  200},--p
+    impact_decrease    = {  50, 100, 150, 200, 250, 300, 350, 400, 450,  500},
+    impact_percent     = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
+    laser_decrease     = {  11,  22,  33,  44,  55,  66,  77,  88,  99,  110},
+    laser_percent      = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
 
     -- Bobs Warfare          1,   2,   3,   4,   5,   6,   7,   8,   9,   10,
-    plasma_decrease    = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 },
-    plasma_percent     = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },--p
-    pierce_decrease    = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 },
-    pierce_percent     = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95 },--p
+    plasma_decrease    = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000},
+    plasma_percent     = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
+    pierce_decrease    = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000},
+    pierce_percent     = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
 
-	-- other future mod
+    -- Cold_biters
+    cold_decrease    = { 50, 100, 150, 200, 250, 300, 350, 400, 450, 500},
+    cold_percent     = {   2,  4,  6,  8,  10,  12,  14,  16,  18,   20},--p
 }
 
 for tier, equipment in pairs(power_armour) do
@@ -138,6 +140,14 @@ for tier, equipment in pairs(power_armour) do
             type = "bob-pierce",
             decrease = resistances.pierce_decrease[tier],
             percent = resistances.pierce_percent[tier],
+        })
+    end
+
+    if mods["Cold_biters"] then
+        table.insert(equipment_armor.resistances, {
+            type = "cold",
+            decrease = resistances.cold_decrease[tier],
+            percent = resistances.cold_percent[tier],
         })
     end
 

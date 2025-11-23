@@ -80,6 +80,18 @@ if mods["bobequipment"] then
     })
 end
 
+if mods["Cold_biters"] then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "ColdBitersFilters",
+            setting_type = "startup",
+            default_value = true,
+            order = "ZCac-9"
+        },
+    })
+end
+
 if mods["custom_power_armor_fix"] then
     data:extend({
         {

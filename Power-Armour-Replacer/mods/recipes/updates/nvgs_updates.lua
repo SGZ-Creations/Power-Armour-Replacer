@@ -95,6 +95,13 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk2"], {
             ["petroleum-gas"] = {"liquid-polyethylene", 300},
         }
     },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 500},
+        }
+    },
     --248K
     {
         dependencies = {"248k"},

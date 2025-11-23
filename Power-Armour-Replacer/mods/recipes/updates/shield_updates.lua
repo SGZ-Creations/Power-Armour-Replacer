@@ -387,6 +387,13 @@ PAR.ingredient_prereq(DRR["par-shield-mk9"], {
             {"clowns-plate-magnesium", 150},
         }
     },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 400},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-shield-mk10"], {
     {
@@ -435,6 +442,13 @@ PAR.ingredient_prereq(DRR["par-shield-mk10"], {
             {"clowns-plate-depleted-uranium", 500},
             {"clowns-plate-osmium", 200},
             {"clowns-plate-magnesium", 150},
+        }
+    },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 500},
         }
     },
     --K2

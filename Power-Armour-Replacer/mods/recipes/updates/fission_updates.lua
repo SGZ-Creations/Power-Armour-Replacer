@@ -354,6 +354,13 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
             {"clowns-plate-depleted-uranium", 100},
         }
     },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 400},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
     --248K
@@ -413,6 +420,13 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
             {"clowns-plate-depleted-uranium", 200},
             {"clowns-plate-magnesium", 200},
             {"clowns-plate-osmium", 200},
+        }
+    },
+    --Cold Bitters
+    {
+        dependencies = {"Cold_biters"},
+        replacements = {
+            {"cb_alien_cold_artifact", 500},
         }
     },
     --SEK2

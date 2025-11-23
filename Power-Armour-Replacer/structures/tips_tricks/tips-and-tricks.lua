@@ -113,6 +113,25 @@ if mods["bobequipment"] then
 	})
 end
 
+if mods["Cold_biters"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_ColdBitters-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_info"},
+			order = "3BC",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "par-armour-mk1",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+end
+
 if mods["custom_power_armor_fix"] then
 	data:extend({
 		{
