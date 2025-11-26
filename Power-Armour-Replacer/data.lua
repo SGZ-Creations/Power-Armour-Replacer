@@ -10,7 +10,7 @@
     require("prototypes.items.nvgs_item")
     require("prototypes.items.immuntiy_item")
     require("prototypes.items.acu_item")
-    require("prototypes.misc.crafting-catergoies")
+    require("prototypes.misc.CraftingCategoriesData")
     require("prototypes.misc.other")
 
 --prototypes.recipes

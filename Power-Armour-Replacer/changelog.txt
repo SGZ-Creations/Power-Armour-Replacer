@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 26.11.25
+  Changes:
+    - Made Sure hand_crafting still works with Castra.
+  Info:
+    - More small fixes to this comes as i play my own game with Castra.
+    - Unless some comes by my Discord server that can show the PA&R UI.
+    - Fully unlocked using Castra. & NO /Cheat used.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.4
 Date: 23-11-25
   Features:
