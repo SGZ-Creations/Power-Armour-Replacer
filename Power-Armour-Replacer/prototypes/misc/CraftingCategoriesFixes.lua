@@ -7,7 +7,7 @@ if mods["bobclasses"] and mods["castra"]then
 	table.insert(data.raw["character"]["bob-character-balanced-2"].crafting_categories, "castra-electronics-or-handcrafting")
 	table.insert(data.raw["character"]["bob-character-fighter"].crafting_categories, "castra-electronics-or-handcrafting")
 	table.insert(data.raw["character"]["bob-character-fighter-2"].crafting_categories, "castra-electronics-or-handcrafting")
-	table.insert(data.raw["character"]["bob-character-builde"].crafting_categories, "castra-electronics-or-handcrafting")
+	table.insert(data.raw["character"]["bob-character-builder"].crafting_categories, "castra-electronics-or-handcrafting")
 	table.insert(data.raw["character"]["bob-character-builder-2"].crafting_categories, "castra-electronics-or-handcrafting")
 
 	Recipe["par-armour-mk1"].category = "castra-electronics-or-handcrafting"
