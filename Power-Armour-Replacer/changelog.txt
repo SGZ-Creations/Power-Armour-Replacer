@@ -4,7 +4,7 @@ Date: 28.11.25
   Modding:
     - Krastorio2-spaced-out.
     - Made K2 filters apply to Spaced out.
-    - Moved remaining tech To PAR Tab 
+    - Moved remaining Recipes To PAR Tab 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.5
 Date: 26.11.25
