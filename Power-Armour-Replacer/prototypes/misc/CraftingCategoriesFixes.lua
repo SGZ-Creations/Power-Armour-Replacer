@@ -1,7 +1,6 @@
 ---@class data.RecipePrototype
 local Recipe = data.raw.recipe
 
-
 if mods["bobclasses"] and mods["castra"]then
 	table.insert(data.raw["character"]["character"].crafting_categories, "castra-electronics-or-handcrafting")
 	table.insert(data.raw["character"]["bob-character-balanced-2"].crafting_categories, "castra-electronics-or-handcrafting")

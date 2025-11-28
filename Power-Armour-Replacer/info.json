@@ -2,7 +2,7 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "2.0",
-	"version": "0.4.5",
+	"version": "0.4.6",
 	"author": "SGZ_Creations",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
@@ -47,6 +47,7 @@
 		"? RampantArsenalFork >= 1.0.3",
 		"? space-exploration >= 0.7.36",
 		"? Krastorio2 >= 2.0.11",
+		"? Krastorio2-spaced-out >= 1.5.0",
 		"(?) space-spidertron",
 		"(?) SpaceModFeorasFork >= 1.3.0",
 		"? spidertron-extended >= 0.3.15",

@@ -145,7 +145,7 @@ if mods["Krastorio2"] and mods["space-exploration"] then
             order = "ZLab-9"
         },
     })
-elseif mods["Krastorio2"] then
+elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
     data:extend({
         {
             type = "bool-setting",

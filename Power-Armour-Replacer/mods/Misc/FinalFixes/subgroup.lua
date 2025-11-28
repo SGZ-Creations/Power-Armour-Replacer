@@ -67,11 +67,16 @@ if mods["metal-and-stars"]then
 	Armour["prototype-mech-armor"].subgroup = "PAREXT_MechSuits"
 	Armour["prototype-mech-armor"].order = "AA"
 end
-if mods["Krastorio2"] then
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	Item["kr-energy-absorber-equipment"].subgroup = "PAR_K2Verified"
 	Item["kr-energy-absorber-equipment"].order = "AA"
 end
-
+if mods["Krastorio2-spaced-out"]then
+	Item["kr-additional-engine-equipment"].subgroup = "PAR_K2Verified"
+	Item["kr-additional-engine-equipment"].order = "BA"
+	Item["kr-advanced-additional-engine-equipment"].subgroup = "PAR_K2Verified"
+	Item["kr-advanced-additional-engine-equipment"].order = "BB"
+end
 if mods["jetpack"] then
 	Item["jetpack-1"].subgroup = "PAR_SEVerified"
 	Item["jetpack-1"].order = "AA"

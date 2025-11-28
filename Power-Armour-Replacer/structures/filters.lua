@@ -660,14 +660,23 @@ if mods["Krastorio2"] and mods["space-exploration"] then
         Hide_Item("kr-personal-laser-defense-mk3-equipment")
         Hide_Item("kr-personal-laser-defense-mk4-equipment")
     end
-elseif mods["Krastorio2"] then
---Hidden
-    DRR["kr-power-armor-mk3"].hidden = true
-    DRR["kr-power-armor-mk4"].hidden = true
+elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+--Hidden Recipes
+    if mods["Krastorio2-spaced-out"] then
+        DRR["kr-vehicle-roboport-equipment"].hidden = true
+    end
+    if not mods["Krastorio2-spaced-out"] then
+        DRR["kr-power-armor-mk3"].hidden = true
+        DRR["kr-power-armor-mk4"].hidden = true
+        DRR["kr-battery-mk3-equipment"].hidden = true
+        DRR["kr-big-battery-equipment"].hidden = true
+        DRR["kr-big-battery-mk2-equipment"].hidden = true
+        DRR["kr-big-battery-mk3-equipment"].hidden = true
+    end
     DRR["kr-additional-engine-equipment"].hidden = true
     DRR["kr-advanced-additional-engine-equipment"].hidden = true
-    DRR["kr-portable-generator-equipment"].hidden = true
     DRR["kr-small-portable-generator-equipment"].hidden = true
+    DRR["kr-portable-generator-equipment"].hidden = true
     DRR["kr-big-solar-panel-equipment"].hidden = true
     DRR["kr-superior-solar-panel-equipment"].hidden = true
     DRR["kr-big-superior-solar-panel-equipment"].hidden = true
@@ -675,10 +684,6 @@ elseif mods["Krastorio2"] then
     DRR["kr-energy-shield-mk3-equipment"].hidden = true
     DRR["kr-energy-shield-mk4-equipment"].hidden = true
     DRR["kr-antimatter-reactor-equipment"].hidden = true
-    DRR["kr-big-battery-equipment"].hidden = true
-    DRR["kr-big-battery-mk2-equipment"].hidden = true
-    DRR["kr-battery-mk3-equipment"].hidden = true
-    DRR["kr-big-battery-mk3-equipment"].hidden = true
     DRR["kr-advanced-exoskeleton-equipment"].hidden = true
     DRR["kr-superior-exoskeleton-equipment"].hidden = true
     DRR["kr-superior-night-vision-equipment"].hidden = true
@@ -686,10 +691,42 @@ elseif mods["Krastorio2"] then
     DRR["kr-personal-laser-defense-mk3-equipment"].hidden = true
     DRR["kr-personal-laser-defense-mk4-equipment"].hidden = true
 
-    DRT["kr-power-armor-mk3"].hidden = true
-    DRT["kr-power-armor-mk4"].hidden = true
+--Enabled Recipes
+    if mods["Krastorio2-spaced-out"] then
+        DRR["kr-vehicle-roboport-equipment"].enabled = false
+    end
+    if not mods["Krastorio2-spaced-out"] then
+        DRR["kr-power-armor-mk3"].enabled = false
+        DRR["kr-power-armor-mk4"].enabled = false
+        DRR["kr-battery-mk3-equipment"].enabled = false
+        DRR["kr-big-battery-equipment"].enabled = false
+        DRR["kr-big-battery-mk2-equipment"].enabled = false
+        DRR["kr-big-battery-mk3-equipment"].enabled = false
+    end
+    DRR["kr-additional-engine-equipment"].enabled = false
+    DRR["kr-advanced-additional-engine-equipment"].enabled = false
+    DRR["kr-portable-generator-equipment"].enabled = false
+    DRR["kr-small-portable-generator-equipment"].enabled = false
+    DRR["kr-big-solar-panel-equipment"].enabled = false
+    DRR["kr-fusion-reactor-equipment"].enabled = false
+    DRR["kr-antimatter-reactor-equipment"].enabled = false
+    DRR["kr-energy-shield-mk3-equipment"].enabled = false
+    DRR["kr-energy-shield-mk4-equipment"].enabled = false
+    DRR["kr-advanced-exoskeleton-equipment"].enabled = false
+    DRR["kr-superior-exoskeleton-equipment"].enabled = false
+    DRR["kr-superior-night-vision-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
+    DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
+
+--Hidden Tech
+    if not mods["Krastorio2-spaced-out"] then
+        DRT["kr-power-armor-mk3"].hidden = true
+        DRT["kr-power-armor-mk4"].hidden = true
+        DRT["kr-battery-mk3-equipment"].hidden = true
+    end
+    DRT["kr-advanced-additional-engine-equipment"].hidden = true
     DRT["kr-portable-generator-equipment"].hidden = true
-    DRT["kr-battery-mk3-equipment"].hidden = true
     DRT["kr-fusion-reactor-equipment"].hidden = true
     DRT["kr-antimatter-reactor-equipment"].hidden = true
     DRT["kr-advanced-exoskeleton-equipment"].hidden = true
@@ -700,40 +737,19 @@ elseif mods["Krastorio2"] then
     DRT["kr-personal-laser-defense-mk2-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk3-equipment"].hidden = true
     DRT["kr-personal-laser-defense-mk4-equipment"].hidden = true
-    DRT["kr-advanced-additional-engine-equipment"].hidden = true
 
---Enabled
-    DRR["kr-power-armor-mk3"].enabled = false
-    DRR["kr-power-armor-mk4"].enabled = false
-    DRR["kr-additional-engine-equipment"].enabled = false
-    DRR["kr-portable-generator-equipment"].enabled = false
-    DRR["kr-small-portable-generator-equipment"].enabled = false
-    DRR["kr-big-solar-panel-equipment"].enabled = false
-    DRR["kr-advanced-additional-engine-equipment"].enabled = false
-    DRR["kr-fusion-reactor-equipment"].enabled = false
-    DRR["kr-antimatter-reactor-equipment"].enabled = false
-    DRR["kr-energy-shield-mk3-equipment"].enabled = false
-    DRR["kr-energy-shield-mk4-equipment"].enabled = false
-    DRR["kr-big-battery-equipment"].enabled = false
-    DRR["kr-big-battery-mk2-equipment"].enabled = false
-    DRR["kr-battery-mk3-equipment"].enabled = false
-    DRR["kr-big-battery-mk3-equipment"].enabled = false
-    DRR["kr-advanced-exoskeleton-equipment"].enabled = false
-    DRR["kr-superior-exoskeleton-equipment"].enabled = false
-    DRR["kr-superior-night-vision-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
-
-    DRT["kr-power-armor-mk3"].enabled = false
-    DRT["kr-power-armor-mk4"].enabled = false
+--Enabled Tech
+    if not mods["Krastorio2-spaced-out"] then
+        DRT["kr-power-armor-mk3"].enabled = false
+        DRT["kr-power-armor-mk4"].enabled = false
+        DRT["kr-battery-mk3-equipment"].enabled = false
+    end
+    DRT["kr-advanced-additional-engine-equipment"].enabled = false
     DRT["kr-portable-generator-equipment"].enabled = false
-    DRT["kr-battery-mk3-equipment"].enabled = false
     DRT["kr-fusion-reactor-equipment"].enabled = false
     DRT["kr-antimatter-reactor-equipment"].enabled = false
     DRT["kr-energy-shield-mk3-equipment"].enabled = false
     DRT["kr-energy-shield-mk4-equipment"].enabled = false
-    DRT["kr-advanced-additional-engine-equipment"].enabled = false
     DRT["kr-superior-solar-panel-equipment"].enabled = false
     DRT["kr-superior-night-vision-equipment"].enabled = false
     DRT["kr-advanced-exoskeleton-equipment"].enabled = false
@@ -743,19 +759,26 @@ elseif mods["Krastorio2"] then
     DRT["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
     if SS["K2-filters"].value then
-        Hide_Item("kr-power-armor-mk3")
-        Hide_Item("kr-power-armor-mk4")
-        Hide_Item("kr-portable-generator")
+        if mods["Krastorio2-spaced-out"] then
+            Hide_Item("kr-vehicle-roboport-equipment")
+        end
+        if not mods["Krastorio2-spaced-out"] then
+            Hide_Item("kr-power-armor-mk3")
+            Hide_Item("kr-power-armor-mk4")
+            Hide_Item("kr-big-battery-equipment")
+            Hide_Item("kr-battery-mk3-equipment")
+            Hide_Item("kr-big-battery-mk2-equipment")
+            Hide_Item("kr-big-battery-mk3-equipment")
+        end
+        Hide_Item("kr-additional-engine-equipment")
+        Hide_Item("kr-advanced-additional-engine-equipment")
         Hide_Item("kr-small-portable-generator-equipment")
+        Hide_Item("kr-portable-generator-equipment")
         Hide_Item("kr-big-solar-panel-equipment")
         Hide_Item("kr-superior-solar-panel-equipment")
         Hide_Item("kr-big-superior-solar-panel-equipment")
         Hide_Item("kr-fusion-reactor-equipment")
         Hide_Item("kr-antimatter-reactor-equipment")
-        Hide_Item("kr-big-battery-equipment")
-        Hide_Item("kr-big-battery-mk2-equipment")
-        Hide_Item("kr-battery-mk3-equipment")
-        Hide_Item("kr-big-battery-mk3-equipment")
         Hide_Item("kr-energy-shield-mk3-equipment")
         Hide_Item("kr-energy-shield-mk4-equipment")
         Hide_Item("kr-advanced-exoskeleton-equipment")
@@ -766,7 +789,6 @@ elseif mods["Krastorio2"] then
         Hide_Item("kr-personal-laser-defense-mk4-equipment")
     end
 end
-
 
 if mods["space-exploration"] then
 --Enabled

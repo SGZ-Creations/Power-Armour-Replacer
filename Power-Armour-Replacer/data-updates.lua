@@ -20,6 +20,7 @@
 --structures
 	require("structures.science-setting")
 	require("mods.Misc.Updates.Resistances")
+	--require("mods.Misc.Updates.KRSpacedOut")
     --require("structures.tips_tricks.tips-a-tricks-updates")
     --require("structures.Milestones.preset_addons")
     --require("structures.Milestones.presets")

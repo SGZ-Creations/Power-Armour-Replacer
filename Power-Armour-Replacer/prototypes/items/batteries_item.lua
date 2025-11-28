@@ -48,7 +48,7 @@ for tier, battery in pairs(batteries) do
             buffer_capacity = battery.buffer_capacity,
             usage_priority = "tertiary"
         },
-        categories = { "armor" }
+        categories = {"armor"}
     }
 
     data:extend({
