@@ -313,27 +313,29 @@ if mods["bobequipment"] then
 end
 
 if mods["Cold_biters"]then
---Enabled
-    DRR["cb-modular-armor"].enabled = false
-    DRR["cb-power-armor"].enabled = false
-    DRR["cb-power-armor-mk2"].enabled = false
+    if SS["cb-enable-cold-warfare"].value == true then
+    --Enabled
+        DRR["cb-modular-armor"].enabled = false
+        DRR["cb-power-armor"].enabled = false
+        DRR["cb-power-armor-mk2"].enabled = false
 
-    DRT["cb-modular-armor"].enabled = false
-    DRT["cb-power-armor"].enabled = false
-    DRT["cb-power-armor-mk2"].enabled = false
---Hidden
-    DRR["cb-modular-armor"].hidden = true
-    DRR["cb-power-armor"].hidden = true
-    DRR["cb-power-armor-mk2"].hidden = true
+        DRT["cb-modular-armor"].enabled = false
+        DRT["cb-power-armor"].enabled = false
+        DRT["cb-power-armor-mk2"].enabled = false
+    --Hidden
+        DRR["cb-modular-armor"].hidden = true
+        DRR["cb-power-armor"].hidden = true
+        DRR["cb-power-armor-mk2"].hidden = true
 
-    DRT["cb-modular-armor"].hidden = true
-    DRT["cb-power-armor"].hidden = true
-    DRT["cb-power-armor-mk2"].hidden = true
+        DRT["cb-modular-armor"].hidden = true
+        DRT["cb-power-armor"].hidden = true
+        DRT["cb-power-armor-mk2"].hidden = true
 
-    if SS["ColdBitersFilters"].value then
-        Hide_Item("cb-modular-armor")
-        Hide_Item("cb-power-armor")
-        Hide_Item("cb-power-armor-mk2")
+        if SS["ColdBitersFilters"].value then
+            Hide_Item("cb-modular-armor")
+            Hide_Item("cb-power-armor")
+            Hide_Item("cb-power-armor-mk2")
+        end
     end
 end
 
