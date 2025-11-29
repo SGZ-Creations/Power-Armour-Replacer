@@ -1,6 +1,9 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
+---@class ProtypeRecipe
+local RECIPES = data.raw["recipe"]
+---@class LuaSettings
+local SS = settings.startup
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -29,7 +32,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk1"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -75,7 +78,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk2"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -128,7 +131,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk3"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk4"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -160,7 +163,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk4"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk5"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -194,7 +197,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk5"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk6"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -222,7 +225,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk6"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -268,7 +271,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk7"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -305,7 +308,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk8"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -322,8 +325,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 450},
-            ["petroleum-gas"] = {"bob-ammonia", 200},
-            ["low-density-structure"] =  {"bob-nitinol-alloy", 100},
+            ["low-density-structure"] = {"bob-nitinol-alloy", 100},
             {"bob-invar-alloy", 200},
         }
     },
@@ -342,7 +344,7 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-ammonia"] = {"gas-monochloramine", 100},
+            {"gas-monochloramine", 100},
             {"uranium-234", 20},
         }
     },
@@ -354,15 +356,25 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk9"], {
             {"clowns-plate-depleted-uranium", 100},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
+        setting = "cb-enable-cold-warfare",
         replacements = {
             {"cb_alien_cold_artifact", 400},
         }
     },
+    ]]
 })
-PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
+
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-fission-reactor-mk9"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=400})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
     --248K
     {
         dependencies = {"248k"},
@@ -422,13 +434,16 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
             {"clowns-plate-osmium", 200},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
+        setting = "cb-enable-cold-warfare",
         replacements = {
             {"cb_alien_cold_artifact", 500},
         }
     },
+    ]]
     --SEK2
     {
         dependencies = {"space-exploration"},
@@ -446,3 +461,9 @@ PAR.ingredient_prereq(DRR["par-fission-reactor-mk10"], {
         }
     },
 })
+
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-fission-reactor-mk10"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=400})
+    end
+end

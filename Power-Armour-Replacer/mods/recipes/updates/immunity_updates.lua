@@ -1,7 +1,10 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
---Compatibility section
-PAR.ingredient_prereq(DRR["par-belt-immunity-mk1"], {
+---@class ProtypeRecipe
+local RECIPES = data.raw["recipe"]
+---@class LuaSettings
+local SS = settings.startup
+
+PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -52,7 +55,7 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk1"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -106,13 +109,16 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
             ["fi_materials_titan"] = {"bob-titanium-plate", 350},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
+        setting = "cb-enable-cold-warfare",
         replacements = {
             {"cb_alien_cold_artifact", 500},
         }
     },
+    ]]
     -- SE K2
     {
         dependencies = {"space-exploration"},
@@ -133,3 +139,8 @@ PAR.ingredient_prereq(DRR["par-belt-immunity-mk2"], {
         }
     },
 })
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-belt-immunity-mk2"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=500})
+    end
+end

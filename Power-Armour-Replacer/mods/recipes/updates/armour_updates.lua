@@ -647,6 +647,12 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk8"], {
     },]]
 })
 
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=400})
+    end
+end
+
 if mods["bobenemies"] then
     if SS["bobmods-enemies-enableartifacts"].value == true then
         table.insert(RECIPES["par-armour-mk9"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
@@ -707,13 +713,16 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
             {"reinforced-concrete-brick", 200},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
+        setting = "cb-enable-cold-warfare",
         replacements = {
             {"cb_alien_cold_artifact", 400},
         }
     },
+    ]]
     -- SE K2
     {
         dependencies = {"space-exploration"},
@@ -732,6 +741,12 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
         }
     },
 })
+
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-armour-mk10"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=500})
+    end
+end
 
 if mods["bobenemies"] then
     if SS["bobmods-enemies-enableartifacts"].value == true then
@@ -763,7 +778,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            --{type="fluid", name="carbon-dioxide", amount=500},-- Adding fluid just works Thasnks PEZ
+            --{type="fluid", name="carbon-dioxide", amount=500},-- Adding fluid just works Thanks PEZ Then it must have broken again due to being disabled.
             ["processing-unit"] = {"bob-advanced-processing-unit", 1000},
             ["low-density-structure"] = {"bob-copper-tungsten-alloy", 500},
             {"bob-nitinol-alloy", 600},
@@ -797,13 +812,16 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
             {"clowns-plate-depleted-uranium", 500},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
+        setting = "cb-enable-cold-warfare",
         replacements = {
             {"cb_alien_cold_artifact", 500},
         }
     },
+    ]]
     --248K
     {
         dependencies = {"248k"},

@@ -1,6 +1,10 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
-PAR.ingredient_prereq(DRR["par-nightvision-mk1"], {
+---@class ProtypeRecipe
+local RECIPES = data.raw["recipe"]
+---@class LuaSettings
+local SS = settings.startup
+
+PAR.ingredient_prereq(RECIPES["par-nightvision-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -50,7 +54,7 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk1"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-nightvision-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -95,6 +99,7 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk2"], {
             ["petroleum-gas"] = {"liquid-polyethylene", 300},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
@@ -102,6 +107,7 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk2"], {
             {"cb_alien_cold_artifact", 500},
         }
     },
+    ]]
     --248K
     {
         dependencies = {"248k"},
@@ -137,3 +143,8 @@ PAR.ingredient_prereq(DRR["par-nightvision-mk2"], {
         }
     },
 })
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-nightvision-mk2"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=500})
+    end
+end

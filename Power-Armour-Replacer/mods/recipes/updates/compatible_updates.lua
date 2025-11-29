@@ -32,16 +32,9 @@ if mods["RampantArsenalFork"] and mods["mech-armor"] then
     }
 end
 
-
 if mods["RampantArsenalFork"] and mods["space-age"]then
     Recipe["combat-mech-armor-rampant-arsenal"].category = "electronics"
 end
 if mods["metal-and-stars"]then
     Recipe["prototype-mech-armor"].category = "electronics-or-handcrafting"
 end
---Alterenative to fix how armour is added to a recipe.
---[[
-if not data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1} then
-	table.insert(data.raw.recipe["heavy-armor"].ingredients, {type="item", name="light-armor", amount=1})
-elseif data.raw.recipe["heavy-armor"].ingredients == {type="item", name="light-armor", amount=1} then return end
-]]

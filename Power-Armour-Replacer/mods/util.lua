@@ -9,9 +9,9 @@ function Remove(recipe_name, ingredient_name)
         if ingredient.name == ingredient_name then
             table.remove(Recipe[recipe_name].ingredients, i)
         elseif ingredient.name == nil then
-            log("ERROR.. \""..ingredient_name.."\" had an issue!")
+            log("ERROR.. \""..ingredient_name.."\" Ingrediant name Failed 2 Load, Are not correct!")
         elseif Recipe[recipe_name] == nil then
-            log("ERROR... \""..recipe_name.."\" Had am issue!")
+            log("ERROR.. \""..recipe_name.."\" Recipe name Failed 2 Load, Are not correct!")
         end
     end
 end
@@ -25,7 +25,8 @@ PAR.update_ingredients = function(recipe, replacements)
         local replacement = replacements[ingredient.name]--[[replacement = name{replacement[1],replacement[2]}]]
         if replacement then
             if replacement[1]=="zero" then
-                remove[#remove+1]=i
+                remove[#remove+1]=i --Make this use the Remove function above? example below.
+                --goto Remove(recipe_name, ingredient_name)
             else
                 ingredient.name = replacement[1]
                 ingredient.amount = replacement[2]
@@ -54,9 +55,9 @@ PAR.update_ingredients = function(recipe, replacements)
     --check if category == default, change it
     if not_crafting then
         if recipe.category == "crafting" then
-            recipe.category = "crafting-with-fluid"
+            recipe.category = "crafting-with-fluid" -- switch to electronics-or-handcrafting
         elseif recipe.category == nil then
-            recipe.category = "crafting-with-fluid"
+            recipe.category = "crafting-with-fluid" -- switch to electronics-or-handcrafting ?
         end
     end
 end

@@ -1,6 +1,9 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
-PAR.ingredient_prereq(DRR["par-shield-mk1"], {
+---@class ProtypeRecipe
+local RECIPES = data.raw["recipe"]
+---@class LuaSettings
+local SS = settings.startup
+PAR.ingredient_prereq(RECIPES["par-shield-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -33,11 +36,11 @@ PAR.ingredient_prereq(DRR["par-shield-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["electronic-circuit"] = {"automation-core", 15},
+            ["electronic-circuit"] = {"kr-automation-core", 15},
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -83,7 +86,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk2"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk3"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -128,7 +131,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk3"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk4"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -185,7 +188,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk4"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk5"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -220,7 +223,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk5"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk6"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -253,7 +256,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk6"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk7"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -295,7 +298,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk7"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk8"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -337,7 +340,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk8"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-shield-mk9"], {
+PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -387,6 +390,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk9"], {
             {"clowns-plate-magnesium", 150},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
@@ -394,8 +398,16 @@ PAR.ingredient_prereq(DRR["par-shield-mk9"], {
             {"cb_alien_cold_artifact", 400},
         }
     },
+    ]]
 })
-PAR.ingredient_prereq(DRR["par-shield-mk10"], {
+
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-shield-mk9"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=400})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -444,6 +456,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk10"], {
             {"clowns-plate-magnesium", 150},
         }
     },
+    --[[
     --Cold Bitters
     {
         dependencies = {"Cold_biters"},
@@ -451,6 +464,7 @@ PAR.ingredient_prereq(DRR["par-shield-mk10"], {
             {"cb_alien_cold_artifact", 500},
         }
     },
+    ]]
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -459,3 +473,8 @@ PAR.ingredient_prereq(DRR["par-shield-mk10"], {
         }
     },
 })
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-shield-mk10"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=500})
+    end
+end
