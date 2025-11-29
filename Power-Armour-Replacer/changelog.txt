@@ -3,7 +3,7 @@ Version: 0.4.7
 Date: 29.11.25
   Bugfixes:
     - Fixed to cold bitter crashing due to setting resetting itself in some circumstances.
-    - Added more safety checks to not crash.
+    - Added more safety checks (Cold Bitters) to not crash.
   Changes:
     - Folder ordering settings files again.
 ---------------------------------------------------------------------------------------------------
