@@ -1,4 +1,4 @@
-if mods["Milestones"] then
+if script.active_mods["Milestones"] then
     preset_addons = {
         ["PA&R"] = {
             required_mods = {"Power-Armour-Replacer"},
@@ -440,3 +440,5 @@ if mods["Milestones"] then
         },
     }
 end
+
+--table.insert(group[""] =  {type="item",       name="par-solar-panel-mk1",       quantity=1},)

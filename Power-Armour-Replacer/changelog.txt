@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.8
+Date: xx.01.26
+  Bugfixes:
+    - Loaded Milestones in wrong location. 
+---------------------------------------------------------------------------------------------------
 Version: 0.4.7
 Date: 29.11.25
   Bugfixes:
-    - Fixed to cold bitter crashing due to setting resetting itself in some circumstances.
+    - Fixed cold bitter crashing due to setting resetting itself in some circumstances.
     - Added more safety checks (Cold Bitters) to not crash.
   Changes:
     - Folder ordering settings files again.

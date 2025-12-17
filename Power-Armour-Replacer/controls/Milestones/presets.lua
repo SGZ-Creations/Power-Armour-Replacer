@@ -2,7 +2,7 @@
 Have this one now modifed to work with my par mod. Tho i don't realy want this on my end as is the standard space age jsut without the armours.
 Not sure if yours would need a forbidden_mods = {"Power-Armour-Replacer"} for it to work i think not any chnace to help/confirm this?
 ]]
-if mods["Milestones"] then
+if script.active_mods["Milestones"] then
     presets = {
         ["PARs SpaceAge Extension"] = {
             required_mods = {"space-age", "Power-Armour-Replacer", "PARs-SpaceAge-Extension"},
@@ -16,10 +16,10 @@ if mods["Milestones"] then
                 {type="item",       name="par-armour-mk5",       quantity=1, quality="rare"},
                 {type="item",       name="par-armour-mk5",       quantity=1, quality="epic"},
                 {type="item",       name="par-armour-mk5",       quantity=1, quality="legendary"},
-                {type="item",       name="par-armour-mk10",       quantity=1},
-                {type="item",       name="par-armour-mk10",       quantity=1, quality="rare"},
-                {type="item",       name="par-armour-mk10",       quantity=1, quality="epic"},
-                {type="item",       name="par-armour-mk10",       quantity=1, quality="legendary"},
+                {type="item",       name="par-armour-mk10",      quantity=1},
+                {type="item",       name="par-armour-mk10",      quantity=1, quality="rare"},
+                {type="item",       name="par-armour-mk10",      quantity=1, quality="epic"},
+                {type="item",       name="par-armour-mk10",      quantity=1, quality="legendary"},
 
                 {type="group", name="Batteries"},
                 {type="item",       name="par-battery-mk1",       quantity=1},
@@ -34,12 +34,12 @@ if mods["Milestones"] then
                 {type="item",       name="par-battery-mk5",       quantity=1, quality="rare"},
                 {type="item",       name="par-battery-mk5",       quantity=1, quality="epic"},
                 {type="item",       name="par-battery-mk5",       quantity=1, quality="legendary"},
-                {type="item",       name="par-battery-mk10",       quantity=1},
-                {type="item",       name="par-battery-mk10",       quantity=5},
-                {type="item",       name="par-battery-mk10",       quantity=10},
-                {type="item",       name="par-battery-mk10",       quantity=1, quality="rare"},
-                {type="item",       name="par-battery-mk10",       quantity=1, quality="epic"},
-                {type="item",       name="par-battery-mk10",       quantity=1, quality="legendary"},
+                {type="item",       name="par-battery-mk10",      quantity=1},
+                {type="item",       name="par-battery-mk10",      quantity=5},
+                {type="item",       name="par-battery-mk10",      quantity=10},
+                {type="item",       name="par-battery-mk10",      quantity=1, quality="rare"},
+                {type="item",       name="par-battery-mk10",      quantity=1, quality="epic"},
+                {type="item",       name="par-battery-mk10",      quantity=1, quality="legendary"},
 
                 {type="group", name="Exo"},
                 {type="item",       name="par-exoskeleton-mk1",       quantity=1},
@@ -74,12 +74,12 @@ if mods["Milestones"] then
                 {type="item",       name="par-fission-reactor-mk5",       quantity=1, quality="rare"},
                 {type="item",       name="par-fission-reactor-mk5",       quantity=1, quality="epic"},
                 {type="item",       name="par-fission-reactor-mk5",       quantity=1, quality="legendary"},
-                {type="item",       name="par-fission-reactor-mk10",       quantity=1},
-                {type="item",       name="par-fission-reactor-mk10",       quantity=5},
-                {type="item",       name="par-fission-reactor-mk10",       quantity=10},
-                {type="item",       name="par-fission-reactor-mk10",       quantity=1, quality="rare"},
-                {type="item",       name="par-fission-reactor-mk10",       quantity=1, quality="epic"},
-                {type="item",       name="par-fission-reactor-mk10",       quantity=1, quality="legendary"},
+                {type="item",       name="par-fission-reactor-mk10",      quantity=1},
+                {type="item",       name="par-fission-reactor-mk10",      quantity=5},
+                {type="item",       name="par-fission-reactor-mk10",      quantity=10},
+                {type="item",       name="par-fission-reactor-mk10",      quantity=1, quality="rare"},
+                {type="item",       name="par-fission-reactor-mk10",      quantity=1, quality="epic"},
+                {type="item",       name="par-fission-reactor-mk10",      quantity=1, quality="legendary"},
 
                 {type="group", name="Night Imnmunity"},
                 {type="item",       name="par-nightvision-mk1",       quantity=1},
@@ -165,12 +165,12 @@ if mods["Milestones"] then
                 {type="item",       name="par-solar-panel-mk5",       quantity=1, quality="rare"},
                 {type="item",       name="par-solar-panel-mk5",       quantity=1, quality="epic"},
                 {type="item",       name="par-solar-panel-mk5",       quantity=1, quality="legendary"},
-                {type="item",       name="par-solar-panel-mk10",       quantity=1},
-                {type="item",       name="par-solar-panel-mk10",       quantity=5},
-                {type="item",       name="par-solar-panel-mk10",       quantity=10},
-                {type="item",       name="par-solar-panel-mk10",       quantity=1, quality="rare"},
-                {type="item",       name="par-solar-panel-mk10",       quantity=1, quality="epic"},
-                {type="item",       name="par-solar-panel-mk10",       quantity=1, quality="legendary"},
+                {type="item",       name="par-solar-panel-mk10",      quantity=1},
+                {type="item",       name="par-solar-panel-mk10",      quantity=5},
+                {type="item",       name="par-solar-panel-mk10",      quantity=10},
+                {type="item",       name="par-solar-panel-mk10",      quantity=1, quality="rare"},
+                {type="item",       name="par-solar-panel-mk10",      quantity=1, quality="epic"},
+                {type="item",       name="par-solar-panel-mk10",      quantity=1, quality="legendary"},
             }
         },
         ["Space age"] = {
