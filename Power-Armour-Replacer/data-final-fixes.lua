@@ -1,5 +1,4 @@
 --structures
-	require("prototypes.misc.CraftingCategoriesFixes")
 	require("structures.invalid-recipe-tech-replaced")
 	require("structures.filters")
 
