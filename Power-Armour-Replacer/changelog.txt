@@ -2,7 +2,11 @@
 Version: 0.4.8
 Date: xx.01.26
   Bugfixes:
-    - Loaded Milestones in wrong location. 
+    - Loaded Milestones in wrong location.
+  Changes:
+    - Reverted changed made for castra.
+  Info:
+    - if you want to fix this on you end Empty the following:(Castra/prototypes/recipes-updates.lua)(Make sure that you leave 5 [table.insert] lines for Maraxsis Compatibility with castra.)
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.7
 Date: 29.11.25
