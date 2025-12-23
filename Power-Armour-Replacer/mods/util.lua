@@ -9,9 +9,9 @@ function Remove(recipe_name, ingredient_name)
         if ingredient.name == ingredient_name then
             table.remove(Recipe[recipe_name].ingredients, i)
         elseif ingredient.name == nil then
-            log("ERROR.. \""..ingredient_name.."\" Ingrediant name Failed 2 Load, Are not correct!")
+            log("Mod with.. \""..ingredient_name.."\" Ingrediant name Failed 2 Load, Are not correct!")
         elseif Recipe[recipe_name] == nil then
-            log("ERROR.. \""..recipe_name.."\" Recipe name Failed 2 Load, Are not correct!")
+            log("Mod with.. \""..recipe_name.."\" Recipe name Failed 2 Load, Are not correct!")
         end
     end
 end
