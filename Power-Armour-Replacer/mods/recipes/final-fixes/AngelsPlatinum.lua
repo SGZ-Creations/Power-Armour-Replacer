@@ -1,6 +1,6 @@
-local Angeles = mods["angelssmelting"]
+local Angels = mods["angelssmelting"]
 
-if Angeles then
+if Angels then
     angelsmods.trigger.ores["platinum"] = true
     angelsmods.trigger.smelting_products["platinum"].ingot = true
     angelsmods.trigger.smelting_products["platinum"].plate = true

@@ -3,6 +3,7 @@
 	require("structures.filters")
 
 --compatible.misc load order dependant
+    require("mods.recipes.final-fixes.AngelsPlatinum")
 	require("mods.Misc.FinalFixes.subgroup")
 	require("mods.recipes.final-fixes.compatible-recipe")
 

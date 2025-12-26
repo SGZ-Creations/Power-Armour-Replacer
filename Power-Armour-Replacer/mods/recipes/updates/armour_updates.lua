@@ -133,27 +133,14 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"bobplates", "angelssmelting"},
         replacements = {
-            ["bob-silver-plate"] = {"basic-electronic-componenets", 100},
+            --["bob-silver-plate"] = {"bob-basic-electronic-components", 100},
             ["bob-rubber"] = {"iron-gear-wheel", 40},
-        }
-    },
-    {
-        dependencies = {"angelssmelting", "EarlyTrainsUpdated"},
-        replacements = {
-            ["basic-electronic-componenets"] = {"engine-unit", 10},
         }
     },
     {
         dependencies = {"Bio_Industries", "angelssmelting"},
         replacements = {
             ["iron-gear-wheel"] = {"bob-rubber", 20},
-        }
-    },
-    --Darkstar
-    {
-        dependencies = {"angelssmelting", "Darkstar_utilities_fixed"},
-        replacements = {
-            ["bob-bronze-alloy"] = {"angels-mono-silicon", 100},
         }
     },
     --SeaBlock
@@ -235,7 +222,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["bob-cobalt-steel-alloy"] = {"bob-lead-plate", 100},
-            ["bob-zinc-plate"] = {"clay-brick", 125},
+            ["bob-zinc-plate"] = {"angels-clay-brick", 125},
         }
     },
     {
@@ -356,8 +343,8 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["bob-gunmetal-alloy"] = {"angels-wire-silver", 55},
-            ["engine-unit"] = {"concrete-brick", 135},
-            ["bob-silicon-plate"] = {"concrete-brick", 135},
+            ["engine-unit"] = {"angels-concrete-brick", 135},
+            ["bob-silicon-plate"] = {"angels-concrete-brick", 135},
         }
     },
     {
@@ -710,7 +697,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            {"reinforced-concrete-brick", 200},
+            {"angels-reinforced-concrete-brick", 200},
         }
     },
     --[[

@@ -287,7 +287,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk7"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-solder"] = {"angles-plate-platinum", 150},
+            ["bob-solder"] = {"angels-plate-platinum", 150},
         }
     },
     --Pyanodon
@@ -376,7 +376,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["gilder-copper-cable"] = {"agnels-wire-platinum", 230},
+            ["bob-gilder-copper-cable"] = {"angels-wire-platinum", 230},
             {"angels-wire-silver", 300},
             {"angels-plate-chrome", 350},
         }
@@ -443,7 +443,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["bob-gilded-copper-cable"] = {"angels-wire-silver", 450},
-            ["bob-solder"] = {"angels-wire-platnium", 300},
+            ["bob-solder"] = {"angels-wire-platinum", 300},
             {"angels-plate-chrome", 500},
         }
     },

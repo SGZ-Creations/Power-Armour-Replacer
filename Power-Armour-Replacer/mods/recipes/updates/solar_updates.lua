@@ -174,7 +174,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk5"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-silicon-wafer"] = {"angels-mono-silcon", 300},
+            ["bob-silicon-wafer"] = {"angels-mono-silicon", 300},
             ["steel-plate"] = {"angels-plate-chrome", 50},
         }
     },

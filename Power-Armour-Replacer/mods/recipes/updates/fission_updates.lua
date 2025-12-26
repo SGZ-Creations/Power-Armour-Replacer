@@ -106,7 +106,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk3"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["bob-silver-plate"] = {"angels-wire-silver", 120},
-            ["bob-brass-alloy"] = {"clay-brick", 150},
+            ["bob-brass-alloy"] = {"angels-clay-brick", 150},
         }
     },
     {
@@ -304,7 +304,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk8"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-titanium-plate"] = {"reinforced-concrete-brick", 100},
+            ["bob-titanium-plate"] = {"angels-reinforced-concrete-brick", 100},
         }
     },
 })
@@ -342,10 +342,10 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
         }
     },
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelspetrochem"},
         replacements = {
-            {"gas-monochloramine", 100},
-            {"uranium-234", 20},
+            {"angels-gas-monochloramine", 100},
+            {"angels-uranium-234", 20},
         }
     },
     {
@@ -420,10 +420,10 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
     },
     --Angels
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting","angelspetrochem"},
         replacements = {
             {"angels-wire-platinum", 200},
-            {"uranium-234", 20},
+            {"angels-uranium-234", 20},
         }
     },
     {

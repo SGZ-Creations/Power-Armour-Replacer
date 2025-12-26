@@ -11,7 +11,6 @@
     require("prototypes.items.immuntiy_item")
     require("prototypes.items.acu_item")
     require("prototypes.misc.CraftingCategoriesData")
-    require("prototypes.misc.other")
 
 --prototypes.recipes
     require("prototypes.recipes.armour_recipes")

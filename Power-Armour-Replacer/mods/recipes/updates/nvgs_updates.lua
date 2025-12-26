@@ -28,14 +28,14 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk1"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["copper-cable"] = {"angels-wire-silver", 100},
-            {"bob-silicon-wafers", 45},
+            {"bob-silicon-wafer", 45},
         }
     },
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["lubricant"] = {"hydrogen", 250},
-            {"solid-bob-carbon", 150},
+            ["lubricant"] = {"angels-gas-hydrogen", 250},
+            {"angels-solid-carbon", 150},
         }
     },
     -- SE-K2
