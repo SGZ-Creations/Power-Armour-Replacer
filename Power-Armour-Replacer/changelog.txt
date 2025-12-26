@@ -11,6 +11,8 @@ Date: 26.12.25
     - Update Require C.A.S version.
     - Milestones still don't load.
     - If you want to fix this on your end Empty file in the following path:(Castra/prototypes/recipes-updates.lua)(Make sure that you leave 5 [table.insert] lines for Maraxsis Compatibility with castra.)
+  Thanks:
+    - @SuperHeroPuppy. Have me come up with a new Tank grid. to differentiate with vanilla.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.7
 Date: 29.11.25
