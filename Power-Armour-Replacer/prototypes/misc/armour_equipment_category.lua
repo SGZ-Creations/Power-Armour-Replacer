@@ -5,7 +5,7 @@ data:extend({
         name = "replacer_armor",
         icon = "__Power-Armour-Replacer__/graphics/icons/armour/icon-power-armour-mk5.png",
         icon_size = 64,
-        order = "ca",
+        order = "ea",
     },
     {
         type = "item-subgroup",
