@@ -1,7 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.9
-Date: ????
-  Changes:
+Date: 26.12.25
+  Bugfixes:
+    - WIP Angels 2.0 update For PAR. https://github.com/SGZ-Creations/Power-Armour-Replacer/issues/4
+  Thanks:
+    - @kuroxusagi For thee git report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.8
 Date: 26.12.25
