@@ -1,13 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.8
-Date: xx.01.26
+Date: 26.12.25
   Bugfixes:
     - Loaded Milestones in wrong location.
+    - Fixed simulation crash in C.A.S mod.
   Changes:
     - Reverted changed made for castra.
+    - Moved Armour Crafting UI to after combat tab.
   Info:
+    - Update Require C.A.S version.
     - Milestones still don't load.
-    - if you want to fix this on your end Empty file in the following path:(Castra/prototypes/recipes-updates.lua)(Make sure that you leave 5 [table.insert] lines for Maraxsis Compatibility with castra.)
+    - If you want to fix this on your end Empty file in the following path:(Castra/prototypes/recipes-updates.lua)(Make sure that you leave 5 [table.insert] lines for Maraxsis Compatibility with castra.)
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.7
 Date: 29.11.25

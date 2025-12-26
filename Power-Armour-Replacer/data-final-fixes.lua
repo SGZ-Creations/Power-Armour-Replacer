@@ -10,4 +10,3 @@
     require("structures.RecyclingFinalFix")
 	require("mods.technology.final-fixes.par-depedency-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")
-    require("structures.SimulationScenarioCrash")
