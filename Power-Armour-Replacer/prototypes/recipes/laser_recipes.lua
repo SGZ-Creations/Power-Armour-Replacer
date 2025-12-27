@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk1",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -15,6 +16,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk2",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -28,6 +30,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk3",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -42,6 +45,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk4",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -55,6 +59,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk5",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -69,6 +74,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk6",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -84,6 +90,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk7",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -99,6 +106,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk8",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -114,6 +122,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk9",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -130,6 +139,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-laser-mk10",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {

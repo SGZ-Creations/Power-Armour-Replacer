@@ -2,22 +2,21 @@ data:extend({
     {
         type = "recipe",
         name = "par-belt-immunity-mk1",
-        category = "crafting-with-fluid",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 10,
         ingredients = {
             {type="item", name="armour-control-unit", amount=200},
             {type="item", name="advanced-circuit", amount=200},
+            {type="item", name="steel-plate", amount=200},
             {type="item", name="battery", amount=200},
-            --Fluid
-            {type="fluid", name="lubricant", amount=200},
         },
         results = {{type="item", name="par-belt-immunity-mk1", amount=1}}
     },
     {
         type = "recipe",
         name = "par-belt-immunity-mk2",
-        category = "crafting-with-fluid",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -25,8 +24,6 @@ data:extend({
             {type="item", name="armour-control-unit", amount=500},
             {type="item", name="low-density-structure", amount=50},
             {type="item", name="processing-unit", amount=60},
-            --Fluid
-            {type="fluid", name="sulfuric-acid", amount=150},
         },
         results = {{type="item", name="par-belt-immunity-mk2", amount=1}}
     },
@@ -48,8 +45,6 @@ if mods["space-age"] then
                 {type="item", name="battery", amount=250},
                 {type="item", name="carbon", amount=250},
                 {type="item", name="ice", amount=250},
-                --Fluid
-                {type="fluid", name="lubricant", amount=200},
             },
             results = {
                 {type="item", name="par-belt-immunity-mk1", amount=1},

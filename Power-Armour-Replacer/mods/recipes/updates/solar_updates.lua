@@ -23,6 +23,14 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
             ["copper-plate"] = {"bob-tinned-copper-cable", 90}
         }
     },
+    --Angels
+    {
+        dependencies = {"bobplates", "angelssmelting"},
+        replacements = {
+            ["bob-glass"] = {"bob-solder", 100},
+            ["bob-rubber"] = {"angels-solid-carbon", 25},
+        }
+    },
     --SE
     {
         dependencies = {"space-exploration"},
@@ -57,7 +65,9 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-silver-plate"] = {"zero"},
+            ["bob-silver-plate"] = {"bob-bronze-alloy"},
+            ["bob-rubber"] = {"angels-solid-carbon"},
+            ["bob-glass"] = {"bob-tinned-copper-cable"},
         }
     },
     --SE
@@ -244,7 +254,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk8"], {
             ["battery"] = {"bob-silver-zinc-battery", 100},
             {"processing-unit", 130},
             {"bob-invar-alloy", 350},
-            {"bob-gunmetal-alloy", 350},
+            {"bob-silver-plate", 350},
             {"bob-aluminium-plate", 350},
         }
     },
@@ -259,7 +269,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk8"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            --[""] = {"zero"},
+            ["bob-silver-plate"] = {"angels-wire-platinum"},
             --[""] = {"zero"},
         }
     },

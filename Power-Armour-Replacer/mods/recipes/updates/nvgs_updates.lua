@@ -12,29 +12,24 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk1"], {
         }
     },
     {
-        dependencies = {"bobplates"},
-        replacements = {
-            ["small-lamp"] = {"bob-steel-bearing", 50},
-        }
-    },
-    {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
+            {type="fluid", name="bob-hydrogen", amount=250},
             {"bob-tinned-copper-cable", 50},
+            {"bob-silicon-wafer", 45},
+            {"bob-rubber", 200},
         }
     },
-    -- Angels
+    --Angels
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"angels-wire-silver", 100},
-            {"bob-silicon-wafer", 45},
+            {"angels-wire-silver", 100},
         }
     },
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["lubricant"] = {"angels-gas-hydrogen", 250},
             {"angels-solid-carbon", 150},
         }
     },
@@ -43,14 +38,8 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk1"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 25},
-            ["small-lamp"] = {"kr-iron-beam", 25},
-            ["lubricant"] = {"kr-mineral-water", 100},
-        }
-    },
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-            ["lubricant"] = {"zero"},
+            {"kr-iron-beam", 25},
+            {"kr-mineral-water", 100},
         }
     },
 })
@@ -58,9 +47,8 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"bob-insulated-cable", 240},
-            ["processing-unit"] = {"bob-rubber", 200},
-            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
+            ["advanced-circuit"] = {"bob-advanced-processing-unit", 200},
+            ["nuclear-fuel"] = {"bob-rubber", 200},
         }
     },
     {
@@ -68,9 +56,10 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
         replacements = {
             ["advanced-circuit"] = {"bob-advanced-processing-unit", 200},
             ["nuclear-fuel"] = {"bob-titanium-plate", 200},
-            ["processing-unit"] = {"bob-copper-tungsten-alloy", 200},
             {"bob-copper-tungsten-alloy", 200},
+            {"bob-cobalt-steel-alloy", 200},
             {"bob-titanium-plate", 200},
+            {"bob-glass", 200},
         }
     },
     {
@@ -82,32 +71,17 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
     {
         dependencies = {"bobrevamp", "bobplates"},
         replacements = {
-            ["petroleum-gas"] = {"bob-dinitrogen-tetroxide", 300},
+            {type="fluid", name="bob-ferric-chloride-solution", amount=300},
         }
     },
     --Angels
     {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            {"angels-plate-chrome", 300},
-        }
-    },
-    {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["bob-dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
-            ["petroleum-gas"] = {"liquid-polyethylene", 300},
+            ["bob-ferric-chloride-solution"] = {type="fluid", name="angels-liquid-polyethylene", amount=300},
+            {type="fluid", name="angels-liquid-polyethylene", amount=300},
         }
     },
-    --[[
-    --Cold Bitters
-    {
-        dependencies = {"Cold_biters"},
-        replacements = {
-            {"cb_alien_cold_artifact", 500},
-        }
-    },
-    ]]
     --248K
     {
         dependencies = {"248k"},

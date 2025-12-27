@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk1",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -16,6 +17,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk2",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -29,6 +31,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk3",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 30,
         ingredients = {
@@ -42,6 +45,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk4",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -56,6 +60,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk5",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50,
         ingredients = {
@@ -69,9 +74,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk6",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 60,
-        category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-roboport-mk5", amount=1},
             {type="item", name="processing-unit", amount=50},
@@ -84,6 +89,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk7",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 70,
         ingredients = {
@@ -98,6 +104,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk8",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 80,
         ingredients = {
@@ -114,7 +121,7 @@ local recipes = {
         name = "par-roboport-mk9",
         enabled = false,
         energy_required = 90,
-        category = "crafting-with-fluid",
+        category = "electronics-or-handcrafting",
         ingredients = {
             {type="item", name="par-roboport-mk8", amount=1},
             {type="item", name="armour-control-unit", amount=80},
@@ -127,6 +134,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk10",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 100,
         ingredients = {

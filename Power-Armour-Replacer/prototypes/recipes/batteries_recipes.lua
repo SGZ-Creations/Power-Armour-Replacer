@@ -88,7 +88,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-battery-mk7",
-        category="crafting-with-fluid",
+        category="electronics-or-handcrafting",
         enabled = false,
         energy_required = 55,
         ingredients = {
@@ -103,7 +103,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-battery-mk8",
-        category= "crafting-with-fluid",
+        category= "electronics-or-handcrafting",
         enabled = false,
         energy_required = 60,
         ingredients = {
@@ -133,7 +133,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-battery-mk10",
-        category= "crafting-with-fluid",
+        category= "electronics-or-handcrafting",
         enabled = false,
         energy_required = 70,
         ingredients = {

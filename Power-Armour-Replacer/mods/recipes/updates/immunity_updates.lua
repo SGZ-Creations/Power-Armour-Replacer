@@ -1,27 +1,36 @@
 local PAR = require("mods.util")
----@class ProtypeRecipe
+---@class PrototypeRecipe
 local RECIPES = data.raw["recipe"]
 ---@class LuaSettings
 local SS = settings.startup
 
 PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
     {
-        dependencies = {"bobelectronics",},
+        dependencies = {"bobelectronics"},
         replacements = {
-			{"electronic-circuit", 100},
+            {"electronic-circuit", 100},
         }
     },
     {
-        dependencies = {"bobplates"},
+        dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["steel-plate"] = {"bob-steel-bearing", 150},
+            {type="fluid", name="bob-hydrogen", amount=250},
+            {"bob-tinned-copper-cable", 50},
+            {"bob-silicon-wafer", 45},
+            {"bob-rubber", 200},
         }
     },
-    -- Angels
+    --Angels
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            {"angels-wire-silver", 100},
+        }
+    },
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["lubricant"] = {"bob-hydrogen", 250},
+            {"angels-solid-carbon", 150},
         }
     },
     --248K
@@ -42,7 +51,7 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 20},
-            ["lubricant"] = {"kr-mineral-water", 100},
+            {"kr-mineral-water", 100},
         }
     },
     --SE
@@ -50,7 +59,6 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
         dependencies = {"space-exploration"},
         replacements = {
             --["electronic-circuit"] = {"automation-core", 10},
-            ["lubricant"] = {"zero"},
         }
     },
 })
@@ -66,13 +74,16 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
         dependencies = {"bobplates"},
         replacements = {
             ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
+            {"bob-copper-tungsten-alloy", 200},
             {"bob-cobalt-steel-alloy", 200},
+            {"bob-titanium-plate", 200},
+            {"bob-glass", 200},
         }
     },
     {
         dependencies = {"bobrevamp", "bobplates"},
         replacements = {
-            ["sulfuric-acid"] = {"bob-dinitrogen-tetroxide", 300},
+            {type="fluid", name="bob-ferric-chloride-solution", amount=300},
         }
     },
     {
@@ -81,17 +92,12 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
             {"bob-gilded-copper-cable", 260},
         }
     },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            {"angels-plate-chrome", 300},
-        }
-    },
+    --Angels
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["bob-dinitrogen-tetroxide"] = {"liquid-polyethylene", 300},
-            ["sulfuric-acid"] = {"liquid-polyethylene", 300},
+            ["bob-ferric-chloride-solution"] = {type="fluid", name="angels-liquid-polyethylene", amount=300},
+            {type="fluid", name="angels-liquid-polyethylene", amount=300},
         }
     },
     --248K
@@ -109,16 +115,6 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
             ["fi_materials_titan"] = {"bob-titanium-plate", 350},
         }
     },
-    --[[
-    --Cold Bitters
-    {
-        dependencies = {"Cold_biters"},
-        setting = "cb-enable-cold-warfare",
-        replacements = {
-            {"cb_alien_cold_artifact", 500},
-        }
-    },
-    ]]
     -- SE K2
     {
         dependencies = {"space-exploration"},
@@ -127,7 +123,6 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
             ["processing-unit"] = {"se-naquium-processor", 2},
 			["advanced-circuit"] = {"se-quantum-processor", 2},
             ["rocket-fuel"] = {"zero"},
-            ["sulfuric-acid"] = {"zero"},
         }
     },
     {

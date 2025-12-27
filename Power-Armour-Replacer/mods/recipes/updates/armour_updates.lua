@@ -41,7 +41,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"bobplates", "angelssmelting"},
         replacements = {
-            ["stone-brick"] = {"bob-lead-plate", 100},
+            ["bob-glass"] = {"angels-solid-carbon", 100},
             ["bob-rubber"] = {"bob-steel-gear-wheel", 25},
         }
     },
@@ -133,7 +133,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"bobplates", "angelssmelting"},
         replacements = {
-            --["bob-silver-plate"] = {"bob-basic-electronic-components", 100},
+            ["bob-silver-plate"] = {"angels-solid-carbon", 100},
             ["bob-rubber"] = {"iron-gear-wheel", 40},
         }
     },
@@ -318,7 +318,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 400},
             ["engine-unit"] = {"bob-silicon-plate", 160},
-            ["iron-gear-wheel"] = {"bob-gunmetal-alloy", 120},
+            ["iron-gear-wheel"] = {"bob-silver-plate", 120},
             ["copper-plate"] = {"bob-cobalt-steel-alloy", 150},
             {"bob-invar-alloy", 100},
         }
@@ -342,9 +342,9 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["bob-gunmetal-alloy"] = {"angels-wire-silver", 55},
             ["engine-unit"] = {"angels-concrete-brick", 135},
             ["bob-silicon-plate"] = {"angels-concrete-brick", 135},
+            {"angels-wire-silver", 55},
         }
     },
     {
@@ -431,8 +431,8 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["bob-gunmetal-alloy"] = {"angels-wire-silver", 55},
             ["electric-engine-unit"] = {"angels-wire-platinum", 155},
+            ["bob-silver-plate"] = {"angels-wire-silver", 55},
         }
     },
     --248K

@@ -84,6 +84,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk7",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 70,
         ingredients = {
@@ -98,6 +99,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk8",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 75,
         ingredients = {
@@ -112,7 +114,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk9",
-        category = "crafting-with-fluid",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 80,
         ingredients = {
@@ -128,6 +130,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk10",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 85,
         ingredients = {

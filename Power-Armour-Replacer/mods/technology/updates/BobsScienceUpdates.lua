@@ -16,9 +16,6 @@ if mods["bobtech"]and mods["bobplates"] then
 	Tech["bob-chemical-processing-1"].unit = nil
 
 	if mods["bobelectronics"]then
-		Tech["lamp"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 50}
-		Tech["lamp"].unit = nil
-
 		Tech["bob-alloy-processing"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 100}
 		Tech["bob-alloy-processing"].unit = nil
 

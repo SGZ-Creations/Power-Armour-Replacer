@@ -8,6 +8,7 @@ local recipes = {
             {type="item", name="iron-plate", amount=100},
             {type="item", name="stone-brick", amount=100},
             {type="item", name="copper-plate", amount=100},
+            {type="item", name="steel-plate", amount=100},
             {type="item", name="electronic-circuit", amount=100},
         },
         results = {{type="item", name="par-shield-mk1", amount=1}}

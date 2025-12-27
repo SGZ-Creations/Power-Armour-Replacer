@@ -26,7 +26,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk1"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["bob-rubber"] = {"bob-steel-gear-wheel", 40},
-            ["iron-plate"] = {"bob-glass", 20},
+            ["iron-plate"] = {"angels-solid-carbon", 20},
         }
     },
     {
@@ -66,11 +66,19 @@ PAR.ingredient_prereq(DRR["par-laser-mk2"], {
             {"bob-insulated-cable", 80},
         }
     },
-    --Bio-Industries--Angels
+    --BioIndustries
     {
-        dependencies = {"Bio_Industries", "angelssmelting", "bobplates"},
+        dependencies = {"Bio_Industries", "bobplates"},
         replacements = {
             ["bob-insulated-cable"] = {"bob-rubber", 50},
+        }
+    },
+    --Angels
+    {
+        dependencies = {"bobplates", "angelssmelting"},
+        replacements = {
+            ["bob-glass"] = {"bob-bronze-alloy", 100},
+            ["bob-insulated-cable"] = {"bob-solder", 25},
         }
     },
     --K2
@@ -239,7 +247,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk6"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            {"bob-gunmetal-alloy", 100},
+            {"bob-titanium-plate", 100},
             {"bob-sapphire-5", 100},
         }
     },
@@ -260,7 +268,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk6"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["engine-unit"] = {"angels-plate-platinum", 100},
-            ["sulfur"] = {"angels-plate-manganese", 50},
+            ["sulfur"] = {"angels-mono-silicon", 100},
         }
     },
     --Clowns
@@ -415,7 +423,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 200},
-            ["steel-plate"] = {"bob-cobalt-steel-alloy", 200},
+            ["sulfur"] = {"bob-cobalt-steel-alloy", 200},
             ["advanced-circuit"] = {"bob-nitinol-alloy", 100},
             {"bob-nitinol-alloy", 100},
             {"bob-diamond-5", 100},

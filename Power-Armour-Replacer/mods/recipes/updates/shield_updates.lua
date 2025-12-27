@@ -29,7 +29,8 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk1"], {
     {
         dependencies = {"angelssmelting",},
         replacements = {
-            ["bob-rubber"] = {"iron-gear-wheel", 40},
+            ["bob-rubber"] = {"bob-lead-plate", 40},
+            {"angels-solid-carbon", 40},
         }
     },
     --K2
@@ -52,7 +53,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk2"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
             ["steel-plate"] = {"bob-steel-bearing", 50},
-            ["iron-plate"] = {"bob-tin-plate", 55},
+            ["iron-plate"] = {"bob-bronze-alloy", 60},
             ["engine-unit"] = {"bob-silver-plate", 100},
         }
     },
@@ -312,7 +313,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk8"], {
         replacements = {
             ["processing-unit"] = {"processing-unit", 400},
             ["lubricant"] = {"zero"},
-            {"bob-gunmetal-alloy", 100},
+            {"bob-copper-tungsten-alloy", 100},
             {"bob-cobalt-steel-alloy", 290},
             {"bob-silicon-nitride", 400},
         }

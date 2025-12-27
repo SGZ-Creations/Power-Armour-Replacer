@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk1",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50.0,
         ingredients = {
@@ -16,6 +17,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk2",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50.0,
         ingredients = {
@@ -30,6 +32,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk3",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50.0,
         ingredients = {
@@ -44,6 +47,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk4",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50.0,
         ingredients = {
@@ -58,6 +62,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk5",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50.0,
         ingredients = {
@@ -72,7 +77,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk6",
-        category="crafting-with-fluid",
+        category="electronics-or-handcrafting",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -88,7 +93,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk7",
-        category="crafting-with-fluid",
+        category="electronics-or-handcrafting",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -104,7 +109,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk8",
-        category="crafting-with-fluid",
+        category="electronics-or-handcrafting",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -119,7 +124,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk9",
-        category="crafting-with-fluid",
+        category="electronics-or-handcrafting",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -134,7 +139,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk10",
-        category="crafting-with-fluid",
+        category="electronics-or-handcrafting",
         enabled = false,
         energy_required = 10.0,
         ingredients = {

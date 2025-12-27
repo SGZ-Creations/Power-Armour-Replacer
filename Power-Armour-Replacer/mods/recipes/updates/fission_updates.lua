@@ -24,6 +24,13 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk1"], {
             {"bob-solder", 40},
         }
     },
+    --Angels
+    {
+        dependencies = {"bobplates", "angelssmelting"},
+        replacements = {
+            ["bob-insulated-cable"] = {"bob-lead-plate", 100},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -58,9 +65,11 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk2"], {
     },
     --Angels
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"bobplates", "angelssmelting"},
         replacements = {
             ["bob-silver-plate"] = {"bob-lead-plate", 40},
+            ["bob-glass"] = {"bob-bronze-alloy", 100},
+            ["bob-rubber"] = {"steel-plate", 25},
         }
     },
     -- SeaBlock-
@@ -344,7 +353,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            {"angels-gas-monochloramine", 100},
+            ["angels-gas-methane"] = {type="fluid", name="angels-gas-monochloramine", amount=100},
             {"angels-uranium-234", 20},
         }
     },
@@ -424,6 +433,12 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
         replacements = {
             {"angels-wire-platinum", 200},
             {"angels-uranium-234", 20},
+        }
+    },
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            ["bob-silver-nitrate"] = {"bob-copper-tungsten-alloy", 1000},
         }
     },
     {

@@ -31,7 +31,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-exoskeleton-mk3",
-        category = "crafting-with-fluid",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 15,
         ingredients = {
