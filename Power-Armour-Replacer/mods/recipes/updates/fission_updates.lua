@@ -353,8 +353,9 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["angels-gas-methane"] = {type="fluid", name="angels-gas-monochloramine", amount=100},
+            ["angels-gas-methane"] = {"zero"},
             {"angels-uranium-234", 20},
+            {type="fluid", name="angels-gas-monochloramine", amount=100},
         }
     },
     {
@@ -365,16 +366,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
             {"clowns-plate-depleted-uranium", 100},
         }
     },
-    --[[
-    --Cold Bitters
-    {
-        dependencies = {"Cold_biters"},
-        setting = "cb-enable-cold-warfare",
-        replacements = {
-            {"cb_alien_cold_artifact", 400},
-        }
-    },
-    ]]
 })
 
 if mods["Cold_biters"]then
@@ -429,9 +420,9 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
     },
     --Angels
     {
-        dependencies = {"angelssmelting","angelspetrochem"},
+        dependencies = {"angelssmelting", "angelspetrochem"},
         replacements = {
-            {"angels-wire-platinum", 200},
+            {type="fluid", name="angels-gas-monochloramine", amount=100},
             {"angels-uranium-234", 20},
         }
     },
@@ -439,6 +430,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             ["bob-silver-nitrate"] = {"bob-copper-tungsten-alloy", 1000},
+            {"angels-wire-platinum", 200},
         }
     },
     {
@@ -449,16 +441,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
             {"clowns-plate-osmium", 200},
         }
     },
-    --[[
-    --Cold Bitters
-    {
-        dependencies = {"Cold_biters"},
-        setting = "cb-enable-cold-warfare",
-        replacements = {
-            {"cb_alien_cold_artifact", 500},
-        }
-    },
-    ]]
     --SEK2
     {
         dependencies = {"space-exploration"},

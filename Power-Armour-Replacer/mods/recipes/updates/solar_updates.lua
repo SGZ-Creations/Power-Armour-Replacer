@@ -279,7 +279,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 140},
-            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 300},
             {"bob-insulated-cable", 250},
             --[""] = {"zero"},
         }
@@ -288,7 +288,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 140},
-            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 300},
         }
     },
     {
@@ -311,7 +311,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 600},
             ["processing-unit"] = {"bob-advanced-processing-unit", 150},
             {"bob-insulated-cable", 500},
         }
@@ -320,7 +320,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 150},
-            ["lubricant"] = {"bob-ferric-chloride-solution", 200},
+            ["lubricant"] = {"bob-ferric-chloride-solution", 600},
             {"bob-nitinol-alloy", 500},
             {"bob-copper-tungsten-alloy", 500},
         }

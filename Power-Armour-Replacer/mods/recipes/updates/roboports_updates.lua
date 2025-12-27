@@ -353,22 +353,16 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk10"], {
     {
         dependencies = {"boblogistics"},
         replacements = {
-            ["low-density-structure"] = {"bob-roboport-antenna-4", 10},
-            ["armour-control-unit"] = {"bob-roboport-chargepad-4", 10},
-            ["bob-advanced-processing-unit"] = {"bob-roboport-door-4", 10},
-            ["processing-unit"] = {"bob-roboport-door-4", 10},
-        }
-    },
-    {
-        dependencies = {"boblogistics", "space-age"},
-        replacements = {
+            {"bob-roboport-antenna-4", 1},
+            {"bob-roboport-chargepad-4", 1},
+            {"bob-roboport-door-4", 1},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"kr-matter-cube", 2},
+            {"kr-matter-cube", 2},
         }
     },
 })

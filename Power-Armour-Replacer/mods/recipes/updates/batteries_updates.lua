@@ -314,6 +314,13 @@ PAR.ingredient_prereq(DRR["par-battery-mk9"], {
             ["plastic-bar"] = {"bob-copper-tungsten-alloy", 250},
         }
     },
+    --Angels
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            {type="fluid", name="angels-gas-monochloramine", amount=100},
+        }
+    },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
@@ -337,6 +344,14 @@ PAR.ingredient_prereq(DRR["par-battery-mk10"], {
             ["armour-control-unit"] = {"bob-nitinol-alloy", 100},
         }
     },
+    --Angels
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            ["angels-liquid-sulfuric-acid"] = {"zero"},
+            {type="fluid", name="angels-gas-monochloramine", amount=100},
+        }
+    },
     {
         dependencies = {"extendedangels"},
         replacements = {
@@ -348,7 +363,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk10"], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-magnesium", 200},
-            ["sulfuric-acid"] = {"liquid-dimethylmercury", 300},
+            ["angels-gas-monochloramine"] = {type="fluid", name="liquid-dimethylmercury", amount=300}
         }
     },
     --K2

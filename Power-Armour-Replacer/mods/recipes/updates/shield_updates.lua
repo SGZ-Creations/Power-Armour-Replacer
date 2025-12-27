@@ -379,7 +379,14 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
         replacements = {
             ["bob-gilder-copper-cable"] = {"angels-wire-platinum", 230},
             {"angels-wire-silver", 300},
-            {"angels-plate-chrome", 350},
+            {"angels-ingot-chrome", 350},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            ["angels-gas-methane"] = {"zero"},
+            {type="fluid", name="angels-gas-monochloramine", amount=100},
         }
     },
     --Clowns
@@ -391,15 +398,6 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
             {"clowns-plate-magnesium", 150},
         }
     },
-    --[[
-    --Cold Bitters
-    {
-        dependencies = {"Cold_biters"},
-        replacements = {
-            {"cb_alien_cold_artifact", 400},
-        }
-    },
-    ]]
 })
 
 if mods["Cold_biters"]then
@@ -445,7 +443,14 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
         replacements = {
             ["bob-gilded-copper-cable"] = {"angels-wire-silver", 450},
             ["bob-solder"] = {"angels-wire-platinum", 300},
-            {"angels-plate-chrome", 500},
+            {"angels-ingot-chrome", 350},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem"},
+        replacements = {
+            ["angels-liquid-sulfuric-acid"] = {"zero"},
+            {type="fluid", name="angels-gas-monochloramine", amount=100},
         }
     },
     --Clowns
@@ -457,15 +462,6 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
             {"clowns-plate-magnesium", 150},
         }
     },
-    --[[
-    --Cold Bitters
-    {
-        dependencies = {"Cold_biters"},
-        replacements = {
-            {"cb_alien_cold_artifact", 500},
-        }
-    },
-    ]]
     --K2
     {
         dependencies = {"Krastorio2"},
