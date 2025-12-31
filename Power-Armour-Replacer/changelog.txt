@@ -4,6 +4,8 @@ Date: 31.12.25
   Bugfixes:
     - Tech soft lock with K2.
     - Recipe crash regards to {type="fluid", name="kr-mineral-water", amount=100},
+  Info:
+    - Re released version as 0.4.11-1 visually 0.4.11
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.10
 Date: 27.12.25
