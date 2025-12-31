@@ -39,7 +39,7 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk1"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 25},
             {"kr-iron-beam", 25},
-            {"kr-mineral-water", 100},
+            {type="fluid", name="kr-mineral-water", amount=100},
         }
     },
 })

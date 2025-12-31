@@ -51,7 +51,7 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 20},
-            {"kr-mineral-water", 100},
+            {type="fluid", name="kr-mineral-water", amount=100},
         }
     },
     --SE

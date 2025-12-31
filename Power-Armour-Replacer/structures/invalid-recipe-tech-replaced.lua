@@ -17,7 +17,7 @@ local replace = {
     ["personal-roboport-equipment"] = "par-roboport-tech-1",
     ["personal-roboport-mk2-equipment"] = "par-roboport-tech-2",
     ["fission-reactor-equipment"] = "par-fission-reactor-tech-1",
-    ["fusion-reactor-equipment"] = "par-fission-reactor-tech-5",-- Note: fix this for PAR's SA Extention
+    ["fusion-reactor-equipment"] = "par-fission-reactor-tech-5",-- Note: fix this for PAR's SA Extension
     ["belt-immunity-equipment"] = "par-night-immunity-tech-1",
     ["night-vision-equipment"] = "par-night-immunity-tech-1",
     ["personal-laser-defense-equipment"] = "par-laser-tech-1",
@@ -58,6 +58,7 @@ local replace = {
     ["bob-energy-shield-equipment-5"] = "par-shield-tech-5",
     ["bob-energy-shield-equipment-6"] = "par-shield-tech-6",
     ["rampant-arsenal-technology-power-armor-mk3"] = "par-armour-tech-7",
+    ["kr-advanced-additional-engine-equipment"] = "par-fission-reactor-tech-5",
     --["rampant-arsenal-technology-generator-equipment-3"] = "par-armour-tech-2", disabled by mod. 
 }
 local function replace_exists(replace_v, prerequisites)

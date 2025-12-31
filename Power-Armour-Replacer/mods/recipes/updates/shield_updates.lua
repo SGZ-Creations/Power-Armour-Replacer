@@ -184,8 +184,9 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["small-lamp"] = {"silicon-plate", 65},
+            ["small-lamp"] = {"kr-lithium-sulfur-battery"},
             ["advanced-circuit"] = {"kr-electronic-components", 30},
+            {"kr-silicon", 65},
         }
     },
 })

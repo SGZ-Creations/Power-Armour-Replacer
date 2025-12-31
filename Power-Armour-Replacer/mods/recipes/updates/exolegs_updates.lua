@@ -117,19 +117,13 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
             ["battery"] = {"bob-lithium-ion-battery", 55},
         }
     },
-    --SEK2
-    {
-        dependencies = {"Krastorio2", "space-exploration"},
-        replacements = {
-            ["lubricant"] = {"kr-mineral-water", 100},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["electronic-circuit"] = {"kr-rare-metals", 20},
-            ["lubricant"] = {"kr-mineral-water", 100},
+            ["lubricant"] = {"zero"},
+            {type="fluid", name="kr-mineral-water", amount=100},
         }
     },
     --SE
