@@ -5,7 +5,7 @@ local SS = settings.startup
 
 local nightvisions = {
     {buffer_capacity =tostring(SS["NvgBuffer_01"].value) .. "TJ", input_flow_limit =tostring(SS["NvgInputFlow_01"].value) .. "GW", energy_input =tostring(SS["NvgEnergyInput_01"].value) .. "GW", Darkness = 0.75, weightvalue = SS["NvgWeight_01"].value, order ="jcc[night-vision]-ac[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-frozen.png"}}},
-    {buffer_capacity =tostring(SS["NvgBuffer_02"].value) .. "kJ", input_flow_limit =tostring(SS["NvgInputFlow_02"].value) .. "kW", energy_input =tostring(SS["NvgEnergyInput_02"].value) .. "W", Darkness = 0.35, weightvalue = SS["NvgWeight_02"].value, order ="jdd[night-vision]-ad[armour-replacer]", lut ={{0.5, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-day.png"}}},
+    {buffer_capacity =tostring(SS["NvgBuffer_02"].value) .. "kJ", input_flow_limit =tostring(SS["NvgInputFlow_02"].value) .. "kW", energy_input =tostring(SS["NvgEnergyInput_02"].value) .. "W", Darkness = 0.35, weightvalue = SS["NvgWeight_02"].value, order ="jdd[night-vision]-ad[armour-replacer]", lut ={{0.3, "__Power-Armour-Replacer__/graphics/color_lut/par-nvgs-day.png"}}},
 }
 
 for tier, nightvision in pairs(nightvisions) do
