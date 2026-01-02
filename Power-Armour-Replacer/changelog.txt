@@ -3,6 +3,7 @@ Version: 0.4.12
 Date: x.1.26
   Changes:
     - Reduced Brightness on T2 NVGs.
+    - Added armour control unit in to recipe for scrap-reprocessor mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.11
 Date: 31.12.25

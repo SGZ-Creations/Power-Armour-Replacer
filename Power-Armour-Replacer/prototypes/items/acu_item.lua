@@ -20,6 +20,9 @@ data:extend({
 if mods["space-age"] then
 	table.insert(Recipe["scrap-recycling"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, probability = 0.15, show_details_in_recipe_tooltip = false})
 end
+if mods["scrap-reprocessor"]then
+	table.insert(Recipe["sr-architectural-scrap-processing"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, probability = 0.05, show_details_in_recipe_tooltip = false})
+end
 if mods["space-exploration"] then
 	data.raw["item"]["armour-control-unit"].stack_size = 200
 end
