@@ -4,13 +4,14 @@ Date: 6.1.26
   Bugfixes:
     - Typo Crash with Compatibility addon scrap-repressor mod.
   Changes:
+    - Reduced Scrap drop chance for for Armour control unit from 15% --> 5% 
     - README.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.12
 Date: 6.1.26
   Changes:
     - Reduced Brightness on T2 NVGs.
-    - Added armour control unit in to recipe for scrap-repressor mod.
+    - Added armour control unit in to recipe for scrap-repressor mod at 7.5 % scrap drop chance.
     - Added extra checks for metal & stars mod.
     - Changed to another nanobots mod. Not as annoying as nanobots-refined.
     - nanobots-refined now marks as incompatible. Due do tech changes & tips and trick being replace with nanobots3
