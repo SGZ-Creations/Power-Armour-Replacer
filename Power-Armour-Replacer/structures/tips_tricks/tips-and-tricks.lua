@@ -209,18 +209,18 @@ if mods["Hiladdar_Gear"] then
 	})
 end
 
-if mods["nanobots-refined"] then
+if mods["Nanobots3"] then
 	data:extend({
 		{
 			type = "tips-and-tricks-item",
-			name = "nanobots-refined-info",
+			name = "Nanobots3-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
 			order = "3FA",
 			indent = 2,
 			trigger = {
 				type = "craft-item",
-				item = "par-armour-mk1",
+				item = "gun-nano-emitter",
 				event_type = "crafting-finished",
 				count = 1,
 			},

@@ -29,7 +29,7 @@ if mods["Power Armor MK3"] then
 	Item["pamk3-pdd"].order = "FB"
 end
 
-if mods["nanobots-refined"] then
+if mods["Nanobots3"] then
 	Item["equipment-bot-chip-items"].subgroup = "PAR_compatibility"
 	Item["equipment-bot-chip-items"].order = "HA"
 	Item["equipment-bot-chip-launcher"].subgroup = "PAR_compatibility"

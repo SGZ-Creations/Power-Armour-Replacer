@@ -76,7 +76,7 @@ if mods["metal-and-stars"] then
 end
 
 
-if mods["nanobots-refined"] then
+if mods["Nanobots3"] then
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-trees"})
