@@ -151,7 +151,7 @@ if mods["custom_power_armor_fix"] then
 	})
 end
 
-if mods["metal-and-stars"] then
+if mods["metal-and-stars"]and not mods["PARs-SpaceAge-Extension"] then
 	data:extend({
 		{
 			type = "tips-and-tricks-item",
@@ -163,6 +163,23 @@ if mods["metal-and-stars"] then
 			trigger = {
 				type = "craft-item",
 				item = "prototype-mech-armor",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+elseif mods["metal-and-stars"]and mods["PARs-SpaceAge-Extension"]then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_MetalStars-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3DA",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "par-armour-mk1",
 				event_type = "crafting-finished",
 				count = 1,
 			},
