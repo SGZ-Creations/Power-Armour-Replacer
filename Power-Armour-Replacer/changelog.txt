@@ -2,6 +2,7 @@
 Version: 0.4.14
 Date: 0.1.26
   Changes:
+    - Added a 2x multiplier to all roboports "charging_station_count"
   Bugfixes:
     - Crash with angels dependency for recipe compatibility.
   Info:
