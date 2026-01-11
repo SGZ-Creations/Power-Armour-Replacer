@@ -77,6 +77,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk3"], {
         dependencies = {"bobplates"},
         replacements = {
             {"bob-lead-plate", 55},
+            ["steel-plate"] = {"bob-steel-bearing", 85},
         }
     },
     {
@@ -90,13 +91,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk3"], {
         dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
         replacements = {
             {"bob-lithium-ion-battery", 20},
-        }
-    },
-    --Angels
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            ["steel-plate"] = {"bob-steel-bearing", 85},
         }
     },
     --K2
