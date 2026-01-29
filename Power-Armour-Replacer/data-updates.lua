@@ -15,6 +15,7 @@
 	require("mods.technology.updates.base-tech-changes")
 	require("mods.technology.updates.BobsScienceUpdates")
 	require("mods.technology.updates.AngelsScienceUpdates")
+	require("mods.technology.updates.SeablockUpdates")
 	require("mods.technology.updates.AAI-Tech-updates")
 	require("mods.technology.updates.par-depedency-updates")
 	require("mods.technology.updates.spaceage-science-updates")

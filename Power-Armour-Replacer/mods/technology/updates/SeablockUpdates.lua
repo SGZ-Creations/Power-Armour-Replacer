@@ -1,4 +1,5 @@
 ---@class RecipePrototype
 local Recipe = data.raw.recipe
-
-Recipe["firearm-magazien"].enabled = true
+if mods["SeaBlock"]then
+	Recipe["firearm-magazien"].enabled = true
+end
