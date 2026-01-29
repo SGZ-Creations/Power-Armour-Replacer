@@ -5,6 +5,7 @@ Date: 0.1.26
     - Added a 2x multiplier to all roboports "charging_station_count"
   Bugfixes:
     - Crash with angels dependency for recipe compatibility.
+    - Progress Blockade with SeaBlock.
   Info:
     - Thanks @creepersx17 for trying my mod with only angels enabled :P
 ---------------------------------------------------------------------------------------------------
