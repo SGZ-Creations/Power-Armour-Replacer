@@ -32,6 +32,6 @@ if mods["angelssmelting"]and mods["angelspetrochem"]and mods["angelsrefining"] t
 	Tech["angels-tin-smelting-1"].research_trigger = {type ="craft-item", item ="angels-induction-furnace", count = 10}
 	Tech["angels-tin-smelting-1"].unit = nil
 
-	Tech["angels-solder-smelting-1"].research_trigger = {type ="craft-item", item ="angels-induction-furnace", count = 10}
+	Tech["angels-solder-smelting-1"].research_trigger = {type ="craft-item", item ="angels-induction-furnace", count = 20}
 	Tech["angels-solder-smelting-1"].unit = nil
 end
