@@ -2,7 +2,7 @@
 Version: 0.4.16
 Date: 31.1.26
   Bugfixes:
-    - Fix charging_station_count with & without Quality mod.
+    - Fix charging_station_count with & without Quality mod. with AI help.
   Thanks:
     - @rip_acounty for the bug report.
 ---------------------------------------------------------------------------------------------------
