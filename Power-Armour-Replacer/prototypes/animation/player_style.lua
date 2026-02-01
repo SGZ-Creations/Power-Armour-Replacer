@@ -11,7 +11,7 @@ local armors =
         "par-armour-mk9",
         "par-armour-mk10"
     }
-    for i, arm in pairs(armors) do
+    for _, arm in pairs(armors) do
         table.insert(data.raw.character.character.animations[3].armors, arm)
         data.raw["character-corpse"]["character-corpse"].armor_picture_mapping[arm] = 3
     end
