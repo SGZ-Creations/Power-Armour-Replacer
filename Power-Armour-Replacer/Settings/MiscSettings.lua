@@ -56,8 +56,21 @@ if mods["space-age"] then
     })
 end
 
+if mods["foliax"]then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "Foliax-filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "ZBab-9"
+        },
+    })
+    
+end
+
 if mods["bobwarfare"] then
-data:extend({
+    data:extend({
         {
             type = "bool-setting",
             name = "BobW-filters",

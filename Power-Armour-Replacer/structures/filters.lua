@@ -118,6 +118,7 @@ if SS["vanilla-filters"].value then
     Hide_Item("personal-laser-defense-equipment")
 end
 
+
 if mods["PARs-SpaceAge-Extension"] then
     if (mods["space-age"] or mods["mech-armor"])then
 
@@ -311,6 +312,53 @@ if mods["bobequipment"] then
         Hide_Item("bob-personal-laser-defense-equipment-6")
     end
 end
+
+if mods["foliax"]then
+    --Enabled
+    DRT["foliax-armor"].enabled = false
+    DRT["foliax-night-vision-equipment"].enabled = false
+    DRT["foliax-battery-equipment-one"].enabled = false
+    DRT["foliax-battery-equipment-two"].enabled = false
+    DRT["foliax-battery-equipment-three"].enabled = false
+    DRT["foliax-belt-immunity-equipment"].enabled = false
+    DRT["foliax-exoskeleton-equipment"].enabled = false
+    DRT["foliax-personal-roboport-equipment"].enabled = false
+    DRT["foliax-personal-roboport-equipment-two"].enabled = false
+    DRT["foliax-solar-panel-equipment"].enabled = false
+
+    DRR["foliax-armor"].enabled = false
+    DRR["foliax-exoskeleton-equipment"].enabled = false
+    DRR["foliax-solar-panel-equipment"].enabled = false
+    DRR["foliax-night-vision-equipment"].enabled = false
+    DRR["foliax-personal-roboport-equipment"].enabled = false
+
+--Hidden
+    DRT["foliax-armor"].hidden = true
+    DRT["foliax-night-vision-equipment"].hidden = true
+    DRT["foliax-battery-equipment-one"].hidden = true
+    DRT["foliax-battery-equipment-two"].hidden = true
+    DRT["foliax-battery-equipment-three"].hidden = true
+    DRT["foliax-belt-immunity-equipment"].hidden = true
+    DRT["foliax-exoskeleton-equipment"].hidden = true
+    DRT["foliax-personal-roboport-equipment"].hidden = true
+    DRT["foliax-personal-roboport-equipment-two"].hidden = true
+    DRT["foliax-solar-panel-equipment"].hidden = true
+
+    DRR["foliax-armor"].hidden = true
+    DRR["foliax-exoskeleton-equipment"].hidden = true
+    DRR["foliax-solar-panel-equipment"].hidden = true
+    DRR["foliax-night-vision-equipment"].hidden = true
+    DRR["foliax-personal-roboport-equipment"].hidden = true
+
+    if SS["Foliax-filters"].value then
+        Hide_Item("foliax-armor")
+        Hide_Item("foliax-exoskeleton-equipment")
+        Hide_Item("foliax-solar-panel-equipment")
+        Hide_Item("foliax-night-vision-equipment")
+        Hide_Item("foliax-personal-roboport-equipment")
+    end
+end
+
 
 if mods["Cold_biters"]then
     if SS["cb-enable-cold-warfare"].value == true then
