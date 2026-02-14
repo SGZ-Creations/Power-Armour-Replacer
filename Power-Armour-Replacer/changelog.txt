@@ -3,9 +3,11 @@ Version: 0.4.17
 Date: xx.02.26
   Modding:
     - Foliax Filters.
+    - Tips & Tricks Description for Foliax.
   Changes:
     - Spider Extended: Removed recipe update for Spider Builder (GhostWever).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
+    - Tips & Tricks for the 2 different Mod Conditions with Metal & stars. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.16
 Date: 31.1.26

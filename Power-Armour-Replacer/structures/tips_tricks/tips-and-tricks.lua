@@ -172,7 +172,7 @@ elseif mods["metal-and-stars"]and mods["PARs-SpaceAge-Extension"]then
 	data:extend({
 		{
 			type = "tips-and-tricks-item",
-			name = "par_MetalStars-info",
+			name = "parE_MetalStars-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
 			order = "3DA",
@@ -329,6 +329,25 @@ if mods["SpaceModFeorasFork"] then
 	})
 end
 
+if mods["foliax"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_foliax-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3LA",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "par-armour-mk1",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+end
+
 if mods["TeleportationEquipment"] then
 	data:extend({
 		{
@@ -336,11 +355,12 @@ if mods["TeleportationEquipment"] then
 			name = "par_teleportation-equipment-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_info"},
-			order = "3LA",
+			order = "3ZX",
 			indent = 2,
 		},
 	})
 end
+
 
 if mods["osm-radioactivity"] then
 	data:extend({
@@ -349,7 +369,7 @@ if mods["osm-radioactivity"] then
 			name = "par_osm-radioactivity-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_info"},
-			order = "3MA",
+			order = "3ZY",
 			indent = 2,
 		},
 	})
@@ -362,7 +382,7 @@ if mods["space-exploration"] and mods["Krastroio2"] then
 			name = "par_k2-se-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			order = "3ZA",
+			order = "3ZZ",
 			indent = 2,
 			trigger = {
 				type = "craft-item",
@@ -381,7 +401,7 @@ if mods["space-exploration"] and not mods["Krastroio2"] then
 			name = "par_se-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			order = "3ZA",
+			order = "3ZZ",
 			indent = 2,
 			trigger = {
 				type = "craft-item",
@@ -400,7 +420,7 @@ if mods["Krastroio2"] and not mods["space-exploration"] then
 			name = "par_k2-info",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
-			order = "3ZA",
+			order = "3ZZ",
 			indent = 2,
 			trigger = {
 				type = "craft-item",

@@ -63,10 +63,9 @@ if mods["foliax"]then
             name = "Foliax-filters",
             setting_type = "startup",
             default_value = true,
-            order = "ZBab-9"
+            order = "ZMab-9"
         },
     })
-    
 end
 
 if mods["bobwarfare"] then
