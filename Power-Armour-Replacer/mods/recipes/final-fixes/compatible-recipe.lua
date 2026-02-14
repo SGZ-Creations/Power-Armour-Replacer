@@ -146,7 +146,7 @@ PAR.ingredient_prereq(Recipe["spidertronmk2"],
     {
         dependencies = {"spidertron-extended",},
         replacements = {
-            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
+            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk7", 5},
         }
     },
 })
@@ -156,7 +156,7 @@ PAR.ingredient_prereq(Recipe["spidertronmk3"],
     {
         dependencies = {"spidertron-extended",},
         replacements = {
-            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
+            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk9", 5},
         }
     },
 })
@@ -166,17 +166,7 @@ PAR.ingredient_prereq(Recipe["immolator"],
     {
         dependencies = {"spidertron-extended",},
         replacements = {
-            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
-        }
-    },
-})
-
-PAR.ingredient_prereq(Recipe["spidertron-builder"],
-{
-    {
-        dependencies = {"spidertron-extended",},
-        replacements = {
-            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 5},
+            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk5", 5},
         }
     },
 })
