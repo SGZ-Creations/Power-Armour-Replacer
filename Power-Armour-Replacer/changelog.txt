@@ -4,6 +4,8 @@ Date: xx.02.26
   Modding:
     - Foliax Filters.
     - Tips & Tricks Description for Foliax.
+    - Made equipment from TeleportationEquipment allow for crafting in EM Plant.
+    - Made equipment from Power Armor MK3 allow for crafting in EM Plant.
   Changes:
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
