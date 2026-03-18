@@ -48,7 +48,7 @@ data:extend({
         type = "technology",
         name = "par-exoskeleton-tech-4",
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 4),
-        prerequisites = { "par-exoskeleton-tech-3", "par-armour-tech-8"},
+        prerequisites = {"par-exoskeleton-tech-3", "par-armour-tech-8"},
         effects ={{type = "unlock-recipe",  recipe = "par-exoskeleton-mk4"}},
         unit = {
             count = 2000,
