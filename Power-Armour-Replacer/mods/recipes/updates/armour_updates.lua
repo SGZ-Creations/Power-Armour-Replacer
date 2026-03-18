@@ -94,7 +94,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["steel-plate"] = {"kr-steel-beam", 30},
-            {"kr-glass"},
+            {"kr-glass", 50},
             {"kr-automation-core", 20},
         }
     },
@@ -763,6 +763,16 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
 			{"kr-lithium-sulfur-battery", 450},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-lithium-sulfur-battery", 1000},
+            {"kr-energy-control-unit", 1000},
+			{"kr-imersium-beam", 1000},
+            {"kr-matter-cube", 250},
+            {"kr-ai-core", 500},
+        }
+    }
 })
 
 if mods["Cold_biters"]then
@@ -880,10 +890,20 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
             ["advanced-circuit"] = {"zero"},
             ["low-density-structure"] = {"zero"},
 			{"kr-lithium-sulfur-battery", 500},
-            {"kr-energy-control-unit", 100},
+            {"kr-energy-control-unit", 1000},
 			{"kr-imersium-beam", 500},
-            {"kr-matter-cube", 20},
-            {"kr-ai-core", 10},
+            {"kr-matter-cube", 250},
+            {"kr-ai-core", 500},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 1000},
+			["steel-plate"] = {"kr-imersium-beam", 1000},
+            {"kr-energy-control-unit", 1000},
+            {"kr-matter-cube", 250},
+            {"kr-ai-core", 500},
         }
     },
 })

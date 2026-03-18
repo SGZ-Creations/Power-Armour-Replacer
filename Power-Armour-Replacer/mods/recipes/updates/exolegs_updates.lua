@@ -200,6 +200,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
         replacements = {
             ["battery"] = {"kr-lithium-sulfur-battery", 500},
 			["steel-plate"] = {"kr-imersium-beam", 200},
+            {"kr-ai-core", 50},
             {"kr-matter-cube", 25},
         }
     },
@@ -260,7 +261,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
         replacements = {
             ["battery"] = {"kr-lithium-sulfur-battery", 500},
 			["steel-plate"] = {"kr-imersium-beam", 200},
-            {"kr-ai-core"},
+            {"kr-ai-core", 50},
             {"kr-matter-cube", 50},
         }
     },

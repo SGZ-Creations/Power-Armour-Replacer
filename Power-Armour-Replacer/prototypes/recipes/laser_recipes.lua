@@ -167,9 +167,10 @@ if mods["space-age"] then
             energy_required = 40,
             ingredients = {
                 {type="item", name="electronic-circuit", amount=25},
+                {type="item", name="copper-plate", amount=25},
                 {type="item", name="steel-plate", amount=25},
                 {type="item", name="iron-plate", amount=25},
-                {type="item", name="copper-plate", amount=25},
+                {type="item", name="wood", amount=25},
             },
             results = {{type="item", name="par-laser-mk1", amount=1}}
         },
@@ -185,6 +186,7 @@ if mods["space-age"] then
                 {type="item", name="electronic-circuit", amount=50},
                 {type="item", name="engine-unit", amount=50},
                 {type="item", name="copper-plate", amount=50},
+                {type="item", name="wood", amount=50},
             },
             results = {{type="item", name="par-laser-mk2", amount=1}}
         },

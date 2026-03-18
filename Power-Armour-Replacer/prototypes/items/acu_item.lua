@@ -16,15 +16,11 @@ data:extend({
 	},
 })
 
-
-if mods["Krastorio2-spaced-out"]then
-	table.insert(Recipe["scrap-recycling"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, probability = 0.01, show_details_in_recipe_tooltip = false})
-elseif mods["space-age"] and not mods["Krastorio2-spaced-out"] then
+if mods["space-age"] then
 	table.insert(Recipe["scrap-recycling"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, probability = 0.0001, show_details_in_recipe_tooltip = false})
 end
-
 if mods["scrap-reprocessor"]then
-	table.insert(Recipe["sr-electronic-scrap-reprocessing"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, probability = 0.0075, show_details_in_recipe_tooltip = false})
+	table.insert(Recipe["sr-electronic-scrap-reprocessing"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, probability = 0.0015, show_details_in_recipe_tooltip = false})
 end
 if mods["space-exploration"] then
 	data.raw["item"]["armour-control-unit"].stack_size = 200
