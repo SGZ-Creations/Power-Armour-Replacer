@@ -49,8 +49,12 @@ local resistances = {
     pierce_percent     = {   5,  15,  25,  35,  45,  55,  65,  75,  85,   95},--p
 
     -- Cold_biters
-    cold_decrease    = { 50, 100, 150, 200, 250, 300, 350, 400, 450, 500},
-    cold_percent     = {   2,  4,  6,  8,  10,  12,  14,  16,  18,   20},--p
+    cold_decrease      = { 50, 100, 150, 200, 250, 300, 350, 400, 450, 500},
+    cold_percent       = {   2,  4,  6,  8,  10,  12,  14,  16,  18,   20},--p
+
+    -- K2/K2SO
+    radiation_decrease = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000},
+    radiation_percent  = {   5,  20,  40,  60,  80, 120, 140, 160, 180, 200},--p
 }
 
 for tier, equipment in pairs(power_armour) do
@@ -148,6 +152,14 @@ for tier, equipment in pairs(power_armour) do
             type = "cold",
             decrease = resistances.cold_decrease[tier],
             percent = resistances.cold_percent[tier],
+        })
+    end
+
+    if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+        table.insert(equipment_armor.resistances, {
+            type = "kr-radioactive",
+            decrease = resistances.radiation_decrease[tier],
+            percent = resistances.radiation_percent[tier],
         })
     end
 
