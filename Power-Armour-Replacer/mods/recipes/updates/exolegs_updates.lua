@@ -26,8 +26,9 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["steel-plate"] = {"steel-gear-wheel", 50},
-            --["electronic-circuit"] = {"automation-core", 20},
+            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 50},
+            ["iron-stick"] = {"kr-silicon"},
+            {"kr-automation-core", 20},
         }
     },
 })
@@ -126,6 +127,14 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
             {type="fluid", name="kr-mineral-water", amount=100},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 500},
+			["steel-plate"] = {"kr-imersium-beam", 200},
+            {"kr-matter-cube", 25},
+        }
+    },
     --SE
     {
         dependencies = {"space-exploration"},
@@ -183,7 +192,15 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
             ["processing-unit"] = {"se-lattice-pressure-vessel", 10},
             ["low-density-structure"] = {"zero"},
             {"electric-motor", 30},
-            {"kr-matter-cube", 3},
+            {"kr-matter-cube", 25},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 500},
+			["steel-plate"] = {"kr-imersium-beam", 200},
+            {"kr-matter-cube", 25},
         }
     },
 })
@@ -235,7 +252,16 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
 			["low-density-structure"] = {"se-heavy-bearing", 500},
 			["processing-unit"] = {"se-naquium-processor", 5},
             {"se-nanomaterial", 500},
-            {"kr-matter-cube", 6},
+            {"kr-matter-cube", 50},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 500},
+			["steel-plate"] = {"kr-imersium-beam", 200},
+            {"kr-ai-core"},
+            {"kr-matter-cube", 50},
         }
     },
 })

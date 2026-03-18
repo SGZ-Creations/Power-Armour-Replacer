@@ -90,6 +90,14 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
             ["electronic-circuit"] = {"kr-automation-core", 10},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["steel-plate"] = {"kr-steel-beam", 30},
+            {"kr-glass"},
+            {"kr-automation-core", 20},
+        }
+    },
 })
 
 if mods["bobenemies"] then
@@ -165,7 +173,14 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["steel-plate"] = {"kr-steel-gear-wheel", 50},
-            ["electronic-circuit"] = {"kr-automation-core", 5},
+            {"kr-automation-core", 5},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["steel-plate"] = {"kr-steel-beam", 30},
+            {"kr-automation-core", 40},
         }
     },
 })
@@ -284,8 +299,14 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["engine-unit"] = {"kr-rare-metals", 50},
-            ["advanced-circuit"] = {"kr-electronic-components", 55},
+            ["engine-unit"] = {"kr-rare-metals", 100},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["steel-plate"] = {"kr-rare-metals", 100},
+            {"kr-automation-core", 60},
         }
     },
 })
@@ -367,8 +388,15 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["engine-unit"] = {"kr-rare-metals", 60},
+            ["engine-unit"] = {"kr-rare-metals", 150},
             ["advanced-circuit"] = {"kr-electronic-components", 65},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["steel-plate"] = {"kr-rare-metals", 150},
+            {"kr-automation-core", 60},
         }
     },
 })
@@ -440,6 +468,14 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
         dependencies = {"248k"},
         replacements = {
             ["uranium-235"] = {"fi_materials_glass", 400},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["steel-plate"] = {"kr-rare-metals", 100},
+            {"kr-automation-core", 60},
         }
     },
 })

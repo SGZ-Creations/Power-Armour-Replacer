@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.17
 Date: xx.02.26
+  Features:
+    - Started work on recipe for K2SO 
   Modding:
     - Foliax Filters.
     - Tips & Tricks Description for Foliax.
