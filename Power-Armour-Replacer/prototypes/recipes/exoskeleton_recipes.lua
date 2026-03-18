@@ -1,4 +1,4 @@
-local recipes = {
+data:extend({
     {
         type = "recipe",
         name = "par-exoskeleton-mk1",
@@ -74,11 +74,9 @@ local recipes = {
         },
         results = {{type="item", name="par-exoskeleton-mk5", amount=1}}
     },
-}
-data:extend(recipes)
-
+})
 if mods["space-age"]then
-    local recipes = {
+    data:extend({
         {
             type = "recipe",
             name = "par-exoskeleton-mk1",
@@ -182,6 +180,5 @@ if mods["space-age"]then
                 {type="fluid", name="fluoroketone-hot", amount=200},
             }
         },
-    }
-    data:extend(recipes)
+    })
 end

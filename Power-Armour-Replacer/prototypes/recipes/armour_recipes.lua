@@ -154,7 +154,7 @@ local recipes = {
 }
 data:extend(recipes)
 if mods["space-age"] then
-    local recipes = {
+    data:extend({
         {
             type = "recipe",
             name = "par-armour-mk1",
@@ -182,9 +182,9 @@ if mods["space-age"] then
                 {type="item", name="par-armour-mk1", amount=1},
                 {type="item", name="electronic-circuit", amount=50},
                 {type="item", name="copper-plate", amount=50},
-                {type="item", name="engine-unit", amount=50},
                 {type="item", name="steel-plate", amount=50},
                 {type="item", name="iron-plate", amount=50},
+                {type="item", name="wood", amount=50},
             },
             results = {{type="item", name="par-armour-mk2", amount=1}},
         },
@@ -215,7 +215,7 @@ if mods["space-age"] then
                 {type="item", name="par-armour-mk3", amount=1},
                 {type="item", name="electric-engine-unit", amount=100},
                 {type="item", name="advanced-circuit", amount=100},
-                {type="item", name="iron-plate", amount=100},
+                {type="item", name="steel-plate", amount=100},
                 {type="item", name="engine-unit", amount=100},
                 {type="item", name="plastic-bar", amount=100},
             },
@@ -353,6 +353,5 @@ if mods["space-age"] then
                 {type="fluid", name="fluoroketone-hot", amount=200},
             },
         },
-    }
-    data:extend(recipes)
+    })
 end

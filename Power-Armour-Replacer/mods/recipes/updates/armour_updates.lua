@@ -86,16 +86,16 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"kr-steel-gear-wheel", 45},
-            ["electronic-circuit"] = {"kr-automation-core", 10},
+            ["steel-plate"] = {"kr-steel-gear-wheel", 50},
+            {"kr-automation-core", 20},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["steel-plate"] = {"kr-steel-beam", 30},
-            {"kr-glass", 50},
-            {"kr-automation-core", 20},
+            ["steel-plate"] = {"kr-iron-beam", 25},
+            {"kr-automation-core", 25},
+            {"kr-glass", 25},
         }
     },
 })
@@ -179,8 +179,9 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["steel-plate"] = {"kr-steel-beam", 30},
-            {"kr-automation-core", 40},
+            ["steel-plate"] = {"kr-steel-beam", 50},
+            ["copper-plate"] ={"kr-automation-core", 50},
+            {"kr-glass", 50},
         }
     },
 })
@@ -305,8 +306,10 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["steel-plate"] = {"kr-rare-metals", 100},
-            {"kr-automation-core", 60},
+            ["steel-plate"] = {"kr-rare-metals", 75},
+            {"kr-automation-core", 75},
+            {"kr-silicon", 75},
+            {"kr-glass", 75},
         }
     },
 })
@@ -395,8 +398,10 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["steel-plate"] = {"kr-rare-metals", 150},
-            {"kr-automation-core", 60},
+            ["steel-plate"] = {"kr-rare-metals", 100},
+            {"kr-automation-core", 100},
+            {"kr-silicon", 100},
+            {"kr-glass", 100},
         }
     },
 })
@@ -474,12 +479,15 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["steel-plate"] = {"kr-rare-metals", 100},
-            {"kr-automation-core", 60},
+            ["steel-plate"] = {"kr-rare-metals", 150},
+            {"kr-energy-control-unit", 150},
+			{"kr-imersium-beam", 150},
+            {"kr-silicon", 150},
+            {"kr-glass", 150},
+            {"kr-ai-core", 150},
         }
     },
 })
-
 
 if mods["bobenemies"] then
     if SS["bobmods-enemies-enableartifacts"].value == true then
@@ -544,6 +552,18 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk6"], {
             {"bob-gilded-copper-cable", 55},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 200},
+			{"kr-imersium-beam", 200},
+            {"kr-rare-metals", 200},
+            {"kr-ai-core", 200},
+            {"kr-silicon", 200},
+            {"kr-glass", 200},
+        }
+    },
 })
 
 if mods["bobenemies"] then
@@ -590,27 +610,25 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk7"], {
             ["copper-cable"] = {"bob-gilded-copper-cable", 250},
             {"bob-solder", 150},
         }
-    },--[[
-    {
-        dependencies = {"bobenemies", "bobplates"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
-            {"bob-alien-orange-alloy", 100},
-        }
     },
-    {
-        dependencies = {"bobenemies"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
-            {"bob-alien-artifact", 700},
-            {"bob-alien-artifact-red", 500},
-        }
-    },]]
     --Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             {"bob-glass", 50},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 400},
+			{"kr-imersium-beam", 400},
+            {"kr-matter-cube", 400},
+            {"kr-rare-metals", 400},
+            {"kr-ai-core", 400},
+            {"kr-silicon", 400},
+            {"kr-glass", 400},
         }
     },
 })
@@ -659,15 +677,19 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk8"], {
         replacements = {
             {"bob-heat-shield-tile", 200},
         }
-    },--[[
+    },
+    --K2SO
     {
-        dependencies = {"bobenemies"},
-        setting = "bobmods-enemies-enableartifacts",
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"bob-alien-artifact", 800},
-            {"bob-alien-artifact-red", 600},
+            {"kr-energy-control-unit", 600},
+			{"kr-imersium-beam", 600},
+            {"kr-matter-cube", 600},
+            {"kr-ai-core", 600},
+            {"kr-silicon", 600},
+            {"kr-glass", 600},
         }
-    },]]
+    },
 })
 
 if mods["Cold_biters"]then
@@ -714,39 +736,14 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
             {"bob-topaz-5", 50},
             {"bob-diamond-5", 50},
         }
-    },--[[
-    {
-        dependencies = {"bobenemies"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
-            {"bob-alien-artifact", 900},
-            {"bob-alien-artifact-red", 700},
-        }
     },
-    {
-        dependencies = {"bobenemies", "bobplates"},
-        setting = "bobmods-enemies-enableartifacts",
-        replacements = {
-            {"bob-alien-orange-alloy", 200},
-        }
-    },]]
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
             {"angels-reinforced-concrete-brick", 200},
         }
     },
-    --[[
-    --Cold Bitters
-    {
-        dependencies = {"Cold_biters"},
-        setting = "cb-enable-cold-warfare",
-        replacements = {
-            {"cb_alien_cold_artifact", 400},
-        }
-    },
-    ]]
-    -- SE K2
+    -- SE/K2
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -766,11 +763,12 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-lithium-sulfur-battery", 1000},
-            {"kr-energy-control-unit", 1000},
-			{"kr-imersium-beam", 1000},
-            {"kr-matter-cube", 250},
-            {"kr-ai-core", 500},
+            {"kr-energy-control-unit", 800},
+			{"kr-imersium-beam", 800},
+            {"kr-matter-cube", 800},
+            {"kr-ai-core", 800},
+            {"kr-silicon", 800},
+            {"kr-glass", 800},
         }
     }
 })
@@ -899,11 +897,12 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["battery"] = {"kr-lithium-sulfur-battery", 1000},
-			["steel-plate"] = {"kr-imersium-beam", 1000},
             {"kr-energy-control-unit", 1000},
-            {"kr-matter-cube", 250},
-            {"kr-ai-core", 500},
+			{"kr-imersium-beam", 1000},
+            {"kr-matter-cube", 1000},
+            {"kr-ai-core", 1000},
+            {"kr-silicon", 1000},
+            {"kr-glass", 1000},
         }
     },
 })

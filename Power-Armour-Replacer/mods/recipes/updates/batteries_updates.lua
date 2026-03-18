@@ -364,7 +364,16 @@ PAR.ingredient_prereq(DRR["par-battery-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"kr-matter-cube", 2},
+            {"kr-matter-cube", 1000},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 1000},
+			{"kr-imersium-beam", 1000},
+            {"kr-matter-cube", 1000},
+            {"kr-ai-core", 1000},
         }
     },
 })
