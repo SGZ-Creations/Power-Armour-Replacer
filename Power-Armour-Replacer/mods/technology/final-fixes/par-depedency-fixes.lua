@@ -1,7 +1,3 @@
---[[ 
-Hey if u came here to remove the reserch. Note i have added items from this reserch to craft it too.
-Also i suggest u download "Clowns Sicence" if u haven't. Before u remove anything. As that would make it easier to unlock.
-]]
 -- Compatibility files
 local PAR = require("mods.util")
 PAR.technology_dependancy
@@ -19,8 +15,8 @@ PAR.technology_dependancy
 		},
 		["par-battery-tech-5"] = {
 			"advanced-electronics"
-		},
-		]]["par-armour-tech-1"] = {
+		},]]
+		["par-armour-tech-1"] = {
 			"bob-electronics"
 		},
 		["par-armour-tech-3"] = {

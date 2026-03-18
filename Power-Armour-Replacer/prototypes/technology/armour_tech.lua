@@ -11,11 +11,11 @@ data:extend({
 		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-3", icon_size = 256,}, --3
 		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-4", icon_size = 256,}, --4
 		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --5
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --6
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --7
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --8
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --9
-		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-5", icon_size = 256,}, --10
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-6_0", icon_size = 256,}, --6
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7", icon_size = 256,}, --7
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7", icon_size = 256,}, --8
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7", icon_size = 256,}, --9
+		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7", icon_size = 256,}, --10
 	}
 	local technology = { ]]
 	{

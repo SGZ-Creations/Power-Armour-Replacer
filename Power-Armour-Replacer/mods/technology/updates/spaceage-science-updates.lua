@@ -1,6 +1,3 @@
---[[
-	Armour, Skeleton, Nightvision, BeltImmunity.
-]]
 local Tech = data.raw["technology"]
 local Recipe = data.raw["recipe"]
 if mods["space-age"] then
@@ -13,7 +10,7 @@ if mods["space-age"] then
 	table.insert(Tech["par-armour-tech-6"].unit.ingredients, {"agricultural-science-pack",    1})
 	table.insert(Tech["par-armour-tech-6"].unit.ingredients, {"electromagnetic-science-pack", 1})
 
-	table.insert(Tech["par-armour-tech-7"].unit.ingredients, {"space-science-pack", 			 3})
+	table.insert(Tech["par-armour-tech-7"].unit.ingredients, {"space-science-pack", 		  3})
 	table.insert(Tech["par-armour-tech-7"].unit.ingredients, {"metallurgic-science-pack",     2})
 	table.insert(Tech["par-armour-tech-7"].unit.ingredients, {"agricultural-science-pack",    2})
 	table.insert(Tech["par-armour-tech-7"].unit.ingredients, {"electromagnetic-science-pack", 2})
@@ -25,14 +22,14 @@ if mods["space-age"] then
 	table.insert(Tech["par-armour-tech-8"].unit.ingredients, {"electromagnetic-science-pack", 3})
 	table.insert(Tech["par-armour-tech-8"].unit.ingredients, {"cryogenic-science-pack",       2})
 
-	table.insert(Tech["par-armour-tech-9"].unit.ingredients, {"space-science-pack",      	 5})
+	table.insert(Tech["par-armour-tech-9"].unit.ingredients, {"space-science-pack",      	  5})
 	table.insert(Tech["par-armour-tech-9"].unit.ingredients, {"metallurgic-science-pack",     4})
 	table.insert(Tech["par-armour-tech-9"].unit.ingredients, {"agricultural-science-pack",    4})
 	table.insert(Tech["par-armour-tech-9"].unit.ingredients, {"electromagnetic-science-pack", 4})
 	table.insert(Tech["par-armour-tech-9"].unit.ingredients, {"cryogenic-science-pack",       3})
 	table.insert(Tech["par-armour-tech-9"].unit.ingredients, {"promethium-science-pack",      1})
 
-	table.insert(Tech["par-armour-tech-10"].unit.ingredients, {"space-science-pack", 		  6})
+	table.insert(Tech["par-armour-tech-10"].unit.ingredients, {"space-science-pack", 		   6})
 	table.insert(Tech["par-armour-tech-10"].unit.ingredients, {"metallurgic-science-pack",     5})
 	table.insert(Tech["par-armour-tech-10"].unit.ingredients, {"agricultural-science-pack",    5})
 	table.insert(Tech["par-armour-tech-10"].unit.ingredients, {"electromagnetic-science-pack", 5})
