@@ -1,6 +1,9 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
-PAR.ingredient_prereq(DRR["par-laser-mk1"], {
+---@class PrototypeRecipe
+local RECIPES = data.raw["recipe"]
+---@class LuaSettings
+local SS = settings.startup
+PAR.ingredient_prereq(RECIPES["par-laser-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -45,7 +48,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk1"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-laser-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -96,7 +99,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk2"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk3"], {
+PAR.ingredient_prereq(RECIPES["par-laser-mk3"], {
     --Bob's
     {
         dependencies = {"bobelectronics"},
@@ -130,7 +133,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk3"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk4"], {
+PAR.ingredient_prereq(RECIPES["par-laser-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -194,7 +197,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk4"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk5"], {
+PAR.ingredient_prereq(RECIPES["par-laser-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -237,7 +240,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk5"], {
     },
 })
 
-PAR.ingredient_prereq(DRR["par-laser-mk6"], {
+PAR.ingredient_prereq(RECIPES["par-laser-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -279,7 +282,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk6"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk7"], {
+PAR.ingredient_prereq(RECIPES["par-laser-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -321,7 +324,7 @@ PAR.ingredient_prereq(DRR["par-laser-mk7"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk8"], {
+PAR.ingredient_prereq(RECIPES["par-laser-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -362,7 +365,14 @@ PAR.ingredient_prereq(DRR["par-laser-mk8"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk9"], {
+
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-laser-mk9"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=400})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-laser-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -411,7 +421,14 @@ PAR.ingredient_prereq(DRR["par-laser-mk9"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-laser-mk10"], {
+
+if mods["Cold_biters"]then
+    if SS["cb-enable-cold-warfare"].value == true then
+        table.insert(RECIPES["par-laser-mk10"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=500})
+    end
+end
+
+PAR.ingredient_prereq(RECIPES["par-laser-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

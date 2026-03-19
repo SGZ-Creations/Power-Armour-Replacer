@@ -128,9 +128,8 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["nuclear-fuel"] = {"kr-matter-cube", 2},
-            ["sulfur"] = {"kr-ai-core", 10},
-            {"kr-matter-cube", 2},
+            {"kr-ai-core", 1000},
+            {"kr-matter-cube", 1000},
         }
     },
 })
