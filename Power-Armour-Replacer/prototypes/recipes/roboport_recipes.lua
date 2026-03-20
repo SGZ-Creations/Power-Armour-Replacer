@@ -241,7 +241,7 @@ if mods["space-age"]then
                 {type="item", name="tungsten-carbide", amount=150},
                 {type="item", name="processing-unit", amount=150},
                 {type="item", name="tungsten-plate", amount=150},
-                {type="item", name="lithium-plate", amount=150},
+                {type="item", name="battery", amount=150},
             },
             results = {{type="item", name="par-roboport-mk6", amount=1}}
         },
