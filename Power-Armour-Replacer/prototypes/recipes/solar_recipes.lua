@@ -252,6 +252,7 @@ if mods["space-age"] then
                 {type="item", name="tungsten-carbide", amount=200},
                 {type="item", name="processing-unit", amount=200},
                 {type="item", name="superconductor", amount=200},
+                {type="item", name="lithium-plate", amount=200},
                 {type="item", name="carbon-fiber", amount=200},
                 {type="item", name="pentapod-egg", amount=200},
                 --Fluid
@@ -273,6 +274,7 @@ if mods["space-age"] then
                 {type="item", name="quantum-processor", amount=300},
                 {type="item", name="supercapacitor", amount=300},
                 {type="item", name="holmium-plate", amount=300},
+                {type="item", name="lithium-plate", amount=300},
                 {type="item", name="carbon-fiber", amount=300},
                 {type="item", name="plastic-bar", amount=300},
                 --Fluid
