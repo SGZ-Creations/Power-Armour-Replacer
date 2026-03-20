@@ -1,9 +1,10 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.4.17
-Date: xx.02.26
+Version: 0.5.0
+Date: xx.03.26
   Features:
     - Started work on recipe for K2SO 
-    - K2SO recipes done: Armour,  
+    - K2SO recipes done: Armour,
+    - Teasing new equipment.
   Modding:
     - Foliax Filters.
     - Tips & Tricks Description for Foliax.
@@ -13,6 +14,8 @@ Date: xx.02.26
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
     - Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
+    - [space-age] Tweaked recipes using lithium Roboport Mk6, Solar Mk7-8.
+    - Tips & Tricks Volunteer Graphics request.
   ToDo:
     - K2/K2SO Add data card in tech.
     - Advanced from MK5 Should end with use of 10k.
