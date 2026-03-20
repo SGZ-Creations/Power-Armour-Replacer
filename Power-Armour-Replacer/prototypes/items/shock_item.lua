@@ -33,10 +33,10 @@ for tier, shock in pairs(ShockDefence) do
 		stack_size = 20
 	}
 
-    ---@type data.EquipmentPrototype
+---@type data.EquipmentPrototype
 	local equipment = {
 		type = "active-defense-equipment",
-		name = "discharge-defense-equipment",
+		name = "par-shock-defense-mk" .. tostring(tier),
 		sprite = {
 			filename = "__base__/graphics/equipment/discharge-defense-equipment.png",
 			flags = { "icon" },
@@ -63,10 +63,7 @@ for tier, shock in pairs(ShockDefence) do
 			projectile_creation_distance = 0.6,
 			range = 10,
 			sound = {switch_vibration_data = {filename = "__base__/sound/fight/pulse.bnvib"},
-				game_controller_vibration_data = {
-					low_frequency_vibration_intensity = 0.5,
-					duration = 100
-				},
+				game_controller_vibration_data = { low_frequency_vibration_intensity = 0.5, duration = 100},
 				filename = "__base__/sound/fight/pulse.ogg", volume = 0.7
 			},
 			ammo_type = {
@@ -81,19 +78,17 @@ for tier, shock in pairs(ShockDefence) do
 									{type = "push-back", distance = 4}
 								}
 							},
-							{ type = "beam", beam = "electric-beam-no-sound", max_length = 16, duration = 15, source_offset = {0, -0.5}, add_to_shooter = false }
+							{type = "beam", beam = "electric-beam-no-sound", max_length = 16, duration = 15, source_offset = {0, -0.5}, add_to_shooter = false}
 						}
 					}
 				}
 			}
 		},
-		automatic = false,
+		automatic = true,
 		categories = {"armor"}
 	}
-
 	data:extend({
         item,
         equipment,
     })
 end
-

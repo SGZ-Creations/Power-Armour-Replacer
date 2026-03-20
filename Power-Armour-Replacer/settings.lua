@@ -8,4 +8,5 @@
     require("Settings.Data.NVGsSettings")
     require("Settings.Data.RoboportSettings")
     require("Settings.Data.ShieldsSettings")
+    require("Settings.Data.ShockSettings")
     require("Settings.Data.SolarSettings")
