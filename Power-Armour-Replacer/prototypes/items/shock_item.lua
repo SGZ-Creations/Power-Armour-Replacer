@@ -2,19 +2,17 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 ---@class LuaSettings
 local SS = settings.startup
 local ShockDefence = {
-	{weightvalue = SS["ShockWeight_01"].value, order = "ga[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_02"].value, order = "gb[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_03"].value, order = "gc[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_04"].value, order = "gd[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_05"].value, order = "ge[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_06"].value, order = "gf[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_07"].value, order = "gg[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_08"].value, order = "gh[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_09"].value, order = "gi[pasive-defense]-aa[armour-replacer]",},
-	{weightvalue = SS["ShockWeight_10"].value, order = "gj[pasive-defense]-aa[armour-replacer]",},
+	{weightvalue = SS["ShockWeight_01"].value, cooldown = SS["ShockShootingSpeed_01"].value, order = "ga[pasive-defense]-aa[armour-replacer]", automatic =false,},
+	{weightvalue = SS["ShockWeight_02"].value, cooldown = SS["ShockShootingSpeed_02"].value, order = "gb[pasive-defense]-aa[armour-replacer]", automatic =false,},
+	{weightvalue = SS["ShockWeight_03"].value, cooldown = SS["ShockShootingSpeed_03"].value, order = "gc[pasive-defense]-aa[armour-replacer]", automatic =false,},
+	{weightvalue = SS["ShockWeight_04"].value, cooldown = SS["ShockShootingSpeed_04"].value, order = "gd[pasive-defense]-aa[armour-replacer]", automatic =false,},
+	{weightvalue = SS["ShockWeight_05"].value, cooldown = SS["ShockShootingSpeed_05"].value, order = "ge[pasive-defense]-aa[armour-replacer]", automatic =false,},
+	{weightvalue = SS["ShockWeight_06"].value, cooldown = SS["ShockShootingSpeed_06"].value, order = "gf[pasive-defense]-aa[armour-replacer]", automatic =true,},
+	{weightvalue = SS["ShockWeight_07"].value, cooldown = SS["ShockShootingSpeed_07"].value, order = "gg[pasive-defense]-aa[armour-replacer]", automatic =true,},
+	{weightvalue = SS["ShockWeight_08"].value, cooldown = SS["ShockShootingSpeed_08"].value, order = "gh[pasive-defense]-aa[armour-replacer]", automatic =true,},
+	{weightvalue = SS["ShockWeight_09"].value, cooldown = SS["ShockShootingSpeed_09"].value, order = "gi[pasive-defense]-aa[armour-replacer]", automatic =true,},
+	{weightvalue = SS["ShockWeight_10"].value, cooldown = SS["ShockShootingSpeed_10"].value, order = "gj[pasive-defense]-aa[armour-replacer]", automatic =true,},
 }
-
-
 
 for tier, shock in pairs(ShockDefence) do
     ---@type data.ItemPrototype
@@ -58,7 +56,7 @@ for tier, shock in pairs(ShockDefence) do
 			type = "projectile",
 			ammo_category = "electric",
 			damage_modifier = 10,
-			cooldown = 150,
+			cooldown = shock.cooldown,
 			projectile_center = {0, 0},
 			projectile_creation_distance = 0.6,
 			range = 10,
@@ -84,7 +82,7 @@ for tier, shock in pairs(ShockDefence) do
 				}
 			}
 		},
-		automatic = true,
+		automatic = shock.automatic,
 		categories = {"armor"}
 	}
 	data:extend({
@@ -92,3 +90,4 @@ for tier, shock in pairs(ShockDefence) do
         equipment,
     })
 end
+
