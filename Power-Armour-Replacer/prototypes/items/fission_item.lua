@@ -48,7 +48,7 @@ for tier, fission in pairs(FissionReactor) do
             usage_priority = "primary-output"
         },
         power = fission.power,
-        categories = { "armor" }
+        categories = {"armor"}
     }
 
     data:extend({
