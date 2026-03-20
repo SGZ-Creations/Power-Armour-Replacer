@@ -3,7 +3,7 @@ local icon_utils = require("structures.icon-utils")
 ---@class LuaSettings
 local SS = settings.startup
 
-local reactors = {
+local FissionReactor = {
     {power =tostring(SS["FissionPower_01"].value) .. "GW", weightvalue = SS["FissionWeight_01"].value, order = "caz[energy-source]-aa[armour-replacer]"},
     {power =tostring(SS["FissionPower_02"].value) .. "GW", weightvalue = SS["FissionWeight_02"].value, order = "cbz[energy-source]-aa[armour-replacer]"},
     {power =tostring(SS["FissionPower_03"].value) .. "GW", weightvalue = SS["FissionWeight_03"].value, order = "ccz[energy-source]-aa[armour-replacer]"},
@@ -16,7 +16,7 @@ local reactors = {
     {power =tostring(SS["FissionPower_10"].value) .. "GW", weightvalue = SS["FissionWeight_10"].value, order = "cjz[energy-source]-aa[armour-replacer]"},
 }
 
-for tier, reactor in pairs(reactors) do
+for tier, fission in pairs(FissionReactor) do
     ---@type data.ItemPrototype
     local item = {
         type = "item",
@@ -28,8 +28,8 @@ for tier, reactor in pairs(reactors) do
         drop_sound = item_sounds.reactor_inventory_move,
         stack_size = 20,
         auto_recycle = false,
-        weight = reactor.weightvalue,
-        order = reactor.order,
+        weight = fission.weightvalue,
+        order = fission.order,
         subgroup = "PAR_Fission",
     }
 
@@ -38,23 +38,16 @@ for tier, reactor in pairs(reactors) do
         type = "generator-equipment",
         name = "par-fission-reactor-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("fusion-reactor", 256, 256, tier),
-        shape =
-        {
+        shape = {
             width = 3,
             height = 3,
             type = "full"
-            -- Can also be defined as manual (a set of points which fall within the width/height - can't be empty)
-            --[[type = "manual",
-            points = {{0, 0},                 {2, 0},
-            {0, 1},                 {2, 1},
-            {0, 2}, {1, 2}, {2, 2},}]]
         },
-        energy_source =
-        {
+        energy_source = {
             type = "electric",
             usage_priority = "primary-output"
         },
-        power = reactor.power,
+        power = fission.power,
         categories = { "armor" }
     }
 
