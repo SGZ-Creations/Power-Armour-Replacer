@@ -32,15 +32,14 @@ for tier, fission in pairs(FissionReactor) do
         order = fission.order,
         subgroup = "PAR_Fission",
     }
-
-    ---@type data.EquipmentPrototype
+---@type data.EquipmentPrototype
     local equipment = {
         type = "generator-equipment",
         name = "par-fission-reactor-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("fusion-reactor", 256, 256, tier),
         shape = {
-            width = 3,
-            height = 3,
+            width = shapewidth,
+            height = shapeheight,
             type = "full"
         },
         energy_source = {
@@ -50,9 +49,19 @@ for tier, fission in pairs(FissionReactor) do
         power = fission.power,
         categories = {"armor"}
     }
-
+    if mods["PARs-SpaceAge-Extension"] then
+        shapewidth = 5
+    else
+        shapewidth = 3
+    end
+    if mods["PARs-SpaceAge-Extension"] then
+        shapeheight = 5
+    else
+        shapeheight = 3
+    end
     data:extend({
         item,
         equipment
     })
 end
+
