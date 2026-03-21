@@ -24,7 +24,7 @@
     require("prototypes.recipes.nvgs_recipes")
     require("prototypes.recipes.roboport_recipes")
     require("prototypes.recipes.shield_recipes")
-    --require("prototypes.recipes.shock_recipe")
+    require("prototypes.recipes.shock_recipe")
     require("prototypes.recipes.solar_recipes")
     require("structures.hide_from_player_crafting")
 
@@ -38,7 +38,7 @@
     require("prototypes.technology.nvgs_bi_tech")
     require("prototypes.technology.roboport_tech")
     require("prototypes.technology.shield_tech")
-    --require("prototypes.technology.shock_tech")
+    require("prototypes.technology.shock_tech")
     require("prototypes.technology.solar_tech")
 
 --prototypes.other
