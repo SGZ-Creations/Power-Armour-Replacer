@@ -67,7 +67,6 @@ for tier, equipment in pairs(power_armour) do
         name = equipment_name,
         type = "armor",
         icon = equipment.icon,
-        auto_recycle = false,
         icon_size = 64,
         resistances = {
             {
@@ -124,7 +123,6 @@ for tier, equipment in pairs(power_armour) do
         open_sound = { filename = "__base__/sound/armor-open.ogg", volume = 1 },
         close_sound = { filename = "__base__/sound/armor-close.ogg", volume = 1 }
     }
-
     if SS["Durability"].value == "ArmourdurabilityOFF" then
         equipment_armor.infinite = true
     elseif SS["Durability"].value == "ArmourDurabilityAll" then

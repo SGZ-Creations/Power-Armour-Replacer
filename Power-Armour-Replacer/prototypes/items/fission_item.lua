@@ -27,7 +27,6 @@ for tier, fission in pairs(FissionReactor) do
         pick_sound = item_sounds.reactor_inventory_pickup,
         drop_sound = item_sounds.reactor_inventory_move,
         stack_size = 20,
-        auto_recycle = false,
         weight = fission.weightvalue,
         order = fission.order,
         subgroup = "PAR_Fission",
