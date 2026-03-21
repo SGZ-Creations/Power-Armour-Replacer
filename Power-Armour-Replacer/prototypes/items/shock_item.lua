@@ -2,16 +2,16 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 ---@class LuaSettings
 local SS = settings.startup
 local ShockDefence = {
-	{weightvalue = SS["ShockWeight_01"].value, cooldown = SS["ShockShootingSpeed_01"].value, order = "ga[pasive-defense]-aa[armour-replacer]", automatic =false,},
-	{weightvalue = SS["ShockWeight_02"].value, cooldown = SS["ShockShootingSpeed_02"].value, order = "gb[pasive-defense]-aa[armour-replacer]", automatic =false,},
-	{weightvalue = SS["ShockWeight_03"].value, cooldown = SS["ShockShootingSpeed_03"].value, order = "gc[pasive-defense]-aa[armour-replacer]", automatic =false,},
-	{weightvalue = SS["ShockWeight_04"].value, cooldown = SS["ShockShootingSpeed_04"].value, order = "gd[pasive-defense]-aa[armour-replacer]", automatic =false,},
-	{weightvalue = SS["ShockWeight_05"].value, cooldown = SS["ShockShootingSpeed_05"].value, order = "ge[pasive-defense]-aa[armour-replacer]", automatic =false,},
-	{weightvalue = SS["ShockWeight_06"].value, cooldown = SS["ShockShootingSpeed_06"].value, order = "gf[pasive-defense]-aa[armour-replacer]", automatic =true,},
-	{weightvalue = SS["ShockWeight_07"].value, cooldown = SS["ShockShootingSpeed_07"].value, order = "gg[pasive-defense]-aa[armour-replacer]", automatic =true,},
-	{weightvalue = SS["ShockWeight_08"].value, cooldown = SS["ShockShootingSpeed_08"].value, order = "gh[pasive-defense]-aa[armour-replacer]", automatic =true,},
-	{weightvalue = SS["ShockWeight_09"].value, cooldown = SS["ShockShootingSpeed_09"].value, order = "gi[pasive-defense]-aa[armour-replacer]", automatic =true,},
-	{weightvalue = SS["ShockWeight_10"].value, cooldown = SS["ShockShootingSpeed_10"].value, order = "gj[pasive-defense]-aa[armour-replacer]", automatic =true,},
+	{automatic =SS["ShockDefencePassiveActive_01"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_01"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_01"].value, range = SS["ElectricRangeShock_01"].value, weightvalue = SS["ShockWeight_01"].value, order = "ga[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_02"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_02"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_02"].value, range = SS["ElectricRangeShock_02"].value, weightvalue = SS["ShockWeight_02"].value, order = "gb[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_03"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_03"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_03"].value, range = SS["ElectricRangeShock_03"].value, weightvalue = SS["ShockWeight_03"].value, order = "gc[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_04"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_04"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_04"].value, range = SS["ElectricRangeShock_04"].value, weightvalue = SS["ShockWeight_04"].value, order = "gd[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_05"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_05"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_05"].value, range = SS["ElectricRangeShock_05"].value, weightvalue = SS["ShockWeight_05"].value, order = "ge[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_06"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_06"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_06"].value, range = SS["ElectricRangeShock_06"].value, weightvalue = SS["ShockWeight_06"].value, order = "gf[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_07"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_07"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_07"].value, range = SS["ElectricRangeShock_07"].value, weightvalue = SS["ShockWeight_07"].value, order = "gg[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_08"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_08"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_08"].value, range = SS["ElectricRangeShock_08"].value, weightvalue = SS["ShockWeight_08"].value, order = "gh[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_09"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_09"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_09"].value, range = SS["ElectricRangeShock_09"].value, weightvalue = SS["ShockWeight_09"].value, order = "gi[pasive-defense]-aa[armour-replacer]"},
+	{automatic =SS["ShockDefencePassiveActive_10"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_10"].value) .. "GJ", cooldown = SS["ShockShootingSpeed_10"].value, range = SS["ElectricRangeShock_10"].value, weightvalue = SS["ShockWeight_10"].value, order = "gj[pasive-defense]-aa[armour-replacer]"},
 }
 
 for tier, shock in pairs(ShockDefence) do
@@ -24,7 +24,6 @@ for tier, shock in pairs(ShockDefence) do
 		inventory_move_sound = item_sounds.electric_large_inventory_move,
 		pick_sound = item_sounds.electric_large_inventory_pickup,
 		drop_sound = item_sounds.electric_large_inventory_move,
-        auto_recycle = false,
         weight = shock.weightvalue,
 		order = shock.order,
 		subgroup = "PAR_ShockDefence",
@@ -35,22 +34,12 @@ for tier, shock in pairs(ShockDefence) do
 	local equipment = {
 		type = "active-defense-equipment",
 		name = "par-shock-defense-mk" .. tostring(tier),
-		sprite = {
-			filename = "__base__/graphics/equipment/discharge-defense-equipment.png",
-			flags = { "icon" },
-			size = 128,
-			priority = "extra-high-no-scale",
-			scale = 0.5
-		},
-		shape = {
-			width = 2,
-			height = 2,
-			type = "full"
-		},
+		sprite = { filename = "__base__/graphics/equipment/discharge-defense-equipment.png", flags = {"icon"}, size = 128, priority = "extra-high-no-scale", scale = 0.5},
+		shape = {width = 2, height = 2, type = "full"},
 		energy_source = {
 			type = "electric",
 			usage_priority = "secondary-input",
-			buffer_capacity = "4040kJ"
+			buffer_capacity = shock.shockpowerbuffer,
 		},
 		attack_parameters = {
 			type = "projectile",
@@ -59,11 +48,8 @@ for tier, shock in pairs(ShockDefence) do
 			cooldown = shock.cooldown,
 			projectile_center = {0, 0},
 			projectile_creation_distance = 0.6,
-			range = 10,
-			sound = {switch_vibration_data = {filename = "__base__/sound/fight/pulse.bnvib"},
-				game_controller_vibration_data = { low_frequency_vibration_intensity = 0.5, duration = 100},
-				filename = "__base__/sound/fight/pulse.ogg", volume = 0.7
-			},
+			range = shock.range,
+			sound = {switch_vibration_data = {filename = "__base__/sound/fight/pulse.bnvib"}, game_controller_vibration_data = { low_frequency_vibration_intensity = 0.5, duration = 100}, filename = "__base__/sound/fight/pulse.ogg", volume = 0.7},
 			ammo_type = {
 				type = "projectile",
 				energy_consumption = "2MJ",
