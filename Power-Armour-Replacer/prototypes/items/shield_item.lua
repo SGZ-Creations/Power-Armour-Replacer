@@ -31,7 +31,6 @@ for tier, shield in pairs(shields) do
         pick_sound = item_sounds.energy_shield_inventory_pickup,
         drop_sound = item_sounds.energy_shield_inventory_move,
         stack_size = 20,
-        auto_recycle = false,
         weight = shield.weightvalue,
         order = shield.order,
         subgroup = "PAR_Shield",
