@@ -16,8 +16,10 @@
         [ "personal-roboport-mk2-equipment", "par-roboport-mk2"],
         [ "energy-shield-equipment", "par-shield-mk1"],
         [ "energy-shield-mk2-equipment", "par-shield-mk2"],
+        [ "discharge-defence-equipment", "par-shock-defence-mk2"],
         [ "solar-panel-equipment", "par-solar-panel-mk1"],
 
+        [ "pamk3-pdd", "par-shock-defence-mk6"],
         [ "bob-power-armor-mk3", "par-armour-mk3" ],
         [ "bob-power-armor-mk4", "par-armour-mk4" ],
         [ "bob-power-armor-mk5", "par-armour-mk5" ],
@@ -65,8 +67,10 @@
         [ "personal-roboport-mk2-equipment", "par-roboport-mk2"],
         [ "energy-shield-equipment", "par-shield-mk1"],
         [ "energy-shield-mk2-equipment", "par-shield-mk2"],
+        [ "discharge-defence-equipment", "par-shock-defence-mk2"],
         [ "solar-panel-equipment", "par-solar-panel-mk1"],
 
+        [ "pamk3-pdd", "par-shock-defence-mk6"],
         [ "bob-power-armor-mk3", "par-armour-mk3" ],
         [ "bob-power-armor-mk4", "par-armour-mk4" ],
         [ "bob-power-armor-mk5", "par-armour-mk5" ],
@@ -114,8 +118,10 @@
         [ "personal-roboport-mk2-equipment", "par-roboport-mk2"],
         [ "energy-shield-equipment", "par-shield-mk1"],
         [ "energy-shield-mk2-equipment", "par-shield-mk2"],
+        [ "discharge-defence-equipment", "par-shock-defence-mk2"],
         [ "solar-panel-equipment", "par-solar-panel-mk1"],
 
+        [ "pamk3-pdd", "par-shock-defence-mk6"],
         [ "bob-power-armor-mk3", "par-armour-mk3" ],
         [ "bob-power-armor-mk4", "par-armour-mk4" ],
         [ "bob-power-armor-mk5", "par-armour-mk5" ],
