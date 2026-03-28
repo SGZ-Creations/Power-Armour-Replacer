@@ -246,8 +246,6 @@ data:extend({
 
 if SS["ShortcutTech"].value == true then
     data.raw["shortcut"]["toggle-personal-roboport"].unavailable_until_unlocked = false
-    data.raw["shortcut"]["toggle-personal-logistic-requests"].unavailable_until_unlocked = false
 elseif SS["ShortcutTech"].value == false then
     data.raw["shortcut"]["toggle-personal-roboport"].technology_to_unlock = "par-roboport-tech-1"
-    data.raw["shortcut"]["toggle-personal-logistic-requests"].technology_to_unlock = "par-roboport-tech-1"
 end

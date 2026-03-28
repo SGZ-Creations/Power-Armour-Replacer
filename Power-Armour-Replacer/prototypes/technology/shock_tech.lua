@@ -196,7 +196,7 @@ data:extend({
 });
 
 if SS["ShortcutTech"].value == true then
-    data.raw["shortcut"]["give-discharge-deffence-remote"].unavailable_until_unlocked = false
+    data.raw["shortcut"]["give-discharge-defense-remote"].unavailable_until_unlocked = false
 elseif SS["ShortcutTech"].value == false then
-    data.raw["shortcut"]["give-discharge-deffence-remote"].technology_to_unlock = "par-shock-defense-tech-1"
+    data.raw["shortcut"]["give-discharge-defense-remote"].technology_to_unlock = "par-shock-defense-tech-1"
 end
