@@ -191,7 +191,7 @@ if mods["spidertrontiers-community-updates"]then
 	data:extend({
 		{
 			type = "tips-and-tricks-item",
-			name = "spidertrontiers_community_updates-info_2.0",
+			name = "spidertrontiers_community_updates-info_2",
 			category = "power-armour-replacer",
 			dependencies = {"par_cas-info"},
 			order = "3DB",
