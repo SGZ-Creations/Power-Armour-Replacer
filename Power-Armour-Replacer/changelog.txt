@@ -2,9 +2,11 @@
 Version: 0.5.0
 Date: 10.04.26
   Features:
-    - Started work on recipe for K2SO 
-    - K2SO recipes done: Armour,
-    - Teasing new equipment.
+    - Recipe for K2SO Completed (Not in Test version)
+    - Tech for K2SO Completed (Not in Test version)
+    - K2SO Recipes done: Armour,
+    - K2SO Tech done: NA,
+    - 10x9 = 90 New Setting for Shock Defence.
   Modding:
     - Foliax Filters.
     - Tips & Tricks Description for Foliax.
