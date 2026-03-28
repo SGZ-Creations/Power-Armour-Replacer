@@ -24,6 +24,8 @@ Date: 10.04.26
     - Advanced from MK5 Should end with use of 10k.
     - Matter & Singularity From MK7 Should end with use of 10k.
     - Tech update & add Production & utility tech for 5 & up K2SO edition.
+  Bugfixes:
+    - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
   Info:
     - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholder. thanks for understanding.
 ---------------------------------------------------------------------------------------------------

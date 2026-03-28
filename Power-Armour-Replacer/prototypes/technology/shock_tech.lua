@@ -1,4 +1,6 @@
 --local icon_utils = require("structures.icon-utils")
+---@class LuaSettings
+local SS = settings.startup
 data:extend({
     {
         type = "technology",
@@ -192,3 +194,9 @@ data:extend({
         order = "Laser10"
     }
 });
+
+if SS["ShortcutTech"].value == true then
+    data.raw["shortcut"]["give-discharge-deffence-remote"].unavailable_until_unlocked = false
+elseif SS["ShortcutTech"].value == false then
+    data.raw["shortcut"]["give-discharge-deffence-remote"].technology_to_unlock = "par-shock-defense-tech-1"
+end

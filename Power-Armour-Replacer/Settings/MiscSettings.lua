@@ -17,10 +17,17 @@ data:extend({
     },
     {
         type = "bool-setting",
-        name = "OptionalTech6Texture",
+        name = "ShortcutTech",
         setting_type = "startup",
         default_value = false,
         order = "ZAae-9"
+    },
+    {
+        type = "bool-setting",
+        name = "OptionalTech6Texture",
+        setting_type = "startup",
+        default_value = false,
+        order = "ZAaf-9"
     },
 })
 if mods["PARs-SpaceAge-Extension"] then

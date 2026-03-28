@@ -1,4 +1,6 @@
 local icon_utils = require("structures.icon-utils")
+---@class LuaSettings
+local SS = settings.startup
 data:extend({
     {
         type = "technology",
@@ -84,3 +86,9 @@ data:extend({
         order = "ExoLegs5"
     }
 })
+
+if SS["ShortcutTech"].value == true then
+    data.raw["shortcut"]["tooggle-equipment-movement-bonus"].unavailable_until_unlocked = false
+elseif SS["ShortcutTech"].value == false then
+    data.raw["shortcut"]["tooggle-equipment-movement-bonus"].technology_to_unlock = "par-exoskeleton-tech-1"
+end
