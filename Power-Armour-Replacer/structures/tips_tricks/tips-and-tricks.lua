@@ -187,6 +187,24 @@ elseif mods["metal-and-stars"]and mods["PARs-SpaceAge-Extension"]then
 	})
 end
 
+if mods["spidertrontiers-community-updates"]then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "spidertrontiers_community_updates-info_2.0",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3DB",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "prototype_spidertron",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+end
 
 if mods["Darkstar_utilities_fixed"] then
 	data:extend({

@@ -12,6 +12,7 @@ Date: 10.04.26
     - Tips & Tricks Description for Foliax.
     - Made equipment from TeleportationEquipment allow for crafting in EM Plant.
     - Made equipment from Power Armor MK3 allow for crafting in EM Plant.
+    - Added Tips & Tricks 4 Spidertron Tiers Community as it was Confirmed Working. 
   Changes:
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
@@ -28,12 +29,15 @@ Date: 10.04.26
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
   Info:
     - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholder. thanks for understanding.
+  Credit:
+    - Thanks @DarkMamaba for telling about shortcuts not unlocking. 
+    - Thanks @DarkMamaba Showing me that "Spidertron Tiers Community" was updated.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.16
 Date: 31.1.26
   Bugfixes:
     - Fix charging_station_count with & without Quality mod. Suggestions from AI. 
-  Thanks:
+  Credits:
     - @rip_acounty for the bug report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.15
@@ -51,7 +55,7 @@ Date: 29.1.26
   Bugfixes:
     - Crash with angels dependency for recipe compatibility.
     - Progress Blockade with SeaBlock.
-  Thanks:
+  Credits:
     - @creepersx17 for trying my mod with only angels enabled :P
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.13
@@ -89,7 +93,7 @@ Version: 0.4.9
 Date: 26.12.25
   Bugfixes:
     - WIP Angels 2.0 update For PAR. https://github.com/SGZ-Creations/Power-Armour-Replacer/issues/4
-  Thanks:
+  Credits:
     - @kuroxusagi For thee git report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.8
@@ -104,7 +108,7 @@ Date: 26.12.25
     - Update Require C.A.S version.
     - Milestones still don't load.
     - If you want to fix this on your end Empty file in the following path:(Castra/prototypes/recipes-updates.lua)(Make sure that you leave 5 [table.insert] lines for Maraxsis Compatibility with castra.)
-  Thanks:
+  Credits:
     - @SuperHeroPuppy. Have me come up with a new Tank grid. to differentiate with vanilla.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.7
