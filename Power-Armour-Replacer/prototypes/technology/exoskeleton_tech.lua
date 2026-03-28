@@ -88,7 +88,7 @@ data:extend({
 })
 
 if SS["ShortcutTech"].value == true then
-    data.raw["shortcut"]["tooggle-equipment-movement-bonus"].unavailable_until_unlocked = false
+    data.raw["shortcut"]["toggle-equipment-movement-bonus"].unavailable_until_unlocked = false
 elseif SS["ShortcutTech"].value == false then
-    data.raw["shortcut"]["tooggle-equipment-movement-bonus"].technology_to_unlock = "par-exoskeleton-tech-1"
+    data.raw["shortcut"]["toggle-equipment-movement-bonus"].technology_to_unlock = "par-exoskeleton-tech-1"
 end
