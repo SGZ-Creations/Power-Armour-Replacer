@@ -62,7 +62,8 @@
 		"! nanobots-refined",
 		"! Gregtorio",
 		"! Moar-Grid",
-		"! nullius"
+		"! nullius",
+		"! Warp-Drive-Machine-Expansion"
 	],
 	"description": "Replaces Armours & Equipents.\nAdds 10 New Power Armour,\n10 New Batteries,\n10 New Reactors,\n10 New Shields,\n5 New Exoskeletons,\n2 New NVG's,\n2 New Belt-immunity",
 	"package": {
