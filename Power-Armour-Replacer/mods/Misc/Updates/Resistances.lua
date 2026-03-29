@@ -15,8 +15,8 @@ if mods["space-age"] then
         },
         {
             type = "explosion",
-            decrease = 10,
-            percent = 10,
+            decrease = 1000,
+            percent = 65,
         },
         {
             type = "fire",
@@ -59,8 +59,8 @@ if mods["RampantArsenalFork"] and mods["space-age"] then
         },
         {
             type = "explosion",
-            decrease = 20,
-            percent = 20,
+            decrease = 1500,
+            percent = 75,
         },
         {
             type = "fire",
