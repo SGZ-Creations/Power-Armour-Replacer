@@ -5,6 +5,10 @@ local Recipe = data.raw["recipe"]
 ---@class data.SettingsStartup
 local SS = settings.startup
 
+if not mods["aai-industry"] and mods["bobplates"] then
+	Tech["automation"].research_trigger = {type ="craft-item", item ="lab", count = 10}
+	Tech["automation"].unit = nil
+end
 
 if mods["bobtech"]and mods["bobplates"] then
 	Tech["steel-processing"].research_trigger = {type ="craft-fluid", fluid ="bob-oxygen", amount = 1000}
