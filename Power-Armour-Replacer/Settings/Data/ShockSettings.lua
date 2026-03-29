@@ -478,7 +478,7 @@ data:extend({
 ----ShootingCooldown----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_01",
+        name = "ShockShootingSpeed_01", --.05
         setting_type = "startup",
         default_value = 500,
         minimum_value = 0.01,
@@ -486,7 +486,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_02",
+        name = "ShockShootingSpeed_02", --(.12 --> .125)
         setting_type = "startup",
         default_value = 450,
         minimum_value = 0.01,
@@ -494,7 +494,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_03",
+        name = "ShockShootingSpeed_03", -- .25
         setting_type = "startup",
         default_value = 400,
         minimum_value = 0.01,
@@ -502,7 +502,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_04",
+        name = "ShockShootingSpeed_04", -- .45
         setting_type = "startup",
         default_value = 350,
         minimum_value = 0.01,
@@ -510,7 +510,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_05",
+        name = "ShockShootingSpeed_05", -- .55
         setting_type = "startup",
         default_value = 300,
         minimum_value = 0.01,
@@ -518,7 +518,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_06",
+        name = "ShockShootingSpeed_06", -- .75
         setting_type = "startup",
         default_value = 250,
         minimum_value = 0.01,
@@ -526,7 +526,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_07",
+        name = "ShockShootingSpeed_07", -- .95
         setting_type = "startup",
         default_value = 200,
         minimum_value = 0.01,
@@ -534,7 +534,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_08",
+        name = "ShockShootingSpeed_08", --1.05
         setting_type = "startup",
         default_value = 150,
         minimum_value = 0.01,
@@ -542,7 +542,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_09",
+        name = "ShockShootingSpeed_09", -- 2.5
         setting_type = "startup",
         default_value = 100,
         minimum_value = 0.01,
@@ -550,7 +550,7 @@ data:extend({
     },
     {
         type = "double-setting",
-        name = "ShockShootingSpeed_10",
+        name = "ShockShootingSpeed_10", -- 3 --> 8
         setting_type = "startup",
         default_value = 50,
         minimum_value = 0.01,
