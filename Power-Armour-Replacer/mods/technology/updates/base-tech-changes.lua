@@ -15,8 +15,3 @@ Tech["steel-processing"].unit = nil
 
 Tech["military"].research_trigger = {type ="craft-item", item ="firearm-magazine", count = 20}
 Tech["military"].unit = nil
-
-if not mods["aai-industry"] then
-	Tech["automation"].research_trigger = {type ="craft-item", item ="lab", count = 10}
-	Tech["automation"].unit = nil
-end

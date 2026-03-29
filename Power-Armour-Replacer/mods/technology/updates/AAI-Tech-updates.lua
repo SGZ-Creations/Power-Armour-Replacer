@@ -8,3 +8,8 @@ if mods["aai-industry"]and mods["bobplates"] then
 	Tech["glass-processing"].research_trigger = {type ="craft-item", item ="sand", count = 100}
 	Tech["glass-processing"].unit = nil
 end
+
+if not mods["aai-industry"] and mods["bobplates"] then
+	Tech["automation"].research_trigger = {type ="craft-item", item ="lab", count = 10}
+	Tech["automation"].unit = nil
+end
