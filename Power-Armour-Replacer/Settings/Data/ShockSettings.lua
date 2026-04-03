@@ -480,7 +480,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_01", --.05
         setting_type = "startup",
-        default_value = 500,
+        default_value = 600,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -488,7 +488,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_02", --(.12 --> .125)
         setting_type = "startup",
-        default_value = 450,
+        default_value = 475,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -496,7 +496,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_03", -- .25
         setting_type = "startup",
-        default_value = 400,
+        default_value = 240,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -504,7 +504,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_04", -- .45
         setting_type = "startup",
-        default_value = 350,
+        default_value = 130,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -512,7 +512,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_05", -- .55
         setting_type = "startup",
-        default_value = 300,
+        default_value = 110,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -520,7 +520,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_06", -- .75
         setting_type = "startup",
-        default_value = 250,
+        default_value = 75,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -528,7 +528,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_07", -- .95
         setting_type = "startup",
-        default_value = 200,
+        default_value = 62,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -536,7 +536,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_08", --1.05
         setting_type = "startup",
-        default_value = 150,
+        default_value = 45,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -544,7 +544,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_09", -- 2.5
         setting_type = "startup",
-        default_value = 100,
+        default_value = 25,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
@@ -552,7 +552,7 @@ data:extend({
         type = "double-setting",
         name = "ShockShootingSpeed_10", -- 3 --> 8
         setting_type = "startup",
-        default_value = 50,
+        default_value = 12,
         minimum_value = 0.01,
         order = "ShockDefence-7"
     },
