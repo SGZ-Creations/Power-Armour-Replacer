@@ -74,7 +74,7 @@ data:extend({
         effects = {
             {type = "unlock-recipe", recipe = "par-shock-defense-mk5"},
         },
-        prerequisites = {"par-shock-defense-tech-4", "laser"},
+        prerequisites = {"par-shock-defense-tech-4",},
         unit = {
             count = 500,
             ingredients = {
