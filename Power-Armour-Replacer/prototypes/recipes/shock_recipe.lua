@@ -64,7 +64,6 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {type="item", name="par-shock-defense-mk4", amount=1},
-            {type="item", name="heat-pipe", amount=50},
             {type="item", name="copper-cable", amount=200},
             {type="item", name="plastic-bar", amount=120},
             {type="item", name="sulfur", amount=80},
@@ -79,7 +78,6 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {type="item", name="par-shock-defense-mk5", amount=1},
-            {type="item", name="heat-pipe", amount=150},
             {type="item", name="sulfur", amount=150},
             {type="item", name="processing-unit", amount=50},
             {type="item", name="battery", amount=125},
@@ -234,7 +232,6 @@ if mods["space-age"] then
                 {type="item", name="par-shock-defense-mk4", amount=1},
                 {type="item", name="armour-control-unit", amount=125},
                 {type="item", name="processing-unit", amount=125},
-                {type="item", name="heat-pipe", amount=125},
                 {type="item", name="carbon", amount=125},
                 {type="item", name="battery", amount=125},
             },
@@ -252,7 +249,6 @@ if mods["space-age"] then
                 {type="item", name="carbon", amount=150},
                 {type="item", name="calcite", amount=150},
                 {type="item", name="battery", amount=150},
-                {type="item", name="heat-pipe", amount=150},
                 {type="item", name="engine-unit", amount=150},
                 {type="item", name="tungsten-plate", amount=150},
                 {type="item", name="processing-unit", amount=150},
