@@ -7,6 +7,12 @@ local Immunities = {
     {buffer_capacity = tostring(SS["ImmunityBuffer_02"].value) .. "kJ", input_flow_limit = tostring(SS["ImmunityInputFlow_02"].value) .. "kW", energy_consumption = tostring(SS["ImmunityConsumption_02"].value) .. "W", weightvalue = SS["ImmunityWeightValue_02"].value , order = "jbb[belt-immunity]-ab[armour-replacer]"},
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, immunity in pairs(Immunities) do
     ---@type data.ItemPrototype
     local item = {
@@ -47,7 +53,7 @@ for tier, immunity in pairs(Immunities) do
             usage_priority = "primary-input"
         },
         energy_consumption = immunity.energy_consumption,
-        categories = {"armor"},
+        categories = AllowedGrids,
         order = immunity.order
     }
 

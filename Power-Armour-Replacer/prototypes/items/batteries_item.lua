@@ -16,6 +16,12 @@ local batteries = {
     { buffer_capacity = tostring(SS["BatteryCapacity_10"].value--[[ * SS["Multiplies"].value]]) .. "TJ", weightvalue = SS["BatteryWeight_10"].value, order = "bjz", },
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, battery in pairs(batteries) do
     ---@type data.ItemPrototype
     local item = {
@@ -48,7 +54,7 @@ for tier, battery in pairs(batteries) do
             buffer_capacity = battery.buffer_capacity,
             usage_priority = "tertiary"
         },
-        categories = {"armor"}
+        categories = AllowedGrids
     }
 
     data:extend({

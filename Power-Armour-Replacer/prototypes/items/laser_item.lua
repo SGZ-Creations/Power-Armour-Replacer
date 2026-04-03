@@ -16,6 +16,12 @@ local lasers = {
     {buffer_capacity = tostring(SS["LaserBuffer_10"].value) .. "MJ", energy_consumption = tostring(SS["LaserConsumption_10"].value) .. "MJ", duration = SS["LaserDuration_10"].value, damage_modifier = SS["LaserDamage_10"].value, range = SS["LaserRange_10"].value, cooldown = SS["LaserCooldown_10"].value, weightvalue = SS["LaserWeight_10"].value, order ="djz[active-defense]-aj[armour-replacer]"},
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, laser in pairs(lasers) do
     ---@type data.ItemPrototype
     local item = {
@@ -70,7 +76,7 @@ for tier, laser in pairs(lasers) do
             }
         },
         automatic = true,
-        categories = {"armor"}
+        categories = AllowedGrids
     }
 
     data:extend({

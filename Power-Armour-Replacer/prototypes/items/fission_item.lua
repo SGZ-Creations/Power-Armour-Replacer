@@ -16,6 +16,12 @@ local FissionReactor = {
     {power =tostring(SS["FissionPower_10"].value) .. "GW", weightvalue = SS["FissionWeight_10"].value, order = "cjz[energy-source]-aa[armour-replacer]"},
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, fission in pairs(FissionReactor) do
     ---@type data.ItemPrototype
     local item = {
@@ -46,7 +52,7 @@ for tier, fission in pairs(FissionReactor) do
             usage_priority = "primary-output"
         },
         power = fission.power,
-        categories = {"armor"}
+        categories = AllowedGrids
     }
     data:extend({
         item,

@@ -21,6 +21,12 @@ local roboports = {
     {charging_energy = tostring(SS["RoboportCharging_10"].value) .. "MW", buffer_capacity =tostring(SS["RoboportBuffer_10"].value) .. "MJ", input_flow_limit = tostring(SS["RoboportInputFlow_10"].value) .. "MW", construction_radius =SS["RoboportConstructionRadius_10"].value, robot_limit = SS["RoboportRobotLimit_10"].value, charging_station_count =SS["RoboportBotCharging_10"].value * QualityValue--[[(4)]], weightvalue = SS["RoboportWeight_10"].value, order = "ej[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-2", 64, 10), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-2", 128, 128, 10)},
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, roboport in pairs(roboports) do
     ---@type data.ItemPrototype
     local item = {
@@ -79,7 +85,7 @@ for tier, roboport in pairs(roboports) do
         charging_station_count = roboport.charging_station_count,
         charging_distance = 1.6,
         charging_threshold_distance = 5,
-        categories = {"armor"}
+        categories = AllowedGrids
     }
 
     data:extend({

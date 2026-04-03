@@ -23,5 +23,4 @@
 	require("structures.science-setting")
 	require("mods.Misc.Updates.Resistances")
 	require("mods.Misc.Updates.RecipeCategory")
-	--require("mods.Misc.Updates.KRSpacedOut")
     --require("structures.tips_tricks.tips-a-tricks-updates")

@@ -16,6 +16,12 @@ local panels = {
     {powers = tostring(SS["SolarPower_10"].value) .. "GW", weightvalue = SS["SolarWeight_10"].value, orders ="hj[energy-source]-aj[armour-replacer]"},
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, panel in pairs(panels) do
     ---@type data.ItemPrototype
     local item = {
@@ -48,7 +54,7 @@ for tier, panel in pairs(panels) do
             usage_priority = "primary-output"
         },
         power = panel.powers,
-        categories = {"armor"}
+        categories = AllowedGrids
     }
 
     data:extend({

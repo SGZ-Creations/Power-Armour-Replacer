@@ -14,6 +14,12 @@ local ShockDefence = {
 	{automatic =SS["ShockDefencePassiveActive_10"].value, shockpowerbuffer = tostring(SS["ShockPowerStorage_10"].value) .. "GJ", powerconsumption = tostring(SS["ShockPowerConsumption_10"].value) .. "GJ", damagemodifier = SS["ShockDamage_10"].value, ShootingCooldown = SS["ShockShootingSpeed_10"].value, shockradius = SS["ShockDefenceRadius_10"].value, range = SS["ShockRange_10"].value, knockback =SS["ShockKnockback_10"].value, weightvalue = SS["ShockWeight_10"].value, order = "gj[pasive-defense]-aa[armour-replacer]"},
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, shock in pairs(ShockDefence) do
     ---@type data.ItemPrototype
 	local item = {
@@ -69,7 +75,7 @@ for tier, shock in pairs(ShockDefence) do
 			}
 		},
 		automatic = shock.automatic,
-		categories = {"armor"}
+		categories = AllowedGrids
 	}
 	data:extend({
         item,

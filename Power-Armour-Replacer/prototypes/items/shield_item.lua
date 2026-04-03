@@ -20,6 +20,12 @@ local shields = {
     {energy_per_shield = tostring(SS["HitpointRechargeRate_10"].value) .. "kJ", input_flow_limit = tostring(SS["PowerRechargeRate_10"].value) .. "GW", buffer_capacity = tostring(SS["ShieldCapcity_10"].value) .. "MJ", max_shield = SS["ShieldHealth_10"].value, weightvalue = SS["ShieldWeight_10"].value, order="fjz[energy-shield-mk2]-aj[armour-replacer]"},
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, shield in pairs(shields) do
     ---@type data.ItemPrototype
     local item = {
@@ -54,7 +60,7 @@ for tier, shield in pairs(shields) do
             usage_priority = "primary-input"
         },
         energy_per_shield = shield.energy_per_shield,
-        categories = {"armor"}
+        categories = AllowedGrids
     }
 
     data:extend({

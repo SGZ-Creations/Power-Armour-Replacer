@@ -11,6 +11,12 @@ local exoskeletons = {
     { energy_consumption = tostring(SS["ExoskeletonEnergyConsumption_05"].value) .. "GW", speed_bonus = SS["ExoskeletonSpeed_05"].value, weightvalue = SS["ExoskeletonWeight_05"].value, order = "ie[exoskeleton]-ae[armour-replacer]" },
 }
 
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
 for tier, exoskeleton in pairs(exoskeletons) do
     ---@type data.ItemPrototype
     local item = {
@@ -45,7 +51,7 @@ for tier, exoskeleton in pairs(exoskeletons) do
         },
         energy_consumption = exoskeleton.energy_consumption,
         movement_bonus = exoskeleton.speed_bonus,
-        categories = { "armor" }
+        categories = AllowedGrids
     }
 
     data:extend({

@@ -42,11 +42,11 @@ for tier, nightvision in pairs(nightvisions) do
             usage_priority = "primary-input"
         },
         energy_input = nightvision.energy_input,
-        categories = {"armor"},
         activate_sound = { filename = "__base__/sound/nightvision-on.ogg", volume = 0.5 },
         deactivate_sound = { filename = "__base__/sound/nightvision-off.ogg", volume = 0.5 },
         darkness_to_turn_on = nightvision.Darkness,
         color_lookup = nightvision.lut,
+        categories = {"armor"},
     }
     data:extend({
         item,
