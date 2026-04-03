@@ -57,7 +57,7 @@
         ["kr-superior-exoskeleton-equipment", "par-exoskeleton-mk3"],
         ["kr-big-solar-panel-equipment", "par-solar-panel-mk2"],
         ["kr-superior-solar-panel-equipment", "par-solar-panel-mk4"],
-        ["kr-big-superior-solar-panel-equipment", "par-solar-panel-mk5"]
+        ["kr-big-superior-solar-panel-equipment", "par-solar-panel-mk5"],
         ["kr-personal-laser-defense-mk2-equipment", "par-laser-mk3"],
         ["kr-personal-laser-defense-mk3-equipment", "par-laser-mk5"],
         ["kr-personal-laser-defense-mk4-equipment", "par-laser-mk7"]
@@ -121,7 +121,7 @@
         ["kr-superior-exoskeleton-equipment", "par-exoskeleton-mk3"],
         ["kr-big-solar-panel-equipment", "par-solar-panel-mk2"],
         ["kr-superior-solar-panel-equipment", "par-solar-panel-mk4"],
-        ["kr-big-superior-solar-panel-equipment", "par-solar-panel-mk5"]
+        ["kr-big-superior-solar-panel-equipment", "par-solar-panel-mk5"],
         ["kr-personal-laser-defense-mk2-equipment", "par-laser-mk3"],
         ["kr-personal-laser-defense-mk3-equipment", "par-laser-mk5"],
         ["kr-personal-laser-defense-mk4-equipment", "par-laser-mk7"]
@@ -185,7 +185,7 @@
         ["kr-superior-exoskeleton-equipment", "par-exoskeleton-mk3"],
         ["kr-big-solar-panel-equipment", "par-solar-panel-mk2"],
         ["kr-superior-solar-panel-equipment", "par-solar-panel-mk4"],
-        ["kr-big-superior-solar-panel-equipment", "par-solar-panel-mk5"]
+        ["kr-big-superior-solar-panel-equipment", "par-solar-panel-mk5"],
         ["kr-personal-laser-defense-mk2-equipment", "par-laser-mk3"],
         ["kr-personal-laser-defense-mk3-equipment", "par-laser-mk5"],
         ["kr-personal-laser-defense-mk4-equipment", "par-laser-mk7"]
