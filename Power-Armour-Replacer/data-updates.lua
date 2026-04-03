@@ -8,6 +8,7 @@
 	require("mods.recipes.updates.nvgs_updates")
 	require("mods.recipes.updates.roboports_updates")
 	require("mods.recipes.updates.shield_updates")
+	require("mods.recipes.updates.shock_updates")
 	require("mods.recipes.updates.solar_updates")
 	require("mods.recipes.updates.compatible_updates")
 
