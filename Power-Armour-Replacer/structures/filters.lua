@@ -714,6 +714,7 @@ elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 --Hidden Recipes
     if mods["Krastorio2-spaced-out"] then
         DRR["kr-vehicle-roboport-equipment"].hidden = true
+        DRR["kr-cargo-expansion-equipment"].hidden = true
     end
     if not mods["Krastorio2-spaced-out"] then
         DRR["kr-power-armor-mk3"].hidden = true
@@ -744,6 +745,7 @@ elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 --Enabled Recipes
     if mods["Krastorio2-spaced-out"] then
         DRR["kr-vehicle-roboport-equipment"].enabled = false
+        DRR["kr-cargo-expansion-equipment"].enabled = false
     end
     if not mods["Krastorio2-spaced-out"] then
         DRR["kr-power-armor-mk3"].enabled = false
@@ -770,6 +772,9 @@ elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
     DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
 --Hidden Tech
+    if mods["Krastorio2-spaced-out"] then
+        DRT["kr-cargo-expansion"].hidden = true
+    end
     if not mods["Krastorio2-spaced-out"] then
         DRT["kr-power-armor-mk3"].hidden = true
         DRT["kr-power-armor-mk4"].hidden = true
@@ -789,6 +794,9 @@ elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
     DRT["kr-personal-laser-defense-mk4-equipment"].hidden = true
 
 --Enabled Tech
+    if mods["Krastorio2-spaced-out"] then
+        DRT["kr-cargo-expansion"].enabled = false
+    end
     if not mods["Krastorio2-spaced-out"] then
         DRT["kr-power-armor-mk3"].enabled = false
         DRT["kr-power-armor-mk4"].enabled = false
@@ -811,6 +819,7 @@ elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
     if SS["K2-filters"].value then
         if mods["Krastorio2-spaced-out"] then
             Hide_Item("kr-vehicle-roboport-equipment")
+            Hide_Item("kr-cargo-expansion-equipment")
         end
         if not mods["Krastorio2-spaced-out"] then
             Hide_Item("kr-power-armor-mk3")

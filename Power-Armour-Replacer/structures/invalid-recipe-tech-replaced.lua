@@ -144,6 +144,7 @@ local item_replace = {
     ["energy-shield-mk6-equipment"] = "par-shield-mk6",
     ["se-rtg-equipment"] = "par-fission-reactor-mk4",
     ["se-rtg-equipment-2"] = "par-fission-reactor-mk7",
+    ["kr-fusion-reactor-equipment"] = "par-fission-reactor-mk5"
     --[""] = "",
 }
 
