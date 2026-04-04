@@ -4,15 +4,16 @@ Date: 10.04.26
   Features:
     - Recipe for K2SO Completed (Not in Test version)
     - Tech for K2SO Completed (Not in Test version)
-    - K2SO Recipes done: Armour,
-    - K2SO Tech done: NA,
+    - K2SO Recipes done: Armour, ExoSkeleton,
+    - K2SO Tech done: Armour,
     - 10x9 = 90 New Setting for Shock Defence.
   Modding:
     - Foliax Filters.
     - Tips & Tricks Description for Foliax.
     - Made equipment from TeleportationEquipment allow for crafting in EM Plant.
     - Made equipment from Power Armor MK3 allow for crafting in EM Plant.
-    - Added Tips & Tricks 4 Spidertron Tiers Community as it was Confirmed Working. 
+    - Added Tips & Tricks 4 Spidertron Tiers Community as it was Confirmed Working.
+    - Added K2SO & K2 Grid Category options.
   Changes:
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
@@ -21,10 +22,8 @@ Date: 10.04.26
     - Tips & Tricks Volunteer Graphics request.
     - Fission Reactor Shape Changed from 3x3 to 5x5 as to when fusion reactors will be using the old 3x3.
   ToDo:
-    - K2/K2SO Add data card in tech.
-    - Advanced from MK5 Should end with use of 10k.
-    - Matter & Singularity From MK7 Should end with use of 10k.
-    - Tech update & add Production & utility tech for 5 & up K2SO edition.
+    - Advanced from MK5.
+    - Matter & Singularity From MK7.
   Bugfixes:
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
   Info:
