@@ -74,7 +74,7 @@ if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(Tech["par-night-immunity-tech-2"].unit.ingredients, {"kr-matter-tech-card",	  1})
 	table.insert(Tech["par-night-immunity-tech-2"].unit.ingredients, {"kr-singularity-tech-card", 1})
 
-	table.insert(Tech["par-battery-tech-5"].unit.ingredients, {"automation-science-pack", 6})
+	table.insert(Tech["par-battery-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-battery-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-battery-tech-5"].unit.ingredients, {"military-science-pack",   2})
 	table.insert(Tech["par-battery-tech-5"].unit.ingredients, {"chemical-science-pack",   1})
@@ -118,7 +118,7 @@ if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(Tech["par-battery-tech-10"].unit.ingredients, {"kr-matter-tech-card",	    4})
 	table.insert(Tech["par-battery-tech-10"].unit.ingredients, {"kr-singularity-tech-card", 4})
 
-	table.insert(Tech["par-solar-panel-tech-5"].unit.ingredients, {"automation-science-pack", 6})
+	table.insert(Tech["par-solar-panel-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-solar-panel-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-solar-panel-tech-5"].unit.ingredients, {"military-science-pack",   2})
 	table.insert(Tech["par-solar-panel-tech-5"].unit.ingredients, {"chemical-science-pack",   1})
@@ -162,7 +162,7 @@ if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(Tech["par-solar-panel-tech-10"].unit.ingredients, {"kr-matter-tech-card",	    4})
 	table.insert(Tech["par-solar-panel-tech-10"].unit.ingredients, {"kr-singularity-tech-card", 4})
 
-	table.insert(Tech["par-laser-tech-5"].unit.ingredients, {"automation-science-pack", 6})
+	table.insert(Tech["par-laser-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-laser-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-laser-tech-5"].unit.ingredients, {"military-science-pack",   2})
 	table.insert(Tech["par-laser-tech-5"].unit.ingredients, {"chemical-science-pack",   1})
@@ -206,7 +206,7 @@ if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(Tech["par-laser-tech-10"].unit.ingredients, {"kr-matter-tech-card",	  4})
 	table.insert(Tech["par-laser-tech-10"].unit.ingredients, {"kr-singularity-tech-card", 4})
 
-	table.insert(Tech["par-roboport-tech-5"].unit.ingredients, {"automation-science-pack", 6})
+	table.insert(Tech["par-roboport-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-roboport-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-roboport-tech-5"].unit.ingredients, {"military-science-pack",   2})
 	table.insert(Tech["par-roboport-tech-5"].unit.ingredients, {"chemical-science-pack",   1})
@@ -250,7 +250,7 @@ if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(Tech["par-roboport-tech-10"].unit.ingredients, {"kr-matter-tech-card",		 4})
 	table.insert(Tech["par-roboport-tech-10"].unit.ingredients, {"kr-singularity-tech-card", 4})
 
-	table.insert(Tech["par-shield-tech-5"].unit.ingredients, {"automation-science-pack", 6})
+	table.insert(Tech["par-shield-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-shield-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-shield-tech-5"].unit.ingredients, {"military-science-pack",   2})
 	table.insert(Tech["par-shield-tech-5"].unit.ingredients, {"chemical-science-pack",   1})
@@ -294,7 +294,7 @@ if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(Tech["par-shield-tech-10"].unit.ingredients, {"kr-matter-tech-card",		4})
 	table.insert(Tech["par-shield-tech-10"].unit.ingredients, {"kr-singularity-tech-card",	4})
 
-	table.insert(Tech["par-shock-defense-tech-5"].unit.ingredients, {"automation-science-pack", 6})
+	table.insert(Tech["par-shock-defense-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-shock-defense-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-shock-defense-tech-5"].unit.ingredients, {"military-science-pack",   2})
 	table.insert(Tech["par-shock-defense-tech-5"].unit.ingredients, {"chemical-science-pack",   1})
@@ -338,7 +338,7 @@ if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"kr-matter-tech-card",	 4})
 	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"kr-singularity-tech-card",4})
 
-	table.insert(Tech["par-fission-reactor-tech-5"].unit.ingredients, {"automation-science-pack", 6})
+	table.insert(Tech["par-fission-reactor-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-fission-reactor-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-fission-reactor-tech-5"].unit.ingredients, {"military-science-pack",   2})
 	table.insert(Tech["par-fission-reactor-tech-5"].unit.ingredients, {"chemical-science-pack",   1})
