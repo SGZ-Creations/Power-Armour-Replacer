@@ -43,8 +43,8 @@ for tier, fission in pairs(FissionReactor) do
         name = "par-fission-reactor-mk" .. tostring(tier),
         sprite = icon_utils.create_equipment_sprite("fusion-reactor", 256, 256, tier),
         shape = {
-            width = 5,
-            height = 5,
+            width = 3,--make this 1 or 2 for fusion
+            height = 3,--make this 1 or 2 for fusion
             type = "full"
         },
         energy_source = {
