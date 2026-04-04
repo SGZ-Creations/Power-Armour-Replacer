@@ -50,24 +50,24 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            {type="fluid", name="kr-mineral-water", amount=100},
-            {"kr-energy-control-unit", 500},
-            {"kr-automation-core", 500},
-			{"kr-imersium-beam", 500},
-            {"kr-ai-core", 500},
-            {"kr-silicon", 500},
-            {"kr-glass", 500},
+            {type="fluid", name="kr-mineral-water", amount=250},
+            {"kr-energy-control-unit", 250},
+            {"kr-automation-core", 250},
+			{"kr-imersium-beam", 250},
+            {"kr-ai-core", 250},
+            {"kr-silicon", 250},
+            {"kr-glass", 250},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 500},
-            {"kr-automation-core", 500},
-			{"kr-imersium-beam", 500},
-            {"kr-ai-core", 500},
-            {"kr-silicon", 500},
-            {"kr-glass", 500},
+            {"kr-energy-control-unit", 250},
+            {"kr-automation-core", 250},
+			{"kr-imersium-beam", 250},
+            {"kr-ai-core", 250},
+            {"kr-silicon", 250},
+            {"kr-glass", 250},
         }
     },
 })
@@ -137,25 +137,25 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            {"kr-energy-control-unit", 1000},
-            {"kr-automation-core", 1000},
-			{"kr-imersium-beam", 1000},
-            {"kr-matter-cube", 1000},
-            {"kr-ai-core", 1000},
-            {"kr-silicon", 1000},
-            {"kr-glass", 1000},
+            {"kr-energy-control-unit", 500},
+            {"kr-automation-core", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-ai-core", 500},
+            {"kr-silicon", 500},
+            {"kr-glass", 500},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 1000},
-            {"kr-automation-core", 1000},
-			{"kr-imersium-beam", 1000},
-            {"kr-matter-cube", 1000},
-            {"kr-ai-core", 1000},
-            {"kr-silicon", 1000},
-            {"kr-glass", 1000},
+            {"kr-energy-control-unit", 500},
+            {"kr-automation-core", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-ai-core", 500},
+            {"kr-silicon", 500},
+            {"kr-glass", 500},
         }
     },
 })
