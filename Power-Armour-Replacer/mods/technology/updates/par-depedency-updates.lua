@@ -113,28 +113,36 @@ PAR.technology_dependancy
 
 	["Krastorio2"] = {
 		["par-armour-tech-5"] = {
-			"kr-advanced-tech-card"
+			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-battery-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-solar-panel-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-laser-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-shock-defense-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-roboport-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-shield-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-fission-reactor-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-armour-tech-7"] = {
 			"kr-singularity-tech-card",
@@ -164,28 +172,36 @@ PAR.technology_dependancy
 
 	["Krastorio2-spaced-out"] = {
 		["par-armour-tech-5"] = {
-			"kr-advanced-tech-card"
+			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-battery-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-solar-panel-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-laser-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-shock-defense-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-roboport-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-shield-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-fission-reactor-tech-5"] = {
 			"kr-advanced-tech-card",
+			"kr-enrgy-control-unit",
 		},
 		["par-armour-tech-7"] = {
 			"kr-singularity-tech-card",
