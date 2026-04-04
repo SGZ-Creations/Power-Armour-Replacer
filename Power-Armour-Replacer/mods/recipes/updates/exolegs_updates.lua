@@ -26,9 +26,19 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 50},
-            ["iron-stick"] = {"kr-silicon"},
-            {"kr-automation-core", 20},
+            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 100},
+            ["iron-stick"] = {"kr-steel-beam", 100},
+            {"kr-automation-core", 100},
+            {"kr-silicon", 100},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 100},
+            ["iron-stick"] = {"kr-steel-beam", 100},
+            {"kr-automation-core", 100},
+            {"kr-silicon", 100},
         }
     },
 })
@@ -63,19 +73,31 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk2"], {
             ["battery"] = {"bob-aluminium-plate", 55},
         }
     },
-    --SE-K2
+    --SE-K2-SO
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 25},
-            ["battery"] = {"motor", 25},
+            ["battery"] = {"motor", 200},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"kr-rare-metals", 20},
-            ["steel-plate"] = {"kr-steel-beam", 45},
+            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 200},
+            ["iron-stick"] = {"kr-steel-beam", 200},
+            {"kr-automation-core", 200},
+            {"kr-rare-metals", 200},
+            {"kr-silicon", 200},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 200},
+            ["iron-stick"] = {"kr-steel-beam", 200},
+            {"kr-automation-core", 200},
+            {"kr-rare-metals", 200},
+            {"kr-silicon", 200},
         }
     },
 })
@@ -93,9 +115,9 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
             ["iron-stick"] = {"bob-titanium-bearing", 75},
             ["battery"] = {"bob-lithium-ion-battery", 90},
             ["iron-gear-wheel"] = {"bob-invar-alloy", 155},
-            ["lubricant"] = {"zero"},
-            {"advanced-circuit", 300},
             {"bob-titanium-plate", 125},
+            {"advanced-circuit", 300},
+            ["lubricant"] = {"zero"},
         }
     },
     {
@@ -122,24 +144,31 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"kr-rare-metals", 20},
+            {type="fluid", name="kr-mineral-water", amount=300},
+            ["battery"] = {"kr-lithium-sulfur-battery", 300},
+            ["steel-plate"] = {"kr-imersium-beam", 300},
+            {"kr-automation-core", 300},
+            {"kr-rare-metals", 300},
+            {"kr-silicon", 300},
             ["lubricant"] = {"zero"},
-            {type="fluid", name="kr-mineral-water", amount=100},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["battery"] = {"kr-lithium-sulfur-battery", 500},
-			["steel-plate"] = {"kr-imersium-beam", 200},
+            ["battery"] = {"kr-lithium-sulfur-battery", 300},
+			["steel-plate"] = {"kr-imersium-beam", 300},
+            {"kr-automation-core", 300},
+            {"kr-rare-metals", 300},
+            {"kr-silicon", 300},
         }
     },
     --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["advanced-circuit"] = {"motor", 20},
-            {"low-density-structure", 60},
+            ["advanced-circuit"] = {"motor", 300},
+            {"low-density-structure", 300},
             ["lubricant"] = {"zero"},
         }
     },
@@ -185,13 +214,13 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
 	{
         dependencies = {"Krastorio2", "space-exploration"},
         replacements = {
+            ["processing-unit"] = {"se-lattice-pressure-vessel", 100},
 			["battery"] = {"kr-lithium-sulfur-battery", 350},
-            ["plastic-bar"] = {"se-dynamic-emitter", 20},
-            ["steel-plate"] = {"kr-imersium-beam", 200},
-            ["processing-unit"] = {"se-lattice-pressure-vessel", 10},
+            ["plastic-bar"] = {"se-dynamic-emitter", 400},
+            ["steel-plate"] = {"kr-imersium-beam", 400},
             ["low-density-structure"] = {"zero"},
-            {"electric-motor", 30},
-            {"kr-matter-cube", 25},
+            {"electric-motor", 400},
+            {"kr-matter-cube", 400},
         }
     },
     {
@@ -246,11 +275,11 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
 	{
         dependencies = {"Krastorio2", "space-exploration"},
         replacements = {
-			["battery"] = {"kr-lithium-sulfur-battery", 500},
-			["steel-plate"] = {"kr-imersium-beam", 200},
-			["armour-control-unit"] = {"se-quantum-processor", 5},
+			["armour-control-unit"] = {"se-quantum-processor", 500},
 			["low-density-structure"] = {"se-heavy-bearing", 500},
-			["processing-unit"] = {"se-naquium-processor", 5},
+			["processing-unit"] = {"se-naquium-processor", 500},
+			["battery"] = {"kr-lithium-sulfur-battery", 500},
+			["steel-plate"] = {"kr-imersium-beam", 500},
             {"se-nanomaterial", 500},
             {"kr-matter-cube", 500},
         }

@@ -37,9 +37,20 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 25},
-            {"kr-iron-beam", 25},
             {type="fluid", name="kr-mineral-water", amount=100},
+            {"kr-iron-beam", 100},
+            {"kr-silicon", 100},
+            {"kr-glass", 100},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-ai-core", 500},
+            {"kr-silicon", 500},
+            {"kr-glass", 500},
         }
     },
 })
@@ -48,14 +59,13 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["advanced-circuit"] = {"bob-advanced-processing-unit", 200},
-            ["nuclear-fuel"] = {"bob-rubber", 200},
+            {"bob-rubber", 200},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"bob-advanced-processing-unit", 200},
-            ["nuclear-fuel"] = {"bob-titanium-plate", 200},
             {"bob-copper-tungsten-alloy", 200},
             {"bob-cobalt-steel-alloy", 200},
             {"bob-titanium-plate", 200},
@@ -102,8 +112,8 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
         dependencies = {"space-exploration"},
         replacements = {
             ["low-density-structure"] = {"se-nanomaterial", 50},
-            ["processing-unit"] = {"se-naquium-processor", 2},
-			["advanced-circuit"] = {"se-quantum-processor", 2},
+            ["processing-unit"] = {"se-naquium-processor", 20},
+			["advanced-circuit"] = {"se-quantum-processor", 20},
 			["rocket-fuel"] = {"zero"},
             ["petroleum-gas"] = {"zero"},
         }
@@ -111,9 +121,23 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-			["nuclear-fuel"] = {"kr-matter-cube", 2},
-            {"kr-ai-core", 10},
-            {"kr-matter-cube", 2},
+            {"kr-energy-control-unit", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-ai-core", 500},
+            {"kr-silicon", 500},
+            {"kr-glass", 500},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-ai-core", 500},
+            {"kr-silicon", 500},
+            {"kr-glass", 500},
         }
     },
 })

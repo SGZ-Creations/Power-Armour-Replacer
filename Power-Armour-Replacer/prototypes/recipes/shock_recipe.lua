@@ -250,6 +250,7 @@ if mods["space-age"] then
                 {type="item", name="calcite", amount=150},
                 {type="item", name="battery", amount=150},
                 {type="item", name="engine-unit", amount=150},
+                {type="item", name="superconductor", amount=150},
                 {type="item", name="tungsten-plate", amount=150},
                 {type="item", name="processing-unit", amount=150},
                 {type="item", name="tungsten-carbide", amount=150},
@@ -275,7 +276,6 @@ if mods["space-age"] then
                 {type="item", name="tungsten-plate", amount=200},
                 {type="item", name="lithium-plate", amount=200},
                 {type="item", name="carbon-fiber", amount=200},
-                {type="item", name="calcite", amount=200},
                 {type="item", name="carbon", amount=200},
                 --Fluid
                 {type="fluid", name="electrolyte", amount=250},
@@ -301,7 +301,6 @@ if mods["space-age"] then
                 {type="item", name="tungsten-plate", amount=300},
                 {type="item", name="lithium-plate", amount=300},
                 {type="item", name="carbon-fiber", amount=300},
-                {type="item", name="calcite", amount=300},
                 {type="item", name="carbon", amount=300},
                 --Fluid
                 {type="fluid", name="electrolyte", amount=250},
@@ -327,7 +326,6 @@ if mods["space-age"] then
                 {type="item", name="lithium-plate", amount=400},
                 {type="item", name="carbon-fiber", amount=400},
                 {type="item", name="biter-egg", amount=400},
-                {type="item", name="calcite", amount=400},
                 {type="item", name="carbon", amount=400},
                 --Fluid
                 {type="fluid", name="electrolyte", amount=250},
@@ -356,7 +354,6 @@ if mods["space-age"] then
                 {type="item", name="lithium-plate", amount=500},
                 {type="item", name="carbon-fiber", amount=500},
                 {type="item", name="biter-egg", amount=500},
-                {type="item", name="calcite", amount=500},
                 {type="item", name="carbon", amount=500},
                 --Fluid
                 {type="fluid", name="electrolyte", amount=500},

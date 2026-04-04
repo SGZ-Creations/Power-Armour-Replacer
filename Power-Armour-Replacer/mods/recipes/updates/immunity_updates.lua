@@ -50,15 +50,24 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 20},
             {type="fluid", name="kr-mineral-water", amount=100},
+            {"kr-energy-control-unit", 500},
+            {"kr-automation-core", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-ai-core", 500},
+            {"kr-silicon", 500},
+            {"kr-glass", 500},
         }
     },
-    --SE
     {
-        dependencies = {"space-exploration"},
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            --["electronic-circuit"] = {"automation-core", 10},
+            {"kr-energy-control-unit", 500},
+            {"kr-automation-core", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-ai-core", 500},
+            {"kr-silicon", 500},
+            {"kr-glass", 500},
         }
     },
 })
@@ -104,8 +113,8 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
     {
         dependencies = {"248k"},
         replacements = {
-            {"fi_materials_titan", 350},
             {"gr_materials_circuit", 100},
+            {"fi_materials_titan", 350},
             {"fu_materials_KFK", 100},
         }
     },
@@ -119,17 +128,34 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["low-density-structure"] = {"se-nanomaterial", 50},
-            ["processing-unit"] = {"se-naquium-processor", 2},
-			["advanced-circuit"] = {"se-quantum-processor", 2},
+            ["low-density-structure"] = {"se-nanomaterial", 100},
+			["advanced-circuit"] = {"se-quantum-processor", 100},
+            ["processing-unit"] = {"se-naquium-processor", 100},
             ["rocket-fuel"] = {"zero"},
         }
     },
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            {"kr-ai-core", 1000},
+            {"kr-energy-control-unit", 1000},
+            {"kr-automation-core", 1000},
+			{"kr-imersium-beam", 1000},
             {"kr-matter-cube", 1000},
+            {"kr-ai-core", 1000},
+            {"kr-silicon", 1000},
+            {"kr-glass", 1000},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 1000},
+            {"kr-automation-core", 1000},
+			{"kr-imersium-beam", 1000},
+            {"kr-matter-cube", 1000},
+            {"kr-ai-core", 1000},
+            {"kr-silicon", 1000},
+            {"kr-glass", 1000},
         }
     },
 })

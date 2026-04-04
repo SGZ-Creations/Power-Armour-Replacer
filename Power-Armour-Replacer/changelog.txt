@@ -3,9 +3,9 @@ Version: 0.5.0
 Date: 10.04.26
   Features:
     - Recipe for K2SO Completed (Not in Test version)
-    - Tech for K2SO Completed (Not in Test version)
+    - Tech for K2SO Completed.
     - K2SO Recipes overhaul: Armour, ExoSkeleton,
-    - K2SO Tech overhaul,
+    - K2SO Tech overhaul.
     - 10x9 = 90 New Setting for Shock Defence.
   Modding:
     - Foliax Filters.
@@ -23,8 +23,11 @@ Date: 10.04.26
     - Fission Reactor Shape Changed from 3x3 to 5x5 as to when fusion reactors will be using the old 3x3.
     - Advanced from MK5 to all tech.
     - Matter & Singularity From MK7 to all tech.
+    - Recipes tweaks for Shock defence.
   Bugfixes:
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
+    - Tips & tricks using K2SO should now trigger.
+    - Spidertron Not unlocking playing with K2 & K2SO.
   Info:
     - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholder. thanks for understanding.
   Credit:
