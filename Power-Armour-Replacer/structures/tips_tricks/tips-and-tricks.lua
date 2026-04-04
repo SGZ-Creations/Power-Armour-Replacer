@@ -393,23 +393,25 @@ if mods["osm-radioactivity"] then
 	})
 end
 
-if mods["space-exploration"] and mods["Krastroio2"] then
-	data:extend({
-		{
-			type = "tips-and-tricks-item",
-			name = "par_k2-se-info",
-			category = "power-armour-replacer",
-			dependencies = {"par_cas-info"},
-			order = "3ZZ",
-			indent = 2,
-			trigger = {
-				type = "craft-item",
-				item = "par-armour-mk1",
-				event_type = "crafting-finished",
-				count = 1,
+if mods["space-exploration"] then
+	if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"])then
+		data:extend({
+			{
+				type = "tips-and-tricks-item",
+				name = "par_k2-se-info",
+				category = "power-armour-replacer",
+				dependencies = {"par_cas-info"},
+				order = "3ZZ",
+				indent = 2,
+				trigger = {
+					type = "craft-item",
+					item = "par-armour-mk1",
+					event_type = "crafting-finished",
+					count = 1,
+				},
 			},
-		},
-	})
+		})
+	end
 end
 
 if mods["space-exploration"] and not mods["Krastroio2"] then
@@ -431,21 +433,23 @@ if mods["space-exploration"] and not mods["Krastroio2"] then
 	})
 end
 
-if mods["Krastroio2"] and not mods["space-exploration"] then
-	data:extend({
-		{
-			type = "tips-and-tricks-item",
-			name = "par_k2-info",
-			category = "power-armour-replacer",
-			dependencies = {"par_cas-info"},
-			order = "3ZZ",
-			indent = 2,
-			trigger = {
-				type = "craft-item",
-				item = "par-armour-mk1",
-				event_type = "crafting-finished",
-				count = 1,
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"])then
+	if not mods["space-exploration"] then
+		data:extend({
+			{
+				type = "tips-and-tricks-item",
+				name = "par_k2-info",
+				category = "power-armour-replacer",
+				dependencies = {"par_cas-info"},
+				order = "3ZZ",
+				indent = 2,
+				trigger = {
+					type = "craft-item",
+					item = "par-armour-mk1",
+					event_type = "crafting-finished",
+					count = 1,
+				},
 			},
-		},
-	})
+		})
+	end
 end
