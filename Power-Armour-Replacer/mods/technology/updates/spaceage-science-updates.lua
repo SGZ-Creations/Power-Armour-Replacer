@@ -176,26 +176,31 @@ if mods["space-age"] then
 
 	table.insert(Tech["par-shock-defense-tech-5"].unit.ingredients, {"space-science-pack", 1})
 
-	table.insert(Tech["par-shock-defense-tech-6"].unit.ingredients, {"space-science-pack",       2})
-	table.insert(Tech["par-shock-defense-tech-6"].unit.ingredients, {"metallurgic-science-pack", 1})
+	table.insert(Tech["par-shock-defense-tech-6"].unit.ingredients, {"space-science-pack",       	 2})
+	table.insert(Tech["par-shock-defense-tech-6"].unit.ingredients, {"metallurgic-science-pack", 	 1})
+	table.insert(Tech["par-shock-defense-tech-6"].unit.ingredients, {"electromagnetic-science-pack", 1})
 
-	table.insert(Tech["par-shock-defense-tech-7"].unit.ingredients, {"space-science-pack",       3})
-	table.insert(Tech["par-shock-defense-tech-7"].unit.ingredients, {"metallurgic-science-pack", 2})
-	table.insert(Tech["par-shock-defense-tech-7"].unit.ingredients, {"cryogenic-science-pack",   1})
+	table.insert(Tech["par-shock-defense-tech-7"].unit.ingredients, {"space-science-pack",			 3})
+	table.insert(Tech["par-shock-defense-tech-7"].unit.ingredients, {"metallurgic-science-pack",     2})
+	table.insert(Tech["par-shock-defense-tech-7"].unit.ingredients, {"electromagnetic-science-pack", 2})
+	table.insert(Tech["par-shock-defense-tech-7"].unit.ingredients, {"cryogenic-science-pack",		 1})
 
-	table.insert(Tech["par-shock-defense-tech-8"].unit.ingredients, {"space-science-pack",       4})
-	table.insert(Tech["par-shock-defense-tech-8"].unit.ingredients, {"metallurgic-science-pack", 3})
-	table.insert(Tech["par-shock-defense-tech-8"].unit.ingredients, {"cryogenic-science-pack",   2})
+	table.insert(Tech["par-shock-defense-tech-8"].unit.ingredients, {"space-science-pack",			 4})
+	table.insert(Tech["par-shock-defense-tech-8"].unit.ingredients, {"metallurgic-science-pack",	 3})
+	table.insert(Tech["par-shock-defense-tech-8"].unit.ingredients, {"electromagnetic-science-pack", 3})
+	table.insert(Tech["par-shock-defense-tech-8"].unit.ingredients, {"cryogenic-science-pack",		 2})
 
-	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"space-science-pack",       5})
-	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"metallurgic-science-pack", 4})
-	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"cryogenic-science-pack",   3})
-	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"promethium-science-pack",  1})
+	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"space-science-pack",			 5})
+	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"metallurgic-science-pack",	 4})
+	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"electromagnetic-science-pack", 4})
+	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"cryogenic-science-pack",		 3})
+	table.insert(Tech["par-shock-defense-tech-9"].unit.ingredients, {"promethium-science-pack",		 1})
 
-	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"space-science-pack",       6})
-	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"metallurgic-science-pack", 5})
-	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"cryogenic-science-pack",   4})
-	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"promethium-science-pack",  2})
+	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"space-science-pack",			  6})
+	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"metallurgic-science-pack",	  5})
+	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"electromagnetic-science-pack", 5})
+	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"cryogenic-science-pack",		  4})
+	table.insert(Tech["par-shock-defense-tech-10"].unit.ingredients, {"promethium-science-pack",	  2})
 
 	table.insert(Tech["par-fission-reactor-tech-5"].unit.ingredients, {"space-science-pack",      1})
 

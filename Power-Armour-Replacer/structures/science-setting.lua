@@ -21,6 +21,7 @@ if not(mods["space-age"] or mods["space-exploration"])then
             "par-fission-reactor-tech-6",
             "par-exoskeleton-tech-5",
             "par-laser-tech-6",
+            "par-shock-defense-tech-6",
             "par-solar-panel-tech-6",
             "par-roboport-tech-6",
             "par-shield-tech-6",

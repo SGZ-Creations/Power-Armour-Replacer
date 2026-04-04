@@ -4,8 +4,8 @@ Date: 10.04.26
   Features:
     - Recipe for K2SO Completed (Not in Test version)
     - Tech for K2SO Completed (Not in Test version)
-    - K2SO Recipes done: Armour, ExoSkeleton,
-    - K2SO Tech done: Armour,
+    - K2SO Recipes overhaul: Armour, ExoSkeleton,
+    - K2SO Tech overhaul,
     - 10x9 = 90 New Setting for Shock Defence.
   Modding:
     - Foliax Filters.
@@ -21,9 +21,8 @@ Date: 10.04.26
     - [space-age] Tweaked recipes using lithium Roboport Mk6, Solar Mk7-8.
     - Tips & Tricks Volunteer Graphics request.
     - Fission Reactor Shape Changed from 3x3 to 5x5 as to when fusion reactors will be using the old 3x3.
-  ToDo:
-    - Advanced from MK5.
-    - Matter & Singularity From MK7.
+    - Advanced from MK5 to all tech.
+    - Matter & Singularity From MK7 to all tech.
   Bugfixes:
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
   Info:
