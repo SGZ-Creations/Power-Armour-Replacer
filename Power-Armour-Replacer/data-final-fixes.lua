@@ -9,6 +9,6 @@
 
 --compatible.tech load order dependant
     require("structures.RecyclingFinalFix")
-	require("mods.technology.updates.K2_SO")
+	require("mods.technology.final-fixes.K2_SO")
 	require("mods.technology.final-fixes.par-depedency-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")

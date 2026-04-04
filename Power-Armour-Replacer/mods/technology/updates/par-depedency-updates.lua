@@ -137,35 +137,27 @@ PAR.technology_dependancy
 			"kr-advanced-tech-card",
 		},
 		["par-armour-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-battery-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-solar-panel-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-laser-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-shock-defense-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-roboport-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-shield-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-fission-reactor-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 	},
@@ -196,35 +188,27 @@ PAR.technology_dependancy
 			"kr-advanced-tech-card",
 		},
 		["par-armour-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-battery-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-solar-panel-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-laser-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-shock-defense-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-roboport-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-shield-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 		["par-fission-reactor-tech-7"] = {
-			"kr-matter-tech-card",
 			"kr-singularity-tech-card",
 		},
 	},
