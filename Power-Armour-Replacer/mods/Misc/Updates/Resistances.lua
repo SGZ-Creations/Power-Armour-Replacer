@@ -11,7 +11,7 @@ if mods["space-age"] then
         {
             type = "acid",
             decrease = 90,
-            percent = 8.
+            percent = 8,
         },
         {
             type = "explosion",
@@ -21,7 +21,7 @@ if mods["space-age"] then
         {
             type = "fire",
             decrease = 0,
-            percent = 100
+            percent = 100,
         },
         {
             type = "electric",
