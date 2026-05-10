@@ -75,7 +75,7 @@ if mods["foliax"]then
     })
 end
 
-if mods["bobwarfare"] then
+if (mods["bobwarfare"] or mods["bobequipment"]) then
     data:extend({
         {
             type = "bool-setting",

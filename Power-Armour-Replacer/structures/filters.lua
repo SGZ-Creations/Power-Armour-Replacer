@@ -7,7 +7,7 @@ local SS = settings.startup
 --[[
     Clean up phase of all mods adding technology Recipes for Armour's & Equipment's.
     making the game less confusing on what to craft and hopefully not have 2-4 recipes.
-    From diffrent mods giving u multiple "MK3 armours" in game.
+    From different mods giving u multiple "MK3 armours" in game.
 
     At some point should u have, 2-4 mods giving u armours this mod will hopefully do a clean up & convert your previous Armour, Equipment to one version. 
     Which i want to let u modify to your likings in the end. If it ends up being to OP u can adjust it all.
@@ -151,7 +151,7 @@ if mods["space-age"] then
     end
 end
 
-if mods["bobwarfare"] then
+if (mods["bobwarfare"] or mods["bobequipment"]) then
 --Enabled
     DRR["bob-power-armor-mk3"].enabled = false
     DRR["bob-power-armor-mk4"].enabled = false
@@ -204,6 +204,10 @@ if mods["bobequipment"] then
     DRT["bob-personal-laser-defense-equipment-4"].enabled = false
     DRT["bob-personal-laser-defense-equipment-5"].enabled = false
     DRT["bob-personal-laser-defense-equipment-6"].enabled = false
+    DRT["bob-personal-roboport-modular-equipment-1"].enabled = false
+    DRT["bob-personal-roboport-modular-equipment-2"].enabled = false
+    DRT["bob-personal-roboport-modular-equipment-3"].enabled = false
+    DRT["bob-personal-roboport-modular-equipment-4"].enabled = false
 
     DRR["bob-battery-mk3-equipment"].enabled = false
     DRR["bob-battery-mk4-equipment"].enabled = false
@@ -230,6 +234,18 @@ if mods["bobequipment"] then
     DRR["bob-personal-laser-defense-equipment-4"].enabled = false
     DRR["bob-personal-laser-defense-equipment-5"].enabled = false
     DRR["bob-personal-laser-defense-equipment-6"].enabled = false
+    DRR["bob-personal-roboport-robot-equipment"].enabled = false
+    DRR["bob-personal-roboport-robot-equipment-2"].enabled = false
+    DRR["bob-personal-roboport-robot-equipment-3"].enabled = false
+    DRR["bob-personal-roboport-robot-equipment-4"].enabled = false
+    DRR["bob-personal-roboport-antenna-equipment"].enabled = false
+    DRR["bob-personal-roboport-antenna-equipment-2"].enabled = false
+    DRR["bob-personal-roboport-antenna-equipment-3"].enabled = false
+    DRR["bob-personal-roboport-antenna-equipment-4"].enabled = false
+    DRR["bob-personal-roboport-chargepad-equipment"].enabled = false
+    DRR["bob-personal-roboport-chargepad-equipment-2"].enabled = false
+    DRR["bob-personal-roboport-chargepad-equipment-3"].enabled = false
+    DRR["bob-personal-roboport-chargepad-equipment-4"].enabled = false
 
 --Hidden
     DRT["bob-battery-equipment-3"].hidden = true
@@ -257,6 +273,10 @@ if mods["bobequipment"] then
     DRT["bob-personal-laser-defense-equipment-4"].hidden = true
     DRT["bob-personal-laser-defense-equipment-5"].hidden = true
     DRT["bob-personal-laser-defense-equipment-6"].hidden = true
+    DRT["bob-personal-roboport-modular-equipment-1"].hidden = true
+    DRT["bob-personal-roboport-modular-equipment-2"].hidden = true
+    DRT["bob-personal-roboport-modular-equipment-3"].hidden = true
+    DRT["bob-personal-roboport-modular-equipment-4"].hidden = true
 
     DRR["bob-battery-mk3-equipment"].hidden = true
     DRR["bob-battery-mk4-equipment"].hidden = true
@@ -283,6 +303,19 @@ if mods["bobequipment"] then
     DRR["bob-personal-laser-defense-equipment-4"].hidden = true
     DRR["bob-personal-laser-defense-equipment-5"].hidden = true
     DRR["bob-personal-laser-defense-equipment-6"].hidden = true
+    DRR["bob-personal-roboport-robot-equipment"].hidden = true
+    DRR["bob-personal-roboport-robot-equipment-2"].hidden = true
+    DRR["bob-personal-roboport-robot-equipment-3"].hidden = true
+    DRR["bob-personal-roboport-robot-equipment-4"].hidden = true
+    DRR["bob-personal-roboport-antenna-equipment"].hidden = true
+    DRR["bob-personal-roboport-antenna-equipment-2"].hidden = true
+    DRR["bob-personal-roboport-antenna-equipment-3"].hidden = true
+    DRR["bob-personal-roboport-antenna-equipment-4"].hidden = true
+    DRR["bob-personal-roboport-chargepad-equipment"].hidden = true
+    DRR["bob-personal-roboport-chargepad-equipment-2"].hidden = true
+    DRR["bob-personal-roboport-chargepad-equipment-3"].hidden = true
+    DRR["bob-personal-roboport-chargepad-equipment-4"].hidden = true
+
 
     if SS["BobE-filters"].value then
         Hide_Item("bob-battery-mk3-equipment")
@@ -310,6 +343,18 @@ if mods["bobequipment"] then
         Hide_Item("bob-personal-laser-defense-equipment-4")
         Hide_Item("bob-personal-laser-defense-equipment-5")
         Hide_Item("bob-personal-laser-defense-equipment-6")
+        Hide_Item("bob-personal-roboport-robot-equipment")
+        Hide_Item("bob-personal-roboport-robot-equipment-2")
+        Hide_Item("bob-personal-roboport-robot-equipment-3")
+        Hide_Item("bob-personal-roboport-robot-equipment-4")
+        Hide_Item("bob-personal-roboport-antenna-equipment")
+        Hide_Item("bob-personal-roboport-antenna-equipment-2")
+        Hide_Item("bob-personal-roboport-antenna-equipment-3")
+        Hide_Item("bob-personal-roboport-antenna-equipment-4")
+        Hide_Item("bob-personal-roboport-chargepad-equipment")
+        Hide_Item("bob-personal-roboport-chargepad-equipment-2")
+        Hide_Item("bob-personal-roboport-chargepad-equipment-3")
+        Hide_Item("bob-personal-roboport-chargepad-equipment-4")
     end
 end
 
