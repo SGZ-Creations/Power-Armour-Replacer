@@ -18,7 +18,7 @@ Date: 10.05.26
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
     - Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
-    - [space-age] Tweaked recipes using lithium Roboport Mk6, Solar Mk7-8.
+    - [space-age] Tweaked recipes using lithium in Roboport Mk6, Solar Mk7-8.
     - Tips & Tricks Volunteer Graphics request.
     - Fission Reactor Shape Changed from 3x3 to 5x5 as to when fusion reactors will be using the old 3x3.
     - Advanced from MK5 to all tech.
