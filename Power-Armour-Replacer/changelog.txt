@@ -24,6 +24,7 @@ Date: 10.05.26
     - Advanced from MK5 to all tech.
     - Matter & Singularity From MK7 to all tech.
     - Recipes tweaks for Shock defence.
+    - Default roboport recharge speed changed. now tier 1 starts at 500MW tier 10 = 5GW
     - [Bobs] Equipment Filters. Re hidden & disabled armours and added the Modular items to this list. Sorry if you liked it, but due to settings feature in 0.4 i don't se why keeping it is necessary.
   Bugfixes:
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.

@@ -4,7 +4,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_01",
         setting_type = "startup",
-        default_value = 1,
+        default_value = 500,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -12,7 +12,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_02",
         setting_type = "startup",
-        default_value = 2,
+        default_value = 1000,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -20,7 +20,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_03",
         setting_type = "startup",
-        default_value = 3,
+        default_value = 1500,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -28,7 +28,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_04",
         setting_type = "startup",
-        default_value = 4,
+        default_value = 2000,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -36,7 +36,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_05",
         setting_type = "startup",
-        default_value = 5,
+        default_value = 2500,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -44,7 +44,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_06",
         setting_type = "startup",
-        default_value = 6,
+        default_value = 3000,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -52,7 +52,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_07",
         setting_type = "startup",
-        default_value = 7,
+        default_value = 3500,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -60,7 +60,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_08",
         setting_type = "startup",
-        default_value = 8,
+        default_value = 4000,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -68,7 +68,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_09",
         setting_type = "startup",
-        default_value = 9,
+        default_value = 4500,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
@@ -76,7 +76,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportCharging_10",
         setting_type = "startup",
-        default_value = 10,
+        default_value = 5000,
         minimum_value = 0.000001,
         order = "Roboport-1"
     },
