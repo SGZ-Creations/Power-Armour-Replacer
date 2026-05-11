@@ -33,7 +33,17 @@ PAR.ingredient_prereq(DRR["par-battery-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["electronic-circuit"] = {"automation-core", 6},
+            ["copper-cable"] = {"kr-automation-core", 25},
+			["steel-plate"] = {"kr-iron-beam", 25},
+            {"kr-glass", 25},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-cable"] = {"kr-automation-core", 25},
+			["steel-plate"] = {"kr-steel-beam", 25},
+            {"kr-glass", 25},
         }
     },
 })
@@ -62,7 +72,17 @@ PAR.ingredient_prereq(DRR["par-battery-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["electronic-circuit"] = {"automation-core", 10},
+            ["copper-cable"] = {"kr-automation-core", 50},
+			["steel-plate"] = {"kr-iron-beam", 50},
+            {"kr-glass", 50},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-cable"] = {"kr-automation-core", 50},
+			["steel-plate"] = {"kr-steel-beam", 50},
+            {"kr-glass", 50},
         }
     },
 })
@@ -97,8 +117,19 @@ PAR.ingredient_prereq(DRR["par-battery-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"kr-steel-beam", 25},
-            --["electronic-circuit"] = {"automation-core", 16},
+            ["copper-cable"] = {"kr-automation-core", 75},
+			["steel-plate"] = {"kr-steel-beam", 75},
+            {"kr-rare-metals", 75},
+            {"kr-glass", 75},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-cable"] = {"kr-automation-core", 75},
+			["steel-plate"] = {"kr-steel-beam", 75},
+            {"kr-rare-metals", 75},
+            {"kr-glass", 75},
         }
     },
 })
@@ -143,6 +174,25 @@ PAR.ingredient_prereq(DRR["par-battery-mk4"], {
             {"solid-white-phosphorus", 100},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["copper-cable"] = {"kr-automation-core", 100},
+			["steel-plate"] = {"kr-iron-beam", 100},
+            {"kr-rare-metals", 100},
+            {"kr-glass", 100},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-cable"] = {"kr-automation-core", 100},
+			["steel-plate"] = {"kr-steel-beam", 100},
+            {"kr-rare-metals", 100},
+            {"kr-glass", 100},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-battery-mk5"], {
     {
@@ -176,6 +226,31 @@ PAR.ingredient_prereq(DRR["par-battery-mk5"], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"solid-white-phosphourus", 200},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 125},
+            ["copper-cable"] = {"kr-automation-core", 125},
+			["steel-plate"] = {"kr-steel-beam", 125},
+            {"kr-imersium-beam", 125},
+            {"kr-rare-metals", 125},
+            {"kr-ai-core", 125},
+            {"kr-glass", 125},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 125},
+            ["copper-cable"] = {"kr-automation-core", 125},
+			["steel-plate"] = {"kr-steel-beam", 125},
+            {"kr-imersium-beam", 125},
+            {"kr-rare-metals", 125},
+            {"kr-ai-core", 125},
+            {"kr-glass", 125},
         }
     },
 })
@@ -212,6 +287,25 @@ PAR.ingredient_prereq(DRR["par-battery-mk6"], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"solid-white-phosphourus", 300},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 150},
+			{"kr-imersium-beam", 150},
+            {"kr-matter-cube", 150},
+            {"kr-ai-core", 150},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 150},
+			{"kr-imersium-beam", 150},
+            {"kr-matter-cube", 150},
+            {"kr-ai-core", 150},
         }
     },
 })
@@ -266,6 +360,27 @@ PAR.ingredient_prereq(DRR["par-battery-mk7"], {
             {"solid-white-phosphourus", 400},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 200},
+			{"kr-imersium-beam", 200},
+            {"kr-matter-cube", 200},
+            {"kr-rare-metals", 200},
+            {"kr-ai-core", 200},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 200},
+			{"kr-imersium-beam", 200},
+            {"kr-matter-cube", 200},
+            {"kr-rare-metals", 200},
+            {"kr-ai-core", 200},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-battery-mk8"], {
     {
@@ -290,6 +405,27 @@ PAR.ingredient_prereq(DRR["par-battery-mk8"], {
         replacements = {
             {"clowns-plate-magnesium", 200},
             {type="fluid", name="liquid-dimethylmercury", amount=100},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 300},
+			{"kr-imersium-beam", 300},
+            {"kr-matter-cube", 300},
+            {"kr-rare-metals", 300},
+            {"kr-ai-core", 300},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 300},
+			{"kr-imersium-beam", 300},
+            {"kr-matter-cube", 300},
+            {"kr-rare-metals", 300},
+            {"kr-ai-core", 300},
         }
     },
 })
@@ -320,6 +456,27 @@ PAR.ingredient_prereq(DRR["par-battery-mk9"], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {type="fluid", name="liquid-dimethylmercury", amount=200},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 400},
+			{"kr-imersium-beam", 400},
+            {"kr-matter-cube", 400},
+            {"kr-rare-metals", 400},
+            {"kr-ai-core", 400},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 400},
+			{"kr-imersium-beam", 400},
+            {"kr-matter-cube", 400},
+            {"kr-rare-metals", 400},
+            {"kr-ai-core", 400},
         }
     },
 })
@@ -364,16 +521,21 @@ PAR.ingredient_prereq(DRR["par-battery-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            {"kr-matter-cube", 1000},
+            {"kr-energy-control-unit", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-rare-metals", 500},
+            {"kr-ai-core", 500},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 1000},
-			{"kr-imersium-beam", 1000},
-            {"kr-matter-cube", 1000},
-            {"kr-ai-core", 1000},
+            {"kr-energy-control-unit", 500},
+			{"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-rare-metals", 500},
+            {"kr-ai-core", 500},
         }
     },
 })

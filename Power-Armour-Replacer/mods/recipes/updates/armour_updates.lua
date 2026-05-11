@@ -82,19 +82,22 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
             {"copper-plate", 20},
         }
     },
-    --SEK2 as long it don't mark mod as incompatible for no reason.
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
             ["steel-plate"] = {"kr-steel-gear-wheel", 50},
             {"kr-automation-core", 20},
+            {"kr-iron-beam", 20},
+            {"kr-glass", 25},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["steel-plate"] = {"kr-iron-beam", 25},
+            ["steel-plate"] = {"kr-steel-beam", 25},
             {"kr-automation-core", 25},
+            {"kr-iron-beam", 25},
             {"kr-glass", 25},
         }
     },
@@ -172,6 +175,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
+            ["iron-plate"] = {"kr-iron-beam", 50},
             ["steel-plate"] = {"kr-steel-beam", 50},
             ["copper-plate"] ={"kr-automation-core", 50},
             {"kr-glass", 50},
@@ -616,6 +620,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk8"], {
             {"kr-energy-control-unit", 600},
 			{"kr-imersium-beam", 600},
             {"kr-matter-cube", 600},
+            {"kr-rare-metals", 600},
             {"kr-ai-core", 600},
             {"kr-silicon", 600},
             {"kr-glass", 600},
@@ -670,6 +675,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
         replacements = {
             {"kr-energy-control-unit", 800},
 			{"kr-imersium-beam", 800},
+            {"kr-rare-metals", 800},
             {"kr-matter-cube", 800},
             {"kr-ai-core", 800},
             {"kr-silicon", 800},
@@ -751,6 +757,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
 			{"kr-lithium-sulfur-battery", 500},
             {"kr-energy-control-unit", 1000},
 			{"kr-imersium-beam", 500},
+            {"kr-rare-metals", 1000},
             {"kr-matter-cube", 250},
             {"kr-ai-core", 500},
         }
@@ -761,6 +768,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
             {"kr-energy-control-unit", 1000},
 			{"kr-imersium-beam", 1000},
             {"kr-matter-cube", 1000},
+            {"kr-rare-metals", 1000},
             {"kr-ai-core", 1000},
             {"kr-silicon", 1000},
             {"kr-glass", 1000},
