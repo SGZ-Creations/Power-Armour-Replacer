@@ -12,6 +12,9 @@ table.insert(data.raw["character"]["character"].crafting_categories, "electronic
 if mods["space-age"] then
 	table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "electronics-or-handcrafting")
 end
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+	table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories, "electronics-or-handcrafting")
+end
 
 --[[
 for _, recipe_name in pairs({"recipe-name-1", "recipe-name-2"}) do

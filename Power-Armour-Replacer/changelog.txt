@@ -30,6 +30,7 @@ Date: 10.05.26
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
     - Tips & tricks using K2SO should now trigger.
     - Spidertron Not unlocking playing with K2 & K2SO.
+    - Krastorio2-spaced-out, Krastorio2 Crafting category fix in advanced assembler.
   Info:
     - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholder. thanks for understanding.
   Credit:
