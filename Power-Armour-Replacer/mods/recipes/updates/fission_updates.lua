@@ -316,6 +316,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk6"], {
             {"kr-imersium-beam", 150},
             {"kr-matter-cube", 150},
             {"kr-rare-metals", 150},
+            {"kr-tritium", 150},
             {"kr-ai-core", 150},
         }
     },
@@ -326,6 +327,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk6"], {
             {"kr-imersium-beam", 150},
             {"kr-matter-cube", 150},
             {"kr-rare-metals", 150},
+            {"kr-tritium", 150},
             {"kr-ai-core", 150},
         }
     },
@@ -383,6 +385,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
             {"kr-imersium-beam", 200},
             {"kr-matter-cube", 200},
             {"kr-rare-metals", 200},
+            {"kr-tritium", 200},
             {"kr-ai-core", 200},
         }
     },
@@ -393,6 +396,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
             {"kr-imersium-beam", 200},
             {"kr-matter-cube", 200},
             {"kr-rare-metals", 200},
+            {"kr-tritium", 200},
             {"kr-ai-core", 200},
         }
     },
@@ -441,6 +445,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk8"], {
             {"kr-imersium-beam", 300},
             {"kr-matter-cube", 300},
             {"kr-rare-metals", 300},
+            {"kr-tritium", 300},
             {"kr-ai-core", 300},
         }
     },
@@ -451,6 +456,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk8"], {
             {"kr-imersium-beam", 300},
             {"kr-matter-cube", 300},
             {"kr-rare-metals", 300},
+            {"kr-tritium", 300},
             {"kr-ai-core", 300},
         }
     },
@@ -512,6 +518,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
             {"kr-imersium-beam", 400},
             {"kr-matter-cube", 400},
             {"kr-rare-metals", 400},
+            {"kr-tritium", 400},
             {"kr-ai-core", 400},
         }
     },
@@ -522,6 +529,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
             {"kr-imersium-beam", 400},
             {"kr-matter-cube", 400},
             {"kr-rare-metals", 400},
+            {"kr-tritium", 400},
             {"kr-ai-core", 400},
         }
     },
@@ -617,6 +625,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
             {"kr-imersium-beam", 500},
             {"kr-matter-cube", 500},
             {"kr-rare-metals", 500},
+            {"kr-tritium", 500},
             {"kr-ai-core", 500},
         }
     },
@@ -627,6 +636,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
             {"kr-imersium-beam", 500},
             {"kr-matter-cube", 500},
             {"kr-rare-metals", 500},
+            {"kr-tritium", 500},
             {"kr-ai-core", 500},
         }
     },

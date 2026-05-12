@@ -31,6 +31,25 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
             ["bob-rubber"] = {"angels-solid-carbon", 25},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["copper-plate"] = {"kr-automation-core", 25},
+            ["steel-plate"] = {"kr-steel-beam", 25},
+            ["iron-plate"] = {"kr-iron-beam", 25},
+            {"kr-glass", 25},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-plate"] = {"kr-automation-core", 25},
+            ["steel-plate"] = {"kr-steel-beam", 25},
+            ["iron-plate"] = {"kr-iron-beam", 25},
+            {"kr-glass", 25},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
     {
@@ -63,19 +82,23 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
             ["bob-glass"] = {"bob-tinned-copper-cable"},
         }
     },
-    --SE
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 20},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plates"] = {"kr-rare-metals", 30},
+            ["copper-plate"] = {"kr-automation-core", 50},
             ["steel-plate"] = {"kr-steel-beam", 50},
+            {"kr-iron-beam", 50},
+            {"kr-glass", 50},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-plate"] = {"kr-automation-core", 50},
+            ["steel-plate"] = {"kr-steel-beam", 50},
+            {"kr-iron-beam", 50},
+            {"kr-glass", 50},
         }
     },
 })
@@ -105,7 +128,19 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"kr-steel-beam", 55},
+            ["copper-plate"] = {"kr-automation-core", 75},
+            ["steel-plate"] = {"kr-steel-beam", 75},
+            {"kr-silicon", 75},
+            {"kr-glass", 75},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-plate"] = {"kr-automation-core", 75},
+            ["steel-plate"] = {"kr-steel-beam", 75},
+            {"kr-silicon", 75},
+            {"kr-glass", 75},
         }
     },
 })
