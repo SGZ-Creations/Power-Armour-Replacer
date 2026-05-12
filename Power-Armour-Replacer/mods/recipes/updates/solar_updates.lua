@@ -31,13 +31,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
             ["bob-rubber"] = {"angels-solid-carbon", 25},
         }
     },
-    --SE
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 40},
-        }
-    },
 })
 PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
     {
@@ -219,7 +212,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk7"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["processing-unit"] = {"processing-unit", 120},
-            --[""] = {"zero"},
         }
     },
     {
@@ -230,13 +222,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk7"], {
             {"bob-lithium-ion-battery", 50},
             {"bob-silicon-wafer", 500},
             {"bob-silicon-nitride", 400},
-        }
-    },
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            --[""] = {"zero"},
-            --[""] = {"zero"},
         }
     },
 })
@@ -270,7 +255,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk8"], {
         dependencies = {"angelssmelting"},
         replacements = {
             ["bob-silver-plate"] = {"angels-wire-platinum"},
-            --[""] = {"zero"},
         }
     },
 })
@@ -281,7 +265,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
             ["processing-unit"] = {"bob-advanced-processing-unit", 140},
             ["lubricant"] = {"bob-ferric-chloride-solution", 300},
             {"bob-insulated-cable", 250},
-            --[""] = {"zero"},
         }
     },
     {
@@ -296,14 +279,6 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         replacements = {
             {"bob-gilded-copper-cable", 250},
             {"bob-solder", 250},
-        }
-    },
-    --Angels
-    {
-        dependencies = {"angelssmelting"},
-        replacements = {
-            --[""] = {"zero"},
-            --[""] = {"zero"},
         }
     },
 })
