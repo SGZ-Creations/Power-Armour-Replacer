@@ -101,7 +101,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportBuffer_03",
         setting_type = "startup",
-        default_value = 36,
+        default_value = 32,
         minimum_value = 0.000001,
         order = "Roboport-2"
     },
@@ -117,7 +117,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportBuffer_05",
         setting_type = "startup",
-        default_value = 100,
+        default_value = 128, 
         minimum_value = 0.000001,
         order = "Roboport-2"
     },
@@ -125,7 +125,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportBuffer_06",
         setting_type = "startup",
-        default_value = 144,
+        default_value = 256, 
         minimum_value = 0.000001,
         order = "Roboport-2"
     },
@@ -133,7 +133,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportBuffer_07",
         setting_type = "startup",
-        default_value = 196,
+        default_value = 512,  
         minimum_value = 0.000001,
         order = "Roboport-2"
     },
@@ -141,7 +141,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportBuffer_08",
         setting_type = "startup",
-        default_value = 256,
+        default_value = 1024,
         minimum_value = 0.000001,
         order = "Roboport-2"
     },
@@ -149,7 +149,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportBuffer_09",
         setting_type = "startup",
-        default_value = 324,
+        default_value = 2048, 
         minimum_value = 0.000001,
         order = "Roboport-2"
     },
@@ -157,7 +157,7 @@ data:extend({
         type = "double-setting",
         name = "RoboportBuffer_10",
         setting_type = "startup",
-        default_value = 400,
+        default_value = 4096, 
         minimum_value = 0.000001,
         order = "Roboport-2"
     },

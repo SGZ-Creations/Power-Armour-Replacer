@@ -22,7 +22,8 @@ Date: 10.05.26
     - [K2SO, K2] Re added Automation, logistics, Military, Chemical, Tech cards back to missing location.  
     - [K2SO, K2] Advanced tech card from MK5 to MK10 tech.
     - [K2SO, K2] Matter tech card & Singularity tech card From MK7 to MK10.
-    - Default roboport recharge speed changed. now tier 1 starts at 500MW tier 10 = 5GW if setting are put to default.
+    - Default roboport recharge speed changed. Now tier 1 starts at 500MW tier 10 = 5GW if setting are put to default.
+    - Default roboport buffer changed. Tier 1 starts at 8MJ. Tier 10 is now at 4096MJ if setting are put to default.
     - [Bobs] Equipment mod, Filters are Re hidden & disabled for armours. And added the Modular items to this list. Sorry if you liked it, but due to settings feature in 0.4 i don't se why keeping it is necessary.
   Bugfixes:
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
