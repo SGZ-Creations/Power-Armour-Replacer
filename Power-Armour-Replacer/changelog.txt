@@ -7,7 +7,9 @@ Date: 10.05.26
     - K2SO Tech overhaul.
     - 10x9 = 90 New Setting for Shock Defence.
   Modding:
-    - Foliax Filters.
+    - Foliax Filters.'
+    - Foliax Crash with Foliax version 2.0.5.
+    - Foliax added to hidden optionals.
     - Tips & Tricks Description for Foliax.
     - Made equipment from TeleportationEquipment allow for crafting in EM Plant.
     - Made equipment from Power Armor MK3 allow for crafting in EM Plant.

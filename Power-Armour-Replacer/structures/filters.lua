@@ -362,9 +362,9 @@ if mods["foliax"]then
     --Enabled
     DRT["foliax-armor"].enabled = false
     DRT["foliax-night-vision-equipment"].enabled = false
-    DRT["foliax-battery-equipment-one"].enabled = false
-    DRT["foliax-battery-equipment-two"].enabled = false
-    DRT["foliax-battery-equipment-three"].enabled = false
+    --DRT["foliax-battery-equipment-one"].enabled = false
+    --DRT["foliax-battery-equipment-two"].enabled = false
+    --DRT["foliax-battery-equipment-three"].enabled = false
     DRT["foliax-belt-immunity-equipment"].enabled = false
     DRT["foliax-exoskeleton-equipment"].enabled = false
     DRT["foliax-personal-roboport-equipment"].enabled = false
@@ -380,9 +380,9 @@ if mods["foliax"]then
 --Hidden
     DRT["foliax-armor"].hidden = true
     DRT["foliax-night-vision-equipment"].hidden = true
-    DRT["foliax-battery-equipment-one"].hidden = true
-    DRT["foliax-battery-equipment-two"].hidden = true
-    DRT["foliax-battery-equipment-three"].hidden = true
+    --DRT["foliax-battery-equipment-one"].hidden = true
+    --DRT["foliax-battery-equipment-two"].hidden = true
+    --DRT["foliax-battery-equipment-three"].hidden = true
     DRT["foliax-belt-immunity-equipment"].hidden = true
     DRT["foliax-exoskeleton-equipment"].hidden = true
     DRT["foliax-personal-roboport-equipment"].hidden = true
