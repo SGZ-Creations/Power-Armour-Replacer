@@ -5,70 +5,70 @@ data:extend({
         name = "ShockDefencePassiveActive_01",
         setting_type = "startup",
         default_value = false,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_02",
         setting_type = "startup",
         default_value = false,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_03",
         setting_type = "startup",
         default_value = false,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_04",
         setting_type = "startup",
         default_value = false,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_05",
         setting_type = "startup",
         default_value = false,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_06",
         setting_type = "startup",
         default_value = true,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_07",
         setting_type = "startup",
         default_value = true,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_08",
         setting_type = "startup",
         default_value = true,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_09",
         setting_type = "startup",
         default_value = true,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
     {
         type = "bool-setting",
         name = "ShockDefencePassiveActive_10",
         setting_type = "startup",
         default_value = true,
-        order = "ShockDefence-1"
+        order = "ShockDefence-01"
     },
 ----ShockPowerBuffer----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
@@ -77,7 +77,7 @@ data:extend({
         setting_type = "startup",
         default_value = 0.5,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -85,7 +85,7 @@ data:extend({
         setting_type = "startup",
         default_value = 5,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -93,7 +93,7 @@ data:extend({
         setting_type = "startup",
         default_value = 20,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -101,7 +101,7 @@ data:extend({
         setting_type = "startup",
         default_value = 60,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -109,7 +109,7 @@ data:extend({
         setting_type = "startup",
         default_value = 120,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -117,7 +117,7 @@ data:extend({
         setting_type = "startup",
         default_value = 240,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -125,7 +125,7 @@ data:extend({
         setting_type = "startup",
         default_value = 480,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -133,7 +133,7 @@ data:extend({
         setting_type = "startup",
         default_value = 960,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -141,7 +141,7 @@ data:extend({
         setting_type = "startup",
         default_value = 1920,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
     {
         type = "double-setting",
@@ -149,7 +149,7 @@ data:extend({
         setting_type = "startup",
         default_value = 3840,
         minimum_value = 0.001,
-        order = "ShockDefence-2"
+        order = "ShockDefence-02"
     },
 ----PowerConsumption----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
@@ -158,7 +158,7 @@ data:extend({
         setting_type = "startup",
         default_value = 2,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -166,7 +166,7 @@ data:extend({
         setting_type = "startup",
         default_value = 4,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -174,7 +174,7 @@ data:extend({
         setting_type = "startup",
         default_value = 6,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -182,7 +182,7 @@ data:extend({
         setting_type = "startup",
         default_value = 8,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -190,7 +190,7 @@ data:extend({
         setting_type = "startup",
         default_value = 10,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -198,7 +198,7 @@ data:extend({
         setting_type = "startup",
         default_value = 20,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -206,7 +206,7 @@ data:extend({
         setting_type = "startup",
         default_value = 40,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -214,7 +214,7 @@ data:extend({
         setting_type = "startup",
         default_value =60,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -222,7 +222,7 @@ data:extend({
         setting_type = "startup",
         default_value = 80,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
     {
         type = "double-setting",
@@ -230,7 +230,7 @@ data:extend({
         setting_type = "startup",
         default_value = 100,
         minimum_value = 0.001,
-        order = "ShockDefence-3"
+        order = "ShockDefence-03"
     },
 ----DamageModifier----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
@@ -239,7 +239,7 @@ data:extend({
         setting_type = "startup",
         default_value = 4,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -247,7 +247,7 @@ data:extend({
         setting_type = "startup",
         default_value = 6,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -255,7 +255,7 @@ data:extend({
         setting_type = "startup",
         default_value = 8,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -263,7 +263,7 @@ data:extend({
         setting_type = "startup",
         default_value = 10,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -271,7 +271,7 @@ data:extend({
         setting_type = "startup",
         default_value = 15,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -279,7 +279,7 @@ data:extend({
         setting_type = "startup",
         default_value = 20,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -287,7 +287,7 @@ data:extend({
         setting_type = "startup",
         default_value = 40,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -295,7 +295,7 @@ data:extend({
         setting_type = "startup",
         default_value = 60,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -303,7 +303,7 @@ data:extend({
         setting_type = "startup",
         default_value = 80,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
     {
         type = "int-setting",
@@ -311,7 +311,7 @@ data:extend({
         setting_type = "startup",
         default_value = 100,
         minimum_value = 1,
-        order = "ShockDefence-4"
+        order = "ShockDefence-04"
     },
 ----ShockRange----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
@@ -320,7 +320,7 @@ data:extend({
         setting_type = "startup",
         default_value = 10,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -328,7 +328,7 @@ data:extend({
         setting_type = "startup",
         default_value = 20,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -336,7 +336,7 @@ data:extend({
         setting_type = "startup",
         default_value = 30,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -344,7 +344,7 @@ data:extend({
         setting_type = "startup",
         default_value = 40,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -352,7 +352,7 @@ data:extend({
         setting_type = "startup",
         default_value = 50,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -360,7 +360,7 @@ data:extend({
         setting_type = "startup",
         default_value = 60,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -368,7 +368,7 @@ data:extend({
         setting_type = "startup",
         default_value = 70,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -376,7 +376,7 @@ data:extend({
         setting_type = "startup",
         default_value = 80,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -384,7 +384,7 @@ data:extend({
         setting_type = "startup",
         default_value = 90,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
     {
         type = "double-setting",
@@ -392,8 +392,90 @@ data:extend({
         setting_type = "startup",
         default_value = 100,
         minimum_value = 0.01,
-        order = "ShockDefence-5"
+        order = "ShockDefence-05"
     },
+----Shock----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{
+        type = "int-setting",
+        name = "ShockDuration_01",
+        setting_type = "startup",
+        default_value = 55,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_02",
+        setting_type = "startup",
+        default_value = 50,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_03",
+        setting_type = "startup",
+        default_value = 45,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_04",
+        setting_type = "startup",
+        default_value = 40,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_05",
+        setting_type = "startup",
+        default_value = 35,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_06",
+        setting_type = "startup",
+        default_value = 30,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_07",
+        setting_type = "startup",
+        default_value = 20,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_08",
+        setting_type = "startup",
+        default_value = 15,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_09",
+        setting_type = "startup",
+        default_value = 10,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+    {
+        type = "int-setting",
+        name = "ShockDuration_10",
+        setting_type = "startup",
+        default_value = 5,
+        minimum_value = 1,
+        order = "ShockDefence-06"
+    },
+
 ----ShockRadius----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --[[
     {
@@ -402,7 +484,7 @@ data:extend({
         setting_type = "startup",
         default_value = 10,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -410,7 +492,7 @@ data:extend({
         setting_type = "startup",
         default_value = 20,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -418,7 +500,7 @@ data:extend({
         setting_type = "startup",
         default_value = 30,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -426,7 +508,7 @@ data:extend({
         setting_type = "startup",
         default_value = 40,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -434,7 +516,7 @@ data:extend({
         setting_type = "startup",
         default_value = 50,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -442,7 +524,7 @@ data:extend({
         setting_type = "startup",
         default_value = 60,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -450,7 +532,7 @@ data:extend({
         setting_type = "startup",
         default_value = 70,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -458,7 +540,7 @@ data:extend({
         setting_type = "startup",
         default_value = 80,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -466,7 +548,7 @@ data:extend({
         setting_type = "startup",
         default_value = 90,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
     {
         type = "int-setting",
@@ -474,7 +556,7 @@ data:extend({
         setting_type = "startup",
         default_value = 100,
         minimum_value = 1,
-        order = "ShockDefence-6"
+        order = "ShockDefence-07"
     },
 ]]
 ----ShootingCooldown----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -484,7 +566,7 @@ data:extend({
         setting_type = "startup",
         default_value = 600,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -492,7 +574,7 @@ data:extend({
         setting_type = "startup",
         default_value = 475,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -500,7 +582,7 @@ data:extend({
         setting_type = "startup",
         default_value = 240,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -508,7 +590,7 @@ data:extend({
         setting_type = "startup",
         default_value = 130,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -516,7 +598,7 @@ data:extend({
         setting_type = "startup",
         default_value = 110,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -524,7 +606,7 @@ data:extend({
         setting_type = "startup",
         default_value = 75,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -532,7 +614,7 @@ data:extend({
         setting_type = "startup",
         default_value = 62,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -540,7 +622,7 @@ data:extend({
         setting_type = "startup",
         default_value = 45,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -548,7 +630,7 @@ data:extend({
         setting_type = "startup",
         default_value = 25,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
     {
         type = "double-setting",
@@ -556,7 +638,7 @@ data:extend({
         setting_type = "startup",
         default_value = 12,
         minimum_value = 0.01,
-        order = "ShockDefence-7"
+        order = "ShockDefence-08"
     },
 ----Knockback----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
@@ -565,7 +647,7 @@ data:extend({
         setting_type = "startup",
         default_value = 0,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -573,7 +655,7 @@ data:extend({
         setting_type = "startup",
         default_value = 2,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -581,7 +663,7 @@ data:extend({
         setting_type = "startup",
         default_value = 4,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -589,7 +671,7 @@ data:extend({
         setting_type = "startup",
         default_value = 6,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -597,7 +679,7 @@ data:extend({
         setting_type = "startup",
         default_value = 8,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -605,7 +687,7 @@ data:extend({
         setting_type = "startup",
         default_value = 12,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -613,7 +695,7 @@ data:extend({
         setting_type = "startup",
         default_value = 14,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -621,7 +703,7 @@ data:extend({
         setting_type = "startup",
         default_value = 16,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -629,7 +711,7 @@ data:extend({
         setting_type = "startup",
         default_value = 18,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
     {
         type = "int-setting",
@@ -637,7 +719,7 @@ data:extend({
         setting_type = "startup",
         default_value = 20,
         minimum_value = 0,
-        order = "ShockDefence-8"
+        order = "ShockDefence-09"
     },
 ----ShockWeight----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     {
@@ -646,7 +728,7 @@ data:extend({
         setting_type = "startup",
         default_value = 33000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -654,7 +736,7 @@ data:extend({
         setting_type = "startup",
         default_value = 36000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -662,7 +744,7 @@ data:extend({
         setting_type = "startup",
         default_value = 39000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -670,7 +752,7 @@ data:extend({
         setting_type = "startup",
         default_value = 42000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -678,7 +760,7 @@ data:extend({
         setting_type = "startup",
         default_value = 45000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -686,7 +768,7 @@ data:extend({
         setting_type = "startup",
         default_value = 46000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -694,7 +776,7 @@ data:extend({
         setting_type = "startup",
         default_value = 51000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -702,7 +784,7 @@ data:extend({
         setting_type = "startup",
         default_value = 54000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -710,7 +792,7 @@ data:extend({
         setting_type = "startup",
         default_value = 57000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
     {
         type = "int-setting",
@@ -718,6 +800,6 @@ data:extend({
         setting_type = "startup",
         default_value = 60000,
         minimum_value = 1,
-        order = "ShockDefence-9"
+        order = "ShockDefence-10"
     },
 })
