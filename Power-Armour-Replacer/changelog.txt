@@ -33,7 +33,7 @@ Date: 10.05.26
     - Spidertron Not unlocking playing with K2 & K2SO.
     - Krastorio2-spaced-out, Krastorio2 Crafting category fix in advanced assembler.
   Info:
-   
+    - K2SO Recipes overhaul: ACU, Armour, Battery, ExoSkeleton, Fission, NightVision, Immunity, (To be deleted when done)
     - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholders. thanks for understanding.
   Credit:
     - Thanks @DarkMamaba for telling about shortcuts not unlocking. 
