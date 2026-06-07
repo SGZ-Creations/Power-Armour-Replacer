@@ -1,6 +1,6 @@
 local Armour = data.raw["armor"]
 local Item = data.raw["item"]
-
+local Recipe = data.raw["recipe"]
 
 Armour["light-armor"].subgroup = "PAR_compatibility"
 Armour["light-armor"].order = "AA"
@@ -20,6 +20,9 @@ if (mods["mech-armor"] or mods["space-age"]) then
 	Armour["mech-armor"].order = "AB"
 end
 
+if mods["Power Armor MK3"] and mods["pypostprocessing"]then
+	Recipe["pamk3-lvest"].subgroup = "PAR_compatibility"
+end
 if mods["Power Armor MK3"] then
 	Armour["pamk3-lvest"].subgroup = "PAR_compatibility"
 	Armour["pamk3-lvest"].order = "AB"
