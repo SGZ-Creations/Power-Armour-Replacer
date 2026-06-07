@@ -69,7 +69,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
         dependencies = {"pyrawores",},
         replacements = {
             ["electronic-circuit"] = {"nexelit-plate", 25},
-            ["stone-brick"] = {"bob-solder", 30},
+            ["stone-brick"] = {"solder", 30},
             ["steel-plate"] = {"titanium-plate", 20},
         }
     },
@@ -159,7 +159,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
         dependencies = {"pyrawores",},
         replacements = {
             ["copper-plate"] = {"chromium", 35},
-            ["steel-plate"] = {"bob-aluminium-plate", 45},
+            ["steel-plate"] = {"aluminium-plate", 45},
             ["small-parts-01"] = {"small-parts-01", 75},
             ["electronic-circuit"] = {"electronic-circuit", 40},
         }

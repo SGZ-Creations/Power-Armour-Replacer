@@ -435,7 +435,6 @@ PAR.technology_dependancy
 
 	["pyhightech"] = {
 		["par-armour-tech-2"] = {
-			["electronics"] = "vacuum-tube-electronics",
 			"aluminium-mk01",
 			"chromium-mk01",
 		},
