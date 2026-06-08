@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 10.05.26
+  ToDo:
+    - K2 Recipes: Lasers, Roboport, Shields, ShockDefence, Solar.
+    - PY Changes for Ligth & Heavy Armour, PowerArmour3 & vanilla.
   Features:
     - Recipe for K2SO Completed (Not in Test version)
     - Tech for K2SO Completed. 
