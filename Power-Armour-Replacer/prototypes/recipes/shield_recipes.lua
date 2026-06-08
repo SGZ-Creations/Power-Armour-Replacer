@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk1",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 5,
         ingredients = {
@@ -16,6 +17,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk2",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -30,6 +32,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk3",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 15,
         ingredients = {
@@ -43,6 +46,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk4",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -56,6 +60,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk5",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 25,
         ingredients = {
@@ -70,6 +75,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk6",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 30,
         ingredients = {
@@ -84,6 +90,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk7",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 35,
         ingredients = {
@@ -99,9 +106,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk8",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
-        category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-shield-mk7", amount=1},
             {type="item", name="uranium-235", amount=120},
@@ -114,9 +121,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk9",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 45,
-        category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-shield-mk8", amount=1},
             {type="item", name="battery", amount=100},
@@ -130,9 +137,9 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shield-mk10",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50,
-        category = "crafting-with-fluid",
         ingredients = {
             {type="item", name="par-shield-mk9", amount=1},
             {type="item", name="armour-control-unit", amount=75},

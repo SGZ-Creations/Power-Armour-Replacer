@@ -2,6 +2,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-exoskeleton-mk1",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 5,
         ingredients = {
@@ -16,6 +17,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-exoskeleton-mk2",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -47,6 +49,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-exoskeleton-mk4",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -62,6 +65,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-exoskeleton-mk5",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 25,
         ingredients = {

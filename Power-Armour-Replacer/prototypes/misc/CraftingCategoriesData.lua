@@ -15,6 +15,12 @@ end
 if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories, "electronics-or-handcrafting")
 end
+if mods["pypostprocessing"] then
+	table.insert(data.raw["assembling-machine"]["automated-factory-mk01"].crafting_categories, "electronics-or-handcrafting")
+	table.insert(data.raw["assembling-machine"]["automated-factory-mk02"].crafting_categories, "electronics-or-handcrafting")
+	table.insert(data.raw["assembling-machine"]["automated-factory-mk03"].crafting_categories, "electronics-or-handcrafting")
+	table.insert(data.raw["assembling-machine"]["automated-factory-mk04"].crafting_categories, "electronics-or-handcrafting")
+end
 
 --[[
 for _, recipe_name in pairs({"recipe-name-1", "recipe-name-2"}) do

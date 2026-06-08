@@ -2,6 +2,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk1",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 25,
         ingredients = {
@@ -16,6 +17,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk2",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 30,
         ingredients = {
@@ -30,6 +32,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk3",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 35,
         ingredients = {
@@ -44,6 +47,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk4",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -59,6 +63,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk5",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 45,
         ingredients = {
@@ -73,6 +78,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk6",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50,
         ingredients = {
@@ -118,6 +124,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk9",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 65,
         ingredients = {

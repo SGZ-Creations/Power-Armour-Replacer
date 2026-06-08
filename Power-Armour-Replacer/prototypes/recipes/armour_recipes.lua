@@ -77,7 +77,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk6",
-        category="electronics-or-handcrafting",
+        category= "electronics-or-handcrafting",
         enabled = false,
         energy_required = 10.0,
         ingredients = {

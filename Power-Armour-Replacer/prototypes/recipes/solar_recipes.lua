@@ -2,6 +2,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk1",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 5,
         ingredients = {
@@ -15,6 +16,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk2",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -29,6 +31,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk3",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 15,
         ingredients = {
@@ -43,6 +46,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk4",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -56,6 +60,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk5",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 25,
         ingredients = {
@@ -70,6 +75,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk6",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 30,
         ingredients = {
@@ -85,6 +91,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk7",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 35,
         ingredients = {
@@ -100,6 +107,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk8",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -114,7 +122,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk9",
-        category="crafting-with-fluid",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 45,
         ingredients = {
@@ -129,7 +137,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-solar-panel-mk10",
-        category="crafting-with-fluid",
+        category = "electronics-or-handcrafting",
         enabled = false,
         energy_required = 50,
         ingredients = {
