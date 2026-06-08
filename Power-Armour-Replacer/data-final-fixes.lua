@@ -10,5 +10,7 @@
 --compatible.tech load order dependant
     require("structures.RecyclingFinalFix")
 	require("mods.technology.final-fixes.K2_SO")
+	require("mods.technology.final-fixes.pY-recipe-final-fix")
+	require("mods.technology.final-fixes.pY-tech-final-fix")
 	require("mods.technology.final-fixes.par-depedency-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")
