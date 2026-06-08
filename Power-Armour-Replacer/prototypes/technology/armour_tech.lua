@@ -3,6 +3,9 @@ local Tech = data.raw["technology"]
 ---@class LuaSettings 
 local SS = settings.startup
 
+
+data.raw["recipe"]["light-armor"].enabled = false
+
 data:extend({
 --[[-@type data.TechnologyPrototype
 	local tech = simpletech {
@@ -18,6 +21,22 @@ data:extend({
 		{icon = "__Power-Armour-Replacer__/graphics/technology/armour/tech-power-armour-7", icon_size = 256,}, --10
 	}
 	local technology = { ]]
+	{
+		type = "technology",
+		name = "par-light-tech",
+		localised_name = "Light Armour",
+		icon_size = 256, --simpletech.icon_size,
+		icon = "__base__/graphics/technology/heavy-armor.png", --simpletech.icon,
+		effects = {
+			{
+				type = "unlock-recipe",
+				recipe = "light-armor"
+			},
+		},
+		prerequisites = {"military"},
+		research_trigger = {type ="craft-item", item ="iron-plate", count = 50},
+		order = "Armour00"
+	},
 	{
 		type = "technology",
 		name = "par-armour-tech-1",

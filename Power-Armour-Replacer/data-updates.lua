@@ -14,7 +14,7 @@
 	require("mods.recipes.updates.compatible_updates")
 
 --compatible.tech
-	require("mods.technology.updates.base-tech-changes")
+	require("mods.technology.updates.TechRecipeTweaks")
 	require("mods.technology.updates.BobsScienceUpdates")
 	require("mods.technology.updates.AngelsScienceUpdates")
 	require("mods.technology.updates.SeablockUpdates")
