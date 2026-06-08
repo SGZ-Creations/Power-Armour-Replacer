@@ -33,7 +33,7 @@ data:extend({
 			},
 		},
 		prerequisites = {"military"},
-		research_trigger = {type ="craft-item", item ="iron-plate", count = 50},
+		research_trigger = {type ="craft-item", item ="submachine-gun", count = 1},
 		order = "Armour00"
 	},
 	{

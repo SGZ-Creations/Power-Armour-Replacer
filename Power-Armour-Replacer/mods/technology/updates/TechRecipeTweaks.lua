@@ -3,7 +3,11 @@ local Tech = data.raw["technology"]
 ---@class data.RecipePrototype.type
 local Recipe = data.raw["recipe"]
 
+---@class data.TechnologyPrototype.type
+local Tech = data.raw["technology"]
+
 Tech["heavy-armor"].research_trigger = {type ="craft-item", item ="light-armor", count = 1}
+Tech["heavy-armor"].prerequisites = {"par-light-armour-tech"}
 Tech["heavy-armor"].unit = nil
 
 if mods["Power Armor MK3"] then
