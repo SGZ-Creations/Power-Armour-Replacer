@@ -8,7 +8,7 @@ Tech["heavy-armor"].unit = nil
 
 if mods["Power Armor MK3"] then
 	Recipe["pamk3-lvest"].enabled = false
-	table.insert(Tech["par-light-tech"].effects, {type = "unlock-recipe", recipe = "pamk3-lvest"})
+	table.insert(Tech["par-light-armour-tech"].effects, {type = "unlock-recipe", recipe = "pamk3-lvest"})
 
 	Tech["heavy-armor"].research_trigger = {type ="craft-item", item ="pamk3-lvest", count = 1}
 	Tech["heavy-armor"].unit = nil

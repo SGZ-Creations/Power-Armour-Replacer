@@ -3,7 +3,6 @@ local Tech = data.raw["technology"]
 ---@class LuaSettings 
 local SS = settings.startup
 
-
 data.raw["recipe"]["light-armor"].enabled = false
 
 data:extend({
@@ -23,7 +22,7 @@ data:extend({
 	local technology = { ]]
 	{
 		type = "technology",
-		name = "par-light-tech",
+		name = "par-light-armour-tech",
 		localised_name = "Light Armour",
 		icon_size = 256, --simpletech.icon_size,
 		icon = "__base__/graphics/technology/heavy-armor.png", --simpletech.icon,
