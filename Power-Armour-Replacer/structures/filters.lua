@@ -179,10 +179,9 @@ end
 
 if mods["bobequipment"] then
 --Enabled
-    DRT["bob-battery-equipment-3"].enabled = false
+    DRT["battery-mk3-equipment"].enabled = false
     DRT["bob-battery-equipment-4"].enabled = false
     DRT["bob-battery-equipment-5"].enabled = false
-    DRT["bob-battery-equipment-6"].enabled = false
     DRT["bob-exoskeleton-equipment-2"].enabled = false
     DRT["bob-exoskeleton-equipment-3"].enabled = false
     DRT["bob-solar-panel-equipment-2"].enabled = false
@@ -209,10 +208,9 @@ if mods["bobequipment"] then
     DRT["bob-personal-roboport-modular-equipment-3"].enabled = false
     DRT["bob-personal-roboport-modular-equipment-4"].enabled = false
 
-    DRR["bob-battery-mk3-equipment"].enabled = false
+    DRR["battery-mk3-equipment"].enabled = false
     DRR["bob-battery-mk4-equipment"].enabled = false
     DRR["bob-battery-mk5-equipment"].enabled = false
-    DRR["bob-battery-mk6-equipment"].enabled = false
     DRR["bob-exoskeleton-equipment-2"].enabled = false
     DRR["bob-exoskeleton-equipment-3"].enabled = false
     DRR["bob-solar-panel-equipment-2"].enabled = false
@@ -248,10 +246,9 @@ if mods["bobequipment"] then
     DRR["bob-personal-roboport-chargepad-equipment-4"].enabled = false
 
 --Hidden
-    DRT["bob-battery-equipment-3"].hidden = true
+    DRT["battery-mk3-equipment"].hidden = true
     DRT["bob-battery-equipment-4"].hidden = true
     DRT["bob-battery-equipment-5"].hidden = true
-    DRT["bob-battery-equipment-6"].hidden = true
     DRT["bob-solar-panel-equipment-2"].hidden = true
     DRT["bob-solar-panel-equipment-3"].hidden = true
     DRT["bob-solar-panel-equipment-4"].hidden = true
@@ -278,10 +275,9 @@ if mods["bobequipment"] then
     DRT["bob-personal-roboport-modular-equipment-3"].hidden = true
     DRT["bob-personal-roboport-modular-equipment-4"].hidden = true
 
-    DRR["bob-battery-mk3-equipment"].hidden = true
+    DRR["battery-mk3-equipment"].hidden = true
     DRR["bob-battery-mk4-equipment"].hidden = true
     DRR["bob-battery-mk5-equipment"].hidden = true
-    DRR["bob-battery-mk6-equipment"].hidden = true
     DRR["bob-solar-panel-equipment-2"].hidden = true
     DRR["bob-solar-panel-equipment-3"].hidden = true
     DRR["bob-solar-panel-equipment-4"].hidden = true
@@ -318,10 +314,9 @@ if mods["bobequipment"] then
 
 
     if SS["BobE-filters"].value then
-        Hide_Item("bob-battery-mk3-equipment")
+        Hide_Item("battery-mk3-equipment")
         Hide_Item("bob-battery-mk4-equipment")
         Hide_Item("bob-battery-mk5-equipment")
-        Hide_Item("bob-battery-mk6-equipment")
         Hide_Item("bob-solar-panel-equipment-2")
         Hide_Item("bob-solar-panel-equipment-3")
         Hide_Item("bob-solar-panel-equipment-4")
