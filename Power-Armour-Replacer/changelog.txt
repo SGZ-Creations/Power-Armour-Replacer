@@ -3,12 +3,12 @@ Version: 0.5.0
 Date: 10.05.26
   ToDo:
     - K2 Recipes: Lasers, Roboport, Shields, ShockDefence, Solar.
-    - PY Changes for Ligth & Heavy Armour, PowerArmour3 & vanilla.
   Features:
     - Recipe for K2SO Completed (Not in Test version)
     - Tech for K2SO Completed. 
     - K2SO Tech overhaul.
     - 10x9 = 90 New Setting for Shock Defence.
+    - Added ligh armour Tech for nicer Py Coimpatibilty that ended up staying in the regular mod.
   Modding:
     - Foliax Filters.
     - Foliax Crash with Foliax version 2.0.5.
@@ -42,7 +42,7 @@ Date: 10.05.26
     - K2SO Recipes overhaul: ACU, Armour, Battery, ExoSkeleton, Fission, NightVision, Immunity, half solar. (To be deleted when done)
     - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholders. thanks for understanding.
   Credit:
-    - Thanks @VAIR forr Bug report #5.
+    - Thanks @VAIR for Bug report #5.
     - Thanks @DarkMamaba for telling about shortcuts not unlocking. 
     - Thanks @DarkMamaba Showing me that "Spidertron Tiers Community" was updated.
 ---------------------------------------------------------------------------------------------------
