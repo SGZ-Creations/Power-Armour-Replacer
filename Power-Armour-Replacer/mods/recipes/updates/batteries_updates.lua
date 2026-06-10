@@ -106,13 +106,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk3"], {
             {"bob-solder", 85},
         }
     },
-    --248K
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            {"bob-lithium-ion-battery", 20},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -151,13 +144,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk4"], {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             ["copper-cable"] = {"bob-solder", 110},
-        }
-    },
-    --248K
-    {
-        dependencies = {"248k", "bobplates"},
-        replacements = {
-            {"bob-lithium-ion-battery", 10},
         }
     },
     --Angles
@@ -215,13 +201,6 @@ PAR.ingredient_prereq(DRR["par-battery-mk5"], {
             {"bob-tinned-copper-cable", 200},
         }
     },
-    --248K
-    {
-        dependencies = {"248k", "bobplates"},
-        replacements = {
-            {"bob-lithium-ion-battery", 20},
-        }
-    },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
@@ -266,20 +245,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk6"], {
         replacements = {
             ["steel-plate"] = {"bob-aluminium-plate", 100},
             ["low-density-structure"] = {"bob-titanium-plate", 100},
-            {"bob-lithium", 50},
-        }
-    },
-    --248K
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"el_lithium_battery", 30},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["el_lithium_battery"] = {"bob-lithium-ion-battery", 100},
+            {"lithium-plate", 50},
         }
     },
     --Clowens
@@ -321,28 +287,15 @@ PAR.ingredient_prereq(DRR["par-battery-mk7"], {
         dependencies = {"bobplates"},
         replacements = {
             ["armour-control-unit"] = {"low-density-structure", 50},
-            ["battery"] = {"bob-silver-zinc-battery", 100},
+            ["battery"] = {"bob-battery-3", 100},
             ["plastic-bar"] = {"bob-titanium-plate", 150},
-            {"bob-lithium-ion-battery", 100},
+            {"bob-battery-2", 100},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {"bob-gilded-copper-cable", 100},
-        }
-    },
-    --248K
-    {
-        dependencies = {"248k",},
-        replacements = {
-            {"el_lithium_battery", 100},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["el_lithium_battery"] = {"bob-lithium-ion-battery", 100},
         }
     },
     --Angles
@@ -386,7 +339,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk8"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["battery"] = {"bob-silver-zinc-battery", 200},
+            ["battery"] = {"bob-battery-3", 200},
         }
     },{
         dependencies = {"bobelectronics", "bobplates"},
@@ -440,7 +393,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk9"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 450},
-            ["battery"] = {"bob-silver-zinc-battery", 300},
+            ["battery"] = {"bob-battery-3", 300},
             ["plastic-bar"] = {"bob-copper-tungsten-alloy", 250},
         }
     },
@@ -491,7 +444,7 @@ PAR.ingredient_prereq(DRR["par-battery-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            ["battery"] = {"bob-silver-zinc-battery", 400},
+            ["battery"] = {"bob-battery-3", 400},
             ["armour-control-unit"] = {"bob-nitinol-alloy", 100},
         }
     },

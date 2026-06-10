@@ -232,7 +232,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk6"], {
             ["engine-unit"] = {"bob-silicon-nitride", 200},
             ["iron-stick"] = {"bob-titanium-plate", 200},
             {"bob-silicon-wafer", 400},
-            {"bob-lithium", 50},
+            {"lithium-plate", 50},
         }
     },
     {
@@ -254,7 +254,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk7"], {
         replacements = {
             ["processing-unit"] = {"processing-unit", 120},
             ["electric-engine-unit"] = {"bob-cobalt-steel-alloy", 100},
-            {"bob-lithium-ion-battery", 50},
+            {"bob-battery-2", 50},
             {"bob-silicon-wafer", 500},
             {"bob-silicon-nitride", 400},
         }
@@ -271,7 +271,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk8"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["battery"] = {"bob-silver-zinc-battery", 100},
+            ["battery"] = {"bob-battery-3", 100},
             {"processing-unit", 130},
             {"bob-invar-alloy", 350},
             {"bob-silver-plate", 350},

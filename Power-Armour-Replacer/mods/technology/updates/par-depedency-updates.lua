@@ -405,27 +405,8 @@ PAR.technology_dependancy
 		["par-armour-tech-1"] = {
 			["automation"] = "logistics",
 		},
-	},
-
-	["248k"] = {
-		["par-armour-tech-3"] = {
-			"el_caster_tech",
-		},
-		["par-battery-tech-3"] = {
-			"el_lithium_tech",
-		},
-		["par-night-immunity-tech-1"] = {
-			"el_lithium_tech",
-		},
-	},
-
-	[{"248k", "angelssmelting"}] = {
-		["par-armour-tech-3"] = {
-			["angels-aluminium-smelting-1"] = "el_caster_tech",
-		},
-	},
-	]]
-
+	}, 
+]]
 }
 
 if mods["TeleportationEquipment"] then

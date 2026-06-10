@@ -66,20 +66,14 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk2"], {
             ["bob-cobalt-steel-bearing"] = {"bob-brass-gear-wheel", 70},
         },
     },
-    --248K
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["battery"] = {"bob-aluminium-plate", 55},
-        }
-    },
-    --SE-K2-SO
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
             ["battery"] = {"motor", 200},
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -90,6 +84,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk2"], {
             {"kr-silicon", 200},
         }
     },
+    --K2SO
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
@@ -113,7 +108,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"bob-titanium-bearing", 75},
-            ["battery"] = {"bob-lithium-ion-battery", 90},
+            ["battery"] = {"bob-battery-2", 90},
             ["iron-gear-wheel"] = {"bob-invar-alloy", 155},
             {"bob-titanium-plate", 125},
             {"advanced-circuit", 300},
@@ -131,13 +126,6 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
         dependencies = {"angelssmelting"},
         replacements = {
             {"angels-plate-chrome", 200},
-        }
-    },
-    -- 248K
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["battery"] = {"bob-lithium-ion-battery", 55},
         }
     },
     --K2
@@ -184,7 +172,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
         dependencies = {"bobplates"},
         replacements = {
             ["plastic-bar"] = {"bob-cobalt-steel-bearing", 120},
-            ["battery"] = {"bob-silver-zinc-battery", 150},
+            ["battery"] = {"bob-battery-3", 150},
             {"processing-unit", 400},
             {"bob-tungsten-gear-wheel", 115},
         }

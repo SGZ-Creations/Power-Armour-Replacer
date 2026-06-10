@@ -169,7 +169,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk5"], {
             ["steel-chest"] = {"advanced-circuit", 250}, --2
             ["bob-insulated-cable"] = {"bob-aluminium-plate", 200}, --1
             ["flying-robot-frame"] = {"bob-aluminium-plate", 200}, --1
-            {"bob-ceramic-bearing", 200}, --3
         }
     },
     {
@@ -180,7 +179,6 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk5"], {
             ["flying-robot-frame"] = {"bob-roboport-door-2", 5}, --1
             ["bob-insulated-cable"] = {"bob-roboport-door-2", 200}, --1
             ["bob-aluminium-plate"] = {"bob-roboport-door-2", 5}, --1
-            ["bob-ceramic-bearing"] = {"bob-roboport-chargepad-2", 5}, --3
             {"bob-roboport-chargepad-2", 5}, --3
         }
     },
@@ -346,7 +344,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            {"bob-silver-zinc-battery", 500},
+            {"bob-battery-3", 500},
             {"bob-nitinol-alloy", 500},
         }
     },

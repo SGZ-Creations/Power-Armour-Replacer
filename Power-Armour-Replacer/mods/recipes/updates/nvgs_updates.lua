@@ -96,22 +96,7 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
             {type="fluid", name="angels-liquid-polyethylene", amount=300},
         }
     },
-    --248K
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"fi_materials_titan", 350},
-            {"fu_materials_KFK", 100},
-            {"gr_materials_circuit", 100},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["fi_materials_titan"] = {"bob-titanium-plate", 350},
-        }
-    },
-	--SEK2
+	--SE
     {
         dependencies = {"space-exploration"},
         replacements = {
@@ -122,6 +107,7 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
             ["petroleum-gas"] = {"zero"},
         }
     },
+    --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
@@ -134,6 +120,7 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
             {"kr-glass", 500},
         }
     },
+    --K2SO
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {

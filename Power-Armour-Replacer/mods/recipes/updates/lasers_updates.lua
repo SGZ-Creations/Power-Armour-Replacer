@@ -174,20 +174,6 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk4"], {
             {"solid-white-phosphorus", 100},
         }
     },
-    --248k
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"el_aluminum_item", 150},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["el_aluminum_item"] = {"bob-aluminium-plate", 150},
-            {"bob-lithium-ion-battery", 30},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},

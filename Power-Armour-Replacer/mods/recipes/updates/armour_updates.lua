@@ -230,33 +230,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
             {"steel-plate", 100}
         }
     },
-    --248K
-    {
-        dependencies = {"248k", "bobplates", "angelssmelting"},
-        replacements = {
-            ["bob-lead-plate"] = {"battery", 30},
-        }
-    },
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"el_aluminum_item", 150},
-            {"fi_materials_glass", 200},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates"},
-        replacements = {
-            ["bob-aluminium-plate"] = {"el_aluminum_item", 150},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["el_aluminum_item"] = {"bob-aluminium-plate", 150},
-            ["bob-cobalt-steel-alloy"] = {"bob-lithium-ion-battery", 30},
-        }
-    },
     --Pyanodon
     {
         dependencies = {"pyalternativeenergy",},
@@ -419,13 +392,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
             ["bob-silver-plate"] = {"angels-wire-silver", 55},
         }
     },
-    --248K
-    {
-        dependencies = {"248k"},
-        replacements = {
-            ["uranium-235"] = {"fi_materials_glass", 400},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2-spaced-out"},
@@ -531,9 +497,8 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk7"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"bob-ceramic-bearing", 200},
             ["low-density-structure"] = {"bob-cobalt-steel-bearing", 200},
-            {"bob-sapphire-5", 50},
+            ["steel-plate"] ={"bob-sapphire-5", 50},
             {"bob-ruby-5", 50},
             {"bob-emerald-5", 50},
             {"bob-amethyst-5", 50},
@@ -599,7 +564,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk8"], {
         dependencies = {"bobplates"},
         replacements = {
             ["nuclear-fuel"] = {"bob-copper-tungsten-alloy", 200},
-            ["battery"] = {"bob-silver-zinc-battery", 100},
+            ["battery"] = {"bob-battery-3", 100},
             {"bob-copper-tungsten-alloy", 200},
             {"bob-sapphire-5", 100},
             {"bob-ruby-5", 100},
@@ -718,21 +683,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
         replacements = {
             {"clowns-plate-osmium", 500},
             {"clowns-plate-depleted-uranium", 500},
-        }
-    },
-    --248K
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"fi_materials_titan", 350},
-            {"fu_materials_KFK", 100},
-            {"gr_materials_circuit", 100},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["fi_materials_titan"] = {"bob-titanium-plate", 350},
         }
     },
     --SEK2

@@ -240,7 +240,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk5"], {
             ["engine-unit"] = {"bob-aluminium-plate", 100},
             ["advanced-circuit"] = {"advanced-circuit", 250},
             {"bob-brass-alloy", 150},
-            {"bob-ceramic-bearing", 80},
         }
     },
     {
@@ -293,13 +292,13 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk6"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"bob-lithium", 50},
+            ["processing-unit"] = {"lithium-plate", 50},
             ["advanced-circuit"] = {"advanced-circuit", 300},
             ["uranium-fuel-cell"] = {"bob-cobalt-steel-bearing", 250},
             ["electric-engine-unit"] = {"bob-titanium-plate", 150},
             {"bob-cobalt-steel-bearing", 250},
             {"bob-zinc-plate", 150},
-            {"bob-lithium-ion-battery", 150},
+            {"bob-battery-2", 150},
         }
     },
     {
@@ -351,7 +350,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
         replacements = {
             ["processing-unit"] = {"processing-unit", 350},
             ["advanced-circuit"] = {"bob-silver-plate", 200},
-            ["electric-engine-unit"] = {"bob-lithium-ion-battery", 175},
+            ["electric-engine-unit"] = {"bob-battery-2", 175},
             ["pipe"] = {"bob-cobalt-steel-bearing", 350},
             {"bob-cobalt-steel-bearing", 350},
             {"bob-silver-plate", 200},
@@ -542,21 +541,6 @@ if mods["Cold_biters"]then
 end
 
 PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
-    --248K
-    {
-        dependencies = {"248k"},
-        replacements = {
-            {"fi_materials_titan", 350},
-            {"fu_materials_KFK", 100},
-            {"gr_materials_circuit", 100},
-        }
-    },
-    {
-        dependencies = {"248k", "bobplates", "grand-unified-factorio-theory"},
-        replacements = {
-            ["fi_materials_titan"] = {"bob-titanium-plate", 350},
-        }
-    },
     --Bobs
     {
         dependencies = {"bobelectronics"},
@@ -568,7 +552,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            ["battery"] = {"bob-silver-zinc-battery", 200},
+            ["battery"] = {"bob-battery-3", 200},
             {"bob-silver-nitrate", 100},
             {"bob-nitinol-bearing", 100},
         }
@@ -608,7 +592,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
             {"clowns-plate-osmium", 200},
         }
     },
-    --SEK2
+    --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
