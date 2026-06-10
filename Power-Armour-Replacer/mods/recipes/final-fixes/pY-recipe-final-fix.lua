@@ -2,7 +2,7 @@
 local Recipe = data.raw["recipe"]
 if mods["pycoalprocessing"] then
 	Recipe["light-armor"].ingredients = {
-		{type="item", name="light-armor", amount= 1},
+		{type="item", name="tin-plate", amount= 1},
         {type="item", name="small-parts-01", amount= 5},
 	}
 	Recipe["heavy-armor"].ingredients = {
