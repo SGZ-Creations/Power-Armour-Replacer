@@ -2,6 +2,9 @@ local Armour = data.raw["armor"]
 local Item = data.raw["item"]
 local Recipe = data.raw["recipe"]
 
+if mods["pypostprocessing"] then
+	Recipe["light-armor"].subgroup = "PAR_compatibility"
+end
 Armour["light-armor"].subgroup = "PAR_compatibility"
 Armour["light-armor"].order = "AA"
 Armour["heavy-armor"].subgroup = "PAR_compatibility"
