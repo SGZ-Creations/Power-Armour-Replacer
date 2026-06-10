@@ -141,6 +141,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
             ["lubricant"] = {"zero"},
         }
     },
+    --K2SO
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
