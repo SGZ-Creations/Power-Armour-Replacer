@@ -160,6 +160,13 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk4"], {
             ["bob-silver-plate"] = {"angels-wire-silver", 55},
         }
     },
+    --TIMSABA
+    {
+        dependencies = {"TIMSABA"},
+        replacements = {
+            ["bob-silicon-plate"] = {"zero"},
+        }
+    },
     --SE-K2
     {
         dependencies = {"space-exploration"},
