@@ -27,8 +27,13 @@ if mods["bobtech"]and mods["bobplates"] then
 		Tech["bob-wood-processing"].research_trigger = {type ="craft-item", item ="assembling-machine-1", count = 2}
 		Tech["bob-wood-processing"].unit = nil
 
-		Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-tinned-copper-cable", count = 50}
-		Tech["bob-electronics"].unit = nil
+		if mods["TIMSABA"]then
+			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="angels-wire-tin", count = 50}
+			Tech["bob-electronics"].unit = nil
+		else
+			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-tinned-copper-cable", count = 50}
+			Tech["bob-electronics"].unit = nil
+		end
 	end
 end
 
@@ -55,10 +60,7 @@ if mods["bobtech"] then
 					Recipe["bob-carbon-from-wood"].enabled = true
 				end
 
-				if not mods["Alt_Chemical_Processing"] and not mods["space-age"] then
-					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="bob-carbon", count = 25}
-					Tech["bob-chemical-processing-1"].unit = nil
-				elseif mods["Alt_Chemical_Processing"] and mods["space-age"] then
+				if mods["space-age"] then
 					Tech["bob-chemical-processing-1"].research_trigger = {type ="craft-item", item ="carbon", count = 25}
 					Tech["bob-chemical-processing-1"].unit = nil
 				end
