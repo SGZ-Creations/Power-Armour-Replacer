@@ -8,7 +8,7 @@ data:extend({
         icons = icon_utils.create_equipment_technology_icon("exoskeleton", 256, 1),
         prerequisites = {"par-armour-tech-2", "par-fission-reactor-tech-1" },
         effects = {{type = "unlock-recipe", recipe = "par-exoskeleton-mk1"}},
-        research_trigger = {type ="craft-item", item ="par-armour-mk2", count = 1},
+        research_trigger = {type ="craft-item", item ="par-armour-mk2"},
         order = "ExoLegs1"
     },
     {

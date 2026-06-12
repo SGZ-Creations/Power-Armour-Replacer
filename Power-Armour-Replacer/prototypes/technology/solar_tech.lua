@@ -11,7 +11,7 @@ data:extend({
             },
         },
         prerequisites = {"par-armour-tech-1"},
-        research_trigger = {type ="craft-item", item ="par-armour-mk1", count = 1},
+        research_trigger = {type ="craft-item", item ="par-armour-mk1"},
         order = "Solar01"
     },
     {
