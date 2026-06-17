@@ -10,8 +10,7 @@ Date: 10.05.26
     - K2SO Tech overhaul.
     - 10x9 = 90 New Setting for Shock Defence.
     - Added light armour Tech to progression on PAR.
-    - Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system
-
+    - Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system.
   Modding:
     - Foliax Filters.
     - Foliax Crash with Foliax version 2.0.5.
@@ -22,6 +21,7 @@ Date: 10.05.26
     - Added Tips & Tricks 4 Spidertron Tiers Community as it was Confirmed Working.
     - Added K2SO & K2 Grid Category options.
   Changes:
+    - Tips & ticks PA&R Base Info.
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
     - Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
