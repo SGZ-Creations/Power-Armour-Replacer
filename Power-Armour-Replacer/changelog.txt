@@ -20,6 +20,7 @@ Date: 10.05.26
     - Made equipment from Power Armor MK3 allow for crafting in EM Plant.
     - Added Tips & Tricks 4 Spidertron Tiers Community as it was Confirmed Working.
     - Added K2SO & K2 Grid Category options.
+    - Made it possible to use my mod along with TIMSABA.
   Changes:
     - Tips & ticks PA&R Base Info.
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
@@ -44,6 +45,7 @@ Date: 10.05.26
     - Spidertron Not unlocking playing with K2 & K2SO.
     - Krastorio2-spaced-out, Krastorio2 Crafting category fix in advanced assembler.
     - Quick fix for Py Crashes. bob prefix had been added when updating to 2.0 for Bobs.
+    - Crashes with TIMSABA making it unable to load.
   Info:
     - K2SO Recipes overhaul: ACU, Armour, Battery, ExoSkeleton, Fission, NightVision, Immunity, half solar. (To be deleted when done)
     - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholders. thanks for understanding.
