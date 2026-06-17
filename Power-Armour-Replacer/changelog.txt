@@ -3,12 +3,15 @@ Version: 0.5.0
 Date: 10.05.26
   ToDo:
     - K2 Recipes: Lasers, Roboport, Shields, ShockDefence, Solar.
+    - Muluna items in recipes?
   Features:
     - Recipe for K2SO Completed (Not in Test version)
     - Tech for K2SO Completed. 
     - K2SO Tech overhaul.
     - 10x9 = 90 New Setting for Shock Defence.
-    - Added ligh armour Tech to progression on PAR.
+    - Added light armour Tech to progression on PAR.
+    - Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system
+
   Modding:
     - Foliax Filters.
     - Foliax Crash with Foliax version 2.0.5.
@@ -48,6 +51,7 @@ Date: 10.05.26
     - Thanks @VAIR for Bug report #5.
     - Thanks @DarkMamaba for telling about shortcuts not unlocking. 
     - Thanks @DarkMamaba Showing me that "Spidertron Tiers Community" was updated.
+    - Thanks Youtuber (Khaeops) for giving me the idea to make this a setting to let you not have to modify the mod files.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.16
 Date: 31.1.26

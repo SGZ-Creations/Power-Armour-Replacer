@@ -63,6 +63,20 @@ if mods["space-age"] then
     })
 end
 
+if not mods["RampantArsenalFork"]then
+    if mods["space-age"] then
+        data:extend({
+            {
+                type = "bool-setting",
+                name = "MK10RecipeTech",
+                setting_type = "startup",
+                default_value = false,
+                order = "ZAaz-9"
+            },
+        })
+    end
+end
+
 if mods["foliax"]then
     data:extend({
         {

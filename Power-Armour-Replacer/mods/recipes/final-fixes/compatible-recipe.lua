@@ -22,6 +22,29 @@ PAR.ingredient_prereq(Recipe["mech-armor"],
     },
 })
 
+if not mods["RampantArsenalFork"]then
+    if settings.startup["MK10RecipeTech"].value == true then
+        PAR.ingredient_prereq(Recipe["mech-armor"],
+        {
+            {
+                dependencies = {"space-age"},
+                replacements = {
+                    ["par-armour-mk2"] = {"par-armour-mk10", 1},
+                }
+            },
+        })
+        PAR.ingredient_prereq(Recipe["mech-armor"],
+        {
+            {
+                dependencies = {"mech-armor"},
+                replacements = {
+                    ["par-armour-mk2"] = {"par-armour-mk10", 1},
+                }
+            },
+        })
+    end
+end
+
 PAR.ingredient_prereq(Recipe["spidertron_mk2"],
 {
     {

@@ -71,6 +71,19 @@ PAR.technology_dependancy
 	},
 }
 
+if not mods["RampantArsenalFork"]then
+    if settings.startup["MK10RecipeTech"].value == true then
+		PAR.technology_dependancy
+		{
+			["space-age"] = {
+				["mech-armor"] = {
+					["par-armour-tech-5"] = "par-armour-tech-10",
+				},
+			},
+		}
+	end
+end
+
 if mods["metal-and-stars"] then
 	Tech["prototype-mech-armor"].prerequisites = {"par-armour-tech-3", "productivity-module-2", "overclock-module-2"}
 end
