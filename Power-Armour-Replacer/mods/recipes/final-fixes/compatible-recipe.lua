@@ -29,7 +29,7 @@ if not mods["RampantArsenalFork"]then
             {
                 dependencies = {"space-age"},
                 replacements = {
-                    ["par-armour-mk2"] = {"par-armour-mk10", 1},
+                    ["par-armour-mk5"] = {"par-armour-mk10", 1},
                 }
             },
         })
@@ -38,7 +38,7 @@ if not mods["RampantArsenalFork"]then
             {
                 dependencies = {"mech-armor"},
                 replacements = {
-                    ["par-armour-mk2"] = {"par-armour-mk10", 1},
+                    ["par-armour-mk5"] = {"par-armour-mk10", 1},
                 }
             },
         })

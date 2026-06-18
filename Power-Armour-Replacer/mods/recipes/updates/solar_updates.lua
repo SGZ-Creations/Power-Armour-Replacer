@@ -189,6 +189,27 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk4"], {
             ["engine-unit"] = {"electric-motor", 30},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["copper-plate"] = {"kr-automation-core", 100},
+            ["steel-plate"] = {"kr-steel-beam", 100},
+            {"kr-rare-metals", 100},
+            {"kr-silicon", 100},
+            {"kr-glass", 100},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-plate"] = {"kr-automation-core", 100},
+            ["steel-plate"] = {"kr-steel-beam", 100},
+            {"kr-rare-metals", 100},
+            {"kr-silicon", 100},
+            {"kr-glass", 100},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-solar-panel-mk5"], {
     {
@@ -216,11 +237,33 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk5"], {
             ["sulfur"] = {"bob-gilded-copper-cable", 130},
         }
     },
+    --Angels
     {
         dependencies = {"angelssmelting"},
         replacements = {
             ["bob-silicon-wafer"] = {"angels-mono-silicon", 300},
             ["steel-plate"] = {"angels-plate-chrome", 50},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-imersium-beam", 125},
+            {"kr-rare-metals", 125},
+            {"kr-silicon", 125},
+            {"kr-ai-core", 125},
+            {"kr-glass", 125},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-imersium-beam", 125},
+            {"kr-rare-metals", 125},
+            {"kr-silicon", 125},
+            {"kr-ai-core", 125},
+            {"kr-glass", 125},
         }
     },
 })
@@ -248,6 +291,28 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk6"], {
             {"bob-gilded-copper-cable", 130},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-imersium-beam", 150},
+            {"kr-matter-cube", 150},
+            {"kr-rare-metals", 150},
+            {"kr-silicon", 150},
+            {"kr-ai-core", 150},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-imersium-beam", 150},
+            {"kr-matter-cube", 150},
+            {"kr-rare-metals", 150},
+            {"kr-silicon", 150},
+            {"kr-ai-core", 150},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-solar-panel-mk7"], {
     {
@@ -264,6 +329,29 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk7"], {
             {"bob-battery-2", 50},
             {"bob-silicon-wafer", 500},
             {"bob-silicon-nitride", 400},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 200},
+            {"kr-imersium-beam", 200},
+            {"kr-matter-cube", 200},
+            {"kr-rare-metals", 200},
+            {"kr-silicon", 200},
+            {"kr-ai-core", 200},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["low-density-structure"] = {"kr-energy-control-unit", 200},
+            {"kr-matter-cube", 200},
+            {"kr-rare-metals", 200},
+            {"kr-silicon", 200},
+            {"kr-ai-core", 200},
         }
     },
 })
@@ -299,6 +387,30 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk8"], {
             ["bob-silver-plate"] = {"angels-wire-platinum"},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 300},
+            {"kr-imersium-beam", 300},
+            {"kr-matter-cube", 300},
+            {"kr-rare-metals", 300},
+            {"kr-silicon", 300},
+            {"kr-ai-core", 300},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["low-density-structure"] = {"kr-energy-control-unit", 300},
+            ["plastic-bar"] = {"kr-imersium-beam", 300},
+            {"kr-matter-cube", 300},
+            {"kr-rare-metals", 300},
+            {"kr-silicon", 300},
+            {"kr-ai-core", 300},
+        }
+    },
 })
 PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
     {
@@ -321,6 +433,30 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         replacements = {
             {"bob-gilded-copper-cable", 250},
             {"bob-solder", 250},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 400},
+            {"kr-imersium-beam", 400},
+            {"kr-matter-cube", 400},
+            {"kr-rare-metals", 400},
+            {"kr-silicon", 400},
+            {"kr-ai-core", 400},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["low-density-structure"] = {"kr-energy-control-unit", 400},
+            {"kr-imersium-beam", 400},
+            {"kr-matter-cube", 400},
+            {"kr-rare-metals", 400},
+            {"kr-silicon", 400},
+            {"kr-ai-core", 400},
         }
     },
 })
@@ -353,7 +489,24 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk10"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["armour-control-unit"] = {"kr-matter-cube", 2},
+            {"kr-energy-control-unit", 500},
+            {"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-rare-metals", 500},
+            {"kr-silicon", 500},
+            {"kr-ai-core", 500},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["low-density-structure"] = {"kr-energy-control-unit", 500},
+            {"kr-imersium-beam", 500},
+            {"kr-matter-cube", 500},
+            {"kr-rare-metals", 500},
+            {"kr-silicon", 500},
+            {"kr-ai-core", 500},
         }
     },
 })

@@ -380,7 +380,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            {"kr-energy-control-unit", 200},
+            ["low-density-structure"] = {"kr-energy-control-unit", 200},
             {"kr-imersium-beam", 200},
             {"kr-matter-cube", 200},
             {"kr-rare-metals", 200},
@@ -451,7 +451,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk8"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 300},
+            ["low-density-structure"] = {"kr-energy-control-unit", 300},
             {"kr-imersium-beam", 300},
             {"kr-matter-cube", 300},
             {"kr-rare-metals", 300},
@@ -524,7 +524,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 400},
+            ["low-density-structure"] = {"kr-energy-control-unit", 400},
             {"kr-imersium-beam", 400},
             {"kr-matter-cube", 400},
             {"kr-rare-metals", 400},
@@ -616,7 +616,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 500},
+            ["low-density-structure"] = {"kr-energy-control-unit", 500},
             {"kr-imersium-beam", 500},
             {"kr-matter-cube", 500},
             {"kr-rare-metals", 500},

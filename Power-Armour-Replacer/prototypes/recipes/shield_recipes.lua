@@ -251,7 +251,7 @@ if mods["space-age"] then
                 {type="item", name="electric-engine-unit", amount=125},
                 {type="item", name="low-density-structure", amount=125},
                 {type="item", name="armour-control-unit", amount=125},
-                {type="item", name="advanced-circuit", amount=125},
+                {type="item", name="processing-unit", amount=125},
                 {type="item", name="plastic-bar", amount=125},
                 {type="item", name="carbon", amount=125},
             },

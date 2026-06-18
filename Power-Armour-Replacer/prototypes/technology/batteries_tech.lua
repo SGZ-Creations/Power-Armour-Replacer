@@ -48,7 +48,7 @@ data:extend({
                 recipe = "par-battery-mk3"
             },
         },
-        prerequisites = { "par-battery-tech-2", "battery", "advanced-circuit", "armour-control-unit",},
+        prerequisites = { "par-battery-tech-2", "battery", "advanced-circuit"},
         unit =
         {
             count = 500,
@@ -95,7 +95,7 @@ data:extend({
                 recipe = "par-battery-mk5"
             },
         },
-        prerequisites = { "par-battery-tech-4",},
+        prerequisites = { "par-battery-tech-4", "armour-control-unit"},
         unit =
         {
             count = 500,
@@ -120,7 +120,7 @@ data:extend({
                 recipe = "par-battery-mk6"
             },
         },
-        prerequisites = { "par-battery-tech-5", },
+        prerequisites = { "par-battery-tech-5"},
         unit =
         {
             count = 500,
