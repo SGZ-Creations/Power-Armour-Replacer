@@ -4,31 +4,28 @@ data:extend({
         type = "technology",
         name = "par-fission-reactor-tech-1",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 1),
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "par-fission-reactor-mk1"
             },
         },
-        prerequisites = {"par-armour-tech-1", },
-        research_trigger = {type ="craft-item", item ="par-armour-mk1"},
+        prerequisites = {"par-light-armour-tech"},
+        research_trigger = {type ="craft-item", item ="light-armour"},
         order = "FissionReactor01"
     },
     {
         type = "technology",
         name = "par-fission-reactor-tech-2",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 2),
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "par-fission-reactor-mk2"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-1", "par-solar-panel-tech-2" },
-        unit =
-        {
+        prerequisites = {"par-fission-reactor-tech-1"},
+        unit =  {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 1},
@@ -41,16 +38,14 @@ data:extend({
         type = "technology",
         name = "par-fission-reactor-tech-3",
         icons = icon_utils.create_equipment_technology_icon("fusion-reactor", 256, 3),
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "par-fission-reactor-mk3"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-2", "par-solar-panel-tech-3", "oil-processing", "battery", },
-        unit =
-        {
+        prerequisites = {"par-fission-reactor-tech-2", "oil-processing", "battery",},
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 2},
@@ -71,7 +66,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk4"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-3", "par-solar-panel-tech-4", "advanced-circuit", "engine", },
+        prerequisites = { "par-fission-reactor-tech-3", "advanced-circuit", "engine", },
         unit =
         {
             count = 500,
@@ -95,7 +90,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk5"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-4", "par-solar-panel-tech-5" },
+        prerequisites = { "par-fission-reactor-tech-4", "armour-control-unit",},
         unit =
         {
             count = 500,
@@ -120,7 +115,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk6"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-5", "par-solar-panel-tech-6" },
+        prerequisites = { "par-fission-reactor-tech-5",},
         unit =
         {
             count = 500,
@@ -145,7 +140,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk7"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-6", "par-solar-panel-tech-7" },
+        prerequisites = { "par-fission-reactor-tech-6",},
         unit =
         {
             count = 500,
@@ -171,7 +166,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk8"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-7", "par-solar-panel-tech-8" },
+        prerequisites = { "par-fission-reactor-tech-7",},
         unit =
         {
             count = 500,
@@ -197,7 +192,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk9"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-8", "par-solar-panel-tech-9" },
+        prerequisites = { "par-fission-reactor-tech-8",},
         unit =
         {
             count = 500,
@@ -224,7 +219,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk10"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-9", "par-solar-panel-tech-10" },
+        prerequisites = { "par-fission-reactor-tech-9",},
         unit =
         {
             count = 500,

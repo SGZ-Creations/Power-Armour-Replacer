@@ -11,8 +11,8 @@ data:extend({
                 recipe = "par-battery-mk1"
             },
         },
-        prerequisites = {"par-armour-tech-1",},
-		research_trigger = {type ="craft-item", item ="par-armour-mk1"},
+        prerequisites = {"par-light-armour-tech"},
+        research_trigger = {type ="craft-item", item ="light-armour"},
         order = "Battery01"
     },
     {
@@ -48,7 +48,7 @@ data:extend({
                 recipe = "par-battery-mk3"
             },
         },
-        prerequisites = { "par-battery-tech-2", "battery", "advanced-circuit",},
+        prerequisites = { "par-battery-tech-2", "battery", "advanced-circuit", "armour-control-unit",},
         unit =
         {
             count = 500,

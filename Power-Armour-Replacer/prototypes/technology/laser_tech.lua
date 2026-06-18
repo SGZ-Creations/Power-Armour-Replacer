@@ -4,13 +4,7 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-1",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 1),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk1"
-            },
-        },
+        effects = {{  type = "unlock-recipe", recipe = "par-laser-mk1"}},
         prerequisites = {"par-fission-reactor-tech-1" },
         research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 5},
         order = "Laser01"
@@ -19,13 +13,7 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-2",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 2),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk2"
-            },
-        },
+        effects = {{type = "unlock-recipe", recipe = "par-laser-mk2"}},
         prerequisites = { "par-laser-tech-1" },
         unit =
         {
@@ -41,19 +29,9 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-3",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 3),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk3"
-            },
-        },
-        prerequisites =
-        {
-            "par-laser-tech-2",
-        },
-        unit =
-        {
+        effects = {{ type = "unlock-recipe", recipe = "par-laser-mk3"}},
+        prerequisites = { "par-laser-tech-2"},
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 2},
@@ -67,16 +45,9 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-4",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk4"
-            },
-        },
-        prerequisites = { "par-laser-tech-3", "advanced-circuit",},
-        unit =
-        {
+        effects =  {{type = "unlock-recipe",  recipe = "par-laser-mk4" }},
+        prerequisites = { "par-laser-tech-3", "advanced-circuit"},
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 3},
@@ -91,20 +62,9 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-5",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 5),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk5"
-            },
-        },
-        prerequisites =
-        {
-            "par-laser-tech-4",
-            "laser",
-        },
-        unit =
-        {
+        effects = {{ type = "unlock-recipe", recipe = "par-laser-mk5"}},
+        prerequisites = {"par-laser-tech-4", "laser", "armour-control-unit",},
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 4},
@@ -120,16 +80,9 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-6",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 6),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk6"
-            },
-        },
+        effects = {{type = "unlock-recipe", recipe = "par-laser-mk6"}},
         prerequisites = { "par-laser-tech-5", },
-        unit =
-        {
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 5},
@@ -145,13 +98,7 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-7",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 7),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk7"
-            },
-        },
+        effects = {{type = "unlock-recipe", recipe = "par-laser-mk7"}},
         prerequisites = { "par-laser-tech-6", },
         unit =
         {
@@ -171,16 +118,9 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-8",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 8),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk8"
-            },
-        },
+        effects = {{type = "unlock-recipe", recipe = "par-laser-mk8" }},
         prerequisites = { "par-laser-tech-7", },
-        unit =
-        {
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 7},
@@ -197,16 +137,9 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-9",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 9),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk9"
-            },
-        },
+        effects = {{ type = "unlock-recipe", recipe = "par-laser-mk9"}},
         prerequisites = { "par-laser-tech-8", },
-        unit =
-        {
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 8},
@@ -224,16 +157,9 @@ data:extend({
         type = "technology",
         name = "par-laser-tech-10",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 10),
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "par-laser-mk10"
-            },
-        },
+        effects = {{type = "unlock-recipe", recipe = "par-laser-mk10"}},
         prerequisites = { "par-laser-tech-9", },
-        unit =
-        {
+        unit = {
             count = 500,
             ingredients = {
                 { "automation-science-pack", 9},
