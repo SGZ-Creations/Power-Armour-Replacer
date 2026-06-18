@@ -453,6 +453,13 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk6"], {
             {"bob-gilded-copper-cable", 55},
         }
     },
+    --angelbob-spaceage-rebalance
+    {
+        dependencies = {"angelbob-spaceage-rebalance"},
+        replacements = {
+            ["bob-gilded-copper-cable"] = {"zero"},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2-spaced-out"},

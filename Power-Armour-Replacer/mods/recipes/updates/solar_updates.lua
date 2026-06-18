@@ -31,6 +31,13 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
             ["bob-rubber"] = {"angels-solid-carbon", 25},
         }
     },
+    --angelbob-spaceage-rebalance
+    {
+        dependencies = {"angelbob-spaceage-rebalance"},
+        replacements = {
+            ["bob-solder"] = {"zero"},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},

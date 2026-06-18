@@ -21,6 +21,7 @@ Date: 10.05.26
     - [Spidertron Tiers Community] Added Tips & Tricks as it was Confirmed Working.
     - [K2SO, K2] Added Grid Category options.
     - [TIMSABA] Made it possible to use my mod.
+    - [angelbob-spaceage-rebalance] Made it possible to use my mod.
   Changes:
     - [Spider Extended] Removed recipe update for Spider Builder (GhostWaver).
     - [Spider Extended] Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
