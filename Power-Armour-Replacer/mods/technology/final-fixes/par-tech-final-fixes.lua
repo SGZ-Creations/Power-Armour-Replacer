@@ -80,6 +80,11 @@ if not mods["RampantArsenalFork"]then
 					["par-armour-tech-5"] = "par-armour-tech-10",
 				},
 			},
+			["mech-armor"] = {
+				["mech-armor"] = {
+					["par-armour-tech-5"] = "par-armour-tech-10",
+				}
+			},
 		}
 	end
 end
