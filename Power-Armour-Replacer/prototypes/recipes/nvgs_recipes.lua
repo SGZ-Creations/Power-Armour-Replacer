@@ -6,10 +6,12 @@ data:extend({
         energy_required = 10,
         category = "electronics-or-handcrafting",
         ingredients = {
-            {type="item", name="armour-control-unit", amount=200},
-            {type="item", name="advanced-circuit", amount=200},
-            {type="item", name="steel-plate", amount=200},
-            {type="item", name="battery", amount=200},
+            {type="item", name="low-density-structure", amount=250},
+            {type="item", name="electric-engine-unit", amount=250},
+            {type="item", name="armour-control-unit", amount=250},
+            {type="item", name="advanced-circuit", amount=250},
+            {type="item", name="steel-plate", amount=250},
+            {type="item", name="battery", amount=250},
         },
         results = {{type="item", name="par-nightvision-mk1", amount=1}}
     },
@@ -21,9 +23,11 @@ data:extend({
         category = "electronics-or-handcrafting",
         ingredients = {
             {type="item", name="par-nightvision-mk1", amount=1},
+            {type="item", name="low-density-structure", amount=500},
+            {type="item", name="electric-engine-unit", amount=500},
             {type="item", name="armour-control-unit", amount=500},
-            {type="item", name="low-density-structure", amount=50},
-            {type="item", name="processing-unit", amount=60},
+            {type="item", name="processing-unit", amount=500},
+            {type="item", name="battery", amount=500},
         },
         results = {{type="item", name="par-nightvision-mk2", amount=1}}
     },
