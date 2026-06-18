@@ -110,7 +110,7 @@ data:extend({
                 recipe = "par-shield-mk6"
             },
         },
-        prerequisites = {"par-shield-tech-5",},
+        prerequisites = {"par-shield-tech-5", "armour-control-unit"},
         unit =  {
             count = 500,
             ingredients = {

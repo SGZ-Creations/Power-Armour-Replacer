@@ -11,7 +11,7 @@ data:extend({
             },
         },
         prerequisites = {"par-light-armour-tech"},
-        research_trigger = {type ="craft-item", item ="light-armour"},
+        research_trigger = {type ="craft-item", item ="light-armor"},
         order = "FissionReactor01"
     },
     {

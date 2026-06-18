@@ -97,7 +97,7 @@ data:extend({
                 recipe = "par-roboport-mk5"
             },
         },
-        prerequisites = {"par-roboport-tech-4", },
+        prerequisites = {"par-roboport-tech-4", "armour-control-unit"},
         unit =
         {
             count = 750,

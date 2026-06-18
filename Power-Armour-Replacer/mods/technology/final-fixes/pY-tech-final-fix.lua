@@ -7,6 +7,7 @@ if mods["pypostprocessing"]then
 	Tech["military"].unit = nil
 	Tech["heavy-armor"].prerequisites = {"par-light-armour-tech"}
 	Tech["par-light-armour-tech"].research_trigger = {type ="craft-item", item ="submachine-gun"}
+	Tech["steel-axe"].effects = {{type = "character-mining-speed", modifier = 1}}
 end
 
 local PAR = require("mods.util")

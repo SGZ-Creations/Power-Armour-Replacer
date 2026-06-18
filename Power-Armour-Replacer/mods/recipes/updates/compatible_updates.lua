@@ -1,20 +1,25 @@
 ---@class data.RecipePrototype
 local Recipe = data.raw.recipe
 
+Recipe["light-armor"].ingredients = {
+    {type="item", name="iron-plate", amount= 25},
+    {type="item", name="copper-plate", amount= 25},
+}
+
 if mods["Power Armor MK3"] then
     Recipe["pamk3-lvest"].ingredients = {
         {type="item", name="light-armor", amount= 1},
-        {type="item", name="copper-plate", amount= 5},
+        {type="item", name="copper-plate", amount= 25},
     }
     Recipe["heavy-armor"].ingredients = {
         {type="item", name="pamk3-lvest", amount= 1},
-        {type="item", name="steel-plate", amount= 10},
-        {type="item", name="copper-plate", amount= 10},
+        {type="item", name="steel-plate", amount= 35},
+        {type="item", name="copper-plate", amount= 35},
     }
     Recipe["pamk3-hvest"].ingredients = {
         {type="item", name="heavy-armor", amount= 1},
-        {type="item", name="steel-plate", amount= 10},
-        {type="item", name="copper-plate", amount= 10},
+        {type="item", name="steel-plate", amount= 35},
+        {type="item", name="copper-plate", amount= 35},
     }
 end
 

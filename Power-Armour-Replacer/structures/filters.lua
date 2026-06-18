@@ -56,6 +56,7 @@ end
     DRT["personal-roboport-equipment"].enabled = false
     DRT["personal-roboport-mk2-equipment"].enabled = false
     DRT["solar-panel-equipment"].enabled = false
+    DRT["discharge-defense-equipment"].enabled = false
 
     DRR["power-armor"].enabled = false
     DRR["modular-armor"].enabled = false
@@ -70,6 +71,7 @@ end
     DRR["fission-reactor-equipment"].enabled = false
     DRR["personal-roboport-equipment"].enabled = false
     DRR["energy-shield-mk2-equipment"].enabled = false
+    DRR["discharge-defense-equipment"].enabled = false
     DRR["personal-roboport-mk2-equipment"].enabled = false
     DRR["personal-laser-defense-equipment"].enabled = false
 
@@ -83,6 +85,7 @@ end
     DRT["battery-equipment"].hidden = true
     DRT["battery-mk2-equipment"].hidden = true
     DRT["solar-panel-equipment"].hidden = true
+    DRT["discharge-defense-equipment"].hidden = true
     DRT["personal-roboport-equipment"].hidden = true
     DRT["personal-roboport-mk2-equipment"].hidden = true
     DRT["personal-laser-defense-equipment"].hidden = true
@@ -96,6 +99,7 @@ end
     DRR["belt-immunity-equipment"].hidden = true
     DRR["exoskeleton-equipment"].hidden = true
     DRR["solar-panel-equipment"].hidden = true
+    DRR["discharge-defense-equipment"].hidden = true
     DRR["personal-roboport-equipment"].hidden = true
     DRR["personal-laser-defense-equipment"].hidden = true
     DRR["personal-roboport-mk2-equipment"].hidden = true
@@ -114,6 +118,7 @@ if SS["vanilla-filters"].value then
     Hide_Item("fission-reactor-equipment")
     Hide_Item("personal-roboport-equipment")
     Hide_Item("energy-shield-mk2-equipment")
+    Hide_Item("discharge-defense-equipment")
     Hide_Item("personal-roboport-mk2-equipment")
     Hide_Item("personal-laser-defense-equipment")
 end
@@ -989,6 +994,7 @@ end
 if mods["Power Armor MK3"] then
     --Hidden
     DRR["pamk3-se"].hidden = true
+    DRR["pamk3-pdd"].hidden = true
     DRR["pamk3-inff"].hidden = true
     DRR["pamk3-nvmk2"].hidden = true
     DRR["pamk3-esmk3"].hidden = true
@@ -997,6 +1003,7 @@ if mods["Power Armor MK3"] then
     DRR["pamk3-battmk3"].hidden = true
 
     DRT["pamk3-se"].hidden = true
+    DRT["pamk3-pdd"].hidden = true
     DRT["pamk3-nvmk2"].hidden = true
     DRT["pamk3-esmk3"].hidden = true
     DRT["pamk3-pamk3"].hidden = true
@@ -1004,6 +1011,7 @@ if mods["Power Armor MK3"] then
     DRT["pamk3-battmk3"].hidden = true
 --Enabled
     DRR["pamk3-se"].enabled = false
+    DRR["pamk3-pdd"].enabled = false
     DRR["pamk3-inff"].enabled = false
     DRR["pamk3-nvmk2"].enabled = false
     DRR["pamk3-esmk3"].enabled = false
@@ -1012,6 +1020,7 @@ if mods["Power Armor MK3"] then
     DRR["pamk3-battmk3"].enabled = false
 
     DRT["pamk3-se"].enabled = false
+    DRT["pamk3-pdd"].enabled = false
     DRT["pamk3-nvmk2"].enabled = false
     DRT["pamk3-esmk3"].enabled = false
     DRT["pamk3-pamk3"].enabled = false
@@ -1020,6 +1029,7 @@ if mods["Power Armor MK3"] then
 --Filters
     if SS["MK3-filters"].value then
         Hide_Item("pamk3-se")
+        Hide_Item("pamk3-pdd")
         Hide_Item("pamk3-inff")
         Hide_Item("pamk3-nvmk2")
         Hide_Item("pamk3-esmk3")

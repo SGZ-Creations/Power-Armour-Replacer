@@ -30,7 +30,7 @@ data:extend({
         name = "par-laser-tech-3",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 3),
         effects = {{ type = "unlock-recipe", recipe = "par-laser-mk3"}},
-        prerequisites = { "par-laser-tech-2"},
+        prerequisites = { "par-laser-tech-2", "advanced-circuit"},
         unit = {
             count = 500,
             ingredients = {
@@ -46,7 +46,7 @@ data:extend({
         name = "par-laser-tech-4",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 4),
         effects =  {{type = "unlock-recipe",  recipe = "par-laser-mk4" }},
-        prerequisites = { "par-laser-tech-3", "advanced-circuit"},
+        prerequisites = { "par-laser-tech-3"},
         unit = {
             count = 500,
             ingredients = {
@@ -63,7 +63,7 @@ data:extend({
         name = "par-laser-tech-5",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 5),
         effects = {{ type = "unlock-recipe", recipe = "par-laser-mk5"}},
-        prerequisites = {"par-laser-tech-4", "laser", "armour-control-unit",},
+        prerequisites = {"par-laser-tech-4", "laser", "armour-control-unit"},
         unit = {
             count = 500,
             ingredients = {

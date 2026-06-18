@@ -6,11 +6,11 @@ local recipes = {
         enabled = false,
         energy_required = 10,
         ingredients = {
-            {type="item", name="wood", amount=200},
-            {type="item", name="iron-chest", amount=5},
-            {type="item", name="electronic-circuit", amount=75},
-            {type="item", name="copper-cable", amount=150},
-            {type="item", name="small-lamp", amount=10},
+            {type="item", name="electronic-circuit", amount=25},
+            {type="item", name="iron-gear-wheel", amount=25},
+            {type="item", name="copper-cable", amount=25},
+            {type="item", name="steel-plate", amount=25},
+            {type="item", name="wood", amount=25},
         },
         results = {{type="item", name="par-roboport-mk1", amount=1}}
     },
@@ -22,9 +22,11 @@ local recipes = {
         energy_required = 20,
         ingredients = {
             {type="item", name="par-roboport-mk1", amount=1},
-            {type="item", name="electronic-circuit", amount=100},
-            {type="item", name="iron-gear-wheel", amount=125},
-            {type="item", name="copper-cable", amount=175},
+            {type="item", name="electronic-circuit", amount=50},
+            {type="item", name="iron-gear-wheel", amount=50},
+            {type="item", name="copper-cable", amount=50},
+            {type="item", name="steel-plate", amount=50},
+            {type="item", name="wood", amount=50},
         },
         results = {{type="item", name="par-roboport-mk2", amount=1}}
     },
@@ -36,9 +38,10 @@ local recipes = {
         energy_required = 30,
         ingredients = {
             {type="item", name="par-roboport-mk2", amount=1},
-            {type="item", name="electronic-circuit", amount=125},
-            {type="item", name="engine-unit", amount=80},
-            {type="item", name="iron-plate", amount=100},
+            {type="item", name="advanced-circuit", amount=75},
+            {type="item", name="copper-plate", amount=75},
+            {type="item", name="steel-plate", amount=75},
+            {type="item", name="engine-unit", amount=75},
         },
         results = {{type="item", name="par-roboport-mk3", amount=1}}
     },
@@ -50,10 +53,10 @@ local recipes = {
         energy_required = 40,
         ingredients = {
             {type="item", name="par-roboport-mk3", amount=1},
-            {type="item", name="electronic-circuit", amount=130},
-            {type="item", name="engine-unit", amount=140},
-            {type="item", name="steel-plate", amount=160},
-            {type="item", name="iron-gear-wheel", amount=170},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="copper-plate", amount=100},
+            {type="item", name="steel-plate", amount=100},
+            {type="item", name="engine-unit", amount=100},
         },
         results = {{type="item", name="par-roboport-mk4", amount=1}}
     },
@@ -65,9 +68,11 @@ local recipes = {
         energy_required = 50,
         ingredients = {
             {type="item", name="par-roboport-mk4", amount=1},
-            {type="item", name="steel-chest", amount=30},
-            {type="item", name="flying-robot-frame", amount=10},
-            {type="item", name="advanced-circuit", amount=40},
+            {type="item", name="electric-engine-unit", amount=125},
+            {type="item", name="armour-control-unit", amount=125},
+            {type="item", name="advanced-circuit", amount=125},
+            {type="item", name="steel-plate", amount=125},
+            {type="item", name="battery", amount=125},
         },
         results = {{type="item", name="par-roboport-mk5", amount=1}}
     },
@@ -79,10 +84,11 @@ local recipes = {
         energy_required = 60,
         ingredients = {
             {type="item", name="par-roboport-mk5", amount=1},
-            {type="item", name="processing-unit", amount=50},
-            {type="item", name="electric-engine-unit", amount=120},
-            {type="item", name="steel-plate", amount=230},
-            {type="fluid", name="lubricant", amount=300},
+                {type="item", name="electric-engine-unit", amount=150},
+                {type="item", name="armour-control-unit", amount=150},
+                {type="item", name="processing-unit", amount=150},
+                {type="item", name="steel-plate", amount=150},
+                {type="item", name="battery", amount=150},
         },
         results = {{type="item", name="par-roboport-mk6", amount=1}}
     },
@@ -94,10 +100,12 @@ local recipes = {
         energy_required = 70,
         ingredients = {
             {type="item", name="par-roboport-mk6", amount=1},
-            {type="item", name="processing-unit", amount=120},
-            {type="item", name="uranium-235", amount=50},
-            {type="item", name="iron-stick", amount=270},
-            {type="item", name="low-density-structure", amount=60},
+            {type="item", name="battery", amount=200},
+            {type="item", name="steel-plate", amount=200},
+            {type="item", name="processing-unit", amount=200},
+            {type="item", name="armour-control-unit", amount=200},
+            {type="item", name="electric-engine-unit", amount=200},
+            {type="item", name="low-density-structure", amount=200},
         },
         results = {{type="item", name="par-roboport-mk7", amount=1}}
     },
@@ -109,10 +117,12 @@ local recipes = {
         energy_required = 80,
         ingredients = {
             {type="item", name="par-roboport-mk7", amount=1},
-            {type="item", name="low-density-structure", amount=130},
-            {type="item", name="steel-plate", amount=270},
-            {type="item", name="copper-cable", amount=320},
-            {type="item", name="uranium-235", amount=160},
+            {type="item", name="low-density-structure", amount=300},
+            {type="item", name="electric-engine-unit", amount=300},
+            {type="item", name="armour-control-unit", amount=300},
+            {type="item", name="processing-unit", amount=300},
+            {type="item", name="steel-plate", amount=300},
+            {type="item", name="battery", amount=300},
         },
         results = {{type="item", name="par-roboport-mk8", amount=1}}
     },
@@ -124,10 +134,12 @@ local recipes = {
         category = "electronics-or-handcrafting",
         ingredients = {
             {type="item", name="par-roboport-mk8", amount=1},
-            {type="item", name="armour-control-unit", amount=80},
-            {type="item", name="low-density-structure", amount=150},
-            {type="item", name="advanced-circuit", amount=160},
-            {type="fluid", name="lubricant", amount=600},
+            {type="item", name="low-density-structure", amount=400},
+            {type="item", name="electric-engine-unit", amount=400},
+            {type="item", name="armour-control-unit", amount=400},
+            {type="item", name="processing-unit", amount=400},
+            {type="item", name="battery", amount=400},
+            {type="fluid", name="lubricant", amount=400},
         },
         results = {{type="item", name="par-roboport-mk9", amount=1}}
     },
@@ -139,9 +151,12 @@ local recipes = {
         energy_required = 100,
         ingredients = {
             {type="item", name="par-roboport-mk9", amount=1},
-            {type="item", name="low-density-structure", amount=195},
-            {type="item", name="armour-control-unit", amount=165},
-            {type="item", name="processing-unit", amount=170},
+            {type="item", name="low-density-structure", amount=500},
+            {type="item", name="electric-engine-unit", amount=500},
+            {type="item", name="armour-control-unit", amount=500},
+            {type="item", name="processing-unit", amount=500},
+            {type="item", name="battery", amount=500},
+            {type="fluid", name="lubricant", amount=500},
         },
         results = {{type="item", name="par-roboport-mk10", amount=1}}
     },
@@ -149,7 +164,7 @@ local recipes = {
 data:extend(recipes)
 
 if mods["space-age"]then
-    local recipes = {
+    data:extend({
         {
             type = "recipe",
             name = "par-roboport-mk1",
@@ -344,6 +359,5 @@ if mods["space-age"]then
                 {type="fluid", name="fluoroketone-hot", amount=200},
             }
         },
-    }
-    data:extend(recipes)
+    })
 end

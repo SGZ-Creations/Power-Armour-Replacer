@@ -23,12 +23,14 @@ Date: 10.05.26
     - Made it possible to use my mod along with TIMSABA.
   Changes:
     - Tips & ticks PA&R Base Info.
+    - Recipe changes for non space age players.
+    - General "armour-control-unit" pre-requisites added to all tech that do not get it by example having armour 5 as pre-requisites. 
     - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
     - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
     - Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
     - [space-age] Tweaked recipes using lithium in Roboport Mk6, Solar Mk7-8.
     - Tips & Tricks Volunteer Graphics request.
-    - [248K] support deleted (depricated/not updated). 
+    - [248K] support deleted (deprecated/not updated). 
     - [K2SO, K2] Re added Automation, logistics, Military, Chemical, Tech cards back to missing location.  
     - [K2SO, K2] Advanced tech card from MK5 to MK10 tech.
     - [K2SO, K2] Matter tech card & Singularity tech card From MK7 to MK10.
@@ -36,15 +38,15 @@ Date: 10.05.26
     - Default roboport buffer changed. Tier 1 starts at 8MJ. Tier 10 is now at 4096MJ if setting are put to default.
     - [Bobs] Equipment mod, Filters are Re hidden & disabled for armours. And added the Modular items to this list. Sorry if you liked it, but due to settings feature in 0.4 i don't se why keeping it is necessary.
   Bugfixes:
-    - [Bobs] Equiment tier 3 filter crash was solved #5.
-    - [Bobs] Equiment tier 6 was removed in corespodding to the 2.1 update on bobs.
+    - [Bobs] Equipment tier 3 filter crash was solved #5.
+    - [Bobs] Equipment tier 6 was removed in corresponding to the 2.1 update on bobs.
     - [Bobs] Removed items in recipe deleted by bobs 2.1 patch.
-    - [Bobs] fix prefix naming for items in recipes being renamedd in patch 2.1.
+    - [Bobs] fix prefix naming for items in recipes being renamed in patch 2.1.
     - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
     - Tips & tricks using K2SO should now trigger.
     - Spidertron Not unlocking playing with K2 & K2SO.
     - Krastorio2-spaced-out, Krastorio2 Crafting category fix in advanced assembler.
-    - Quick fix for Py Crashes. bob prefix had been added when updating to 2.0 for Bobs.
+    - Quick fix for PY Crashes. bob prefix had been added when updating to 2.0 for Bobs.
     - Crashes with TIMSABA making it unable to load.
   Info:
     - K2SO Recipes overhaul: ACU, Armour, Battery, ExoSkeleton, Fission, NightVision, Immunity, half solar. (To be deleted when done)
