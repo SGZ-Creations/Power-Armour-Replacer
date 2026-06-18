@@ -5,52 +5,52 @@ Date: 10.05.26
     - K2 Recipes: Lasers, Roboport, Shields, ShockDefence, Solar.
     - Muluna items in recipes?
   Features:
-    - Recipe for K2SO Completed (Not in Test version)
-    - Tech for K2SO Completed. 
-    - K2SO Tech overhaul.
-    - 10x9 = 90 New Setting for Shock Defence.
-    - Added light armour Tech to progression on PAR.
-    - Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system.
+    - [Muluna] Recipe item integration?
+    - [K2SO][PAR] Recipes Completed (Not in Test version)
+    - [K2SO][PAR] Tech Overhaul Completed. 
+    - [PAR] 10x9 = 90 New Setting for Shock Defence.
+    - [PAR] Added light armour Tech to progression on PAR.
+    - [PAR][space-age] Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system.
   Modding:
-    - Foliax Filters.
-    - Foliax Crash with Foliax version 2.0.5.
-    - Foliax: items added to hidden & disabled.
-    - Tips & Tricks Description for Foliax.
-    - Made equipment from TeleportationEquipment allow for crafting in EM Plant.
-    - Made equipment from Power Armor MK3 allow for crafting in EM Plant.
-    - Added Tips & Tricks 4 Spidertron Tiers Community as it was Confirmed Working.
-    - Added K2SO & K2 Grid Category options.
-    - Made it possible to use my mod along with TIMSABA.
+    - [Foliax] Filters.
+    - [Foliax] Crash with Foliax version 2.0.5.
+    - [Foliax] items added to hidden & disabled.
+    - [PAR] Tips & Tricks Description for Foliax.
+    - [TeleportationEquipment] Made equipment crafting allowed in EM Plant.
+    - [Rampant Arsenal Fork] Made equipment crafting allowed in the EM Plant.
+    - [Spidertron Tiers Community] Added Tips & Tricks as it was Confirmed Working.
+    - [K2SO, K2] Added Grid Category options.
+    - [TIMSABA] Made it possible to use my mod.
   Changes:
-    - Tips & ticks PA&R Base Info.
-    - Recipe changes for non space age players.
-    - General "armour-control-unit" pre-requisites added to all tech that do not get it by example having armour 5 as pre-requisites. 
-    - Spider Extended: Removed recipe update for Spider Builder (GhostWaver).
-    - Spider Extended: Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
-    - Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
+    - [Spider Extended] Removed recipe update for Spider Builder (GhostWaver).
+    - [Spider Extended] Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
+    - [PAR] General "armour-control-unit" pre-requisites added to all tech that do not get it by example having armour 5 as pre-requisites. 
+    - [PAR] Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
+    - [PAR] Tips & Tricks Volunteer Graphics request.
+    - [PAR] Tips & ticks PA&R Base Info.
+    - [PAR] Default roboport recharge speed changed. Now tier 1 starts at 500MW tier 10 = 5GW if setting are put to default.
+    - [PAR] Default roboport buffer changed. Tier 1 starts at 8MJ. Tier 10 is now at 4096MJ if setting are put to default.
+    - [Base][PAR] Recipe changes for non space age players.
     - [space-age] Tweaked recipes using lithium in Roboport Mk6, Solar Mk7-8.
-    - Tips & Tricks Volunteer Graphics request.
+    - [space-age] Shield recipes changes where made.
     - [248K] support deleted (deprecated/not updated). 
     - [K2SO, K2] Re added Automation, logistics, Military, Chemical, Tech cards back to missing location.  
     - [K2SO, K2] Advanced tech card from MK5 to MK10 tech.
     - [K2SO, K2] Matter tech card & Singularity tech card From MK7 to MK10.
-    - Default roboport recharge speed changed. Now tier 1 starts at 500MW tier 10 = 5GW if setting are put to default.
-    - Default roboport buffer changed. Tier 1 starts at 8MJ. Tier 10 is now at 4096MJ if setting are put to default.
     - [Bobs] Equipment mod, Filters are Re hidden & disabled for armours. And added the Modular items to this list. Sorry if you liked it, but due to settings feature in 0.4 i don't se why keeping it is necessary.
   Bugfixes:
     - [Bobs] Equipment tier 3 filter crash was solved #5.
     - [Bobs] Equipment tier 6 was removed in corresponding to the 2.1 update on bobs.
     - [Bobs] Removed items in recipe deleted by bobs 2.1 patch.
     - [Bobs] fix prefix naming for items in recipes being renamed in patch 2.1.
-    - Fixed Shortcut Not unlocking when playing with PAR. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
-    - Tips & tricks using K2SO should now trigger.
-    - Spidertron Not unlocking playing with K2 & K2SO.
-    - Krastorio2-spaced-out, Krastorio2 Crafting category fix in advanced assembler.
-    - Quick fix for PY Crashes. bob prefix had been added when updating to 2.0 for Bobs.
-    - Crashes with TIMSABA making it unable to load.
+    - [Bobs] Quick fix for PY Crashes. bob prefix had been added when updating to 2.0 for Bobs.
+    - [PAR] Fixed Shortcut Not unlocking. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
+    - [K2SO] Tips & tricks should now trigger.
+    - [K2SO, K2] Spidertron Not unlocking.
+    - [K2SO, K2] Crafting category fix in advanced assembler.
+    - [TIMSABA] Solved crashes that was making it unable to load.
   Info:
-    - K2SO Recipes overhaul: ACU, Armour, Battery, ExoSkeleton, Fission, NightVision, Immunity, half solar. (To be deleted when done)
-    - Fission/Fusion graphics will eventually be flipped but not until i have more than placeholders. thanks for understanding.
+    - [PAR] Fission/Fusion graphics will eventually be flipped but not until i have more than placeholders. thanks for understanding.
   Credit:
     - Thanks @VAIR for Bug report #5.
     - Thanks @DarkMamaba for telling about shortcuts not unlocking. 
