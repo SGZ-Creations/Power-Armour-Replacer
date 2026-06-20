@@ -46,6 +46,12 @@ if SS ["HideRecipesFromPlayer"].value == false then
 	Hide["par-solar-panel-mk9"].hide_from_player_crafting = true
 	Hide["par-solar-panel-mk10"].hide_from_player_crafting = true
 
+	Hide["par-shock-defense-mk6"].hide_from_player_crafting = true
+	Hide["par-shock-defense-mk7"].hide_from_player_crafting = true
+	Hide["par-shock-defense-mk8"].hide_from_player_crafting = true
+	Hide["par-shock-defense-mk9"].hide_from_player_crafting = true
+	Hide["par-shock-defense-mk10"].hide_from_player_crafting = true
+
 	Hide["par-exoskeleton-mk3"].hide_from_player_crafting = true
 	Hide["par-exoskeleton-mk4"].hide_from_player_crafting = true
 	Hide["par-exoskeleton-mk5"].hide_from_player_crafting = true
