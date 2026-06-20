@@ -93,9 +93,15 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "Par_Intermediates",
+        name = "Par_Light_Heavy",
         group = "replacer_armor",
         order = "AAO",
+    },
+    {
+        type = "item-subgroup",
+        name = "Par_Intermediates",
+        group = "replacer_armor",
+        order = "AAP",
     },
     {
         type = "item-subgroup",

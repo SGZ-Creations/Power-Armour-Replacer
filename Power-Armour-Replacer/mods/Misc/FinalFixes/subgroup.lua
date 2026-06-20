@@ -3,14 +3,13 @@ local Item = data.raw["item"]
 local Recipe = data.raw["recipe"]
 
 if mods["pypostprocessing"] then
-	Recipe["light-armor"].subgroup = "PAR_compatibility"
+	Recipe["light-armor"].subgroup = "Par_Light_Heavy"
 end
-Armour["light-armor"].subgroup = "PAR_compatibility"
+Armour["light-armor"].subgroup = "Par_Light_Heavy"
 Armour["light-armor"].order = "AA"
-Armour["heavy-armor"].subgroup = "PAR_compatibility"
+Armour["heavy-armor"].subgroup = "Par_Light_Heavy"
 Armour["heavy-armor"].order = "AC"
-Item["discharge-defense-equipment"].subgroup = "PAR_compatibility"
-Item["discharge-defense-equipment"].order = "FA"
+
 
 
 if mods["space-age"] then
@@ -24,15 +23,13 @@ if (mods["mech-armor"] or mods["space-age"]) then
 end
 
 if mods["Power Armor MK3"] and mods["pypostprocessing"]then
-	Recipe["pamk3-lvest"].subgroup = "PAR_compatibility"
+	Recipe["pamk3-lvest"].subgroup = "Par_Light_Heavy"
 end
 if mods["Power Armor MK3"] then
-	Armour["pamk3-lvest"].subgroup = "PAR_compatibility"
+	Armour["pamk3-lvest"].subgroup = "Par_Light_Heavy"
 	Armour["pamk3-lvest"].order = "AB"
-	Armour["pamk3-hvest"].subgroup = "PAR_compatibility"
+	Armour["pamk3-hvest"].subgroup = "Par_Light_Heavy"
 	Armour["pamk3-hvest"].order = "AD"
-	Item["pamk3-pdd"].subgroup = "PAR_compatibility"
-	Item["pamk3-pdd"].order = "FB"
 end
 
 if mods["Nanobots3"] then
