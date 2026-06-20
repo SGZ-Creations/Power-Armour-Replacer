@@ -3,7 +3,6 @@ Version: 0.5.0
 Date: 10.05.26
   ToDo:
     - K2 Recipes: Lasers, Roboport, Shields, ShockDefence.
-    - Muluna items in recipes?
   Features:
     - [Muluna] Recipe item integration?
     - [K2SO][PAR] Recipes Completed (Not in Test version)
