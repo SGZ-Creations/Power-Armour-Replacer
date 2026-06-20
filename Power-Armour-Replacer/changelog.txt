@@ -4,7 +4,6 @@ Date: 10.05.26
   ToDo:
     - K2 Recipes: Lasers, Roboport, Shields, ShockDefence.
   Features:
-    - [Muluna] Recipe item integration?
     - [K2SO][PAR] Recipes Completed (Not in Test version)
     - [K2SO][PAR] Tech Overhaul Completed. 
     - [PAR] 10x9 = 90 New Setting for Shock Defence.
@@ -24,7 +23,8 @@ Date: 10.05.26
   Changes:
     - [Spider Extended] Removed recipe update for Spider Builder (GhostWaver).
     - [Spider Extended] Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
-    - [PAR] General "armour-control-unit" pre-requisites added to all tech that do not get it by example having armour 5 as pre-requisites. 
+    - [PAR] General "armour-control-unit" pre-requisites added to all tech that do not get it by example having armour 5 as pre-requisites.
+    - [PAR] Moved Fission, Solar & Battery Equipment to unlock after light armour.
     - [PAR] Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
     - [PAR] Tips & Tricks Volunteer Graphics request.
     - [PAR] Tips & ticks PA&R Base Info.
