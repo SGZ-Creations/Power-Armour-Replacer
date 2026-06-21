@@ -20,6 +20,7 @@ Date: 10.05.26
     - [K2SO, K2] Added Grid Category options.
     - [TIMSABA] Made it possible to use my mod.
     - [angelbob-spaceage-rebalance] Made it possible to use my mod.
+    - [more-parameters] added as dependency. Since the vanilla 10 is not enough when recipes in my mod can reach 30+ items.
   Changes:
     - [Spider Extended] Removed recipe update for Spider Builder (GhostWaver).
     - [Spider Extended] Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
