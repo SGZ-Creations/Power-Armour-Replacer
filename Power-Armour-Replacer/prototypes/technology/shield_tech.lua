@@ -11,7 +11,7 @@ data:extend({
             },
         },
         prerequisites = {"par-fission-reactor-tech-1"},
-        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 5},
+        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 2},
         order = "Shield01"
     },
     {

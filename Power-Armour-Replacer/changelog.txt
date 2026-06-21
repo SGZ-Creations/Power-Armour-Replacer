@@ -28,12 +28,13 @@ Date: 10.05.26
     - [PAR] Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
     - [PAR] Tips & Tricks Volunteer Graphics request.
     - [PAR] Tips & ticks PA&R Base Info.
+    - [PAR] Reduced the fission reactor needed to unlock tech from 5 --> 2.
     - [PAR] Made New Subgroup for Light & Heavy armours instead of leaving them in the compatibility Subgroup.
     - [PAR] Default roboport recharge speed changed. Now tier 1 starts at 500MW tier 10 = 5GW if setting are put to default.
     - [PAR] Default roboport buffer changed. Tier 1 starts at 8MJ. Tier 10 is now at 4096MJ if setting are put to default.
-    - [Base][PAR] Recipe changes for non space age players.
+    - [Base][PAR] Recipe changes for non space age players. Please check your assemblers of Armours & Equipment.
     - [space-age] Tweaked recipes using lithium in Roboport Mk6, Solar Mk7-8.
-    - [space-age] Shield recipes changes where made.
+    - [space-age] Some Recipes changes where made please check your assemblers of Armours & Equipment.
     - [248K] support deleted (deprecated/not updated). 
     - [K2SO, K2] Re added Automation, logistics, Military, Chemical, Tech cards back to missing location.  
     - [K2SO, K2] Advanced tech card from MK5 to MK10 tech.

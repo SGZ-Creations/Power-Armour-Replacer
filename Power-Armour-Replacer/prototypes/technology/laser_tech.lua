@@ -6,7 +6,7 @@ data:extend({
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 1),
         effects = {{  type = "unlock-recipe", recipe = "par-laser-mk1"}},
         prerequisites = {"par-fission-reactor-tech-1" },
-        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 5},
+        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 2},
         order = "Laser01"
     },
     {
