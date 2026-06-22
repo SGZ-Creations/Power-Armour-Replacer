@@ -237,7 +237,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_01",
         setting_type = "startup",
-        default_value = 4,
+        default_value = 10,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -245,7 +245,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_02",
         setting_type = "startup",
-        default_value = 6,
+        default_value = 15,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -253,7 +253,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_03",
         setting_type = "startup",
-        default_value = 8,
+        default_value = 20,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -261,7 +261,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_04",
         setting_type = "startup",
-        default_value = 10,
+        default_value = 25,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -269,7 +269,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_05",
         setting_type = "startup",
-        default_value = 15,
+        default_value = 30,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -277,7 +277,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_06",
         setting_type = "startup",
-        default_value = 20,
+        default_value = 60,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -285,7 +285,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_07",
         setting_type = "startup",
-        default_value = 40,
+        default_value = 120,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -293,7 +293,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_08",
         setting_type = "startup",
-        default_value = 60,
+        default_value = 240,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -301,7 +301,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_09",
         setting_type = "startup",
-        default_value = 80,
+        default_value = 480,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
@@ -309,7 +309,7 @@ data:extend({
         type = "int-setting",
         name = "ShockDamage_10",
         setting_type = "startup",
-        default_value = 100,
+        default_value = 960,
         minimum_value = 1,
         order = "ShockDefence-04"
     },
