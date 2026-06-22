@@ -112,8 +112,8 @@ PAR.ingredient_prereq(DRR["par-battery-mk3"], {
         replacements = {
             ["copper-cable"] = {"kr-automation-core", 75},
 			["steel-plate"] = {"kr-steel-beam", 75},
+            ["stone-brick"] = {"kr-glass", 75},
             {"kr-rare-metals", 75},
-            {"kr-glass", 75},
         }
     },
     {
@@ -121,8 +121,8 @@ PAR.ingredient_prereq(DRR["par-battery-mk3"], {
         replacements = {
             ["copper-cable"] = {"kr-automation-core", 75},
 			["steel-plate"] = {"kr-steel-beam", 75},
+            ["stone-brick"] = {"kr-glass", 75},
             {"kr-rare-metals", 75},
-            {"kr-glass", 75},
         }
     },
 })
@@ -166,8 +166,8 @@ PAR.ingredient_prereq(DRR["par-battery-mk4"], {
         replacements = {
             ["copper-cable"] = {"kr-automation-core", 100},
 			["steel-plate"] = {"kr-iron-beam", 100},
+            ["stone-brick"] = {"kr-glass", 100},
             {"kr-rare-metals", 100},
-            {"kr-glass", 100},
         }
     },
     {
@@ -175,8 +175,8 @@ PAR.ingredient_prereq(DRR["par-battery-mk4"], {
         replacements = {
             ["copper-cable"] = {"kr-automation-core", 100},
 			["steel-plate"] = {"kr-steel-beam", 100},
+            ["stone-brick"] = {"kr-glass", 100},
             {"kr-rare-metals", 100},
-            {"kr-glass", 100},
         }
     },
 })

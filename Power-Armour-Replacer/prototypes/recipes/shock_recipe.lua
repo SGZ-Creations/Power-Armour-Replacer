@@ -206,6 +206,7 @@ if mods["space-age"] then
                 {type="item", name="par-shock-defense-mk1", amount=1},
                 {type="item", name="electronic-circuit", amount=50},
                 {type="item", name="copper-plate", amount=50},
+                {type="item", name="steel-plate", amount=50},
                 {type="item", name="stone-brick", amount=50},
                 {type="item", name="wood", amount=50},
             },
