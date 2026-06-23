@@ -7,7 +7,7 @@
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
 	[
-		"base = 2.0.77",
+		"base <= 2.1.0",
 		"~ Configurable-Armour-Suits >= 1.5.16",
 		"more-parameters >= 1.0.1",
 		"? PARs-SpaceAge-Extension >= 0.0.1",
