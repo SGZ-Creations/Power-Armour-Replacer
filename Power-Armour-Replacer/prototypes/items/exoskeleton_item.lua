@@ -28,7 +28,6 @@ for tier, exoskeleton in pairs(exoskeletons) do
         pick_sound = item_sounds.exoskeleton_inventory_pickup,
         drop_sound = item_sounds.exoskeleton_inventory_move,
         stack_size = 20,
-        auto_recycle = false,
         weight = exoskeleton.weightvalue,
         order = exoskeleton.order,
         subgroup = "PAR_Exoskeleton",

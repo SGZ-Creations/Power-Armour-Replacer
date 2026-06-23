@@ -25,7 +25,6 @@ for tier, immunity in pairs(Immunities) do
         pick_sound = item_sounds.mechanical_inventory_pickup,
         drop_sound = item_sounds.mechanical_inventory_move,
         stack_size = 5,
-        auto_recycle = false,
         weight = immunity.weightvalue,
         order = immunity.order,
         subgroup = "PAR_BeltImmunity",

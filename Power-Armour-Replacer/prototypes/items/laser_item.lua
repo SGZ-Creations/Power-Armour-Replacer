@@ -33,7 +33,6 @@ for tier, laser in pairs(lasers) do
         pick_sound = item_sounds.turret_inventory_pickup,
         drop_sound = item_sounds.turret_inventory_move,
         stack_size = 20,
-        auto_recycle = false,
         weight = laser.weightvalue,
         order = laser.order,
         subgroup = "PAR_Laser",
