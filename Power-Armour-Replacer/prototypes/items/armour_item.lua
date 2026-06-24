@@ -117,6 +117,7 @@ for tier, equipment in pairs(power_armour) do
         pick_sound = item_sounds.armor_large_inventory_pickup,
         drop_sound = item_sounds.armor_large_inventory_move,
         stack_size = 1,
+        --flags = {"not-stackable"},
         weight = equipment.weightvalue,
         equipment_grid = equipment_grid_name, -- disable to removes quality. now make a setting or function that tells if setting =  grids H-W 0 then remove grid entirely. 
         inventory_size_bonus = equipment.inventory_bonus,
