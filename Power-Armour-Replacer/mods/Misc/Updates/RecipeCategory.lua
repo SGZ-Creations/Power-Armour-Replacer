@@ -7,3 +7,6 @@ end
 if mods["Power Armor MK3"]then
 	Recipe["pamk3-pdd"].category = "electronics-or-handcrafting"
 end
+if mods["incendiary-arsenal"]then
+	Recipe["mech-armor-fireproof"].category = "electronics-or-handcrafting"
+end

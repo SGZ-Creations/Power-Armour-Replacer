@@ -91,6 +91,52 @@ if mods["space-age"] then
         },
     }
 end
+
+--2nd tier of mech armour progression optional route.
+if mods["space-age"]and mods["incendiary-arsenal"] then
+    Armour["mech-armor-fireproof"].resistances = {
+        {
+            type = "physical",
+            decrease = 950,
+            percent = 90,
+        },
+        {
+            type = "acid",
+            decrease = 200,
+            percent = 5,
+        },
+        {
+            type = "explosion",
+            decrease = 200,
+            percent = 65,
+        },
+        {
+            type = "fire",
+            decrease = 0,
+            percent = 500,
+        },
+        {
+            type = "electric",
+            decrease = 0,
+            percent = 250,
+        },
+        {
+            type = "impact",
+            decrease = 0,
+            percent = 100,
+        },
+        {
+            type = "laser",
+            decrease = 0,
+            percent = 100,
+        },
+        {
+            type = "poison",
+            decrease = 0,
+            percent = -200,
+        },
+    }
+end
 --3rd tier of mech armour progression
 if mods["RampantArsenalFork"] and mods["space-age"] then
     Armour["combat-mech-armor-rampant-arsenal"].resistances = {

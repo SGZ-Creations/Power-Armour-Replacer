@@ -285,3 +285,14 @@ if mods["metal-and-stars"] then
     table.insert(Recipe["mech-armor"].ingredients, {type="item", name="prototype-mech-armor", amount= 1})
     table.insert(Recipe["prototype-mech-armor"].ingredients, {type="item", name="par-armour-mk3", amount= 1})
 end
+
+if mods["metal-and-stars"]and mods["incendiary-arsenal"] then
+    Remove("mech-armor-fireproof", "mech-armor")
+    table.insert(Recipe["mech-armor-fireproof"].ingredients, {type="item", name="prototype-mech-armor", amount= 1})
+    table.insert(Recipe["mech-armor-fireproof"].ingredients, {type="item", name="processing-unit", amount= 100})
+    table.insert(Recipe["mech-armor-fireproof"].ingredients, {type="item", name="par-armour-mk5", amount= 1})
+elseif mods["incendiary-arsenal"] and mods["space-age"] and not mods["metal-and-stars"] then
+    Remove("mech-armor-fireproof", "mech-armor")
+    table.insert(Recipe["mech-armor-fireproof"].ingredients, {type="item", name="par-armour-mk5", amount= 1})
+    table.insert(Recipe["mech-armor-fireproof"].ingredients, {type="item", name="processing-unit", amount= 100})
+end

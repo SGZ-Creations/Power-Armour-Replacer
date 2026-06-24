@@ -77,6 +77,18 @@ if not mods["RampantArsenalFork"]then
     end
 end
 
+if mods["nightvision_progression-fork"]then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "ProgresiveNVGsFork_filters",
+            setting_type = "startup",
+            default_value = true,
+            order = "ZMab-9"
+        },
+    })
+end
+
 if mods["foliax"]then
     data:extend({
         {
@@ -84,7 +96,7 @@ if mods["foliax"]then
             name = "Foliax-filters",
             setting_type = "startup",
             default_value = true,
-            order = "ZMab-9"
+            order = "ZMac-9"
         },
     })
 end

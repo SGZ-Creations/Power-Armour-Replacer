@@ -358,8 +358,29 @@ if mods["bobequipment"] then
     end
 end
 
+if mods["nightvision_progression-fork"] then
+--Enabled
+    DRT["night-vision-mk2-equipment"].enabled = false
+    DRT["night-vision-mk3-equipment"].enabled = false
+
+    DRR["night-vision-mk2-equipment"].enabled = false
+    DRR["night-vision-mk3-equipment"].enabled = false
+
+--Hidden
+    DRT["night-vision-mk2-equipment"].hidden = true
+    DRT["night-vision-mk3-equipment"].hidden = true
+
+    DRR["night-vision-mk2-equipment"].hidden = true
+    DRR["night-vision-mk3-equipment"].hidden = true
+
+    if SS["ProgresiveNVGsFork_filters"].value then
+        Hide_Item("night-vision-mk2-equipment")
+        Hide_Item("night-vision-mk3-equipment")
+    end
+end
+
 if mods["foliax"]then
-    --Enabled
+--Enabled
     DRT["foliax-armor"].enabled = false
     DRT["foliax-night-vision-equipment"].enabled = false
     DRT["foliax-battery-equipment-one"].enabled = false
