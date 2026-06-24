@@ -1,6 +1,52 @@
 ---@class data.ArmorPrototype
 local Armour = data.raw["armor"]
 
+--1st tier of armour progression
+if mods["metal-and-stars"] then
+    Armour["prototype-mech-armor"].resistances = {
+        {
+            type = "physical",
+            decrease = 400,
+            percent = 50,
+        },
+        {
+            type = "acid",
+            decrease = 100,
+            percent = 0,
+        },
+        {
+            type = "explosion",
+            decrease = 1000,
+            percent = 45,
+        },
+        {
+            type = "fire",
+            decrease = 0,
+            percent = 100,
+        },
+        {
+            type = "electric",
+            decrease = 0,
+            percent = 150,
+        },
+        {
+            type = "impact",
+            decrease = 0,
+            percent = 85,
+        },
+        {
+            type = "laser",
+            decrease = 0,
+            percent = 85,
+        },
+        {
+            type = "poison",
+            decrease = 25,
+            percent = -300,
+        },
+    }
+end
+--2nd tier of mech armour progression
 if mods["space-age"] then
     Armour["mech-armor"].resistances = {
         {
@@ -10,8 +56,8 @@ if mods["space-age"] then
         },
         {
             type = "acid",
-            decrease = 90,
-            percent = 8,
+            decrease = 200,
+            percent = 5,
         },
         {
             type = "explosion",
@@ -45,6 +91,7 @@ if mods["space-age"] then
         },
     }
 end
+--3rd tier of mech armour progression
 if mods["RampantArsenalFork"] and mods["space-age"] then
     Armour["combat-mech-armor-rampant-arsenal"].resistances = {
         {
@@ -54,13 +101,13 @@ if mods["RampantArsenalFork"] and mods["space-age"] then
         },
         {
             type = "acid",
-            decrease = 100,
+            decrease = 300,
             percent = 10.
         },
         {
             type = "explosion",
             decrease = 1500,
-            percent = 75,
+            percent = 85,
         },
         {
             type = "fire",
