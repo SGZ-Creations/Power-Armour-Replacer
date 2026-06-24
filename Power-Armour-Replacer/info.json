@@ -7,12 +7,14 @@
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
 	"dependencies":
 	[
-		"base <= 2.0.16",
+		"base >= 2.0.16",
 		"~ Configurable-Armour-Suits >= 1.5.16",
 		"more-parameters >= 1.0.1",
 		"? PARs-SpaceAge-Extension >= 0.0.1",
 		"? Alt_Chemical_Processing >= 0.1.20",
 		"? space-age",
+		"? quality",
+		"? recycler",
 		"? angelssmelting >= 1.1.0",
 		"? angelsrefining >= 1.1.0",
 		"? angelspetrochem >= 1.1.0",

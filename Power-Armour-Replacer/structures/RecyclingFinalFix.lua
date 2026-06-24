@@ -1,6 +1,6 @@
 local PAR = require("mods.util")
 
-if mods["quality"] then
+if (mods["quality"] or mods["recycler"]) then
     PAR.update_rec_recipe_results({
     --Armour
         "par-armour-mk1",
