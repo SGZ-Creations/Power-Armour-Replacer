@@ -26,12 +26,12 @@ if mods["space-age"] then
 			energy_required = 10,
 			enabled = false,
 			ingredients = {
-				{type="item", name="quantum-processor", amount=2},
-				{type="item", name="tungsten-plate", amount=8},
-				{type="item", name="superconductor", amount=8},
-				{type="item", name="carbon-fiber", amount=8},
+				{type="item", name="processing-unit", amount=20},
+				{type="item", name="tungsten-plate", amount=10},
+				{type="item", name="superconductor", amount=10},
+				{type="item", name="carbon-fiber", amount=10},
 			},
-			results = {{type="item", name="armour-control-unit", amount=16}}
+			results = {{type="item", name="armour-control-unit", amount=32}}
 		},
 	})
 end

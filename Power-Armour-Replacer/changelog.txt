@@ -10,8 +10,10 @@ Date: 10.05.26
     - [K2SO][PAR] Recipes Completed (Not in Test version)
     - [K2SO][PAR] Tech Overhaul Completed. 
     - [PAR] Added light armour Tech to progression on PAR.
+    - [PAR] ACU Tech & Recipe change.
     - [PAR][space-age] Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system.
     - [incendiary-arsenal] Added FireProof Tech & Recipe progression to PAR.
+
   Modding:
     - [Foliax] Filters.
     - [Foliax] Crash with Foliax version 2.0.5.
@@ -926,7 +928,7 @@ Date: 03.09.2023
     - Migrations change "sgz-a??-equipment-grid", --> "par-a??-equipment-grid".
   Bugfixes:
     - Recipe converter.
-    - Prerqesites for Bob's RTG to mk7 reactors.
+    - Prerequisites for Bob's RTG to mk7 reactors.
     - Typos.
   Info:
     - Files Read order.
