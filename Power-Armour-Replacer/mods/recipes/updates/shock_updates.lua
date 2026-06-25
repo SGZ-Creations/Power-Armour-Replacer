@@ -193,12 +193,33 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk4"], {
             {"solid-white-phosphorus", 100},
         }
     },
+    --SE
+    {
+        dependencies = {"space-exploration"},
+        replacements = {
+            ["advanced-circuit"] = {"motor", 300},
+            {"low-density-structure", 300},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["iron-plate"] = {"kr-iron-beam", 30},
-            ["battery"] = {"kr-electronic-components", 50},
+            ["copper-plate"] = {"kr-automation-core", 50},
+            ["steel-plate"] = {"kr-steel-beam", 50},
+            ["stone-brick"] = {"kr-glass", 50},
+            {"kr-iron-beam", 50},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 300},
+			["steel-plate"] = {"kr-imersium-beam", 300},
+            {"kr-automation-core", 300},
+            {"kr-rare-metals", 300},
+            {"kr-silicon", 300},
         }
     },
 })

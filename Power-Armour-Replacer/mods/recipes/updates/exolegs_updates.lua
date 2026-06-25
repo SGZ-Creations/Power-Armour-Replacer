@@ -199,15 +199,20 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
             {"angels-plate-chrome", 300},
         }
     },
-    --SEK2
-	{
-        dependencies = {"Krastorio2", "space-exploration"},
+    --SE
+    {
+        dependencies = {"space-exploration"},
         replacements = {
             ["processing-unit"] = {"se-lattice-pressure-vessel", 100},
-			["battery"] = {"kr-lithium-sulfur-battery", 350},
             ["plastic-bar"] = {"se-dynamic-emitter", 400},
+        }
+    },
+    --K2
+	{
+        dependencies = {"Krastorio2", },
+        replacements = {
+			["battery"] = {"kr-energy-control-unit", 400},
             ["steel-plate"] = {"kr-imersium-beam", 400},
-            ["low-density-structure"] = {"zero"},
             {"electric-motor", 400},
             {"kr-matter-cube", 400},
         }
