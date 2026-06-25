@@ -4,6 +4,7 @@ local Recipe = data.raw["recipe"]
 
 if mods["pypostprocessing"] then
 	Recipe["light-armor"].subgroup = "Par_Light_Heavy"
+	Recipe["heavy-armor"].subgroup = "Par_Light_Heavy"
 end
 Armour["light-armor"].subgroup = "Par_Light_Heavy"
 Armour["light-armor"].order = "AA"
@@ -29,6 +30,7 @@ end
 
 if mods["Power Armor MK3"] and mods["pypostprocessing"]then
 	Recipe["pamk3-lvest"].subgroup = "Par_Light_Heavy"
+	Recipe["pamk3-hvest"].subgroup = "Par_Light_Heavy"
 end
 if mods["Power Armor MK3"] then
 	Armour["pamk3-lvest"].subgroup = "Par_Light_Heavy"

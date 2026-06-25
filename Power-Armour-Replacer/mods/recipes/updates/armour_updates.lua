@@ -62,15 +62,20 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"pyalienlife",},
         replacements = {
-            ["wood"] = {"latex", 30},
+            ["wood"] = {"plastic-bar", 25},
         }
     },
     {
         dependencies = {"pyrawores",},
         replacements = {
-            ["electronic-circuit"] = {"nexelit-plate", 25},
-            ["stone-brick"] = {"solder", 30},
-            ["steel-plate"] = {"titanium-plate", 20},
+            ["steel-plate"] = {"aluminium-plate", 25},
+            ["stone-brick"] = {"solder", 25},
+        }
+    },
+    {
+        dependencies = {"pyhightech",},
+        replacements = {
+            ["electronic-circuit"] = {"graphite", 25},
         }
     },
     --EI

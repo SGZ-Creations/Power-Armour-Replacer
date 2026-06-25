@@ -31,6 +31,26 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk1"], {
             ["bob-insulated-cable"] = {"bob-lead-plate", 100},
         }
     },
+    --Pyanodon
+    {
+        dependencies = {"pyalienlife",},
+        replacements = {
+            ["wood"] = {"plastic-bar", 25},
+        }
+    },
+    {
+        dependencies = {"pyrawores",},
+        replacements = {
+            ["stone-brick"] = {"solder", 25},
+            ["steel-plate"] = {"aluminium-plate", 25},
+        }
+    },
+    {
+        dependencies = {"pyhightech",},
+        replacements = {
+            ["electronic-circuit"] = {"graphite", 25},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},
