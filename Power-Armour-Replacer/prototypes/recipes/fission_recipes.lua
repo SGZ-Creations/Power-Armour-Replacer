@@ -1,3 +1,5 @@
+local SS = settings.startup
+
 data:extend({
     {
         type = "recipe",
@@ -21,7 +23,7 @@ data:extend({
         enabled = false,
         energy_required = 45,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk1", amount=1},
+            {type="item", name="par-fission-reactor-mk1", amount= SS["EquipmentMulti"].value},
             {type="item", name="electronic-circuit", amount=50},
             {type="item", name="copper-plate", amount=50},
             {type="item", name="steel-plate", amount=50},
@@ -37,7 +39,7 @@ data:extend({
         enabled = false,
         energy_required = 50,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk2", amount=1},
+            {type="item", name="par-fission-reactor-mk2", amount= SS["EquipmentMulti"].value},
             {type="item", name="advanced-circuit", amount=75},
             {type="item", name="plastic-bar", amount=75},
             {type="item", name="engine-unit", amount=75},
@@ -54,7 +56,7 @@ data:extend({
         enabled = false,
         energy_required = 55,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk3", amount=1},
+            {type="item", name="par-fission-reactor-mk3", amount= SS["EquipmentMulti"].value},
             {type="item", name="advanced-circuit", amount=100},
             {type="item", name="plastic-bar", amount=100},
             {type="item", name="engine-unit", amount=100},
@@ -69,7 +71,7 @@ data:extend({
         enabled = false,
         energy_required = 60,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk4", amount=1},
+            {type="item", name="par-fission-reactor-mk4", amount= SS["EquipmentMulti"].value},
             {type="item", name="electric-engine-unit", amount=125},
             {type="item", name="armour-control-unit", amount=125},
             {type="item", name="advanced-circuit", amount=125},
@@ -85,7 +87,7 @@ data:extend({
         enabled = false,
         energy_required = 65,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk5", amount=1},
+            {type="item", name="par-fission-reactor-mk5", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=150},
             {type="item", name="plastic-bar", amount=150},
             {type="item", name="processing-unit", amount=150},
@@ -102,7 +104,7 @@ data:extend({
         enabled = false,
         energy_required = 70,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk6", amount=1},
+            {type="item", name="par-fission-reactor-mk6", amount= SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=200},
             {type="item", name="electric-engine-unit", amount=200},
             {type="item", name="armour-control-unit", amount=200},
@@ -118,7 +120,7 @@ data:extend({
         enabled = false,
         energy_required = 75,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk7", amount=1},
+            {type="item", name="par-fission-reactor-mk7", amount= SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=300},
             {type="item", name="armour-control-unit", amount=300},
             {type="item", name="processing-unit", amount=300},
@@ -133,7 +135,7 @@ data:extend({
         enabled = false,
         energy_required = 80,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk8", amount=1},
+            {type="item", name="par-fission-reactor-mk8", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=400},
             {type="item", name="nuclear-fuel", amount=400},
             {type="item", name="processing-unit", amount=400},
@@ -150,7 +152,7 @@ data:extend({
         enabled = false,
         energy_required = 85,
         ingredients = {
-            {type="item", name="par-fission-reactor-mk9", amount=1},
+            {type="item", name="par-fission-reactor-mk9", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=500},
             {type="item", name="nuclear-fuel", amount=500},
             {type="item", name="processing-unit", amount=500},
@@ -186,7 +188,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 45,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk1", amount=1},
+                {type="item", name="par-fission-reactor-mk1", amount= SS["EquipmentMulti"].value},
                 {type="item", name="electronic-circuit", amount=50},
                 {type="item", name="copper-plate", amount=50},
                 {type="item", name="steel-plate", amount=50},
@@ -202,7 +204,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 50,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk2", amount=1},
+                {type="item", name="par-fission-reactor-mk2", amount= SS["EquipmentMulti"].value},
                 {type="item", name="advanced-circuit", amount=75},
                 {type="item", name="plastic-bar", amount=75},
                 {type="item", name="engine-unit", amount=75},
@@ -217,7 +219,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 55,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk3", amount=1},
+                {type="item", name="par-fission-reactor-mk3", amount= SS["EquipmentMulti"].value},
                 {type="item", name="advanced-circuit", amount=100},
                 {type="item", name="plastic-bar", amount=100},
                 {type="item", name="engine-unit", amount=100},
@@ -232,7 +234,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 60,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk4", amount=1},
+                {type="item", name="par-fission-reactor-mk4", amount= SS["EquipmentMulti"].value},
                 {type="item", name="electric-engine-unit", amount=125},
                 {type="item", name="armour-control-unit", amount=125},
                 {type="item", name="processing-unit", amount=125},
@@ -249,7 +251,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 65,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk5", amount=1},
+                {type="item", name="par-fission-reactor-mk5", amount= SS["EquipmentMulti"].value},
                 {type="item", name="electric-engine-unit", amount=150},
                 {type="item", name="armour-control-unit", amount=150},
                 {type="item", name="processing-unit", amount=150},
@@ -267,7 +269,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 70,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk6", amount=1},
+                {type="item", name="par-fission-reactor-mk6", amount= SS["EquipmentMulti"].value},
                 {type="item", name="electric-engine-unit", amount=200},
                 {type="item", name="armour-control-unit", amount=200},
                 {type="item", name="processing-unit", amount=200},
@@ -276,7 +278,6 @@ if mods["space-age"] then
                 {type="item", name="holmium-plate", amount=200},
                 {type="item", name="tungsten-plate", amount=200},
                 {type="item", name="lithium-plate", amount=200},
-
                 {type="fluid", name="lubricant", amount=250},
                 {type="fluid", name="electrolyte", amount=250},
             },
@@ -289,7 +290,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 75,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk7", amount=1},
+                {type="item", name="par-fission-reactor-mk7", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=300},
                 {type="item", name="armour-control-unit", amount=300},
                 {type="item", name="quantum-processor", amount=300},
@@ -300,7 +301,6 @@ if mods["space-age"] then
                 {type="item", name="lithium-plate", amount=300},
                 {type="item", name="supercapacitor", amount=300},
                 {type="item", name="carbon-fiber", amount=300},
-
                 {type="fluid", name="lubricant", amount=250},
                 {type="fluid", name="electrolyte", amount=250},
             },
@@ -314,7 +314,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 80,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk8", amount=1},
+                {type="item", name="par-fission-reactor-mk8", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=400},
                 {type="item", name="armour-control-unit", amount=400},
                 {type="item", name="quantum-processor", amount=400},
@@ -343,7 +343,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 85,
             ingredients = {
-                {type="item", name="par-fission-reactor-mk9", amount=1},
+                {type="item", name="par-fission-reactor-mk9", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=500},
                 {type="item", name="armour-control-unit", amount=500},
                 {type="item", name="quantum-processor", amount=500},

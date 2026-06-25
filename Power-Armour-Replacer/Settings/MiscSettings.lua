@@ -29,6 +29,14 @@ data:extend({
         default_value = false,
         order = "ZAaf-9"
     },
+    {
+        type = "int-setting",
+        name = "EquipmentMulti",
+        setting_type = "startup",
+        default_value = 1,
+        minimum_value = 1,
+        order = "ZAag-9"
+    },
 })
 if mods["PARs-SpaceAge-Extension"] then
     if (mods["space-age"] or mods["mech-armor"]) then

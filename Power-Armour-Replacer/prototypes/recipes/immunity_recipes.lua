@@ -1,3 +1,5 @@
+local SS = settings.startup
+
 data:extend({
     {
         type = "recipe",
@@ -22,7 +24,7 @@ data:extend({
         enabled = false,
         energy_required = 20,
         ingredients = {
-            {type="item", name="par-belt-immunity-mk1", amount=1},
+            {type="item", name="par-belt-immunity-mk1", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=500},
             {type="item", name="processing-unit", amount=500},
             {type="item", name="armour-control-unit", amount=500},
@@ -63,7 +65,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 20,
             ingredients = {
-                {type="item", name="par-belt-immunity-mk1", amount=1},
+                {type="item", name="par-belt-immunity-mk1", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=500},
                 {type="item", name="armour-control-unit", amount=500},
                 {type="item", name="quantum-processor", amount=500},

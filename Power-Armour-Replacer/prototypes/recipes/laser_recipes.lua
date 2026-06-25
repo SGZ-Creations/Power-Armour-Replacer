@@ -1,3 +1,5 @@
+local SS = settings.startup
+
 local recipes = {
     {
         type = "recipe",
@@ -21,7 +23,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk1", amount=1},
+            {type="item", name="par-laser-mk1", amount= SS["EquipmentMulti"].value},
             {type="item", name="electronic-circuit", amount=50},
             {type="item", name="copper-plate", amount=50},
             {type="item", name="steel-plate", amount=50},
@@ -37,7 +39,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk2", amount=1},
+            {type="item", name="par-laser-mk2", amount= SS["EquipmentMulti"].value},
             {type="item", name="advanced-circuit", amount=75},
             {type="item", name="steel-plate", amount=75},
             {type="item", name="stone-brick", amount=75},
@@ -53,7 +55,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk3", amount=1},
+            {type="item", name="par-laser-mk3", amount= SS["EquipmentMulti"].value},
             {type="item", name="advanced-circuit", amount=100},
             {type="item", name="engine-unit", amount=100},
             {type="item", name="steel-plate", amount=100},
@@ -69,7 +71,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk4", amount=1},
+            {type="item", name="par-laser-mk4", amount= SS["EquipmentMulti"].value},
             {type="item", name="electric-engine-unit", amount=125},
             {type="item", name="armour-control-unit", amount=125},
             {type="item", name="advanced-circuit", amount=125},
@@ -85,7 +87,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk5", amount=1},
+            {type="item", name="par-laser-mk5", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=150},
             {type="item", name="heat-pipe", amount=150},
             {type="item", name="steel-plate", amount=150},
@@ -102,7 +104,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk6", amount=1},
+            {type="item", name="par-laser-mk6", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=200},
             {type="item", name="steel-plate", amount=200},
             {type="item", name="processing-unit", amount=200},
@@ -119,7 +121,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk7", amount=1},
+            {type="item", name="par-laser-mk7", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=300},
             {type="item", name="plastic-bar", amount=300},
             {type="item", name="processing-unit", amount=300},
@@ -135,7 +137,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk8", amount=1},
+            {type="item", name="par-laser-mk8", amount= SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=400},
             {type="item", name="armour-control-unit", amount=400},
             {type="item", name="processing-unit", amount=400},
@@ -152,7 +154,7 @@ local recipes = {
         enabled = false,
         energy_required = 40,
         ingredients = {
-            {type="item", name="par-laser-mk9", amount=1},
+            {type="item", name="par-laser-mk9", amount= SS["EquipmentMulti"].value},
             {type="item", name="armour-control-unit", amount=500},
             {type="item", name="low-density-structure", amount=500},
             {type="item", name="processing-unit", amount=500},
@@ -190,7 +192,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk1", amount=1},
+                {type="item", name="par-laser-mk1", amount= SS["EquipmentMulti"].value},
                 {type="item", name="electronic-circuit", amount=50},
                 {type="item", name="engine-unit", amount=50},
                 {type="item", name="copper-plate", amount=50},
@@ -206,7 +208,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk2", amount=1},
+                {type="item", name="par-laser-mk2", amount= SS["EquipmentMulti"].value},
                 {type="item", name="advanced-circuit", amount=75},
                 {type="item", name="steel-plate", amount=75},
                 {type="item", name="engine-unit", amount=75},
@@ -223,7 +225,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk3", amount=1},
+                {type="item", name="par-laser-mk3", amount= SS["EquipmentMulti"].value},
                 {type="item", name="advanced-circuit", amount=100},
                 {type="item", name="iron-gear-wheel", amount=100},
                 {type="item", name="steel-plate", amount=100},
@@ -239,7 +241,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk4", amount=1},
+                {type="item", name="par-laser-mk4", amount= SS["EquipmentMulti"].value},
                 {type="item", name="electric-engine-unit", amount=125},
                 {type="item", name="armour-control-unit", amount=125},
                 {type="item", name="processing-unit", amount=125},
@@ -257,7 +259,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk5", amount=1},
+                {type="item", name="par-laser-mk5", amount= SS["EquipmentMulti"].value},
                 {type="item", name="carbon", amount=150},
                 {type="item", name="calcite", amount=150},
                 {type="item", name="battery", amount=150},
@@ -278,7 +280,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk6", amount=1},
+                {type="item", name="par-laser-mk6", amount= SS["EquipmentMulti"].value},
                 {type="item", name="armour-control-unit", amount=200},
                 {type="item", name="low-density-structure", amount=200},
                 {type="item", name="electric-engine-unit", amount=200},
@@ -305,7 +307,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk7", amount=1},
+                {type="item", name="par-laser-mk7", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=300},
                 {type="item", name="armour-control-unit", amount=300},
                 {type="item", name="processing-unit", amount=300},
@@ -331,7 +333,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk8", amount=1},
+                {type="item", name="par-laser-mk8", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=400},
                 {type="item", name="quantum-processor", amount=400},
                 {type="item", name="tungsten-carbide", amount=400},
@@ -359,7 +361,7 @@ if mods["space-age"] then
             enabled = false,
             energy_required = 40,
             ingredients = {
-                {type="item", name="par-laser-mk9", amount=1},
+                {type="item", name="par-laser-mk9", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=500},
                 {type="item", name="armour-control-unit", amount=500},
                 {type="item", name="quantum-processor", amount=500},

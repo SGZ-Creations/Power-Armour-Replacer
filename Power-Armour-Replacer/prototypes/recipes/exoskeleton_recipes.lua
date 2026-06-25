@@ -1,3 +1,5 @@
+local SS = settings.startup
+
 data:extend({
     {
         type = "recipe",
@@ -21,7 +23,7 @@ data:extend({
         enabled = false,
         energy_required = 10,
         ingredients = {
-            {type="item", name="par-exoskeleton-mk1", amount=1},
+            {type="item", name="par-exoskeleton-mk1", amount= SS["EquipmentMulti"].value},
             {type="item", name="advanced-circuit", amount=200},
             {type="item", name="iron-gear-wheel", amount=200},
             {type="item", name="steel-plate", amount=200},
@@ -37,7 +39,7 @@ data:extend({
         enabled = false,
         energy_required = 15,
         ingredients = {
-            {type="item", name="par-exoskeleton-mk2", amount=1},
+            {type="item", name="par-exoskeleton-mk2", amount= SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=300},
             {type="item", name="armour-control-unit", amount=300},
             {type="item", name="processing-unit", amount=300},
@@ -53,7 +55,7 @@ data:extend({
         enabled = false,
         energy_required = 20,
         ingredients = {
-            {type="item", name="par-exoskeleton-mk2", amount=1},
+            {type="item", name="par-exoskeleton-mk2", amount= SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=400},
             {type="item", name="armour-control-unit", amount=400},
             {type="item", name="processing-unit", amount=400},
@@ -70,7 +72,7 @@ data:extend({
         enabled = false,
         energy_required = 25,
         ingredients = {
-            {type="item", name="par-exoskeleton-mk4", amount=1},
+            {type="item", name="par-exoskeleton-mk4", amount= SS["EquipmentMulti"].value},
             {type="item", name="battery", amount=500},
             {type="item", name="steel-plate", amount=500},
             {type="item", name="processing-unit", amount=500},
@@ -105,7 +107,7 @@ if mods["space-age"]then
             enabled = false,
             energy_required = 10,
             ingredients = {
-                {type="item", name="par-exoskeleton-mk1", amount=1},
+                {type="item", name="par-exoskeleton-mk1", amount= SS["EquipmentMulti"].value},
                 {type="item", name="advanced-circuit", amount=200},
                 {type="item", name="iron-gear-wheel", amount=200},
                 {type="item", name="steel-plate", amount=200},
@@ -121,7 +123,7 @@ if mods["space-age"]then
             enabled = false,
             energy_required = 15,
             ingredients = {
-                {type="item", name="par-exoskeleton-mk2", amount=1},
+                {type="item", name="par-exoskeleton-mk2", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=300},
                 {type="item", name="armour-control-unit", amount=300},
                 {type="item", name="processing-unit", amount=300},
@@ -142,7 +144,7 @@ if mods["space-age"]then
             enabled = false,
             energy_required = 20,
             ingredients = {
-                {type="item", name="par-exoskeleton-mk3", amount=1},
+                {type="item", name="par-exoskeleton-mk3", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=400},
                 {type="item", name="armour-control-unit", amount=400},
                 {type="item", name="quantum-processor", amount=400},
@@ -168,7 +170,7 @@ if mods["space-age"]then
             enabled = false,
             energy_required = 25,
             ingredients = {
-                {type="item", name="par-exoskeleton-mk4", amount=1},
+                {type="item", name="par-exoskeleton-mk4", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=500},
                 {type="item", name="armour-control-unit", amount=500},
                 {type="item", name="quantum-processor", amount=500},
