@@ -41,12 +41,7 @@ data:extend({
 		name = "par-armour-tech-1",
 		icon_size = 256, --simpletech.icon_size,
 		icon = "__base__/graphics/technology/power-armor.png", --simpletech.icon,
-		effects = {
-			{
-				type = "unlock-recipe",
-				recipe = "par-armour-mk1"
-			},
-		},
+		effects = {{ type = "unlock-recipe", recipe = "par-armour-mk1"}},
 		prerequisites = {"heavy-armor"},
 		research_trigger = {type ="craft-item", item ="heavy-armor"},
 		order = "Armour01"

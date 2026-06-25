@@ -58,7 +58,6 @@ local replace = {
     ["bob-energy-shield-equipment-4"] = "par-shield-tech-4",
     ["bob-energy-shield-equipment-5"] = "par-shield-tech-5",
     ["bob-energy-shield-equipment-6"] = "par-shield-tech-6",
-    ["pamk3-pdd"] = "par-shock-defence-tech-9",
     ["rampant-arsenal-technology-power-armor-mk3"] = "par-armour-tech-7",
     ["kr-advanced-additional-engine-equipment"] = "par-fission-reactor-tech-5",
 }
@@ -135,7 +134,6 @@ local item_replace = {
     ["personal-laser-defense-equipment-4"] = "par-laser-mk4",
     ["personal-laser-defense-equipment-5"] = "par-laser-mk5",
     ["personal-laser-defense-equipment-6"] = "par-laser-mk6",
-    ["pamk3-pdd"] = "par-shock-defense-mk9",
     ["night-vision-equipment-2"] = "par-nightvision-mk2",
     ["night-vision-equipment-3"] = "par-nightvision-mk2",
     ["solar-panel-equipment-2"] = "par-solar-panel-mk2",
