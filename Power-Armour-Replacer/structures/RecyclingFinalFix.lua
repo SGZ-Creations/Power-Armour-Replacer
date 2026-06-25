@@ -123,6 +123,16 @@ if (mods["quality"] or mods["recycler"]) then
             "prototype-mech-armor",
         })
     end
+    if mods["incendiary-arsenal"] and mods["space-age"] then
+        PAR.update_rec_recipe_results({
+            "mech-armor-fireproof"
+        })
+    end
+    if mods["incendiary-arsenal"]and mods["space-age"] and mods["RampantArsenalFork"] then
+        PAR.update_rec_recipe_results({
+            "FireComabatUpgrade"
+        })
+    end
     if mods["bobclasses"] then
         PAR.update_rec_recipe_results({
             "bob-character-fighter",

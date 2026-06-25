@@ -320,6 +320,24 @@ if (mods["RampantArsenal"] or mods["RampantArsenalFork"]) then
 	})
 end
 
+if mods["incendiary-arsenal"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_FireProofMechSuit-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3IB",
+			indent = 2,
+			trigger = {
+				type = "craft-item",
+				item = "par-armour-mk5",
+				event_type = "crafting-finished",
+				count = 1,
+			},
+		},
+	})
+end
 
 if mods["Insectitron"] then
 	data:extend({
@@ -362,6 +380,20 @@ if mods["foliax"] then
 				event_type = "crafting-finished",
 				count = 1,
 			},
+		},
+	})
+end
+
+
+if mods["nightvision_progression-fork"] then
+	data:extend({
+		{
+			type = "tips-and-tricks-item",
+			name = "par_ProgressiveNVGsFork-info",
+			category = "power-armour-replacer",
+			dependencies = {"par_cas-info"},
+			order = "3ZW",
+			indent = 2,
 		},
 	})
 end

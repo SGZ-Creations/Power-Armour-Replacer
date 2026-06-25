@@ -19,7 +19,12 @@ end
 
 if (mods["mech-armor"] or mods["space-age"]) then
 	Armour["mech-armor"].subgroup = "PAREXT_MechSuits"
-	Armour["mech-armor"].order = "AB"
+	Armour["mech-armor"].order = "ABA"
+end
+
+if mods["incendiary-arsenal"] and mods["space-age"] then
+	Armour["mech-armor-fireproof"].subgroup = "PAREXT_MechSuits"
+	Armour["mech-armor-fireproof"].order = "ABB"
 end
 
 if mods["Power Armor MK3"] and mods["pypostprocessing"]then

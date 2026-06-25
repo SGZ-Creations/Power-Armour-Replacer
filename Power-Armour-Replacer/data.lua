@@ -41,6 +41,9 @@
     require("prototypes.technology.shock_tech")
     require("prototypes.technology.solar_tech")
 
+--prototypes.TechRecipe
+    require("prototypes.misc.CustomModAddons")
+
 --prototypes.other
     require("prototypes.animation.player_style")
     require("prototypes.misc.achievements")
