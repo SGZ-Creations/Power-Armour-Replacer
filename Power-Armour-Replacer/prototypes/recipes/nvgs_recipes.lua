@@ -6,7 +6,7 @@ data:extend({
         name = "par-nightvision-mk1",
         enabled = false,
         energy_required = 10,
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         ingredients = {
             {type="item", name="low-density-structure", amount=250},
             {type="item", name="electric-engine-unit", amount=250},
@@ -22,7 +22,7 @@ data:extend({
         name = "par-nightvision-mk2",
         enabled = false,
         energy_required = 20,
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         ingredients = {
             {type="item", name="par-nightvision-mk1", amount=SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=500},
@@ -41,7 +41,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-nightvision-mk1",
             main_product = "par-nightvision-mk1",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -61,7 +61,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-nightvision-mk2",
             main_product = "par-nightvision-mk2",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 20,
             ingredients = {

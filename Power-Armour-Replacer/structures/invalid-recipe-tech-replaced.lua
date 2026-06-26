@@ -167,13 +167,10 @@ local function replace_ingredients(ingredients)
 end
 
 for _, recipe in pairs(data.raw.recipe) do
-    if recipe and recipe.category=="recycling" then
-        --skip
-    else
+    if recipe.categories and not recipe.categories["recycling"] then
         replace_ingredients(recipe.ingredients)
     end
 end
-
 -- Replaces Chest content
 --[[
 entity = data.raw.item ..chest.. or ["steel-chest"] or ["wooden-chest"] or 

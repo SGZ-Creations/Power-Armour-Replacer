@@ -1,7 +1,6 @@
 local PAR = require("mods.util")
 ---@class ProtypeRecipe
 local RECIPES = data.raw["recipe"]
----@class LuaSettings
 local SS = settings.startup
 PAR.ingredient_prereq(RECIPES["par-shield-mk1"], {
     {

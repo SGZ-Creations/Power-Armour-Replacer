@@ -1,7 +1,7 @@
 local Tech = data.raw["technology"]
 local Recipe = data.raw["recipe"]
 if mods["space-age"] then
-	Recipe["mech-armor"].category = "electronics-or-assembling"
+	Recipe["mech-armor"].categories = {"par-electronics"}
 
 	table.insert(Tech["par-armour-tech-5"].unit.ingredients, {"space-science-pack", 1})
 

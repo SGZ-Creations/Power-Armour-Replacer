@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "armour-control-unit",
-		category = "electronics-or-handcrafting",
+		categories = {"par-electronic-hands"},
 		energy_required = 10,
 		enabled = false,
 		ingredients = {
@@ -21,7 +21,7 @@ if mods["space-age"] then
 		{
 			type = "recipe",
 			name = "armour-control-unit-2",
-            category = "electronics-or-assembling",
+			categories = {"par-electronics"},
 			auto_recycle = false,
 			energy_required = 10,
 			enabled = false,

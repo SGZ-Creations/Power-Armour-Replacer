@@ -7,7 +7,7 @@ if mods["incendiary-arsenal"] and mods["RampantArsenalFork"]and mods["space-age"
 		{
             type = "recipe",
             name = "FireComabatUpgrade",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
 			main_product = "combat-mech-armor-rampant-arsenal",
             enabled = false,
             energy_required = 50.0,

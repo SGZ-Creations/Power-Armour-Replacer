@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 26.06.26
+  Major Features:
+    - [PAR] Update 2.1
+  Credit:
+    - Thanks oobanooba for the help in fixing the categories issue with 2.1
+---------------------------------------------------------------------------------------------------
 Version: 0.5.0
-Date: 10.05.26
+Date: 26.06.26
   Major Features:
     - [PAR] 10x9 = 90 New Setting for Shock Defence.
     - [PAR] 10 New Shock Defence Equipment.

@@ -4,7 +4,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk1",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -19,7 +19,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk2",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -34,7 +34,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk3",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -50,7 +50,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk4",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -66,7 +66,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk5",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -83,7 +83,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk6",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -100,7 +100,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk7",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -119,7 +119,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk8",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -139,7 +139,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk9",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -159,7 +159,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-shock-defense-mk10",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -185,7 +185,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk1",
             main_product = "par-shock-defense-mk1",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -201,7 +201,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk2",
             main_product = "par-shock-defense-mk2",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -218,7 +218,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk3",
             main_product = "par-shock-defense-mk3",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -235,7 +235,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk4",
             main_product = "par-shock-defense-mk4",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -252,7 +252,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk5",
             main_product = "par-shock-defense-mk5",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -268,7 +268,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk6",
             main_product = "par-shock-defense-mk6",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -289,7 +289,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk7",
             main_product = "par-shock-defense-mk7",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -316,7 +316,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk8",
             main_product = "par-shock-defense-mk8",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -342,7 +342,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk9",
             main_product = "par-shock-defense-mk9",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -370,7 +370,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-shock-defense-mk10",
             main_product = "par-shock-defense-mk10",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 40,
             ingredients = {

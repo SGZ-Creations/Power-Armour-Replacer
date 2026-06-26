@@ -4,7 +4,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk1",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -19,7 +19,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk2",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 45,
         ingredients = {
@@ -35,7 +35,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk3",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 50,
         ingredients = {
@@ -52,7 +52,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk4",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 55,
         ingredients = {
@@ -67,7 +67,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk5",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 60,
         ingredients = {
@@ -83,7 +83,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk6",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 65,
         ingredients = {
@@ -100,7 +100,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk7",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 70,
         ingredients = {
@@ -116,7 +116,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk8",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 75,
         ingredients = {
@@ -131,7 +131,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk9",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 80,
         ingredients = {
@@ -148,7 +148,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-fission-reactor-mk10",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 85,
         ingredients = {
@@ -169,7 +169,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk1",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -184,7 +184,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk2",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 45,
             ingredients = {
@@ -200,7 +200,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk3",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 50,
             ingredients = {
@@ -215,7 +215,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk4",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 55,
             ingredients = {
@@ -230,7 +230,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk5",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 60,
             ingredients = {
@@ -247,7 +247,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk6",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 65,
             ingredients = {
@@ -265,7 +265,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk7",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 70,
             ingredients = {
@@ -286,7 +286,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-fission-reactor-mk8",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 75,
             ingredients = {
@@ -310,7 +310,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-fission-reactor-mk9",
             main_product = "par-fission-reactor-mk9",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 80,
             ingredients = {
@@ -339,7 +339,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-fission-reactor-mk10",
             main_product = "par-fission-reactor-mk10",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 85,
             ingredients = {

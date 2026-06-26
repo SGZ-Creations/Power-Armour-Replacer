@@ -44,7 +44,7 @@ PAR.update_ingredients = function(recipe, replacements)
             local amt = new_ingredient[2] or new_ingredient.amount
             if new_ingredient.type and new_ingredient.type == "fluid" then
                 ingtype = "fluid"
-                not_crafting = true --trigger category change
+                not_crafting = true --trigger categories change
             end
             ingredients[#ingredients+1] = {type=ingtype,name=name ,amount=amt}
         end
@@ -52,12 +52,16 @@ PAR.update_ingredients = function(recipe, replacements)
     for _, remove_ingredient in pairs(remove) do
         table.remove(ingredients,remove_ingredient)
     end
-    --check if category == default, change it
+    --check if categories == default, change it
     if not_crafting then
-        if recipe.category == "crafting" then
-            recipe.category = "crafting-with-fluid" -- switch to electronics-or-handcrafting
-        elseif recipe.category == nil then
-            recipe.category = "crafting-with-fluid" -- switch to electronics-or-handcrafting ?
+        if not recipe.categories then
+            recipe.categories = {"crafting", "crafting-with-fluid"}
+        else
+            for _,Fix in pairs(recipe.categories) do
+                if Fix == "crafting" then
+                    table.insert(recipe.categories, "crafting-with-fluid")
+                end
+            end
         end
     end
 end
@@ -113,7 +117,7 @@ end
 -- Space Age recycling shenanigans --------------------------------
 -------------------------------------------------------------------
 -- only allows these new functions when quality is enabled
-if mods["quality"] then
+if (mods["quality"]or mods["recycler"]) then
 -- update recycling icon    
     PAR.update_rec_recipe_icon= function(recipe_name, icon_name, size)
     --duplicate of function bobmods.lib.recipe.update_recycling_recipe_icon(recipe_name, icon_name, size) from boblib

@@ -4,7 +4,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk1",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 5,
         ingredients = {
@@ -21,7 +21,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk2",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -39,7 +39,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk3",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 15,
         ingredients = {
@@ -57,7 +57,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk4",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -74,7 +74,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk5",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 25,
         ingredients = {
@@ -90,7 +90,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk6",
-        category = "electronics-or-handcrafting",
+		categories = {"par-electronics"},
         enabled = false,
         energy_required = 30,
         ingredients = {
@@ -106,7 +106,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk7",
-        category = "electronics-or-handcrafting",
+		categories = {"par-electronics"},
         enabled = false,
         energy_required = 35,
         ingredients = {
@@ -122,7 +122,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk8",
-        category = "electronics-or-handcrafting",
+		categories = {"par-electronics"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -139,7 +139,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk9",
-        category = "electronics-or-handcrafting",
+		categories = {"par-electronics"},
         enabled = false,
         energy_required = 45,
         ingredients = {
@@ -157,7 +157,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-solar-panel-mk10",
-        category = "electronics-or-handcrafting",
+		categories = {"par-electronics"},
         enabled = false,
         energy_required = 50,
         ingredients = {
@@ -179,7 +179,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk1",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 5,
             ingredients = {
@@ -194,7 +194,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk2",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -209,7 +209,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk3",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 15,
             ingredients = {
@@ -224,7 +224,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk4",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 20,
             ingredients = {
@@ -239,7 +239,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk5",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 25,
             ingredients = {
@@ -255,7 +255,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk6",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 30,
             ingredients = {
@@ -272,7 +272,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-solar-panel-mk7",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 35,
             ingredients = {
@@ -294,7 +294,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-solar-panel-mk8",
             main_product = "par-solar-panel-mk8",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -316,7 +316,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-solar-panel-mk9",
             main_product = "par-solar-panel-mk9",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 45,
             ingredients = {
@@ -345,7 +345,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-solar-panel-mk10",
             main_product = "par-solar-panel-mk10",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 50,
             ingredients = {

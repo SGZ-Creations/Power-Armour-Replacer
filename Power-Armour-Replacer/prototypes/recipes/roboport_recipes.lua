@@ -4,7 +4,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk1",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -19,7 +19,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk2",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -35,7 +35,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk3",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 30,
         ingredients = {
@@ -50,7 +50,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk4",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -65,7 +65,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk5",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 50,
         ingredients = {
@@ -81,7 +81,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk6",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 60,
         ingredients = {
@@ -97,7 +97,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk7",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 70,
         ingredients = {
@@ -114,7 +114,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk8",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 80,
         ingredients = {
@@ -133,7 +133,7 @@ local recipes = {
         name = "par-roboport-mk9",
         enabled = false,
         energy_required = 90,
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         ingredients = {
             {type="item", name="par-roboport-mk8", amount= SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=400},
@@ -148,7 +148,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-roboport-mk10",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 100,
         ingredients = {
@@ -170,7 +170,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk1",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -185,7 +185,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk2",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 20,
             ingredients = {
@@ -201,7 +201,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk3",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 30,
             ingredients = {
@@ -216,7 +216,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk4",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -231,7 +231,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk5",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 50,
             ingredients = {
@@ -247,7 +247,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk6",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 60,
             ingredients = {
@@ -265,7 +265,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk7",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 70,
             ingredients = {
@@ -285,7 +285,7 @@ if mods["space-age"]then
         {
             type = "recipe",
             name = "par-roboport-mk8",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 80,
             ingredients = {
@@ -309,7 +309,7 @@ if mods["space-age"]then
             type = "recipe",
             name = "par-roboport-mk9",
             main_product = "par-roboport-mk9",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 90,
             ingredients = {
@@ -337,7 +337,7 @@ if mods["space-age"]then
             type = "recipe",
             name = "par-roboport-mk10",
             main_product = "par-roboport-mk10",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 100,
             ingredients = {

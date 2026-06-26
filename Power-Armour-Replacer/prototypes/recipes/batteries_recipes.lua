@@ -4,7 +4,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk1",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 25,
         ingredients = {
@@ -19,7 +19,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk2",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 30,
         ingredients = {
@@ -35,7 +35,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk3",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 35,
         ingredients = {
@@ -51,7 +51,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk4",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 40,
         ingredients = {
@@ -67,7 +67,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk5",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronic-hands"},
         enabled = false,
         energy_required = 45,
         ingredients = {
@@ -82,7 +82,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk6",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 50,
         ingredients = {
@@ -98,7 +98,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk7",
-        category="electronics-or-handcrafting",
+        categories={"par-electronics"},
         enabled = false,
         energy_required = 55,
         ingredients = {
@@ -115,7 +115,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk8",
-        category= "electronics-or-handcrafting",
+        categories= {"par-electronics"},
         enabled = false,
         energy_required = 60,
         ingredients = {
@@ -131,7 +131,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk9",
-        category = "electronics-or-handcrafting",
+        categories = {"par-electronics"},
         enabled = false,
         energy_required = 65,
         ingredients = {
@@ -148,7 +148,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk10",
-        category= "electronics-or-handcrafting",
+        categories= {"par-electronics"},
         enabled = false,
         energy_required = 70,
         ingredients = {
@@ -167,7 +167,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk1",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 25,
             ingredients = {
@@ -182,7 +182,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk2",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 30,
             ingredients = {
@@ -197,7 +197,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk3",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 35,
             ingredients = {
@@ -213,7 +213,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk4",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 40,
             ingredients = {
@@ -229,7 +229,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk5",
-            category = "electronics-or-handcrafting",
+            categories = {"par-electronic-hands"},
             enabled = false,
             energy_required = 45,
             ingredients = {
@@ -245,7 +245,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk6",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 50,
             ingredients = {
@@ -263,7 +263,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk7",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 55,
             ingredients = {
@@ -283,7 +283,7 @@ if mods["space-age"] then
         {
             type = "recipe",
             name = "par-battery-mk8",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 60,
             ingredients = {
@@ -309,7 +309,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-battery-mk9",
             main_product = "par-battery-mk9",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 65,
             ingredients = {
@@ -338,7 +338,7 @@ if mods["space-age"] then
             type = "recipe",
             name = "par-battery-mk10",
             main_product = "par-battery-mk10",
-            category = "electronics",
+            categories = {"par-electronics"},
             enabled = false,
             energy_required = 70,
             ingredients = {
