@@ -1,8 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 10.05.26
-  ToDo:
-    - K2 Recipes: Lasers, Roboport, Shields, ShockDefence.
   Major Features:
     - [PAR] 10x9 = 90 New Setting for Shock Defence.
     - [PAR] 10 New Shock Defence Equipment.
@@ -19,6 +17,7 @@ Date: 10.05.26
     - [Foliax] Crash with Foliax version 2.0.5.
     - [Foliax] items added to hidden & disabled.
     - [PAR] Tips & Tricks Description for Foliax.
+    - [PAR][PY] Recipe changes for mk1 has been added.
     - [TeleportationEquipment] Made equipment crafting allowed in EM Plant.
     - [Rampant Arsenal Fork] Made equipment crafting allowed in the EM Plant.
     - [Spidertron Tiers Community] Added Tips & Tricks as it was Confirmed Working.
@@ -57,6 +56,7 @@ Date: 10.05.26
     - [Bobs] fix prefix naming for items in recipes being renamed in patch 2.1.
     - [Bobs] Quick fix for PY Crashes. bob prefix had been added when updating to 2.0 for Bobs.
     - [PAR] Fixed Shortcut Not unlocking. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
+    - [PAR][PY][PAmk3] Fixes orders of recipes that wasn't done before. light & heavy + utility variant armour from.
     - [K2SO] Tips & tricks should now trigger.
     - [K2SO, K2] Spidertron Not unlocking.
     - [K2SO, K2] Crafting category fix in advanced assembler.
