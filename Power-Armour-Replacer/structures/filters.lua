@@ -124,21 +124,6 @@ if SS["vanilla-filters"].value then
 end
 
 
-if mods["PARs-SpaceAge-Extension"] then
-    if (mods["space-age"] or mods["mech-armor"])then
-
-        DRT["mech-armor"].enabled = false
-
-        DRR["mech-armor"].hidden = true
-
-        DRT["mech-armor"].hidden = true
-
-        if settings.startup["MechTechFilters"].value then
-            Hide_Item("mech-armor")
-        end
-    end
-end
-
 if mods["space-age"] then
 
     DRT["fusion-reactor-equipment"].enabled = false
