@@ -76,7 +76,7 @@ Date: 26.06.26
     - [TIMSABA] Solved crashes that was making it unable to load.
   Info:
     - [PAR] Fission/Fusion graphics will eventually be flipped. Tho not until i have more than placeholders. Thanks for understanding.
-    - [K2SO] Was Marked to use only 1.6.20 due to the decision of making K2SO Depend on K2 I will see what My plans are later I'm not deleting any of the code. Since me trying to this fox this at 0.5 would push the Beta 0.6 even later than i want it to be. I would want to go for 2.1 before fixing this patch at this stage.
+    - [K2SO] Was Marked to use only 1.6.20 due to the decision of making K2SO Depend on K2 I will see what My plans are later I'm not deleting any of the code. Since me trying to fix this at 0.5 would push the Beta 0.6 even later than i want it to be. I would want to go for 2.1 before fixing this patch at this stage.
     - [K2SO] Also this makes me delay fully finishing the recipe portion for the mod until i find the motivation to look back & rework it again. Sort of half cancelling the compatibility.
   Known:
     - MK1 ShockDefence is known to not activation when near enemies. This might be fixed by tweaking the settings for it tho I'm not sure as i haven't found the settings allowing it to work should you find a fix your welcome to post me a PR about it or try reaching me on Discord/Root.
