@@ -38,6 +38,37 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk1"], {
             ["bob-rubber"] = {"bob-rubber", 20},
         }
     },
+    --Pyanodon
+    {
+        dependencies = {"pyalienlife",},
+        replacements = {
+            ["steel-plate"] = {"plastic-bar", 25},
+        }
+    },
+    {
+        dependencies = {"pypetroleumhandling",},
+        replacements = {
+        }
+    },
+    {
+        dependencies = {"pyalternativeenergy",},
+        replacements = {
+            ["electronic-circuit"] = {"battery-mk00", 25},
+        }
+    },
+    {
+        dependencies = {"pyrawores",},
+        replacements = {
+            ["copper-plate"] = {"tinned-cable", 25},
+            ["stone-brick"] = {"zinc-plate", 25},
+        }
+    },
+    {
+        dependencies = {"pyhightech",},
+        replacements = {
+            ["wood"] = {"formica", 25},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},

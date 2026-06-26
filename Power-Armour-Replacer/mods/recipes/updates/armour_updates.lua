@@ -98,7 +98,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
         }
     },
     {
-        dependencies = {"Krastorio2-spaced-out"},
+        dependencies = {"Krastorio2-spaced-out",},
         replacements = {
             ["steel-plate"] = {"kr-steel-beam", 25},
             ["stone-brick"] = {"kr-glass", 25},

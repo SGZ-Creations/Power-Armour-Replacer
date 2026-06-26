@@ -49,6 +49,37 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk1"], {
             ["bob-resin"] = {"wood", 200},
         }
     },
+    --Pyanodon
+    {
+        dependencies = {"pyalienlife",},
+        replacements = {
+            ["steel-plate"] = {"plastic-bar", 25},
+        }
+    },
+    {
+        dependencies = {"pypetroleumhandling",},
+        replacements = {
+        }
+    },
+    {
+        dependencies = {"pyalternativeenergy",},
+        replacements = {
+            ["electronic-circuit"] = {"battery-mk00", 25},
+        }
+    },
+    {
+        dependencies = {"pyrawores",},
+        replacements = {
+            ["copper-cable"] = {"tinned-cable", 25},
+            ["wood"] = {"titanium-plate", 25},
+            {"lead-plate", 25},
+        }
+    },
+    {
+        dependencies = {"pyhightech",},
+        replacements = {
+        }
+    },
     --SE-K2
     {
         dependencies = {"Krastorio2"},

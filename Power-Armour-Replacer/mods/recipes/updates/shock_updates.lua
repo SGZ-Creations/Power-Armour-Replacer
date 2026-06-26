@@ -62,7 +62,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk1"], {
         dependencies = {"pyrawores",},
         replacements = {
             ["copper-plate"] = {"tinned-cable", 25},
-            {"solder", 25},
+            ["stone-brick"] = {"solder", 25},
         }
     },
     {
