@@ -192,7 +192,7 @@ if (mods["quality"]or mods["recycler"]) then
                     local item_type = PAR.get_item_type(recipe_name)
                     if item_type and data.raw[item_type][recipe_name] then
                         if data.raw[item_type][recipe_name].icons then
-                            target_recipe.icons = { { icon = "__quality__/graphics/icons/recycling.png" } }
+                            target_recipe.icons = { { icon = "__recycler__/graphics/icons/recycling.png" } }
                             for _, icon_replacement in pairs(data.raw[item_type][recipe_name].icons) do
                                 local image_size = icon_replacement.icon_size or 64
                                 local image_scale = icon_replacement.scale or 1
@@ -204,7 +204,7 @@ if (mods["quality"]or mods["recycler"]) then
                                     tint = icon_replacement.tint,
                                 })
                             end
-                        table.insert(target_recipe.icons, { icon = "__quality__/graphics/icons/recycling-top.png" })
+                        table.insert(target_recipe.icons, { icon = "__recycler__/graphics/icons/recycling-top.png" })
                         end
                     end
                 else
