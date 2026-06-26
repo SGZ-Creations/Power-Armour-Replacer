@@ -36,7 +36,7 @@ if mods["space-age"]then
 				recipe = "armour-control-unit-2"
 			}
 		},
-		prerequisites = {"armour-control-unit"},
+		prerequisites = {"armour-control-unit", "tungsten-steel", "carbon-fiber", "elctromagnetic-plant",},
 		unit = {
 			count = 125,
 			ingredients = {

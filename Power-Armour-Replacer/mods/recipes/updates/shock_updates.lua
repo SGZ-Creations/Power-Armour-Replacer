@@ -38,6 +38,38 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk1"], {
             ["bob-rubber"] = {"bob-rubber", 20},
         }
     },
+    --Pyanodon
+    {
+        dependencies = {"pyalienlife",},
+        replacements = {
+            ["copper-cable"] = {"latex", 25},
+            ["wood"] = {"plastic-bar", 25},
+        }
+    },
+    {
+        dependencies = {"pypetroleumhandling",},
+        replacements = {
+            ["iron-stick"] = {"small-parts-01", 25},
+        }
+    },
+    {
+        dependencies = {"pyalternativeenergy",},
+        replacements = {
+            ["electronic-circuit"] = {"battery-mk00", 25},
+        }
+    },
+    {
+        dependencies = {"pyrawores",},
+        replacements = {
+            ["copper-plate"] = {"tinned-cable", 25},
+            {"solder", 25},
+        }
+    },
+    {
+        dependencies = {"pyhightech",},
+        replacements = {
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},

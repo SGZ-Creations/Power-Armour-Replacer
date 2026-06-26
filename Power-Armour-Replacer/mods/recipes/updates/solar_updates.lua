@@ -38,6 +38,39 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
             ["bob-solder"] = {"zero"},
         }
     },
+    --Pyanodon
+    {
+        dependencies = {"pyalienlife",},
+        replacements = {
+            ["copper-cable"] = {"latex", 25},
+            ["wood"] = {"plastic-bar", 25},
+        }
+    },
+    {
+        dependencies = {"pypetroleumhandling",},
+        replacements = {
+            ["iron-stick"] = {"small-parts-01", 25},
+        }
+    },
+    {
+        dependencies = {"pyalternativeenergy",},
+        replacements = {
+        }
+    },
+    {
+        dependencies = {"pyrawores",},
+        replacements = {
+            ["steel-plate"] = {"zinc-plate", 25},
+            ["stone-brick"] = {"solder", 25},
+            ["copper-plate"] = {"tinned-cable", 25},
+        }
+    },
+    {
+        dependencies = {"pyhightech",},
+        replacements = {
+            ["electronic-circuit"] = {"formica", 25},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},

@@ -29,6 +29,32 @@ PAR.ingredient_prereq(DRR["par-battery-mk1"], {
             ["small-electric-pole"] = {"wood", 50},
         }
     },
+    --Pyanodon
+    {
+        dependencies = {"pyalienlife",},
+        replacements = {
+        }
+    },
+    {
+        dependencies = {"pyalternativeenergy",},
+        replacements = {
+            ["copper-cable"] = {"battery-mk00", 25},
+        }
+    },
+    {
+        dependencies = {"pyrawores",},
+        replacements = {
+            ["steel-plate"] = {"aluminium-plate", 25},
+            ["stone-brick"] = {"solder", 25},
+            ["wood"] = {"lead-plate", 25},
+        }
+    },
+    {
+        dependencies = {"pyhightech",},
+        replacements = {
+            ["electronic-circuit"] = {"graphite", 25},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},
