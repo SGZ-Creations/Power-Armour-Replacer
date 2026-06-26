@@ -79,20 +79,22 @@ elseif mods["incendiary-arsenal"] and mods["space-age"] and not mods["metal-and-
 end
 
 if not mods["RampantArsenalFork"]then
-    if settings.startup["MK10RecipeTech"].value == true then
-		PAR.technology_dependancy
-		{
-			["space-age"] = {
-				["mech-armor"] = {
-					["par-armour-tech-5"] = "par-armour-tech-10",
+	if (mods["space-age"]or mods["mech-armor"]) then
+		if settings.startup["MK10RecipeTech"].value == true then
+			PAR.technology_dependancy
+			{
+				["space-age"] = {
+					["mech-armor"] = {
+						["par-armour-tech-5"] = "par-armour-tech-10",
+					},
 				},
-			},
-			["mech-armor"] = {
 				["mech-armor"] = {
-					["par-armour-tech-5"] = "par-armour-tech-10",
-				}
-			},
-		}
+					["mech-armor"] = {
+						["par-armour-tech-5"] = "par-armour-tech-10",
+					}
+				},
+			}
+		end
 	end
 end
 

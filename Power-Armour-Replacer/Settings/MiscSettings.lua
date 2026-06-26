@@ -72,7 +72,7 @@ if mods["space-age"] then
 end
 
 if not mods["RampantArsenalFork"]then
-    if mods["space-age"] then
+    if (mods["space-age"]or mods["mech-armor"]) then
         data:extend({
             {
                 type = "bool-setting",
