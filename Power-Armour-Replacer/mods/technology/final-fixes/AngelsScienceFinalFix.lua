@@ -1,9 +1,5 @@
 ---@class data.TechnologyPrototype
 local Tech = data.raw["technology"]
----@class data.SettingsStartup
-local SS = settings.startup
-
-
 
 if mods["angelssmelting"]and mods["angelspetrochem"]and mods["angelsrefining"] then
 	Tech["steel-processing"].research_trigger = {type ="craft-item", item ="steel-plate", count = 100}
