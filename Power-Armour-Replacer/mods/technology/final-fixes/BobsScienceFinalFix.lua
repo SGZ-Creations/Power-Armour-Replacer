@@ -27,13 +27,8 @@ if mods["bobtech"]and mods["bobplates"] then
 		Tech["bob-wood-processing"].research_trigger = {type ="craft-item", item ="assembling-machine-1", count = 2}
 		Tech["bob-wood-processing"].unit = nil
 
-		if mods["TIMSABA"]then
-			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="angels-wire-tin", count = 50}
-			Tech["bob-electronics"].unit = nil
-		else
-			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-tinned-copper-cable", count = 50}
-			Tech["bob-electronics"].unit = nil
-		end
+		Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-stone-chemical-furnace", count = 10}
+		Tech["bob-electronics"].unit = nil
 	end
 end
 
