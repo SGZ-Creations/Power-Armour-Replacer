@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
-Date: 01.07.26
+Date: 05.07.26
   Info:
     - [PAR] Ported 0.5.3
     - [PAR] Ported 0.5.2
@@ -26,6 +26,11 @@ Date: 26.06.26
     - [PAR] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+Date: 01.07.26
+  Changes:
+    - [PAR][PY][TeleportationEquipment] Compatibility fix.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.2
 Date: 01.07.26
