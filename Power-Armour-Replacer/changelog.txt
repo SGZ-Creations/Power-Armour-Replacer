@@ -6,6 +6,9 @@ Date: 01.07.26
     - [PAR] Ported 0.5.1
   Bugfixes:
     - [PAR] Potential crash with 2.1 new Categories (Category(Old)).
+  Changes:
+    - [not-enough-parameters] Added to + dependencies.
+    - [still-not-enough-parameters] Added to + dependencies.
   Scripting:
     - [PAR] Re ordering code.
 ---------------------------------------------------------------------------------------------------
