@@ -38,8 +38,8 @@ if mods["RampantArsenalFork"] and mods["mech-armor"] then
 end
 
 if mods["RampantArsenalFork"] and mods["space-age"]then
-    Recipe["combat-mech-armor-rampant-arsenal"].categories = "par-electronics"
+    Recipe["combat-mech-armor-rampant-arsenal"].categories = {"par-electronics"}
 end
 if mods["metal-and-stars"]then
-    Recipe["prototype-mech-armor"].categories = "par-electronic-hands"
+    Recipe["prototype-mech-armor"].categories = {"par-electronic-hands"}
 end
