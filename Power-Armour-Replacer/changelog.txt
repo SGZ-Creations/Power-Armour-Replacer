@@ -8,7 +8,7 @@ Date: 01.07.26
   Bugfixes:
     - [PAR] Potential crash with 2.1 new Categories (Category(Old)).
   Changes:
-    - LICENSE change. 
+    - LICENSE change. GNU GPL V3 ---> GNU LGPL V3
     - [not-enough-parameters] Added to + dependencies.
     - [still-not-enough-parameters] Added to + dependencies.
   Scripting:
