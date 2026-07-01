@@ -328,7 +328,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_01",
         setting_type = "startup",
-        default_value = 14,
+        default_value = 5,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -336,7 +336,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_02",
         setting_type = "startup",
-        default_value = 16,
+        default_value = 10,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -344,7 +344,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_03",
         setting_type = "startup",
-        default_value = 18,
+        default_value = 15,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -360,7 +360,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_05",
         setting_type = "startup",
-        default_value = 22,
+        default_value = 25,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -368,7 +368,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_06",
         setting_type = "startup",
-        default_value = 24,
+        default_value = 30,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -376,7 +376,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_07",
         setting_type = "startup",
-        default_value = 26,
+        default_value = 35,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -384,7 +384,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_08",
         setting_type = "startup",
-        default_value = 28,
+        default_value = 40,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -392,7 +392,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_09",
         setting_type = "startup",
-        default_value = 30,
+        default_value = 45,
         minimum_value = 1,
         order = "Laser-5"
     },
@@ -400,7 +400,7 @@ data:extend({
         type = "int-setting",
         name = "LaserRange_10",
         setting_type = "startup",
-        default_value = 32,
+        default_value = 50,
         minimum_value = 1,
         order = "Laser-5"
     },

@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.1
+Date: 01.07.26
+  Info:
+    - [PAR] Ported 0.5.2
+    - [PAR] Ported 0.5.1
+---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 26.06.26
   Major Features:
@@ -11,6 +17,19 @@ Date: 26.06.26
     - [PAR] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 01.07.26
+  Changes:
+    - [PAR] Nerfed & Buffed Laser default range. Nerfed Shock Defence default range.
+    - [PAR] New Default Laser & Shock Defence settings.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 29.06.26
+  Bugfixes:
+    - [PAR] Fixed Progression lock with bobs mods.
+  Scripting:
+    - [PAR] Removed unusable @class.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 26.06.26
