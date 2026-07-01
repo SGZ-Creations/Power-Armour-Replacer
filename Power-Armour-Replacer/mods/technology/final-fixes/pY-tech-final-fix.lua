@@ -8,6 +8,12 @@ if mods["pypostprocessing"]then
 	Tech["heavy-armor"].prerequisites = {"par-light-armour-tech"}
 	Tech["par-light-armour-tech"].research_trigger = {type ="craft-item", item ="submachine-gun"}
 	Tech["steel-axe"].effects = {{type = "character-mining-speed", modifier = 1}}
+	if mods["TeleportationEquipment"] then
+		Tech["teleportation-equipment"].prerequisites = {"par-armour-tech-2",}
+		Tech["teleportation-equipment"].unit.ingredients = {}
+		table.insert(Tech["teleportation-equipment"].unit.ingredients, {"automation-science-pack", 1})
+		table.insert(Tech["teleportation-equipment"].unit.ingredients, {"py-science-pack-1", 1})
+	end
 end
 
 local PAR = require("mods.util")
