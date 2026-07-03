@@ -22,6 +22,27 @@ PAR.ingredient_prereq(Recipe["mech-armor"],
     },
 })
 
+if not mods["BetterRobotsLight"]then
+    PAR.ingredient_prereq(Recipe["fusion-construction-robot"],
+    {
+        {
+            dependencies = {"FusionPoweredRobots"},
+            replacements = {
+                ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk5", 1},
+            }
+        },
+    })
+    PAR.ingredient_prereq(Recipe["fusion-logistic-robot"],
+    {
+        {
+            dependencies = {"FusionPoweredRobots"},
+            replacements = {
+                ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk5", 1},
+            }
+        },
+    })
+end
+
 if not mods["RampantArsenalFork"] then
     if (mods["space-age"]or mods["mech-armor"]) then
         if settings.startup["MK10RecipeTech"].value == true then
