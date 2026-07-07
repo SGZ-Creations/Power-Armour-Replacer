@@ -97,6 +97,18 @@ if mods["nightvision_progression-fork"]then
     })
 end
 
+if mods["linox"]then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "LOXFilters",
+            setting_type = "startup",
+            default_value = true,
+            order = "ZMac-9"
+        },
+    })
+end
+
 if mods["foliax"]then
     data:extend({
         {

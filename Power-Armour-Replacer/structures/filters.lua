@@ -141,6 +141,20 @@ if mods["space-age"] then
     end
 end
 
+if mods["linox"]then
+    DRT["linox-technology_dysprosium-equipment"].enabled = false
+
+    DRT["linox-technology_dysprosium-equipment"].hidden = true
+
+    DRR["dysprosium-exoskeleton-equipment"].hidden = true
+
+    DRR["dysprosium-exoskeleton-equipment"].hidden = true
+
+    if SS["LOXFilters"].value then
+        Hide_Item("dysprosium-exoskeleton-equipment")
+    end
+end
+
 if (mods["bobwarfare"] or mods["bobequipment"]) then
 --Enabled
     DRR["bob-power-armor-mk3"].enabled = false
