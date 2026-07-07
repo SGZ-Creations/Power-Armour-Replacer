@@ -2,16 +2,10 @@ local Armour = data.raw["armor"]
 local Item = data.raw["item"]
 local Recipe = data.raw["recipe"]
 
-if mods["pypostprocessing"] then
-	Recipe["light-armor"].subgroup = "Par_Light_Heavy"
-	Recipe["heavy-armor"].subgroup = "Par_Light_Heavy"
-end
 Armour["light-armor"].subgroup = "Par_Light_Heavy"
 Armour["light-armor"].order = "AA"
 Armour["heavy-armor"].subgroup = "Par_Light_Heavy"
 Armour["heavy-armor"].order = "AC"
-
-
 
 if mods["space-age"] then
 	Item["toolbelt-equipment"].subgroup = "PAR_compatibility"
@@ -28,10 +22,6 @@ if mods["incendiary-arsenal"] and mods["space-age"] then
 	Armour["mech-armor-fireproof"].order = "ABB"
 end
 
-if mods["Power Armor MK3"] and mods["pypostprocessing"]then
-	Recipe["pamk3-lvest"].subgroup = "Par_Light_Heavy"
-	Recipe["pamk3-hvest"].subgroup = "Par_Light_Heavy"
-end
 if mods["Power Armor MK3"] then
 	Armour["pamk3-lvest"].subgroup = "Par_Light_Heavy"
 	Armour["pamk3-lvest"].order = "AB"
@@ -51,6 +41,7 @@ if mods["Nanobots3"] then
 	Item["equipment-bot-chip-nanointerface"].subgroup = "PAR_compatibility"
 	Item["equipment-bot-chip-nanointerface"].order = "HE"
 end
+
 if mods["RampantArsenalFork"] then
 	Item["shotgun-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
 	Item["shotgun-passive-defense-rampant-arsenal"].order = "TA"
@@ -63,6 +54,7 @@ if mods["RampantArsenalFork"] then
 	Item["slow-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
 	Item["slow-passive-defense-rampant-arsenal"].order = "TE"
 end
+
 if mods["RampantArsenalFork"] and (mods["space-age"] or mods["mech-armor"]) then
 	Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAREXT_MechSuits"
 	Armour["combat-mech-armor-rampant-arsenal"].order = "AC"
@@ -77,10 +69,12 @@ if mods["metal-and-stars"]then
 	Armour["prototype-mech-armor"].subgroup = "PAREXT_MechSuits"
 	Armour["prototype-mech-armor"].order = "AA"
 end
+
 if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 	Item["kr-energy-absorber-equipment"].subgroup = "PAR_K2Verified"
 	Item["kr-energy-absorber-equipment"].order = "AA"
 end
+
 if mods["Krastorio2-spaced-out"]then
 	Item["kr-additional-engine-equipment"].subgroup = "PAR_K2Verified"
 	Item["kr-additional-engine-equipment"].order = "BA"
@@ -117,3 +111,34 @@ if mods["space-exploration"] then
 	Armour["se-thruster-suit-4"].subgroup = "PAR_SEVerified"
 	Armour["se-thruster-suit-4"].order = "CD"
 end
+
+if mods["pypostprocessing"] then
+	Recipe["light-armor"].subgroup = "Par_Light_Heavy"
+	Recipe["heavy-armor"].subgroup = "Par_Light_Heavy"
+	if mods["incendiary-arsenal"] and mods["space-age"] then
+		Armour["mech-armor-fireproof"].subgroup = "PAREXT_MechSuits"
+	end
+	if (mods["mech-armor"] or mods["space-age"]) then
+		Armour["mech-armor"].subgroup = "PAREXT_MechSuits"
+	end
+	if mods["RampantArsenalFork"] and (mods["space-age"] or mods["mech-armor"]) then
+		Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAREXT_MechSuits"
+	end
+	if mods["jetpack"] then
+		Item["jetpack-1"].subgroup = "PAR_SEVerified"
+		Item["jetpack-2"].subgroup = "PAR_SEVerified"
+		Item["jetpack-3"].subgroup = "PAR_SEVerified"
+		Item["jetpack-4"].subgroup = "PAR_SEVerified"
+	end
+	if mods["TeleportationEquipment"]then
+		Item["teleportation-equipment"].subgroup = "PAR_compatibility"
+		Recipe["teleportation-equipment"].subgroup = "PAR_compatibility"
+	end
+	if mods["Power Armor MK3"] then
+		Recipe["pamk3-lvest"].subgroup = "Par_Light_Heavy"
+		Recipe["pamk3-hvest"].subgroup = "Par_Light_Heavy"
+		Armour["pamk3-lvest"].subgroup = "Par_Light_Heavy"
+		Armour["pamk3-hvest"].subgroup = "Par_Light_Heavy"
+	end
+end
+
