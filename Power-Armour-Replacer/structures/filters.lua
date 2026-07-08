@@ -158,7 +158,9 @@ if mods["Aircraft-space-age"]then
     end
     --added to fix any possible soft lock that may occur.
     DRT["afterburner"].prerequisites = nil
-    DRT["space-platform-thruster"].prerequisites = {"space-platform"}
+    if mods["space-age"]then
+        DRT["space-platform-thruster"].prerequisites = {"space-platform"}
+    end
 end
 
 if mods["linox"]then
