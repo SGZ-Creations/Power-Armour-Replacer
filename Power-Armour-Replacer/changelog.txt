@@ -2,6 +2,7 @@
 Version: 0.6.1
 Date: 05.07.26
   Info:
+    - [PAR] Ported 0.5.6
     - [PAR] Ported 0.5.5
     - [PAR] Ported 0.5.4
     - [PAR] Ported 0.5.3
@@ -28,6 +29,19 @@ Date: 26.06.26
     - [PAR] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.6
+Date: 08.07.26
+  Bugfixes:
+    - [PAR] Shockdefense MK1 is now working.
+    - [PAR] Shockedefense Remote is now working.
+  Changes:
+    - [Par] Passive or Active settings removed due to limitation to how many equipment(s) capsule can handle at once.
+    - [PAR] Shockdefense trigger_tech MK1 requires 5 fission again to be unlocked.
+    - [PAR] Shockdefense MK1 requires remote.
+    - [PAR] Shockdefense MK2-10 are passive.
+    - [PAR] default Shockdefense power consumption reduced.
+    - [PAR] Liquids required for armour recipes increased & reduced from mk7 - 10.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.5
 Date: 08.07.26

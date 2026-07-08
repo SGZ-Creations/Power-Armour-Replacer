@@ -274,8 +274,8 @@ if mods["space-age"] then
                 {type="item", name="supercapacitor", amount=400},
                 {type="item", name="lithium-plate", amount=400},
                 --fluids
-                {type="fluid", name="electrolyte", amount=1000},
-                {type="fluid", name="ammonia", amount=1000},
+                {type="fluid", name="electrolyte", amount=400},
+                {type="fluid", name="ammonia", amount=400},
             },
             results = {{type="item", name="par-armour-mk7", amount=1}},
         },
@@ -296,8 +296,8 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=600},
                 {type="item", name="battery", amount=600},
                 --fluids
-                {type="fluid", name="electrolyte", amount=1000},
-                {type="fluid", name="ammonia", amount=1000},
+                {type="fluid", name="electrolyte", amount=600},
+                {type="fluid", name="ammonia", amount=600},
             },
             results = {{type="item", name="par-armour-mk8", amount=1}},
         },
@@ -321,12 +321,12 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=800},
                 {type="item", name="biter-egg", amount=800},
                 --fluids
-                {type="fluid", name="fluoroketone-cold", amount=100},
-                {type="fluid", name="electrolyte", amount=1000},
+                {type="fluid", name="fluoroketone-cold", amount=800},
+                {type="fluid", name="electrolyte", amount=800},
             },
             results = {
                 {type="item", name="par-armour-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=100},
+                {type="fluid", name="fluoroketone-hot", amount=700},
             },
         },
         {
@@ -351,11 +351,11 @@ if mods["space-age"] then
                 {type="item", name="biter-egg", amount=1000},
                 --fluids
                 {type="fluid", name="electrolyte", amount=1000},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="fluoroketone-cold", amount=1000},
             },
             results = {
                 {type="item", name="par-armour-mk10", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=900},
             },
         },
     })
