@@ -116,7 +116,19 @@ if mods["foliax"]then
             name = "Foliax-filters",
             setting_type = "startup",
             default_value = true,
-            order = "ZMac-9"
+            order = "ZMad-9"
+        },
+    })
+end
+
+if mods["Aircraft-space-age"]then
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "AircraftFilters",
+            setting_type = "startup",
+            default_value = true,
+            order = "ZMae-9"
         },
     })
 end

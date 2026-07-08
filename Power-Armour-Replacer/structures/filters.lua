@@ -123,9 +123,7 @@ if SS["vanilla-filters"].value then
     Hide_Item("personal-laser-defense-equipment")
 end
 
-
 if mods["space-age"] then
-
     DRT["fusion-reactor-equipment"].enabled = false
     DRT["battery-mk3-equipment"].enabled = false
 
@@ -139,6 +137,28 @@ if mods["space-age"] then
         Hide_Item("fusion-reactor-equipment")
         Hide_Item("battery-mk3-equipment")
     end
+end
+
+if mods["Aircraft-space-age"]then
+    DRT["afterburner"].enabled = false
+    DRT["aircraft-energy-shield"].enabled = false
+
+    DRT["afterburner"].hidden = true
+    DRT["aircraft-energy-shield"].hidden = true
+
+    DRR["aircraft-afterburner"].hidden = true
+    DRR["aircraft-energy-shield"].hidden = true
+
+    DRR["aircraft-afterburner"].enabled = false
+    DRR["aircraft-energy-shield"].enabled = false
+
+    if SS["AircraftFilters"].value then
+        Hide_Item("aircraft-afterburner")
+        Hide_Item("aircraft-energy-shield")
+    end
+    --added to fix any possible soft lock that may occur.
+    DRT["afterburner"].prerequisites = nil
+    DRT["space-platform-thruster"].prerequisites = {"space-platform"}
 end
 
 if mods["linox"]then
