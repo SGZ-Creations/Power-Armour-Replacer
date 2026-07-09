@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.2
+Date: 09.07.26
+  Info:
+    - [PAR] Ported 0.5.7
+  Bugfixes:
+    - Aircraft Crash introduced in 0.5.5/0.6.1.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: 08.07.26
   Info:
@@ -29,6 +36,13 @@ Date: 26.06.26
     - [PAR] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.7
+Date: 09.07.26
+  Bugfixes:
+    - [PAR] Crash with Aircraft mod.
+  Info:
+    - Sorry to everyone crashing.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.6
 Date: 08.07.26
