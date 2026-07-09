@@ -12,9 +12,9 @@ The mod has some compatibility included and still being worked on but I was so e
 # Mod here have the most done to it. Considered complete:
 Angels.
 Bob's.
+K2/SO.
 
 # Very little added traces of changes on any tiers:
-K2.
 SE.
 Py.
 
