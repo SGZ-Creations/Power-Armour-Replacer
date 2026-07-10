@@ -48,6 +48,7 @@ Version: 0.5.8
 Date: 10.07.26
   Changes:
     - [PAR] Re enabled the radius setting as it was not causing the Mk1 equipment breaking.
+    - [PAR] Updated some Shock defence locales.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.7
 Date: 09.07.26
