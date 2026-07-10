@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.3
+Date: 10.07.26
+  Info:
+    - [PAR] Ported 0.5.8
+  Scripting:
+    - Added some @class data.ModBoolSettingPrototype.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.2
 Date: 09.07.26
   Info:
@@ -37,6 +44,11 @@ Date: 26.06.26
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.8
+Date: 10.07.26
+  Changes:
+    - [PAR] Re enabled the radius setting as it was not causing the Mk1 equipment breaking.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.7
 Date: 09.07.26
   Bugfixes:
@@ -50,7 +62,7 @@ Date: 08.07.26
     - [PAR] Shockdefense MK1 is now working.
     - [PAR] Shockedefense Remote is now working.
   Changes:
-    - [Par] Passive or Active settings removed due to limitation to how many equipment(s) capsule can handle at once.
+    - [Par] Passive or Active settings removed due to limitation to how many equipment(s) "["capsule"]["discharge-defense-remote"].capsule_action.equipment" can handle at once. can handle at once.
     - [PAR] Shockdefense trigger_tech MK1 requires 5 fission again to be unlocked.
     - [PAR] Shockdefense MK1 requires remote.
     - [PAR] Shockdefense MK2-10 are passive.
