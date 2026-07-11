@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.4
+Date: 11.07.26
+  Info:
+    - [PAR] Ported 0.5.9.
+  Changes:
+    - [PAR] Porting difference is mod required recycler VC quality.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.3
 Date: 10.07.26
   Info:
@@ -43,6 +50,13 @@ Date: 26.06.26
     - [PAR] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.9
+Date: 11.07.26
+  Changes:
+    - [PAR] Possible fix for limited output size on recycler.
+  Credit:
+    - @nickaman. For bug report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.8
 Date: 10.07.26
