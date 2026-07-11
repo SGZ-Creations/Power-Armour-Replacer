@@ -1,13 +1,7 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
----@class LuaSettings
 local SS = settings.startup
 local QualityValue = mods["quality"] and 3 or 1
---[[
-    local function QualityValue(tier)
-        return mods["quality"] and (tier * 4) or 1
-    end
-]]
 local roboports = {
     {charging_energy = tostring(SS["RoboportCharging_01"].value) .. "MW", buffer_capacity =tostring(SS["RoboportBuffer_01"].value) .. "MJ", input_flow_limit = tostring(SS["RoboportInputFlow_01"].value) .. "MW", construction_radius =SS["RoboportConstructionRadius_01"].value, robot_limit = SS["RoboportRobotLimit_01"].value, charging_station_count =SS["RoboportBotCharging_01"].value * QualityValue--[[(4)]], weightvalue = SS["RoboportWeight_01"].value, order = "ea[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-1", 64, 1), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-1", 128, 128,  1)},
     {charging_energy = tostring(SS["RoboportCharging_02"].value) .. "MW", buffer_capacity =tostring(SS["RoboportBuffer_02"].value) .. "MJ", input_flow_limit = tostring(SS["RoboportInputFlow_02"].value) .. "MW", construction_radius =SS["RoboportConstructionRadius_02"].value, robot_limit = SS["RoboportRobotLimit_02"].value, charging_station_count =SS["RoboportBotCharging_02"].value * QualityValue--[[(4)]], weightvalue = SS["RoboportWeight_02"].value, order = "eb[roboport]-aa[armour-replacer]", port_texture = icon_utils.create_equipment_icon("personal-roboport-1", 64, 2), port_sprite = icon_utils.create_equipment_sprite("personal-roboport-1", 128, 128,  2)},

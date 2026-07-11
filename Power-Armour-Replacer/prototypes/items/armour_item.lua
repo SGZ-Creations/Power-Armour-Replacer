@@ -1,6 +1,5 @@
 local simulations = require("__base__.prototypes.factoriopedia-simulations")
 local item_sounds = require("__base__.prototypes.item_sounds")
----@class data.SettingsStartup
 local SS = settings.startup
 --[[
 % 40=0.4 or 105=1.05    
@@ -119,7 +118,7 @@ for tier, equipment in pairs(power_armour) do
         stack_size = 1,
         --flags = {"not-stackable"},
         weight = equipment.weightvalue,
-        equipment_grid = equipment_grid_name, -- disable to removes quality. now make a setting or function that tells if setting =  grids H-W 0 then remove grid entirely. 
+        equipment_grid = equipment_grid_name, -- disable to removes quality. now make a setting or function that tells if setting = grids H-W 0 then remove grid entirely. make this code at C.A.S to not cause load order issues.
         inventory_size_bonus = equipment.inventory_bonus,
         open_sound = { filename = "__base__/sound/armor-open.ogg", volume = 1 },
         close_sound = { filename = "__base__/sound/armor-close.ogg", volume = 1 }
