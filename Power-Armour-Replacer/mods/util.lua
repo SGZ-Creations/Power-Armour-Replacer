@@ -117,7 +117,7 @@ end
 -- Space Age recycling shenanigans --------------------------------
 -------------------------------------------------------------------
 -- only allows these new functions when quality is enabled
-if (mods["quality"]or mods["recycler"]) then
+if mods["recycler"] then
 -- update recycling icon    
     PAR.update_rec_recipe_icon= function(recipe_name, icon_name, size)
     --duplicate of function bobmods.lib.recipe.update_recycling_recipe_icon(recipe_name, icon_name, size) from boblib
