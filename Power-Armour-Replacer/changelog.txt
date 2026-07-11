@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.5
-Date: ????
+Date: 00.07.26
   Changes:
     - [PAR] old code & @class removed.
     - [PAR] Removed optional quality.
