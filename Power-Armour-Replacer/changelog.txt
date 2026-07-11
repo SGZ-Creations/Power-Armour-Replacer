@@ -4,7 +4,11 @@ Date: 11.07.26
   Info:
     - [PAR] Ported 0.5.9.
   Changes:
-    - [PAR] Porting difference is mod required recycler VC quality.
+    - [PAR] Porting difference is mod required recycler instead of quality.
+  Bugfixes:
+    - [PAR][recycler] Too few output slots.
+  Credit:
+    - @nickaman. For bug report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.3
 Date: 10.07.26
@@ -55,8 +59,6 @@ Version: 0.5.9
 Date: 11.07.26
   Changes:
     - [PAR] Possible fix for limited output size on recycler.
-  Credit:
-    - @nickaman. For bug report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.8
 Date: 10.07.26

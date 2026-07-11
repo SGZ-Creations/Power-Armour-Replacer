@@ -15,7 +15,7 @@ data:extend({
 	},
 })
 
-if mods["space-age"] then
+if mods["recycler"] then
 	table.insert(Recipe["scrap-recycling"].results, {type = "item", name = "armour-control-unit", amount = SS["ArmourControlUnit"].value, independent_probability = 0.0001, show_details_in_recipe_tooltip = false})
 end
 
