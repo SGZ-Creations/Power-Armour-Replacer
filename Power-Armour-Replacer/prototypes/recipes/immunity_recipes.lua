@@ -5,6 +5,7 @@ data:extend({
         type = "recipe",
         name = "par-belt-immunity-mk1",
         categories = {"par-electronics"},
+        allow_decomposition = true,
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -21,6 +22,7 @@ data:extend({
         type = "recipe",
         name = "par-belt-immunity-mk2",
         categories = {"par-electronics"},
+        allow_decomposition = true,
         enabled = false,
         energy_required = 20,
         ingredients = {
@@ -42,6 +44,7 @@ if mods["space-age"] then
             name = "par-belt-immunity-mk1",
             main_product = "par-belt-immunity-mk1",
             categories = {"par-electronics"},
+            allow_decomposition = true,
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -62,6 +65,7 @@ if mods["space-age"] then
             name = "par-belt-immunity-mk2",
             main_product = "par-belt-immunity-mk2",
             categories = {"par-electronics"},
+            allow_decomposition = true,
             enabled = false,
             energy_required = 20,
             ingredients = {
