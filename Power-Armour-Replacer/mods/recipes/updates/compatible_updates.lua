@@ -1,4 +1,3 @@
----@class data.RecipePrototype
 local Recipe = data.raw.recipe
 
 Recipe["light-armor"].ingredients = {

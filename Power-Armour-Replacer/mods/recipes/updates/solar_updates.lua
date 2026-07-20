@@ -1,6 +1,6 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
-PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
+local RECIPES = data.raw.recipe
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk1"], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -91,7 +91,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk1"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk2"], {
     {
         dependencies = {"bobplates"},
         replacements = {
@@ -142,7 +142,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk2"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk3"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -184,7 +184,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk3"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk4"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -244,7 +244,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk4"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk5"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -300,7 +300,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk5"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk6"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -347,7 +347,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk6"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk7"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -388,7 +388,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk7"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk8"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk8"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -445,7 +445,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk8"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -493,7 +493,7 @@ PAR.ingredient_prereq(DRR["par-solar-panel-mk9"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-solar-panel-mk10"], {
+PAR.ingredient_prereq(RECIPES["par-solar-panel-mk10"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {

@@ -1,8 +1,8 @@
 local PAR = require("mods.util")
 ---@Class RecipePrototype
-local Recipe = data.raw.recipe
+local RECIPES = data.raw.recipe
 
-PAR.ingredient_prereq(Recipe["par-roboport-mk1"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -96,7 +96,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk1"], {
         }
     },
 })
-PAR.ingredient_prereq(Recipe["par-roboport-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -133,7 +133,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk2"], {
         }
     },
 })
-PAR.ingredient_prereq(Recipe["par-roboport-mk3"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk3"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -159,7 +159,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk3"], {
         }
     },
 })
-PAR.ingredient_prereq(Recipe["par-roboport-mk4"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk4"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -186,7 +186,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk4"], {
         }
     },
 })
-PAR.ingredient_prereq(Recipe["par-roboport-mk5"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk5"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -215,7 +215,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk5"], {
     },
 })
 
-PAR.ingredient_prereq(Recipe["par-roboport-mk6"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk6"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -246,7 +246,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk6"], {
     },
 })
 
-PAR.ingredient_prereq(Recipe["par-roboport-mk7"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk7"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -289,7 +289,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk7"], {
         }
     },
 })
-PAR.ingredient_prereq(Recipe["par-roboport-mk8"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk8"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -330,7 +330,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk8"], {
         }
     },
 })
-PAR.ingredient_prereq(Recipe["par-roboport-mk9"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
@@ -364,7 +364,7 @@ PAR.ingredient_prereq(Recipe["par-roboport-mk9"], {
         }
     },
 })
-PAR.ingredient_prereq(Recipe["par-roboport-mk10"], {
+PAR.ingredient_prereq(RECIPES["par-roboport-mk10"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {

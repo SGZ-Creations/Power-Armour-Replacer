@@ -1,7 +1,7 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
+local RECIPES = data.raw.recipe
 
-PAR.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
+PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -42,7 +42,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk1"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-exoskeleton-mk2"], {
+PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -96,7 +96,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk2"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
+PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -162,7 +162,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk3"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
+PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
@@ -227,7 +227,7 @@ PAR.ingredient_prereq(DRR["par-exoskeleton-mk4"], {
         }
     },
 })
-PAR.ingredient_prereq(DRR["par-exoskeleton-mk5"], {
+PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
