@@ -36,7 +36,7 @@ if mods["space-age"]then
 				recipe = "armour-control-unit-2"
 			}
 		},
-		prerequisites = {"armour-control-unit", "tungsten-steel", "carbon-fiber", "electromagnetic-plant",},
+		prerequisites = {"armour-control-unit", "tungsten-steel", "carbon-fiber", "electromagnetic-plant", "cryogenic-science-pack"},
 		unit = {
 			count = 125,
 			ingredients = {
@@ -45,8 +45,8 @@ if mods["space-age"]then
 				{"chemical-science-pack",   	 5},
 				{"space-science-pack", 			 5},
 				{"metallurgic-science-pack",     5},
-				{"agricultural-science-pack",    5},
 				{"electromagnetic-science-pack", 5},
+				{"cryogenic-science-pack",       5},
 			},
 			time = 45
 		},

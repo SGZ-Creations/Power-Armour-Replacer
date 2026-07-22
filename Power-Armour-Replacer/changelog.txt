@@ -1,11 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.5
 Date: 22.07.26
+  Features:
+    - [PAR][PAR-E] Cleaning for Alpha testing PARs-SpaceAge-Extension.
   Changes:
     - [PAR] old code & @class removed.
     - [PAR] Removed optional quality. Hope noting breaks.
-  Features:
-    - Cleaning for Alpha testing PARs-SpaceAge-Extension.
+    - [PAR] Armour Control unit 2: Reverted processing unit change. Changed carbonfiber to carbon.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.4
 Date: 11.07.26

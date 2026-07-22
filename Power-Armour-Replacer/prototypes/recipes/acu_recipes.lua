@@ -23,13 +23,13 @@ if mods["space-age"] then
 			name = "armour-control-unit-2",
 			categories = {"par-electronics"},
 			auto_recycle = false,
-			energy_required = 10,
+			energy_required = 2,
 			enabled = false,
 			ingredients = {
-				{type="item", name="processing-unit", amount=20},
+				{type="item", name="quantum-processor", amount=5},
 				{type="item", name="tungsten-plate", amount=10},
 				{type="item", name="superconductor", amount=10},
-				{type="item", name="carbon-fiber", amount=10},
+				{type="item", name="carbon", amount=10},
 			},
 			results = {{type="item", name="armour-control-unit", amount=32}}
 		},
