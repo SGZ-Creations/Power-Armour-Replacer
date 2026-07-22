@@ -1,7 +1,7 @@
-local DRR = data.raw.recipe
-local DRT = data.raw.technology
-local DRI = data.raw.item
-local DRA = data.raw.armor
+local Recipes = data.raw.recipe
+local Tech = data.raw.technology
+local Item = data.raw.item
+local Armour = data.raw.armor
 local SS = settings.startup
 
 --[[
@@ -16,12 +16,12 @@ local SS = settings.startup
 ]]
 
 local function Hide_Item(name)
-    local item = DRI[name]
+    local item = Item[name]
     if item then
         item.hidden = true
     end
 
-    local armour_item = DRA[name]
+    local armour_item = Armour[name]
     if armour_item then
         armour_item.hidden = true
     end
@@ -31,78 +31,78 @@ local function Hide_Item(name)
 end
 
 --Enabled
-    DRT["modular-armor"].enabled = false
-    DRT["power-armor"].enabled = false
-    DRT["power-armor-mk2"].enabled = false
+    Tech["modular-armor"].enabled = false
+    Tech["power-armor"].enabled = false
+    Tech["power-armor-mk2"].enabled = false
 --Hidden
-    DRR["modular-armor"].hidden = true
-    DRR["power-armor"].hidden = true
-    DRR["power-armor-mk2"].hidden = true
+    Recipes["modular-armor"].hidden = true
+    Recipes["power-armor"].hidden = true
+    Recipes["power-armor-mk2"].hidden = true
 
-    DRT["modular-armor"].hidden = true
-    DRT["power-armor"].hidden = true
-    DRT["power-armor-mk2"].hidden = true
+    Tech["modular-armor"].hidden = true
+    Tech["power-armor"].hidden = true
+    Tech["power-armor-mk2"].hidden = true
 
 --Enabled
-    DRT["energy-shield-equipment"].enabled = false
-    DRT["energy-shield-mk2-equipment"].enabled = false
-    DRT["fission-reactor-equipment"].enabled = false
-    DRT["night-vision-equipment"].enabled = false
-    DRT["battery-equipment"].enabled = false
-    DRT["battery-mk2-equipment"].enabled = false
-    DRT["belt-immunity-equipment"].enabled = false
-    DRT["exoskeleton-equipment"].enabled = false
-    DRT["personal-laser-defense-equipment"].enabled = false
-    DRT["personal-roboport-equipment"].enabled = false
-    DRT["personal-roboport-mk2-equipment"].enabled = false
-    DRT["solar-panel-equipment"].enabled = false
-    DRT["discharge-defense-equipment"].enabled = false
+    Tech["energy-shield-equipment"].enabled = false
+    Tech["energy-shield-mk2-equipment"].enabled = false
+    Tech["fission-reactor-equipment"].enabled = false
+    Tech["night-vision-equipment"].enabled = false
+    Tech["battery-equipment"].enabled = false
+    Tech["battery-mk2-equipment"].enabled = false
+    Tech["belt-immunity-equipment"].enabled = false
+    Tech["exoskeleton-equipment"].enabled = false
+    Tech["personal-laser-defense-equipment"].enabled = false
+    Tech["personal-roboport-equipment"].enabled = false
+    Tech["personal-roboport-mk2-equipment"].enabled = false
+    Tech["solar-panel-equipment"].enabled = false
+    Tech["discharge-defense-equipment"].enabled = false
 
-    DRR["power-armor"].enabled = false
-    DRR["modular-armor"].enabled = false
-    DRR["power-armor-mk2"].enabled = false
-    DRR["battery-equipment"].enabled = false
-    DRR["exoskeleton-equipment"].enabled = false
-    DRR["battery-mk2-equipment"].enabled = false
-    DRR["solar-panel-equipment"].enabled = false
-    DRR["night-vision-equipment"].enabled = false
-    DRR["belt-immunity-equipment"].enabled = false
-    DRR["energy-shield-equipment"].enabled = false
-    DRR["fission-reactor-equipment"].enabled = false
-    DRR["personal-roboport-equipment"].enabled = false
-    DRR["energy-shield-mk2-equipment"].enabled = false
-    DRR["discharge-defense-equipment"].enabled = false
-    DRR["personal-roboport-mk2-equipment"].enabled = false
-    DRR["personal-laser-defense-equipment"].enabled = false
+    Recipes["power-armor"].enabled = false
+    Recipes["modular-armor"].enabled = false
+    Recipes["power-armor-mk2"].enabled = false
+    Recipes["battery-equipment"].enabled = false
+    Recipes["exoskeleton-equipment"].enabled = false
+    Recipes["battery-mk2-equipment"].enabled = false
+    Recipes["solar-panel-equipment"].enabled = false
+    Recipes["night-vision-equipment"].enabled = false
+    Recipes["belt-immunity-equipment"].enabled = false
+    Recipes["energy-shield-equipment"].enabled = false
+    Recipes["fission-reactor-equipment"].enabled = false
+    Recipes["personal-roboport-equipment"].enabled = false
+    Recipes["energy-shield-mk2-equipment"].enabled = false
+    Recipes["discharge-defense-equipment"].enabled = false
+    Recipes["personal-roboport-mk2-equipment"].enabled = false
+    Recipes["personal-laser-defense-equipment"].enabled = false
 
 --Hidden
-    DRT["fission-reactor-equipment"].hidden = true
-    DRT["energy-shield-equipment"].hidden = true
-    DRT["night-vision-equipment"].hidden = true
-    DRT["energy-shield-mk2-equipment"].hidden = true
-    DRT["exoskeleton-equipment"].hidden = true
-    DRT["belt-immunity-equipment"].hidden = true
-    DRT["battery-equipment"].hidden = true
-    DRT["battery-mk2-equipment"].hidden = true
-    DRT["solar-panel-equipment"].hidden = true
-    DRT["discharge-defense-equipment"].hidden = true
-    DRT["personal-roboport-equipment"].hidden = true
-    DRT["personal-roboport-mk2-equipment"].hidden = true
-    DRT["personal-laser-defense-equipment"].hidden = true
+    Tech["fission-reactor-equipment"].hidden = true
+    Tech["energy-shield-equipment"].hidden = true
+    Tech["night-vision-equipment"].hidden = true
+    Tech["energy-shield-mk2-equipment"].hidden = true
+    Tech["exoskeleton-equipment"].hidden = true
+    Tech["belt-immunity-equipment"].hidden = true
+    Tech["battery-equipment"].hidden = true
+    Tech["battery-mk2-equipment"].hidden = true
+    Tech["solar-panel-equipment"].hidden = true
+    Tech["discharge-defense-equipment"].hidden = true
+    Tech["personal-roboport-equipment"].hidden = true
+    Tech["personal-roboport-mk2-equipment"].hidden = true
+    Tech["personal-laser-defense-equipment"].hidden = true
 
-    DRR["energy-shield-equipment"].hidden = true
-    DRR["energy-shield-mk2-equipment"].hidden = true
-    DRR["fission-reactor-equipment"].hidden = true
-    DRR["night-vision-equipment"].hidden = true
-    DRR["battery-equipment"].hidden = true
-    DRR["battery-mk2-equipment"].hidden = true
-    DRR["belt-immunity-equipment"].hidden = true
-    DRR["exoskeleton-equipment"].hidden = true
-    DRR["solar-panel-equipment"].hidden = true
-    DRR["discharge-defense-equipment"].hidden = true
-    DRR["personal-roboport-equipment"].hidden = true
-    DRR["personal-laser-defense-equipment"].hidden = true
-    DRR["personal-roboport-mk2-equipment"].hidden = true
+    Recipes["energy-shield-equipment"].hidden = true
+    Recipes["energy-shield-mk2-equipment"].hidden = true
+    Recipes["fission-reactor-equipment"].hidden = true
+    Recipes["night-vision-equipment"].hidden = true
+    Recipes["battery-equipment"].hidden = true
+    Recipes["battery-mk2-equipment"].hidden = true
+    Recipes["belt-immunity-equipment"].hidden = true
+    Recipes["exoskeleton-equipment"].hidden = true
+    Recipes["solar-panel-equipment"].hidden = true
+    Recipes["discharge-defense-equipment"].hidden = true
+    Recipes["personal-roboport-equipment"].hidden = true
+    Recipes["personal-laser-defense-equipment"].hidden = true
+    Recipes["personal-roboport-mk2-equipment"].hidden = true
 
 if SS["vanilla-filters"].value then
     Hide_Item("power-armor")
@@ -124,14 +124,14 @@ if SS["vanilla-filters"].value then
 end
 
 if mods["space-age"] then
-    DRT["fusion-reactor-equipment"].enabled = false
-    DRT["battery-mk3-equipment"].enabled = false
+    Tech["fusion-reactor-equipment"].enabled = false
+    Tech["battery-mk3-equipment"].enabled = false
 
-    DRT["fusion-reactor-equipment"].hidden = true
-    DRT["battery-mk3-equipment"].hidden = true
+    Tech["fusion-reactor-equipment"].hidden = true
+    Tech["battery-mk3-equipment"].hidden = true
 
-    DRR["fusion-reactor-equipment"].hidden = true
-    DRR["battery-mk3-equipment"].hidden = true
+    Recipes["fusion-reactor-equipment"].hidden = true
+    Recipes["battery-mk3-equipment"].hidden = true
 
     if SS["SAFilters"].value then
         Hide_Item("fusion-reactor-equipment")
@@ -140,37 +140,37 @@ if mods["space-age"] then
 end
 
 if mods["Aircraft-space-age"]then
-    DRT["afterburner"].enabled = false
-    DRT["aircraft-energy-shield"].enabled = false
+    Tech["afterburner"].enabled = false
+    Tech["aircraft-energy-shield"].enabled = false
 
-    DRT["afterburner"].hidden = true
-    DRT["aircraft-energy-shield"].hidden = true
+    Tech["afterburner"].hidden = true
+    Tech["aircraft-energy-shield"].hidden = true
 
-    DRR["aircraft-afterburner"].hidden = true
-    DRR["aircraft-energy-shield"].hidden = true
+    Recipes["aircraft-afterburner"].hidden = true
+    Recipes["aircraft-energy-shield"].hidden = true
 
-    DRR["aircraft-afterburner"].enabled = false
-    DRR["aircraft-energy-shield"].enabled = false
+    Recipes["aircraft-afterburner"].enabled = false
+    Recipes["aircraft-energy-shield"].enabled = false
 
     if SS["AircraftFilters"].value then
         Hide_Item("aircraft-afterburner")
         Hide_Item("aircraft-energy-shield")
     end
     --added to fix any possible soft lock that may occur.
-    DRT["afterburner"].prerequisites = nil
+    Tech["afterburner"].prerequisites = nil
     if mods["space-age"]then
-        DRT["space-platform-thruster"].prerequisites = {"space-platform"}
+        Tech["space-platform-thruster"].prerequisites = {"space-platform"}
     end
 end
 
 if mods["linox"]then
-    DRT["linox-technology_dysprosium-exoskeleton-equipment"].enabled = false
+    Tech["linox-technology_dysprosium-exoskeleton-equipment"].enabled = false
 
-    DRR["dysprosium-exoskeleton-equipment"].enabled = false
+    Recipes["dysprosium-exoskeleton-equipment"].enabled = false
 
-    DRT["linox-technology_dysprosium-exoskeleton-equipment"].hidden = true
+    Tech["linox-technology_dysprosium-exoskeleton-equipment"].hidden = true
 
-    DRR["dysprosium-exoskeleton-equipment"].hidden = true
+    Recipes["dysprosium-exoskeleton-equipment"].hidden = true
 
     if SS["LOXFilters"].value then
         Hide_Item("dysprosium-exoskeleton-equipment")
@@ -179,22 +179,22 @@ end
 
 if (mods["bobwarfare"] or mods["bobequipment"]) then
 --Enabled
-    DRR["bob-power-armor-mk3"].enabled = false
-    DRR["bob-power-armor-mk4"].enabled = false
-    DRR["bob-power-armor-mk5"].enabled = false
+    Recipes["bob-power-armor-mk3"].enabled = false
+    Recipes["bob-power-armor-mk4"].enabled = false
+    Recipes["bob-power-armor-mk5"].enabled = false
 
-    DRT["bob-power-armor-3"].enabled = false
-    DRT["bob-power-armor-4"].enabled = false
-    DRT["bob-power-armor-5"].enabled = false
+    Tech["bob-power-armor-3"].enabled = false
+    Tech["bob-power-armor-4"].enabled = false
+    Tech["bob-power-armor-5"].enabled = false
 
 --Hidden
-    DRR["bob-power-armor-mk3"].hidden = true
-    DRR["bob-power-armor-mk4"].hidden = true
-    DRR["bob-power-armor-mk5"].hidden = true
+    Recipes["bob-power-armor-mk3"].hidden = true
+    Recipes["bob-power-armor-mk4"].hidden = true
+    Recipes["bob-power-armor-mk5"].hidden = true
 
-    DRT["bob-power-armor-3"].hidden = true
-    DRT["bob-power-armor-4"].hidden = true
-    DRT["bob-power-armor-5"].hidden = true
+    Tech["bob-power-armor-3"].hidden = true
+    Tech["bob-power-armor-4"].hidden = true
+    Tech["bob-power-armor-5"].hidden = true
 
     if SS["BobW-filters"].value then
         Hide_Item("bob-power-armor-mk3")
@@ -205,138 +205,138 @@ end
 
 if mods["bobequipment"] then
 --Enabled
-    DRT["battery-mk3-equipment"].enabled = false
-    DRT["bob-battery-equipment-4"].enabled = false
-    DRT["bob-battery-equipment-5"].enabled = false
-    DRT["bob-exoskeleton-equipment-2"].enabled = false
-    DRT["bob-exoskeleton-equipment-3"].enabled = false
-    DRT["bob-solar-panel-equipment-2"].enabled = false
-    DRT["bob-solar-panel-equipment-3"].enabled = false
-    DRT["bob-solar-panel-equipment-4"].enabled = false
-    DRT["bob-night-vision-equipment-2"].enabled = false
-    DRT["bob-night-vision-equipment-3"].enabled = false
-    DRT["bob-fission-reactor-equipment-2"].enabled = false
-    DRT["bob-fission-reactor-equipment-3"].enabled = false
-    DRT["bob-fission-reactor-equipment-4"].enabled = false
-    DRT["bob-energy-shield-equipment-3"].enabled = false
-    DRT["bob-energy-shield-equipment-4"].enabled = false
-    DRT["bob-energy-shield-equipment-5"].enabled = false
-    DRT["bob-energy-shield-equipment-6"].enabled = false
-    DRT["bob-personal-roboport-mk3-equipment"].enabled = false
-    DRT["bob-personal-roboport-mk4-equipment"].enabled = false
-    DRT["bob-personal-laser-defense-equipment-2"].enabled = false
-    DRT["bob-personal-laser-defense-equipment-3"].enabled = false
-    DRT["bob-personal-laser-defense-equipment-4"].enabled = false
-    DRT["bob-personal-laser-defense-equipment-5"].enabled = false
-    DRT["bob-personal-laser-defense-equipment-6"].enabled = false
-    DRT["bob-personal-roboport-modular-equipment-1"].enabled = false
-    DRT["bob-personal-roboport-modular-equipment-2"].enabled = false
-    DRT["bob-personal-roboport-modular-equipment-3"].enabled = false
-    DRT["bob-personal-roboport-modular-equipment-4"].enabled = false
+    Tech["battery-mk3-equipment"].enabled = false
+    Tech["bob-battery-equipment-4"].enabled = false
+    Tech["bob-battery-equipment-5"].enabled = false
+    Tech["bob-exoskeleton-equipment-2"].enabled = false
+    Tech["bob-exoskeleton-equipment-3"].enabled = false
+    Tech["bob-solar-panel-equipment-2"].enabled = false
+    Tech["bob-solar-panel-equipment-3"].enabled = false
+    Tech["bob-solar-panel-equipment-4"].enabled = false
+    Tech["bob-night-vision-equipment-2"].enabled = false
+    Tech["bob-night-vision-equipment-3"].enabled = false
+    Tech["bob-fission-reactor-equipment-2"].enabled = false
+    Tech["bob-fission-reactor-equipment-3"].enabled = false
+    Tech["bob-fission-reactor-equipment-4"].enabled = false
+    Tech["bob-energy-shield-equipment-3"].enabled = false
+    Tech["bob-energy-shield-equipment-4"].enabled = false
+    Tech["bob-energy-shield-equipment-5"].enabled = false
+    Tech["bob-energy-shield-equipment-6"].enabled = false
+    Tech["bob-personal-roboport-mk3-equipment"].enabled = false
+    Tech["bob-personal-roboport-mk4-equipment"].enabled = false
+    Tech["bob-personal-laser-defense-equipment-2"].enabled = false
+    Tech["bob-personal-laser-defense-equipment-3"].enabled = false
+    Tech["bob-personal-laser-defense-equipment-4"].enabled = false
+    Tech["bob-personal-laser-defense-equipment-5"].enabled = false
+    Tech["bob-personal-laser-defense-equipment-6"].enabled = false
+    Tech["bob-personal-roboport-modular-equipment-1"].enabled = false
+    Tech["bob-personal-roboport-modular-equipment-2"].enabled = false
+    Tech["bob-personal-roboport-modular-equipment-3"].enabled = false
+    Tech["bob-personal-roboport-modular-equipment-4"].enabled = false
 
-    DRR["battery-mk3-equipment"].enabled = false
-    DRR["bob-battery-mk4-equipment"].enabled = false
-    DRR["bob-battery-mk5-equipment"].enabled = false
-    DRR["bob-exoskeleton-equipment-2"].enabled = false
-    DRR["bob-exoskeleton-equipment-3"].enabled = false
-    DRR["bob-solar-panel-equipment-2"].enabled = false
-    DRR["bob-solar-panel-equipment-3"].enabled = false
-    DRR["bob-solar-panel-equipment-4"].enabled = false
-    DRR["bob-night-vision-equipment-2"].enabled = false
-    DRR["bob-night-vision-equipment-3"].enabled = false
-    DRR["bob-fission-reactor-equipment-2"].enabled = false
-    DRR["bob-fission-reactor-equipment-3"].enabled = false
-    DRR["bob-fission-reactor-equipment-4"].enabled = false
-    DRR["bob-energy-shield-mk3-equipment"].enabled = false
-    DRR["bob-energy-shield-mk4-equipment"].enabled = false
-    DRR["bob-energy-shield-mk5-equipment"].enabled = false
-    DRR["bob-energy-shield-mk6-equipment"].enabled = false
-    DRR["bob-personal-roboport-mk3-equipment"].enabled = false
-    DRR["bob-personal-roboport-mk4-equipment"].enabled = false
-    DRR["bob-personal-laser-defense-equipment-2"].enabled = false
-    DRR["bob-personal-laser-defense-equipment-3"].enabled = false
-    DRR["bob-personal-laser-defense-equipment-4"].enabled = false
-    DRR["bob-personal-laser-defense-equipment-5"].enabled = false
-    DRR["bob-personal-laser-defense-equipment-6"].enabled = false
-    DRR["bob-personal-roboport-robot-equipment"].enabled = false
-    DRR["bob-personal-roboport-robot-equipment-2"].enabled = false
-    DRR["bob-personal-roboport-robot-equipment-3"].enabled = false
-    DRR["bob-personal-roboport-robot-equipment-4"].enabled = false
-    DRR["bob-personal-roboport-antenna-equipment"].enabled = false
-    DRR["bob-personal-roboport-antenna-equipment-2"].enabled = false
-    DRR["bob-personal-roboport-antenna-equipment-3"].enabled = false
-    DRR["bob-personal-roboport-antenna-equipment-4"].enabled = false
-    DRR["bob-personal-roboport-chargepad-equipment"].enabled = false
-    DRR["bob-personal-roboport-chargepad-equipment-2"].enabled = false
-    DRR["bob-personal-roboport-chargepad-equipment-3"].enabled = false
-    DRR["bob-personal-roboport-chargepad-equipment-4"].enabled = false
+    Recipes["battery-mk3-equipment"].enabled = false
+    Recipes["bob-battery-mk4-equipment"].enabled = false
+    Recipes["bob-battery-mk5-equipment"].enabled = false
+    Recipes["bob-exoskeleton-equipment-2"].enabled = false
+    Recipes["bob-exoskeleton-equipment-3"].enabled = false
+    Recipes["bob-solar-panel-equipment-2"].enabled = false
+    Recipes["bob-solar-panel-equipment-3"].enabled = false
+    Recipes["bob-solar-panel-equipment-4"].enabled = false
+    Recipes["bob-night-vision-equipment-2"].enabled = false
+    Recipes["bob-night-vision-equipment-3"].enabled = false
+    Recipes["bob-fission-reactor-equipment-2"].enabled = false
+    Recipes["bob-fission-reactor-equipment-3"].enabled = false
+    Recipes["bob-fission-reactor-equipment-4"].enabled = false
+    Recipes["bob-energy-shield-mk3-equipment"].enabled = false
+    Recipes["bob-energy-shield-mk4-equipment"].enabled = false
+    Recipes["bob-energy-shield-mk5-equipment"].enabled = false
+    Recipes["bob-energy-shield-mk6-equipment"].enabled = false
+    Recipes["bob-personal-roboport-mk3-equipment"].enabled = false
+    Recipes["bob-personal-roboport-mk4-equipment"].enabled = false
+    Recipes["bob-personal-laser-defense-equipment-2"].enabled = false
+    Recipes["bob-personal-laser-defense-equipment-3"].enabled = false
+    Recipes["bob-personal-laser-defense-equipment-4"].enabled = false
+    Recipes["bob-personal-laser-defense-equipment-5"].enabled = false
+    Recipes["bob-personal-laser-defense-equipment-6"].enabled = false
+    Recipes["bob-personal-roboport-robot-equipment"].enabled = false
+    Recipes["bob-personal-roboport-robot-equipment-2"].enabled = false
+    Recipes["bob-personal-roboport-robot-equipment-3"].enabled = false
+    Recipes["bob-personal-roboport-robot-equipment-4"].enabled = false
+    Recipes["bob-personal-roboport-antenna-equipment"].enabled = false
+    Recipes["bob-personal-roboport-antenna-equipment-2"].enabled = false
+    Recipes["bob-personal-roboport-antenna-equipment-3"].enabled = false
+    Recipes["bob-personal-roboport-antenna-equipment-4"].enabled = false
+    Recipes["bob-personal-roboport-chargepad-equipment"].enabled = false
+    Recipes["bob-personal-roboport-chargepad-equipment-2"].enabled = false
+    Recipes["bob-personal-roboport-chargepad-equipment-3"].enabled = false
+    Recipes["bob-personal-roboport-chargepad-equipment-4"].enabled = false
 
 --Hidden
-    DRT["battery-mk3-equipment"].hidden = true
-    DRT["bob-battery-equipment-4"].hidden = true
-    DRT["bob-battery-equipment-5"].hidden = true
-    DRT["bob-solar-panel-equipment-2"].hidden = true
-    DRT["bob-solar-panel-equipment-3"].hidden = true
-    DRT["bob-solar-panel-equipment-4"].hidden = true
-    DRT["bob-exoskeleton-equipment-2"].hidden = true
-    DRT["bob-exoskeleton-equipment-3"].hidden = true
-    DRT["bob-night-vision-equipment-2"].hidden = true
-    DRT["bob-night-vision-equipment-3"].hidden = true
-    DRT["bob-fission-reactor-equipment-2"].hidden = true
-    DRT["bob-fission-reactor-equipment-3"].hidden = true
-    DRT["bob-fission-reactor-equipment-4"].hidden = true
-    DRT["bob-energy-shield-equipment-3"].hidden = true
-    DRT["bob-energy-shield-equipment-4"].hidden = true
-    DRT["bob-energy-shield-equipment-5"].hidden = true
-    DRT["bob-energy-shield-equipment-6"].hidden = true
-    DRT["bob-personal-roboport-mk3-equipment"].hidden = true
-    DRT["bob-personal-roboport-mk4-equipment"].hidden = true
-    DRT["bob-personal-laser-defense-equipment-2"].hidden = true
-    DRT["bob-personal-laser-defense-equipment-3"].hidden = true
-    DRT["bob-personal-laser-defense-equipment-4"].hidden = true
-    DRT["bob-personal-laser-defense-equipment-5"].hidden = true
-    DRT["bob-personal-laser-defense-equipment-6"].hidden = true
-    DRT["bob-personal-roboport-modular-equipment-1"].hidden = true
-    DRT["bob-personal-roboport-modular-equipment-2"].hidden = true
-    DRT["bob-personal-roboport-modular-equipment-3"].hidden = true
-    DRT["bob-personal-roboport-modular-equipment-4"].hidden = true
+    Tech["battery-mk3-equipment"].hidden = true
+    Tech["bob-battery-equipment-4"].hidden = true
+    Tech["bob-battery-equipment-5"].hidden = true
+    Tech["bob-solar-panel-equipment-2"].hidden = true
+    Tech["bob-solar-panel-equipment-3"].hidden = true
+    Tech["bob-solar-panel-equipment-4"].hidden = true
+    Tech["bob-exoskeleton-equipment-2"].hidden = true
+    Tech["bob-exoskeleton-equipment-3"].hidden = true
+    Tech["bob-night-vision-equipment-2"].hidden = true
+    Tech["bob-night-vision-equipment-3"].hidden = true
+    Tech["bob-fission-reactor-equipment-2"].hidden = true
+    Tech["bob-fission-reactor-equipment-3"].hidden = true
+    Tech["bob-fission-reactor-equipment-4"].hidden = true
+    Tech["bob-energy-shield-equipment-3"].hidden = true
+    Tech["bob-energy-shield-equipment-4"].hidden = true
+    Tech["bob-energy-shield-equipment-5"].hidden = true
+    Tech["bob-energy-shield-equipment-6"].hidden = true
+    Tech["bob-personal-roboport-mk3-equipment"].hidden = true
+    Tech["bob-personal-roboport-mk4-equipment"].hidden = true
+    Tech["bob-personal-laser-defense-equipment-2"].hidden = true
+    Tech["bob-personal-laser-defense-equipment-3"].hidden = true
+    Tech["bob-personal-laser-defense-equipment-4"].hidden = true
+    Tech["bob-personal-laser-defense-equipment-5"].hidden = true
+    Tech["bob-personal-laser-defense-equipment-6"].hidden = true
+    Tech["bob-personal-roboport-modular-equipment-1"].hidden = true
+    Tech["bob-personal-roboport-modular-equipment-2"].hidden = true
+    Tech["bob-personal-roboport-modular-equipment-3"].hidden = true
+    Tech["bob-personal-roboport-modular-equipment-4"].hidden = true
 
-    DRR["battery-mk3-equipment"].hidden = true
-    DRR["bob-battery-mk4-equipment"].hidden = true
-    DRR["bob-battery-mk5-equipment"].hidden = true
-    DRR["bob-solar-panel-equipment-2"].hidden = true
-    DRR["bob-solar-panel-equipment-3"].hidden = true
-    DRR["bob-solar-panel-equipment-4"].hidden = true
-    DRR["bob-exoskeleton-equipment-2"].hidden = true
-    DRR["bob-exoskeleton-equipment-3"].hidden = true
-    DRR["bob-night-vision-equipment-2"].hidden = true
-    DRR["bob-night-vision-equipment-3"].hidden = true
-    DRR["bob-fission-reactor-equipment-2"].hidden = true
-    DRR["bob-fission-reactor-equipment-3"].hidden = true
-    DRR["bob-fission-reactor-equipment-4"].hidden = true
-    DRR["bob-energy-shield-mk3-equipment"].hidden = true
-    DRR["bob-energy-shield-mk4-equipment"].hidden = true
-    DRR["bob-energy-shield-mk5-equipment"].hidden = true
-    DRR["bob-energy-shield-mk6-equipment"].hidden = true
-    DRR["bob-personal-roboport-mk3-equipment"].hidden = true
-    DRR["bob-personal-roboport-mk4-equipment"].hidden = true
-    DRR["bob-personal-laser-defense-equipment-2"].hidden = true
-    DRR["bob-personal-laser-defense-equipment-3"].hidden = true
-    DRR["bob-personal-laser-defense-equipment-4"].hidden = true
-    DRR["bob-personal-laser-defense-equipment-5"].hidden = true
-    DRR["bob-personal-laser-defense-equipment-6"].hidden = true
-    DRR["bob-personal-roboport-robot-equipment"].hidden = true
-    DRR["bob-personal-roboport-robot-equipment-2"].hidden = true
-    DRR["bob-personal-roboport-robot-equipment-3"].hidden = true
-    DRR["bob-personal-roboport-robot-equipment-4"].hidden = true
-    DRR["bob-personal-roboport-antenna-equipment"].hidden = true
-    DRR["bob-personal-roboport-antenna-equipment-2"].hidden = true
-    DRR["bob-personal-roboport-antenna-equipment-3"].hidden = true
-    DRR["bob-personal-roboport-antenna-equipment-4"].hidden = true
-    DRR["bob-personal-roboport-chargepad-equipment"].hidden = true
-    DRR["bob-personal-roboport-chargepad-equipment-2"].hidden = true
-    DRR["bob-personal-roboport-chargepad-equipment-3"].hidden = true
-    DRR["bob-personal-roboport-chargepad-equipment-4"].hidden = true
+    Recipes["battery-mk3-equipment"].hidden = true
+    Recipes["bob-battery-mk4-equipment"].hidden = true
+    Recipes["bob-battery-mk5-equipment"].hidden = true
+    Recipes["bob-solar-panel-equipment-2"].hidden = true
+    Recipes["bob-solar-panel-equipment-3"].hidden = true
+    Recipes["bob-solar-panel-equipment-4"].hidden = true
+    Recipes["bob-exoskeleton-equipment-2"].hidden = true
+    Recipes["bob-exoskeleton-equipment-3"].hidden = true
+    Recipes["bob-night-vision-equipment-2"].hidden = true
+    Recipes["bob-night-vision-equipment-3"].hidden = true
+    Recipes["bob-fission-reactor-equipment-2"].hidden = true
+    Recipes["bob-fission-reactor-equipment-3"].hidden = true
+    Recipes["bob-fission-reactor-equipment-4"].hidden = true
+    Recipes["bob-energy-shield-mk3-equipment"].hidden = true
+    Recipes["bob-energy-shield-mk4-equipment"].hidden = true
+    Recipes["bob-energy-shield-mk5-equipment"].hidden = true
+    Recipes["bob-energy-shield-mk6-equipment"].hidden = true
+    Recipes["bob-personal-roboport-mk3-equipment"].hidden = true
+    Recipes["bob-personal-roboport-mk4-equipment"].hidden = true
+    Recipes["bob-personal-laser-defense-equipment-2"].hidden = true
+    Recipes["bob-personal-laser-defense-equipment-3"].hidden = true
+    Recipes["bob-personal-laser-defense-equipment-4"].hidden = true
+    Recipes["bob-personal-laser-defense-equipment-5"].hidden = true
+    Recipes["bob-personal-laser-defense-equipment-6"].hidden = true
+    Recipes["bob-personal-roboport-robot-equipment"].hidden = true
+    Recipes["bob-personal-roboport-robot-equipment-2"].hidden = true
+    Recipes["bob-personal-roboport-robot-equipment-3"].hidden = true
+    Recipes["bob-personal-roboport-robot-equipment-4"].hidden = true
+    Recipes["bob-personal-roboport-antenna-equipment"].hidden = true
+    Recipes["bob-personal-roboport-antenna-equipment-2"].hidden = true
+    Recipes["bob-personal-roboport-antenna-equipment-3"].hidden = true
+    Recipes["bob-personal-roboport-antenna-equipment-4"].hidden = true
+    Recipes["bob-personal-roboport-chargepad-equipment"].hidden = true
+    Recipes["bob-personal-roboport-chargepad-equipment-2"].hidden = true
+    Recipes["bob-personal-roboport-chargepad-equipment-3"].hidden = true
+    Recipes["bob-personal-roboport-chargepad-equipment-4"].hidden = true
 
 
     if SS["BobE-filters"].value then
@@ -381,18 +381,18 @@ end
 
 if mods["nightvision_progression-fork"] then
 --Enabled
-    DRT["night-vision-mk2-equipment"].enabled = false
-    DRT["night-vision-mk3-equipment"].enabled = false
+    Tech["night-vision-mk2-equipment"].enabled = false
+    Tech["night-vision-mk3-equipment"].enabled = false
 
-    DRR["night-vision-mk2-equipment"].enabled = false
-    DRR["night-vision-mk3-equipment"].enabled = false
+    Recipes["night-vision-mk2-equipment"].enabled = false
+    Recipes["night-vision-mk3-equipment"].enabled = false
 
 --Hidden
-    DRT["night-vision-mk2-equipment"].hidden = true
-    DRT["night-vision-mk3-equipment"].hidden = true
+    Tech["night-vision-mk2-equipment"].hidden = true
+    Tech["night-vision-mk3-equipment"].hidden = true
 
-    DRR["night-vision-mk2-equipment"].hidden = true
-    DRR["night-vision-mk3-equipment"].hidden = true
+    Recipes["night-vision-mk2-equipment"].hidden = true
+    Recipes["night-vision-mk3-equipment"].hidden = true
 
     if SS["ProgresiveNVGsFork_filters"].value then
         Hide_Item("night-vision-mk2-equipment")
@@ -402,36 +402,36 @@ end
 
 if mods["foliax"]then
 --Enabled
-    DRT["foliax-armor"].enabled = false
-    DRT["foliax-night-vision-equipment"].enabled = false
-    DRT["foliax-battery-equipment-one"].enabled = false
-    DRT["foliax-battery-equipment-two"].enabled = false
-    DRT["foliax-belt-immunity-equipment"].enabled = false
-    DRT["foliax-exoskeleton-equipment"].enabled = false
-    DRT["foliax-personal-roboport-equipment"].enabled = false
-    DRT["foliax-solar-panel-equipment"].enabled = false
+    Tech["foliax-armor"].enabled = false
+    Tech["foliax-night-vision-equipment"].enabled = false
+    Tech["foliax-battery-equipment-one"].enabled = false
+    Tech["foliax-battery-equipment-two"].enabled = false
+    Tech["foliax-belt-immunity-equipment"].enabled = false
+    Tech["foliax-exoskeleton-equipment"].enabled = false
+    Tech["foliax-personal-roboport-equipment"].enabled = false
+    Tech["foliax-solar-panel-equipment"].enabled = false
 
-    DRR["foliax-armor"].enabled = false
-    DRR["foliax-exoskeleton-equipment"].enabled = false
-    DRR["foliax-solar-panel-equipment"].enabled = false
-    DRR["foliax-night-vision-equipment"].enabled = false
-    DRR["foliax-personal-roboport-equipment"].enabled = false
+    Recipes["foliax-armor"].enabled = false
+    Recipes["foliax-exoskeleton-equipment"].enabled = false
+    Recipes["foliax-solar-panel-equipment"].enabled = false
+    Recipes["foliax-night-vision-equipment"].enabled = false
+    Recipes["foliax-personal-roboport-equipment"].enabled = false
 
 --Hidden
-    DRT["foliax-armor"].hidden = true
-    DRT["foliax-night-vision-equipment"].hidden = true
-    DRT["foliax-battery-equipment-one"].hidden = true
-    DRT["foliax-battery-equipment-two"].hidden = true
-    DRT["foliax-belt-immunity-equipment"].hidden = true
-    DRT["foliax-exoskeleton-equipment"].hidden = true
-    DRT["foliax-personal-roboport-equipment"].hidden = true
-    DRT["foliax-solar-panel-equipment"].hidden = true
+    Tech["foliax-armor"].hidden = true
+    Tech["foliax-night-vision-equipment"].hidden = true
+    Tech["foliax-battery-equipment-one"].hidden = true
+    Tech["foliax-battery-equipment-two"].hidden = true
+    Tech["foliax-belt-immunity-equipment"].hidden = true
+    Tech["foliax-exoskeleton-equipment"].hidden = true
+    Tech["foliax-personal-roboport-equipment"].hidden = true
+    Tech["foliax-solar-panel-equipment"].hidden = true
 
-    DRR["foliax-armor"].hidden = true
-    DRR["foliax-exoskeleton-equipment"].hidden = true
-    DRR["foliax-solar-panel-equipment"].hidden = true
-    DRR["foliax-night-vision-equipment"].hidden = true
-    DRR["foliax-personal-roboport-equipment"].hidden = true
+    Recipes["foliax-armor"].hidden = true
+    Recipes["foliax-exoskeleton-equipment"].hidden = true
+    Recipes["foliax-solar-panel-equipment"].hidden = true
+    Recipes["foliax-night-vision-equipment"].hidden = true
+    Recipes["foliax-personal-roboport-equipment"].hidden = true
 
     if SS["Foliax-filters"].value then
         Hide_Item("foliax-armor")
@@ -446,21 +446,21 @@ end
 if mods["Cold_biters"]then
     if SS["cb-enable-cold-warfare"].value == true then
     --Enabled
-        DRR["cb-modular-armor"].enabled = false
-        DRR["cb-power-armor"].enabled = false
-        DRR["cb-power-armor-mk2"].enabled = false
+        Recipes["cb-modular-armor"].enabled = false
+        Recipes["cb-power-armor"].enabled = false
+        Recipes["cb-power-armor-mk2"].enabled = false
 
-        DRT["cb-modular-armor"].enabled = false
-        DRT["cb-power-armor"].enabled = false
-        DRT["cb-power-armor-mk2"].enabled = false
+        Tech["cb-modular-armor"].enabled = false
+        Tech["cb-power-armor"].enabled = false
+        Tech["cb-power-armor-mk2"].enabled = false
     --Hidden
-        DRR["cb-modular-armor"].hidden = true
-        DRR["cb-power-armor"].hidden = true
-        DRR["cb-power-armor-mk2"].hidden = true
+        Recipes["cb-modular-armor"].hidden = true
+        Recipes["cb-power-armor"].hidden = true
+        Recipes["cb-power-armor-mk2"].hidden = true
 
-        DRT["cb-modular-armor"].hidden = true
-        DRT["cb-power-armor"].hidden = true
-        DRT["cb-power-armor-mk2"].hidden = true
+        Tech["cb-modular-armor"].hidden = true
+        Tech["cb-power-armor"].hidden = true
+        Tech["cb-power-armor-mk2"].hidden = true
 
         if SS["ColdBitersFilters"].value then
             Hide_Item("cb-modular-armor")
@@ -472,50 +472,50 @@ end
 
 if mods["custom_power_armor_fix"] then
     --Enabled
-    DRR["shield-mk3"].enabled = false
-    DRR["shield-mk4"].enabled = false
-    DRR["energy-cell"].enabled = false
-    DRR["train-shield"].enabled = false
-    DRR["power-armor-mk3"].enabled = false
-    DRR["power-armor-mk4"].enabled = false
-    DRR["power-armor-mk5"].enabled = false
-    DRR["mk2-fast-exoskeleton"].enabled = false
-    DRR["mk2-heavy-exoskeleton"].enabled = false
-    DRR["overcharged-fusion-reactor"].enabled = false
+    Recipes["shield-mk3"].enabled = false
+    Recipes["shield-mk4"].enabled = false
+    Recipes["energy-cell"].enabled = false
+    Recipes["train-shield"].enabled = false
+    Recipes["power-armor-mk3"].enabled = false
+    Recipes["power-armor-mk4"].enabled = false
+    Recipes["power-armor-mk5"].enabled = false
+    Recipes["mk2-fast-exoskeleton"].enabled = false
+    Recipes["mk2-heavy-exoskeleton"].enabled = false
+    Recipes["overcharged-fusion-reactor"].enabled = false
 
-    DRT["shield-mk3"].enabled = false
-    DRT["shield-mk4"].enabled = false
-    DRT["energy-cell"].enabled = false
-    DRT["train-shield"].enabled = false
-    DRT["power-armor-mk4"].enabled = false
-    DRT["power-armor-mk3"].enabled = false
-    DRT["power-armor-mk5"].enabled = false
-    DRT["mk2-fast-exoskeleton"].enabled = false
-    DRT["mk2-heavy-exoskeleton"].enabled = false
-    DRT["overcharged-fusion-reactor"].enabled = false
+    Tech["shield-mk3"].enabled = false
+    Tech["shield-mk4"].enabled = false
+    Tech["energy-cell"].enabled = false
+    Tech["train-shield"].enabled = false
+    Tech["power-armor-mk4"].enabled = false
+    Tech["power-armor-mk3"].enabled = false
+    Tech["power-armor-mk5"].enabled = false
+    Tech["mk2-fast-exoskeleton"].enabled = false
+    Tech["mk2-heavy-exoskeleton"].enabled = false
+    Tech["overcharged-fusion-reactor"].enabled = false
 
     --Hidden
-    DRR["shield-mk3"].hidden = true
-    DRR["shield-mk4"].hidden = true
-    DRR["energy-cell"].hidden = true
-    DRR["train-shield"].hidden = true
-    DRR["power-armor-mk3"].hidden = true
-    DRR["power-armor-mk4"].hidden = true
-    DRR["power-armor-mk5"].hidden = true
-    DRR["mk2-fast-exoskeleton"].hidden = true
-    DRR["mk2-heavy-exoskeleton"].hidden = true
-    DRR["overcharged-fusion-reactor"].hidden = true
+    Recipes["shield-mk3"].hidden = true
+    Recipes["shield-mk4"].hidden = true
+    Recipes["energy-cell"].hidden = true
+    Recipes["train-shield"].hidden = true
+    Recipes["power-armor-mk3"].hidden = true
+    Recipes["power-armor-mk4"].hidden = true
+    Recipes["power-armor-mk5"].hidden = true
+    Recipes["mk2-fast-exoskeleton"].hidden = true
+    Recipes["mk2-heavy-exoskeleton"].hidden = true
+    Recipes["overcharged-fusion-reactor"].hidden = true
 
-    DRT["shield-mk3"].hidden = true
-    DRT["shield-mk4"].hidden = true
-    DRT["energy-cell"].hidden = true
-    DRT["train-shield"].hidden = true
-    DRT["power-armor-mk3"].hidden = true
-    DRT["power-armor-mk4"].hidden = true
-    DRT["power-armor-mk5"].hidden = true
-    DRT["mk2-fast-exoskeleton"].hidden = true
-    DRT["mk2-heavy-exoskeleton"].hidden = true
-    DRT["overcharged-fusion-reactor"].hidden = true
+    Tech["shield-mk3"].hidden = true
+    Tech["shield-mk4"].hidden = true
+    Tech["energy-cell"].hidden = true
+    Tech["train-shield"].hidden = true
+    Tech["power-armor-mk3"].hidden = true
+    Tech["power-armor-mk4"].hidden = true
+    Tech["power-armor-mk5"].hidden = true
+    Tech["mk2-fast-exoskeleton"].hidden = true
+    Tech["mk2-heavy-exoskeleton"].hidden = true
+    Tech["overcharged-fusion-reactor"].hidden = true
     --Filter
     if SS["CPAF-filters"].value then
         Hide_Item("shield-mk3")
@@ -533,35 +533,35 @@ end
 
 if mods["Darkstar_utilities_fixed"] then
 --Enabled
-    DRT["battery-mk3-equipment"].enabled = false
-    DRT["battery-mk4-equipment"].enabled = false
-    DRT["terra-tech-power-armor-tech"].enabled = false
-    DRT["energy-shield-mk3-equipment"].enabled = false
-    DRT["advanced-exoskeleton-equipment"].enabled = false
-    DRT["terra-tech-power-armor-mk2-tech"].enabled = false
+    Tech["battery-mk3-equipment"].enabled = false
+    Tech["battery-mk4-equipment"].enabled = false
+    Tech["terra-tech-power-armor-tech"].enabled = false
+    Tech["energy-shield-mk3-equipment"].enabled = false
+    Tech["advanced-exoskeleton-equipment"].enabled = false
+    Tech["terra-tech-power-armor-mk2-tech"].enabled = false
 
-    DRR["battery-mk3"].enabled = false
-    DRR["battery-mk4"].enabled = false
-    DRR["terra-tech-power-armor"].enabled = false
-    DRR["terra-tech-power-armor-mk2"].enabled = false
-    DRR["advanced-exoskeleton-equipment"].enabled = false
-    DRR["personal-roboport-equipment-mk2"].enabled = false
-    DRR["large-personal-roboport-equipment"].enabled = false
+    Recipes["battery-mk3"].enabled = false
+    Recipes["battery-mk4"].enabled = false
+    Recipes["terra-tech-power-armor"].enabled = false
+    Recipes["terra-tech-power-armor-mk2"].enabled = false
+    Recipes["advanced-exoskeleton-equipment"].enabled = false
+    Recipes["personal-roboport-equipment-mk2"].enabled = false
+    Recipes["large-personal-roboport-equipment"].enabled = false
 --Hidden
-    DRT["battery-mk3-equipment"].hidden = true
-    DRT["battery-mk4-equipment"].hidden = true
-    DRT["terra-tech-power-armor-tech"].hidden = true
-    DRT["energy-shield-mk3-equipment"].hidden = true
-    DRT["advanced-exoskeleton-equipment"].hidden = true
-    DRT["terra-tech-power-armor-mk2-tech"].hidden = true
+    Tech["battery-mk3-equipment"].hidden = true
+    Tech["battery-mk4-equipment"].hidden = true
+    Tech["terra-tech-power-armor-tech"].hidden = true
+    Tech["energy-shield-mk3-equipment"].hidden = true
+    Tech["advanced-exoskeleton-equipment"].hidden = true
+    Tech["terra-tech-power-armor-mk2-tech"].hidden = true
 
-    DRR["battery-mk3"].hidden = true
-    DRR["battery-mk4"].hidden = true
-    DRR["terra-tech-power-armor"].hidden = true
-    DRR["terra-tech-power-armor-mk2"].hidden = true
-    DRR["advanced-exoskeleton-equipment"].hidden = true
-    DRR["personal-roboport-equipment-mk2"].hidden = true
-    DRR["large-personal-roboport-equipment"].hidden = true
+    Recipes["battery-mk3"].hidden = true
+    Recipes["battery-mk4"].hidden = true
+    Recipes["terra-tech-power-armor"].hidden = true
+    Recipes["terra-tech-power-armor-mk2"].hidden = true
+    Recipes["advanced-exoskeleton-equipment"].hidden = true
+    Recipes["personal-roboport-equipment-mk2"].hidden = true
+    Recipes["large-personal-roboport-equipment"].hidden = true
 
     if SS["darkstar-fixed-filters"].value then
         Hide_Item("battery-mk3")
@@ -576,100 +576,100 @@ end
 
 if mods["Hiladdar_Gear"] then
 --Hidden
-    DRR["hsmd-power-armor-mk3"].hidden = true
-    DRR["hsmd-power-armor-mk4"].hidden = true
-    DRR["hsmd-solar-panel-s1-equipment"].hidden = true
-    DRR["hsmd-energy-shield-mk2s-equipment"].hidden = true
-    DRR["hsmd-battery-mk2-s1-equipment"].hidden = true
-    DRR["hsmd-exoskeleton-s1-equipment"].hidden = true
-    DRR["hsmd-personal-roboport-mk2s-equipment"].hidden = true
-    DRR["hsmd-night-vision-s1-equipment"].hidden = true
-    DRR["hsmd-personal-laser-defense-s1-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s9-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s8-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s7-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s6-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s5-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s4-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s3-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s2-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-s1-equipment"].hidden = true
-    DRR["hsmd-personal-bugzapper-equipment"].hidden = true
-    DRR["hsmd-fusion-reactor-s1-equipment"].hidden = true
-    DRR["hsmd-fusion-reactor-s2-equipment"].hidden = true
-    DRR["hsmd-fusion-reactor-s3-equipment"].hidden = true
-    DRR["hsmd-stacked-battery"].hidden = true
-    DRR["hsmd-stacked-solar"].hidden = true
-    DRR["hsmd-miniaturizer"].hidden = true
-    DRR["hsmd-solvant"].hidden = true
-    DRR["hsmd-boxed-gravitanium"].hidden = true
-    DRR["hsmd-powdered-gravitanium"].hidden = true
-    DRR["hsmd-cleaned-gravitanium"].hidden = true
-    DRR["hsmd-gravitanium-plate"].hidden = true
-    DRR["hsmd-gravitanium-ore"].hidden = true
-    DRR["hsmd-mixed-ore"].hidden = true
+    Recipes["hsmd-power-armor-mk3"].hidden = true
+    Recipes["hsmd-power-armor-mk4"].hidden = true
+    Recipes["hsmd-solar-panel-s1-equipment"].hidden = true
+    Recipes["hsmd-energy-shield-mk2s-equipment"].hidden = true
+    Recipes["hsmd-battery-mk2-s1-equipment"].hidden = true
+    Recipes["hsmd-exoskeleton-s1-equipment"].hidden = true
+    Recipes["hsmd-personal-roboport-mk2s-equipment"].hidden = true
+    Recipes["hsmd-night-vision-s1-equipment"].hidden = true
+    Recipes["hsmd-personal-laser-defense-s1-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s9-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s8-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s7-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s6-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s5-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s4-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s3-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s2-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-s1-equipment"].hidden = true
+    Recipes["hsmd-personal-bugzapper-equipment"].hidden = true
+    Recipes["hsmd-fusion-reactor-s1-equipment"].hidden = true
+    Recipes["hsmd-fusion-reactor-s2-equipment"].hidden = true
+    Recipes["hsmd-fusion-reactor-s3-equipment"].hidden = true
+    Recipes["hsmd-stacked-battery"].hidden = true
+    Recipes["hsmd-stacked-solar"].hidden = true
+    Recipes["hsmd-miniaturizer"].hidden = true
+    Recipes["hsmd-solvant"].hidden = true
+    Recipes["hsmd-boxed-gravitanium"].hidden = true
+    Recipes["hsmd-powdered-gravitanium"].hidden = true
+    Recipes["hsmd-cleaned-gravitanium"].hidden = true
+    Recipes["hsmd-gravitanium-plate"].hidden = true
+    Recipes["hsmd-gravitanium-ore"].hidden = true
+    Recipes["hsmd-mixed-ore"].hidden = true
 
-    DRT["hsmd-power-armor-mk3"].hidden = true
-    DRT["hsmd-power-armor-mk4"].hidden = true
-    DRT["hsmd-personal-bugzapper-equipment"].hidden = true
-    DRT["hsmd-personal-bugzapper-equipment-2"].hidden = true
-    DRT["hsmd-personal-bugzapper-equipment-3"].hidden = true
-    DRT["hsmd-personal-bugzapper-equipment-4"].hidden = true
-    DRT["hsmd-miniaturization-1"].hidden = true
-    DRT["hsmd-miniaturization-2"].hidden = true
-    DRT["hsmd-miniaturization-3"].hidden = true
-    DRT["hsmd-miniaturization-4"].hidden = true
-    DRT["hsmd-miniaturization-5"].hidden = true
-    DRT["hsmd-miniaturization-6"].hidden = true
-    DRT["hsmd-miniaturization-7"].hidden = true
+    Tech["hsmd-power-armor-mk3"].hidden = true
+    Tech["hsmd-power-armor-mk4"].hidden = true
+    Tech["hsmd-personal-bugzapper-equipment"].hidden = true
+    Tech["hsmd-personal-bugzapper-equipment-2"].hidden = true
+    Tech["hsmd-personal-bugzapper-equipment-3"].hidden = true
+    Tech["hsmd-personal-bugzapper-equipment-4"].hidden = true
+    Tech["hsmd-miniaturization-1"].hidden = true
+    Tech["hsmd-miniaturization-2"].hidden = true
+    Tech["hsmd-miniaturization-3"].hidden = true
+    Tech["hsmd-miniaturization-4"].hidden = true
+    Tech["hsmd-miniaturization-5"].hidden = true
+    Tech["hsmd-miniaturization-6"].hidden = true
+    Tech["hsmd-miniaturization-7"].hidden = true
 
 --Enabled
-    DRR["hsmd-power-armor-mk3"].enabled = false
-    DRR["hsmd-power-armor-mk4"].enabled = false
-    DRR["hsmd-solar-panel-s1-equipment"].enabled = false
-    DRR["hsmd-energy-shield-mk2s-equipment"].enabled = false
-    DRR["hsmd-battery-mk2-s1-equipment"].enabled = false
-    DRR["hsmd-exoskeleton-s1-equipment"].enabled = false
-    DRR["hsmd-personal-roboport-mk2s-equipment"].enabled = false
-    DRR["hsmd-night-vision-s1-equipment"].enabled = false
-    DRR["hsmd-personal-laser-defense-s1-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s9-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s8-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s7-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s6-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s5-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s4-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s3-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s2-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-s1-equipment"].enabled = false
-    DRR["hsmd-personal-bugzapper-equipment"].enabled = false
-    DRR["hsmd-fusion-reactor-s1-equipment"].enabled = false
-    DRR["hsmd-fusion-reactor-s2-equipment"].enabled = false
-    DRR["hsmd-fusion-reactor-s3-equipment"].enabled = false
-    DRR["hsmd-stacked-battery"].enabled = false
-    DRR["hsmd-stacked-solar"].enabled = false
-    DRR["hsmd-miniaturizer"].enabled = false
-    DRR["hsmd-solvant"].enabled = false
-    DRR["hsmd-boxed-gravitanium"].enabled = false
-    DRR["hsmd-powdered-gravitanium"].enabled = false
-    DRR["hsmd-cleaned-gravitanium"].enabled = false
-    DRR["hsmd-gravitanium-plate"].enabled = false
-    DRR["hsmd-gravitanium-ore"].enabled = false
-    DRR["hsmd-mixed-ore"].enabled = false
+    Recipes["hsmd-power-armor-mk3"].enabled = false
+    Recipes["hsmd-power-armor-mk4"].enabled = false
+    Recipes["hsmd-solar-panel-s1-equipment"].enabled = false
+    Recipes["hsmd-energy-shield-mk2s-equipment"].enabled = false
+    Recipes["hsmd-battery-mk2-s1-equipment"].enabled = false
+    Recipes["hsmd-exoskeleton-s1-equipment"].enabled = false
+    Recipes["hsmd-personal-roboport-mk2s-equipment"].enabled = false
+    Recipes["hsmd-night-vision-s1-equipment"].enabled = false
+    Recipes["hsmd-personal-laser-defense-s1-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s9-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s8-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s7-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s6-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s5-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s4-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s3-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s2-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-s1-equipment"].enabled = false
+    Recipes["hsmd-personal-bugzapper-equipment"].enabled = false
+    Recipes["hsmd-fusion-reactor-s1-equipment"].enabled = false
+    Recipes["hsmd-fusion-reactor-s2-equipment"].enabled = false
+    Recipes["hsmd-fusion-reactor-s3-equipment"].enabled = false
+    Recipes["hsmd-stacked-battery"].enabled = false
+    Recipes["hsmd-stacked-solar"].enabled = false
+    Recipes["hsmd-miniaturizer"].enabled = false
+    Recipes["hsmd-solvant"].enabled = false
+    Recipes["hsmd-boxed-gravitanium"].enabled = false
+    Recipes["hsmd-powdered-gravitanium"].enabled = false
+    Recipes["hsmd-cleaned-gravitanium"].enabled = false
+    Recipes["hsmd-gravitanium-plate"].enabled = false
+    Recipes["hsmd-gravitanium-ore"].enabled = false
+    Recipes["hsmd-mixed-ore"].enabled = false
 
-    DRT["hsmd-power-armor-mk3"].enabled = false
-    DRT["hsmd-power-armor-mk4"].enabled = false
-    DRT["hsmd-personal-bugzapper-equipment"].enabled = false
-    DRT["hsmd-personal-bugzapper-equipment-2"].enabled = false
-    DRT["hsmd-personal-bugzapper-equipment-3"].enabled = false
-    DRT["hsmd-personal-bugzapper-equipment-4"].enabled = false
-    DRT["hsmd-miniaturization-1"].enabled = false
-    DRT["hsmd-miniaturization-2"].enabled = false
-    DRT["hsmd-miniaturization-3"].enabled = false
-    DRT["hsmd-miniaturization-4"].enabled = false
-    DRT["hsmd-miniaturization-5"].enabled = false
-    DRT["hsmd-miniaturization-6"].enabled = false
-    DRT["hsmd-miniaturization-7"].enabled = false
+    Tech["hsmd-power-armor-mk3"].enabled = false
+    Tech["hsmd-power-armor-mk4"].enabled = false
+    Tech["hsmd-personal-bugzapper-equipment"].enabled = false
+    Tech["hsmd-personal-bugzapper-equipment-2"].enabled = false
+    Tech["hsmd-personal-bugzapper-equipment-3"].enabled = false
+    Tech["hsmd-personal-bugzapper-equipment-4"].enabled = false
+    Tech["hsmd-miniaturization-1"].enabled = false
+    Tech["hsmd-miniaturization-2"].enabled = false
+    Tech["hsmd-miniaturization-3"].enabled = false
+    Tech["hsmd-miniaturization-4"].enabled = false
+    Tech["hsmd-miniaturization-5"].enabled = false
+    Tech["hsmd-miniaturization-6"].enabled = false
+    Tech["hsmd-miniaturization-7"].enabled = false
 
     if SS["hl_gear-filters"].value then
         Hide_Item("hsmd-power-armor-mk3")
@@ -709,68 +709,68 @@ end
 
 if mods["Krastorio2"] and mods["space-exploration"] then
 --Hidden
-    DRR["kr-power-armor-mk3"].hidden = true
-    DRR["kr-power-armor-mk4"].hidden = true
-    DRR["kr-portable-generator-equipment"].hidden = true
-    DRR["kr-additional-engine-equipment"].hidden = true
-    DRR["kr-small-portable-generator-equipment"].hidden = true
-    DRR["kr-advanced-additional-engine-equipment"].hidden = true
-    DRR["kr-big-solar-panel-equipment"].hidden = true
-    DRR["kr-big-battery-equipment"].hidden = true
-    DRR["kr-fusion-reactor-equipment"].hidden = true
-    DRR["kr-antimatter-reactor-equipment"].hidden = true
-    DRR["kr-advanced-exoskeleton-equipment"].hidden = true
-    DRR["kr-superior-exoskeleton-equipment"].hidden = true
-    DRR["kr-personal-laser-defense-mk2-equipment"].hidden = true
-    DRR["kr-personal-laser-defense-mk3-equipment"].hidden = true
-    DRR["kr-personal-laser-defense-mk4-equipment"].hidden = true
+    Recipes["kr-power-armor-mk3"].hidden = true
+    Recipes["kr-power-armor-mk4"].hidden = true
+    Recipes["kr-portable-generator-equipment"].hidden = true
+    Recipes["kr-additional-engine-equipment"].hidden = true
+    Recipes["kr-small-portable-generator-equipment"].hidden = true
+    Recipes["kr-advanced-additional-engine-equipment"].hidden = true
+    Recipes["kr-big-solar-panel-equipment"].hidden = true
+    Recipes["kr-big-battery-equipment"].hidden = true
+    Recipes["kr-fusion-reactor-equipment"].hidden = true
+    Recipes["kr-antimatter-reactor-equipment"].hidden = true
+    Recipes["kr-advanced-exoskeleton-equipment"].hidden = true
+    Recipes["kr-superior-exoskeleton-equipment"].hidden = true
+    Recipes["kr-personal-laser-defense-mk2-equipment"].hidden = true
+    Recipes["kr-personal-laser-defense-mk3-equipment"].hidden = true
+    Recipes["kr-personal-laser-defense-mk4-equipment"].hidden = true
 
-    DRT["kr-power-armor-mk3"].hidden = true
-    DRT["kr-power-armor-mk4"].hidden = true
-    DRT["kr-portable-generator-equipment"].hidden = true
-    DRT["kr-advanced-additional-engine-equipment"].hidden = true
-    DRT["kr-battery-mk3-equipment"].hidden = true
-    DRT["kr-fusion-reactor-equipment"].hidden = true
-    DRT["kr-antimatter-reactor-equipment"].hidden = true
-    DRT["kr-advanced-exoskeleton-equipment"].hidden = true
-    DRT["kr-superior-exoskeleton-equipment"].hidden = true
-    DRT["kr-superior-solar-panel-equipment"].hidden = true
-    DRT["kr-superior-night-vision-equipment"].hidden = true
-    DRT["kr-personal-laser-defense-mk2-equipment"].hidden = true
-    DRT["kr-personal-laser-defense-mk3-equipment"].hidden = true
-    DRT["kr-personal-laser-defense-mk4-equipment"].hidden = true
+    Tech["kr-power-armor-mk3"].hidden = true
+    Tech["kr-power-armor-mk4"].hidden = true
+    Tech["kr-portable-generator-equipment"].hidden = true
+    Tech["kr-advanced-additional-engine-equipment"].hidden = true
+    Tech["kr-battery-mk3-equipment"].hidden = true
+    Tech["kr-fusion-reactor-equipment"].hidden = true
+    Tech["kr-antimatter-reactor-equipment"].hidden = true
+    Tech["kr-advanced-exoskeleton-equipment"].hidden = true
+    Tech["kr-superior-exoskeleton-equipment"].hidden = true
+    Tech["kr-superior-solar-panel-equipment"].hidden = true
+    Tech["kr-superior-night-vision-equipment"].hidden = true
+    Tech["kr-personal-laser-defense-mk2-equipment"].hidden = true
+    Tech["kr-personal-laser-defense-mk3-equipment"].hidden = true
+    Tech["kr-personal-laser-defense-mk4-equipment"].hidden = true
 
 --Enabled
-    DRR["kr-power-armor-mk3"].enabled = false
-    DRR["kr-power-armor-mk4"].enabled = false
-    DRR["kr-additional-engine-equipment"].enabled = false
-    DRR["kr-advanced-additional-engine-equipment"].enabled = false
-    DRR["kr-portable-generator-equipment"].enabled = false
-    DRR["kr-small-portable-generator-equipment"].enabled = false
-    DRR["kr-big-battery-equipment"].enabled = false
-    DRR["kr-big-solar-panel-equipment"].enabled = false
-    DRR["kr-fusion-reactor-equipment"].enabled = false
-    DRR["kr-antimatter-reactor-equipment"].enabled = false
-    DRR["kr-advanced-exoskeleton-equipment"].enabled = false
-    DRR["kr-superior-exoskeleton-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
+    Recipes["kr-power-armor-mk3"].enabled = false
+    Recipes["kr-power-armor-mk4"].enabled = false
+    Recipes["kr-additional-engine-equipment"].enabled = false
+    Recipes["kr-advanced-additional-engine-equipment"].enabled = false
+    Recipes["kr-portable-generator-equipment"].enabled = false
+    Recipes["kr-small-portable-generator-equipment"].enabled = false
+    Recipes["kr-big-battery-equipment"].enabled = false
+    Recipes["kr-big-solar-panel-equipment"].enabled = false
+    Recipes["kr-fusion-reactor-equipment"].enabled = false
+    Recipes["kr-antimatter-reactor-equipment"].enabled = false
+    Recipes["kr-advanced-exoskeleton-equipment"].enabled = false
+    Recipes["kr-superior-exoskeleton-equipment"].enabled = false
+    Recipes["kr-personal-laser-defense-mk2-equipment"].enabled = false
+    Recipes["kr-personal-laser-defense-mk3-equipment"].enabled = false
+    Recipes["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
-    DRT["kr-power-armor-mk3"].enabled = false
-    DRT["kr-power-armor-mk4"].enabled = false
-    DRT["kr-portable-generator-equipment"].enabled = false
-    DRT["kr-battery-mk3-equipment"].enabled = false
-    DRT["kr-fusion-reactor-equipment"].enabled = false
-    DRT["kr-advanced-additional-engine-equipment"].enabled = false
-    DRT["kr-antimatter-reactor-equipment"].enabled = false
-    DRT["kr-superior-solar-panel-equipment"].enabled = false
-    DRT["kr-superior-night-vision-equipment"].enabled = false
-    DRT["kr-advanced-exoskeleton-equipment"].enabled = false
-    DRT["kr-superior-exoskeleton-equipment"].enabled = false
-    DRT["kr-personal-laser-defense-mk2-equipment"].enabled = false
-    DRT["kr-personal-laser-defense-mk3-equipment"].enabled = false
-    DRT["kr-personal-laser-defense-mk4-equipment"].enabled = false
+    Tech["kr-power-armor-mk3"].enabled = false
+    Tech["kr-power-armor-mk4"].enabled = false
+    Tech["kr-portable-generator-equipment"].enabled = false
+    Tech["kr-battery-mk3-equipment"].enabled = false
+    Tech["kr-fusion-reactor-equipment"].enabled = false
+    Tech["kr-advanced-additional-engine-equipment"].enabled = false
+    Tech["kr-antimatter-reactor-equipment"].enabled = false
+    Tech["kr-superior-solar-panel-equipment"].enabled = false
+    Tech["kr-superior-night-vision-equipment"].enabled = false
+    Tech["kr-advanced-exoskeleton-equipment"].enabled = false
+    Tech["kr-superior-exoskeleton-equipment"].enabled = false
+    Tech["kr-personal-laser-defense-mk2-equipment"].enabled = false
+    Tech["kr-personal-laser-defense-mk3-equipment"].enabled = false
+    Tech["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
     if SS["KE-filters"].value then
         Hide_Item("kr-power-armor-mk3")
@@ -796,108 +796,108 @@ if mods["Krastorio2"] and mods["space-exploration"] then
 elseif (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
 --Hidden Recipes
     if mods["Krastorio2-spaced-out"] then
-        DRR["kr-vehicle-roboport-equipment"].hidden = true
-        DRR["kr-cargo-expansion-equipment"].hidden = true
+        Recipes["kr-vehicle-roboport-equipment"].hidden = true
+        Recipes["kr-cargo-expansion-equipment"].hidden = true
     end
     if not mods["Krastorio2-spaced-out"] then
-        DRR["kr-power-armor-mk3"].hidden = true
-        DRR["kr-power-armor-mk4"].hidden = true
-        DRR["kr-battery-mk3-equipment"].hidden = true
-        DRR["kr-big-battery-equipment"].hidden = true
-        DRR["kr-big-battery-mk2-equipment"].hidden = true
-        DRR["kr-big-battery-mk3-equipment"].hidden = true
+        Recipes["kr-power-armor-mk3"].hidden = true
+        Recipes["kr-power-armor-mk4"].hidden = true
+        Recipes["kr-battery-mk3-equipment"].hidden = true
+        Recipes["kr-big-battery-equipment"].hidden = true
+        Recipes["kr-big-battery-mk2-equipment"].hidden = true
+        Recipes["kr-big-battery-mk3-equipment"].hidden = true
     end
-    DRR["kr-additional-engine-equipment"].hidden = true
-    DRR["kr-advanced-additional-engine-equipment"].hidden = true
-    DRR["kr-small-portable-generator-equipment"].hidden = true
-    DRR["kr-portable-generator-equipment"].hidden = true
-    DRR["kr-big-solar-panel-equipment"].hidden = true
-    DRR["kr-superior-solar-panel-equipment"].hidden = true
-    DRR["kr-big-superior-solar-panel-equipment"].hidden = true
-    DRR["kr-fusion-reactor-equipment"].hidden = true
-    DRR["kr-energy-shield-mk3-equipment"].hidden = true
-    DRR["kr-energy-shield-mk4-equipment"].hidden = true
-    DRR["kr-antimatter-reactor-equipment"].hidden = true
-    DRR["kr-advanced-exoskeleton-equipment"].hidden = true
-    DRR["kr-superior-exoskeleton-equipment"].hidden = true
-    DRR["kr-superior-night-vision-equipment"].hidden = true
-    DRR["kr-personal-laser-defense-mk2-equipment"].hidden = true
-    DRR["kr-personal-laser-defense-mk3-equipment"].hidden = true
-    DRR["kr-personal-laser-defense-mk4-equipment"].hidden = true
+    Recipes["kr-additional-engine-equipment"].hidden = true
+    Recipes["kr-advanced-additional-engine-equipment"].hidden = true
+    Recipes["kr-small-portable-generator-equipment"].hidden = true
+    Recipes["kr-portable-generator-equipment"].hidden = true
+    Recipes["kr-big-solar-panel-equipment"].hidden = true
+    Recipes["kr-superior-solar-panel-equipment"].hidden = true
+    Recipes["kr-big-superior-solar-panel-equipment"].hidden = true
+    Recipes["kr-fusion-reactor-equipment"].hidden = true
+    Recipes["kr-energy-shield-mk3-equipment"].hidden = true
+    Recipes["kr-energy-shield-mk4-equipment"].hidden = true
+    Recipes["kr-antimatter-reactor-equipment"].hidden = true
+    Recipes["kr-advanced-exoskeleton-equipment"].hidden = true
+    Recipes["kr-superior-exoskeleton-equipment"].hidden = true
+    Recipes["kr-superior-night-vision-equipment"].hidden = true
+    Recipes["kr-personal-laser-defense-mk2-equipment"].hidden = true
+    Recipes["kr-personal-laser-defense-mk3-equipment"].hidden = true
+    Recipes["kr-personal-laser-defense-mk4-equipment"].hidden = true
 
 --Enabled Recipes
     if mods["Krastorio2-spaced-out"] then
-        DRR["kr-vehicle-roboport-equipment"].enabled = false
-        DRR["kr-cargo-expansion-equipment"].enabled = false
+        Recipes["kr-vehicle-roboport-equipment"].enabled = false
+        Recipes["kr-cargo-expansion-equipment"].enabled = false
     end
     if not mods["Krastorio2-spaced-out"] then
-        DRR["kr-power-armor-mk3"].enabled = false
-        DRR["kr-power-armor-mk4"].enabled = false
-        DRR["kr-battery-mk3-equipment"].enabled = false
-        DRR["kr-big-battery-equipment"].enabled = false
-        DRR["kr-big-battery-mk2-equipment"].enabled = false
-        DRR["kr-big-battery-mk3-equipment"].enabled = false
+        Recipes["kr-power-armor-mk3"].enabled = false
+        Recipes["kr-power-armor-mk4"].enabled = false
+        Recipes["kr-battery-mk3-equipment"].enabled = false
+        Recipes["kr-big-battery-equipment"].enabled = false
+        Recipes["kr-big-battery-mk2-equipment"].enabled = false
+        Recipes["kr-big-battery-mk3-equipment"].enabled = false
     end
-    DRR["kr-additional-engine-equipment"].enabled = false
-    DRR["kr-advanced-additional-engine-equipment"].enabled = false
-    DRR["kr-portable-generator-equipment"].enabled = false
-    DRR["kr-small-portable-generator-equipment"].enabled = false
-    DRR["kr-big-solar-panel-equipment"].enabled = false
-    DRR["kr-fusion-reactor-equipment"].enabled = false
-    DRR["kr-antimatter-reactor-equipment"].enabled = false
-    DRR["kr-energy-shield-mk3-equipment"].enabled = false
-    DRR["kr-energy-shield-mk4-equipment"].enabled = false
-    DRR["kr-advanced-exoskeleton-equipment"].enabled = false
-    DRR["kr-superior-exoskeleton-equipment"].enabled = false
-    DRR["kr-superior-night-vision-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk2-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk3-equipment"].enabled = false
-    DRR["kr-personal-laser-defense-mk4-equipment"].enabled = false
+    Recipes["kr-additional-engine-equipment"].enabled = false
+    Recipes["kr-advanced-additional-engine-equipment"].enabled = false
+    Recipes["kr-portable-generator-equipment"].enabled = false
+    Recipes["kr-small-portable-generator-equipment"].enabled = false
+    Recipes["kr-big-solar-panel-equipment"].enabled = false
+    Recipes["kr-fusion-reactor-equipment"].enabled = false
+    Recipes["kr-antimatter-reactor-equipment"].enabled = false
+    Recipes["kr-energy-shield-mk3-equipment"].enabled = false
+    Recipes["kr-energy-shield-mk4-equipment"].enabled = false
+    Recipes["kr-advanced-exoskeleton-equipment"].enabled = false
+    Recipes["kr-superior-exoskeleton-equipment"].enabled = false
+    Recipes["kr-superior-night-vision-equipment"].enabled = false
+    Recipes["kr-personal-laser-defense-mk2-equipment"].enabled = false
+    Recipes["kr-personal-laser-defense-mk3-equipment"].enabled = false
+    Recipes["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
 --Hidden Tech
     if mods["Krastorio2-spaced-out"] then
-        DRT["kr-cargo-expansion"].hidden = true
+        Tech["kr-cargo-expansion"].hidden = true
     end
     if not mods["Krastorio2-spaced-out"] then
-        DRT["kr-power-armor-mk3"].hidden = true
-        DRT["kr-power-armor-mk4"].hidden = true
-        DRT["kr-battery-mk3-equipment"].hidden = true
+        Tech["kr-power-armor-mk3"].hidden = true
+        Tech["kr-power-armor-mk4"].hidden = true
+        Tech["kr-battery-mk3-equipment"].hidden = true
     end
-    DRT["kr-advanced-additional-engine-equipment"].hidden = true
-    DRT["kr-portable-generator-equipment"].hidden = true
-    DRT["kr-fusion-reactor-equipment"].hidden = true
-    DRT["kr-antimatter-reactor-equipment"].hidden = true
-    DRT["kr-advanced-exoskeleton-equipment"].hidden = true
-    DRT["kr-superior-exoskeleton-equipment"].hidden = true
-    DRT["kr-superior-night-vision-equipment"].hidden = true
-    DRT["kr-energy-shield-mk3-equipment"].hidden = true
-    DRT["kr-energy-shield-mk4-equipment"].hidden = true
-    DRT["kr-personal-laser-defense-mk2-equipment"].hidden = true
-    DRT["kr-personal-laser-defense-mk3-equipment"].hidden = true
-    DRT["kr-personal-laser-defense-mk4-equipment"].hidden = true
+    Tech["kr-advanced-additional-engine-equipment"].hidden = true
+    Tech["kr-portable-generator-equipment"].hidden = true
+    Tech["kr-fusion-reactor-equipment"].hidden = true
+    Tech["kr-antimatter-reactor-equipment"].hidden = true
+    Tech["kr-advanced-exoskeleton-equipment"].hidden = true
+    Tech["kr-superior-exoskeleton-equipment"].hidden = true
+    Tech["kr-superior-night-vision-equipment"].hidden = true
+    Tech["kr-energy-shield-mk3-equipment"].hidden = true
+    Tech["kr-energy-shield-mk4-equipment"].hidden = true
+    Tech["kr-personal-laser-defense-mk2-equipment"].hidden = true
+    Tech["kr-personal-laser-defense-mk3-equipment"].hidden = true
+    Tech["kr-personal-laser-defense-mk4-equipment"].hidden = true
 
 --Enabled Tech
     if mods["Krastorio2-spaced-out"] then
-        DRT["kr-cargo-expansion"].enabled = false
+        Tech["kr-cargo-expansion"].enabled = false
     end
     if not mods["Krastorio2-spaced-out"] then
-        DRT["kr-power-armor-mk3"].enabled = false
-        DRT["kr-power-armor-mk4"].enabled = false
-        DRT["kr-battery-mk3-equipment"].enabled = false
+        Tech["kr-power-armor-mk3"].enabled = false
+        Tech["kr-power-armor-mk4"].enabled = false
+        Tech["kr-battery-mk3-equipment"].enabled = false
     end
-    DRT["kr-advanced-additional-engine-equipment"].enabled = false
-    DRT["kr-portable-generator-equipment"].enabled = false
-    DRT["kr-fusion-reactor-equipment"].enabled = false
-    DRT["kr-antimatter-reactor-equipment"].enabled = false
-    DRT["kr-energy-shield-mk3-equipment"].enabled = false
-    DRT["kr-energy-shield-mk4-equipment"].enabled = false
-    DRT["kr-superior-solar-panel-equipment"].enabled = false
-    DRT["kr-superior-night-vision-equipment"].enabled = false
-    DRT["kr-advanced-exoskeleton-equipment"].enabled = false
-    DRT["kr-superior-exoskeleton-equipment"].enabled = false
-    DRT["kr-personal-laser-defense-mk2-equipment"].enabled = false
-    DRT["kr-personal-laser-defense-mk3-equipment"].enabled = false
-    DRT["kr-personal-laser-defense-mk4-equipment"].enabled = false
+    Tech["kr-advanced-additional-engine-equipment"].enabled = false
+    Tech["kr-portable-generator-equipment"].enabled = false
+    Tech["kr-fusion-reactor-equipment"].enabled = false
+    Tech["kr-antimatter-reactor-equipment"].enabled = false
+    Tech["kr-energy-shield-mk3-equipment"].enabled = false
+    Tech["kr-energy-shield-mk4-equipment"].enabled = false
+    Tech["kr-superior-solar-panel-equipment"].enabled = false
+    Tech["kr-superior-night-vision-equipment"].enabled = false
+    Tech["kr-advanced-exoskeleton-equipment"].enabled = false
+    Tech["kr-superior-exoskeleton-equipment"].enabled = false
+    Tech["kr-personal-laser-defense-mk2-equipment"].enabled = false
+    Tech["kr-personal-laser-defense-mk3-equipment"].enabled = false
+    Tech["kr-personal-laser-defense-mk4-equipment"].enabled = false
 
     if SS["K2-filters"].value then
         if mods["Krastorio2-spaced-out"] then
@@ -934,54 +934,54 @@ end
 
 if mods["space-exploration"] then
 --Enabled
-    DRR["se-rtg-equipment"].enabled = false
-    DRR["energy-shield-mk3-equipment"].enabled = false
-    DRR["energy-shield-mk4-equipment"].enabled = false
-    DRR["energy-shield-mk5-equipment"].enabled = false
-    DRR["energy-shield-mk6-equipment"].enabled = false
-    DRR["se-adaptive-armour-equipment-1"].enabled = false
-    DRR["se-adaptive-armour-equipment-2"].enabled = false
-    DRR["se-adaptive-armour-equipment-3"].enabled = false
-    DRR["se-adaptive-armour-equipment-4"].enabled = false
-    DRR["se-adaptive-armour-equipment-5"].enabled = false
-    DRR["se-fusion-reactor-equipment"].enabled = false
-    DRR["se-antimatter-reactor-equipment"].enabled = false
+    Recipes["se-rtg-equipment"].enabled = false
+    Recipes["energy-shield-mk3-equipment"].enabled = false
+    Recipes["energy-shield-mk4-equipment"].enabled = false
+    Recipes["energy-shield-mk5-equipment"].enabled = false
+    Recipes["energy-shield-mk6-equipment"].enabled = false
+    Recipes["se-adaptive-armour-equipment-1"].enabled = false
+    Recipes["se-adaptive-armour-equipment-2"].enabled = false
+    Recipes["se-adaptive-armour-equipment-3"].enabled = false
+    Recipes["se-adaptive-armour-equipment-4"].enabled = false
+    Recipes["se-adaptive-armour-equipment-5"].enabled = false
+    Recipes["se-fusion-reactor-equipment"].enabled = false
+    Recipes["se-antimatter-reactor-equipment"].enabled = false
 
-    DRT["se-rtg-equipment"].enabled = false
-    DRT["se-adaptive-armour-1"].enabled = false
-    DRT["se-adaptive-armour-2"].enabled = false
-    DRT["se-adaptive-armour-3"].enabled = false
-    DRT["se-adaptive-armour-4"].enabled = false
-    DRT["se-adaptive-armour-5"].enabled = false
-    DRT["energy-shield-mk3-equipment"].enabled = false
-    DRT["energy-shield-mk4-equipment"].enabled = false
-    DRT["energy-shield-mk5-equipment"].enabled = false
-    DRT["energy-shield-mk6-equipment"].enabled = false
+    Tech["se-rtg-equipment"].enabled = false
+    Tech["se-adaptive-armour-1"].enabled = false
+    Tech["se-adaptive-armour-2"].enabled = false
+    Tech["se-adaptive-armour-3"].enabled = false
+    Tech["se-adaptive-armour-4"].enabled = false
+    Tech["se-adaptive-armour-5"].enabled = false
+    Tech["energy-shield-mk3-equipment"].enabled = false
+    Tech["energy-shield-mk4-equipment"].enabled = false
+    Tech["energy-shield-mk5-equipment"].enabled = false
+    Tech["energy-shield-mk6-equipment"].enabled = false
 
 --Hidden
-    DRR["se-rtg-equipment"].hidden = true
-    DRR["energy-shield-mk3-equipment"].hidden = true
-    DRR["energy-shield-mk4-equipment"].hidden = true
-    DRR["energy-shield-mk5-equipment"].hidden = true
-    DRR["energy-shield-mk6-equipment"].hidden = true
-    DRR["se-fusion-reactor-equipment"].hidden = true
-    DRR["se-antimatter-reactor-equipment"].hidden = true
-    DRR["se-adaptive-armour-equipment-1"].hidden = true
-    DRR["se-adaptive-armour-equipment-2"].hidden = true
-    DRR["se-adaptive-armour-equipment-3"].hidden = true
-    DRR["se-adaptive-armour-equipment-4"].hidden = true
-    DRR["se-adaptive-armour-equipment-5"].hidden = true
+    Recipes["se-rtg-equipment"].hidden = true
+    Recipes["energy-shield-mk3-equipment"].hidden = true
+    Recipes["energy-shield-mk4-equipment"].hidden = true
+    Recipes["energy-shield-mk5-equipment"].hidden = true
+    Recipes["energy-shield-mk6-equipment"].hidden = true
+    Recipes["se-fusion-reactor-equipment"].hidden = true
+    Recipes["se-antimatter-reactor-equipment"].hidden = true
+    Recipes["se-adaptive-armour-equipment-1"].hidden = true
+    Recipes["se-adaptive-armour-equipment-2"].hidden = true
+    Recipes["se-adaptive-armour-equipment-3"].hidden = true
+    Recipes["se-adaptive-armour-equipment-4"].hidden = true
+    Recipes["se-adaptive-armour-equipment-5"].hidden = true
 
-    DRT["se-rtg-equipment"].hidden = true
-    DRT["se-adaptive-armour-1"].hidden = true
-    DRT["se-adaptive-armour-2"].hidden = true
-    DRT["se-adaptive-armour-3"].hidden = true
-    DRT["se-adaptive-armour-4"].hidden = true
-    DRT["se-adaptive-armour-5"].hidden = true
-    DRT["energy-shield-mk3-equipment"].hidden = true
-    DRT["energy-shield-mk4-equipment"].hidden = true
-    DRT["energy-shield-mk5-equipment"].hidden = true
-    DRT["energy-shield-mk6-equipment"].hidden = true
+    Tech["se-rtg-equipment"].hidden = true
+    Tech["se-adaptive-armour-1"].hidden = true
+    Tech["se-adaptive-armour-2"].hidden = true
+    Tech["se-adaptive-armour-3"].hidden = true
+    Tech["se-adaptive-armour-4"].hidden = true
+    Tech["se-adaptive-armour-5"].hidden = true
+    Tech["energy-shield-mk3-equipment"].hidden = true
+    Tech["energy-shield-mk4-equipment"].hidden = true
+    Tech["energy-shield-mk5-equipment"].hidden = true
+    Tech["energy-shield-mk6-equipment"].hidden = true
 
     if SS["SE-filters"].value then
         Hide_Item("se-rtg-equipment")
@@ -999,30 +999,30 @@ end
 
 if (mods["RampantArsenalFork"] or mods["RampantArsenal"]) then
 -- Enabled 
-    DRT["rampant-arsenal-technology-power-armor-mk3"].enabled = false
-    DRT["rampant-arsenal-technology-battery-equipment-3"].enabled = false
-    DRT["rampant-arsenal-technology-shield-equipment-2"].enabled = false
-    DRT["rampant-arsenal-technology-generator-equipment-2"].enabled = false
-    DRT["rampant-arsenal-technology-generator-equipment-3"].enabled = false
+    Tech["rampant-arsenal-technology-power-armor-mk3"].enabled = false
+    Tech["rampant-arsenal-technology-battery-equipment-3"].enabled = false
+    Tech["rampant-arsenal-technology-shield-equipment-2"].enabled = false
+    Tech["rampant-arsenal-technology-generator-equipment-2"].enabled = false
+    Tech["rampant-arsenal-technology-generator-equipment-3"].enabled = false
 
-    DRR["mk3-battery-rampant-arsenal"].enabled = false
-    DRR["mk3-shield-rampant-arsenal"].enabled = false
-    DRR["mk3-generator-rampant-arsenal"].enabled = false
-    DRR["nuclear-generator-rampant-arsenal"].enabled = false
-    DRR["power-armor-mk3-armor-rampant-arsenal"].enabled = false
+    Recipes["mk3-battery-rampant-arsenal"].enabled = false
+    Recipes["mk3-shield-rampant-arsenal"].enabled = false
+    Recipes["mk3-generator-rampant-arsenal"].enabled = false
+    Recipes["nuclear-generator-rampant-arsenal"].enabled = false
+    Recipes["power-armor-mk3-armor-rampant-arsenal"].enabled = false
 
 -- Hidden        
-    DRT["rampant-arsenal-technology-power-armor-mk3"].hidden = true
-    DRT["rampant-arsenal-technology-battery-equipment-3"].hidden = true
-    DRT["rampant-arsenal-technology-shield-equipment-2"].hidden = true
-    DRT["rampant-arsenal-technology-generator-equipment-2"].hidden = true
-    DRT["rampant-arsenal-technology-generator-equipment-3"].hidden = true
+    Tech["rampant-arsenal-technology-power-armor-mk3"].hidden = true
+    Tech["rampant-arsenal-technology-battery-equipment-3"].hidden = true
+    Tech["rampant-arsenal-technology-shield-equipment-2"].hidden = true
+    Tech["rampant-arsenal-technology-generator-equipment-2"].hidden = true
+    Tech["rampant-arsenal-technology-generator-equipment-3"].hidden = true
 
-    DRR["mk3-shield-rampant-arsenal"].hidden = true
-    DRR["mk3-battery-rampant-arsenal"].hidden = true
-    DRR["mk3-generator-rampant-arsenal"].hidden = true
-    DRR["nuclear-generator-rampant-arsenal"].hidden = true
-    DRR["power-armor-mk3-armor-rampant-arsenal"].hidden = true
+    Recipes["mk3-shield-rampant-arsenal"].hidden = true
+    Recipes["mk3-battery-rampant-arsenal"].hidden = true
+    Recipes["mk3-generator-rampant-arsenal"].hidden = true
+    Recipes["nuclear-generator-rampant-arsenal"].hidden = true
+    Recipes["power-armor-mk3-armor-rampant-arsenal"].hidden = true
 
     if SS["Arsenal-filters"].value then
         Hide_Item("mk3-shield-rampant-arsenal")
@@ -1035,39 +1035,39 @@ end
 
 if mods["Power Armor MK3"] then
     --Hidden
-    DRR["pamk3-se"].hidden = true
-    DRR["pamk3-pdd"].hidden = true
-    DRR["pamk3-inff"].hidden = true
-    DRR["pamk3-nvmk2"].hidden = true
-    DRR["pamk3-esmk3"].hidden = true
-    DRR["pamk3-pamk3"].hidden = true
-    DRR["pamk3-pamk4"].hidden = true
-    DRR["pamk3-battmk3"].hidden = true
+    Recipes["pamk3-se"].hidden = true
+    Recipes["pamk3-pdd"].hidden = true
+    Recipes["pamk3-inff"].hidden = true
+    Recipes["pamk3-nvmk2"].hidden = true
+    Recipes["pamk3-esmk3"].hidden = true
+    Recipes["pamk3-pamk3"].hidden = true
+    Recipes["pamk3-pamk4"].hidden = true
+    Recipes["pamk3-battmk3"].hidden = true
 
-    DRT["pamk3-se"].hidden = true
-    DRT["pamk3-pdd"].hidden = true
-    DRT["pamk3-nvmk2"].hidden = true
-    DRT["pamk3-esmk3"].hidden = true
-    DRT["pamk3-pamk3"].hidden = true
-    DRT["pamk3-pamk4"].hidden = true
-    DRT["pamk3-battmk3"].hidden = true
+    Tech["pamk3-se"].hidden = true
+    Tech["pamk3-pdd"].hidden = true
+    Tech["pamk3-nvmk2"].hidden = true
+    Tech["pamk3-esmk3"].hidden = true
+    Tech["pamk3-pamk3"].hidden = true
+    Tech["pamk3-pamk4"].hidden = true
+    Tech["pamk3-battmk3"].hidden = true
 --Enabled
-    DRR["pamk3-se"].enabled = false
-    DRR["pamk3-pdd"].enabled = false
-    DRR["pamk3-inff"].enabled = false
-    DRR["pamk3-nvmk2"].enabled = false
-    DRR["pamk3-esmk3"].enabled = false
-    DRR["pamk3-pamk3"].enabled = false
-    DRR["pamk3-pamk4"].enabled = false
-    DRR["pamk3-battmk3"].enabled = false
+    Recipes["pamk3-se"].enabled = false
+    Recipes["pamk3-pdd"].enabled = false
+    Recipes["pamk3-inff"].enabled = false
+    Recipes["pamk3-nvmk2"].enabled = false
+    Recipes["pamk3-esmk3"].enabled = false
+    Recipes["pamk3-pamk3"].enabled = false
+    Recipes["pamk3-pamk4"].enabled = false
+    Recipes["pamk3-battmk3"].enabled = false
 
-    DRT["pamk3-se"].enabled = false
-    DRT["pamk3-pdd"].enabled = false
-    DRT["pamk3-nvmk2"].enabled = false
-    DRT["pamk3-esmk3"].enabled = false
-    DRT["pamk3-pamk3"].enabled = false
-    DRT["pamk3-pamk4"].enabled = false
-    DRT["pamk3-battmk3"].enabled = false
+    Tech["pamk3-se"].enabled = false
+    Tech["pamk3-pdd"].enabled = false
+    Tech["pamk3-nvmk2"].enabled = false
+    Tech["pamk3-esmk3"].enabled = false
+    Tech["pamk3-pamk3"].enabled = false
+    Tech["pamk3-pamk4"].enabled = false
+    Tech["pamk3-battmk3"].enabled = false
 --Filters
     if SS["MK3-filters"].value then
         Hide_Item("pamk3-se")
@@ -1083,55 +1083,55 @@ end
 
 if mods["PowerAndArmor"] then
     --Enabled
-    DRR["PaA-battery-mk3-equipment"].enabled = false
-    DRR["PaA-power-armor-mk2-upgrade"].enabled = false
-    DRR["PaA-power-armor-mk3-upgrade"].enabled = false
-    DRR["PaA-exoskeleton-mk2-equipment"].enabled = false
-    DRR["PaA-night-vision-mk2-equipment"].enabled = false
-    DRR["PaA-energy-shield-mk3-equipment"].enabled = false
-    DRR["PaA-par-fusion-reactor-mk2-equipment"].enabled = false
-    DRR["PaA-personal-roboport-mk3-equipment"].enabled = false
-    DRR["PaA-personal-dockingport-mk3-equipment"].enabled = false
-    DRR["PaA-personal-laser-defense-mk2-equipment"].enabled = false
-    DRR["PaA-personal-laser-defense-mk3-equipment"].enabled = false
+    Recipes["PaA-battery-mk3-equipment"].enabled = false
+    Recipes["PaA-power-armor-mk2-upgrade"].enabled = false
+    Recipes["PaA-power-armor-mk3-upgrade"].enabled = false
+    Recipes["PaA-exoskeleton-mk2-equipment"].enabled = false
+    Recipes["PaA-night-vision-mk2-equipment"].enabled = false
+    Recipes["PaA-energy-shield-mk3-equipment"].enabled = false
+    Recipes["PaA-par-fusion-reactor-mk2-equipment"].enabled = false
+    Recipes["PaA-personal-roboport-mk3-equipment"].enabled = false
+    Recipes["PaA-personal-dockingport-mk3-equipment"].enabled = false
+    Recipes["PaA-personal-laser-defense-mk2-equipment"].enabled = false
+    Recipes["PaA-personal-laser-defense-mk3-equipment"].enabled = false
 
-    DRT["PaA-armor-upgrades"].enabled = false
-    DRT["PaA-mk3-power-armor"].enabled = false
-    DRT["PaA-mk4-power-armor"].enabled = false
-    DRT["PaA-mk3-battery-equipment"].enabled = false
-    DRT["PaA-mk2-exoskeleton-equipment"].enabled = false
-    DRT["PaA-mk2-night-vision-equipment"].enabled = false
-    DRT["PaA-mk3-energy-shield-equipment"].enabled = false
-    DRT["PaA-mk2-fusion-reactor-equipment"].enabled = false
-    DRT["PaA-mk3-personal-roboport-equipment"].enabled = false
-    DRT["PaA-mk2-personal-laser-defense-equipment"].enabled = false
-    DRT["PaA-mk3-personal-laser-defense-equipment"].enabled = false
+    Tech["PaA-armor-upgrades"].enabled = false
+    Tech["PaA-mk3-power-armor"].enabled = false
+    Tech["PaA-mk4-power-armor"].enabled = false
+    Tech["PaA-mk3-battery-equipment"].enabled = false
+    Tech["PaA-mk2-exoskeleton-equipment"].enabled = false
+    Tech["PaA-mk2-night-vision-equipment"].enabled = false
+    Tech["PaA-mk3-energy-shield-equipment"].enabled = false
+    Tech["PaA-mk2-fusion-reactor-equipment"].enabled = false
+    Tech["PaA-mk3-personal-roboport-equipment"].enabled = false
+    Tech["PaA-mk2-personal-laser-defense-equipment"].enabled = false
+    Tech["PaA-mk3-personal-laser-defense-equipment"].enabled = false
     --Hidden
-    DRR["PaA-power-armor-mk3"].hidden = true
-    DRR["PaA-power-armor-mk4"].hidden = true
-    DRR["PaA-battery-mk3-equipment"].hidden = true
-    DRR["PaA-power-armor-mk3-upgrade"].hidden = true
-    DRR["PaA-power-armor-mk2-upgrade"].hidden = true
-    DRR["PaA-exoskeleton-mk2-equipment"].hidden = true
-    DRR["PaA-night-vision-mk2-equipment"].hidden = true
-    DRR["PaA-energy-shield-mk3-equipment"].hidden = true
-    DRR["PaA-par-fusion-reactor-mk2-equipment"].hidden = true
-    DRR["PaA-personal-roboport-mk3-equipment"].hidden = true
-    DRR["PaA-personal-dockingport-mk3-equipment"].hidden = true
-    DRR["PaA-personal-laser-defense-mk2-equipment"].hidden = true
-    DRR["PaA-personal-laser-defense-mk3-equipment"].hidden = true
+    Recipes["PaA-power-armor-mk3"].hidden = true
+    Recipes["PaA-power-armor-mk4"].hidden = true
+    Recipes["PaA-battery-mk3-equipment"].hidden = true
+    Recipes["PaA-power-armor-mk3-upgrade"].hidden = true
+    Recipes["PaA-power-armor-mk2-upgrade"].hidden = true
+    Recipes["PaA-exoskeleton-mk2-equipment"].hidden = true
+    Recipes["PaA-night-vision-mk2-equipment"].hidden = true
+    Recipes["PaA-energy-shield-mk3-equipment"].hidden = true
+    Recipes["PaA-par-fusion-reactor-mk2-equipment"].hidden = true
+    Recipes["PaA-personal-roboport-mk3-equipment"].hidden = true
+    Recipes["PaA-personal-dockingport-mk3-equipment"].hidden = true
+    Recipes["PaA-personal-laser-defense-mk2-equipment"].hidden = true
+    Recipes["PaA-personal-laser-defense-mk3-equipment"].hidden = true
 
-    DRT["PaA-armor-upgrades"].hidden = true
-    DRT["PaA-mk3-power-armor"].hidden = true
-    DRT["PaA-mk4-power-armor"].hidden = true
-    DRT["PaA-mk3-battery-equipment"].hidden = true
-    DRT["PaA-mk2-exoskeleton-equipment"].hidden = true
-    DRT["PaA-mk2-night-vision-equipment"].hidden = true
-    DRT["PaA-mk3-energy-shield-equipment"].hidden = true
-    DRT["PaA-mk2-fusion-reactor-equipment"].hidden = true
-    DRT["PaA-mk3-personal-roboport-equipment"].hidden = true
-    DRT["PaA-mk2-personal-laser-defense-equipment"].hidden = true
-    DRT["PaA-mk3-personal-laser-defense-equipment"].hidden = true
+    Tech["PaA-armor-upgrades"].hidden = true
+    Tech["PaA-mk3-power-armor"].hidden = true
+    Tech["PaA-mk4-power-armor"].hidden = true
+    Tech["PaA-mk3-battery-equipment"].hidden = true
+    Tech["PaA-mk2-exoskeleton-equipment"].hidden = true
+    Tech["PaA-mk2-night-vision-equipment"].hidden = true
+    Tech["PaA-mk3-energy-shield-equipment"].hidden = true
+    Tech["PaA-mk2-fusion-reactor-equipment"].hidden = true
+    Tech["PaA-mk3-personal-roboport-equipment"].hidden = true
+    Tech["PaA-mk2-personal-laser-defense-equipment"].hidden = true
+    Tech["PaA-mk3-personal-laser-defense-equipment"].hidden = true
 
     --filters
     if SS["PA-filters"].value then

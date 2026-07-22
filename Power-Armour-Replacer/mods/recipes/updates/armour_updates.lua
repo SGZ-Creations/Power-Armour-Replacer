@@ -108,7 +108,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
 
 if mods["bobenemies"] then
     if SS["bobmods-enemies-enableartifacts"].value == true then
-        table.insert(RECIPES["par-armour-mk2"].ingredients, {type="item", name= "bob-alien-artifact", amount=100}
+        table.insert(RECIPES["par-armour-mk2"].ingredients, {type="item", name= "bob-alien-artifact", amount=100})
     end
 end
 
