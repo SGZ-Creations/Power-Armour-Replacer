@@ -1,9 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.5
-Date: 00.07.26
+Date: 22.07.26
   Changes:
     - [PAR] old code & @class removed.
-    - [PAR] Removed optional quality.
+    - [PAR] Removed optional quality. Hope noting breaks.
+  Features:
+    - Cleaning for Alpha testing PARs-SpaceAge-Extension.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.4
 Date: 11.07.26

@@ -67,6 +67,12 @@ for tier, equipment in pairs(power_armour) do
         type = "armor",
         icon = equipment.icon,
         icon_size = 64,
+        stack_size = 1,
+        subgroup = "PAR_Armour",
+        order = equipment_order,
+        weight = equipment.weightvalue,
+        equipment_grid = equipment_grid_name, -- disable to removes quality. now make a setting or function that tells if setting = grids H-W 0 then remove grid entirely. make this code at C.A.S to not cause load order issues.
+        inventory_size_bonus = equipment.inventory_bonus,
         resistances = {
             {
                 type = "physical",
@@ -109,20 +115,14 @@ for tier, equipment in pairs(power_armour) do
                 percent = resistances.poison_percent[tier],
             },
         },
-        subgroup = "PAR_Armour",
-        order = equipment_order,
         factoriopedia_simulation = simulations.factoriopedia_power_armor_mk2,
         inventory_move_sound = item_sounds.armor_large_inventory_move,
         pick_sound = item_sounds.armor_large_inventory_pickup,
         drop_sound = item_sounds.armor_large_inventory_move,
-        stack_size = 1,
-        --flags = {"not-stackable"},
-        weight = equipment.weightvalue,
-        equipment_grid = equipment_grid_name, -- disable to removes quality. now make a setting or function that tells if setting = grids H-W 0 then remove grid entirely. make this code at C.A.S to not cause load order issues.
-        inventory_size_bonus = equipment.inventory_bonus,
         open_sound = { filename = "__base__/sound/armor-open.ogg", volume = 1 },
         close_sound = { filename = "__base__/sound/armor-close.ogg", volume = 1 }
     }
+
     if SS["Durability"].value == "ArmourdurabilityOFF" then
         equipment_armor.infinite = true
     elseif SS["Durability"].value == "ArmourDurabilityAll" then
@@ -137,7 +137,6 @@ for tier, equipment in pairs(power_armour) do
             decrease = resistances.plasma_decrease[tier],
             percent = resistances.plasma_percent[tier],
         })
-
         table.insert(equipment_armor.resistances, {
             type = "bob-pierce",
             decrease = resistances.pierce_decrease[tier],
