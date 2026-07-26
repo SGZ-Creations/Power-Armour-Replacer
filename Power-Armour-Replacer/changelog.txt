@@ -1,8 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.6
-Date: 23.07.26
+Date: 26.07.26
   Credit:
     - Big Thanks to @meddleman for the awesome Thumbnail.
+    - Thanks for the translation 动力装甲与替换汉化补丁.
+  Translation:
+    - zh-CN BY 动力装甲与替换汉化补丁
+    - Sorce: https://mods.factorio.com/mod/Power-Armour-Replacer-CN Many thanks again for translation. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.5
 Date: 22.07.26
@@ -70,6 +74,18 @@ Date: 26.06.26
     - [PAR] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.10
+Date: 26.07.26
+  Credit:
+    - Big Thanks to @meddleman for the awesome Thumbnail.
+    - Thanks for the translation 动力装甲与替换汉化补丁.
+  Translation:
+    - zh-CN BY 动力装甲与替换汉化补丁
+    - Sorce: https://mods.factorio.com/mod/Power-Armour-Replacer-CN Many thanks again for translation.
+  Info:
+    - Sorry. This version may have missing localization inputs. Please don't blame the author about it. Apology for bad Translation, Translator was used.
+    - 抱歉。此版本可能缺少本地化输入。请不要责怪作者。抱歉翻译不好,使用了翻译器。
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.9
 Date: 11.07.26
