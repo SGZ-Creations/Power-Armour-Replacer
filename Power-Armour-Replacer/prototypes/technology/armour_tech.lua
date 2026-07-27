@@ -128,7 +128,7 @@ data:extend({
 			"par-armour-tech-4",
 			"electric-engine",
 			"military-3",
-			"armour-control-unit",
+			"armour-control-unit-1",
 		},
 		unit = {
 			count = 1000,

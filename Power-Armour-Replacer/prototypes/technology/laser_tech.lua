@@ -63,7 +63,7 @@ data:extend({
         name = "par-laser-tech-5",
         icons = icon_utils.create_equipment_technology_icon("laser-defense", 256, 5),
         effects = {{ type = "unlock-recipe", recipe = "par-laser-mk5"}},
-        prerequisites = {"par-laser-tech-4", "laser", "armour-control-unit"},
+        prerequisites = {"par-laser-tech-4", "laser", "armour-control-unit-1"},
         unit = {
             count = 500,
             ingredients = {

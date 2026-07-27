@@ -87,7 +87,7 @@ data:extend({
                 recipe = "par-solar-panel-mk5"
             },
         },
-        prerequisites = { "par-solar-panel-tech-4", "armour-control-unit"},
+        prerequisites = { "par-solar-panel-tech-4", "armour-control-unit-1"},
         unit = {
             count = 250,
             ingredients = {

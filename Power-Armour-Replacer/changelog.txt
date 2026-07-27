@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.7
+Date: 27.07.26
+  Changes:
+    - Icresed armour-control-unit's tech cost to 200.
+  Scripting:
+    - Tech Name armour-control-unit -> armour-control-unit-1.
+  Info:
+    - Name chnage should now make armour control unit show a 1 & 2 on the tier. (tier 2 space age only)
+---------------------------------------------------------------------------------------------------
 Version: 0.6.6
 Date: 26.07.26
   Credit:

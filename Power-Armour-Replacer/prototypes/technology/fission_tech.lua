@@ -90,7 +90,7 @@ data:extend({
                 recipe = "par-fission-reactor-mk5"
             },
         },
-        prerequisites = { "par-fission-reactor-tech-4", "armour-control-unit",},
+        prerequisites = { "par-fission-reactor-tech-4", "armour-control-unit-1",},
         unit =
         {
             count = 500,
