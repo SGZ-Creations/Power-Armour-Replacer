@@ -1,0 +1,62 @@
+local item_sounds = require("__base__.prototypes.item_sounds")
+local icon_utils = require("structures.icon-utils")
+---@class LuaSettings
+local SS = settings.startup
+
+local FissionReactor = {
+    {power =tostring(SS["FissionPower_01"].value) .. "GW", weightvalue = SS["FissionWeight_01"].value, order = "caz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_02"].value) .. "GW", weightvalue = SS["FissionWeight_02"].value, order = "cbz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_03"].value) .. "GW", weightvalue = SS["FissionWeight_03"].value, order = "ccz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_04"].value) .. "GW", weightvalue = SS["FissionWeight_04"].value, order = "cdz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_05"].value) .. "GW", weightvalue = SS["FissionWeight_05"].value, order = "cez[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_06"].value) .. "GW", weightvalue = SS["FissionWeight_06"].value, order = "cfz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_07"].value) .. "GW", weightvalue = SS["FissionWeight_07"].value, order = "cgz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_08"].value) .. "GW", weightvalue = SS["FissionWeight_08"].value, order = "chz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_09"].value) .. "GW", weightvalue = SS["FissionWeight_09"].value, order = "ciz[energy-source]-aa[armour-replacer]"},
+    {power =tostring(SS["FissionPower_10"].value) .. "GW", weightvalue = SS["FissionWeight_10"].value, order = "cjz[energy-source]-aa[armour-replacer]"},
+}
+
+if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+    AllowedGrids = {"armor", "kr-vehicle"}
+else
+    AllowedGrids = {"armor"}
+end
+
+for tier, fission in pairs(FissionReactor) do
+    ---@type data.ItemPrototype
+    local item = {
+        type = "item",
+        name = "par-fission-reactor-mk" .. tostring(tier),
+        place_as_equipment_result = "par-fission-reactor-mk" .. tostring(tier),
+        icons = icon_utils.create_equipment_icon("fusion-reactor", 64, tier),
+        inventory_move_sound = item_sounds.reactor_inventory_move,
+        pick_sound = item_sounds.reactor_inventory_pickup,
+        drop_sound = item_sounds.reactor_inventory_move,
+        stack_size = 20,
+        weight = fission.weightvalue,
+        order = fission.order,
+        subgroup = "PAR_Fission",
+    }
+---@type data.EquipmentPrototype
+    local equipment = {
+        type = "generator-equipment",
+        name = "par-fission-reactor-mk" .. tostring(tier),
+        sprite = icon_utils.create_equipment_sprite("fusion-reactor", 256, 256, tier),
+        shape = {
+            width = 3,--make this 1 or 2 for fusion
+            height = 3,--make this 1 or 2 for fusion
+            type = "full"
+        },
+        energy_source = {
+            type = "electric",
+            usage_priority = "primary-output"
+        },
+        power = fission.power,
+        categories = AllowedGrids
+    }
+    data:extend({
+        item,
+        equipment
+    })
+end
+

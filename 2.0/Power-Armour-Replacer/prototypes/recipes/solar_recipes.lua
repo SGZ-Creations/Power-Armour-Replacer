@@ -1,0 +1,374 @@
+local SS = settings.startup
+
+data:extend({
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk1",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 5,
+        ingredients = {
+            {type="item", name="electronic-circuit", amount=25},
+            {type="item", name="copper-plate", amount=25},
+            {type="item", name="copper-cable", amount=25},
+            {type="item", name="steel-plate", amount=25},
+            {type="item", name="stone-brick", amount=25},
+            {type="item", name="iron-stick", amount=25},
+            {type="item", name="wood", amount=25},
+        },
+        results = {{type="item", name="par-solar-panel-mk1", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk2",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 10,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk1", amount= SS["EquipmentMulti"].value},
+            {type="item", name="electronic-circuit", amount=50},
+            {type="item", name="copper-plate", amount=50},
+            {type="item", name="copper-cable", amount=50},
+            {type="item", name="steel-plate", amount=50},
+            {type="item", name="stone-brick", amount=50},
+            {type="item", name="iron-stick", amount=50},
+            {type="item", name="wood", amount=50},
+        },
+        results = {{type="item", name="par-solar-panel-mk2", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk3",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 15,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk2", amount= SS["EquipmentMulti"].value},
+            {type="item", name="advanced-circuit", amount=75},
+            {type="item", name="copper-plate", amount=75},
+            {type="item", name="copper-cable", amount=75},
+            {type="item", name="steel-plate", amount=75},
+            {type="item", name="stone-brick", amount=75},
+            {type="item", name="iron-stick", amount=75},
+            {type="item", name="wood", amount=75},
+        },
+        results = {{type="item", name="par-solar-panel-mk3", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk4",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 20,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk3", amount= SS["EquipmentMulti"].value},
+            {type="item", name="advanced-circuit", amount=100},
+            {type="item", name="copper-plate", amount=100},
+            {type="item", name="copper-cable", amount=100},
+            {type="item", name="steel-plate", amount=100},
+            {type="item", name="iron-stick", amount=100},
+            {type="item", name="battery", amount=100},
+        },
+        results = {{type="item", name="par-solar-panel-mk4", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk5",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 25,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk4", amount= SS["EquipmentMulti"].value},
+            {type="item", name="armour-control-unit", amount=125},
+            {type="item", name="advanced-circuit", amount=125},
+            {type="item", name="steel-plate", amount=125},
+            {type="item", name="iron-stick", amount=125},
+            {type="item", name="battery", amount=125},
+        },
+        results = {{type="item", name="par-solar-panel-mk5", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk6",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 30,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk5", amount= SS["EquipmentMulti"].value},
+            {type="item", name="armour-control-unit", amount=150},
+            {type="item", name="electric-engine-unit", amount=150},
+            {type="item", name="processing-unit", amount=150},
+            {type="item", name="engine-unit", amount=150},
+            {type="item", name="iron-stick", amount=150},
+        },
+        results = {{type="item", name="par-solar-panel-mk6", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk7",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 35,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk6", amount= SS["EquipmentMulti"].value},
+            {type="item", name="low-density-structure", amount=200},
+            {type="item", name="electric-engine-unit", amount=200},
+            {type="item", name="armour-control-unit", amount=200},
+            {type="item", name="processing-unit", amount=200},
+            {type="item", name="plastic-bar", amount=200},
+        },
+        results = {{type="item", name="par-solar-panel-mk7", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk8",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 40,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk7", amount= SS["EquipmentMulti"].value},
+            {type="item", name="low-density-structure", amount=300},
+            {type="item", name="electric-engine-unit", amount=300},
+            {type="item", name="armour-control-unit", amount=300},
+            {type="item", name="processing-unit", amount=300},
+            {type="item", name="plastic-bar", amount=300},
+            {type="item", name="battery", amount=300},
+        },
+        results = {{type="item", name="par-solar-panel-mk8", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk9",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 45,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk8", amount= SS["EquipmentMulti"].value},
+            {type="item", name="low-density-structure", amount=400},
+            {type="item", name="electric-engine-unit", amount=400},
+            {type="item", name="armour-control-unit", amount=400},
+            {type="item", name="processing-unit", amount=400},
+            {type="item", name="plastic-bar", amount=400},
+            {type="item", name="battery", amount=400},
+            {type="fluid", name="water", amount=400},
+        },
+        results = {{type="item", name="par-solar-panel-mk9", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-solar-panel-mk10",
+        category = "par-electronic-hands",
+        enabled = false,
+        energy_required = 50,
+        ingredients = {
+            {type="item", name="par-solar-panel-mk9", amount= SS["EquipmentMulti"].value},
+            {type="item", name="low-density-structure", amount=500},
+            {type="item", name="electric-engine-unit", amount=500},
+            {type="item", name="armour-control-unit", amount=500},
+            {type="item", name="processing-unit", amount=500},
+            {type="item", name="plastic-bar", amount=500},
+            {type="item", name="battery", amount=500},
+            {type="fluid", name="water", amount=500},
+        },
+        results = {{type="item", name="par-solar-panel-mk10", amount=1}}
+    },
+})
+
+if mods["space-age"] then
+    data:extend({
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk1",
+            category = "par-electronic-hands",
+            enabled = false,
+            energy_required = 5,
+            ingredients = {
+                {type="item", name="electronic-circuit", amount=25},
+                {type="item", name="copper-plate", amount=25},
+                {type="item", name="steel-plate", amount=25},
+                {type="item", name="iron-plate", amount=25},
+                {type="item", name="wood", amount=25},
+            },
+            results = {{type="item", name="par-solar-panel-mk1", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk2",
+            category = "par-electronic-hands",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk1", amount= SS["EquipmentMulti"].value},
+                {type="item", name="electronic-circuit", amount=50},
+                {type="item", name="copper-plate", amount=50},
+                {type="item", name="steel-plate", amount=50},
+                {type="item", name="wood", amount=50},
+            },
+            results = {{type="item", name="par-solar-panel-mk2", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk3",
+            category = "par-electronic-hands",
+            enabled = false,
+            energy_required = 15,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk2", amount= SS["EquipmentMulti"].value},
+                {type="item", name="advanced-circuit", amount=75},
+                {type="item", name="copper-plate", amount=75},
+                {type="item", name="steel-plate", amount=75},
+                {type="item", name="plastic-bar", amount=75},
+            },
+            results = {{type="item", name="par-solar-panel-mk3", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk4",
+            category = "par-electronic-hands",
+            enabled = false,
+            energy_required = 20,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk3", amount= SS["EquipmentMulti"].value},
+                {type="item", name="advanced-circuit", amount=100},
+                {type="item", name="copper-plate", amount=100},
+                {type="item", name="steel-plate", amount=100},
+                {type="item", name="plastic-bar", amount=100},
+            },
+            results = {{type="item", name="par-solar-panel-mk4", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk5",
+            category = "par-electronic-hands",
+            enabled = false,
+            energy_required = 25,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk4", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=125},
+                {type="item", name="armour-control-unit", amount=125},
+                {type="item", name="processing-unit", amount=125},
+                {type="item", name="steel-plate", amount=125},
+                {type="item", name="carbon", amount=125},
+            },
+            results = {{type="item", name="par-solar-panel-mk5", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk6",
+            category = "par-electronics",
+            enabled = false,
+            energy_required = 30,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk5", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=150},
+                {type="item", name="armour-control-unit", amount=150},
+                {type="item", name="processing-unit", amount=150},
+                {type="item", name="pentapod-egg", amount=150},
+                {type="item", name="carbon-fiber", amount=150},
+                {type="item", name="carbon", amount=150},
+            },
+            results = {{type="item", name="par-solar-panel-mk6", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk7",
+            category = "par-electronics",
+            enabled = false,
+            energy_required = 35,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk6", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=200},
+                {type="item", name="armour-control-unit", amount=200},
+                {type="item", name="tungsten-carbide", amount=200},
+                {type="item", name="processing-unit", amount=200},
+                {type="item", name="superconductor", amount=200},
+                {type="item", name="lithium-plate", amount=200},
+                {type="item", name="carbon-fiber", amount=200},
+                {type="item", name="pentapod-egg", amount=200},
+                --Fluid
+                {type="fluid", name="electrolyte", amount=1000},
+            },
+            results = {{type="item", name="par-solar-panel-mk7", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk8",
+            main_product = "par-solar-panel-mk8",
+            category = "par-electronics",
+            enabled = false,
+            energy_required = 40,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk7", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=300},
+                {type="item", name="armour-control-unit", amount=300},
+                {type="item", name="quantum-processor", amount=300},
+                {type="item", name="supercapacitor", amount=300},
+                {type="item", name="holmium-plate", amount=300},
+                {type="item", name="lithium-plate", amount=300},
+                {type="item", name="carbon-fiber", amount=300},
+                {type="item", name="plastic-bar", amount=300},
+                --Fluid
+                {type="fluid", name="electrolyte", amount=1000},
+            },
+            results = {{type="item", name="par-solar-panel-mk8", amount=1}}
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk9",
+            main_product = "par-solar-panel-mk9",
+            category = "par-electronics",
+            enabled = false,
+            energy_required = 45,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk8", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=400},
+                {type="item", name="armour-control-unit", amount=400},
+                {type="item", name="quantum-processor", amount=400},
+                {type="item", name="tungsten-carbide", amount=400},
+                {type="item", name="tungsten-plate", amount=400},
+                {type="item", name="superconductor", amount=400},
+                {type="item", name="supercapacitor", amount=400},
+                {type="item", name="lithium-plate", amount=400},
+                {type="item", name="holmium-plate", amount=400},
+                {type="item", name="carbon-fiber", amount=400},
+                {type="item", name="biter-egg", amount=400},
+                --Fluid
+                {type="fluid", name="electrolyte", amount=1000},
+                {type="fluid", name="fluoroketone-cold", amount=100},
+            },
+            results = {
+                {type="item", name="par-solar-panel-mk9", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=100},
+            }
+        },
+        {
+            type = "recipe",
+            name = "par-solar-panel-mk10",
+            main_product = "par-solar-panel-mk10",
+            category = "par-electronics",
+            enabled = false,
+            energy_required = 50,
+            ingredients = {
+                {type="item", name="par-solar-panel-mk9", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=500},
+                {type="item", name="armour-control-unit", amount=500},
+                {type="item", name="quantum-processor", amount=500},
+                {type="item", name="tungsten-carbide", amount=500},
+                {type="item", name="tungsten-plate", amount=500},
+                {type="item", name="superconductor", amount=500},
+                {type="item", name="supercapacitor", amount=500},
+                {type="item", name="lithium-plate", amount=500},
+                {type="item", name="holmium-plate", amount=500},
+                {type="item", name="carbon-fiber", amount=500},
+                {type="item", name="biter-egg", amount=500},
+                --Fluid
+                {type="fluid", name="electrolyte", amount=1000},
+                {type="fluid", name="fluoroketone-cold", amount=200},
+            },
+            results = {
+                {type="item", name="par-solar-panel-mk10", amount=1},
+                {type="fluid", name="fluoroketone-hot", amount=200},
+            }
+        },
+    })
+end

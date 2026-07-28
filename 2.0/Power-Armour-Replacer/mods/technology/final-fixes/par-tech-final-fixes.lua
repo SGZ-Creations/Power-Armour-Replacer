@@ -1,0 +1,112 @@
+local Tech = data.raw["technology"]
+local PAR = require("mods.util")
+PAR.technology_dependancy
+{
+	["base"] = {
+		["spidertron"] = {
+			["par-fission-reactor-tech-1"] = "par-fission-reactor-tech-5",
+			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-2",
+		},
+	},
+
+	["SpidertronPatrols"] = {
+		["spidertron"] = {
+			"par-exoskeleton-tech-3",
+		},
+	},
+
+	["space-age"] = {
+		["mech-armor"] = {
+			["par-armour-tech-2"] = "par-armour-tech-5",
+		}
+	},
+
+	["metal-and-stars"] = {
+		["mech-armor"] = {
+			"prototype-mech-armor",
+		}
+	},
+
+	["mech-armor"] = {
+		["mech-armor"] = {
+			["par-armour-tech-2"] = "par-armour-tech-5",
+		}
+	},
+
+	["TeleportationEquipment"] = {
+		["teleportation-equipment"] = {
+			["par-solar-panel-tech-1"] = "par-armour-tech-3",
+		},
+	},
+
+	["SpaceModFeorasFork"] = {
+		["space-ai-robots"] = {
+			["par-fission-reactor-tech-1"] = "par-fission-reactor-tech-10",
+			["par-battery-tech-1"] = "par-battery-tech-10",
+			["par-exoskeleton-tech-1"] = "par-exoskeleton-tech-5",
+			["par-night-immunity-tech-1"] = "par-night-immunity-tech-2",
+			["par-armour-tech-2"] = "par-armour-tech-10",
+		},
+	},
+
+	[{"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",}] = {
+		["space-ai-robots"] = {
+			["par-fission-reactor-tech-10"] = "par-fission-reactor-tech-4",
+			["par-battery-tech-10"] = "par-battery-tech-6",
+			["par-exoskeleton-tech-5"] = "par-exoskeleton-tech-3",
+			["par-armour-tech-10"] = "par-armour-tech-8",
+			"par-roboport-tech-4",
+			"par-laser-tech-10",
+		},
+	},
+
+	["spidertrontiers-community-updates"] = {
+		["spidertron_mk2"] = {
+			["par-fission-reactor-tech-1"] = "par-fission-reactor-tech-7",
+		},
+		["spidertron_mk3"] = {
+			["par-fission-reactor-tech-1"] = "par-fission-reactor-tech-9",
+		},
+	},
+}
+
+
+if mods["metal-and-stars"]and mods["incendiary-arsenal"] then
+	Tech["mech-armor-fireproof"].prerequisites = {"prototype-mech-armor", "metallurgic-science-pack", "par-armour-tech-5"}
+elseif mods["incendiary-arsenal"] and mods["space-age"] and not mods["metal-and-stars"] then
+	Tech["mech-armor-fireproof"].prerequisites = {"metallurgic-science-pack", "par-armour-tech-5"}
+end
+
+if not mods["RampantArsenalFork"]then
+	if (mods["space-age"]or mods["mech-armor"]) then
+		if settings.startup["MK10RecipeTech"].value == true then
+			PAR.technology_dependancy
+			{
+				["space-age"] = {
+					["mech-armor"] = {
+						["par-armour-tech-5"] = "par-armour-tech-10",
+					},
+				},
+				["mech-armor"] = {
+					["mech-armor"] = {
+						["par-armour-tech-5"] = "par-armour-tech-10",
+					}
+				},
+			}
+		end
+	end
+end
+
+
+if mods["metal-and-stars"] then
+	Tech["prototype-mech-armor"].prerequisites = {"par-armour-tech-3", "productivity-module-2", "overclock-module-2"}
+end
+
+
+if mods["Nanobots3"] then
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-trees"})
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-items"})
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
+end

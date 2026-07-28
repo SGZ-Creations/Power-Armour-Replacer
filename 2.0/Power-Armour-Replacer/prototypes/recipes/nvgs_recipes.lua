@@ -1,0 +1,88 @@
+local SS = settings.startup
+
+data:extend({
+    {
+        type = "recipe",
+        name = "par-nightvision-mk1",
+        enabled = false,
+        energy_required = 10,
+        category = "par-electronics",
+        ingredients = {
+            {type="item", name="low-density-structure", amount=250},
+            {type="item", name="electric-engine-unit", amount=250},
+            {type="item", name="armour-control-unit", amount=250},
+            {type="item", name="advanced-circuit", amount=250},
+            {type="item", name="steel-plate", amount=250},
+            {type="item", name="battery", amount=250},
+        },
+        results = {{type="item", name="par-nightvision-mk1", amount=1}}
+    },
+    {
+        type = "recipe",
+        name = "par-nightvision-mk2",
+        enabled = false,
+        energy_required = 20,
+        category = "par-electronics",
+        ingredients = {
+            {type="item", name="par-nightvision-mk1", amount=SS["EquipmentMulti"].value},
+            {type="item", name="low-density-structure", amount=500},
+            {type="item", name="electric-engine-unit", amount=500},
+            {type="item", name="armour-control-unit", amount=500},
+            {type="item", name="processing-unit", amount=500},
+            {type="item", name="battery", amount=500},
+        },
+        results = {{type="item", name="par-nightvision-mk2", amount=1}}
+    },
+})
+
+if mods["space-age"] then
+    data:extend({
+        {
+            type = "recipe",
+            name = "par-nightvision-mk1",
+            main_product = "par-nightvision-mk1",
+            category = "par-electronics",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {type="item", name="low-density-structure", amount=250},
+                {type="item", name="armour-control-unit", amount=250},
+                {type="item", name="advanced-circuit", amount=250},
+                {type="item", name="battery", amount=250},
+                {type="item", name="carbon", amount=250},
+                {type="item", name="ice", amount=250},
+            },
+            results = {
+                {type="item", name="par-nightvision-mk1", amount=1},
+                {type="fluid", name="water", amount=1000}
+            }
+        },
+        {
+            type = "recipe",
+            name = "par-nightvision-mk2",
+            main_product = "par-nightvision-mk2",
+            category = "par-electronics",
+            enabled = false,
+            energy_required = 20,
+            ingredients = {
+                {type="item", name="par-nightvision-mk1", amount=SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=500},
+                {type="item", name="quantum-processor", amount=500},
+                {type="item", name="armour-control-unit", amount=500},
+                {type="item", name="tungsten-carbide", amount=500},
+                {type="item", name="tungsten-plate", amount=500},
+                {type="item", name="superconductor", amount=500},
+                {type="item", name="supercapacitor", amount=500},
+                {type="item", name="holmium-plate", amount=500},
+                {type="item", name="carbon-fiber", amount=500},
+                {type="item", name="lithium-plate", amount=500},
+                --Fluid
+                {type="fluid", name="electrolyte", amount=500},
+                {type="fluid", name="ammonia", amount=1000},
+            },
+            results = {
+                {type="item", name="par-nightvision-mk2", amount=1},
+            }
+        },
+    })
+end
