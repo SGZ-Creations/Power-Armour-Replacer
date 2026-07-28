@@ -84,6 +84,11 @@ Date: 26.06.26
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.12
+Date: 28.07.26
+  Bugfixes:
+    - Crash with missed backport input.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.11
 Date: 28.07.26
   Info:
