@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.8
-Date: 27.07.26
+Date: 28.07.26
   Changes:
     - Increased armour-control-unit's tech cost to 200.
   Scripting:
@@ -85,7 +85,7 @@ Date: 26.06.26
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.11
-Date: 27.07.26
+Date: 28.07.26
   Info:
     - [PAR] Backporting New crafting category names.
     - [PA&R-E] Added backport.
