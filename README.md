@@ -10,12 +10,12 @@ Armours, Exo-Skeletons, Personal Laser, Personal Solar, Shields, Portable Fissio
 The mod has some compatibility included and still being worked on but I was so eager to let players get there hands on the mod before all this is done as it will take a lot of time to complete.
 
 # Mod here have the most done to it. Considered complete:
-Angels.
-Bob's.
-K2/SO.
+- Angels.
+- Bob's.
+- K2/SO.
 
 # Very little added traces of changes on any tiers:
-SE.
-Py.
+- SE.
+- Py.
 
 # Mods i want to include Haven't started yet:
