@@ -31,7 +31,7 @@ if mods["bobtech"]and mods["bobplates"] then
 			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-stone-chemical-furnace", count = 10}
 			Tech["bob-electronics"].unit = nil
 		else
-			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="stone-furnace", count = 10}
+			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-solder", count = 100}
 		end
 	end
 end
