@@ -1,12 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.9
+Date: 28.07.26
+  Bugfixes:
+    - [TIMSABA] Crash.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.8
 Date: 28.07.26
   Changes:
-    - Increased armour-control-unit's tech cost to 200.
+    - [PAR] Increased armour-control-unit's tech cost to 200.
   Scripting:
-    - Tech Name armour-control-unit -> armour-control-unit-1.
+    - [PAR] Tech Name armour-control-unit -> armour-control-unit-1.
   Info:
-    - Name change should now make armour control unit show a 1 & 2 on the tier. (tier 2 space age only)
+    - [PAR] Name change should now make armour control unit show a 1 & 2 on the tier. (tier 2 space age only)
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.6
 Date: 26.07.26
@@ -51,7 +56,7 @@ Date: 09.07.26
   Info:
     - [PAR] Ported 0.5.7
   Bugfixes:
-    - Aircraft Crash introduced in 0.5.5/0.6.1.
+    - [Aircraft] Crash introduced in 0.5.5/0.6.1.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: 08.07.26
@@ -84,19 +89,24 @@ Date: 26.06.26
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.13
+Date: 28.07.26
+  Bugfixes:
+    - [TIMSABA] Crash.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.12
 Date: 28.07.26
   Bugfixes:
-    - Crash with missed backport input.
+    - [PAR] Crash with missed backport input.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.11
 Date: 28.07.26
   Info:
     - [PAR] Backporting New crafting category names.
-    - Added backport of PA&R-E.
+    - [PA&R-E] Added backport.
   Bugfixes:
-    - Fixes issue with how bad crafting in 2.0 has been and any crafting past tier 5 by hands. regardless of the setting showing all recipes in UI.
-    - Backported fixes from: 0.6.8
+    - [PAR] Fixes issue with how bad crafting in 2.0 has been and any crafting past tier 5 by hands. regardless of the setting showing all recipes in UI.
+    - [PAR] Backported fixes from: 0.6.8
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.10
 Date: 26.07.26

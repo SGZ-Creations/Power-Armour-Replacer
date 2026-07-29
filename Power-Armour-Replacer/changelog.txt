@@ -1,12 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.9
+Date: 28.07.26
+  Bugfixes:
+    - [TIMSABA] Crash.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.8
 Date: 28.07.26
   Changes:
-    - Increased armour-control-unit's tech cost to 200.
+    - [PAR] Increased armour-control-unit's tech cost to 200.
   Scripting:
-    - Tech Name armour-control-unit -> armour-control-unit-1.
+    - [PAR] Tech Name armour-control-unit -> armour-control-unit-1.
   Info:
-    - Name change should now make armour control unit show a 1 & 2 on the tier. (tier 2 space age only)
+    - [PAR] Name change should now make armour control unit show a 1 & 2 on the tier. (tier 2 space age only)
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.6
 Date: 26.07.26
@@ -51,7 +56,7 @@ Date: 09.07.26
   Info:
     - [PAR] Ported 0.5.7
   Bugfixes:
-    - Aircraft Crash introduced in 0.5.5/0.6.1.
+    - [Aircraft] Crash introduced in 0.5.5/0.6.1.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: 08.07.26
@@ -65,7 +70,7 @@ Date: 08.07.26
   Bugfixes:
     - [PAR] Potential crash with 2.1 new Categories (Category(Old)).
   Changes:
-    - LICENSE change. GNU GPL V3 ---> GNU LGPL V3
+    - LICENSE change. GNU GPL V3 ---> GNU LGPL V3.
     - [not-enough-parameters] Added to + dependencies.
     - [still-not-enough-parameters] Added to + dependencies.
   Scripting:
@@ -84,6 +89,16 @@ Date: 26.06.26
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.13
+Date: 28.07.26
+  Bugfixes:
+    - [TIMSABA] Crash.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.12
+Date: 28.07.26
+  Bugfixes:
+    - [PAR] Crash with missed backport input.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.11
 Date: 28.07.26
   Info:
@@ -91,7 +106,7 @@ Date: 28.07.26
     - [PA&R-E] Added backport.
   Bugfixes:
     - [PAR] Fixes issue with how bad crafting in 2.0 has been and any crafting past tier 5 by hands. regardless of the setting showing all recipes in UI.
-    - [PAR] Backported fixes from: 0.6.8.
+    - [PAR] Backported fixes from: 0.6.8
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.10
 Date: 26.07.26
@@ -106,7 +121,7 @@ Date: 26.07.26
     - 抱歉。此版本可能缺少本地化输入。请不要责怪作者。抱歉翻译不好,使用了翻译器。
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.9
-Date: 11.07.26
+Date: 10.07.26
   Changes:
     - [PAR] Possible fix for limited output size on recycler.
 ---------------------------------------------------------------------------------------------------
@@ -129,7 +144,7 @@ Date: 08.07.26
     - [PAR] Shockdefense MK1 is now working.
     - [PAR] Shockedefense Remote is now working.
   Changes:
-    - [Par] Passive or Active settings removed due to limitation to how many equipment(s) "["capsule"]["discharge-defense-remote"].capsule_action.equipment" can handle at once. can handle at once.
+    - [Par] Passive or Active settings removed due to limitation to how many equipment(s) "["capsule"]["discharge-defense-remote"].capsule_action.equipment" can handle at once.
     - [PAR] Shockdefense trigger_tech MK1 requires 5 fission again to be unlocked.
     - [PAR] Shockdefense MK1 requires remote.
     - [PAR] Shockdefense MK2-10 are passive.
@@ -230,7 +245,7 @@ Date: 26.06.26
     - [TIMSABA] Solved crashes that was making it unable to load.
   Info:
     - [PAR] Fission/Fusion graphics will eventually be flipped. Tho not until i have more than placeholders. Thanks for understanding.
-    - [K2SO] Was Marked to use only 1.6.20 due to the decision of making K2SO Depend on K2 I will see what My plans are later I'm not deleting any of the code. Since me trying to fix this at 0.5 would push the Beta 0.6 even later than i want it to be. I would want to go for 2.1 before fixing this patch at this stage.
+    - [K2SO] Was Marked to use only 1.6.20 due to the decision of making K2SO Depend on K2 I will see what My plans are later I'm not deleting any of the code. Since me trying to this fox this at 0.5 would push the Beta 0.6 even later than i want it to be. I would want to go for 2.1 before fixing this patch at this stage.
     - [K2SO] Also this makes me delay fully finishing the recipe portion for the mod until i find the motivation to look back & rework it again. Sort of half cancelling the compatibility.
   Known:
     - MK1 ShockDefence is known to not activation when near enemies. This might be fixed by tweaking the settings for it tho I'm not sure as i haven't found the settings allowing it to work should you find a fix your welcome to post me a PR about it or try reaching me on Discord/Root.
@@ -301,7 +316,7 @@ Date: 26.12.25
   Bugfixes:
     - WIP Angels 2.0 update For PAR. https://github.com/SGZ-Creations/Power-Armour-Replacer/issues/4
   Credits:
-    - @kuroxusagi For the git report.
+    - @kuroxusagi For thee git report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.8
 Date: 26.12.25
