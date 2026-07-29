@@ -19,5 +19,6 @@
 	require("mods.technology.final-fixes.AngelsScienceFinalFix")
 	require("mods.technology.final-fixes.BobsScienceFinalFix")
 	require("mods.technology.final-fixes.pY-tech-final-fix")
+	require("mods.technology.final-fixes.TIMSABAFinialFixes")
 	require("mods.technology.final-fixes.par-depedency-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")
