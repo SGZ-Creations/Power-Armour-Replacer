@@ -139,46 +139,48 @@ if mods["space-age"]and mods["incendiary-arsenal"] then
 end
 --3rd tier of mech armour progression
 if mods["RampantArsenalFork"] and mods["space-age"] then
-    Armour["combat-mech-armor-rampant-arsenal"].resistances = {
-        {
-            type = "physical",
-            decrease = 1000,
-            percent = 95,
-        },
-        {
-            type = "acid",
-            decrease = 300,
-            percent = 10.
-        },
-        {
-            type = "explosion",
-            decrease = 1500,
-            percent = 85,
-        },
-        {
-            type = "fire",
-            decrease = 0,
-            percent = 100
-        },
-        {
-            type = "electric",
-            decrease = 0,
-            percent = 500,
-        },
-        {
-            type = "impact",
-            decrease = 0,
-            percent = 100,
-        },
-        {
-            type = "laser",
-            decrease = 0,
-            percent = 100,
-        },
-        {
-            type = "poison",
-            decrease = 100,
-            percent = -100,
-        },
-    }
+    if settings.startup["rampant-arsenal-enableEquipment"].value == true then
+        Armour["combat-mech-armor-rampant-arsenal"].resistances = {
+            {
+                type = "physical",
+                decrease = 1000,
+                percent = 95,
+            },
+            {
+                type = "acid",
+                decrease = 300,
+                percent = 10.
+            },
+            {
+                type = "explosion",
+                decrease = 1500,
+                percent = 85,
+            },
+            {
+                type = "fire",
+                decrease = 0,
+                percent = 100
+            },
+            {
+                type = "electric",
+                decrease = 0,
+                percent = 500,
+            },
+            {
+                type = "impact",
+                decrease = 0,
+                percent = 100,
+            },
+            {
+                type = "laser",
+                decrease = 0,
+                percent = 100,
+            },
+            {
+                type = "poison",
+                decrease = 100,
+                percent = -100,
+            },
+        }
+    end
 end
