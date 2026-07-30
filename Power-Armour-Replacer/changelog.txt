@@ -3,7 +3,7 @@ Version: 0.6.9
 Date: 28.07.26
   Bugfixes:
     - [TIMSABA] Crash.
-    - [Rampant Arsenal] Crash with Settings. 
+    - [Rampant Arsenal] Crash with Settings.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.8
 Date: 28.07.26
