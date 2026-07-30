@@ -3,6 +3,7 @@ Version: 0.6.9
 Date: 28.07.26
   Bugfixes:
     - [TIMSABA] Crash.
+    - [Rampant Arsenal] Crash with Settings. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.8
 Date: 28.07.26
@@ -89,8 +90,13 @@ Date: 26.06.26
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.14
+Date: 30.07.26
+  Bugfixes:
+    - [Rampant Arsenal] Crash with Settings. 
+---------------------------------------------------------------------------------------------------
 Version: 0.5.13
-Date: 28.07.26
+Date: 30.07.26
   Bugfixes:
     - [TIMSABA] Crash.
     - [PAR] Duplicated par-par pre-fix broken in non space age mode (Armour & Battery equipment)

@@ -23,21 +23,27 @@ if mods["Power Armor MK3"] then
 end
 
 if mods["RampantArsenalFork"] and mods["space-age"] then
-    Recipe["combat-mech-armor-rampant-arsenal"].ingredients = {
-        {type="item", name="mech-armor", amount= 1},
-        {type="item", name="par-armour-mk7", amount= 1},
-    }
+    if settings.startup["rampant-arsenal-enableEquipment"].value == true then
+        Recipe["combat-mech-armor-rampant-arsenal"].ingredients = {
+            {type="item", name="mech-armor", amount= 1},
+            {type="item", name="par-armour-mk7", amount= 1},
+        }
+    end
 end
 
 if mods["RampantArsenalFork"] and mods["mech-armor"] then
-    Recipe["combat-mech-armor-rampant-arsenal"].ingredients = {
-        {type="item", name="mech-armor", amount= 1},
-        {type="item", name="par-armour-mk7", amount= 1},
-    }
+    if settings.startup["rampant-arsenal-enableEquipment"].value == true then
+        Recipe["combat-mech-armor-rampant-arsenal"].ingredients = {
+            {type="item", name="mech-armor", amount= 1},
+            {type="item", name="par-armour-mk7", amount= 1},
+        }
+    end
 end
 
 if mods["RampantArsenalFork"] and mods["space-age"]then
-    Recipe["combat-mech-armor-rampant-arsenal"].category = "par-electronics"
+    if settings.startup["rampant-arsenal-enableEquipment"].value == true then
+        Recipe["combat-mech-armor-rampant-arsenal"].category = "par-electronics"
+    end
 end
 if mods["metal-and-stars"]then
     Recipe["prototype-mech-armor"].category = "par-electronic-hands"
