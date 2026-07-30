@@ -43,21 +43,25 @@ if mods["Nanobots3"] then
 end
 
 if mods["RampantArsenalFork"] then
-	Item["shotgun-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
-	Item["shotgun-passive-defense-rampant-arsenal"].order = "TA"
-	Item["cannon-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
-	Item["cannon-passive-defense-rampant-arsenal"].order = "TB"
-	Item["lightning-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
-	Item["lightning-passive-defense-rampant-arsenal"].order = "TC"
-	Item["bullets-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
-	Item["bullets-passive-defense-rampant-arsenal"].order = "TD"
-	Item["slow-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
-	Item["slow-passive-defense-rampant-arsenal"].order = "TE"
+	if settings.startup["rampant-arsenal-enableEquipment"].value == true then
+		Item["shotgun-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
+		Item["shotgun-passive-defense-rampant-arsenal"].order = "TA"
+		Item["cannon-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
+		Item["cannon-passive-defense-rampant-arsenal"].order = "TB"
+		Item["lightning-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
+		Item["lightning-passive-defense-rampant-arsenal"].order = "TC"
+		Item["bullets-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
+		Item["bullets-passive-defense-rampant-arsenal"].order = "TD"
+		Item["slow-passive-defense-rampant-arsenal"].subgroup = "PAR_compatibility"
+		Item["slow-passive-defense-rampant-arsenal"].order = "TE"
+	end
 end
 
 if mods["RampantArsenalFork"] and (mods["space-age"] or mods["mech-armor"]) then
-	Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAREXT_MechSuits"
-	Armour["combat-mech-armor-rampant-arsenal"].order = "AC"
+	if settings.startup["rampant-arsenal-enableEquipment"].value == true then
+		Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAREXT_MechSuits"
+		Armour["combat-mech-armor-rampant-arsenal"].order = "AC"
+	end
 end
 
 if mods["TeleportationEquipment"]then
@@ -122,7 +126,9 @@ if mods["pypostprocessing"] then
 		Armour["mech-armor"].subgroup = "PAREXT_MechSuits"
 	end
 	if mods["RampantArsenalFork"] and (mods["space-age"] or mods["mech-armor"]) then
-		Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAREXT_MechSuits"
+		if settings.startup["rampant-arsenal-enableEquipment"].value == true then
+			Armour["combat-mech-armor-rampant-arsenal"].subgroup = "PAREXT_MechSuits"
+		end
 	end
 	if mods["jetpack"] then
 		Item["jetpack-1"].subgroup = "PAR_SEVerified"
