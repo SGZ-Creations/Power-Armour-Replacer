@@ -998,7 +998,7 @@ if mods["space-exploration"] then
 end
 
 if (mods["RampantArsenalFork"] or mods["RampantArsenal"]) then
--- Enabled 
+-- Enabled
     Tech["rampant-arsenal-technology-power-armor-mk3"].enabled = false
     Tech["rampant-arsenal-technology-battery-equipment-3"].enabled = false
     Tech["rampant-arsenal-technology-shield-equipment-2"].enabled = false
@@ -1011,7 +1011,7 @@ if (mods["RampantArsenalFork"] or mods["RampantArsenal"]) then
     Recipes["nuclear-generator-rampant-arsenal"].enabled = false
     Recipes["power-armor-mk3-armor-rampant-arsenal"].enabled = false
 
--- Hidden        
+-- Hidden
     Tech["rampant-arsenal-technology-power-armor-mk3"].hidden = true
     Tech["rampant-arsenal-technology-battery-equipment-3"].hidden = true
     Tech["rampant-arsenal-technology-shield-equipment-2"].hidden = true

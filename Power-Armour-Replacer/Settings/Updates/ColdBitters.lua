@@ -1,4 +1,3 @@
----@class data.ModBoolSettingPrototype
 local Bool = data.raw["bool-setting"]
 
 if mods["Cold_biters"]then
