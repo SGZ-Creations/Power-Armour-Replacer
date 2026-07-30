@@ -82,7 +82,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk6",
-        category = "par-par-electronics",
+        category = "par-electronics",
         enabled = false,
         energy_required = 50,
         ingredients = {
@@ -98,7 +98,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk7",
-        category="par-par-electronics",
+        category="par-electronics",
         enabled = false,
         energy_required = 55,
         ingredients = {
@@ -115,7 +115,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk8",
-        category= "par-par-electronics",
+        category= "par-electronics",
         enabled = false,
         energy_required = 60,
         ingredients = {
@@ -131,7 +131,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk9",
-        category = "par-par-electronics",
+        category = "par-electronics",
         enabled = false,
         energy_required = 65,
         ingredients = {
@@ -148,7 +148,7 @@ data:extend({
     {
         type = "recipe",
         name = "par-battery-mk10",
-        category= "par-par-electronics",
+        category= "par-electronics",
         enabled = false,
         energy_required = 70,
         ingredients = {

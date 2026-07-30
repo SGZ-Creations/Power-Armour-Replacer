@@ -79,7 +79,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk6",
-        category= "par-par-electronics",
+        category= "par-electronics",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -95,7 +95,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk7",
-        category="par-par-electronics",
+        category="par-electronics",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -111,7 +111,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk8",
-        category="par-par-electronics",
+        category="par-electronics",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -127,7 +127,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk9",
-        category="par-par-electronics",
+        category="par-electronics",
         enabled = false,
         energy_required = 10.0,
         ingredients = {
@@ -143,7 +143,7 @@ local recipes = {
     {
         type = "recipe",
         name = "par-armour-mk10",
-        category="par-par-electronics",
+        category="par-electronics",
         enabled = false,
         energy_required = 10.0,
         ingredients = {

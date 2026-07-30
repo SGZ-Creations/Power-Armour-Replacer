@@ -93,6 +93,7 @@ Version: 0.5.13
 Date: 28.07.26
   Bugfixes:
     - [TIMSABA] Crash.
+    - [PAR] Duplicated par-par pre-fix broken in non space age mode (Armour & Battery equipment)
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.12
 Date: 28.07.26
