@@ -998,38 +998,40 @@ if mods["space-exploration"] then
 end
 
 if (mods["RampantArsenalFork"] or mods["RampantArsenal"]) then
--- Enabled
-    Tech["rampant-arsenal-technology-power-armor-mk3"].enabled = false
-    Tech["rampant-arsenal-technology-battery-equipment-3"].enabled = false
-    Tech["rampant-arsenal-technology-shield-equipment-2"].enabled = false
-    Tech["rampant-arsenal-technology-generator-equipment-2"].enabled = false
-    Tech["rampant-arsenal-technology-generator-equipment-3"].enabled = false
+    if SS["rampant-arsenal-enableEquipment"].value == true then
+        -- Enabled
+        Tech["rampant-arsenal-technology-power-armor-mk3"].enabled = false
+        Tech["rampant-arsenal-technology-battery-equipment-3"].enabled = false
+        Tech["rampant-arsenal-technology-shield-equipment-2"].enabled = false
+        Tech["rampant-arsenal-technology-generator-equipment-2"].enabled = false
+        Tech["rampant-arsenal-technology-generator-equipment-3"].enabled = false
 
-    Recipes["mk3-battery-rampant-arsenal"].enabled = false
-    Recipes["mk3-shield-rampant-arsenal"].enabled = false
-    Recipes["mk3-generator-rampant-arsenal"].enabled = false
-    Recipes["nuclear-generator-rampant-arsenal"].enabled = false
-    Recipes["power-armor-mk3-armor-rampant-arsenal"].enabled = false
+        Recipes["mk3-battery-rampant-arsenal"].enabled = false
+        Recipes["mk3-shield-rampant-arsenal"].enabled = false
+        Recipes["mk3-generator-rampant-arsenal"].enabled = false
+        Recipes["nuclear-generator-rampant-arsenal"].enabled = false
+        Recipes["power-armor-mk3-armor-rampant-arsenal"].enabled = false
 
--- Hidden
-    Tech["rampant-arsenal-technology-power-armor-mk3"].hidden = true
-    Tech["rampant-arsenal-technology-battery-equipment-3"].hidden = true
-    Tech["rampant-arsenal-technology-shield-equipment-2"].hidden = true
-    Tech["rampant-arsenal-technology-generator-equipment-2"].hidden = true
-    Tech["rampant-arsenal-technology-generator-equipment-3"].hidden = true
+        -- Hidden
+        Tech["rampant-arsenal-technology-power-armor-mk3"].hidden = true
+        Tech["rampant-arsenal-technology-battery-equipment-3"].hidden = true
+        Tech["rampant-arsenal-technology-shield-equipment-2"].hidden = true
+        Tech["rampant-arsenal-technology-generator-equipment-2"].hidden = true
+        Tech["rampant-arsenal-technology-generator-equipment-3"].hidden = true
 
-    Recipes["mk3-shield-rampant-arsenal"].hidden = true
-    Recipes["mk3-battery-rampant-arsenal"].hidden = true
-    Recipes["mk3-generator-rampant-arsenal"].hidden = true
-    Recipes["nuclear-generator-rampant-arsenal"].hidden = true
-    Recipes["power-armor-mk3-armor-rampant-arsenal"].hidden = true
+        Recipes["mk3-shield-rampant-arsenal"].hidden = true
+        Recipes["mk3-battery-rampant-arsenal"].hidden = true
+        Recipes["mk3-generator-rampant-arsenal"].hidden = true
+        Recipes["nuclear-generator-rampant-arsenal"].hidden = true
+        Recipes["power-armor-mk3-armor-rampant-arsenal"].hidden = true
 
-    if SS["Arsenal-filters"].value then
-        Hide_Item("mk3-shield-rampant-arsenal")
-        Hide_Item("mk3-battery-rampant-arsenal")
-        Hide_Item("mk3-generator-rampant-arsenal")
-        Hide_Item("nuclear-generator-rampant-arsenal")
-        Hide_Item("power-armor-mk3-armor-rampant-arsenal")
+        if SS["Arsenal-filters"].value then
+            Hide_Item("mk3-shield-rampant-arsenal")
+            Hide_Item("mk3-battery-rampant-arsenal")
+            Hide_Item("mk3-generator-rampant-arsenal")
+            Hide_Item("nuclear-generator-rampant-arsenal")
+            Hide_Item("power-armor-mk3-armor-rampant-arsenal")
+        end
     end
 end
 
