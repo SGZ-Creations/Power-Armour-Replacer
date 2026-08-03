@@ -3,7 +3,8 @@ Version: 0.6.9
 Date: 28.07.26
   Bugfixes:
     - [TIMSABA] Crash.
-    - [Rampant Arsenal] Crash with Settings. 
+    - [Rampant Arsenal] Crash with Settings.
+    - [SE] Duplicate Item Inputs.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.8
 Date: 28.07.26
@@ -93,7 +94,8 @@ Date: 26.06.26
 Version: 0.5.14
 Date: 30.07.26
   Bugfixes:
-    - [Rampant Arsenal] Crash with Settings. 
+    - [Rampant Arsenal] Crash with Settings.
+    - [SE] Duplicate Item Inputs.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.13
 Date: 30.07.26

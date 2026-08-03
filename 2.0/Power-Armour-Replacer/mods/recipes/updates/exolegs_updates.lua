@@ -157,7 +157,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk3"], {
         dependencies = {"space-exploration"},
         replacements = {
             ["advanced-circuit"] = {"motor", 300},
-            {"low-density-structure", 300},
             ["lubricant"] = {"zero"},
         }
     },
