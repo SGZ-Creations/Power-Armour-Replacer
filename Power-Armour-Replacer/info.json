@@ -2,11 +2,10 @@
 	"name": "Power-Armour-Replacer",
 	"title": "Power Armour & Replacer",
 	"factorio_version": "2.1",
-	"version": "0.6.9",
+	"version": "0.6.10",
 	"author": "SGZ_Creations",
 	"homepage": "https://github.com/SGZ-Creations/MK10-Armours", 
-	"dependencies":
-	[
+	"dependencies":[
 		"base",
 		"~ Configurable-Armour-Suits >= 1.6.0",
 		"+ not-enough-parameters",
@@ -46,6 +45,7 @@
 		"? SpaceModFeorasFork >= 1.3.3",
 		"? spidertron-extended >= 0.3.15",
 		"? TeleportationEquipment >= 1.0.11",
+		"(?) Warp-Drive-Machine-Expansion >= 0.2.6",
 		"(?) angelbob-spaceage-rebalance >= 1.1.2",
 		"(?) artillery-spidertron",
 		"(?) bobequipment >= 2.1",
@@ -66,8 +66,7 @@
 		"! Nanobots2",
 		"! nanobots-refined",
 		"! Gregtorio",
-		"! nullius",
-		"! Warp-Drive-Machine-Expansion"
+		"! nullius"
 	],
 	"description": "Replaces Armours & Equipents.\nAdds 10 New Power Armour,\n10 New Batteries,\n10 New Reactors,\n10 New Lasers,\n10 New Roboports,\n10 New Shields,\n10 New Shock Defence,\n10 New Solar Panels,\n5 New Exoskeletons,\n2 New NVG's,\n2 New Belt-immunity \n1 New intermediant item",
 	"package": {
