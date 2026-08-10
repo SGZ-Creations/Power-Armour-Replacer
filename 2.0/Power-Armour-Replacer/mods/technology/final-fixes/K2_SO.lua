@@ -1,5 +1,5 @@
 local Tech = data.raw["technology"]
-if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+if mods["Krastorio2-spaced-out"] then
 	table.insert(Tech["par-armour-tech-5"].unit.ingredients, {"automation-science-pack", 4})
 	table.insert(Tech["par-armour-tech-5"].unit.ingredients, {"logistic-science-pack",   3})
 	table.insert(Tech["par-armour-tech-5"].unit.ingredients, {"military-science-pack",   2})

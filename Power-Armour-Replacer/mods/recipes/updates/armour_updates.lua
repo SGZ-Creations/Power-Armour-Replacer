@@ -98,10 +98,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"Krastorio2-spaced-out",},
         replacements = {
-            ["steel-plate"] = {"kr-steel-beam", 25},
-            ["stone-brick"] = {"kr-glass", 25},
-            {"kr-automation-core", 25},
-            {"kr-iron-beam", 25},
         }
     },
 })
@@ -161,27 +157,25 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"pyrawores",},
         replacements = {
-            ["copper-plate"] = {"chromium", 35},
-            ["steel-plate"] = {"aluminium-plate", 45},
-            ["small-parts-01"] = {"small-parts-01", 75},
-            ["electronic-circuit"] = {"electronic-circuit", 40},
+            ["copper-plate"] = {"chromium", 50},
+            ["steel-plate"] = {"aluminium-plate", 50},
+            ["small-parts-01"] = {"small-parts-01", 50},
+            ["electronic-circuit"] = {"graphite", 50},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["steel-plate"] = {"kr-steel-gear-wheel", 50},
-            {"kr-automation-core", 5},
+            ["iron-plate"] = {"kr-iron-beam", 50},
+            ["steel-plate"] = {"kr-steel-beam", 50},
+            ["kr-automation-core"] = {"kr-automation-core", 50},
+            {"kr-glass", 50},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["iron-plate"] = {"kr-iron-beam", 50},
-            ["steel-plate"] = {"kr-steel-beam", 50},
-            ["copper-plate"] ={"kr-automation-core", 50},
-            {"kr-glass", 50},
         }
     },
 })

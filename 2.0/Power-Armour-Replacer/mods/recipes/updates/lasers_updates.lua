@@ -73,7 +73,7 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk1"], {
         replacements = {
             ["iron-plate"] = {"kr-iron-beam", 25},
             ["steel-plate"] = {"kr-steel-beam", 25},
-            ["electronic-circuit"] = {"kr-automation-core", 5},
+            ["electronic-circuit"] = {"kr-automation-core", 25},
         }
     },
 })

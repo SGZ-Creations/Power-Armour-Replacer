@@ -28,17 +28,13 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk1"], {
         replacements = {
             ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 100},
             ["iron-stick"] = {"kr-steel-beam", 100},
-            {"kr-automation-core", 100},
+            --{"kr-automation-core", 100},
             {"kr-silicon", 100},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 100},
-            ["iron-stick"] = {"kr-steel-beam", 100},
-            {"kr-automation-core", 100},
-            {"kr-silicon", 100},
         }
     },
 })
@@ -79,7 +75,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
         replacements = {
             ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 200},
             ["iron-stick"] = {"kr-steel-beam", 200},
-            {"kr-automation-core", 200},
+            --{"kr-automation-core", 200},
             {"kr-rare-metals", 200},
             {"kr-silicon", 200},
         }
@@ -88,11 +84,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 200},
-            ["iron-stick"] = {"kr-steel-beam", 200},
-            {"kr-automation-core", 200},
-            {"kr-rare-metals", 200},
-            {"kr-silicon", 200},
         }
     },
 })

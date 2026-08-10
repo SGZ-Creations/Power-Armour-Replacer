@@ -72,7 +72,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plate"] = {"kr-automation-core", 25},
+            --["copper-plate"] = {"kr-automation-core", 25},
             ["steel-plate"] = {"kr-steel-beam", 25},
             ["iron-plate"] = {"kr-iron-beam", 25},
             ["stone-brick"] = {"kr-glass", 25},
@@ -81,10 +81,6 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk1"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["copper-plate"] = {"kr-automation-core", 25},
-            ["steel-plate"] = {"kr-steel-beam", 25},
-            ["iron-plate"] = {"kr-iron-beam", 25},
-            ["stone-brick"] = {"kr-glass", 25},
         }
     },
 })
@@ -128,7 +124,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plate"] = {"kr-automation-core", 50},
+            --["copper-plate"] = {"kr-automation-core", 50},
             ["steel-plate"] ={"kr-steel-beam", 50},
             ["stone-brick"] = {"kr-glass", 50},
             {"kr-iron-beam", 50},
@@ -137,10 +133,6 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk2"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["copper-plate"] = {"kr-automation-core", 50},
-            ["steel-plate"] ={"kr-steel-beam", 50},
-            ["stone-brick"] = {"kr-glass", 50},
-            {"kr-iron-beam", 50},
         }
     },
     --SE
@@ -400,7 +392,6 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk8"], {
 
 if mods["Cold_biters"]then
     if SS["cb-enable-cold-warfare"].value == true then
-        ---@diagnostic disable-next-line: undefined-field
         table.insert(RECIPES["par-shock-defense-mk9"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=400})
     end
 end

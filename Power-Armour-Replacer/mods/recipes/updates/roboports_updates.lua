@@ -84,7 +84,6 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["iron-chest"] = {"kr-iron-beam", 10},
             ["copper-cable"] = {"kr-glass", 25},
         }
     },
@@ -92,7 +91,6 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk1"], {
         dependencies = {"space-exploration"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 20},
-            ["small-lamp"] = {"motor", 10},
         }
     },
 })
@@ -181,7 +179,6 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk4"], {
         replacements = {
             ["electronic-circuit"] = {"bob-roboport-antenna-1", 1},
             ["engine-unit"] = {"bob-roboport-chargepad-1", 1},
-            {"bob-roboport-door-1", 1},
             {"bob-roboport-door-1", 1},
         }
     },
