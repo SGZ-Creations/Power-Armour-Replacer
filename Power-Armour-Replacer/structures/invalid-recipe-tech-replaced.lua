@@ -60,6 +60,7 @@ local replace = {
     ["bob-energy-shield-equipment-6"] = "par-shield-tech-6",
     ["rampant-arsenal-technology-power-armor-mk3"] = "par-armour-tech-7",
     ["kr-advanced-additional-engine-equipment"] = "par-fission-reactor-tech-5",
+    ["kr-fusion-reactor-equipment"] = "par-fission-reactor-tech-4",
 }
 local function replace_exists(replace_v, prerequisites)
     for _, prereq in pairs(prerequisites) do
@@ -171,12 +172,3 @@ for _, recipe in pairs(data.raw.recipe) do
         replace_ingredients(recipe.ingredients)
     end
 end
--- Replaces Chest content
---[[
-entity = data.raw.item ..chest.. or ["steel-chest"] or ["wooden-chest"] or 
-if mods["boblogistics"] then ["brass-chest"] or ["titanium-chest"]
-
-function entity in pairs(data.raw.entity) do
-    if not data.raw.entity  then return end
-    for _, item in (chestitems) do 
-]]

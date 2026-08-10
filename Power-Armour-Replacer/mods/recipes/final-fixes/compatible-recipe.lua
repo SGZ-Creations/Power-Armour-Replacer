@@ -130,8 +130,15 @@ PAR.ingredient_prereq(Recipe["spidertron"],
     {
         dependencies = {},
         replacements = {
-            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk5", 2},
-            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk2", 4},
+            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk2", 2},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk3", 4},
+        }
+    },
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["kr-fusion-reactor-equipment"] = {"par-fission-reactor-mk4", 1},
+            ["exoskeleton-equipment"] = {"par-exoskeleton-mk2", 4},
         }
     },
     {
