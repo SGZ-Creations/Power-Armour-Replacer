@@ -204,6 +204,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
         replacements = {
             ["processing-unit"] = {"se-lattice-pressure-vessel", 100},
             ["plastic-bar"] = {"se-dynamic-emitter", 400},
+            {"electric-motor", 400},
         }
     },
     --K2
@@ -212,7 +213,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
         replacements = {
 			["battery"] = {"kr-energy-control-unit", 400},
             ["steel-plate"] = {"kr-imersium-beam", 400},
-            {"electric-motor", 400},
             {"kr-matter-cube", 400},
         }
     },
