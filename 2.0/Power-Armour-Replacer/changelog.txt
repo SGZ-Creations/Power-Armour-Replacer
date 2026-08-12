@@ -5,6 +5,7 @@ Date: 28.07.26
     - [TIMSABA] Crash.
     - [Rampant Arsenal] Crash with Settings.
     - [SE] Duplicate Item Inputs.
+    - [WDME] Compatible with 0.3.1
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.8
 Date: 28.07.26
@@ -96,6 +97,7 @@ Date: 30.07.26
   Bugfixes:
     - [Rampant Arsenal] Crash with Settings.
     - [SE] Duplicate Item Inputs.
+    - [WDME] Compatible with 0.2.5
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.13
 Date: 30.07.26
