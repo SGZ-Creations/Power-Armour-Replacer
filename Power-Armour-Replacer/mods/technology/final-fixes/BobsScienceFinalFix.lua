@@ -1,8 +1,5 @@
----@class data.TechnologyPrototype
 local Tech = data.raw["technology"]
----@class data.RecipePrototype
 local Recipe = data.raw["recipe"]
----@class data.SettingsStartup
 local SS = settings.startup
 
 if not mods["aai-industry"] and mods["bobplates"] then
