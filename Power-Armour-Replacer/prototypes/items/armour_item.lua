@@ -2,11 +2,15 @@ local simulations = require("__base__.prototypes.factoriopedia-simulations")
 local item_sounds = require("__base__.prototypes.item_sounds")
 local SS = settings.startup
 --[[
-% 40=0.4 or 105=1.05    
-Flatt Resistance 500
+% 40=0.4 or 105=1.05
+Flatt Resistance 1000
 Incoming Damage 2000
 1. Damage Calculation (2000-1000)x(1 - 0.95) = 50
 2. Damage Calculation (2000-1000)x(100 - 95) ÷ 100 = 50
+
+Shield value - Initial Damage = Result is then put in as your damage in put. I'll be ignoring it for now.
+Normal Physical (2300-200)x(1- 1.50) = - 1 050 Without Shield.  it's negative. = Healing
+Ultimate Physical (12650-200) x (1 - 1.5) = - 6 225 Without Shield. it's negative. = Healing 
 ]]
 
 local power_armour = {

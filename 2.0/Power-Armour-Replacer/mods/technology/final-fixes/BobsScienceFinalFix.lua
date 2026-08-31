@@ -23,16 +23,13 @@ if mods["bobtech"]and mods["bobplates"] then
 		if not mods["angelssmelting"]then
 			Tech["bob-alloy-processing"].research_trigger = {type ="craft-item", item ="bob-basic-circuit-board", count = 100}
 			Tech["bob-alloy-processing"].unit = nil
-		end
-		Tech["bob-wood-processing"].research_trigger = {type ="craft-item", item ="assembling-machine-1", count = 2}
-		Tech["bob-wood-processing"].unit = nil
-
-		if not mods["TIMSABA"]then
 			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-stone-chemical-furnace", count = 10}
 			Tech["bob-electronics"].unit = nil
 		else
 			Tech["bob-electronics"].research_trigger = {type ="craft-item", item ="bob-solder", count = 100}
 		end
+		Tech["bob-wood-processing"].research_trigger = {type ="craft-item", item ="assembling-machine-1", count = 2}
+		Tech["bob-wood-processing"].unit = nil
 	end
 end
 
