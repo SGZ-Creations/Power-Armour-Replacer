@@ -1,8 +1,5 @@
-
 local Tech = data.raw["technology"]
-
 local Recipe = data.raw["recipe"]
-
 local SS = settings.startup
 
 if not mods["aai-industry"] and mods["bobplates"] then
