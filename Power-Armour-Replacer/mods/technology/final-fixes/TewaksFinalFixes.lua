@@ -1,4 +1,3 @@
----@class data.TechnologyPrototype.type
 local Tech = data.raw["technology"]
 
 Tech["steel-processing"].research_trigger = {type ="craft-item", item ="stone-furnace", count = 10}

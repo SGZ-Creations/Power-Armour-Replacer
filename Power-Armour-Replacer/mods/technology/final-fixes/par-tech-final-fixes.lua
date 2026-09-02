@@ -1,4 +1,3 @@
----@class TechnologyPrototype
 local Tech = data.raw["technology"]
 local PAR = require("mods.util")
 PAR.technology_dependancy
