@@ -412,7 +412,7 @@ if mods["space-age"] then
             },
             results = {
                 {type="item", name="par-shock-defense-mk10", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=400},
             }
         },
     })
