@@ -36,7 +36,7 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk1"], {
         dependencies = {"Krastorio2"},
         replacements = {
             {"kr-energy-control-unit", 250},
-            --{"kr-automation-core", 250},
+            {"kr-automation-core", 250},
 			{"kr-imersium-beam", 250},
             {"kr-ai-core", 250},
             {"kr-silicon", 250},
@@ -103,7 +103,7 @@ PAR.ingredient_prereq(RECIPES["par-nightvision-mk2"], {
         dependencies = {"Krastorio2"},
         replacements = {
             {"kr-energy-control-unit", 500},
-            --{"kr-automation-core", 500},
+            {"kr-automation-core", 500},
 			{"kr-imersium-beam", 500},
             {"kr-matter-cube", 500},
             {"kr-ai-core", 500},

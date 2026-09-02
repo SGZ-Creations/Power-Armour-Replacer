@@ -53,9 +53,9 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk1"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["copper-plate"] = {"kr-automation-core", 25},
 			["steel-plate"] = {"kr-steel-beam", 25},
             ["iron-plate"] = {"kr-iron-beam", 25},
+            {"kr-automation-core", 25},
             {"kr-sand", 25},
         }
     },
@@ -110,7 +110,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk2"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["copper-plate"] = {"kr-automation-core", 50},
+            ["kr-automation-core"] = {"kr-automation-core", 50},
 			["steel-plate"] = {"kr-steel-beam", 50},
             ["iron-plate"] = {"kr-iron-beam", 50},
             {"kr-sand", 50},
@@ -179,9 +179,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk3"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-automation-core", 75},
-            {"kr-rare-metals", 75},
-            {"kr-glass", 75},
         }
     },
 })
@@ -229,9 +226,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk4"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-automation-core", 100},
-            {"kr-rare-metals", 100},
-            {"kr-glass", 100},
         }
     },
 })
@@ -281,11 +275,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk5"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["battery"] = {"kr-lithium-sulfur-battery", 125},
-            {"kr-imersium-beam", 125},
-            {"kr-rare-metals", 125},
-            {"kr-ai-core", 125},
-            {"kr-glass", 125},
         }
     },
 })
@@ -332,12 +321,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk6"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-lithium-sulfur-battery", 150},
-            {"kr-imersium-beam", 150},
-            {"kr-matter-cube", 150},
-            {"kr-rare-metals", 150},
-            {"kr-tritium", 150},
-            {"kr-ai-core", 150},
         }
     },
 })
@@ -390,7 +373,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["low-density-structure"] = {"kr-energy-control-unit", 200},
+            {"kr-energy-control-unit", 200},
             {"kr-imersium-beam", 200},
             {"kr-matter-cube", 200},
             {"kr-rare-metals", 200},
@@ -401,12 +384,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 200},
-            {"kr-imersium-beam", 200},
-            {"kr-matter-cube", 200},
-            {"kr-rare-metals", 200},
-            {"kr-tritium", 200},
-            {"kr-ai-core", 200},
         }
     },
 })
@@ -461,12 +438,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk8"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["low-density-structure"] = {"kr-energy-control-unit", 300},
-            {"kr-imersium-beam", 300},
-            {"kr-matter-cube", 300},
-            {"kr-rare-metals", 300},
-            {"kr-tritium", 300},
-            {"kr-ai-core", 300},
         }
     },
 })
@@ -474,49 +445,49 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 400},
         }
     },
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["nuclear-fuel"] = {"bob-heat-pipe-4", 20},
+            ["nuclear-fuel"] = {"bob-heat-pipe-4", 400},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
-            ["low-density-structure"] = {"bob-nitinol-alloy", 100},
-            {"bob-invar-alloy", 200},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 400},
+            ["low-density-structure"] = {"bob-nitinol-alloy", 400},
+            {"bob-invar-alloy", 400},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-solder", 100},
+            {"bob-solder", 400},
         }
     },
     {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
-            {"bob-rtg", 40},
+            {"bob-rtg", 400},
         }
     },
     {
         dependencies = {"angelspetrochem"},
         replacements = {
             ["angels-gas-methane"] = {"zero"},
-            {"angels-uranium-234", 20},
-            {type="fluid", name="angels-gas-monochloramine", amount=100},
+            {"angels-uranium-234", 400},
+            {type="fluid", name="angels-gas-monochloramine", amount=400},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"clowns-plate-osmium", 100},
-            {"clowns-plate-magnesium", 100},
-            {"clowns-plate-depleted-uranium", 100},
+            {"clowns-plate-osmium", 400},
+            {"clowns-plate-magnesium", 400},
+            {"clowns-plate-depleted-uranium", 400},
         }
     },
     --K2
@@ -534,12 +505,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["low-density-structure"] = {"kr-energy-control-unit", 400},
-            {"kr-imersium-beam", 400},
-            {"kr-matter-cube", 400},
-            {"kr-rare-metals", 400},
-            {"kr-tritium", 400},
-            {"kr-ai-core", 400},
         }
     },
 })
@@ -562,53 +527,53 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            ["battery"] = {"bob-battery-3", 200},
-            {"bob-silver-nitrate", 100},
-            {"bob-nitinol-bearing", 100},
+            ["battery"] = {"bob-battery-3", 500},
+            {"bob-silver-nitrate", 500},
+            {"bob-nitinol-bearing", 500},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-gilded-copper-cable", 200},
+            {"bob-gilded-copper-cable", 500},
         }
     },
     {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
-            {"bob-rtg", 80},
+            {"bob-rtg", 500},
         }
     },
     --Angels
     {
         dependencies = {"angelssmelting", "angelspetrochem"},
         replacements = {
-            {type="fluid", name="angels-gas-monochloramine", amount=100},
-            {"angels-uranium-234", 20},
+            {type="fluid", name="angels-gas-monochloramine", amount=500},
+            {"angels-uranium-234", 500},
         }
     },
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["bob-silver-nitrate"] = {"bob-copper-tungsten-alloy", 1000},
-            {"angels-wire-platinum", 200},
+            ["bob-silver-nitrate"] = {"bob-copper-tungsten-alloy", 500},
+            {"angels-wire-platinum", 500},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"clowns-plate-depleted-uranium", 200},
-            {"clowns-plate-magnesium", 200},
-            {"clowns-plate-osmium", 200},
+            {"clowns-plate-depleted-uranium", 500},
+            {"clowns-plate-magnesium", 500},
+            {"clowns-plate-osmium", 500},
         }
     },
     --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
-			["armour-control-unit"] = {"se-quantum-processor", 2},
-            ["low-density-structure"] = {"se-nanomaterial", 50},
-            ["processing-unit"] = {"se-naquium-processor", 2},
+			["armour-control-unit"] = {"se-quantum-processor", 500},
+            ["low-density-structure"] = {"se-nanomaterial", 500},
+            ["processing-unit"] = {"se-naquium-processor", 500},
         }
     },
     --K2
@@ -626,18 +591,12 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["low-density-structure"] = {"kr-energy-control-unit", 500},
-            {"kr-imersium-beam", 500},
-            {"kr-matter-cube", 500},
-            {"kr-rare-metals", 500},
-            {"kr-tritium", 500},
-            {"kr-ai-core", 500},
         }
     },
 })
 
 if mods["Cold_biters"]then
     if SS["cb-enable-cold-warfare"].value == true then
-        table.insert(RECIPES["par-fission-reactor-mk10"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=400})
+        table.insert(RECIPES["par-fission-reactor-mk10"].ingredients, {type="item", name= "cb_alien_cold_artifact", amount=500})
     end
 end
