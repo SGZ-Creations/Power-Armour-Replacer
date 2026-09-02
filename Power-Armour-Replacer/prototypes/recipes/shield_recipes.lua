@@ -331,7 +331,7 @@ if mods["space-age"] then
                 {type="item", name="holmium-plate", amount=300},
                 {type="item", name="carbon-fiber", amount=300},
                 --Fluid
-                {type="fluid", name="lubricant", amount=350},
+                {type="fluid", name="lubricant", amount=300},
             },
             results = {{type="item", name="par-shield-mk8", amount=1}}
         },
@@ -357,12 +357,12 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=400},
                 {type="item", name="biter-egg", amount=400},
                 --Fluid
-                {type="fluid", name="lubricant", amount=350},
-                {type="fluid", name="fluoroketone-cold", amount=100},
+                {type="fluid", name="lubricant", amount=400},
+                {type="fluid", name="fluoroketone-cold", amount=400},
             },
             results = {
                 {type="item", name="par-shield-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=100},
+                {type="fluid", name="fluoroketone-hot", amount=300},
             }
         },
         {
@@ -387,12 +387,12 @@ if mods["space-age"] then
                 {type="item", name="lithium-plate", amount=500},
                 {type="item", name="biter-egg", amount=500},
                 --Fluid
-                {type="fluid", name="lubricant", amount=350},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="lubricant", amount=500},
+                {type="fluid", name="fluoroketone-cold", amount=500},
             },
             results = {
                 {type="item", name="par-shield-mk10", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=400},
             }
         },
     }

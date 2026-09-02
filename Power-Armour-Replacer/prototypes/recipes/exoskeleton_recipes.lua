@@ -55,7 +55,7 @@ data:extend({
         enabled = false,
         energy_required = 20,
         ingredients = {
-            {type="item", name="par-exoskeleton-mk2", amount= SS["EquipmentMulti"].value},
+            {type="item", name="par-exoskeleton-mk3", amount= SS["EquipmentMulti"].value},
             {type="item", name="low-density-structure", amount=400},
             {type="item", name="armour-control-unit", amount=400},
             {type="item", name="processing-unit", amount=400},

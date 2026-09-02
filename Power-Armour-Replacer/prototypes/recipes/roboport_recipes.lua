@@ -278,7 +278,7 @@ if mods["space-age"]then
                 {type="item", name="tungsten-plate", amount=200},
                 {type="item", name="lithium-plate", amount=200},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=1000},
+                {type="fluid", name="electrolyte", amount=200},
             },
             results = {{type="item", name="par-roboport-mk7", amount=1}}
         },
@@ -301,7 +301,7 @@ if mods["space-age"]then
                 {type="item", name="supercapacitor", amount=300},
                 {type="item", name="lithium-plate", amount=300},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=1000},
+                {type="fluid", name="electrolyte", amount=300},
             },
             results = {{type="item", name="par-roboport-mk8", amount=1}}
         },
@@ -325,12 +325,12 @@ if mods["space-age"]then
                 {type="item", name="supercapacitor", amount=400},
                 {type="item", name="lithium-plate", amount=400},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=1000},
-                {type="fluid", name="fluoroketone-cold", amount=100},
+                {type="fluid", name="electrolyte", amount=500},
+                {type="fluid", name="fluoroketone-cold", amount=400},
             },
             results = {
                 {type="item", name="par-roboport-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=100},
+                {type="fluid", name="fluoroketone-hot", amount=300},
             }
         },
         {
@@ -353,12 +353,12 @@ if mods["space-age"]then
                 {type="item", name="supercapacitor", amount=500},
                 {type="item", name="lithium-plate", amount=500},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=1000},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="electrolyte", amount=500},
+                {type="fluid", name="fluoroketone-cold", amount=500},
             },
             results = {
                 {type="item", name="par-roboport-mk10", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=400},
             }
         },
     })

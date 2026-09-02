@@ -323,7 +323,7 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=200},
                 {type="item", name="carbon", amount=200},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="electrolyte", amount=200},
             },
             results = {
                 {type="item", name="par-shock-defense-mk7", amount=1},
@@ -350,7 +350,7 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=300},
                 {type="item", name="carbon", amount=300},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="electrolyte", amount=300},
             },
             results = {
                 {type="item", name="par-shock-defense-mk8", amount=1},
@@ -377,12 +377,12 @@ if mods["space-age"] then
                 {type="item", name="biter-egg", amount=400},
                 {type="item", name="carbon", amount=400},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=250},
-                {type="fluid", name="fluoroketone-cold", amount=100},
+                {type="fluid", name="electrolyte", amount=400},
+                {type="fluid", name="fluoroketone-cold", amount=400},
             },
             results = {
                 {type="item", name="par-shock-defense-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=100},
+                {type="fluid", name="fluoroketone-hot", amount=300},
             }
         },
         {
