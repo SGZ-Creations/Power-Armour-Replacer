@@ -34,8 +34,9 @@ if mods["Krastorio2"]and mods["space-age"] and not mods["Krastorio2-spaced-out"]
 	}
 end
 
-if mods["Krastorio2"]and mods["space-age"] and not mods["Krastorio2-spaced-out"] then
+if mods["Krastorio2"]and not mods["Krastorio2-spaced-out"] then
 	data.raw.lab["lab"].inputs = {
+		"kr-basic-tech-card",
 		"automation-science-pack",
 		"logistic-science-pack",
 		"chemical-science-pack",

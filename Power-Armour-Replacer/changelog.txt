@@ -2,7 +2,7 @@
 Version: 0.6.9
 Date: 28.07.26
   Bugfixes:
-    - [TIMSABA] Crash.
+    - [Angels] Soft lock.
     - [Rampant Arsenal] Crash with Settings.
     - [SE] Duplicate Item Inputs.
     - [WDME] Compatible with 0.3.1
@@ -95,6 +95,7 @@ Date: 26.06.26
 Version: 0.5.14
 Date: 30.07.26
   Bugfixes:
+    - [Angels] Soft lock.
     - [Rampant Arsenal] Crash with Settings.
     - [SE] Duplicate Item Inputs.
     - [WDME] Compatible with 0.2.5
