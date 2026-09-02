@@ -28,7 +28,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk1"], {
         replacements = {
             ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 100},
             ["iron-stick"] = {"kr-steel-beam", 100},
-            --{"kr-automation-core", 100},
+            {"kr-automation-core", 100},
             {"kr-silicon", 100},
         }
     },
@@ -75,7 +75,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
         replacements = {
             ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 200},
             ["iron-stick"] = {"kr-steel-beam", 200},
-            --{"kr-automation-core", 200},
+            {"kr-automation-core", 200},
             {"kr-rare-metals", 200},
             {"kr-silicon", 200},
         }
@@ -99,8 +99,8 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk3"], {
         dependencies = {"bobplates"},
         replacements = {
             ["iron-stick"] = {"bob-titanium-bearing", 75},
-            ["battery"] = {"bob-battery-2", 90},
             ["iron-gear-wheel"] = {"bob-invar-alloy", 155},
+            ["battery"] = {"bob-battery-2", 90},
             {"bob-titanium-plate", 125},
             {"advanced-circuit", 300},
             ["lubricant"] = {"zero"},

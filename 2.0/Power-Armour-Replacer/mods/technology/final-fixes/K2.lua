@@ -1,6 +1,5 @@
 local Tech = data.raw["technology"]
 if mods["Krastorio2"] then
-
 	table.insert(Tech["par-armour-tech-5"].unit.ingredients, {"kr-advanced-tech-card",   1})
 
 	table.insert(Tech["par-armour-tech-6"].unit.ingredients, {"kr-advanced-tech-card",   2})
