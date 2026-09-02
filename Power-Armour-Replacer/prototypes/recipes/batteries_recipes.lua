@@ -275,8 +275,8 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=200},
                 {type="item", name="pentapod-egg", amount=200},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=250},
-                {type="fluid", name="sulfuric-acid", amount=250},
+                {type="fluid", name="electrolyte", amount=200},
+                {type="fluid", name="sulfuric-acid", amount=200},
             },
             results = {{type="item", name="par-battery-mk7", amount=1}}
         },
@@ -300,8 +300,8 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=300},
                 {type="item", name="biter-egg", amount=300},
                 --Fluid
-                {type="fluid", name="sulfuric-acid", amount=250},
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="sulfuric-acid", amount=300},
+                {type="fluid", name="electrolyte", amount=300},
             },
             results = {{type="item", name="par-battery-mk8", amount=1}}
         },
@@ -326,12 +326,12 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=400},
                 {type="item", name="biter-egg", amount=400},
                 --Fluid
-                {type="fluid", name="fluoroketone-cold", amount=100},
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="fluoroketone-cold", amount=400},
+                {type="fluid", name="electrolyte", amount=400},
             },
             results = {
                 {type="item", name="par-battery-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=100},
+                {type="fluid", name="fluoroketone-hot", amount=300},
             }
         },
         {
@@ -355,12 +355,12 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=500},
                 {type="item", name="biter-egg", amount=500},
                 --Fluid
-                {type="fluid", name="fluoroketone-cold", amount=200},
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="fluoroketone-cold", amount=500},
+                {type="fluid", name="electrolyte", amount=500},
             },
             results = {
                 {type="item", name="par-battery-mk10", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=400},
             }
         },
     })

@@ -327,12 +327,12 @@ if mods["space-age"] then
                 {type="item", name="carbon-fiber", amount=400},
                 {type="item", name="biter-egg", amount=400},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=250},
-                {type="fluid", name="fluoroketone-cold", amount=100},
+                {type="fluid", name="electrolyte", amount=400},
+                {type="fluid", name="fluoroketone-cold", amount=400},
             },
             results = {
                 {type="item", name="par-fission-reactor-mk9", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=100},
+                {type="fluid", name="fluoroketone-hot", amount=300},
             },
         },
         {
@@ -356,12 +356,12 @@ if mods["space-age"] then
                 {type="item", name="lithium-plate", amount=500},
                 {type="item", name="biter-egg", amount=500},
                 --Fluid
-                {type="fluid", name="electrolyte", amount=250},
-                {type="fluid", name="fluoroketone-cold", amount=200},
+                {type="fluid", name="electrolyte", amount=500},
+                {type="fluid", name="fluoroketone-cold", amount=500},
             },
             results = {
                 {type="item", name="par-fission-reactor-mk10", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=400},
             },
         },
     })

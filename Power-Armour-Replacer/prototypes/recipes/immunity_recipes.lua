@@ -57,7 +57,7 @@ if mods["space-age"] then
             },
             results = {
                 {type="item", name="par-belt-immunity-mk1", amount=1},
-                {type="fluid", name="water", amount=1000}
+                {type="fluid", name="water", amount=2500}
             }
         },
         {
@@ -83,7 +83,7 @@ if mods["space-age"] then
                 {type="item", name="biter-egg", amount=500},
                 --Fluid
                 {type="fluid", name="electrolyte", amount=500},
-                {type="fluid", name="ammonia", amount=1000},
+                {type="fluid", name="ammonia", amount=500},
             },
             results = {
                 {type="item", name="par-belt-immunity-mk2", amount=1},

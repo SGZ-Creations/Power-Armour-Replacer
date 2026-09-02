@@ -131,8 +131,8 @@ if mods["space-age"]then
                 {type="item", name="battery", amount=300},
                 {type="item", name="carbon", amount=300},
                 --Fluid
-                {type="fluid", name="lubricant", amount=450},
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="lubricant", amount=300},
+                {type="fluid", name="electrolyte", amount=300},
             },
             results = {{type="item", name="par-exoskeleton-mk3", amount=1}}
         },
@@ -155,11 +155,11 @@ if mods["space-age"]then
                 {type="item", name="biter-egg", amount=400},
                 --Fluid
                 {type="fluid", name="fluoroketone-cold", amount=100},
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="electrolyte", amount=400},
             },
             results = {
                 {type="item", name="par-exoskeleton-mk4", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=100},
+                {type="fluid", name="fluoroketone-hot", amount=300},
             }
         },
         {
@@ -181,12 +181,12 @@ if mods["space-age"]then
                 {type="item", name="lithium-plate", amount=500},
                 {type="item", name="biter-egg", amount=500},
                 --Fluid
-                {type="fluid", name="fluoroketone-cold", amount=200},
-                {type="fluid", name="electrolyte", amount=250},
+                {type="fluid", name="fluoroketone-cold", amount=500},
+                {type="fluid", name="electrolyte", amount=500},
             },
             results = {
                 {type="item", name="par-exoskeleton-mk5", amount=1},
-                {type="fluid", name="fluoroketone-hot", amount=200},
+                {type="fluid", name="fluoroketone-hot", amount=400},
             }
         },
     })
