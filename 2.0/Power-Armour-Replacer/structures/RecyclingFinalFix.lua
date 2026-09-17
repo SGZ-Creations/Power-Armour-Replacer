@@ -1,6 +1,6 @@
 local PAR = require("mods.util")
 
-if (mods["quality"] or mods["recycler"]) then
+if mods["quality"] then
     PAR.update_rec_recipe_results({
     --Armour
         "par-armour-mk1",
@@ -100,6 +100,9 @@ if (mods["quality"] or mods["recycler"]) then
         --NVG's
         "par-nightvision-mk1",
         "par-nightvision-mk2",
+
+        --Base
+        "spidertron",
     })
     if mods["Power Armor MK3"] then
         PAR.update_rec_recipe_results({

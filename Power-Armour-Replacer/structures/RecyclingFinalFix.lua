@@ -100,6 +100,9 @@ if mods["recycler"] then
         --NVG's
         "par-nightvision-mk1",
         "par-nightvision-mk2",
+
+        --Base
+        "spidertron",
     })
     if mods["Power Armor MK3"] then
         PAR.update_rec_recipe_results({
