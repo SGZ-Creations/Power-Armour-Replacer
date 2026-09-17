@@ -168,7 +168,7 @@ local function replace_ingredients(ingredients)
 end
 
 for _, recipe in pairs(data.raw.recipe) do
-    if recipe.categories and not recipe.categories["recycling"] then
+    if recipe.category ~= "recycling" then
         replace_ingredients(recipe.ingredients)
     end
 end
