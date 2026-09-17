@@ -1,6 +1,4 @@
----@class data.ProtypeRecipe
 local Hide = data.raw["recipe"]
----@class LuaSettings
 local SS = settings.startup
 
 if SS ["HideRecipesFromPlayer"].value == false then
