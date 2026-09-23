@@ -10,3 +10,14 @@ PAR.ingredient_prereq(DRR["armour-control-unit"], {
         }
     },
 })
+PAR.ingredient_prereq(Recipe["armour-control-unit"], {
+	{
+        dependencies = {"bobplates"},
+        replacements = {
+            ["copper-plate"] = {"bob-brass-alloy", 5},
+			["iron-plate"] = {"bob-invar-alloy", 5},
+            ["plastic-bar"] = {"bob-aluminium-plate", 5},
+            {"bob-silver-plate", 5},
+        }
+    }
+})
