@@ -25,10 +25,6 @@ data:extend({
 	if mods["space-age"] then
 		table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "par-electronic-hands")
 	end
-
-	if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
-		table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories, "par-electronic-hands")
-	end
 ----------------------------------------------------Assemblers Only---------------------------------------------------------------------------
 	table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "par-electronics")
 	table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories, "par-electronics")
@@ -43,8 +39,4 @@ data:extend({
 
 	if mods["space-age"] then
 		table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "par-electronics")
-	end
-
-	if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
-		table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories, "par-electronics")
 	end

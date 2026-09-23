@@ -16,7 +16,6 @@
 --compatible.tech load order dependant
 	require("mods.technology.final-fixes.LabFixes_K2_SO")
 	require("mods.technology.final-fixes.K2")
-	--require("mods.technology.final-fixes.K2_SO")
 	require("mods.technology.final-fixes.TewaksFinalFixes")
 	require("mods.technology.final-fixes.BobsScienceFinalFix")
 	require("mods.technology.final-fixes.AngelsScienceFinalFix")

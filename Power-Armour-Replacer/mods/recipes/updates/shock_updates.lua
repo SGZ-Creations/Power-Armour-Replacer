@@ -335,12 +335,12 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk6"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["battery"] = {"kr-lithium-sulfur-battery", 125},
-			["steel-plate"] = {"kr-imersium-beam", 125},
-            ["stone-brick"] = {"kr-glass", 125},
-            {"kr-automation-core", 125},
-            {"kr-rare-metals", 125},
-            {"kr-silicon", 125},
+            ["battery"] = {"kr-lithium-sulfur-battery", 150},
+			["steel-plate"] = {"kr-imersium-beam", 150},
+            ["stone-brick"] = {"kr-glass", 150},
+            {"kr-automation-core", 150},
+            {"kr-rare-metals", 150},
+            {"kr-silicon", 150},
         }
     },
     --K2SO
@@ -384,6 +384,25 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk7"], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {type="fluid", name="liquid-dimethylmercury", amount=100},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 150},
+			["steel-plate"] = {"kr-imersium-beam", 150},
+            ["stone-brick"] = {"kr-glass", 150},
+            {"kr-automation-core", 150},
+            {"kr-rare-metals", 150},
+            {"kr-silicon", 150},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            
         }
     },
 })

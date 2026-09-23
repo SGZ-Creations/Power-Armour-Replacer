@@ -8,6 +8,7 @@ Date: 30.07.26
     - [WDME] Compatible with 0.2.5.
     - [PA&R] spidertron recycling being wrong.
     - [PA&R] Removed 0.6.x logs from this 0.5.14 & forwards.
+    - [K2-K2SO] Completed compatibility for newest version.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.13
 Date: 30.07.26
