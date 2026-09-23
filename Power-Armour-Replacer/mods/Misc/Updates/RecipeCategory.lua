@@ -1,4 +1,3 @@
----@class data.RecipePrototype
 local Recipe = data.raw["recipe"]
 
 if mods["TeleportationEquipment"]then

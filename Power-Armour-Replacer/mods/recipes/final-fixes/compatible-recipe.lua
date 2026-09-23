@@ -1,5 +1,4 @@
 local PAR = require("mods.util")
----@class data.RecipePrototype
 local Recipe = data.raw.recipe
 
 PAR.ingredient_prereq(Recipe["mech-armor"],

@@ -1,5 +1,5 @@
----@class data.RecipePrototype.type
 local Recipe = data.raw["recipe"]
+
 if mods["pycoalprocessing"] then
 	Recipe["light-armor"].ingredients = {
 		{type="item", name="tin-plate", amount= 25},
