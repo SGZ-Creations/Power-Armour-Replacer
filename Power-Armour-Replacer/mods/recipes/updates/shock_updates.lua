@@ -165,18 +165,15 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plate"] = {"kr-automation-core", 50},
-            ["stone-brick"] = {"kr-glass", 50},
-            {"kr-steel-beam", 50},
-            {"kr-iron-beam", 50},
+            ["copper-plate"] = {"kr-automation-core", 75},
+            ["stone-brick"] = {"kr-glass", 75},
+            {"kr-steel-beam", 75},
+            {"kr-iron-beam", 75},
         }
     },
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["steel-plate"] = {"kr-steel-beam", 50},
-            {"kr-automation-core", 50},
-            {"kr-glass", 50},
         }
     },
 })
@@ -191,8 +188,8 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk4"], {
         dependencies = {"bobplates"},
         replacements = {
             ["advanced-circuit"] = {"electronic-circuit", 200},
-            ["pipe"] = {"bob-nickel-plate", 250},
             ["iron-gear-wheel"] = {"bob-brass-alloy", 90},
+            ["pipe"] = {"bob-nickel-plate", 250},
         }
     },
     {
@@ -227,21 +224,19 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plate"] = {"kr-automation-core", 50},
-            ["steel-plate"] = {"kr-steel-beam", 50},
-            ["stone-brick"] = {"kr-glass", 50},
-            {"kr-iron-beam", 50},
+            ["battery"] = {"kr-lithium-sulfur-battery", 100},
+			["steel-plate"] = {"kr-steel-beam", 100},
+            ["stone-brick"] = {"kr-glass", 100},
+            {"kr-automation-core", 100},
+            {"kr-rare-metals", 100},
+            {"kr-silicon", 100},
         }
     },
     --K2SO
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["battery"] = {"kr-lithium-sulfur-battery", 300},
-			["steel-plate"] = {"kr-imersium-beam", 300},
-            {"kr-automation-core", 300},
-            {"kr-rare-metals", 300},
-            {"kr-silicon", 300},
+            
         }
     },
 })
@@ -280,6 +275,25 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk5"], {
             {"solid-white-phosphorus", 100},
         }
     },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 125},
+			["steel-plate"] = {"kr-imersium-beam", 125},
+            ["stone-brick"] = {"kr-glass", 125},
+            {"kr-automation-core", 125},
+            {"kr-rare-metals", 125},
+            {"kr-silicon", 125},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            
+        }
+    },
 })
 
 PAR.ingredient_prereq(RECIPES["par-shock-defense-mk6"], {
@@ -315,6 +329,25 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk6"], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"solid-white-phosphorus", 200},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 125},
+			["steel-plate"] = {"kr-imersium-beam", 125},
+            ["stone-brick"] = {"kr-glass", 125},
+            {"kr-automation-core", 125},
+            {"kr-rare-metals", 125},
+            {"kr-silicon", 125},
+        }
+    },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            
         }
     },
 })
