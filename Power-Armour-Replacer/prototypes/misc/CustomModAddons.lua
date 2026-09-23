@@ -1,4 +1,3 @@
----@class TechnologyPrototype
 local Tech = data.raw["technology"]
 
 
