@@ -77,26 +77,6 @@ elseif mods["incendiary-arsenal"] and mods["space-age"] and not mods["metal-and-
 	Tech["mech-armor-fireproof"].prerequisites = {"metallurgic-science-pack", "par-armour-tech-5"}
 end
 
-if not mods["RampantArsenalFork"]then
-	if (mods["space-age"]or mods["mech-armor"]) then
-		if settings.startup["MK10RecipeTech"].value == true then
-			PAR.technology_dependancy
-			{
-				["space-age"] = {
-					["mech-armor"] = {
-						["par-armour-tech-5"] = "par-armour-tech-10",
-					},
-				},
-				["mech-armor"] = {
-					["mech-armor"] = {
-						["par-armour-tech-5"] = "par-armour-tech-10",
-					}
-				},
-			}
-		end
-	end
-end
-
 
 if mods["metal-and-stars"] then
 	Tech["prototype-mech-armor"].prerequisites = {"par-armour-tech-3", "productivity-module-2", "overclock-module-2"}
@@ -104,9 +84,9 @@ end
 
 
 if mods["Nanobots3"] then
-    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
-    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-trees"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-items"})
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-feeder"})
+    table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-launcher"})
     table.insert(Tech["par-night-immunity-tech-1"].effects,{type="unlock-recipe",recipe="equipment-bot-chip-nanointerface"})
 end

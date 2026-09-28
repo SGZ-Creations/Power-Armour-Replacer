@@ -2,7 +2,7 @@
 Version: 0.5.14
 Date: 30.07.26
   Bugfixes:
-    - [Angels] Soft lock.
+    - [Angels] 2x Softlock(s), ReEnabled AngelBobs Tech changes.
     - [Rampant Arsenal] Crash with Settings.
     - [SE] Duplicate Item Inputs.
     - [WDME] Compatible with 0.2.5.

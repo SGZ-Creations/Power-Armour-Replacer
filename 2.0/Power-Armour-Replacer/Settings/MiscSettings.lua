@@ -38,6 +38,7 @@ data:extend({
         order = "ZAag-9"
     },
 })
+
 if mods["PARs-SpaceAge-Extension"] then
     if (mods["space-age"] or mods["mech-armor"]) then
         data:extend({
@@ -69,20 +70,6 @@ if mods["space-age"] then
             order = "ZAay-9"
         },
     })
-end
-
-if not mods["RampantArsenalFork"]then
-    if (mods["space-age"]or mods["mech-armor"]) then
-        data:extend({
-            {
-                type = "bool-setting",
-                name = "MK10RecipeTech",
-                setting_type = "startup",
-                default_value = false,
-                order = "ZAaz-9"
-            },
-        })
-    end
 end
 
 if mods["nightvision_progression-fork"]then

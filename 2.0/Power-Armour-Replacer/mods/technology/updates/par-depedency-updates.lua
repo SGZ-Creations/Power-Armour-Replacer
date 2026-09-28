@@ -303,7 +303,7 @@ PAR.technology_dependancy
 		},
 	},
 
-	["pypetroleumhandling"] = {
+	["angelspetrochem"] = {
 		["par-armour-tech-5"] = {
 				"plastic-1",
 			},
