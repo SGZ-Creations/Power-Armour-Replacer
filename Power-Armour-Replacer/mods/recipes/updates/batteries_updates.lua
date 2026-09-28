@@ -62,6 +62,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk1"], {
             ["copper-cable"] = {"kr-automation-core", 25},
 			["steel-plate"] = {"kr-steel-beam", 25},
             ["stone-brick"] = {"kr-glass", 25},
+            {"kr-iron-beam", 25},
         }
     },
     {
@@ -96,7 +97,9 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk2"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["kr-automation-core"] = {"kr-automation-core", 50},
+            ["copper-wire"] = {"electronic-circuit", 50},
 			["steel-plate"] = {"kr-steel-beam", 50},
+            {"kr-iron-beam", 50},
             {"kr-glass", 50},
         }
     },
