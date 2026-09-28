@@ -75,6 +75,7 @@ local recipes = {
             {type="item", name="armour-control-unit", amount=125},
             {type="item", name="advanced-circuit", amount=125},
             {type="item", name="steel-plate", amount=125},
+            {type="item", name="engine-unit", amount=125},
             {type="item", name="plastic-bar", amount=125},
             {type="item", name="battery", amount=125},
         },
