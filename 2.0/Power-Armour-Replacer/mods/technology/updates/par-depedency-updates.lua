@@ -260,7 +260,7 @@ PAR.technology_dependancy
 			"bob-gem-processing-3"
 		},
 	},
---[[
+
 	["angelssmelting"] = {
 		["par-armour-tech-1"] = {
 			"angels-solder-smelting-1",
@@ -330,7 +330,7 @@ PAR.technology_dependancy
 			"angels-brass-smelting-1",
 		},
 	},
-
+--[[
 	["Clowns-Processing"] = {
 		["par-armour-tech-10"] = {
 			"advanced-depleted-uranium-smelting-1",
