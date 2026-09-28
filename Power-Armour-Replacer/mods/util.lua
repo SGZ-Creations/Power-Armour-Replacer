@@ -1,5 +1,4 @@
 local PAR = {}
----@Class RecipePrototype
 local Recipe = data.raw["recipe"]
 -- USE PAR rather than utility
 
