@@ -272,9 +272,6 @@ PAR.technology_dependancy
 			"angels-silver-smelting-1",
 			"angels-stone-smelting-2",
 		},
-		["par-armour-tech-5"] = {
-			"plastic-1",
-		},
 		["par-armour-tech-6"] = {
 			["rocket-fuel"] = "angels-titanium-smelting-1",
 			["bob-titanium-processing"] = "angels-titanium-smelting-1",
@@ -304,6 +301,12 @@ PAR.technology_dependancy
 		["par-shield-tech-6"] = {
 			"angels-silver-casting-2",
 		},
+	},
+
+	["pypetroleumhandling"] = {
+		["par-armour-tech-5"] = {
+				"angels-plastic-1",
+			},
 	},
 
 	[{"bobplates", "angelssmelting"}] = {
