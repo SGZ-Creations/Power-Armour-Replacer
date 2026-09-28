@@ -154,7 +154,7 @@ if mods["space-age"]then
                 {type="item", name="lithium-plate", amount=400},
                 {type="item", name="biter-egg", amount=400},
                 --Fluid
-                {type="fluid", name="fluoroketone-cold", amount=100},
+                {type="fluid", name="fluoroketone-cold", amount=400},
                 {type="fluid", name="electrolyte", amount=400},
             },
             results = {
