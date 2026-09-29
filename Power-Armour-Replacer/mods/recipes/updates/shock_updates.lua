@@ -157,8 +157,8 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk3"], {
         dependencies = {"Krastorio2"},
         replacements = {
             ["copper-plate"] = {"kr-automation-core", 75},
+            ["steel-plate"] = {"kr-steel-beam", 75},
             ["stone-brick"] = {"kr-glass", 75},
-            {"kr-steel-beam", 75},
             {"kr-iron-beam", 75},
         }
     },

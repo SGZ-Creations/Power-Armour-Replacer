@@ -323,13 +323,6 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk6"], {
             {"kr-ai-core", 150},
         }
     },
-    --K2
-    {
-        dependencies = {"Krastorio2", "space-age"},
-        replacements = {
-            ["calcite"] = {"low-density-structure", 150},
-        }
-    },
 })
 PAR.ingredient_prereq(RECIPES["par-laser-mk7"], {
     {
