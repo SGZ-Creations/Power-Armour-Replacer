@@ -33,7 +33,7 @@ data:extend({
         type = "int-setting",
         name = "EquipmentMulti",
         setting_type = "startup",
-        default_value = 1,
+        default_value = 2,
         minimum_value = 1,
         order = "ZAag-9"
     },
