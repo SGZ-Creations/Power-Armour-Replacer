@@ -12,6 +12,8 @@ local recipes = {
             {type="item", name="iron-gear-wheel", amount=25},
             {type="item", name="copper-cable", amount=25},
             {type="item", name="steel-plate", amount=25},
+            {type="item", name="stone-brick", amount=25},
+            {type="item", name="iron-stick", amount=25},
             {type="item", name="wood", amount=25},
         },
         results = {{type="item", name="par-roboport-mk1", amount=1}}
@@ -28,6 +30,8 @@ local recipes = {
             {type="item", name="iron-gear-wheel", amount=50},
             {type="item", name="copper-cable", amount=50},
             {type="item", name="steel-plate", amount=50},
+            {type="item", name="stone-brick", amount=50},
+            {type="item", name="iron-stick", amount=50},
             {type="item", name="wood", amount=50},
         },
         results = {{type="item", name="par-roboport-mk2", amount=1}}
@@ -44,6 +48,9 @@ local recipes = {
             {type="item", name="copper-plate", amount=75},
             {type="item", name="steel-plate", amount=75},
             {type="item", name="engine-unit", amount=75},
+            {type="item", name="stone-brick", amount=75},
+            {type="item", name="iron-stick", amount=75},
+            {type="item", name="wood", amount=75},
         },
         results = {{type="item", name="par-roboport-mk3", amount=1}}
     },
@@ -86,11 +93,11 @@ local recipes = {
         energy_required = 60,
         ingredients = {
             {type="item", name="par-roboport-mk5", amount= SS["EquipmentMulti"].value},
-                {type="item", name="electric-engine-unit", amount=150},
-                {type="item", name="armour-control-unit", amount=150},
-                {type="item", name="processing-unit", amount=150},
-                {type="item", name="steel-plate", amount=150},
-                {type="item", name="battery", amount=150},
+            {type="item", name="electric-engine-unit", amount=150},
+            {type="item", name="armour-control-unit", amount=150},
+            {type="item", name="processing-unit", amount=150},
+            {type="item", name="steel-plate", amount=150},
+            {type="item", name="battery", amount=150},
         },
         results = {{type="item", name="par-roboport-mk6", amount=1}}
     },
@@ -178,6 +185,8 @@ if mods["space-age"]then
                 {type="item", name="iron-gear-wheel", amount=25},
                 {type="item", name="copper-cable", amount=25},
                 {type="item", name="steel-plate", amount=25},
+                {type="item", name="stone-brick", amount=25},
+                {type="item", name="iron-stick", amount=25},
                 {type="item", name="wood", amount=25},
             },
             results = {{type="item", name="par-roboport-mk1", amount=1}}
@@ -194,6 +203,8 @@ if mods["space-age"]then
                 {type="item", name="iron-gear-wheel", amount=50},
                 {type="item", name="copper-cable", amount=50},
                 {type="item", name="steel-plate", amount=50},
+                {type="item", name="stone-brick", amount=50},
+                {type="item", name="iron-stick", amount=50},
                 {type="item", name="wood", amount=50},
             },
             results = {{type="item", name="par-roboport-mk2", amount=1}}
@@ -210,6 +221,9 @@ if mods["space-age"]then
                 {type="item", name="steel-plate", amount=75},
                 {type="item", name="engine-unit", amount=75},
                 {type="item", name="copper-plate", amount=75},
+                {type="item", name="stone-brick", amount=75},
+                {type="item", name="iron-stick", amount=75},
+                {type="item", name="wood", amount=75},
             },
             results = {{type="item", name="par-roboport-mk3", amount=1}}
         },
@@ -238,6 +252,7 @@ if mods["space-age"]then
                 {type="item", name="par-roboport-mk4", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=125},
                 {type="item", name="electric-engine-unit", amount=125},
+                {type="item", name="armour-control-unit", amount=125},
                 {type="item", name="processing-unit", amount=125},
                 {type="item", name="steel-plate", amount=125},
                 {type="item", name="carbon", amount=125},
