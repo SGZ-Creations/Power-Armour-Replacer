@@ -244,6 +244,7 @@ if mods["space-age"] then
                 {type="item", name="iron-gear-wheel", amount=100},
                 {type="item", name="steel-plate", amount=100},
                 {type="item", name="plastic-bar", amount=100},
+                {type="item", name="battery", amount=100},
             },
             results = {{type="item", name="par-laser-mk4", amount=1}}
         },
