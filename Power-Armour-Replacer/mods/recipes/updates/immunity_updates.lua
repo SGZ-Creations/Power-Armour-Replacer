@@ -6,29 +6,29 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            {"electronic-circuit", 100},
+            {"electronic-circuit", 250},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
             {type="fluid", name="bob-hydrogen", amount=250},
-            {"bob-tinned-copper-cable", 50},
-            {"bob-silicon-wafer", 45},
-            {"bob-rubber", 200},
+            {"bob-tinned-copper-cable", 250},
+            {"bob-silicon-wafer", 250},
+            {"bob-rubber", 250},
         }
     },
     --Angels
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            {"angels-wire-silver", 100},
+            {"angels-wire-silver", 250},
         }
     },
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            {"angels-solid-carbon", 150},
+            {"angels-solid-carbon", 250},
         }
     },
     --K2
@@ -43,57 +43,52 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
             {"kr-glass", 250},
         }
     },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-        }
-    },
 })
 
 PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
+            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 500},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 200},
-            {"bob-copper-tungsten-alloy", 200},
-            {"bob-cobalt-steel-alloy", 200},
-            {"bob-titanium-plate", 200},
-            {"bob-glass", 200},
+            ["nuclear-fuel"] = {"bob-advanced-processing-unit", 500},
+            {"bob-copper-tungsten-alloy", 500},
+            {"bob-cobalt-steel-alloy", 500},
+            {"bob-titanium-plate", 500},
+            {"bob-glass", 500},
         }
     },
     {
         dependencies = {"bobrevamp", "bobplates"},
         replacements = {
-            {type="fluid", name="bob-ferric-chloride-solution", amount=300},
+            {type="fluid", name="bob-ferric-chloride-solution", amount=500},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-gilded-copper-cable", 260},
+            {"bob-gilded-copper-cable", 500},
         }
     },
     --Angels
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            ["bob-ferric-chloride-solution"] = {type="fluid", name="angels-liquid-polyethylene", amount=300},
-            {type="fluid", name="angels-liquid-polyethylene", amount=300},
+            ["bob-ferric-chloride-solution"] = {type="fluid", name="angels-liquid-polyethylene", amount=500},
+            {type="fluid", name="angels-liquid-polyethylene", amount=500},
         }
     },
     --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["low-density-structure"] = {"se-nanomaterial", 100},
-			["advanced-circuit"] = {"se-quantum-processor", 100},
-            ["processing-unit"] = {"se-naquium-processor", 100},
+            ["low-density-structure"] = {"se-nanomaterial", 500},
+			["advanced-circuit"] = {"se-quantum-processor", 500},
+            ["processing-unit"] = {"se-naquium-processor", 500},
             ["rocket-fuel"] = {"zero"},
         }
     },
@@ -108,12 +103,6 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
             {"kr-ai-core", 500},
             {"kr-silicon", 500},
             {"kr-glass", 500},
-        }
-    },
-    --K2SO
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })

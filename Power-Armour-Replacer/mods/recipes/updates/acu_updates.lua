@@ -6,7 +6,7 @@ PAR.ingredient_prereq(Recipe["armour-control-unit"], {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["copper-plate"] = {"kr-rare-metals", 5},
-			["iron-plate"] = {"kr-imersium-beam", 2},
+			["iron-plate"] = {"kr-imersium-beam", 5},
         }
     },
 })

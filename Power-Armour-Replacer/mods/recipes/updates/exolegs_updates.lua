@@ -12,13 +12,13 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk1"], {
         dependencies = {"bobplates"},
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["steel-plate"] = {"bob-steel-gear-wheel", 50},
+            ["steel-plate"] = {"bob-steel-gear-wheel", 100},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"bob-solder", 50},
+            ["copper-cable"] = {"bob-solder", 100},
             {"bob-tinned-copper-cable", 100},
         }
     },
@@ -140,12 +140,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk3"], {
             {"kr-silicon", 300},
         }
     },
-    --K2SO
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-        }
-    },
 })
 PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
     {
@@ -159,8 +153,8 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
         replacements = {
             ["plastic-bar"] = {"bob-cobalt-steel-bearing", 400},
             ["battery"] = {"bob-battery-3", 400},
-            {"processing-unit", 400},
             {"bob-tungsten-gear-wheel", 400},
+            {"processing-unit", 400},
         }
     },
     {
@@ -181,7 +175,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            {"angels-plate-chrome", 4300},
+            {"angels-plate-chrome", 400},
         }
     },
     --SE
@@ -202,11 +196,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
             {"kr-lithium-sulfur-battery", 400},
             {"kr-matter-cube", 400},
             {"kr-ai-core", 400},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })

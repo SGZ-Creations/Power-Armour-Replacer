@@ -14,32 +14,32 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["electronic-circuit"] = {"bob-basic-circuit-board", 100},
-            ["stone-brick"] = {"bob-rubber", 50},
-            ["wood"] = {"bob-resin", 150},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 25},
+            ["stone-brick"] = {"bob-rubber", 25},
+            ["wood"] = {"bob-resin", 25},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 100},
-            ["steel-plate"] = {"bob-glass", 100},
-            ["stone-brick"] = {"bob-rubber", 50},
-            ["wood"] = {"bob-resin", 150},
+            ["electronic-circuit"] = {"electronic-circuit", 25},
+            ["stone-brick"] = {"bob-rubber", 25},
+            ["steel-plate"] = {"bob-glass", 25},
+            ["wood"] = {"bob-resin", 25},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["bob-resin"] = {"bob-solder", 100},
-            {"bob-tinned-copper-cable", 55},
+            ["bob-resin"] = {"bob-solder", 25},
+            {"bob-tinned-copper-cable", 25},
         }
     },
     --Angels
     {
         dependencies = {"bobplates", "angelssmelting"},
         replacements = {
-            ["bob-glass"] = {"angels-solid-carbon", 100},
+            ["bob-glass"] = {"angels-solid-carbon", 25},
             ["bob-rubber"] = {"bob-steel-gear-wheel", 25},
         }
     },
@@ -47,13 +47,13 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"SeaBlockMetaPack", "bobplates"},
         replacements = {
-            ["bob-rubber"] = {"copper-plate", 100},
+            ["bob-rubber"] = {"copper-plate", 25},
         }
     },
     {
         dependencies = {"Bio_Industries", "angelssmelting",},
         replacements = {
-            ["bob-steel-gear-wheel"] = {"bob-rubber", 50},
+            ["bob-steel-gear-wheel"] = {"bob-rubber", 25},
         }
     },
     --Pyanodon
@@ -80,9 +80,9 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
     {
         dependencies = {"exotic-industries"},
         replacements = {
-            ["steel-plate"] = {"ei_iron-beam", 30},
-            ["electronic-circuit"] = {"ei_steam-engine", 10},
-            {"copper-plate", 20},
+            ["electronic-circuit"] = {"ei_steam-engine", 25},
+            ["steel-plate"] = {"ei_iron-beam", 25},
+            {"copper-plate", 25},
         }
     },
     --K2
@@ -93,11 +93,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
             ["stone-brick"] = {"kr-glass", 25},
             {"kr-automation-core", 25},
             {"kr-iron-beam", 25},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out",},
-        replacements = {
         }
     },
 })
@@ -345,11 +340,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
             {"kr-glass", 100},
         }
     },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-        }
-    },
 })
 
 if mods["bobenemies"] and not mods["angelssmelting"]then
@@ -412,11 +402,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
             {"kr-ai-core", 150},
             {"kr-silicon", 150},
             {"kr-glass", 150},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })
@@ -486,11 +471,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk6"], {
             {"kr-ai-core", 200},
             {"kr-silicon", 200},
             {"kr-glass", 200},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })
@@ -624,11 +604,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk8"], {
             {"kr-glass", 600},
         }
     },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-        }
-    },
 })
 
 if mods["bobenemies"] then
@@ -698,11 +673,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
             {"kr-glass", 800},
         }
     },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-        }
-    },
 })
 
 PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
@@ -734,9 +704,15 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
         }
     },
     {
+        dependencies = {"bobrevamp", "space-age"},
+        replacements = {
+            ["bob-carbon-dioxide"] = {"zero"},
+        }
+    },
+    {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-copper-tungsten-alloy"] = {"bob-copper-tungsten-alloy", 250},
+            ["bob-copper-tungsten-alloy"] = {"bob-copper-tungsten-alloy", 1000},
         }
     },
     {
@@ -772,11 +748,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
             {"kr-matter-cube", 1000},
             {"kr-ai-core", 1000},
         }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-        },
     },
 })
 
