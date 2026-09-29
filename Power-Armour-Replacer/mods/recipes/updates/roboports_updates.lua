@@ -170,7 +170,7 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk4"], {
         replacements = {
             ["electronic-circuit"] = {"electronic-circuit", 100},
             ["iron-gear-wheel"] = {"bob-bronze-alloy", 100},
-            ["steel-plate"] = {"bob-nickel", 100},
+            ["steel-plate"] = {"bob-nickel-plate", 100},
             {"bob-rubber", 100},
         }
     },
