@@ -7,7 +7,6 @@
 	require("mods.Misc.FinalFixes.subgroup")
 
 --recipes load order dependant
-    require("mods.recipes.final-fixes.AngelsEnabling")
 	require("mods.recipes.final-fixes.compatible-recipe")
 	require("mods.recipes.final-fixes.pY-recipe-final-fix")
 

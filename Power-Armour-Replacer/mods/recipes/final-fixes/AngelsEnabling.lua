@@ -1,3 +1,4 @@
+local SS = settings.startup
 local Angels = mods["angelssmelting"]
 if Angels then
     angelsmods.trigger.ores["platinum"] = true
@@ -10,4 +11,10 @@ if Angels then
     angelsmods.trigger.smelting_products["chrome"].ingot = true
     angelsmods.trigger.smelting_products["chrome"].plate = true
     angelsmods.trigger.smelting_products["chrome"].powder = true
+end
+
+if mods["bobenemies"] and mods["angelssmelting"] then
+    if SS["bobmods-enemies-enableartifacts"].value == true then
+        data.raw.recipe["bob-alien-artifact"].enabled = true
+    end
 end
