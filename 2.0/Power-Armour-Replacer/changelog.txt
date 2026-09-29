@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.14
-Date: 30.07.26
+Date: 29.09.26
   Bugfixes:
     - [Angels] 2x Softlock(s), ReEnabled AngelBobs Tech changes.
     - [Rampant Arsenal] Crash with Settings.
@@ -9,6 +9,8 @@ Date: 30.07.26
     - [PA&R] spidertron recycling being wrong.
     - [PA&R] Removed 0.6.x logs from this 0.5.14 & forwards.
     - [K2-K2SO] Completed compatibility for newest version.
+  Changes:
+    - [PA&R] All funtions related to MK10RecipeTech where deleted.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.13
 Date: 30.07.26

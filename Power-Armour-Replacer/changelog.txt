@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.9
-Date: 28.07.26
+Date: 29.09.26
   Bugfixes:
     - [Angels] 2x Softlock(s), ReEnabled AngelBobs Tech changes.
     - [Rampant Arsenal] Crash with Settings.
@@ -9,7 +9,7 @@ Date: 28.07.26
     - [PA&R] spidertron recycling being wrong.
     - [K2-K2SO] Completed compatibility for newest version.
   Changes:
-    - [PA&R] All funtions related to MK10RecipeTech whre deleted.
+    - [PA&R] All funtions related to MK10RecipeTech where deleted.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.8
 Date: 28.07.26
@@ -97,7 +97,7 @@ Date: 26.06.26
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.14
-Date: 30.07.26
+Date: 29.09.26
   Bugfixes:
     - [Angels] 2x Softlock(s), ReEnabled AngelBobs Tech changes.
     - [Rampant Arsenal] Crash with Settings.
@@ -107,7 +107,7 @@ Date: 30.07.26
     - [PA&R] Removed 0.6.x logs from this 0.5.14 & forwards.
     - [K2-K2SO] Completed compatibility for newest version.
   Changes:
-    - [PA&R] All funtions related to MK10RecipeTech whre deleted.
+    - [PA&R] All funtions related to MK10RecipeTech where deleted.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.13
 Date: 30.07.26
