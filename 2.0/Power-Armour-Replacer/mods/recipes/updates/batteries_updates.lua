@@ -4,39 +4,39 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk1"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["electronic-circuit"] = {"bob-basic-circuit-board", 50},
-            ["small-electric-pole"] = {"bob-rubber", 50},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 25},
+            ["small-electric-pole"] = {"bob-rubber", 25},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 50},
-            ["small-electric-pole"] = {"bob-rubber", 50},
-            ["steel-plate"] = {"bob-lead-plate", 50},
+            ["electronic-circuit"] = {"electronic-circuit", 25},
+            ["small-electric-pole"] = {"bob-rubber", 25},
+            ["steel-plate"] = {"bob-lead-plate", 25},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-solder", 50},
+            {"bob-solder", 25},
         }
     },
     --SE
     {
         dependencies = {"space-exploration"},
         replacements = {
-            ["small-electric-pole"] = {"wood", 50},
+            ["small-electric-pole"] = {"wood", 5250},
         }
     },
     --Pyanodon
     {
-        dependencies = {"pyalienlife",},
+        dependencies = {"pyalienlife"},
         replacements = {
         }
     },
     {
-        dependencies = {"pyalternativeenergy",},
+        dependencies = {"pyalternativeenergy"},
         replacements = {
             ["copper-cable"] = {"battery-mk00", 25},
         }
@@ -62,11 +62,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk1"], {
             ["copper-cable"] = {"kr-automation-core", 25},
 			["steel-plate"] = {"kr-steel-beam", 25},
             ["stone-brick"] = {"kr-glass", 25},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
+            {"kr-iron-beam", 25},
         }
     },
 })
@@ -74,35 +70,32 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk2"], {
     {
         dependencies = {"bobelectronics", },
         replacements = {
-            ["electronic-circuit"] = {"bob-basic-circuit-board", 100},
+            ["electronic-circuit"] = {"bob-basic-circuit-board", 50},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["electronic-circuit"] = {"electronic-circuit", 100},
-            {"bob-lead-plate", 35},
+            ["electronic-circuit"] = {"electronic-circuit", 50},
+            {"bob-lead-plate", 50},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-plate"] = {"bob-solder", 60},
-            {"bob-tinned-copper-cable", 110},
+            ["copper-plate"] = {"bob-solder", 50},
+            {"bob-tinned-copper-cable", 50},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            --["copper-cable"] = {"kr-automation-core", 50},
+            ["kr-automation-core"] = {"kr-automation-core", 50},
+            ["copper-cable"] = {"electronic-circuit", 50},
 			["steel-plate"] = {"kr-steel-beam", 50},
+            {"kr-iron-beam", 50},
             {"kr-glass", 50},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })
@@ -110,38 +103,29 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk3"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-circuit", 150},
+            ["advanced-circuit"] = {"electronic-circuit", 75},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            {"bob-lead-plate", 55},
-            ["steel-plate"] = {"bob-steel-bearing", 85},
+            {"bob-lead-plate", 75},
+            ["steel-plate"] = {"bob-steel-bearing", 75},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-solder", 85},
+            {"bob-solder", 75},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-cable"] = {"kr-automation-core", 75},
 			["steel-plate"] = {"kr-steel-beam", 75},
             ["stone-brick"] = {"kr-glass", 75},
-            {"kr-rare-metals", 75},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-            ["copper-cable"] = {"kr-automation-core", 75},
-			["steel-plate"] = {"kr-steel-beam", 75},
-            ["stone-brick"] = {"kr-glass", 75},
+            {"kr-automation-core", 75},
             {"kr-rare-metals", 75},
         }
     },
@@ -150,27 +134,27 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk4"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"electronic-circuit", 200},
+            ["advanced-circuit"] = {"electronic-circuit", 100},
             {"bob-insulated-cable", 100},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"bob-bronze-alloy", 60},
-            {"bob-invar-alloy", 50},
+            ["steel-plate"] = {"bob-bronze-alloy", 100},
+            {"bob-invar-alloy", 100},
         }
     },{
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            ["copper-cable"] = {"bob-solder", 110},
+            ["copper-cable"] = {"bob-solder", 100},
         }
     },
     --Angles
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            {"bob-lead-plate", 55},
+            {"bob-lead-plate", 100},
         }
     },
     --Clowns
@@ -184,19 +168,11 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-cable"] = {"kr-automation-core", 100},
-			["steel-plate"] = {"kr-iron-beam", 100},
-            ["stone-brick"] = {"kr-glass", 100},
-            {"kr-rare-metals", 100},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-            ["copper-cable"] = {"kr-automation-core", 100},
 			["steel-plate"] = {"kr-steel-beam", 100},
             ["stone-brick"] = {"kr-glass", 100},
+            {"kr-automation-core", 100},
             {"kr-rare-metals", 100},
+            {"kr-iron-beam", 100},
         }
     },
 })
@@ -204,44 +180,32 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk5"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"advanced-circuit", 250},
-            {"bob-insulated-cable", 210},
+            ["advanced-circuit"] = {"advanced-circuit", 125},
+            {"bob-insulated-cable", 125},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["low-density-structure"] = {"bob-brass-alloy", 50},
-            ["steel-plate"] = {"bob-aluminium-plate", 100},
+            ["low-density-structure"] = {"bob-brass-alloy", 125},
+            ["steel-plate"] = {"bob-aluminium-plate", 125},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-tinned-copper-cable", 200},
+            {"bob-tinned-copper-cable", 125},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphourus", 200},
+            {"solid-white-phosphourus", 125},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
-        replacements = {
-            ["battery"] = {"kr-lithium-sulfur-battery", 125},
-            ["copper-cable"] = {"kr-automation-core", 125},
-			["steel-plate"] = {"kr-steel-beam", 125},
-            {"kr-imersium-beam", 125},
-            {"kr-rare-metals", 125},
-            {"kr-ai-core", 125},
-            {"kr-glass", 125},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["battery"] = {"kr-lithium-sulfur-battery", 125},
             ["copper-cable"] = {"kr-automation-core", 125},
@@ -257,22 +221,22 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk6"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"advanced-circuit", 300},
+            ["advanced-circuit"] = {"advanced-circuit", 150},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["steel-plate"] = {"bob-aluminium-plate", 100},
-            ["low-density-structure"] = {"bob-titanium-plate", 100},
-            {"lithium-plate", 50},
+            ["low-density-structure"] = {"bob-titanium-plate", 150},
+            ["steel-plate"] = {"bob-aluminium-plate", 150},
+            {"lithium-plate", 150},
         }
     },
     --Clowens
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphourus", 300},
+            {"solid-white-phosphourus", 150},
         }
     },
     --K2
@@ -285,37 +249,28 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk6"], {
             {"kr-ai-core", 150},
         }
     },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-            ["battery"] = {"kr-lithium-sulfur-battery", 150},
-			{"kr-imersium-beam", 150},
-            {"kr-matter-cube", 150},
-            {"kr-ai-core", 150},
-        }
-    },
 })
 PAR.ingredient_prereq(RECIPES["par-battery-mk7"], {
     {
         dependencies = {"bobelectronics"},
         replacements = {
-            ["advanced-circuit"] = {"processing-unit", 350},
+            ["advanced-circuit"] = {"processing-unit", 200},
             ["lubricant"] = {"zero"},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["armour-control-unit"] = {"low-density-structure", 50},
-            ["battery"] = {"bob-battery-3", 100},
-            ["plastic-bar"] = {"bob-titanium-plate", 150},
-            {"bob-battery-2", 100},
+            ["armour-control-unit"] = {"low-density-structure", 200},
+            ["plastic-bar"] = {"bob-titanium-plate", 200},
+            ["battery"] = {"bob-battery-3", 200},
+            {"bob-battery-2", 200},
         }
     },
     {
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-gilded-copper-cable", 100},
+            {"bob-gilded-copper-cable", 200},
         }
     },
     --Angles
@@ -330,22 +285,12 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk7"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphourus", 400},
+            {"solid-white-phosphourus", 200},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
-        replacements = {
-            {"kr-energy-control-unit", 200},
-			{"kr-imersium-beam", 200},
-            {"kr-matter-cube", 200},
-            {"kr-rare-metals", 200},
-            {"kr-ai-core", 200},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {"kr-energy-control-unit", 200},
 			{"kr-imersium-beam", 200},
@@ -359,12 +304,12 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk8"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["battery"] = {"bob-battery-3", 200},
+            ["battery"] = {"bob-battery-3", 300},
         }
     },{
         dependencies = {"bobelectronics", "bobplates"},
         replacements = {
-            {"bob-gilded-copper-cable", 200},
+            {"bob-gilded-copper-cable", 300},
         }
     },
     {
@@ -376,23 +321,13 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk8"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"clowns-plate-magnesium", 200},
-            {type="fluid", name="liquid-dimethylmercury", amount=100},
+            {"clowns-plate-magnesium", 300},
+            {type="fluid", name="liquid-dimethylmercury", amount=300},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
-        replacements = {
-            {"kr-energy-control-unit", 300},
-			{"kr-imersium-beam", 300},
-            {"kr-matter-cube", 300},
-            {"kr-rare-metals", 300},
-            {"kr-ai-core", 300},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {"kr-energy-control-unit", 300},
 			{"kr-imersium-beam", 300},
@@ -406,44 +341,34 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk9"], {
     {
         dependencies = {"bobelectronics",},
         replacements = {
-            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 400},
         }
     },
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["processing-unit"] = {"bob-advanced-processing-unit", 450},
-            ["battery"] = {"bob-battery-3", 300},
-            ["plastic-bar"] = {"bob-copper-tungsten-alloy", 250},
+            ["processing-unit"] = {"bob-advanced-processing-unit", 400},
+            ["plastic-bar"] = {"bob-copper-tungsten-alloy", 400},
+            ["battery"] = {"bob-battery-3", 400},
         }
     },
     --Angels
     {
         dependencies = {"angelspetrochem"},
         replacements = {
-            {type="fluid", name="angels-gas-monochloramine", amount=100},
+            {type="fluid", name="angels-gas-monochloramine", amount=400},
         }
     },
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-osmium", 250},
-            {type="fluid", name="liquid-dimethylmercury", amount=200},
+            {type="fluid", name="liquid-dimethylmercury", amount=400},
         }
     },
     --K2
     {
         dependencies = {"Krastorio2"},
-        replacements = {
-            {"kr-energy-control-unit", 400},
-			{"kr-imersium-beam", 400},
-            {"kr-matter-cube", 400},
-            {"kr-rare-metals", 400},
-            {"kr-ai-core", 400},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {"kr-energy-control-unit", 400},
 			{"kr-imersium-beam", 400},
@@ -464,22 +389,22 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"bob-advanced-processing-unit", 500},
-            ["battery"] = {"bob-battery-3", 400},
-            ["armour-control-unit"] = {"bob-nitinol-alloy", 100},
+            ["armour-control-unit"] = {"bob-nitinol-alloy", 500},
+            ["battery"] = {"bob-battery-3", 500},
         }
     },
     --Angels
     {
         dependencies = {"angelspetrochem"},
         replacements = {
+            {type="fluid", name="angels-gas-monochloramine", amount=500},
             ["angels-liquid-sulfuric-acid"] = {"zero"},
-            {type="fluid", name="angels-gas-monochloramine", amount=100},
         }
     },
     {
         dependencies = {"extendedangels"},
         replacements = {
-            {"titanium-concrete-brick", 100},
+            {"titanium-concrete-brick", 500},
         }
     },
     {
@@ -487,7 +412,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-magnesium", 200},
-            ["angels-gas-monochloramine"] = {type="fluid", name="liquid-dimethylmercury", amount=300}
+            ["angels-gas-monochloramine"] = {type="fluid", name="liquid-dimethylmercury", amount=500}
         }
     },
     --K2
@@ -504,11 +429,6 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            {"kr-energy-control-unit", 500},
-			{"kr-imersium-beam", 500},
-            {"kr-matter-cube", 500},
-            {"kr-rare-metals", 500},
-            {"kr-ai-core", 500},
         }
     },
 })

@@ -1,12 +1,12 @@
 local PAR = require("mods.util")
-local DRR = data.raw.recipe
+local Recipe = data.raw.recipe
 
-PAR.ingredient_prereq(DRR["armour-control-unit"], {
+PAR.ingredient_prereq(Recipe["armour-control-unit"], {
 	{
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["copper-plate"] = {"kr-rare-metals", 5},
-			["iron-plate"] = {"kr-imersium-beam", 2},
+			["iron-plate"] = {"kr-imersium-beam", 5},
         }
     },
 })
