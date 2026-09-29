@@ -409,9 +409,9 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
             ["steel-plate"] = {"kr-rare-metals", 150},
             {"kr-energy-control-unit", 150},
 			{"kr-imersium-beam", 150},
+            {"kr-ai-core", 150},
             {"kr-silicon", 150},
             {"kr-glass", 150},
-            {"kr-ai-core", 150},
         }
     },
     {
@@ -715,7 +715,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            --{type="fluid", name="carbon-dioxide", amount=500},-- Adding fluid just works Thanks PEZ Then it must have broken again due to being disabled.
             ["low-density-structure"] = {"bob-copper-tungsten-alloy", 1000},
             ["processing-unit"] = {"bob-advanced-processing-unit", 1000},
             {"bob-nitinol-bearing", 1000},
@@ -726,6 +725,12 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
             {"bob-diamond-5", 1000},
             {"bob-topaz-5", 1000},
             {"bob-ruby-5", 1000},
+        }
+    },
+    {
+        dependencies = {"bobrevamp"},
+        replacements = {
+            {type="fluid", name="bob-carbon-dioxide", amount=1000},
         }
     },
     {
