@@ -235,6 +235,7 @@ if mods["space-age"] then
             energy_required = 60,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk4", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=125},
                 {type="item", name="electric-engine-unit", amount=125},
                 {type="item", name="armour-control-unit", amount=125},
                 {type="item", name="processing-unit", amount=125},
@@ -252,6 +253,7 @@ if mods["space-age"] then
             energy_required = 65,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk5", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=150},
                 {type="item", name="electric-engine-unit", amount=150},
                 {type="item", name="armour-control-unit", amount=150},
                 {type="item", name="processing-unit", amount=150},
@@ -270,6 +272,7 @@ if mods["space-age"] then
             energy_required = 70,
             ingredients = {
                 {type="item", name="par-fission-reactor-mk6", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=200},
                 {type="item", name="electric-engine-unit", amount=200},
                 {type="item", name="armour-control-unit", amount=200},
                 {type="item", name="processing-unit", amount=200},
@@ -350,10 +353,10 @@ if mods["space-age"] then
                 {type="item", name="tungsten-carbide", amount=500},
                 {type="item", name="tungsten-plate", amount=500},
                 {type="item", name="superconductor", amount=500},
-                {type="item", name="holmium-plate", amount=500},
-                {type="item", name="carbon-fiber", amount=500},
                 {type="item", name="supercapacitor", amount=500},
                 {type="item", name="lithium-plate", amount=500},
+                {type="item", name="holmium-plate", amount=500},
+                {type="item", name="carbon-fiber", amount=500},
                 {type="item", name="biter-egg", amount=500},
                 --Fluid
                 {type="fluid", name="electrolyte", amount=500},

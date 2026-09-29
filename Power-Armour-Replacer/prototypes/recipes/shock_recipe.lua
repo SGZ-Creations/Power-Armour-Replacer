@@ -273,10 +273,11 @@ if mods["space-age"] then
             energy_required = 40,
             ingredients = {
                 {type="item", name="par-shock-defense-mk4", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=125},
                 {type="item", name="armour-control-unit", amount=125},
                 {type="item", name="processing-unit", amount=125},
-                {type="item", name="carbon", amount=125},
                 {type="item", name="battery", amount=125},
+                {type="item", name="carbon", amount=125},
             },
             results = {{type="item", name="par-shock-defense-mk5", amount=1}}
         },
@@ -299,6 +300,7 @@ if mods["space-age"] then
                 {type="item", name="processing-unit", amount=150},
                 {type="item", name="tungsten-carbide", amount=150},
                 {type="item", name="armour-control-unit", amount=150},
+                {type="item", name="low-density-structure", amount=150},
             },
             results = {{type="item", name="par-shock-defense-mk6", amount=1}}
         },

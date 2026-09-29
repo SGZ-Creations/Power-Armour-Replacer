@@ -243,6 +243,7 @@ if mods["space-age"] then
             energy_required = 40,
             ingredients = {
                 {type="item", name="par-laser-mk4", amount= SS["EquipmentMulti"].value},
+                {type="item", name="low-density-structure", amount=125},
                 {type="item", name="electric-engine-unit", amount=125},
                 {type="item", name="armour-control-unit", amount=125},
                 {type="item", name="processing-unit", amount=125},
@@ -270,6 +271,7 @@ if mods["space-age"] then
                 {type="item", name="tungsten-carbide", amount=150},
                 {type="item", name="armour-control-unit", amount=150},
                 {type="item", name="electric-engine-unit", amount=150},
+                {type="item", name="low-density-structure", amount=150},
             },
             results = {{type="item", name="par-laser-mk6", amount=1}}
         },
@@ -282,9 +284,9 @@ if mods["space-age"] then
             energy_required = 40,
             ingredients = {
                 {type="item", name="par-laser-mk6", amount= SS["EquipmentMulti"].value},
-                {type="item", name="armour-control-unit", amount=200},
                 {type="item", name="low-density-structure", amount=200},
                 {type="item", name="electric-engine-unit", amount=200},
+                {type="item", name="armour-control-unit", amount=200},
                 {type="item", name="tungsten-carbide", amount=200},
                 {type="item", name="processing-unit", amount=200},
                 {type="item", name="superconductor", amount=200},
@@ -311,8 +313,8 @@ if mods["space-age"] then
                 {type="item", name="par-laser-mk7", amount= SS["EquipmentMulti"].value},
                 {type="item", name="low-density-structure", amount=300},
                 {type="item", name="armour-control-unit", amount=300},
-                {type="item", name="processing-unit", amount=300},
                 {type="item", name="tungsten-carbide", amount=300},
+                {type="item", name="processing-unit", amount=300},
                 {type="item", name="superconductor", amount=300},
                 {type="item", name="tungsten-plate", amount=300},
                 {type="item", name="lithium-plate", amount=300},

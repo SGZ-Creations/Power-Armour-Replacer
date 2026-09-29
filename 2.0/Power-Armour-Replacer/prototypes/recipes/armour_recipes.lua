@@ -234,8 +234,9 @@ if mods["space-age"] then
             energy_required = 50.0,
             ingredients = {
                 {type="item", name="par-armour-mk4", amount=1},
-                {type="item", name="armour-control-unit", amount=150},
+                {type="item", name="low-density-structure", amount=150},
                 {type="item", name="electric-engine-unit", amount=150},
+                {type="item", name="armour-control-unit", amount=150},
                 {type="item", name="processing-unit", amount=150},
                 {type="item", name="battery", amount=150},
                 {type="item", name="carbon", amount=150},
@@ -250,6 +251,7 @@ if mods["space-age"] then
             energy_required = 10.0,
             ingredients = {
                 {type="item", name="par-armour-mk5", amount=1},
+                {type="item", name="low-density-structure", amount=200},
                 {type="item", name="electric-engine-unit", amount=200},
                 {type="item", name="armour-control-unit", amount=200},
                 {type="item", name="processing-unit", amount=200},
