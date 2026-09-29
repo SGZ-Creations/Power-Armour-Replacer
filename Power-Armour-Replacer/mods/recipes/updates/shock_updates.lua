@@ -389,6 +389,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk7"], {
         dependencies = {"Krastorio2"},
         replacements = {
             {"kr-lithium-sulfur-battery", 200},
+            {"kr-energy-control-unit", 200},
 			{"kr-imersium-beam", 200},
             {"kr-rare-metals", 200},
             {"kr-silicon", 200},

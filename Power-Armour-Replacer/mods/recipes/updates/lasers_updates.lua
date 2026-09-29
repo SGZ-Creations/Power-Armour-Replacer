@@ -214,7 +214,6 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk4"], {
             {"kr-automation-core", 100},
             {"kr-rare-metals", 100},
             {"kr-glass", 100},
-            {"battery", 100},
         }
     },
 })
