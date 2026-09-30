@@ -41,6 +41,9 @@
     require("prototypes.technology.shock_tech")
     require("prototypes.technology.solar_tech")
 
+--AnglesEnabling
+    require('mods.Misc.Data.AngelsEnabling')
+
 --prototypes.TechRecipe
     require("prototypes.misc.CustomModAddons")
 
