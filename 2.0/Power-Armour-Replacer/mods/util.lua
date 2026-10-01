@@ -2,7 +2,6 @@ local PAR = {}
 local Recipe = data.raw["recipe"]
 -- USE PAR rather than utility
 
-
 function Remove(recipe_name, ingredient_name)
     for i, ingredient in pairs(Recipe[recipe_name].ingredients) do
         if ingredient.name == ingredient_name then
@@ -18,6 +17,9 @@ end
 --Recipe Compatibility Generator
 PAR.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients  --original list to be replaced
+    if ingredients == hidden then 
+        log("Par containes hidden content at ..")
+    end
     local remove = {} -- local table to trim ingredients after the replacements (to maintain order)
     local not_crafting = false -- trigger for crafting cat change
     for i, ingredient in pairs(ingredients) do -- for each line of ingredients list--[[{1,{ingredient.type,ingredient.name,ingredient.amount},}]]
