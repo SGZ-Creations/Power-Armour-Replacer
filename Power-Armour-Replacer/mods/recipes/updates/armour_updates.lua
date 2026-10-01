@@ -523,6 +523,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk7"], {
     {
         dependencies = {"angelssmelting", "bobplates"},
         replacements = {
+            ["bob-cobalt-steel-bearing"] = {"bob-cobalt-steel-alloy", 400},
             {"bob-glass", 400},
         }
     },

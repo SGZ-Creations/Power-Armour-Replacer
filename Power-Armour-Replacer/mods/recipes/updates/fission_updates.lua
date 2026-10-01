@@ -261,7 +261,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk6"], {
         replacements = {
             ["advanced-circuit"] = {"advanced-circuit", 150},
             ["processing-unit"] = {"bob-insulated-cable", 150},
-            ["uranium-fuel-cell"] = {"bob-resin", 150},
         }
     },
     {
@@ -269,11 +268,17 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk6"], {
         replacements = {
             ["processing-unit"] = {"lithium-plate", 150},
             ["advanced-circuit"] = {"advanced-circuit", 150},
-            ["uranium-fuel-cell"] = {"bob-cobalt-steel-bearing", 150},
             ["electric-engine-unit"] = {"bob-titanium-plate", 150},
             {"bob-cobalt-steel-bearing", 150},
             {"bob-zinc-plate", 150},
             {"bob-battery-2", 150},
+        }
+    },
+    --Angels
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            ["bob-cobalt-steel-bearing"] = {"bob-cobalt-steel-alloy", 150},
         }
     },
     {
@@ -306,7 +311,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
     {
         dependencies = {"bobpower"},
         replacements = {
-            ["pipe"] = {"bob-heat-pipe-3", 200},
+            {"bob-heat-pipe-3", 200},
         }
     },
     {
@@ -315,7 +320,6 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
             ["processing-unit"] = {"processing-unit", 200},
             ["advanced-circuit"] = {"bob-silver-plate", 200},
             ["electric-engine-unit"] = {"bob-battery-2", 200},
-            ["pipe"] = {"bob-cobalt-steel-bearing", 200},
             {"bob-cobalt-steel-bearing", 200},
             {"bob-silver-plate", 200},
         }
@@ -331,6 +335,12 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk7"], {
         dependencies = {"bobplates", "bobrevamp"},
         replacements = {
             {"bob-rtg", 200},
+        }
+    },
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            ["bob-cobalt-steel-bearing"] = {"bob-cobalt-steel-alloy", 200},
         }
     },
     {

@@ -358,6 +358,13 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk7"], {
             ["copper-cable"] = {"bob-gilded-copper-cable", 200},
         }
     },
+    --Angels
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            ["bob-cobalt-steel-gear-wheel"] = {"bob-cobalt-steel-alloy", 200},
+        }
+    },
     --Clowns
     {
         dependencies = {"Clowns-Processing"},

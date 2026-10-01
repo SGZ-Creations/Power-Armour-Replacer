@@ -63,11 +63,6 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk1"], {
             {"aluminium-plate", 25},
         }
     },
-    {
-        dependencies = {"pyhightech",},
-        replacements = {
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -264,10 +259,9 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk6"], {
         dependencies = {"bobplates"},
         replacements = {
             ["processing-unit"] = {"advanced-circuit", 150},
-            ["uranium-235"] = {"bob-cobalt-steel-bearing", 150},
-            ["nuclear-fuel"] = {"bob-titanium-plate", 150},
-            ["battery"] = {"lithium-plate", 150},
+            {"bob-cobalt-steel-bearing", 150},
             {"bob-aluminium-plate", 150},
+            {"bob-titanium-plate", 150},
         }
     },
     {
@@ -278,6 +272,12 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk6"], {
         }
     },
     --Angels
+    {
+        dependencies = {"angelssmelting", "bobplates"},
+        replacements = {
+            ["bob-cobalt-steel-bearing"] = {"bob-cobalt-steel-alloy", 150},
+        }
+    },
     {
         dependencies = {"angelssmelting", "bobelectronics", "bobplates"},
         replacements = {

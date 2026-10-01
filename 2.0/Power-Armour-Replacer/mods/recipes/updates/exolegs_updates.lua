@@ -33,11 +33,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk1"], {
             {"kr-silicon", 100},
         }
     },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
-        }
-    },
 })
 PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
     {
@@ -49,18 +44,17 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
     {
         dependencies = {"bobplates"},
         replacements = {
-            ["iron-stick"] = {"bob-invar-alloy", 200},
-            ["steel-plate"] = {"bob-cobalt-steel-gear-wheel", 200},
+            ["iron-stick"] = {"bob-bronze-alloy", 200},
             ["iron-gear-wheel"] = {"bob-steel-bearing", 200},
             ["electronic-circuit"] = {"electronic-circuit", 200},
+            ["steel-plate"] = {"bob-cobalt-steel-gear-wheel", 200},
         }
     },
     -- Angels
     {
-        dependencies = {"angelssmelting"},
+        dependencies = {"angelssmelting", "bobplates"},
         replacements = {
-            ["bob-invar-alloy"] = {"bob-bronze-alloy", 200},
-            ["bob-cobalt-steel-bearing"] = {"bob-brass-gear-wheel", 200},
+            ["bob-cobalt-steel-gear-wheel"] = {"bob-brass-gear-wheel", 200},
         },
     },
     --SE
@@ -80,12 +74,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
             {"kr-automation-core", 200},
             {"kr-rare-metals", 200},
             {"kr-silicon", 200},
-        }
-    },
-    --K2SO
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })
