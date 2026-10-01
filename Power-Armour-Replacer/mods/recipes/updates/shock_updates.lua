@@ -63,11 +63,6 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk1"], {
             ["stone-brick"] = {"solder", 25},
         }
     },
-    {
-        dependencies = {"pyhightech",},
-        replacements = {
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -195,7 +190,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk4"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphorus", 100},
+            {"clowns-solid-white-phosphorus", 100},
         }
     },
     --SE
@@ -250,7 +245,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk5"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphorus", 125},
+            {"clowns-solid-white-phosphorus", 125},
         }
     },
     --K2
@@ -298,7 +293,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk6"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphorus", 150},
+            {"clowns-solid-white-phosphorus", 150},
         }
     },
     --K2
@@ -345,7 +340,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk7"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {type="fluid", name="liquid-dimethylmercury", amount=200},
+            {type="fluid", name="clowns-liquid-dimethylmercury", amount=200},
         }
     },
     --K2
@@ -393,7 +388,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk8"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {type="fluid", name="liquid-dimethylmercury", amount=300},
+            {type="fluid", name="clowns-liquid-dimethylmercury", amount=300},
         }
     },
     --K2
@@ -454,7 +449,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk9"], {
         replacements = {
             {"clowns-plate-osmium", 400},
             {"clowns-plate-depleted-uranium", 400},
-            {type="fluid", name="liquid-dimethylmercury", amount=400},
+            {type="fluid", name="clowns-liquid-dimethylmercury", amount=400},
         }
     },
     --K2
@@ -514,13 +509,13 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk10"], {
         replacements = {
             {"clowns-plate-osmium", 500},
             {"clowns-plate-depleted-uranium", 500},
-            {type="fluid", name="liquid-dimethylmercury", amount=500},
+            {type="fluid", name="clowns-liquid-dimethylmercury", amount=500},
         }
     },
     {
         dependencies = {"extendedangels"},
         replacements = {
-            {"titanium-concrete-brick", 500},
+            {"angels-titanium-concrete-brick", 500},
         }
     },
     --K2

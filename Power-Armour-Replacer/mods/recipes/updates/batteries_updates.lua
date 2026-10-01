@@ -161,7 +161,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk4"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphorus", 100},
+            {"clowns-solid-white-phosphorus", 100},
         }
     },
     --K2
@@ -200,7 +200,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk5"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphourus", 125},
+            {"clowns-solid-white-phosphorus", 125},
         }
     },
     --K2
@@ -236,7 +236,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk6"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphourus", 150},
+            {"clowns-solid-white-phosphorus", 150},
         }
     },
     --K2
@@ -285,7 +285,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk7"], {
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"solid-white-phosphourus", 200},
+            {"clowns-solid-white-phosphorus", 200},
         }
     },
     --K2
@@ -322,7 +322,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk8"], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-magnesium", 300},
-            {type="fluid", name="liquid-dimethylmercury", amount=300},
+            {type="fluid", name="clowns-liquid-dimethylmercury", amount=300},
         }
     },
     --K2
@@ -363,7 +363,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk9"], {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-osmium", 250},
-            {type="fluid", name="liquid-dimethylmercury", amount=400},
+            {type="fluid", name="clowns-liquid-dimethylmercury", amount=400},
         }
     },
     --K2
@@ -404,7 +404,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
     {
         dependencies = {"extendedangels"},
         replacements = {
-            {"titanium-concrete-brick", 500},
+            {"angels-titanium-concrete-brick", 500},
         }
     },
     {
@@ -412,7 +412,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
         replacements = {
             {"clowns-plate-osmium", 250},
             {"clowns-plate-magnesium", 200},
-            ["angels-gas-monochloramine"] = {type="fluid", name="liquid-dimethylmercury", amount=500}
+            ["angels-gas-monochloramine"] = {type="fluid", name="clowns-liquid-dimethylmercury", amount=500}
         }
     },
     --K2
@@ -424,11 +424,6 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
             {"kr-matter-cube", 500},
             {"kr-rare-metals", 500},
             {"kr-ai-core", 500},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })
