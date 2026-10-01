@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.15
+Date: 1.10.26
+  Bugfixes:
+    - Crash wiht Clowns
+    - Crash with Angels Extended
+  Changes:
+    - Invalid recipes combinations. Cobalt Gears & Bearings.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.14
 Date: 29.09.26
   Bugfixes:
