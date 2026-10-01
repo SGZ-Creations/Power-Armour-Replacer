@@ -54,7 +54,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
     {
         dependencies = {"angelssmelting"},
         replacements = {
-            ["bob-cobalt-gear-wheel"] = {"bob-brass-gear-wheel", 200},
+            ["bob-cobalt-steel-gear-wheel"] = {"bob-brass-gear-wheel", 200},
         },
     },
     --SE

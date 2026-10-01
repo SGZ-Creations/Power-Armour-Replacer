@@ -336,6 +336,13 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk7"], {
             ["copper-cable"] = {"bob-gilded-copper-cable", 200},
         }
     },
+    -- Angels
+    {
+        dependencies = {"angelssmelting"},
+        replacements = {
+            ["bob-cobalt-steel-gear-wheel"] = {"bob-brass-gear-wheel", 200},
+        },
+    },
     --Clowns
     {
         dependencies = {"Clowns-Processing"},
