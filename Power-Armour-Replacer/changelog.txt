@@ -6,6 +6,7 @@ Date: 1.10.26
     - Crash with Angels Extended
   Changes:
     - Invalid recipes combinations. Cobalt Gears & Bearings.
+    - Enabled manganese in Angels.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.9
 Date: 29.09.26
@@ -111,6 +112,7 @@ Date: 1.10.26
     - Crash with Angels Extended
   Changes:
     - Invalid recipes combinations. Cobalt Gears & Bearings.
+    - Enabled manganese in Angels 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.14
 Date: 29.09.26
