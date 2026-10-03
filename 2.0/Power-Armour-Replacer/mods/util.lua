@@ -17,9 +17,6 @@ end
 --Recipe Compatibility Generator
 PAR.update_ingredients = function(recipe, replacements)
     local ingredients = recipe.ingredients  --original list to be replaced
-    if ingredients == hidden then 
-        log("Par containes hidden content at ..")
-    end
     local remove = {} -- local table to trim ingredients after the replacements (to maintain order)
     local not_crafting = false -- trigger for crafting cat change
     for i, ingredient in pairs(ingredients) do -- for each line of ingredients list--[[{1,{ingredient.type,ingredient.name,ingredient.amount},}]]
@@ -78,7 +75,13 @@ PAR.ingredient_prereq = function(recipe, replacements, setting)
         ::next_replacement::
     end
 end
-
+--[[
+function Hidden_Disabled (HiddenRecipe, HiddenItem)
+    if (HiddenItem) == hidden then
+        log("Par containes hidden content at ..")
+    end
+end
+]]
 PAR.update_technology = function(name, replacements)
     local technology = data.raw.technology[name]
     if not technology then
