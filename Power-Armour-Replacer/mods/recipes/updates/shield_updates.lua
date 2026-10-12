@@ -448,7 +448,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
         replacements = {
             ["bob-gilder-copper-cable"] = {"angels-wire-platinum", 400},
             {"angels-wire-silver", 400},
-            {"angels-ingot-chrome", 400},
+            {"angels-plate-chrome", 400},
         }
     },
     {
@@ -526,7 +526,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
         replacements = {
             ["bob-gilded-copper-cable"] = {"angels-wire-silver", 500},
             ["bob-solder"] = {"angels-wire-platinum", 500},
-            {"angels-ingot-chrome", 500},
+            {"angels-plate-chrome", 500},
         }
     },
     {
