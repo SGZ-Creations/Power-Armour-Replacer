@@ -43,7 +43,7 @@
 
 --ContentEnabling
     require('mods.Misc.Data.AngelsEnabling')
-    require('mods.Misc.Updates.ClownsEnabling')
+    require('mods.Misc.Data.ClownsEnabling')
 
 --prototypes.TechRecipe
     require("prototypes.misc.CustomModAddons")

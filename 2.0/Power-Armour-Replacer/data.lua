@@ -43,6 +43,7 @@
 
 --AnglesEnabling
     require('mods.Misc.Data.AngelsEnabling')
+    require('mods.Misc.Data.ClownsEnabling')
 
 --prototypes.TechRecipe
     require("prototypes.misc.CustomModAddons")

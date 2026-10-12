@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.15
-Date: 1.10.26
+Date: 12.10.26
   Bugfixes:
     - Crash wiht Clowns
     - Crash with Angels Extended
