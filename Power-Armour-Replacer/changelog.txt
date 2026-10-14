@@ -1,13 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.10
-Date: 12.10.26
+Date: 15.10.26
   Bugfixes:
     - Crash wiht Clowns.
     - Crash with Angels Extended.
     - Missing ShockDefence recycling.
+    - Tripple & Quadd amount of fluid input types Angles, Clows, SpaceAge.
   Changes:
     - Invalid recipes combinations. Cobalt Gears & Bearings.
     - Enabled manganese in Angels.
+  Info:
+    - Wating on asnwer from clowns to enable Magnesium.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.9
 Date: 29.09.26
@@ -107,14 +110,17 @@ Date: 26.06.26
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.15
-Date: 1.10.26
+Date: 15.10.26
   Bugfixes:
     - Crash wiht Clowns.
     - Crash with Angels Extended.
     - Missing ShockDefence recycling.
+    - Tripple & Quadd amount of fluid input types Angles, Clows, SpaceAge.
   Changes:
     - Invalid recipes combinations. Cobalt Gears & Bearings.
     - Enabled manganese in Angels.
+  Info:
+    - Wating on asnwer from clowns to enable Magnesium.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.14
 Date: 29.09.26
