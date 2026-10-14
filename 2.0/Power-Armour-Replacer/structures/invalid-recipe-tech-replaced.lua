@@ -166,6 +166,10 @@ local function replace_ingredients(ingredients)
     end
 end
 
+
+
+-- More code about this is at "__Power-Armour-Replacer__\mods\util.lua" line 127-227
+-- Recyciling happnining at "__Power-Armour-Replacer__\structures\RecyclingFinalFix.lua"
 for _, recipe in pairs(data.raw.recipe) do
     if recipe and recipe.category=="recycling" then
         --skip
@@ -173,13 +177,3 @@ for _, recipe in pairs(data.raw.recipe) do
         replace_ingredients(recipe.ingredients)
     end
 end
-
--- Replaces Chest content
---[[
-entity = data.raw.item ..chest.. or ["steel-chest"] or ["wooden-chest"] or 
-if mods["boblogistics"] then ["brass-chest"] or ["titanium-chest"]
-
-function entity in pairs(data.raw.entity) do
-    if not data.raw.entity  then return end
-    for _, item in (chestitems) do 
-]]

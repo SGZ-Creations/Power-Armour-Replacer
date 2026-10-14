@@ -14,7 +14,6 @@
 	require("structures.RecyclingFinalFix")
 
 --compatible.tech load order dependant
-	
 	require("mods.technology.final-fixes.LabFixes_K2_SO")
 	require("mods.technology.final-fixes.K2")
 	require("mods.technology.final-fixes.TewaksFinalFixes")

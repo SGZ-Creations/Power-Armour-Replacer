@@ -123,6 +123,21 @@ if mods["recycler"] then
             "pamk3-hvest",
         })
     end
+    if mods["spidertron-extended"] then
+        PAR.update_rec_recipe_results({
+            "immolator",
+            "spidertronmk2",
+            "spidertronmk3",
+        })
+    end
+    if mods["Insectitron"] then
+        PAR.update_rec_recipe_results({
+            "dx3-fission-pentatron",
+            "dx3-fission-crabotron",
+            "dx3-fission-scoutron",
+            "dx3-fission-insectitron",
+        })
+    end
     if mods["RampantArsenalFork"] and mods["space-age"] then
         PAR.update_rec_recipe_results({
             "combat-mech-armor-rampant-arsenal",

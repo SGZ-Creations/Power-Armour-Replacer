@@ -168,12 +168,24 @@ PAR.ingredient_prereq(Recipe["bob-heavy-spidertron"],
 })
 
 --spidertron-extended
+PAR.ingredient_prereq(Recipe["immolator"],
+{
+    {
+        dependencies = {"spidertron-extended",},
+        replacements = {
+            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk5", 5},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk2", 5},
+        }
+    },
+})
+
 PAR.ingredient_prereq(Recipe["spidertronmk2"],
 {
     {
         dependencies = {"spidertron-extended",},
         replacements = {
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk7", 5},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk3", 5},
         }
     },
 })
@@ -183,20 +195,14 @@ PAR.ingredient_prereq(Recipe["spidertronmk3"],
     {
         dependencies = {"spidertron-extended",},
         replacements = {
+            ["fission-reactor-equipment"] = {"par-fission-reactor-mk9", 5},
+            ["exoskeleton-equipment"] = {"par-exoskeleton-mk4", 5},
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk9", 5},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk4", 5},
         }
     },
 })
 
-PAR.ingredient_prereq(Recipe["immolator"],
-{
-    {
-        dependencies = {"spidertron-extended",},
-        replacements = {
-            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk5", 5},
-        }
-    },
-})
 
 --SpaceModFeorasFork
 PAR.ingredient_prereq(Recipe["fusion-reactor"],

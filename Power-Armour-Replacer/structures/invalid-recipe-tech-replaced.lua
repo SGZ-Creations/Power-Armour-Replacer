@@ -1,6 +1,3 @@
---local replace = require("structures.invalid-recipe-tech-replaced")
---local item_replace = require("structures.invalid-recipe-tech-replaced")
-
 -- Technology Prerequisites Converter
 local replace = {
 
@@ -116,7 +113,7 @@ local item_replace = {
     ["personal-roboport-equipment"] = "par-roboport-mk1",
     ["personal-roboport-mk2-equipment"] = "par-roboport-mk2",
     ["fission-reactor-equipment"] = "par-fission-reactor-mk1",
-    ["fusion-reactor-equipment"] = "par-fission-reactor-mk1", --Fixes recipes that contains this item.
+    ["fusion-reactor-equipment"] = "par-fission-reactor-mk1", --Fixes recipes that contains this item. -- Note: fix this for PAR's SA Extension
 -- Mods
     ["bob-power-armor-mk3"] = "par-armour-mk3",
     ["bob-power-armor-mk4"] = "par-armour-mk4",
@@ -167,8 +164,10 @@ local function replace_ingredients(ingredients)
     end
 end
 
+-- More code about this is at "__Power-Armour-Replacer__\mods\util.lua" line 127-227
+-- Recyciling happnining at "__Power-Armour-Replacer__\structures\RecyclingFinalFix.lua"
 for _, recipe in pairs(data.raw.recipe) do
-    if recipe.categories and not recipe.categories["recycling"] then
+    if not recipe.categories or recipe.categories[1] == "recycling" then
         replace_ingredients(recipe.ingredients)
     end
 end
