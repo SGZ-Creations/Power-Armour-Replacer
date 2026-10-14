@@ -2,8 +2,9 @@
 Version: 0.6.10
 Date: 12.10.26
   Bugfixes:
-    - Crash wiht Clowns
-    - Crash with Angels Extended
+    - Crash wiht Clowns.
+    - Crash with Angels Extended.
+    - Missing ShockDefence recycling.
   Changes:
     - Invalid recipes combinations. Cobalt Gears & Bearings.
     - Enabled manganese in Angels.
@@ -108,11 +109,12 @@ Date: 26.06.26
 Version: 0.5.15
 Date: 1.10.26
   Bugfixes:
-    - Crash wiht Clowns
-    - Crash with Angels Extended
+    - Crash wiht Clowns.
+    - Crash with Angels Extended.
+    - Missing ShockDefence recycling.
   Changes:
     - Invalid recipes combinations. Cobalt Gears & Bearings.
-    - Enabled manganese in Angels 
+    - Enabled manganese in Angels.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.14
 Date: 29.09.26

@@ -74,6 +74,18 @@ if mods["quality"] then
         "par-shield-mk9",
         "par-shield-mk10",
 
+        --shock-defense
+        "par-shock-defense-mk1",
+        "par-shock-defense-mk2",
+        "par-shock-defense-mk3",
+        "par-shock-defense-mk4",
+        "par-shock-defense-mk5",
+        "par-shock-defense-mk6",
+        "par-shock-defense-mk7",
+        "par-shock-defense-mk8",
+        "par-shock-defense-mk9",
+        "par-shock-defense-mk10",
+
         --solar
         "par-solar-panel-mk1",
         "par-solar-panel-mk2",
