@@ -16,7 +16,6 @@ if Angels then
     angelsmods.trigger.ores["manganese"] = true
     angelsmods.trigger.smelting_products["manganese"].ingot = true
     angelsmods.trigger.smelting_products["manganese"].plate = true
-    angelsmods.trigger.smelting_products["manganese"].powder = true
 end
 
 if mods["bobenemies"] and mods["angelssmelting"] then
