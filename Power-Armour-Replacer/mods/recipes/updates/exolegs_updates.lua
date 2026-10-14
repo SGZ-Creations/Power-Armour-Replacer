@@ -109,14 +109,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk3"], {
             {"angels-plate-chrome", 300},
         }
     },
-    --SE
-    {
-        dependencies = {"space-exploration"},
-        replacements = {
-            ["advanced-circuit"] = {"motor", 300},
-            ["lubricant"] = {"zero"},
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -244,11 +236,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk5"], {
             {"kr-energy-control-unit", 500},
             {"kr-matter-cube", 500},
             {"kr-ai-core", 500},
-        }
-    },
-    {
-        dependencies = {"Krastorio2-spaced-out"},
-        replacements = {
         }
     },
 })
