@@ -82,6 +82,12 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
             {type="fluid", name="angels-liquid-polyethylene", amount=500},
         }
     },
+    {
+        dependencies = {"angelspetrochem", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
+        }
+    },
     --SE
     {
         dependencies = {"space-exploration"},

@@ -44,11 +44,6 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk1"], {
         }
     },
     {
-        dependencies = {"pypetroleumhandling",},
-        replacements = {
-        }
-    },
-    {
         dependencies = {"pyalternativeenergy",},
         replacements = {
             ["electronic-circuit"] = {"battery-mk00", 25},
@@ -491,6 +486,12 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk9"], {
             {type="fluid", name="clowns-liquid-dimethylmercury", amount=400},
         }
     },
+    {
+        dependencies = {"Clowns-Processing", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -561,6 +562,12 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk10"], {
             {"clowns-plate-osmium", 500},
             {"clowns-plate-depleted-uranium", 500},
             {type="fluid", name="clowns-liquid-dimethylmercury", amount=500},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
         }
     },
     {

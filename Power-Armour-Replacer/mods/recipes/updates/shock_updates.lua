@@ -459,6 +459,12 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk9"], {
             {type="fluid", name="clowns-liquid-dimethylmercury", amount=400},
         }
     },
+    {
+        dependencies = {"Clowns-Processing", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
+        }
+    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -517,6 +523,12 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk10"], {
             {"clowns-plate-osmium", 500},
             {"clowns-plate-depleted-uranium", 500},
             {type="fluid", name="clowns-liquid-dimethylmercury", amount=500},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
         }
     },
     {

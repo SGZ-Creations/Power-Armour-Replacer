@@ -458,6 +458,12 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
             {type="fluid", name="angels-gas-monochloramine", amount=400},
         }
     },
+    {
+        dependencies = {"angelspetrochem", "space-age"},
+        replacements = {
+            ["lubricant"] = {"zero"},
+        }
+    },
     --Clowns
     {
         dependencies = {"Clowns-Processing"},
@@ -534,6 +540,12 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
         replacements = {
             ["angels-liquid-sulfuric-acid"] = {"zero"},
             {type="fluid", name="angels-gas-monochloramine", amount=500},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem", "space-age"},
+        replacements = {
+            ["lubricant"] = {"zero"},
         }
     },
     --Clowns

@@ -63,11 +63,6 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk1"], {
             {"aluminium-plate", 25},
         }
     },
-    {
-        dependencies = {"pyhightech",},
-        replacements = {
-        }
-    },
     --K2
     {
         dependencies = {"Krastorio2"},
@@ -453,7 +448,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
         replacements = {
             ["bob-gilder-copper-cable"] = {"angels-wire-platinum", 400},
             {"angels-wire-silver", 400},
-            {"angels-ingot-chrome", 400},
+            {"angels-plate-chrome", 400},
         }
     },
     {
@@ -461,6 +456,12 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk9"], {
         replacements = {
             ["angels-gas-methane"] = {"zero"},
             {type="fluid", name="angels-gas-monochloramine", amount=400},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem", "space-age"},
+        replacements = {
+            ["lubricant"] = {"zero"},
         }
     },
     --Clowns
@@ -531,7 +532,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
         replacements = {
             ["bob-gilded-copper-cable"] = {"angels-wire-silver", 500},
             ["bob-solder"] = {"angels-wire-platinum", 500},
-            {"angels-ingot-chrome", 500},
+            {"angels-plate-chrome", 500},
         }
     },
     {
@@ -539,6 +540,12 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk10"], {
         replacements = {
             ["angels-liquid-sulfuric-acid"] = {"zero"},
             {type="fluid", name="angels-gas-monochloramine", amount=500},
+        }
+    },
+    {
+        dependencies = {"angelspetrochem", "space-age"},
+        replacements = {
+            ["lubricant"] = {"zero"},
         }
     },
     --Clowns

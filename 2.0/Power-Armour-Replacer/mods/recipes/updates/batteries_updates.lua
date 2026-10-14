@@ -318,11 +318,18 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk8"], {
             {"angels-wire-platinum", 300},
         }
     },
+    --Clowns
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-magnesium", 300},
             {type="fluid", name="clowns-liquid-dimethylmercury", amount=300},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
         }
     },
     --K2
@@ -359,11 +366,19 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk9"], {
             {type="fluid", name="angels-gas-monochloramine", amount=400},
         }
     },
+    --Clowns
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
             {"clowns-plate-osmium", 250},
             {type="fluid", name="clowns-liquid-dimethylmercury", amount=400},
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing", "space-age"},
+        replacements = {
+            ["clowns-liquid-dimethylmercury"] = {"zero"},
+            ["electrolyte"] = {"zero"},
         }
     },
     --K2
@@ -378,6 +393,11 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk9"], {
         }
     },
 })
+
+if mods["Clowns-Processing"] and mods["space-age"] then
+    Remove("par-battery-mk9", "clowns-liquid-dimethylmercury")
+end
+
 PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
     {
         dependencies = {"bobelectronics",},
@@ -407,12 +427,18 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
             {"angels-titanium-concrete-brick", 500},
         }
     },
+    --Clowns
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
-            {"clowns-plate-osmium", 250},
-            {"clowns-plate-magnesium", 200},
-            ["angels-gas-monochloramine"] = {type="fluid", name="clowns-liquid-dimethylmercury", amount=500}
+            {"clowns-plate-osmium", 500},
+            {type="fluid", name="clowns-liquid-dimethylmercury", amount=500}
+        }
+    },
+    {
+        dependencies = {"Clowns-Processing", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
         }
     },
     --K2
@@ -427,3 +453,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk10"], {
         }
     },
 })
+
+if mods["Clowns-Processing"] and mods["space-age"] then
+    Remove("par-battery-mk10", "clowns-liquid-dimethylmercury")
+end

@@ -445,6 +445,7 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
             {"bob-rtg", 400},
         }
     },
+    --Angels
     {
         dependencies = {"angelspetrochem"},
         replacements = {
@@ -453,6 +454,13 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk9"], {
             {type="fluid", name="angels-gas-monochloramine", amount=400},
         }
     },
+    {
+        dependencies = {"angelspetrochem", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
+        }
+    },
+    --Clowns
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
@@ -525,6 +533,13 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk10"], {
             {"angels-wire-platinum", 500},
         }
     },
+    {
+        dependencies = {"angelspetrochem", "space-age"},
+        replacements = {
+            ["electrolyte"] = {"zero"},
+        }
+    },
+    --Clowns
     {
         dependencies = {"Clowns-Processing"},
         replacements = {
