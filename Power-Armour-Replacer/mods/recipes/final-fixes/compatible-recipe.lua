@@ -105,7 +105,7 @@ PAR.ingredient_prereq(Recipe["spidertron"],
         dependencies = {},
         replacements = {
             ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk2", 2},
-            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk3", 4},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk2", 4},
         }
     },
     {
@@ -167,7 +167,7 @@ PAR.ingredient_prereq(Recipe["bob-heavy-spidertron"],
     },
 })
 
---spidertron-extended
+--Spidertron-Extended
 PAR.ingredient_prereq(Recipe["immolator"],
 {
     {

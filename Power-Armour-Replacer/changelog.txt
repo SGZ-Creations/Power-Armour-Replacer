@@ -1,16 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.11
+Date: 15.10.26
+  Changes:
+    - [PA&R] Changelog.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.10
 Date: 15.10.26
   Bugfixes:
-    - Crash wiht Clowns.
-    - Crash with Angels Extended.
-    - Missing ShockDefence recycling.
-    - Tripple & Quadd amount of fluid input types Angles, Clows, SpaceAge.
+    - [Clowns] Crash.
+    - [Angels-E] Crash.
+    - [PA&R] Missing ShockDefence recycling.
+    - [Angles][Clowns][SpaceAge] Triple & Quad amount of fluid input types.
   Changes:
-    - Invalid recipes combinations. Cobalt Gears & Bearings.
-    - Enabled manganese in Angels.
+    - [Angles] Invalid recipes combinations. Cobalt Gears & Bearings.
+    - [Angles] Enabled manganese in Angels.
   Info:
-    - Wating on asnwer from clowns to enable Magnesium.
+    - [Clowns] Wating on asnwer from clowns to enable Magnesium.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.9
 Date: 29.09.26
@@ -27,11 +32,11 @@ Date: 29.09.26
 Version: 0.6.8
 Date: 28.07.26
   Changes:
-    - [PAR] Increased armour-control-unit's tech cost to 200.
+    - [PA&R] Increased armour-control-unit's tech cost to 200.
   Scripting:
-    - [PAR] Tech Name armour-control-unit -> armour-control-unit-1.
+    - [PA&R] Tech Name armour-control-unit -> armour-control-unit-1.
   Info:
-    - [PAR] Name change should now make armour control unit show a 1 & 2 on the tier. (tier 2 space age only)
+    - [PA&R] Name change should now make armour control unit show a 1 & 2 on the tier. (tier 2 space age only)
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.6
 Date: 26.07.26
@@ -45,82 +50,88 @@ Date: 26.07.26
 Version: 0.6.5
 Date: 22.07.26
   Features:
-    - [PAR][PAR-E] Cleaning for Alpha testing PARs-SpaceAge-Extension.
+    - [PA&R][PAR-E] Cleaning for Alpha testing PARs-SpaceAge-Extension.
   Changes:
-    - [PAR] old code & @class removed.
-    - [PAR] Removed optional quality. Hope noting breaks.
-    - [PAR] Armour Control unit 2: Reverted processing unit change. Changed carbonfiber to carbon.
+    - [PA&R] old code & @class removed.
+    - [PA&R] Removed optional quality. Hope noting breaks.
+    - [PA&R] Armour Control unit 2: Reverted processing unit change. Changed carbonfiber to carbon.
   Bugfixes:
     - Crash with dependencies.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.4
 Date: 11.07.26
   Info:
-    - [PAR] Ported 0.5.9.
+    - [PA&R] Ported 0.5.9.
   Changes:
-    - [PAR] Porting difference is mod required recycler instead of quality.
+    - [PA&R] Porting difference is mod required recycler instead of quality.
   Bugfixes:
-    - [PAR][recycler] Too few output slots.
+    - [PA&R][recycler] Too few output slots.
   Credit:
     - @nickaman. For bug report.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.3
 Date: 10.07.26
   Info:
-    - [PAR] Ported 0.5.8
+    - [PA&R] Ported 0.5.8
   Scripting:
     - Added some @class data.ModBoolSettingPrototype.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.2
 Date: 09.07.26
   Info:
-    - [PAR] Ported 0.5.7
+    - [PA&R] Ported 0.5.7
   Bugfixes:
     - [Aircraft] Crash introduced in 0.5.5/0.6.1.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: 08.07.26
   Info:
-    - [PAR] Ported 0.5.6
-    - [PAR] Ported 0.5.5
-    - [PAR] Ported 0.5.4
-    - [PAR] Ported 0.5.3
-    - [PAR] Ported 0.5.2
-    - [PAR] Ported 0.5.1
+    - [PA&R] Ported 0.5.6
+    - [PA&R] Ported 0.5.5
+    - [PA&R] Ported 0.5.4
+    - [PA&R] Ported 0.5.3
+    - [PA&R] Ported 0.5.2
+    - [PA&R] Ported 0.5.1
   Bugfixes:
-    - [PAR] Potential crash with 2.1 new Categories (Category(Old)).
+    - [PA&R] Potential crash with 2.1 new Categories (Category(Old)).
   Changes:
     - LICENSE change. GNU GPL V3 ---> GNU LGPL V3.
     - [not-enough-parameters] Added to + dependencies.
     - [still-not-enough-parameters] Added to + dependencies.
   Scripting:
-    - [PAR] Re ordering code.
+    - [PA&R] Re ordering code.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 26.06.26
   Major Features:
-    - [PAR] Update 2.1
+    - [PA&R] Update 2.1
   Changes:
-    - [PAR] Re named category.
+    - [PA&R] Re named category.
   Bugfixes:
-    - [PAR] Category --> Categories
+    - [PA&R] Category --> Categories
   Features:
-    - [PAR] New crafting category.
+    - [PA&R] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.16
+Date: 15.10.26
+  Changes:
+    - [SpidertronExtended] missing recipes.
+    - [PA&R] Changelog.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.15
 Date: 15.10.26
   Bugfixes:
-    - Crash wiht Clowns.
-    - Crash with Angels Extended.
-    - Missing ShockDefence recycling.
-    - Tripple & Quadd amount of fluid input types Angles, Clows, SpaceAge.
+    - [Clowns] Crash.
+    - [Angels-E] Crash.
+    - [PA&R] Missing ShockDefence recycling.
+    - [Angles][Clowns][SpaceAge] Triple & Quad amount of fluid input types.
   Changes:
-    - Invalid recipes combinations. Cobalt Gears & Bearings.
-    - Enabled manganese in Angels.
+    - [Angles] Invalid recipes combinations. Cobalt Gears & Bearings.
+    - [Angles] Enabled manganese in Angels.
   Info:
-    - Wating on asnwer from clowns to enable Magnesium.
+    - [Clowns] Wating on asnwer from clowns to enable Magnesium.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.14
 Date: 29.09.26
@@ -139,21 +150,21 @@ Version: 0.5.13
 Date: 30.07.26
   Bugfixes:
     - [TIMSABA] Crash.
-    - [PAR] Duplicated par-par pre-fix broken in non space age mode (Armour & Battery equipment)
+    - [PA&R] Duplicated par-par pre-fix broken in non space age mode (Armour & Battery equipment)
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.12
 Date: 28.07.26
   Bugfixes:
-    - [PAR] Crash with missed backport input.
+    - [PA&R] Crash with missed backport input.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.11
 Date: 28.07.26
   Info:
-    - [PAR] Backporting New crafting category names.
+    - [PA&R] Backporting New crafting category names.
     - [PA&R-E] Added backport.
   Bugfixes:
-    - [PAR] Fixes issue with how bad crafting in 2.0 has been and any crafting past tier 5 by hands. regardless of the setting showing all recipes in UI.
-    - [PAR] Backported fixes from: 0.6.8
+    - [PA&R] Fixes issue with how bad crafting in 2.0 has been and any crafting past tier 5 by hands. regardless of the setting showing all recipes in UI.
+    - [PA&R] Backported fixes from: 0.6.8
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.10
 Date: 26.07.26
@@ -170,83 +181,83 @@ Date: 26.07.26
 Version: 0.5.9
 Date: 10.07.26
   Changes:
-    - [PAR] Possible fix for limited output size on recycler.
+    - [PA&R] Possible fix for limited output size on recycler.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.8
 Date: 10.07.26
   Changes:
-    - [PAR] Re enabled the radius setting as it was not causing the Mk1 equipment breaking.
-    - [PAR] Updated some Shock defence locales.
+    - [PA&R] Re enabled the radius setting as it was not causing the Mk1 equipment breaking.
+    - [PA&R] Updated some Shock defence locales.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.7
 Date: 09.07.26
   Bugfixes:
-    - [PAR] Crash with Aircraft mod.
+    - [PA&R] Crash with Aircraft mod.
   Info:
     - Sorry to everyone crashing.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.6
 Date: 08.07.26
   Bugfixes:
-    - [PAR] Shockdefense MK1 is now working.
-    - [PAR] Shockedefense Remote is now working.
+    - [PA&R] Shockdefense MK1 is now working.
+    - [PA&R] Shockedefense Remote is now working.
   Changes:
-    - [Par] Passive or Active settings removed due to limitation to how many equipment(s) "["capsule"]["discharge-defense-remote"].capsule_action.equipment" can handle at once.
-    - [PAR] Shockdefense trigger_tech MK1 requires 5 fission again to be unlocked.
-    - [PAR] Shockdefense MK1 requires remote.
-    - [PAR] Shockdefense MK2-10 are passive.
-    - [PAR] default Shockdefense power consumption reduced.
-    - [PAR] Liquids required for armour recipes increased & reduced from mk7 - 10.
+    - [PA&R] Passive or Active settings removed due to limitation to how many equipment(s) "["capsule"]["discharge-defense-remote"].capsule_action.equipment" can handle at once.
+    - [PA&R] Shockdefense trigger_tech MK1 requires 5 fission again to be unlocked.
+    - [PA&R] Shockdefense MK1 requires remote.
+    - [PA&R] Shockdefense MK2-10 are passive.
+    - [PA&R] default Shockdefense power consumption reduced.
+    - [PA&R] Liquids required for armour recipes increased & reduced from mk7 - 10.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.5
 Date: 08.07.26
   Changes:
-    - [PAR][Linox] Hidden & Disabled Item & Tech.
-    - [PAR][Aircraft] Hidden & Disabled Item & Tech.
-    - [PAR] Changed required dependencies to: "not-enough-parameters", "still-not-enough-parameters", from "more-parameters >= 1.0.1",
+    - [PA&R][Linox] Hidden & Disabled Item & Tech.
+    - [PA&R][Aircraft] Hidden & Disabled Item & Tech.
+    - [PA&R] Changed required dependencies to: "not-enough-parameters", "still-not-enough-parameters", from "more-parameters >= 1.0.1",
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.4
 Date: 03.07.26
   Changes:
-    - [PAR][Fusion-bots] Recipe fix for the bots to use higher tier fission reactor.
+    - [PA&R][Fusion-bots] Recipe fix for the bots to use higher tier fission reactor.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.3
 Date: 01.07.26
   Changes:
-    - [PAR][PY][TeleportationEquipment] Compatibility fix.
+    - [PA&R][PY][TeleportationEquipment] Compatibility fix.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.2
 Date: 01.07.26
   Changes:
-    - [PAR] Nerfed & Buffed Laser default range. Nerfed Shock Defence default range.
-    - [PAR] New Default Laser & Shock Defence settings.
+    - [PA&R] Nerfed & Buffed Laser default range. Nerfed Shock Defence default range.
+    - [PA&R] New Default Laser & Shock Defence settings.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.1
 Date: 29.06.26
   Bugfixes:
-    - [PAR] Fixed Progression lock with bobs mods.
+    - [PA&R] Fixed Progression lock with bobs mods.
   Scripting:
-    - [PAR] Removed unusable @class.
+    - [PA&R] Removed unusable @class.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 26.06.26
   Major Features:
-    - [PAR] 10x9 = 90 New Setting for Shock Defence.
-    - [PAR] 10 New Shock Defence Equipment.
+    - [PA&R] 10x9 = 90 New Setting for Shock Defence.
+    - [PA&R] 10 New Shock Defence Equipment.
   Features:
-    - [K2SO][PAR] Recipes Completed (Not in Test version)
-    - [K2SO][PAR] Tech Overhaul Completed. 
-    - [PAR] Added light armour Tech to progression on PAR.
-    - [PAR] ACU(Armour Control Unit) Tech & Recipe change.
-    - [PAR][space-age] Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system.
+    - [K2SO][PA&R] Recipes Completed (Not in Test version)
+    - [K2SO][PA&R] Tech Overhaul Completed. 
+    - [PA&R] Added light armour Tech to progression on PAR.
+    - [PA&R] ACU(Armour Control Unit) Tech & Recipe change.
+    - [PA&R][space-age] Setting to move the MechArmour to require Mk10 armour. (will not show if you use mod "RampantArsenalFork" since that would add my other tiered armour system.
     - [incendiary-arsenal] Added FireProof Tech & Recipe progression to PAR.
-    - [PAR] New Setting: "EquipmentMulti" Allows to set the Equipment amount that is used in recipes for next tiers. Applies to all Equipment of my mod.
+    - [PA&R] New Setting: "EquipmentMulti" Allows to set the Equipment amount that is used in recipes for next tiers. Applies to all Equipment of my mod.
   Modding:
     - [Foliax] Filters.
     - [Foliax] Crash with Foliax version 2.0.5.
     - [Foliax] items added to hidden & disabled.
-    - [PAR] Tips & Tricks Description for Foliax.
-    - [PAR][PY] Recipe changes for mk1 has been added.
+    - [PA&R] Tips & Tricks Description for Foliax.
+    - [PA&R][PY] Recipe changes for mk1 has been added.
     - [TeleportationEquipment] Made equipment crafting allowed in EM Plant.
     - [Rampant Arsenal Fork] Made equipment crafting allowed in the EM Plant.
     - [Spidertron Tiers Community] Added Tips & Tricks as it was Confirmed Working.
@@ -259,17 +270,17 @@ Date: 26.06.26
   Changes:
     - [Spider Extended] Removed recipe update for Spider Builder (GhostWaver).
     - [Spider Extended] Changed fission reactor tier from 10 to use 5, 7, 9 in the different tiers.
-    - [PAR] General "armour-control-unit" pre-requisites added to all tech that do not get it by example having armour 5 as pre-requisites.
-    - [PAR] Moved Fission, Solar & Battery Equipment to unlock after light armour.
-    - [PAR] Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
-    - [PAR] Tips & Tricks Volunteer Graphics request.
-    - [PAR] Tips & ticks PA&R Base Info.
-    - [PAR] Lasers & Beta Shock Defence default damage values changed.
-    - [PAR] Reduced the fission reactor needed to unlock tech from 5 --> 2.
-    - [PAR] Made New Subgroup for Light & Heavy armours instead of leaving them in the compatibility Subgroup.
-    - [PAR] Default roboport recharge speed changed. Now tier 1 starts at 500MW tier 10 = 5GW if setting are put to default.
-    - [PAR] Default roboport buffer changed. Tier 1 starts at 8MJ. Tier 10 is now at 4096MJ if setting are put to default.
-    - [Base][PAR] Recipe changes for non space age players. Please check your assemblers of Armours & Equipment.
+    - [PA&R] General "armour-control-unit" pre-requisites added to all tech that do not get it by example having armour 5 as pre-requisites.
+    - [PA&R] Moved Fission, Solar & Battery Equipment to unlock after light armour.
+    - [PA&R] Tips & Tricks for the 2 different Mod Conditions with Metal & stars.
+    - [PA&R] Tips & Tricks Volunteer Graphics request.
+    - [PA&R] Tips & ticks PA&R Base Info.
+    - [PA&R] Lasers & Beta Shock Defence default damage values changed.
+    - [PA&R] Reduced the fission reactor needed to unlock tech from 5 --> 2.
+    - [PA&R] Made New Subgroup for Light & Heavy armours instead of leaving them in the compatibility Subgroup.
+    - [PA&R] Default roboport recharge speed changed. Now tier 1 starts at 500MW tier 10 = 5GW if setting are put to default.
+    - [PA&R] Default roboport buffer changed. Tier 1 starts at 8MJ. Tier 10 is now at 4096MJ if setting are put to default.
+    - [Base][PA&R] Recipe changes for non space age players. Please check your assemblers of Armours & Equipment.
     - [space-age] Tweaked recipes using lithium in Roboport Mk6, Solar Mk7-8.
     - [space-age] Some Recipes changes where made please check your assemblers of Armours & Equipment.
     - [248K] support deleted (deprecated/not updated). 
@@ -277,21 +288,21 @@ Date: 26.06.26
     - [K2SO, K2] Advanced tech card from MK5 to MK10 tech.
     - [K2SO, K2] Matter tech card & Singularity tech card From MK7 to MK10.
     - [Bobs] Equipment mod, Filters are Re hidden & disabled for armours. And added the Modular items to this list. Sorry if you liked it, but due to settings feature in 0.4 i don't se why keeping it is necessary.
-    - [PAR][Changelog] Renamed categories to use more accurate name from: https://lua-api.factorio.com/2.0.77/auxiliary/changelog-format.html#category
+    - [PA&R][Changelog] Renamed categories to use more accurate name from: https://lua-api.factorio.com/2.0.77/auxiliary/changelog-format.html#category
   Bugfixes:
     - [Bobs] Equipment tier 3 filter crash was solved #5.
     - [Bobs] Equipment tier 6 was removed in corresponding to the 2.1 update on bobs.
     - [Bobs] Removed items in recipe deleted by bobs 2.1 patch.
     - [Bobs] fix prefix naming for items in recipes being renamed in patch 2.1.
     - [Bobs] Quick fix for PY Crashes. bob prefix had been added when updating to 2.0 for Bobs.
-    - [PAR] Fixed Shortcut Not unlocking. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
-    - [PAR][PY][PAmk3] Fixes orders of recipes that wasn't done before. light & heavy + utility variant armour from.
+    - [PA&R] Fixed Shortcut Not unlocking. Made this settings based. Should you want to use them as if you used (unlock-shortcut-bar) you can toggle that in PA&R Settings.
+    - [PA&R][PY][PAmk3] Fixes orders of recipes that wasn't done before. light & heavy + utility variant armour from.
     - [K2SO] Tips & tricks should now trigger.
     - [K2SO, K2] Spidertron Not unlocking.
     - [K2SO, K2] Crafting category fix in advanced assembler.
     - [TIMSABA] Solved crashes that was making it unable to load.
   Info:
-    - [PAR] Fission/Fusion graphics will eventually be flipped. Tho not until i have more than placeholders. Thanks for understanding.
+    - [PA&R] Fission/Fusion graphics will eventually be flipped. Tho not until i have more than placeholders. Thanks for understanding.
     - [K2SO] Was Marked to use only 1.6.20 due to the decision of making K2SO Depend on K2 I will see what My plans are later I'm not deleting any of the code. Since me trying to this fox this at 0.5 would push the Beta 0.6 even later than i want it to be. I would want to go for 2.1 before fixing this patch at this stage.
     - [K2SO] Also this makes me delay fully finishing the recipe portion for the mod until i find the motivation to look back & rework it again. Sort of half cancelling the compatibility.
   Known:
