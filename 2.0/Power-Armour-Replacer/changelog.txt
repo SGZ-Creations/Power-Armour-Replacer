@@ -1,11 +1,15 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.16
 Date: 15.10.26
+  Features:
+    - [K2SO] Misisng functonality.
   Changes:
     - [SpidertronExtended] missing recipes.
     - [PA&R] Changelog.
   Bugfixes:
     - [PA&R] Missing localization for all languages, that is addedd to this mod (3)
+  Info:
+    - [PA&R] Exclusive changes in this version.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.15
 Date: 15.10.26

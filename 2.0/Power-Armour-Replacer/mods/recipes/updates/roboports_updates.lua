@@ -6,7 +6,7 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk1"], {
         dependencies = {"bobelectronics"},
         replacements = {
             ["wood"] = {"bob-resin", 25},
-            ["small-lamp"] = {"bob-rubber", 25},
+            {"bob-rubber", 25},
             ["copper-cable"] = {"bob-insulated-cable", 25},
             ["electronic-circuit"] = {"bob-basic-circuit-board", 25},
         }
@@ -79,6 +79,15 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk1"], {
             {"kr-automation-core", 25},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["steel-plate"] = {"kr-steel-beam", 25},
+            ["iron-stick"] = {"kr-iron-beam", 25},
+            ["stone-brick"] = {"kr-sand", 25},
+            {"kr-automation-core", 25},
+        }
+    },
 })
 PAR.ingredient_prereq(RECIPES["par-roboport-mk2"], {
     {
@@ -119,6 +128,16 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk2"], {
             {"electronic-circuit", 50},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["kr-automation-core"] = {"kr-automation-core", 50},
+            ["steel-plate"] = {"kr-steel-beam", 50},
+            ["iron-stick"] = {"kr-iron-beam", 50},
+            ["stone-brick"] = {"kr-sand", 50},
+            {"electronic-circuit", 50},
+        }
+    },
 })
 PAR.ingredient_prereq(RECIPES["par-roboport-mk3"], {
     {
@@ -147,6 +166,17 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk3"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            ["copper-plate"] = {"kr-rare-metals", 75},
+            ["steel-plate"] = {"kr-steel-beam", 75},
+            ["iron-stick"] = {"kr-iron-beam", 75},
+            ["stone-brick"] = {"kr-sand", 75},
+            {"kr-electronic-components", 75},
+            {"kr-automation-core", 75},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["copper-plate"] = {"kr-rare-metals", 75},
             ["steel-plate"] = {"kr-steel-beam", 75},
@@ -194,6 +224,17 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk4"], {
             {"kr-silicon", 100},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["copper-plate"] = {"kr-rare-metals", 100},
+            ["steel-plate"] = {"kr-steel-beam", 100},
+            {"kr-electronic-components", 100},
+            {"kr-automation-core", 100},
+            {"kr-iron-beam", 100},
+            {"kr-silicon", 100},
+        }
+    },
 })
 PAR.ingredient_prereq(RECIPES["par-roboport-mk5"], {
     {
@@ -220,6 +261,16 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk5"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            ["steel-plate"] = {"kr-imersium-beam", 125},
+            {"kr-lithium-sulfur-battery", 125},
+            {"kr-rare-metals", 125},
+            {"kr-silicon", 125},
+            {"kr-ai-core", 125},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["steel-plate"] = {"kr-imersium-beam", 125},
             {"kr-lithium-sulfur-battery", 125},
@@ -256,6 +307,17 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk6"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 150},
+            {"kr-imersium-beam", 150},
+            {"kr-rare-metals", 150},
+            {"kr-matter-cube", 150},
+            {"kr-silicon", 150},
+            {"kr-ai-core", 150},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["battery"] = {"kr-lithium-sulfur-battery", 150},
             {"kr-imersium-beam", 150},
@@ -310,6 +372,17 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk7"], {
             {"kr-ai-core", 200},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-lithium-sulfur-battery", 200},
+            {"kr-energy-control-unit", 200},
+            {"kr-imersium-beam", 200},
+            {"kr-rare-metals", 200},
+            {"kr-silicon", 200},
+            {"kr-ai-core", 200},
+        }
+    },
 })
 PAR.ingredient_prereq(RECIPES["par-roboport-mk8"], {
     {
@@ -343,6 +416,17 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk8"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-lithium-sulfur-battery", 300},
+            {"kr-energy-control-unit", 300},
+            {"kr-imersium-beam", 300},
+            {"kr-rare-metals", 300},
+            {"kr-silicon", 300},
+            {"kr-ai-core", 300},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {"kr-lithium-sulfur-battery", 300},
             {"kr-energy-control-unit", 300},
@@ -395,6 +479,17 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk9"], {
             {"kr-ai-core", 400},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-lithium-sulfur-battery", 400},
+            {"kr-energy-control-unit", 400},
+            {"kr-imersium-beam", 400},
+            {"kr-rare-metals", 400},
+            {"kr-silicon", 400},
+            {"kr-ai-core", 400},
+        }
+    },
 })
 PAR.ingredient_prereq(RECIPES["par-roboport-mk10"], {
     {
@@ -422,6 +517,17 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk10"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-lithium-sulfur-battery", 500},
+            {"kr-energy-control-unit", 500},
+            {"kr-imersium-beam", 500},
+            {"kr-rare-metals", 500},
+            {"kr-silicon", 500},
+            {"kr-ai-core", 500},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {"kr-lithium-sulfur-battery", 500},
             {"kr-energy-control-unit", 500},

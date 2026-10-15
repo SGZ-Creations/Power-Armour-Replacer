@@ -22,9 +22,19 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk1"], {
             {"bob-tinned-copper-cable", 100},
         }
     },
-    --SE-K2
+    --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            {type="fluid", name="kr-mineral-water", amount=100},
+            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 100},
+            ["iron-stick"] = {"kr-steel-beam", 100},
+            {"kr-automation-core", 100},
+            {"kr-silicon", 100},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {type="fluid", name="kr-mineral-water", amount=100},
             ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 100},
@@ -76,6 +86,17 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
             {"kr-silicon", 200},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {type="fluid", name="kr-mineral-water", amount=200},
+            ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 200},
+            ["iron-stick"] = {"kr-steel-beam", 200},
+            {"kr-automation-core", 200},
+            {"kr-rare-metals", 200},
+            {"kr-silicon", 200},
+        }
+    },
 })
 PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk3"], {
     {
@@ -112,6 +133,16 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk3"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            ["battery"] = {"kr-lithium-sulfur-battery", 300},
+            ["steel-plate"] = {"kr-imersium-beam", 300},
+            {"kr-automation-core", 300},
+            {"kr-rare-metals", 300},
+            {"kr-silicon", 300},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["battery"] = {"kr-lithium-sulfur-battery", 300},
             ["steel-plate"] = {"kr-imersium-beam", 300},
@@ -178,6 +209,16 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
             {"kr-ai-core", 400},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+			["battery"] = {"kr-energy-control-unit", 400},
+            ["steel-plate"] = {"kr-imersium-beam", 400},
+            {"kr-lithium-sulfur-battery", 400},
+            {"kr-matter-cube", 400},
+            {"kr-ai-core", 400},
+        }
+    },
 })
 PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk5"], {
     {
@@ -230,6 +271,16 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk5"], {
     --K2
 	{
         dependencies = {"Krastorio2", },
+        replacements = {
+			["steel-plate"] = {"kr-imersium-beam", 500},
+            {"kr-lithium-sulfur-battery", 500},
+            {"kr-energy-control-unit", 500},
+            {"kr-matter-cube", 500},
+            {"kr-ai-core", 500},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
 			["steel-plate"] = {"kr-imersium-beam", 500},
             {"kr-lithium-sulfur-battery", 500},

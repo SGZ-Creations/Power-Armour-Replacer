@@ -95,6 +95,16 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk1"], {
             {"kr-iron-beam", 25},
         }
     },
+    --K2SO
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["steel-plate"] = {"kr-steel-beam", 25},
+            ["stone-brick"] = {"kr-glass", 25},
+            {"kr-automation-core", 25},
+            {"kr-iron-beam", 25},
+        }
+    },
 })
 
 if mods["bobenemies"] then
@@ -172,6 +182,11 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk2"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
+            ["kr-automation-core"] = {"kr-automation-core", 50},
+            ["copper-plate"] = {"electronic-circuit", 50},
+            ["steel-plate"] = {"kr-steel-beam", 50},
+            ["iron-plate"] = {"kr-iron-beam", 50},
+            {"kr-glass", 50},
         }
     },
 })
@@ -262,6 +277,11 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
+            ["steel-plate"] = {"kr-steel-beam", 75},
+            {"kr-automation-core", 75},
+            {"kr-rare-metals", 75},
+            {"kr-silicon", 75},
+            {"kr-glass", 75},
         }
     },
 })
@@ -340,6 +360,17 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
             {"kr-glass", 100},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            ["advanced-circuit"] = {"kr-electronic-components", 100},
+            ["steel-plate"] = {"kr-steel-beam", 100},
+            {"kr-automation-core", 100},
+            {"kr-rare-metals", 100},
+            {"kr-silicon", 100},
+            {"kr-glass", 100},
+        }
+    },
 })
 
 if mods["bobenemies"] and not mods["angelssmelting"]then
@@ -395,6 +426,18 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            ["steel-plate"] = {"kr-rare-metals", 150},
+            {"kr-energy-control-unit", 150},
+			{"kr-imersium-beam", 150},
+            {"kr-ai-core", 150},
+            {"kr-silicon", 150},
+            {"kr-glass", 150},
+        }
+    },
+    --K2
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["steel-plate"] = {"kr-rare-metals", 150},
             {"kr-energy-control-unit", 150},
@@ -463,6 +506,18 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk6"], {
     --K2
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 200},
+			{"kr-imersium-beam", 200},
+            {"kr-matter-cube", 200},
+            {"kr-rare-metals", 200},
+            {"kr-ai-core", 200},
+            {"kr-silicon", 200},
+            {"kr-glass", 200},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {"kr-energy-control-unit", 200},
 			{"kr-imersium-beam", 200},
@@ -543,6 +598,13 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk7"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
+            {"kr-energy-control-unit", 400},
+			{"kr-imersium-beam", 400},
+            {"kr-matter-cube", 400},
+            {"kr-rare-metals", 400},
+            {"kr-ai-core", 400},
+            {"kr-silicon", 400},
+            {"kr-glass", 400},
         }
     },
 })
@@ -595,6 +657,18 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk8"], {
     --K2SO
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            {"kr-energy-control-unit", 600},
+			{"kr-imersium-beam", 600},
+            {"kr-matter-cube", 600},
+            {"kr-rare-metals", 600},
+            {"kr-ai-core", 600},
+            {"kr-silicon", 600},
+            {"kr-glass", 600},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             {"kr-energy-control-unit", 600},
 			{"kr-imersium-beam", 600},
@@ -674,6 +748,18 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk9"], {
             {"kr-glass", 800},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 800},
+			{"kr-imersium-beam", 800},
+            {"kr-rare-metals", 800},
+            {"kr-matter-cube", 800},
+            {"kr-ai-core", 800},
+            {"kr-silicon", 800},
+            {"kr-glass", 800},
+        }
+    },
 })
 
 PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
@@ -738,6 +824,20 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk10"], {
     },
     {
         dependencies = {"Krastorio2"},
+        replacements = {
+            ["processing-unit"] = {"zero"},
+            ["advanced-circuit"] = {"zero"},
+            ["low-density-structure"] = {"zero"},
+			{"kr-lithium-sulfur-battery", 1000},
+            {"kr-energy-control-unit", 1000},
+			{"kr-imersium-beam", 1000},
+            {"kr-rare-metals", 1000},
+            {"kr-matter-cube", 1000},
+            {"kr-ai-core", 1000},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["processing-unit"] = {"zero"},
             ["advanced-circuit"] = {"zero"},

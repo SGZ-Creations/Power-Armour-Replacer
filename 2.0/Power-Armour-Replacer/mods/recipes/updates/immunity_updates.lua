@@ -43,6 +43,17 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk1"], {
             {"kr-glass", 250},
         }
     },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
+            {"kr-energy-control-unit", 250},
+            {"kr-automation-core", 250},
+			{"kr-imersium-beam", 250},
+            {"kr-ai-core", 250},
+            {"kr-silicon", 250},
+            {"kr-glass", 250},
+        }
+    },
 })
 
 PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
@@ -109,6 +120,11 @@ PAR.ingredient_prereq(RECIPES["par-belt-immunity-mk2"], {
             {"kr-ai-core", 500},
             {"kr-silicon", 500},
             {"kr-glass", 500},
+        }
+    },
+    {
+        dependencies = {"Krastorio2-spaced-out"},
+        replacements = {
         }
     },
 })
