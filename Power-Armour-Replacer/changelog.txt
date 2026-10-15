@@ -3,6 +3,8 @@ Version: 0.6.11
 Date: 15.10.26
   Changes:
     - [PA&R] Changelog.
+  Bugfixes:
+    - [PA&R] Missing localization for all languages, that is addedd to this mod (3)
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.10
 Date: 15.10.26
@@ -119,6 +121,8 @@ Date: 15.10.26
   Changes:
     - [SpidertronExtended] missing recipes.
     - [PA&R] Changelog.
+  Bugfixes:
+    - [PA&R] Missing localization for all languages, that is addedd to this mod (3)
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.15
 Date: 15.10.26
