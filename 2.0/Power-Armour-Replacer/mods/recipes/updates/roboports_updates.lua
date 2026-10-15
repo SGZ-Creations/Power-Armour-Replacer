@@ -132,10 +132,10 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk2"], {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["kr-automation-core"] = {"kr-automation-core", 50},
+            ["electronic-circuit"] = {"electronic-circuit", 50},
             ["steel-plate"] = {"kr-steel-beam", 50},
             ["iron-stick"] = {"kr-iron-beam", 50},
             ["stone-brick"] = {"kr-sand", 50},
-            {"electronic-circuit", 50},
         }
     },
 })

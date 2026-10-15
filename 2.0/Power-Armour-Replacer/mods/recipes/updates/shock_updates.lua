@@ -134,7 +134,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk2"], {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["kr-automation-core"] = {"kr-automation-core", 50},
-            ["copper-plate"] = {"electronic-circuit", 50},
+            ["electronic-circuit"] = {"electronic-circuit", 50},
             ["steel-plate"] = {"kr-steel-beam", 50},
             ["stone-brick"] = {"kr-glass", 50},
             {"kr-iron-beam", 50},
@@ -556,7 +556,6 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk9"], {
             {"kr-matter-cube", 400},
             {"kr-rare-metals", 400},
             {"kr-ai-core", 400},
-        }
         }
     },
 })

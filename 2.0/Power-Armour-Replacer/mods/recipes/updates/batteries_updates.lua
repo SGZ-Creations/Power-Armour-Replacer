@@ -111,7 +111,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk2"], {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["kr-automation-core"] = {"kr-automation-core", 50},
-            ["copper-cable"] = {"electronic-circuit", 50},
+            ["electronic-circuit"] = {"electronic-circuit", 50},
 			["steel-plate"] = {"kr-steel-beam", 50},
             {"kr-iron-beam", 50},
             {"kr-glass", 50},

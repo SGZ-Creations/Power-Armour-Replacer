@@ -133,9 +133,9 @@ PAR.ingredient_prereq(RECIPES["par-laser-mk2"], {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
             ["kr-automation-core"] = {"kr-automation-core", 50},
+            ["electronic-circuit"] = {"electronic-circuit", 50},
             ["engine-unit"] = {"kr-steel-beam", 50},
             ["copper-plate"] = {"kr-glass", 50},
-            {"electronic-circuit", 50},
             {"kr-iron-beam", 50},
         }
     },
