@@ -13,14 +13,19 @@
 	require("__Power-Armour-Replacer__.mods.recipes.updates.solar_updates")
 	require("__Power-Armour-Replacer__.mods.recipes.updates.compatible_updates")
 
---compatible.tech
-	require("__Power-Armour-Replacer__.mods.technology.updates.Misc.AAI-Updates")
+--SciencePack.Tech
+	require("__Power-Armour-Replacer__.mods.technology.updates.SciencePack.spaceage-science-updates")
+
+--Misc.Tech
 	require("__Power-Armour-Replacer__.mods.technology.updates.Misc.TechRecipeTweaks")
-	require("__Power-Armour-Replacer__.mods.technology.updates.PreRequsites.SeablockUpdates.lua")
+
+---PreRequsites.Tech
+	require("__Power-Armour-Replacer__.mods.technology.updates.PreRequsites.AAI-Updates")
+	require("__Power-Armour-Replacer__.mods.technology.updates.PreRequsites.SeablockUpdates")
 	require("__Power-Armour-Replacer__.mods.technology.updates.PreRequsites.PARDepedencyUpdates")
 	require("__Power-Armour-Replacer__.mods.technology.updates.PreRequsites.SpaceAgeUpdates")
 	require("__Power-Armour-Replacer__.mods.technology.updates.PreRequsites.K2SOUpdates")
-	require("__Power-Armour-Replacer__.mods.technology.updates.science-pack.spaceage-science-updates")
+
 --structures
 	require("__Power-Armour-Replacer__.structures.science-setting")
 	require("__Power-Armour-Replacer__.mods.Misc.Updates.Resistances")
