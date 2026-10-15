@@ -1,8 +1,4 @@
----@class RecipePrototype
-local Recipe = data.raw.recipe
----@class data.TechnologyPrototype
 local Tech = data.raw["technology"]
-
 
 if mods["SeaBlock"]then
 	Tech["military"].research_trigger = {type ="craft-item", item ="angels-slag", count = 200}
@@ -24,8 +20,6 @@ if mods["SeaBlock"]then
 
 	Tech["angels-slag-processing-1"].research_trigger = {type ="craft-item", item ="angels-washing-plant", count = 5}
 	Tech["angels-slag-processing-1"].unit = nil
-
-	--Expensive in angels ~Free in SeaBlock
 
 	Tech["angels-ore-crushing"].research_trigger = {type ="craft-item", item ="angels-electrolyser", count = 5}
 	Tech["angels-basic-chemistry"].research_trigger = {type ="craft-item", item ="assembling-machine-1", count = 4}

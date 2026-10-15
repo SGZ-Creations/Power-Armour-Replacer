@@ -1,24 +1,26 @@
 --structures
-	require("structures.invalid-recipe-tech-replaced")
-	require("structures.filters")
+	require("__Power-Armour-Replacer__.structures.invalid-recipe-tech-replaced")
+	require("__Power-Armour-Replacer__.structures.filters")
 
 --compatible.misc load order dependant
-	require("mods.Misc.FinalFixes.subgroup")
+	require("__Power-Armour-Replacer__.mods.Misc.FinalFixes.subgroup")
 
 --recipes load order dependant
-	require("mods.recipes.final-fixes.compatible-recipe")
-	require("mods.recipes.final-fixes.pY-recipe-final-fix")
+	require("__Power-Armour-Replacer__.mods.recipes.final-fixes.compatible-recipe")
+	require("__Power-Armour-Replacer__.mods.recipes.final-fixes.pY-recipe-final-fix")
 
 --Recycling load order dependant
-	require("structures.RecyclingFinalFix")
+	require("__Power-Armour-Replacer__.structures.RecyclingFinalFix")
 
 --compatible.tech load order dependant
-	require("mods.technology.final-fixes.LabFixes_K2_SO")
-	require("mods.technology.final-fixes.K2")
-	require("mods.technology.final-fixes.TewaksFinalFixes")
-	require("mods.technology.final-fixes.BobsScienceFinalFix")
-	require("mods.technology.final-fixes.AngelsScienceFinalFix")
-	require("mods.technology.final-fixes.pY-tech-final-fix")
-	require("mods.technology.final-fixes.TIMSABAFinialFixes")
-	require("mods.technology.final-fixes.par-depedency-fixes")
-    require("mods.technology.final-fixes.par-tech-final-fixes")
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.Misc.LabFixes_K2_SO")
+
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.science-pack.K2SO")
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.science-pack.K2")
+
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.PreRequsites.TewaksFinalFixes")
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.PreRequsites.BobsScienceFinalFix")
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.PreRequsites.AngelsScienceFinalFix")
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.PreRequsites.pY-tech-final-fix")
+	require("__Power-Armour-Replacer__.mods.technology.final-fixes.PreRequsites.par-depedency-fixes")
+    require("__Power-Armour-Replacer__.mods.technology.final-fixes.PreRequsites.par-tech-final-fixes")

@@ -1,10 +1,5 @@
----@class data.TechnologyPrototype.type
 local Tech = data.raw["technology"]
----@class data.RecipePrototype.type
 local Recipe = data.raw["recipe"]
-
----@class data.TechnologyPrototype.type
-local Tech = data.raw["technology"]
 
 Tech["heavy-armor"].research_trigger = {type ="craft-item", item ="light-armor"}
 Tech["heavy-armor"].prerequisites = {"par-light-armour-tech"}

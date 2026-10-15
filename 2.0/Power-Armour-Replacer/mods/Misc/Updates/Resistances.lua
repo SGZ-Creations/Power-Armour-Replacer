@@ -1,4 +1,3 @@
----@class data.ArmorPrototype
 local Armour = data.raw["armor"]
 
 --1st tier of armour progression
