@@ -421,7 +421,6 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk8"], {
             {"kr-rare-metals", 300},
             {"kr-ai-core", 300},
         }
-        }
     },
 })
 PAR.ingredient_prereq(RECIPES["par-battery-mk9"], {
