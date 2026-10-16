@@ -124,8 +124,8 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk2"], {
     {
         dependencies = {"Krastorio2-spaced-out"},
         replacements = {
-            ["kr-automation-core"] = {"kr-automation-core", 50},
             ["electronic-circuit"] = {"electronic-circuit", 50},
+            ["copper-plate"] = {"kr-automation-core", 50},
 			["steel-plate"] = {"kr-steel-beam", 50},
             ["iron-plate"] = {"kr-iron-beam", 50},
             {"kr-sand", 50},
