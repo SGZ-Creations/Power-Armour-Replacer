@@ -1,5 +1,3 @@
---local icon_utils = require("structures.icon-utils")
----@class LuaSettings
 local SS = settings.startup
 data:extend({
     {
@@ -10,7 +8,7 @@ data:extend({
             {type = "unlock-recipe", recipe = "par-shock-defense-mk1"},
 		},
         prerequisites = {"par-fission-reactor-tech-1" },
-        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 5},
+        research_trigger = {type ="craft-item", item ="par-fission-reactor-mk1", count = 2},
         order = "Laser01"
     },
     {
