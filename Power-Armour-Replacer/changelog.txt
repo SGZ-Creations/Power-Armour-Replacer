@@ -1,10 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.12
+Date: 28.10.26
+  Bugfixes:
+    - [Foliax] Crash, Removing all the Armours & Equipment. Leaving only portable solar for now.
+    - [K2][space-age] Missing localization on Tips&Tricks.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.11
 Date: 15.10.26
   Changes:
     - [PA&R] Changelog.
   Bugfixes:
-    - [PA&R] Missing localization for all languages, that is addedd to this mod (3)
+    - [PA&R] Missing localization for all languages, that is added to this mod (3)
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.10
 Date: 15.10.26
@@ -12,12 +18,12 @@ Date: 15.10.26
     - [Clowns] Crash.
     - [Angels-E] Crash.
     - [PA&R] Missing ShockDefence recycling.
-    - [Angles][Clowns][SpaceAge] Triple & Quad amount of fluid input types.
+    - [Angels][Clowns][SpaceAge] Triple & Quad amount of fluid input types.
   Changes:
-    - [Angles] Invalid recipes combinations. Cobalt Gears & Bearings.
-    - [Angles] Enabled manganese in Angels.
+    - [Angels] Invalid recipes combinations. Cobalt Gears & Bearings.
+    - [Angels] Enabled manganese in Angels.
   Info:
-    - [Clowns] Wating on asnwer from clowns to enable Magnesium.
+    - [Clowns] Waiting on answer from clowns to enable Magnesium.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.9
 Date: 29.09.26
@@ -67,7 +73,7 @@ Date: 11.07.26
   Changes:
     - [PA&R] Porting difference is mod required recycler instead of quality.
   Bugfixes:
-    - [PA&R][recycler] Too few output slots.
+    - [PA&R][Recycler] Too few output slots.
   Credit:
     - @nickaman. For bug report.
 ---------------------------------------------------------------------------------------------------
@@ -134,10 +140,10 @@ Date: 15.10.26
     - [Clowns] Crash.
     - [Angels-E] Crash.
     - [PA&R] Missing ShockDefence recycling.
-    - [Angles][Clowns][SpaceAge] Triple & Quad amount of fluid input types.
+    - [Angels][Clowns][SpaceAge] Triple & Quad amount of fluid input types.
   Changes:
-    - [Angles] Invalid recipes combinations. Cobalt Gears & Bearings.
-    - [Angles] Enabled manganese in Angels.
+    - [Angels] Invalid recipes combinations. Cobalt Gears & Bearings.
+    - [Angels] Enabled manganese in Angels.
   Info:
     - [Clowns] Wating on asnwer from clowns to enable Magnesium.
 ---------------------------------------------------------------------------------------------------
@@ -333,7 +339,7 @@ Date: 30.1.26
   Changes:
     - 3x multiplier to all roboports "charging_station_count" if Quality mod is detected & 1 if not quality enabled.
     - SeaBlock Progress to Power Armour made to trigger tech.
-    - Trigger tech values for Angles.
+    - Trigger tech values for Angels.
     - Trigger tech values for Base.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.14
@@ -901,7 +907,7 @@ Date: 07.08.2024
     - Completed the final recipes for Bob's Angels Combi. (Full mods set)
   Changes:
     - Hopefully removed all "solid-fuel" in recipes, playing PY mods. (Item recipe is removed in modpack).
-    - Recipes for Bob's, Angles, Clowns, Darkstar,
+    - Recipes for Bob's, Angels, Clowns, Darkstar,
     - Removed Recipe blockade for shields MK7.
   Bugfixes:
     - Item in recipe "cobalt-steel-plate" --> "cobalt-steel-alloy" :P (laser MK10)
@@ -1038,7 +1044,7 @@ Date: 08.01.2024
   Bugfixes:
     - Fixed names having internal view.
   Known:
-    - Updating angles will cause the mod to crash.
+    - Updating angels will cause the mod to crash.
     - Looking to get this update at a point where my own game doesn't crash. :p 
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
@@ -1712,13 +1718,13 @@ Date: 28.10.2022 03:31 CET
     - Small change with Sea block tech Mk3 items.
     - Removed rubber from being used in Sea block early on.
   Bugfixes:
-    - Possible crash specifying wrong mod with tech (angles bronze smelting 1)
+    - Possible crash specifying wrong mod with tech (angels bronze smelting 1)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 26.10.2022
   Bugfixes:
-    - Hotfix: Was not able to unlock MK2 items (Progression_2) as for disabled invar tech using angles.
-    - Hotfix: Was not able to unlock MK3 items (Progression_3) as for disabled aluminium tech using angles.
+    - Hotfix: Was not able to unlock MK2 items (Progression_2) as for disabled invar tech using angels.
+    - Hotfix: Was not able to unlock MK3 items (Progression_3) as for disabled aluminium tech using angels.
     - Typo
   Changes:
     - Tweaked recipes when Angelssmelting are active.

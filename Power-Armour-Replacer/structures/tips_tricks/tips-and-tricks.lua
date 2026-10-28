@@ -426,7 +426,8 @@ if mods["osm-radioactivity"] then
 end
 
 if mods["space-exploration"] then
-	if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"])then
+	--if not mods["Krastorio2-spaced-out"]then
+	if mods["Krastorio2"]then
 		data:extend({
 			{
 				type = "tips-and-tricks-item",
@@ -465,7 +466,8 @@ if mods["space-exploration"] and not mods["Krastroio2"] then
 	})
 end
 
-if (mods["Krastorio2"] or mods["Krastorio2-spaced-out"])then
+if mods["Krastorio2"]then
+	--if not mods["Krastorio2-spaced-out"]then
 	if not mods["space-exploration"] then
 		data:extend({
 			{

@@ -401,6 +401,15 @@ if mods["nightvision_progression-fork"] then
 end
 
 if mods["foliax"]then
+    Recipes["foliax-solar-panel-equipment"].enabled = false
+    Recipes["foliax-solar-panel-equipment"].hidden = true
+
+    if SS["Foliax-filters"].value then
+        Hide_Item("foliax-solar-panel-equipment")
+    end
+end
+--[[
+if mods["foliax"]then
 --Enabled
     Tech["foliax-armor"].enabled = false
     Tech["foliax-night-vision-equipment"].enabled = false
@@ -441,7 +450,7 @@ if mods["foliax"]then
         Hide_Item("foliax-personal-roboport-equipment")
     end
 end
-
+]]
 
 if mods["Cold_biters"]then
     if SS["cb-enable-cold-warfare"].value == true then
