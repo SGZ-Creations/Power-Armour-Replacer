@@ -127,6 +127,8 @@ if mods["space-age"]then
                 {type="item", name="low-density-structure", amount=300},
                 {type="item", name="armour-control-unit", amount=300},
                 {type="item", name="processing-unit", amount=300},
+                {type="item", name="tungsten-plate", amount=300},
+                {type="item", name="holmium-plate", amount=300},
                 {type="item", name="steel-plate", amount=300},
                 {type="item", name="battery", amount=300},
                 {type="item", name="carbon", amount=300},
