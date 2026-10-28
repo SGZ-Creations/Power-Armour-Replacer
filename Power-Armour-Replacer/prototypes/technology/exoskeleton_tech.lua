@@ -1,5 +1,4 @@
 local icon_utils = require("structures.icon-utils")
----@class LuaSettings
 local SS = settings.startup
 data:extend({
     {

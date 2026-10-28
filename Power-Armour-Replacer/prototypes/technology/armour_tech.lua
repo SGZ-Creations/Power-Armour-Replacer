@@ -1,6 +1,4 @@
----@class data.TechnologyPrototype
 local Tech = data.raw["technology"]
----@class LuaSettings 
 local SS = settings.startup
 
 data.raw["recipe"]["light-armor"].enabled = false

@@ -4,6 +4,10 @@ Date: 28.10.26
   Bugfixes:
     - [Foliax] Crash, Removing all the Armours & Equipment. Leaving only portable solar for now.
     - [K2][space-age] Missing localization on Tips&Tricks.
+  Changes:
+    - [PA&R] Changelog.
+    - [PA&R] Tweaks to Exoskeleton.
+    - [PA&R] ShockDefence Tech Mk1 required to craft 5 fission reactors reduced to 2.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.11
 Date: 15.10.26
