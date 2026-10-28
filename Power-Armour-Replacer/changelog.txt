@@ -1,12 +1,15 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.12
 Date: 28.10.26
+  Features:
+    - [PA&R] Introduced Achievements for Shock Defence
   Bugfixes:
     - [Foliax] Crash, Removing all the Armours & Equipment. Leaving only portable solar for now.
     - [K2][space-age] Missing localization on Tips&Tricks.
   Changes:
     - [PA&R] Changelog.
     - [PA&R] Tweaks to Exoskeleton.
+    - [PA&R] Removed "steam_stats_name" unused function due to being un modded. 
     - [PA&R] ShockDefence Tech Mk1 required to craft 5 fission reactors reduced to 2.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.11
