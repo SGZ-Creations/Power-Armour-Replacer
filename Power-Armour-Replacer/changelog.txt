@@ -4,6 +4,8 @@ Date: 01.11.26
   Changes:
     - [K2] Rare metal moved. Due to being Chemical tech cards.
     - [K2] Adjusted some Recipes in this event. Armour, Batteries, Exo, Reactor, Laser, Roboport, Shield, Shock, Solar,
+  Info:
+    - Only bug fixes will be supported for 2.0 & 1.1 if reported. Tho you will be the obligated tester. if you Deny the testing I Deny the fixing.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.12
 Date: 28.10.26
@@ -134,6 +136,11 @@ Date: 26.06.26
     - [PA&R] New crafting category.
   Credit:
     - Thanks @oobanooba for the help in fixing the categories issue with 2.1.x
+---------------------------------------------------------------------------------------------------
+Version: 0.5.17
+Date: 15.10.26
+  Bugfixes:
+    - [K2SO] Missing Automation Cores in Mk2 Recipes.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.16
 Date: 15.10.26
