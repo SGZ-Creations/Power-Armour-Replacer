@@ -1,3 +1,0 @@
-Repeatable.json
-Repeatable.lua
-update.json
