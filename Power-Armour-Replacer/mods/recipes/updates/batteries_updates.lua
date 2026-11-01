@@ -126,7 +126,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk3"], {
 			["steel-plate"] = {"kr-steel-beam", 75},
             ["stone-brick"] = {"kr-glass", 75},
             {"kr-automation-core", 75},
-            {"kr-rare-metals", 75},
+            {"kr-iron-beam", 75},
         }
     },
 })
@@ -171,7 +171,6 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk4"], {
 			["steel-plate"] = {"kr-steel-beam", 100},
             ["stone-brick"] = {"kr-glass", 100},
             {"kr-automation-core", 100},
-            {"kr-rare-metals", 100},
             {"kr-iron-beam", 100},
         }
     },
@@ -245,6 +244,7 @@ PAR.ingredient_prereq(RECIPES["par-battery-mk6"], {
         replacements = {
             ["battery"] = {"kr-lithium-sulfur-battery", 150},
 			{"kr-imersium-beam", 150},
+            {"kr-rare-metals", 150},
             {"kr-matter-cube", 150},
             {"kr-ai-core", 150},
         }

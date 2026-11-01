@@ -154,7 +154,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk3"], {
             ["steel-plate"] = {"kr-steel-beam", 75},
             {"kr-electronic-components", 75},
             {"kr-automation-core", 75},
-            {"kr-rare-metals", 75},
+            {"kr-iron-beam", 75},
             {"kr-silicon", 75},
             {"kr-glass", 75},
         }
@@ -195,7 +195,7 @@ PAR.ingredient_prereq(RECIPES["par-shield-mk4"], {
             ["steel-plate"] = {"kr-steel-beam", 100},
             {"kr-electronic-components", 100},
             {"kr-automation-core", 100},
-            {"kr-rare-metals", 100},
+            {"kr-iron-beam", 100},
             {"kr-silicon", 100},
             {"kr-glass", 100},
         }

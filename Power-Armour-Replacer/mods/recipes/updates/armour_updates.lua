@@ -254,7 +254,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk3"], {
         replacements = {
             ["steel-plate"] = {"kr-steel-beam", 75},
             {"kr-automation-core", 75},
-            {"kr-rare-metals", 75},
             {"kr-silicon", 75},
             {"kr-glass", 75},
         }
@@ -335,7 +334,6 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk4"], {
             ["advanced-circuit"] = {"kr-electronic-components", 100},
             ["steel-plate"] = {"kr-steel-beam", 100},
             {"kr-automation-core", 100},
-            {"kr-rare-metals", 100},
             {"kr-silicon", 100},
             {"kr-glass", 100},
         }
@@ -399,6 +397,7 @@ PAR.ingredient_prereq(RECIPES["par-armour-mk5"], {
             ["steel-plate"] = {"kr-rare-metals", 150},
             {"kr-energy-control-unit", 150},
 			{"kr-imersium-beam", 150},
+            {"kr-rare-metals", 150},
             {"kr-ai-core", 150},
             {"kr-silicon", 150},
             {"kr-glass", 150},

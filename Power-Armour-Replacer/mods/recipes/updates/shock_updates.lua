@@ -208,7 +208,7 @@ PAR.ingredient_prereq(RECIPES["par-shock-defense-mk4"], {
 			["steel-plate"] = {"kr-steel-beam", 100},
             ["stone-brick"] = {"kr-glass", 100},
             {"kr-automation-core", 100},
-            {"kr-rare-metals", 100},
+            {"kr-iron-beam", 100},
             {"kr-silicon", 100},
         }
     },

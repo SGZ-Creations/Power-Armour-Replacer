@@ -72,7 +72,6 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk2"], {
             ["iron-gear-wheel"] = {"kr-steel-gear-wheel", 200},
             ["iron-stick"] = {"kr-steel-beam", 200},
             {"kr-automation-core", 200},
-            {"kr-rare-metals", 200},
             {"kr-silicon", 200},
         }
     },
@@ -174,6 +173,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk4"], {
 			["battery"] = {"kr-energy-control-unit", 400},
             ["steel-plate"] = {"kr-imersium-beam", 400},
             {"kr-lithium-sulfur-battery", 400},
+            {"kr-rare-metals", 400},
             {"kr-matter-cube", 400},
             {"kr-ai-core", 400},
         }
@@ -235,6 +235,7 @@ PAR.ingredient_prereq(RECIPES["par-exoskeleton-mk5"], {
             {"kr-lithium-sulfur-battery", 500},
             {"kr-energy-control-unit", 500},
             {"kr-matter-cube", 500},
+            {"kr-rare-metals", 500},
             {"kr-ai-core", 500},
         }
     },

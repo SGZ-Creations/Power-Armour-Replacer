@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.13
+Date: 01.11.26
+  Changes:
+    - [K2] Rare metal moved. Due to being Chemical tech cards.
+    - [K2] Adjusted some Recipes in this event. Armour, Batteries, Exo, Reactor, Laser, Roboport, Shield, Shock, Solar,
+---------------------------------------------------------------------------------------------------
 Version: 0.6.12
 Date: 28.10.26
   Features:

@@ -148,11 +148,10 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk3"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plate"] = {"kr-rare-metals", 75},
+            ["copper-plate"] = {"kr-electronic-components", 75},
             ["steel-plate"] = {"kr-steel-beam", 75},
             ["iron-stick"] = {"kr-iron-beam", 75},
             ["stone-brick"] = {"kr-sand", 75},
-            {"kr-electronic-components", 75},
             {"kr-automation-core", 75},
         }
     },
@@ -186,11 +185,10 @@ PAR.ingredient_prereq(RECIPES["par-roboport-mk4"], {
     {
         dependencies = {"Krastorio2"},
         replacements = {
-            ["copper-plate"] = {"kr-rare-metals", 100},
+            ["copper-plate"] = {"kr-iron-beam", 100},
             ["steel-plate"] = {"kr-steel-beam", 100},
             {"kr-electronic-components", 100},
             {"kr-automation-core", 100},
-            {"kr-iron-beam", 100},
             {"kr-silicon", 100},
         }
     },

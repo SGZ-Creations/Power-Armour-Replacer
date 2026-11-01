@@ -163,7 +163,9 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk3"], {
         dependencies = {"Krastorio2"},
         replacements = {
             {"kr-automation-core", 75},
-            {"kr-rare-metals", 75},
+			{"kr-steel-beam", 75},
+            {"kr-iron-beam", 75},
+            {"kr-silicon", 75},
             {"kr-glass", 75},
         }
     },
@@ -205,7 +207,9 @@ PAR.ingredient_prereq(RECIPES["par-fission-reactor-mk4"], {
         dependencies = {"Krastorio2"},
         replacements = {
             {"kr-automation-core", 100},
-            {"kr-rare-metals", 100},
+			{"kr-steel-beam", 100},
+            {"kr-iron-beam", 100},
+            {"kr-silicon", 100},
             {"kr-glass", 100},
         }
     },
