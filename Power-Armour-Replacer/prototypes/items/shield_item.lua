@@ -1,6 +1,5 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local icon_utils = require("structures.icon-utils")
----@class LuaSettings
 local SS = settings.startup
 --max_shield_value(How high the Hitpoint per tier is) (Shield value.)
 --buffer_capacity (Internal battery)

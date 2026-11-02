@@ -1,5 +1,4 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
----@class LuaSettings
 local SS = settings.startup
 
 local Immunities = {
