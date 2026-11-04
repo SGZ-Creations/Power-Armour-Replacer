@@ -242,19 +242,19 @@ PAR.ingredient_prereq(Recipe["space-ai-robot"],
     {
         dependencies = {"SpaceModFeorasFork",},
         replacements = {
-            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 7},
-            ["par-battery-mk2"] = {"par-battery-mk10", 5},
-            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk5", 7},
-            ["par-belt-immunity-mk1"] = {"par-belt-immunity-mk2", 37},
+            ["par-fission-reactor-mk1"] = {"par-fission-reactor-mk10", 10},
+            ["par-battery-mk2"] = {"par-battery-mk10", 10},
+            ["par-exoskeleton-mk1"] = {"par-exoskeleton-mk5", 10},
+            ["par-belt-immunity-mk1"] = {"par-belt-immunity-mk2", 20},
         }
     },
     {
         dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
         replacements = {
-            ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk8", 3},
-            ["par-battery-mk10"] = {"par-battery-mk8", 2},
-            ["par-exoskeleton-mk5"] = {"par-exoskeleton-mk3", 3},
-            ["par-belt-immunity-mk2"] = {"par-belt-immunity-mk2", 18},
+            ["par-fission-reactor-mk10"] = {"par-fission-reactor-mk8", 10},
+            ["par-battery-mk10"] = {"par-battery-mk8", 10},
+            ["par-exoskeleton-mk5"] = {"par-exoskeleton-mk3", 10},
+            ["par-belt-immunity-mk2"] = {"par-belt-immunity-mk2", 20},
         }
     },
 })
@@ -266,16 +266,16 @@ PAR.ingredient_prereq(Recipe["space-ai-robot-frame"],
         replacements = {
             ["par-armour-mk2"] = {"par-armour-mk10", 5},
             ["par-laser-mk1"] = {"par-laser-mk10", 5},
-            ["par-roboport-mk1"] = {"par-roboport-mk10", 5},
+            ["par-roboport-mk2"] = {"par-roboport-mk10", 5},
         }
     },
     {
         dependencies = {"SpaceModFeorasFork", "boblibrary", "bobplates", "bobmodules", "bobelectronics", "boblogistics", "bobtech", "bobequipment",},
         replacements = {
-            ["par-armour-mk10"] = {"par-armour-mk8", 2},
-            ["par-laser-mk6"] = {"par-laser-mk10", 2},
-            ["par-laser-mk10"] = {"par-laser-mk10", 2},
-            ["par-roboport-mk10"] = {"par-roboport-mk10", 2},
+            ["par-armour-mk10"] = {"par-armour-mk8", 5},
+            ["par-laser-mk6"] = {"par-laser-mk10", 5},
+            ["par-laser-mk10"] = {"par-laser-mk10", 5},
+            ["par-roboport-mk10"] = {"par-roboport-mk10", 5},
         }
     },
 })
