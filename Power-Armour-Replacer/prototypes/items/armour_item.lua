@@ -59,7 +59,7 @@ local resistances = {
     radiation_decrease = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000},
     radiation_percent  = {   5,  20,  40,  60,  80, 120, 140, 160, 180, 200},--p
 
-    -- K2/K2SO
+    -- Toxic Bitters
     toxication_decrease = { 10, 25, 30, 45, 50, 65, 70, 85, 90, 105},
     toxication_percent  = {  0,  0,  0,  5, 10, 25, 30, 40, 65,  75},--p
 }
