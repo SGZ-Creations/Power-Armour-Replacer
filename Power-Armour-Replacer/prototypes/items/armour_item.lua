@@ -58,6 +58,10 @@ local resistances = {
     -- K2/K2SO
     radiation_decrease = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000},
     radiation_percent  = {   5,  20,  40,  60,  80, 120, 140, 160, 180, 200},--p
+
+    -- K2/K2SO
+    toxication_decrease = { 10, 25, 30, 45, 50, 65, 70, 85, 90, 105},
+    toxication_percent  = {  0,  0,  0,  5, 10, 25, 30, 40, 65,  75},--p
 }
 
 for tier, equipment in pairs(power_armour) do
@@ -161,6 +165,14 @@ for tier, equipment in pairs(power_armour) do
             type = "kr-radioactive",
             decrease = resistances.radiation_decrease[tier],
             percent = resistances.radiation_percent[tier],
+        })
+    end
+
+    if mods["Toxic_biters"] then
+        table.insert(equipment_armor.resistances, {
+            type = "toxic",
+            decrease = resistances.toxication_decrease[tier],
+            percent = resistances.toxication_percent[tier],
         })
     end
 
