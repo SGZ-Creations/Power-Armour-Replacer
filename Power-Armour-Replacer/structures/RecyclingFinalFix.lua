@@ -116,6 +116,15 @@ if mods["recycler"] then
         --Base
         "spidertron",
     })
+    if mods["PARs-SpaceAge-Extension"] then
+        PAR.update_rec_recipe_results({
+            "par-mech-armour-mk1",
+            "par-mech-armour-mk2",
+            "par-mech-armour-mk3",
+            "par-mech-armour-mk4",
+            "par-mech-armour-mk5",
+        })
+    end
     if mods["Power Armor MK3"] then
         PAR.update_rec_recipe_results({
             "pamk3-lvest",

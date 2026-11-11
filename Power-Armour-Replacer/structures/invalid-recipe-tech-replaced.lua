@@ -144,8 +144,12 @@ local item_replace = {
     ["energy-shield-mk6-equipment"] = "par-shield-mk6",
     ["se-rtg-equipment"] = "par-fission-reactor-mk4",
     ["se-rtg-equipment-2"] = "par-fission-reactor-mk7",
-    ["kr-fusion-reactor-equipment"] = "par-fission-reactor-mk5"
-    --[""] = "",
+    ["kr-fusion-reactor-equipment"] = "par-fission-reactor-mk5",
+--PARs-SpaceAge-Extension
+    ["prototype-mech-armor"] = "par-mech-armour-mk1",
+    ["mech-armor"] = "par-mech-armour-mk2",
+    ["mech-armor-fireproof"] = "par-mech-armour-mk2",
+    ["combat-mech-armor-rampant-arsenal"] = "par-mech-armour-mk5",
 }
 
 local function replace_ingredients(ingredients)

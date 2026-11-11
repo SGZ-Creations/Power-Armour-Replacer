@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.15
+Date: 11.11.26
+  Bugfixes:
+    - [PA&R-E] If mech suits are used in recipes they will now convert to mods version instead. (I hope)
+    - [PA&R-E] Recycling mech suit should now use the last modified recipe.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.14
 Date: 05.11.26
   Features:
