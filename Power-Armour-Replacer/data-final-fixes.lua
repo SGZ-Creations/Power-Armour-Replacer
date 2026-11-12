@@ -23,3 +23,4 @@
 	require("mods.technology.final-fixes.TIMSABAFinialFixes")
 	require("mods.technology.final-fixes.par-depedency-fixes")
     require("mods.technology.final-fixes.par-tech-final-fixes")
+	require("mods.technology.final-fixes.SPGSA")
