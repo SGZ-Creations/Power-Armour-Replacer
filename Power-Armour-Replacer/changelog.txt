@@ -3,6 +3,8 @@ Version: 0.6.16
 Date: 12.11.26
   Bugfixes:
     - [SPGSA] Tech Softlocks. 31 & 20 should now have a working prerequisites.
+  Changes:
+    - [Base][PA&R] Correct Recipe cost for spidertron Fission reactor tier 5x2 instead of tier 2 x2.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.15
 Date: 11.11.26
