@@ -24,12 +24,7 @@ data:extend({
 		localised_name = "Light Armour",
 		icon_size = 256, --simpletech.icon_size,
 		icon = "__base__/graphics/technology/heavy-armor.png", --simpletech.icon,
-		effects = {
-			{
-				type = "unlock-recipe",
-				recipe = "light-armor"
-			},
-		},
+		effects = {{type = "unlock-recipe", recipe = "light-armor"}},
 		prerequisites = {"military"},
 		research_trigger = {type ="craft-item", item ="submachine-gun"},
 		order = "Armour00"
