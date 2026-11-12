@@ -1,4 +1,3 @@
----@class data.TechnologyPrototype.type
 local Tech = data.raw["technology"]
 
 if mods["aai-industry"]and mods["bobplates"] then

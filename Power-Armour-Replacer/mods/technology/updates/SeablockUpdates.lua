@@ -1,6 +1,3 @@
----@class RecipePrototype
-local Recipe = data.raw.recipe
----@class data.TechnologyPrototype
 local Tech = data.raw["technology"]
 
 
